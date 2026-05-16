@@ -1,0 +1,66 @@
+---
+const items = [
+  ['Organic Programs', 'USDA and EU organic documentation placeholders ready for verified certificate IDs.'],
+  ['Food Safety', 'FDA registration, FSSAI, allergen, COA, microbiology, and heavy-metal documentation workflow.'],
+  ['Religious Certifications', 'HALAL and KOSHER status captured as buyer-ready procurement proof points.'],
+  ['Traceability', 'Lot-level origin, processing, packaging, and shipment records aligned to export review.'],
+  ['Specification Control', 'Purity, mesh, moisture, ash, swell volume, and packaging specs documented before quote.'],
+  ['Export Readiness', 'Commercial invoice, packing list, COA, and shipping handoff checklist for US/EU buyers.']
+];
+---
+<div class="compliance-grid">
+  {items.map(([title, text]) => (
+    <article>
+      <span aria-hidden="true"></span>
+      <h3>{title}</h3>
+      <p>{text}</p>
+    </article>
+  ))}
+</div>
+
+<style>
+  .compliance-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  article {
+    min-height: 210px;
+    border: 1px solid #dfe6dc;
+    border-radius: 8px;
+    background: #ffffff;
+    padding: 1.35rem;
+  }
+
+  span {
+    display: block;
+    width: 34px;
+    height: 6px;
+    border-radius: 99px;
+    background: #c6842e;
+  }
+
+  h3 {
+    margin: 1.1rem 0 0.65rem;
+    font-size: 1.1rem;
+  }
+
+  p {
+    margin: 0;
+    color: #54707e;
+    line-height: 1.55;
+  }
+
+  @media (max-width: 860px) {
+    .compliance-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 560px) {
+    .compliance-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

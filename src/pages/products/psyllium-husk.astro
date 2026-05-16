@@ -1,0 +1,118 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SpecBuilder from '../../components/SpecBuilder.astro';
+---
+<BaseLayout
+  title="Psyllium Husk Specs | RM Psyllium"
+  description="Review export-grade psyllium husk purity, mesh, packaging, and buyer documentation requirements."
+>
+  <section class="section product-hero">
+    <div class="container product-grid">
+      <div>
+        <p class="eyebrow">Product</p>
+        <h1>Psyllium husk prepared for formulation specs.</h1>
+        <p>
+          Align purity, mesh, packaging, documentation, and shipment expectations before quote review.
+          Replace placeholder ranges with verified product data before launch.
+        </p>
+        <a class="btn btn-primary" href="/#book" data-track="product_book_click">Book Product Call</a>
+      </div>
+      <img src="/assets/product-bag.svg" width="900" height="900" alt="RM Psyllium product packaging placeholder" loading="eager" decoding="async" />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container specs">
+      <article>
+        <h2>Available Grades</h2>
+        <p>95%, 98%, and 99% purity options for buyer-specific formulation and labeling needs.</p>
+      </article>
+      <article>
+        <h2>Mesh Range</h2>
+        <p>20 to 100 mesh range captured in lead forms so the sourcing conversation starts with clear requirements.</p>
+      </article>
+      <article>
+        <h2>Packaging</h2>
+        <p>10kg bags, 25kg bags, and 500kg jumbo packaging options represented for procurement review.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section form-band">
+    <div class="container form-grid">
+      <div>
+        <p class="eyebrow">Request Specs</p>
+        <h2>Build a starting spec summary.</h2>
+        <p>Submit core requirements and route into the booking flow once the final scheduling link is available.</p>
+      </div>
+      <div class="panel form-panel">
+        <SpecBuilder />
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  h1,
+  h2 {
+    margin: 0.45rem 0 1rem;
+    line-height: 1.05;
+  }
+
+  h1 {
+    font-size: clamp(2.7rem, 7vw, 5.2rem);
+  }
+
+  h2 {
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+  }
+
+  p {
+    color: #54707e;
+    line-height: 1.62;
+  }
+
+  .product-hero {
+    background: #f6f8f4;
+  }
+
+  .product-grid,
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.85fr;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .product-grid img {
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 18px 50px rgba(20, 33, 61, 0.08);
+  }
+
+  .specs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .specs article,
+  .form-panel {
+    border: 1px solid #dfe6dc;
+    border-radius: 8px;
+    background: #ffffff;
+    padding: 1.4rem;
+  }
+
+  .form-band {
+    background: #f6f8f4;
+  }
+
+  @media (max-width: 860px) {
+    .product-grid,
+    .form-grid,
+    .specs {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

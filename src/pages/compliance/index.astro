@@ -1,0 +1,110 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ComplianceGrid from '../../components/ComplianceGrid.astro';
+---
+<BaseLayout
+  title="Compliance & Traceability | RM Psyllium"
+  description="RM Psyllium compliance positioning for US and EU procurement: certifications, traceability, COA, and export documentation."
+>
+  <section class="section intro">
+    <div class="container intro-grid">
+      <div>
+        <p class="eyebrow">Compliance</p>
+        <h1>Documentation-first supply for regulated buyers.</h1>
+        <p>
+          This page is structured for procurement and QA teams that need proof before sampling:
+          certification status, lot traceability, quality checks, and export paperwork.
+        </p>
+      </div>
+      <img src="/assets/compliance-lab.svg" width="1200" height="760" alt="Compliance laboratory placeholder" loading="eager" decoding="async" />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <ComplianceGrid />
+    </div>
+  </section>
+
+  <section class="section checklist-band">
+    <div class="container checklist">
+      <div>
+        <h2>Buyer verification checklist</h2>
+        <p>Replace placeholder claims with verified certificate IDs, expiry dates, and issuing bodies before publishing.</p>
+      </div>
+      <ul>
+        <li>Current organic certification scope</li>
+        <li>FDA registration and facility details</li>
+        <li>HALAL and KOSHER certificate copies</li>
+        <li>COA sample and test parameter ranges</li>
+        <li>Lot traceability and recall process</li>
+      </ul>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  h1,
+  h2 {
+    margin: 0.45rem 0 1rem;
+    line-height: 1.05;
+  }
+
+  h1 {
+    font-size: clamp(2.7rem, 7vw, 5.1rem);
+  }
+
+  h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
+
+  p,
+  li {
+    color: #54707e;
+    line-height: 1.62;
+  }
+
+  .intro {
+    background: #f6f8f4;
+  }
+
+  .intro-grid,
+  .checklist {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .intro img {
+    border: 1px solid #dfe6dc;
+    border-radius: 8px;
+    background: #ffffff;
+  }
+
+  .checklist-band {
+    background: #14213d;
+  }
+
+  .checklist h2,
+  .checklist-band p,
+  .checklist li {
+    color: #ffffff;
+  }
+
+  .checklist ul {
+    display: grid;
+    gap: 0.8rem;
+    margin: 0;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 1.4rem 1.4rem 1.4rem 2.4rem;
+  }
+
+  @media (max-width: 860px) {
+    .intro-grid,
+    .checklist {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

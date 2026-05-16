@@ -1,0 +1,257 @@
+
+## 🎯 SYSTEM ROLE & PRIME DIRECTIVE
+Act as a **Senior Full-Stack Engineer & B2B Conversion Architect**. Your task is to build a **production-ready, conversion-optimized, static B2B website** for `RM Psyllium` targeting US/EU procurement buyers. 
+
+**Stack:** Astro.js + Tailwind CSS + Netlify (Hosting/Forms/Redirects) + Calendly + Plausible/GA4  
+**Goal:** Qualify B2B leads, drive booked sourcing calls, and deliver Lighthouse 95+ across all devices.  
+**Budget:** $0 recurring. Frugal, zero-bloat, enterprise-grade performance.  
+**KPI Target:** 10 qualified calls/month → Conversion flow must be airtight, trackable, and frictionless.
+
+---
+
+## 📦 1. EXACT PROJECT ARCHITECTURE
+Generate this exact structure. Do not deviate.
+```
+rm-psyllium/
+├── public/
+│   ├── favicon.svg
+│   ├── assets/ (optimized media: WebP/AVIF)
+│   └── playbook-preview.png
+├── src/
+│   ├── assets/ (source images for Astro <Image>)
+│   ├── components/
+│   │   ├── Header.astro
+│   │   ├── Footer.astro
+│   │   ├── Hero.astro
+│   │   ├── SpecBuilder.astro (MVP form)
+│   │   ├── ComplianceGrid.astro
+│   │   ├── CalendlyEmbed.astro
+│   │   ├── Seo.astro
+│   │   └── EventTracking.astro
+│   ├── layouts/
+│   │   └── BaseLayout.astro
+│   ├── pages/
+│   │   ├── index.astro
+│   │   ├── products/
+│   │   │   └── psyllium-husk.astro
+│   │   ├── compliance/
+│   │   │   └── index.astro
+│   │   ├── resources/
+│   │   │   └── playbook.astro (gated)
+│   │   ├── about/
+│   │   │   └── index.astro
+│   │   ├── thank-you.astro
+│   │   └── 404.astro
+│   └── styles/
+│       └── global.css
+├── netlify.toml
+├── astro.config.mjs
+├── tailwind.config.mjs
+├── package.json
+└── README.md
+```
+
+---
+
+## ⚙️ 2. TECH STACK & DEPENDENCIES (STRICT)
+**Install ONLY these:**
+```bash
+npm create astro@latest -- --template minimal
+npm install @astrojs/tailwind astro-seo
+npm install -D @astrojs/sitemap
+```
+- **NO** React/Vue/Svelte components
+- **NO** client-side JS frameworks
+- **NO** heavy UI libraries (shadcn, DaisyUI, etc.)
+- **NO** external CDNs for fonts/scripts (self-host or use system fonts)
+- Use Astro's built-in `<Image>`, `<Video>`, and partial hydration (`client:load` only if strictly necessary)
+
+---
+
+## 🧱 3. CORE PAGES & COMPONENT SPECS
+
+### 🔹 `BaseLayout.astro`
+- Includes `<Seo>` component (dynamic title, meta, OG, JSON-LD)
+- Loads Tailwind via `@astrojs/tailwind`
+- Injects `<EventTracking>` in `<head>`
+- System font stack: `font-sans: 'Inter', system-ui, -apple-system, sans-serif`
+- `scroll-behavior: smooth`, `color-scheme: light`
+
+### 🔹 `Header.astro` & `Footer.astro`
+- Sticky header, transparent on hero, solid on scroll
+- Nav: `Products | Compliance | About | 📞 Book Call`
+- Footer: Quick links, certifications list, contact email, copyright
+- Mobile: Hamburger menu (pure CSS, zero JS)
+
+### 🔹 `Hero.astro` (Homepage)
+- H1: `"Reliable Psyllium Husk Supply for US/EU Formulators"`
+- Sub: `"Certified • Traceable • Scalable. Book a 15-min sourcing call."`
+- Dual CTAs: 
+  - Primary: `📞 Book Your Sourcing Call` → scrolls to `#book` (Calendly embed)
+  - Secondary: `📥 Download Import Playbook` → links to `/resources/playbook`
+- Trust badges row: `USDA Organic | EU Certified | FDA Registered | FSSAI | HALAL | KOSHER`
+- Background: `<video>` muted, autoplay, loop, playsinline, `<2MB`, opacity 20%
+
+### 🔹 `SpecBuilder.astro` (MVP)
+```html
+<form name="spec-builder" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-4">
+  <input type="hidden" name="form-name" value="spec-builder" />
+  <p hidden><label>Bot: <input name="bot-field" /></label></p>
+  
+  <label>Grade
+    <select name="grade" required>
+      <option value="95">95% Purity</option>
+      <option value="98">98% Purity</option>
+      <option value="99">99% Purity</option>
+    </select>
+  </label>
+  
+  <label>Mesh Size
+    <input type="range" name="mesh" min="20" max="100" step="20" value="80" />
+    <span id="mesh-display">80 mesh</span>
+  </label>
+  
+  <label>Packaging
+    <select name="packaging">
+      <option value="25kg">25kg Bags</option>
+      <option value="10kg">10kg Bags</option>
+      <option value="500kg">500kg Jumbo</option>
+    </select>
+  </label>
+  
+  <input type="hidden" name="referrer" value="homepage" />
+  <button type="submit" class="bg-blue-700 hover:bg-blue-800 text-white px-5 py-2 rounded font-semibold w-full">
+    Get Spec Summary & Book Call →
+  </button>
+</form>
+
+<script>
+  // Update mesh display on slider change
+  const slider = document.querySelector('input[name="mesh"]');
+  const display = document.getElementById('mesh-display');
+  slider.addEventListener('input', () => display.textContent = `${slider.value} mesh`);
+
+  // Netlify form submit → redirect to Calendly with params
+  const form = document.querySelector('form[name="spec-builder"]');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const grade = formData.get('grade');
+    const mesh = formData.get('mesh');
+    const pack = formData.get('packaging');
+    const params = new URLSearchParams({ grade, mesh, pack }).toString();
+    
+    // Submit to Netlify via fetch
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString()
+    }).then(() => {
+      window.location.href = `https://calendly.com/your-link/sourcing-call?${params}`;
+    });
+  });
+</script>
+```
+
+### 🔹 `resources/playbook.astro` (Gated)
+- Preview section (3 pages blurred/low-res)
+- Netlify form: `name`, `company`, `email`, `country`, `application`
+- On submit → redirect to `/thank-you?guide=playbook`
+- `/thank-you.astro` auto-triggers PDF download from `/public/playbook-rm-psyllium.pdf`
+
+### 🔹 `CalendlyEmbed.astro`
+```html
+<div class="calendly-inline-widget" data-url="https://calendly.com/your-link/sourcing-call" style="min-width:320px;height:630px;"></div>
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+```
+- Add `onEventScheduled` listener to fire `gtag('event', 'calendly_booked')`
+
+---
+
+## 🔌 4. INTEGRATIONS & DATA FLOW
+
+| Feature | Implementation |
+|---------|---------------|
+| **Netlify Forms** | `data-netlify="true"`, honeypot, `netlify-honeypot="bot-field"`, success redirect |
+| **Calendly Params** | Pass `?grade=X&mesh=Y&pack=Z` via URL. Pre-fill Calendly custom questions using JS if API allows, else log in CRM |
+| **SEO/JSON-LD** | Use `astro-seo` or manual `<script type="application/ld+json">` with `@type: "Organization"` + `Product` schema |
+| **Analytics** | Plausible/GA4 snippet in `<head>`. Track: `form_submit`, `calendly_booked`, `guide_download` |
+| **Redirects** | `netlify.toml`: `[[redirects]] from = "/playbook" to = "/resources/playbook" status = 301` |
+
+---
+
+## ⚡ 5. PERFORMANCE, SEO & SECURITY RULES (NON-NEGOTIABLE)
+- ✅ **Lighthouse Target:** Performance ≥95, Accessibility ≥95, Best Practices ≥95, SEO ≥95
+- ✅ **Images:** Use `<Image>` component, explicit `width`/`height`, `loading="lazy"`, `decoding="async"`, serve WebP/AVIF
+- ✅ **Fonts:** Self-host or use system stack. No Google Fonts CDN
+- ✅ **CLS:** Zero layout shift. Reserve space for all media/forms
+- ✅ **JavaScript:** <50KB total. No blocking scripts. Defer/async all external
+- ✅ **Security:** CSP header via `_headers` file, honeypot on all forms, no inline `eval()`
+- ✅ **Accessibility:** `aria-labels`, focus states, contrast ≥4.5:1, semantic HTML5
+
+---
+
+## 🧪 6. TESTING & VALIDATION PROTOCOL
+Before marking complete, run and confirm:
+```bash
+1. npm run build → zero errors
+2. npx astro preview → forms submit, Calendly loads, redirect works
+3. Lighthouse CLI → all scores ≥90 (target 95)
+4. Form Test → submit spec-builder → check Netlify dashboard → verify Calendly redirect with params
+5. Mobile Test → iOS Safari + Chrome DevTools → no overflow, tap targets ≥44px
+6. SEO Check → valid OG tags, JSON-LD, hreflang (if any), sitemap.xml generated
+7. Console → zero warnings, zero CORS errors
+```
+
+---
+
+## 🚀 7. DEPLOYMENT & CI/CD
+1. Push to GitHub `main` branch
+2. Connect to Netlify (auto-deploy on push)
+3. Add custom domain via Netlify DNS or external registrar
+4. Enable: HTTPS, HSTS, Brotli compression, Asset optimization
+5. Add `_headers`:
+   ```
+   /*
+     Cache-Control: public, max-age=31536000, immutable
+     X-Content-Type-Options: nosniff
+     Referrer-Policy: strict-origin-when-cross-origin
+   ```
+6. Add `_redirects`:
+   ```
+   /playbook /resources/playbook 301
+   /book https://calendly.com/your-link 302
+   /* /404 404
+   ```
+
+---
+
+## 🚫 8. STRICT CONSTRAINTS (WHAT NOT TO DO)
+- ❌ Do NOT add React/Vue/Svelte
+- ❌ Do NOT use Tailwind plugins or custom CSS files unless absolutely necessary
+- ❌ Do NOT hardcode Calendly links without param-passing logic
+- ❌ Do NOT use client-side routing for form redirects
+- ❌ Do NOT exceed 50KB JS total
+- ❌ Do NOT skip honeypot or form validation
+- ❌ Do NOT use stock photos. Use placeholders with `alt="Factory walkthrough"` until media is replaced
+- ❌ Do NOT add comments like `// TODO` in production code
+
+---
+
+## ✅ 9. FINAL DELIVERABLES
+Return a **complete, zippable project folder** containing:
+1. All files per architecture
+2. `package.json` with exact scripts
+3. `netlify.toml`, `_headers`, `_redirects`
+4. Working forms, Calendly integration, SEO meta
+5. `README.md` with:
+   - Setup commands
+   - Netlify deploy steps
+   - Analytics tracking guide
+   - Media replacement checklist
+   - KPI tracking dashboard setup (GA4/Plausible events)
+
+---
+
+## 📌 AGENT EXECUTION COMMAND
+`Begin building. Follow architecture exactly. Apply all constraints. Validate against testing protocol. Output complete codebase. Do not ask clarifying questions unless a constraint is impossible to meet. State assumptions explicitly if forced.`

@@ -1,0 +1,192 @@
+---
+import { copy, getLanguage, languages } from '../data/site';
+
+const lang = getLanguage(Astro.params.lang);
+const c = copy[lang];
+const productHref = `/${lang}/products/psyllium-husk/`;
+const regionHref = `/${lang}/regions/united-states/`;
+const industryHref = `/${lang}/industries/pharma-nutraceutical/`;
+---
+<header class="site-header">
+  <a class="brand" href={`/${lang}/`} aria-label="RM Psyllium home">
+    <span class="brand-mark" aria-hidden="true">RM</span>
+    <span>
+      <strong>RM Psyllium</strong>
+      <small>Global psyllium supply</small>
+    </span>
+  </a>
+
+  <input class="nav-toggle" id="nav-toggle" type="checkbox" aria-label="Open navigation" />
+  <label class="nav-button" for="nav-toggle" aria-hidden="true">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a href={productHref}>{c.navProducts}</a>
+    <a href={regionHref}>{c.navRegions}</a>
+    <a href={industryHref}>{c.navIndustries}</a>
+    <a href="/compliance/">{c.navCompliance}</a>
+    <a href={`/${lang}/insights/husk-vs-powder-buyer-guide/`}>{c.navInsights}</a>
+    <div class="language-switcher" aria-label="Language switcher">
+      {languages.map((language) => (
+        <a class:list={{ active: language.code === lang }} href={`/${language.code}/`}>
+          {language.code.toUpperCase()}
+        </a>
+      ))}
+    </div>
+    <a class="nav-cta" href="/#spec" data-track="quote_click">{c.cta}</a>
+  </nav>
+</header>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    display: flex;
+    min-height: 76px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(16, 35, 63, 0.07);
+    background: rgba(255, 253, 247, 0.76);
+    padding: 0 4.5vw;
+    backdrop-filter: blur(18px);
+  }
+
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .brand-mark {
+    display: grid;
+    width: 44px;
+    height: 44px;
+    place-items: center;
+    border-radius: 999px;
+    background: var(--dark);
+    color: #ffffff;
+    font-size: 0.86rem;
+    font-weight: 880;
+  }
+
+  .brand strong,
+  .brand small {
+    display: block;
+  }
+
+  .brand strong {
+    font-size: 1rem;
+    line-height: 1.1;
+  }
+
+  .brand small {
+    color: #64748b;
+    font-size: 0.74rem;
+    line-height: 1.2;
+  }
+
+  .site-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.15rem;
+    color: #253b55;
+    font-size: 0.88rem;
+    font-weight: 760;
+  }
+
+  .site-nav a:hover {
+    color: #2d6a4f;
+  }
+
+  .language-switcher {
+    display: flex;
+    gap: 0.15rem;
+    border: 1px solid rgba(16, 35, 63, 0.1);
+    border-radius: 999px;
+    background: #ffffff;
+    padding: 0.18rem;
+  }
+
+  .language-switcher a {
+    display: grid;
+    min-width: 34px;
+    min-height: 30px;
+    place-items: center;
+    border-radius: 999px;
+    font-size: 0.72rem;
+  }
+
+  .language-switcher a.active {
+    background: var(--mint);
+    color: var(--ink);
+  }
+
+  .nav-cta {
+    display: inline-flex;
+    min-height: 42px;
+    align-items: center;
+    border-radius: 999px;
+    background: var(--dark);
+    color: #ffffff !important;
+    padding: 0 1rem;
+  }
+
+  .nav-toggle,
+  .nav-button {
+    display: none;
+  }
+
+  @media (max-width: 980px) {
+    .site-header {
+      padding: 0 1rem;
+    }
+
+    .nav-button {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-content: center;
+      gap: 5px;
+      border: 1px solid rgba(16, 35, 63, 0.14);
+      border-radius: 12px;
+      cursor: pointer;
+    }
+
+    .nav-button span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: var(--dark);
+    }
+
+    .site-nav {
+      position: absolute;
+      inset: 76px 1rem auto 1rem;
+      display: none;
+      flex-direction: column;
+      align-items: stretch;
+      border: 1px solid rgba(16, 35, 63, 0.1);
+      border-radius: 16px;
+      background: #fffdf7;
+      padding: 0.9rem;
+      box-shadow: 0 24px 70px rgba(16, 35, 63, 0.14);
+    }
+
+    .site-nav a {
+      min-height: 44px;
+      padding: 0.75rem;
+    }
+
+    .language-switcher {
+      justify-content: space-between;
+    }
+
+    .nav-toggle:checked ~ .site-nav {
+      display: flex;
+    }
+  }
+</style>

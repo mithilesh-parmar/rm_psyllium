@@ -1,0 +1,136 @@
+---
+import { industries, products } from '../data/site';
+
+const lang = Astro.params.lang || 'en';
+---
+<div class="product-showcase">
+  <div class="showcase-head">
+    <span class="kicker">Ingredient range</span>
+    <h2>One crop. Multiple high-value applications.</h2>
+  </div>
+
+  <div class="product-grid">
+    {products.map((product, index) => (
+      <a class:list={['product-link', { featured: index === 1 || index === 2 }]} href={`/${lang}/products/${product.slug}/`}>
+        <span>{String(index + 1).padStart(2, '0')}</span>
+        <strong>{product.name}</strong>
+        <p>{product.summary}</p>
+      </a>
+    ))}
+  </div>
+
+  <div class="industry-row">
+    {industries.map((industry) => (
+      <a href={`/${lang}/industries/${industry.slug}/`}>
+        <strong>{industry.name}</strong>
+        <span>{industry.headline}</span>
+      </a>
+    ))}
+  </div>
+</div>
+
+<style>
+  .product-showcase {
+    display: grid;
+    gap: 2rem;
+  }
+
+  .showcase-head {
+    display: grid;
+    max-width: 780px;
+    gap: 0.55rem;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: clamp(2.4rem, 5vw, 5rem);
+    letter-spacing: 0;
+    line-height: 0.95;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.85rem;
+  }
+
+  .product-link {
+    display: grid;
+    min-height: 330px;
+    align-content: end;
+    gap: 0.8rem;
+    grid-column: span 2;
+    border: 1px solid rgba(16, 35, 63, 0.1);
+    border-radius: 28px;
+    background:
+      linear-gradient(180deg, rgba(16, 35, 63, 0.02), rgba(16, 35, 63, 0.08)),
+      #fffdf7;
+    padding: 1.35rem;
+    overflow: hidden;
+    transition: transform 180ms ease, box-shadow 180ms ease;
+  }
+
+  .product-link.featured {
+    grid-column: span 3;
+    min-height: 410px;
+    background:
+      radial-gradient(circle at 70% 22%, rgba(201, 138, 46, 0.24), transparent 15rem),
+      linear-gradient(135deg, #dff1e6, #fffdf7);
+  }
+
+  .product-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 24px 70px rgba(16, 35, 63, 0.1);
+  }
+
+  .product-link span {
+    color: #8f4f32;
+    font-size: 0.8rem;
+    font-weight: 840;
+  }
+
+  .product-link strong {
+    font-size: clamp(1.35rem, 2.5vw, 2rem);
+    line-height: 1.06;
+  }
+
+  .product-link p {
+    margin: 0;
+    color: #64748b;
+    line-height: 1.5;
+  }
+
+  .industry-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.85rem;
+  }
+
+  .industry-row a {
+    display: grid;
+    gap: 0.6rem;
+    border-radius: 22px;
+    background: var(--dark);
+    color: #ffffff;
+    padding: 1.15rem;
+  }
+
+  .industry-row span {
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 0.88rem;
+    line-height: 1.45;
+  }
+
+  @media (max-width: 920px) {
+    .product-grid,
+    .industry-row {
+      grid-template-columns: 1fr;
+    }
+
+    .product-link,
+    .product-link.featured {
+      grid-column: auto;
+      min-height: 260px;
+    }
+  }
+</style>

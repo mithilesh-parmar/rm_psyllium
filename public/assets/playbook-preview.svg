@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="Import playbook preview placeholder">
+  <rect width="1200" height="720" fill="#e9eee7"/>
+  <g transform="translate(110 80)">
+    <rect width="280" height="420" rx="10" fill="#ffffff" stroke="#dfe6dc" stroke-width="4"/>
+    <rect x="34" y="44" width="180" height="18" rx="9" fill="#14213d"/>
+    <rect x="34" y="90" width="212" height="10" rx="5" fill="#c6842e"/>
+    <rect x="34" y="128" width="212" height="9" rx="5" fill="#ccd7cf"/>
+    <rect x="34" y="154" width="196" height="9" rx="5" fill="#ccd7cf"/>
+    <rect x="34" y="214" width="212" height="86" rx="8" fill="#f6f8f4"/>
+  </g>
+  <g transform="translate(460 120)" opacity=".72" filter="blur(1.2px)">
+    <rect width="280" height="420" rx="10" fill="#ffffff" stroke="#dfe6dc" stroke-width="4"/>
+    <rect x="34" y="44" width="190" height="18" rx="9" fill="#14213d"/>
+    <rect x="34" y="96" width="212" height="9" rx="5" fill="#ccd7cf"/>
+    <rect x="34" y="126" width="212" height="9" rx="5" fill="#ccd7cf"/>
+    <rect x="34" y="156" width="160" height="9" rx="5" fill="#ccd7cf"/>
+    <rect x="34" y="220" width="212" height="120" rx="8" fill="#f6f8f4"/>
+  </g>
+  <g transform="translate(810 80)" opacity=".52" filter="blur(2px)">
+    <rect width="280" height="420" rx="10" fill="#ffffff" stroke="#dfe6dc" stroke-width="4"/>
+    <rect x="34" y="44" width="170" height="18" rx="9" fill="#14213d"/>
+    <rect x="34" y="100" width="212" height="9" rx="5" fill="#ccd7cf"/>
+    <rect x="34" y="130" width="190" height="9" rx="5" fill="#ccd7cf"/>
+    <rect x="34" y="190" width="212" height="138" rx="8" fill="#f6f8f4"/>
+  </g>
+  <text x="600" y="635" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#14213d">US/EU Psyllium Import Playbook</text>
+</svg>

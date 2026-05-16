@@ -1,0 +1,117 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import SpecBuilder from '../../../components/SpecBuilder.astro';
+import { getLanguage, industryProducts, industries, languages } from '../../../data/site';
+
+export function getStaticPaths() {
+  return languages.flatMap((language) =>
+    industries.map((industry) => ({
+      params: { lang: language.code, industry: industry.slug },
+      props: { industry }
+    }))
+  );
+}
+
+const lang = getLanguage(Astro.params.lang);
+const { industry } = Astro.props;
+const relatedProducts = industryProducts(industry.products);
+---
+<BaseLayout
+  lang={lang}
+  title={`${industry.name} Psyllium Supply | RM Psyllium`}
+  description={industry.headline}
+>
+  <section class="section">
+    <div class="container hero">
+      <div>
+        <span class="kicker">ICP microsite</span>
+        <h1 class="title-xl">{industry.name}</h1>
+        <p class="lead">{industry.headline}</p>
+      </div>
+      <div class="panel proof">
+        {industry.proof.map((item) => <span>{item}</span>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container product-grid">
+      {relatedProducts.map((product) => (
+        <a href={`/${lang}/products/${product.slug}/`}>
+          <strong>{product.name}</strong>
+          <p>{product.summary}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="section band">
+    <div class="container quote-grid">
+      <div>
+        <span class="kicker">Application fit</span>
+        <h2 class="title-lg">Let buyers self-qualify by use case before sales joins.</h2>
+      </div>
+      <div class="panel spec-panel">
+        <SpecBuilder />
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero,
+  .quote-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 0.72fr);
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .proof {
+    display: grid;
+    gap: 0.75rem;
+    padding: 1.35rem;
+  }
+
+  .proof span {
+    border-radius: 14px;
+    background: #dff1e6;
+    padding: 1rem;
+    font-weight: 820;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .product-grid a {
+    border: 1px solid rgba(16, 35, 63, 0.1);
+    border-radius: 18px;
+    background: #fffdf7;
+    padding: 1.35rem;
+  }
+
+  .product-grid strong {
+    font-size: 1.25rem;
+  }
+
+  .product-grid p {
+    color: #64748b;
+    line-height: 1.55;
+  }
+
+  .spec-panel {
+    padding: 1.25rem;
+    color: var(--ink);
+  }
+
+  @media (max-width: 920px) {
+    .hero,
+    .quote-grid,
+    .product-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

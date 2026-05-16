@@ -1,0 +1,96 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="About RM Psyllium"
+  description="RM Psyllium is positioned as a document-first psyllium husk supplier for US and EU procurement teams."
+>
+  <section class="section about-hero">
+    <div class="container about-grid">
+      <div>
+        <p class="eyebrow">About</p>
+        <h1>Supplier positioning built for serious procurement.</h1>
+        <p>
+          RM Psyllium’s website is structured to help buyers qualify supply fit quickly:
+          product specs, compliance readiness, traceability, and a clear call path.
+        </p>
+      </div>
+      <img src="/assets/factory-walkthrough.svg" width="1200" height="800" alt="Factory walkthrough placeholder" loading="eager" decoding="async" />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container values">
+      <article>
+        <h2>Traceable</h2>
+        <p>Lot-level documentation and supplier records framed for buyer review.</p>
+      </article>
+      <article>
+        <h2>Spec-led</h2>
+        <p>Grade, mesh, and packaging requirements captured before commercial discussion.</p>
+      </article>
+      <article>
+        <h2>Export-ready</h2>
+        <p>Compliance and shipment paperwork surfaced as first-class procurement content.</p>
+      </article>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  h1,
+  h2 {
+    margin: 0.45rem 0 1rem;
+    line-height: 1.05;
+  }
+
+  h1 {
+    font-size: clamp(2.7rem, 7vw, 5rem);
+  }
+
+  h2 {
+    font-size: 1.35rem;
+  }
+
+  p {
+    color: #54707e;
+    line-height: 1.62;
+  }
+
+  .about-hero {
+    background: #f6f8f4;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .about-grid img {
+    border: 1px solid #dfe6dc;
+    border-radius: 8px;
+    background: #ffffff;
+  }
+
+  .values {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .values article {
+    border: 1px solid #dfe6dc;
+    border-radius: 8px;
+    background: #ffffff;
+    padding: 1.4rem;
+  }
+
+  @media (max-width: 860px) {
+    .about-grid,
+    .values {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

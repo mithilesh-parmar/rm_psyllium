@@ -1,0 +1,77 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getLanguage, insights, languages } from '../../../data/site';
+
+export function getStaticPaths() {
+  return languages.flatMap((language) =>
+    insights.map((post) => ({
+      params: { lang: language.code, post: post.slug },
+      props: { post }
+    }))
+  );
+}
+
+const lang = getLanguage(Astro.params.lang);
+const { post } = Astro.props;
+---
+<BaseLayout
+  lang={lang}
+  title={`${post.title} | RM Psyllium Insights`}
+  description={post.summary}
+>
+  <article class="section article">
+    <div class="container article-grid">
+      <header>
+        <span class="kicker">{post.audience}</span>
+        <h1 class="title-xl">{post.title}</h1>
+        <p class="lead">{post.summary}</p>
+        <time datetime={post.date}>{post.date}</time>
+      </header>
+      <div class="article-body panel">
+        <p>
+          This page is structured as a buyer-education microsite. Replace this placeholder
+          with a full article, internal product links, downloadable spec notes, and a quote CTA.
+        </p>
+        <p>
+          Keep the copy procurement-focused: explain the use case, recommended product format,
+          key specification questions, target packaging, and compliance documents required.
+        </p>
+        <a class="btn btn-primary" href="/#spec">Build Sourcing Brief</a>
+      </div>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .article-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.75fr);
+    gap: 3rem;
+    align-items: start;
+  }
+
+  time {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #8f4f32;
+    font-weight: 820;
+  }
+
+  .article-body {
+    display: grid;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  .article-body p {
+    margin: 0;
+    color: #64748b;
+    line-height: 1.65;
+  }
+
+  @media (max-width: 920px) {
+    .article-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

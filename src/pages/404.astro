@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Page Not Found | RM Psyllium"
+  description="The requested page could not be found."
+  noindex={true}
+>
+  <section class="section not-found">
+    <div class="container">
+      <p class="eyebrow">404</p>
+      <h1>Page not found.</h1>
+      <p>The page may have moved. Start from the homepage or open the sourcing call section.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="/">Go Home</a>
+        <a class="btn btn-secondary" href="/#book">Book Call</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .not-found {
+    min-height: 62vh;
+    background: #f6f8f4;
+  }
+
+  h1 {
+    margin: 0.45rem 0 1rem;
+    font-size: clamp(2.7rem, 7vw, 5rem);
+    line-height: 1.05;
+  }
+
+  p:not(.eyebrow) {
+    color: #54707e;
+    line-height: 1.62;
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+  }
+</style>

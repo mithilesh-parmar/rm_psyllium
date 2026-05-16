@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Thank You | RM Psyllium"
+  description="Thank you for contacting RM Psyllium."
+  noindex={true}
+>
+  <section class="section thanks">
+    <div class="container thanks-panel panel">
+      <p class="eyebrow">Received</p>
+      <h1>Thank you. Your request is ready for follow-up.</h1>
+      <p>
+        If you requested the import playbook, the download should start automatically.
+        If it does not, use the direct download below.
+      </p>
+      <div class="actions">
+        <a
+          class="btn btn-primary"
+          href="/playbook-rm-psyllium.pdf"
+          download
+          data-auto-download
+          data-track="manual_playbook_download"
+        >
+          Download Playbook
+        </a>
+        <a class="btn btn-secondary" href="/#book">Back to Booking</a>
+      </div>
+    </div>
+  </section>
+  <script src="/scripts/thank-you.js" defer></script>
+</BaseLayout>
+
+<style>
+  .thanks {
+    min-height: 62vh;
+    background: #f6f8f4;
+  }
+
+  .thanks-panel {
+    max-width: 760px;
+    padding: 2rem;
+  }
+
+  h1 {
+    margin: 0.45rem 0 1rem;
+    font-size: clamp(2.4rem, 6vw, 4.4rem);
+    line-height: 1.04;
+  }
+
+  p:not(.eyebrow) {
+    color: #54707e;
+    line-height: 1.62;
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+  }
+</style>

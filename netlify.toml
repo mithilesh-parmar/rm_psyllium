@@ -1,0 +1,21 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[redirects]]
+  from = "/playbook"
+  to = "/resources/playbook"
+  status = 301
+
+[[redirects]]
+  from = "/book"
+  to = "/#book"
+  status = 302
+
+[[redirects]]
+  from = "/*"
+  to = "/404"
+  status = 404

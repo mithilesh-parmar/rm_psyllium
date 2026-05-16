@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Factory walkthrough">
+  <rect width="1200" height="800" fill="#eef3ec"/>
+  <rect x="120" y="132" width="960" height="500" rx="16" fill="#ffffff" stroke="#dfe6dc" stroke-width="4"/>
+  <path d="M180 560h840" stroke="#aab9b1" stroke-width="18" stroke-linecap="round"/>
+  <rect x="220" y="214" width="170" height="270" rx="18" fill="#d9e2de"/>
+  <rect x="440" y="190" width="240" height="320" rx="22" fill="#cfd9d5"/>
+  <rect x="725" y="238" width="250" height="58" rx="29" fill="#7e9392"/>
+  <rect x="740" y="340" width="210" height="58" rx="29" fill="#c6842e"/>
+  <circle cx="560" cy="350" r="94" fill="#ffffff"/>
+  <path d="M512 364c46-7 77-42 91-99 39 47 70 72 123 76-46 69-119 91-214 23Z" fill="#2f6f4e"/>
+</svg>

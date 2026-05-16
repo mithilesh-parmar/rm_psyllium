@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" role="img" aria-label="RM Psyllium product packaging placeholder">
+  <rect width="900" height="900" fill="#f6f8f4"/>
+  <ellipse cx="450" cy="780" rx="265" ry="48" fill="#d9e1d5"/>
+  <path d="M270 135h360l54 642H216Z" fill="#f8f1dc" stroke="#d6c99f" stroke-width="10"/>
+  <path d="M276 135c42 30 87 45 174 45s132-15 174-45" fill="none" stroke="#c6842e" stroke-width="12"/>
+  <rect x="292" y="270" width="316" height="230" rx="12" fill="#ffffff" opacity=".92"/>
+  <path d="M344 395c55-3 96-42 113-111 45 53 82 83 143 87-53 78-139 101-256 24Z" fill="#2f6f4e"/>
+  <text x="450" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="54" font-weight="700" fill="#14213d">RM</text>
+  <text x="450" y="612" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" fill="#54707e">PSYLLIUM HUSK</text>
+  <text x="450" y="666" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#2f6f4e">95 / 98 / 99% PURITY</text>
+</svg>

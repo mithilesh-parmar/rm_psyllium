@@ -1,0 +1,139 @@
+---
+import { copy, getLanguage, industries, products, regions } from '../data/site';
+
+const bookingUrl = import.meta.env.PUBLIC_BOOKING_URL || '';
+const lang = getLanguage(Astro.params.lang);
+const c = copy[lang];
+---
+<form
+  name="spec-builder"
+  method="POST"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+  action="/thank-you?intent=spec"
+  class="spec-form"
+  data-booking-url={bookingUrl}
+>
+  <input type="hidden" name="form-name" value="spec-builder" />
+  <p hidden><label>Bot: <input name="bot-field" /></label></p>
+
+  <div class="form-head">
+    <span class="kicker">{c.specTitle}</span>
+    <strong>Tell us what you need. We will reply with specs, documents, and shipment options.</strong>
+  </div>
+
+  <label>
+    <span>Product</span>
+    <select class="field-control" name="product" required>
+      {products.map((product) => <option value={product.slug}>{product.name}</option>)}
+    </select>
+  </label>
+
+  <div class="two">
+    <label>
+      <span>Grade</span>
+      <select class="field-control" name="grade" required>
+        <option value="99">99% Purity</option>
+        <option value="98">98% Purity</option>
+        <option value="95">95% Purity</option>
+        <option value="feed">Feed / industrial</option>
+      </select>
+    </label>
+
+    <label>
+      <span>Region</span>
+      <select class="field-control" name="region" required>
+        {regions.map((region) => <option value={region.slug}>{region.name}</option>)}
+      </select>
+    </label>
+  </div>
+
+  <label>
+    <span>Application / ICP</span>
+    <select class="field-control" name="industry" required>
+      {industries.map((industry) => <option value={industry.slug}>{industry.name}</option>)}
+    </select>
+  </label>
+
+  <label>
+    <span>Mesh Size <strong id="mesh-display">80 mesh</strong></span>
+    <input class="range" type="range" name="mesh" min="20" max="100" step="20" value="80" />
+  </label>
+
+  <label>
+    <span>Packaging</span>
+    <select class="field-control" name="packaging">
+      <option value="10kg">10kg Bags</option>
+      <option value="15kg">15kg Bags</option>
+      <option value="25kg">25kg Bags</option>
+      <option value="50kg">50kg Bags</option>
+      <option value="1000kg">1000kg Jumbo</option>
+    </select>
+  </label>
+
+  <input type="hidden" name="language" value={lang} />
+  <button type="submit" class="btn btn-primary">Get Spec Summary</button>
+</form>
+<script src="/scripts/spec-builder.js" defer></script>
+
+<style>
+  .spec-form {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .form-head {
+    display: grid;
+    gap: 0.45rem;
+    border-bottom: 1px solid rgba(16, 35, 63, 0.1);
+    padding-bottom: 1.1rem;
+  }
+
+  .form-head strong {
+    font-size: 1.28rem;
+    line-height: 1.25;
+  }
+
+  .two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+  }
+
+  label {
+    display: grid;
+    gap: 0.45rem;
+    color: #253b55;
+    font-size: 0.86rem;
+    font-weight: 820;
+  }
+
+  label span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  label strong {
+    color: #2d6a4f;
+    font-size: 0.8rem;
+  }
+
+  .range {
+    width: 100%;
+    accent-color: #2d6a4f;
+  }
+
+  button {
+    width: 100%;
+    border: 0;
+    cursor: pointer;
+  }
+
+  @media (max-width: 560px) {
+    .two {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

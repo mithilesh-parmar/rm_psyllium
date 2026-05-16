@@ -1,0 +1,102 @@
+---
+import { industries, languages, products, regions } from '../data/site';
+
+const year = new Date().getFullYear();
+---
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="footer-brand" href="/">RM Psyllium</a>
+      <p>Export-ready psyllium ingredients for food, wellness, pharma, and animal nutrition brands.</p>
+      <a href="mailto:sourcing@rmpsyllium.com">sourcing@rmpsyllium.com</a>
+    </div>
+    <div>
+      <h2>Products</h2>
+      {products.slice(0, 5).map((product) => (
+        <a href={`/en/products/${product.slug}/`}>{product.name}</a>
+      ))}
+    </div>
+    <div>
+      <h2>Markets</h2>
+      {regions.slice(0, 3).map((region) => (
+        <a href={`/en/regions/${region.slug}/`}>{region.name}</a>
+      ))}
+      {industries.slice(0, 2).map((industry) => (
+        <a href={`/en/industries/${industry.slug}/`}>{industry.name}</a>
+      ))}
+    </div>
+    <div>
+      <h2>Languages</h2>
+      {languages.map((language) => <a href={`/${language.code}/`}>{language.label}</a>)}
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© {year} RM Psyllium. All rights reserved.</span>
+    <span>Certified, traceable, export-focused supply.</span>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: var(--dark);
+    color: #ffffff;
+    padding: 4rem 0 1.5rem;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.35fr repeat(3, 0.75fr);
+    gap: 2rem;
+  }
+
+  .footer-brand {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 1.35rem;
+    font-weight: 860;
+  }
+
+  .footer p,
+  .footer a,
+  .footer-bottom {
+    color: rgba(255, 255, 255, 0.74);
+  }
+
+  .footer a {
+    display: block;
+    margin: 0.55rem 0;
+  }
+
+  .footer h2 {
+    margin: 0 0 0.8rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+    padding-top: 1.25rem;
+    font-size: 0.84rem;
+  }
+
+  @media (max-width: 860px) {
+    .footer-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-bottom {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
