@@ -1,0 +1,478 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const products = [
+  {
+    name: 'Psyllium Husk',
+    slug: 'psyllium-husk',
+    description: 'Premium grade psyllium husk with superior fiber content for food and nutraceutical applications.',
+    image: '/images/psyllium-husk.jpg'
+  },
+  {
+    name: 'Psyllium Husk Powder',
+    slug: 'psyllium-powder',
+    description: 'Fine mesh psyllium powder for seamless integration in supplements and functional foods.',
+    image: '/images/psyllium-powder.jpg'
+  },
+  {
+    name: 'Psyllium Seeds',
+    slug: 'psyllium-seeds',
+    description: 'Whole psyllium seeds with natural fiber benefits for traditional and modern formulations.',
+    image: '/images/psyllium-seeds.jpg'
+  },
+  {
+    name: 'Organic Psyllium',
+    slug: 'organic-psyllium',
+    description: 'Certified organic psyllium meeting USDA, EU, and international organic standards.',
+    image: '/images/organic-psyllium.jpg'
+  },
+  {
+    name: 'Psyllium Khakha Powder',
+    slug: 'khakha-powder',
+    description: 'Specialty roasted psyllium powder for traditional food and wellness applications.',
+    image: '/images/khakha-powder.jpg'
+  },
+  {
+    name: 'Psyllium Cattle Feed',
+    slug: 'cattle-feed',
+    description: 'Nutrient-rich cattle feed supplement derived from premium psyllium byproducts.',
+    image: '/images/cattle-feed.jpg'
+  }
+];
+
+const industries = [
+  { name: 'Food & Beverage', icon: 'food' },
+  { name: 'Nutraceutical', icon: 'pill' },
+  { name: 'Pharmaceutical', icon: 'medical' },
+  { name: 'Wellness', icon: 'wellness' },
+  { name: 'Organic & Clean Label', icon: 'leaf' },
+  { name: 'Animal Nutrition', icon: 'animal' }
+];
+---
+
+<BaseLayout title="RM Psyllium - Premium Psyllium Ingredients for Global Markets">
+  <Header currentPath="/" />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1>Precision Fiber Solutions<br/>for a Healthier World</h1>
+          <p class="hero-description">
+            RM Psyllium delivers premium-grade psyllium ingredients to global food, 
+            nutraceutical, and pharmaceutical manufacturers. Lab-verified purity, 
+            consistent quality, and reliable supply chain excellence.
+          </p>
+          <div class="hero-actions">
+            <a href="/products" class="btn btn-primary">Explore Products</a>
+            <a href="/contact" class="btn btn-secondary">Request Quote</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image-placeholder">
+            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 2a10 10 0 0 1 10 10"/>
+              <path d="M12 22a10 10 0 0 1-10-10"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+      <div class="container">
+        <p class="trust-label">Trusted by industry leaders worldwide</p>
+        <div class="trust-logos">
+          <div class="logo-placeholder">ISO 9001</div>
+          <div class="logo-placeholder">FSSC 22000</div>
+          <div class="logo-placeholder">USDA Organic</div>
+          <div class="logo-placeholder">EU Organic</div>
+          <div class="logo-placeholder">GMP Certified</div>
+          <div class="logo-placeholder">Halal</div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Value Proposition -->
+    <section class="section value-prop">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>Why Global Buyers Choose RM Psyllium</h2>
+          <p class="section-subtitle">
+            Decades of expertise combined with modern quality systems
+          </p>
+        </div>
+        
+        <div class="grid grid-3">
+          <div class="card value-card">
+            <div class="value-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
+            <h3>Lab-Verified Purity</h3>
+            <p>Every batch undergoes rigorous 14-point quality testing to ensure specifications are met consistently.</p>
+          </div>
+          
+          <div class="card value-card">
+            <div class="value-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <path d="M3 9h18"/>
+                <path d="M9 21V9"/>
+              </svg>
+            </div>
+            <h3>Full Traceability</h3>
+            <p>Complete seed-to-shipment traceability with documentation for regulatory compliance across all markets.</p>
+          </div>
+          
+          <div class="card value-card">
+            <div class="value-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                <line x1="12" y1="22.08" x2="12" y2="12"/>
+              </svg>
+            </div>
+            <h3>Reliable Supply</h3>
+            <p>Strategic inventory management and robust logistics ensure on-time delivery to ports worldwide.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Product Showcase -->
+    <section class="section products-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Product Range</h2>
+          <p class="section-subtitle">
+            Premium psyllium ingredients tailored for diverse applications
+          </p>
+        </div>
+        
+        <div class="grid grid-3">
+          {products.map((product) => (
+            <a href={`/products/${product.slug}`} class="product-card card">
+              <div class="product-image-placeholder">
+                <span>{product.name}</span>
+              </div>
+              <h3>{product.name}</h3>
+              <p>{product.description}</p>
+              <span class="product-link">Learn more →</span>
+            </a>
+          ))}
+        </div>
+        
+        <div class="text-center mt-xl">
+          <a href="/products" class="btn btn-outline">View All Products</a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Industries -->
+    <section class="section-sm industries-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>Serving Multiple Industries</h2>
+          <p class="section-subtitle">
+            Versatile solutions for diverse market requirements
+          </p>
+        </div>
+        
+        <div class="grid grid-3">
+          {industries.map((industry) => (
+            <div class="industry-card">
+              <div class="industry-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="10"/>
+                </svg>
+              </div>
+              <h4>{industry.name}</h4>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="section cta-section">
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-content">
+            <h2>Ready to Discuss Your Requirements?</h2>
+            <p>
+              Our team of ingredient specialists is ready to help you find the perfect 
+              psyllium solution for your application. Request samples or a custom quote today.
+            </p>
+            <div class="cta-actions">
+              <a href="/contact" class="btn btn-primary">Contact Sales</a>
+              <a href="/quality" class="btn btn-secondary">View Certifications</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</BaseLayout>
+
+<style>
+  .hero {
+    padding: var(--space-4xl) 0;
+    background: linear-gradient(135deg, var(--color-bg-primary) 0%, var(--color-bg-tertiary) 100%);
+  }
+  
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3xl);
+    align-items: center;
+  }
+  
+  @media (max-width: 1024px) {
+    .hero-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  }
+  
+  .hero-content h1 {
+    margin-bottom: var(--space-lg);
+  }
+  
+  .hero-description {
+    font-size: 1.125rem;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-xl);
+    max-width: 540px;
+  }
+  
+  @media (max-width: 1024px) {
+    .hero-description {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  .hero-actions {
+    display: flex;
+    gap: var(--space-md);
+  }
+  
+  @media (max-width: 1024px) {
+    .hero-actions {
+      justify-content: center;
+    }
+  }
+  
+  .hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-image-placeholder {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 1;
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border-light);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-accent-primary);
+  }
+  
+  .trust-bar {
+    padding: var(--space-2xl) 0;
+    background: var(--color-bg-secondary);
+    border-top: 1px solid var(--color-border-light);
+    border-bottom: 1px solid var(--color-border-light);
+  }
+  
+  .trust-label {
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-lg);
+  }
+  
+  .trust-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-2xl);
+    flex-wrap: wrap;
+  }
+  
+  .logo-placeholder {
+    padding: var(--space-sm) var(--space-lg);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    background: var(--color-bg-tertiary);
+    border-radius: 4px;
+  }
+  
+  .section-header {
+    margin-bottom: var(--space-2xl);
+  }
+  
+  .section-subtitle {
+    font-size: 1.125rem;
+    color: var(--color-text-secondary);
+    margin-top: var(--space-sm);
+  }
+  
+  .value-card {
+    text-align: left;
+  }
+  
+  .value-icon {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-accent-light);
+    border-radius: 8px;
+    margin-bottom: var(--space-lg);
+    color: var(--color-accent-primary);
+  }
+  
+  .value-card h3 {
+    margin-bottom: var(--space-sm);
+  }
+  
+  .value-card p {
+    margin: 0;
+  }
+  
+  .product-card {
+    display: block;
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+  }
+  
+  .product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .product-image-placeholder {
+    width: 100%;
+    aspect-ratio: 4/3;
+    background: var(--color-bg-tertiary);
+    border-radius: 4px;
+    margin-bottom: var(--space-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--color-text-muted);
+    font-size: 0.875rem;
+  }
+  
+  .product-card h3 {
+    margin-bottom: var(--space-sm);
+  }
+  
+  .product-card p {
+    font-size: 0.9375rem;
+    margin-bottom: var(--space-md);
+  }
+  
+  .product-link {
+    font-family: var(--font-heading);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-accent-primary);
+  }
+  
+  .industries-section {
+    background: var(--color-bg-tertiary);
+  }
+  
+  .industry-card {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-lg);
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border-light);
+    border-radius: 4px;
+  }
+  
+  .industry-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-accent-light);
+    border-radius: 8px;
+    color: var(--color-accent-primary);
+    flex-shrink: 0;
+  }
+  
+  .industry-card h4 {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  .cta-section {
+    padding-bottom: var(--space-4xl);
+  }
+  
+  .cta-card {
+    background: linear-gradient(135deg, var(--color-accent-primary) 0%, var(--color-accent-hover) 100%);
+    border-radius: 8px;
+    padding: var(--space-3xl);
+    text-align: center;
+  }
+  
+  .cta-content {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  
+  .cta-content h2 {
+    color: #FFFFFF;
+    margin-bottom: var(--space-md);
+  }
+  
+  .cta-content p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.125rem;
+    margin-bottom: var(--space-xl);
+  }
+  
+  .cta-actions {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+  }
+  
+  .cta-actions .btn-secondary {
+    border-color: rgba(255, 255, 255, 0.5);
+    color: #FFFFFF;
+  }
+  
+  .cta-actions .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #FFFFFF;
+  }
+</style>

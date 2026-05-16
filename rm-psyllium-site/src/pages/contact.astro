@@ -1,0 +1,294 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Contact Us - RM Psyllium">
+  <Header currentPath="/contact" />
+  
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p class="page-subtitle">
+          Get in touch with our sales team for quotes, samples, or technical inquiries
+        </p>
+      </div>
+    </section>
+    
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-form-card card">
+            <h2>Send Us a Message</h2>
+            <form class="contact-form" action="#" method="POST">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name *</label>
+                  <input type="text" id="firstName" name="firstName" required />
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name *</label>
+                  <input type="text" id="lastName" name="lastName" required />
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone" name="phone" />
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="company">Company *</label>
+                <input type="text" id="company" name="company" required />
+              </div>
+              
+              <div class="form-group">
+                <label for="country">Country *</label>
+                <select id="country" name="country" required>
+                  <option value="">Select Country</option>
+                  <option value="US">United States</option>
+                  <option value="CA">Canada</option>
+                  <option value="MX">Mexico</option>
+                  <option value="BR">Brazil</option>
+                  <option value="DE">Germany</option>
+                  <option value="FR">France</option>
+                  <option value="UK">United Kingdom</option>
+                  <option value="IT">Italy</option>
+                  <option value="ES">Spain</option>
+                  <option value="NL">Netherlands</option>
+                  <option value="PL">Poland</option>
+                  <option value="IN">India</option>
+                  <option value="CN">China</option>
+                  <option value="JP">Japan</option>
+                  <option value="KR">South Korea</option>
+                  <option value="AU">Australia</option>
+                  <option value="OTHER">Other</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="interest">I'm interested in *</label>
+                <select id="interest" name="interest" required>
+                  <option value="">Select Product/Service</option>
+                  <option value="psyllium-husk">Psyllium Husk</option>
+                  <option value="psyllium-powder">Psyllium Husk Powder</option>
+                  <option value="psyllium-seeds">Psyllium Seeds</option>
+                  <option value="organic-psyllium">Organic Psyllium</option>
+                  <option value="khakha-powder">Psyllium Khakha Powder</option>
+                  <option value="cattle-feed">Psyllium Cattle Feed</option>
+                  <option value="custom">Custom Specification</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Please describe your requirements, target specifications, estimated volume, and any questions..."></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary">Send Inquiry</button>
+            </form>
+          </div>
+          
+          <div class="contact-info-sidebar">
+            <div class="info-card card">
+              <h3>Global Sales</h3>
+              <div class="info-item">
+                <strong>Email</strong>
+                <a href="mailto:sales@rmpsyllium.com">sales@rmpsyllium.com</a>
+              </div>
+              <div class="info-item">
+                <strong>Phone</strong>
+                <span>+91 XXXXX XXXXX</span>
+              </div>
+              <div class="info-item">
+                <strong>Hours</strong>
+                <span>Mon-Fri, 9:00-18:00 IST</span>
+              </div>
+            </div>
+            
+            <div class="info-card card">
+              <h3>Regional Offices</h3>
+              <div class="office-item">
+                <strong>India (HQ)</strong>
+                <p>Gujarat, India</p>
+              </div>
+              <div class="office-item">
+                <strong>Europe</strong>
+                <p>Rotterdam, Netherlands</p>
+              </div>
+              <div class="office-item">
+                <strong>North America</strong>
+                <p>Chicago, USA</p>
+              </div>
+            </div>
+            
+            <div class="info-card card">
+              <h3>Certifications</h3>
+              <div class="cert-badges">
+                <span class="cert-badge">ISO 9001</span>
+                <span class="cert-badge">FSSC 22000</span>
+                <span class="cert-badge">USDA Organic</span>
+                <span class="cert-badge">EU Organic</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</BaseLayout>
+
+<style>
+  .page-header {
+    padding: var(--space-4xl) 0 var(--space-2xl);
+    background: linear-gradient(135deg, var(--color-bg-primary) 0%, var(--color-bg-tertiary) 100%);
+    text-align: center;
+  }
+  
+  .page-subtitle {
+    font-size: 1.25rem;
+    color: var(--color-text-secondary);
+    max-width: 640px;
+    margin: var(--space-md) auto 0;
+  }
+  
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: var(--space-2xl);
+  }
+  
+  @media (max-width: 1024px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .contact-form-card h2 {
+    margin-bottom: var(--space-xl);
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+  
+  .form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+  }
+  
+  @media (max-width: 640px) {
+    .form-row {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+  
+  .form-group label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text-primary);
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: var(--space-md);
+    border: 1px solid var(--color-border-light);
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 0.9375rem;
+    color: var(--color-text-primary);
+    background: var(--color-bg-secondary);
+    transition: border-color var(--transition-fast);
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-accent-primary);
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  .contact-info-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+  
+  .info-card h3 {
+    font-size: 1rem;
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-sm);
+    border-bottom: 1px solid var(--color-border-light);
+  }
+  
+  .info-item,
+  .office-item {
+    margin-bottom: var(--space-md);
+  }
+  
+  .info-item strong,
+  .office-item strong {
+    display: block;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-xs);
+  }
+  
+  .info-item a {
+    color: var(--color-text-primary);
+    font-size: 0.9375rem;
+  }
+  
+  .info-item span,
+  .office-item p {
+    font-size: 0.9375rem;
+    color: var(--color-text-secondary);
+  }
+  
+  .cert-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+  }
+  
+  .cert-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: var(--space-xs) var(--space-sm);
+    font-size: 0.75rem;
+    font-weight: 600;
+    font-family: var(--font-heading);
+    color: var(--color-text-muted);
+    background: var(--color-bg-tertiary);
+    border: 1px solid var(--color-border-light);
+    border-radius: 4px;
+  }
+</style>

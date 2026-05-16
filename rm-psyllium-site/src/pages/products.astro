@@ -1,0 +1,299 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const products = [
+  {
+    name: 'Psyllium Husk',
+    slug: 'psyllium-husk',
+    description: 'Premium grade psyllium husk with superior fiber content for food and nutraceutical applications.',
+    specs: {
+      'Fiber Content': '≥ 95%',
+      'Moisture': '≤ 10%',
+      'Ash': '≤ 4%',
+      'Protein': '≤ 3%',
+      'Mesh Size': '8-40 mesh'
+    },
+    applications: ['Bakery', 'Cereals', 'Snack Bars', 'Dietary Supplements']
+  },
+  {
+    name: 'Psyllium Husk Powder',
+    slug: 'psyllium-powder',
+    description: 'Fine mesh psyllium powder for seamless integration in supplements and functional foods.',
+    specs: {
+      'Fiber Content': '≥ 90%',
+      'Moisture': '≤ 8%',
+      'Particle Size': '80-120 mesh',
+      'Viscosity': 'High'
+    },
+    applications: ['Capsules', 'Powder Blends', 'Beverages', 'Instant Mixes']
+  },
+  {
+    name: 'Psyllium Seeds',
+    slug: 'psyllium-seeds',
+    description: 'Whole psyllium seeds with natural fiber benefits for traditional and modern formulations.',
+    specs: {
+      'Purity': '≥ 98%',
+      'Moisture': '≤ 10%',
+      'Foreign Matter': '≤ 1%'
+    },
+    applications: ['Traditional Medicine', 'Seed Processing', 'Export']
+  },
+  {
+    name: 'Organic Psyllium',
+    slug: 'organic-psyllium',
+    description: 'Certified organic psyllium meeting USDA, EU, and international organic standards.',
+    specs: {
+      'Certification': 'USDA Organic, EU Organic',
+      'Fiber Content': '≥ 95%',
+      'Pesticide Residue': 'Non-detectable'
+    },
+    applications: ['Organic Foods', 'Clean Label Products', 'Natural Supplements']
+  },
+  {
+    name: 'Psyllium Khakha Powder',
+    slug: 'khakha-powder',
+    description: 'Specialty roasted psyllium powder for traditional food and wellness applications.',
+    specs: {
+      'Type': 'Roasted',
+      'Flavor': 'Nutty, Toasted',
+      'Color': 'Light Brown'
+    },
+    applications: ['Traditional Foods', 'Wellness Drinks', 'Regional Specialties']
+  },
+  {
+    name: 'Psyllium Cattle Feed',
+    slug: 'cattle-feed',
+    description: 'Nutrient-rich cattle feed supplement derived from premium psyllium byproducts.',
+    specs: {
+      'Protein': '≥ 12%',
+      'Fiber': '≥ 45%',
+      'Fat': '≥ 3%'
+    },
+    applications: ['Dairy Cattle', 'Beef Cattle', 'Livestock Feed']
+  }
+];
+---
+
+<BaseLayout title="Our Products - RM Psyllium">
+  <Header currentPath="/products" />
+  
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Our Products</h1>
+        <p class="page-subtitle">
+          Premium psyllium ingredients engineered for quality and consistency
+        </p>
+      </div>
+    </section>
+    
+    <section class="section">
+      <div class="container">
+        <div class="product-grid">
+          {products.map((product) => (
+            <article class="product-detail-card card">
+              <div class="product-header">
+                <h2>{product.name}</h2>
+                <p class="product-desc">{product.description}</p>
+              </div>
+              
+              <div class="product-specs">
+                <h3>Specifications</h3>
+                <table class="specs-table">
+                  <tbody>
+                    {Object.entries(product.specs).map(([key, value]) => (
+                      <tr>
+                        <td class="spec-label">{key}</td>
+                        <td class="spec-value">{value}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              
+              <div class="product-applications">
+                <h3>Applications</h3>
+                <ul class="applications-list">
+                  {product.applications.map((app) => (
+                    <li>{app}</li>
+                  ))}
+                </ul>
+              </div>
+              
+              <div class="product-actions">
+                <a href="/contact" class="btn btn-primary">Request Sample</a>
+                <a href="/contact" class="btn btn-secondary">Get Quote</a>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+    
+    <section class="section-sm cta-section">
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-content">
+            <h2>Need Custom Specifications?</h2>
+            <p>
+              We can tailor particle size, packaging, and specifications to meet 
+              your exact requirements. Contact our technical team to discuss custom solutions.
+            </p>
+            <a href="/contact" class="btn btn-primary">Contact Technical Sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</BaseLayout>
+
+<style>
+  .page-header {
+    padding: var(--space-4xl) 0 var(--space-2xl);
+    background: linear-gradient(135deg, var(--color-bg-primary) 0%, var(--color-bg-tertiary) 100%);
+    text-align: center;
+  }
+  
+  .page-subtitle {
+    font-size: 1.25rem;
+    color: var(--color-text-secondary);
+    max-width: 640px;
+    margin: var(--space-md) auto 0;
+  }
+  
+  .product-grid {
+    display: grid;
+    gap: var(--space-2xl);
+  }
+  
+  .product-detail-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+  }
+  
+  @media (max-width: 768px) {
+    .product-detail-card {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .product-header {
+    grid-column: 1 / -1;
+    padding-bottom: var(--space-lg);
+    border-bottom: 1px solid var(--color-border-light);
+  }
+  
+  .product-header h2 {
+    margin-bottom: var(--space-sm);
+  }
+  
+  .product-desc {
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+  
+  .product-specs,
+  .product-applications {
+    padding: var(--space-lg);
+    background: var(--color-bg-tertiary);
+    border-radius: 4px;
+  }
+  
+  .product-specs h3,
+  .product-applications h3 {
+    font-size: 1rem;
+    margin-bottom: var(--space-md);
+    color: var(--color-text-primary);
+  }
+  
+  .specs-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .specs-table tr {
+    border-bottom: 1px solid var(--color-border-light);
+  }
+  
+  .specs-table tr:last-child {
+    border-bottom: none;
+  }
+  
+  .spec-label {
+    padding: var(--space-sm) 0;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    width: 50%;
+  }
+  
+  .spec-value {
+    padding: var(--space-sm) 0;
+    color: var(--color-text-primary);
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+  }
+  
+  .applications-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-sm);
+  }
+  
+  @media (max-width: 768px) {
+    .applications-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .applications-list li {
+    padding: var(--space-sm) var(--space-md);
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border-light);
+    border-radius: 4px;
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+  }
+  
+  .product-actions {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: var(--space-md);
+    padding-top: var(--space-lg);
+    border-top: 1px solid var(--color-border-light);
+  }
+  
+  @media (max-width: 768px) {
+    .product-actions {
+      flex-direction: column;
+    }
+  }
+  
+  .cta-card {
+    background: linear-gradient(135deg, var(--color-accent-primary) 0%, var(--color-accent-hover) 100%);
+    border-radius: 8px;
+    padding: var(--space-3xl);
+    text-align: center;
+  }
+  
+  .cta-content {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  
+  .cta-content h2 {
+    color: #FFFFFF;
+    margin-bottom: var(--space-md);
+  }
+  
+  .cta-content p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: var(--space-xl);
+  }
+</style>
