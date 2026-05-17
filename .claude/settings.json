@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e ' *)",
+      "WebFetch(domain:www.agrocrops.com)",
+      "Bash(curl -sL \"https://www.agrocrops.com/in-en\" --max-time 15 -A \"Mozilla/5.0\")",
+      "Bash(grep -E \"\\(font-family|color:|background|font-size|#[0-9a-fA-F]{3,6}|rgba|rgb\\\\\\(|href.*css|<h[1-6]|<nav|class=\\)\")",
+      "Bash(curl -sL \"https://www.agrocrops.com/front/css/style.css\" --max-time 15 -A \"Mozilla/5.0\")",
+      "Bash(grep -E \"#[0-9a-fA-F]{3,6}\")",
+      "Bash(xargs ls -lh)",
+      "Bash(awk '{print $9}')",
+      "Bash(mkdir -p /Users/mithileshparmar/Development/sancor_systems/rm_psyllium/src/pages/\\\\[lang\\\\]/faq)",
+      "Bash(mkdir -p /Users/mithileshparmar/Development/sancor_systems/rm_psyllium/src/pages/\\\\[lang\\\\]/contact)",
+      "Bash(mkdir -p /Users/mithileshparmar/Development/sancor_systems/rm_psyllium/src/pages/\\\\[lang\\\\]/quality)",
+      "Bash(mkdir -p /Users/mithileshparmar/Development/sancor_systems/rm_psyllium/src/pages/\\\\[lang\\\\]/insights)",
+      "Bash(mkdir -p /Users/mithileshparmar/Development/sancor_systems/rm_psyllium/src/pages/\\\\[lang\\\\]/blog)",
+      "Bash(mkdir -p \"/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/src/pages/[lang]/products/[product]\")",
+      "Bash(nvm use *)",
+      "Bash(git -C /Users/mithileshparmar/Development/sancor_systems/rm_psyllium diff HEAD -- src/pages/[lang]/products/[product].astro)",
+      "Bash(xargs ls -la)",
+      "WebFetch(domain:www.google.com)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "Bash(nvm ls *)"
+    ],
+    "additionalDirectories": [
+      "/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/src/pages/[lang]",
+      "/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/src/pages/[lang]/products"
+    ]
+  }
+}

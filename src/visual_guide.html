@@ -1,0 +1,2394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RM Psyllium — Visual Design Direction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --font-display: 'Cormorant Garamond', Georgia, serif;
+            --font-body: 'DM Sans', system-ui, sans-serif;
+            --font-mono: 'DM Mono', monospace;
+
+            /* Palette A: Pure Botanical */
+            --a-bg: #FAFAF8;
+            --a-surface: #F2F0EB;
+            --a-rule: #E0DDD6;
+            --a-muted: #9B9890;
+            --a-text: #1B1B19;
+            --a-accent: #3A6349;
+            --a-accent2: #A4BFAE;
+            --a-accent3: #D6E4DC;
+            --a-warm: #EDE8DF;
+
+            /* Palette B: Chalk & Ink */
+            --b-bg: #F7F6F3;
+            --b-surface: #EDEAE3;
+            --b-rule: #DDDAD2;
+            --b-muted: #9A9790;
+            --b-text: #18181A;
+            --b-accent: #1D3A6B;
+            --b-accent2: #6B8FBA;
+            --b-accent3: #D5E2EF;
+            --b-warm: #E8E4DA;
+
+            /* Palette C: Mineral Linen */
+            --c-bg: #F8F7F4;
+            --c-surface: #EDEBE5;
+            --c-rule: #DEDAD2;
+            --c-muted: #98958E;
+            --c-text: #1C1C1A;
+            --c-accent: #5A4F3A;
+            --c-accent2: #A8A090;
+            --c-accent3: #E0D9CC;
+            --c-warm: #EBE6DC;
+            --c-gold: #C4A252;
+
+            --page-bg: #F4F3EF;
+            --page-text: #1B1B19;
+            --rule: #E0DDD6;
+            --muted: #88857E;
+            --label-size: 10px;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--page-bg);
+            color: var(--page-text);
+            font-family: var(--font-body);
+            font-size: 15px;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ── COVER ── */
+        .cover {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 5vw;
+            background: #1B1B19;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cover::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse 70% 60% at 80% 30%, #3A6349 0%, transparent 60%);
+            opacity: 0.35;
+        }
+
+        .cover-label {
+            font-family: var(--font-mono);
+            font-size: 10px;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: #9B9890;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .cover-title {
+            font-family: var(--font-display);
+            font-size: clamp(3.5rem, 9vw, 7.5rem);
+            font-weight: 300;
+            line-height: 0.95;
+            color: #F5F4F0;
+            letter-spacing: -0.02em;
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+
+        .cover-title em {
+            font-style: italic;
+            color: #A4BFAE;
+        }
+
+        .cover-sub {
+            font-family: var(--font-body);
+            font-size: 13px;
+            color: #6B6862;
+            font-weight: 300;
+            letter-spacing: 0.04em;
+            position: relative;
+            max-width: 420px;
+            line-height: 1.8;
+            padding-bottom: 5vw;
+            border-bottom: 1px solid #2E2E2C;
+        }
+
+        .cover-meta {
+            display: flex;
+            gap: 3rem;
+            margin-top: 2rem;
+            position: relative;
+        }
+
+        .cover-meta-item {}
+
+        .cover-meta-item .label {
+            font-family: var(--font-mono);
+            font-size: 9px;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: #4A4A48;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .cover-meta-item .val {
+            font-size: 12px;
+            color: #6B6862;
+        }
+
+        /* ── LAYOUT ── */
+        .page {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 5vw;
+        }
+
+        .section {
+            padding: 7rem 0 5rem;
+            border-bottom: 1px solid var(--rule);
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section-label {
+            font-family: var(--font-mono);
+            font-size: 9px;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .section-label::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--rule);
+            max-width: 120px;
+        }
+
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-weight: 300;
+            line-height: 1.1;
+            letter-spacing: -0.01em;
+            margin-bottom: 3rem;
+            max-width: 700px;
+        }
+
+        .section-title em {
+            font-style: italic;
+        }
+
+        /* ── PALETTE CARDS ── */
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2px;
+            margin-bottom: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .palette-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .palette-card {
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .palette-swatch-row {
+            display: flex;
+            height: 180px;
+        }
+
+        .swatch {
+            flex: 1;
+            position: relative;
+        }
+
+        .swatch-hex {
+            position: absolute;
+            bottom: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: var(--font-mono);
+            font-size: 8px;
+            letter-spacing: 0.05em;
+            white-space: nowrap;
+            color: inherit;
+            opacity: 0.6;
+            writing-mode: vertical-rl;
+        }
+
+        .palette-info {
+            padding: 1.5rem;
+        }
+
+        .palette-name {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 0.4rem;
+        }
+
+        .palette-desc {
+            font-size: 12px;
+            line-height: 1.6;
+            color: var(--muted);
+            margin-bottom: 1rem;
+        }
+
+        .palette-usecase {
+            font-size: 11px;
+            font-family: var(--font-mono);
+            letter-spacing: 0.08em;
+            color: var(--muted);
+            border-top: 1px solid var(--rule);
+            padding-top: 0.75rem;
+            margin-top: 0.75rem;
+        }
+
+        .chip-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 0.5rem;
+        }
+
+        .chip {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 10px 4px 6px;
+            border: 1px solid var(--rule);
+            border-radius: 3px;
+            font-size: 11px;
+            font-family: var(--font-mono);
+            color: var(--muted);
+        }
+
+        .chip-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 2px;
+            flex-shrink: 0;
+        }
+
+        .chip-name {
+            color: var(--page-text);
+        }
+
+        /* ── TYPE SPECIMENS ── */
+        .type-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 640px) {
+            .type-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .type-specimen {
+            border-top: 1px solid var(--rule);
+            padding-top: 1.5rem;
+        }
+
+        .type-label {
+            font-family: var(--font-mono);
+            font-size: 9px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 0.75rem;
+            display: block;
+        }
+
+        .type-sample-display {
+            font-family: var(--font-display);
+            font-size: 3.5rem;
+            font-weight: 300;
+            line-height: 1.0;
+            letter-spacing: -0.02em;
+            color: var(--page-text);
+            margin-bottom: 0.5rem;
+        }
+
+        .type-sample-display em {
+            font-style: italic;
+            color: #3A6349;
+        }
+
+        .type-sample-heading {
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            line-height: 1.3;
+            margin-bottom: 0.5rem;
+        }
+
+        .type-sample-body {
+            font-family: var(--font-body);
+            font-size: 14px;
+            line-height: 1.75;
+            color: #6B6862;
+            font-weight: 300;
+            max-width: 340px;
+        }
+
+        .type-sample-label {
+            font-family: var(--font-mono);
+            font-size: 10px;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: #9B9890;
+        }
+
+        .type-note {
+            font-size: 12px;
+            color: var(--muted);
+            margin-top: 0.5rem;
+            font-style: italic;
+            font-family: var(--font-display);
+        }
+
+        /* ── SITE STRUCTURE ── */
+        .structure-block {
+            margin-bottom: 2rem;
+        }
+
+        .structure-block+.structure-block {
+            border-top: 1px solid var(--rule);
+            padding-top: 2rem;
+        }
+
+        .section-index {
+            display: inline-block;
+            font-family: var(--font-mono);
+            font-size: 9px;
+            letter-spacing: 0.12em;
+            color: var(--muted);
+            background: var(--rule);
+            padding: 3px 8px;
+            border-radius: 2px;
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+        }
+
+        .structure-name {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            font-weight: 300;
+            letter-spacing: -0.01em;
+            margin-bottom: 0.3rem;
+        }
+
+        .structure-desc {
+            font-size: 13px;
+            color: var(--muted);
+            margin-bottom: 1rem;
+            max-width: 600px;
+            line-height: 1.7;
+        }
+
+        .structure-elements {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .element-tag {
+            font-size: 11px;
+            font-family: var(--font-mono);
+            padding: 4px 10px;
+            border: 1px solid var(--rule);
+            border-radius: 2px;
+            color: var(--muted);
+        }
+
+        .element-tag.accent {
+            border-color: #A4BFAE;
+            color: #3A6349;
+            background: #F0F5F2;
+        }
+
+        /* ── COPY BLOCK ── */
+        .copy-block {
+            background: #1B1B19;
+            border-radius: 6px;
+            padding: 4rem;
+            position: relative;
+            overflow: hidden;
+            margin-top: 2rem;
+        }
+
+        .copy-block::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, #3A6349 0%, transparent 70%);
+            opacity: 0.15;
+            transform: translate(30%, -30%);
+        }
+
+        .copy-section {
+            margin-bottom: 3rem;
+            border-left: 1px solid #2E2E2C;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        .copy-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .copy-tag {
+            font-family: var(--font-mono);
+            font-size: 9px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: #4A4A48;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .copy-headline {
+            font-family: var(--font-display);
+            font-size: clamp(1.8rem, 3vw, 3rem);
+            font-weight: 300;
+            color: #F5F4F0;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+            letter-spacing: -0.01em;
+        }
+
+        .copy-headline em {
+            font-style: italic;
+            color: #A4BFAE;
+        }
+
+        .copy-body {
+            font-size: 13px;
+            line-height: 1.8;
+            color: #5A5A58;
+            max-width: 540px;
+            font-weight: 300;
+        }
+
+        .copy-stat-row {
+            display: flex;
+            gap: 3rem;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #2A2A28;
+        }
+
+        .copy-stat {}
+
+        .copy-stat-num {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: #A4BFAE;
+            line-height: 1;
+            display: block;
+        }
+
+        .copy-stat-label {
+            font-size: 11px;
+            color: #4A4A48;
+            font-family: var(--font-mono);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        /* ── COMPONENT REFERENCE ── */
+        .component-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 2px;
+            margin-top: 2rem;
+        }
+
+        .component-card {
+            background: #F2F0EB;
+            padding: 2rem;
+            border-radius: 2px;
+        }
+
+        .component-card-label {
+            font-family: var(--font-mono);
+            font-size: 9px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        /* Button demos */
+        .btn-demo {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0 20px;
+            height: 38px;
+            font-size: 12px;
+            font-family: var(--font-body);
+            letter-spacing: 0.06em;
+            font-weight: 400;
+            cursor: default;
+            border-radius: 2px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .btn-primary {
+            background: #3A6349;
+            color: #F5F4F0;
+            border: 1px solid #3A6349;
+        }
+
+        .btn-ghost {
+            background: transparent;
+            color: #1B1B19;
+            border: 1px solid #1B1B19;
+        }
+
+        .btn-text {
+            background: transparent;
+            color: #3A6349;
+            border: none;
+            padding: 0;
+            gap: 6px;
+        }
+
+        .btn-arrow {
+            font-size: 14px;
+        }
+
+        /* Nav demo */
+        .nav-demo {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            padding: 1rem 1.5rem;
+            background: white;
+            border: 1px solid var(--rule);
+            border-radius: 2px;
+            margin-bottom: 1rem;
+        }
+
+        .nav-logo-demo {
+            font-family: var(--font-display);
+            font-size: 1rem;
+            font-weight: 300;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            flex: 1;
+        }
+
+        .nav-item {
+            font-size: 11px;
+            letter-spacing: 0.08em;
+            color: var(--muted);
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        .nav-cta {
+            font-size: 10px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            padding: 6px 14px;
+            border: 1px solid #1B1B19;
+            border-radius: 2px;
+            font-weight: 400;
+        }
+
+        /* Card demo */
+        .product-card-demo {
+            border: 1px solid var(--rule);
+            border-radius: 2px;
+            overflow: hidden;
+            background: white;
+        }
+
+        .product-card-image {
+            height: 120px;
+            background: linear-gradient(135deg, #E8E4DC, #D6E4DC);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-display);
+            font-size: 0.75rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: #9B9890;
+        }
+
+        .product-card-body {
+            padding: 1.25rem;
+        }
+
+        .product-card-tag {
+            font-family: var(--font-mono);
+            font-size: 9px;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: #3A6349;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .product-card-name {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            font-weight: 300;
+            margin-bottom: 0.3rem;
+            letter-spacing: -0.01em;
+        }
+
+        .product-card-specs {
+            font-size: 11px;
+            color: var(--muted);
+            font-family: var(--font-mono);
+            letter-spacing: 0.05em;
+        }
+
+        .product-card-footer {
+            padding: 0.75rem 1.25rem;
+            border-top: 1px solid var(--rule);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 11px;
+            color: var(--muted);
+            font-family: var(--font-mono);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        /* Stat bar */
+        .stat-bar {
+            display: flex;
+            gap: 1px;
+            margin-top: 1.5rem;
+        }
+
+        .stat-cell {
+            flex: 1;
+            padding: 1rem 1.25rem;
+            background: #E8E4DC;
+            border-radius: 2px;
+        }
+
+        .stat-num {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            font-weight: 300;
+            display: block;
+            letter-spacing: -0.02em;
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+
+        .stat-lbl {
+            font-size: 10px;
+            font-family: var(--font-mono);
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+
+        /* Motion reference */
+        .motion-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--rule);
+        }
+
+        .motion-item:last-child {
+            border-bottom: none;
+        }
+
+        .motion-code {
+            font-family: var(--font-mono);
+            font-size: 10px;
+            color: #3A6349;
+            background: #F0F5F2;
+            border: 1px solid #A4BFAE;
+            padding: 4px 10px;
+            border-radius: 2px;
+            flex-shrink: 0;
+            min-width: 180px;
+            line-height: 1.8;
+        }
+
+        .motion-desc {}
+
+        .motion-name {
+            font-size: 13px;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .motion-detail {
+            font-size: 12px;
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        /* Avoid list */
+        .avoid-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1px;
+            margin-top: 2rem;
+        }
+
+        .avoid-item {
+            padding: 1.5rem;
+            background: #F2F0EB;
+            border-radius: 2px;
+        }
+
+        .avoid-icon {
+            width: 24px;
+            height: 24px;
+            background: #E8D9D9;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0.75rem;
+            font-size: 12px;
+            color: #9B4444;
+        }
+
+        .avoid-title {
+            font-size: 13px;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .avoid-desc {
+            font-size: 11px;
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        /* ── IMAGERY DIRECTION ── */
+        .imagery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2px;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 600px) {
+            .imagery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .imagery-card {
+            aspect-ratio: 4/5;
+            border-radius: 2px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 1.5rem;
+            overflow: hidden;
+        }
+
+        .img-a {
+            background: linear-gradient(170deg, #D6E4DC 0%, #A4BFAE 50%, #5A8A6A 100%);
+        }
+
+        .img-b {
+            background: linear-gradient(170deg, #E8E4DC 0%, #C4B8A0 50%, #8A7A62 100%);
+        }
+
+        .img-c {
+            background: linear-gradient(170deg, #E0D9CC 0%, #B8B0A0 50%, #6A6258 100%);
+        }
+
+        .imagery-caption {
+            position: relative;
+        }
+
+        .imagery-type {
+            font-family: var(--font-mono);
+            font-size: 9px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 4px;
+            display: block;
+        }
+
+        .imagery-name {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: white;
+            line-height: 1.2;
+        }
+
+        /* ── PRODUCT PAGE STRUCTURE ── */
+        .page-wireframe {
+            border: 1px solid var(--rule);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 2rem;
+        }
+
+        .wire-header {
+            background: #1B1B19;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .wire-logo {
+            font-family: var(--font-display);
+            font-size: 0.8rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: #F5F4F0;
+            font-weight: 300;
+        }
+
+        .wire-nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .wire-nav span {
+            font-size: 9px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #4A4A48;
+            font-family: var(--font-mono);
+        }
+
+        .wire-hero {
+            padding: 5rem 3rem;
+            background: #F5F4F0;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        @media (max-width: 600px) {
+            .wire-hero {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                padding: 2rem 1.5rem;
+            }
+        }
+
+        .wire-hero-eyebrow {
+            font-family: var(--font-mono);
+            font-size: 9px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: #3A6349;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .wire-hero-title {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3.2rem);
+            font-weight: 300;
+            line-height: 1.05;
+            letter-spacing: -0.02em;
+            margin-bottom: 1.5rem;
+        }
+
+        .wire-hero-title em {
+            font-style: italic;
+            color: #3A6349;
+        }
+
+        .wire-hero-body {
+            font-size: 13px;
+            color: var(--muted);
+            line-height: 1.75;
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+
+        .wire-cta-row {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .wire-image-block {
+            background: linear-gradient(135deg, #D6E4DC, #A4BFAE);
+            aspect-ratio: 4/3;
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-mono);
+            font-size: 9px;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: #5A8A6A;
+            opacity: 0.9;
+        }
+
+        .wire-section {
+            padding: 3rem;
+            border-top: 1px solid var(--rule);
+        }
+
+        .wire-section-label {
+            font-family: var(--font-mono);
+            font-size: 9px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .wire-spec-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1px;
+        }
+
+        @media (max-width: 600px) {
+            .wire-spec-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .wire-spec-cell {
+            background: #F2F0EB;
+            padding: 1.25rem;
+            border-radius: 2px;
+        }
+
+        .wire-spec-key {
+            font-family: var(--font-mono);
+            font-size: 9px;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--muted);
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .wire-spec-val {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        .wire-tabs {
+            display: flex;
+            gap: 1px;
+            padding: 1.5rem 3rem 0;
+            background: #F2F0EB;
+        }
+
+        .wire-tab {
+            padding: 0.6rem 1.25rem;
+            font-size: 11px;
+            font-family: var(--font-mono);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--muted);
+            border-radius: 2px 2px 0 0;
+            background: #E8E4DC;
+        }
+
+        .wire-tab.active {
+            background: white;
+            color: var(--page-text);
+        }
+
+        /* Quality page */
+        .quality-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2px;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 600px) {
+            .quality-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .quality-cell {
+            background: #F2F0EB;
+            padding: 2rem;
+            border-radius: 2px;
+        }
+
+        .quality-cert {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px 12px;
+            border: 1px solid #A4BFAE;
+            border-radius: 2px;
+            margin-bottom: 1rem;
+            font-size: 10px;
+            font-family: var(--font-mono);
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: #3A6349;
+            background: #F0F5F2;
+        }
+
+        .quality-cert-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #3A6349;
+            flex-shrink: 0;
+        }
+
+        .quality-title {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            font-weight: 300;
+            margin-bottom: 0.5rem;
+        }
+
+        .quality-desc {
+            font-size: 12px;
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        /* ── UTIL ── */
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        @media (max-width: 640px) {
+            .two-col {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .rule {
+            height: 1px;
+            background: var(--rule);
+            margin: 2rem 0;
+        }
+
+        .note {
+            font-size: 12px;
+            color: var(--muted);
+            border-left: 2px solid var(--rule);
+            padding-left: 1rem;
+            font-style: italic;
+            font-family: var(--font-display);
+            margin-top: 1rem;
+            line-height: 1.6;
+        }
+
+        .toc {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1px;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 600px) {
+            .toc {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .toc-item {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1.25rem 1.5rem;
+            background: #F2F0EB;
+            border-radius: 2px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .toc-num {
+            font-family: var(--font-mono);
+            font-size: 9px;
+            color: var(--muted);
+            min-width: 20px;
+        }
+
+        .toc-name {
+            font-size: 13px;
+            font-weight: 400;
+        }
+
+        .toc-arrow {
+            margin-left: auto;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        /* Spacer */
+        .spacer {
+            padding: 2rem 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ═══════════════════════════════════
+     COVER
+═══════════════════════════════════ -->
+    <div class="cover">
+        <div class="cover-label">RM Psyllium — Visual Design Direction v1.0</div>
+        <h1 class="cover-title">Where <em>nature</em><br>meets precision</h1>
+        <p class="cover-sub">A premium ingredient brand for the global procurement market. Full visual direction, color
+            systems, typography, page architecture, and copy.</p>
+        <div class="cover-sub"
+            style="margin-top:1.5rem; padding-bottom:0; border-bottom:none; color:#4A4A48; font-size:11px; font-family:monospace; letter-spacing:0.08em;">
+            PSYLLIUM HUSK · POWDER · ORGANIC · SEEDS · CATTLE FEED · KHAKHA</div>
+        <div class="cover-meta">
+            <div class="cover-meta-item">
+                <span class="label">Client</span>
+                <span class="val">RM Psyllium</span>
+            </div>
+            <div class="cover-meta-item">
+                <span class="label">Market</span>
+                <span class="val">Food / Nutra / Pharma / Animal</span>
+            </div>
+            <div class="cover-meta-item">
+                <span class="label">Stack</span>
+                <span class="val">Astro · Static SEO · i18n</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════
+     TABLE OF CONTENTS
+═══════════════════════════════════ -->
+    <div class="page">
+        <div class="section">
+            <div class="section-label">Contents</div>
+            <h2 class="section-title">Ten directions, one <em>coherent</em> identity</h2>
+            <div class="toc">
+                <a href="#palettes" class="toc-item"><span class="toc-num">01</span><span class="toc-name">Color
+                        Palettes</span><span class="toc-arrow">→</span></a>
+                <a href="#typography" class="toc-item"><span class="toc-num">02</span><span class="toc-name">Typography
+                        Direction</span><span class="toc-arrow">→</span></a>
+                <a href="#homepage" class="toc-item"><span class="toc-num">03</span><span class="toc-name">Homepage
+                        Section Structure</span><span class="toc-arrow">→</span></a>
+                <a href="#imagery" class="toc-item"><span class="toc-num">04</span><span class="toc-name">Imagery Style
+                        Direction</span><span class="toc-arrow">→</span></a>
+                <a href="#components" class="toc-item"><span class="toc-num">05</span><span class="toc-name">UI
+                        Component Direction</span><span class="toc-arrow">→</span></a>
+                <a href="#motion" class="toc-item"><span class="toc-num">06</span><span class="toc-name">Motion &amp;
+                        Microinteraction</span><span class="toc-arrow">→</span></a>
+                <a href="#copy" class="toc-item"><span class="toc-num">07</span><span class="toc-name">Sample Homepage
+                        Copy</span><span class="toc-arrow">→</span></a>
+                <a href="#productpage" class="toc-item"><span class="toc-num">08</span><span class="toc-name">Product
+                        Page Structure</span><span class="toc-arrow">→</span></a>
+                <a href="#qualitypage" class="toc-item"><span class="toc-num">09</span><span class="toc-name">Quality
+                        &amp; Compliance Page</span><span class="toc-arrow">→</span></a>
+                <a href="#avoid" class="toc-item"><span class="toc-num">10</span><span class="toc-name">What to
+                        Avoid</span><span class="toc-arrow">→</span></a>
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════════════
+       01 — COLOR PALETTES
+  ═══════════════════════════════════ -->
+        <div class="section" id="palettes">
+            <div class="section-label">01 — Color Palettes</div>
+            <h2 class="section-title">Three distinct directions for a <em>premium</em> ingredient brand</h2>
+            <p style="font-size:13px; color:var(--muted); max-width:620px; line-height:1.8; margin-bottom:3rem;">All
+                three avoid brown/orange, dark navy, and generic green eco-clichés. Each is clean, spacious, and suited
+                for high-trust procurement buyers in food, pharma, and nutraceutical markets.</p>
+
+            <div class="palette-grid">
+
+                <!-- PALETTE A -->
+                <div class="palette-card">
+                    <div class="palette-swatch-row">
+                        <div class="swatch" style="background:#FAFAF8; flex:1.4;"><span class="swatch-hex"
+                                style="color:#9B9890;">#FAFAF8</span></div>
+                        <div class="swatch" style="background:#E0DDD6;"><span class="swatch-hex"
+                                style="color:#6B6862;">#E0DDD6</span></div>
+                        <div class="swatch" style="background:#A4BFAE;"><span class="swatch-hex"
+                                style="color:#3A6349;">#A4BFAE</span></div>
+                        <div class="swatch" style="background:#3A6349; flex:0.8;"><span class="swatch-hex"
+                                style="color:#A4BFAE;">#3A6349</span></div>
+                        <div class="swatch" style="background:#1B1B19; flex:0.6;"><span class="swatch-hex"
+                                style="color:#4A4A48;">#1B1B19</span></div>
+                    </div>
+                    <div class="palette-info" style="background:#FAFAF8; border:1px solid #E0DDD6;">
+                        <div class="palette-name" style="color:#1B1B19;">A — Pure Botanical</div>
+                        <p class="palette-desc">Warm white canvas, sage botanical accent. Like a high-end ingredients
+                            technical brochure. The green reads as botanical science — not eco-branding. Light, airy,
+                            ultra-clean.</p>
+                        <div class="chip-row">
+                            <div class="chip">
+                                <div class="chip-dot" style="background:#FAFAF8; border:1px solid #E0DDD6;"></div><span
+                                    class="chip-name">#FAFAF8</span> <span>Page BG</span>
+                            </div>
+                            <div class="chip">
+                                <div class="chip-dot" style="background:#F2F0EB; border:1px solid #E0DDD6;"></div><span
+                                    class="chip-name">#F2F0EB</span> <span>Surface</span>
+                            </div>
+                            <div class="chip">
+                                <div class="chip-dot" style="background:#E0DDD6;"></div><span
+                                    class="chip-name">#E0DDD6</span> <span>Rules</span>
+                            </div>
+                            <div class="chip">
+                                <div class="chip-dot" style="background:#9B9890;"></div><span
+                                    class="chip-name">#9B9890</span> <span>Muted</span>
+                            </div>
+                            <div class="chip">
+                                <div class="chip-dot" style="background:#1B1B19;"></div><span
+                                    class="chip-name">#1B1B19</span> <span>Text</span>
+                            </div>
+                            <div class="chip">
+                                <div class="chip-dot" style="background:#3A6349;"></div><span
+                                    class="chip-name">#3A6349</span> <span>Accent</span>
+                            </div>
+                            <div class="chip">
+                                <div class="chip-dot" style="background:#A4BFAE;"></div><span
+                                    class="chip-name">#A4BFAE</span> <span>Sage mid</span>
+                            </div>
+                            <div class="chip">
+                                <div class="chip-dot" style="background:#D6E4DC;"></div><span
+                                    class="chip-name">#D6E4DC</span> <span>Sage light</span>
+                            </div>
+                        </div>
+                        <div class="palette-usecase">Recommended for: Food & Nutraceutical, Organic segment, Primary
+                            homepage</div>
+                    </div>
+                </div>
+
+                <!-- PALETTE B -->
+                <div class="palette-card">
+                    <div class="palette-swatch-row">
+                        <div class="swatch" style="background:#F7F6F3; flex:1.4;"><span class="swatch-hex"
+                                style="color:#9A9790;">#F7F6F3</span></div>
+                        <div class="swatch" style="background:#DDDAD2;"><span class="swatch-hex"
+                                style="color:#6B6862;">#DDDAD2</span></div>
+                        <div class="swatch" style="background:#6B8FBA;"><span class="swatch-hex"
+                                style="color:#1D3A6B;">#6B8FBA</span></div>
+                        <div class="swatch" style="background:#1D3A6B; flex:0.8;"><span class="swatch-hex"
+                                style="color:#6B8FBA;">#1D3A6B</span></div>
+                        <div class="swatch" style="background:#18181A; flex:0.6;"><span class="swatch-hex"
+                                style="color:#3A3A3C;">#18181A</span></div>
+                    </div>
+                    <div class="palette-info" style="background:#F7F6F3; border:1px solid #DDDAD2;">
+                        <div class="palette-name" style="color:#18181A;">B — Chalk & Ink</div>
+                        <p class="palette-desc">Off-white with deep Prussian blue. Clinical, precise,
+                            pharmaceutical-grade trust. Not navy — it's deeper, more ink-like. Ideal for pharma, API,
+                            and analytical buyers who expect scientific precision.</p>
+                        <div class="chip-row">
+                            <div class="chip">
+                                <div class="chip-dot" style="background:#F7F6F3; border:1px solid #DDDAD2;"></div><span
+                                    class="chip-name">#F7F6F3</span> <span>Page BG</span>
+                            </div>
+                            <div class="chip">
+                                <div class="chip-dot" style="background:#EDEAE3; border:1px solid #DDDAD2;"></div><span
+                                    class="chip-name">#EDEAE3</span> <span>Surface</span>
+                            </div>
+                            <div class="chip">
+                                <div class="chip-dot" style="background:#DDDAD2;"></div><span
+                                    class="chip-name">#DDDAD2</span> <span>Rules</span>
+                            </div>
+                            <div class="chip">
+                                <div class="chip-dot" style="background:#9A9790;"></div><span
+                                    class="chip-name">#9A9790</span> <span>Muted</span>
+                            </div>
+                            <div class="chip">
+                                <div class="chip-dot" style="background:#18181A;"></div><span
+                                    class="chip-name">#18181A</span> <span>Text</span>
+                            </div>
+                            <div class="chip">
+                                <div class="chip-dot" style="background:#1D3A6B;"></div><span
+                                    class="chip-name">#1D3A6B</span> <span>Accent</span>
+                            </div>
+                            <div class="chip">
+                                <div class="chip-dot" style="background:#6B8FBA;"></div><span
+                                    class="chip-name">#6B8FBA</span> <span>Steel mid</span>
+                            </div>
+                            <div class="chip">
+                                <div class="chip-dot" style="background:#D5E2EF;"></div><span
+                                    class="chip-name">#D5E2EF</span> <span>Steel light</span>
+                            </div>
+                        </div>
+                        <div class="palette-usecase">Recommended for: Pharma / API microsites, Technical spec pages
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PALETTE C -->
+                <div class="palette-card">
+                    <div class="palette-swatch-row">
+                        <div class="swatch" style="background:#F8F7F4; flex:1.4;"><span class="swatch-hex"
+                                style="color:#98958E;">#F8F7F4</span></div>
+                        <div class="swatch" style="background:#DEDAD2;"><span class="swatch-hex"
+                                style="color:#6B6862;">#DEDAD2</span></div>
+                        <div class="swatch" style="background:#C4A252;"><span class="swatch-hex"
+                                style="color:#5A4F3A;">#C4A252</span></div>
+                        <div class="swatch" style="background:#5A4F3A; flex:0.8;"><span class="swatch-hex"
+                                style="color:#C4A252;">#5A4F3A</span></div>
+                        <div class="swatch" style="background:#1C1C1A; flex:0.6;"><span class="swatch-hex"
+                                style="color:#3A3A38;">#1C1C1A</span></div>
+                    </div>
+                    <div class="palette-info" style="background:#F8F7F4; border:1px solid #DEDAD2;">
+                        <div class="palette-name" style="color:#1C1C1A;">C — Mineral Linen</div>
+                        <p class="palette-desc">Warm linen base with antique gold and espresso. Timeless, editorial,
+                            like high-end commodity trading. The gold is not decoration — it signals premium provenance
+                            and quality. Distinctive and international.</p>
+                        <div class="chip-row">
+                            <div class="chip">
+                                <div class="chip-dot" style="background:#F8F7F4; border:1px solid #DEDAD2;"></div><span
+                                    class="chip-name">#F8F7F4</span> <span>Page BG</span>
+                            </div>
+                            <div class="chip">
+                                <div class="chip-dot" style="background:#EDEBE5; border:1px solid #DEDAD2;"></div><span
+                                    class="chip-name">#EDEBE5</span> <span>Surface</span>
+                            </div>
+                            <div class="chip">
+                                <div class="chip-dot" style="background:#DEDAD2;"></div><span
+                                    class="chip-name">#DEDAD2</span> <span>Rules</span>
+                            </div>
+                            <div class="chip">
+                                <div class="chip-dot" style="background:#98958E;"></div><span
+                                    class="chip-name">#98958E</span> <span>Muted</span>
+                            </div>
+                            <div class="chip">
+                                <div class="chip-dot" style="background:#1C1C1A;"></div><span
+                                    class="chip-name">#1C1C1A</span> <span>Text</span>
+                            </div>
+                            <div class="chip">
+                                <div class="chip-dot" style="background:#5A4F3A;"></div><span
+                                    class="chip-name">#5A4F3A</span> <span>Espresso</span>
+                            </div>
+                            <div class="chip">
+                                <div class="chip-dot" style="background:#C4A252;"></div><span
+                                    class="chip-name">#C4A252</span> <span>Gold accent</span>
+                            </div>
+                            <div class="chip">
+                                <div class="chip-dot" style="background:#E0D9CC;"></div><span
+                                    class="chip-name">#E0D9CC</span> <span>Linen light</span>
+                            </div>
+                        </div>
+                        <div class="palette-usecase">Recommended for: International distributor pages, Premium/Organic
+                            segment</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="note">Recommendation: Use Palette A as the primary site identity. Apply B for pharma-facing
+                microsites or technical spec pages. Use C for organic / premium origin storytelling sections.</p>
+        </div>
+
+        <!-- ═══════════════════════════════════
+       02 — TYPOGRAPHY
+  ═══════════════════════════════════ -->
+        <div class="section" id="typography">
+            <div class="section-label">02 — Typography Direction</div>
+            <h2 class="section-title">Editorial refinement, <em>not</em> corporate default</h2>
+
+            <div class="type-grid">
+                <div>
+                    <div class="type-specimen">
+                        <span class="type-label">Display / Hero — Cormorant Garamond Light 300</span>
+                        <div class="type-sample-display">Pure <em>origin.</em><br>Verified.</div>
+                        <p class="type-note">Italic variant is used for warmth and differentiation — never for full
+                            sentences. Display type is always 300 weight, never bold.</p>
+                    </div>
+                    <div class="type-specimen" style="margin-top:2rem;">
+                        <span class="type-label">Section Headline — Cormorant Garamond 300</span>
+                        <div
+                            style="font-family:'Cormorant Garamond', serif; font-size:2rem; font-weight:300; line-height:1.15; letter-spacing:-0.01em; margin-bottom:0.5rem;">
+                            Psyllium Husk Powder<br><em>for global formulators</em></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="type-specimen">
+                        <span class="type-label">UI / Body — DM Sans 300–500</span>
+                        <div class="type-sample-heading">Certified to 99.5% purity. Batch-tested. Ready for your
+                            formulation.</div>
+                        <p class="type-sample-body">RM Psyllium supplies pharmaceutical-grade and food-grade psyllium
+                            husk from Sidhpur, Mehsana — the world's most productive psyllium belt. Every batch carries
+                            full COA and traceability documentation.</p>
+                    </div>
+                    <div class="type-specimen" style="margin-top:2rem;">
+                        <span class="type-label">Label / Tag — DM Mono 400</span>
+                        <div style="display:flex; flex-direction:column; gap:8px; margin-top:0.5rem;">
+                            <div class="type-sample-label">PRODUCT — PSYLLIUM HUSK</div>
+                            <div class="type-sample-label">PURITY ≥ 99.5%</div>
+                            <div class="type-sample-label">ORIGIN — INDIA / SIDHPUR</div>
+                            <div class="type-sample-label">CERTIFICATIONS — ISO · HACCP · USDA ORGANIC</div>
+                        </div>
+                        <p class="type-note" style="margin-top:1rem;">Mono is used exclusively for data labels, spec
+                            values, form field labels, certification codes, and navigation items. Never for body copy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rule"></div>
+            <div class="two-col" style="margin-top:2rem;">
+                <div>
+                    <p
+                        style="font-size:13px; color:var(--muted); margin-bottom:1rem; font-weight:500; color:var(--page-text);">
+                        Type scale (desktop)</p>
+                    <table style="width:100%; font-size:12px; border-collapse:collapse;">
+                        <tr style="border-bottom:1px solid var(--rule);">
+                            <td style="padding:8px 0; font-family:monospace; color:var(--muted);">Hero display</td>
+                            <td style="padding:8px 0; text-align:right; color:var(--muted);">Cormorant 300,
+                                clamp(4–8rem), lh 0.9</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid var(--rule);">
+                            <td style="padding:8px 0; font-family:monospace; color:var(--muted);">Section title</td>
+                            <td style="padding:8px 0; text-align:right; color:var(--muted);">Cormorant 300,
+                                clamp(2.5–4rem), lh 1.05</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid var(--rule);">
+                            <td style="padding:8px 0; font-family:monospace; color:var(--muted);">Sub-heading</td>
+                            <td style="padding:8px 0; text-align:right; color:var(--muted);">DM Sans 500, 1.1rem, lh
+                                1.3, ls -0.01em</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid var(--rule);">
+                            <td style="padding:8px 0; font-family:monospace; color:var(--muted);">Body regular</td>
+                            <td style="padding:8px 0; text-align:right; color:var(--muted);">DM Sans 300, 14–15px, lh
+                                1.75</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid var(--rule);">
+                            <td style="padding:8px 0; font-family:monospace; color:var(--muted);">Caption / label</td>
+                            <td style="padding:8px 0; text-align:right; color:var(--muted);">DM Mono 400, 10–11px, ls
+                                0.16em</td>
+                        </tr>
+                        <tr>
+                            <td style="padding:8px 0; font-family:monospace; color:var(--muted);">CTA text</td>
+                            <td style="padding:8px 0; text-align:right; color:var(--muted);">DM Sans 400, 11px, ls
+                                0.08em, uppercase</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <p style="font-size:13px; font-weight:500; margin-bottom:1rem;">Typography rules</p>
+                    <ul style="font-size:13px; color:var(--muted); line-height:2; list-style:none;">
+                        <li>→ Display type never exceeds 300 weight</li>
+                        <li>→ Italic is reserved for brand tone — not for emphasis</li>
+                        <li>→ No all-caps in headlines — only mono labels</li>
+                        <li>→ Letter-spacing is tight on display (-0.02em), loose on mono (+0.16em)</li>
+                        <li>→ No system fonts (no Inter, no Roboto, no Arial)</li>
+                        <li>→ Line height is generous on body (1.75), tight on display (0.9–1.1)</li>
+                        <li>→ DM Sans 500 (medium) is the heaviest weight used anywhere</li>
+                        <li>→ On mobile, display fonts scale down with clamp — never below 2.5rem</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════════════
+       03 — HOMEPAGE STRUCTURE
+  ═══════════════════════════════════ -->
+        <div class="section" id="homepage">
+            <div class="section-label">03 — Homepage Section Structure</div>
+            <h2 class="section-title">12 sections, <em>one narrative</em> arc</h2>
+
+            <!-- S01 -->
+            <div class="structure-block">
+                <span class="section-index">S-01</span>
+                <div class="structure-name">Navigation Bar — Minimal Sticky</div>
+                <p class="structure-desc">Logo wordmark (Cormorant, left), ghost nav links (DM Mono, center), language
+                    picker + CTA button (right). Dark background version available when over hero image. Collapses to
+                    hamburger on mobile. No dropdown megamenu on first load — reveal on hover.</p>
+                <div class="structure-elements">
+                    <span class="element-tag accent">Logo wordmark</span>
+                    <span class="element-tag">Products</span>
+                    <span class="element-tag">Quality</span>
+                    <span class="element-tag">Markets</span>
+                    <span class="element-tag">About</span>
+                    <span class="element-tag">EN / ES / FR / DE</span>
+                    <span class="element-tag accent">Request Sample →</span>
+                </div>
+            </div>
+
+            <!-- S02 -->
+            <div class="structure-block">
+                <span class="section-index">S-02</span>
+                <div class="structure-name">Hero — Full Viewport, Split Editorial</div>
+                <p class="structure-desc">Left: Large display type, tagline, 2 CTAs. Right: Full-bleed macro photograph
+                    — psyllium husk in motion, dust cloud, or extreme close-up of texture. No slider. No video autoplay.
+                    Subtle parallax on scroll. Dark overlay on image side creates depth. Scroll indicator at bottom.</p>
+                <div class="structure-elements">
+                    <span class="element-tag accent">Eyebrow label (Mono)</span>
+                    <span class="element-tag accent">H1 Display (Cormorant)</span>
+                    <span class="element-tag">Supporting line (DM Sans 300)</span>
+                    <span class="element-tag">Primary CTA button</span>
+                    <span class="element-tag">Ghost CTA (View Products)</span>
+                    <span class="element-tag">Right: macro photo</span>
+                    <span class="element-tag">Scroll indicator</span>
+                </div>
+            </div>
+
+            <!-- S03 -->
+            <div class="structure-block">
+                <span class="section-index">S-03</span>
+                <div class="structure-name">Credibility Bar — Certifications & Trust</div>
+                <p class="structure-desc">Single row, light background. 5–6 certification logos (ISO 22000, HACCP, USDA
+                    Organic, FSSC 22000, EU Organic, Kosher/Halal). Separated by thin vertical rules. No animation.
+                    Subtle and authoritative — not a hero banner.</p>
+                <div class="structure-elements">
+                    <span class="element-tag">ISO 22000</span>
+                    <span class="element-tag">HACCP</span>
+                    <span class="element-tag">USDA Organic</span>
+                    <span class="element-tag">FSSC 22000</span>
+                    <span class="element-tag">EU Organic</span>
+                    <span class="element-tag">Halal / Kosher</span>
+                </div>
+            </div>
+
+            <!-- S04 -->
+            <div class="structure-block">
+                <span class="section-index">S-04</span>
+                <div class="structure-name">Origin Story — Editorial Text + Image Split</div>
+                <p class="structure-desc">Left: large section number, section label (Mono), 2–3 line Cormorant headline,
+                    2 paragraphs of editorial body copy. Right: Full-height image — farmland, processing facility, or
+                    geographic map illustration. This section establishes "Sidhpur, India — the global psyllium capital"
+                    positioning.</p>
+                <div class="structure-elements">
+                    <span class="element-tag accent">Section anchor: "From Origin"</span>
+                    <span class="element-tag">Headline (Cormorant italic)</span>
+                    <span class="element-tag">2 paragraphs editorial body</span>
+                    <span class="element-tag">Stat callout (large number)</span>
+                    <span class="element-tag">Right: facility/farm imagery</span>
+                </div>
+            </div>
+
+            <!-- S05 -->
+            <div class="structure-block">
+                <span class="section-index">S-05</span>
+                <div class="structure-name">Product Range — Minimal Card Grid</div>
+                <p class="structure-desc">3-column grid (2 on mobile). Each card: macro photo top, product name in
+                    Cormorant, mono tag for grade/form, 1 line spec, link arrow. Cards have no heavy borders — separated
+                    by generous whitespace and subtle 1px rules. Hover reveals a "View Details →" overlay. This is the
+                    primary product navigation.</p>
+                <div class="structure-elements">
+                    <span class="element-tag">Psyllium Husk</span>
+                    <span class="element-tag">Husk Powder</span>
+                    <span class="element-tag">Psyllium Seeds</span>
+                    <span class="element-tag">Organic Psyllium</span>
+                    <span class="element-tag">Khakha Powder</span>
+                    <span class="element-tag">Cattle Feed</span>
+                </div>
+            </div>
+
+            <!-- S06 -->
+            <div class="structure-block">
+                <span class="section-index">S-06</span>
+                <div class="structure-name">Markets / ICP Section — Icon + Text Grid</div>
+                <p class="structure-desc">Who buys from RM Psyllium? 5–6 market segments in a horizontal scroll or 2-row
+                    grid. Each: thin line icon, market name (Cormorant), 1 sentence description, link to market-specific
+                    microsite. No heavy illustration. Clean and scannable for procurement managers doing initial
+                    evaluation.</p>
+                <div class="structure-elements">
+                    <span class="element-tag">Food & Beverage</span>
+                    <span class="element-tag">Nutraceuticals</span>
+                    <span class="element-tag">Pharma / API</span>
+                    <span class="element-tag">Organic / Clean Label</span>
+                    <span class="element-tag">Animal Nutrition</span>
+                    <span class="element-tag">Distributors</span>
+                </div>
+            </div>
+
+            <!-- S07 -->
+            <div class="structure-block">
+                <span class="section-index">S-07</span>
+                <div class="structure-name">Quality Promise — Dark Section</div>
+                <p class="structure-desc">Dark (#1B1B19) full-width section. Cormorant headline in off-white. 3–4
+                    quality commitments in a horizontal rule-separated layout. Each has a micro stat (e.g. "≥ 99.5%
+                    purity") and a one-line description. Link to /quality page. This section is the trust inflection
+                    point — most premium buyers spend time here.</p>
+                <div class="structure-elements">
+                    <span class="element-tag accent">Lab-verified purity</span>
+                    <span class="element-tag accent">Batch traceability</span>
+                    <span class="element-tag accent">Zero aflatoxin protocol</span>
+                    <span class="element-tag accent">Multi-cert compliance</span>
+                    <span class="element-tag">→ Explore Quality</span>
+                </div>
+            </div>
+
+            <!-- S08 -->
+            <div class="structure-block">
+                <span class="section-index">S-08</span>
+                <div class="structure-name">Process / Facility — Horizontal Scroll Storytelling</div>
+                <p class="structure-desc">A horizontal pinned scroll section (or sequential reveal on scroll) showing
+                    4–5 steps: Cultivation → Harvesting → Cleaning → Processing → QC → Export. Each step: large step
+                    number, image, Cormorant label, 1 sentence. This builds supplier confidence without being a factory
+                    catalogue.</p>
+                <div class="structure-elements">
+                    <span class="element-tag">01 — Field cultivation</span>
+                    <span class="element-tag">02 — Harvest</span>
+                    <span class="element-tag">03 — Seed cleaning</span>
+                    <span class="element-tag">04 — Milling / sieving</span>
+                    <span class="element-tag">05 — QC testing</span>
+                    <span class="element-tag">06 — Export packing</span>
+                </div>
+            </div>
+
+            <!-- S09 -->
+            <div class="structure-block">
+                <span class="section-index">S-09</span>
+                <div class="structure-name">Global Reach — Map + Export Numbers</div>
+                <p class="structure-desc">Light section. Illustrated SVG map (not a heavy JS library) with destination
+                    country dots: USA, Germany, Netherlands, UAE, Japan, Australia, Canada. Below: 4 large number stats
+                    — countries served, years in operation, MT annual capacity, product SKUs. Understated, not boastful.
+                </p>
+                <div class="structure-elements">
+                    <span class="element-tag">SVG world map</span>
+                    <span class="element-tag">Destination markers</span>
+                    <span class="element-tag accent">40+ countries</span>
+                    <span class="element-tag accent">25+ years</span>
+                    <span class="element-tag accent">XX,000 MT capacity</span>
+                    <span class="element-tag accent">12 product SKUs</span>
+                </div>
+            </div>
+
+            <!-- S10 -->
+            <div class="structure-block">
+                <span class="section-index">S-10</span>
+                <div class="structure-name">Testimonials / Client Logos — Social Proof</div>
+                <p class="structure-desc">Monochrome client logos (if available) or a single editorial pull quote from a
+                    key buyer. Never a carousel — a static layout of 2–3 quotes in Cormorant italic, attributed with
+                    role and region. Understated. If no testimonials yet, use a "Trusted by manufacturers in 40+
+                    countries" editorial statement with region flags.</p>
+                <div class="structure-elements">
+                    <span class="element-tag">Pull quote (Cormorant italic)</span>
+                    <span class="element-tag">Attribution (Mono)</span>
+                    <span class="element-tag">Region / Company type</span>
+                    <span class="element-tag">Client logo row (greyscale)</span>
+                </div>
+            </div>
+
+            <!-- S11 -->
+            <div class="structure-block">
+                <span class="section-index">S-11</span>
+                <div class="structure-name">Sample Request CTA — Editorial Full-Width</div>
+                <p class="structure-desc">Near-full-width banner with dark background or sage-tinted surface. Large
+                    Cormorant headline ("Ready to formulate?"), supporting sentence, and a prominent sample request form
+                    inline OR a link to /contact. This is the primary conversion point on the homepage.</p>
+                <div class="structure-elements">
+                    <span class="element-tag accent">Large Cormorant CTA headline</span>
+                    <span class="element-tag">Supporting line</span>
+                    <span class="element-tag accent">Request Sample form / link</span>
+                    <span class="element-tag">Email input + Submit</span>
+                </div>
+            </div>
+
+            <!-- S12 -->
+            <div class="structure-block">
+                <span class="section-index">S-12</span>
+                <div class="structure-name">Footer — Minimal, Multi-language</div>
+                <p class="structure-desc">Dark background. 4 columns: Logo + tagline, Products, Markets, Company. Bottom
+                    bar: Language switcher, Privacy, Terms, © RM Psyllium. Small mono font throughout. Certifications in
+                    a tight row. Registered address. No heavy design — this is a legal and utility footer.</p>
+                <div class="structure-elements">
+                    <span class="element-tag">Logo + short tagline</span>
+                    <span class="element-tag">Product links</span>
+                    <span class="element-tag">Market microsite links</span>
+                    <span class="element-tag">Company / About / Quality</span>
+                    <span class="element-tag">EN / ES / FR / DE</span>
+                    <span class="element-tag">Cert icons row</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ═══════════════════════════════════
+       04 — IMAGERY
+  ═══════════════════════════════════ -->
+        <div class="section" id="imagery">
+            <div class="section-label">04 — Imagery Style Direction</div>
+            <h2 class="section-title">Three visual modes for a <em>complete</em> system</h2>
+
+            <div class="imagery-grid">
+                <div class="imagery-card img-a">
+                    <div class="imagery-caption">
+                        <span class="imagery-type">Mode 01 — Macro Ingredient</span>
+                        <div class="imagery-name">Extreme close-up. Texture as beauty. Grain, powder dust, seed surface.
+                        </div>
+                    </div>
+                </div>
+                <div class="imagery-card img-b">
+                    <div class="imagery-caption">
+                        <span class="imagery-type">Mode 02 — Process & Origin</span>
+                        <div class="imagery-name">Field, facility, laboratory. Documentary feel — never staged stock.
+                        </div>
+                    </div>
+                </div>
+                <div class="imagery-card img-c">
+                    <div class="imagery-caption">
+                        <span class="imagery-type">Mode 03 — Application Context</span>
+                        <div class="imagery-name">Finished products: supplements, food, animal feed. Buyer's world, not
+                            the factory.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rule"></div>
+            <div class="two-col">
+                <div>
+                    <p style="font-size:13px; font-weight:500; margin-bottom:1rem;">Photography brief</p>
+                    <ul style="font-size:13px; color:var(--muted); line-height:2.2; list-style:none;">
+                        <li>→ Natural light preferred — avoid studio flash highlights</li>
+                        <li>→ Color palette: sage, linen, off-white, warm grey — no saturated colors</li>
+                        <li>→ Desaturated treatment, slight warm grade — not cool or clinical blue</li>
+                        <li>→ Shallow depth-of-field for macro ingredients</li>
+                        <li>→ Grain/texture visible — resists compression — signals quality</li>
+                        <li>→ No smiling people pointing at screens — it's a B2B ingredient brand</li>
+                        <li>→ Geometric compositions — rule of thirds with large negative space</li>
+                        <li>→ Leave space at edges for text overlays</li>
+                    </ul>
+                </div>
+                <div>
+                    <p style="font-size:13px; font-weight:500; margin-bottom:1rem;">What not to photograph</p>
+                    <ul style="font-size:13px; color:var(--muted); line-height:2.2; list-style:none;">
+                        <li>✕ Generic green wheat field / nature stock</li>
+                        <li>✕ Smiling farmers in over-lit scenes</li>
+                        <li>✕ Blue-tinted laboratory stock imagery</li>
+                        <li>✕ Capsules and supplement bottles as hero shots</li>
+                        <li>✕ Warm orange/yellow harvest clichés</li>
+                        <li>✕ Graphic globe / map illustrations</li>
+                        <li>✕ Text on photos with poor contrast</li>
+                        <li>✕ Low-res product photos on white background as hero</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════════════
+       05 — UI COMPONENTS
+  ═══════════════════════════════════ -->
+        <div class="section" id="components">
+            <div class="section-label">05 — UI Component Direction</div>
+            <h2 class="section-title">Every element refined to <em>its minimum</em></h2>
+
+            <div class="component-grid">
+
+                <div class="component-card">
+                    <span class="component-card-label">Navigation</span>
+                    <div class="nav-demo">
+                        <span class="nav-logo-demo">RM Psyllium</span>
+                        <span class="nav-item">Products</span>
+                        <span class="nav-item">Quality</span>
+                        <span class="nav-item">Markets</span>
+                        <span class="nav-cta">Sample →</span>
+                    </div>
+                    <p style="font-size:11px; color:var(--muted); line-height:1.6;">Transparent on hero, white on
+                        scroll. No shadow — use a 1px bottom rule on scroll. Logo is wordmark in Cormorant, not an icon.
+                    </p>
+                </div>
+
+                <div class="component-card">
+                    <span class="component-card-label">Buttons</span>
+                    <div style="display:flex; flex-direction:column; align-items:flex-start; gap:8px;">
+                        <div class="btn-demo btn-primary">Request Sample <span class="btn-arrow">→</span></div>
+                        <div class="btn-demo btn-ghost">View Products <span class="btn-arrow">→</span></div>
+                        <div class="btn-demo btn-text">Explore Quality <span class="btn-arrow"
+                                style="font-size:16px;">→</span></div>
+                    </div>
+                    <p style="font-size:11px; color:var(--muted); margin-top:1rem; line-height:1.6;">Border-radius: 2px
+                        maximum. Never pill-shaped. Arrow always present — signals forward motion. Uppercase 11px Mono.
+                    </p>
+                </div>
+
+                <div class="component-card">
+                    <span class="component-card-label">Product Card</span>
+                    <div class="product-card-demo">
+                        <div class="product-card-image">[ Macro product photo ]</div>
+                        <div class="product-card-body">
+                            <span class="product-card-tag">Food Grade · Powder</span>
+                            <div class="product-card-name">Psyllium Husk Powder</div>
+                            <div class="product-card-specs">Purity ≥ 99.5% · 80–120 mesh</div>
+                        </div>
+                        <div class="product-card-footer">
+                            <span>View specifications</span>
+                            <span>→</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="component-card">
+                    <span class="component-card-label">Stat / Numbers</span>
+                    <div class="stat-bar">
+                        <div class="stat-cell">
+                            <span class="stat-num">40+</span>
+                            <span class="stat-lbl">Countries</span>
+                        </div>
+                        <div class="stat-cell">
+                            <span class="stat-num">25yr</span>
+                            <span class="stat-lbl">Legacy</span>
+                        </div>
+                        <div class="stat-cell">
+                            <span class="stat-num">99.5%</span>
+                            <span class="stat-lbl">Purity</span>
+                        </div>
+                    </div>
+                    <p style="font-size:11px; color:var(--muted); margin-top:1rem; line-height:1.6;">Numbers in
+                        Cormorant 300 — large, editorial, not bold. Labels in DM Mono. Never boxed with icons — data
+                        speaks.</p>
+                </div>
+
+                <div class="component-card">
+                    <span class="component-card-label">Certification Badge</span>
+                    <div style="display:flex; flex-direction:column; gap:8px; margin-top:0.5rem;">
+                        <div class="quality-cert">
+                            <div class="quality-cert-dot"></div> ISO 22000 : 2018 Certified
+                        </div>
+                        <div class="quality-cert">
+                            <div class="quality-cert-dot"></div> USDA Organic Certified
+                        </div>
+                        <div class="quality-cert">
+                            <div class="quality-cert-dot"></div> HACCP Compliant
+                        </div>
+                    </div>
+                    <p style="font-size:11px; color:var(--muted); margin-top:1rem; line-height:1.6;">Thin border, green
+                        dot, DM Mono. No heavy badges or icons. Color comes from accent green — signals compliance, not
+                        decoration.</p>
+                </div>
+
+                <div class="component-card">
+                    <span class="component-card-label">Form Fields</span>
+                    <div style="display:flex; flex-direction:column; gap:8px; margin-top:0.5rem;">
+                        <label
+                            style="font-family:monospace; font-size:9px; letter-spacing:0.18em; text-transform:uppercase; color:var(--muted); display:block;">Company
+                            Name</label>
+                        <input type="text" placeholder="e.g. Naturex GmbH"
+                            style="width:100%; padding:10px 12px; border:1px solid var(--rule); border-radius:2px; font-size:13px; background:white; font-family:inherit; outline:none; color:var(--page-text);">
+                        <label
+                            style="font-family:monospace; font-size:9px; letter-spacing:0.18em; text-transform:uppercase; color:var(--muted); display:block; margin-top:4px;">Product
+                            Interest</label>
+                        <select
+                            style="width:100%; padding:10px 12px; border:1px solid var(--rule); border-radius:2px; font-size:13px; background:white; font-family:inherit; outline:none; color:var(--muted); appearance:none;">
+                            <option>— Select product —</option>
+                        </select>
+                    </div>
+                    <p style="font-size:11px; color:var(--muted); margin-top:1rem; line-height:1.6;">Labels above fields
+                        in DM Mono 9px all-caps. Fields: 1px rule, 2px radius, white BG, 13px DM Sans. Focus: accent
+                        border color, no glow.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════════════
+       06 — MOTION
+  ═══════════════════════════════════ -->
+        <div class="section" id="motion">
+            <div class="section-label">06 — Motion & Microinteraction Direction</div>
+            <h2 class="section-title">Motion that <em>breathes</em>, never performs</h2>
+            <p style="font-size:13px; color:var(--muted); max-width:580px; line-height:1.8; margin-bottom:2rem;">All
+                motion is additive. The site should work perfectly with no motion at all. Animations exist to confirm
+                intent and guide attention — not to entertain. Duration is always short. Easing is always ease-out or
+                custom cubic-bezier — never bouncy or spring-based.</p>
+
+            <div>
+                <div class="motion-item">
+                    <div class="motion-code">Page load<br>stagger reveal<br>300ms delay/item<br>ease-out</div>
+                    <div class="motion-desc">
+                        <div class="motion-name">Entrance — Staggered content reveal</div>
+                        <p class="motion-detail">Hero headline, subline, CTAs enter with opacity 0→1 +
+                            translateY(16px→0). Stagger: 120ms between items. Easing: cubic-bezier(0.25, 0, 0.1, 1).
+                            Total: ~600ms. No sliding images — only text elements animate in.</p>
+                    </div>
+                </div>
+                <div class="motion-item">
+                    <div class="motion-code">Scroll reveal<br>IntersectionObserver<br>threshold: 0.15<br>translateY 20px
+                    </div>
+                    <div class="motion-desc">
+                        <div class="motion-name">Section — Scroll-triggered reveal</div>
+                        <p class="motion-detail">Sections enter from slightly below. Y offset: 20px → 0, opacity 0→1.
+                            Duration: 500ms. Once only — elements don't re-animate on scroll back up. Works without JS
+                            via CSS @starting-style fallback.</p>
+                    </div>
+                </div>
+                <div class="motion-item">
+                    <div class="motion-code">Hover: 200ms<br>background ease-out<br>border-color: accent<br>transform:
+                        none</div>
+                    <div class="motion-desc">
+                        <div class="motion-name">Cards — Hover state</div>
+                        <p class="motion-detail">Product cards: subtle background shift to slightly warmer surface,
+                            bottom border becomes accent green. No scale transform — never scale() on content cards.
+                            Arrow icon translates +4px on hover. Duration: 180ms.</p>
+                    </div>
+                </div>
+                <div class="motion-item">
+                    <div class="motion-code">Button: 160ms<br>background ease-out<br>no scale<br>arrow → +4px</div>
+                    <div class="motion-desc">
+                        <div class="motion-name">Buttons — Hover & active</div>
+                        <p class="motion-detail">Primary: background darkens 10%. Ghost: background fills to 6% opacity
+                            of accent color. Text button: color deepens. All have 160ms ease-out. Active state: 80ms
+                            ease-in for instant click feel. No scale transforms on CTAs.</p>
+                    </div>
+                </div>
+                <div class="motion-item">
+                    <div class="motion-code">Nav scroll<br>background: white<br>border-bottom: 1px<br>200ms ease-out
+                    </div>
+                    <div class="motion-desc">
+                        <div class="motion-name">Navigation — Scroll state transition</div>
+                        <p class="motion-detail">Transparent → white background when scrolled past 80px. Transition:
+                            background-color 200ms ease-out. A 1px bottom rule appears simultaneously. No drop shadow.
+                            Logo color inverts from white to dark.</p>
+                    </div>
+                </div>
+                <div class="motion-item">
+                    <div class="motion-code">Numbers count-up<br>IntersectionObserver<br>Duration: 1200ms<br>ease-out
+                        cubic</div>
+                    <div class="motion-desc">
+                        <div class="motion-name">Statistics — Count-up animation</div>
+                        <p class="motion-detail">Stat numbers (40+, 25yr, etc.) count from 0 to their value when
+                            scrolled into view. Duration: 1200ms, easing: cubic-bezier(0, 0, 0.2, 1). Fires once. If
+                            number has unit (%), count number only. Runs only if prefers-reduced-motion: no-preference.
+                        </p>
+                    </div>
+                </div>
+                <div class="motion-item">
+                    <div class="motion-code">prefers-reduced-motion<br>→ disable all<br>except opacity<br>transitions
+                    </div>
+                    <div class="motion-desc">
+                        <div class="motion-name">Accessibility — Reduced motion</div>
+                        <p class="motion-detail">All translateY animations, count-ups, and horizontal scrolling panels
+                            are disabled when prefers-reduced-motion: reduce is set. Only opacity transitions ≤ 200ms
+                            remain. This is non-negotiable for pharma/healthcare buyers who may have accessibility
+                            requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════════════
+       07 — SAMPLE HOMEPAGE COPY
+  ═══════════════════════════════════ -->
+        <div class="section" id="copy">
+            <div class="section-label">07 — Sample Homepage Copy</div>
+            <h2 class="section-title">Copy that earns <em>procurement trust</em></h2>
+
+            <div class="copy-block">
+
+                <div class="copy-section">
+                    <span class="copy-tag">S-02 · Hero Section</span>
+                    <div class="copy-headline">The world's most trusted<br><em>psyllium ingredient.</em><br>From field
+                        to formulation.</div>
+                    <p class="copy-body">RM Psyllium supplies pharmaceutical-grade and food-grade psyllium husk, powder,
+                        and seeds to manufacturers on every continent. Certified, traceable, and delivered to your
+                        specification.</p>
+                </div>
+
+                <div class="copy-section">
+                    <span class="copy-tag">S-04 · Origin Story</span>
+                    <div class="copy-headline">Sidhpur, Gujarat.<br><em>The psyllium capital</em><br>of the world.</div>
+                    <p class="copy-body">India produces over 85% of the world's psyllium. RM Psyllium operates at the
+                        source — in Sidhpur, Mehsana, where the Plantago ovata plant has been cultivated for generations
+                        under ideal arid conditions. We don't trade psyllium. We grow it, process it, and certify it —
+                        start to finish.</p>
+                    <div class="copy-stat-row">
+                        <div class="copy-stat">
+                            <span class="copy-stat-num">85%</span>
+                            <span class="copy-stat-label">Of global supply from India</span>
+                        </div>
+                        <div class="copy-stat">
+                            <span class="copy-stat-num">40+</span>
+                            <span class="copy-stat-label">Export destinations</span>
+                        </div>
+                        <div class="copy-stat">
+                            <span class="copy-stat-num">≥ 99%</span>
+                            <span class="copy-stat-label">Purity — standard grade</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="copy-section">
+                    <span class="copy-tag">S-07 · Quality Promise</span>
+                    <div class="copy-headline">No compromises.<br><em>Verified</em> at every step.</div>
+                    <p class="copy-body">Every batch of RM Psyllium is laboratory-tested before dispatch. Full
+                        Certificate of Analysis. Zero-aflatoxin protocol. Microbiological testing. Heavy metal
+                        compliance. Our quality system meets the standards of the most demanding global markets — EU,
+                        USA, Japan.</p>
+                </div>
+
+                <div class="copy-section">
+                    <span class="copy-tag">S-11 · CTA Section</span>
+                    <div class="copy-headline">Ready to<br><em>reformulate?</em></div>
+                    <p class="copy-body">Request a certified sample — delivered to your facility with full COA and
+                        technical data sheet. No obligation. We respond within 24 hours.</p>
+                </div>
+
+            </div>
+
+            <div class="note" style="margin-top:2rem;">Copy tone: precise, not promotional. Short sentences. Claims
+                backed by certifications — never superlatives without proof. The buyer is a procurement manager or R&D
+                director — they value specificity over enthusiasm. Avoid: "leading", "world-class", "best quality" as
+                empty claims. Use: specific numbers, certifications, and process language.</div>
+        </div>
+
+        <!-- ═══════════════════════════════════
+       08 — PRODUCT PAGE STRUCTURE
+  ═══════════════════════════════════ -->
+        <div class="section" id="productpage">
+            <div class="section-label">08 — Product Page Structure</div>
+            <h2 class="section-title">A page built for <em>specification</em> buyers</h2>
+
+            <div class="page-wireframe">
+                <div class="wire-header">
+                    <span class="wire-logo">RM Psyllium</span>
+                    <div class="wire-nav">
+                        <span>Products</span>
+                        <span>Quality</span>
+                        <span>Markets</span>
+                    </div>
+                </div>
+
+                <div class="wire-hero">
+                    <div>
+                        <span class="wire-hero-eyebrow">Product · Food Grade · Psyllium</span>
+                        <div class="wire-hero-title">Psyllium Husk Powder<br><em>for global formulators</em></div>
+                        <p class="wire-hero-body">Fine-milled psyllium husk powder, available in 80–120 mesh grades.
+                            Batch-certified to ≥ 99.5% purity. Suitable for dietary supplements, functional food, and
+                            pharmaceutical excipient applications.</p>
+                        <div class="wire-cta-row">
+                            <div class="btn-demo btn-primary" style="margin-bottom:0;">Request Sample</div>
+                            <div class="btn-demo btn-text" style="margin-bottom:0;">Download TDS →</div>
+                        </div>
+                    </div>
+                    <div class="wire-image-block">Product macro photo</div>
+                </div>
+
+                <div style="padding:0 3rem; background:white;">
+                    <div class="wire-tabs">
+                        <div class="wire-tab active">Specifications</div>
+                        <div class="wire-tab">Applications</div>
+                        <div class="wire-tab">Certifications</div>
+                        <div class="wire-tab">Packaging & MOQ</div>
+                        <div class="wire-tab">Documents</div>
+                    </div>
+                </div>
+
+                <div class="wire-section">
+                    <span class="wire-section-label">Key Specifications</span>
+                    <div class="wire-spec-grid">
+                        <div class="wire-spec-cell"><span class="wire-spec-key">Purity</span><span
+                                class="wire-spec-val">≥ 99.5%</span></div>
+                        <div class="wire-spec-cell"><span class="wire-spec-key">Mesh size</span><span
+                                class="wire-spec-val">80–120</span></div>
+                        <div class="wire-spec-cell"><span class="wire-spec-key">Moisture</span><span
+                                class="wire-spec-val">≤ 12%</span></div>
+                        <div class="wire-spec-cell"><span class="wire-spec-key">Bulk density</span><span
+                                class="wire-spec-val">0.38–0.42</span></div>
+                        <div class="wire-spec-cell"><span class="wire-spec-key">Swelling vol.</span><span
+                                class="wire-spec-val">≥ 40 ml/g</span></div>
+                        <div class="wire-spec-cell"><span class="wire-spec-key">Ash content</span><span
+                                class="wire-spec-val">≤ 4%</span></div>
+                        <div class="wire-spec-cell"><span class="wire-spec-key">Aflatoxin</span><span
+                                class="wire-spec-val">Negative</span></div>
+                        <div class="wire-spec-cell"><span class="wire-spec-key">Packaging</span><span
+                                class="wire-spec-val">25 kg HDPE bag</span></div>
+                    </div>
+                </div>
+
+                <div class="wire-section">
+                    <span class="wire-section-label">Applications</span>
+                    <div style="display:flex; flex-wrap:wrap; gap:8px;">
+                        <span class="element-tag accent">Dietary fiber supplement</span>
+                        <span class="element-tag accent">Laxative formulation</span>
+                        <span class="element-tag accent">Functional food additive</span>
+                        <span class="element-tag accent">Pharma excipient</span>
+                        <span class="element-tag accent">Gluten-free bakery</span>
+                        <span class="element-tag accent">Cholesterol management</span>
+                    </div>
+                </div>
+
+                <div class="wire-section">
+                    <span class="wire-section-label">Documents Available</span>
+                    <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+                        <div class="btn-demo btn-ghost" style="margin:0; font-size:11px;">Technical Data Sheet (TDS) ↓
+                        </div>
+                        <div class="btn-demo btn-ghost" style="margin:0; font-size:11px;">Certificate of Analysis ↓
+                        </div>
+                        <div class="btn-demo btn-ghost" style="margin:0; font-size:11px;">MSDS / Safety Sheet ↓</div>
+                        <div class="btn-demo btn-ghost" style="margin:0; font-size:11px;">Allergen Declaration ↓</div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="note" style="margin-top:1.5rem;">Product pages are transactional — buyers arrive here with a
+                specific use-case. Prioritize: purity/spec data above the fold, downloadable documents, fast sample
+                request form. No lifestyle imagery on product pages — only macro product photography and specification
+                tables. Each product has a unique URL structure: /products/psyllium-husk-powder for SEO.</p>
+        </div>
+
+        <!-- ═══════════════════════════════════
+       09 — QUALITY PAGE
+  ═══════════════════════════════════ -->
+        <div class="section" id="qualitypage">
+            <div class="section-label">09 — Quality & Compliance Page Structure</div>
+            <h2 class="section-title">The page that closes <em>high-value</em> procurement deals</h2>
+
+            <div class="quality-row">
+                <div class="quality-cell">
+                    <div class="quality-cert">
+                        <div class="quality-cert-dot"></div>Page Section: Hero
+                    </div>
+                    <div class="quality-title">Quality at source.</div>
+                    <p class="quality-desc">Dark hero with full-width lab imagery. Cormorant headline: "Zero compromise.
+                        Verifiable." Short editorial paragraph establishing the quality philosophy. Scroll-anchor links
+                        to: Certifications, Testing, Traceability, Documentation.</p>
+                </div>
+                <div class="quality-cell">
+                    <div class="quality-cert">
+                        <div class="quality-cert-dot"></div>Page Section: Certification Grid
+                    </div>
+                    <div class="quality-title">Multi-market certification</div>
+                    <p class="quality-desc">Grid of certification badges: ISO 22000, HACCP, USDA Organic, EU Organic,
+                        FSSC 22000, Halal, Kosher, Heavy Metal / Pesticide compliant. Each with scope description and
+                        issuing body. Downloadable certificate PDFs linked inline.</p>
+                </div>
+                <div class="quality-cell">
+                    <div class="quality-cert">
+                        <div class="quality-cert-dot"></div>Page Section: Testing Protocol
+                    </div>
+                    <div class="quality-title">Every batch, tested</div>
+                    <p class="quality-desc">A step-by-step testing protocol — raw material intake → in-process →
+                        pre-dispatch → third party verification. Each step has a parameter list (aflatoxin,
+                        microbiological, heavy metals, pesticides, purity, moisture). Visual: horizontal timeline or
+                        numbered list.</p>
+                </div>
+                <div class="quality-cell">
+                    <div class="quality-cert">
+                        <div class="quality-cert-dot"></div>Page Section: Traceability
+                    </div>
+                    <div class="quality-title">Farm to formulation</div>
+                    <p class="quality-desc">Origin traceability: Batch number → farm GPS location → processing date → QC
+                        sign-off → dispatch. Support for customer audit requests. Mention of ERP/batch management
+                        system. Optional: interactive batch lookup field.</p>
+                </div>
+                <div class="quality-cell">
+                    <div class="quality-cert">
+                        <div class="quality-cert-dot"></div>Page Section: Documentation
+                    </div>
+                    <div class="quality-title">Documentation on demand</div>
+                    <p class="quality-desc">A document request center. Buyer fills a short form (company, product,
+                        purpose), receives: COA, TDS, Allergen Declaration, Non-GMO Statement, Country of Origin, MSDS.
+                        This is a key conversion — gated PDF downloads build the CRM pipeline.</p>
+                </div>
+                <div class="quality-cell">
+                    <div class="quality-cert">
+                        <div class="quality-cert-dot"></div>Page Section: Audit Support
+                    </div>
+                    <div class="quality-title">Supplier audit ready</div>
+                    <p class="quality-desc">RM Psyllium welcomes supplier audits. Factory visit coordination, remote
+                        audit support, pre-qualification questionnaire completion (SQF, EcoVadis, customer-specific).
+                        Contact form for audit scheduling. Signals confidence and transparency.</p>
+                </div>
+            </div>
+
+            <p class="note" style="margin-top:1.5rem;">This page is essential for pharma and major food manufacturer
+                buyers who require supplier qualification documentation before raising a PO. It should be complete,
+                credible, and downloadable — not a marketing page. Tone: matter-of-fact, precise, evidence-based. Avoid:
+                generic "commitment to quality" language without proof.</p>
+        </div>
+
+        <!-- ═══════════════════════════════════
+       10 — WHAT TO AVOID
+  ═══════════════════════════════════ -->
+        <div class="section" id="avoid">
+            <div class="section-label">10 — What to Avoid</div>
+            <h2 class="section-title">The precise list of things that <em>undermine</em> premium positioning</h2>
+
+            <div class="avoid-grid">
+                <div class="avoid-item">
+                    <div class="avoid-icon">✕</div>
+                    <div class="avoid-title">Brown / orange palette</div>
+                    <p class="avoid-desc">Earthy tones signal low-cost agricultural exporters, not premium ingredient
+                        suppliers. Even warm tones must be muted and desaturated.</p>
+                </div>
+                <div class="avoid-item">
+                    <div class="avoid-icon">✕</div>
+                    <div class="avoid-title">Dark navy as primary</div>
+                    <p class="avoid-desc">Deep navy reads as outdated corporate or government portal. If blue is used
+                        (Palette B), it must be Prussian/ink — deeper and more considered than typical navy.</p>
+                </div>
+                <div class="avoid-item">
+                    <div class="avoid-icon">✕</div>
+                    <div class="avoid-title">Generic eco-green</div>
+                    <p class="avoid-desc">Bright green leaf imagery, green gradient backgrounds, or treble-clef leaf
+                        logos. The botanical positioning must come from photography and copy — not green color coding.
+                    </p>
+                </div>
+                <div class="avoid-item">
+                    <div class="avoid-icon">✕</div>
+                    <div class="avoid-title">Hero sliders / carousels</div>
+                    <p class="avoid-desc">Image sliders reduce SEO indexability, add layout instability, and signal
+                        low-quality builds. One strong, static hero. No "next slide" arrows.</p>
+                </div>
+                <div class="avoid-item">
+                    <div class="avoid-icon">✕</div>
+                    <div class="avoid-title">Auto-play video heroes</div>
+                    <p class="avoid-desc">Bandwidth-heavy, slow on mobile, jarring for B2B buyers opening the site on a
+                        procurement laptop. Video (if used) is always opt-in: play button, muted by default.</p>
+                </div>
+                <div class="avoid-item">
+                    <div class="avoid-icon">✕</div>
+                    <div class="avoid-title">Heavy JavaScript animations</div>
+                    <p class="avoid-desc">GSAP particle effects, Lottie files, WebGL backgrounds. These crash Core Web
+                        Vitals, harm SEO, and make procurement buyers distrust the site's professionalism.</p>
+                </div>
+                <div class="avoid-item">
+                    <div class="avoid-icon">✕</div>
+                    <div class="avoid-title">Inter / Roboto / Arial</div>
+                    <p class="avoid-desc">Default system/generic fonts signal zero design intent. Cormorant + DM Sans
+                        combination is distinctive, premium, and distinct from every competitor in the psyllium space.
+                    </p>
+                </div>
+                <div class="avoid-item">
+                    <div class="avoid-icon">✕</div>
+                    <div class="avoid-title">Stock smiling people</div>
+                    <p class="avoid-desc">Generic handshake or "team meeting" stock imagery destroys credibility in B2B
+                        procurement. Real facility photos, real product macro shots, or abstract editorial imagery only.
+                    </p>
+                </div>
+                <div class="avoid-item">
+                    <div class="avoid-icon">✕</div>
+                    <div class="avoid-title">Cluttered homepage</div>
+                    <p class="avoid-desc">Too many CTAs, too many colors, too many overlapping sections. Premium means
+                        restraint. One CTA per section. Generous whitespace. Let typography breathe.</p>
+                </div>
+                <div class="avoid-item">
+                    <div class="avoid-icon">✕</div>
+                    <div class="avoid-title">Pill-shaped buttons</div>
+                    <p class="avoid-desc">Rounded pill CTAs look SaaS-startup. This is an ingredient exporter for
+                        pharma/food buyers. 2px max border-radius on all interactive elements.</p>
+                </div>
+                <div class="avoid-item">
+                    <div class="avoid-icon">✕</div>
+                    <div class="avoid-title">Unsubstantiated claims</div>
+                    <p class="avoid-desc">"World's best quality", "leading supplier", "trusted worldwide" without data.
+                        Procurement buyers require evidence. Replace with: purity %, certifications, specific markets
+                        served, batch test references.</p>
+                </div>
+                <div class="avoid-item">
+                    <div class="avoid-icon">✕</div>
+                    <div class="avoid-title">Missing multilingual SEO</div>
+                    <p class="avoid-desc">hreflang tags, separate URLs per language (/de/produkte/, /es/productos/),
+                        translated meta descriptions. Not just UI translation — full SEO architecture per language.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════════════
+       CLOSING
+  ═══════════════════════════════════ -->
+        <div class="section" style="border-bottom:none; text-align:center; padding:5rem 0 6rem;">
+            <div class="section-label" style="justify-content:center;">Design Direction Complete</div>
+            <h2 class="section-title" style="max-width:500px; margin:0 auto 2rem; text-align:center;">
+                RM Psyllium — <em>built for</em> the global procurement market
+            </h2>
+            <p style="font-size:13px; color:var(--muted); max-width:480px; margin:0 auto; line-height:1.8;">Recommended
+                stack: Astro (static), Tailwind CSS, View Transitions API for page transitions, Fuse.js for product
+                search, i18n via Astro's built-in i18n routing. Deploy on Cloudflare Pages or Vercel Edge for global
+                performance.</p>
+
+            <div
+                style="margin-top:3rem; padding-top:3rem; border-top:1px solid var(--rule); display:flex; justify-content:center; gap:3rem; flex-wrap:wrap;">
+                <div style="text-align:center;">
+                    <div
+                        style="font-family:monospace; font-size:9px; letter-spacing:0.18em; text-transform:uppercase; color:var(--muted); margin-bottom:4px;">
+                        Primary Palette</div>
+                    <div style="font-size:13px;">A — Pure Botanical</div>
+                </div>
+                <div style="text-align:center;">
+                    <div
+                        style="font-family:monospace; font-size:9px; letter-spacing:0.18em; text-transform:uppercase; color:var(--muted); margin-bottom:4px;">
+                        Display Font</div>
+                    <div style="font-size:13px; font-family:'Cormorant Garamond', serif; font-weight:300;">Cormorant
+                        Garamond 300</div>
+                </div>
+                <div style="text-align:center;">
+                    <div
+                        style="font-family:monospace; font-size:9px; letter-spacing:0.18em; text-transform:uppercase; color:var(--muted); margin-bottom:4px;">
+                        UI Font</div>
+                    <div style="font-size:13px;">DM Sans 300–500</div>
+                </div>
+                <div style="text-align:center;">
+                    <div
+                        style="font-family:monospace; font-size:9px; letter-spacing:0.18em; text-transform:uppercase; color:var(--muted); margin-bottom:4px;">
+                        Label Font</div>
+                    <div style="font-size:13px; font-family:monospace; letter-spacing:0.06em;">DM Mono 400</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

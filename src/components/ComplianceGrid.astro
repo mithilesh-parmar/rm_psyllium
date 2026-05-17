@@ -1,11 +1,11 @@
 ---
 const items = [
-  ['Organic Programs', 'USDA and EU organic documentation placeholders ready for verified certificate IDs.'],
-  ['Food Safety', 'FDA registration, FSSAI, allergen, COA, microbiology, and heavy-metal documentation workflow.'],
-  ['Religious Certifications', 'HALAL and KOSHER status captured as buyer-ready procurement proof points.'],
-  ['Traceability', 'Lot-level origin, processing, packaging, and shipment records aligned to export review.'],
-  ['Specification Control', 'Purity, mesh, moisture, ash, swell volume, and packaging specs documented before quote.'],
-  ['Export Readiness', 'Commercial invoice, packing list, COA, and shipping handoff checklist for US/EU buyers.']
+  ['COA Review', 'Purity, mesh, moisture, ash, swelling volume, microbiology, and heavy-metal parameters shared for buyer review.'],
+  ['Food Safety', 'Facility, allergen, microbiology, and handling documents available for food, supplement, and pharma buyers.'],
+  ['Halal & Kosher', 'Halal and Kosher documents can be shared where the current lot and buyer market require them.'],
+  ['Traceability', 'Lot-level origin, processing, packing, and shipment records aligned to export review.'],
+  ['Specification Control', 'Grade, mesh, moisture, swell volume, and packing requirements confirmed before quote.'],
+  ['Export Documents', 'Commercial invoice, packing list, COA, origin certificate, phyto, and fumigation support for export orders.']
 ];
 ---
 <div class="compliance-grid">
@@ -22,34 +22,45 @@ const items = [
   .compliance-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 12px;
   }
 
   article {
-    min-height: 210px;
-    border: 1px solid #dfe6dc;
+    border: 1px solid var(--rule, rgba(26,28,24,0.1));
     border-radius: 8px;
     background: #ffffff;
-    padding: 1.35rem;
+    padding: 24px;
+    transition: box-shadow 0.2s;
+  }
+
+  article:hover {
+    box-shadow: 0 8px 24px -12px rgba(26,28,24,0.15);
   }
 
   span {
     display: block;
-    width: 34px;
-    height: 6px;
+    width: 28px;
+    height: 4px;
     border-radius: 99px;
-    background: #c6842e;
+    background: var(--accent, #4a6630);
   }
 
   h3 {
-    margin: 1.1rem 0 0.65rem;
-    font-size: 1.1rem;
+    margin: 14px 0 8px;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--ink, #1a1c18);
   }
 
   p {
     margin: 0;
-    color: #54707e;
-    line-height: 1.55;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--body-muted, #4a4f44);
+    line-height: 1.65;
   }
 
   @media (max-width: 860px) {

@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import { getLanguage, insights, languages } from '../../../data/site';
+import { copy, getLanguage, insights, languages } from '../../../data/site';
 
 export function getStaticPaths() {
   return languages.flatMap((language) =>
@@ -12,66 +12,373 @@ export function getStaticPaths() {
 }
 
 const lang = getLanguage(Astro.params.lang);
+const t = copy[lang];
 const { post } = Astro.props;
+
+const formattedDate = new Date(post.date).toLocaleDateString('en-GB', {
+  day: 'numeric', month: 'long', year: 'numeric'
+});
 ---
 <BaseLayout
   lang={lang}
   title={`${post.title} | RM Psyllium Insights`}
   description={post.summary}
 >
-  <article class="section article">
-    <div class="container article-grid">
-      <header>
-        <span class="kicker">{post.audience}</span>
-        <h1 class="title-xl">{post.title}</h1>
-        <p class="lead">{post.summary}</p>
-        <time datetime={post.date}>{post.date}</time>
-      </header>
-      <div class="article-body panel">
-        <p>
-          This page is structured as a buyer-education microsite. Replace this placeholder
-          with a full article, internal product links, downloadable spec notes, and a quote CTA.
-        </p>
-        <p>
-          Keep the copy procurement-focused: explain the use case, recommended product format,
-          key specification questions, target packaging, and compliance documents required.
-        </p>
-        <a class="btn btn-primary" href="/#spec">Build Sourcing Brief</a>
+  <article class="ins-wrap">
+    <!-- HEADER -->
+    <header class="ins-header">
+      <div class="ins-header-inner">
+        <div class="ins-header-copy">
+          <nav class="ins-breadcrumb" aria-label="Breadcrumb">
+            <a href={`/${lang}/`}>Home</a>
+            <span aria-hidden="true">›</span>
+            <a href={`/${lang}/insights/`}>Buyer Guides</a>
+            <span aria-hidden="true">›</span>
+            <span>{post.audience}</span>
+          </nav>
+          <p class="ins-kicker">{post.audience}</p>
+          <h1>{post.title}<br /><em>{post.audience}.</em></h1>
+          <p class="ins-lead">{post.summary}</p>
+          <time datetime={post.date}>{formattedDate}</time>
+        </div>
+        <div class="ins-header-stats">
+          <div class="ins-hstat"><strong>{post.audience}</strong><span>Audience</span></div>
+          <div class="ins-hstat"><strong>{formattedDate}</strong><span>Published</span></div>
+          <div class="ins-hstat"><strong>24 hr</strong><span>Quote response</span></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- BODY + SIDEBAR -->
+    <div class="ins-body-wrap">
+      <div class="ins-body-inner">
+        <div class="ins-content">
+          {post.body.map((para) => <p>{para}</p>)}
+        </div>
+
+        <aside class="ins-sidebar">
+          <div class="ins-cta-card">
+            <p class="ins-cta-label">Ready to source?</p>
+            <h3>Get a sample with COA</h3>
+            <p>Share your spec — grade, mesh, monthly volume, and destination. We'll respond within 24 hours.</p>
+            <a class="ins-btn ins-btn-primary" href={`/${lang}/#talk`}>{t.insightsReadMore}</a>
+            <a class="ins-btn ins-btn-wa" href="https://wa.me/918949817791" target="_blank" rel="noopener">WhatsApp Us</a>
+          </div>
+
+          <div class="ins-meta-card">
+            <div class="ins-meta-row"><strong>Audience</strong><span>{post.audience}</span></div>
+            <div class="ins-meta-row"><strong>Published</strong><span>{formattedDate}</span></div>
+            <div class="ins-meta-row"><strong>Source</strong><span>RM Psyllium · Unjha, Gujarat</span></div>
+          </div>
+
+          <div class="ins-nav-card">
+            <p class="ins-cta-label">More resources</p>
+            <a href={`/${lang}/insights/`}>All buyer guides →</a>
+            <a href={`/${lang}/faq/`}>{t.navFaq} →</a>
+            <a href={`/${lang}/quality/`}>{t.navQuality} →</a>
+            <a href={`/${lang}/products/`}>{t.navProducts} →</a>
+          </div>
+        </aside>
       </div>
     </div>
   </article>
 </BaseLayout>
 
 <style>
-  .article-grid {
+  .ins-wrap {
+    --f: 'Inter', system-ui, -apple-system, sans-serif;
+    --ink: #1a1c18;
+    --soft: #484c43;
+    --mute: #6b6f65;
+    --rule: rgba(26, 28, 24, 0.1);
+    --sage: #4a6630;
+    --sage-pale: #d8e0c8;
+    --cream: #f5f3ed;
+    --white: #ffffff;
+  }
+
+  /* ---- breadcrumb ---- */
+  .ins-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+    font-family: var(--f);
+    font-size: 12px;
+    color: var(--mute);
+  }
+
+  .ins-breadcrumb a {
+    color: var(--mute);
+    text-decoration: none;
+  }
+
+  .ins-breadcrumb a:hover { color: var(--sage); }
+
+  /* ---- header ---- */
+  .ins-header {
+    background: var(--cream);
+    border-bottom: 1px solid var(--rule);
+    padding: clamp(4rem, 7vw, 7rem) 0 clamp(3rem, 5vw, 5rem);
+  }
+
+  .ins-header-inner {
+    width: min(1140px, calc(100% - 128px));
+    margin-inline: auto;
     display: grid;
-    grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.75fr);
-    gap: 3rem;
-    align-items: start;
+    grid-template-columns: 1.4fr 1fr;
+    gap: clamp(3rem, 5vw, 5rem);
+    align-items: center;
+  }
+
+  .ins-kicker {
+    margin: 0 0 20px;
+    color: var(--sage);
+    font-family: var(--f);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .ins-header-copy h1 {
+    margin: 0;
+    font-family: var(--f);
+    font-size: clamp(2rem, 4.5vw, 3.6rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+    color: var(--ink);
+  }
+
+  .ins-header-copy h1 em {
+    color: var(--sage);
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .ins-lead {
+    margin: 20px 0 0;
+    color: var(--soft);
+    font-family: var(--f);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.65;
+    max-width: 520px;
   }
 
   time {
     display: inline-block;
-    margin-top: 1rem;
-    color: #8f4f32;
-    font-weight: 820;
+    margin-top: 16px;
+    color: var(--mute);
+    font-family: var(--f);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
   }
 
-  .article-body {
+  .ins-header-stats { display: grid; gap: 16px; }
+
+  .ins-hstat {
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    background: var(--white);
+    padding: 20px 24px;
+  }
+
+  .ins-hstat strong {
+    display: block;
+    font-family: var(--f);
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    line-height: 1.2;
+  }
+
+  .ins-hstat span {
+    display: block;
+    margin-top: 6px;
+    font-family: var(--f);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--mute);
+  }
+
+  /* ---- body ---- */
+  .ins-body-wrap {
+    padding: clamp(4rem, 7vw, 7rem) 0;
+  }
+
+  .ins-body-inner {
+    width: min(1100px, calc(100% - 128px));
+    margin-inline: auto;
     display: grid;
-    gap: 1rem;
-    padding: 1.5rem;
+    grid-template-columns: 1fr 320px;
+    gap: clamp(3rem, 5vw, 5rem);
+    align-items: start;
   }
 
-  .article-body p {
+  .ins-content p {
+    margin: 0 0 24px;
+    font-family: var(--f);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--soft);
+    line-height: 1.75;
+    max-width: 660px;
+  }
+
+  .ins-content p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* ---- sidebar ---- */
+  .ins-sidebar {
+    position: sticky;
+    top: 104px;
+    display: grid;
+    gap: 16px;
+  }
+
+  .ins-cta-card {
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    background: var(--white);
+    padding: 24px;
+    box-shadow: 0 8px 24px -12px rgba(26,28,24,0.12);
+    display: grid;
+    gap: 8px;
+  }
+
+  .ins-cta-label {
     margin: 0;
-    color: #64748b;
-    line-height: 1.65;
+    color: var(--sage);
+    font-family: var(--f);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
   }
 
-  @media (max-width: 920px) {
-    .article-grid {
-      grid-template-columns: 1fr;
-    }
+  .ins-cta-card h3 {
+    margin: 0;
+    font-family: var(--f);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+    line-height: 1.15;
+  }
+
+  .ins-cta-card > p {
+    margin: 4px 0 8px;
+    font-family: var(--f);
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--soft);
+    line-height: 1.6;
+  }
+
+  .ins-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    padding: 12px 20px;
+    font-family: var(--f);
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.25s cubic-bezier(.2,.7,.3,1), box-shadow 0.25s;
+  }
+
+  .ins-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px -8px rgba(26,28,24,0.2);
+  }
+
+  .ins-btn-primary {
+    background: var(--ink);
+    color: #fff;
+  }
+
+  .ins-btn-wa {
+    background: #25d366;
+    color: #fff;
+  }
+
+  .ins-nav-card {
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    background: var(--white);
+    padding: 20px 24px;
+    display: grid;
+    gap: 10px;
+  }
+
+  .ins-nav-card a {
+    color: var(--ink);
+    font-family: var(--f);
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .ins-nav-card a:hover { color: var(--sage); }
+
+  .ins-meta-card {
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    background: var(--cream);
+    padding: 20px 24px;
+    display: grid;
+    gap: 12px;
+  }
+
+  .ins-meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  .ins-meta-row strong {
+    font-family: var(--f);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--mute);
+    white-space: nowrap;
+  }
+
+  .ins-meta-row span {
+    font-family: var(--f);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--ink);
+    text-align: right;
+  }
+
+  /* ---- responsive ---- */
+  @media (max-width: 1100px) {
+    .ins-header-inner, .ins-body-inner { width: calc(100% - 80px); }
+  }
+
+  @media (max-width: 860px) {
+    .ins-header-inner, .ins-body-inner { width: calc(100% - 48px); }
+    .ins-header-inner { grid-template-columns: 1fr; }
+    .ins-header-stats { grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .ins-lead { max-width: 100%; }
+    .ins-body-inner { grid-template-columns: 1fr; }
+    .ins-sidebar { position: static; grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 540px) {
+    .ins-header-inner, .ins-body-inner { width: calc(100% - 32px); }
+    .ins-header-stats { grid-template-columns: 1fr; }
+    .ins-sidebar { grid-template-columns: 1fr; }
   }
 </style>

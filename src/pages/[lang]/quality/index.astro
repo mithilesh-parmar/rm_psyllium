@@ -1,18 +1,48 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import ComplianceGrid from '../../components/ComplianceGrid.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ComplianceGrid from '../../../components/ComplianceGrid.astro';
+import { copy, getLanguage, languages } from '../../../data/site';
+
+export function getStaticPaths() {
+  return languages.map((language) => ({
+    params: { lang: language.code }
+  }));
+}
+
+const lang = getLanguage(Astro.params.lang);
+const t = copy[lang];
+
+const orgSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'RM Psyllium',
+  url: 'https://www.rmpsyllium.com',
+  hasCredential: [
+    { '@type': 'EducationalOccupationalCredential', credentialCategory: 'FSSAI Registration', recognizedBy: { '@type': 'Organization', name: 'Food Safety and Standards Authority of India' } }
+  ],
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Survey 412/3, GIDC Phase II',
+    addressLocality: 'Unjha',
+    addressRegion: 'Gujarat',
+    postalCode: '384170',
+    addressCountry: 'IN'
+  }
+};
 ---
 <BaseLayout
-  title="Psyllium COA, Traceability & Export Documents | RM Psyllium"
-  description="Review COA, traceability, food safety, Halal, Kosher, phytosanitary, fumigation, origin, and export documentation support for bulk psyllium buyers."
+  lang={lang}
+  title={`Quality & Compliance — COA, Traceability, Export Documents | RM Psyllium`}
+  description={t.complianceLead}
+  structuredData={orgSchema}
 >
   <!-- INTRO -->
   <section class="cl-intro">
     <div class="cl-intro-inner">
       <div class="cl-intro-copy">
-        <p class="cl-kicker">Quality &amp; Compliance</p>
-        <h1>Documents buyers need<br /><em>before shipment.</em></h1>
-        <p>Procurement and QA teams can review COA parameters, lot traceability, food safety records, and export paperwork before samples or purchase orders.</p>
+        <p class="cl-kicker">{t.navQuality} &amp; Compliance</p>
+        <h1>{t.complianceTitle}<br /><em>before shipment.</em></h1>
+        <p>{t.complianceLead}</p>
       </div>
       <div class="cl-intro-stats">
         <div class="cl-stat">
@@ -64,7 +94,7 @@ import ComplianceGrid from '../../components/ComplianceGrid.astro';
             <h3>Halal</h3>
             <span class="cl-badge cl-badge--amber">In progress</span>
           </div>
-          <p>Halal certification body</p>
+          <p>Halal certification — expected Q3 2026</p>
         </div>
         <div class="cl-cert-card">
           <div class="cl-cert-header">
@@ -82,8 +112,8 @@ import ComplianceGrid from '../../components/ComplianceGrid.astro';
     <div class="cl-container cl-checklist">
       <div>
         <p class="cl-kicker cl-kicker--light">Before you order</p>
-        <h2>Buyer verification checklist</h2>
-        <p>Ask for current documents by product, lot, and destination market before confirming a bulk order.</p>
+        <h2>{t.complianceChecklist}</h2>
+        <p>{t.complianceChecklistLead}</p>
       </div>
       <ul>
         <li>Current organic certification scope and lot coverage</li>
@@ -112,7 +142,6 @@ import ComplianceGrid from '../../components/ComplianceGrid.astro';
 </BaseLayout>
 
 <style>
-  /* tokens */
   :root {
     --cl-ink: #1a1c18;
     --cl-soft: #484c43;
@@ -127,7 +156,6 @@ import ComplianceGrid from '../../components/ComplianceGrid.astro';
     --cl-f: 'Inter', system-ui, -apple-system, sans-serif;
   }
 
-  /* ---- layout ---- */
   .cl-container {
     width: min(1140px, calc(100% - 128px));
     margin-inline: auto;
@@ -137,13 +165,8 @@ import ComplianceGrid from '../../components/ComplianceGrid.astro';
     padding: clamp(4rem, 7vw, 7rem) 0;
   }
 
-  .cl-section--cream {
-    background: var(--cl-cream);
-  }
-
-  .cl-section--dark {
-    background: var(--cl-dark);
-  }
+  .cl-section--cream { background: var(--cl-cream); }
+  .cl-section--dark { background: var(--cl-dark); }
 
   .cl-section-label {
     display: flex;
@@ -165,7 +188,6 @@ import ComplianceGrid from '../../components/ComplianceGrid.astro';
     background: var(--cl-rule);
   }
 
-  /* ---- intro ---- */
   .cl-intro {
     background: var(--cl-cream);
     padding: clamp(4rem, 7vw, 7rem) 0 clamp(3rem, 5vw, 5rem);
@@ -222,10 +244,7 @@ import ComplianceGrid from '../../components/ComplianceGrid.astro';
     max-width: 520px;
   }
 
-  .cl-intro-stats {
-    display: grid;
-    gap: 16px;
-  }
+  .cl-intro-stats { display: grid; gap: 16px; }
 
   .cl-stat {
     border: 1px solid var(--cl-rule);
@@ -253,7 +272,6 @@ import ComplianceGrid from '../../components/ComplianceGrid.astro';
     color: var(--cl-mute);
   }
 
-  /* ---- section h2 ---- */
   .cl-section h2 {
     margin: 0 0 40px;
     font-family: var(--cl-f);
@@ -270,7 +288,6 @@ import ComplianceGrid from '../../components/ComplianceGrid.astro';
     font-weight: 300;
   }
 
-  /* ---- certifications ---- */
   .cl-cert-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -323,17 +340,9 @@ import ComplianceGrid from '../../components/ComplianceGrid.astro';
     white-space: nowrap;
   }
 
-  .cl-badge--green {
-    background: rgba(74, 102, 48, 0.12);
-    color: #354d20;
-  }
+  .cl-badge--green { background: rgba(74,102,48,0.12); color: #354d20; }
+  .cl-badge--amber { background: rgba(184,117,58,0.12); color: #b8753a; }
 
-  .cl-badge--amber {
-    background: rgba(184, 117, 58, 0.12);
-    color: #b8753a;
-  }
-
-  /* ---- dark checklist ---- */
   .cl-checklist {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -341,10 +350,7 @@ import ComplianceGrid from '../../components/ComplianceGrid.astro';
     align-items: start;
   }
 
-  .cl-checklist h2 {
-    color: #fff;
-    margin-top: 0;
-  }
+  .cl-checklist h2 { color: #fff; margin-top: 0; }
 
   .cl-checklist > div > p {
     margin: 16px 0 0;
@@ -388,7 +394,6 @@ import ComplianceGrid from '../../components/ComplianceGrid.astro';
     opacity: 0.8;
   }
 
-  /* ---- CTA ---- */
   .cl-cta {
     display: grid;
     grid-template-columns: 1fr auto;
@@ -415,11 +420,7 @@ import ComplianceGrid from '../../components/ComplianceGrid.astro';
     max-width: 560px;
   }
 
-  .cl-cta-buttons {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-  }
+  .cl-cta-buttons { display: flex; gap: 12px; flex-wrap: wrap; }
 
   .cl-btn {
     display: inline-flex;
@@ -436,62 +437,27 @@ import ComplianceGrid from '../../components/ComplianceGrid.astro';
 
   .cl-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 28px -12px rgba(26, 28, 24, 0.2);
+    box-shadow: 0 12px 28px -12px rgba(26,28,24,0.2);
   }
 
-  .cl-btn-primary {
-    background: var(--cl-ink);
-    color: #fff;
-  }
+  .cl-btn-primary { background: var(--cl-ink); color: #fff; }
+  .cl-btn-secondary { background: #25d366; color: #fff; }
 
-  .cl-btn-secondary {
-    background: #25d366;
-    color: #fff;
-  }
-
-  /* ---- responsive ---- */
   @media (max-width: 1100px) {
-    .cl-container,
-    .cl-intro-inner {
-      width: calc(100% - 80px);
-    }
+    .cl-container, .cl-intro-inner { width: calc(100% - 80px); }
   }
 
   @media (max-width: 860px) {
-    .cl-container,
-    .cl-intro-inner {
-      width: calc(100% - 48px);
-    }
-
-    .cl-intro-inner {
-      grid-template-columns: 1fr;
-    }
-
-    .cl-intro-stats {
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    .cl-cert-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .cl-checklist {
-      grid-template-columns: 1fr;
-    }
-
-    .cl-cta {
-      grid-template-columns: 1fr;
-    }
+    .cl-container, .cl-intro-inner { width: calc(100% - 48px); }
+    .cl-intro-inner { grid-template-columns: 1fr; }
+    .cl-intro-stats { grid-template-columns: repeat(3, 1fr); }
+    .cl-cert-grid { grid-template-columns: 1fr; }
+    .cl-checklist { grid-template-columns: 1fr; }
+    .cl-cta { grid-template-columns: 1fr; }
   }
 
   @media (max-width: 540px) {
-    .cl-container,
-    .cl-intro-inner {
-      width: calc(100% - 32px);
-    }
-
-    .cl-intro-stats {
-      grid-template-columns: 1fr;
-    }
+    .cl-container, .cl-intro-inner { width: calc(100% - 32px); }
+    .cl-intro-stats { grid-template-columns: 1fr; }
   }
 </style>

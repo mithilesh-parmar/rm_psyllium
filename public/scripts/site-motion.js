@@ -1,20 +1,16 @@
 (function () {
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  function updateProgress() {
-    var max = document.documentElement.scrollHeight - window.innerHeight;
-    var value = max > 0 ? window.scrollY / max : 0;
-    document.documentElement.style.setProperty('--scroll-progress', String(value));
-  }
-
-  updateProgress();
-  window.addEventListener('scroll', updateProgress, { passive: true });
-
   if (reduce || !('IntersectionObserver' in window)) return;
 
   var targets = document.querySelectorAll(
-    'main section, .product-link, .industry-row a, .insight-card, .standards-grid article, .facility-grid figure, .number-grid div, .story-image, .product-stage, .panel'
+    '[data-reveal], main section, .product-link, .industry-row a, .insight-card, .standards-grid article, .facility-grid figure, .number-grid div, .story-image, .product-stage, .panel'
   );
+
+  // Exclude homepage (.hp) sections — they handle their own visibility
+  targets = Array.from(targets).filter(function(el) {
+    return !el.closest('.hp');
+  });
 
   document.body.classList.add('motion-ready');
 
@@ -27,7 +23,9 @@
   }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
 
   targets.forEach(function (target, index) {
-    target.setAttribute('data-reveal', target.classList.contains('story-image') ? 'image' : 'up');
+    if (!target.hasAttribute('data-reveal')) {
+      target.setAttribute('data-reveal', target.classList.contains('story-image') ? 'image' : 'up');
+    }
     target.style.transitionDelay = Math.min(index % 6, 5) * 45 + 'ms';
     observer.observe(target);
   });

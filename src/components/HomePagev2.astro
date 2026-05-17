@@ -1,0 +1,1142 @@
+---
+import { getLanguage, products, type LanguageCode } from '../data/site';
+
+export interface Props {
+  lang?: LanguageCode;
+}
+
+const lang = getLanguage(Astro.props.lang || Astro.params.lang);
+
+const faqItems = [
+  { q: 'What is the minimum order quantity for psyllium husk?', a: 'Our minimum order is 500 KG. For buyers ready to scale, we also handle full container loads (18–20 MT).' },
+  { q: 'What purity grades do you offer for psyllium husk?', a: 'We offer 85%, 95%, 98%, and 99% purity grades for psyllium husk. 99% is pharmaceutical-grade (USP/EP compliant), 98% suits premium nutraceuticals, 95% covers general supplements and food, and 85% is for bulk food and industrial fibre applications.' },
+  { q: 'What mesh sizes are available?', a: 'We offer 30, 40, 60, 80, 100, and 200 mesh options. Coarser mesh (30/40) suits tablet presses and pharma, mid-range (60/80) works for food and supplements, and fine mesh (100/200) is ideal for drink mixes and bakery applications.' },
+  { q: 'Do you provide COA and export documentation?', a: 'Yes. Every shipment includes a Certificate of Analysis (COA), certificate of origin, phytosanitary certificate, fumigation certificate, MSDS, allergen statement, and packing list. Documents are shared before shipment for buyer review.' },
+  { q: 'What is the lead time from order to shipment?', a: '14–21 days from order confirmation to shipment. We ship FOB Mundra port or CIF to your destination port.' },
+  { q: 'Can you do private-label or custom packaging?', a: 'Yes. We offer packing in 10kg, 15kg, 25kg, 50kg bags, and 500kg/1000kg bulk bags. Custom printing, bag material, and inner liner specifications can be matched to your requirements.' },
+  { q: 'Do you have Halal/Kosher/Organic certification?', a: 'Halal and Kosher certifications are in progress. Organic lots (USDA/EU) are available for select grades. FSSAI facility registration is in place. We can share current certificate status before order.' },
+  { q: 'What ports do you ship from?', a: 'We ship primarily from Mundra port (Gujarat), 120km from our facility. Kandla and Nhava Sheva (Mumbai) are also available. FOB and CIF terms both supported.' },
+  { q: 'Can I get a sample before placing a bulk order?', a: 'Yes. We provide samples with a COA for quality evaluation. Contact us to arrange — samples are dispatched within 5 working days.' },
+  { q: 'What industries do you supply psyllium to?', a: 'We supply pharmaceutical companies, nutraceutical brands, food and bakery manufacturers, beverage companies, animal feed producers, and industrial buyers. Each industry gets grade, mesh, and documentation matched to their requirements.' }
+];
+
+const productCards = [
+  { name: 'Psyllium Husk 99%', app: 'Pharma · USP/EP', mesh: '30 / 40', slug: 'psyllium-husk' },
+  { name: 'Psyllium Husk 98%', app: 'Premium nutraceutical', mesh: '40 / 60', slug: 'psyllium-husk' },
+  { name: 'Psyllium Husk 95%', app: 'Supplements · Food', mesh: '40 / 60 / 80', slug: 'psyllium-husk' },
+  { name: 'Husk Powder 98%', app: 'Drink mixes · Bakery', mesh: '80 / 100', slug: 'psyllium-husk-powder' },
+  { name: 'Husk Powder 85%', app: 'Bulk fibre · Industrial', mesh: '80 / 100 / 200', slug: 'psyllium-husk-powder' },
+  { name: 'Psyllium Seeds', app: 'Milling · Pet food · Sowing', mesh: 'As-is', slug: 'psyllium-seeds' },
+  { name: 'Khakha Powder', app: 'Animal feed · Absorbents', mesh: 'Granular', slug: 'psyllium-khakha-powder' },
+  { name: 'Organic Psyllium', app: 'Clean-label · EU/USDA', mesh: 'Husk / Powder', slug: 'organic-psyllium' },
+  { name: 'Cattle Feed', app: 'Dairy · Livestock', mesh: 'Granular', slug: 'psyllium-cattle-feed' }
+];
+
+const certifications = [
+  { name: 'FSSAI', body: 'Food Safety & Standards Authority of India', status: 'registered' },
+  { name: 'ISO 22000 / HACCP', body: 'Food safety management system', status: 'in-progress' },
+  { name: 'Halal', body: 'Halal certification body', status: 'in-progress' },
+  { name: 'Kosher', body: 'Kosher certification body', status: 'in-progress' }
+];
+---
+
+<div class="hp">
+  <!-- SECTION 1: HERO -->
+  <section class="hp-hero" id="top">
+    <div class="hp-hero-grid">
+      <div class="hp-hero-copy">
+        <div class="hp-badge"><span class="hp-dot"></span>Psyllium manufacturer &amp; exporter · Unjha, Gujarat</div>
+        <h1>Bulk psyllium husk, powder, and seed.<br /><em>Farm to container.</em></h1>
+        <p>Custom grade, mesh, and packing for pharma, food, feed, and industrial buyers. 2,000 MT/year capacity. FOB Mundra or CIF.</p>
+        <div class="hp-actions">
+          <a class="hp-btn hp-btn-primary" href="#talk">Get a Quote <span aria-hidden="true">→</span></a>
+          <a class="hp-btn hp-btn-whatsapp" href="https://wa.me/918949817791" target="_blank" rel="noopener">WhatsApp Us</a>
+        </div>
+        <div class="hp-trust-row">
+          <span>COA per shipment</span>
+          <span>FSSAI</span>
+          <span>Halal</span>
+          <span>Kosher</span>
+          <span>40 years experience</span>
+        </div>
+      </div>
+      <div class="hp-hero-media">
+        <div class="hp-placeholder hp-placeholder--tall">
+          <div class="hp-placeholder-inner">
+            <span class="hp-placeholder-mark">RM</span>
+            <span class="hp-placeholder-caption">Facility photo · warehouse / product bags</span>
+          </div>
+        </div>
+        <aside class="hp-overlay-card">
+          <div class="hp-overlay-row"><strong>MOQ</strong><span>500 KG</span></div>
+          <div class="hp-overlay-row"><strong>Lead time</strong><span>14–21 days from confirmation</span></div>
+          <div class="hp-overlay-row"><strong>Sample</strong><span>Available on request</span></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: STATS BAR -->
+  <section class="hp-proof">
+    <div class="hp-stats">
+      <div><strong>2,000</strong><span>MT annual capacity</span></div>
+      <div><strong>40</strong><span>Years industry experience</span></div>
+      <div><strong>14–21</strong><span>Day lead time</span></div>
+      <div><strong>500 KG</strong><span>Minimum order</span></div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: PRODUCTS -->
+  <section class="hp-section" id="products">
+    <div class="hp-section-label"><span>Products</span><i></i></div>
+    <div class="hp-section-header">
+      <h2>Psyllium products for<br /><em>bulk buyers.</em></h2>
+      <p>Husk, powder, seeds, and cattle feed. Choose purity, mesh, and packing — we align documents and shipping terms before quote.</p>
+    </div>
+    <div class="hp-product-grid">
+      {productCards.map((card) => (
+        <a class="hp-product-card" href={`/${lang}/products/${card.slug}/`}>
+          <div class="hp-card-top">
+            <h3>{card.name}</h3>
+            <span class="hp-card-app">{card.app}</span>
+          </div>
+          <div class="hp-card-bottom">
+            <span class="hp-card-mesh">Mesh: {card.mesh}</span>
+            <span class="hp-card-cta">Get Quote →</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- SECTION 4: WHY RM PSYLLIUM -->
+  <section class="hp-section hp-section--cream" id="why">
+    <div class="hp-section-label"><span>Why RM Psyllium</span><i></i></div>
+    <h2 class="hp-section-title">Why source from<br /><em>RM Psyllium.</em></h2>
+    <div class="hp-diff-grid">
+      <div class="hp-diff">
+        <div class="hp-diff-num">01</div>
+        <h3>40 Years in Psyllium</h3>
+        <p>Our family has been in the psyllium trade since 1984. We know the crop, the supply chain, and the quality parameters — not as a theory but from decades of working it.</p>
+      </div>
+      <div class="hp-diff">
+        <div class="hp-diff-num">02</div>
+        <h3>Custom Specs</h3>
+        <p>Grade, mesh, packing, and documentation tailored to your requirement. Not a catalogue — your spec becomes our production brief.</p>
+      </div>
+      <div class="hp-diff">
+        <div class="hp-diff-num">03</div>
+        <h3>Direct from Source</h3>
+        <p>We source from contracted farms in Unjha, North Gujarat — the world's primary psyllium belt. No middlemen between the field and your container.</p>
+      </div>
+      <div class="hp-diff">
+        <div class="hp-diff-num">04</div>
+        <h3>Full Documentation</h3>
+        <p>COA, origin certificate, phytosanitary, fumigation, MSDS, and allergen statement per shipment. Documents shared before dispatch for buyer review.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: PROCESS -->
+  <section class="hp-section" id="process">
+    <div class="hp-section-label"><span>Process</span><i></i><span>5 steps · one lot</span></div>
+    <h2 class="hp-section-title">From seed to<br /><em>export-ready packing.</em></h2>
+    <div class="hp-process-grid">
+      <div class="hp-process-steps">
+        <div class="hp-step"><span class="hp-step-num">01</span><div><strong>Source</strong><p>Psyllium seed sourced from contracted farms across Unjha and North Gujarat — the world's primary psyllium growing region. Origin records maintained per lot.</p></div></div>
+        <div class="hp-step"><span class="hp-step-num">02</span><div><strong>Clean</strong><p>Seed cleaned and graded before milling. De-stoning, sieve separation, and magnetic inspection at each stage to reduce foreign matter.</p></div></div>
+        <div class="hp-step"><span class="hp-step-num">03</span><div><strong>Mill</strong><p>Controlled milling separates husk from seed to buyer-specified purity and mesh. No chemical bleaching or acid treatment.</p></div></div>
+        <div class="hp-step"><span class="hp-step-num">04</span><div><strong>Test</strong><p>Lab testing before packing — purity, swelling volume, moisture, ash, microbiology, and heavy metals. Results documented in COA shared before dispatch.</p></div></div>
+        <div class="hp-step"><span class="hp-step-num">05</span><div><strong>Pack &amp; Ship</strong><p>Food-grade packing in buyer-specified bag sizes. Export documents prepared and reviewed before shipment. FOB Mundra or CIF.</p></div></div>
+      </div>
+      <div class="hp-placeholder hp-placeholder--process">
+        <div class="hp-placeholder-inner">
+          <span class="hp-placeholder-mark">RM</span>
+          <span class="hp-placeholder-caption">Facility photo · milling line or lab</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: CERTIFICATIONS -->
+  <section class="hp-section hp-section--cream" id="certifications">
+    <div class="hp-section-label"><span>Certifications</span><i></i></div>
+    <h2 class="hp-section-title">Quality standards we hold<br /><em>and are working towards.</em></h2>
+    <div class="hp-cert-grid">
+      {certifications.map((cert) => (
+        <div class="hp-cert-card">
+          <div class="hp-cert-header">
+            <h3>{cert.name}</h3>
+            <span class:list={['hp-cert-status', `hp-cert-status--${cert.status}`]}>
+              {cert.status === 'registered' ? 'Registered' : 'In progress'}
+            </span>
+          </div>
+          <p>{cert.body}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- SECTION 7: FAQ -->
+  <section class="hp-section" id="faq">
+    <div class="hp-section-label"><span>FAQ</span><i></i><span>Common buyer questions</span></div>
+    <h2 class="hp-section-title">Questions buyers ask<br /><em>before first order.</em></h2>
+    <div class="hp-faq-list">
+      {faqItems.map((item, i) => (
+        <details class="hp-faq-item">
+          <summary><span>{item.q}</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <p>{item.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <!-- SECTION 8: CONTACT / QUOTE FORM -->
+  <section class="hp-section" id="talk">
+    <div class="hp-contact-grid">
+      <div class="hp-contact-copy">
+        <div class="hp-section-label"><span>Contact</span><i></i></div>
+        <h2>Get a<br /><em>bulk quote.</em></h2>
+        <p>Tell us what you need. We'll respond within 24 hours with availability, pricing, and sample options.</p>
+        <div class="hp-contact-channels">
+          <a class="hp-channel" href="mailto:export@rmpsyllium.com">
+            <strong>Email</strong>
+            <span>export@rmpsyllium.com</span>
+          </a>
+          <a class="hp-channel" href="https://wa.me/918949817791" target="_blank" rel="noopener">
+            <strong>WhatsApp</strong>
+            <span>+91 89498 17791</span>
+          </a>
+          <div class="hp-channel">
+            <strong>Response time</strong>
+            <span>Typically within 4 hours (IST business hours)</span>
+          </div>
+        </div>
+      </div>
+      <form class="hp-form" name="quote-form" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you?intent=quote">
+        <input type="hidden" name="form-name" value="quote-form" />
+        <p hidden><label>Bot: <input name="bot-field" /></label></p>
+        <header><span>Request a quote</span><small>● export desk</small></header>
+        <div class="hp-form-fields">
+          <label><span>Name *</span><input name="name" type="text" required /></label>
+          <label><span>Email *</span><input name="email" type="email" required /></label>
+          <label><span>Product interest *</span>
+            <select name="product" required>
+              <option value="">Select a product</option>
+              <option value="husk">Psyllium Husk</option>
+              <option value="powder">Husk Powder</option>
+              <option value="seeds">Seeds</option>
+              <option value="cattle-feed">Cattle Feed</option>
+              <option value="organic">Organic</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+          <label><span>Country *</span><input name="country" type="text" required /></label>
+          <label><span>Company</span><input name="company" type="text" /></label>
+          <label class="hp-form-full"><span>Message / specs</span><textarea name="message" rows="3"></textarea></label>
+        </div>
+        <button class="hp-btn hp-btn-primary" type="submit">Send Inquiry <span aria-hidden="true">→</span></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- STICKY MOBILE BAR -->
+  <div class="hp-sticky-bar" id="stickyBar">
+    <a class="hp-btn hp-btn-primary" href="#talk">Get Quote</a>
+    <a class="hp-btn hp-btn-whatsapp" href="https://wa.me/918949817791" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</div>
+
+<script>
+  const stickyBar = document.getElementById('stickyBar');
+  if (stickyBar) {
+    const hero = document.querySelector('.hp-hero');
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        stickyBar.classList.toggle('is-visible', !entry.isIntersecting);
+      },
+      { threshold: 0 }
+    );
+    if (hero) observer.observe(hero);
+  }
+</script>
+
+<style>
+  .hp {
+    --hp-white: #ffffff;
+    --hp-paper: #fafaf7;
+    --hp-cream: #f5f3ec;
+    --hp-ink: #1a1c18;
+    --hp-soft: #4a4f44;
+    --hp-mute: #7a7e72;
+    --hp-rule: rgba(26, 28, 24, 0.1);
+    --hp-sage: #5f7044;
+    --hp-sage-deep: #42542c;
+    --hp-sage-pale: #dfe4cf;
+    --hp-warm: #b8753a;
+    --hp-warm-pale: #f1dfc8;
+    background: var(--hp-white);
+    color: var(--hp-ink);
+    font-family: var(--font-body);
+    overflow-x: clip;
+  }
+
+  .hp em {
+    color: var(--hp-sage);
+    font-style: italic;
+  }
+
+  /* HERO */
+  .hp-hero {
+    padding: 64px 64px 96px;
+    position: relative;
+  }
+
+  .hp-hero-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: clamp(3rem, 5vw, 5rem);
+    align-items: center;
+  }
+
+  .hp-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--hp-sage-pale);
+    border-radius: 999px;
+    background: rgba(223, 228, 207, 0.3);
+    padding: 7px 14px;
+    color: var(--hp-sage);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  .hp-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--hp-sage);
+    animation: hp-pulse 1.8s ease-in-out infinite;
+  }
+
+  .hp-hero h1 {
+    margin: 28px 0 0;
+    font-family: var(--font-display);
+    font-size: clamp(3.2rem, 6vw, 5.5rem);
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    line-height: 1;
+    text-wrap: balance;
+  }
+
+  .hp-hero p {
+    margin: 28px 0 0;
+    max-width: 540px;
+    color: var(--hp-soft);
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .hp-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 32px;
+  }
+
+  .hp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    padding: 14px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    text-decoration: none;
+    transition: transform 0.25s cubic-bezier(.2,.7,.3,1), box-shadow 0.25s, background 0.2s;
+    cursor: pointer;
+  }
+
+  .hp-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px -12px rgba(26, 28, 24, 0.2);
+  }
+
+  .hp-btn-primary {
+    background: var(--hp-ink);
+    color: var(--hp-white);
+  }
+
+  .hp-btn-whatsapp {
+    background: #25d366;
+    color: #fff;
+  }
+
+  .hp-trust-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 28px;
+  }
+
+  .hp-trust-row span {
+    border: 1px solid rgba(26, 28, 24, 0.22);
+    border-radius: 999px;
+    padding: 5px 12px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--hp-ink);
+  }
+
+  .hp-hero-media {
+    position: relative;
+  }
+
+  .hp-placeholder {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background: var(--hp-sage-pale);
+    display: grid;
+    place-items: center;
+  }
+
+  .hp-placeholder--tall {
+    aspect-ratio: 4 / 5;
+  }
+
+  .hp-placeholder--process {
+    aspect-ratio: 3 / 4;
+  }
+
+  .hp-placeholder-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .hp-placeholder-mark {
+    font-family: var(--font-display);
+    font-size: clamp(4rem, 10vw, 8rem);
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: -0.04em;
+    color: var(--hp-sage);
+    opacity: 0.35;
+    line-height: 1;
+  }
+
+  .hp-placeholder-caption {
+    color: var(--hp-sage-deep);
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    opacity: 0.6;
+  }
+
+  .hp-overlay-card {
+    position: absolute;
+    bottom: -24px;
+    left: -24px;
+    background: var(--hp-white);
+    border: 1px solid var(--hp-rule);
+    padding: 20px 24px;
+    box-shadow: 0 12px 28px -16px rgba(26,28,24,0.18);
+    display: grid;
+    gap: 12px;
+    min-width: 260px;
+  }
+
+  .hp-overlay-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 13px;
+  }
+
+  .hp-overlay-row strong {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--hp-mute);
+  }
+
+  .hp-overlay-row span {
+    color: var(--hp-ink);
+    font-weight: 500;
+  }
+
+  /* SOCIAL PROOF */
+  .hp-proof {
+    border-top: 1px solid var(--hp-rule);
+    border-bottom: 1px solid var(--hp-rule);
+    background: var(--hp-cream);
+    padding: 48px 64px;
+  }
+
+  .hp-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+
+  .hp-stats strong {
+    display: block;
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    color: var(--hp-ink);
+  }
+
+  .hp-stats span {
+    display: block;
+    margin-top: 6px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--hp-mute);
+  }
+
+  /* SECTIONS */
+  .hp-section {
+    padding: clamp(5rem, 8vw, 8rem) 64px;
+  }
+
+  .hp-section--cream {
+    background: var(--hp-cream);
+  }
+
+  .hp-section-label {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 28px;
+    color: var(--hp-sage);
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  .hp-section-label i {
+    flex: 1;
+    max-width: 400px;
+    height: 1px;
+    background: var(--hp-rule);
+  }
+
+  .hp-section-label span:last-child:not(:first-child) {
+    color: var(--hp-mute);
+  }
+
+  .hp-section-header {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: clamp(2rem, 4vw, 4rem);
+    align-items: end;
+    margin-bottom: 56px;
+  }
+
+  .hp-section-header h2,
+  .hp-section-title,
+  .hp-contact-copy h2 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 5vw, 4.5rem);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+
+  .hp-section-header p {
+    margin: 0;
+    color: var(--hp-soft);
+    font-size: 16px;
+    line-height: 1.65;
+    max-width: 480px;
+  }
+
+  .hp-section-title {
+    margin-bottom: 56px;
+  }
+
+  /* PRODUCTS GRID */
+  .hp-product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .hp-product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid var(--hp-rule);
+    background: var(--hp-white);
+    padding: 28px;
+    text-decoration: none;
+    color: var(--hp-ink);
+    transition: transform 0.3s cubic-bezier(.2,.7,.3,1), box-shadow 0.3s;
+    min-height: 180px;
+  }
+
+  .hp-product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px -18px rgba(26,28,24,0.2);
+  }
+
+  .hp-product-card h3 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -0.015em;
+    line-height: 1.1;
+  }
+
+  .hp-card-app {
+    display: block;
+    margin-top: 8px;
+    color: var(--hp-soft);
+    font-size: 13px;
+  }
+
+  .hp-card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid var(--hp-rule);
+  }
+
+  .hp-card-mesh {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--hp-mute);
+  }
+
+  .hp-card-cta {
+    color: var(--hp-sage);
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  /* DIFFERENTIATORS */
+  .hp-diff-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+
+  .hp-diff {
+    border-top: 2px solid var(--hp-sage);
+    padding-top: 24px;
+  }
+
+  .hp-diff-num {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    color: var(--hp-sage);
+    margin-bottom: 12px;
+  }
+
+  .hp-diff h3 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: -0.015em;
+    line-height: 1.1;
+  }
+
+  .hp-diff p {
+    margin: 12px 0 0;
+    color: var(--hp-soft);
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  /* PROCESS */
+  .hp-process-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(3rem, 5vw, 5rem);
+    align-items: start;
+  }
+
+  .hp-process-steps {
+    display: grid;
+    gap: 0;
+  }
+
+  .hp-step {
+    display: flex;
+    gap: 20px;
+    padding: 24px 0;
+    border-top: 1px solid var(--hp-rule);
+  }
+
+  .hp-step:last-child {
+    border-bottom: 1px solid var(--hp-rule);
+  }
+
+  .hp-step-num {
+    flex-shrink: 0;
+    width: 32px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    color: var(--hp-sage);
+    padding-top: 3px;
+  }
+
+  .hp-step strong {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+
+  .hp-step p {
+    margin: 8px 0 0;
+    color: var(--hp-soft);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .hp-process-link {
+    margin-top: 32px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .hp-process-link a {
+    color: var(--hp-sage);
+    text-decoration: none;
+  }
+
+  .hp-process-link a:hover {
+    text-decoration: underline;
+  }
+
+  /* CERTIFICATIONS */
+  .hp-cert-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    max-width: 760px;
+  }
+
+  .hp-cert-card {
+    border: 1px solid var(--hp-rule);
+    background: var(--hp-white);
+    padding: 28px;
+  }
+
+  .hp-cert-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+
+  .hp-cert-card h3 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+  }
+
+  .hp-cert-card p {
+    margin: 0;
+    color: var(--hp-mute);
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    line-height: 1.5;
+  }
+
+  .hp-cert-status {
+    flex-shrink: 0;
+    border-radius: 999px;
+    padding: 4px 10px;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .hp-cert-status--registered {
+    background: rgba(95, 112, 68, 0.12);
+    color: var(--hp-sage-deep);
+  }
+
+  .hp-cert-status--in-progress {
+    background: rgba(184, 117, 58, 0.12);
+    color: var(--hp-warm);
+  }
+
+  /* FAQ */
+  .hp-faq-list {
+    display: grid;
+    gap: 0;
+    max-width: 800px;
+    margin-inline: auto;
+  }
+
+  .hp-faq-item {
+    border-top: 1px solid var(--hp-rule);
+  }
+
+  .hp-faq-item:last-child {
+    border-bottom: 1px solid var(--hp-rule);
+  }
+
+  .hp-faq-item summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 0;
+    cursor: pointer;
+    list-style: none;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--hp-ink);
+    user-select: none;
+  }
+
+  .hp-faq-item summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .hp-faq-item summary svg {
+    flex-shrink: 0;
+    color: var(--hp-sage);
+    transition: transform 0.25s cubic-bezier(.2,.7,.3,1);
+  }
+
+  .hp-faq-item[open] summary svg {
+    transform: rotate(180deg);
+  }
+
+  .hp-faq-item p {
+    margin: 0 0 20px;
+    color: var(--hp-soft);
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 680px;
+  }
+
+  /* CONTACT / FORM */
+  .hp-contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: clamp(3rem, 5vw, 6rem);
+    align-items: start;
+  }
+
+  .hp-contact-copy .hp-section-label {
+    margin-bottom: 20px;
+  }
+
+  .hp-contact-copy h2 {
+    margin: 0;
+  }
+
+  .hp-contact-copy > p {
+    margin: 20px 0 0;
+    color: var(--hp-soft);
+    font-size: 16px;
+    line-height: 1.65;
+    max-width: 400px;
+  }
+
+  .hp-contact-channels {
+    display: grid;
+    gap: 12px;
+    margin-top: 32px;
+  }
+
+  .hp-channel {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    border: 1px solid var(--hp-rule);
+    padding: 14px 18px;
+    text-decoration: none;
+    color: var(--hp-ink);
+    transition: border-color 0.2s;
+  }
+
+  .hp-channel:hover {
+    border-color: var(--hp-sage-pale);
+  }
+
+  .hp-channel strong {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--hp-sage);
+  }
+
+  .hp-channel span {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--hp-ink);
+  }
+
+  /* FORM */
+  .hp-form {
+    background: var(--hp-cream);
+    padding: 32px;
+  }
+
+  .hp-form header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--hp-rule);
+  }
+
+  .hp-form header span {
+    font-family: var(--font-display);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+
+  .hp-form header small {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--hp-sage);
+  }
+
+  .hp-form-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+
+  .hp-form-full {
+    grid-column: 1 / -1;
+  }
+
+  .hp-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .hp-form label span {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--hp-mute);
+  }
+
+  .hp-form input,
+  .hp-form select,
+  .hp-form textarea {
+    width: 100%;
+    border: 1px solid var(--hp-rule);
+    border-radius: 0;
+    background: var(--hp-white);
+    padding: 10px 12px;
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--hp-ink);
+    outline: none;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+  }
+
+  .hp-form input:focus,
+  .hp-form select:focus,
+  .hp-form textarea:focus {
+    border-color: var(--hp-sage);
+  }
+
+  .hp-form textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+
+  .hp-form .hp-btn {
+    width: 100%;
+    margin-top: 6px;
+    padding: 16px 24px;
+    font-size: 15px;
+    border-radius: 0;
+  }
+
+  /* STICKY BAR */
+  .hp-sticky-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    gap: 12px;
+    padding: 12px 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-top: 1px solid var(--hp-rule);
+    backdrop-filter: blur(10px);
+    transform: translateY(100%);
+    transition: transform 0.35s cubic-bezier(.2,.7,.3,1);
+  }
+
+  .hp-sticky-bar.is-visible {
+    transform: translateY(0);
+  }
+
+  .hp-sticky-bar .hp-btn {
+    flex: 1;
+    border-radius: 0;
+  }
+
+  /* ANIMATIONS */
+  @keyframes hp-pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(0.85); }
+  }
+
+  /* RESPONSIVE */
+  @media (min-width: 981px) {
+    .hp-sticky-bar {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .hp-hero {
+      padding: 48px 40px 80px;
+    }
+
+    .hp-proof {
+      padding: 40px 40px;
+    }
+
+    .hp-section {
+      padding: clamp(4rem, 6vw, 6rem) 40px;
+    }
+  }
+
+  @media (max-width: 860px) {
+    .hp-hero {
+      padding: 40px 24px 64px;
+    }
+
+    .hp-hero-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .hp-hero h1 {
+      font-size: clamp(2.6rem, 8vw, 3.8rem);
+    }
+
+    .hp-overlay-card {
+      display: none;
+    }
+
+    .hp-proof {
+      padding: 32px 24px;
+    }
+
+    .hp-stats {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hp-section {
+      padding: clamp(3rem, 5vw, 5rem) 24px;
+    }
+
+    .hp-section-header {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .hp-product-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hp-diff-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hp-cert-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .hp-process-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .hp-placeholder--process {
+      display: none;
+    }
+
+    .hp-contact-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .hp-form-fields {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 540px) {
+    .hp-hero {
+      padding: 32px 16px 56px;
+    }
+
+    .hp-product-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .hp-diff-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .hp-form {
+      padding: 24px 16px;
+    }
+  }
+</style>

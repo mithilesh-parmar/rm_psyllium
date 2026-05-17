@@ -1,0 +1,1100 @@
+---
+import { getLanguage, products, type LanguageCode } from '../data/site';
+
+export interface Props {
+  lang?: LanguageCode;
+}
+
+const lang = getLanguage(Astro.props.lang || Astro.params.lang);
+
+const faqItems = [
+  { q: 'What is the minimum order quantity for psyllium husk?', a: 'Our minimum order is 500 KG. For buyers ready to scale, we also handle full container loads (18–20 MT).' },
+  { q: 'What purity grades do you offer for psyllium husk?', a: 'We offer 85%, 95%, 98%, and 99% purity grades for psyllium husk. 99% is pharmaceutical-grade (USP/EP compliant), 98% suits premium nutraceuticals, 95% covers general supplements and food, and 85% is for bulk food and industrial fibre applications.' },
+  { q: 'What mesh sizes are available?', a: 'We offer 30, 40, 60, 80, 100, and 200 mesh options. Coarser mesh (30/40) suits tablet presses and pharma, mid-range (60/80) works for food and supplements, and fine mesh (100/200) is ideal for drink mixes and bakery applications.' },
+  { q: 'Do you provide COA and export documentation?', a: 'Yes. Every shipment includes a Certificate of Analysis (COA), certificate of origin, phytosanitary certificate, fumigation certificate, MSDS, allergen statement, and packing list. Documents are shared before shipment for buyer review.' },
+  { q: 'What is the lead time from order to shipment?', a: '14–21 days from order confirmation to shipment. We ship FOB Mundra port or CIF to your destination port.' },
+  { q: 'Can you do private-label or custom packaging?', a: 'Yes. We offer packing in 10kg, 15kg, 25kg, 50kg bags, and 500kg/1000kg bulk bags. Custom printing, bag material, and inner liner specifications can be matched to your requirements.' },
+  { q: 'Do you have Halal/Kosher/Organic certification?', a: 'Halal and Kosher certifications are in progress. Organic lots (USDA/EU) are available for select grades. FSSAI facility registration is in place. We can share current certificate status before order.' },
+  { q: 'What ports do you ship from?', a: 'We ship primarily from Mundra port (Gujarat), 120km from our facility. Kandla and Nhava Sheva (Mumbai) are also available. FOB and CIF terms both supported.' },
+  { q: 'Can I get a sample before placing a bulk order?', a: 'Yes. We provide samples with a COA for quality evaluation. Contact us to arrange — samples are dispatched within 5 working days.' },
+  { q: 'What industries do you supply psyllium to?', a: 'We supply pharmaceutical companies, nutraceutical brands, food and bakery manufacturers, beverage companies, animal feed producers, and industrial buyers. Each industry gets grade, mesh, and documentation matched to their requirements.' }
+];
+
+const productCards = [
+  { name: 'Psyllium Husk 99%', app: 'Pharma · USP/EP', mesh: '30 / 40', slug: 'psyllium-husk' },
+  { name: 'Psyllium Husk 98%', app: 'Premium nutraceutical', mesh: '40 / 60', slug: 'psyllium-husk' },
+  { name: 'Psyllium Husk 95%', app: 'Supplements · Food', mesh: '40 / 60 / 80', slug: 'psyllium-husk' },
+  { name: 'Husk Powder 98%', app: 'Drink mixes · Bakery', mesh: '80 / 100', slug: 'psyllium-husk-powder' },
+  { name: 'Husk Powder 85%', app: 'Bulk fibre · Industrial', mesh: '80 / 100 / 200', slug: 'psyllium-husk-powder' },
+  { name: 'Psyllium Seeds', app: 'Milling · Pet food · Sowing', mesh: 'As-is', slug: 'psyllium-seeds' },
+  { name: 'Khakha Powder', app: 'Animal feed · Absorbents', mesh: 'Granular', slug: 'psyllium-khakha-powder' },
+  { name: 'Organic Psyllium', app: 'Clean-label · EU/USDA', mesh: 'Husk / Powder', slug: 'organic-psyllium' },
+  { name: 'Cattle Feed', app: 'Dairy · Livestock', mesh: 'Granular', slug: 'psyllium-cattle-feed' }
+];
+
+const certifications = [
+  { name: 'FSSAI', body: 'Food Safety & Standards Authority of India', status: 'registered' },
+  { name: 'ISO 22000 / HACCP', body: 'Food safety management system', status: 'in-progress' },
+  { name: 'Halal', body: 'Halal certification body', status: 'in-progress' },
+  { name: 'Kosher', body: 'Kosher certification body', status: 'in-progress' }
+];
+---
+
+<div class="hp4">
+  <!-- SECTION 1: HERO -->
+  <section class="hp4-hero" id="top">
+    <div class="hp4-hero-grid">
+      <div class="hp4-hero-copy">
+        <div class="hp4-badge"><span class="hp4-dot"></span>Psyllium manufacturer &amp; exporter · Unjha, Gujarat</div>
+        <h1>Bulk psyllium husk, powder, and seed.<br /><em>Farm to container.</em></h1>
+        <p>Custom grade, mesh, and packing for pharma, food, feed, and industrial buyers. 2,000 MT/year capacity. FOB Mundra or CIF.</p>
+        <div class="hp4-actions">
+          <a class="hp4-btn hp4-btn-primary" href="#talk">Get a Quote <span aria-hidden="true">→</span></a>
+          <a class="hp4-btn hp4-btn-whatsapp" href="https://wa.me/918949817791" target="_blank" rel="noopener">WhatsApp Us</a>
+        </div>
+        <div class="hp4-trust-row">
+          <span>COA per shipment</span>
+          <span>FSSAI</span>
+          <span>Halal</span>
+          <span>Kosher</span>
+          <span>40 years experience</span>
+        </div>
+      </div>
+      <div class="hp4-hero-media">
+        <div class="hp4-placeholder hp4-placeholder--tall">
+          <div class="hp4-placeholder-inner">
+            <span class="hp4-placeholder-mark">RM</span>
+            <span class="hp4-placeholder-caption">Facility photo · warehouse / product bags</span>
+          </div>
+        </div>
+        <aside class="hp4-overlay-card">
+          <div class="hp4-overlay-row"><strong>MOQ</strong><span>500 KG</span></div>
+          <div class="hp4-overlay-row"><strong>Lead time</strong><span>14–21 days from confirmation</span></div>
+          <div class="hp4-overlay-row"><strong>Sample</strong><span>Available on request</span></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: STATS BAR -->
+  <section class="hp4-proof">
+    <div class="hp4-stats">
+      <div><strong>2,000</strong><span>MT annual capacity</span></div>
+      <div><strong>40</strong><span>Years industry experience</span></div>
+      <div><strong>14–21</strong><span>Day lead time</span></div>
+      <div><strong>500 KG</strong><span>Minimum order</span></div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: PRODUCTS -->
+  <section class="hp4-section" id="products">
+    <div class="hp4-section-label"><span>Products</span><i></i></div>
+    <div class="hp4-section-header">
+      <h2>Psyllium products for<br /><em>bulk buyers.</em></h2>
+      <p>Husk, powder, seeds, and cattle feed. Choose purity, mesh, and packing — we align documents and shipping terms before quote.</p>
+    </div>
+    <div class="hp4-product-grid">
+      {productCards.map((card) => (
+        <a class="hp4-product-card" href={`/${lang}/products/${card.slug}/`}>
+          <div class="hp4-card-top">
+            <h3>{card.name}</h3>
+            <span class="hp4-card-app">{card.app}</span>
+          </div>
+          <div class="hp4-card-bottom">
+            <span class="hp4-card-mesh">Mesh: {card.mesh}</span>
+            <span class="hp4-card-cta">Get Quote →</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- SECTION 4: WHY RM PSYLLIUM -->
+  <section class="hp4-section hp4-section--cream" id="why">
+    <div class="hp4-section-label"><span>Why RM Psyllium</span><i></i></div>
+    <h2 class="hp4-section-title">Why source from<br /><em>RM Psyllium.</em></h2>
+    <div class="hp4-diff-grid">
+      <div class="hp4-diff">
+        <div class="hp4-diff-num">01</div>
+        <h3>40 Years in Psyllium</h3>
+        <p>Our family has been in the psyllium trade since 1984. We know the crop, the supply chain, and the quality parameters — not as a theory but from decades of working it.</p>
+      </div>
+      <div class="hp4-diff">
+        <div class="hp4-diff-num">02</div>
+        <h3>Custom Specs</h3>
+        <p>Grade, mesh, packing, and documentation tailored to your requirement. Not a catalogue — your spec becomes our production brief.</p>
+      </div>
+      <div class="hp4-diff">
+        <div class="hp4-diff-num">03</div>
+        <h3>Direct from Source</h3>
+        <p>We source from contracted farms in Unjha, North Gujarat — the world's primary psyllium belt. No middlemen between the field and your container.</p>
+      </div>
+      <div class="hp4-diff">
+        <div class="hp4-diff-num">04</div>
+        <h3>Full Documentation</h3>
+        <p>COA, origin certificate, phytosanitary, fumigation, MSDS, and allergen statement per shipment. Documents shared before dispatch for buyer review.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: PROCESS -->
+  <section class="hp4-section" id="process">
+    <div class="hp4-section-label"><span>Process</span><i></i><span>5 steps · one lot</span></div>
+    <h2 class="hp4-section-title">From seed to<br /><em>export-ready packing.</em></h2>
+    <div class="hp4-process-grid">
+      <div class="hp4-process-steps">
+        <div class="hp4-step"><span class="hp4-step-num">01</span><div><strong>Source</strong><p>Psyllium seed sourced from contracted farms across Unjha and North Gujarat — the world's primary psyllium growing region. Origin records maintained per lot.</p></div></div>
+        <div class="hp4-step"><span class="hp4-step-num">02</span><div><strong>Clean</strong><p>Seed cleaned and graded before milling. De-stoning, sieve separation, and magnetic inspection at each stage to reduce foreign matter.</p></div></div>
+        <div class="hp4-step"><span class="hp4-step-num">03</span><div><strong>Mill</strong><p>Controlled milling separates husk from seed to buyer-specified purity and mesh. No chemical bleaching or acid treatment.</p></div></div>
+        <div class="hp4-step"><span class="hp4-step-num">04</span><div><strong>Test</strong><p>Lab testing before packing — purity, swelling volume, moisture, ash, microbiology, and heavy metals. Results documented in COA shared before dispatch.</p></div></div>
+        <div class="hp4-step"><span class="hp4-step-num">05</span><div><strong>Pack &amp; Ship</strong><p>Food-grade packing in buyer-specified bag sizes. Export documents prepared and reviewed before shipment. FOB Mundra or CIF.</p></div></div>
+      </div>
+      <div class="hp4-placeholder hp4-placeholder--process">
+        <div class="hp4-placeholder-inner">
+          <span class="hp4-placeholder-mark">RM</span>
+          <span class="hp4-placeholder-caption">Facility photo · milling line or lab</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: CERTIFICATIONS -->
+  <section class="hp4-section hp4-section--cream" id="certifications">
+    <div class="hp4-section-label"><span>Certifications</span><i></i></div>
+    <h2 class="hp4-section-title">Quality standards we hold<br /><em>and are working towards.</em></h2>
+    <div class="hp4-cert-grid">
+      {certifications.map((cert) => (
+        <div class="hp4-cert-card">
+          <div class="hp4-cert-header">
+            <h3>{cert.name}</h3>
+            <span class:list={['hp4-cert-status', `hp4-cert-status--${cert.status}`]}>
+              {cert.status === 'registered' ? 'Registered' : 'In progress'}
+            </span>
+          </div>
+          <p>{cert.body}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- SECTION 7: FAQ -->
+  <section class="hp4-section" id="faq">
+    <div class="hp4-section-label"><span>FAQ</span><i></i><span>Common buyer questions</span></div>
+    <h2 class="hp4-section-title">Questions buyers ask<br /><em>before first order.</em></h2>
+    <div class="hp4-faq-list">
+      {faqItems.map((item, i) => (
+        <details class="hp4-faq-item">
+          <summary><span>{item.q}</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+          <p>{item.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <!-- SECTION 8: CONTACT / QUOTE FORM -->
+  <section class="hp4-section" id="talk">
+    <div class="hp4-contact-grid">
+      <div class="hp4-contact-copy">
+        <div class="hp4-section-label"><span>Contact</span><i></i></div>
+        <h2>Get a<br /><em>bulk quote.</em></h2>
+        <p>Tell us what you need. We'll respond within 24 hours with availability, pricing, and sample options.</p>
+        <div class="hp4-contact-channels">
+          <a class="hp4-channel" href="mailto:export@rmpsyllium.com">
+            <strong>Email</strong>
+            <span>export@rmpsyllium.com</span>
+          </a>
+          <a class="hp4-channel" href="https://wa.me/918949817791" target="_blank" rel="noopener">
+            <strong>WhatsApp</strong>
+            <span>+91 89498 17791</span>
+          </a>
+          <div class="hp4-channel">
+            <strong>Response time</strong>
+            <span>Typically within 4 hours (IST business hours)</span>
+          </div>
+        </div>
+      </div>
+      <form class="hp4-form" name="quote-form-v4" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you?intent=quote">
+        <input type="hidden" name="form-name" value="quote-form-v4" />
+        <p hidden><label>Bot: <input name="bot-field" /></label></p>
+        <header><span>Request a quote</span><small>● export desk</small></header>
+        <div class="hp4-form-fields">
+          <label><span>Name *</span><input name="name" type="text" required /></label>
+          <label><span>Email *</span><input name="email" type="email" required /></label>
+          <label><span>Product interest *</span>
+            <select name="product" required>
+              <option value="">Select a product</option>
+              <option value="husk">Psyllium Husk</option>
+              <option value="powder">Husk Powder</option>
+              <option value="seeds">Seeds</option>
+              <option value="cattle-feed">Cattle Feed</option>
+              <option value="organic">Organic</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+          <label><span>Country *</span><input name="country" type="text" required /></label>
+          <label><span>Company</span><input name="company" type="text" /></label>
+          <label class="hp4-form-full"><span>Message / specs</span><textarea name="message" rows="3"></textarea></label>
+        </div>
+        <button class="hp4-btn hp4-btn-primary" type="submit">Send Inquiry <span aria-hidden="true">→</span></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- STICKY MOBILE BAR -->
+  <div class="hp4-sticky-bar" id="stickyBarV4">
+    <a class="hp4-btn hp4-btn-primary" href="#talk">Get Quote</a>
+    <a class="hp4-btn hp4-btn-whatsapp" href="https://wa.me/918949817791" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</div>
+
+<script>
+  const stickyBarV4 = document.getElementById('stickyBarV4');
+  if (stickyBarV4) {
+    const hero = document.querySelector('.hp4-hero');
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        stickyBarV4.classList.toggle('is-visible', !entry.isIntersecting);
+      },
+      { threshold: 0 }
+    );
+    if (hero) observer.observe(hero);
+  }
+</script>
+
+<style>
+  .hp4 {
+    --hp4-f: 'Inter', system-ui, -apple-system, sans-serif;
+    --hp4-white: #ffffff;
+    --hp4-paper: #fafaf8;
+    --hp4-cream: #f5f3ed;
+    --hp4-ink: #1a1c18;
+    --hp4-soft: #484c43;
+    --hp4-mute: #6b6f65;
+    --hp4-rule: rgba(26, 28, 24, 0.1);
+    --hp4-sage: #4a6630;
+    --hp4-sage-deep: #354d20;
+    --hp4-sage-pale: #d8e0c8;
+    --hp4-warm: #b8753a;
+    background: var(--hp4-white);
+    color: var(--hp4-ink);
+    font-family: var(--hp4-f);
+    overflow-x: clip;
+  }
+
+  .hp4 em {
+    color: var(--hp4-sage);
+    font-style: italic;
+  }
+
+  /* HERO */
+  .hp4-hero {
+    padding: 64px 64px 96px;
+    position: relative;
+  }
+
+  .hp4-hero-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: clamp(3rem, 5vw, 5rem);
+    align-items: center;
+  }
+
+  .hp4-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--hp4-sage-pale);
+    border-radius: 999px;
+    background: rgba(216, 224, 200, 0.3);
+    padding: 7px 14px;
+    color: var(--hp4-sage);
+    font-family: var(--hp4-f);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+
+  .hp4-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--hp4-sage);
+    animation: hp4-pulse 1.8s ease-in-out infinite;
+  }
+
+  .hp4-hero h1 {
+    margin: 28px 0 0;
+    font-family: var(--hp4-f);
+    font-size: clamp(3rem, 5.5vw, 5rem);
+    font-weight: 800;
+    letter-spacing: -0.035em;
+    line-height: 1.02;
+    text-wrap: balance;
+  }
+
+  .hp4-hero h1 em {
+    font-weight: 300;
+    letter-spacing: -0.02em;
+  }
+
+  .hp4-hero p {
+    margin: 24px 0 0;
+    max-width: 520px;
+    color: var(--hp4-soft);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.65;
+  }
+
+  .hp4-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 32px;
+  }
+
+  .hp4-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    padding: 14px 24px;
+    font-family: var(--hp4-f);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
+    transition: transform 0.25s cubic-bezier(.2,.7,.3,1), box-shadow 0.25s, background 0.2s;
+    cursor: pointer;
+  }
+
+  .hp4-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px -12px rgba(26, 28, 24, 0.2);
+  }
+
+  .hp4-btn-primary {
+    background: var(--hp4-ink);
+    color: var(--hp4-white);
+  }
+
+  .hp4-btn-whatsapp {
+    background: #25d366;
+    color: #fff;
+  }
+
+  .hp4-trust-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 28px;
+  }
+
+  .hp4-trust-row span {
+    border: 1px solid rgba(26, 28, 24, 0.18);
+    border-radius: 999px;
+    padding: 6px 13px;
+    font-family: var(--hp4-f);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    color: var(--hp4-ink);
+    background: var(--hp4-paper);
+  }
+
+  .hp4-hero-media {
+    position: relative;
+  }
+
+  .hp4-placeholder {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background: var(--hp4-sage-pale);
+    display: grid;
+    place-items: center;
+  }
+
+  .hp4-placeholder--tall {
+    aspect-ratio: 4 / 5;
+  }
+
+  .hp4-placeholder--process {
+    aspect-ratio: 3 / 4;
+  }
+
+  .hp4-placeholder-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .hp4-placeholder-mark {
+    font-family: var(--hp4-f);
+    font-size: clamp(4rem, 10vw, 8rem);
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: -0.05em;
+    color: var(--hp4-sage);
+    opacity: 0.25;
+    line-height: 1;
+  }
+
+  .hp4-placeholder-caption {
+    color: var(--hp4-sage-deep);
+    font-family: var(--hp4-f);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.6;
+  }
+
+  .hp4-overlay-card {
+    position: absolute;
+    bottom: -24px;
+    left: -24px;
+    background: var(--hp4-white);
+    border: 1px solid var(--hp4-rule);
+    padding: 20px 24px;
+    box-shadow: 0 12px 28px -16px rgba(26,28,24,0.18);
+    display: grid;
+    gap: 14px;
+    min-width: 270px;
+    border-radius: 8px;
+  }
+
+  .hp4-overlay-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .hp4-overlay-row strong {
+    font-family: var(--hp4-f);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--hp4-mute);
+  }
+
+  .hp4-overlay-row span {
+    color: var(--hp4-ink);
+    font-family: var(--hp4-f);
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  /* STATS BAR */
+  .hp4-proof {
+    border-top: 1px solid var(--hp4-rule);
+    border-bottom: 1px solid var(--hp4-rule);
+    background: var(--hp4-cream);
+    padding: 48px 64px;
+  }
+
+  .hp4-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+
+  .hp4-stats strong {
+    display: block;
+    font-family: var(--hp4-f);
+    font-size: clamp(2.2rem, 3.5vw, 3.2rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    color: var(--hp4-ink);
+  }
+
+  .hp4-stats span {
+    display: block;
+    margin-top: 8px;
+    font-family: var(--hp4-f);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    color: var(--hp4-mute);
+  }
+
+  /* SECTIONS */
+  .hp4-section {
+    padding: clamp(5rem, 8vw, 8rem) 64px;
+  }
+
+  .hp4-section--cream {
+    background: var(--hp4-cream);
+  }
+
+  .hp4-section-label {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 28px;
+    color: var(--hp4-sage);
+    font-family: var(--hp4-f);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .hp4-section-label i {
+    flex: 1;
+    max-width: 400px;
+    height: 1px;
+    background: var(--hp4-rule);
+  }
+
+  .hp4-section-label span:last-child:not(:first-child) {
+    color: var(--hp4-mute);
+    font-weight: 500;
+  }
+
+  .hp4-section-header {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: clamp(2rem, 4vw, 4rem);
+    align-items: end;
+    margin-bottom: 56px;
+  }
+
+  .hp4-section-header h2,
+  .hp4-section-title,
+  .hp4-contact-copy h2 {
+    margin: 0;
+    font-family: var(--hp4-f);
+    font-size: clamp(2.6rem, 4.5vw, 4rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.02;
+  }
+
+  .hp4-section-header h2 em,
+  .hp4-section-title em,
+  .hp4-contact-copy h2 em {
+    font-weight: 300;
+  }
+
+  .hp4-section-header p {
+    margin: 0;
+    color: var(--hp4-soft);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.65;
+    max-width: 480px;
+  }
+
+  .hp4-section-title {
+    margin-bottom: 56px;
+  }
+
+  /* PRODUCTS GRID */
+  .hp4-product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .hp4-product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid var(--hp4-rule);
+    border-radius: 8px;
+    background: var(--hp4-white);
+    padding: 24px;
+    text-decoration: none;
+    color: var(--hp4-ink);
+    transition: transform 0.3s cubic-bezier(.2,.7,.3,1), box-shadow 0.3s, border-color 0.2s;
+    min-height: 160px;
+  }
+
+  .hp4-product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px -18px rgba(26,28,24,0.2);
+    border-color: var(--hp4-sage-pale);
+  }
+
+  .hp4-product-card h3 {
+    margin: 0;
+    font-family: var(--hp4-f);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+
+  .hp4-card-app {
+    display: block;
+    margin-top: 6px;
+    color: var(--hp4-soft);
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .hp4-card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 14px;
+    border-top: 1px solid var(--hp4-rule);
+  }
+
+  .hp4-card-mesh {
+    font-family: var(--hp4-f);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--hp4-mute);
+  }
+
+  .hp4-card-cta {
+    color: var(--hp4-sage);
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  /* DIFFERENTIATORS */
+  .hp4-diff-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+
+  .hp4-diff {
+    border-top: 2px solid var(--hp4-sage);
+    padding-top: 24px;
+  }
+
+  .hp4-diff-num {
+    font-family: var(--hp4-f);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--hp4-sage);
+    margin-bottom: 12px;
+  }
+
+  .hp4-diff h3 {
+    margin: 0;
+    font-family: var(--hp4-f);
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+
+  .hp4-diff p {
+    margin: 12px 0 0;
+    color: var(--hp4-soft);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.65;
+  }
+
+  /* PROCESS */
+  .hp4-process-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(3rem, 5vw, 5rem);
+    align-items: start;
+  }
+
+  .hp4-process-steps {
+    display: grid;
+    gap: 0;
+  }
+
+  .hp4-step {
+    display: flex;
+    gap: 20px;
+    padding: 24px 0;
+    border-top: 1px solid var(--hp4-rule);
+  }
+
+  .hp4-step:last-child {
+    border-bottom: 1px solid var(--hp4-rule);
+  }
+
+  .hp4-step-num {
+    flex-shrink: 0;
+    width: 32px;
+    font-family: var(--hp4-f);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: var(--hp4-sage);
+    padding-top: 3px;
+  }
+
+  .hp4-step strong {
+    display: block;
+    font-family: var(--hp4-f);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .hp4-step p {
+    margin: 8px 0 0;
+    color: var(--hp4-soft);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  /* CERTIFICATIONS */
+  .hp4-cert-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    max-width: 760px;
+  }
+
+  .hp4-cert-card {
+    border: 1px solid var(--hp4-rule);
+    border-radius: 8px;
+    background: var(--hp4-white);
+    padding: 24px;
+  }
+
+  .hp4-cert-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+
+  .hp4-cert-card h3 {
+    margin: 0;
+    font-family: var(--hp4-f);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 1.1;
+  }
+
+  .hp4-cert-card p {
+    margin: 0;
+    color: var(--hp4-mute);
+    font-family: var(--hp4-f);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .hp4-cert-status {
+    flex-shrink: 0;
+    border-radius: 999px;
+    padding: 4px 10px;
+    font-family: var(--hp4-f);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .hp4-cert-status--registered {
+    background: rgba(74, 102, 48, 0.12);
+    color: var(--hp4-sage-deep);
+  }
+
+  .hp4-cert-status--in-progress {
+    background: rgba(184, 117, 58, 0.12);
+    color: var(--hp4-warm);
+  }
+
+  /* FAQ */
+  .hp4-faq-list {
+    display: grid;
+    gap: 0;
+    max-width: 800px;
+    margin-inline: auto;
+  }
+
+  .hp4-faq-item {
+    border-top: 1px solid var(--hp4-rule);
+  }
+
+  .hp4-faq-item:last-child {
+    border-bottom: 1px solid var(--hp4-rule);
+  }
+
+  .hp4-faq-item summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 0;
+    cursor: pointer;
+    list-style: none;
+    font-family: var(--hp4-f);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--hp4-ink);
+    user-select: none;
+  }
+
+  .hp4-faq-item summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .hp4-faq-item summary svg {
+    flex-shrink: 0;
+    color: var(--hp4-sage);
+    transition: transform 0.25s cubic-bezier(.2,.7,.3,1);
+  }
+
+  .hp4-faq-item[open] summary svg {
+    transform: rotate(180deg);
+  }
+
+  .hp4-faq-item p {
+    margin: 0 0 20px;
+    color: var(--hp4-soft);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    max-width: 680px;
+  }
+
+  /* CONTACT / FORM */
+  .hp4-contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: clamp(3rem, 5vw, 6rem);
+    align-items: start;
+  }
+
+  .hp4-contact-copy .hp4-section-label {
+    margin-bottom: 20px;
+  }
+
+  .hp4-contact-copy h2 {
+    margin: 0;
+  }
+
+  .hp4-contact-copy > p {
+    margin: 20px 0 0;
+    color: var(--hp4-soft);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.65;
+    max-width: 400px;
+  }
+
+  .hp4-contact-channels {
+    display: grid;
+    gap: 10px;
+    margin-top: 32px;
+  }
+
+  .hp4-channel {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    border: 1px solid var(--hp4-rule);
+    border-radius: 8px;
+    padding: 14px 18px;
+    text-decoration: none;
+    color: var(--hp4-ink);
+    transition: border-color 0.2s;
+  }
+
+  .hp4-channel:hover {
+    border-color: var(--hp4-sage-pale);
+  }
+
+  .hp4-channel strong {
+    font-family: var(--hp4-f);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--hp4-sage);
+  }
+
+  .hp4-channel span {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--hp4-ink);
+  }
+
+  /* FORM */
+  .hp4-form {
+    background: var(--hp4-cream);
+    padding: 32px;
+    border-radius: 12px;
+  }
+
+  .hp4-form header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--hp4-rule);
+  }
+
+  .hp4-form header span {
+    font-family: var(--hp4-f);
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .hp4-form header small {
+    font-family: var(--hp4-f);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--hp4-sage);
+  }
+
+  .hp4-form-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+
+  .hp4-form-full {
+    grid-column: 1 / -1;
+  }
+
+  .hp4-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .hp4-form label span {
+    font-family: var(--hp4-f);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--hp4-soft);
+  }
+
+  .hp4-form input,
+  .hp4-form select,
+  .hp4-form textarea {
+    width: 100%;
+    border: 1px solid var(--hp4-rule);
+    border-radius: 6px;
+    background: var(--hp4-white);
+    padding: 10px 12px;
+    font-family: var(--hp4-f);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--hp4-ink);
+    outline: none;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+  }
+
+  .hp4-form input:focus,
+  .hp4-form select:focus,
+  .hp4-form textarea:focus {
+    border-color: var(--hp4-sage);
+  }
+
+  .hp4-form textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+
+  .hp4-form .hp4-btn {
+    width: 100%;
+    margin-top: 6px;
+    padding: 16px 24px;
+    font-size: 15px;
+    border-radius: 8px;
+  }
+
+  /* STICKY BAR */
+  .hp4-sticky-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    gap: 12px;
+    padding: 12px 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-top: 1px solid var(--hp4-rule);
+    backdrop-filter: blur(10px);
+    transform: translateY(100%);
+    transition: transform 0.35s cubic-bezier(.2,.7,.3,1);
+  }
+
+  .hp4-sticky-bar.is-visible {
+    transform: translateY(0);
+  }
+
+  .hp4-sticky-bar .hp4-btn {
+    flex: 1;
+    border-radius: 8px;
+  }
+
+  /* ANIMATIONS */
+  @keyframes hp4-pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(0.85); }
+  }
+
+  /* RESPONSIVE */
+  @media (min-width: 981px) {
+    .hp4-sticky-bar {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .hp4-hero { padding: 48px 40px 80px; }
+    .hp4-proof { padding: 40px 40px; }
+    .hp4-section { padding: clamp(4rem, 6vw, 6rem) 40px; }
+  }
+
+  @media (max-width: 860px) {
+    .hp4-hero { padding: 40px 24px 64px; }
+    .hp4-hero-grid { grid-template-columns: 1fr; }
+    .hp4-hero h1 { font-size: clamp(2.4rem, 8vw, 3.6rem); }
+    .hp4-overlay-card { display: none; }
+    .hp4-proof { padding: 32px 24px; }
+    .hp4-stats { grid-template-columns: repeat(2, 1fr); }
+    .hp4-section { padding: clamp(3rem, 5vw, 5rem) 24px; }
+    .hp4-section-header { grid-template-columns: 1fr; gap: 16px; }
+    .hp4-product-grid { grid-template-columns: repeat(2, 1fr); }
+    .hp4-diff-grid { grid-template-columns: repeat(2, 1fr); }
+    .hp4-cert-grid { grid-template-columns: 1fr; }
+    .hp4-process-grid { grid-template-columns: 1fr; }
+    .hp4-placeholder--process { display: none; }
+    .hp4-contact-grid { grid-template-columns: 1fr; }
+    .hp4-form-fields { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 540px) {
+    .hp4-hero { padding: 32px 16px 56px; }
+    .hp4-product-grid { grid-template-columns: 1fr; }
+    .hp4-diff-grid { grid-template-columns: 1fr; }
+    .hp4-form { padding: 24px 16px; }
+  }
+</style>

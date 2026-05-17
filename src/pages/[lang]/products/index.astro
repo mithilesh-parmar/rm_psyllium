@@ -1,0 +1,501 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { copy, getLanguage, languages, products } from '../../../data/site';
+
+export function getStaticPaths() {
+  return languages.map((language) => ({
+    params: { lang: language.code }
+  }));
+}
+
+const lang = getLanguage(Astro.params.lang);
+const t = copy[lang];
+
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Psyllium Products — RM Psyllium',
+  description: t.productsListLead,
+  numberOfItems: products.length,
+  itemListElement: products.map((product, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: product.name,
+    description: product.hero,
+    url: `https://www.rmpsyllium.com/${lang}/products/${product.slug}/`
+  }))
+};
+---
+<BaseLayout
+  lang={lang}
+  title={`${t.productsListTitle} | RM Psyllium`}
+  description={t.productsListLead}
+  structuredData={itemListSchema}
+>
+  <div class="pl-wrap">
+    <!-- HEADER -->
+    <header class="pl-header">
+      <div class="pl-header-inner">
+        <div class="pl-header-copy">
+          <p class="pl-kicker">All products</p>
+          <h1>{t.productsListTitle}<br /><em>from Gujarat, India.</em></h1>
+          <p class="pl-lead">{t.productsListLead}</p>
+        </div>
+        <div class="pl-header-stats">
+          <div class="pl-hstat"><strong>2,000 MT</strong><span>Annual capacity</span></div>
+          <div class="pl-hstat"><strong>85–99%</strong><span>Purity grades</span></div>
+          <div class="pl-hstat"><strong>500 kg</strong><span>Min. order · FOB Mundra</span></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- PRODUCT GRID -->
+    <section class="pl-section">
+      <div class="pl-container">
+        <div class="pl-grid">
+          {products.map((product) => (
+            <a class="pl-card" href={`/${lang}/products/${product.slug}/`}>
+              <div class="pl-card-visual">
+                <span class="pl-card-mark">RM</span>
+              </div>
+              <div class="pl-card-body">
+                <p class="pl-card-label">{product.label}</p>
+                <h2>{product.name}</h2>
+                <p class="pl-card-hero">{product.hero}</p>
+                <ul class="pl-card-grades">
+                  {product.grades.map((g) => <li>{g}</li>)}
+                </ul>
+                <div class="pl-card-footer">
+                  <span class="pl-card-packs">{product.packaging.join(' · ')}</span>
+                  <span class="pl-card-cta">View product →</span>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- SPEC COMPARISON TEASER -->
+    <section class="pl-section pl-section--cream">
+      <div class="pl-container">
+        <p class="pl-kicker">Grade comparison</p>
+        <h2 class="pl-compare-title">Psyllium husk: grade summary</h2>
+        <div class="pl-table-wrap">
+          <table class="pl-table">
+            <thead>
+              <tr>
+                <th>Parameter</th>
+                <th>85% Grade</th>
+                <th>95% Grade</th>
+                <th>98% Grade</th>
+                <th>99% Grade</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Swell volume (ml/g min)</td><td>30</td><td>40</td><td>45</td><td>50</td></tr>
+              <tr><td>Moisture (% max)</td><td>12</td><td>12</td><td>12</td><td>12</td></tr>
+              <tr><td>Total ash (% max)</td><td>4.0</td><td>4.0</td><td>3.5</td><td>3.0</td></tr>
+              <tr><td>Pharmacopoeia</td><td>Food grade</td><td>Food / NF</td><td>USP / EP</td><td>USP / EP / IP</td></tr>
+              <tr><td>Typical application</td><td>Feed, industrial</td><td>Supplement, food</td><td>Pharma, capsule</td><td>Pharma laxative</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="pl-table-note">Full COA parameters available per product and lot. <a href={`/${lang}/quality/`}>View quality documents →</a></p>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="pl-cta-band">
+      <div class="pl-container">
+        <div class="pl-cta-inner">
+          <div>
+            <h2>Share your spec. Get a quote.</h2>
+            <p>Tell us your product, grade, mesh, packing, destination, and monthly volume. We respond within 24 hours with pricing and availability.</p>
+          </div>
+          <div class="pl-cta-btns">
+            <a class="pl-btn pl-btn-primary" href={`/${lang}/contact/`}>{t.navContact}</a>
+            <a class="pl-btn pl-btn-wa" href="https://wa.me/918949817791" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .pl-wrap {
+    --f: 'Inter', system-ui, -apple-system, sans-serif;
+    --ink: #1a1c18;
+    --soft: #484c43;
+    --mute: #6b6f65;
+    --rule: rgba(26, 28, 24, 0.1);
+    --sage: #4a6630;
+    --sage-pale: #d8e0c8;
+    --cream: #f5f3ed;
+    --white: #ffffff;
+    --dark: #1a1c18;
+  }
+
+  /* ---- header ---- */
+  .pl-header {
+    background: var(--cream);
+    border-bottom: 1px solid var(--rule);
+    padding: clamp(4rem, 7vw, 7rem) 0 clamp(3rem, 5vw, 5rem);
+  }
+
+  .pl-header-inner {
+    width: min(1140px, calc(100% - 128px));
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: clamp(3rem, 5vw, 5rem);
+    align-items: center;
+  }
+
+  .pl-kicker {
+    margin: 0 0 20px;
+    color: var(--sage);
+    font-family: var(--f);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .pl-header-copy h1 {
+    margin: 0;
+    font-family: var(--f);
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.02;
+    color: var(--ink);
+  }
+
+  .pl-header-copy h1 em {
+    color: var(--sage);
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .pl-lead {
+    margin: 20px 0 0;
+    color: var(--soft);
+    font-family: var(--f);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.65;
+    max-width: 520px;
+  }
+
+  .pl-header-stats { display: grid; gap: 16px; }
+
+  .pl-hstat {
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    background: var(--white);
+    padding: 20px 24px;
+  }
+
+  .pl-hstat strong {
+    display: block;
+    font-family: var(--f);
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+    line-height: 1;
+  }
+
+  .pl-hstat span {
+    display: block;
+    margin-top: 6px;
+    font-family: var(--f);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--mute);
+  }
+
+
+  /* ---- container ---- */
+  .pl-container {
+    width: min(1140px, calc(100% - 128px));
+    margin-inline: auto;
+  }
+
+  .pl-section {
+    padding: clamp(4rem, 7vw, 7rem) 0;
+  }
+
+  .pl-section--cream {
+    background: var(--cream);
+  }
+
+  /* ---- product grid ---- */
+  .pl-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .pl-card {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    background: var(--white);
+    text-decoration: none;
+    overflow: hidden;
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+
+  .pl-card:hover {
+    box-shadow: 0 8px 32px -12px rgba(26,28,24,0.15);
+    transform: translateY(-2px);
+  }
+
+  .pl-card-visual {
+    background: var(--sage-pale);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 160px;
+  }
+
+  .pl-card-mark {
+    font-family: var(--f);
+    font-size: 2.5rem;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: -0.05em;
+    color: var(--sage);
+    opacity: 0.3;
+  }
+
+  .pl-card-body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .pl-card-label {
+    margin: 0;
+    color: var(--sage);
+    font-family: var(--f);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .pl-card h2 {
+    margin: 0;
+    font-family: var(--f);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+    line-height: 1.2;
+  }
+
+  .pl-card-hero {
+    margin: 4px 0 0;
+    font-family: var(--f);
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--soft);
+    line-height: 1.55;
+  }
+
+  .pl-card-grades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 8px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .pl-card-grades li {
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    padding: 3px 10px;
+    font-family: var(--f);
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--mute);
+  }
+
+  .pl-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: auto;
+    padding-top: 14px;
+    border-top: 1px solid var(--rule);
+  }
+
+  .pl-card-packs {
+    font-family: var(--f);
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--mute);
+  }
+
+  .pl-card-cta {
+    font-family: var(--f);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--sage);
+    white-space: nowrap;
+  }
+
+  /* ---- comparison table ---- */
+  .pl-compare-title {
+    margin: 0 0 28px;
+    font-family: var(--f);
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    color: var(--ink);
+  }
+
+  .pl-table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    background: var(--white);
+  }
+
+  .pl-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--f);
+    font-size: 13px;
+  }
+
+  .pl-table th {
+    padding: 14px 20px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--mute);
+    background: var(--cream);
+    border-bottom: 1px solid var(--rule);
+    white-space: nowrap;
+  }
+
+  .pl-table td {
+    padding: 13px 20px;
+    color: var(--soft);
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+
+  .pl-table tr:last-child td { border-bottom: 0; }
+
+  .pl-table td:first-child {
+    font-weight: 500;
+    color: var(--ink);
+    white-space: nowrap;
+  }
+
+  .pl-table-note {
+    margin: 16px 0 0;
+    font-family: var(--f);
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--mute);
+  }
+
+  .pl-table-note a {
+    color: var(--sage);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  /* ---- CTA band ---- */
+  .pl-cta-band {
+    background: var(--dark);
+    padding: clamp(4rem, 7vw, 7rem) 0;
+  }
+
+  .pl-cta-inner {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: clamp(2rem, 4vw, 4rem);
+    align-items: center;
+  }
+
+  .pl-cta-inner h2 {
+    margin: 0 0 12px;
+    font-family: var(--f);
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    color: #fff;
+  }
+
+  .pl-cta-inner > div > p {
+    margin: 0;
+    color: rgba(255,255,255,0.65);
+    font-family: var(--f);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.65;
+    max-width: 520px;
+  }
+
+  .pl-cta-btns {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .pl-btn {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    padding: 13px 24px;
+    font-family: var(--f);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .pl-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px -12px rgba(26,28,24,0.2);
+  }
+
+  .pl-btn-primary { background: #fff; color: var(--dark); }
+  .pl-btn-wa { background: #25d366; color: #fff; }
+
+  /* ---- responsive ---- */
+  @media (max-width: 1100px) {
+    .pl-header-inner, .pl-container { width: calc(100% - 80px); }
+  }
+
+  @media (max-width: 860px) {
+    .pl-header-inner, .pl-container { width: calc(100% - 48px); }
+    .pl-header-inner { grid-template-columns: 1fr; }
+    .pl-header-stats { grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .pl-lead { max-width: 100%; }
+    .pl-grid { grid-template-columns: 1fr; }
+    .pl-cta-inner { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 640px) {
+    .pl-card { grid-template-columns: 1fr; }
+    .pl-card-visual { min-height: 100px; }
+    .pl-header-inner, .pl-container { width: calc(100% - 32px); }
+    .pl-header-stats { grid-template-columns: 1fr; }
+  }
+</style>

@@ -1,100 +1,272 @@
 ---
-import { industries, languages, products, regions } from '../data/site';
-
+import { getLanguage } from '../data/site';
 const year = new Date().getFullYear();
+const lang = getLanguage(Astro.params.lang);
 ---
+
 <footer class="footer">
-  <div class="container footer-grid">
-    <div>
-      <a class="footer-brand" href="/">RM Psyllium</a>
-      <p>Export-ready psyllium ingredients for food, wellness, pharma, and animal nutrition brands.</p>
-      <a href="mailto:sourcing@rmpsyllium.com">sourcing@rmpsyllium.com</a>
+  <div class="footer-grid">
+    <div class="footer-brand-col">
+      <a class="footer-brand" href={`/${lang}/`} aria-label="RM Psyllium home">
+        <span aria-hidden="true">rm</span>
+        <div>
+          <strong>RM Psyllium</strong>
+          <small>Unjha · Gujarat · Est 2024</small>
+        </div>
+      </a>
+      <p>Psyllium husk manufacturer and exporter. 2,000 MT annual capacity. FOB Mundra or CIF to your port.</p>
+      <div class="footer-code">IEC 0124007841 · FSSAI Registered</div>
+      <div class="footer-contact">
+        <a href="mailto:export@rmpsyllium.com">export@rmpsyllium.com</a>
+        <a href="https://wa.me/918949817791" target="_blank" rel="noopener">+91 89498 17791</a>
+      </div>
     </div>
+
     <div>
       <h2>Products</h2>
-      {products.slice(0, 5).map((product) => (
-        <a href={`/en/products/${product.slug}/`}>{product.name}</a>
-      ))}
+      <nav aria-label="Products">
+        <a href={`/${lang}/products/psyllium-husk/`}>Psyllium Husk</a>
+        <a href={`/${lang}/products/psyllium-husk-powder/`}>Husk Powder</a>
+        <a href={`/${lang}/products/psyllium-seeds/`}>Psyllium Seeds</a>
+        <a href={`/${lang}/products/psyllium-khakha-powder/`}>Khakha Powder</a>
+        <a href={`/${lang}/products/organic-psyllium/`}>Organic Psyllium</a>
+        <a href={`/${lang}/products/psyllium-cattle-feed/`}>Cattle Feed</a>
+      </nav>
     </div>
+
     <div>
-      <h2>Markets</h2>
-      {regions.slice(0, 3).map((region) => (
-        <a href={`/en/regions/${region.slug}/`}>{region.name}</a>
-      ))}
-      {industries.slice(0, 2).map((industry) => (
-        <a href={`/en/industries/${industry.slug}/`}>{industry.name}</a>
-      ))}
+      <h2>Applications</h2>
+      <nav aria-label="Applications">
+        <a href={`/${lang}/industries/pharma-nutraceutical/`}>Pharma &amp; Nutraceutical</a>
+        <a href={`/${lang}/industries/food-beverage-bakery/`}>Food &amp; Bakery</a>
+        <a href={`/${lang}/industries/animal-feed/`}>Animal Feed</a>
+        <a href={`/${lang}/industries/industrial-personal-care/`}>Industrial</a>
+      </nav>
     </div>
+
     <div>
-      <h2>Languages</h2>
-      {languages.map((language) => <a href={`/${language.code}/`}>{language.label}</a>)}
+      <h2>Resources</h2>
+      <nav aria-label="Resources">
+        <a href={`/${lang}/insights/`}>Buyer Guides</a>
+        <a href={`/${lang}/quality/`}>Quality &amp; Compliance</a>
+        <a href={`/${lang}/faq/`}>FAQ</a>
+        <a href={`/${lang}/blog/`}>Blog</a>
+      </nav>
+    </div>
+
+    <div>
+      <h2>Contact</h2>
+      <nav aria-label="Contact">
+        <a href="https://wa.me/918949817791" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:export@rmpsyllium.com">Email us</a>
+        <a href={`/${lang}/contact/`}>Request a Quote</a>
+        <a href={`/${lang}/contact/`}>Sample Request</a>
+      </nav>
     </div>
   </div>
-  <div class="container footer-bottom">
-    <span>© {year} RM Psyllium. All rights reserved.</span>
-    <span>Certified, traceable, export-focused supply.</span>
+
+  <div class="footer-wordmark">RM Psyllium</div>
+
+  <div class="footer-bottom">
+    <span>© {year} RM PSYLLIUM PVT LTD · UNJHA · GUJARAT · INDIA</span>
+    <span>SURVEY 412/3, GIDC PHASE II, UNJHA 384170</span>
   </div>
 </footer>
 
 <style>
   .footer {
-    background: var(--dark);
-    color: #ffffff;
-    padding: 4rem 0 1.5rem;
+    border-top: 1px solid var(--rule);
+    background: var(--surface);
+    color: var(--ink);
+    padding: 72px 64px 32px;
   }
 
   .footer-grid {
     display: grid;
-    grid-template-columns: 1.35fr repeat(3, 0.75fr);
-    gap: 2rem;
+    grid-template-columns: 1.8fr repeat(4, 1fr);
+    gap: 48px;
   }
 
+  /* brand */
   .footer-brand {
-    display: inline-block;
-    margin-bottom: 1rem;
-    font-size: 1.35rem;
-    font-weight: 860;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--ink);
   }
 
-  .footer p,
-  .footer a,
-  .footer-bottom {
-    color: rgba(255, 255, 255, 0.74);
+  .footer-brand span {
+    display: grid;
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    place-items: center;
+    border: 1.2px solid var(--ink);
+    border-radius: 50%;
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-style: italic;
+    letter-spacing: -0.02em;
   }
 
-  .footer a {
+  .footer-brand strong {
     display: block;
-    margin: 0.55rem 0;
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1;
   }
 
-  .footer h2 {
-    margin: 0 0 0.8rem;
-    font-size: 0.78rem;
-    letter-spacing: 0.12em;
+  .footer-brand small {
+    display: block;
+    margin-top: 3px;
+    color: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
   }
 
+  .footer-brand-col p {
+    max-width: 280px;
+    margin: 18px 0 0;
+    color: var(--body-muted);
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+  .footer-code {
+    margin-top: 14px;
+    color: var(--muted);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+  }
+
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 16px;
+  }
+
+  .footer-contact a {
+    color: var(--ink);
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .footer-contact a:hover {
+    color: var(--accent);
+  }
+
+  /* columns */
+  .footer h2 {
+    margin: 0;
+    color: var(--muted);
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .footer nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 18px;
+  }
+
+  .footer nav a {
+    position: relative;
+    width: fit-content;
+    color: var(--ink);
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  .footer nav a::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+    left: 0;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s;
+  }
+
+  .footer nav a:hover::after {
+    transform: scaleX(1);
+  }
+
+  /* wordmark */
+  .footer-wordmark {
+    margin-top: 72px;
+    overflow: clip;
+    border-top: 1px solid var(--rule);
+    padding-top: 36px;
+    color: var(--rule);
+    font-family: var(--font-display);
+    font-size: clamp(4rem, 12vw, 11rem);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 0.88;
+    white-space: nowrap;
+    user-select: none;
+  }
+
+  /* bottom bar */
   .footer-bottom {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-    margin-top: 2.5rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.14);
-    padding-top: 1.25rem;
-    font-size: 0.84rem;
+    margin-top: 20px;
+    border-top: 1px solid var(--rule);
+    padding-top: 18px;
+    color: var(--muted);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
   }
 
-  @media (max-width: 860px) {
+  @media (max-width: 1200px) {
+    .footer-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .footer-brand-col {
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .footer {
+      padding: 56px 24px 28px;
+    }
+
     .footer-grid {
       grid-template-columns: 1fr 1fr;
     }
 
+    .footer-brand-col {
+      grid-column: 1 / -1;
+    }
+
     .footer-bottom {
       flex-direction: column;
+      gap: 6px;
     }
   }
 
-  @media (max-width: 560px) {
+  @media (max-width: 480px) {
     .footer-grid {
       grid-template-columns: 1fr;
     }
