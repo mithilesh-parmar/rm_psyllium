@@ -3,21 +3,12 @@ import { getLanguage, languages } from '../data/site';
 
 const lang = getLanguage(Astro.params.lang);
 ---
+
+<!-- Desktop header -->
 <header class="site-header">
   <a class="brand" href={`/${lang}/`} aria-label="RM Psyllium home">
-    <span class="brand-mark" aria-hidden="true">RM</span>
-    <span>
-      <strong>RM Psyllium</strong>
-      <small>Unjha · Gujarat · Est 2024</small>
-    </span>
+    <img src="/assets/logo-header.webp" alt="RM Psyllium" class="brand-logo" width="160" height="44" />
   </a>
-
-  <input class="nav-toggle" id="nav-toggle" type="checkbox" aria-label="Open navigation" />
-  <label class="nav-button" for="nav-toggle" aria-hidden="true">
-    <span></span>
-    <span></span>
-    <span></span>
-  </label>
 
   <nav class="site-nav" aria-label="Primary navigation">
     <a href={`/${lang}/products/`}>Products</a>
@@ -34,94 +25,61 @@ const lang = getLanguage(Astro.params.lang);
     </div>
     <a class="nav-cta" href="/#talk" data-track="quote_click">Get Quote <span aria-hidden="true"></span></a>
   </nav>
+
+  <button class="nav-open" aria-label="Open navigation">
+    <span></span><span></span><span></span>
+  </button>
 </header>
 
+<!-- Mobile fullscreen menu — completely self-contained -->
+<div class="mnav" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Navigation">
+
+  <!-- Top bar: logo + close — always pinned at the top -->
+  <div class="mnav-bar">
+    <a class="brand" href={`/${lang}/`} aria-label="RM Psyllium home">
+      <img src="/assets/logo-header.webp" alt="RM Psyllium" class="brand-logo" width="160" height="44" />
+    </a>
+    <button class="mnav-close" aria-label="Close navigation">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+        <line x1="3" y1="3" x2="17" y2="17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="17" y1="3" x2="3" y2="17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Scrollable body -->
+  <div class="mnav-body">
+    <nav class="mnav-links">
+      <a href={`/${lang}/products/`}>Products</a>
+      <a href={`/${lang}/quality/`}>Quality</a>
+      <a href={`/${lang}/insights/`}>Buyer Guides</a>
+      <a href={`/${lang}/faq/`}>FAQ</a>
+      <a href={`/${lang}/contact/`}>Contact</a>
+    </nav>
+
+    <div class="mnav-foot">
+      <div class="language-switcher">
+        {languages.map((language) => (
+          <a class:list={{ active: language.code === lang }} href={`/${language.code}/`}>
+            {language.code.toUpperCase()}
+          </a>
+        ))}
+      </div>
+      <a class="nav-cta" href="/#talk" data-track="quote_click">Get Quote <span aria-hidden="true"></span></a>
+    </div>
+  </div>
+
+</div>
+
 <style>
-  .site-header {
-    position: sticky;
-    top: 0;
-    z-index: 50;
-    display: flex;
-    height: 80px;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid rgba(26, 28, 24, 0.1);
-    background: rgba(255, 255, 255, 0.92);
-    padding: 0 56px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    will-change: transform;
-  }
-
-  .brand {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.75rem;
-  }
-
-  .brand-mark {
-    display: grid;
-    width: 38px;
-    height: 38px;
-    place-items: center;
-    border: 1px solid var(--ink);
-    border-radius: 50%;
-    color: var(--ink);
-    font-family: var(--font-display);
-    font-size: 1.18rem;
-    font-style: italic;
-    font-weight: 400;
-    letter-spacing: -0.02em;
-    text-transform: lowercase;
-  }
-
-  .brand strong,
-  .brand small {
-    display: block;
-  }
-
-  .brand strong {
-    font-family: var(--font-display);
-    font-size: 1.38rem;
-    font-weight: 500;
-    letter-spacing: -0.01em;
-    line-height: 1;
-    text-transform: none;
-  }
-
-  .brand small {
-    color: var(--muted);
-    font-family: var(--font-mono);
-    font-size: 0.56rem;
-    letter-spacing: 0.22em;
-    line-height: 1.2;
-    text-transform: uppercase;
-  }
-
-  .site-nav {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    color: var(--ink);
-    font-family: var(--font-body);
-    font-size: 0.82rem;
-    font-weight: 500;
-    letter-spacing: 0.01em;
-    text-transform: none;
-  }
-
-  .site-nav a:hover {
-    color: var(--accent);
-  }
+  /* ── Shared ─────────────────────────────────────────── */
+  .brand { display: inline-flex; align-items: center; flex-shrink: 0; }
+  .brand-logo { height: 40px; width: auto; object-fit: contain; }
 
   .language-switcher {
     display: flex;
-    gap: 0.15rem;
     gap: 0.25rem;
-    border-left: 1px solid var(--rule);
-    padding-left: 0.25rem;
   }
-
   .language-switcher a {
     display: grid;
     min-width: 34px;
@@ -133,7 +91,6 @@ const lang = getLanguage(Astro.params.lang);
     font-size: 0.68rem;
     letter-spacing: 0.16em;
   }
-
   .language-switcher a.active {
     border-color: var(--rule);
     color: var(--ink);
@@ -150,73 +107,248 @@ const lang = getLanguage(Astro.params.lang);
     color: #fff !important;
     padding: 0 1.25rem;
   }
-
   .nav-cta span {
-    width: 6px;
-    height: 6px;
+    width: 6px; height: 6px;
     border-radius: 50%;
     background: var(--accent);
-    animation: header-pulse 1.8s ease-in-out infinite;
+    animation: pulse 1.8s ease-in-out infinite;
   }
 
-  .nav-toggle,
-  .nav-button {
-    display: none;
+  /* ── Desktop header ─────────────────────────────────── */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(26,28,24,0.1);
+    background: rgba(255,255,255,0.92);
+    padding: 0 56px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
+  .site-nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+  }
+  .site-nav a:hover { color: var(--accent); }
+  .site-nav .language-switcher {
+    border-left: 1px solid var(--rule);
+    padding-left: 0.25rem;
+  }
+
+  .nav-open { display: none; }
+
+  /* ── Mobile overlay (hidden on desktop) ─────────────── */
+  .mnav { display: none; }
+
+  /* ── Mobile ─────────────────────────────────────────── */
   @media (max-width: 980px) {
-    .site-header {
-      padding: 0 1rem;
-    }
+    .site-header { padding: 0 1.25rem; }
+    .site-nav    { display: none; }
 
-    .nav-button {
-      display: grid;
-      width: 44px;
-      height: 44px;
-      place-content: center;
-      gap: 5px;
-      border: 1px solid var(--rule);
-      border-radius: 999px;
-      cursor: pointer;
-    }
-
-    .nav-button span {
-      display: block;
-      width: 20px;
-      height: 2px;
-      background: var(--dark);
-    }
-
-    .site-nav {
-      position: absolute;
-      inset: 80px 1rem auto 1rem;
-      display: none;
-      flex-direction: column;
-      align-items: stretch;
-      border: 1px solid var(--rule);
-      border-radius: 0;
-      background: #fff;
-      padding: 0.9rem;
-      box-shadow: 0 24px 70px rgba(27, 27, 25, 0.12);
-    }
-
-    .site-nav a {
-      min-height: 44px;
-      padding: 0.75rem;
-    }
-
-    .language-switcher {
-      justify-content: flex-start;
-      flex-wrap: wrap;
-    }
-
-    .nav-toggle:checked ~ .site-nav {
+    /* Hamburger */
+    .nav-open {
       display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 40px; height: 40px;
+      gap: 5.5px;
+      border: none;
+      background: none;
+      padding: 0;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+    .nav-open span {
+      display: block;
+      width: 22px; height: 1.5px;
+      background: var(--ink);
+      border-radius: 2px;
+    }
+
+    /*
+     * Fullscreen overlay — hidden via translateX so the browser
+     * composites it on its own layer and avoids repaint glitches.
+     * We never touch opacity/display during the animation so the
+     * top bar stays pixel-perfect regardless of scroll position.
+     */
+    .mnav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100dvh;           /* dynamic viewport — survives address-bar hide/show */
+      z-index: 500;
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      overflow: hidden;
+      /* hidden state: slide off to the top */
+      transform: translateY(-100%);
+      visibility: hidden;
+      /* fast aggressive drop, sharp deceleration — WP7/8 feel */
+      transition: transform 0.32s cubic-bezier(0, 0.85, 0.2, 1), visibility 0s linear 0.32s;
+      will-change: transform;
+    }
+    /* iOS <15 fallback — dvh not supported */
+    @supports not (height: 100dvh) {
+      .mnav { height: -webkit-fill-available; }
+    }
+    .mnav.open {
+      transform: translateY(0);
+      visibility: visible;
+      transition: transform 0.32s cubic-bezier(0, 0.85, 0.2, 1), visibility 0s linear 0s;
+    }
+
+    /* Top bar — always visible, never scrolls */
+    .mnav-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+      padding: 0 1.25rem;
+      border-bottom: 1px solid rgba(26,28,24,0.08);
+      flex-shrink: 0;
+      background: #fff;        /* explicit bg — prevents any bleed-through */
+    }
+
+    /* Close button */
+    .mnav-close {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px; height: 44px;
+      border: none;
+      background: none;
+      cursor: pointer;
+      color: var(--ink);
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    /* Scrollable body below the bar */
+    .mnav-body {
+      flex: 1;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      display: flex;
+      flex-direction: column;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    /* Links */
+    .mnav-links {
+      display: flex;
+      flex-direction: column;
+      padding: 0.5rem 1.5rem 0;
+      flex: 1;
+    }
+    .mnav-links a {
+      display: block;
+      padding: 0.9rem 0;
+      font-size: 1.9rem;
+      font-weight: 500;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      color: var(--ink);
+      border-bottom: 1px solid rgba(26,28,24,0.07);
+      opacity: 0;
+      /* items start below and snap up — WP tile cascade */
+      transform: translateY(28px);
+      transition: opacity 0.18s ease-out, transform 0.22s cubic-bezier(0, 0.8, 0.3, 1), color 0.15s ease;
+    }
+    .mnav-links a:last-child { border-bottom: none; }
+    .mnav-links a:hover { color: var(--accent); }
+
+    /* tight 50ms stagger starts after container lands (~0.28s) */
+    .mnav.open .mnav-links a:nth-child(1) { opacity:1; transform:none; transition-delay:0.22s; }
+    .mnav.open .mnav-links a:nth-child(2) { opacity:1; transform:none; transition-delay:0.27s; }
+    .mnav.open .mnav-links a:nth-child(3) { opacity:1; transform:none; transition-delay:0.32s; }
+    .mnav.open .mnav-links a:nth-child(4) { opacity:1; transform:none; transition-delay:0.37s; }
+    .mnav.open .mnav-links a:nth-child(5) { opacity:1; transform:none; transition-delay:0.42s; }
+
+    /* Footer */
+    .mnav-foot {
+      padding: 1.25rem 1.5rem 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      border-top: 1px solid rgba(26,28,24,0.07);
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.18s ease-out, transform 0.22s cubic-bezier(0, 0.8, 0.3, 1);
+    }
+    .mnav.open .mnav-foot {
+      opacity: 1;
+      transform: none;
+      transition-delay: 0.50s;
+    }
+    .mnav-foot .nav-cta {
+      width: 100%;
+      justify-content: center;
+      border-radius: 14px;
+      min-height: 52px;
     }
   }
 
-  @keyframes header-pulse {
-    0%, 100% { transform: scale(1); opacity: 0.9; }
-    50% { transform: scale(1.06); opacity: 1; }
+  @keyframes pulse {
+    0%,100% { transform:scale(1); opacity:0.9; }
+    50%      { transform:scale(1.06); opacity:1; }
   }
 </style>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const openBtn  = document.querySelector('.nav-open');
+    const closeBtn = document.querySelector('.mnav-close');
+    const mnav     = document.querySelector('.mnav');
+
+    // iOS-safe scroll lock: body { position: fixed } prevents rubber-band
+    // scroll from leaking through the overlay on Safari.
+    let savedScrollY = 0;
+
+    function openMenu() {
+      if (!mnav) return;
+      savedScrollY = window.scrollY;
+      document.body.style.cssText = `position:fixed;top:-${savedScrollY}px;left:0;right:0;overflow:hidden;`;
+      mnav.classList.add('open');
+      mnav.setAttribute('aria-hidden', 'false');
+      if (openBtn) openBtn.setAttribute('aria-expanded', 'true');
+    }
+
+    function closeMenu() {
+      if (!mnav) return;
+      document.body.style.cssText = '';
+      window.scrollTo({ top: savedScrollY, behavior: 'instant' });
+      mnav.classList.remove('open');
+      mnav.setAttribute('aria-hidden', 'true');
+      if (openBtn) openBtn.setAttribute('aria-expanded', 'false');
+    }
+
+    if (openBtn) openBtn.addEventListener('click', openMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+
+    // Close on any nav link click
+    if (mnav) {
+      mnav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+    }
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mnav && mnav.classList.contains('open')) {
+        closeMenu();
+      }
+    });
+  });
+</script>
