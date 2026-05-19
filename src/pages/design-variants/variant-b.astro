@@ -1,0 +1,562 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Variant B: The Explorer — Psyllium Husk | RM Psyllium"
+  description="Design variant B: two-panel grade explorer with sticky sidebar navigation."
+  noindex={true}
+>
+
+<div class="vb">
+
+  <!-- VARIANT NAV -->
+  <nav class="vb-vnav">
+    <a href="/design-variants/" class="vb-vnav-back">← All variants</a>
+    <div class="vb-vnav-pills">
+      <a href="/design-variants/variant-a" class="vb-vnav-pill">A · Scanner</a>
+      <span class="vb-vnav-pill vb-vnav-pill--active">B · Explorer</span>
+      <a href="/design-variants/variant-c" class="vb-vnav-pill">C · Configurator</a>
+      <a href="/design-variants/variant-d" class="vb-vnav-pill">D · Dashboard</a>
+    </div>
+    <a href="/design-variants/variant-c" class="vb-vnav-next">Next →</a>
+  </nav>
+
+  <!-- HERO (simplified) -->
+  <section class="vb-hero">
+    <div class="vb-c">
+      <nav class="vb-breadcrumb">
+        <a href="#">Home</a><span>›</span>
+        <a href="#">Products</a><span>›</span>
+        <span>Psyllium Husk</span>
+      </nav>
+      <p class="vb-kicker">Whole Husk · Gujarat, India · 4 grades</p>
+      <h1>Psyllium Husk</h1>
+      <p class="vb-hero-sub">Select a grade on the left to see full specifications, application fit, and common questions. 500&nbsp;kg MOQ · COA per lot · FOB Mundra.</p>
+      <a class="vb-hero-cta" href="#quote">Request a Quote →</a>
+    </div>
+  </section>
+
+  <!-- TWO-PANEL EXPLORER -->
+  <div class="vb-explorer">
+
+    <!-- LEFT SIDEBAR (grade tabs) -->
+    <aside class="vb-sidebar" aria-label="Grade navigation">
+      <p class="vb-sidebar-label">Select grade</p>
+
+      <button class="vb-tab vb-tab--active" data-tab="g85" type="button" onclick="vbSelect('g85')">
+        <span class="vb-tab-pct">85%</span>
+        <div class="vb-tab-meta">
+          <span class="vb-tab-badge vb-tab-badge--food">Food Grade</span>
+          <span class="vb-tab-swell">30 ml/g</span>
+        </div>
+      </button>
+
+      <button class="vb-tab" data-tab="g95" type="button" onclick="vbSelect('g95')">
+        <span class="vb-tab-pct">95%</span>
+        <div class="vb-tab-meta">
+          <span class="vb-tab-badge vb-tab-badge--nf">Food / NF</span>
+          <span class="vb-tab-swell">40 ml/g</span>
+        </div>
+      </button>
+
+      <button class="vb-tab" data-tab="g98" type="button" onclick="vbSelect('g98')">
+        <span class="vb-tab-pct">98%</span>
+        <div class="vb-tab-meta">
+          <span class="vb-tab-badge vb-tab-badge--usp">USP / EP</span>
+          <span class="vb-tab-swell">45 ml/g</span>
+        </div>
+        <span class="vb-tab-popular">Popular</span>
+      </button>
+
+      <button class="vb-tab" data-tab="g99" type="button" onclick="vbSelect('g99')">
+        <span class="vb-tab-pct">99%</span>
+        <div class="vb-tab-meta">
+          <span class="vb-tab-badge vb-tab-badge--ip">USP/EP/IP</span>
+          <span class="vb-tab-swell">50 ml/g</span>
+        </div>
+      </button>
+
+      <div class="vb-sidebar-cta">
+        <p class="vb-sidebar-cta-label">Need help choosing?</p>
+        <a class="vb-btn vb-btn-cta" href="#quote">Request Quote</a>
+      </div>
+    </aside>
+
+    <!-- RIGHT PANEL -->
+    <div class="vb-panels">
+
+      <!-- PANEL: 85% -->
+      <div class="vb-panel" data-panel="g85">
+        <div class="vb-panel-head">
+          <div>
+            <div class="vb-panel-grade-row">
+              <span class="vb-panel-pct">85%</span>
+              <span class="vb-panel-badge vb-panel-badge--food">Food Grade</span>
+            </div>
+            <p class="vb-panel-bestfor">Animal feed, industrial fibre, cost-sensitive food applications. Below NF and USP pharmacopoeia thresholds.</p>
+          </div>
+          <a class="vb-btn vb-btn-quote" href="#quote">Request Quote</a>
+        </div>
+        <div class="vb-panel-stats">
+          <div class="vb-pstat"><span class="vb-pstat-val">≥85%</span><span class="vb-pstat-label">Purity</span></div>
+          <div class="vb-pstat"><span class="vb-pstat-val">30 ml/g</span><span class="vb-pstat-label">Swell volume</span></div>
+          <div class="vb-pstat"><span class="vb-pstat-val">≤4.0%</span><span class="vb-pstat-label">Total ash</span></div>
+        </div>
+        <div class="vb-panel-fit">
+          <p class="vb-panel-section-label">Application fit</p>
+          <div class="vb-fit-row"><span class="vb-fit-app">Pharma / Laxative</span><span class="vb-fit vb-fit-no">✗ Not suitable</span></div>
+          <div class="vb-fit-row"><span class="vb-fit-app">Nutraceutical</span><span class="vb-fit vb-fit-cond">◑ Conditional — confirm with QA</span></div>
+          <div class="vb-fit-row"><span class="vb-fit-app">Food &amp; Bakery</span><span class="vb-fit vb-fit-yes">✓ Primary use</span></div>
+          <div class="vb-fit-row"><span class="vb-fit-app">Animal Feed</span><span class="vb-fit vb-fit-yes">✓ Primary use</span></div>
+        </div>
+        <div class="vb-panel-faq">
+          <p class="vb-panel-section-label">Common questions</p>
+          <details class="vb-faq"><summary>Is 85% psyllium husk food-grade?</summary><p>Yes — food-grade. It does not meet NF, USP, or EP pharmacopoeia thresholds. For supplement or laxative products citing a pharmacopoeia standard, use 95% grade minimum.</p></details>
+          <details class="vb-faq"><summary>What swell volume does 85% grade have?</summary><p>Minimum 30 ml/g. This reflects the lower mucilage content at 85% purity and is the lowest swell volume in our husk range.</p></details>
+          <details class="vb-faq"><summary>What is the MOQ for 85% psyllium husk?</summary><p>Minimum 500 kg. FOB Mundra. COA and packing list included per shipment. Lead time 14–21 days from Unjha.</p></details>
+        </div>
+      </div>
+
+      <!-- PANEL: 95% -->
+      <div class="vb-panel" data-panel="g95" hidden>
+        <div class="vb-panel-head">
+          <div>
+            <div class="vb-panel-grade-row">
+              <span class="vb-panel-pct">95%</span>
+              <span class="vb-panel-badge vb-panel-badge--nf">Food / NF</span>
+            </div>
+            <p class="vb-panel-bestfor">Supplement sachets, NF food fibre, functional cereal. COA annotated to NF on request. Common for US-market supplement brands.</p>
+          </div>
+          <a class="vb-btn vb-btn-quote" href="#quote">Request Quote</a>
+        </div>
+        <div class="vb-panel-stats">
+          <div class="vb-pstat"><span class="vb-pstat-val">≥95%</span><span class="vb-pstat-label">Purity</span></div>
+          <div class="vb-pstat"><span class="vb-pstat-val">40 ml/g</span><span class="vb-pstat-label">Swell volume</span></div>
+          <div class="vb-pstat"><span class="vb-pstat-val">≤4.0%</span><span class="vb-pstat-label">Total ash</span></div>
+        </div>
+        <div class="vb-panel-fit">
+          <p class="vb-panel-section-label">Application fit</p>
+          <div class="vb-fit-row"><span class="vb-fit-app">Pharma / Laxative</span><span class="vb-fit vb-fit-cond">◑ Conditional — NF only, not USP/EP</span></div>
+          <div class="vb-fit-row"><span class="vb-fit-app">Nutraceutical</span><span class="vb-fit vb-fit-yes">✓ Primary — NF annotated COA</span></div>
+          <div class="vb-fit-row"><span class="vb-fit-app">Food &amp; Bakery</span><span class="vb-fit vb-fit-yes">✓ Primary — NF food fibre</span></div>
+          <div class="vb-fit-row"><span class="vb-fit-app">Animal Feed</span><span class="vb-fit vb-fit-cond">◑ Conditional — premium over 85%</span></div>
+        </div>
+        <div class="vb-panel-faq">
+          <p class="vb-panel-section-label">Common questions</p>
+          <details class="vb-faq"><summary>Does 95% psyllium husk meet the NF monograph?</summary><p>Yes. 95% grade meets the Psyllium Husk monograph in the National Formulary (NF). Swell volume minimum 40 ml/g. COA annotated to NF parameters on request.</p></details>
+          <details class="vb-faq"><summary>How is 95% different from 98% psyllium husk?</summary><p>95% meets NF. 98% meets USP and EP. The swell volume difference is 40 ml/g (95%) vs 45 ml/g (98%). If your product label cites USP or EP, you need 98% or 99% grade.</p></details>
+          <details class="vb-faq"><summary>Can I use 95% grade for capsule filling?</summary><p>Yes, at 20–60 mesh. Moisture must be ≤10% at time of filling to prevent clumping. Moisture-controlled packaging available on request.</p></details>
+        </div>
+      </div>
+
+      <!-- PANEL: 98% -->
+      <div class="vb-panel" data-panel="g98" hidden>
+        <div class="vb-panel-head">
+          <div>
+            <div class="vb-panel-grade-row">
+              <span class="vb-panel-pct">98%</span>
+              <span class="vb-panel-badge vb-panel-badge--usp">USP / EP</span>
+            </div>
+            <p class="vb-panel-bestfor">Pharma capsule fills, USP/EP laxative sachets, OTC supplement. NABL-accredited lab testing per shipment.</p>
+          </div>
+          <a class="vb-btn vb-btn-quote" href="#quote">Request Quote</a>
+        </div>
+        <div class="vb-panel-stats">
+          <div class="vb-pstat"><span class="vb-pstat-val">≥98%</span><span class="vb-pstat-label">Purity</span></div>
+          <div class="vb-pstat"><span class="vb-pstat-val">45 ml/g</span><span class="vb-pstat-label">Swell volume</span></div>
+          <div class="vb-pstat"><span class="vb-pstat-val">≤3.5%</span><span class="vb-pstat-label">Total ash</span></div>
+        </div>
+        <div class="vb-panel-fit">
+          <p class="vb-panel-section-label">Application fit</p>
+          <div class="vb-fit-row"><span class="vb-fit-app">Pharma / Laxative</span><span class="vb-fit vb-fit-yes">✓ Primary — USP/EP annotated COA</span></div>
+          <div class="vb-fit-row"><span class="vb-fit-app">Nutraceutical</span><span class="vb-fit vb-fit-yes">✓ Primary — brands citing USP</span></div>
+          <div class="vb-fit-row"><span class="vb-fit-app">Food &amp; Bakery</span><span class="vb-fit vb-fit-cond">◑ Conditional — uncommon, use 95%</span></div>
+          <div class="vb-fit-row"><span class="vb-fit-app">Animal Feed</span><span class="vb-fit vb-fit-none">— Not used at this grade</span></div>
+        </div>
+        <div class="vb-panel-faq">
+          <p class="vb-panel-section-label">Common questions</p>
+          <details class="vb-faq"><summary>Does 98% psyllium husk meet USP and EP standards?</summary><p>Yes. 98% grade meets USP (Plantago ovata husk) and EP (Ispaghula husk) monograph parameters — swell volume, moisture, ash, and microbiology. COA annotated to your pharmacopoeia on request.</p></details>
+          <details class="vb-faq"><summary>What documentation comes with 98% psyllium husk?</summary><p>COA from NABL-accredited laboratory (swell volume, moisture, ash, microbiology, heavy metals), commercial invoice, packing list, certificate of origin, and phytosanitary certificate. Halal and Kosher declarations available.</p></details>
+          <details class="vb-faq"><summary>Is 98% suitable for laxative OTC products?</summary><p>Yes. 98% is used in laxative capsule fills and sachet products. Confirm with your QA team whether 98% or 99% is specified in your finished product registration.</p></details>
+        </div>
+      </div>
+
+      <!-- PANEL: 99% -->
+      <div class="vb-panel" data-panel="g99" hidden>
+        <div class="vb-panel-head">
+          <div>
+            <div class="vb-panel-grade-row">
+              <span class="vb-panel-pct">99%</span>
+              <span class="vb-panel-badge vb-panel-badge--ip">USP / EP / IP</span>
+            </div>
+            <p class="vb-panel-bestfor">USP/EP/IP laxative monographs, branded OTC digestive supplements. Highest swell volume — 50 ml/g minimum.</p>
+          </div>
+          <a class="vb-btn vb-btn-quote" href="#quote">Request Quote</a>
+        </div>
+        <div class="vb-panel-stats">
+          <div class="vb-pstat"><span class="vb-pstat-val">≥99%</span><span class="vb-pstat-label">Purity</span></div>
+          <div class="vb-pstat"><span class="vb-pstat-val">50 ml/g</span><span class="vb-pstat-label">Swell volume</span></div>
+          <div class="vb-pstat"><span class="vb-pstat-val">≤3.0%</span><span class="vb-pstat-label">Total ash</span></div>
+        </div>
+        <div class="vb-panel-fit">
+          <p class="vb-panel-section-label">Application fit</p>
+          <div class="vb-fit-row"><span class="vb-fit-app">Pharma / Laxative</span><span class="vb-fit vb-fit-yes">✓ Primary — USP/EP/IP monographs</span></div>
+          <div class="vb-fit-row"><span class="vb-fit-app">Nutraceutical</span><span class="vb-fit vb-fit-yes">✓ Primary — premium supplement brands</span></div>
+          <div class="vb-fit-row"><span class="vb-fit-app">Food &amp; Bakery</span><span class="vb-fit vb-fit-none">— Niche; use 95% for standard food</span></div>
+          <div class="vb-fit-row"><span class="vb-fit-app">Animal Feed</span><span class="vb-fit vb-fit-none">— Not used. Use 85% grade.</span></div>
+        </div>
+        <div class="vb-panel-faq">
+          <p class="vb-panel-section-label">Common questions</p>
+          <details class="vb-faq"><summary>Is 99% psyllium husk USP, EP, and IP compliant?</summary><p>Yes. COA annotated to USP (Plantago ovata husk), EP (Ispaghula husk), or IP as required. Parameters include swell volume, moisture, total ash (≤3.0%), acid-insoluble ash (≤0.4%), heavy metals, and full microbiology.</p></details>
+          <details class="vb-faq"><summary>What swell volume does 99% grade have?</summary><p>Minimum 50 ml/g per our specification. USP and EP monographs specify 40 ml/g minimum; 99% grade consistently exceeds this. Actual test values are on the COA per shipment.</p></details>
+          <details class="vb-faq"><summary>Can I get a sample with COA before ordering?</summary><p>Yes. We send 100–500 g samples with a full COA from our NABL-accredited lab. Share your target pharmacopoeia, shipping address, and grade. Sample lead time is 3–5 business days from Unjha, Gujarat.</p></details>
+        </div>
+      </div>
+
+    </div><!-- /panels -->
+  </div><!-- /explorer -->
+
+  <!-- FULL SPEC TABLE -->
+  <section class="vb-section vb-section-cream">
+    <div class="vb-c">
+      <p class="vb-kicker">Full Specifications</p>
+      <h2 class="vb-h2">All grades side by side</h2>
+      <div class="vb-spec-scroll">
+        <table class="vb-spec">
+          <thead>
+            <tr>
+              <th class="vb-spec-param-th">Parameter</th>
+              <th>85% <em>Food</em></th>
+              <th>95% <em>NF</em></th>
+              <th>98% <em>USP/EP</em></th>
+              <th>99% <em>USP/EP/IP</em></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="vb-spec-param">Purity (husk %)</td><td>≥85%</td><td>≥95%</td><td>≥98%</td><td>≥99%</td></tr>
+            <tr><td class="vb-spec-param">Swell Volume (ml/g min)</td><td>30</td><td>40</td><td>45</td><td>50</td></tr>
+            <tr><td class="vb-spec-param">Moisture (% max)</td><td>≤12%</td><td>≤12%</td><td>≤12%</td><td>≤12%</td></tr>
+            <tr><td class="vb-spec-param">Total Ash (% max)</td><td>4.0</td><td>4.0</td><td>3.5</td><td>3.0</td></tr>
+            <tr><td class="vb-spec-param">Acid-insoluble Ash</td><td>1.0</td><td>0.8</td><td>0.5</td><td>0.4</td></tr>
+            <tr><td class="vb-spec-param">Mesh (ASTM)</td><td>20–40</td><td>20–60</td><td>20–60</td><td>20–60</td></tr>
+            <tr><td class="vb-spec-param">E. coli / Salmonella</td><td class="vb-pass">Absent</td><td class="vb-pass">Absent</td><td class="vb-pass">Absent</td><td class="vb-pass">Absent</td></tr>
+            <tr>
+              <td class="vb-spec-param">Pharmacopoeia</td>
+              <td><span class="vb-badge vb-badge-food">Food grade</span></td>
+              <td><span class="vb-badge vb-badge-nf">Food / NF</span></td>
+              <td><span class="vb-badge vb-badge-usp">USP / EP</span></td>
+              <td><span class="vb-badge vb-badge-ip">USP / EP / IP</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE FORM -->
+  <section class="vb-section" id="quote">
+    <div class="vb-c">
+      <div class="vb-quote-grid">
+        <div class="vb-quote-copy">
+          <p class="vb-kicker">Request Quote</p>
+          <h2 class="vb-h2">Get pricing and samples within 24 hours.</h2>
+          <p class="vb-quote-sub">Our export desk will reply with availability, COA parameters, and pricing. 500 kg MOQ · FOB Mundra · 14–21 day lead time.</p>
+        </div>
+        <form class="vb-form">
+          <div class="vb-ff">
+            <label class="vb-fl">Product</label>
+            <select class="vb-fi">
+              <option>Psyllium Husk</option>
+              <option>Psyllium Husk Powder</option>
+              <option>Psyllium Seeds</option>
+            </select>
+          </div>
+          <div class="vb-ff">
+            <label class="vb-fl">Grade</label>
+            <select class="vb-fi">
+              <option>85% — Food Grade</option>
+              <option>95% — Food / NF</option>
+              <option>98% — USP / EP</option>
+              <option>99% — USP / EP / IP</option>
+            </select>
+          </div>
+          <div class="vb-ff-row">
+            <div class="vb-ff">
+              <label class="vb-fl">Monthly volume (kg)</label>
+              <input class="vb-fi" type="text" placeholder="e.g. 2,000 kg" />
+            </div>
+            <div class="vb-ff">
+              <label class="vb-fl">Destination</label>
+              <input class="vb-fi" type="text" placeholder="Country / port" />
+            </div>
+          </div>
+          <div class="vb-ff">
+            <label class="vb-fl">Company email</label>
+            <input class="vb-fi" type="email" placeholder="you@company.com" />
+          </div>
+          <button class="vb-btn vb-btn-submit" type="submit">Send Quote Request →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script>
+function vbSelect(gradeId) {
+  document.querySelectorAll('[data-panel]').forEach(p => { p.hidden = true; });
+  document.querySelectorAll('[data-tab]').forEach(t => { t.classList.remove('vb-tab--active'); });
+  const panel = document.querySelector(`[data-panel="${gradeId}"]`);
+  const tab = document.querySelector(`[data-tab="${gradeId}"]`);
+  if (panel) panel.hidden = false;
+  if (tab) tab.classList.add('vb-tab--active');
+}
+</script>
+
+<style>
+  :root {
+    --vb-ink: #1a1c18;
+    --vb-soft: #484c43;
+    --vb-mute: #6b6f65;
+    --vb-rule: rgba(26,28,24,0.1);
+    --vb-sage: #4a6630;
+    --vb-pale: #d8e0c8;
+    --vb-cream: #f5f3ed;
+    --vb-white: #ffffff;
+    --vb-sidebar: #1e2a16;
+    --food-bg: #f1f5f9; --food-txt: #475569;
+    --nf-bg: #eff6ff; --nf-txt: #2563eb;
+    --usp-bg: #f5f3ff; --usp-txt: #7c3aed;
+    --ip-bg: #fef3c7; --ip-txt: #b45309;
+  }
+
+  .vb { font-family: 'Inter', system-ui, sans-serif; color: var(--vb-ink); }
+  .vb *, .vb *::before, .vb *::after { box-sizing: border-box; }
+  .vb-c { width: min(1160px, calc(100% - 80px)); margin-inline: auto; }
+
+  /* variant nav */
+  .vb-vnav {
+    background: #0d1a09; display: flex; align-items: center;
+    gap: 16px; padding: 10px 40px; font-size: 12px;
+  }
+  .vb-vnav-back, .vb-vnav-next { color: rgba(255,255,255,0.45); text-decoration: none; white-space: nowrap; }
+  .vb-vnav-back:hover, .vb-vnav-next:hover { color: #fff; }
+  .vb-vnav-pills { display: flex; gap: 6px; flex: 1; justify-content: center; flex-wrap: wrap; }
+  .vb-vnav-pill {
+    padding: 4px 12px; border-radius: 999px; font-size: 11px; font-weight: 500;
+    color: rgba(255,255,255,0.45); text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.12); white-space: nowrap;
+  }
+  .vb-vnav-pill--active { color: #fff; background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.25); }
+  .vb-vnav-pill:not(.vb-vnav-pill--active):hover { color: #fff; }
+
+  /* hero */
+  .vb-hero {
+    background: var(--vb-sidebar);
+    padding: clamp(3rem,5vw,5rem) 0 clamp(2.5rem,4vw,4rem);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .vb-breadcrumb { display: flex; gap: 8px; align-items: center; margin-bottom: 20px; font-size: 12px; }
+  .vb-breadcrumb a { color: rgba(255,255,255,0.35); text-decoration: none; }
+  .vb-breadcrumb a:hover { color: rgba(255,255,255,0.7); }
+  .vb-breadcrumb span { color: rgba(255,255,255,0.2); }
+  .vb-kicker {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.06em;
+    text-transform: uppercase; color: var(--vb-sage); margin: 0 0 14px;
+  }
+  .vb-hero .vb-kicker { color: #7aad54; }
+  .vb-hero h1 {
+    margin: 0; color: #fff;
+    font-size: clamp(2.4rem,5vw,4rem);
+    font-weight: 800; letter-spacing: -0.03em; line-height: 1;
+  }
+  .vb-hero-sub {
+    margin: 16px 0 0; color: rgba(255,255,255,0.55); font-size: 15px;
+    line-height: 1.65; max-width: 600px;
+  }
+  .vb-hero-cta {
+    display: inline-block; margin-top: 24px; color: #7aad54; font-size: 14px;
+    font-weight: 600; text-decoration: none;
+  }
+  .vb-hero-cta:hover { text-decoration: underline; }
+
+  /* explorer layout */
+  .vb-explorer {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    min-height: 600px;
+    border-bottom: 1px solid var(--vb-rule);
+  }
+
+  /* sidebar */
+  .vb-sidebar {
+    background: #f8f6f0;
+    border-right: 1px solid var(--vb-rule);
+    padding: 28px 20px;
+    display: flex; flex-direction: column; gap: 8px;
+    position: sticky; top: 64px; align-self: start; max-height: calc(100vh - 64px); overflow-y: auto;
+  }
+  .vb-sidebar-label {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--vb-mute); margin: 0 0 8px 8px;
+  }
+  .vb-tab {
+    display: flex; flex-direction: column; gap: 6px;
+    width: 100%; text-align: left; padding: 14px 16px;
+    background: transparent; border: 1.5px solid transparent;
+    border-radius: 10px; cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+    position: relative;
+  }
+  .vb-tab:hover { background: var(--vb-white); }
+  .vb-tab--active {
+    background: var(--vb-white);
+    border-color: var(--vb-sage);
+    box-shadow: 0 2px 12px -4px rgba(74,102,48,0.2);
+  }
+  .vb-tab-pct {
+    font-size: 1.5rem; font-weight: 800; letter-spacing: -0.03em;
+    color: var(--vb-ink); line-height: 1;
+  }
+  .vb-tab-meta { display: flex; align-items: center; gap: 8px; }
+  .vb-tab-badge {
+    display: inline-block; border-radius: 999px;
+    padding: 2px 8px; font-size: 10px; font-weight: 600; white-space: nowrap;
+  }
+  .vb-tab-badge--food { background: var(--food-bg); color: var(--food-txt); }
+  .vb-tab-badge--nf   { background: var(--nf-bg);   color: var(--nf-txt); }
+  .vb-tab-badge--usp  { background: var(--usp-bg);  color: var(--usp-txt); }
+  .vb-tab-badge--ip   { background: var(--ip-bg);   color: var(--ip-txt); }
+  .vb-tab-swell { font-size: 11px; color: var(--vb-mute); font-weight: 500; }
+  .vb-tab-popular {
+    position: absolute; top: 10px; right: 10px;
+    background: var(--usp-txt); color: #fff;
+    font-size: 8px; font-weight: 700; letter-spacing: 0.06em;
+    text-transform: uppercase; padding: 2px 6px; border-radius: 999px;
+  }
+  .vb-sidebar-cta { margin-top: auto; padding-top: 20px; border-top: 1px solid var(--vb-rule); }
+  .vb-sidebar-cta-label { font-size: 11px; color: var(--vb-mute); margin: 0 0 10px; }
+
+  /* right panels */
+  .vb-panels { padding: clamp(2rem,4vw,4rem); }
+  .vb-panel { display: flex; flex-direction: column; gap: 32px; }
+  .vb-panel-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; }
+  .vb-panel-grade-row { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; }
+  .vb-panel-pct {
+    font-size: clamp(2.4rem,4vw,3.6rem);
+    font-weight: 800; letter-spacing: -0.04em; color: var(--vb-ink); line-height: 1;
+  }
+  .vb-panel-badge {
+    display: inline-block; border-radius: 999px;
+    padding: 5px 14px; font-size: 12px; font-weight: 600;
+  }
+  .vb-panel-badge--food { background: var(--food-bg); color: var(--food-txt); }
+  .vb-panel-badge--nf   { background: var(--nf-bg);   color: var(--nf-txt); }
+  .vb-panel-badge--usp  { background: var(--usp-bg);  color: var(--usp-txt); }
+  .vb-panel-badge--ip   { background: var(--ip-bg);   color: var(--ip-txt); }
+  .vb-panel-bestfor { margin: 0; color: var(--vb-soft); font-size: 14px; line-height: 1.65; max-width: 600px; }
+  .vb-panel-stats {
+    display: grid; grid-template-columns: repeat(3,1fr); gap: 16px;
+  }
+  .vb-pstat {
+    background: var(--vb-cream); border-radius: 10px; padding: 20px;
+    display: flex; flex-direction: column; gap: 5px;
+  }
+  .vb-pstat-val { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.03em; color: var(--vb-ink); }
+  .vb-pstat-label { font-size: 11px; color: var(--vb-mute); font-weight: 500; }
+  .vb-panel-section-label {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase;
+    color: var(--vb-mute); margin: 0 0 12px;
+  }
+  .vb-fit-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 11px 0; border-bottom: 1px solid var(--vb-rule);
+  }
+  .vb-fit-row:last-child { border-bottom: 0; }
+  .vb-fit-app { font-size: 13px; font-weight: 500; color: var(--vb-ink); }
+  .vb-fit { font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 999px; }
+  .vb-fit-yes  { background: #dcfce7; color: #166534; }
+  .vb-fit-cond { background: #fef9c3; color: #92400e; }
+  .vb-fit-no   { background: #fee2e2; color: #991b1b; }
+  .vb-fit-none { background: #f3f4f6; color: #9ca3af; }
+  .vb-faq { border-top: 1px solid var(--vb-rule); }
+  .vb-faq:last-child { border-bottom: 1px solid var(--vb-rule); }
+  .vb-faq summary {
+    padding: 14px 0; cursor: pointer; list-style: none;
+    font-size: 13px; font-weight: 600; color: var(--vb-ink);
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .vb-faq summary::-webkit-details-marker { display: none; }
+  .vb-faq summary::after { content: '+'; color: var(--vb-sage); font-size: 18px; font-weight: 400; }
+  .vb-faq[open] summary::after { content: '−'; }
+  .vb-faq p { margin: 0 0 16px; color: var(--vb-soft); font-size: 13px; line-height: 1.7; }
+
+  /* spec table */
+  .vb-section { padding: clamp(4rem,6vw,6rem) 0; }
+  .vb-section-cream { background: var(--vb-cream); }
+  .vb-h2 { margin: 0 0 28px; font-size: clamp(1.6rem,3vw,2.2rem); font-weight: 800; letter-spacing: -0.025em; color: var(--vb-ink); }
+  .vb-spec-scroll { overflow-x: auto; border: 1px solid var(--vb-rule); border-radius: 10px; background: var(--vb-white); }
+  .vb-spec { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .vb-spec thead { background: #f9f8f5; border-bottom: 1.5px solid var(--vb-rule); }
+  .vb-spec th { padding: 14px 20px; text-align: left; font-size: 11px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--vb-mute); white-space: nowrap; }
+  .vb-spec th em { display: block; font-size: 10px; font-style: normal; font-weight: 400; text-transform: none; letter-spacing: 0; color: var(--vb-mute); margin-top: 2px; }
+  .vb-spec-param-th { min-width: 220px; }
+  .vb-spec td { padding: 12px 20px; color: var(--vb-soft); border-bottom: 1px solid var(--vb-rule); vertical-align: middle; }
+  .vb-spec tr:last-child td { border-bottom: 0; }
+  .vb-spec-param { font-weight: 600; color: var(--vb-ink); }
+  .vb-pass { color: #166534; font-weight: 600; }
+  .vb-badge { display: inline-block; border-radius: 999px; padding: 3px 10px; font-size: 11px; font-weight: 600; white-space: nowrap; }
+  .vb-badge-food { background: var(--food-bg); color: var(--food-txt); }
+  .vb-badge-nf   { background: var(--nf-bg);   color: var(--nf-txt); }
+  .vb-badge-usp  { background: var(--usp-bg);  color: var(--usp-txt); }
+  .vb-badge-ip   { background: var(--ip-bg);   color: var(--ip-txt); }
+
+  /* buttons */
+  .vb-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    border-radius: 8px; padding: 11px 20px; font-size: 13px; font-weight: 600;
+    text-decoration: none; cursor: pointer; border: none; font-family: inherit;
+    transition: transform 0.2s, box-shadow 0.2s; line-height: 1;
+  }
+  .vb-btn:hover { transform: translateY(-2px); }
+  .vb-btn-cta { background: var(--vb-sage); color: #fff; width: 100%; justify-content: center; }
+  .vb-btn-quote { background: var(--vb-ink); color: #fff; white-space: nowrap; flex-shrink: 0; }
+  .vb-btn-submit { background: var(--vb-sage); color: #fff; width: 100%; padding: 14px; font-size: 14px; border-radius: 8px; }
+
+  /* quote form */
+  .vb-quote-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: clamp(3rem,5vw,5rem); align-items: start; }
+  .vb-quote-sub { margin: 12px 0 0; color: var(--vb-soft); font-size: 14px; line-height: 1.65; }
+  .vb-form { background: var(--vb-cream); border-radius: 12px; padding: 28px; display: flex; flex-direction: column; gap: 16px; }
+  .vb-ff { display: flex; flex-direction: column; gap: 6px; }
+  .vb-ff-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .vb-fl { font-size: 11px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--vb-mute); }
+  .vb-fi {
+    border: 1.5px solid var(--vb-rule); border-radius: 7px; padding: 10px 14px;
+    font-size: 14px; font-family: inherit; color: var(--vb-ink);
+    background: var(--vb-white); outline: none; appearance: none;
+    transition: border-color 0.15s;
+  }
+  .vb-fi:focus { border-color: var(--vb-sage); }
+
+  @media (max-width: 900px) {
+    .vb-explorer { grid-template-columns: 1fr; }
+    .vb-sidebar {
+      position: static; max-height: none; overflow: visible;
+      display: flex; flex-direction: row; flex-wrap: nowrap;
+      gap: 8px; overflow-x: auto; border-right: none;
+      border-bottom: 1px solid var(--vb-rule); padding: 16px;
+    }
+    .vb-sidebar-label { display: none; }
+    .vb-sidebar-cta { display: none; }
+    .vb-tab { flex-direction: row; align-items: center; gap: 10px; flex-shrink: 0; }
+    .vb-tab-meta { flex-direction: row; }
+    .vb-panel-head { flex-direction: column; }
+  }
+  @media (max-width: 700px) {
+    .vb-c { width: calc(100% - 40px); }
+    .vb-quote-grid { grid-template-columns: 1fr; }
+    .vb-panel-stats { grid-template-columns: 1fr 1fr; }
+    .vb-ff-row { grid-template-columns: 1fr; }
+  }
+</style>
+</BaseLayout>

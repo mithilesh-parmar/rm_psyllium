@@ -1,11 +1,14 @@
 ---
-const items = [
-  ['COA Review', 'Purity, mesh, moisture, ash, swelling volume, microbiology, and heavy-metal parameters shared for buyer review.'],
-  ['Food Safety', 'Facility, allergen, microbiology, and handling documents available for food, supplement, and pharma buyers.'],
-  ['Halal & Kosher', 'Halal and Kosher documents can be shared where the current lot and buyer market require them.'],
-  ['Traceability', 'Lot-level origin, processing, packing, and shipment records aligned to export review.'],
-  ['Specification Control', 'Grade, mesh, moisture, swell volume, and packing requirements confirmed before quote.'],
-  ['Export Documents', 'Commercial invoice, packing list, COA, origin certificate, phyto, and fumigation support for export orders.']
+import { copy, getLanguage } from '../data/site';
+const lang = getLanguage(Astro.params.lang);
+const t = copy[lang];
+const items: [string, string][] = [
+  [t.cgItem1Title, t.cgItem1Desc],
+  [t.cgItem2Title, t.cgItem2Desc],
+  [t.cgItem3Title, t.cgItem3Desc],
+  [t.cgItem4Title, t.cgItem4Desc],
+  [t.cgItem5Title, t.cgItem5Desc],
+  [t.cgItem6Title, t.cgItem6Desc],
 ];
 ---
 <div class="compliance-grid">

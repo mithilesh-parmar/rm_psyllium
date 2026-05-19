@@ -2,43 +2,43 @@
   var form = document.querySelector('form[name="spec-builder"]');
   if (!form) return;
 
-  var slider = form.querySelector('input[name="mesh"]');
-  var display = document.getElementById('mesh-display');
+  var emailInput   = form.querySelector('input[name="email"]');
+  var phoneInput   = form.querySelector('input[name="phone"]');
+  var errorEl      = document.getElementById('sb-contact-error');
 
-  function syncMesh() {
-    if (slider && display) {
-      display.textContent = slider.value + ' mesh';
-    }
+  function hasContact() {
+    var email = emailInput ? emailInput.value.trim() : '';
+    var phone = phoneInput ? phoneInput.value.trim() : '';
+    return email.length > 0 || phone.length > 0;
   }
 
-  if (slider) {
-    slider.addEventListener('input', syncMesh);
-    syncMesh();
+  function clearError() {
+    if (errorEl) errorEl.hidden = true;
+    if (emailInput) emailInput.style.borderColor = '';
+    if (phoneInput) phoneInput.style.borderColor = '';
   }
+
+  if (emailInput) emailInput.addEventListener('input', clearError);
+  if (phoneInput) phoneInput.addEventListener('input', clearError);
 
   form.addEventListener('submit', function (event) {
     event.preventDefault();
 
+    if (!hasContact()) {
+      if (errorEl) errorEl.hidden = false;
+      if (emailInput) emailInput.style.borderColor = '#c0392b';
+      if (phoneInput) phoneInput.style.borderColor = '#c0392b';
+      if (emailInput) emailInput.focus();
+      return;
+    }
+
     var formData = new FormData(form);
-    var encoded = new URLSearchParams(formData);
-    var grade = formData.get('grade') || '';
-    var mesh = formData.get('mesh') || '';
-    var pack = formData.get('packaging') || '';
-    var product = formData.get('product') || '';
-    var region = formData.get('region') || '';
-    var industry = formData.get('industry') || '';
-    var bookingUrl = form.getAttribute('data-booking-url') || '';
-    var params = new URLSearchParams({ product: product, region: region, industry: industry, grade: grade, mesh: mesh, pack: pack });
+    var encoded  = new URLSearchParams(formData);
+    var product  = formData.get('product') || '';
+    var name     = formData.get('name') || '';
 
     if (window.rmTrack) {
-      window.rmTrack('spec_builder_submit', {
-        product: product,
-        region: region,
-        industry: industry,
-        grade: grade,
-        mesh: mesh,
-        packaging: pack
-      });
+      window.rmTrack('spec_builder_submit', { product: product, name: name });
     }
 
     fetch('/', {
@@ -46,13 +46,9 @@
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encoded.toString()
     }).then(function () {
-      if (bookingUrl) {
-        window.location.href = bookingUrl + '?' + params.toString();
-      } else {
-        window.location.href = '/thank-you?intent=spec&' + params.toString();
-      }
+      window.location.href = '/thank-you?intent=spec&product=' + encodeURIComponent(product);
     }).catch(function () {
-      window.location.href = '/thank-you?intent=spec&' + params.toString();
+      window.location.href = '/thank-you?intent=spec&product=' + encodeURIComponent(product);
     });
   });
 })();

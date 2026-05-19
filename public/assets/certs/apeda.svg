@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 100">
+  <rect width="220" height="100" rx="8" fill="#1A5C2A"/>
+  <rect x="3" y="3" width="214" height="94" rx="6" fill="none" stroke="rgba(143,212,170,0.3)" stroke-width="1"/>
+
+  <!-- Globe: outer circle -->
+  <circle cx="48" cy="50" r="32" fill="rgba(0,0,0,0.2)"/>
+  <circle cx="48" cy="50" r="30" fill="#174E24" stroke="rgba(143,212,170,0.5)" stroke-width="1"/>
+  <!-- Globe latitude lines -->
+  <line x1="18" y1="50" x2="78" y2="50" stroke="rgba(255,255,255,0.25)" stroke-width="0.8"/>
+  <ellipse cx="48" cy="50" rx="30" ry="10" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="0.8"/>
+  <ellipse cx="48" cy="50" rx="30" ry="20" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="0.8"/>
+  <!-- Globe longitude: center meridian -->
+  <ellipse cx="48" cy="50" rx="12" ry="30" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="0.8"/>
+  <!-- India highlighted dot -->
+  <circle cx="55" cy="48" r="5" fill="#8FD4AA" opacity="0.9"/>
+  <circle cx="55" cy="48" r="2.5" fill="white"/>
+  <!-- Sprout on top of globe -->
+  <path d="M48,20 Q54,10 62,14 Q54,20 48,20Z" fill="#8FD4AA"/>
+  <path d="M48,20 Q42,10 34,14 Q42,20 48,20Z" fill="#8FD4AA" opacity="0.7"/>
+  <line x1="48" y1="20" x2="48" y2="14" stroke="#8FD4AA" stroke-width="1.5"/>
+
+  <!-- APEDA text -->
+  <text x="148" y="46" font-family="Arial Black,Arial,sans-serif" font-size="26" font-weight="900" fill="white" text-anchor="middle" letter-spacing="-0.3">APEDA</text>
+  <text x="148" y="63" font-family="Arial,sans-serif" font-size="7.5" font-weight="500" fill="rgba(255,255,255,0.6)" text-anchor="middle" letter-spacing="1">AGRICULTURAL EXPORT</text>
+  <text x="148" y="79" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#8FD4AA" text-anchor="middle" letter-spacing="3">INDIA</text>
+</svg>

@@ -1,165 +1,203 @@
 ---
-import { copy, getLanguage, industries, products, regions } from '../data/site';
+import { copy, getLanguage, products } from '../data/site';
 
-const bookingUrl = import.meta.env.PUBLIC_BOOKING_URL || '';
+interface Props {
+  productSlug?: string;
+}
+
+const { productSlug } = Astro.props;
 const lang = getLanguage(Astro.params.lang);
-const c = copy[lang];
+const t = copy[lang];
 ---
 <form
+  class="sb-form"
   name="spec-builder"
   method="POST"
   data-netlify="true"
   netlify-honeypot="bot-field"
   action="/thank-you?intent=spec"
-  class="spec-form"
-  data-booking-url={bookingUrl}
+  novalidate
 >
   <input type="hidden" name="form-name" value="spec-builder" />
   <p hidden><label>Bot: <input name="bot-field" /></label></p>
-
-  <div class="form-head">
-    <span class="kicker">{c.specTitle}</span>
-    <strong>Tell us what you need. We will reply with specs, documents, and shipment options.</strong>
-  </div>
-
-  <label>
-    <span>Product</span>
-    <select class="field-control" name="product" required>
-      {products.map((product) => <option value={product.slug}>{product.name}</option>)}
-    </select>
-  </label>
-
-  <div class="two">
-    <label>
-      <span>Grade</span>
-      <select class="field-control" name="grade" required>
-        <optgroup label="Husk / Powder">
-          <option value="99-200m">99% / 200 mesh</option>
-          <option value="98-100m">98% / 100 mesh</option>
-          <option value="95-80m">95% / 80 mesh</option>
-          <option value="85-40m">85% / 40–60 mesh</option>
-        </optgroup>
-        <optgroup label="Khakha / Feed">
-          <option value="feed-grade-a">Feed Grade A (30–40% fibre)</option>
-          <option value="feed-grade-b">Feed Grade B (25–30% fibre)</option>
-        </optgroup>
-        <optgroup label="Industrial">
-          <option value="standard-industrial">Standard Industrial</option>
-          <option value="premium-industrial">Premium Industrial</option>
-          <option value="pet-food-grade">Pet Food Grade</option>
-        </optgroup>
-        <optgroup label="Cattle Feed">
-          <option value="sagar-gola">Sagar Gola (block)</option>
-          <option value="sagar-lali">Sagar Lali (loose)</option>
-        </optgroup>
-        <optgroup label="Seeds">
-          <option value="sortex">Sortex (99%)</option>
-          <option value="standard-seed">Standard (98%)</option>
-        </optgroup>
-      </select>
-    </label>
-
-    <label>
-      <span>Region</span>
-      <select class="field-control" name="region" required>
-        {regions.map((region) => <option value={region.slug}>{region.name}</option>)}
-      </select>
-    </label>
-  </div>
-
-  <label>
-    <span>Application</span>
-    <select class="field-control" name="industry" required>
-      {industries.map((industry) => <option value={industry.slug}>{industry.name}</option>)}
-    </select>
-  </label>
-
-  <label>
-    <span>Mesh Size <strong id="mesh-display">80 mesh</strong></span>
-    <input class="range" type="range" name="mesh" min="20" max="100" step="20" value="80" />
-  </label>
-
-  <label>
-    <span>Packaging</span>
-    <select class="field-control" name="packaging">
-      <option value="10kg">10kg Bags</option>
-      <option value="15kg">15kg Bags</option>
-      <option value="25kg">25kg Bags</option>
-      <option value="50kg">50kg Bags</option>
-      <option value="1000kg">1000kg Jumbo</option>
-    </select>
-  </label>
-
   <input type="hidden" name="language" value={lang} />
-  <button type="submit" class="btn btn-primary">Request Quote & Sample Options</button>
+
+  <header>
+    <span>{t.sbTitle}</span>
+    <small>{t.sbReplyTime}</small>
+  </header>
+
+  <div class="sb-fields">
+    <label>
+      <span>{t.sbNameLabel} *</span>
+      <input name="name" type="text" required autocomplete="name" />
+    </label>
+
+    <label>
+      <span>{t.sbEmailLabel} *</span>
+      <input id="sb-email" name="email" type="text" placeholder={t.sbEmailPlaceholder} autocomplete="email" />
+    </label>
+
+    <label>
+      <span>{t.sbProductLabel} *</span>
+      <select name="product" required>
+        <option value="">{t.sbSelectProduct}</option>
+        {products.map((p) => (
+          <option value={p.slug} selected={p.slug === productSlug}>{p.name}</option>
+        ))}
+      </select>
+    </label>
+
+    <label>
+      <span>{t.sbCountryLabel} *</span>
+      <input name="country" type="text" required autocomplete="country-name" />
+    </label>
+
+    <label>
+      <span>{t.sbCompanyLabel}</span>
+      <input name="company" type="text" autocomplete="organization" />
+    </label>
+
+    <label class="sb-full">
+      <span>{t.sbMessageLabel}</span>
+      <textarea name="message" rows="3" placeholder={t.sbMessagePlaceholder}></textarea>
+    </label>
+  </div>
+
+  <p class="sb-error" id="sb-contact-error" hidden>{t.sbErrorContact}</p>
+
+  <button class="sb-submit" type="submit">{t.sbSubmitBtn} <span aria-hidden="true">→</span></button>
 </form>
-<script src="/scripts/spec-builder.js" defer></script>
+
+<script src="/scripts/spec-builder.js" defer is:inline></script>
 
 <style>
-  .spec-form {
-    display: grid;
-    gap: 1rem;
+  .sb-form {
+    background: #f5f3ed;
+    padding: 32px;
+    border-radius: 12px;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
   }
 
-  .form-head {
-    display: grid;
-    gap: 0.45rem;
-    border-bottom: 1px solid var(--rule);
-    padding-bottom: 1.1rem;
+  .sb-form header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(26, 28, 24, 0.1);
   }
 
-  .form-head strong {
-    color: var(--ink);
-    font-family: var(--font-display);
-    font-size: 1.55rem;
-    font-weight: 300;
-    line-height: 1.12;
+  .sb-form header span {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: #1a1c18;
   }
 
-  .two {
+  .sb-form header small {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #4a6630;
+  }
+
+  .sb-fields {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0.8rem;
+    gap: 14px;
+    margin-bottom: 14px;
   }
 
-  label {
-    display: grid;
-    gap: 0.45rem;
-    color: var(--muted);
-    font-family: var(--font-mono);
-    font-size: 0.6rem;
-    font-weight: 400;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
+  .sb-full {
+    grid-column: 1 / -1;
   }
 
-  label span {
+  .sb-form label {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 6px;
   }
 
-  label strong {
-    color: var(--accent);
-    font-size: 0.62rem;
+  .sb-form label span {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #484c43;
+  }
+
+  .sb-form input,
+  .sb-form select,
+  .sb-form textarea {
+    width: 100%;
+    border: 1px solid rgba(26, 28, 24, 0.1);
+    border-radius: 6px;
+    background: #ffffff;
+    padding: 10px 12px;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: 14px;
     font-weight: 400;
+    color: #1a1c18;
+    outline: none;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+    appearance: none;
+    -webkit-appearance: none;
   }
 
-  .range {
-    width: 100%;
-    accent-color: var(--accent);
-  }
-
-  button {
-    width: 100%;
-    border: 0;
+  .sb-form select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b6f65' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 32px;
     cursor: pointer;
   }
 
+  .sb-form input:focus,
+  .sb-form select:focus,
+  .sb-form textarea:focus {
+    border-color: #4a6630;
+  }
+
+  .sb-form textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+
+  .sb-error {
+    margin: 0 0 10px;
+    font-size: 12px;
+    color: #c0392b;
+  }
+
+  .sb-submit {
+    width: 100%;
+    margin-top: 6px;
+    padding: 16px 24px;
+    font-size: 15px;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-weight: 600;
+    background: #4a6630;
+    color: #ffffff;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background 0.2s, transform 0.15s;
+  }
+
+  .sb-submit:hover {
+    background: #354d20;
+    transform: translateY(-1px);
+  }
+
   @media (max-width: 560px) {
-    .two {
-      grid-template-columns: 1fr;
-    }
+    .sb-fields { grid-template-columns: 1fr; }
+    .sb-form { padding: 24px 16px; }
   }
 </style>

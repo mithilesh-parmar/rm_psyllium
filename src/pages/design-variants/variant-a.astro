@@ -1,0 +1,578 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Variant A: The Scanner — Psyllium Husk | RM Psyllium"
+  description="Design variant A: zero-reading product page. Everything scannable in 10 seconds."
+  noindex={true}
+>
+
+<div class="va">
+
+  <!-- VARIANT NAV -->
+  <nav class="va-vnav">
+    <a href="/design-variants/" class="va-vnav-back">← All variants</a>
+    <div class="va-vnav-pills">
+      <span class="va-vnav-pill va-vnav-pill--active">A · Scanner</span>
+      <a href="/design-variants/variant-b" class="va-vnav-pill">B · Explorer</a>
+      <a href="/design-variants/variant-c" class="va-vnav-pill">C · Configurator</a>
+      <a href="/design-variants/variant-d" class="va-vnav-pill">D · Dashboard</a>
+    </div>
+    <a href="/design-variants/variant-b" class="va-vnav-next">Next →</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="va-hero">
+    <div class="va-c">
+      <div class="va-hero-inner">
+        <div class="va-hero-copy">
+          <p class="va-kicker">Whole Husk · Gujarat, India</p>
+          <h1>Psyllium Husk<br /><em>for bulk buyers.</em></h1>
+          <p class="va-lead">Four purity grades — 85% to 99% — matched to pharma, nutraceutical, food, and feed applications. 500&nbsp;kg MOQ. COA per lot. FOB Mundra.</p>
+          <div class="va-hero-btns">
+            <a class="va-btn va-btn-dark" href="#quote">Request Quote</a>
+            <a class="va-btn va-btn-outline" href="#matrix">Find My Grade ↓</a>
+          </div>
+        </div>
+        <!-- COMPLIANCE TIER CARDS -->
+        <div class="va-tiers">
+          <div class="va-tier">
+            <p class="va-tier-pct">85%</p>
+            <span class="va-badge va-badge-food">Food Grade</span>
+            <p class="va-tier-swell">30 <span>ml/g</span></p>
+            <p class="va-tier-swlabel">swell volume</p>
+          </div>
+          <div class="va-tier">
+            <p class="va-tier-pct">95%</p>
+            <span class="va-badge va-badge-nf">Food / NF</span>
+            <p class="va-tier-swell">40 <span>ml/g</span></p>
+            <p class="va-tier-swlabel">swell volume</p>
+          </div>
+          <div class="va-tier va-tier--pop">
+            <div class="va-tier-pop-label">Most common</div>
+            <p class="va-tier-pct">98%</p>
+            <span class="va-badge va-badge-usp">USP / EP</span>
+            <p class="va-tier-swell">45 <span>ml/g</span></p>
+            <p class="va-tier-swlabel">swell volume</p>
+          </div>
+          <div class="va-tier">
+            <p class="va-tier-pct">99%</p>
+            <span class="va-badge va-badge-ip">USP / EP / IP</span>
+            <p class="va-tier-swell">50 <span>ml/g</span></p>
+            <p class="va-tier-swlabel">swell volume</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUITABILITY MATRIX -->
+  <section class="va-section" id="matrix">
+    <div class="va-c">
+      <p class="va-kicker">Application Fit</p>
+      <h2 class="va-h2">Which grade fits your use case?</h2>
+      <div class="va-matrix-scroll">
+        <table class="va-matrix">
+          <thead>
+            <tr>
+              <th class="va-matrix-th-app">Application</th>
+              <th><div class="va-matrix-th-inner"><span class="va-matrix-pct">85%</span><span class="va-badge va-badge-food va-badge-xs">Food</span></div></th>
+              <th><div class="va-matrix-th-inner"><span class="va-matrix-pct">95%</span><span class="va-badge va-badge-nf va-badge-xs">NF</span></div></th>
+              <th><div class="va-matrix-th-inner"><span class="va-matrix-pct">98%</span><span class="va-badge va-badge-usp va-badge-xs">USP</span></div></th>
+              <th><div class="va-matrix-th-inner"><span class="va-matrix-pct">99%</span><span class="va-badge va-badge-ip va-badge-xs">IP</span></div></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="va-app-label">Pharma / Laxative</td>
+              <td class="va-fit va-fit-no"><span class="va-fit-icon">✗</span><span class="va-fit-text">Not suitable</span></td>
+              <td class="va-fit va-fit-cond"><span class="va-fit-icon">◑</span><span class="va-fit-text">Conditional</span></td>
+              <td class="va-fit va-fit-yes"><span class="va-fit-icon">✓</span><span class="va-fit-text">Primary</span></td>
+              <td class="va-fit va-fit-yes"><span class="va-fit-icon">✓</span><span class="va-fit-text">Primary</span></td>
+            </tr>
+            <tr>
+              <td class="va-app-label">Nutraceutical</td>
+              <td class="va-fit va-fit-cond"><span class="va-fit-icon">◑</span><span class="va-fit-text">Conditional</span></td>
+              <td class="va-fit va-fit-yes"><span class="va-fit-icon">✓</span><span class="va-fit-text">Primary</span></td>
+              <td class="va-fit va-fit-yes"><span class="va-fit-icon">✓</span><span class="va-fit-text">Primary</span></td>
+              <td class="va-fit va-fit-yes"><span class="va-fit-icon">✓</span><span class="va-fit-text">Primary</span></td>
+            </tr>
+            <tr>
+              <td class="va-app-label">Food &amp; Bakery</td>
+              <td class="va-fit va-fit-yes"><span class="va-fit-icon">✓</span><span class="va-fit-text">Primary</span></td>
+              <td class="va-fit va-fit-yes"><span class="va-fit-icon">✓</span><span class="va-fit-text">Primary</span></td>
+              <td class="va-fit va-fit-cond"><span class="va-fit-icon">◑</span><span class="va-fit-text">Conditional</span></td>
+              <td class="va-fit va-fit-none"><span class="va-fit-icon">—</span><span class="va-fit-text">Not used</span></td>
+            </tr>
+            <tr>
+              <td class="va-app-label">Animal Feed</td>
+              <td class="va-fit va-fit-yes"><span class="va-fit-icon">✓</span><span class="va-fit-text">Primary</span></td>
+              <td class="va-fit va-fit-cond"><span class="va-fit-icon">◑</span><span class="va-fit-text">Conditional</span></td>
+              <td class="va-fit va-fit-none"><span class="va-fit-icon">—</span><span class="va-fit-text">Not used</span></td>
+              <td class="va-fit va-fit-none"><span class="va-fit-icon">—</span><span class="va-fit-text">Not used</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="va-legend">
+        <span class="va-legend-item va-legend-yes"><span>✓</span> Primary fit</span>
+        <span class="va-legend-item va-legend-cond"><span>◑</span> Conditional — confirm with QA</span>
+        <span class="va-legend-item va-legend-no"><span>✗</span> Not suitable</span>
+        <span class="va-legend-item va-legend-none"><span>—</span> Not applicable</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPEC TABLE WITH BARS -->
+  <section class="va-section va-section-cream">
+    <div class="va-c">
+      <p class="va-kicker">Specifications</p>
+      <h2 class="va-h2">Grade comparison by parameter</h2>
+      <div class="va-spec-scroll">
+        <table class="va-spec">
+          <thead>
+            <tr>
+              <th class="va-spec-param-th">Parameter</th>
+              <th>85% <em>Food</em></th>
+              <th>95% <em>NF</em></th>
+              <th>98% <em>USP/EP</em></th>
+              <th>99% <em>USP/EP/IP</em></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="va-bar-row">
+              <td class="va-spec-param">Purity (husk %)</td>
+              <td><div class="va-bc"><strong>≥85%</strong><div class="va-bt"><div class="va-bf" style="width:85%"></div></div></div></td>
+              <td><div class="va-bc"><strong>≥95%</strong><div class="va-bt"><div class="va-bf" style="width:95%"></div></div></div></td>
+              <td><div class="va-bc"><strong>≥98%</strong><div class="va-bt"><div class="va-bf" style="width:98%"></div></div></div></td>
+              <td><div class="va-bc"><strong>≥99%</strong><div class="va-bt"><div class="va-bf" style="width:99%"></div></div></div></td>
+            </tr>
+            <tr class="va-bar-row">
+              <td class="va-spec-param">Swell Volume (ml/g min)</td>
+              <td><div class="va-bc"><strong>30</strong><div class="va-bt"><div class="va-bf" style="width:60%"></div></div></div></td>
+              <td><div class="va-bc"><strong>40</strong><div class="va-bt"><div class="va-bf" style="width:80%"></div></div></div></td>
+              <td><div class="va-bc"><strong>45</strong><div class="va-bt"><div class="va-bf" style="width:90%"></div></div></div></td>
+              <td><div class="va-bc"><strong>50</strong><div class="va-bt"><div class="va-bf" style="width:100%"></div></div></div></td>
+            </tr>
+            <tr>
+              <td class="va-spec-param">Moisture (% max)</td>
+              <td>≤12%</td><td>≤12%</td><td>≤12%</td><td>≤12%</td>
+            </tr>
+            <tr>
+              <td class="va-spec-param">Total Ash (% max)</td>
+              <td>4.0</td><td>4.0</td><td>3.5</td><td>3.0</td>
+            </tr>
+            <tr>
+              <td class="va-spec-param">Acid-insoluble Ash</td>
+              <td>1.0</td><td>0.8</td><td>0.5</td><td>0.4</td>
+            </tr>
+            <tr>
+              <td class="va-spec-param">Mesh (ASTM)</td>
+              <td>20–40</td><td>20–60</td><td>20–60</td><td>20–60</td>
+            </tr>
+            <tr>
+              <td class="va-spec-param">E. coli / Salmonella</td>
+              <td class="va-pass">Absent</td><td class="va-pass">Absent</td><td class="va-pass">Absent</td><td class="va-pass">Absent</td>
+            </tr>
+            <tr>
+              <td class="va-spec-param">Pharmacopoeia</td>
+              <td><span class="va-badge va-badge-food">Food grade</span></td>
+              <td><span class="va-badge va-badge-nf">Food / NF</span></td>
+              <td><span class="va-badge va-badge-usp">USP / EP</span></td>
+              <td><span class="va-badge va-badge-ip">USP / EP / IP</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRADE CARDS 2×2 -->
+  <section class="va-section">
+    <div class="va-c">
+      <p class="va-kicker">Grade Details</p>
+      <h2 class="va-h2">Select your grade</h2>
+      <div class="va-grade-grid">
+        <div class="va-grade-card">
+          <div class="va-grade-card-top">
+            <span class="va-grade-pct">85<sup>%</sup></span>
+            <span class="va-badge va-badge-food">Food Grade</span>
+          </div>
+          <p class="va-grade-for">Animal feed, industrial fibre, cost-sensitive food applications. No pharmacopoeia annotation required.</p>
+          <ul class="va-grade-specs">
+            <li><span>Purity</span><span>≥85%</span></li>
+            <li><span>Swell vol</span><span>30 ml/g</span></li>
+            <li><span>Ash</span><span>≤4.0%</span></li>
+          </ul>
+          <a class="va-btn va-btn-outline" href="#quote">Request Quote</a>
+        </div>
+        <div class="va-grade-card">
+          <div class="va-grade-card-top">
+            <span class="va-grade-pct">95<sup>%</sup></span>
+            <span class="va-badge va-badge-nf">Food / NF</span>
+          </div>
+          <p class="va-grade-for">Supplement sachets, NF-annotated food fibre, functional cereal blends. COA annotated to NF on request.</p>
+          <ul class="va-grade-specs">
+            <li><span>Purity</span><span>≥95%</span></li>
+            <li><span>Swell vol</span><span>40 ml/g</span></li>
+            <li><span>Ash</span><span>≤4.0%</span></li>
+          </ul>
+          <a class="va-btn va-btn-outline" href="#quote">Request Quote</a>
+        </div>
+        <div class="va-grade-card va-grade-card--featured">
+          <div class="va-grade-card-top">
+            <span class="va-grade-pct">98<sup>%</sup></span>
+            <span class="va-badge va-badge-usp">USP / EP</span>
+          </div>
+          <p class="va-grade-for">Pharma capsule fills, laxative sachets, OTC supplement brands requiring a full USP or EP pharmacopoeia COA per lot.</p>
+          <ul class="va-grade-specs">
+            <li><span>Purity</span><span>≥98%</span></li>
+            <li><span>Swell vol</span><span>45 ml/g</span></li>
+            <li><span>Ash</span><span>≤3.5%</span></li>
+          </ul>
+          <a class="va-btn va-btn-dark" href="#quote">Request Quote</a>
+        </div>
+        <div class="va-grade-card">
+          <div class="va-grade-card-top">
+            <span class="va-grade-pct">99<sup>%</sup></span>
+            <span class="va-badge va-badge-ip">USP / EP / IP</span>
+          </div>
+          <p class="va-grade-for">USP/EP/IP laxative monographs and premium OTC digestive supplement brands. Highest swell volume in the range.</p>
+          <ul class="va-grade-specs">
+            <li><span>Purity</span><span>≥99%</span></li>
+            <li><span>Swell vol</span><span>50 ml/g</span></li>
+            <li><span>Ash</span><span>≤3.0%</span></li>
+          </ul>
+          <a class="va-btn va-btn-outline" href="#quote">Request Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE FORM -->
+  <section class="va-section va-section-dark" id="quote">
+    <div class="va-c">
+      <div class="va-quote-grid">
+        <div class="va-quote-copy">
+          <p class="va-kicker va-kicker-dim">Request Quote</p>
+          <h2 class="va-h2 va-h2-light">Get pricing, samples,<br />and COA within 24 hours.</h2>
+          <p class="va-quote-sub">Share your grade, mesh, packing, destination, and monthly volume.</p>
+          <div class="va-quote-stats">
+            <div class="va-qs"><strong>500 kg</strong><span>Min. order</span></div>
+            <div class="va-qs"><strong>14–21 d</strong><span>Lead time</span></div>
+            <div class="va-qs"><strong>FOB</strong><span>Mundra port</span></div>
+          </div>
+        </div>
+        <form class="va-form">
+          <div class="va-ff">
+            <label class="va-fl">Product</label>
+            <select class="va-fi">
+              <option>Psyllium Husk</option>
+              <option>Psyllium Husk Powder</option>
+              <option>Psyllium Seeds</option>
+            </select>
+          </div>
+          <div class="va-ff">
+            <label class="va-fl">Grade</label>
+            <select class="va-fi">
+              <option>85% — Food Grade</option>
+              <option>95% — Food / NF</option>
+              <option>98% — USP / EP</option>
+              <option>99% — USP / EP / IP</option>
+            </select>
+          </div>
+          <div class="va-ff-row">
+            <div class="va-ff">
+              <label class="va-fl">Monthly volume (kg)</label>
+              <input class="va-fi" type="text" placeholder="e.g. 2,000 kg" />
+            </div>
+            <div class="va-ff">
+              <label class="va-fl">Destination</label>
+              <input class="va-fi" type="text" placeholder="Country / port" />
+            </div>
+          </div>
+          <div class="va-ff">
+            <label class="va-fl">Company email</label>
+            <input class="va-fi" type="email" placeholder="you@company.com" />
+          </div>
+          <button class="va-btn va-btn-submit" type="submit">Send Quote Request →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap');
+
+  :root {
+    --ink: #1a1c18;
+    --soft: #484c43;
+    --mute: #6b6f65;
+    --rule: rgba(26,28,24,0.1);
+    --sage: #4a6630;
+    --pale: #d8e0c8;
+    --cream: #f5f3ed;
+    --white: #ffffff;
+    /* pharmacopoeia badge colors */
+    --food-bg: #f1f5f9; --food-txt: #475569;
+    --nf-bg: #eff6ff; --nf-txt: #2563eb;
+    --usp-bg: #f5f3ff; --usp-txt: #7c3aed;
+    --ip-bg: #fef3c7; --ip-txt: #b45309;
+    /* suitability cell colors */
+    --yes-bg: #dcfce7; --yes-txt: #166534;
+    --cond-bg: #fef9c3; --cond-txt: #92400e;
+    --no-bg: #fee2e2; --no-txt: #991b1b;
+    --none-bg: #f3f4f6; --none-txt: #9ca3af;
+  }
+
+  .va { font-family: 'Inter', system-ui, sans-serif; color: var(--ink); }
+  .va *, .va *::before, .va *::after { box-sizing: border-box; }
+
+  /* container */
+  .va-c { width: min(1120px, calc(100% - 96px)); margin-inline: auto; }
+
+  /* variant nav */
+  .va-vnav {
+    background: var(--ink);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 10px 48px;
+    font-size: 12px;
+  }
+  .va-vnav-back { color: rgba(255,255,255,0.5); text-decoration: none; white-space: nowrap; }
+  .va-vnav-back:hover { color: #fff; }
+  .va-vnav-pills { display: flex; gap: 6px; flex: 1; justify-content: center; flex-wrap: wrap; }
+  .va-vnav-pill {
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.15);
+    white-space: nowrap;
+  }
+  .va-vnav-pill--active { color: #fff; background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.3); }
+  .va-vnav-pill:not(.va-vnav-pill--active):hover { color: #fff; border-color: rgba(255,255,255,0.4); }
+  .va-vnav-next { color: rgba(255,255,255,0.5); text-decoration: none; white-space: nowrap; }
+  .va-vnav-next:hover { color: #fff; }
+
+  /* kicker */
+  .va-kicker {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.06em;
+    text-transform: uppercase; color: var(--sage); margin: 0 0 12px;
+  }
+  .va-kicker-dim { color: rgba(255,255,255,0.4); }
+
+  /* hero */
+  .va-hero {
+    background: var(--cream);
+    border-bottom: 1px solid var(--rule);
+    padding: clamp(4rem,7vw,7rem) 0 clamp(3rem,5vw,5rem);
+  }
+  .va-hero-inner {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: clamp(3rem,5vw,5rem);
+    align-items: center;
+  }
+  .va-hero-copy h1 {
+    font-family: 'Syne', 'Inter', sans-serif;
+    font-size: clamp(2.6rem,5vw,4.2rem);
+    font-weight: 800; letter-spacing: -0.03em; line-height: 1;
+    margin: 0; color: var(--ink);
+  }
+  .va-hero-copy h1 em { color: var(--sage); font-style: italic; font-weight: 700; }
+  .va-lead {
+    margin: 20px 0 0; color: var(--soft); font-size: 16px;
+    line-height: 1.65; max-width: 480px;
+  }
+  .va-hero-btns { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+
+  /* compliance tier cards */
+  .va-tiers {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+  }
+  .va-tier {
+    background: var(--white);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 20px 16px 16px;
+    text-align: center;
+    position: relative;
+  }
+  .va-tier--pop {
+    border-color: var(--usp-txt);
+    box-shadow: 0 0 0 2px var(--usp-bg);
+  }
+  .va-tier-pop-label {
+    position: absolute; top: -11px; left: 50%; transform: translateX(-50%);
+    background: var(--usp-txt); color: #fff;
+    font-size: 9px; font-weight: 700; letter-spacing: 0.05em;
+    text-transform: uppercase; padding: 3px 8px; border-radius: 999px;
+    white-space: nowrap;
+  }
+  .va-tier-pct {
+    margin: 0 0 10px; font-size: clamp(2rem,3vw,2.8rem);
+    font-weight: 800; letter-spacing: -0.04em; color: var(--ink);
+  }
+  .va-tier-swell {
+    margin: 10px 0 0; font-size: 1.4rem; font-weight: 700;
+    color: var(--ink); letter-spacing: -0.02em;
+  }
+  .va-tier-swell span { font-size: 0.75rem; font-weight: 500; color: var(--mute); }
+  .va-tier-swlabel { margin: 2px 0 0; font-size: 10px; color: var(--mute); }
+
+  /* badges */
+  .va-badge {
+    display: inline-block; border-radius: 999px;
+    padding: 4px 10px; font-size: 11px; font-weight: 600;
+    letter-spacing: 0.02em; white-space: nowrap;
+  }
+  .va-badge-food { background: var(--food-bg); color: var(--food-txt); }
+  .va-badge-nf   { background: var(--nf-bg);   color: var(--nf-txt); }
+  .va-badge-usp  { background: var(--usp-bg);  color: var(--usp-txt); }
+  .va-badge-ip   { background: var(--ip-bg);   color: var(--ip-txt); }
+  .va-badge-xs   { padding: 2px 6px; font-size: 9px; }
+
+  /* buttons */
+  .va-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    border-radius: 999px; padding: 12px 22px;
+    font-size: 13px; font-weight: 600; line-height: 1;
+    text-decoration: none; cursor: pointer; border: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .va-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px -8px rgba(0,0,0,0.25); }
+  .va-btn-dark { background: var(--ink); color: #fff; }
+  .va-btn-outline {
+    background: transparent; color: var(--ink);
+    border: 1.5px solid rgba(26,28,24,0.2);
+  }
+  .va-btn-submit {
+    width: 100%; background: var(--sage); color: #fff;
+    border-radius: 8px; padding: 14px; font-size: 14px;
+  }
+
+  /* sections */
+  .va-section { padding: clamp(4rem,6vw,6rem) 0; }
+  .va-section-cream { background: var(--cream); }
+  .va-section-dark { background: var(--ink); }
+  .va-h2 {
+    margin: 0 0 32px;
+    font-family: 'Syne', 'Inter', sans-serif;
+    font-size: clamp(1.6rem,3vw,2.4rem);
+    font-weight: 800; letter-spacing: -0.025em; color: var(--ink); line-height: 1.05;
+  }
+  .va-h2-light { color: #fff; }
+
+  /* suitability matrix */
+  .va-matrix-scroll { overflow-x: auto; border-radius: 10px; border: 1px solid var(--rule); }
+  .va-matrix { width: 100%; border-collapse: collapse; font-size: 13px; background: var(--white); }
+  .va-matrix thead { background: var(--cream); }
+  .va-matrix thead tr th { padding: 16px 20px; text-align: left; border-bottom: 1px solid var(--rule); }
+  .va-matrix-th-app { min-width: 200px; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--mute); }
+  .va-matrix-th-inner { display: flex; flex-direction: column; gap: 5px; align-items: flex-start; }
+  .va-matrix-pct { font-size: 16px; font-weight: 800; letter-spacing: -0.02em; color: var(--ink); }
+  .va-app-label { padding: 16px 20px; font-size: 13px; font-weight: 600; color: var(--ink); border-bottom: 1px solid var(--rule); white-space: nowrap; }
+  .va-matrix tr:last-child td { border-bottom: 0; }
+  .va-fit { padding: 14px 20px; text-align: center; border-bottom: 1px solid rgba(0,0,0,0.05); }
+  .va-fit-icon { font-size: 16px; font-weight: 700; display: block; }
+  .va-fit-text { font-size: 10px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; display: block; margin-top: 3px; }
+  .va-fit-yes  { background: var(--yes-bg);  color: var(--yes-txt); }
+  .va-fit-cond { background: var(--cond-bg); color: var(--cond-txt); }
+  .va-fit-no   { background: var(--no-bg);   color: var(--no-txt); }
+  .va-fit-none { background: var(--none-bg); color: var(--none-txt); }
+  .va-legend { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 16px; }
+  .va-legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 500; padding: 4px 10px; border-radius: 999px; }
+  .va-legend-yes  { background: var(--yes-bg);  color: var(--yes-txt); }
+  .va-legend-cond { background: var(--cond-bg); color: var(--cond-txt); }
+  .va-legend-no   { background: var(--no-bg);   color: var(--no-txt); }
+  .va-legend-none { background: var(--none-bg); color: var(--none-txt); }
+
+  /* spec table */
+  .va-spec-scroll { overflow-x: auto; border-radius: 10px; border: 1px solid var(--rule); background: var(--white); }
+  .va-spec { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .va-spec thead { background: #fff; border-bottom: 2px solid var(--rule); }
+  .va-spec thead th { padding: 14px 20px; text-align: left; font-size: 11px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--mute); white-space: nowrap; }
+  .va-spec thead th em { display: block; font-style: normal; font-weight: 400; font-size: 10px; letter-spacing: 0; text-transform: none; color: var(--mute); margin-top: 2px; }
+  .va-spec-param-th { min-width: 220px; }
+  .va-spec td { padding: 12px 20px; color: var(--soft); border-bottom: 1px solid var(--rule); font-size: 13px; vertical-align: middle; }
+  .va-spec tr:last-child td { border-bottom: 0; }
+  .va-spec-param { font-weight: 600; color: var(--ink); }
+  .va-pass { color: #166534; font-weight: 600; }
+  /* bar cells */
+  .va-bar-row td { padding-top: 10px; padding-bottom: 10px; }
+  .va-bc { display: flex; flex-direction: column; gap: 5px; min-width: 100px; }
+  .va-bc strong { font-size: 14px; font-weight: 700; color: var(--ink); }
+  .va-bt { height: 5px; background: var(--rule); border-radius: 3px; overflow: hidden; }
+  .va-bf { height: 100%; background: var(--sage); border-radius: 3px; }
+
+  /* grade cards */
+  .va-grade-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; }
+  .va-grade-card {
+    border: 1px solid var(--rule); border-radius: 12px;
+    background: var(--white); padding: 28px;
+    display: flex; flex-direction: column; gap: 16px;
+    transition: box-shadow 0.2s, border-color 0.2s;
+  }
+  .va-grade-card:hover { box-shadow: 0 8px 32px -8px rgba(0,0,0,0.12); border-color: var(--pale); }
+  .va-grade-card--featured {
+    border-color: var(--usp-txt);
+    box-shadow: 0 0 0 2px var(--usp-bg), 0 8px 32px -8px rgba(124,58,237,0.15);
+  }
+  .va-grade-card-top { display: flex; align-items: center; gap: 12px; }
+  .va-grade-pct {
+    font-family: 'Syne', 'Inter', sans-serif;
+    font-size: 2.4rem; font-weight: 800; letter-spacing: -0.04em; color: var(--ink);
+    line-height: 1;
+  }
+  .va-grade-pct sup { font-size: 1rem; font-weight: 700; vertical-align: super; }
+  .va-grade-for { margin: 0; color: var(--soft); font-size: 13px; line-height: 1.6; flex: 1; }
+  .va-grade-specs { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+  .va-grade-specs li { display: flex; justify-content: space-between; font-size: 12px; padding: 7px 0; border-bottom: 1px solid var(--rule); }
+  .va-grade-specs li:last-child { border-bottom: 0; }
+  .va-grade-specs li span:first-child { color: var(--mute); }
+  .va-grade-specs li span:last-child { font-weight: 600; color: var(--ink); }
+
+  /* quote form */
+  .va-quote-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: clamp(3rem,5vw,5rem); align-items: start; }
+  .va-quote-copy h2 { color: #fff; }
+  .va-quote-sub { margin: 16px 0 0; color: rgba(255,255,255,0.55); font-size: 14px; line-height: 1.65; }
+  .va-quote-stats { display: flex; gap: 24px; margin-top: 28px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.1); }
+  .va-qs { display: flex; flex-direction: column; gap: 3px; }
+  .va-qs strong { color: #fff; font-size: 1.2rem; font-weight: 700; letter-spacing: -0.02em; }
+  .va-qs span { color: rgba(255,255,255,0.4); font-size: 11px; font-weight: 500; }
+  .va-form { background: #fff; border-radius: 12px; padding: 28px; display: flex; flex-direction: column; gap: 16px; }
+  .va-ff { display: flex; flex-direction: column; gap: 6px; }
+  .va-ff-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .va-fl { font-size: 12px; font-weight: 600; color: var(--mute); letter-spacing: 0.02em; text-transform: uppercase; }
+  .va-fi {
+    border: 1.5px solid var(--rule); border-radius: 7px;
+    padding: 10px 14px; font-size: 14px; font-family: inherit;
+    color: var(--ink); background: var(--white);
+    outline: none; transition: border-color 0.15s;
+    -webkit-appearance: none; appearance: none;
+  }
+  .va-fi:focus { border-color: var(--sage); }
+
+  @media (max-width: 1020px) { .va-c { width: calc(100% - 64px); } }
+  @media (max-width: 860px) {
+    .va-hero-inner { grid-template-columns: 1fr; }
+    .va-tiers { grid-template-columns: repeat(2,1fr); }
+    .va-quote-grid { grid-template-columns: 1fr; }
+    .va-grade-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .va-c { width: calc(100% - 32px); }
+    .va-tiers { grid-template-columns: repeat(2,1fr); gap: 8px; }
+    .va-vnav { padding: 10px 16px; }
+    .va-ff-row { grid-template-columns: 1fr; }
+  }
+</style>
+</BaseLayout>

@@ -1,0 +1,648 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Variant D: The Dashboard — Psyllium Husk | RM Psyllium"
+  description="Design variant D: data-forward product dashboard with visual spec comparison."
+  noindex={true}
+>
+
+<div class="vd">
+
+  <!-- VARIANT NAV -->
+  <nav class="vd-vnav">
+    <a href="/design-variants/" class="vd-vnav-back">← All variants</a>
+    <div class="vd-vnav-pills">
+      <a href="/design-variants/variant-a" class="vd-vnav-pill">A · Scanner</a>
+      <a href="/design-variants/variant-b" class="vd-vnav-pill">B · Explorer</a>
+      <a href="/design-variants/variant-c" class="vd-vnav-pill">C · Configurator</a>
+      <span class="vd-vnav-pill vd-vnav-pill--active">D · Dashboard</span>
+    </div>
+    <a href="/design-variants/" class="vd-vnav-next">All variants</a>
+  </nav>
+
+  <!-- HERO (dark, data-forward) -->
+  <section class="vd-hero">
+    <div class="vd-c">
+      <div class="vd-hero-top">
+        <div>
+          <p class="vd-hero-eyebrow">Plantago ovata · Whole Husk · Unjha, Gujarat</p>
+          <h1>Psyllium Husk</h1>
+          <p class="vd-hero-sub">85% to 99% purity · 4 pharmacopoeia tiers · 500 kg MOQ FOB Mundra</p>
+        </div>
+        <a class="vd-btn vd-btn-light" href="#quote">Request Quote →</a>
+      </div>
+
+      <!-- GRADE CARDS (dark section, big numbers) -->
+      <div class="vd-grade-dashboard">
+        <div class="vd-gdash-card vd-gdash--food">
+          <div class="vd-gdash-num">85</div>
+          <div class="vd-gdash-unit">%</div>
+          <div class="vd-gdash-info">
+            <span class="vd-gdash-pharma">Food Grade</span>
+            <span class="vd-gdash-swell">30 ml/g</span>
+            <span class="vd-gdash-note">Animal feed · industrial fibre · cost-sensitive food</span>
+          </div>
+        </div>
+        <div class="vd-gdash-card vd-gdash--nf">
+          <div class="vd-gdash-num">95</div>
+          <div class="vd-gdash-unit">%</div>
+          <div class="vd-gdash-info">
+            <span class="vd-gdash-pharma">Food / NF</span>
+            <span class="vd-gdash-swell">40 ml/g</span>
+            <span class="vd-gdash-note">Supplement sachets · NF food fibre · functional cereal</span>
+          </div>
+        </div>
+        <div class="vd-gdash-card vd-gdash--usp">
+          <div class="vd-gdash-num">98</div>
+          <div class="vd-gdash-unit">%</div>
+          <div class="vd-gdash-info">
+            <span class="vd-gdash-pharma">USP / EP</span>
+            <span class="vd-gdash-swell">45 ml/g</span>
+            <span class="vd-gdash-note">Pharma capsule fills · laxative sachets · OTC supplement</span>
+          </div>
+        </div>
+        <div class="vd-gdash-card vd-gdash--ip">
+          <div class="vd-gdash-num">99</div>
+          <div class="vd-gdash-unit">%</div>
+          <div class="vd-gdash-info">
+            <span class="vd-gdash-pharma">USP / EP / IP</span>
+            <span class="vd-gdash-swell">50 ml/g</span>
+            <span class="vd-gdash-note">USP/EP/IP laxative monographs · premium OTC brands</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPEC EXPLORER (visual bar rows) -->
+  <section class="vd-section">
+    <div class="vd-c">
+      <p class="vd-kicker">Spec Explorer</p>
+      <h2 class="vd-h2">Key parameters by grade</h2>
+
+      <!-- Swell Volume — bar chart -->
+      <div class="vd-spec-block">
+        <div class="vd-spec-block-header">
+          <span class="vd-spec-name">Swell Volume</span>
+          <span class="vd-spec-unit">ml/g minimum — higher is better</span>
+        </div>
+        <div class="vd-bars">
+          <div class="vd-bar-row">
+            <span class="vd-bar-grade vd-bar-grade--food">85%</span>
+            <div class="vd-bar-track"><div class="vd-bar-fill vd-bar-fill--food" style="width:60%"><span class="vd-bar-val">30</span></div></div>
+          </div>
+          <div class="vd-bar-row">
+            <span class="vd-bar-grade vd-bar-grade--nf">95%</span>
+            <div class="vd-bar-track"><div class="vd-bar-fill vd-bar-fill--nf" style="width:80%"><span class="vd-bar-val">40</span></div></div>
+          </div>
+          <div class="vd-bar-row">
+            <span class="vd-bar-grade vd-bar-grade--usp">98%</span>
+            <div class="vd-bar-track"><div class="vd-bar-fill vd-bar-fill--usp" style="width:90%"><span class="vd-bar-val">45</span></div></div>
+          </div>
+          <div class="vd-bar-row">
+            <span class="vd-bar-grade vd-bar-grade--ip">99%</span>
+            <div class="vd-bar-track"><div class="vd-bar-fill vd-bar-fill--ip" style="width:100%"><span class="vd-bar-val">50</span></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Purity — bar chart -->
+      <div class="vd-spec-block">
+        <div class="vd-spec-block-header">
+          <span class="vd-spec-name">Purity (Husk Content)</span>
+          <span class="vd-spec-unit">% — higher is better</span>
+        </div>
+        <div class="vd-bars">
+          <div class="vd-bar-row">
+            <span class="vd-bar-grade vd-bar-grade--food">85%</span>
+            <div class="vd-bar-track"><div class="vd-bar-fill vd-bar-fill--food" style="width:85%"><span class="vd-bar-val">≥85%</span></div></div>
+          </div>
+          <div class="vd-bar-row">
+            <span class="vd-bar-grade vd-bar-grade--nf">95%</span>
+            <div class="vd-bar-track"><div class="vd-bar-fill vd-bar-fill--nf" style="width:95%"><span class="vd-bar-val">≥95%</span></div></div>
+          </div>
+          <div class="vd-bar-row">
+            <span class="vd-bar-grade vd-bar-grade--usp">98%</span>
+            <div class="vd-bar-track"><div class="vd-bar-fill vd-bar-fill--usp" style="width:98%"><span class="vd-bar-val">≥98%</span></div></div>
+          </div>
+          <div class="vd-bar-row">
+            <span class="vd-bar-grade vd-bar-grade--ip">99%</span>
+            <div class="vd-bar-track"><div class="vd-bar-fill vd-bar-fill--ip" style="width:99%"><span class="vd-bar-val">≥99%</span></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other params as pill grid -->
+      <div class="vd-param-pills-grid">
+        <div class="vd-param-group">
+          <p class="vd-param-group-label">Total Ash (% max) — lower is better</p>
+          <div class="vd-param-pills">
+            <span class="vd-ppill vd-ppill--food">85% → 4.0</span>
+            <span class="vd-ppill vd-ppill--nf">95% → 4.0</span>
+            <span class="vd-ppill vd-ppill--usp">98% → 3.5</span>
+            <span class="vd-ppill vd-ppill--ip">99% → 3.0</span>
+          </div>
+        </div>
+        <div class="vd-param-group">
+          <p class="vd-param-group-label">Acid-insoluble Ash (% max) — lower is better</p>
+          <div class="vd-param-pills">
+            <span class="vd-ppill vd-ppill--food">85% → 1.0</span>
+            <span class="vd-ppill vd-ppill--nf">95% → 0.8</span>
+            <span class="vd-ppill vd-ppill--usp">98% → 0.5</span>
+            <span class="vd-ppill vd-ppill--ip">99% → 0.4</span>
+          </div>
+        </div>
+        <div class="vd-param-group">
+          <p class="vd-param-group-label">Moisture (% max)</p>
+          <div class="vd-param-pills">
+            <span class="vd-ppill vd-ppill--neutral">All grades → ≤12%</span>
+          </div>
+        </div>
+        <div class="vd-param-group">
+          <p class="vd-param-group-label">Microbiology</p>
+          <div class="vd-param-pills">
+            <span class="vd-ppill vd-ppill--pass">E. coli — Absent all grades</span>
+            <span class="vd-ppill vd-ppill--pass">Salmonella — Absent all grades</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPLICATION FIT MATRIX (filled cells) -->
+  <section class="vd-section vd-section-cream">
+    <div class="vd-c">
+      <p class="vd-kicker">Application Fit</p>
+      <h2 class="vd-h2">Grade suitability by industry</h2>
+      <div class="vd-matrix-wrap">
+        <div class="vd-matrix-grid">
+          <!-- header row -->
+          <div class="vd-matrix-header vd-matrix-corner"></div>
+          <div class="vd-matrix-header vd-matrix-col-food"><span>85%</span><small>Food</small></div>
+          <div class="vd-matrix-header vd-matrix-col-nf"><span>95%</span><small>NF</small></div>
+          <div class="vd-matrix-header vd-matrix-col-usp"><span>98%</span><small>USP/EP</small></div>
+          <div class="vd-matrix-header vd-matrix-col-ip"><span>99%</span><small>USP/EP/IP</small></div>
+          <!-- row 1 -->
+          <div class="vd-matrix-app">Pharma / Laxative</div>
+          <div class="vd-matrix-cell vd-cell-no"><span>✗</span><small>Not suitable</small></div>
+          <div class="vd-matrix-cell vd-cell-cond"><span>◑</span><small>Conditional</small></div>
+          <div class="vd-matrix-cell vd-cell-yes"><span>✓</span><small>Primary</small></div>
+          <div class="vd-matrix-cell vd-cell-yes"><span>✓</span><small>Primary</small></div>
+          <!-- row 2 -->
+          <div class="vd-matrix-app">Nutraceutical</div>
+          <div class="vd-matrix-cell vd-cell-cond"><span>◑</span><small>Conditional</small></div>
+          <div class="vd-matrix-cell vd-cell-yes"><span>✓</span><small>Primary</small></div>
+          <div class="vd-matrix-cell vd-cell-yes"><span>✓</span><small>Primary</small></div>
+          <div class="vd-matrix-cell vd-cell-yes"><span>✓</span><small>Primary</small></div>
+          <!-- row 3 -->
+          <div class="vd-matrix-app">Food &amp; Bakery</div>
+          <div class="vd-matrix-cell vd-cell-yes"><span>✓</span><small>Primary</small></div>
+          <div class="vd-matrix-cell vd-cell-yes"><span>✓</span><small>Primary</small></div>
+          <div class="vd-matrix-cell vd-cell-cond"><span>◑</span><small>Conditional</small></div>
+          <div class="vd-matrix-cell vd-cell-none"><span>—</span><small>Not used</small></div>
+          <!-- row 4 -->
+          <div class="vd-matrix-app">Animal Feed</div>
+          <div class="vd-matrix-cell vd-cell-yes"><span>✓</span><small>Primary</small></div>
+          <div class="vd-matrix-cell vd-cell-cond"><span>◑</span><small>Conditional</small></div>
+          <div class="vd-matrix-cell vd-cell-none"><span>—</span><small>Not used</small></div>
+          <div class="vd-matrix-cell vd-cell-none"><span>—</span><small>Not used</small></div>
+        </div>
+      </div>
+      <div class="vd-matrix-legend">
+        <span class="vd-mleg vd-mleg-yes">✓ Primary fit</span>
+        <span class="vd-mleg vd-mleg-cond">◑ Conditional</span>
+        <span class="vd-mleg vd-mleg-no">✗ Not suitable</span>
+        <span class="vd-mleg vd-mleg-none">— Not applicable</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEY FACTS STRIP -->
+  <section class="vd-facts-strip">
+    <div class="vd-c">
+      <div class="vd-facts-row">
+        <div class="vd-fact">
+          <span class="vd-fact-val">500 kg</span>
+          <span class="vd-fact-label">Minimum order</span>
+        </div>
+        <div class="vd-fact-divider"></div>
+        <div class="vd-fact">
+          <span class="vd-fact-val">14–21 d</span>
+          <span class="vd-fact-label">Lead time ex-Unjha</span>
+        </div>
+        <div class="vd-fact-divider"></div>
+        <div class="vd-fact">
+          <span class="vd-fact-val">FOB Mundra</span>
+          <span class="vd-fact-label">Incoterm · COA included</span>
+        </div>
+        <div class="vd-fact-divider"></div>
+        <div class="vd-fact">
+          <span class="vd-fact-val">Gujarat, India</span>
+          <span class="vd-fact-label">Country of origin</span>
+        </div>
+        <div class="vd-fact-divider"></div>
+        <div class="vd-fact">
+          <span class="vd-fact-val">USP · EP · NF · IP</span>
+          <span class="vd-fact-label">Pharmacopoeias covered</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRADE CAROUSEL -->
+  <section class="vd-section">
+    <div class="vd-c">
+      <p class="vd-kicker">Grade Details</p>
+      <h2 class="vd-h2">Full spec per grade</h2>
+    </div>
+    <div class="vd-carousel-wrap">
+      <div class="vd-carousel">
+
+        <div class="vd-car-card vd-car--food">
+          <div class="vd-car-pct">85%</div>
+          <span class="vd-car-badge">Food Grade</span>
+          <p class="vd-car-for">Animal feed · industrial fibre · cost-sensitive food. No pharmacopoeia annotation required.</p>
+          <div class="vd-car-specs">
+            <div class="vd-car-row"><span>Purity</span><span>≥85%</span></div>
+            <div class="vd-car-row"><span>Swell vol</span><span>30 ml/g</span></div>
+            <div class="vd-car-row"><span>Moisture</span><span>≤12%</span></div>
+            <div class="vd-car-row"><span>Total Ash</span><span>≤4.0%</span></div>
+            <div class="vd-car-row"><span>Mesh</span><span>20–40</span></div>
+          </div>
+          <div class="vd-car-apps">
+            <span class="vd-car-app vd-car-app--yes">✓ Food</span>
+            <span class="vd-car-app vd-car-app--yes">✓ Feed</span>
+            <span class="vd-car-app vd-car-app--cond">◑ Nutri</span>
+            <span class="vd-car-app vd-car-app--no">✗ Pharma</span>
+          </div>
+          <a class="vd-btn vd-btn-card" href="#quote">Request Quote</a>
+        </div>
+
+        <div class="vd-car-card vd-car--nf">
+          <div class="vd-car-pct">95%</div>
+          <span class="vd-car-badge">Food / NF</span>
+          <p class="vd-car-for">Supplement sachets · NF food fibre · functional cereal. COA annotated to NF on request.</p>
+          <div class="vd-car-specs">
+            <div class="vd-car-row"><span>Purity</span><span>≥95%</span></div>
+            <div class="vd-car-row"><span>Swell vol</span><span>40 ml/g</span></div>
+            <div class="vd-car-row"><span>Moisture</span><span>≤12%</span></div>
+            <div class="vd-car-row"><span>Total Ash</span><span>≤4.0%</span></div>
+            <div class="vd-car-row"><span>Mesh</span><span>20–60</span></div>
+          </div>
+          <div class="vd-car-apps">
+            <span class="vd-car-app vd-car-app--yes">✓ Food</span>
+            <span class="vd-car-app vd-car-app--yes">✓ Nutri</span>
+            <span class="vd-car-app vd-car-app--cond">◑ Pharma</span>
+            <span class="vd-car-app vd-car-app--cond">◑ Feed</span>
+          </div>
+          <a class="vd-btn vd-btn-card" href="#quote">Request Quote</a>
+        </div>
+
+        <div class="vd-car-card vd-car--usp">
+          <div class="vd-car-pct">98%</div>
+          <span class="vd-car-badge">USP / EP</span>
+          <p class="vd-car-for">Pharma capsule fills · laxative sachets · OTC supplement. NABL lab COA per shipment.</p>
+          <div class="vd-car-specs">
+            <div class="vd-car-row"><span>Purity</span><span>≥98%</span></div>
+            <div class="vd-car-row"><span>Swell vol</span><span>45 ml/g</span></div>
+            <div class="vd-car-row"><span>Moisture</span><span>≤12%</span></div>
+            <div class="vd-car-row"><span>Total Ash</span><span>≤3.5%</span></div>
+            <div class="vd-car-row"><span>Mesh</span><span>20–60</span></div>
+          </div>
+          <div class="vd-car-apps">
+            <span class="vd-car-app vd-car-app--yes">✓ Pharma</span>
+            <span class="vd-car-app vd-car-app--yes">✓ Nutri</span>
+            <span class="vd-car-app vd-car-app--cond">◑ Food</span>
+            <span class="vd-car-app vd-car-app--no">— Feed</span>
+          </div>
+          <a class="vd-btn vd-btn-card" href="#quote">Request Quote</a>
+        </div>
+
+        <div class="vd-car-card vd-car--ip">
+          <div class="vd-car-pct">99%</div>
+          <span class="vd-car-badge">USP / EP / IP</span>
+          <p class="vd-car-for">USP/EP/IP laxative monographs · premium OTC digestive supplement. Highest swell volume.</p>
+          <div class="vd-car-specs">
+            <div class="vd-car-row"><span>Purity</span><span>≥99%</span></div>
+            <div class="vd-car-row"><span>Swell vol</span><span>50 ml/g</span></div>
+            <div class="vd-car-row"><span>Moisture</span><span>≤12%</span></div>
+            <div class="vd-car-row"><span>Total Ash</span><span>≤3.0%</span></div>
+            <div class="vd-car-row"><span>Mesh</span><span>20–60</span></div>
+          </div>
+          <div class="vd-car-apps">
+            <span class="vd-car-app vd-car-app--yes">✓ Pharma</span>
+            <span class="vd-car-app vd-car-app--yes">✓ Nutri</span>
+            <span class="vd-car-app vd-car-app--no">— Food</span>
+            <span class="vd-car-app vd-car-app--no">— Feed</span>
+          </div>
+          <a class="vd-btn vd-btn-card" href="#quote">Request Quote</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE FORM -->
+  <section class="vd-section vd-section-cream" id="quote">
+    <div class="vd-c">
+      <div class="vd-quote-grid">
+        <div class="vd-quote-copy">
+          <p class="vd-kicker">Request Quote</p>
+          <h2 class="vd-h2">Get pricing and samples within 24 hours.</h2>
+          <p class="vd-quote-sub">Share your grade, mesh, packing, destination, and monthly volume. Our export desk will respond within one business day with availability and next steps.</p>
+        </div>
+        <form class="vd-form">
+          <div class="vd-ff">
+            <label class="vd-fl">Product</label>
+            <select class="vd-fi">
+              <option>Psyllium Husk</option>
+              <option>Psyllium Husk Powder</option>
+              <option>Psyllium Seeds</option>
+            </select>
+          </div>
+          <div class="vd-ff">
+            <label class="vd-fl">Grade</label>
+            <select class="vd-fi">
+              <option>85% — Food Grade</option>
+              <option>95% — Food / NF</option>
+              <option>98% — USP / EP</option>
+              <option>99% — USP / EP / IP</option>
+            </select>
+          </div>
+          <div class="vd-ff-row">
+            <div class="vd-ff">
+              <label class="vd-fl">Monthly volume (kg)</label>
+              <input class="vd-fi" type="text" placeholder="e.g. 2,000 kg" />
+            </div>
+            <div class="vd-ff">
+              <label class="vd-fl">Destination</label>
+              <input class="vd-fi" type="text" placeholder="Country / port" />
+            </div>
+          </div>
+          <div class="vd-ff">
+            <label class="vd-fl">Company email</label>
+            <input class="vd-fi" type="email" placeholder="you@company.com" />
+          </div>
+          <button class="vd-btn vd-btn-submit" type="submit">Send Quote Request →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<style>
+  :root {
+    --vd-ink: #1a1c18;
+    --vd-soft: #484c43;
+    --vd-mute: #6b6f65;
+    --vd-rule: rgba(26,28,24,0.1);
+    --vd-sage: #4a6630;
+    --vd-cream: #f5f3ed;
+    --vd-white: #ffffff;
+    --vd-dark: #0d1a09;
+    /* grade tier colors */
+    --food-c: #64748b; --food-lt: #f1f5f9; --food-bdr: #94a3b8;
+    --nf-c: #2563eb;   --nf-lt: #eff6ff;   --nf-bdr: #60a5fa;
+    --usp-c: #7c3aed;  --usp-lt: #f5f3ff;  --usp-bdr: #a78bfa;
+    --ip-c: #b45309;   --ip-lt: #fef3c7;   --ip-bdr: #fbbf24;
+  }
+
+  .vd { font-family: 'Inter', system-ui, sans-serif; color: var(--vd-ink); }
+  .vd *, .vd *::before, .vd *::after { box-sizing: border-box; }
+  .vd-c { width: min(1160px, calc(100% - 80px)); margin-inline: auto; }
+
+  /* variant nav */
+  .vd-vnav {
+    background: #060d04; display: flex; align-items: center;
+    gap: 16px; padding: 10px 40px; font-size: 12px;
+  }
+  .vd-vnav-back, .vd-vnav-next { color: rgba(255,255,255,0.35); text-decoration: none; white-space: nowrap; }
+  .vd-vnav-back:hover, .vd-vnav-next:hover { color: #fff; }
+  .vd-vnav-pills { display: flex; gap: 6px; flex: 1; justify-content: center; flex-wrap: wrap; }
+  .vd-vnav-pill {
+    padding: 4px 12px; border-radius: 999px; font-size: 11px; font-weight: 500;
+    color: rgba(255,255,255,0.35); text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.1); white-space: nowrap;
+  }
+  .vd-vnav-pill--active { color: #fff; background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.25); }
+
+  /* hero */
+  .vd-hero { background: var(--vd-dark); padding: clamp(3rem,5vw,5rem) 0 0; }
+  .vd-hero-top {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    gap: 24px; margin-bottom: clamp(2.5rem,4vw,4rem);
+  }
+  .vd-hero-eyebrow {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+    color: rgba(255,255,255,0.3); margin: 0 0 14px;
+  }
+  .vd-hero h1 {
+    margin: 0; color: #fff;
+    font-size: clamp(2.4rem,5vw,4.2rem); font-weight: 800; letter-spacing: -0.04em; line-height: 1;
+  }
+  .vd-hero-sub { margin: 14px 0 0; color: rgba(255,255,255,0.4); font-size: 13px; font-weight: 500; letter-spacing: 0.01em; }
+
+  /* grade dashboard cards */
+  .vd-grade-dashboard { display: grid; grid-template-columns: repeat(4,1fr); border-top: 1px solid rgba(255,255,255,0.08); }
+  .vd-gdash-card {
+    padding: clamp(1.5rem,3vw,2.5rem);
+    border-right: 1px solid rgba(255,255,255,0.06);
+    border-left: 4px solid transparent;
+  }
+  .vd-gdash-card:last-child { border-right: 0; }
+  .vd-gdash--food { border-left-color: var(--food-bdr); }
+  .vd-gdash--nf   { border-left-color: var(--nf-bdr); }
+  .vd-gdash--usp  { border-left-color: var(--usp-bdr); }
+  .vd-gdash--ip   { border-left-color: var(--ip-bdr); }
+  .vd-gdash-num {
+    font-size: clamp(3rem,5vw,5rem); font-weight: 800; letter-spacing: -0.05em;
+    line-height: 1; color: #fff; display: inline;
+  }
+  .vd-gdash-unit { display: inline; font-size: clamp(1.5rem,2.5vw,2.5rem); color: rgba(255,255,255,0.3); font-weight: 300; }
+  .vd-gdash-info { display: flex; flex-direction: column; gap: 5px; margin-top: 14px; }
+  .vd-gdash-pharma { font-size: 11px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: rgba(255,255,255,0.5); }
+  .vd-gdash--food .vd-gdash-pharma { color: var(--food-bdr); }
+  .vd-gdash--nf   .vd-gdash-pharma { color: var(--nf-bdr); }
+  .vd-gdash--usp  .vd-gdash-pharma { color: var(--usp-bdr); }
+  .vd-gdash--ip   .vd-gdash-pharma { color: var(--ip-bdr); }
+  .vd-gdash-swell { font-size: 1.1rem; font-weight: 700; color: rgba(255,255,255,0.75); letter-spacing: -0.02em; }
+  .vd-gdash-note { font-size: 11px; color: rgba(255,255,255,0.3); line-height: 1.5; }
+
+  /* spec explorer */
+  .vd-section { padding: clamp(4rem,6vw,6rem) 0; }
+  .vd-section-cream { background: var(--vd-cream); }
+  .vd-kicker { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--vd-sage); margin: 0 0 12px; }
+  .vd-h2 { margin: 0 0 36px; font-size: clamp(1.6rem,3vw,2.4rem); font-weight: 800; letter-spacing: -0.03em; color: var(--vd-ink); }
+  .vd-spec-block { margin-bottom: 40px; padding: 28px; background: var(--vd-cream); border-radius: 12px; }
+  .vd-spec-block:last-of-type { margin-bottom: 0; }
+  .vd-spec-block-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 20px; }
+  .vd-spec-name { font-size: 14px; font-weight: 700; color: var(--vd-ink); }
+  .vd-spec-unit { font-size: 11px; color: var(--vd-mute); }
+  .vd-bars { display: flex; flex-direction: column; gap: 10px; }
+  .vd-bar-row { display: flex; align-items: center; gap: 14px; }
+  .vd-bar-grade {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.02em; text-transform: uppercase;
+    min-width: 42px; text-align: right; padding: 3px 8px; border-radius: 4px;
+  }
+  .vd-bar-grade--food { background: var(--food-lt); color: var(--food-c); }
+  .vd-bar-grade--nf   { background: var(--nf-lt);   color: var(--nf-c); }
+  .vd-bar-grade--usp  { background: var(--usp-lt);  color: var(--usp-c); }
+  .vd-bar-grade--ip   { background: var(--ip-lt);   color: var(--ip-c); }
+  .vd-bar-track {
+    flex: 1; height: 32px; background: rgba(0,0,0,0.06);
+    border-radius: 6px; overflow: hidden;
+  }
+  .vd-bar-fill {
+    height: 100%; border-radius: 6px; display: flex; align-items: center;
+    padding: 0 12px; transition: width 0.8s cubic-bezier(.2,.7,.3,1);
+    min-width: 60px;
+  }
+  .vd-bar-fill--food { background: var(--food-c); }
+  .vd-bar-fill--nf   { background: var(--nf-c); }
+  .vd-bar-fill--usp  { background: var(--usp-c); }
+  .vd-bar-fill--ip   { background: var(--ip-c); }
+  .vd-bar-val { font-size: 12px; font-weight: 700; color: #fff; white-space: nowrap; }
+
+  /* param pills */
+  .vd-param-pills-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; margin-top: 40px; }
+  .vd-param-group-label { font-size: 11px; font-weight: 600; color: var(--vd-mute); margin: 0 0 10px; }
+  .vd-param-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+  .vd-ppill {
+    display: inline-block; border-radius: 6px; padding: 6px 12px;
+    font-size: 12px; font-weight: 600;
+  }
+  .vd-ppill--food { background: var(--food-lt); color: var(--food-c); }
+  .vd-ppill--nf   { background: var(--nf-lt);   color: var(--nf-c); }
+  .vd-ppill--usp  { background: var(--usp-lt);  color: var(--usp-c); }
+  .vd-ppill--ip   { background: var(--ip-lt);   color: var(--ip-c); }
+  .vd-ppill--neutral { background: #f3f4f6; color: #374151; }
+  .vd-ppill--pass { background: #dcfce7; color: #166534; }
+
+  /* application matrix (CSS grid) */
+  .vd-matrix-wrap { overflow-x: auto; }
+  .vd-matrix-grid {
+    display: grid; grid-template-columns: 160px repeat(4,1fr);
+    border: 1px solid var(--vd-rule); border-radius: 12px; overflow: hidden;
+    min-width: 560px;
+  }
+  .vd-matrix-header {
+    padding: 14px 16px; font-size: 12px; font-weight: 700;
+    display: flex; flex-direction: column; gap: 4px; align-items: center;
+    border-bottom: 1px solid var(--vd-rule);
+  }
+  .vd-matrix-corner { background: #f9f8f5; }
+  .vd-matrix-col-food { background: var(--food-lt); color: var(--food-c); }
+  .vd-matrix-col-nf   { background: var(--nf-lt);   color: var(--nf-c); }
+  .vd-matrix-col-usp  { background: var(--usp-lt);  color: var(--usp-c); }
+  .vd-matrix-col-ip   { background: var(--ip-lt);   color: var(--ip-c); }
+  .vd-matrix-header span { font-size: 1.2rem; letter-spacing: -0.03em; }
+  .vd-matrix-header small { font-size: 10px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; opacity: 0.7; }
+  .vd-matrix-app {
+    padding: 14px 16px; font-size: 12px; font-weight: 600; color: var(--vd-ink);
+    background: #f9f8f5; border-right: 1px solid var(--vd-rule);
+    border-bottom: 1px solid var(--vd-rule); display: flex; align-items: center;
+  }
+  .vd-matrix-cell {
+    padding: 14px 10px; text-align: center; border-bottom: 1px solid rgba(0,0,0,0.05);
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
+  }
+  .vd-matrix-cell span { font-size: 18px; font-weight: 700; line-height: 1; }
+  .vd-matrix-cell small { font-size: 9px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
+  .vd-cell-yes  { background: #dcfce7; color: #166534; }
+  .vd-cell-cond { background: #fef9c3; color: #92400e; }
+  .vd-cell-no   { background: #fee2e2; color: #991b1b; }
+  .vd-cell-none { background: #f3f4f6; color: #9ca3af; }
+  .vd-matrix-legend { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 16px; }
+  .vd-mleg { font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 6px; }
+  .vd-mleg-yes  { background: #dcfce7; color: #166534; }
+  .vd-mleg-cond { background: #fef9c3; color: #92400e; }
+  .vd-mleg-no   { background: #fee2e2; color: #991b1b; }
+  .vd-mleg-none { background: #f3f4f6; color: #9ca3af; }
+
+  /* key facts strip */
+  .vd-facts-strip { background: var(--vd-dark); padding: clamp(2rem,3vw,3rem) 0; }
+  .vd-facts-row { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 0; }
+  .vd-fact { text-align: center; padding: 12px 32px; display: flex; flex-direction: column; gap: 4px; }
+  .vd-fact-val { font-size: 1.1rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  .vd-fact-label { font-size: 11px; color: rgba(255,255,255,0.35); font-weight: 500; }
+  .vd-fact-divider { width: 1px; height: 32px; background: rgba(255,255,255,0.1); }
+
+  /* carousel */
+  .vd-carousel-wrap { overflow-x: auto; padding-bottom: 16px; }
+  .vd-carousel {
+    display: flex; gap: 16px; padding: 0 calc((100vw - min(1160px, 100vw - 80px)) / 2);
+    width: max-content;
+  }
+  .vd-car-card {
+    width: 260px; flex-shrink: 0; border-radius: 14px; padding: 28px;
+    display: flex; flex-direction: column; gap: 14px;
+    border: 2px solid transparent;
+  }
+  .vd-car--food { background: var(--food-lt); border-color: var(--food-bdr); }
+  .vd-car--nf   { background: var(--nf-lt);   border-color: var(--nf-bdr); }
+  .vd-car--usp  { background: var(--usp-lt);  border-color: var(--usp-bdr); }
+  .vd-car--ip   { background: var(--ip-lt);   border-color: var(--ip-bdr); }
+  .vd-car-pct { font-size: 3rem; font-weight: 800; letter-spacing: -0.05em; line-height: 1; }
+  .vd-car--food .vd-car-pct { color: var(--food-c); }
+  .vd-car--nf   .vd-car-pct { color: var(--nf-c); }
+  .vd-car--usp  .vd-car-pct { color: var(--usp-c); }
+  .vd-car--ip   .vd-car-pct { color: var(--ip-c); }
+  .vd-car-badge { font-size: 10px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; opacity: 0.7; color: var(--vd-ink); }
+  .vd-car-for { margin: 0; font-size: 12px; color: var(--vd-soft); line-height: 1.6; flex: 1; }
+  .vd-car-specs { display: flex; flex-direction: column; gap: 7px; }
+  .vd-car-row { display: flex; justify-content: space-between; font-size: 12px; padding: 5px 0; border-bottom: 1px solid rgba(0,0,0,0.08); }
+  .vd-car-row:last-child { border-bottom: 0; }
+  .vd-car-row span:first-child { color: var(--vd-mute); }
+  .vd-car-row span:last-child { font-weight: 700; color: var(--vd-ink); }
+  .vd-car-apps { display: flex; flex-wrap: wrap; gap: 5px; }
+  .vd-car-app { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 999px; }
+  .vd-car-app--yes  { background: rgba(22,101,52,0.1);  color: #166534; }
+  .vd-car-app--cond { background: rgba(146,64,14,0.1);  color: #92400e; }
+  .vd-car-app--no   { background: rgba(0,0,0,0.06);     color: var(--vd-mute); }
+
+  /* buttons */
+  .vd-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    border-radius: 8px; padding: 11px 20px; font-size: 13px; font-weight: 600;
+    text-decoration: none; cursor: pointer; border: none; font-family: inherit;
+    transition: transform 0.2s; line-height: 1;
+  }
+  .vd-btn:hover { transform: translateY(-2px); }
+  .vd-btn-light { background: #fff; color: var(--vd-ink); white-space: nowrap; flex-shrink: 0; }
+  .vd-btn-card { background: rgba(0,0,0,0.08); color: var(--vd-ink); width: 100%; }
+  .vd-btn-submit { background: var(--vd-sage); color: #fff; width: 100%; padding: 14px; font-size: 14px; border-radius: 8px; }
+
+  /* quote form */
+  .vd-quote-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: clamp(3rem,5vw,5rem); align-items: start; }
+  .vd-quote-sub { margin: 14px 0 0; color: var(--vd-soft); font-size: 14px; line-height: 1.65; }
+  .vd-form { background: var(--vd-white); border: 1px solid var(--vd-rule); border-radius: 12px; padding: 28px; display: flex; flex-direction: column; gap: 16px; }
+  .vd-ff { display: flex; flex-direction: column; gap: 6px; }
+  .vd-ff-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .vd-fl { font-size: 11px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--vd-mute); }
+  .vd-fi {
+    border: 1.5px solid var(--vd-rule); border-radius: 7px; padding: 10px 14px;
+    font-size: 14px; font-family: inherit; color: var(--vd-ink); background: var(--vd-white);
+    outline: none; appearance: none; transition: border-color 0.15s;
+  }
+  .vd-fi:focus { border-color: var(--vd-sage); }
+
+  @media (max-width: 1000px) { .vd-c { width: calc(100% - 56px); } }
+  @media (max-width: 860px) {
+    .vd-grade-dashboard { grid-template-columns: repeat(2,1fr); }
+    .vd-hero-top { flex-direction: column; }
+    .vd-quote-grid { grid-template-columns: 1fr; }
+    .vd-param-pills-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .vd-c { width: calc(100% - 32px); }
+    .vd-grade-dashboard { grid-template-columns: 1fr 1fr; }
+    .vd-vnav { padding: 10px 16px; }
+    .vd-ff-row { grid-template-columns: 1fr; }
+    .vd-facts-row { gap: 0; }
+    .vd-fact { padding: 12px 16px; }
+    .vd-fact-divider { display: none; }
+  }
+</style>
+</BaseLayout>

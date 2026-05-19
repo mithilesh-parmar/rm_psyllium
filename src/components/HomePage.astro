@@ -1,76 +1,57 @@
 ---
-import { getLanguage, products, type LanguageCode } from '../data/site';
+import { getLanguage, products, copy, localizedFaq, type LanguageCode } from '../data/site';
+import SpecBuilder from './SpecBuilder.astro';
+import ProductDirectory from './ProductDirectory.astro';
 
 export interface Props {
   lang?: LanguageCode;
 }
 
 const lang = getLanguage(Astro.props.lang || Astro.params.lang);
-
-const faqItems = [
-  { q: 'What is the minimum order quantity for psyllium husk?', a: 'Our minimum order is 500 KG. For buyers ready to scale, we also handle full container loads (18–20 MT).' },
-  { q: 'What purity grades do you offer for psyllium husk?', a: 'We offer 85%, 95%, 98%, and 99% purity grades for psyllium husk. 99% is pharmaceutical-grade (USP/EP compliant), 98% suits premium nutraceuticals, 95% covers general supplements and food, and 85% is for bulk food and industrial fibre applications.' },
-  { q: 'What mesh sizes are available?', a: 'We offer 30, 40, 60, 80, 100, and 200 mesh options. Coarser mesh (30/40) suits tablet presses and pharma, mid-range (60/80) works for food and supplements, and fine mesh (100/200) is ideal for drink mixes and bakery applications.' },
-  { q: 'Do you provide COA and export documentation?', a: 'Yes. Every shipment includes a Certificate of Analysis (COA), certificate of origin, phytosanitary certificate, fumigation certificate, MSDS, allergen statement, and packing list. Documents are shared before shipment for buyer review.' },
-  { q: 'What is the lead time from order to shipment?', a: '14–21 days from order confirmation to shipment. We ship FOB Mundra port or CIF to your destination port.' },
-  { q: 'Can you do private-label or custom packaging?', a: 'Yes. We offer packing in 10kg, 15kg, 25kg, 50kg bags, and 500kg/1000kg bulk bags. Custom printing, bag material, and inner liner specifications can be matched to your requirements.' },
-  { q: 'Do you have Halal/Kosher/Organic certification?', a: 'Halal and Kosher certifications are in progress. Organic lots (USDA/EU) are available for select grades. FSSAI facility registration is in place. We can share current certificate status before order.' },
-  { q: 'What ports do you ship from?', a: 'We ship primarily from Mundra port (Gujarat), 120km from our facility. Kandla and Nhava Sheva (Mumbai) are also available. FOB and CIF terms both supported.' },
-  { q: 'Can I get a sample before placing a bulk order?', a: 'Yes. We provide samples with a COA for quality evaluation. Contact us to arrange — samples are dispatched within 5 working days.' },
-  { q: 'What industries do you supply psyllium to?', a: 'We supply pharmaceutical companies, nutraceutical brands, food and bakery manufacturers, beverage companies, animal feed producers, and industrial buyers. Each industry gets grade, mesh, and documentation matched to their requirements.' }
-];
-
-const productCards = [
-  { name: 'Psyllium Husk 99%', app: 'Pharma · USP/EP', mesh: '30 / 40', slug: 'psyllium-husk' },
-  { name: 'Psyllium Husk 98%', app: 'Premium nutraceutical', mesh: '40 / 60', slug: 'psyllium-husk' },
-  { name: 'Psyllium Husk 95%', app: 'Supplements · Food', mesh: '40 / 60 / 80', slug: 'psyllium-husk' },
-  { name: 'Husk Powder 98%', app: 'Drink mixes · Bakery', mesh: '80 / 100', slug: 'psyllium-husk-powder' },
-  { name: 'Husk Powder 85%', app: 'Bulk fibre · Industrial', mesh: '80 / 100 / 200', slug: 'psyllium-husk-powder' },
-  { name: 'Psyllium Seeds', app: 'Milling · Pet food · Sowing', mesh: 'As-is', slug: 'psyllium-seeds' },
-  { name: 'Khakha Powder', app: 'Animal feed · Absorbents', mesh: 'Granular', slug: 'psyllium-khakha-powder' },
-  { name: 'Organic Psyllium', app: 'Clean-label · EU/USDA', mesh: 'Husk / Powder', slug: 'organic-psyllium' },
-  { name: 'Cattle Feed', app: 'Dairy · Livestock', mesh: 'Granular', slug: 'psyllium-cattle-feed' }
-];
+const t = copy[lang];
+const faqItems = localizedFaq[lang];
 
 const certifications = [
-  { name: 'FSSAI', body: 'Food Safety & Standards Authority of India', status: 'registered' },
-  { name: 'ISO 22000 / HACCP', body: 'Food safety management system', status: 'in-progress' },
-  { name: 'Halal', body: 'Halal certification body', status: 'in-progress' },
-  { name: 'Kosher', body: 'Kosher certification body', status: 'in-progress' }
+  { name: 'FSSAI', body: t.qualityFssaiDesc, logo: '/assets/certs/fssai.svg' },
+  { name: 'APEDA', body: t.qualityApedaDesc, logo: '/assets/certs/apeda.svg' },
+  { name: 'Spices Board', body: t.qualitySpicesBoardDesc, logo: '/assets/certs/spices-board.svg' },
 ];
 ---
 
 <div class="hp4">
-  <!-- SECTION 1: HERO -->
+  <!-- SECTION 1: HERO — full-bleed grid, copy aligned to container, image to right edge -->
   <section class="hp4-hero" id="top">
     <div class="hp4-hero-grid">
       <div class="hp4-hero-copy">
-        <div class="hp4-badge"><span class="hp4-dot"></span>Psyllium manufacturer &amp; exporter · Unjha, Gujarat</div>
-        <h1>Bulk psyllium husk, powder, and seed.<br /><em>Farm to container.</em></h1>
-        <p>Custom grade, mesh, and packing for pharma, food, feed, and industrial buyers. 2,000 MT/year capacity. FOB Mundra or CIF.</p>
+        <div class="hp4-badge"><span class="hp4-dot"></span>{t.heroBadge}</div>
+        <h1>{t.heroTitle}<br /><em>{t.cta}</em></h1>
+        <p>{t.heroBody}</p>
         <div class="hp4-actions">
-          <a class="hp4-btn hp4-btn-primary" href="#talk">Get a Quote <span aria-hidden="true">→</span></a>
-          <a class="hp4-btn hp4-btn-whatsapp" href="https://wa.me/918949817791" target="_blank" rel="noopener">WhatsApp Us</a>
+          <a class="hp4-btn hp4-btn-primary" href="#talk">{t.cta} <span aria-hidden="true">→</span></a>
+          <a class="hp4-btn hp4-btn-whatsapp" href="https://wa.me/918949817791" target="_blank" rel="noopener">{t.heroCtaWhatsApp}</a>
         </div>
         <div class="hp4-trust-row">
-          <span>COA per shipment</span>
+          <span>{t.heroTrustCoa}</span>
           <span>FSSAI</span>
-          <span>Halal</span>
-          <span>Kosher</span>
-          <span>40 years experience</span>
+          <span>APEDA</span>
+          <span>Spices Board</span>
+          <span>IEC</span>
         </div>
       </div>
       <div class="hp4-hero-media">
-        <div class="hp4-placeholder hp4-placeholder--tall">
-          <div class="hp4-placeholder-inner">
-            <span class="hp4-placeholder-mark">RM</span>
-            <span class="hp4-placeholder-caption">Facility photo · warehouse / product bags</span>
-          </div>
-        </div>
+        <img
+          class="hp4-media-img hp4-media-img--tall"
+          src="/assets/generated/facility-bags-gujarat.webp"
+          width="1122"
+          height="1402"
+          alt="Psyllium export bags stacked inside a Gujarat processing facility warehouse"
+          loading="eager"
+          decoding="async"
+        />
         <aside class="hp4-overlay-card">
           <div class="hp4-overlay-row"><strong>MOQ</strong><span>500 KG</span></div>
-          <div class="hp4-overlay-row"><strong>Lead time</strong><span>14–21 days from confirmation</span></div>
-          <div class="hp4-overlay-row"><strong>Sample</strong><span>Available on request</span></div>
+          <div class="hp4-overlay-row"><strong>{t.heroLeadTimeLabel}</strong><span>{t.heroLeadTimeValue}</span></div>
+          <div class="hp4-overlay-row"><strong>{t.heroSampleLabel}</strong><span>{t.heroSampleValue}</span></div>
         </aside>
       </div>
     </div>
@@ -78,171 +59,162 @@ const certifications = [
 
   <!-- SECTION 2: STATS BAR -->
   <section class="hp4-proof">
+    <div class="hp4-container">
     <div class="hp4-stats">
-      <div><strong>2,000</strong><span>MT annual capacity</span></div>
-      <div><strong>40</strong><span>Years industry experience</span></div>
-      <div><strong>14–21</strong><span>Day lead time</span></div>
-      <div><strong>500 KG</strong><span>Minimum order</span></div>
+      <div><strong>2,000 <em>MT</em></strong><span>{t.statCapacityLabel}</span></div>
+      <div><strong>Since <em>1984</em></strong><span>{t.statHistoryLabel}</span></div>
+      <div><strong>14–21 <em>days</em></strong><span>{t.statLeadLabel}</span></div>
+      <div><strong>500 <em>KG</em></strong><span>{t.statMoqLabel}</span></div>
+    </div>
     </div>
   </section>
 
   <!-- SECTION 3: PRODUCTS -->
   <section class="hp4-section" id="products">
-    <div class="hp4-section-label"><span>Products</span><i></i></div>
-    <div class="hp4-section-header">
-      <h2>Psyllium products for<br /><em>bulk buyers.</em></h2>
-      <p>Husk, powder, seeds, and cattle feed. Choose purity, mesh, and packing — we align documents and shipping terms before quote.</p>
-    </div>
-    <div class="hp4-product-grid">
-      {productCards.map((card) => (
-        <a class="hp4-product-card" href={`/${lang}/products/${card.slug}/`}>
-          <div class="hp4-card-top">
-            <h3>{card.name}</h3>
-            <span class="hp4-card-app">{card.app}</span>
-          </div>
-          <div class="hp4-card-bottom">
-            <span class="hp4-card-mesh">Mesh: {card.mesh}</span>
-            <span class="hp4-card-cta">Get Quote →</span>
-          </div>
-        </a>
-      ))}
+    <div class="hp4-container">
+      <div class="hp4-section-label"><span>{t.labelProducts}</span><i></i></div>
+      <div class="hp4-section-header">
+        <h2>{t.hpProductsTitle}</h2>
+        <p>{t.hpProductsBody}</p>
+      </div>
+      <ProductDirectory products={products} lang={lang} />
     </div>
   </section>
 
   <!-- SECTION 4: WHY RM PSYLLIUM -->
   <section class="hp4-section hp4-section--cream" id="why">
-    <div class="hp4-section-label"><span>Why RM Psyllium</span><i></i></div>
-    <h2 class="hp4-section-title">Why source from<br /><em>RM Psyllium.</em></h2>
-    <div class="hp4-diff-grid">
-      <div class="hp4-diff">
-        <div class="hp4-diff-num">01</div>
-        <h3>40 Years in Psyllium</h3>
-        <p>Our family has been in the psyllium trade since 1984. We know the crop, the supply chain, and the quality parameters — not as a theory but from decades of working it.</p>
-      </div>
-      <div class="hp4-diff">
-        <div class="hp4-diff-num">02</div>
-        <h3>Custom Specs</h3>
-        <p>Grade, mesh, packing, and documentation tailored to your requirement. Not a catalogue — your spec becomes our production brief.</p>
-      </div>
-      <div class="hp4-diff">
-        <div class="hp4-diff-num">03</div>
-        <h3>Direct from Source</h3>
-        <p>We source from contracted farms in Unjha, North Gujarat — the world's primary psyllium belt. No middlemen between the field and your container.</p>
-      </div>
-      <div class="hp4-diff">
-        <div class="hp4-diff-num">04</div>
-        <h3>Full Documentation</h3>
-        <p>COA, origin certificate, phytosanitary, fumigation, MSDS, and allergen statement per shipment. Documents shared before dispatch for buyer review.</p>
+    <div class="hp4-container">
+      <div class="hp4-section-label"><span>{t.labelWhyUs}</span><i></i></div>
+      <h2 class="hp4-section-title">{t.hpWhyTitle}</h2>
+      <div class="hp4-diff-grid">
+        <div class="hp4-diff">
+          <div class="hp4-diff-num">01</div>
+          <h3>{t.hpDiff1Title}</h3>
+          <p>{t.hpDiff1Body}</p>
+        </div>
+        <div class="hp4-diff">
+          <div class="hp4-diff-num">02</div>
+          <h3>{t.hpDiff2Title}</h3>
+          <p>{t.hpDiff2Body}</p>
+        </div>
+        <div class="hp4-diff">
+          <div class="hp4-diff-num">03</div>
+          <h3>{t.hpDiff3Title}</h3>
+          <p>{t.hpDiff3Body}</p>
+        </div>
+        <div class="hp4-diff">
+          <div class="hp4-diff-num">04</div>
+          <h3>{t.hpDiff4Title}</h3>
+          <p>{t.hpDiff4Body}</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- SECTION 5: PROCESS -->
   <section class="hp4-section" id="process">
-    <div class="hp4-section-label"><span>Process</span><i></i><span>5 steps · one lot</span></div>
-    <h2 class="hp4-section-title">From seed to<br /><em>export-ready packing.</em></h2>
-    <div class="hp4-process-grid">
-      <div class="hp4-process-steps">
-        <div class="hp4-step"><span class="hp4-step-num">01</span><div><strong>Source</strong><p>Psyllium seed sourced from contracted farms across Unjha and North Gujarat — the world's primary psyllium growing region. Origin records maintained per lot.</p></div></div>
-        <div class="hp4-step"><span class="hp4-step-num">02</span><div><strong>Clean</strong><p>Seed cleaned and graded before milling. De-stoning, sieve separation, and magnetic inspection at each stage to reduce foreign matter.</p></div></div>
-        <div class="hp4-step"><span class="hp4-step-num">03</span><div><strong>Mill</strong><p>Controlled milling separates husk from seed to buyer-specified purity and mesh. No chemical bleaching or acid treatment.</p></div></div>
-        <div class="hp4-step"><span class="hp4-step-num">04</span><div><strong>Test</strong><p>Lab testing before packing — purity, swelling volume, moisture, ash, microbiology, and heavy metals. Results documented in COA shared before dispatch.</p></div></div>
-        <div class="hp4-step"><span class="hp4-step-num">05</span><div><strong>Pack &amp; Ship</strong><p>Food-grade packing in buyer-specified bag sizes. Export documents prepared and reviewed before shipment. FOB Mundra or CIF.</p></div></div>
-      </div>
-      <div class="hp4-placeholder hp4-placeholder--process">
-        <div class="hp4-placeholder-inner">
-          <span class="hp4-placeholder-mark">RM</span>
-          <span class="hp4-placeholder-caption">Facility photo · milling line or lab</span>
+    <div class="hp4-container">
+      <div class="hp4-section-label"><span>{t.labelProcess}</span><i></i><span>{t.labelStepsOne}</span></div>
+      <h2 class="hp4-section-title">{t.hpProcessTitle}</h2>
+      <div class="hp4-process-grid">
+        <div class="hp4-process-steps">
+          <div class="hp4-step"><span class="hp4-step-num">01</span><div><strong>{t.hpStep1Title}</strong><p>{t.hpStep1Body}</p></div></div>
+          <div class="hp4-step"><span class="hp4-step-num">02</span><div><strong>{t.hpStep2Title}</strong><p>{t.hpStep2Body}</p></div></div>
+          <div class="hp4-step"><span class="hp4-step-num">03</span><div><strong>{t.hpStep3Title}</strong><p>{t.hpStep3Body}</p></div></div>
+          <div class="hp4-step"><span class="hp4-step-num">04</span><div><strong>{t.hpStep4Title}</strong><p>{t.hpStep4Body}</p></div></div>
+          <div class="hp4-step"><span class="hp4-step-num">05</span><div><strong>{t.hpStep5Title}</strong><p>{t.hpStep5Body}</p></div></div>
         </div>
+        <img
+          class="hp4-media-img hp4-media-img--process"
+          src="/assets/generated/milling-line-gujarat.webp"
+          width="1086"
+          height="1448"
+          alt="Psyllium milling and cleaning line inside a Gujarat processing facility"
+          loading="lazy"
+          decoding="async"
+        />
       </div>
     </div>
   </section>
 
   <!-- SECTION 6: CERTIFICATIONS -->
   <section class="hp4-section hp4-section--cream" id="certifications">
-    <div class="hp4-section-label"><span>Certifications</span><i></i></div>
-    <h2 class="hp4-section-title">Quality standards we hold<br /><em>and are working towards.</em></h2>
-    <div class="hp4-cert-grid">
-      {certifications.map((cert) => (
-        <div class="hp4-cert-card">
-          <div class="hp4-cert-header">
-            <h3>{cert.name}</h3>
-            <span class:list={['hp4-cert-status', `hp4-cert-status--${cert.status}`]}>
-              {cert.status === 'registered' ? 'Registered' : 'In progress'}
-            </span>
-          </div>
-          <p>{cert.body}</p>
+    <div class="hp4-container">
+      <div class="hp4-section-label"><span>{t.labelCredentials}</span><i></i></div>
+      <h2 class="hp4-section-title" style="margin-bottom: 40px; font-size: clamp(1.8rem, 3vw, 2.6rem);">{t.hpCredTitle}</h2>
+      <div class="hp4-cert-logos">
+        {certifications.map((cert) => (
+          <img
+            class="hp4-cert-logo-img"
+            src={cert.logo}
+            alt={`${cert.name} — ${cert.body}`}
+            width="120"
+            height="64"
+            loading="lazy"
+            decoding="async"
+          />
+        ))}
+        <div class="hp4-iec-badge">
+          <strong>IEC</strong>
+          <span>0124007841</span>
+          <small>{t.hpIecActive}</small>
         </div>
-      ))}
+      </div>
     </div>
   </section>
 
   <!-- SECTION 7: FAQ -->
   <section class="hp4-section" id="faq">
-    <div class="hp4-section-label"><span>FAQ</span><i></i><span>Common buyer questions</span></div>
-    <h2 class="hp4-section-title">Questions buyers ask<br /><em>before first order.</em></h2>
-    <div class="hp4-faq-list">
-      {faqItems.map((item, i) => (
-        <details class="hp4-faq-item">
-          <summary><span>{item.q}</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
-          <p>{item.a}</p>
-        </details>
-      ))}
+    <div class="hp4-container">
+      <div class="hp4-faq-grid">
+        <div class="hp4-faq-copy">
+          <div class="hp4-section-label"><span>FAQ</span><i></i></div>
+          <h2>{t.hpFaqTitle}</h2>
+          <p>{t.hpFaqBody}</p>
+        </div>
+        <div class="hp4-faq-list">
+          {faqItems.map((item) => (
+            <details class="hp4-faq-item">
+              <summary><span>{item.q}</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+              <p>{item.a}</p>
+            </details>
+          ))}
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- SECTION 8: CONTACT / QUOTE FORM -->
   <section class="hp4-section" id="talk">
-    <div class="hp4-contact-grid">
-      <div class="hp4-contact-copy">
-        <div class="hp4-section-label"><span>Contact</span><i></i></div>
-        <h2>Get a<br /><em>bulk quote.</em></h2>
-        <p>Tell us what you need. We'll respond within 24 hours with availability, pricing, and sample options.</p>
-        <div class="hp4-contact-channels">
-          <a class="hp4-channel" href="mailto:export@rmpsyllium.com">
-            <strong>Email</strong>
-            <span>export@rmpsyllium.com</span>
-          </a>
-          <a class="hp4-channel" href="https://wa.me/918949817791" target="_blank" rel="noopener">
-            <strong>WhatsApp</strong>
-            <span>+91 89498 17791</span>
-          </a>
-          <div class="hp4-channel">
-            <strong>Response time</strong>
-            <span>Typically within 4 hours (IST business hours)</span>
+    <div class="hp4-container">
+      <div class="hp4-contact-grid">
+        <div class="hp4-contact-copy">
+          <div class="hp4-section-label"><span>{t.labelContact}</span><i></i></div>
+          <h2>{t.hpContactTitle}</h2>
+          <p>{t.hpContactBody}</p>
+          <div class="hp4-contact-channels">
+            <a class="hp4-channel" href="mailto:export@rmpsyllium.com">
+              <strong>{t.hpContactEmailLabel}</strong>
+              <span>export@rmpsyllium.com</span>
+            </a>
+            <a class="hp4-channel" href="https://wa.me/918949817791" target="_blank" rel="noopener">
+              <strong>WhatsApp</strong>
+              <span>+91 89498 17791</span>
+            </a>
+            <div class="hp4-channel">
+              <strong>{t.hpContactResponseLabel}</strong>
+              <span>{t.hpContactResponseValue}</span>
+            </div>
           </div>
         </div>
+        <SpecBuilder />
       </div>
-      <form class="hp4-form" name="quote-form-v4" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you?intent=quote">
-        <input type="hidden" name="form-name" value="quote-form-v4" />
-        <p hidden><label>Bot: <input name="bot-field" /></label></p>
-        <header><span>Request a quote</span><small>● export desk</small></header>
-        <div class="hp4-form-fields">
-          <label><span>Name *</span><input name="name" type="text" required /></label>
-          <label><span>Email *</span><input name="email" type="email" required /></label>
-          <label><span>Product interest *</span>
-            <select name="product" required>
-              <option value="">Select a product</option>
-              <option value="husk">Psyllium Husk</option>
-              <option value="powder">Husk Powder</option>
-              <option value="seeds">Seeds</option>
-              <option value="cattle-feed">Cattle Feed</option>
-              <option value="organic">Organic</option>
-              <option value="other">Other</option>
-            </select>
-          </label>
-          <label><span>Country *</span><input name="country" type="text" required /></label>
-          <label><span>Company</span><input name="company" type="text" /></label>
-          <label class="hp4-form-full"><span>Message / specs</span><textarea name="message" rows="3"></textarea></label>
-        </div>
-        <button class="hp4-btn hp4-btn-primary" type="submit">Send Inquiry <span aria-hidden="true">→</span></button>
-      </form>
     </div>
   </section>
 
   <!-- STICKY MOBILE BAR -->
   <div class="hp4-sticky-bar" id="stickyBarV4">
-    <a class="hp4-btn hp4-btn-primary" href="#talk">Get Quote</a>
+    <a class="hp4-btn hp4-btn-primary" href="#talk">{t.hpGetQuote}</a>
     <a class="hp4-btn hp4-btn-whatsapp" href="https://wa.me/918949817791" target="_blank" rel="noopener">WhatsApp</a>
   </div>
 </div>
@@ -286,17 +258,28 @@ const certifications = [
     font-style: italic;
   }
 
-  /* HERO */
+  /* CONTAINER — matches product page centering */
+  .hp4-container {
+    width: min(1140px, calc(100% - 128px));
+    margin-inline: auto;
+  }
+
+  /* HERO — full-bleed, copy indented to match container, image goes to right edge */
   .hp4-hero {
-    padding: 64px 64px 96px;
     position: relative;
+    overflow: hidden;
   }
 
   .hp4-hero-grid {
     display: grid;
     grid-template-columns: 1.4fr 1fr;
-    gap: clamp(3rem, 5vw, 5rem);
+    gap: 0;
     align-items: center;
+    min-height: clamp(560px, 80vh, 860px);
+  }
+
+  .hp4-hero-copy {
+    padding: clamp(4rem, 7vw, 7rem) clamp(3rem, 5vw, 5rem) clamp(4rem, 7vw, 7rem) clamp(40px, 5vw, 80px);
   }
 
   .hp4-badge {
@@ -407,58 +390,42 @@ const certifications = [
 
   .hp4-hero-media {
     position: relative;
+    height: 100%;
+    align-self: stretch;
   }
 
-  .hp4-placeholder {
+  .hp4-media-img {
     position: relative;
     width: 100%;
+    height: auto;
     aspect-ratio: 4 / 3;
+    display: block;
+    object-fit: cover;
     background: var(--hp4-sage-pale);
-    display: grid;
-    place-items: center;
+    border-radius: 8px;
   }
 
-  .hp4-placeholder--tall {
-    aspect-ratio: 4 / 5;
+  .hp4-media-img--tall {
+    height: 100%;
+    width: 100%;
+    aspect-ratio: unset;
+    border-radius: 0;
+    object-position: center;
   }
 
-  .hp4-placeholder--process {
+  .hp4-media-img--process {
     aspect-ratio: 3 / 4;
-  }
-
-  .hp4-placeholder-inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    text-align: center;
-  }
-
-  .hp4-placeholder-mark {
-    font-family: var(--hp4-f);
-    font-size: clamp(4rem, 10vw, 8rem);
-    font-weight: 800;
-    font-style: italic;
-    letter-spacing: -0.05em;
-    color: var(--hp4-sage);
-    opacity: 0.25;
-    line-height: 1;
-  }
-
-  .hp4-placeholder-caption {
-    color: var(--hp4-sage-deep);
-    font-family: var(--hp4-f);
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    opacity: 0.6;
+    max-height: 600px;
+    width: auto;
+    max-width: 100%;
+    position: sticky;
+    top: 100px;
   }
 
   .hp4-overlay-card {
     position: absolute;
-    bottom: -24px;
-    left: -24px;
+    bottom: 24px;
+    right: 24px;
     background: var(--hp4-white);
     border: 1px solid var(--hp4-rule);
     padding: 20px 24px;
@@ -497,7 +464,7 @@ const certifications = [
     border-top: 1px solid var(--hp4-rule);
     border-bottom: 1px solid var(--hp4-rule);
     background: var(--hp4-cream);
-    padding: 48px 64px;
+    padding: 48px 0;
   }
 
   .hp4-stats {
@@ -516,6 +483,13 @@ const certifications = [
     color: var(--hp4-ink);
   }
 
+  .hp4-stats strong em {
+    font-style: normal;
+    font-size: 0.6em;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+  }
+
   .hp4-stats span {
     display: block;
     margin-top: 8px;
@@ -528,7 +502,7 @@ const certifications = [
 
   /* SECTIONS */
   .hp4-section {
-    padding: clamp(5rem, 8vw, 8rem) 64px;
+    padding: clamp(5rem, 8vw, 8rem) 0;
   }
 
   .hp4-section--cream {
@@ -596,73 +570,6 @@ const certifications = [
 
   .hp4-section-title {
     margin-bottom: 56px;
-  }
-
-  /* PRODUCTS GRID */
-  .hp4-product-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-  }
-
-  .hp4-product-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: 1px solid var(--hp4-rule);
-    border-radius: 8px;
-    background: var(--hp4-white);
-    padding: 24px;
-    text-decoration: none;
-    color: var(--hp4-ink);
-    transition: transform 0.3s cubic-bezier(.2,.7,.3,1), box-shadow 0.3s, border-color 0.2s;
-    min-height: 160px;
-  }
-
-  .hp4-product-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 16px 36px -18px rgba(26,28,24,0.2);
-    border-color: var(--hp4-sage-pale);
-  }
-
-  .hp4-product-card h3 {
-    margin: 0;
-    font-family: var(--hp4-f);
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    line-height: 1.1;
-  }
-
-  .hp4-card-app {
-    display: block;
-    margin-top: 6px;
-    color: var(--hp4-soft);
-    font-size: 13px;
-    font-weight: 400;
-  }
-
-  .hp4-card-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-    padding-top: 14px;
-    border-top: 1px solid var(--hp4-rule);
-  }
-
-  .hp4-card-mesh {
-    font-family: var(--hp4-f);
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    color: var(--hp4-mute);
-  }
-
-  .hp4-card-cta {
-    color: var(--hp4-sage);
-    font-size: 13px;
-    font-weight: 600;
   }
 
   /* DIFFERENTIATORS */
@@ -755,78 +662,94 @@ const certifications = [
   }
 
   /* CERTIFICATIONS */
-  .hp4-cert-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-    max-width: 760px;
+  .hp4-cert-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(24px, 4vw, 56px);
   }
 
-  .hp4-cert-card {
+  .hp4-cert-logo-img {
+    display: block;
+    width: auto;
+    height: 56px;
+    max-width: 120px;
+    object-fit: contain;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+  }
+
+  .hp4-cert-logo-img:hover {
+    opacity: 1;
+  }
+
+  .hp4-iec-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    padding: 10px 20px;
     border: 1px solid var(--hp4-rule);
     border-radius: 8px;
     background: var(--hp4-white);
-    padding: 24px;
+    opacity: 0.85;
   }
 
-  .hp4-cert-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 12px;
-    margin-bottom: 10px;
-  }
-
-  .hp4-cert-card h3 {
-    margin: 0;
-    font-family: var(--hp4-f);
+  .hp4-iec-badge strong {
     font-size: 18px;
-    font-weight: 700;
-    letter-spacing: -0.015em;
-    line-height: 1.1;
-  }
-
-  .hp4-cert-card p {
-    margin: 0;
-    color: var(--hp4-mute);
-    font-family: var(--hp4-f);
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.5;
-  }
-
-  .hp4-cert-status {
-    flex-shrink: 0;
-    border-radius: 999px;
-    padding: 4px 10px;
-    font-family: var(--hp4-f);
-    font-size: 10px;
-    font-weight: 600;
+    font-weight: 800;
     letter-spacing: 0.04em;
-    text-transform: uppercase;
-    white-space: nowrap;
+    color: var(--hp4-ink);
   }
 
-  .hp4-cert-status--registered {
-    background: rgba(74, 102, 48, 0.12);
-    color: var(--hp4-sage-deep);
+  .hp4-iec-badge span {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--hp4-soft);
+    letter-spacing: 0.02em;
   }
 
-  .hp4-cert-status--in-progress {
-    background: rgba(184, 117, 58, 0.12);
-    color: var(--hp4-warm);
+  .hp4-iec-badge small {
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--hp4-mute);
+    letter-spacing: 0.01em;
   }
 
   /* FAQ */
+  .hp4-faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: clamp(3rem, 5vw, 6rem);
+    align-items: start;
+  }
+
+  .hp4-faq-copy .hp4-section-label {
+    margin-bottom: 20px;
+  }
+
+  .hp4-faq-copy h2 {
+    margin: 0;
+  }
+
+  .hp4-faq-copy > p {
+    margin: 20px 0 0;
+    color: var(--hp4-soft);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.65;
+    max-width: 340px;
+  }
+
   .hp4-faq-list {
     display: grid;
     gap: 0;
-    max-width: 800px;
-    margin-inline: auto;
   }
 
   .hp4-faq-item {
     border-top: 1px solid var(--hp4-rule);
+    background: var(--hp4-white);
   }
 
   .hp4-faq-item:last-child {
@@ -838,7 +761,7 @@ const certifications = [
     justify-content: space-between;
     align-items: center;
     gap: 16px;
-    padding: 20px 0;
+    padding: 20px 24px;
     cursor: pointer;
     list-style: none;
     font-family: var(--hp4-f);
@@ -865,11 +788,11 @@ const certifications = [
 
   .hp4-faq-item p {
     margin: 0 0 20px;
+    padding: 0 24px;
     color: var(--hp4-soft);
     font-size: 14px;
     font-weight: 400;
     line-height: 1.7;
-    max-width: 680px;
   }
 
   /* CONTACT / FORM */
@@ -1068,33 +991,49 @@ const certifications = [
   }
 
   @media (max-width: 1100px) {
-    .hp4-hero { padding: 48px 40px 80px; }
-    .hp4-proof { padding: 40px 40px; }
-    .hp4-section { padding: clamp(4rem, 6vw, 6rem) 40px; }
+    .hp4-container { width: calc(100% - 80px); }
+    .hp4-proof { padding: 40px 0; }
+    .hp4-section { padding: clamp(4rem, 6vw, 6rem) 0; }
+    .hp4-cert-grid { grid-template-columns: repeat(4, 1fr); }
   }
 
   @media (max-width: 860px) {
-    .hp4-hero { padding: 40px 24px 64px; }
-    .hp4-hero-grid { grid-template-columns: 1fr; }
+    .hp4-container { width: calc(100% - 48px); }
+    .hp4-hero-grid { grid-template-columns: 1fr; min-height: unset; }
+    .hp4-hero-copy { padding: 40px 24px 32px; }
+    .hp4-hero-media { height: 56vw; min-height: 280px; max-height: 420px; }
+    .hp4-media-img--tall { border-radius: 0; height: 100%; aspect-ratio: unset; }
     .hp4-hero h1 { font-size: clamp(2.4rem, 8vw, 3.6rem); }
     .hp4-overlay-card { display: none; }
-    .hp4-proof { padding: 32px 24px; }
+    .hp4-proof { padding: 32px 0; }
     .hp4-stats { grid-template-columns: repeat(2, 1fr); }
-    .hp4-section { padding: clamp(3rem, 5vw, 5rem) 24px; }
+    .hp4-section { padding: clamp(3rem, 5vw, 5rem) 0; }
     .hp4-section-header { grid-template-columns: 1fr; gap: 16px; }
-    .hp4-product-grid { grid-template-columns: repeat(2, 1fr); }
     .hp4-diff-grid { grid-template-columns: repeat(2, 1fr); }
-    .hp4-cert-grid { grid-template-columns: 1fr; }
+    .hp4-cert-grid { grid-template-columns: repeat(3, 1fr); }
     .hp4-process-grid { grid-template-columns: 1fr; }
-    .hp4-placeholder--process { display: none; }
+    .hp4-media-img--process { display: none; }
     .hp4-contact-grid { grid-template-columns: 1fr; }
+    .hp4-faq-grid { grid-template-columns: 1fr; }
+    .hp4-faq-copy > p { max-width: 100%; }
     .hp4-form-fields { grid-template-columns: 1fr; }
   }
 
   @media (max-width: 540px) {
-    .hp4-hero { padding: 32px 16px 56px; }
-    .hp4-product-grid { grid-template-columns: 1fr; }
+    .hp4-container { width: calc(100% - 32px); }
+    .hp4-hero-copy { padding: 32px 16px 28px; }
+    .hp4-hero h1 {
+      font-size: 2.1rem;
+      line-height: 1.08;
+      overflow-wrap: anywhere;
+    }
+    .hp4-hero p {
+      max-width: 100%;
+      font-size: 16px;
+      overflow-wrap: anywhere;
+    }
     .hp4-diff-grid { grid-template-columns: 1fr; }
+    .hp4-cert-grid { grid-template-columns: repeat(2, 1fr); }
     .hp4-form { padding: 24px 16px; }
   }
 </style>

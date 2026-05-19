@@ -1,0 +1,254 @@
+---
+import { products as allProducts } from '../data/site';
+
+interface Props {
+  products: typeof allProducts;
+  lang: string;
+}
+
+const { products, lang } = Astro.props;
+---
+
+<div class="pdir-wrap">
+  <div class="pl-dir">
+    <div class="pl-dir-head" aria-hidden="true">
+      <span>Product</span>
+      <span>Grades available</span>
+      <span>Compliance</span>
+      <span>Applications</span>
+      <span></span>
+    </div>
+    {products.map((product) => (
+      <div class="pl-dir-row">
+        <a class="pl-dir-row-link" href={`/${lang}/products/${product.slug}/`} aria-label={`View all ${product.name} grades`}></a>
+        <div class="pl-col-identity">
+          <p class="pl-cat-label">{product.label}</p>
+          <h2 class="pl-prod-name">{product.name}</h2>
+        </div>
+        <div class="pl-col-grades">
+          <div class="pl-grade-chips">
+            {product.gradeslugs.map((slug, i) => (
+              <a class="pl-grade-chip-link" href={`/${lang}/products/${product.slug}/#${slug}`}>
+                {product.grades[i]}
+              </a>
+            ))}
+          </div>
+        </div>
+        <div class="pl-col-compliance">
+          <span class="pl-compliance-text">{product.compliance}</span>
+        </div>
+        <div class="pl-col-apps">
+          {product.applications.slice(0, 3).map((app) => (
+            <span class="pl-app-tag">{app}</span>
+          ))}
+        </div>
+        <div class="pl-col-action">
+          <span class="pl-row-cta">View →</span>
+        </div>
+      </div>
+    ))}
+  </div>
+  <p class="pl-dir-note">MOQ 500 kg · FOB Mundra · COA per shipment · 14–21 day lead time</p>
+</div>
+
+<style>
+  .pdir-wrap {
+    --f: 'Inter', system-ui, -apple-system, sans-serif;
+    --ink: #1a1c18;
+    --soft: #484c43;
+    --mute: #6b6f65;
+    --rule: rgba(26, 28, 24, 0.1);
+    --sage: #4a6630;
+    --sage-pale: #d8e0c8;
+    --cream: #f5f3ed;
+    --white: #ffffff;
+  }
+
+  .pl-dir {
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--white);
+  }
+
+  .pl-dir-head {
+    display: grid;
+    grid-template-columns: 200px 1fr 160px 180px 110px;
+    gap: 0;
+    padding: 10px 24px;
+    background: var(--cream);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .pl-dir-head span {
+    font-family: var(--f);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--mute);
+  }
+
+  .pl-dir-row {
+    position: relative;
+    display: grid;
+    grid-template-columns: 200px 1fr 160px 180px 110px;
+    gap: 0;
+    align-items: center;
+    padding: 22px 24px;
+    border-bottom: 1px solid var(--rule);
+    color: var(--ink);
+    transition: background 0.15s;
+    cursor: pointer;
+  }
+
+  .pl-dir-row:last-child {
+    border-bottom: 0;
+  }
+
+  .pl-dir-row:hover {
+    background: var(--cream);
+  }
+
+  .pl-dir-row-link {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  .pl-col-identity {
+    padding-right: 20px;
+  }
+
+  .pl-cat-label {
+    margin: 0 0 4px;
+    font-family: var(--f);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--sage);
+  }
+
+  .pl-prod-name {
+    margin: 0;
+    font-family: var(--f);
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    line-height: 1.2;
+  }
+
+  .pl-col-grades {
+    padding-right: 16px;
+  }
+
+  .pl-grade-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .pl-grade-chip-link {
+    position: relative;
+    z-index: 1;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    padding: 3px 10px;
+    font-family: var(--f);
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--soft);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.12s, border-color 0.12s, color 0.12s;
+  }
+
+  .pl-grade-chip-link:hover {
+    background: var(--sage-pale);
+    border-color: var(--sage);
+    color: var(--ink);
+  }
+
+  .pl-col-compliance {
+    padding-right: 16px;
+  }
+
+  .pl-compliance-text {
+    font-family: var(--f);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--sage);
+    line-height: 1.5;
+  }
+
+  .pl-col-apps {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-right: 16px;
+  }
+
+  .pl-app-tag {
+    font-family: var(--f);
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--soft);
+    line-height: 1.4;
+  }
+
+  .pl-col-action {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .pl-row-cta {
+    font-family: var(--f);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--sage);
+    white-space: nowrap;
+  }
+
+  .pl-dir-note {
+    margin: 14px 0 0;
+    font-family: var(--f);
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--mute);
+  }
+
+  @media (max-width: 1100px) {
+    .pl-dir-head,
+    .pl-dir-row { grid-template-columns: 180px 1fr 140px 160px 90px; }
+  }
+
+  @media (max-width: 860px) {
+    .pl-dir-head { display: none; }
+    .pl-dir-row {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 12px 16px;
+      padding: 20px;
+    }
+    .pl-col-identity { grid-column: 1 / 2; grid-row: 1; }
+    .pl-col-grades   { grid-column: 2 / 3; grid-row: 1; }
+    .pl-col-compliance { grid-column: 1 / 2; grid-row: 2; }
+    .pl-col-apps     { grid-column: 2 / 3; grid-row: 2; flex-direction: row; flex-wrap: wrap; gap: 4px 8px; }
+    .pl-col-action   { display: none; }
+  }
+
+  @media (max-width: 640px) {
+    .pl-dir-row {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+    .pl-col-identity,
+    .pl-col-grades,
+    .pl-col-compliance,
+    .pl-col-apps { grid-column: 1; grid-row: auto; }
+  }
+</style>

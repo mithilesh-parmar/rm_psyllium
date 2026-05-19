@@ -41,21 +41,21 @@ const orgSchema = {
     <div class="cl-intro-inner">
       <div class="cl-intro-copy">
         <p class="cl-kicker">{t.navQuality} &amp; Compliance</p>
-        <h1>{t.complianceTitle}<br /><em>before shipment.</em></h1>
+        <h1>{t.complianceTitle}</h1>
         <p>{t.complianceLead}</p>
       </div>
       <div class="cl-intro-stats">
         <div class="cl-stat">
           <strong>47</strong>
-          <span>COA test parameters</span>
+          <span>{t.qualityCoaStatLabel}</span>
         </div>
         <div class="cl-stat">
           <strong>FSSAI</strong>
-          <span>Facility registered</span>
+          <span>{t.qualityFssaiStatLabel}</span>
         </div>
         <div class="cl-stat">
-          <strong>FOB</strong>
-          <span>Mundra · Kandla · JNPT</span>
+          <strong>APEDA</strong>
+          <span>{t.qualityApedaStatLabel}</span>
         </div>
       </div>
     </div>
@@ -64,7 +64,7 @@ const orgSchema = {
   <!-- COMPLIANCE GRID -->
   <section class="cl-section">
     <div class="cl-container">
-      <div class="cl-section-label"><span>Documentation types</span><i></i></div>
+      <div class="cl-section-label"><span>{t.qualityDocTypesLabel}</span><i></i></div>
       <ComplianceGrid />
     </div>
   </section>
@@ -72,57 +72,39 @@ const orgSchema = {
   <!-- CERTIFICATIONS -->
   <section class="cl-section cl-section--cream">
     <div class="cl-container">
-      <div class="cl-section-label"><span>Certifications</span><i></i></div>
-      <h2>Quality standards we hold<br /><em>and are working towards.</em></h2>
+      <div class="cl-section-label"><span>{t.labelCredentials}</span><i></i></div>
+      <h2>{t.qualityCredTitle}</h2>
+      <p class="cl-cert-lead">{t.qualityCredLead}</p>
       <div class="cl-cert-grid">
         <div class="cl-cert-card">
           <div class="cl-cert-header">
             <h3>FSSAI</h3>
-            <span class="cl-badge cl-badge--green">Registered</span>
+            <span class="cl-badge cl-badge--green">{t.qualityBadgeRegistered}</span>
           </div>
-          <p>Food Safety &amp; Standards Authority of India</p>
+          <p>{t.qualityFssaiDesc}</p>
         </div>
         <div class="cl-cert-card">
           <div class="cl-cert-header">
-            <h3>ISO 22000 / HACCP</h3>
-            <span class="cl-badge cl-badge--amber">In progress</span>
+            <h3>APEDA</h3>
+            <span class="cl-badge cl-badge--green">{t.qualityBadgeRegistered}</span>
           </div>
-          <p>Food safety management system</p>
+          <p>{t.qualityApedaDesc}</p>
         </div>
         <div class="cl-cert-card">
           <div class="cl-cert-header">
-            <h3>Halal</h3>
-            <span class="cl-badge cl-badge--amber">In progress</span>
+            <h3>Spices Board</h3>
+            <span class="cl-badge cl-badge--green">{t.qualityBadgeRegistered}</span>
           </div>
-          <p>Halal certification — expected Q3 2026</p>
+          <p>{t.qualitySpicesBoardDesc}</p>
         </div>
         <div class="cl-cert-card">
           <div class="cl-cert-header">
-            <h3>Kosher</h3>
-            <span class="cl-badge cl-badge--amber">In progress</span>
+            <h3>IEC 0124007841</h3>
+            <span class="cl-badge cl-badge--green">{t.qualityBadgeActive}</span>
           </div>
-          <p>Kosher certification body</p>
+          <p>{t.qualityIecDesc}</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- CHECKLIST BAND -->
-  <section class="cl-section cl-section--dark">
-    <div class="cl-container cl-checklist">
-      <div>
-        <p class="cl-kicker cl-kicker--light">Before you order</p>
-        <h2>{t.complianceChecklist}</h2>
-        <p>{t.complianceChecklistLead}</p>
-      </div>
-      <ul>
-        <li>Current organic certification scope and lot coverage</li>
-        <li>FSSAI registration and facility details</li>
-        <li>Halal and Kosher certificate copies (where required)</li>
-        <li>COA sample and test parameter ranges</li>
-        <li>Lot traceability and recall process</li>
-        <li>Phytosanitary and fumigation certificates</li>
-      </ul>
     </div>
   </section>
 
@@ -130,11 +112,11 @@ const orgSchema = {
   <section class="cl-section">
     <div class="cl-container cl-cta">
       <div>
-        <h2>Need documents before ordering?</h2>
-        <p>Email us with your product, lot requirements, and destination. We'll share current COA, certificate copies, and documentation status within 24 hours.</p>
+        <h2>{t.qualityCtaTitle}</h2>
+        <p>{t.qualityCtaBody}</p>
       </div>
       <div class="cl-cta-buttons">
-        <a class="cl-btn cl-btn-primary" href="mailto:export@rmpsyllium.com">Email export desk</a>
+        <a class="cl-btn cl-btn-primary" href="mailto:export@rmpsyllium.com">{t.qualityCtaEmailBtn}</a>
         <a class="cl-btn cl-btn-secondary" href="https://wa.me/918949817791" target="_blank" rel="noopener">WhatsApp</a>
       </div>
     </div>
@@ -288,6 +270,16 @@ const orgSchema = {
     font-weight: 300;
   }
 
+  .cl-cert-lead {
+    margin: 0 0 32px;
+    color: var(--cl-soft);
+    font-family: var(--cl-f);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.65;
+    max-width: 680px;
+  }
+
   .cl-cert-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -342,57 +334,6 @@ const orgSchema = {
 
   .cl-badge--green { background: rgba(74,102,48,0.12); color: #354d20; }
   .cl-badge--amber { background: rgba(184,117,58,0.12); color: #b8753a; }
-
-  .cl-checklist {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: clamp(3rem, 5vw, 5rem);
-    align-items: start;
-  }
-
-  .cl-checklist h2 { color: #fff; margin-top: 0; }
-
-  .cl-checklist > div > p {
-    margin: 16px 0 0;
-    color: rgba(255,255,255,0.65);
-    font-family: var(--cl-f);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.65;
-  }
-
-  .cl-checklist ul {
-    display: grid;
-    gap: 12px;
-    margin: 0;
-    list-style: none;
-    padding: 28px;
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 8px;
-    background: rgba(255,255,255,0.05);
-  }
-
-  .cl-checklist li {
-    padding-left: 20px;
-    position: relative;
-    color: rgba(255,255,255,0.85);
-    font-family: var(--cl-f);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.55;
-  }
-
-  .cl-checklist li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 7px;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: var(--cl-sage);
-    opacity: 0.8;
-  }
 
   .cl-cta {
     display: grid;
@@ -452,8 +393,7 @@ const orgSchema = {
     .cl-intro-inner { grid-template-columns: 1fr; }
     .cl-intro-stats { grid-template-columns: repeat(3, 1fr); }
     .cl-cert-grid { grid-template-columns: 1fr; }
-    .cl-checklist { grid-template-columns: 1fr; }
-    .cl-cta { grid-template-columns: 1fr; }
+.cl-cta { grid-template-columns: 1fr; }
   }
 
   @media (max-width: 540px) {

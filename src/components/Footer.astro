@@ -1,20 +1,17 @@
 ---
-import { getLanguage } from '../data/site';
+import { copy, getLanguage } from '../data/site';
 const year = new Date().getFullYear();
 const lang = getLanguage(Astro.params.lang);
+const t = copy[lang];
 ---
 
 <footer class="footer">
   <div class="footer-grid">
     <div class="footer-brand-col">
       <a class="footer-brand" href={`/${lang}/`} aria-label="RM Psyllium home">
-        <span aria-hidden="true">rm</span>
-        <div>
-          <strong>RM Psyllium</strong>
-          <small>Unjha · Gujarat · Est 2024</small>
-        </div>
+        <img src="/assets/logo-footer.webp" alt="RM Psyllium" class="footer-logo" width="120" height="120" />
       </a>
-      <p>Psyllium husk manufacturer and exporter. 2,000 MT annual capacity. FOB Mundra or CIF to your port.</p>
+      <p>{t.footerBrandDesc}</p>
       <div class="footer-code">IEC 0124007841 · FSSAI Registered</div>
       <div class="footer-contact">
         <a href="mailto:export@rmpsyllium.com">export@rmpsyllium.com</a>
@@ -23,8 +20,8 @@ const lang = getLanguage(Astro.params.lang);
     </div>
 
     <div>
-      <h2>Products</h2>
-      <nav aria-label="Products">
+      <h2>{t.navProducts}</h2>
+      <nav aria-label={t.navProducts}>
         <a href={`/${lang}/products/psyllium-husk/`}>Psyllium Husk</a>
         <a href={`/${lang}/products/psyllium-husk-powder/`}>Husk Powder</a>
         <a href={`/${lang}/products/psyllium-seeds/`}>Psyllium Seeds</a>
@@ -35,8 +32,8 @@ const lang = getLanguage(Astro.params.lang);
     </div>
 
     <div>
-      <h2>Applications</h2>
-      <nav aria-label="Applications">
+      <h2>{t.footerApplications}</h2>
+      <nav aria-label={t.footerApplications}>
         <a href={`/${lang}/industries/pharma-nutraceutical/`}>Pharma &amp; Nutraceutical</a>
         <a href={`/${lang}/industries/food-beverage-bakery/`}>Food &amp; Bakery</a>
         <a href={`/${lang}/industries/animal-feed/`}>Animal Feed</a>
@@ -45,22 +42,22 @@ const lang = getLanguage(Astro.params.lang);
     </div>
 
     <div>
-      <h2>Resources</h2>
-      <nav aria-label="Resources">
-        <a href={`/${lang}/insights/`}>Buyer Guides</a>
-        <a href={`/${lang}/quality/`}>Quality &amp; Compliance</a>
-        <a href={`/${lang}/faq/`}>FAQ</a>
-        <a href={`/${lang}/blog/`}>Blog</a>
+      <h2>{t.footerResources}</h2>
+      <nav aria-label={t.footerResources}>
+        <a href={`/${lang}/insights/`}>{t.navInsights}</a>
+        <a href={`/${lang}/quality/`}>{t.navQuality}</a>
+        <a href={`/${lang}/faq/`}>{t.navFaq}</a>
+        <a href={`/${lang}/blog/`}>{t.navBlog}</a>
       </nav>
     </div>
 
     <div>
-      <h2>Contact</h2>
-      <nav aria-label="Contact">
-        <a href="https://wa.me/918949817791" target="_blank" rel="noopener">WhatsApp</a>
-        <a href="mailto:export@rmpsyllium.com">Email us</a>
-        <a href={`/${lang}/contact/`}>Request a Quote</a>
-        <a href={`/${lang}/contact/`}>Sample Request</a>
+      <h2>{t.navContact}</h2>
+      <nav aria-label={t.navContact}>
+        <a href="https://wa.me/918949817791" target="_blank" rel="noopener">{t.contactWaBtn}</a>
+        <a href="mailto:export@rmpsyllium.com">{t.contactEmailBtn}</a>
+        <a href={`/${lang}/contact/`}>{t.footerRequestQuote}</a>
+        <a href={`/${lang}/contact/`}>{t.footerSampleRequest}</a>
       </nav>
     </div>
   </div>
@@ -89,44 +86,14 @@ const lang = getLanguage(Astro.params.lang);
 
   /* brand */
   .footer-brand {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
+    display: inline-block;
     text-decoration: none;
-    color: var(--ink);
   }
 
-  .footer-brand span {
-    display: grid;
-    width: 38px;
-    height: 38px;
-    flex-shrink: 0;
-    place-items: center;
-    border: 1.2px solid var(--ink);
-    border-radius: 50%;
-    font-family: var(--font-display);
-    font-size: 1.1rem;
-    font-style: italic;
-    letter-spacing: -0.02em;
-  }
-
-  .footer-brand strong {
-    display: block;
-    font-family: var(--font-display);
-    font-size: 1.2rem;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    line-height: 1;
-  }
-
-  .footer-brand small {
-    display: block;
-    margin-top: 3px;
-    color: var(--muted);
-    font-family: var(--font-mono);
-    font-size: 0.6rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
+  .footer-logo {
+    width: 110px;
+    height: auto;
+    object-fit: contain;
   }
 
   .footer-brand-col p {

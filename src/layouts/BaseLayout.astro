@@ -28,7 +28,9 @@ const { title, description, image, noindex, structuredData, lang = Astro.params.
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;1,14..32,300;1,14..32,400;1,14..32,500&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/favicon-180.png" />
     <Seo title={title} description={description} image={image} noindex={noindex} structuredData={structuredData} />
     <EventTracking />
   </head>
@@ -39,5 +41,6 @@ const { title, description, image, noindex, structuredData, lang = Astro.params.
     </main>
     <Footer />
     <script src="/scripts/site-motion.js" defer></script>
+    <script src="/scripts/mobile-menu.js" defer></script>
   </body>
 </html>

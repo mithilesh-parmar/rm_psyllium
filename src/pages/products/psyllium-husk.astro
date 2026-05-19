@@ -16,7 +16,7 @@ import SpecBuilder from '../../components/SpecBuilder.astro';
         </p>
         <a class="btn btn-primary" href="/#talk" data-track="product_book_click">Request Husk Quote</a>
       </div>
-      <img src="/assets/product-bag.svg" width="900" height="900" alt="RM Psyllium psyllium husk export packaging" loading="eager" decoding="async" />
+      <img src="/assets/generated/psyllium-husk-export-bag.webp" width="1254" height="1254" alt="Open psyllium husk export bag with loose husk flakes in a Gujarat packing area" loading="eager" decoding="async" />
     </div>
   </section>
 
@@ -108,6 +108,11 @@ import SpecBuilder from '../../components/SpecBuilder.astro';
   }
 
   @media (max-width: 860px) {
+    h1 {
+      font-size: clamp(2.25rem, 10vw, 3rem);
+      overflow-wrap: anywhere;
+    }
+
     .product-grid,
     .form-grid,
     .specs {
