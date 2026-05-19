@@ -1,0 +1,14 @@
+langgraph>=0.2.0
+langchain-core>=0.2.0
+openai>=1.35.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+pyyaml>=6.0
+jsonschema>=4.22.0
+
+# Semantic deduplication (optional — falls back to exact dedup if not installed)
+sentence-transformers>=3.0.0
+numpy>=1.26.0
+
+# Dev / test
+pytest>=8.0.0

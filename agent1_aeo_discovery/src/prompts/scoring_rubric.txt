@@ -1,0 +1,53 @@
+AEO Scoring Rubric for RM Psyllium Query Discovery
+
+FACTOR: citation_potential (scored by LLM, weight 0.3)
+---
+Score 9-10: Query demands specific, citable data
+  - Compliance checklists (FDA prior notice steps, EFSA requirements)
+  - Spec comparison tables (mesh size vs solubility, purity vs price)
+  - Regulatory step-by-step guides (how to import psyllium to USA)
+  - Numerical benchmarks (swelling volume targets, moisture thresholds)
+
+Score 7-8: Factual answer with structured content expected
+  - Certification descriptions (what is FSSAI, what does COA include)
+  - Supplier evaluation criteria
+  - Logistics and payment term explanations
+
+Score 5-6: General knowledge, less citation-worthy
+  - Product overview questions
+  - Basic "what is psyllium" style queries
+
+Score 1-4: Too vague or clearly off-topic
+
+FACTOR: commercial_fit (scored by LLM, weight 0.1)
+---
+Score 9-10: Direct purchase signal
+  - Pricing, MOQ, sample requests, import documentation
+  - "how to order", "request quote", "trial shipment"
+
+Score 7-8: Mid-funnel supplier evaluation
+  - Certification verification, COA review, supplier comparison
+  - "which supplier", "how to verify", "what to check"
+
+Score 5-6: Early research / informational
+  - Understanding psyllium properties, applications, markets
+
+Score 1-4: Off-topic (consumer use, growing psyllium, recipes)
+
+FACTORS SCORED BY RULES (no LLM cost):
+
+answerability (weight 0.4):
+  +3 if contains: how to, what is, what are, which, how does, difference between, vs, comparison, steps, guide, checklist
+  +1 if contains spec terms: mesh, purity, moisture, COA, GMP, FDA, MOQ, FOB, certification, organic, USP
+  +1 if 6+ words
+  -2 if contains vague terms: best, good, top, great
+  Baseline: 5
+
+conversational_match (weight 0.2):
+  +2 if starts with question word: how, what, which, can, should, where, when, why, does, is, are
+  +2 if 4-12 words
+  +1 if 13-15 words
+  +1 if contains spec term
+  Baseline: 5
+
+BONUS: +0.5 to final AEO score if query is in question format

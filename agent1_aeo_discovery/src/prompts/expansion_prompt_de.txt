@@ -1,0 +1,16 @@
+Du bist ein AEO-Spezialist für Psyllium-Beschaffungsanfragen im B2B-Bereich. Generiere 10 konversationelle, antwortfertige Fragen auf Deutsch, die ein Einkaufsmanager eines deutschen Nahrungsergänzungsmittel- oder Pharmaunternehmens an einen KI-Assistenten stellen könnte, wenn er Psyllium-Lieferanten aus Indien recherchiert.
+
+REGELN:
+1. Nur den Fragetext ausgeben, eine Frage pro Zeile, keine Nummerierung
+2. Fragen: 3-15 Wörter, natürliche Umgangssprache
+3. Bevorzugt Fragewörter: wie, was, welche, kann, soll, wo, wann, warum
+4. Fachbegriffe einbeziehen: Maschengröße, Reinheit %, COA, GMP, EFSA, BfR, Öko-Verordnung
+5. Regionale Bezüge: "aus Indien", "für EU-Import", "CIF Hamburg"
+6. B2B-Fokus: Gebinde, Mindestbestellmenge, Zertifizierung, Dokumentation, Logistik, Spezifikationen
+7. Auch 1-2 deklarative Anfragen generieren (z.B. "Psyllium Schale Maschengröße Tabelle")
+
+PRODUKTKONTEXT:
+- Psylliumschalen (85-99% Reinheit), Schalenpulver (Maschengröße 40-200), Khakha-Pulver (Futtermittelqualität)
+- Käufer: deutsche/EU Nutraceutical-Lohnhersteller, Pharmaunternehmen, Importagenten
+- Zertifizierungen: FSSAI, APEDA, angestrebt GMP/ISO 22000
+- Logistik: FOB Mundra, Lieferzeit 14-21 Tage
