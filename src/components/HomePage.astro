@@ -24,18 +24,18 @@ const certifications = [
     <div class="hp4-hero-grid">
       <div class="hp4-hero-copy">
         <div class="hp4-badge"><span class="hp4-dot"></span>{t.heroBadge}</div>
-        <h1>{t.heroTitle}<br /><em>{t.cta}</em></h1>
+        <h1>{t.heroTitle}</h1>
         <p>{t.heroBody}</p>
         <div class="hp4-actions">
-          <a class="hp4-btn hp4-btn-primary" href="#talk">{t.cta} <span aria-hidden="true">→</span></a>
-          <a class="hp4-btn hp4-btn-whatsapp" href="https://wa.me/918949817791" target="_blank" rel="noopener">{t.heroCtaWhatsApp}</a>
+          <a class="hp4-btn hp4-btn-primary" href="#talk" data-track="hero_cta_click">{t.cta} <span aria-hidden="true">→</span></a>
+          <a class="hp4-btn hp4-btn-whatsapp" href="https://wa.me/918949817791" target="_blank" rel="noopener" data-track="hero_whatsapp_click">{t.heroCtaWhatsApp}</a>
         </div>
         <div class="hp4-trust-row">
+          <span class="hp4-trust-highlight">No minimum order</span>
           <span>{t.heroTrustCoa}</span>
           <span>FSSAI</span>
           <span>APEDA</span>
-          <span>Spices Board</span>
-          <span>IEC</span>
+
         </div>
       </div>
       <div class="hp4-hero-media">
@@ -49,7 +49,7 @@ const certifications = [
           decoding="async"
         />
         <aside class="hp4-overlay-card">
-          <div class="hp4-overlay-row"><strong>MOQ</strong><span>500 KG</span></div>
+          <div class="hp4-overlay-row hp4-overlay-row--moq"><strong>No MOQ</strong><span>From 1 KG</span></div>
           <div class="hp4-overlay-row"><strong>{t.heroLeadTimeLabel}</strong><span>{t.heroLeadTimeValue}</span></div>
           <div class="hp4-overlay-row"><strong>{t.heroSampleLabel}</strong><span>{t.heroSampleValue}</span></div>
         </aside>
@@ -62,9 +62,9 @@ const certifications = [
     <div class="hp4-container">
     <div class="hp4-stats">
       <div><strong>2,000 <em>MT</em></strong><span>{t.statCapacityLabel}</span></div>
-      <div><strong>Since <em>1984</em></strong><span>{t.statHistoryLabel}</span></div>
+      <div><strong>40+ <em>yrs</em></strong><span>{t.statHistoryLabel}</span></div>
       <div><strong>14–21 <em>days</em></strong><span>{t.statLeadLabel}</span></div>
-      <div><strong>500 <em>KG</em></strong><span>{t.statMoqLabel}</span></div>
+      <div><strong>1 <em>KG</em></strong><span>{t.statMoqLabel}</span></div>
     </div>
     </div>
   </section>
@@ -106,6 +106,11 @@ const certifications = [
           <div class="hp4-diff-num">04</div>
           <h3>{t.hpDiff4Title}</h3>
           <p>{t.hpDiff4Body}</p>
+        </div>
+        <div class="hp4-diff hp4-diff--highlight">
+          <div class="hp4-diff-num">05</div>
+          <h3>{t.hpDiff5Title}</h3>
+          <p>{t.hpDiff5Body}</p>
         </div>
       </div>
     </div>
@@ -198,8 +203,12 @@ const certifications = [
               <span>export@rmpsyllium.com</span>
             </a>
             <a class="hp4-channel" href="https://wa.me/918949817791" target="_blank" rel="noopener">
-              <strong>WhatsApp</strong>
+              <strong>WhatsApp / Call</strong>
               <span>+91 89498 17791</span>
+            </a>
+            <a class="hp4-channel hp4-channel--secondary" href="tel:+918000008381">
+              <strong>Call</strong>
+              <span>+91 80000 08381</span>
             </a>
             <div class="hp4-channel">
               <strong>{t.hpContactResponseLabel}</strong>
@@ -214,8 +223,8 @@ const certifications = [
 
   <!-- STICKY MOBILE BAR -->
   <div class="hp4-sticky-bar" id="stickyBarV4">
-    <a class="hp4-btn hp4-btn-primary" href="#talk">{t.hpGetQuote}</a>
-    <a class="hp4-btn hp4-btn-whatsapp" href="https://wa.me/918949817791" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="hp4-btn hp4-btn-primary" href="#talk" data-track="sticky_cta_click">{t.hpGetQuote}</a>
+    <a class="hp4-btn hp4-btn-whatsapp" href="https://wa.me/918949817791" target="_blank" rel="noopener" data-track="sticky_whatsapp_click">WhatsApp</a>
   </div>
 </div>
 
@@ -321,6 +330,23 @@ const certifications = [
     letter-spacing: -0.02em;
   }
 
+.hp4-h1-tag {
+    display: inline;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.65em;
+    letter-spacing: 0.01em;
+    vertical-align: middle;
+  }
+
+  .hp4-h1-tag--grade {
+    color: var(--hp4-sage-deep);
+  }
+
+  .hp4-h1-tag--moq {
+    color: var(--hp4-sage-deep);
+  }
+
   .hp4-hero p {
     margin: 24px 0 0;
     max-width: 520px;
@@ -388,6 +414,15 @@ const certifications = [
     background: var(--hp4-paper);
   }
 
+  .hp4-trust-highlight {
+    background: var(--hp4-sage-deep) !important;
+    border-color: var(--hp4-sage-deep) !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+  }
+
+
+
   .hp4-hero-media {
     position: relative;
     height: 100%;
@@ -450,6 +485,17 @@ const certifications = [
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--hp4-mute);
+  }
+
+  .hp4-overlay-row--moq strong {
+    color: var(--hp4-sage);
+    font-size: 13px;
+  }
+
+  .hp4-overlay-row--moq span {
+    font-size: 12px;
+    color: var(--hp4-mute);
+    font-weight: 500;
   }
 
   .hp4-overlay-row span {
@@ -582,6 +628,20 @@ const certifications = [
   .hp4-diff {
     border-top: 2px solid var(--hp4-sage);
     padding-top: 24px;
+  }
+
+  .hp4-diff.hp4-diff--highlight {
+    background: var(--hp4-sage);
+    border-top: none;
+    border-radius: 6px;
+    padding: 24px;
+    color: var(--hp4-white);
+  }
+
+  .hp4-diff.hp4-diff--highlight .hp4-diff-num,
+  .hp4-diff.hp4-diff--highlight h3,
+  .hp4-diff.hp4-diff--highlight p {
+    color: var(--hp4-white);
   }
 
   .hp4-diff-num {
@@ -840,6 +900,15 @@ const certifications = [
 
   .hp4-channel:hover {
     border-color: var(--hp4-sage-pale);
+  }
+
+  .hp4-channel--secondary {
+    opacity: 0.65;
+    font-size: 0.92em;
+  }
+
+  .hp4-channel--secondary:hover {
+    opacity: 1;
   }
 
   .hp4-channel strong {

@@ -79,7 +79,14 @@
       "Bash(python3)",
       "Bash(grep -E \"\\\\.astro$\")",
       "Bash(rm /Users/mithileshparmar/Development/sancor_systems/rm_psyllium/src/pages/\\\\[lang\\\\]/regions/\\\\[region\\\\].astro)",
-      "Bash(rmdir /Users/mithileshparmar/Development/sancor_systems/rm_psyllium/src/pages/\\\\[lang\\\\]/regions)"
+      "Bash(rmdir /Users/mithileshparmar/Development/sancor_systems/rm_psyllium/src/pages/\\\\[lang\\\\]/regions)",
+      "Bash(git commit -m ' *)",
+      "Bash(git checkout *)",
+      "Bash(python -m pytest tests/test_score.py tests/test_expand.py tests/test_dedup.py -v)",
+      "Bash(python3 -m pytest tests/test_score.py tests/test_expand.py tests/test_dedup.py -v)",
+      "Bash(pip3 install *)",
+      "Bash(python3 -m pytest tests/ -v)",
+      "Bash(git branch *)"
     ],
     "additionalDirectories": [
       "/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/src/pages/[lang]",

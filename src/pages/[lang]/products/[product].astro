@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import SpecBuilder from '../../../components/SpecBuilder.astro';
-import { copy, getLanguage, languages, products } from '../../../data/site';
+import { copy, getLanguage, languages, products, translateParam, translateApp, translateBestFor } from '../../../data/site';
 
 export function getStaticPaths() {
   return languages.flatMap((language) =>
@@ -259,7 +259,7 @@ const schemas = [productSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : 
             <tbody>
               {suitMatrix.map(row => (
                 <tr>
-                  <td class="pd-matrix-app-label">{row.app}</td>
+                  <td class="pd-matrix-app-label">{translateApp(row.app, lang)}</td>
                   {row.suits.map(suit => (
                     <td class={`pd-suit-cell pd-suit-${suit}`}>
                       <span class="pd-suit-icon">
@@ -309,7 +309,7 @@ const schemas = [productSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : 
                 const maxVal = isSwell ? maxSwell : maxPurity;
                 return (
                   <tr class={isBar ? 'pd-bar-row' : ''}>
-                    <td class="pd-spec-param">{row.parameter}</td>
+                    <td class="pd-spec-param">{translateParam(row.parameter, lang)}</td>
                     {gradeLabels.map((label, _gi) => {
                       const raw = row.values[label] ?? '—';
                       const num = parseFloat(raw.replace(/[^0-9.]/g, ''));
@@ -340,7 +340,7 @@ const schemas = [productSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : 
                 <tr class="pd-spec-bestfor-row">
                   <td class="pd-spec-param">{t.pdBestFor}</td>
                   {gradeData.map((g) => (
-                    <td class="pd-spec-bestfor-cell">{g.gCopy.bestFor ?? ''}</td>
+                    <td class="pd-spec-bestfor-cell">{translateBestFor(g.gCopy.bestFor ?? '', lang)}</td>
                   ))}
                 </tr>
               )}
@@ -373,7 +373,7 @@ const schemas = [productSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : 
                 )}
               </div>
               {g.gCopy.bestFor && (
-                <p class="pd-grade-card-for">{g.gCopy.bestFor}</p>
+                <p class="pd-grade-card-for">{translateBestFor(g.gCopy.bestFor, lang)}</p>
               )}
               {g.gCopy.lead && (
                 <p class="pd-grade-card-lead">{g.gCopy.lead}</p>
@@ -382,26 +382,11 @@ const schemas = [productSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : 
                 <ul class="pd-grade-specs">
                   {threeSpecs.map(s => (
                     <li>
-                      <span class="pd-gs-param">{s.param.replace(/\s*\(.*\)/, '')}</span>
+                      <span class="pd-gs-param">{translateParam(s.param, lang).replace(/\s*\(.*\)/, '')}</span>
                       <span class="pd-gs-val">{s.val}</span>
                     </li>
                   ))}
                 </ul>
-              )}
-              {g.gNotes.length > 0 && (
-                <div class="pd-grade-apps">
-                  <p class="pd-grade-apps-label">{t.pdByApplication}</p>
-                  <div class="pd-grade-apps-grid">
-                    {g.gNotes.map(n => {
-                      const suit = getSuit(n.app, n.note, g.gCopy.bestFor ?? '');
-                      return (
-                        <div class={`pd-app-chip pd-app-chip--${suit}`}>
-                          <span class="pd-app-chip-name">{n.app}</span>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
               )}
               <a class="pd-btn pd-btn-ghost pd-btn-sm" href="#spec">{t.requestQuoteCta}</a>
             </div>

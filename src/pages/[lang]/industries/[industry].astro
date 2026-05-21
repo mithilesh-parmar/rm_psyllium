@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import SpecBuilder from '../../../components/SpecBuilder.astro';
-import { getLanguage, industryProducts, industries, languages } from '../../../data/site';
+import { copy, getLanguage, industryProducts, industries, languages } from '../../../data/site';
 
 export function getStaticPaths() {
   return languages.flatMap((language) =>
@@ -13,6 +13,7 @@ export function getStaticPaths() {
 }
 
 const lang = getLanguage(Astro.params.lang);
+const t = copy[lang];
 const { industry } = Astro.props;
 const relatedProducts = industryProducts(industry.products);
 ---
@@ -24,7 +25,7 @@ const relatedProducts = industryProducts(industry.products);
   <section class="section">
     <div class="container hero">
       <div>
-        <span class="kicker">Buyer application</span>
+        <span class="kicker">{t.industryBuyerApp}</span>
         <h1 class="title-xl">{industry.name}</h1>
         <p class="lead">{industry.headline}</p>
       </div>
@@ -48,8 +49,8 @@ const relatedProducts = industryProducts(industry.products);
   <section class="section band">
     <div class="container quote-grid">
       <div>
-        <span class="kicker">Request application quote</span>
-        <h2 class="title-lg">Match your application to the right grade, mesh, packing, and documents.</h2>
+        <span class="kicker">{t.industryRequestQuote}</span>
+        <h2 class="title-lg">{t.industryMatchGrade}</h2>
       </div>
       <div class="panel spec-panel">
         <SpecBuilder />

@@ -39,9 +39,9 @@ const itemListSchema = {
     <!-- HEADER -->
     <header class="ig-header">
       <div class="ig-header-inner">
-        <p class="ig-kicker">Buyer guides</p>
-        <h1>{t.insightsListTitle}<br /><em>for procurement teams.</em></h1>
-        <p class="ig-lead">Practical guides on grades, mesh, compliance, and sourcing decisions — written for procurement and QA teams.</p>
+        <p class="ig-kicker">{t.insightsKicker}</p>
+        <h1>{t.insightsListTitle}<br /><em>{t.insightsTitleSuffix}</em></h1>
+        <p class="ig-lead">{t.insightsLead}</p>
       </div>
     </header>
 
@@ -60,7 +60,7 @@ const itemListSchema = {
               </h2>
               <p>{post.summary}</p>
               <a class="ig-read-link" href={`/${lang}/insights/${post.slug}/`}>
-                Read guide →
+                {t.insightsReadMore}
               </a>
             </article>
           ))}
@@ -68,14 +68,14 @@ const itemListSchema = {
 
         <aside class="ig-sidebar">
           <div class="ig-cta-card">
-            <p class="ig-cta-label">Ready to source?</p>
-            <h3>Get a sample with COA</h3>
-            <p>Share your spec — grade, mesh, monthly volume, and destination. We'll respond within 24 hours.</p>
+            <p class="ig-cta-label">{t.readyToSource}</p>
+            <h3>{t.sampleCoaTitle}</h3>
+            <p>{t.sampleCoaBody}</p>
             <a class="ig-btn ig-btn-primary" href={`/${lang}/contact/`}>{t.navContact}</a>
-            <a class="ig-btn ig-btn-wa" href="https://wa.me/918949817791" target="_blank" rel="noopener">WhatsApp Us</a>
+            <a class="ig-btn ig-btn-wa" href="https://wa.me/918949817791" target="_blank" rel="noopener">{t.heroCtaWhatsApp}</a>
           </div>
           <div class="ig-topics-card">
-            <p class="ig-cta-label">Topics covered</p>
+            <p class="ig-cta-label">{t.topicsCovered}</p>
             <ul>
               <li>Grade selection (85%–99%)</li>
               <li>Mesh and particle size</li>
@@ -86,7 +86,7 @@ const itemListSchema = {
             </ul>
           </div>
           <div class="ig-nav-card">
-            <p class="ig-cta-label">More resources</p>
+            <p class="ig-cta-label">{t.moreResources}</p>
             <a href={`/${lang}/faq/`}>{t.navFaq} →</a>
             <a href={`/${lang}/quality/`}>{t.navQuality} →</a>
             <a href={`/${lang}/products/`}>{t.navProducts} →</a>
@@ -101,8 +101,8 @@ const itemListSchema = {
       <div class="ig-container">
         <div class="ig-cta-inner">
           <div>
-            <h2>Have a sourcing question?</h2>
-            <p>Our export team answers technical and commercial questions about psyllium grades, mesh, certifications, and export documentation.</p>
+            <h2>{t.sourcingQuestion}</h2>
+            <p>{t.sourcingQuestionBody}</p>
           </div>
           <div class="ig-cta-btns">
             <a class="ig-btn ig-btn-light" href={`/${lang}/contact/`}>{t.navContact}</a>

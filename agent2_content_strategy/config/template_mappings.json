@@ -1,0 +1,82 @@
+{
+  "intent_to_format": {
+    "commercial": ["step_by_step_guide", "comparison", "checklist"],
+    "transactional": ["spec_sheet", "pricing_guide", "checklist"],
+    "informational": ["faq", "technical_deep_dive", "glossary"],
+    "navigational": ["comparison", "spec_sheet"]
+  },
+  "format_templates": {
+    "step_by_step_guide": {
+      "title_pattern": "How to {action} {topic} | RM Psyllium",
+      "meta_pattern": "Learn {benefit} with this {count}-step guide. Includes {resource} for {audience}.",
+      "schema_types": ["HowTo", "FAQPage"],
+      "url_prefix": "/guides/how-to-",
+      "cta_default": "Book a 15-min call to receive our {resource}",
+      "section_template": ["Problem/Context", "Step-by-Step Process", "Documentation Checklist", "Red Flags / Watch-Outs", "RM Psyllium Alignment", "Next Steps & CTA"],
+      "target_word_count": 1100,
+      "estimated_effort_hours": 3
+    },
+    "comparison": {
+      "title_pattern": "{topic1} vs {topic2}: Which Grade Fits Your Application? | RM Psyllium",
+      "meta_pattern": "Compare {topic1} and {topic2} for {use_case}. Spec tables, purity data, and sourcing guidance inside.",
+      "schema_types": ["Article", "FAQPage"],
+      "url_prefix": "/guides/compare-",
+      "cta_default": "Request custom spec development quote",
+      "section_template": ["Overview & Use Cases", "Spec Comparison Table", "Regulatory Considerations", "Cost & MOQ Guidance", "RM Psyllium Offerings", "Get a Sample / Quote"],
+      "target_word_count": 1200,
+      "estimated_effort_hours": 3
+    },
+    "checklist": {
+      "title_pattern": "{compliance} Checklist for {region} Psyllium Imports | RM Psyllium",
+      "meta_pattern": "Download our verified checklist for {region} psyllium imports. Includes COA, phytosanitary, and customs docs.",
+      "schema_types": ["HowTo", "Organization"],
+      "url_prefix": "/guides/checklist-",
+      "cta_default": "Download checklist (PDF) + schedule compliance call",
+      "section_template": ["Why This Checklist Matters", "Pre-Order Documentation", "Shipment & Customs Requirements", "Quality Verification Steps", "Post-Delivery Compliance", "Download & Next Steps"],
+      "target_word_count": 900,
+      "estimated_effort_hours": 2
+    },
+    "spec_sheet": {
+      "title_pattern": "Psyllium {product} Technical Specifications — {grade} Grade | RM Psyllium",
+      "meta_pattern": "Full technical spec sheet for psyllium {product} {grade} grade. Purity %, mesh size, COA parameters, MOQ, and FOB pricing.",
+      "schema_types": ["Product", "Organization"],
+      "url_prefix": "/products/specs/",
+      "cta_default": "Request COA + Pricing Sheet for {product}",
+      "section_template": ["Product Overview", "Technical Specifications Table", "Testing Parameters & COA Structure", "Regulatory & Certification Status", "Packaging & Logistics", "Request Samples or Quote"],
+      "target_word_count": 700,
+      "estimated_effort_hours": 2
+    },
+    "faq": {
+      "title_pattern": "{topic}: {count} Questions B2B Buyers Ask | RM Psyllium",
+      "meta_pattern": "Answers to {count} common questions about {topic} from procurement and QA teams. Technical, compliance-focused.",
+      "schema_types": ["FAQPage", "Organization"],
+      "url_prefix": "/guides/faq-",
+      "cta_default": "Send us your technical question — we'll respond within 24 hrs",
+      "section_template": ["Introduction", "Specification Questions", "Compliance & Regulatory Questions", "Sourcing & Logistics Questions", "RM Psyllium-Specific FAQs", "Contact for Custom Queries"],
+      "target_word_count": 1000,
+      "estimated_effort_hours": 2
+    },
+    "technical_deep_dive": {
+      "title_pattern": "{topic}: A Technical Guide for {audience} | RM Psyllium",
+      "meta_pattern": "In-depth technical guide to {topic} for {audience}. Covers {subtopic1}, {subtopic2}, and sourcing from India.",
+      "schema_types": ["Article", "FAQPage"],
+      "url_prefix": "/guides/technical-",
+      "cta_default": "Download our technical data sheet or book a spec consultation",
+      "section_template": ["Technical Background", "Key Parameters & Testing Methods", "Industry Standards & Compliance", "Application-Specific Considerations", "Sourcing from India: What to Know", "RM Psyllium Capabilities & Contact"],
+      "target_word_count": 1400,
+      "estimated_effort_hours": 4
+    }
+  },
+  "buyer_stage_to_cta": {
+    "awareness": "Download our free psyllium sourcing guide (PDF)",
+    "vendor_evaluation": "Book a 15-min call to receive our GMP Compliance Checklist",
+    "rfq_ready": "Request a quote with COA + spec sheet",
+    "sample_stage": "Request a 500g sample with pre-shipment COA",
+    "decision": "Confirm your MOQ and receive FOB Mundra pricing"
+  },
+  "intent_to_buyer_stage": {
+    "informational": "awareness",
+    "commercial": "vendor_evaluation",
+    "transactional": "rfq_ready"
+  }
+}

@@ -49,7 +49,7 @@ const blogSchema = {
     <!-- HEADER -->
     <header class="bl-header">
       <div class="bl-header-inner">
-        <p class="bl-kicker">Blog</p>
+        <p class="bl-kicker">{t.navBlog}</p>
         <h1>{t.blogTitle}</h1>
         <p class="bl-lead">{t.blogLead}</p>
       </div>
@@ -58,9 +58,9 @@ const blogSchema = {
     <!-- CATEGORY FILTER -->
     <div class="bl-filter-bar">
       <div class="bl-filter-inner">
-        <span class="bl-filter-label">Topics:</span>
+        <span class="bl-filter-label">{t.blogTopicsLabel}</span>
         <div class="bl-filter-tags">
-          <a class="bl-tag bl-tag--active" href={`/${lang}/blog/`}>All</a>
+          <a class="bl-tag bl-tag--active" href={`/${lang}/blog/`}>{t.blogAllLabel}</a>
           {categories.map((cat) => (
             <a class="bl-tag" href={`#${cat.toLowerCase()}`}>{cat}</a>
           ))}

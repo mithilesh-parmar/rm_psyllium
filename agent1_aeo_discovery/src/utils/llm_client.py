@@ -1,4 +1,5 @@
 """Unified LLM interface: routes to Groq (free) for bulk tasks, OpenAI for scoring."""
+# Groq model: mixtral-8x7b-32768 was decommissioned; using llama-3.3-70b-versatile instead
 import hashlib
 import json
 import os
@@ -48,9 +49,9 @@ def call_llm(
     use_cache: bool = True,
 ) -> str:
     """
-    model: "groq" (Mistral-7B via Groq free tier) | "openai" (GPT-4o-mini)
+    model: "groq" (Llama-3.3-70b via Groq free tier) | "openai" (GPT-4o-mini)
     """
-    actual_model = "mixtral-8x7b-32768" if model == "groq" else "gpt-4o-mini"
+    actual_model = "llama-3.3-70b-versatile" if model == "groq" else "gpt-4o-mini"
     key = _cache_key(actual_model, system_prompt, user_prompt)
 
     if use_cache:
@@ -87,7 +88,7 @@ def call_llm_json(
     use_cache: bool = True,
 ) -> dict:
     """Call LLM and parse JSON response. Uses OpenAI by default for reliability."""
-    actual_model = "gpt-4o-mini" if model == "openai" else "mixtral-8x7b-32768"
+    actual_model = "gpt-4o-mini" if model == "openai" else "llama-3.3-70b-versatile"
     key = _cache_key(actual_model + ":json", system_prompt, user_prompt)
 
     if use_cache:

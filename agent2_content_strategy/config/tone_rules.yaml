@@ -1,0 +1,42 @@
+forbidden_phrases:
+  - "best in class"
+  - "premium quality"
+  - "trusted by thousands"
+  - "boost digestion"
+  - "gut health"
+  - "wellness"
+  - "natural remedy"
+  - "superfood"
+  - "amazing results"
+  - "customers love"
+  - "high quality"
+  - "world-class"
+  - "industry leading"
+  - "unmatched quality"
+  - "delicious"
+  - "healthy lifestyle"
+
+required_tone_signals:
+  - technical specifications (mesh size, purity %)
+  - procurement terminology (MOQ, FOB, COA, incoterms)
+  - compliance references (FDA, EU regulations, GMP, HACCP)
+  - buyer-stage language (vendor evaluation, qualification, RFQ)
+  - data-first framing (cite specific numbers, not vague claims)
+
+certification_disclosure_rule: >
+  When referencing GMP, ISO 22000, or HACCP, always append:
+  "Note: RM Psyllium is finalizing GMP/ISO 22000/HACCP audit — expected Q3 2026.
+  Current certifications: FSSAI, APEDA, IEC."
+
+persona_language_by_buyer:
+  procurement_manager: "specification-driven, compliance-focused, RFQ-ready"
+  quality_assurance: "testing parameters, COA structure, regulatory alignment"
+  r_and_d_formulator: "particle size, viscosity, solubility, application fit"
+  import_trader: "incoterms, documentation, lead times, minimum orders"
+
+section_purpose_mapping:
+  problem_definition: "Establish the buyer's pain point or compliance challenge"
+  vendor_evaluation: "Provide criteria, checklists, or comparison frameworks"
+  verification: "Third-party references, documentation requirements, COA samples"
+  decision_support: "Spec tables, pricing context, MOQ/lead time"
+  next_steps: "Clear CTA — quote, call, checklist download"

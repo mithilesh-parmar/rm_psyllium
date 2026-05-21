@@ -66,9 +66,9 @@ const breadcrumbSchema = {
       <div class="bp-header-inner">
         <div class="bp-header-copy">
           <nav class="bp-breadcrumb" aria-label="Breadcrumb">
-            <a href={`/${lang}/`}>Home</a>
+            <a href={`/${lang}/`}>{t.pdBreadcrumbHome}</a>
             <span aria-hidden="true">›</span>
-            <a href={`/${lang}/blog/`}>Blog</a>
+            <a href={`/${lang}/blog/`}>{t.navBlog}</a>
             <span aria-hidden="true">›</span>
             <span>{post.category}</span>
           </nav>
@@ -78,9 +78,9 @@ const breadcrumbSchema = {
           <time datetime={post.date}>{formattedDate}</time>
         </div>
         <div class="bp-header-stats">
-          <div class="bp-hstat"><strong>{post.category}</strong><span>Topic</span></div>
-          <div class="bp-hstat"><strong>{formattedDate}</strong><span>Published</span></div>
-          <div class="bp-hstat"><strong>RM Psyllium</strong><span>Author</span></div>
+          <div class="bp-hstat"><strong>{post.category}</strong><span>{t.blogTopicLabel}</span></div>
+          <div class="bp-hstat"><strong>{formattedDate}</strong><span>{t.insightsPublishedLabel}</span></div>
+          <div class="bp-hstat"><strong>RM Psyllium</strong><span>{t.blogAuthorLabel}</span></div>
         </div>
       </div>
     </header>
@@ -93,7 +93,7 @@ const breadcrumbSchema = {
 
           {relatedPosts.length > 0 && (
             <div class="bp-related">
-              <p class="bp-related-label">Related articles</p>
+              <p class="bp-related-label">{t.relatedArticles}</p>
               {relatedPosts.map((rel) => (
                 <a class="bp-related-link" href={`/${lang}/blog/${rel.slug}/`}>
                   {rel.title} →
@@ -105,22 +105,22 @@ const breadcrumbSchema = {
 
         <aside class="bp-sidebar">
           <div class="bp-cta-card">
-            <p class="bp-cta-label">Ready to source?</p>
-            <h3>Request a sample with COA</h3>
-            <p>Share your spec — grade, mesh, monthly volume, and destination. We respond within 24 hours.</p>
+            <p class="bp-cta-label">{t.readyToSource}</p>
+            <h3>{t.sampleCoaTitle}</h3>
+            <p>{t.sampleCoaBody}</p>
             <a class="bp-btn bp-btn-primary" href={`/${lang}/contact/`}>{t.navContact}</a>
-            <a class="bp-btn bp-btn-wa" href="https://wa.me/918949817791" target="_blank" rel="noopener">WhatsApp Us</a>
+            <a class="bp-btn bp-btn-wa" href="https://wa.me/918949817791" target="_blank" rel="noopener">{t.heroCtaWhatsApp}</a>
           </div>
 
           <div class="bp-meta-card">
-            <div class="bp-meta-row"><strong>Category</strong><span>{post.category}</span></div>
-            <div class="bp-meta-row"><strong>Published</strong><span>{formattedDate}</span></div>
-            <div class="bp-meta-row"><strong>Author</strong><span>RM Psyllium Export Team</span></div>
-            <div class="bp-meta-row"><strong>Source</strong><span>Unjha, Gujarat, India</span></div>
+            <div class="bp-meta-row"><strong>{t.blogCategoryLabel}</strong><span>{post.category}</span></div>
+            <div class="bp-meta-row"><strong>{t.insightsPublishedLabel}</strong><span>{formattedDate}</span></div>
+            <div class="bp-meta-row"><strong>{t.blogAuthorLabel}</strong><span>RM Psyllium Export Team</span></div>
+            <div class="bp-meta-row"><strong>{t.insightsSourceLabel}</strong><span>{t.sourceLocation}</span></div>
           </div>
 
           <div class="bp-nav-card">
-            <p class="bp-cta-label">More resources</p>
+            <p class="bp-cta-label">{t.moreResources}</p>
             <a href={`/${lang}/faq/`}>{t.navFaq} →</a>
             <a href={`/${lang}/quality/`}>{t.navQuality} →</a>
             <a href={`/${lang}/products/`}>{t.navProducts} →</a>

@@ -30,9 +30,9 @@ const formattedDate = new Date(post.date).toLocaleDateString('en-GB', {
       <div class="ins-header-inner">
         <div class="ins-header-copy">
           <nav class="ins-breadcrumb" aria-label="Breadcrumb">
-            <a href={`/${lang}/`}>Home</a>
+            <a href={`/${lang}/`}>{t.pdBreadcrumbHome}</a>
             <span aria-hidden="true">›</span>
-            <a href={`/${lang}/insights/`}>Buyer Guides</a>
+            <a href={`/${lang}/insights/`}>{t.navInsights}</a>
             <span aria-hidden="true">›</span>
             <span>{post.audience}</span>
           </nav>
@@ -42,9 +42,9 @@ const formattedDate = new Date(post.date).toLocaleDateString('en-GB', {
           <time datetime={post.date}>{formattedDate}</time>
         </div>
         <div class="ins-header-stats">
-          <div class="ins-hstat"><strong>{post.audience}</strong><span>Audience</span></div>
-          <div class="ins-hstat"><strong>{formattedDate}</strong><span>Published</span></div>
-          <div class="ins-hstat"><strong>24 hr</strong><span>Quote response</span></div>
+          <div class="ins-hstat"><strong>{post.audience}</strong><span>{t.insightsAudienceLabel}</span></div>
+          <div class="ins-hstat"><strong>{formattedDate}</strong><span>{t.insightsPublishedLabel}</span></div>
+          <div class="ins-hstat"><strong>24 hr</strong><span>{t.contactResponseTimeLabel}</span></div>
         </div>
       </div>
     </header>
@@ -58,22 +58,22 @@ const formattedDate = new Date(post.date).toLocaleDateString('en-GB', {
 
         <aside class="ins-sidebar">
           <div class="ins-cta-card">
-            <p class="ins-cta-label">Ready to source?</p>
-            <h3>Get a sample with COA</h3>
-            <p>Share your spec — grade, mesh, monthly volume, and destination. We'll respond within 24 hours.</p>
+            <p class="ins-cta-label">{t.readyToSource}</p>
+            <h3>{t.sampleCoaTitle}</h3>
+            <p>{t.sampleCoaBody}</p>
             <a class="ins-btn ins-btn-primary" href={`/${lang}/#talk`}>{t.insightsReadMore}</a>
-            <a class="ins-btn ins-btn-wa" href="https://wa.me/918949817791" target="_blank" rel="noopener">WhatsApp Us</a>
+            <a class="ins-btn ins-btn-wa" href="https://wa.me/918949817791" target="_blank" rel="noopener">{t.heroCtaWhatsApp}</a>
           </div>
 
           <div class="ins-meta-card">
-            <div class="ins-meta-row"><strong>Audience</strong><span>{post.audience}</span></div>
-            <div class="ins-meta-row"><strong>Published</strong><span>{formattedDate}</span></div>
-            <div class="ins-meta-row"><strong>Source</strong><span>RM Psyllium · Unjha, Gujarat</span></div>
+            <div class="ins-meta-row"><strong>{t.insightsAudienceLabel}</strong><span>{post.audience}</span></div>
+            <div class="ins-meta-row"><strong>{t.insightsPublishedLabel}</strong><span>{formattedDate}</span></div>
+            <div class="ins-meta-row"><strong>{t.insightsSourceLabel}</strong><span>{t.insightsSourceValue}</span></div>
           </div>
 
           <div class="ins-nav-card">
-            <p class="ins-cta-label">More resources</p>
-            <a href={`/${lang}/insights/`}>All buyer guides →</a>
+            <p class="ins-cta-label">{t.moreResources}</p>
+            <a href={`/${lang}/insights/`}>{t.allBuyerGuides}</a>
             <a href={`/${lang}/faq/`}>{t.navFaq} →</a>
             <a href={`/${lang}/quality/`}>{t.navQuality} →</a>
             <a href={`/${lang}/products/`}>{t.navProducts} →</a>

@@ -1,0 +1,50 @@
+{
+  "company": "RM Psyllium (Asia Agro Exports)",
+  "website": "https://rmpsyllium.com",
+  "origin_country": "India",
+  "shipping_port": "FOB Mundra",
+  "founding_experience_years": 40,
+  "products_available": [
+    "psyllium husk 85%",
+    "psyllium husk 95%",
+    "psyllium husk 99%",
+    "psyllium powder 40 mesh",
+    "psyllium powder 60 mesh",
+    "psyllium powder 80 mesh",
+    "psyllium powder 200 mesh",
+    "psyllium khakha feed grade",
+    "psyllium industrial grade",
+    "psyllium organic USDA certified",
+    "psyllium organic EU certified"
+  ],
+  "differentiators": [
+    "40 years in-house manufacturing",
+    "in-house processing and milling",
+    "custom spec development on request",
+    "pre-shipment COA with every batch",
+    "FOB Mundra with flexible incoterms",
+    "MOQ 500 kg"
+  ],
+  "certifications_current": ["FSSAI", "APEDA", "IEC"],
+  "certifications_pending": ["GMP", "ISO 22000", "HACCP"],
+  "certifications_pending_eta": "Q3 2026",
+  "target_markets": ["US", "EU", "AU", "CA", "UK", "DE"],
+  "target_buyers": [
+    "nutraceutical manufacturers",
+    "pharma third-party manufacturers",
+    "feed mills",
+    "industrial ingredient buyers",
+    "private label supplement brands"
+  ],
+  "tone_guidelines": "Professional, data-first, transparent about certification status, zero consumer language",
+  "contact_email": "info@rmpsyllium.com",
+  "min_order_qty_kg": 500,
+  "internal_links": {
+    "products": "/products/",
+    "psyllium_husk": "/products/psyllium-husk",
+    "psyllium_powder": "/products/psyllium-powder",
+    "compliance": "/compliance/",
+    "contact": "/contact/",
+    "guides": "/guides/"
+  }
+}

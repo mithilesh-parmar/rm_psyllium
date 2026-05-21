@@ -1,0 +1,99 @@
+{
+  "psyllium_husk": [
+    {
+      "parameter": "Purity",
+      "standard_range": "85-99%",
+      "test_method": "USP <561>",
+      "unit": "%",
+      "notes": "Grade-dependent: 85%, 95%, 99% available"
+    },
+    {
+      "parameter": "Mesh Size",
+      "standard_range": "40-200",
+      "test_method": "Sieve Analysis",
+      "unit": "mesh",
+      "notes": "Custom mesh on request"
+    },
+    {
+      "parameter": "Moisture Content",
+      "standard_range": "≤10%",
+      "test_method": "Loss on Drying",
+      "unit": "%",
+      "notes": "Maintained under controlled storage"
+    },
+    {
+      "parameter": "Swelling Volume",
+      "standard_range": "≥40 mL/g",
+      "test_method": "USP Method",
+      "unit": "mL/g",
+      "notes": "Key functional parameter for pharma applications"
+    },
+    {
+      "parameter": "Ash Content",
+      "standard_range": "≤4%",
+      "test_method": "USP <561>",
+      "unit": "%",
+      "notes": "Inorganic residue indicator"
+    },
+    {
+      "parameter": "Acid-Insoluble Ash",
+      "standard_range": "≤0.5%",
+      "test_method": "BP/IP Method",
+      "unit": "%",
+      "notes": "Silica contamination indicator"
+    }
+  ],
+  "psyllium_powder": [
+    {
+      "parameter": "Mesh Size",
+      "standard_range": "40-200",
+      "test_method": "Sieve Analysis",
+      "unit": "mesh",
+      "notes": "Fine powder for blending applications"
+    },
+    {
+      "parameter": "Bulk Density",
+      "standard_range": "350-450 kg/m³",
+      "test_method": "ASTM D1895",
+      "unit": "kg/m³",
+      "notes": "Critical for capsule fill and blending"
+    },
+    {
+      "parameter": "Moisture Content",
+      "standard_range": "≤10%",
+      "test_method": "Loss on Drying",
+      "unit": "%",
+      "notes": null
+    },
+    {
+      "parameter": "Viscosity",
+      "standard_range": "Per customer spec",
+      "test_method": "Brookfield Method",
+      "unit": "cP",
+      "notes": "Functional grade dependent"
+    }
+  ],
+  "khakha_powder": [
+    {
+      "parameter": "Crude Fiber",
+      "standard_range": "≥25%",
+      "test_method": "AOAC 985.29",
+      "unit": "%",
+      "notes": "Primary value driver for feed applications"
+    },
+    {
+      "parameter": "Moisture Content",
+      "standard_range": "≤12%",
+      "test_method": "Loss on Drying",
+      "unit": "%",
+      "notes": null
+    },
+    {
+      "parameter": "Grade",
+      "standard_range": "Feed Grade A or B",
+      "test_method": "Visual + sieve",
+      "unit": "grade",
+      "notes": "Grade A for premium feed; Grade B for industrial"
+    }
+  ]
+}
