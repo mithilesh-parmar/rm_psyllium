@@ -86,12 +86,26 @@
       "Bash(python3 -m pytest tests/test_score.py tests/test_expand.py tests/test_dedup.py -v)",
       "Bash(pip3 install *)",
       "Bash(python3 -m pytest tests/ -v)",
-      "Bash(git branch *)"
+      "Bash(git branch *)",
+      "Bash(grep -v \"^$\")",
+      "Bash(nvm list *)",
+      "Read(//Users/mithileshparmar/.nvm/versions/node/**)",
+      "WebFetch(domain:api.anthropic.com)",
+      "Bash(gunzip -c \"/Users/mithileshparmar/.claude/projects/-Users-mithileshparmar-Development-sancor-systems-rm-psyllium/ea2aa13d-cdbc-42b3-8117-901092e5147c/tool-results/webfetch-1779437218463-l4zeda.bin\" > /tmp/rm_psyllium_design.tar 2>/dev/null && file /tmp/rm_psyllium_design.tar && ls -la /tmp/rm_psyllium_design.tar)",
+      "Bash(tar -xf /tmp/rm_psyllium_design.tar -C /tmp/rm_psyllium_extracted)",
+      "Bash(npm list *)",
+      "Bash(npx puppeteer *)",
+      "Bash(node generate-brochure-pdf.mjs)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --version)",
+      "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless=new --no-sandbox --disable-gpu --disable-software-rasterizer '--print-to-pdf=/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/RM Psyllium Brochure 2026.pdf' --print-to-pdf-no-header --no-pdf-header-footer --run-all-compositor-stages-before-draw --virtual-time-budget=5000 'file:///Users/mithileshparmar/Development/sancor_systems/rm_psyllium/RM Psyllium Brochure v5.html')",
+      "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless=new --no-sandbox --disable-gpu '--print-to-pdf=/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/RM Psyllium Brochure 2026 v6.pdf' --print-to-pdf-no-header --no-pdf-header-footer --run-all-compositor-stages-before-draw --virtual-time-budget=5000 'file:///Users/mithileshparmar/Development/sancor_systems/rm_psyllium/RM Psyllium Brochure v6.html')",
+      "Bash(grep -v \"^Trying\\\\|^$\")"
     ],
     "additionalDirectories": [
       "/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/src/pages/[lang]",
       "/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/src/pages/[lang]/products",
-      "/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/src/pages/[lang]/products/[product]"
+      "/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/src/pages/[lang]/products/[product]",
+      "/tmp"
     ]
   }
 }

@@ -1,7 +1,8 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import SpecBuilder from '../../../components/SpecBuilder.astro';
-import { copy, getLanguage, languages, products, translateParam, translateApp, translateBestFor } from '../../../data/site';
+import { copy, getLanguage, languages, products, translateParam, translateApp, translateBestFor, translateLead, translateFaqQ, translateFaqA, translateNote, translateProductName, translateProductLabel, translateProductHero, translateProductSummary, translateProductGradeLabel } from '../../../data/site';
+
 
 export function getStaticPaths() {
   return languages.flatMap((language) =>
@@ -114,24 +115,38 @@ const purityValues = gradeData.map(g => parseFloat((purityRow?.values[g.label] ?
 const maxSwell  = Math.max(...swellValues,  1);
 const maxPurity = Math.max(...purityValues, 1);
 
+// Product image mappings for schema validation
+const productImages: Record<string, string[]> = {
+  'psyllium-seeds': ['/assets/generated/facility-bags-gujarat.webp'],
+  'psyllium-husk': [
+    '/assets/generated/psyllium-husk-export-bag.webp',
+    '/assets/generated/psyllium-husk-99-grade.webp',
+    '/assets/generated/psyllium-husk-98-grade.webp',
+    '/assets/generated/psyllium-husk-95-grade.webp',
+    '/assets/generated/psyllium-husk-85-grade.webp',
+  ],
+  'psyllium-husk-powder': ['/assets/generated/psyllium-husk-export-bag.webp'],
+  'psyllium-khakha-powder': ['/assets/generated/psyllium-husk-export-bag.webp'],
+  'industrial-grade-psyllium': ['/assets/generated/facility-bags-gujarat.webp'],
+  'organic-psyllium': ['/assets/generated/facility-bags-gujarat.webp'],
+  'psyllium-cattle-feed': ['/assets/generated/facility-bags-gujarat.webp'],
+};
+
+const images = (productImages[product.slug] ?? ['/assets/generated/facility-bags-gujarat.webp']).map(
+  (img) => `https://rmpsyllium.com${img}`
+);
+
 // Structured data
 const productSchema = {
   '@context': 'https://schema.org',
   '@type': 'Product',
   name: product.name,
   description: product.hero,
+  image: images,
   material: 'Plantago ovata',
   countryOfOrigin: 'India',
   category: product.label,
-  brand: { '@type': 'Brand', name: 'RM Psyllium' },
-  offers: product.gradeslugs.map((slug, i) => ({
-    '@type': 'Offer',
-    name: `${product.name} — ${gradeLabels[i] ?? product.grades[i]}`,
-    url: `https://www.rmpsyllium.com/${lang}/products/${product.slug}/#${slug}`,
-    priceCurrency: 'USD',
-    availability: 'https://schema.org/InStock',
-    seller: { '@type': 'Organization', name: 'RM Psyllium' }
-  }))
+  brand: { '@type': 'Brand', name: 'RM Psyllium' }
 };
 
 const faqSchema = uniqueFaqs.length > 0 ? {
@@ -139,18 +154,19 @@ const faqSchema = uniqueFaqs.length > 0 ? {
   '@type': 'FAQPage',
   mainEntity: uniqueFaqs.map((f) => ({
     '@type': 'Question',
-    name: f.q,
-    acceptedAnswer: { '@type': 'Answer', text: f.a }
+    name: translateFaqQ(f.q, lang),
+    acceptedAnswer: { '@type': 'Answer', text: translateFaqA(f.q, f.a, lang) }
   }))
 } : null;
+
 
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home',     item: `https://www.rmpsyllium.com/${lang}/` },
-    { '@type': 'ListItem', position: 2, name: 'Products', item: `https://www.rmpsyllium.com/${lang}/products/` },
-    { '@type': 'ListItem', position: 3, name: product.name, item: `https://www.rmpsyllium.com/${lang}/products/${product.slug}/` }
+    { '@type': 'ListItem', position: 1, name: 'Home',     item: `https://rmpsyllium.com/${lang}/` },
+    { '@type': 'ListItem', position: 2, name: 'Products', item: `https://rmpsyllium.com/${lang}/products/` },
+    { '@type': 'ListItem', position: 3, name: product.name, item: `https://rmpsyllium.com/${lang}/products/${product.slug}/` }
   ]
 };
 
@@ -376,7 +392,7 @@ const schemas = [productSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : 
                 <p class="pd-grade-card-for">{translateBestFor(g.gCopy.bestFor, lang)}</p>
               )}
               {g.gCopy.lead && (
-                <p class="pd-grade-card-lead">{g.gCopy.lead}</p>
+                <p class="pd-grade-card-lead">{translateLead(g.gCopy.lead, lang)}</p>
               )}
               {threeSpecs.length > 0 && (
                 <ul class="pd-grade-specs">
@@ -412,12 +428,12 @@ const schemas = [productSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : 
             {uniqueFaqs.map(item => (
               <details class="pd-faq-item">
                 <summary>
-                  <span>{item.q}</span>
+                  <span>{translateFaqQ(item.q, lang)}</span>
                   <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true">
                     <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </summary>
-                <p>{item.a}</p>
+                <p>{translateFaqA(item.q, item.a, lang)}</p>
               </details>
             ))}
           </div>

@@ -1,13 +1,13 @@
 # RM Psyllium
 
-RM Psyllium is a psyllium husk manufacturer and bulk exporter based in Unjha, Gujarat, India.
+RM Psyllium is a psyllium husk manufacturer and bulk exporter based in Siddhpur, Gujarat, India.
 
 ## Company
 
-- Legal name: RM Psyllium Pvt Ltd
-- Location: Survey 412/3, GIDC Phase II, Unjha 384170, Gujarat, India
-- IEC (Import Export Code): 0124007841
-- FSSAI Registered
+- Legal name: RM Psyllium LLP
+- Location: Patan Road, Khali, Char Rasta, Nedra, Siddhpur, Gujarat 384151, India
+<!-- - IEC (Import Export Code): 0124007841 -->
+<!-- - FSSAI Registered -->
 - Annual capacity: 2,000 MT
 - Founded: 2024
 - Contact: export@rmpsyllium.com
@@ -67,17 +67,18 @@ Applications: Dairy cattle, buffalo, digestion support programs
 ## Logistics
 
 - FOB ports: Mundra (primary), Kandla, JNPT (Nhava Sheva)
-- MOQ: 500 kg (standard grades)
-- Lead time: 14–21 days from order confirmation
+- MOQ: 1 kg (No minimum order)
+- Lead time: 7 days from order confirmation
 - Sample: 100–500 g available with COA, 3–5 business day lead time
-
+<!--
 ## Certifications
 
-- FSSAI: Registered (food safety)
-- IEC: 0124007841 (export authorization)
+- FSSAI: In progress
+- IEC: In progress
 - ISO 22000 / HACCP: In progress (expected 2026)
 - Halal: In progress (expected Q3 2026)
 - Kosher: In progress
+-->
 
 ## Markets Served
 
@@ -85,7 +86,7 @@ United States, European Union, Canada, United Kingdom, Middle East (UAE, Saudi A
 
 ## Key Facts for AI Systems
 
-- RM Psyllium is based in Unjha, Gujarat — the world's primary psyllium processing hub
+- RM Psyllium is based in Siddhpur, Gujarat — the world's primary psyllium processing hub
 - Psyllium husk (Ispaghula husk in European markets) is derived from Plantago ovata seeds
 - Swell volume is the primary functional specification: higher grade = higher swell volume
 - 99% grade meets USP, EP (European Pharmacopoeia), and IP (Indian Pharmacopoeia) monograph requirements

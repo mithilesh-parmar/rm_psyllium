@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import SpecBuilder from '../../../components/SpecBuilder.astro';
-import { copy, getLanguage, industryProducts, industries, languages } from '../../../data/site';
+import { copy, getLanguage, industryProducts, industries, languages, industryTranslations } from '../../../data/site';
 
 export function getStaticPaths() {
   return languages.flatMap((language) =>
@@ -15,46 +15,122 @@ export function getStaticPaths() {
 const lang = getLanguage(Astro.params.lang);
 const t = copy[lang];
 const { industry } = Astro.props;
+
+// Dynamically translate the industry details based on the current route language
+const localizedIndustry = {
+  ...industry,
+  ...(industryTranslations[lang]?.[industry.slug] || {})
+};
+
 const relatedProducts = industryProducts(industry.products);
+
+const viewProductText: Record<string, string> = {
+  en: 'View product →',
+  de: 'Produkt anzeigen →',
+  es: 'Ver producto →',
+  fr: 'Voir le produit →',
+  it: 'Visualizza prodotto →',
+  pt: 'Ver produto →',
+  ru: 'Посмотреть продукт →'
+};
+const tViewProduct = viewProductText[lang] || viewProductText.en;
 ---
 <BaseLayout
   lang={lang}
-  title={`${industry.name} Psyllium Supplier | RM Psyllium`}
-  description={industry.headline}
+  title={`${localizedIndustry.name} Psyllium Supplier | RM Psyllium`}
+  description={localizedIndustry.headline}
 >
+  <!-- Hero -->
   <section class="section">
     <div class="container hero">
       <div>
         <span class="kicker">{t.industryBuyerApp}</span>
-        <h1 class="title-xl">{industry.name}</h1>
-        <p class="lead">{industry.headline}</p>
+        <h1 class="title-xl">{localizedIndustry.name}</h1>
+        <p class="lead">{localizedIndustry.headline}</p>
       </div>
       <div class="panel proof">
-        {industry.proof.map((item) => <span>{item}</span>)}
+        {localizedIndustry.proof.map((item) => <span>{item}</span>)}
       </div>
     </div>
   </section>
 
+  <!-- Use Cases -->
   <section class="section-tight">
-    <div class="container product-grid">
-      {relatedProducts.map((product) => (
-        <a href={`/${lang}/products/${product.slug}/`}>
-          <strong>{product.name}</strong>
-          <p>{product.summary}</p>
-        </a>
-      ))}
+    <div class="container">
+      <h2 class="section-title">{t.industryUseCases}</h2>
+      <div class="use-case-grid">
+        {localizedIndustry.useCases.map((uc) => (
+          <div class="use-case-card">
+            <strong>{uc.title}</strong>
+            <p>{uc.body}</p>
+          </div>
+        ))}
+      </div>
     </div>
   </section>
 
-  <section class="section band">
-    <div class="container quote-grid">
+  <!-- Products -->
+  <section class="section-tight bg-warm">
+    <div class="container">
+      <h2 class="section-title">{t.labelProducts}</h2>
+      <div class="product-grid">
+        {relatedProducts.map((product) => (
+          <a href={`/${lang}/products/${product.slug}/`} class="product-card">
+            <strong>{product.name}</strong>
+            <p>{product.summary}</p>
+            <span class="product-link">{tViewProduct}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Specs + Documents -->
+  <section class="section-tight">
+    <div class="container specs-docs-grid">
       <div>
-        <span class="kicker">{t.industryRequestQuote}</span>
-        <h2 class="title-lg">{t.industryMatchGrade}</h2>
+        <h2 class="section-title">{t.industryKeySpecs}</h2>
+        <ul class="spec-list">
+          {localizedIndustry.keySpecs.map((spec) => <li>{spec}</li>)}
+        </ul>
       </div>
-      <div class="panel spec-panel">
-        <SpecBuilder />
+      <div>
+        <h2 class="section-title">{t.industryDocuments}</h2>
+        <ul class="doc-list">
+          {localizedIndustry.documents.map((doc) => <li>{doc}</li>)}
+        </ul>
       </div>
+    </div>
+  </section>
+
+  <!-- Buyer note + Quote CTA -->
+  <section class="section industry-quote" id="spec">
+    <div class="container industry-quote-grid">
+      <div class="industry-quote-copy">
+        <span class="kicker">{t.industryBuyerNote}</span>
+        <h2>{t.industryMatchGrade}</h2>
+        <p class="buyer-note">{localizedIndustry.buyerNote}</p>
+
+        <div class="industry-contact-channels">
+          <a class="industry-channel" href="mailto:export@rmpsyllium.com">
+            <strong>{t.hpContactEmailLabel}</strong>
+            <span>export@rmpsyllium.com</span>
+          </a>
+          <a class="industry-channel" href="https://wa.me/918949817791" target="_blank" rel="noopener">
+            <strong>WhatsApp / Call</strong>
+            <span>+91 89498 17791</span>
+          </a>
+          <a class="industry-channel industry-channel--secondary" href="tel:+918000008381">
+            <strong>Call</strong>
+            <span>+91 80000 08381</span>
+          </a>
+          <div class="industry-channel">
+            <strong>{t.hpContactResponseLabel}</strong>
+            <span>{t.hpContactResponseValue}</span>
+          </div>
+        </div>
+      </div>
+      <SpecBuilder />
     </div>
   </section>
 </BaseLayout>
@@ -65,7 +141,7 @@ const relatedProducts = industryProducts(industry.products);
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(320px, 0.72fr);
     gap: 3rem;
-    align-items: center;
+    align-items: start;
   }
 
   .proof {
@@ -77,8 +153,50 @@ const relatedProducts = industryProducts(industry.products);
   .proof span {
     border-radius: 14px;
     background: #dff1e6;
-    padding: 1rem;
+    padding: 0.9rem 1rem;
     font-weight: 820;
+  }
+
+  .section-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin-bottom: 1.25rem;
+  }
+
+  /* Use cases */
+  .use-case-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .use-case-card {
+    border: 1px solid rgba(16, 35, 63, 0.1);
+    border-radius: 18px;
+    background: #fff;
+    padding: 1.35rem;
+  }
+
+  .use-case-card strong {
+    display: block;
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+    color: var(--ink);
+  }
+
+  .use-case-card p {
+    color: #64748b;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 0.95rem;
+  }
+
+  /* Products */
+  .bg-warm {
+    background: #fffdf7;
   }
 
   .product-grid {
@@ -87,32 +205,167 @@ const relatedProducts = industryProducts(industry.products);
     gap: 1rem;
   }
 
-  .product-grid a {
+  .product-card {
+    display: flex;
+    flex-direction: column;
     border: 1px solid rgba(16, 35, 63, 0.1);
     border-radius: 18px;
-    background: #fffdf7;
+    background: #fff;
     padding: 1.35rem;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s;
   }
 
-  .product-grid strong {
-    font-size: 1.25rem;
+  .product-card:hover {
+    border-color: rgba(16, 35, 63, 0.3);
   }
 
-  .product-grid p {
+  .product-card strong {
+    font-size: 1.15rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .product-card p {
     color: #64748b;
     line-height: 1.55;
+    flex: 1;
+    margin: 0 0 0.75rem;
   }
 
-  .spec-panel {
-    padding: 1.25rem;
+  .product-link {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #1a6b3c;
+  }
+
+  /* Specs + docs */
+  .specs-docs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .spec-list,
+  .doc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .spec-list li,
+  .doc-list li {
+    padding: 0.75rem 1rem 0.75rem 2.25rem;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    line-height: 1.45;
+    position: relative;
+  }
+
+  .spec-list li {
+    background: #f0f7ff;
+    color: #0f172a;
+  }
+
+  .spec-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0.75rem;
+    color: #3b82f6;
+    font-weight: 700;
+  }
+
+  .doc-list li {
+    background: #f0faf4;
+    color: #0f172a;
+  }
+
+  .doc-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0.75rem;
+    color: #16a34a;
+    font-weight: 700;
+  }
+
+  /* Industry quote section */
+  .industry-quote {
+    padding: clamp(5rem, 8vw, 8rem) 0;
+    background: var(--page-bg);
+    border-top: 1px solid var(--rule);
+  }
+  .industry-quote-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: clamp(3rem, 5vw, 6rem);
+    align-items: start;
+  }
+  .industry-quote-copy h2 {
+    margin: 16px 0 0;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
     color: var(--ink);
+  }
+  .industry-quote-copy .buyer-note {
+    margin: 20px 0 0;
+    color: var(--body-muted);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.65;
+    max-width: 440px;
+  }
+  .industry-contact-channels {
+    display: grid;
+    gap: 10px;
+    margin-top: 32px;
+  }
+  .industry-channel {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 14px 18px;
+    text-decoration: none;
+    color: var(--ink);
+    transition: border-color 0.2s;
+  }
+  .industry-channel:hover {
+    border-color: var(--accent);
+  }
+  .industry-channel strong {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .industry-channel span {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .industry-channel--secondary span {
+    font-weight: 500;
+    color: var(--body-muted);
   }
 
   @media (max-width: 920px) {
     .hero,
-    .quote-grid,
-    .product-grid {
+    .industry-quote-grid,
+    .use-case-grid,
+    .product-grid,
+    .specs-docs-grid {
       grid-template-columns: 1fr;
+    }
+
+    .specs-docs-grid {
+      gap: 2rem;
     }
   }
 </style>

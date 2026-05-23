@@ -127,6 +127,7 @@ export const copy: Record<LanguageCode, {
   blogAuthorLabel: string; blogCategoryLabel: string;
   sourceLocation: string; relatedArticles: string;
   industryBuyerApp: string; industryRequestQuote: string; industryMatchGrade: string;
+  industryUseCases: string; industryKeySpecs: string; industryDocuments: string; industryBuyerNote: string;
 }> = {
   en: {
     navProducts: 'Products',
@@ -168,7 +169,7 @@ export const copy: Record<LanguageCode, {
     heroTrustCoa: 'COA per shipment',
     heroLeadTimeLabel: 'Lead time',
     heroSampleLabel: 'Sample',
-    heroLeadTimeValue: '14–21 days from confirmation',
+    heroLeadTimeValue: '7 days from confirmation',
     heroSampleValue: '100–500 g with COA, shipped in 5 days',
     heroCtaWhatsApp: 'WhatsApp Us',
     // Stats bar
@@ -277,7 +278,7 @@ export const copy: Record<LanguageCode, {
     faqPageLeadTimeLabel: 'Lead time',
     faqPagePurityLabel: 'Purity grades',
     // Footer
-    footerBrandDesc: 'Psyllium husk manufacturer and exporter. 2,000 MT annual capacity. FOB Mundra or CIF to your port.',
+    footerBrandDesc: 'RM Psyllium LLP is a direct-from-source manufacturer and bulk exporter of premium psyllium husk, powder, and seeds. Operating from Siddhpur, Gujarat, our facility has a 2,000 MT annual capacity supplying pharma (USP/EP), food, and feed grades globally. MOQ: 1 KG with NABL-accredited COA per shipment.',
     footerApplications: 'Applications',
     footerResources: 'Resources',
     footerRequestQuote: 'Request a Quote',
@@ -349,12 +350,14 @@ export const copy: Record<LanguageCode, {
     insightsKicker: 'Buyer guides', insightsTitleSuffix: 'for procurement teams.',
     insightsLead: 'Practical guides on grades, mesh, compliance, and sourcing decisions — written for procurement and QA teams.',
     insightsAudienceLabel: 'Audience', insightsPublishedLabel: 'Published',
-    insightsSourceLabel: 'Source', insightsSourceValue: 'RM Psyllium · Unjha, Gujarat', allBuyerGuides: 'All buyer guides →',
+    insightsSourceLabel: 'Source', insightsSourceValue: 'RM Psyllium · Siddhpur, Gujarat', allBuyerGuides: 'All buyer guides →',
     blogTopicsLabel: 'Topics:', blogAllLabel: 'All', blogTopicLabel: 'Topic',
     blogAuthorLabel: 'Author', blogCategoryLabel: 'Category',
-    sourceLocation: 'Unjha, Gujarat, India', relatedArticles: 'Related articles',
+    sourceLocation: 'Siddhpur, Gujarat, India', relatedArticles: 'Related articles',
     industryBuyerApp: 'Buyer application', industryRequestQuote: 'Request application quote',
     industryMatchGrade: 'Match your application to the right grade, mesh, packing, and documents.',
+    industryUseCases: 'Common applications', industryKeySpecs: 'Key specifications',
+    industryDocuments: 'Documents you\'ll receive', industryBuyerNote: 'Ready to source?',
   },
   es: {
     navProducts: 'Productos',
@@ -384,7 +387,7 @@ export const copy: Record<LanguageCode, {
     faqLead: 'Preguntas comunes de equipos de compras y QA sobre grados, certificaciones, exportación y pedidos.',
     contactTitle: 'Hable con el equipo de exportación.',
     contactLead: 'Comparta su producto, volumen, destino y grado. Respondemos en 24 horas.',
-    productsListTitle: 'Productos de psyllium de Unjha, Gujarat.',
+    productsListTitle: 'Productos de psyllium de Siddhpur, Gujarat.',
     productsListLead: '7 líneas de productos. Grados 85%–99%. Embalaje de exportación. COA y documentos por pedido.',
     insightsListTitle: 'Guías para compradores e información del mercado.',
     blogTitle: 'Recursos de aprovisionamiento, cumplimiento y aplicación de psyllium.',
@@ -396,7 +399,7 @@ export const copy: Record<LanguageCode, {
     heroTrustCoa: 'COA por envío',
     heroLeadTimeLabel: 'Tiempo de entrega',
     heroSampleLabel: 'Muestra',
-    heroLeadTimeValue: '14–21 días desde la confirmación',
+    heroLeadTimeValue: '7 días desde la confirmación',
     heroSampleValue: '100–500 g con COA, enviado en 5 días',
     heroCtaWhatsApp: 'WhatsApp',
     // Stats bar
@@ -505,7 +508,7 @@ export const copy: Record<LanguageCode, {
     faqPageLeadTimeLabel: 'Tiempo de entrega',
     faqPagePurityLabel: 'Grados de pureza',
     // Footer
-    footerBrandDesc: 'Fabricante y exportador de cáscara de psyllium. 2.000 MT de capacidad anual. FOB Mundra o CIF a su puerto.',
+    footerBrandDesc: 'RM Psyllium LLP es un fabricante directo y exportador a granel de cáscara, polvo y semillas de psyllium premium. Operando desde Siddhpur, Gujarat, nuestra instalación cuenta con una capacidad anual de 2.000 MT, suministrando grados farmacéutico (USP/EP), alimentario y forrajero a nivel global. MOQ: 1 KG con COA certificado por laboratorio NABL por envío.',
     footerApplications: 'Aplicaciones',
     footerResources: 'Recursos',
     footerRequestQuote: 'Solicitar cotización',
@@ -577,12 +580,14 @@ export const copy: Record<LanguageCode, {
     insightsKicker: 'Guías para compradores', insightsTitleSuffix: 'para equipos de compras.',
     insightsLead: 'Guías prácticas sobre grados, malla, cumplimiento y decisiones de abastecimiento — para equipos de compras y QA.',
     insightsAudienceLabel: 'Audiencia', insightsPublishedLabel: 'Publicado',
-    insightsSourceLabel: 'Fuente', insightsSourceValue: 'RM Psyllium · Unjha, Gujarat', allBuyerGuides: 'Todas las guías →',
+    insightsSourceLabel: 'Fuente', insightsSourceValue: 'RM Psyllium · Siddhpur, Gujarat', allBuyerGuides: 'Todas las guías →',
     blogTopicsLabel: 'Temas:', blogAllLabel: 'Todos', blogTopicLabel: 'Tema',
     blogAuthorLabel: 'Autor', blogCategoryLabel: 'Categoría',
-    sourceLocation: 'Unjha, Gujarat, India', relatedArticles: 'Artículos relacionados',
+    sourceLocation: 'Siddhpur, Gujarat, India', relatedArticles: 'Artículos relacionados',
     industryBuyerApp: 'Aplicación del comprador', industryRequestQuote: 'Solicitar cotización de aplicación',
     industryMatchGrade: 'Encuentre el grado, malla, embalaje y documentos adecuados para su aplicación.',
+    industryUseCases: 'Aplicaciones comunes', industryKeySpecs: 'Especificaciones clave',
+    industryDocuments: 'Documentos que recibirá', industryBuyerNote: '¿Listo para comprar?',
   },
   fr: {
     navProducts: 'Produits',
@@ -612,7 +617,7 @@ export const copy: Record<LanguageCode, {
     faqLead: "Questions courantes des équipes achats et QA sur les grades, certifications, exportation et commandes.",
     contactTitle: "Parlez au service export.",
     contactLead: 'Partagez votre produit, volume, destination et grade. Nous répondons dans les 24 heures.',
-    productsListTitle: 'Produits psyllium de Unjha, Gujarat.',
+    productsListTitle: 'Produits psyllium de Siddhpur, Gujarat.',
     productsListLead: '7 gammes de produits. Grades 85%–99%. Emballage export. COA et documents par commande.',
     insightsListTitle: 'Guides acheteurs et informations marché.',
     blogTitle: "Ressources d'approvisionnement, conformité et application du psyllium.",
@@ -624,7 +629,7 @@ export const copy: Record<LanguageCode, {
     heroTrustCoa: 'COA par expédition',
     heroLeadTimeLabel: 'Délai de livraison',
     heroSampleLabel: 'Échantillon',
-    heroLeadTimeValue: '14–21 jours à partir de la confirmation',
+    heroLeadTimeValue: '7 jours à partir de la confirmation',
     heroSampleValue: '100–500 g avec COA, expédié en 5 jours',
     heroCtaWhatsApp: 'WhatsApp',
     // Stats bar
@@ -733,7 +738,7 @@ export const copy: Record<LanguageCode, {
     faqPageLeadTimeLabel: 'Délai de livraison',
     faqPagePurityLabel: 'Grades de pureté',
     // Footer
-    footerBrandDesc: 'Fabricant et exportateur de cosse de psyllium. 2 000 MT de capacité annuelle. FOB Mundra ou CIF vers votre port.',
+    footerBrandDesc: 'RM Psyllium LLP est un fabricant direct et exportateur en vrac de cosse, poudre et graines de psyllium de qualité supérieure. Depuis Siddhpur, Gujarat, notre usine dispose d\'une capacité annuelle de 2 000 MT pour fournir des grades pharmaceutique (USP/EP), alimentaire et fourrager dans le monde entier. MOQ : 1 KG avec COA certifié par laboratoire NABL pour chaque expédition.',
     footerApplications: 'Applications',
     footerResources: 'Ressources',
     footerRequestQuote: 'Demander un devis',
@@ -805,12 +810,14 @@ export const copy: Record<LanguageCode, {
     insightsKicker: 'Guides d\'achat', insightsTitleSuffix: 'pour les équipes d\'approvisionnement.',
     insightsLead: 'Guides pratiques sur les grades, mailles, conformité et décisions d\'approvisionnement — pour les équipes achats et QA.',
     insightsAudienceLabel: 'Audience', insightsPublishedLabel: 'Publié',
-    insightsSourceLabel: 'Source', insightsSourceValue: 'RM Psyllium · Unjha, Gujarat', allBuyerGuides: 'Tous les guides →',
+    insightsSourceLabel: 'Source', insightsSourceValue: 'RM Psyllium · Siddhpur, Gujarat', allBuyerGuides: 'Tous les guides →',
     blogTopicsLabel: 'Sujets :', blogAllLabel: 'Tous', blogTopicLabel: 'Sujet',
     blogAuthorLabel: 'Auteur', blogCategoryLabel: 'Catégorie',
-    sourceLocation: 'Unjha, Gujarat, Inde', relatedArticles: 'Articles connexes',
+    sourceLocation: 'Siddhpur, Gujarat, Inde', relatedArticles: 'Articles connexes',
     industryBuyerApp: 'Application acheteur', industryRequestQuote: 'Demande de devis application',
     industryMatchGrade: 'Trouvez le grade, la maille, l\'emballage et les documents adaptés à votre application.',
+    industryUseCases: 'Applications courantes', industryKeySpecs: 'Spécifications clés',
+    industryDocuments: 'Documents fournis', industryBuyerNote: 'Prêt à sourcer?',
   },
   de: {
     navProducts: 'Produkte',
@@ -840,7 +847,7 @@ export const copy: Record<LanguageCode, {
     faqLead: 'Häufige Fragen von Einkaufs- und QA-Teams zu Graden, Zertifizierungen, Export und Bestellungen.',
     contactTitle: 'Sprechen Sie mit dem Exportteam.',
     contactLead: 'Teilen Sie Ihr Produkt, Volumen, Ziel und Grad mit. Wir antworten innerhalb von 24 Stunden.',
-    productsListTitle: 'Psyllium-Produkte aus Unjha, Gujarat.',
+    productsListTitle: 'Psyllium-Produkte aus Siddhpur, Gujarat.',
     productsListLead: '7 Produktlinien. Grade 85%–99%. Exportverpackung. COA und Dokumente pro Bestellung.',
     insightsListTitle: 'Käufer-Guides und Markteinblicke.',
     blogTitle: 'Ressourcen zu Psyllium-Beschaffung, Compliance und Anwendung.',
@@ -852,7 +859,7 @@ export const copy: Record<LanguageCode, {
     heroTrustCoa: 'COA pro Sendung',
     heroLeadTimeLabel: 'Lieferzeit',
     heroSampleLabel: 'Muster',
-    heroLeadTimeValue: '14–21 Tage ab Auftragsbestätigung',
+    heroLeadTimeValue: '7 Tage ab Auftragsbestätigung',
     heroSampleValue: '100–500 g mit COA, Versand in 5 Tagen',
     heroCtaWhatsApp: 'WhatsApp',
     // Stats bar
@@ -961,7 +968,7 @@ export const copy: Record<LanguageCode, {
     faqPageLeadTimeLabel: 'Lieferzeit',
     faqPagePurityLabel: 'Reinheitsgrade',
     // Footer
-    footerBrandDesc: 'Hersteller und Exporteur von Psylliumschalen. 2.000 MT Jahreskapazität. FOB Mundra oder CIF zu Ihrem Hafen.',
+    footerBrandDesc: 'RM Psyllium LLP ist ein Direkt-Hersteller und Bulk-Exporteur von Premium-Psylliumschalen, -pulver und -samen. Mit Sitz in Siddhpur, Gujarat, verfügt unsere Anlage über eine Jahreskapazität von 2.000 MT und liefert weltweit Pharma- (USP/EP), Lebensmittel- und Futtermittelqualitäten. Mindestbestellmenge (MOQ): 1 KG mit NABL-akkreditiertem COA pro Lieferung.',
     footerApplications: 'Anwendungen',
     footerResources: 'Ressourcen',
     footerRequestQuote: 'Anfrage senden',
@@ -1033,12 +1040,14 @@ export const copy: Record<LanguageCode, {
     insightsKicker: 'Einkaufsführer', insightsTitleSuffix: 'für Beschaffungsteams.',
     insightsLead: 'Praktische Leitfäden zu Qualitäten, Mesh, Compliance und Beschaffungsentscheidungen — für Einkaufs- und QA-Teams.',
     insightsAudienceLabel: 'Zielgruppe', insightsPublishedLabel: 'Veröffentlicht',
-    insightsSourceLabel: 'Quelle', insightsSourceValue: 'RM Psyllium · Unjha, Gujarat', allBuyerGuides: 'Alle Leitfäden →',
+    insightsSourceLabel: 'Quelle', insightsSourceValue: 'RM Psyllium · Siddhpur, Gujarat', allBuyerGuides: 'Alle Leitfäden →',
     blogTopicsLabel: 'Themen:', blogAllLabel: 'Alle', blogTopicLabel: 'Thema',
     blogAuthorLabel: 'Autor', blogCategoryLabel: 'Kategorie',
-    sourceLocation: 'Unjha, Gujarat, Indien', relatedArticles: 'Verwandte Artikel',
+    sourceLocation: 'Siddhpur, Gujarat, Indien', relatedArticles: 'Verwandte Artikel',
     industryBuyerApp: 'Käuferanwendung', industryRequestQuote: 'Anwendungsangebot anfordern',
     industryMatchGrade: 'Passen Sie Ihre Anwendung dem richtigen Grade, Mesh, Verpackung und Dokumenten an.',
+    industryUseCases: 'Häufige Anwendungen', industryKeySpecs: 'Wichtige Spezifikationen',
+    industryDocuments: 'Dokumente, die Sie erhalten', industryBuyerNote: 'Bereit zur Beschaffung?',
   },
   nl: {
     navProducts: 'Producten', navRegions: 'Regio\'s', navIndustries: 'Industrieën',
@@ -1065,7 +1074,7 @@ export const copy: Record<LanguageCode, {
     heroTitle: 'Bulk psyllium voor farma-, supplement- en voedselproducenten.',
     heroBody: 'Wij sourcen, malen en verzenden psylliumvlozaad, poeder en zaad — afgestemd op uw zuiverheidsspecificatie, mesh en documentatievereiste. Wat wij offreren, wordt verzonden.',
     heroTrustCoa: 'COA per zending', heroLeadTimeLabel: 'Levertijd', heroSampleLabel: 'Monster',
-    heroLeadTimeValue: '14–21 dagen na bevestiging', heroSampleValue: '100–500 g met COA, verzonden in 5 dagen',
+    heroLeadTimeValue: '7 dagen na bevestiging', heroSampleValue: '100–500 g met COA, verzonden in 5 dagen',
     heroCtaWhatsApp: 'WhatsApp', statCapacityLabel: 'Jaarlijkse verwerkingscapaciteit',
     statHistoryLabel: 'jaar productiervaring', statLeadLabel: 'Bestelling tot verzending',
     statMoqLabel: 'Minimale bestelhoeveelheid', hpProductsTitle: 'Psylliumproducten voor groothandelkopers.',
@@ -1125,7 +1134,7 @@ export const copy: Record<LanguageCode, {
     faqPageMoqFact: 'MOQ', faqPageCapacityFact: 'Capaciteit', faqPageLeadFact: 'Levertijd',
     faqPagePortsFact: 'Havens', faqPageGradesFact: 'Kwaliteiten', faqPageSampleFact: 'Monster',
     faqPageMinOrderLabel: 'Minimale bestelling', faqPageLeadTimeLabel: 'Levertijd', faqPagePurityLabel: 'Zuiverheidsgraden',
-    footerBrandDesc: 'Fabrikant en exporteur van psylliumvlozaad. 2.000 MT jaarlijkse capaciteit. FOB Mundra of CIF naar uw haven.',
+    footerBrandDesc: 'RM Psyllium LLP is een rechtstreekse fabrikant en bulkexporteur van premium psylliumvliezen, -poeder en -zaden. Vanuit Siddhpur, Gujarat, heeft onze fabriek een jaarlijkse capaciteit van 2.000 MT voor de wereldwijde levering van farmaceutische (USP/EP), levensmiddelen- en diervoederkwaliteiten. MOQ: 1 KG met NABL-geaccrediteerd COA per zending.',
     footerApplications: 'Toepassingen', footerResources: 'Bronnen', footerRequestQuote: 'Offerte aanvragen', footerSampleRequest: 'Monsteraanvraag',
     sbTitle: 'Offerte aanvragen', sbReplyTime: 'Wij reageren binnen 24 uur (IST kantooruren)',
     sbNameLabel: 'Naam', sbEmailLabel: 'E-mail of telefoon', sbEmailPlaceholder: 'e-mail of WhatsApp-nummer',
@@ -1159,12 +1168,14 @@ export const copy: Record<LanguageCode, {
     insightsKicker: 'Inkoopgidsen', insightsTitleSuffix: 'voor inkoopteams.',
     insightsLead: 'Praktische gidsen over kwaliteiten, mesh, compliance en inkoopbeslissingen — voor inkoop- en QA-teams.',
     insightsAudienceLabel: 'Doelgroep', insightsPublishedLabel: 'Gepubliceerd',
-    insightsSourceLabel: 'Bron', insightsSourceValue: 'RM Psyllium · Unjha, Gujarat', allBuyerGuides: 'Alle gidsen →',
+    insightsSourceLabel: 'Bron', insightsSourceValue: 'RM Psyllium · Siddhpur, Gujarat', allBuyerGuides: 'Alle gidsen →',
     blogTopicsLabel: 'Onderwerpen:', blogAllLabel: 'Alle', blogTopicLabel: 'Onderwerp',
     blogAuthorLabel: 'Auteur', blogCategoryLabel: 'Categorie',
-    sourceLocation: 'Unjha, Gujarat, India', relatedArticles: 'Gerelateerde artikelen',
+    sourceLocation: 'Siddhpur, Gujarat, India', relatedArticles: 'Gerelateerde artikelen',
     industryBuyerApp: 'Koper toepassing', industryRequestQuote: 'Toepassingsofferte aanvragen',
     industryMatchGrade: 'Koppel uw toepassing aan de juiste kwaliteit, mesh, verpakking en documenten.',
+    industryUseCases: 'Veelvoorkomende toepassingen', industryKeySpecs: 'Belangrijke specificaties',
+    industryDocuments: 'Documenten die u ontvangt', industryBuyerNote: 'Klaar om te sourcen?',
   },
   it: {
     navProducts: 'Prodotti', navRegions: 'Regioni', navIndustries: 'Settori',
@@ -1191,7 +1202,7 @@ export const copy: Record<LanguageCode, {
     heroTitle: 'Psyllium bulk per produttori farmaceutici, integratori e alimentari.',
     heroBody: 'Reperiamo, maciniamo e spediamo buccia di psyllium, polvere e seme — corrispondente alle tue specifiche di purezza, mesh e documentazione. Quello che quotizziamo è quello che spediamo.',
     heroTrustCoa: 'COA per spedizione', heroLeadTimeLabel: 'Tempi di consegna', heroSampleLabel: 'Campione',
-    heroLeadTimeValue: '14–21 giorni dalla conferma', heroSampleValue: '100–500 g con COA, spedito in 5 giorni',
+    heroLeadTimeValue: '7 giorni dalla conferma', heroSampleValue: '100–500 g con COA, spedito in 5 giorni',
     heroCtaWhatsApp: 'WhatsApp', statCapacityLabel: 'Capacità di elaborazione annuale',
     statHistoryLabel: 'anni di esperienza produttiva', statLeadLabel: 'Ordine alla spedizione', statMoqLabel: 'Quantità minima d\'ordine',
     hpProductsTitle: 'Prodotti di psyllium per acquirenti bulk.',
@@ -1251,7 +1262,7 @@ export const copy: Record<LanguageCode, {
     faqPageMoqFact: 'MOQ', faqPageCapacityFact: 'Capacità', faqPageLeadFact: 'Consegna',
     faqPagePortsFact: 'Porti', faqPageGradesFact: 'Gradi', faqPageSampleFact: 'Campione',
     faqPageMinOrderLabel: 'Ordine minimo', faqPageLeadTimeLabel: 'Tempi di consegna', faqPagePurityLabel: 'Gradi di purezza',
-    footerBrandDesc: 'Produttore ed esportatore di buccia di psyllium. Capacità annuale 2.000 MT. FOB Mundra o CIF al tuo porto.',
+    footerBrandDesc: 'RM Psyllium LLP è un produttore diretto ed esportatore all\'ingrosso di buccia, polvere e semi di psyllium di qualità premium. Con sede a Siddhpur, Gujarat, il nostro stabilimento ha una capacità annua di 2.000 MT e fornisce gradi farmaceutico (USP/EP), alimentare e zootecnico in tutto il mondo. MOQ: 1 KG con COA certificato da laboratorio NABL per ogni spedizione.',
     footerApplications: 'Applicazioni', footerResources: 'Risorse', footerRequestQuote: 'Richiedi un Preventivo', footerSampleRequest: 'Richiesta Campione',
     sbTitle: 'Richiedi un preventivo', sbReplyTime: 'Rispondiamo entro 24 ore (orario lavorativo IST)',
     sbNameLabel: 'Nome', sbEmailLabel: 'Email o Telefono', sbEmailPlaceholder: 'email o numero WhatsApp',
@@ -1285,12 +1296,14 @@ export const copy: Record<LanguageCode, {
     insightsKicker: 'Guide per acquirenti', insightsTitleSuffix: 'per i team di approvvigionamento.',
     insightsLead: 'Guide pratiche su gradi, mesh, conformità e decisioni di approvvigionamento — per i team acquisti e QA.',
     insightsAudienceLabel: 'Destinatari', insightsPublishedLabel: 'Pubblicato',
-    insightsSourceLabel: 'Fonte', insightsSourceValue: 'RM Psyllium · Unjha, Gujarat', allBuyerGuides: 'Tutte le guide →',
+    insightsSourceLabel: 'Fonte', insightsSourceValue: 'RM Psyllium · Siddhpur, Gujarat', allBuyerGuides: 'Tutte le guide →',
     blogTopicsLabel: 'Argomenti:', blogAllLabel: 'Tutti', blogTopicLabel: 'Argomento',
     blogAuthorLabel: 'Autore', blogCategoryLabel: 'Categoria',
-    sourceLocation: 'Unjha, Gujarat, India', relatedArticles: 'Articoli correlati',
+    sourceLocation: 'Siddhpur, Gujarat, India', relatedArticles: 'Articoli correlati',
     industryBuyerApp: 'Applicazione acquirente', industryRequestQuote: 'Richiedi preventivo applicazione',
     industryMatchGrade: 'Abbina la tua applicazione al grado, mesh, imballaggio e documenti giusti.',
+    industryUseCases: 'Applicazioni comuni', industryKeySpecs: 'Specifiche chiave',
+    industryDocuments: 'Documenti inclusi', industryBuyerNote: 'Pronto ad approvvigionarsi?',
   },
   pt: {
     navProducts: 'Produtos', navRegions: 'Regiões', navIndustries: 'Indústrias',
@@ -1317,7 +1330,7 @@ export const copy: Record<LanguageCode, {
     heroTitle: 'Psyllium bulk para fabricantes farmacêuticos, de suplementos e alimentares.',
     heroBody: 'Obtemos, moemos e enviamos casca de psyllium, pó e semente — correspondente às suas especificações de pureza, mesh e documentação. O que cotamos é o que enviamos.',
     heroTrustCoa: 'COA por remessa', heroLeadTimeLabel: 'Prazo de entrega', heroSampleLabel: 'Amostra',
-    heroLeadTimeValue: '14–21 dias após confirmação', heroSampleValue: '100–500 g com COA, enviado em 5 dias',
+    heroLeadTimeValue: '7 dias após confirmação', heroSampleValue: '100–500 g com COA, enviado em 5 dias',
     heroCtaWhatsApp: 'WhatsApp', statCapacityLabel: 'Capacidade de processamento anual',
     statHistoryLabel: 'anos de experiência em fabricação', statLeadLabel: 'Pedido ao envio', statMoqLabel: 'Quantidade mínima do pedido',
     hpProductsTitle: 'Produtos de psyllium para compradores bulk.',
@@ -1377,7 +1390,7 @@ export const copy: Record<LanguageCode, {
     faqPageMoqFact: 'MOQ', faqPageCapacityFact: 'Capacidade', faqPageLeadFact: 'Prazo',
     faqPagePortsFact: 'Portos', faqPageGradesFact: 'Graus', faqPageSampleFact: 'Amostra',
     faqPageMinOrderLabel: 'Pedido mínimo', faqPageLeadTimeLabel: 'Prazo de entrega', faqPagePurityLabel: 'Graus de pureza',
-    footerBrandDesc: 'Fabricante e exportador de casca de psyllium. 2.000 MT de capacidade anual. FOB Mundra ou CIF ao seu porto.',
+    footerBrandDesc: 'RM Psyllium LLP é um fabricante direto e exportador a granel de casca, pó e sementes de psyllium premium. Operando a partir de Siddhpur, Gujarat, nossa instalação possui capacidade anual de 2.000 MT, fornecendo graus farmacêutico (USP/EP), alimentício e forrageiro globalmente. MOQ: 1 KG com COA certificado pelo laboratório NABL por remessa.',
     footerApplications: 'Aplicações', footerResources: 'Recursos', footerRequestQuote: 'Solicitar Cotação', footerSampleRequest: 'Solicitar Amostra',
     sbTitle: 'Solicitar uma cotação', sbReplyTime: 'Respondemos em 24 horas (horário comercial IST)',
     sbNameLabel: 'Nome', sbEmailLabel: 'Email ou Telefone', sbEmailPlaceholder: 'email ou número WhatsApp',
@@ -1411,12 +1424,14 @@ export const copy: Record<LanguageCode, {
     insightsKicker: 'Guias para compradores', insightsTitleSuffix: 'para equipes de compras.',
     insightsLead: 'Guias práticos sobre graus, malha, conformidade e decisões de abastecimento — para equipes de compras e QA.',
     insightsAudienceLabel: 'Público', insightsPublishedLabel: 'Publicado',
-    insightsSourceLabel: 'Fonte', insightsSourceValue: 'RM Psyllium · Unjha, Gujarat', allBuyerGuides: 'Todos os guias →',
+    insightsSourceLabel: 'Fonte', insightsSourceValue: 'RM Psyllium · Siddhpur, Gujarat', allBuyerGuides: 'Todos os guias →',
     blogTopicsLabel: 'Tópicos:', blogAllLabel: 'Todos', blogTopicLabel: 'Tópico',
     blogAuthorLabel: 'Autor', blogCategoryLabel: 'Categoria',
-    sourceLocation: 'Unjha, Gujarat, Índia', relatedArticles: 'Artigos relacionados',
+    sourceLocation: 'Siddhpur, Gujarat, Índia', relatedArticles: 'Artigos relacionados',
     industryBuyerApp: 'Aplicação do comprador', industryRequestQuote: 'Solicitar cotação de aplicação',
     industryMatchGrade: 'Combine sua aplicação com o grau, malha, embalagem e documentos certos.',
+    industryUseCases: 'Aplicações comuns', industryKeySpecs: 'Especificações principais',
+    industryDocuments: 'Documentos incluídos', industryBuyerNote: 'Pronto para comprar?',
   },
   ru: {
     navProducts: 'Продукты', navRegions: 'Регионы', navIndustries: 'Отрасли',
@@ -1443,7 +1458,7 @@ export const copy: Record<LanguageCode, {
     heroTitle: 'Оптовый псиллиум для фармацевтических, суплементных и пищевых производителей.',
     heroBody: 'Мы закупаем, перерабатываем и отгружаем шелуху псиллиума, порошок и семена — в соответствии с вашими требованиями к чистоте, размолу и документации. Что мы предлагаем — то и отгружаем.',
     heroTrustCoa: 'COA на каждую партию', heroLeadTimeLabel: 'Срок поставки', heroSampleLabel: 'Образец',
-    heroLeadTimeValue: '14–21 день после подтверждения', heroSampleValue: '100–500 г с COA, отправка в течение 5 дней',
+    heroLeadTimeValue: '7 дней после подтверждения', heroSampleValue: '100–500 г с COA, отправка в течение 5 дней',
     heroCtaWhatsApp: 'WhatsApp', statCapacityLabel: 'Годовая производственная мощность',
     statHistoryLabel: 'лет производственного опыта', statLeadLabel: 'От заказа до отгрузки', statMoqLabel: 'Минимальный объём заказа',
     hpProductsTitle: 'Продукты псиллиума для оптовых покупателей.',
@@ -1503,7 +1518,7 @@ export const copy: Record<LanguageCode, {
     faqPageMoqFact: 'MOQ', faqPageCapacityFact: 'Мощность', faqPageLeadFact: 'Срок поставки',
     faqPagePortsFact: 'Порты', faqPageGradesFact: 'Сорта', faqPageSampleFact: 'Образец',
     faqPageMinOrderLabel: 'Минимальный заказ', faqPageLeadTimeLabel: 'Срок поставки', faqPagePurityLabel: 'Степени чистоты',
-    footerBrandDesc: 'Производитель и экспортёр шелухи псиллиума. Годовая мощность 2 000 МТ. FOB Мундра или CIF до вашего порта.',
+    footerBrandDesc: 'RM Psyllium LLP — прямой производитель и оптовый экспортёр премиальной шелухи, порошка и семян псиллиума. Наше предприятие в Сиддхпуре (Гуджарат) имеет годовую мощность 2 000 тонн, поставляя продукцию фармацевтического (USP/EP), пищевого и кормового назначения по всему миру. Минимальный заказ (MOQ): 1 кг с сертификатом анализа NABL для каждой партии.',
     footerApplications: 'Применение', footerResources: 'Ресурсы', footerRequestQuote: 'Запросить цену', footerSampleRequest: 'Запрос образца',
     sbTitle: 'Запросить цену', sbReplyTime: 'Отвечаем в течение 24 часов (рабочие часы IST)',
     sbNameLabel: 'Имя', sbEmailLabel: 'Email или телефон', sbEmailPlaceholder: 'email или номер WhatsApp',
@@ -1537,12 +1552,14 @@ export const copy: Record<LanguageCode, {
     insightsKicker: 'Руководства для покупателей', insightsTitleSuffix: 'для отделов закупок.',
     insightsLead: 'Практические руководства по сортам, сетке, соответствию и решениям о закупках — для специалистов по закупкам и QA.',
     insightsAudienceLabel: 'Аудитория', insightsPublishedLabel: 'Опубликовано',
-    insightsSourceLabel: 'Источник', insightsSourceValue: 'RM Psyllium · Унджа, Гуджарат', allBuyerGuides: 'Все руководства →',
+    insightsSourceLabel: 'Источник', insightsSourceValue: 'RM Psyllium · Сидхпур, Гуджарат', allBuyerGuides: 'Все руководства →',
     blogTopicsLabel: 'Темы:', blogAllLabel: 'Все', blogTopicLabel: 'Тема',
     blogAuthorLabel: 'Автор', blogCategoryLabel: 'Категория',
-    sourceLocation: 'Унджа, Гуджарат, Индия', relatedArticles: 'Похожие статьи',
+    sourceLocation: 'Сидхпур, Гуджарат, Индия', relatedArticles: 'Похожие статьи',
     industryBuyerApp: 'Применение покупателем', industryRequestQuote: 'Запросить коммерческое предложение',
     industryMatchGrade: 'Подберите подходящий сорт, сетку, упаковку и документы для вашего применения.',
+    industryUseCases: 'Типичные применения', industryKeySpecs: 'Ключевые характеристики',
+    industryDocuments: 'Документы, которые вы получите', industryBuyerNote: 'Готовы к закупке?',
   },
   ar: {
     navProducts: 'المنتجات', navRegions: 'المناطق', navIndustries: 'الصناعات',
@@ -1569,7 +1586,7 @@ export const copy: Record<LanguageCode, {
     heroTitle: 'سيليوم بالجملة لمصنعي الأدوية والمكملات الغذائية والأغذية.',
     heroBody: 'نحصل على قشور السيليوم والمسحوق والبذور ونطحنها ونشحنها — بما يتوافق مع مواصفات النقاء والمنخل والتوثيق. ما نعرضه هو ما يُشحن.',
     heroTrustCoa: 'COA لكل شحنة', heroLeadTimeLabel: 'مدة التسليم', heroSampleLabel: 'عينة',
-    heroLeadTimeValue: '14–21 يوماً من التأكيد', heroSampleValue: '100–500 غ مع COA، يُشحن في 5 أيام',
+    heroLeadTimeValue: '7 أيام من التأكيد', heroSampleValue: '100–500 غ مع COA، يُشحن في 5 أيام',
     heroCtaWhatsApp: 'واتساب', statCapacityLabel: 'الطاقة التصنيعية السنوية',
     statHistoryLabel: 'عامًا من الخبرة التصنيعية', statLeadLabel: 'من الطلب إلى الشحن', statMoqLabel: 'الحد الأدنى لكمية الطلب',
     hpProductsTitle: 'منتجات السيليوم للمشترين بالجملة.',
@@ -1629,7 +1646,7 @@ export const copy: Record<LanguageCode, {
     faqPageMoqFact: 'الحد الأدنى', faqPageCapacityFact: 'الطاقة', faqPageLeadFact: 'التسليم',
     faqPagePortsFact: 'الموانئ', faqPageGradesFact: 'الدرجات', faqPageSampleFact: 'العينة',
     faqPageMinOrderLabel: 'الحد الأدنى للطلب', faqPageLeadTimeLabel: 'مدة التسليم', faqPagePurityLabel: 'درجات النقاء',
-    footerBrandDesc: 'مصنّع ومصدّر قشور السيليوم. طاقة سنوية 2000 طن متري. FOB موندرا أو CIF إلى ميناءك.',
+    footerBrandDesc: 'شركة RM Psyllium LLP هي مصنّع مباشر ومصدّر بالجملة لقشور ومسحوق وبذور السيليوم الممتازة. تعمل من سيدهبور، غوجارات، وتبلغ الطاقة السنوية لمنشأتنا 2000 طن متري لتزويد درجات الأدوية (USP/EP) والأغذية والأعلاف عالميًا. الحد الأدنى للطلب: 1 كجم مع شهادة تحليل معتمدة من مختبر NABL لكل شحنة.',
     footerApplications: 'التطبيقات', footerResources: 'الموارد', footerRequestQuote: 'طلب عرض سعر', footerSampleRequest: 'طلب عينة',
     sbTitle: 'طلب عرض سعر', sbReplyTime: 'نرد خلال 24 ساعة (ساعات العمل IST)',
     sbNameLabel: 'الاسم', sbEmailLabel: 'البريد الإلكتروني أو الهاتف', sbEmailPlaceholder: 'البريد الإلكتروني أو رقم واتساب',
@@ -1663,12 +1680,14 @@ export const copy: Record<LanguageCode, {
     insightsKicker: 'أدلة الشراء', insightsTitleSuffix: 'لفرق المشتريات.',
     insightsLead: 'أدلة عملية حول الدرجات والمنخل والامتثال وقرارات التوريد — لفرق المشتريات وضمان الجودة.',
     insightsAudienceLabel: 'الجمهور المستهدف', insightsPublishedLabel: 'تاريخ النشر',
-    insightsSourceLabel: 'المصدر', insightsSourceValue: 'RM Psyllium · أونجها، غوجارات', allBuyerGuides: 'جميع الأدلة →',
+    insightsSourceLabel: 'المصدر', insightsSourceValue: 'RM Psyllium · سيدهبور، غوجارات', allBuyerGuides: 'جميع الأدلة →',
     blogTopicsLabel: 'المواضيع:', blogAllLabel: 'الكل', blogTopicLabel: 'الموضوع',
     blogAuthorLabel: 'المؤلف', blogCategoryLabel: 'الفئة',
-    sourceLocation: 'أونجها، غوجارات، الهند', relatedArticles: 'مقالات ذات صلة',
+    sourceLocation: 'سيدهبور، غوجارات، الهند', relatedArticles: 'مقالات ذات صلة',
     industryBuyerApp: 'تطبيق المشتري', industryRequestQuote: 'طلب عرض سعر التطبيق',
     industryMatchGrade: 'طابق تطبيقك مع الدرجة والمنخل والتغليف والوثائق المناسبة.',
+    industryUseCases: 'التطبيقات الشائعة', industryKeySpecs: 'المواصفات الرئيسية',
+    industryDocuments: 'الوثائق التي ستتلقاها', industryBuyerNote: 'هل أنت مستعد للتوريد؟',
   },
   zh: {
     navProducts: '产品', navRegions: '地区', navIndustries: '行业',
@@ -1695,7 +1714,7 @@ export const copy: Record<LanguageCode, {
     heroTitle: '为制药、保健品及食品制造商提供批量车叶草。',
     heroBody: '我们采购、研磨并发运车叶草皮、粉末和种子——匹配您的纯度规格、目数和文件要求。我们报价即所发。',
     heroTrustCoa: '每批COA', heroLeadTimeLabel: '交货期', heroSampleLabel: '样品',
-    heroLeadTimeValue: '确认后14–21天', heroSampleValue: '100–500克含COA，5天内发出',
+    heroLeadTimeValue: '确认后7天', heroSampleValue: '100–500克含COA，5天内发出',
     heroCtaWhatsApp: 'WhatsApp', statCapacityLabel: '年加工产能',
     statHistoryLabel: '年生产制造经验', statLeadLabel: '下单到发货', statMoqLabel: '最低订量',
     hpProductsTitle: '面向批量买家的车叶草产品。',
@@ -1712,7 +1731,7 @@ export const copy: Record<LanguageCode, {
     hpDiff5Title: '任意数量均可订购',
     hpDiff5Body: '无最低起订量。我们提供1公斤实验室检测样品、5公斤试用批次以及20吨整柜订单。按需订购，随时扩量。',
     hpProcessTitle: '从种子到出口就绪包装。', hpProcessStepLabel: '5个步骤 · 一批次',
-    hpStep1Title: '采购', hpStep1Body: '车叶草种子来自昂杰哈和北古吉拉特的合同农场——世界主要车叶草种植区域。每批次保留来源记录。',
+    hpStep1Title: '采购', hpStep1Body: '车叶草种子来自西德普尔和北古吉拉特的合同农场——世界主要车叶草种植区域。每批次保留来源记录。',
     hpStep2Title: '清洁', hpStep2Body: '研磨前对种子进行清洁和分级。各阶段进行去石、筛分和磁力检测，以减少异物。',
     hpStep3Title: '研磨', hpStep3Body: '受控研磨按买家指定的纯度和目数将皮与种子分离。无化学漂白或酸处理。',
     hpStep4Title: '检测', hpStep4Body: '包装前进行实验室检测——纯度、膨胀体积、水分、灰分、微生物学和重金属。结果记录在发货前共享的COA中。',
@@ -1755,7 +1774,7 @@ export const copy: Record<LanguageCode, {
     faqPageMoqFact: '最低订量', faqPageCapacityFact: '产能', faqPageLeadFact: '交货期',
     faqPagePortsFact: '港口', faqPageGradesFact: '规格', faqPageSampleFact: '样品',
     faqPageMinOrderLabel: '最低订量', faqPageLeadTimeLabel: '交货期', faqPagePurityLabel: '纯度规格',
-    footerBrandDesc: '车叶草皮制造商和出口商，年产能2,000吨，FOB蒙德拉或CIF到您的港口。',
+    footerBrandDesc: 'RM Psyllium LLP 是优质洋车前子壳、粉及种子的源头制造商 and 散装出口商。总部位于印度古吉拉特邦西德普尔（Siddhpur），我们拥有年产2,000吨的加工厂，全球供应医药级（USP/EP）、食品级和饲料级产品。最低起订量（MOQ）：1 KG，每批次均附带NABL认可的实验室检测COA。',
     footerApplications: '应用领域', footerResources: '资源', footerRequestQuote: '询价', footerSampleRequest: '样品申请',
     sbTitle: '询价', sbReplyTime: '我们在24小时内回复（IST工作时间）',
     sbNameLabel: '姓名', sbEmailLabel: '电子邮件或电话', sbEmailPlaceholder: '电子邮件或WhatsApp号码',
@@ -1789,12 +1808,14 @@ export const copy: Record<LanguageCode, {
     insightsKicker: '买家指南', insightsTitleSuffix: '面向采购团队。',
     insightsLead: '关于规格、目数、合规和采购决策的实用指南——专为采购和质量团队编写。',
     insightsAudienceLabel: '受众', insightsPublishedLabel: '发布',
-    insightsSourceLabel: '来源', insightsSourceValue: 'RM Psyllium · 昂杰哈，古吉拉特', allBuyerGuides: '所有买家指南 →',
+    insightsSourceLabel: '来源', insightsSourceValue: 'RM Psyllium · 西德普尔，古吉拉特', allBuyerGuides: '所有买家指南 →',
     blogTopicsLabel: '主题：', blogAllLabel: '全部', blogTopicLabel: '主题',
     blogAuthorLabel: '作者', blogCategoryLabel: '分类',
-    sourceLocation: '昂杰哈，古吉拉特，印度', relatedArticles: '相关文章',
+    sourceLocation: '西德普尔，古吉拉特，印度', relatedArticles: '相关文章',
     industryBuyerApp: '买家应用', industryRequestQuote: '申请应用报价',
     industryMatchGrade: '将您的应用与正确的规格、目数、包装和文件匹配。',
+    industryUseCases: '常见应用', industryKeySpecs: '关键规格',
+    industryDocuments: '您将收到的文件', industryBuyerNote: '准备好采购了吗？',
   },
 };
 
@@ -2330,7 +2351,7 @@ export const products = [
         { q: 'What is sortex grade psyllium seed?', a: 'Optically sorted seed at ≥99% purity. Optical sorters remove discolored seeds and foreign particles to achieve foreign matter ≤0.5% — significantly lower than the ≤2% limit in standard machine-clean grade.' },
         { q: 'Why pay a premium for sortex psyllium seeds?', a: 'Higher seed purity produces more consistent husk separation yield. For millers targeting 98% or 99% purity husk, sortex seed reduces reprocessing and improves batch-to-batch consistency. The 8–12% price premium is typically recovered in better husk yield.' },
         { q: 'What germination percentage does sortex seed have?', a: '≥88% germination — higher than the ≥85% minimum for standard grade. Relevant for buyers purchasing seed for replanting or seed-quality lots.' },
-        { q: 'What is the minimum order for sortex psyllium seeds?', a: 'No minimum order. Available in 25 kg, 50 kg, and 1,000 kg bags — from a single bag to a full container. FOB Mundra. Lead time 14–21 days.' }
+        { q: 'What is the minimum order for sortex psyllium seeds?', a: 'No minimum order. Available in 25 kg, 50 kg, and 1,000 kg bags — from a single bag to a full container. FOB Mundra. Lead time 7 days.' }
       ]
     }
   },
@@ -2361,7 +2382,7 @@ export const products = [
     ],
     gradeCopy: {
       '85%': {
-        lead: 'Psyllium husk 85% purity from Unjha, Gujarat. Swell volume minimum 30 ml/g. Below the NF and USP thresholds for supplement and laxative monographs. Used in animal feed, industrial fibre blending, and cost-sensitive food applications where pharmacopoeia compliance is not required.',
+        lead: 'Psyllium husk 85% purity from Siddhpur, Gujarat. Swell volume minimum 30 ml/g. Below the NF and USP thresholds for supplement and laxative monographs. Used in animal feed, industrial fibre blending, and cost-sensitive food applications where pharmacopoeia compliance is not required.',
         bestFor: 'Animal feed, industrial fibre, cost-sensitive food',
         applicationNotes: [
           { app: 'Pharma', note: 'Not suitable. Below NF, USP, and EP pharmacopoeia thresholds. For any supplement or laxative product citing a pharmacopoeia standard, use 95% or higher.' },
@@ -2406,7 +2427,7 @@ export const products = [
         { q: 'Is 85% psyllium husk food-grade?', a: '85% grade is food-grade. It does not meet NF, USP, or EP pharmacopoeia thresholds. For supplement or laxative products that cite a pharmacopoeia standard, use 95% grade minimum.' },
         { q: 'What is the swell volume of 85% psyllium husk?', a: 'Minimum 30 ml/g. This reflects the lower mucilage content at 85% purity and is the lowest swell volume in our husk range.' },
         { q: 'Can 85% psyllium husk be used in animal feed?', a: 'Yes. 85% grade is commonly used in cattle feed and compound animal feed as a fibre source. We supply in 25 kg, 50 kg, and 1,000 kg jumbo bags.' },
-        { q: 'What is the minimum order for 85% psyllium husk?', a: 'No minimum order. We supply from small trial quantities up to full container loads. FOB Mundra. COA and packing list included per shipment. Lead time 14–21 days from Unjha.' }
+        { q: 'What is the minimum order for 85% psyllium husk?', a: 'No minimum order. We supply from small trial quantities up to full container loads. FOB Mundra. COA and packing list included per shipment. Lead time 7 days from Siddhpur.' }
       ],
       '95%': [
         { q: 'Does 95% psyllium husk meet the NF monograph?', a: 'Yes. 95% grade meets the Psyllium Husk monograph in the National Formulary (NF). Swell volume minimum 40 ml/g. We provide COA annotated to NF parameters on request.' },
@@ -2423,8 +2444,8 @@ export const products = [
       '99%': [
         { q: 'What swell volume does 99% psyllium husk have?', a: 'Minimum 50 ml/g per our specification. USP and EP monographs specify 40 ml/g minimum; 99% grade consistently exceeds this. Actual test values are on the COA per shipment.' },
         { q: 'Is your 99% psyllium husk USP, EP, and IP compliant?', a: 'Yes. We supply COA annotated to USP (Plantago ovata husk), EP (Ispaghula husk), or IP as required. Parameters include swell volume, moisture, total ash (≤3.0%), acid-insoluble ash (≤0.4%), heavy metals, and full microbiology. Specify your pharmacopoeia edition when requesting a quote.' },
-        { q: 'What is the minimum order for 99% psyllium husk?', a: 'No minimum order. Available in 10 kg, 25 kg, or 50 kg food-grade bags. Jumbo bags (1,000 kg) available for larger orders. FOB Mundra. Lead time 14–21 days.' },
-        { q: 'Can I get a sample of 99% psyllium husk with COA before ordering?', a: 'Yes. We send 100–500 g samples with a full COA from our NABL-accredited lab. Share your target pharmacopoeia, shipping address, and grade. Sample lead time is 3–5 business days from Unjha, Gujarat.' }
+        { q: 'What is the minimum order for 99% psyllium husk?', a: 'No minimum order. Available in 10 kg, 25 kg, or 50 kg food-grade bags. Jumbo bags (1,000 kg) available for larger orders. FOB Mundra. Lead time 7 days.' },
+        { q: 'Can I get a sample of 99% psyllium husk with COA before ordering?', a: 'Yes. We send 100–500 g samples with a full COA from our NABL-accredited lab. Share your target pharmacopoeia, shipping address, and grade. Sample lead time is 3–5 business days from Siddhpur, Gujarat.' }
       ]
     }
   },
@@ -2775,7 +2796,7 @@ export const products = [
         { q: 'What is Sagar Gola cattle feed?', a: 'A traditional Gujarat compressed feed block combining psyllium husk, khakha, molasses, and mineral mix. The block format makes it easy to feed to dairy cattle and buffalo without additional processing or measuring. Long history of use in Gujarat and Rajasthan dairy farming.' },
         { q: 'What are the crude fibre and protein levels in Sagar Gola?', a: 'Crude fibre 25–35%, crude protein 3–5%, fat (ether extract) 1.0–2.0%, total ash 4–6%, moisture ≤12%. Metabolisable energy approximately 9–10 MJ/kg DM.' },
         { q: 'How does psyllium in cattle feed support dairy production?', a: 'The mucilage in psyllium absorbs water and forms a gel-like mass in the gut, slowing transit and improving nutrient uptake. This is particularly useful in high-producing dairy cows under heat stress where hydration retention supports milk yield and digestive health.' },
-        { q: 'What packaging is available for Sagar Gola?', a: '25 kg bags for smaller farm accounts, 1,000 kg jumbo bags for distributors and larger operations. FOB Mundra for export. Lead time 14–21 days.' }
+        { q: 'What packaging is available for Sagar Gola?', a: '25 kg bags for smaller farm accounts, 1,000 kg jumbo bags for distributors and larger operations. FOB Mundra for export. Lead time 7 days.' }
       ],
       'Sagar Lali': [
         { q: 'What is Sagar Lali cattle feed?', a: 'Loose granule cattle feed with psyllium khakha as the primary base plus a grain mix. Higher crude fibre (30–40%) and protein (4–6%) than Sagar Gola compressed blocks. Used where the block format is impractical or where the buyer blends psyllium into a compound feed program.' },
@@ -2793,28 +2814,162 @@ export const industries = [
     name: 'Pharma & Nutraceutical',
     headline: 'Psyllium husk and powder for capsules, digestive health products, laxatives, and supplement blends.',
     products: ['psyllium-husk', 'psyllium-husk-powder'],
-    proof: ['COA review', 'Microbiology checks', 'USP / EP parameter support']
+    proof: ['COA with full pharma panel included', 'USP / EP / IP parameter alignment', 'NABL-accredited test reports available'],
+    useCases: [
+      {
+        title: 'Laxative capsules & OTC sachets',
+        body: '99% purity husk at ≥50 ml/g swell volume meets USP and EP monograph requirements for over-the-counter laxative formulations. Supplied in 40–60 mesh for standard dosator capsule filling.'
+      },
+      {
+        title: 'Digestive health supplements',
+        body: 'Whole husk and 80 mesh powder used by supplement contract manufacturers for fibre blends, prebiotic sachets, and digestive regularity products sold in health retail and e-commerce channels.'
+      },
+      {
+        title: 'Nutraceutical powder blends',
+        body: '95–98% grade in 100 mesh disperses cleanly in functional powder blends for bowel health, weight management, and gut microbiome products. Lower ash and neutral flavour are key selection criteria.'
+      },
+      {
+        title: 'Private-label supplement sourcing',
+        body: 'Brands and contract manufacturers sourcing pharma-grade husk for private-label SKUs require consistent COA data lot-to-lot. We provide NABL-accredited test reports and annotate COAs to buyer-specified monograph.'
+      }
+    ],
+    keySpecs: [
+      '99% purity: swell volume ≥ 50 ml/g (USP / EP / IP)',
+      '95–98% purity available for supplement and food fibre use',
+      'Moisture ≤ 12%, Total ash ≤ 3%, Acid-insoluble ash ≤ 0.4%',
+      'Heavy metals: Pb ≤ 2 ppm, As ≤ 1 ppm',
+      'Microbiology: E. coli absent, Salmonella absent, TPC ≤ 10,000 cfu/g',
+      'Mesh range: 40, 60, 80, 100 (ASTM)'
+    ],
+    documents: [
+      'Certificate of Analysis (COA) annotated to USP / EP / IP on request',
+      'NABL-accredited laboratory test report',
+      'Certificate of Origin (Gujarat, India)',
+      'Phytosanitary certificate',
+      'Halal / Kosher declaration or certificate on request'
+    ],
+    buyerNote: 'Share your pharmacopoeia requirement, destination market, and mesh preference. We will send a matching sample COA and confirm grade availability before any purchase order.'
   },
   {
     slug: 'food-beverage-bakery',
     name: 'Food, Beverage & Bakery',
     headline: 'Psyllium powder and husk for gluten-free bakery, cereals, drink mixes, and clean-label thickening.',
     products: ['psyllium-husk-powder', 'organic-psyllium'],
-    proof: ['Mesh selection', 'Water binding performance', 'Packaging for food-grade handling']
+    proof: ['Mesh matched to application', 'Organic lots with NOP / EU documentation', 'Food-grade allergen declaration included'],
+    useCases: [
+      {
+        title: 'Gluten-free bread & pastry',
+        body: '80–100 mesh powder at 95–98% purity provides the water-binding and structure-forming properties that replace gluten in rice flour and corn starch doughs. Typical usage rate 1–3% of flour weight.'
+      },
+      {
+        title: 'Functional drink mixes & powders',
+        body: '100–200 mesh fine powder disperses quickly without clumping in fibre-enriched drink powders, meal replacements, and protein shakes. Lower swell volume grades (85–95%) reduce gel viscosity at typical use levels.'
+      },
+      {
+        title: 'High-fibre cereals & granola bars',
+        body: 'Whole husk and coarse powder (40–60 mesh) used in breakfast cereals, granola bars, and muesli to increase soluble fibre content. Visible husk texture is accepted or preferred in these product categories.'
+      },
+      {
+        title: 'Clean-label thickening & stabilising',
+        body: 'Psyllium husk powder is used as a clean-label alternative to methylcellulose and xanthan gum in sauces, dressings, and prepared food matrices. Organic-certified lots are available for clean-label product positioning.'
+      }
+    ],
+    keySpecs: [
+      '95–98% purity for standard food applications',
+      '85% purity for cost-sensitive fibre enrichment',
+      'Mesh: 80–100 for bakery, 100–200 for drink mixes, 40–60 for visible-fibre cereals',
+      'Moisture ≤ 10% for food-grade handling',
+      'Organic: NOP (US), EU Organic — transaction certificate per lot',
+      'Allergen-free (no gluten, nuts, soy, dairy in processing)'
+    ],
+    documents: [
+      'Certificate of Analysis (COA) with food-grade micro panel',
+      'Allergen and GMO declaration',
+      'Certificate of Origin',
+      'Organic Transaction Certificate (NOP / EU) — for organic lots',
+      'Phytosanitary certificate'
+    ],
+    buyerNote: 'Tell us your target application, batch size, and label claim. We will recommend the right grade and mesh, and can send a formulation sample with COA for bench testing before committing to a bulk order.'
   },
   {
     slug: 'animal-feed',
     name: 'Animal Feed',
     headline: 'Psyllium khakha powder and cattle feed for bulk feed buyers, distributors, and livestock nutrition channels.',
     products: ['psyllium-khakha-powder', 'psyllium-cattle-feed'],
-    proof: ['Cost-effective bulk formats', 'Fibre-rich feed input', 'Distributor-ready packaging']
+    proof: ['25 kg / 50 kg / 1,000 kg jumbo bag options', 'Feed-grade COA with crude fibre & protein', 'Sagar Gola / Sagar Lali cattle feed blocks available'],
+    useCases: [
+      {
+        title: 'Cattle & buffalo digestive support',
+        body: 'Psyllium khakha powder is used in compound cattle feed for digestive regularity and hydration retention — particularly in high-producing dairy cows under heat stress. Traditional Sagar Gola and Sagar Lali feed block formats combine khakha with molasses and mineral mixes.'
+      },
+      {
+        title: 'Poultry feed fibre input',
+        body: 'Khakha provides 30–40% crude fibre and 8–12% crude protein as a low-cost fibre source in broiler and layer rations. Coarse 20–40 mesh blends easily in batch mixers and pelleting lines without bridging or segregation.'
+      },
+      {
+        title: 'Ruminant feed manufacturing',
+        body: 'Feed compounders use khakha powder as a bulk fibre and binding component in pellet and block feed formulations for goats, sheep, and buffalo. The mucilage content acts as a natural pellet binder, reducing the need for molasses or synthetic binders.'
+      },
+      {
+        title: 'Distributor & wholesale supply',
+        body: 'Feed distributors and co-ops sourcing khakha for resale in Gujarat, Rajasthan, and Maharashtra receive jumbo bags (1,000 kg) with lot documentation. Regular supply from Siddhpur with 7 day lead time from order to dispatch.'
+      }
+    ],
+    keySpecs: [
+      'Crude fibre: 30–40% (dry basis)',
+      'Crude protein: 8–12%',
+      'Moisture: ≤ 12%',
+      'Total ash: ≤ 8%',
+      'Foreign matter / sand: confirmed per lot',
+      'Mesh: 20–40 standard, 60–80 for pellet formulations'
+    ],
+    documents: [
+      'Feed-grade COA (moisture, crude fibre, crude protein, total ash)',
+      'Packing list',
+      'Certificate of Origin',
+      'Additional mycotoxin / heavy metal testing available at buyer cost'
+    ],
+    buyerNote: 'Share your target species, feed formulation volume, and preferred pack size. We supply both loose khakha powder and formulated cattle feed blocks. Contact us for current lot availability and pricing from Siddhpur.'
   },
   {
     slug: 'industrial-personal-care',
     name: 'Industrial & Personal Care',
     headline: 'Psyllium powder and khakha powder for thickening, binding, moisture retention, and absorbent applications.',
     products: ['psyllium-husk-powder', 'psyllium-khakha-powder', 'industrial-grade-psyllium'],
-    proof: ['Binder use cases', 'Soil and absorbent applications', 'Custom spec capture']
+    proof: ['200 mesh cosmetic-grade powder available', 'Custom mesh and particle size on request', 'Technical data sheet provided per lot'],
+    useCases: [
+      {
+        title: 'Cosmetic & personal care thickening',
+        body: '200 mesh psyllium husk powder is used as a natural thickening and film-forming agent in face masks, hair gels, and skin creams. The mucilage forms a clear, non-irritating gel at low use levels (0.5–2%), making it a clean-label alternative to synthetic thickeners.'
+      },
+      {
+        title: 'Soil stabilisation & horticulture',
+        body: 'Psyllium khakha powder is used in soil improvement products and erosion control applications. The high fibre and mucilage content improves water retention in sandy soils and acts as a natural soil binder in turf and landscape products.'
+      },
+      {
+        title: 'Industrial binding & bulking',
+        body: 'Psyllium powder serves as a natural binder in compressed tablet, incense, and agro-pellet manufacturing. Its adhesive properties reduce synthetic binder requirements, and it is compatible with water-activated pressing and extrusion processes.'
+      },
+      {
+        title: 'Absorbent & moisture-retention products',
+        body: 'The high swelling capacity of psyllium husk powder (40–50 ml/g at 95% purity) makes it suitable for absorbent pads, wound care substrates, and horticultural water-retention granules where natural, biodegradable absorbency is required.'
+      }
+    ],
+    keySpecs: [
+      '200 mesh for cosmetic and personal care applications',
+      '40–100 mesh for industrial binding and soil products',
+      'Swell volume: 40–50 ml/g at 95% purity',
+      'Moisture ≤ 10% for powder-handling processes',
+      'Low ash lots available for personal care',
+      'Bulk pricing for industrial volumes (1 MT+)'
+    ],
+    documents: [
+      'Technical Data Sheet (TDS) per product and lot',
+      'Certificate of Analysis (COA)',
+      'Certificate of Origin',
+      'Custom specification capture and sign-off available on request'
+    ],
+    buyerNote: 'Industrial and personal care applications often have custom mesh, swelling, or binding performance requirements. Share your spec sheet or application brief and we will confirm product fit and send a sample for testing.'
   }
 ];
 
@@ -2873,7 +3028,7 @@ export const insights = [
     body: [
       'Psyllium husk and khakha powder are both used in cattle nutrition programs, primarily to support digestive regularity and hydration retention. The mucilage content in psyllium absorbs water and forms a gel-like mass in the gut, slowing transit and improving nutrient uptake — a benefit particularly noted in high-producing dairy cows under heat stress.',
       'Traditional cattle feed programs in Gujarat use psyllium-based "Sagar Gola" and "Sagar Lali" formulations — compressed feed blocks that combine psyllium with molasses and mineral mixes. These formats are designed for ease of feeding and have a long history in Gujarat and Rajasthan dairy farming. We supply both the raw ingredient and the formulated block on request.',
-      'For distributors supplying dairy farms, volume and packaging flexibility matter most. We offer 25 kg bags for smaller farm accounts and 1,000 kg jumbo bags for larger operations and resellers. Lead time from order to dispatch is 14–21 days, with export documentation available for cross-border shipments.'
+      'For distributors supplying dairy farms, volume and packaging flexibility matter most. We offer 25 kg bags for smaller farm accounts and 1,000 kg jumbo bags for larger operations and resellers. Lead time from order to dispatch is 7 days, with export documentation available for cross-border shipments.'
     ]
   },
   {
@@ -2909,7 +3064,7 @@ export const faq = [
   },
   {
     q: 'What is your annual production capacity?',
-    a: 'Our Unjha facility has 2,000 MT annual processing capacity across all product lines. We can typically confirm lead time within 48 hours of receiving a confirmed spec sheet and purchase intent.'
+    a: 'Our Siddhpur facility has 2,000 MT annual processing capacity across all product lines. We can typically confirm lead time within 48 hours of receiving a confirmed spec sheet and purchase intent.'
   },
   {
     q: 'Which ports do you ship from?',
@@ -2921,11 +3076,11 @@ export const faq = [
   },
   {
     q: 'Can I get a sample before placing a bulk order?',
-    a: 'Yes. We provide 100–500 g samples with COA on request. Share your target grade, mesh, and shipping address. Sample lead time is 3–5 business days from Unjha.'
+    a: 'Yes. We provide 100–500 g samples with COA on request. Share your target grade, mesh, and shipping address. Sample lead time is 3–5 business days from Siddhpur.'
   },
   {
     q: 'What certifications does your facility hold?',
-    a: 'Our facility is FSSAI registered (IEC 0124007841). ISO 22000/HACCP, Halal, and Kosher certifications are in progress. Contact us for current certificate status for your specific destination and buyer audit requirements.'
+    a: 'Our facility operations, registrations, and international compliance audits are currently in progress. We prioritize transparency and regulatory compliance for all global export markets. Please contact our export desk directly for the latest updates, compliance timelines, and specific audit requirements for your destination country.'
   },
   {
     q: 'How is psyllium husk different from psyllium husk powder?',
@@ -2935,16 +3090,52 @@ export const faq = [
 
 export const localizedFaq: Record<LanguageCode, Array<{ q: string; a: string }>> = {
   en: faq,
+  zh: [
+    { q: '你们供应什么等级的车前子壳？', a: '我们供应纯度为 85%、95%、98% 和 99% 的等级。等级是指外壳含量 —— 99% 等级具有最高的粘液含量和溶胀度（≥50 ml/g），适用于制药泻药药典（USP/EP/IP）。分享您的目标应用，我们将推荐合适的等级。' },
+    { q: '你们的最小起订量 (MOQ) 是多少？', a: '没有最小起订量。我们提供 1 KG 样品用于实验室测试、5 KG 试验批次，直至整箱货（18-20 MT）。订购任何数量 —— 联系我们，我们将确认可用性和交货期。' },
+    { q: '你们供应有机车前子吗？', a: '是的。我们根据要求供应有机车前子壳和粉末。有机批次可在下订单前提供证书审查。买方必须分享其目的地市场和所需的认证范围 —— 美国为 NOP，欧洲为 EU-NOP。' },
+    { q: '你们提供什么出口单据？', a: '标准出口单据包括：商业发票、装箱单、分析证书 (COA)、原产地证明、植物检疫证书以及根据需要的熏蒸证明。可根据要求协调办理清真 (Halal) 和犹太 (Kosher) 认证。所有文件在发货前共享。' },
+    { q: '你们的年产能是多少？', a: '我们位于 Siddhpur 的设施在所有产品线上具有 2000 MT 的年加工能力。在收到确认的规格表和购买意向后，我们通常可以在 48 小时内确认交货期。' },
+    { q: '你们从哪些港口发货？', a: '我们提供 FOB Mundra、FOB Kandla 和 FOB JNPT (Nhava Sheva) 的发货方式。可应要求提供 CIF 报价。由于发往欧洲、美国和中东的船频高，Mundra 是我们大多数出口订单的主要港口。' },
+    { q: '车前子壳粉提供哪些目数？', a: '外壳粉提供 40、60、80、100 和 200 目 (ASTM)。目数选择取决于您的应用：40-60 目用于胶囊填充，80-100 目用于固体饮料和功能性食品，200 目用于化妆品或个人护理应用。' },
+    { q: '大宗订购前我可以拿到样品吗？', a: '是的。我们应要求提供 100-500 g 带 COA 的样品。请提供您的目标等级、目数和收货地址。样品的交货期是从 Siddhpur 发出后 3-5 个工作日。' },
+    { q: '你们的设施有什么认证？', a: '我们设施的运营、注册和国际合规性审计目前正在推进中。我们对全球所有出口市场均优先确保透明度与合规性。请直接联系我们的出口办公室，以获取最新的合规时间表和您目的国特定的审计要求。' },
+    { q: '车前子壳与车前子壳粉有什么不同？', a: '两者都来自相同的 Plantago ovata 种子，但在形式和应用上有所不同。整壳保留了其纤维质地，用于胶囊填充、泻药冲剂袋和高纤维麦片。粉末被研磨成细目，并均匀分散在饮料混合粉、烘焙配方和功能性食品中。由于更大的表面积暴露，粉末的溶胀度略高于整壳。' }
+  ],
+  ar: [
+    { q: 'ما هي درجات قشور السيليوم التي تقومون بتوريدها؟', a: 'نقوم بتوريد درجات نقاوة 85%، 95%، 98%، و 99%. تشير الدرجة إلى محتوى القشور - درجة 99% تحتوي على أعلى محتوى من المادة الصمغية وحجم انتفاخ (≥50 مل/جم)، وهي مناسبة لدساتير الأدوية للملينات (USP/EP/IP). شاركنا تطبيقك المستهدف وسنوصي بالدرجة المناسبة.' },
+    { q: 'ما هو الحد الأدنى لكمية الطلب (MOQ)؟', a: 'لا يوجد حد أدنى لكمية الطلب. نقوم بالتوريد من عينات 1 كجم للاختبار المعملي، ودفعات تجريبية 5 كجم، وحتى حاويات كاملة (18-20 طن متري). اطلب أي كمية - اتصل بنا وسنؤكد التوافر والمهلة الزمنية.' },
+    { q: 'هل تقومون بتوريد السيليوم العضوي؟', a: 'نعم. نقوم بتوريد قشور وبودرة السيليوم العضوي عند الطلب. الشحنات العضوية متاحة مع مراجعة الشهادات قبل أمر الشراء. يجب على المشترين مشاركة سوق وجهتهم ونطاق الشهادة المطلوب - NOP لأمريكا، و EU-NOP لأوروبا.' },
+    { q: 'ما هي مستندات التصدير التي تقدمونها؟', a: 'تشمل مجموعة التصدير القياسية: الفاتورة التجارية، قائمة التعبئة، شهادة التحليل (COA)، شهادة المنشأ، الشهادة الصحية النباتية، وشهادة التبخير عند الاقتضاء. يمكن ترتيب شهادات حلال وكوشر عند الطلب. يتم مشاركة جميع المستندات قبل الشحن.' },
+    { q: 'ما هي قدرتكم الإنتاجية السنوية؟', a: 'تبلغ الطاقة الإنتاجية السنوية لمنشأتنا في سيدهبور 2000 طن متري عبر جميع خطوط المنتجات. يمكننا عادةً تأكيد المهلة الزمنية في غضون 48 ساعة من تلقي ورقة المواصفات المؤكدة وخطاب النية للشراء.' },
+    { q: 'من أي الموانئ تقومون بالشحن؟', a: 'نشحن FOB Mundra و FOB Kandla و FOB JNPT (Nhava Sheva). أسعار CIF متاحة عند الطلب. ميناء موندرا هو مينائنا الرئيسي لمعظم طلبات التصدير نظرًا لتكرار رحلات السفن إلى أوروبا والولايات المتحدة والشرق الأوسط.' },
+    { q: 'ما هي أحجام المش المتاحة لبودرة قشور السيليوم؟', a: 'تتوفر بودرة القشور بمقاسات 40، 60، 80، 100، و 200 مش (ASTM). يعتمد اختيار المش على تطبيقك: 40-60 مش لملء الكبسولات، 80-100 مش لخلطات المشروبات والأغذية الوظيفية، 200 مش لتطبيقات التجميل أو العناية الشخصية.' },
+    { q: 'هل يمكنني الحصول على عينة قبل تقديم طلب بالجملة؟', a: 'نعم. نحن نقدم عينات من 100-500 جرام مع شهادة التحليل (COA) عند الطلب. شاركنا درجتك المستهدفة، والمش، وعنوان الشحن. المهلة الزمنية للعينات هي 3-5 أيام عمل من سيدهبور.' },
+    { q: 'ما هي الشهادات التي تحملها منشأتكم؟', a: 'عمليات منشأتنا وتسجيلاتها وعمليات تدقيق الامتثال الدولي قيد التنفيذ حاليًا. نحن نعطي الأولوية للشفافية والامتثال التنظيمي لجميع أسواق التصدير العالمية. يرجى الاتصال بمكتب التصدير لدينا مباشرة للحصول على آخر التحديثات وجداول الامتثال ومتطلبات التدقيق الخاصة ببلد وجهتكم.' },
+    { q: 'ما الفرق بين قشور السيليوم وبودرة قشور السيليوم؟', a: 'كلاهما يأتي من نفس بذور Plantago ovata ولكنهما يختلفان في الشكل والتطبيق. تحتفظ القشور الكاملة بقوامها الليفي وتستخدم في حشو الكبسولات وأكياس الملينات وحبوب الإفطار الغنية بالألياف. يتم طحن البودرة إلى مش ناعم وتتوزع بشكل موحد في خلطات المشروبات والمخبوزات والأطعمة الوظيفية. حجم الانتفاخ أعلى قليلاً في البودرة بسبب زيادة تعرض مساحة السطح.' }
+  ],
+  nl: [
+    { q: 'Welke kwaliteiten psylliumvezels levert u?', a: 'Wij leveren zuiverheidsgraden van 85%, 95%, 98% en 99%. Kwaliteit verwijst naar het gehalte aan vezels — kwaliteit 99% heeft het hoogste mucilagegehalte en zwelvolume (≥50 ml/g), geschikt voor farmaceutische laxeermiddelmonografieën (USP/EP/IP). Deel uw doeltoepassing en wij adviseren de juiste kwaliteit.' },
+    { q: 'Wat is uw minimale bestelhoeveelheid (MOQ)?', a: 'Geen minimale bestelhoeveelheid. Wij leveren van 1 KG monsters voor laboratoriumtesten en 5 KG proefbatches tot complete containerladingen (18–20 MT). Bestel elke gewenste hoeveelheid — neem contact met ons op en we bevestigen de beschikbaarheid en levertijd.' },
+    { q: 'Levert u biologische psyllium?', a: 'Ja. Wij leveren biologische psylliumvezels en -poeder op aanvraag. Biologische batches zijn beschikbaar met certificaatbeoordeling vóór de bestelling. Kopers moeten hun bestemmingsmarkt en de vereiste certificeringsscope delen — NOP voor de VS, EU-NOP voor Europa.' },
+    { q: 'Welke exportdocumenten levert u?', a: 'De standaard exportset bevat: commerciële factuur, paklijst, COA, certificaat van oorsprong, fytosanitair certificaat en begassingscertificaat indien vereist. Halal- en Kosher-certificaten kunnen op aanvraag worden geregeld. Alle documenten worden vóór verzending gedeeld.' },
+    { q: 'Wat is uw jaarlijkse productiecapaciteit?', a: 'Onze faciliteit in Siddhpur heeft een jaarlijkse verwerkingscapaciteit van 2.000 MT over alle productlijnen. We kunnen de levertijd doorgaans binnen 48 uur na ontvangst van een bevestigd specificatieblad en koopintentie bevestigen.' },
+    { q: 'Vanuit welke havens verzendt u?', a: 'Wij verzenden FOB Mundra, FOB Kandla en FOB JNPT (Nhava Sheva). CIF-prijzen zijn op aanvraag beschikbaar. Mundra is onze primaire haven voor de meeste exportbestellingen vanwege de hoge frequentie van scheepsafvaarten naar Europa, de VS en het Midden-Oosten.' },
+    { q: 'Welke mesh-groottes zijn beschikbaar voor psylliumvezelpoeder?', a: 'Vezelpoeder is beschikbaar in 40, 60, 80, 100 en 200 mesh (ASTM). Mesh-selectie hangt af van uw toepassing: 40-60 mesh voor het vullen van capsules, 80-100 mesh for drankmengsels en functionele voeding, 200 mesh voor cosmetische of persoonlijke verzorgingstoepassingen.' },
+    { q: 'Kan ik een monster krijgen voordat ik een bulkbestelling plaats?', a: 'Ja. Wij leveren op aanvraag monsters van 100-500 g met COA. Deel uw doelkwaliteit, mesh en verzendadres. De levertijd van monsters is 3-5 werkdagen vanuit Siddhpur.' },
+    { q: 'Welke certificeringen heeft uw faciliteit?', a: 'Onze faciliteitsactiviteiten, registraties en internationale compliance-audits zijn momenteel in uitvoering. We geven prioriteit aan transparantie en regelgeving voor alle wereldwijde exportmarkten. Neem rechtstreeks contact op met onze exportdesk voor de nieuwste updates, compliance-tijdlijnen en specifieke auditvereisten voor uw bestemmingsland.' },
+    { q: 'Wat is het verschil tussen psylliumvezels en psylliumvezelpoeder?', a: 'Beide zijn afkomstig van hetzelfde Plantago ovata-zaad, maar verschillen in vorm en toepassing. Hele vezels behouden hun vezelige textuur en worden gebruikt in capsules, laxeerzakjes en vezelrijke ontbijtgranen. Poeder wordt fijngemalen en dispergeert gelijkmatig in drankmengsels, bakkerijproducten en functionele voeding. Het zwelvolume is iets hoger bij poeder door de grotere blootstelling van het oppervlak.' }
+  ],
   es: [
     { q: '¿Qué grados de cáscara de psyllium suministran?', a: 'Suministramos grados de pureza del 85%, 95%, 98% y 99%. El grado se refiere al contenido de cáscara — el grado 99% tiene el mayor contenido de mucílago y volumen de hinchamiento (≥50 ml/g), adecuado para monografías de laxantes farmacéuticos (USP/EP/IP). Comparta su aplicación objetivo y le recomendaremos el grado apropiado.' },
     { q: '¿Cuál es la cantidad mínima de pedido (MOQ)?', a: 'Sin cantidad mínima de pedido. Suministramos desde muestras de 1 KG para pruebas de laboratorio y lotes de 5 KG, hasta contenedores completos de 18–20 MT. Pida la cantidad que necesite — contáctenos y confirmaremos disponibilidad y plazo de entrega.' },
     { q: '¿Suministran psyllium orgánico?', a: 'Sí. Suministramos cáscara y polvo de psyllium orgánico a petición. Los lotes orgánicos están disponibles con revisión de certificados antes de la orden de compra. Los compradores deben indicar su mercado de destino y el alcance de certificación requerido — NOP para EE. UU., EU-NOP para Europa.' },
     { q: '¿Qué documentos de exportación proporcionan?', a: 'El conjunto estándar de exportación incluye: factura comercial, lista de empaque, COA, certificado de origen, certificado fitosanitario y certificado de fumigación cuando se requiera. Los certificados Halal y Kosher pueden tramitarse a petición. Todos los documentos se comparten antes del envío.' },
-    { q: '¿Cuál es su capacidad de producción anual?', a: 'Nuestra instalación en Unjha tiene una capacidad de procesamiento anual de 2.000 MT en todas las líneas de productos. Generalmente podemos confirmar el tiempo de entrega dentro de las 48 horas de recibir una hoja de especificaciones confirmada e intención de compra.' },
+    { q: '¿Cuál es su capacidad de producción anual?', a: 'Nuestra instalación en Siddhpur tiene una capacidad de procesamiento anual de 2.000 MT en todas las líneas de productos. Generalmente podemos confirmar el tiempo de entrega dentro de las 48 horas de recibir una hoja de especificaciones confirmada e intención de compra.' },
     { q: '¿Desde qué puertos realizan los envíos?', a: 'Realizamos envíos FOB Mundra, FOB Kandla y FOB JNPT (Nhava Sheva). El precio CIF está disponible a petición. Mundra es nuestro puerto principal para la mayoría de pedidos de exportación debido a la frecuencia de buques hacia Europa, EE. UU. y Oriente Medio.' },
     { q: '¿Qué tamaños de malla están disponibles para el polvo de cáscara de psyllium?', a: 'El polvo de cáscara está disponible en mallas 40, 60, 80, 100 y 200 (ASTM). La selección de malla depende de su aplicación: malla 40–60 para llenado de cápsulas, malla 80–100 para bebidas en polvo y alimentos funcionales, malla 200 para aplicaciones cosméticas o de cuidado personal.' },
-    { q: '¿Puedo obtener una muestra antes de hacer un pedido a granel?', a: 'Sí. Proporcionamos muestras de 100–500 g con COA a petición. Comparta su grado objetivo, malla y dirección de envío. El tiempo de entrega de muestras es de 3 a 5 días hábiles desde Unjha.' },
-    { q: '¿Qué certificaciones tiene su instalación?', a: 'Nuestra instalación está registrada en FSSAI (IEC 0124007841). Las certificaciones ISO 22000/HACCP, Halal y Kosher están en proceso. Contáctenos para conocer el estado actual de certificación para su destino específico y requisitos de auditoría del comprador.' },
+    { q: '¿Puedo obtener una muestra antes de hacer un pedido a granel?', a: 'Sí. Proporcionamos muestras de 100–500 g con COA a petición. Comparta su grado objetivo, malla y dirección de envío. El tiempo de entrega de muestras es de 3 a 5 días hábiles desde Siddhpur.' },
+    { q: '¿Qué certificaciones tiene su instalación?', a: 'Las operaciones, registros y auditorías de cumplimiento internacional de nuestra instalación están actualmente en proceso. Priorizamos la transparencia y el cumplimiento regulatorio para todos los mercados de exportación globales. Póngase en contacto directamente con nuestra oficina de exportación para conocer las últimas actualizaciones, plazos y requisitos de auditoría específicos para su país de destino.' },
     { q: '¿En qué se diferencia la cáscara de psyllium del polvo de cáscara de psyllium?', a: 'Ambos provienen de la misma semilla de Plantago ovata pero difieren en forma y aplicación. La cáscara entera conserva su textura fibrosa y se usa en cápsulas, sobres laxantes y cereales de alto contenido en fibra. El polvo se muele a una malla fina y se dispersa uniformemente en bebidas en polvo, mezclas para panadería y alimentos funcionales. El volumen de hinchamiento es ligeramente mayor en el polvo debido a la mayor exposición de la superficie.' },
   ],
   fr: [
@@ -2952,11 +3143,11 @@ export const localizedFaq: Record<LanguageCode, Array<{ q: string; a: string }>>
     { q: 'Quelle est votre quantité minimale de commande (MOQ) ?', a: 'Pas de minimum de commande. Nous livrons depuis des échantillons de 1 KG pour tests en laboratoire et des lots de 5 KG, jusqu\'à des conteneurs complets de 18–20 MT. Commandez la quantité dont vous avez besoin — contactez-nous et nous confirmerons la disponibilité.' },
     { q: 'Fournissez-vous du psyllium biologique ?', a: 'Oui. Nous fournissons de la cosse et de la poudre de psyllium biologique sur demande. Les lots biologiques sont disponibles avec examen des certificats avant l\'ordre d\'achat. Les acheteurs doivent indiquer leur marché de destination et la portée de certification requise — NOP pour les USA, EU-NOP pour l\'Europe.' },
     { q: 'Quels documents d\'exportation fournissez-vous ?', a: 'Le set d\'exportation standard comprend : facture commerciale, liste de colisage, COA, certificat d\'origine, certificat phytosanitaire et certificat de fumigation si requis. Les certificats Halal et Kosher peuvent être obtenus sur demande. Tous les documents sont partagés avant l\'expédition.' },
-    { q: 'Quelle est votre capacité de production annuelle ?', a: 'Notre installation à Unjha a une capacité de traitement annuelle de 2 000 MT sur toutes les gammes de produits. Nous pouvons généralement confirmer le délai de livraison dans les 48 heures suivant la réception d\'une fiche de spécifications confirmée et d\'une intention d\'achat.' },
+    { q: 'Quelle est votre capacité de production annuelle ?', a: 'Notre installation à Siddhpur a une capacité de traitement annuelle de 2 000 MT sur toutes les gammes de produits. Nous pouvons généralement confirmer le délai de livraison dans les 48 heures suivant la réception d\'une fiche de spécifications confirmée et d\'une intention d\'achat.' },
     { q: 'De quels ports expédiez-vous ?', a: 'Nous expédions FOB Mundra, FOB Kandla et FOB JNPT (Nhava Sheva). Le prix CIF est disponible sur demande. Mundra est notre port principal pour la plupart des commandes d\'exportation en raison de la fréquence des navires vers l\'Europe, les USA et le Moyen-Orient.' },
     { q: 'Quelles tailles de maille sont disponibles pour la poudre de cosse de psyllium ?', a: 'La poudre de cosse est disponible en maille 40, 60, 80, 100 et 200 (ASTM). Le choix de maille dépend de votre application : maille 40–60 pour le remplissage de gélules, maille 80–100 pour les boissons en poudre et aliments fonctionnels, maille 200 pour les applications cosmétiques ou de soin personnel.' },
-    { q: 'Puis-je obtenir un échantillon avant de passer une commande en gros ?', a: 'Oui. Nous fournissons des échantillons de 100–500 g avec COA sur demande. Partagez votre grade cible, maille et adresse d\'expédition. Le délai d\'échantillon est de 3 à 5 jours ouvrables depuis Unjha.' },
-    { q: 'Quelles certifications votre installation possède-t-elle ?', a: 'Notre installation est enregistrée FSSAI (IEC 0124007841). Les certifications ISO 22000/HACCP, Halal et Kosher sont en cours. Contactez-nous pour le statut actuel des certifications pour votre destination spécifique et les exigences d\'audit acheteur.' },
+    { q: 'Puis-je obtenir un échantillon avant de passer une commande en gros ?', a: 'Oui. Nous fournissons des échantillons de 100–500 g avec COA sur demande. Partagez votre grade cible, maille et adresse d\'expédition. Le délai d\'échantillon est de 3 à 5 jours ouvrables depuis Siddhpur.' },
+    { q: 'Quelles certifications votre installation possède-t-elle ?', a: 'Les opérations, enregistrements et audits de conformité internationale de notre usine sont actuellement en cours. Nous accordons la priorité à la transparence et à la conformité réglementaire pour tous les marchés d\'exportation mondiaux. Veuillez contacter directement notre bureau d\'exportation pour obtenir les dernières mises à jour, les calendriers de conformité et les exigences d\'audit spécifiques à votre pays de destination.' },
     { q: 'Quelle est la différence entre la cosse de psyllium et la poudre de cosse de psyllium ?', a: 'Les deux proviennent de la même graine de Plantago ovata mais diffèrent par leur forme et application. La cosse entière conserve sa texture fibreuse et est utilisée dans les gélules, sachets laxatifs et céréales riches en fibres. La poudre est moulue à une maille fine et se disperse uniformément dans les boissons en poudre, mélanges de boulangerie et aliments fonctionnels. Le volume de gonflement est légèrement plus élevé dans la poudre en raison d\'une plus grande exposition de surface.' },
   ],
   nl: [
@@ -2964,11 +3155,11 @@ export const localizedFaq: Record<LanguageCode, Array<{ q: string; a: string }>>
     { q: 'Wat is uw minimale bestelhoeveelheid (MOQ)?', a: 'Geen minimale bestelhoeveelheid. We leveren van 1 KG monsters voor laboratoriumtests en proefpartijen van 5 KG tot volledige containers van 18–20 MT. Bestel elke gewenste hoeveelheid — neem contact op en wij bevestigen beschikbaarheid en levertijd.' },
     { q: 'Leveren jullie biologisch psyllium?', a: 'Ja. Wij leveren biologisch psylliumvlies en -poeder op aanvraag. Biologische loten zijn beschikbaar met certificaatbeoordeling vóór de inkooporder. Kopers moeten hun bestemmingsmarkt en vereiste certificeringsomvang opgeven — NOP voor de VS, EU-NOP voor Europa.' },
     { q: 'Welke exportdocumenten verstrekt u?', a: 'Het standaard exportpakket omvat: handelsfactuur, paklijst, COA, oorsprongscertificaat, fytosanitair certificaat en fumigatieverklaring waar vereist. Halal- en kosjercertificaten kunnen op aanvraag worden geregeld. Alle documenten worden vóór verzending gedeeld.' },
-    { q: 'Wat is uw jaarlijkse productiecapaciteit?', a: 'Onze fabriek in Unjha heeft een jaarlijkse verwerkingscapaciteit van 2.000 MT over alle productlijnen. Wij kunnen de levertijd doorgaans bevestigen binnen 48 uur na ontvangst van een bevestigde specificatieblad en koopintentie.' },
+    { q: 'Wat is uw jaarlijkse productiecapaciteit?', a: 'Onze fabriek in Siddhpur heeft een jaarlijkse verwerkingscapaciteit van 2.000 MT over alle productlijnen. Wij kunnen de levertijd doorgaans bevestigen binnen 48 uur na ontvangst van een bevestigde specificatieblad en koopintentie.' },
     { q: 'Vanuit welke havens verscheept u?', a: 'Wij verschepen FOB Mundra, FOB Kandla en FOB JNPT (Nhava Sheva). CIF-prijzen zijn op aanvraag beschikbaar. Mundra is onze primaire haven voor de meeste exportorders vanwege de scheepsfrequentie naar Europa, de VS en het Midden-Oosten.' },
     { q: 'Welke meshgroottes zijn beschikbaar voor psylliumvliespoeder?', a: 'Vliespoeder is beschikbaar in mesh 40, 60, 80, 100 en 200 (ASTM). De meshkeuze hangt af van uw toepassing: mesh 40–60 voor capsulevulling, mesh 80–100 voor drankpoeders en functionele voedingsmiddelen, mesh 200 voor cosmetische of persoonlijke verzorgingstoepassingen.' },
-    { q: 'Kan ik een monster ontvangen voordat ik een bulkbestelling plaatst?', a: 'Ja. Wij verstrekken monsters van 100–500 g met COA op aanvraag. Deel uw doelgraad, mesh en verzendadres. De levertijd voor monsters is 3 tot 5 werkdagen vanuit Unjha.' },
-    { q: 'Welke certificeringen bezit uw fabriek?', a: 'Onze fabriek is FSSAI-geregistreerd (IEC 0124007841). ISO 22000/HACCP-, Halal- en Kosjercertificeringen zijn in behandeling. Neem contact op voor de huidige certificeringsstatus voor uw specifieke bestemming en kopersauditvereisten.' },
+    { q: 'Kan ik een monster ontvangen voordat ik een bulkbestelling plaatst?', a: 'Ja. Wij verstrekken monsters van 100–500 g met COA op aanvraag. Deel uw doelgraad, mesh en verzendadres. De levertijd voor monsters is 3 tot 5 werkdagen vanuit Siddhpur.' },
+    { q: 'Welke certificeringen bezit uw fabriek?', a: 'De activiteiten, registraties en internationale conformiteitsaudits van onze fabriek zijn momenteel in behandeling. Wij geven prioriteit aan transparantie en naleving van de regelgeving voor alle wereldwijde exportmarkten. Neem rechtstreeks contact op met onze exportafdeling voor de laatste updates, planningen en specifieke auditvereisten voor uw bestemmingsland.' },
     { q: 'Wat is het verschil tussen psylliumvlies en psylliumvliespoeder?', a: 'Beide zijn afkomstig van hetzelfde Plantago ovata-zaad maar verschillen in vorm en toepassing. Heel vlies behoudt zijn vezelige textuur en wordt gebruikt in capsulevullingen, laxatiezakjes en vezelrijke granen. Poeder wordt tot een fijne meshgrootte gemalen en verdeelt zich gelijkmatig in drankpoeders, bakkerijblends en functionele voedingsmiddelen. Het zwelvolume is iets hoger in poeder door grotere oppervlakte-exposure.' },
   ],
   it: [
@@ -2976,11 +3167,11 @@ export const localizedFaq: Record<LanguageCode, Array<{ q: string; a: string }>>
     { q: 'Qual è la vostra quantità minima d\'ordine (MOQ)?', a: 'Nessun ordine minimo. Forniamo da campioni da 1 KG per test di laboratorio e lotti di prova da 5 KG fino a container completi da 18–20 MT. Ordina la quantità di cui hai bisogno — contattaci e confermeremo disponibilità e tempi di consegna.' },
     { q: 'Fornite psyllium biologico?', a: 'Sì. Forniamo buccia e polvere di psyllium biologico su richiesta. I lotti biologici sono disponibili con revisione dei certificati prima dell\'ordine. Gli acquirenti devono indicare il mercato di destinazione e l\'ambito di certificazione richiesto — NOP per gli USA, EU-NOP per l\'Europa.' },
     { q: 'Quali documenti di esportazione fornite?', a: 'Il set standard di esportazione include: fattura commerciale, packing list, COA, certificato di origine, certificato fitosanitario e certificato di fumigazione dove richiesto. I certificati Halal e Kosher possono essere ottenuti su richiesta. Tutti i documenti sono condivisi prima della spedizione.' },
-    { q: 'Qual è la vostra capacità di produzione annuale?', a: 'Il nostro stabilimento a Unjha ha una capacità di lavorazione annuale di 2.000 MT su tutte le linee di prodotto. Di solito possiamo confermare i tempi di consegna entro 48 ore dal ricevimento di una scheda tecnica confermata e di un\'intenzione d\'acquisto.' },
+    { q: 'Qual è la vostra capacità di produzione annuale?', a: 'Il nostro stabilimento a Siddhpur ha una capacità di lavorazione annuale di 2.000 MT su tutte le linee di prodotto. Di solito possiamo confermare i tempi di consegna entro 48 ore dal ricevimento di una scheda tecnica confermata e di un\'intenzione d\'acquisto.' },
     { q: 'Da quali porti spedite?', a: 'Spediamo FOB Mundra, FOB Kandla e FOB JNPT (Nhava Sheva). I prezzi CIF sono disponibili su richiesta. Mundra è il nostro porto principale per la maggior parte degli ordini export per via della frequenza delle navi verso Europa, USA e Medio Oriente.' },
     { q: 'Quali dimensioni di mesh sono disponibili per la polvere di buccia di psyllium?', a: 'La polvere di buccia è disponibile in mesh 40, 60, 80, 100 e 200 (ASTM). La scelta del mesh dipende dalla tua applicazione: mesh 40–60 per il riempimento di capsule, mesh 80–100 per bevande in polvere e alimenti funzionali, mesh 200 per applicazioni cosmetiche o per la cura personale.' },
-    { q: 'Posso ottenere un campione prima di effettuare un ordine bulk?', a: 'Sì. Forniamo campioni da 100–500 g con COA su richiesta. Condividi il tuo grado target, mesh e indirizzo di spedizione. Il tempo di consegna dei campioni è di 3–5 giorni lavorativi da Unjha.' },
-    { q: 'Quali certificazioni possiede il vostro stabilimento?', a: 'Il nostro stabilimento è registrato FSSAI (IEC 0124007841). Le certificazioni ISO 22000/HACCP, Halal e Kosher sono in corso. Contattaci per lo stato attuale delle certificazioni per la tua destinazione specifica e i requisiti di audit dell\'acquirente.' },
+    { q: 'Posso ottenere un campione prima di effettuare un ordine bulk?', a: 'Sì. Forniamo campioni da 100–500 g con COA su richiesta. Condividi il tuo grado target, mesh e indirizzo di spedizione. Il tempo di consegna dei campioni è di 3–5 giorni lavorativi da Siddhpur.' },
+    { q: 'Quali certificazioni possiede il vostro stabilimento?', a: 'Le operazioni, le registrazioni e gli audit di conformità internazionale della nostra struttura sono attualmente in corso. Diamo priorità alla trasparenza e alla conformità normativa per tutti i mercati di esportazione globali. Si prega di contattare direttamente il nostro ufficio export per gli ultimi aggiornamenti, le tempistiche e i requisiti di audit specifici per il proprio paese di destinazione.' },
     { q: 'Qual è la differenza tra buccia di psyllium e polvere di buccia di psyllium?', a: 'Entrambi provengono dallo stesso seme di Plantago ovata ma differiscono per forma e applicazione. La buccia intera mantiene la sua texture fibrosa e viene utilizzata in capsule, bustine lassative e cereali ad alto contenuto di fibre. La polvere viene macinata a una mesh fine e si disperde uniformemente in bevande in polvere, miscele per panificazione e alimenti funzionali. Il volume di rigonfiamento è leggermente più alto nella polvere per via della maggiore esposizione superficiale.' },
   ],
   pt: [
@@ -2988,11 +3179,11 @@ export const localizedFaq: Record<LanguageCode, Array<{ q: string; a: string }>>
     { q: 'Qual é a quantidade mínima de pedido (MOQ)?', a: 'Sem pedido mínimo. Fornecemos desde amostras de 1 KG para testes laboratoriais e lotes de 5 KG até contêineres completos de 18–20 MT. Peça a quantidade que precisar — entre em contato e confirmaremos disponibilidade e prazo de entrega.' },
     { q: 'Vocês fornecem psyllium orgânico?', a: 'Sim. Fornecemos casca e pó de psyllium orgânico sob pedido. Lotes orgânicos estão disponíveis com revisão de certificados antes do pedido de compra. Os compradores devem indicar seu mercado de destino e o escopo de certificação necessário — NOP para os EUA, EU-NOP para a Europa.' },
     { q: 'Quais documentos de exportação vocês fornecem?', a: 'O conjunto padrão de exportação inclui: fatura comercial, lista de embalagem, COA, certificado de origem, certificado fitossanitário e certificado de fumigação quando necessário. Certificados Halal e Kosher podem ser providenciados sob pedido. Todos os documentos são compartilhados antes do envio.' },
-    { q: 'Qual é a capacidade de produção anual de vocês?', a: 'Nossa instalação em Unjha tem capacidade de processamento anual de 2.000 MT em todas as linhas de produto. Geralmente podemos confirmar o prazo de entrega em 48 horas após receber uma ficha de especificações confirmada e intenção de compra.' },
+    { q: 'Qual é a capacidade de produção anual de vocês?', a: 'Nossa instalação em Siddhpur tem capacidade de processamento anual de 2.000 MT em todas as linhas de produto. Geralmente podemos confirmar o prazo de entrega em 48 horas após receber uma ficha de especificações confirmada e intenção de compra.' },
     { q: 'De quais portos vocês fazem envios?', a: 'Enviamos FOB Mundra, FOB Kandla e FOB JNPT (Nhava Sheva). Preços CIF estão disponíveis sob pedido. Mundra é nosso porto principal para a maioria dos pedidos de exportação pela frequência de navios para Europa, EUA e Oriente Médio.' },
     { q: 'Quais tamanhos de mesh estão disponíveis para pó de casca de psyllium?', a: 'O pó de casca está disponível em mesh 40, 60, 80, 100 e 200 (ASTM). A escolha do mesh depende da sua aplicação: mesh 40–60 para preenchimento de cápsulas, mesh 80–100 para bebidas em pó e alimentos funcionais, mesh 200 para aplicações cosméticas ou de cuidados pessoais.' },
-    { q: 'Posso obter uma amostra antes de fazer um pedido bulk?', a: 'Sim. Fornecemos amostras de 100–500 g com COA sob pedido. Compartilhe seu grau alvo, mesh e endereço de envio. O prazo de entrega de amostras é de 3 a 5 dias úteis a partir de Unjha.' },
-    { q: 'Quais certificações sua instalação possui?', a: 'Nossa instalação é registrada no FSSAI (IEC 0124007841). As certificações ISO 22000/HACCP, Halal e Kosher estão em andamento. Entre em contato para o status atual das certificações para seu destino específico e requisitos de auditoria do comprador.' },
+    { q: 'Posso obter uma amostra antes de fazer um pedido bulk?', a: 'Sim. Fornecemos amostras de 100–500 g com COA sob pedido. Compartilhe seu grau alvo, mesh e endereço de envio. O prazo de entrega de amostras é de 3 a 5 dias úteis a partir de Siddhpur.' },
+    { q: 'Quais certificações sua instalação possui?', a: 'As operações, registros e auditorias de conformidade internacional de nossa instalação estão atualmente em andamento. Priorizamos a transparência e a conformidade regulatória para todos os mercados globais de exportação. Entre em contato diretamente com o nosso setor de exportação para obter as atualizações mais recentes, cronogramas de conformidade e requisitos de auditoria específicos para o seu país de destino.' },
     { q: 'Qual é a diferença entre casca de psyllium e pó de casca de psyllium?', a: 'Ambos vêm da mesma semente de Plantago ovata, mas diferem em forma e aplicação. A casca inteira mantém sua textura fibrosa e é usada em cápsulas, sachês laxantes e cereais ricos em fibras. O pó é moído em uma mesh fina e se dispersa uniformemente em bebidas em pó, misturas para panificação e alimentos funcionais. O volume de intumescimento é ligeiramente maior no pó devido à maior exposição superficial.' },
   ],
   ru: [
@@ -3004,7 +3195,7 @@ export const localizedFaq: Record<LanguageCode, Array<{ q: string; a: string }>>
     { q: 'Из каких портов вы отгружаете?', a: 'Мы отгружаем FOB Мундра, FOB Кандла и FOB JNPT (Nhava Sheva). Цены CIF доступны по запросу. Мундра — наш основной порт для большинства экспортных заказов из-за частоты судов в Европу, США и на Ближний Восток.' },
     { q: 'Какие размеры помола доступны для порошка шелухи псиллиума?', a: 'Порошок шелухи доступен в помоле 40, 60, 80, 100 и 200 меш (ASTM). Выбор помола зависит от вашего применения: 40–60 меш для наполнения капсул, 80–100 меш для порошковых напитков и функциональных продуктов, 200 меш для косметических и средств личной гигиены.' },
     { q: 'Можно ли получить образец перед оформлением крупного заказа?', a: 'Да. Мы предоставляем образцы 100–500 г с COA по запросу. Укажите целевой сорт, помол и адрес доставки. Срок доставки образцов составляет 3–5 рабочих дней из Унджхи.' },
-    { q: 'Какие сертификаты имеет ваше предприятие?', a: 'Наше предприятие зарегистрировано в FSSAI (IEC 0124007841). Сертификации ISO 22000/HACCP, Халяль и Кошер находятся в процессе оформления. Свяжитесь с нами для получения актуального статуса сертификации для вашего конкретного назначения и требований аудита покупателя.' },
+    { q: 'Какие сертификаты имеет ваше предприятие?', a: 'В настоящее время на нашем предприятии ведутся работы по регистрации, организации операционной деятельности и прохождению международных аудитов соответствия. Мы уделяем приоритетное внимание прозрачности и соблюдению нормативных требований для всех мировых экспортных рынков. Пожалуйста, свяжитесь с нашим экспортным отделом напрямую для получения последней информации, графиков сертификации и конкретных требований к аудиту для вашей страны назначения.' },
     { q: 'В чём разница между шелухой псиллиума и порошком шелухи псиллиума?', a: 'Оба продукта получают из одного и того же семени Plantago ovata, но различаются по форме и применению. Цельная шелуха сохраняет волокнистую текстуру и используется в наполнителях капсул, пакетиках слабительных и злаках с высоким содержанием клетчатки. Порошок измельчается до мелкого помола и равномерно диспергируется в порошковых напитках, хлебопекарных смесях и функциональных продуктах. Объём набухания в порошке несколько выше из-за большей площади контакта.' },
   ],
   ar: [
@@ -3016,7 +3207,7 @@ export const localizedFaq: Record<LanguageCode, Array<{ q: string; a: string }>>
     { q: 'من أي موانئ تشحنون?', a: 'نشحن FOB موندرا وFOB كاندلا وFOB JNPT (نهافا شيفا). أسعار CIF متاحة بناءً على الطلب. موندرا هو ميناؤنا الرئيسي لمعظم طلبات التصدير بسبب تواتر السفن نحو أوروبا والولايات المتحدة والشرق الأوسط.' },
     { q: 'ما أحجام المنخل المتاحة لمسحوق قشور السيليوم?', a: 'مسحوق القشور متاح بمناخل 40 و60 و80 و100 و200 (ASTM). يعتمد اختيار المنخل على تطبيقك: 40–60 لتعبئة الكبسولات، 80–100 لمساحيق المشروبات والأغذية الوظيفية، 200 للتطبيقات التجميلية والعناية الشخصية.' },
     { q: 'هل يمكنني الحصول على عينة قبل تقديم طلب بالجملة?', a: 'نعم. نوفر عينات 100–500 غ مع COA بناءً على الطلب. شارك درجتك المستهدفة والمنخل وعنوان الشحن. مدة تسليم العينات 3 إلى 5 أيام عمل من أونجها.' },
-    { q: 'ما الشهادات التي يمتلكها مصنعكم?', a: 'مصنعنا مسجل في FSSAI (IEC 0124007841). شهادات ISO 22000/HACCP والحلال والكوشير قيد المعالجة. تواصل معنا للاطلاع على الحالة الحالية للشهادات لوجهتك المحددة ومتطلبات تدقيق المشتري.' },
+    { q: 'ما الشهادات التي يمتلكها مصنعكم?', a: 'عمليات منشأتنا وتسجيلاتها وعمليات تدقيق الامتثال الدولية قيد التنفيذ حاليًا. نحن نولي الأولوية للشفافية والامتثال التنظيمي لجميع أسواق التصدير العالمية. يرجى الاتصال بمكتب التصدير لدينا مباشرة للحصول على آخر التحديثات والجداول الزمنية للامتثال ومتطلبات التدقيق المحددة لبلد وجهتك.' },
     { q: 'ما الفرق بين قشور السيليوم ومسحوق قشور السيليوم?', a: 'كلاهما مصدره نفس بذرة Plantago ovata لكنهما يختلفان في الشكل والتطبيق. القشرة الكاملة تحتفظ بقوامها الليفي وتُستخدم في حشو الكبسولات وأكياس المسهّلات والحبوب الغنية بالألياف. المسحوق يُطحن بمنخل ناعم وينتشر بشكل منتظم في مساحيق المشروبات ومخاليط المخبوزات والأغذية الوظيفية. حجم الانتفاخ أعلى قليلاً في المسحوق بسبب زيادة مساحة السطح.' },
   ],
   zh: [
@@ -3028,7 +3219,7 @@ export const localizedFaq: Record<LanguageCode, Array<{ q: string; a: string }>>
     { q: '你们从哪些港口发货？', a: '我们从FOB蒙德拉、FOB坎德拉和FOB JNPT（纳哈瓦·谢瓦）发货。CIF价格可按需提供。由于蒙德拉前往欧洲、美国和中东的船期频繁，它是我们大多数出口订单的主要港口。' },
     { q: '车叶草皮粉有哪些目数可选？', a: '皮粉提供40、60、80、100和200目（ASTM）。目数的选择取决于您的应用：40–60目用于胶囊填充，80–100目用于粉末饮料和功能性食品，200目用于化妆品或个人护理应用。' },
     { q: '在下批量订单前能否获取样品？', a: '是的。我们按需提供100–500克含COA的样品。请提供您的目标规格、目数和收货地址。从昂杰哈发出的样品交货期为3至5个工作日。' },
-    { q: '你们的工厂持有哪些认证？', a: '我们的工厂已在FSSAI注册（IEC 0124007841）。ISO 22000/HACCP、清真和犹太洁食认证正在办理中。请联系我们了解您具体目的地和买家审计要求的当前认证状态。' },
+    { q: '你们的工厂持有哪些认证？', a: '我们工厂的运营准备、相关注册和国际合规性审计目前正在积极推进中。我们始终把全球出口市场的透明度与合规性放在首位。请直接联系我们的出口部门，以获取最新的合规进程、时间表以及针对您特定目的国家的审计与资质要求。' },
     { q: '车叶草皮与车叶草皮粉有何区别？', a: '两者均来自同一种Plantago ovata种子，但形态和应用不同。整皮保留其纤维质地，用于胶囊填充、泻药袋和高纤维谷物。粉末研磨至细目数，均匀分散于粉末饮料、烘焙混合物和功能性食品中。由于表面积更大，粉末的膨胀体积略高。' },
   ],
   de: [
@@ -3036,11 +3227,11 @@ export const localizedFaq: Record<LanguageCode, Array<{ q: string; a: string }>>
     { q: 'Was ist Ihre Mindestbestellmenge (MOQ)?', a: 'Keine Mindestbestellmenge. Wir liefern von 1-KG-Mustern für Labortests und 5-KG-Testchargen bis zu vollen Containern mit 18–20 MT. Bestellen Sie, was Sie benötigen — kontaktieren Sie uns und wir bestätigen Verfügbarkeit und Lieferzeit.' },
     { q: 'Liefern Sie Bio-Psyllium?', a: 'Ja. Wir liefern Bio-Psylliumschalen und -pulver auf Anfrage. Bio-Chargen sind mit Zertifikatsprüfung vor der Bestellung verfügbar. Käufer müssen ihren Zielmarkt und den erforderlichen Zertifizierungsumfang angeben — NOP für die USA, EU-NOP für Europa.' },
     { q: 'Welche Exportdokumente stellen Sie bereit?', a: 'Das Standard-Exportpaket umfasst: Handelsrechnung, Packliste, COA, Ursprungszeugnis, Pflanzengesundheitszeugnis und Begasungszeugnis wo erforderlich. Halal- und Kosher-Zertifikate können auf Anfrage arrangiert werden. Alle Dokumente werden vor dem Versand geteilt.' },
-    { q: 'Wie hoch ist Ihre jährliche Produktionskapazität?', a: 'Unsere Anlage in Unjha hat eine jährliche Verarbeitungskapazität von 2.000 MT über alle Produktlinien. Wir können die Lieferzeit in der Regel innerhalb von 48 Stunden nach Eingang einer bestätigten Spezifikationsblatt und Kaufabsicht bestätigen.' },
+    { q: 'Wie hoch ist Ihre jährliche Produktionskapazität?', a: 'Unsere Anlage in Siddhpur hat eine jährliche Verarbeitungskapazität von 2.000 MT über alle Produktlinien. Wir können die Lieferzeit in der Regel innerhalb von 48 Stunden nach Eingang einer bestätigten Spezifikationsblatt und Kaufabsicht bestätigen.' },
     { q: 'Von welchen Häfen versenden Sie?', a: 'Wir versenden FOB Mundra, FOB Kandla und FOB JNPT (Nhava Sheva). CIF-Preise sind auf Anfrage erhältlich. Mundra ist unser Haupthafen für die meisten Exportaufträge aufgrund der Schiffsfrequenz nach Europa, in die USA und in den Nahen Osten.' },
     { q: 'Welche Meshgrößen sind für Psylliumschalenpulver verfügbar?', a: 'Schalenpulver ist in Mesh 40, 60, 80, 100 und 200 (ASTM) erhältlich. Die Mesh-Auswahl hängt von Ihrer Anwendung ab: Mesh 40–60 für Kapselbefüllung, Mesh 80–100 für Getränkepulver und funktionelle Lebensmittel, Mesh 200 für kosmetische oder Körperpflegeanwendungen.' },
-    { q: 'Kann ich ein Muster erhalten, bevor ich eine Großbestellung aufgebe?', a: 'Ja. Wir stellen 100–500 g Muster mit COA auf Anfrage bereit. Teilen Sie Ihren Zielgrad, Mesh und Versandadresse mit. Die Lieferzeit für Muster beträgt 3–5 Werktage ab Unjha.' },
-    { q: 'Welche Zertifizierungen besitzt Ihre Anlage?', a: 'Unsere Anlage ist FSSAI-registriert (IEC 0124007841). ISO 22000/HACCP-, Halal- und Kosher-Zertifizierungen sind in Bearbeitung. Kontaktieren Sie uns für den aktuellen Zertifizierungsstatus für Ihren spezifischen Bestimmungsort und die Käufer-Audit-Anforderungen.' },
+    { q: 'Kann ich ein Muster erhalten, bevor ich eine Großbestellung aufgebe?', a: 'Ja. Wir stellen 100–500 g Muster mit COA auf Anfrage bereit. Teilen Sie Ihren Zielgrad, Mesh und Versandadresse mit. Die Lieferzeit für Muster beträgt 3–5 Werktage ab Siddhpur.' },
+    { q: 'Welche Zertifizierungen besitzt Ihre Anlage?', a: 'Unsere Betriebsabläufe, Registrierungen und internationalen Compliance-Audits befinden sich derzeit im Prozess. Wir legen großen Wert auf absolute Transparenz und die Einhaltung regulatorischer Vorgaben für alle weltweiten Exportmärkte. Bitte wenden Sie sich direkt an unsere Exportabteilung, um aktuelle Informationen, Compliance-Zeitpläne und spezifische Audit-Anforderungen für Ihr Zielland zu erhalten.' },
     { q: 'Was ist der Unterschied zwischen Psylliumschalen und Psylliumschalenpulver?', a: 'Beide stammen aus derselben Plantago ovata-Samen, unterscheiden sich aber in Form und Anwendung. Ganze Schalen behalten ihre faserige Textur und werden in Kapselfüllungen, Laxativbeuteln und ballaststoffreichen Cerealien verwendet. Pulver wird auf eine feine Meshgröße gemahlen und verteilt sich gleichmäßig in Getränkepulvern, Backwarenblends und funktionellen Lebensmitteln. Das Quellvolumen ist im Pulver aufgrund der größeren Oberflächenexponierung leicht höher.' },
   ],
 };
@@ -3065,9 +3256,9 @@ export const blogPosts = [
     date: '2026-05-05',
     summary: 'Port comparison for bulk psyllium buyers — freight, transit times, and vessel frequency.',
     body: [
-      'India exports psyllium through three primary ports: Mundra (Gujarat), Kandla (Gujarat), and JNPT/Nhava Sheva (Maharashtra). For psyllium buyers, port selection affects freight cost, transit time to destination, and container availability. Most Unjha-based processors, including RM Psyllium, use Mundra as their primary port due to its proximity (approximately 220 km from Unjha) and high vessel frequency to Europe, the US East Coast, the Middle East, and Australia.',
+      'India exports psyllium through three primary ports: Mundra (Gujarat), Kandla (Gujarat), and JNPT/Nhava Sheva (Maharashtra). For psyllium buyers, port selection affects freight cost, transit time to destination, and container availability. Most Gujarat-based processors, including RM Psyllium, use Mundra as their primary port due to its proximity (approximately 220 km from our Siddhpur facility) and high vessel frequency to Europe, the US East Coast, the Middle East, and Australia.',
       'Mundra Port (MUND) is operated by Adani Ports and handles the highest volume of container traffic in India. Vessel frequency to major destination ports (Rotterdam, Felixstowe, New York, Jeddah, Colombo) is typically 2–4 sailings per week. Transit time to Rotterdam is approximately 20–23 days; to New York approximately 25–28 days; to Jeddah approximately 8–10 days. Kandla (INKLA) is an alternative with slightly lower port charges but less frequent services. JNPT is used primarily for buyers in southern India or where specific shipping lines offer better rates.',
-      'For CIF orders, we select the port based on your destination and the shipping line with the best rate at the time of booking. For FOB orders, you nominate the freight forwarder and we coordinate with them directly. Export documentation — commercial invoice, packing list, COA, certificate of origin, phytosanitary certificate — is prepared in Unjha and submitted 3–5 days before vessel loading. Share your destination port and we will provide an indicative freight quote alongside the product price.'
+      'For CIF orders, we select the port based on your destination and the shipping line with the best rate at the time of booking. For FOB orders, you nominate the freight forwarder and we coordinate with them directly. Export documentation — commercial invoice, packing list, COA, certificate of origin, phytosanitary certificate — is prepared at our facility and submitted 3–5 days before vessel loading. Share your destination port and we will provide an indicative freight quote alongside the product price.'
     ]
   },
   {
@@ -3183,3 +3374,2292 @@ export function industryProducts(slugs: string[]) {
 export function blogPostBySlug(slug: string) {
   return blogPosts.find((post) => post.slug === slug);
 }
+export interface UseCase {
+  title: string;
+  body: string;
+}
+
+export interface IndustryTranslation {
+  name: string;
+  headline: string;
+  proof: string[];
+  useCases: UseCase[];
+  keySpecs: string[];
+  documents: string[];
+  buyerNote: string;
+}
+
+export const industryTranslations: Record<string, Record<string, IndustryTranslation>> = {
+  zh: {
+    'pharma-nutraceutical': {
+      name: '制药与保健品',
+      headline: '专为胶囊、消化健康产品、泻药和膳食补充剂混合物设计的优质车前子壳与车前子粉。',
+      proof: [
+        '包含完整制药级检测的分析证书 (COA)',
+        '符合 USP / EP / IP 药典标准参数',
+        '可提供 NABL 认可的实验室检测报告'
+      ],
+      useCases: [
+        {
+          title: '泻药胶囊与非处方药 (OTC) 冲剂袋',
+          body: '纯度为 99% 且溶胀度 ≥50 ml/g 的车前子壳，完全符合 USP 和 EP 药典关于非处方泻药制剂的标准。提供 40-60 目规格，适用于标准胶囊的填充生产。'
+        },
+        {
+          title: '消化系统健康补充剂',
+          body: '提供整壳与 80 目的精细粉末，供合同制造商品牌用于膳食纤维混合粉、益生元冲剂以及通过电商或健康零售渠道销售的肠道调节产品。'
+        },
+        {
+          title: '保健营养粉剂混合物',
+          body: '95-98% 纯度的 100 目超细粉末，能极佳地分散于肠道健康、体重管理及微生态调节等功能性配方粉中。低灰分与中性风味是其核心优势。'
+        },
+        {
+          title: 'OEM/白标补充剂采购',
+          body: '品牌商和合同制造商在采购医药级车前子壳用于白标或代工生产时，需要确保批次之间 COA 数据的高度一致性。我们提供经 NABL 认可的报告并出具完全符合买方指定药典的证明。'
+        }
+      ],
+      keySpecs: [
+        '99% 纯度：溶胀度 ≥ 50 ml/g (符合 USP / EP / IP)',
+        '可提供 95-98% 纯度（用于膳食补充剂 and 膳食纤维食品）',
+        '水分 ≤ 12%，总灰分 ≤ 3%，酸不溶性灰分 ≤ 0.4%',
+        '重金属控制：铅 ≤ 2 ppm，砷 ≤ 1 ppm',
+        '微生物控制：无大肠杆菌，无沙门氏菌，菌落总数 (TPC) ≤ 10,000 cfu/g',
+        '目数范围：40, 60, 80, 100 目 (ASTM 标准)'
+      ],
+      documents: [
+        '应买方要求出具符合 USP / EP / IP 的分析证书 (COA)',
+        'NABL 认可的第三方实验室检测报告',
+        '产地来源证（印度古吉拉特邦）',
+        '植物检疫证书',
+        '可根据要求提供清真 (Halal) / 犹太 (Kosher) 认证或声明'
+      ],
+      buyerNote: '请告知您的药典要求、目标出口市场以及目数偏好。我们将在您下单前为您发送契合标准的样品 COA 并确认产能等级。'
+    },
+    'food-beverage-bakery': {
+      name: '食品、饮料与烘焙',
+      headline: '专用于无麸质烘焙、谷物食品、固体饮料混合物及清洁标签增稠的优质车前子粉与整壳。',
+      proof: [
+        '目数大小可根据客户具体应用进行定制',
+        '有机批次均随附 NOP / EU 有机认证文件',
+        '包含食品级过敏原声明'
+      ],
+      useCases: [
+        {
+          title: '无麸质面包与西点',
+          body: '80-100 目的 95-98% 纯度车前子粉，能在米粉和玉米淀粉面团中替代麸质提供极佳的持水力与网络结构搭建。典型添加量为面粉重量的 1-3%。'
+        },
+        {
+          title: '功能性固体饮料与混合粉',
+          body: '100-200 目的超细粉末，在富含膳食纤维的代餐粉、营养粉和蛋白奶昔中能快速分散，绝无结块。低溶胀度（85-95%）可有效降低成胶粘度。'
+        },
+        {
+          title: '高纤谷物食品与坚果能量棒',
+          body: '整壳或粗粉（40-60 目）被广泛应用于早餐麦片、能量棒和穆斯里（Muesli）中，以显著提升配方中的可溶性膳食纤维含量。'
+        },
+        {
+          title: '清洁标签增稠与稳定剂',
+          body: '车前子粉是酱汁、调味汁和方便食品中替代甲基纤维素及黄原胶的完美清洁标签天然原料，可提供批次稳定的增稠与保水特性。'
+        }
+      ],
+      keySpecs: [
+        '95-98% 纯度：标准食品行业应用首选',
+        '85% 纯度：兼顾成本效益的高纤添加方案',
+        '目数选择：烘焙用 80-100 目，固体饮料用 100-200 目，谷物食品用 40-60 目',
+        '水分 ≤ 10%，利于食品加工安全与长期储存',
+        '有机认证：NOP (美国) 和 EU (欧盟) 有机双认证，提供逐批交易证书',
+        '无过敏原（加工车间完全无麸质、无坚果、无大豆、无乳制品）'
+      ],
+      documents: [
+        '随附食品级微生物检测指标的分析证书 (COA)',
+        '无过敏原及非转基因 (Non-GMO) 声明',
+        '原产地证书',
+        '有机交易证书 (NOP / EU) —— 仅限有机采购批次',
+        '植物检疫证书'
+      ],
+      buyerNote: '请与我们分享您的具体应用、批次规模和标签声明诉求。我们将为您推荐最合适的纯度和目数。在订单确认前，我们非常乐意为您邮寄配方测试样品和 COA 文件。'
+    },
+    'animal-feed': {
+      name: '动物营养与饲料',
+      headline: '为大宗采购商、批发商及牧业饲料渠道量身定制的车前子 Khakha 粉与家畜饲料原料。',
+      proof: [
+        '提供 25 公斤 / 50 公斤 / 1,000 公斤吨袋等多种包装规格',
+        '提供明确标注粗纤维与粗蛋白含量的饲料级 COA',
+        '备有 Sagar Gola / Sagar Lali 压榨牛饲料块'
+      ],
+      useCases: [
+        {
+          title: '配合饲料配方增效',
+          body: '车前子 Khakha 粉是反刍动物、家禽及马匹颗粒饲料配方中极具性价比的高可溶性纤维来源及天然颗粒黏合剂。'
+        },
+        {
+          title: '马匹肠道排沙与保健',
+          body: '在马匹的日常膳食补充剂中混入粗车前子壳和粉末，能强力黏附并排出马匹肠道内积聚的沙粒，有效预防沙结肠绞痛。'
+        },
+        {
+          title: '奶牛营养补充与改良',
+          body: '我们的 Sagar Gola 压榨饲料块 and Sagar Lali 散装饲料直接供应给当地及出口奶牛场，有助于显著改善牛只乳脂率并促进反刍消化。'
+        },
+        {
+          title: '宠物食品膳食纤维添加',
+          body: '经过物理清理的优质车前子粉可直接添加到猫粮和狗粮配方中，辅助宠物肠道蠕动、预防毛球症并稳定便形。'
+        }
+      ],
+      keySpecs: [
+        '粗纤维：30-40% (标准 Khakha 级)',
+        '粗蛋白：8-12% (提供基础营养支持)',
+        '水分 ≤ 12%，便于饲料筒仓的安全长期储存',
+        '100% 纯天然植物来源，绝无任何化学添加剂或防腐剂',
+        '包装方式：50 公斤编织袋或 1,000 公斤集装吨袋'
+      ],
+      documents: [
+        '针对动物饲料检测指标出具的分析证书 (COA)',
+        '原产地证书（印度古吉拉特邦 Siddhpur）',
+        '印度官方出具的植物检疫证书',
+        '熏蒸证明及装港监装报告'
+      ],
+      buyerNote: '请告知您倾向的产品形态（牛饲料块或散装粉末）、卸货目的港以及预期的年采购量。我们将在第一时间为您提供极具竞争力的 FOB Mundra 或 CIF 报价。'
+    },
+    'industrial-personal-care': {
+      name: '工业与个人护理',
+      headline: '用于增稠、黏合、锁水保墒和生物降解吸水材料的车前子工业粉与 Khakha 粉。',
+      proof: [
+        '可提供 200 目超细个人护理/化妆品级粉末',
+        '目数和粒径分布可根据客户工艺流程进行定制',
+        '每批次均随附详细的技术数据表 (TDS)'
+      ],
+      useCases: [
+        {
+          title: '化妆品天然增稠剂',
+          body: '200 目的超细车前子粉在面霜、面膜等化妆品中用作天然凝胶剂及成膜剂。车前子黏胶只需极低添加量（0.5-2%）即可形成水润、透明、无刺激的凝胶基质。'
+        },
+        {
+          title: '土壤保水与绿化工程',
+          body: '车前子 Khakha 粉在大面积边坡绿化、防沙固沙及土壤水土流失控制中发挥关键作用。其超强的黏性和吸水特性可成倍提升沙质土壤的保水墒情。'
+        },
+        {
+          title: '工业黏合与农药造粒',
+          body: '在蚊香、线香、环保板材以及农业复合肥造粒中，车前子粉作为高效的天然生物黏合剂，能显著减少合成胶粘剂的用量并增强颗粒硬度。'
+        },
+        {
+          title: '生物降解吸水材料',
+          body: '车前子壳粉卓越的膨胀和吸水性能使其成为可生物降解的医用敷料、吸水垫芯层及园艺缓释保水剂的理想天然改性材料。'
+        }
+      ],
+      keySpecs: [
+        '200 目：适用于化妆品与个人护理配方',
+        '40-100 目：适用于工业黏合剂、土壤改良及生态绿化',
+        '溶胀度：95% 纯度下可达 40-50 ml/g',
+        '水分 ≤ 10%，防止运输与存储中结块，保证流畅喂料',
+        '大宗采购优惠：最低起订量 1 吨 (MT) 起'
+      ],
+      documents: [
+        '包含批次指标范围与检测限的技术数据表 (TDS)',
+        '分析证书 (COA)',
+        '原产地证书',
+        '买方定制技术规范确认书'
+      ],
+      buyerNote: '工业与个人护理应用往往对黏度曲线或粒径有特定需求。请提供您的技术参数要求或应用场景说明，我们将为您调配定制的样品批次供您测试。'
+    }
+  },
+  ar: {
+    'pharma-nutraceutical': {
+      name: 'الأدوية والمكملات الغذائية',
+      headline: 'قشور وبودرة السيليوم عالية الجودة للكبسولات، منتجات صحة الجهاز الهضمي، المسهلات، وتركيبات المكملات الغذائية.',
+      proof: [
+        'شهادة تحليل (COA) مع فحص صيدلاني كامل',
+        'مطابقة لمعايير دستور الأدوية الأمريكي والأوروبي والهنّدي',
+        'تقارير اختبار معتمدة من مختبرات NABL متوفرة'
+      ],
+      useCases: [
+        {
+          title: 'كبسولات الملينات وأكياس الأدوية اللاوصفية (OTC)',
+          body: 'قشور نقية بنسبة 99% مع حجم انتفاخ ≥50 مل/جم تلبي متطلبات دساتير الأدوية الأمريكية والأوروبية لتركيبات الملينات. متوفرة بحجم 40-60 مش لملء الكبسولات القياسي.'
+        },
+        {
+          title: 'مكملات صحة الجهاز الهضمي',
+          body: 'قشور كاملة وبودرة 80 مش تستخدم من قبل مصنعي التعاقد لخلطات الألياف، أكياس البريبايوتك، ومنتجات تنظيم الهضم عبر قنوات التجزئة والتجارة الإلكترونية.'
+        },
+        {
+          title: 'خلطات البودرة للمكملات الغذائية',
+          body: 'درجة نقاوة 95-98% بنعومة 100 مش تمتزج بنقاء في خلطات البودرة الوظيفية لصحة الأمعاء، إدارة الوزن، ومنتجات الميكروبيوم. الرماد المنخفض والمذاق المحايد هما الميزتان الأساسيتان.'
+        },
+        {
+          title: 'توريد المكملات للعلامات الخاصة (OEM/White Label)',
+          body: 'تتطلب العلامات التجارية ومصانع التعاقد التي تبحث عن قشور سيليوم صيدلانية لمنتجاتها بيانات COA متسقة من دفعة لأخرى. نحن نوفر تقارير NABL المعتمدة ونطابق الشهادات حسب طلب المشتري.'
+        }
+      ],
+      keySpecs: [
+        'نقاء 99%: حجم الانتفاخ ≥ 50 مل/جم (USP / EP / IP)',
+        'يتوفر نقاء 95-98% للمكملات والألياف الغذائية',
+        'الرطوبة ≤ 12%، الرماد الكلي ≤ 3%، الرماد غير القابل للذوبان في الحمض ≤ 0.4%',
+        'المعادن الثقيلة: الرصاص ≤ 2 جزء في المليون، الزرنيخ ≤ 1 جزء في المليون',
+        'الميكروبيولوجي: خالي من الإي كولاي والسالمونيلا، عدد البكتيريا الكلي ≤ 10,000 cfu/g',
+        'نطاق المش: 40، 60، 80، 100 (ASTM)'
+      ],
+      documents: [
+        'شهادة تحليل (COA) مطابقة لدساتير الأدوية (USP / EP / IP) عند الطلب',
+        'تقرير اختبار معتمد من مختبر NABL التابع لطرف ثالث',
+        'شهادة منشأ (ولاية غوجارات، الهند)',
+        'شهادة صحة نباتية',
+        'شهادة أو إعلان حلال / كوشر متوفر عند الطلب'
+      ],
+      buyerNote: 'يرجى إعلامنا بمتعلبات دستور الأدوية الخاص بكم، السوق المستهدف، وحجم المش المفضل. سنرسل لكم شهادة COA نموذجية مطابقة ونؤكد توافر الدرجة المطلوبة قبل الطلب.'
+    },
+    'food-beverage-bakery': {
+      name: 'الأغذية والمشروبات والمخبوزات',
+      headline: 'بودرة وقشور السيليوم للمخبوزات الخالية من الغلوتين، حبوب الإفطار، خلطات المشروبات، والتكثيف النظيف.',
+      proof: [
+        'حجم المش مخصص ومطابق للتطبيق المطلوب',
+        'شحنات عضوية متوفرة مع مستندات NOP / EU العضوية',
+        'إعلان مسببات الحساسية من الدرجة الغذائية متضمن'
+      ],
+      useCases: [
+        {
+          title: 'الخبز والمعجنات الخالية من الغلوتين',
+          body: 'بودرة 80-100 مش بنقاء 95-98% توفر خصائص ربط الماء وبناء قوام العجين كبديل للغلوتين في دقيق الأرز ونشا الذرة. نسبة الاستخدام المعتادة 1-3% من وزن الدقيق.'
+        },
+        {
+          title: 'خلطات وبودرة المشروبات الوظيفية',
+          body: 'بودرة ناعمة 100-200 مش سريعة الذوبان بدون تكتل في بودرة المشروبات المدعمة بالألياف، بدائل الوجبات، ومخفوق البروتين. الدرجات ذات حجم الانتفاخ الأقل (85-95%) تقلل اللزوجة.'
+        },
+        {
+          title: 'حبوب الإفطار وألواح الجرانولا الغنية بالألياف',
+          body: 'تستخدم القشور الكاملة والبودرة الخشنة (40-60 مش) في حبوب الإفطار، ألواح الجرانولا، والموسلي لزيادة محتوى الألياف القابلة للذوبان بشكل ملحوظ.'
+        },
+        {
+          title: 'التكثيف والتثبيت النظيف (Clean Label)',
+          body: 'تعتبر بودرة قشور السيليوم بديلاً طبيعيًا نظيفًا للميثيل سليلوز وصمغ الزانثان في الصلصات، التتبيلات، والوجبات الجاهزة لتوفير قوام متسق.'
+        }
+      ],
+      keySpecs: [
+        'نقاء 95-98% للتطبيقات الغذائية القياسية',
+        'نقاء 85% لتدعيم الألياف بأسعار اقتصادية كفؤة',
+        'المش: 80-100 للمخبوزات، 100-200 للمشروبات، 40-60 لحبوب الإفطار',
+        'الرطوبة ≤ 10% لضمان سلامة الأغذية وسهولة التداول والاستقرار',
+        'عضوي معتمد: NOP (أمريكا) و EU (أوروبا)، مع توفير شهادة المعاملة لكل شحنة',
+        'خالي من مسببات الحساسية (صناعة خالية تماماً من الغلوتين، المكسرات، الصويا، ومنتجات الألبان)'
+      ],
+      documents: [
+        'شهادة تحليل (COA) متضمنة الفحص الميكروبيولوجي الغذائي الكامل',
+        'إعلان خالي من مسببات الحساسية والمعدلات الوراثية (Non-GMO)',
+        'شهادة منشأ',
+        'شهادة معاملة عضوية (NOP / EU) للشحنات العضوية فقط',
+        'شهادة صحة نباتية'
+      ],
+      buyerNote: 'شاركونا تطبيقكم المستهدف، حجم الطلب، ومتطلبات الملصق الغذائي. سنوصي بالدرجة والمش المناسبين، ويسعدنا إرسال عينة اختبار مجانية مع شهادة COA قبل تأكيد الطلب التجاري.'
+    },
+    'animal-feed': {
+      name: 'تغذية الحيوانات والأعلاف',
+      headline: 'بودرة الكخا كخا وأعلاف الماشية لمصانع الأعلاف، الموزعين، وقنوات الثروة الحيوانية.',
+      proof: [
+        'خيارات التعبئة: أكياس 25 كجم / 50 كجم أو أكياس جامبو 1000 كجم',
+        'شهادة COA مخصصة للأعلاف توضح نسب الألياف الخام والبروتين',
+        'قوالب أعلاف الماشية المضغوطة Sagar Gola / Sagar Lali متوفرة'
+      ],
+      useCases: [
+        {
+          title: 'تركيبات الأعلاف المركبة',
+          body: 'تعتبر بودرة كخا كخا السيليوم مصدرًا غنيًا واقتصاديًا للألياف القابلة للذوبان ورابطًا طبيعيًا في حبيبات أعلاف المجترات، الدواجن، والخيول.'
+        },
+        {
+          title: 'الوقاية من مغص الرمل للخيول',
+          body: 'تضاف القشور الخشنة والبودرة في مكملات الخيول للمساعدة في ربط وإخراج الرمال المتراكمة في الجهاز الهضمي لمنع المغص الرملي.'
+        },
+        {
+          title: 'تغذية وتدعيم الماشية المدرة للحليب',
+          body: 'توريد قوالب أعلاف Sagar Gola المضغوطة وأعلاف Sagar Lali مباشرة للمزارع لتحسين جودة ونسبة دسم الحليب وتدعيم الهضم.'
+        },
+        {
+          title: 'الألياف الغذائية في أطعمة الحيوانات الأليفة (Pet Food)',
+          body: 'تدمج بودرة السيليوم النظيفة ميكانيكياً في تركيبات طعام القطط والكلاب للمساعدة في التخلص من كرات الشعر وتنظيم قوام البراز.'
+        }
+      ],
+      keySpecs: [
+        'ألياف خام: 30-40% (درجة كخا كخا القياسية)',
+        'بروتين خام: 8-12% لدعم القيمة الغذائية للأعلاف',
+        'الرطوبة ≤ 12% لضمان التخزين الطويل والآمن في الصوامع',
+        'أصل نباتي 100% بدون أي إضافات كيميائية أو مواد حافظة',
+        'التعبئة: أكياس منسوجة 50 كجم أو أكياس جامبو طن واحد (1,000 كجم)'
+      ],
+      documents: [
+        'شهادة تحليل (COA) مطابقة لمعايير فحص أعلاف الحيوان',
+        'شهادة منشأ (منطقة سيدهبور، ولاية غوجارات، الهند)',
+        'شهادة صحة نباتية رسمية من الحكومة الهندية',
+        'شهادة تبخير وتقارير مراقبة الشحن والتحميل'
+      ],
+      buyerNote: 'يرجى إعلامنا بالشكل المفضل للأعلاف (قوالب مضغوطة أو بودرة سائبة)، ميناء الوصول، وحجم السحب السنوي. وسنقدم لكم أسعاراً تنافسية للغاية FOB أو CIF.'
+    },
+    'industrial-personal-care': {
+      name: 'التطبيقات الصناعية والعناية الشخصية',
+      headline: 'بودرة السيليوم الصناعية وبودرة الكخا للتكثيف، الربط، حفظ الرطوبة، والتطبيقات الماصة.',
+      proof: [
+        'بودرة درجة مستحضرات التجميل 200 مش متوفرة',
+        'أحجام وتوزيعات مش مخصصة حسب الطلب',
+        'ورقة البيانات الفنية (TDS) متضمنة مع كل دفعة'
+      ],
+      useCases: [
+        {
+          title: 'عامل تكثيف طبيعي لمستحضرات التجميل',
+          body: 'تستخدم بودرة السيليوم 200 مش كعامل جل وتشكيل طبقة واقية في أقنعة الوجه والكريمات. تشكل لزوجة واضحة وخالية من التهيج بنسب استخدام منخفضة (0.5-2%).'
+        },
+        {
+          title: 'تثبيت التربة والمشاريع الزراعية',
+          body: 'تستخدم بودرة كخا كخا السيليوم في مشاريع مكافحة التعرية، تثبيت التربة، وحفظ رطوبة الأراضي الرملية بشكل مضاعف بفضل أليافها الماصة.'
+        },
+        {
+          title: 'الربط الحيوي والتكتيل الصناعي',
+          body: 'تعمل البودرة كرابط طبيعي فعال في صناعة البخور، الفحم، حبيبات الأسمدة الزراعية، والمنتجات المضغوطة لتقليل استخدام الغراء الصناعي.'
+        },
+        {
+          title: 'المواد الامتصاصية الحيوية',
+          body: 'القدرة الفائقة لقشور السيليوم على الامتصاص تجعل البودرة خياراً ممتازاً للمنسوجات الماصة، ضمادات الجروح القابلة للتحلل، وحبيبات حفظ رطوبة البساتين.'
+        }
+      ],
+      keySpecs: [
+        '200 مش: مناسب لتركيبات مستحضرات التجميل والعناية الشخصية',
+        '40-100 مش: مناسب للمواد الرابطة الصناعية ومكافحة التعرية والزراعة',
+        'حجم الانتفاخ: 40-50 مل/جم بنقاء 95%',
+        'الرطوبة ≤ 10% لمنع التكتل وضمان تدفق المواد بسلاسة في التصنيع',
+        'أسعار تجارية مخصصة للطلبيات الكبيرة تبدأ من 1 طن (MT)'
+      ],
+      documents: [
+        'ورقة البيانات الفنية (TDS) توضح نطاقات المواصفات لكل دفعة',
+        'شهادة تحليل (COA)',
+        'شهادة منشأ',
+        'ورقة مواصفات فنية موقعة ومعتمدة حسب متطلبات المشتري'
+      ],
+      buyerNote: 'تتطلب التطبيقات الصناعية والعناية الشخصية في كثير من الأحيان لزوجة أو حجم مش مخصص. شاركونا ورقة مواصفاتكم الفنية وسنقوم بتوفير عينات اختبار مناسبة لكم.'
+    }
+  },
+  nl: {
+    'pharma-nutraceutical': {
+      name: 'Farmacie & Nutraceuticals',
+      headline: 'Premium psylliumvezels en -poeder voor capsules, spijsverteringsproducten, laxeermiddelen en supplementen.',
+      proof: [
+        'COA met volledig farmaceutisch analysepaneel inbegrepen',
+        'Afgestemd op USP / EP / IP farmacopee-parameters',
+        'NABL-geaccrediteerde laboratoriumrapporten beschikbaar'
+      ],
+      useCases: [
+        {
+          title: 'Laxeercapsules & OTC-zakjes',
+          body: '99% pure psylliumvezels met een zwelvolume van ≥50 ml/g voldoen aan de USP- en EP-monografie-eisen voor vrij verkrijgbare laxeermiddelen. Geleverd in 40-60 mesh voor standaard capsulevulling.'
+        },
+        {
+          title: 'Supplementen voor spijsvertering',
+          body: 'Hele vezels en 80-mesh poeder gebruikt door loonproducenten voor vezelmengsels, prebiotische zakjes en darmregulerende producten verkocht via apotheken en e-commerce.'
+        },
+        {
+          title: 'Nutraceutische poedermengsels',
+          body: '95-98% zuiverheid in 100-mesh kwaliteit dispergeert perfect in functionele poedermengsels voor darmgezondheid, gewichtsbeheersing en microbioomproducten. Laag asgehalte en neutrale smaak zijn cruciaal.'
+        },
+        {
+          title: 'Private label supplementen sourcing',
+          body: 'Merken en loonfabrikanten die psyllium van farmaceutische kwaliteit inkopen voor private label referenties vereisen consistente COA-gegevens per batch. Wij leveren NABL-geaccrediteerde rapporten.'
+        }
+      ],
+      keySpecs: [
+        '99% zuiverheid: zwelvolume ≥ 50 ml/g (USP / EP / IP)',
+        '95-98% zuiverheid beschikbaar voor voedingssupplementen en vezelverrijking',
+        'Vocht ≤ 12%, Totaal as ≤ 3%, Zuuronoplosbare as ≤ 0,4%',
+        'Zware metalen: Pb ≤ 2 ppm, As ≤ 1 ppm',
+        'Microbiologie: E. coli afwezig, Salmonella afwezig, TPC ≤ 10.000 kve/g',
+        'Mesh-bereik: 40, 60, 80, 100 (ASTM)'
+      ],
+      documents: [
+        'Certificaat van Analyse (COA) afgestemd op USP / EP / IP op aanvraag',
+        'NABL-geaccrediteerd laboratoriumtestrapport',
+        'Certificaat van Oorsprong (Gujarat, India)',
+        'Fytosanitair certificaat',
+        'Halal / Kosher verklaring of certificaat op aanvraag'
+      ],
+      buyerNote: 'Laat ons weten welke farmacopee-norm, doelmarkt en mesh-grootte u vereist. Wij sturen u een passend voorbeeld-COA en bevestigen de beschikbaarheid van de kwaliteit voor uw bestelling.'
+    },
+    'food-beverage-bakery': {
+      name: 'Voeding, Dranken & Bakkerij',
+      headline: 'Psylliumpoeder en -vezels voor glutenvrije bakkerij, granen, drankmengsels en clean-label verdikking.',
+      proof: [
+        'Mesh-grootte aangepast aan uw toepassing',
+        'Biologische batches met NOP- / EU-documentatie',
+        'Allergenenverklaring van voedingskwaliteit inbegrepen'
+      ],
+      useCases: [
+        {
+          title: 'Glutenvrij brood & banket',
+          body: '80-100 mesh poeder met 95-98% zuiverheid biedt de waterbindende en structuurvormende eigenschappen die gluten vervangen in rijstmeel- en maïszetmeeldegen. Typische dosering is 1-3% van het meelgewicht.'
+        },
+        {
+          title: 'Functionele drankmengsels & poeders',
+          body: '100-200 mesh fijn poeder dispergeert snel en klontervrij in vezelverrijkte drankpoeders, maaltijdvervangers en eiwitshakes. Lagere zwelkwaliteiten (85-95%) verminderen de viscositeit.'
+        },
+        {
+          title: 'Vezelrijke granen & müslirepen',
+          body: 'Hele vezels en grof poeder (40-60 mesh) worden gebruikt in ontbijtgranen en mueslirepen om het gehalte aan oplosbare voedingsvezels te verhogen.'
+        },
+        {
+          title: 'Clean-label verdikking & stabilisatie',
+          body: 'Psylliumpoeder is een clean-label alternatief voor methylcellulose en xanthaangom in sauzen, dressings en kant-en-klaarmaaltijden voor stabiele verdikking.'
+        }
+      ],
+      keySpecs: [
+        '95-98% zuiverheid voor standaard levensmiddelentoepassingen',
+        '85% zuiverheid voor kostenefficiënte vezelverrijking',
+        'Mesh: 80-100 voor bakkerij, 100-200 voor dranken, 40-60 voor granen',
+        'Vocht ≤ 10% voor voedselveilige verwerking en stabiliteit',
+        'Biologisch gecertificeerd: NOP (VS) en EU Biologisch — transactiecertificaat per batch',
+        'Allergenenvrij (geen gluten, noten, soja, zuivel in de verwerkingsfaciliteit)'
+      ],
+      documents: [
+        'Certificaat van Analyse (COA) met microbiologisch voedingspaneel',
+        'Allergenen- en GGO-vrij verklaring',
+        'Certificaat van Oorsprong',
+        'Biologisch transactiecertificaat (NOP / EU) — voor biologische batches',
+        'Fytosanitair certificaat'
+      ],
+      buyerNote: 'Laat ons uw toepassing, batchgrootte en etiketteringsclaims weten. Wij adviseren de juiste kwaliteit en mesh-grootte, en sturen graag een monster met COA voor laboratoriumtesten.'
+    },
+    'animal-feed': {
+      name: 'Diervoeding & Veevoer',
+      headline: 'Psyllium khakha-poeder en veevoer voor grootverbruikers, distributeurs en veehouderijkanalen.',
+      proof: [
+        'Verpakkingsopties van 25 kg / 50 kg / 1.000 kg big bags',
+        'Feed-grade COA met ruwe celstof en eiwitgehalte',
+        'Sagar Gola / Sagar Lali geperste veevoerblokken beschikbaar'
+      ],
+      useCases: [
+        {
+          title: 'Formulering van mengvoeder',
+          body: 'Psyllium khakha-poeder dient als een kostenefficiënte oplosbare vezelbron en natuurlijk bindmiddel in gepelleteerd voeder voor herkauwers, pluimvee en paarden.'
+        },
+        {
+          title: 'Zandkoliek preventie bij paarden',
+          body: 'Grof gemalen vezels en poeder worden toegevoegd aan paardenvoedingssupplementen om de uitscheiding van opgehoopt zand in de darmen te ondersteunen.'
+        },
+        {
+          title: 'Aanvulling voor melkvee',
+          body: 'Geperste Sagar Gola blokken en losse Sagar Lali mengsels worden rechtstreeks geleverd aan melkveebedrijven ter verbetering van het melkvetgehalte en de vertering.'
+        },
+        {
+          title: 'Voedingsvezels in diervoeding (petfood)',
+          body: 'Mechanisch gereinigd psylliumpoeder wordt opgenomen in droge honden- en kattenvoerformuleringen voor haarbalbeheersing en stevige ontlasting.'
+        }
+      ],
+      keySpecs: [
+        'Ruwe celstof: 30-40% (khakha-kwaliteit)',
+        'Ruw eiwit: 8-12% ter ondersteuning van het voerrantsoen',
+        'Vocht ≤ 12% voor veilige langdurige opslag in silo\'s',
+        '100% plantaardige oorsprong, vrij van chemische additieven',
+        'Verpakking in 50 kg PP-zakken of 1.000 kg jumbo big bags'
+      ],
+      documents: [
+        'Certificaat van Analyse (COA) gericht op diervoederparameters',
+        'Certificaat van Oorsprong (Siddhpur, Gujarat)',
+        'Fytosanitair certificaat van het exportland',
+        'Begassings- en laadsupervisierapporten'
+      ],
+      buyerNote: 'Laat ons weten welk formaat u verkiest (blokken of los poeder), de bestemmingshaven en uw afnamehoeveelheid. Wij maken graag een FOB of CIF offerte op maat.'
+    },
+    'industrial-personal-care': {
+      name: 'Industrie & Persoonlijke Verzorging',
+      headline: 'Psylliumpoeder en -khakha voor verdikking, binding, vochtretentie en absorberende toepappen.',
+      proof: [
+        'Cosmetische kwaliteit 200-mesh poeder beschikbaar',
+        'Specifieke mesh-grootten op aanvraag',
+        'Technical Data Sheet (TDS) meegeleverd per batch'
+      ],
+      useCases: [
+        {
+          title: 'Natuurlijk verdikkingsmiddel in cosmetica',
+          body: '200-mesh poeder dient als een natuurlijk geleer- en filmvormend middel in gezichtsmaskers en crèmes. Het vormt een heldere, niet-irriterende gel bij lage doseringen (0,5-2%).'
+        },
+        {
+          title: 'Bodemstabilisatie & horticultuur',
+          body: 'Psyllium khakha-poeder wordt gebruikt voor erosiebestrijding en bodemverbetering, omdat het de waterretentiecapaciteit van zandgronden massaal verhoogt.'
+        },
+        {
+          title: 'Industriële bindmiddelen',
+          body: 'Psylliumpoeder fungeert als een natuurlijke binder bij het persen van tabletten, wierookstokjes en pellets, wat de behoefte aan synthetische lijm vermindert.'
+        },
+        {
+          title: 'Biologisch afbreekbare absorberende materialen',
+          body: 'De hoge zwelcapaciteit van het vezelpoeder maakt het ideaal voor biologisch afbreekbare wondverbanden, absorberende matten en waterabsorberende hortigranulen.'
+        }
+      ],
+      keySpecs: [
+        '200 mesh voor cosmetische en persoonlijke verzorgingsformuleringen',
+        '40-100 mesh voor industriële bindmiddelen en grondwerken',
+        'Zwelvolume: 40-50 ml/g bij 95% zuiverheid',
+        'Vocht ≤ 10% om klonteren te voorkomen en soepel te verwerken',
+        'Volumeprijzen vanaf 1 ton (1 MT)'
+      ],
+      documents: [
+        'Technical Data Sheet (TDS) met specificatiegrenzen per batch',
+        'Certificaat van Analyse (COA)',
+        'Certificaat van Oorsprong',
+        'Specificatiebevestiging op aanvraag'
+      ],
+      buyerNote: 'Industriële toepassingen vereisen vaak klantspecifieke zwel- of mesh-profielen. Deel uw specificaties of applicatiedoelen en wij stellen een testbatch samen.'
+    }
+  },
+  de: {
+    'pharma-nutraceutical': {
+      name: 'Pharma & Nutrazeutika',
+      headline: 'Flohsamenschalen und -pulver für Kapseln, Verdauungsgesundheitsprodukte, Abführmittel und Nahrungsergänzungsmittelmischungen.',
+      proof: [
+        'COA mit vollständigem Pharma-Panel enthalten',
+        'Anpassung an USP / EP / IP-Parameter',
+        'NABL-akkreditierte Testberichte verfügbar'
+      ],
+      useCases: [
+        {
+          title: 'Abführmittelkapseln & OTC-Beutel',
+          body: '99% reine Schalen mit einem Quellvolumen von ≥50 ml/g erfüllen die USP- und EP-Monographieanforderungen für rezeptfreie Abführmittelformulierungen. Geliefert in 40–60 Mesh für Standard-Dosierkapselabfüllung.'
+        },
+        {
+          title: 'Nahrungsergänzungsmittel für die Verdauung',
+          body: 'Ganze Schalen und 80-Mesh-Pulver, verwendet von Lohnherstellern für Ballaststoffmischungen, präbiotische Beutel und Produkte zur Regulierung der Verdauung.'
+        },
+        {
+          title: 'Nutrazeutische Pulvermischungen',
+          body: '95–98% Reinheit in 100-Mesh-Qualität lässt sich sauber in funktionellen Pulvermischungen für die Darmgesundheit, Gewichtsmanagement und Mikrobiomprodukte dispergieren. Niedriger Aschegehalt und neutraler Geschmack sind Hauptkriterien.'
+        },
+        {
+          title: 'Private-Label-Zukauf von Nahrungsergänzungsmitteln',
+          body: 'Marken und Lohnhersteller, die Schalen in Pharmaqualität für Private-Label-Produkte beziehen, benötigen konsistente COA-Daten von Charge zu Charge. Wir liefern NABL-akkreditierte Laborberichte.'
+        }
+      ],
+      keySpecs: [
+        '99% Reinheit: Quellvolumen ≥ 50 ml/g (USP / EP / IP)',
+        '95–98% Reinheit für Nahrungsergänzungsmittel und Lebensmittelballaststoffe verfügbar',
+        'Feuchtigkeit ≤ 12%, Gesamtasche ≤ 3%, säureunlösliche Asche ≤ 0,4%',
+        'Schwermetalle: Pb ≤ 2 ppm, As ≤ 1 ppm',
+        'Mikrobiologie: E. coli abwesend, Salmonellen abwesend, TPC ≤ 10.000 KbE/g',
+        'Mesh-Bereich: 40, 60, 80, 100 (ASTM)'
+      ],
+      documents: [
+        'Analysenzertifikat (COA) auf Anfrage nach USP / EP / IP ausgewiesen',
+        'NABL-akkreditierter Labortestbericht',
+        'Ursprungszeugnis (Gujarat, Indien)',
+        'Phytosanitäres Zertifikat',
+        'Halal- / Koscher-Erklärung oder -Zertifikat auf Anfrage'
+      ],
+      buyerNote: 'Teilen Sie uns Ihre Pharmakopöe-Anforderung, Ihren Zielmarkt und Ihre Mesh-Präferenz mit. Wir senden Ihnen vor jeder Bestellung ein passendes Muster-COA und bestätigen die Verfügbarkeit der Qualität.'
+    },
+    'food-beverage-bakery': {
+      name: 'Lebensmittel, Getränke & Backwaren',
+      headline: 'Flohsamenpulver und -schalen für glutenfreie Backwaren, Cerealien, Getränkemischungen und Clean-Label-Verdickung.',
+      proof: [
+        'Maschengröße an Anwendung angepasst',
+        'Bio-Chargen mit NOP- / EU-Dokumentation',
+        'Lebensmittel-Allergenerklärung enthalten'
+      ],
+      useCases: [
+        {
+          title: 'Glutenfreies Brot & Gebäck',
+          body: '80–100 Mesh-Pulver mit 95–98% Reinheit bietet die wasserbindenden und strukturbildenden Eigenschaften, die Gluten in Reismehl- und Maisstärketeigen ersetzen. Typische Einsatzmenge 1–3% des Mehlgewichts.'
+        },
+        {
+          title: 'Funktionelle Getränkemischungen & Pulver',
+          body: '100–200 Mesh feines Pulver dispergiert schnell und klumpenfrei in ballaststoffangereicherten Getränkepulvern, Mahlzeitenersatz und Proteinshakes.'
+        },
+        {
+          title: 'Ballaststoffreiche Cerealien & Müsliriegel',
+          body: 'Ganze Schalen und grobes Pulver (40–60 Mesh) werden in Frühstückscerealien, Müsliriegeln und Müsli verwendet, um den Gehalt an löslichen Ballaststoffen zu erhöhen.'
+        },
+        {
+          title: 'Clean-Label-Verdickung & Stabilisierung',
+          body: 'Flohsamenpulver wird als Clean-Label-Alternative zu Methylcellulose und Xanthan in Saucen, Dressings und Fertiggerichten verwendet. Bio-zertifizierte Chargen sind verfügbar.'
+        }
+      ],
+      keySpecs: [
+        '95–98% Reinheit für Standard-Lebensmittelanwendungen',
+        '85% Reinheit für kostensensible Ballaststoffanreicherung',
+        'Mesh: 80–100 für Backwaren, 100–200 für Getränke, 40–60 für Cerealien',
+        'Feuchtigkeit ≤ 10% für lebensmittelechte Handhabung',
+        'Bio: NOP (USA), EU-Bio — Transaktionszertifikat pro Charge',
+        'Allergenfrei (kein Gluten, Nüsse, Soja, Milchprodukte in der Verarbeitung)'
+      ],
+      documents: [
+        'Analysenzertifikat (COA) mit mikrobiologischem Lebensmittel-Panel',
+        'Allergen- und GVO-Erklärung',
+        'Ursprungszeugnis',
+        'Bio-Transaktionszertifikat (NOP / EU) — für Bio-Chargen',
+        'Phytosanitäres Zertifikat'
+      ],
+      buyerNote: 'Nennen Sie uns Ihre Zielanwendung, Chargengröße und Etikettierungsansprüche. Wir empfehlen die richtige Qualität und Maschenweite und senden Ihnen gerne ein Formulierungsmuster mit COA für Labortests vor einer Großbestellung.'
+    },
+    'animal-feed': {
+      name: 'Tiernahrung & Futtermittel',
+      headline: 'Flohsamen-Khakha-Pulver und Rinderfutter für Großabnehmer, Händler und Kanäle für Nutztiernahrung.',
+      proof: [
+        '25 kg / 50 kg / 1.000 kg Verpackungsoptionen',
+        'Futtermittel-COA mit Rohfaser- und Proteingehalt',
+        'Sagar Gola / Sagar Lali Rinderfutterblöcke verfügbar'
+      ],
+      useCases: [
+        {
+          title: 'Formulierung von Mischfutter',
+          body: 'Flohsamen-Khakha-Pulver dient als nährstoffreicher Ballaststofflieferant und natürliches Bindemittel in pelletierten Futtermitteln für Wiederkäuer und Geflügel.'
+        },
+        {
+          title: 'Verdauung & Sandkolik-Prävention',
+          body: 'Grob gemahlene Schalen werden Pferdefuttermischungen zugesetzt, um die Ausscheidung von aufgenommenem Sand im Darmtrakt zu unterstützen.'
+        },
+        {
+          title: 'Traditionelle Fütterung (Milchvieh)',
+          body: 'Komprimierte Futterblöcke (Sagar Gola) und lose Mischungen (Sagar Lali) werden direkt an Milchkühe und Büffel zur Förderung der Milchfettproduktion verfüttert.'
+        },
+        {
+          title: 'Heimtiernahrung & Diätetik',
+          body: 'Feines Flohsamenpulver wird in Premium-Hunde- und Katzenfutter zur Regulierung der Verdauung und Stuhlkonstanz eingesetzt.'
+        }
+      ],
+      keySpecs: [
+        'Rohfaser: 30–40% (Khakha-Qualität)',
+        'Rohprotein: 8–12% zur Unterstützung der Futterration',
+        'Feuchtigkeit ≤ 12% für sichere Silolagerung',
+        'Frei von chemischen Zusätzen, 100% pflanzlicher Ursprung',
+        'Verpackung in 50 kg PP-Säcken oder 1.000 kg Big Bags'
+      ],
+      documents: [
+        'Analysenzertifikat (COA) für Futtermittel',
+        'Ursprungszeugnis (Siddhpur, Gujarat)',
+        'Phytosanitäres Zertifikat des Exportlandes',
+        'Begasungs- und Ladeüberwachungsberichte'
+      ],
+      buyerNote: 'Teilen Sie uns Ihre gewünschte Lieferform (lose oder gepresst), den Bestimmungshafen und Ihre Abnahmemenge mit. Wir erstellen Ihnen gerne ein passendes FOB- oder CIF-Angebot.'
+    },
+    'industrial-personal-care': {
+      name: 'Industrie & Körperpflege',
+      headline: 'Flohsamenpulver und -khakha-Pulver für Verdickung, Bindung, Feuchtigkeitsspeicherung und absorbierende Anwendungen.',
+      proof: [
+        '200-Mesh-Körperpflegepulver verfügbar',
+        'Spezifische Maschenweiten auf Anfrage',
+        'Technisches Datenblatt (TDS) pro Charge'
+      ],
+      useCases: [
+        {
+          title: 'Verdickungsmittel für Kosmetik',
+          body: '200-Mesh-Pulver dient als natürliches Geliermittel und Filmbildner in Gesichtsmasken und Cremes. Es bildet ein klares, reizfreies Gel bei niedrigen Einsatzmengen (0,5–2%).'
+        },
+        {
+          title: 'Bodenstabilisierung & Gartenbau',
+          body: 'Flohsamen-Khakha-Pulver wird zur Erosionskontrolle und Bodenverbesserung eingesetzt, da es die Wasserspeicherkapazität sandiger Böden massiv erhöht.'
+        },
+        {
+          title: 'Industrielle Bindemittel',
+          body: 'Flohsamenpulver fungiert als natürlicher Binder bei der Herstellung von Tabletten, Räucherstäbchen und Pellets, was den Bedarf an synthetischen Klebstoffen senkt.'
+        },
+        {
+          title: 'Absorbierende Produkte',
+          body: 'Dank seines hohen Quellvolumens eignet sich das Pulver hervorragend für biologisch abbaubare Wundauflagen und absorbierende Vliesstoffe.'
+        }
+      ],
+      keySpecs: [
+        '200 Mesh für kosmetische Formulierungen',
+        '40–100 Mesh für industrielle Bindemittel und Erdarbeiten',
+        'Quellvolumen: 40–50 ml/g bei 95% Reinheit',
+        'Feuchtigkeit ≤ 10% zur klumpenfreien Verarbeitung',
+        'Großabnehmerpreise ab 1 MT'
+      ],
+      documents: [
+        'Technisches Datenblatt (TDS) mit Spezifikationsgrenzen',
+        'Analysenzertifikat (COA)',
+        'Ursprungszeugnis',
+        'Spezifikationsfreigabe vor Versand'
+      ],
+      buyerNote: 'Industrielle Anwendungen erfordern oft kundenspezifische Quell- oder Maschenprofile. Senden Sie uns Ihr Anforderungsprofil, und wir stellen Ihnen eine passende Testcharge zur Verfügung.'
+    }
+  },
+  es: {
+    'pharma-nutraceutical': {
+      name: 'Farmacéutica y Nutracéutica',
+      headline: 'Cáscara y polvo de psyllium para cápsulas, productos de salud digestiva, laxantes y mezclas de suplementos.',
+      proof: [
+        'COA con panel farmacéutico completo incluido',
+        'Alineación con parámetros USP / EP / IP',
+        'Informes de prueba acreditados por NABL disponibles'
+      ],
+      useCases: [
+        {
+          title: 'Cápsulas laxantes y sobres OTC',
+          body: 'La cáscara de pureza del 99% con un volumen de hinchamiento de ≥50 ml/g cumple con los requisitos de las monografías USP y EP para formulaciones laxantes de venta libre. Suministrado en malla 40–60 para llenado de cápsulas dosificadoras estándar.'
+        },
+        {
+          title: 'Suplementos de salud digestiva',
+          body: 'Cáscara entera y polvo de malla 80 utilizados por fabricantes contratados de suplementos para mezclas de fibra, sobres prebióticos y productos de regularidad digestiva vendidos en canales minoristas de salud y comercio electrónico.'
+        },
+        {
+          title: 'Mezclas de polvo nutracéutico',
+          body: 'El grado del 95–98% en malla 100 se dispersa limpiamente en mezclas de polvo funcional para la salud intestinal, el control del peso y productos para el microbioma intestinal. El menor contenido de ceniza y el sabor neutro son criterios clave de selección.'
+        },
+        {
+          title: 'Abastecimiento de suplementos de marca blanca',
+          body: 'Las marcas y fabricantes contratados que buscan cáscara de grado farmacéutico para referencias de marca blanca requieren datos de COA consistentes lote a lote. Proporcionamos informes de prueba acreditados por NABL y anotamos los COA según la monografía especificada por el comprador.'
+        }
+      ],
+      keySpecs: [
+        'Pureza del 99%: volumen de hinchamiento ≥ 50 ml/g (USP / EP / IP)',
+        'Pureza del 95–98% disponible para uso como suplemento y fibra alimentaria',
+        'Humedad ≤ 12%, Cenizas totales ≤ 3%, Cenizas insolubles en ácido ≤ 0.4%',
+        'Metales pesados: Pb ≤ 2 ppm, As ≤ 1 ppm',
+        'Microbiología: E. coli ausente, Salmonella ausente, TPC ≤ 10,000 ufc/g',
+        'Rango de malla: 40, 60, 80, 100 (ASTM)'
+      ],
+      documents: [
+        'Certificado de análisis (COA) anotado según USP / EP / IP a solicitud',
+        'Informe de prueba de laboratorio acreditado por NABL',
+        'Certificado de origen (Gujarat, India)',
+        'Certificado fitosanitario',
+        'Declaración o certificado Halal / Kosher bajo solicitud'
+      ],
+      buyerNote: 'Comparta su requisito de farmacopea, mercado de destino y preferencia de malla. Le enviaremos un COA de muestra correspondiente y confirmaremos la disponibilidad del grado antes de cualquier pedido de compra.'
+    },
+    'food-beverage-bakery': {
+      name: 'Alimentos, Bebidas y Panadería',
+      headline: 'Polvo y cáscara de psyllium para panadería sin gluten, cereales, mezclas de bebidas y espesamiento de etiqueta limpia.',
+      proof: [
+        'Malla adaptada a la aplicación',
+        'Lotes orgánicos con documentación NOP / UE',
+        'Declaración de alérgenos de grado alimenticio incluida'
+      ],
+      useCases: [
+        {
+          title: 'Pan y pastelería sin gluten',
+          body: 'El polvo de malla 80–100 con 95–98% de pureza proporciona las propiedades de unión de agua y formación de estructura que reemplazan al gluten en las masas de harina de arroz y almidón de maíz. Tasa de uso típica de 1–3% del peso de la harina.'
+        },
+        {
+          title: 'Mezclas y polvos para bebidas funcionales',
+          body: 'El polvo fino de malla 100–200 se dispersa rápidamente sin formar grumos en polvos de bebidas enriquecidas con fibra, reemplazos de comidas y batidos de proteínas. Los grados de menor volumen de hinchamiento (85–95%) reducen la viscosidad del gel.'
+        },
+        {
+          title: 'Cereales y barras de granola con alto contenido de fibra',
+          body: 'Cáscara entera y polvo grueso (malla 40–60) utilizados en cereales para el desayuno, barras de granola y muesli para aumentar el contenido de fibra soluble.'
+        },
+        {
+          title: 'Espesamiento y estabilización de etiqueta limpia',
+          body: 'El polvo de cáscara de psyllium se utiliza como una alternativa de etiqueta limpia a la metilcelulosa y la goma xantana en salsas, aderezos y matrices de alimentos preparados.'
+        }
+      ],
+      keySpecs: [
+        '95–98% de pureza para aplicaciones alimentarias estándar',
+        '85% de pureza para enriquecimiento de fibra sensible al costo',
+        'Malla: 80–100 para panadería, 100–200 para mezclas de bebidas, 40–60 para cereales',
+        'Humedad ≤ 10% para manejo seguro de alimentos',
+        'Orgánico: NOP (EE. UU.), UE Orgánico — certificado de transacción por lote',
+        'Libre de alérgenos (sin gluten, nueces, soya, lácteos en el procesamiento)'
+      ],
+      documents: [
+        'Certificado de análisis (COA) con panel microbiológico de grado alimenticio',
+        'Declaración de alérgenos y libre de OGM',
+        'Certificado de origen',
+        'Certificado de transacción orgánica (NOP / UE) — para lotes orgánicos',
+        'Certificado fitosanitario'
+      ],
+      buyerNote: 'Cuéntenos su aplicación objetivo, tamaño de lote y declaración de etiqueta. Le recomendaremos el grado y la malla adecuados, y podemos enviarle una muestra de formulación con COA para pruebas de laboratorio antes de comprometerse con un pedido a granel.'
+    },
+    'animal-feed': {
+      name: 'Nutrición Animal',
+      headline: 'Polvo de khakha de psyllium y alimento para ganado para compradores a granel, distribuidores y canales de nutrición ganadera.',
+      proof: [
+        'Opciones de embalaje de 25 kg / 50 kg / 1,000 kg',
+        'COA de grado alimenticio con fibra cruda y proteína',
+        'Bloques de alimento para ganado Sagar Gola / Sagar Lali disponibles'
+      ],
+      useCases: [
+        {
+          title: 'Formulación de piensos compuestos',
+          body: 'El polvo de khakha de psyllium sirve como una fuente rentable de fibra soluble y aglutinante de pellets de pienso para rumiantes, aves de corral y caballos.'
+        },
+        {
+          title: 'Salud digestiva equina',
+          body: 'La cáscara de psyllium gruesa y el polvo se utilizan en suplementos equinos para ayudar a eliminar la arena acumulada en el tracto intestinal, previniendo cólicos por arena.'
+        },
+        {
+          title: 'Suplementación de ganado lechero',
+          body: 'Los bloques comprimidos de Sagar Gola y las mezclas sueltas de Sagar Lali se suministran directamente a las granjas lecheras de la región para mejorar el rendimiento de la grasa láctea y la salud digestiva del ganado.'
+        },
+        {
+          title: 'Fibra dietética en alimentos para mascotas',
+          body: 'El polvo de psyllium limpiado mecánicamente se incorpora a formulaciones secas de alimentos para perros y gatos para el manejo de bolas de pelo y la consistencia de las heces.'
+        }
+      ],
+      keySpecs: [
+        'Fibra cruda: 30–40% (grado khakha)',
+        'Proteína cruda: 8–12% para soporte nutricional básico',
+        'Humedad ≤ 12% para un almacenamiento prolongado en silo',
+        'Origen 100% vegetal, sin aditivos químicos ni conservantes',
+        'Embalaje en sacos tejidos de 50 kg o bolsas gigantes de 1,000 kg'
+      ],
+      documents: [
+        'Certificado de análisis (COA) enfocado en parámetros de alimentación animal',
+        'Certificado de origen (Siddhpur, Gujarat)',
+        'Certificado fitosanitario del gobierno de India',
+        'Certificado de fumigación y supervisión de carga'
+      ],
+      buyerNote: 'Indíquenos su formato preferido (bloques comprimidos o polvo suelto), el puerto de destino y su volumen anual esperado. Proporcionaremos cotizaciones competitivas FOB Mundra o CIF.'
+    },
+    'industrial-personal-care': {
+      name: 'Aplicaciones Industriales y Cuidado Personal',
+      headline: 'Polvo de psyllium y polvo de khakha para espesar, aglutinar, retener humedad y aplicaciones absorbentes.',
+      proof: [
+        'Polvo de grado cosmético de malla 200 disponible',
+        'Malla y tamaño de partícula personalizados a solicitud',
+        'Hoja de datos técnicos (TDS) provista por lote'
+      ],
+      useCases: [
+        {
+          title: 'Espesante cosmético y cuidado personal',
+          body: 'El polvo de cáscara de psyllium de malla 200 se utiliza como un agente espesante y formador de película natural en mascarillas faciales y cremas. El mucílago forma un gel transparente a bajos niveles de uso (0.5–2%).'
+        },
+        {
+          title: 'Estabilización del suelo y horticultura',
+          body: 'El polvo de khakha de psyllium se utiliza en productos de mejora del suelo y control de la erosión. El alto contenido de fibra y mucílago mejora la retención de agua en suelos arenosos.'
+        },
+        {
+          title: 'Aglutinante industrial y aglomeración',
+          body: 'El polvo de psyllium sirve como un aglutinante natural en la fabricación de tabletas comprimidas, incienso y pellets agrícolas, reduciendo los requerimientos de aglutinantes sintéticos.'
+        },
+        {
+          title: 'Productos absorbentes y retención de humedad',
+          body: 'La alta capacidad de hinchamiento del polvo de cáscara de psyllium lo hace adecuado para almohadillas absorbentes, sustratos para el cuidado de heridas y gránulos hortícolas biodegradables.'
+        }
+      ],
+      keySpecs: [
+        'Malla 200 para aplicaciones cosméticas y de cuidado personal',
+        'Malla 40–100 para aglutinantes industriales y productos de suelo',
+        'Volumen de hinchamiento: 40–50 ml/g con un 95% de pureza',
+        'Humedad ≤ 10% para procesos de manejo de polvo limpios',
+        'Precios por volumen para pedidos industriales (1 TM+)'
+      ],
+      documents: [
+        'Ficha técnica (TDS) con rangos y límites analíticos por lote',
+        'Certificado de análisis (COA)',
+        'Certificado de origen',
+        'Especificación firmada y validada disponible bajo solicitud'
+      ],
+      buyerNote: 'Las aplicaciones industriales y de cuidado personal suelen requerir perfiles de malla o viscosidad personalizados. Comparta su hoja de especificaciones o resumen de aplicación y validaremos el ajuste del producto.'
+    }
+  },
+  fr: {
+    'pharma-nutraceutical': {
+      name: 'Pharmaceutique & Nutraceutique',
+      headline: 'Tégument et poudre de psyllium pour gélules, produits de santé digestive, laxatifs et mélanges de suppléments.',
+      proof: [
+        'COA avec panel pharmaceutique complet inclus',
+        'Alignement sur les spécifications USP / EP / IP',
+        'Rapports d\'essais accrédités par la NABL disponibles'
+      ],
+      useCases: [
+        {
+          title: 'Gélules laxatives & sachets OTC',
+          body: 'Le tégument d\'une pureté de 99% avec un volume de gonflement de ≥50 ml/g répond aux exigences des monographies USP et EP pour les formulations de laxatifs en vente libre. Fourni en maille 40–60 pour le remplissage standard de gélules.'
+        },
+        {
+          title: 'Compléments de santé digestive',
+          body: 'Tégument entier et poudre de maille 80 utilisés par les façonniers de suppléments pour les mélanges de fibres, les sachets de prébiotiques et les produits de régularité digestive vendus en pharmacie.'
+        },
+        {
+          title: 'Mélanges de poudres nutraceutiques',
+          body: 'La qualité 95–98% en maille 100 se disperse proprement dans les mélanges de poudres fonctionnels pour la santé intestinale, la gestion du poids et le microbiote. Une faible teneur en cendres et un goût neutre sont des critères clés.'
+        },
+        {
+          title: 'Sourcing de suppléments en marque blanche',
+          body: 'Les marques et fabricants à façon qui sourcent du psyllium de qualité pharmaceutique exigent des données COA constantes d\'un lot à l\'autre. Nous fournissons des rapports accrédités et annotons les COA selon la monographie de l\'acheteur.'
+        }
+      ],
+      keySpecs: [
+        'Pureté 99% : volume de gonflement ≥ 50 ml/g (USP / EP / IP)',
+        'Pureté 95–98% disponible pour les suppléments et la fibre alimentaire',
+        'Humidité ≤ 12%, Cendres totales ≤ 3%, Cendres insolubles dans l\'acide ≤ 0,4%',
+        'Métaux lourds : Pb ≤ 2 ppm, As ≤ 1 ppm',
+        'Microbiologie : E. coli absent, Salmonelle absente, TPC ≤ 10 000 ufc/g',
+        'Gamme de mailles : 40, 60, 80, 100 (ASTM)'
+      ],
+      documents: [
+        'Certificat d\'analyse (COA) annoté USP / EP / IP sur demande',
+        'Rapport d\'essai de laboratoire accrédité par la NABL',
+        'Certificat d\'origine (Gujarat, Inde)',
+        'Certificat phytosanitaire',
+        'Déclaration ou certificat Halal / Kosher sur demande'
+      ],
+      buyerNote: 'Partagez vos exigences de pharmacopée, votre marché cible et votre préférence de maille. Nous vous enverrons un modèle de COA correspondant et confirmerons la disponibilité de la qualité avant toute commande.'
+    },
+    'food-beverage-bakery': {
+      name: 'Alimentation, Boissons & Boulangerie',
+      headline: 'Poudre et tégument de psyllium pour la boulangerie sans gluten, les céréales, les mélanges pour boissons et l\'épaississement clean-label.',
+      proof: [
+        'Maille adaptée à l\'application',
+        'Lots biologiques avec documentation NOP / UE',
+        'Déclaration d\'allergènes de qualité alimentaire incluse'
+      ],
+      useCases: [
+        {
+          title: 'Pain & pâtisserie sans gluten',
+          body: 'La poudre de maille 80–100 à une pureté de 95–98% offre les propriétés de liaison de l\'eau et de formation de structure qui remplacent le gluten dans les pâtes à base de farine de riz et d\'amidon de maïs. Utilisation typique de 1–3% du poids de la farine.'
+        },
+        {
+          title: 'Mélanges pour boissons fonctionnelles',
+          body: 'La poudre fine de maille 100–200 se disperse rapidement sans grumeaux dans les boissons enrichies en fibres, les substituts de repas et les shakes protéinés.'
+        },
+        {
+          title: 'Céréales & barres de granola riches en fibres',
+          body: 'Tégument entier et poudre grossière (maille 40–60) utilisés dans les céréales de petit-déjeuner et les barres de granola pour augmenter la teneur en fibres solubles.'
+        },
+        {
+          title: 'Épaississement & stabilisation clean-label',
+          body: 'La poudre de psyllium est utilisée comme alternative clean-label à la méthylcellulose et à la gomme xanthane dans les sauces, vinaigrettes et préparations alimentaires.'
+        }
+      ],
+      keySpecs: [
+        'Pureté 95–98% pour les applications alimentaires standard',
+        'Pureté 85% pour l\'enrichissement en fibres à coût sensible',
+        'Maille : 80–100 pour la boulangerie, 100–200 pour les boissons, 40–60 pour les céréales',
+        'Humidité ≤ 10% pour une manipulation alimentaire sûre',
+        'Biologique : NOP (USA), UE Bio — certificat de transaction par lot',
+        'Sans allergènes (sans gluten, fruits à coque, soja, produits laitiers dans l\'usine)'
+      ],
+      documents: [
+        'Certificat d\'analyse (COA) avec panel microbiologique de qualité alimentaire',
+        'Déclaration d\'allergènes et sans OGM',
+        'Certificat d\'origine',
+        'Certificat de transaction biologique (NOP / UE) — pour les lots bio',
+        'Certificat phytosanitaire'
+      ],
+      buyerNote: 'Décrivez-nous votre application cible, la taille de vos lots et vos allégations d\'étiquetage. Nous vous recommanderons la qualité et la maille optimales, et enverrons un échantillon de formulation avec COA pour vos tests.'
+    },
+    'animal-feed': {
+      name: 'Nutrition Animale',
+      headline: 'Poudre de khakha de psyllium et aliments pour bétail pour les acheteurs en vrac, les distributeurs et les canaux de nutrition animale.',
+      proof: [
+        'Options d\'emballage de 25 kg / 50 kg / 1 000 kg',
+        'COA de qualité alimentation animale avec fibres et protéines brutes',
+        'Blocs d\'aliments pour bétail Sagar Gola / Sagar Lali disponibles'
+      ],
+      useCases: [
+        {
+          title: 'Formulation d\'aliments composés',
+          body: 'La poudre de khakha de psyllium sert de source de fibres solubles et de liant naturel dans les granulés d\'aliments pour ruminants, volailles et chevaux.'
+        },
+        {
+          title: 'Prévention des coliques de sable',
+          body: 'Le tégument grossier et la poudre sont intégrés dans les suppléments équins pour aider à l\'évacuation du sable accumulé dans l\'intestin des chevaux.'
+        },
+        {
+          title: 'Complémentation des vaches laitières',
+          body: 'Les blocs compressés Sagar Gola et les mélanges en vrac Sagar Lali sont fournis aux fermes laitières pour améliorer le taux de matière grasse du lait.'
+        },
+        {
+          title: 'Fibre diététique pour petfood',
+          body: 'La poudre de psyllium nettoyée mécaniquement est incorporée dans les aliments pour chiens et chats pour la gestion des boules de poils.'
+        }
+      ],
+      keySpecs: [
+        'Fibres brutes : 30–40% (qualité khakha)',
+        'Protéines brutes : 8–12% pour le support nutritionnel de base',
+        'Humidité ≤ 12% pour un stockage sûr en silo',
+        'Origine 100% végétale, sans additifs chimiques',
+        'Emballage en sacs de 50 kg ou big bags de 1 000 kg'
+      ],
+      documents: [
+        'Certificat d\'analyse (COA) axé sur les paramètres d\'alimentation animale',
+        'Certificat d\'origine (Siddhpur, Gujarat)',
+        'Certificat phytosanitaire officiel indien',
+        'Certificat de fumigation et rapports de chargement'
+      ],
+      buyerNote: 'Faites-nous part de votre format préféré (bloques ou poudre en vrac), du port de destination et de votre volume d\'achat. Nous vous ferons une offre FOB ou CIF sur mesure.'
+    },
+    'industrial-personal-care': {
+      name: 'Applications Industrielles & Soins Personnels',
+      headline: 'Poudre de psyllium et poudre de khakha pour l\'épaississement, le liage, la rétention d\'humidité et les applications absorbantes.',
+      proof: [
+        'Poudre de qualité cosmétique maille 200 disponible',
+        'Maille et granulométrie sur mesure sur demande',
+        'Fiche de données techniques (TDS) fournie par lot'
+      ],
+      useCases: [
+        {
+          title: 'Épaississant cosmétique & soins corporels',
+          body: 'La poudre de psyllium de maille 200 est utilisée comme agent gélifiant et filmogène naturel dans les masques de soin et les crèmes. Le mucilage forme un gel transparent à faible dose (0,5–2%).'
+        },
+        {
+          title: 'Stabilisation des sols & horticulture',
+          body: 'La poudre de khakha de psyllium est utilisée pour le contrôle de l\'érosion et l\'amendement des sols, car elle améliore fortement la rétention d\'eau.'
+        },
+        {
+          title: 'Agglomérants & liants industriels',
+          body: 'Le psyllium sert de liant naturel dans la fabrication de tablettes compressées, d\'encens et de granulés agricoles, réduisant l\'usage de colles synthétiques.'
+        },
+        {
+          title: 'Matériaux absorbants biodégradables',
+          body: 'Le fort pouvoir gonflant de la poudre permet son utilisation dans les pansements et compresses absorbants ainsi que pour les granules horticoles.'
+        }
+      ],
+      keySpecs: [
+        'Maille 200 pour les applications cosmétiques',
+        'Maille 40–100 pour les liants industriels et amendements de sols',
+        'Volume de gonflement : 40–50 ml/g à une pureté de 95%',
+        'Humidité ≤ 10% pour éviter la formation de grumeaux',
+        'Tarifs dégressifs à partir d\'une tonne (1 MT)'
+      ],
+      documents: [
+        'Fiche technique (TDS) avec limites de spécifications par lot',
+        'Certificat d\'analyse (COA)',
+        'Certificat d\'origine',
+        'Validation de spécifications personnalisées disponible sur demande'
+      ],
+      buyerNote: 'Les applications industrielles requièrent souvent des profils de granulométrie ou de viscosité sur mesure. Partagez votre cahier des charges et nous validerons l\'adéquation du produit.'
+    }
+  },
+  it: {
+    'pharma-nutraceutical': {
+      name: 'Farmaceutico e Nutraceutico',
+      headline: 'Cuticola e polvere di psillio per capsule, prodotti per la salute digestiva, lassativi e miscele di integratori.',
+      proof: [
+        'COA con pannello farmaceutico completo incluso',
+        'Allineamento con parametri USP / EP / IP',
+        'Rapporti di prova accreditati da NABL disponibili'
+      ],
+      useCases: [
+        {
+          title: 'Capsule lassative e bustine OTC',
+          body: 'La cuticola pura al 99% con un volume di rigonfiamento ≥50 ml/g soddisfa i requisiti USP ed EP per le formulazioni lassative da banco. Fornita in mesh 40–60 per il riempimento standard delle capsule.'
+        },
+        {
+          title: 'Integratori per il benessere digestivo',
+          body: 'Cuticola intera e polvere a 80 mesh utilizzate dai produttori di integratori per miscele di fibre, bustine prebiotiche e prodotti per la regolarità intestinale venduti in farmacia ed e-commerce.'
+        },
+        {
+          title: 'Miscele di polveri nutraceutiche',
+          body: 'Il grado al 95–98% in mesh 100 si disperde in modo pulito in miscele di polveri per la salute intestinale, il controllo del peso e il microbioma. Basso contenuto di ceneri e sapore neutro.'
+        },
+        {
+          title: 'Fornitura di integratori a marchio privato',
+          body: 'I marchi e i produttori che acquistano psillio di grado farmaceutico per prodotti private-label richiedono dati COA costanti. Forniamo rapporti NABL e annotiamo i COA in base alle monografie richieste.'
+        }
+      ],
+      keySpecs: [
+        'Purezza 99%: volume di rigonfiamento ≥ 50 ml/g (USP / EP / IP)',
+        'Purezza 95–98% disponibile per integratori e fibre alimentari',
+        'Umidità ≤ 12%, Ceneri totali ≤ 3%, Ceneri insolubili in acido ≤ 0,4%',
+        'Metalli pesanti: Pb ≤ 2 ppm, As ≤ 1 ppm',
+        'Microbiologia: E. coli assente, Salmonella assente, TPC ≤ 10.000 ufc/g',
+        'Gamma mesh: 40, 60, 80, 100 (ASTM)'
+      ],
+      documents: [
+        'Certificato di analisi (COA) annotato USP / EP / IP su richiesta',
+        'Rapporto di prova di laboratorio accreditato NABL',
+        'Certificato di origine (Gujarat, India)',
+        'Certificato fitosanitario',
+        'Dichiarazione o certificato Halal / Kosher su richiesta'
+      ],
+      buyerNote: 'Condividi il tuo requisito farmacopeico, il mercato di destinazione e la preferenza di mesh. Ti invieremo un COA di esempio e confermeremo la disponibilità del grado prima di qualsiasi ordine.'
+    },
+    'food-beverage-bakery': {
+      name: 'Alimentare, Bevande & Panificazione',
+      headline: 'Polvere e cuticola di psillio per panificazione senza glutine, cereali, preparati per bevande e addensamento clean-label.',
+      proof: [
+        'Mesh adatto all\'applicazione',
+        'Lotti biologici con documentazione NOP / UE',
+        'Dichiarazione allergeni alimentare inclusa'
+      ],
+      useCases: [
+        {
+          title: 'Pane e pasticceria senza glutine',
+          body: 'La polvere a 80–100 mesh con purezza al 95–98% fornisce le proprietà leganti e strutturanti dell\'acqua che sostituiscono il glutine negli impasti di riso e mais. Tasso d\'uso tipico 1–3% del peso.'
+        },
+        {
+          title: 'Preparati per bevande funzionali',
+          body: 'La polvere fine a 100–200 mesh si disperde rapidamente senza grumi in polveri per bevande arricchite con fibre, pasti sostitutivi e frullati proteici.'
+        },
+        {
+          title: 'Cereali & barrette di granola ricchi di fibre',
+          body: 'Cuticola intera e polvere grossolana (mesh 40–60) utilizzate nei cereali per la colazione e nelle barrette per aumentare il contenuto di fibre solubili.'
+        },
+        {
+          title: 'Addensamento & stabilizzazione clean-label',
+          body: 'La polvere di psillio è utilizzata come alternativa pulita a metilcellulosa e gomma xantana in salse, condimenti e preparazioni pronte.'
+        }
+      ],
+      keySpecs: [
+        'Purezza 95–98% per applicazioni alimentari standard',
+        'Purezza 85% per arricchimento in fibre economico',
+        'Mesh: 80–100 per panificazione, 100–200 per bevande, 40–60 per cereali',
+        'Umidità ≤ 10% per un\'ottimale conservabilità alimentare',
+        'Biologico: NOP (USA), UE Biologico — certificato di transazione per lotto',
+        'Allergen-free (senza glutine, frutta a guscio, soia o latticini nello stabilimento)'
+      ],
+      documents: [
+        'Certificato di analisi (COA) con pannello microbiologico alimentare',
+        'Dichiarazione allergeni e NO OGM',
+        'Certificato di origine',
+        'Certificato di transazione biologica (NOP / UE) — per lotti bio',
+        'Certificato fitosanitario'
+      ],
+      buyerNote: 'Indicaci l\'applicazione, la dimensione del lotto e le diciture in etichetta. Ti consiglieremo il grado e il mesh ideali e invieremo un campione di formulazione con COA per i test.'
+    },
+    'animal-feed': {
+      name: 'Alimentazione Animale',
+      headline: 'Polvere di khakha di psillio e mangime per bestiame per acquirenti all\'ingrosso, distributori e canali di nutrizione zootecnica.',
+      proof: [
+        'Opzioni di confezionamento da 25 kg / 50 kg / 1.000 kg',
+        'COA per mangimi con fibre grezze e proteine',
+        'Blocchi di mangime Sagar Gola / Sagar Lali disponibili'
+      ],
+      useCases: [
+        {
+          title: 'Formulazione di mangimi composti',
+          body: 'La polvere di khakha di psillio funge da fonte di fibre solubili e da legante naturale nei pellet per bovini, polli e cavalli.'
+        },
+        {
+          title: 'Salute gastrointestinale equina',
+          body: 'Lo psillio a mesh grossolana viene aggiunto ai mangimi dei cavalli per facilitare l\'eliminazione della sabbia accumulata nell\'intestino.'
+        },
+        {
+          title: 'Integrazione per vacche da latte',
+          body: 'I blocchi pressati Sagar Gola e le miscele sfuse Sagar Lali vengono forniti direttamente agli allevamenti per migliorare la resa del grasso nel latte.'
+        },
+        {
+          title: 'Alimenti per animali domestici (petfood)',
+          body: 'La polvere di psillio purificata viene inserita nelle ricette di crocchette per cani e gatti per facilitare il transito delle palle di pelo.'
+        }
+      ],
+      keySpecs: [
+        'Fibre grezze: 30–40% (qualità khakha)',
+        'Proteine grezze: 8–12% a supporto del razionamento',
+        'Umidità ≤ 12% per una conservazione sicura nei silos',
+        'Origine 100% vegetale, senza additivi chimici',
+        'Confezionamento in sacchi da 50 kg o big bag da 1.000 kg'
+      ],
+      documents: [
+        'Certificato di analisi (COA) specifico per alimentazione animale',
+        'Certificato di origine (Siddhpur, Gujarat)',
+        'Certificato fitosanitario ufficiale indiano',
+        'Certificato di fumigazione e rapporti di stivaggio'
+      ],
+      buyerNote: 'Condividi il formato desiderato (blocchi pressati o polvere sfusa), il porto di destinazione e il volume d\'acquisto. Elaboreremo un\'offerta FOB o CIF personalizzata.'
+    },
+    'industrial-personal-care': {
+      name: 'Applicazioni Industriali & Cura della Persona',
+      headline: 'Polvere di psillio e polvere di khakha per addensamento, legante, ritenzione di umidità e applicazioni assorbenti.',
+      proof: [
+        'Polvere di grado cosmetico mesh 200 disponibile',
+        'Mesh e granulometrie personalizzate su richiesta',
+        'Scheda tecnica (TDS) fornita per ogni lotto'
+      ],
+      useCases: [
+        {
+          title: 'Addensante cosmetico e cura personale',
+          body: 'La polvere a 200 mesh è usata come agente gelificante e filmogeno naturale in maschere viso e creme. Il mucillagine forma un gel trasparente a basse dosi (0,5–2%).'
+        },
+        {
+          title: 'Stabilizzazione dei suoli & orticoltura',
+          body: 'La polvere di khakha è impiegata per il controllo dell\'erosione e l\'ammendamento dei suoli arenosi, aumentandone notevolmente la ritenzione idrica.'
+        },
+        {
+          title: 'Leganti e collanti industriali',
+          body: 'Lo psillio funge da legante naturale nella pressatura di tavolette, incensi e pellet agricoli, riducendo l\'uso di colle sintetiche.'
+        },
+        {
+          title: 'Materiali assorbenti biodegradabili',
+          body: 'L\'alto potere rigonfiante rende la polvere ideale per medicazioni e garze assorbenti, nonché per granuli horticoli a rilascio d\'acqua.'
+        }
+      ],
+      keySpecs: [
+        'Mesh 200 per formulazioni cosmetiche',
+        'Mesh 40–100 per leganti industriali e opere stradali/agricole',
+        'Volume di rigonfiamento: 40–50 ml/g a purezza 95%',
+        'Umidità ≤ 10% per evitare la formazione di grumi',
+        'Tariffe all\'ingrosso a partire da 1 tonnellata (1 MT)'
+      ],
+      documents: [
+        'Scheda tecnica (TDS) con limiti di specifica per lotto',
+        'Certificato di analisi (COA)',
+        'Certificato di origine',
+        'Approvazione di specifiche custom su richiesta'
+      ],
+      buyerNote: 'Le applicazioni industriali richiedono spesso mesh o profili di viscosità su misura. Condividi il tuo capitolato tecnico e provvederemo a preparare un campione di test.'
+    }
+  },
+  pt: {
+    'pharma-nutraceutical': {
+      name: 'Farmacêutico e Nutracêutico',
+      headline: 'Casca e pó de psyllium para cápsulas, produtos de saúde digestiva, laxantes e misturas de suplementos.',
+      proof: [
+        'COA com painel farmacêutico completo incluído',
+        'Alinhamento com parâmetros USP / EP / IP',
+        'Relatórios de teste credenciados pela NABL disponíveis'
+      ],
+      useCases: [
+        {
+          title: 'Cápsulas laxantes e saquetas OTC',
+          body: 'A casca de pureza de 99% com um volume de expansão de ≥50 ml/g atende aos requisitos das monografias USP e EP para formulações laxativas de venda livre. Fornecido em malha 40–60 para enchimento de cápsulas.'
+        },
+        {
+          title: 'Suplementos de saúde digestiva',
+          body: 'Casca inteira e pó de malha 80 usados por fabricantes contratados de suplementos para misturas de fibras, saquetas prebióticas e produtos de regularidade digestiva.'
+        },
+        {
+          title: 'Misturas de pós nutracêuticos',
+          body: 'A qualidade de 95–98% em malha 100 dispersa-se de forma limpa em misturas de pós funcionais para a saúde intestinal, gestão de peso e microbioma. Baixo teor de cinzas e sabor neutro.'
+        },
+        {
+          title: 'Sourcing de suplementos em marca própria',
+          body: 'Marcas e fabricantes contratados que buscam casca de grau farmacêutico para private-label exigem dados de COA consistentes lote a lote. Fornecemos relatórios NABL e anotamos os COAs conforme a monografia.'
+        }
+      ],
+      keySpecs: [
+        'Pureza de 99%: volume de expansão ≥ 50 ml/g (USP / EP / IP)',
+        'Pureza de 95–98% disponível para uso como suplemento e fibra alimentar',
+        'Umidade ≤ 12%, Cinzas totais ≤ 3%, Cinzas insolúveis em ácido ≤ 0,4%',
+        'Metais pesados: Pb ≤ 2 ppm, As ≤ 1 ppm',
+        'Microbiologia: E. coli ausente, Salmonella ausente, TPC ≤ 10.000 ufc/g',
+        'Gama de malhas: 40, 60, 80, 100 (ASTM)'
+      ],
+      documents: [
+        'Certificado de análise (COA) anotado USP / EP / IP sob solicitação',
+        'Relatório de teste de laboratório credenciado pela NABL',
+        'Certificado de origem (Gujarat, Índia)',
+        'Certificado fitossanitário',
+        'Declaração ou certificado Halal / Kosher sob solicitação'
+      ],
+      buyerNote: 'Compartilhe seus requisitos de farmacopeia, mercado de destino e preferência de malha. Enviaremos um COA de amostra correspondente e confirmaremos a disponibilidade do grau antes de qualquer pedido.'
+    },
+    'food-beverage-bakery': {
+      name: 'Alimentos, Bebidas e Panificação',
+      headline: 'Pó e casca de psyllium para panificação sem glúten, cereais, misturas de bebidas e espessamento clean-label.',
+      proof: [
+        'Malha adaptada à aplicação',
+        'Lotes orgânicos com documentação NOP / UE',
+        'Declaração de alérgenos de grau alimentício incluída'
+      ],
+      useCases: [
+        {
+          title: 'Pão e pastelaria sem glúten',
+          body: 'O pó de malha 80–100 com 95–98% de pureza fornece as propriedades de retenção de água e formação de estrutura que substituem o glúten em massas de farinha de arroz. Uso típico de 1–3% do peso da farinha.'
+        },
+        {
+          title: 'Misturas e pós para bebidas funcionais',
+          body: 'O pó fino de malha 100–200 dispersa-se rapidamente sem formar grumos em pós para bebidas enriquecidas com fibras, substitutos de refeição e batidos de proteínas.'
+        },
+        {
+          title: 'Cereais e barras de granola ricos em fibras',
+          body: 'Casca inteira e pó grosso (malha 40–60) usados em cereais de pequeno-almoço e barras para aumentar o teor de fibra solúvel.'
+        },
+        {
+          title: 'Espessamento e estabilização clean-label',
+          body: 'O pó de casca de psyllium é usado como alternativa clean-label à metilcelulose e goma xantana em molhos, temperos e alimentos preparados.'
+        }
+      ],
+      keySpecs: [
+        '95–98% de pureza para aplicações alimentares padrão',
+        '85% de pureza para enriquecimento de fibras sensível ao custo',
+        'Malha: 80–100 para panificação, 100–200 para misturas de bebidas, 40–60 para cereais',
+        'Umidade ≤ 10% para manuseio seguro de alimentos',
+        'Orgânico: NOP (EUA), UE Orgânico — certificado de transação por lote',
+        'Livre de alérgenos (sem glúten, nozes, soja ou laticínios no processamento)'
+      ],
+      documents: [
+        'Certificado de análise (COA) com painel microbiológico de grau alimentício',
+        'Declaração de alérgenos e livre de OGMs',
+        'Certificado de origem',
+        'Certificado de transação orgânica (NOP / UE) — para lotes orgânicos',
+        'Certificado fitossanitário'
+      ],
+      buyerNote: 'Diga-nos a sua aplicação, tamanho de lote e declaração de rótulo. Recomendaremos o grau e a malha adequados, e podemos enviar uma amostra de formulação com COA para testes antes de encomendar a granel.'
+    },
+    'animal-feed': {
+      name: 'Nutrição Animal',
+      headline: 'Pó de khakha de psyllium e ração animal para compradores a granel, distribuidores e canais de nutrição animal.',
+      proof: [
+        'Opções de embalagem de 25 kg / 50 kg / 1.000 kg',
+        'COA de grau feed com fibra bruta e proteína',
+        'Bloques de ração Sagar Gola / Sagar Lali disponíveis'
+      ],
+      useCases: [
+        {
+          title: 'Formulação de rações compostas',
+          body: 'O pó de khakha de psyllium serve como uma fonte de fibra solúvel e aglutinante natural em pellets de ração para ruminantes, aves e cavalos.'
+        },
+        {
+          title: 'Saúde digestiva equina',
+          body: 'A casca de psyllium grossa é usada em suplementos equinos para ajudar a remover a areia acumulada no trato intestinal dos animais.'
+        },
+        {
+          title: 'Suplementação de gado leiteiro',
+          body: 'Os blocos comprimidos Sagar Gola e misturas Sagar Lali são fornecidos diretamente às fazendas para melhorar o teor de gordura no leite.'
+        },
+        {
+          title: 'Fibra dietética para petfood',
+          body: 'O pó de psyllium limpo mecanicamente é incorporado em rações para cães e gatos para a gestão de bolas de pelo.'
+        }
+      ],
+      keySpecs: [
+        'Fibra bruta: 30–40% (grau khakha)',
+        'Proteína bruta: 8–12% para suporte nutricional básico',
+        'Umidade ≤ 12% para armazenamento seguro em silos',
+        'Origem 100% vegetal, sem aditivos químicos',
+        'Embalagem em sacos de 50 kg ou big bags de 1.000 kg'
+      ],
+      documents: [
+        'Certificado de análise (COA) focado em nutrição animal',
+        'Certificado de origem (Siddhpur, Gujarat)',
+        'Certificado fitossanitário oficial do governo indiano',
+        'Certificado de fumigação e relatórios de carregamento'
+      ],
+      buyerNote: 'Informe-nos sobre o formato preferido (blocos ou pó solto), o porto de destino e o volume de compra. Faremos uma proposta FOB ou CIF personalizada.'
+    },
+    'industrial-personal-care': {
+      name: 'Aplicações Industriais e Cuidados Pessoais',
+      headline: 'Pó de psyllium e pó de khakha para espessamento, aglutinação, retenção de umidade e aplicações absorventes.',
+      proof: [
+        'Pó de grau cosmético de malha 200 disponível',
+        'Malhas e tamanhos de partículas sob encomenda',
+        'Ficha de dados técnicos (TDS) fornecida por lote'
+      ],
+      useCases: [
+        {
+          title: 'Espessante cosmético e cuidados corporais',
+          body: 'O pó de psyllium de malha 200 é usado como agente gelficante e filmógeno natural em máscaras faciais e cremes, formando um gel transparente a baixas dosagens (0,5–2%).'
+        },
+        {
+          title: 'Estabilização de solos & horticultura',
+          body: 'O pó de khakha de psyllium é usado em produtos para controle de erosão e melhoria de solos, elevando a retenção de água em solos arenosos.'
+        },
+        {
+          title: 'Aglutinante industrial e peletização',
+          body: 'O psyllium atua como ligante natural no fabrico de pastilhas, incensos e pellets agrícolas, reduzindo o uso de colas sintéticas.'
+        },
+        {
+          title: 'Materiais absorventes biodegradáveis',
+          body: 'A alta capacidade de expansão do pó torna-o ideal para curativos cirúrgicos e granulados agrícolas de liberação de água.'
+        }
+      ],
+      keySpecs: [
+        'Malha 200 para formulações cosméticas',
+        'Malha 40–100 para aglutinantes industriais e obras de terra',
+        'Volume de expansão: 40–50 ml/g a 95% de pureza',
+        'Umidade ≤ 10% para evitar a formação de grumos',
+        'Preços por atacado a partir de 1 tonelada (1 MT)'
+      ],
+      documents: [
+        'Ficha técnica (TDS) com limites analíticos por lote',
+        'Certificado de análise (COA)',
+        'Certificado de origem',
+        'Aprovação de especificações customizadas sob solicitação'
+      ],
+      buyerNote: 'As aplicações industriais requerem frequentemente malhas ou perfis de viscosidade personalizados. Envie-nos a sua especificação e providenciaremos amostras para testes.'
+    }
+  },
+  ru: {
+    'pharma-nutraceutical': {
+      name: 'Фармацевтика и нутрицевтика',
+      headline: 'Шелуха и порошок подорожника для капсул, средств для улучшения пищеварения, слабительных средств и смесей биологически активных добавок.',
+      proof: [
+        'Сертификат анализа (COA) с полным фармацевтическим профилем включен',
+        'Соответствие спецификациям USP / EP / IP',
+        'Доступны протоколы испытаний аккредитованной NABL лаборатории'
+      ],
+      useCases: [
+        {
+          title: 'Капсулы со слабительным и саше без рецепта',
+          body: 'Шелуха чистотой 99% с объемом набухания ≥50 мл/г соответствует требованиям монографий USP и EP для безрецептурных слабительных препаратов. Поставляется фракцией 40–60 меш для стандартного наполнения капсул.'
+        },
+        {
+          title: 'Добавки для здоровья пищеварительной системы',
+          body: 'Цельная шелуха и порошок 80 меш, используемые контрактными производителями добавок для смесей клетчатки, пребиотических саше и продуктов регулярности.'
+        },
+        {
+          title: 'Нутрицевтические порошковые смеси',
+          body: 'Сорт 95–98% чистоты фракции 100 меш чисто диспергируется в функциональных смесях для здоровья кишечника, контроля веса и продуктов микробиома кишечника. Меньшая зольность и нейтральный вкус являются ключевыми критериями.'
+        },
+        {
+          title: 'Поставки пищевых добавок под собственной торговой маркой (Private Label)',
+          body: 'Брендам и производителям, закупающим шелуху фарма-класса для линеек СТМ, требуются стабильные данные COA от партии к партии. Мы предоставляем отчеты NABL и оформляем COA в соответствии со спецификацией.'
+        }
+      ],
+      keySpecs: [
+        'Чистота 99%: объем набухания ≥ 50 мл/г (USP / EP / IP)',
+        'Доступна чистота 95–98% для добавок и пищевых волокон',
+        'Влажность ≤ 12%, Общая зола ≤ 3%, Кислотонеосаждаемая зола ≤ 0,4%',
+        'Тяжелые металлы: Pb ≤ 2 ppm, As ≤ 1 ppm',
+        'Микробиология: E. coli отсутствует, сальмонелла отсутствует, TPC ≤ 10 000 КОЕ/г',
+        'Диапазон меш: 40, 60, 80, 100 (ASTM)'
+      ],
+      documents: [
+        'Сертификат анализа (COA) с аннотацией под монографии USP / EP / IP на заказ',
+        'Протокол испытаний аккредитованной NABL лаборатории',
+        'Сертификат происхождения (Гуджарат, Индия)',
+        'Фитосанитарный сертификат',
+        'Декларация или сертификат Халяль / Кошер по запросу'
+      ],
+      buyerNote: 'Поделитесь вашими требованиями фармакопеи, целевым рынком и предпочтениями по мешу. Мы вышлем соответствующий образец COA и подтвердим наличие сорта перед заказом.'
+    },
+    'food-beverage-bakery': {
+      name: 'Пищевая промышленность и выпечка',
+      headline: 'Порошок и шелуха подорожника для безглютеновой выпечки, сухих завтраков, смесей для напитков и чистой маркировки.',
+      proof: [
+        'Размер меш адаптирован под ваше применение',
+        'Органические партии с документацией NOP / EU',
+        'Декларация аллергенов пищевого качества включена'
+      ],
+      useCases: [
+        {
+          title: 'Безглютеновый хлеб и выпечка',
+          body: 'Порошок 80–100 меш чистотой 95–98% обеспечивает водосвязывающие и структурообразующие свойства, заменяющие глютен в тесте из рисовой муки. Типичная норма ввода 1–3% от веса муки.'
+        },
+        {
+          title: 'Функциональные смеси и порошки для напитков',
+          body: 'Тонкий порошок фракции 100–200 меш быстро диспергируется без комков в обогащенных клетчаткой напитках, заменителях пищи и протеиновых коктейлях.'
+        },
+        {
+          title: 'Сухие завтраки и батончики с высоким содержанием клетчатки',
+          body: 'Цельная шелуха и грубый порошок (40–60 меш) используются в хлопьях и батончиках-мюсли для повышения содержания растворимых пищевых волокон.'
+        },
+        {
+          title: 'Загустители для чистой маркировки (Clean Label)',
+          body: 'Порошок подорожника используется в качестве натуральной альтернативы метилцеллюлозе и ксантановой камеди в соусах, заправках и готовых блюдах.'
+        }
+      ],
+      keySpecs: [
+        'Чистота 95–98% для стандартных пищевых применений',
+        'Чистота 85% для экономически эффективного обогащения клетчаткой',
+        'Меш: 80–100 для выпечки, 100–200 для напитков, 40–60 для хлопьев',
+        'Влажность ≤ 10% для безопасной пищевой обработки',
+        'Органика: NOP (США), EU Organic — сертификат транзакции на партию',
+        'Без аллергенов (в производстве не используются глютен, орехи, соя, молоко)'
+      ],
+      documents: [
+        'Сертификат анализа (COA) с пищевым микробиологическим профилем',
+        'Декларация об отсутствии аллергенов и ГМО',
+        'Сертификат происхождения',
+        'Органический сертификат транзакции (NOP / EU) — для органических лотов',
+        'Фитосанитарный сертификат'
+      ],
+      buyerNote: 'Сообщите нам сферу применения, объем партии и требования к этикетке. Мы порекомендуем сорт и меш, а также вышлем тестовый образец с COA перед оптовым заказом.'
+    },
+    'animal-feed': {
+      name: 'Животноводство и корма',
+      headline: 'Порошок кхакха подорожника и корма для скота для оптовых покупателей, дистрибьюторов и каналов животноводства.',
+      proof: [
+        'Варианты упаковки по 25 кг / 50 кг / 1000 кг',
+        'Кормовой COA с показателями сырой клетчатки и протеина',
+        'Доступны спрессованные блоки Sagar Gola и смеси Sagar Lali'
+      ],
+      useCases: [
+        {
+          title: 'Рецептуры комбикормов',
+          body: 'Порошок кхакха подорожника служит питательным источником растворимой клетчатки и натуральным связующим в гранулированных кормах для птицы, КРС и лошадей.'
+        },
+        {
+          title: 'Профилактика песчаных колик',
+          body: 'Грубая шелуха и порошок добавляются в корма для лошадей для облегчения выведения песка из кишечника.'
+        },
+        {
+          title: 'Кормление молочного скота',
+          body: 'Компрессированные блоки Sagar Gola и сухие смеси Sagar Lali поставляются на фермы для повышения жирности молока и поддержания пищеварения коров.'
+        },
+        {
+          title: 'Клетчатка для кормов домашних животных (Petfood)',
+          body: 'Механически очищенный порошок подорожника вводится в рационы кошек и собак для выведения шерсти и нормализации стула.'
+        }
+      ],
+      keySpecs: [
+        'Сырая клетчатка: 30–40% (сорт кхакха)',
+        'Сырой протеин: 8–12% для балансирования рациона',
+        'Влажность ≤ 12% для надежного хранения в силосах',
+        '100% растительный продукт без химических добавок',
+        'Упаковка в мешки по 50 кг или биг-бэги по 1000 кг'
+      ],
+      documents: [
+        'Сертификат анализа (COA) кормового качества',
+        'Сертификат происхождения (Сиддхпур, Гуджарат)',
+        'Официальный фитосанитарный сертификат Индии',
+        'Сертификат фумигации и отчеты о погрузке'
+      ],
+      buyerNote: 'Укажите желаемую форму (блоки или порошок), порт назначения и годовой объем. Мы предоставим оптимальные условия FOB Mundra или CIF.'
+    },
+    'industrial-personal-care': {
+      name: 'Промышленность и личная гигиена',
+      headline: 'Порошок подорожника и порошок кхакха для загущения, связывания, удержания влаги и абсорбирующих применений.',
+      proof: [
+        'Доступен порошок косметического класса 200 меш',
+        'Помол по спецификации заказчика по запросу',
+        'Технический паспорт (TDS) предоставляется на партию'
+      ],
+      useCases: [
+        {
+          title: 'Загуститель для косметики и гигиены',
+          body: 'Порошок подорожника 200 меш используется как натуральный гелеобразователь в масках и кремах, формируя прозрачный гель при вводе 0,5–2%.'
+        },
+        {
+          title: 'Стабилизация почв и садоводство',
+          body: 'Порошок кхакха подорожника применяется для борьбы с эрозией почв, значительно повышая удержание влаги песчаными грунтами.'
+        },
+        {
+          title: 'Промышленное связывание и прессование',
+          body: 'Порошок служит связующим в производстве прессованных таблеток, благовоний и агрогранул, снижая потребность в синтетических клеях.'
+        },
+        {
+          title: 'Абсорбирующие биоразлагаемые материалы',
+          body: 'Высокая набухаемость делает порошок идеальным для абсорбирующих салфеток, раневых повязок и влагоудерживающих гранул.'
+        }
+      ],
+      keySpecs: [
+        '200 меш для косметических и гигиенических рецептур',
+        '40–100 меш для промышленных связующих и почвенных смесей',
+        'Объем набухания: 40–50 мл/г при чистоте 95%',
+        'Влажность ≤ 10% для исключения комкования',
+        'Оптовые цены на промышленные объемы от 1 тонны (1 MT)'
+      ],
+      documents: [
+        'Технический паспорт (TDS) с аналитическими диапазонами на партию',
+        'Сертификат анализа (COA)',
+        'Сертификат происхождения',
+        'Согласование индивидуальных спецификаций по запросу'
+      ],
+      buyerNote: 'Промышленные применения часто требуют особого меша или профиля вязкости. Направьте ваше техническое задание, и мы подготовим тестовую партию.'
+    }
+  }
+};
+
+// ── PRODUCT DETAIL LOCALIZATION SYSTEM ──
+export const productI18n: Record<string, {
+  leads?: Record<string, string>;
+  faqs?: Record<string, { q: string; a: string }>;
+  notes?: Record<string, string>;
+}> = {
+  zh: {
+    leads: {
+      'Psyllium seeds (Plantago ovata) 98% purity, machine-cleaned. Air separator and gravity table cleaned to remove light particles and foreign matter (≤2%). For millers, feed manufacturers, and ingredient processors. Germination ≥85% confirmed for seed-quality lots; not tested for milling use.':
+        '机器清洗的 98% 纯度车前子。通过风选机和重力选机清洗，去除轻杂质和异物（≤2%）。适用于磨粉商、饲料制造商和原料加工商。发芽率经确认为 ≥85%。',
+      'Psyllium seeds 99% purity, optically sorted. Foreign matter ≤0.5% versus ≤2% in standard grade. Commands an 8–12% price premium. Preferred by millers producing 98%+ purity husk grades where seed purity directly affects finished husk yield and consistency.':
+        '色选的 99% 纯度车前子。异物 ≤0.5%，而标准级为 ≤2%。适用于生产 98% 以上纯度车前子壳的磨粉商，种子纯度直接影响成品壳的得率和一致性。',
+      'Psyllium husk 85% purity from Siddhpur, Gujarat. Swell volume minimum 30 ml/g. Below the NF and USP thresholds for supplement and laxative monographs. Used in animal feed, industrial fibre blending, and cost-sensitive food applications where pharmacopoeia compliance is not required.':
+        '来自古吉拉特邦 Siddhpur 的 85% 纯度车前子壳。溶胀度最低 30 ml/g。低于补剂和泻药药典的 NF 和 USP 门槛。用于动物饲料、工业纤维混合和对成本敏感的食品应用。',
+      'Psyllium husk 95% purity, NF-compliant. Swell volume minimum 40 ml/g. Used in dietary fibre supplements, functional cereals, and food fibre enrichment where the pharmacopoeia standard is Food / NF rather than USP or EP. COA annotated to NF on request.':
+        '符合 NF 标准的 95% 纯度车前子壳。溶胀度最低 40 ml/g。用于膳食纤维补充剂、功能性谷物和食品纤维强化，药典标准为食品级/NF 级，而非 USP 或 EP。',
+      'Psyllium husk 98% purity, USP and EP compliant. Swell volume minimum 45 ml/g. For laxative capsule fills, OTC sachet products, and supplement formulations requiring a full USP or EP COA. NABL-accredited lab testing per shipment.':
+        '符合 USP 和 EP 标准的 98% 纯度车前子壳。溶胀度最低 45 ml/g。用于泻药胶囊填充、非处方药袋装产品以及需要完整 USP 或 EP 分析证书 (COA) 的补剂配方。',
+      'Psyllium husk 99% purity from Gujarat, India — the pharmaceutical grade. Minimum swell volume 50 ml/g, meeting the Plantago ovata husk monographs in USP, EP, and IP. Used by pharma brands, OTC laxative manufacturers, and supplement companies where a full pharmacopoeia COA is required per lot.':
+        '来自印度古吉拉特邦的 99% 纯度车前子壳 —— 制药级。最低溶胀度 50 ml/g，符合 USP、EP 和 IP 中的车前子壳药典。用于需要批次完整药典 COA 的制药品牌 and 补剂公司。',
+      'Psyllium husk powder 85% purity, 40–60 mesh (particle size 250–425 μm). Visible texture in finished products makes it suitable for gluten-free artisan bread and high-fibre cereal. Below NF and USP swell volume thresholds. Lowest cost per unit in our powder range.':
+        '85% 纯度车前子壳粉，40-60 目（粒径 250-425 微米）。在成品中可见的质地使其适用于手工无麸质面包和高纤维谷物。低于 NF 和 USP 溶胀度门槛。最低价位粉末。',
+      'Psyllium husk powder 95% purity at 80 mesh (177 μm). Swell volume minimum 42 ml/g. Viscosity approximately 100 cP at 1% solution. Good flow characteristics for dosator and tamping-pin capsule filling equipment. Used in functional food blends, fibre sachets, and supplement capsules.':
+        '80 目（177 微米）的 95% 纯度车前子壳粉。最低溶胀度 42 ml/g。1% 溶液粘度约为 100 cP。流速性能好，适用于胶囊填充设备。用于功能性食品混合粉和补剂胶囊。',
+      'Psyllium husk powder 98% purity at 100 mesh (149 μm). USP and EP compliant. Swell volume minimum 48 ml/g, viscosity approximately 250 cP at 1% solution. For pharma capsule fills, drink mix powders, and functional food applications where a pharmacopoeia COA is required.':
+        '100 目（149 微米）的 98% 纯度车前子壳粉。符合 USP 和 EP 标准。最低溶胀度 48 ml/g，1% 溶液粘度约为 250 cP。用于制药胶囊填充、固体饮料混合粉和功能性食品。',
+      'Psyllium husk powder 99% purity at 200 mesh (75 μm). USP, EP, and IP compliant. Swell volume ≥55 ml/g, viscosity approximately 400 cP at 1% solution — the highest in our powder range. Used in cosmetic formulations, premium supplement powders, and pharmaceutical production where maximum mucilage activity and fine uniform particle size are required.':
+        '200 目（75 微米）的 99% 纯度车前子壳粉。符合 USP、EP 和 IP 标准。溶胀度 ≥55 ml/g，1% 溶液粘度约为 400 cP —— 我们粉末系列中粘度最高的产品。用于化妆品配方和高端补剂粉末。',
+      'Psyllium khakha powder Feed Grade A, 30–40% crude fibre. Coarse particle size (20–40 mesh). Total ash ≤8%. For cattle and buffalo feed programs where maximum fibre bulk is the primary spec and blending into coarse compound feed is standard.':
+        '车前子 Khakha 粉饲料 A 级，30-40% 粗纤维。粗粒径（20-40 目）。总灰分 ≤8%。适用于需要最大纤维体积作为主要规格的牛和水牛饲料计划。',
+      'Psyllium khakha powder Feed Grade B, 25–30% crude fibre. Fine particle size (40–60 mesh). For pellet manufacturing and premix blending where uniform mixing in compound feed is more critical than maximum fibre content. Total ash ≤10%.':
+        '车前子 Khakha 粉饲料 B 级，25-30% 粗纤维。细粒径（40-60 目）。总灰分 ≤10%。用于需要均匀混合的颗粒饲料制造和预混料混合。',
+      'Psyllium fibre for paper, textile sizing, and absorbent applications. 40–55% crude fibre at 40–60 mesh, moisture ≤12%. Heavy metals to buyer specification. Consistent sieve profile and stable moisture are the primary supply requirements for most industrial buying programs.':
+        '用于造纸、纺织上浆和吸收性应用的工业车前子纤维。40-60 目下 40-55% 粗纤维，水分 ≤12%。重金属可按买方要求定制。',
+      'Finer mesh (60–100) and higher crude fibre (50–60%) for cosmetics and personal care. Total ash ≤8%. For applications where particle uniformity and consistent dispersion in aqueous formulations matter.':
+        '更细目数（60-100 目）和更高粗纤维（50-60%）的车前子工业粉，适用于化妆品和个人护理。总灰分 ≤8%。适用于要求颗粒均匀和水相配方分散稳定性的应用。',
+      'Food-safe heavy metal limits (Lead, Arsenic, Cadmium within food-grade thresholds). 35–45% crude fibre at 40–80 mesh. Used as a natural fibre source and binder in pet food manufacturing where animal safety documentation is required alongside the standard COA.':
+        '食品级安全重金属限量（铅、砷、镉在食品级门槛内）。40-80 目下 35-45% 粗纤维。用作宠物食品制造中的天然纤维源和黏合剂，需随附动物安全文件和标准 COA。',
+      'USDA National Organic Program certified psyllium husk for the US market. Certification covers seed origin, growing practices (no synthetic pesticides or fertilisers), processing facility, and handling chain. Transaction certificate (TC) per shipment links the specific lot to the organic certificate. Purity ≥95%, swell volume ≥40 ml/g.':
+        '针对美国市场的美国国家有机计划 (NOP) 认证车前子壳。认证涵盖种子来源、种植过程（无合成农药或化肥）、加工设施和流通链。每批货物均随附交易证书 (TC)。纯度 ≥95%，溶胀度 ≥40 ml/g。',
+      'EU Organic certified psyllium husk under EU Regulation 2018/848. Certificate of Inspection (COI) provided per shipment for EU customs and import authority requirements. Lot-level traceability and certificate review before purchase order. Purity ≥95%, swell volume ≥40 ml/g.':
+        '符合欧盟法规 2018/848 的欧盟有机认证车前子壳。每批货物均随附检查证书 (COI)，以满足欧盟海关和进口机构的要求。在下订单前可提供批次级追溯和证书审查。纯度 ≥95%，溶胀度 ≥40 ml/g。',
+      'Compressed psyllium cattle feed block (Sagar Gola type) combining husk, khakha, molasses, and mineral mix. Designed for direct farm-level feeding without processing. Supports digestive regularity and hydration retention in dairy cattle and buffalo. Metabolisable energy approximately 9–10 MJ/kg DM.':
+        '压榨车前子牛饲料块（Sagar Gola 型），结合了外壳、Khakha、糖蜜和矿物质混合料。专为农场直接饲喂设计。支持奶牛和水牛的消化规律和水分保持。代谢能约为 9-10 MJ/kg 干物质。',
+      'Loose granule psyllium cattle feed (Sagar Lali type) with khakha as the primary base plus grain mix. Higher crude fibre (30–40%) and protein (4–6%) than Sagar Gola. For cattle, poultry, and ruminant bulk fibre supplementation, or for buyers who blend into a compound feed program.':
+        '散装颗粒车前子牛饲料（Sagar Lali 型），以 Khakha 为主要基底，外加谷物混合料。比 Sagar Gola 具有更高的粗纤维（30-40%）和蛋白质（4-6%）。适用于牛、禽和反刍动物的大宗纤维补充。'
+    },
+    faqs: {
+      'What certifications cover your NOP organic psyllium?': {
+        q: '哪些认证涵盖了您的 NOP 有机车前子？',
+        a: '通过了美国国家有机计划 (NOP) 的有机认证。该认证涵盖了整个监管链：从种子来源、种植过程、加工设施到流通链。我们在下订单前提供证书副本和交易证书 (TC)。'
+      },
+      'What document do US organic importers need per shipment?': {
+        q: '美国有机进口商每批货物需要什么文件？',
+        a: '由认可认证机构为每批货物颁发的交易证书 (TC)。该证书将您的发票与有机批次直接关联，我们会在标准有机单据包中提供。'
+      },
+      'What purity and swell volume does NOP organic psyllium have?': {
+        q: 'NOP 有机车前子的纯度和溶胀度是多少？',
+        a: '纯度 ≥95%，溶胀度最低 40 ml/g。每批货物随附包含水分和微生物指标的 COA（分析证书）。'
+      },
+      'What is the price premium for organic psyllium?': {
+        q: '有机车前子的溢价是多少？',
+        a: '通常比常规 95% 等级高 25-40%，具体取决于认证库存和市场行情。请在下单前联系我们确认最新价格。'
+      },
+      'What document do EU importers need for organic psyllium?': {
+        q: '欧盟进口商对有机车前子需要什么文件？',
+        a: '符合欧盟法规 2018/848 的检查证书 (COI)。每批货物均通过欧盟 TRACES 系统提供以用于清关。'
+      },
+      'Is your EU organic psyllium certified under the 2018/848 regulation?': {
+        q: '您的欧盟有机车前子是否符合 2018/848 法规认证？',
+        a: '是的。欧盟有机批次符合欧盟法规 2018/848。在下单前可提供证书副本和 COI。'
+      },
+      'What is the swell volume of EU organic psyllium?': {
+        q: '欧盟有机车前子的溶胀度是多少？',
+        a: '纯度 ≥95% 时最低为 40 ml/g。与 NOP 等级物理规格相同 —— 仅因目的地市场所需认证不同。'
+      },
+      'Can I review the organic certificate before placing an order?': {
+        q: '我可以在下订单前审查有机证书吗？',
+        a: '是的。我们会在确认订单前分享当前的有机证书和批次级产地记录，这是我们的标准流程。'
+      },
+      'Is NOP psyllium husk fully organic certified?': {
+        q: 'NOP车前子壳是完全有机认证的吗？',
+        a: '是的。通过了美国国家有机计划 (NOP) 的有机认证。该认证涵盖了整个监管链：有机种植田、专用有机加工设施、包装材料和出口处理。每批次货物都会开具交易证书 (TC) 以核实有机身份。'
+      },
+      'What purity is NOP organic psyllium husk?': {
+        q: 'NOP有机车前子壳的纯度是多少？',
+        a: '纯度为 ≥95%，最低溶胀度为 40 ml/g。重金属控制在 USP 限制范围内：铅 ≤ 2 ppm，砷 ≤ 1 ppm。'
+      },
+      'Is a Transaction Certificate (TC) provided?': {
+        q: '是否提供交易证书 (TC)？',
+        a: '是的。每批货物都提供由认可的认证机构颁发的交易证书 (TC)，将您的发票直接与有机批次关联。'
+      },
+      'What regulation governs your EU organic psyllium?': {
+        q: '什么法规监管您的欧盟有机车前子？',
+        a: '欧盟法规 2018/848。我们根据经审计的有机协定进行加工和包装，并通过欧盟 TRACES 系统提供检查证书 (COI) 以供海关清关。'
+      },
+      'Do you provide a COI for EU imports?': {
+        q: '您是否为欧盟进口提供 COI？',
+        a: '是的。在船舶起航前，通过欧盟 TRACES 系统生成并由出口控制机构批准检查证书 (COI)，确保顺利进口到任何欧盟成员国。'
+      },
+      'What is the lead time for organic psyllium?': {
+        q: '有机车前子的交货期是多久？',
+        a: '来自古吉拉特邦 Siddhpur 的交货期为 7 天。有机批次需要出运前审计和交易证书协调，因此最终出运文件的发布需要额外 3-5 天。'
+      },
+      'What is standard grade psyllium seed purity?': {
+        q: '标准级车前子种子的纯度是多少？',
+        a: '使用风选机和重力分选机进行机械清洗后，纯度 ≥98%。异物 ≤2%。水分 ≤8%。发芽率 ≥85%。'
+      },
+      'Where are your psyllium seeds grown?': {
+        q: '你们的车前子种子是在哪里种植的？',
+        a: '主要种植在古吉拉特邦的 Mehsana、Banaskantha 和 Kutch 地区，以及拉贾斯坦邦的 Barmer、Jalore 和 Jodhpur 地区。冬播作物，10-11 月播种，2-3 月收获。每批货物都有原产地记录。'
+      },
+      'What packaging is available for psyllium seeds?': {
+        q: '车前子种子提供什么包装？',
+        a: '25公斤、50公斤和1000公斤的吨袋包装。FOB Mundra 交付。每批货物都包含 COA、装箱单和原产地证明。'
+      },
+      'Is standard grade suitable for pharma-grade husk milling?': {
+        q: '标准级适合制药级车前子壳的碾磨吗？',
+        a: '标准级种子适合碾磨 85-95% 纯度的车前子壳。如果要达到 98% 或 99% 的外壳纯度，建议使用色选级种子，因为种子纯度直接影响外壳的分离得率和一致性。'
+      },
+      'What is sortex grade psyllium seed?': {
+        q: '什么是色选级车前子种子？',
+        a: '纯度 ≥99% 的光学色选种子。光学色选机清除变色种子和外来杂质，使异物 ≤0.5% —— 显著低于标准机械清洗级的 ≤2% 限制。'
+      },
+      'Why pay a premium for sortex psyllium seeds?': {
+        q: '为什么要为色选车前子种子支付溢价？',
+        a: '更高的种子纯度会产生更稳定的外壳分离得率。对于以 98% 或 99% 纯度外壳为目标的磨粉商，色选级种子可以减少二次加工并提高批次间的一致性。8-12% 的价格溢价通常可以从更高的外壳得率中收回。'
+      },
+      'What germination percentage does sortex seed have?': {
+        q: '色选级种子发芽率是多少？',
+        a: '发芽率 ≥88% —— 高于标准级的 ≥85% 最低门槛。适用于购买种子用于重新种植或需要种子级批次的买家。'
+      },
+      'What is the minimum order for sortex psyllium seeds?': {
+        q: '色选车前子种子的起订量是多少？',
+        a: '没有起订量。提供 25 公斤、50 公斤 and 1000 公斤包装 —— 从单袋到整箱均可。FOB Mundra 交付。交货期 7 天。'
+      },
+      'Is 85% psyllium husk food-grade?': {
+        q: '85%纯度车前子壳是食品级吗？',
+        a: '85%等级是食品级的。但它不符合 NF、USP 或 EP 药典标准。对于指定了药典标准的补剂或泻药产品，请至少使用 95% 等级。'
+      },
+      'What is the swell volume of 85% psyllium husk?': {
+        q: '85%车前子壳的溶胀度是多少？',
+        a: '最低为 30 ml/g。这反映了 85% 纯度下较低的粘液含量，是我们的外壳系列中最低的溶胀度。'
+      },
+      'Can 85% psyllium husk be used in animal feed?': {
+        q: '85%纯度车前子壳可用于动物饲料吗？',
+        a: '可以。85%等级通常用于牛饲料和配合动物饲料中作为纤维源。我们提供 25公斤、50公斤和1000公斤的吨袋包装。'
+      },
+      'What is the minimum order for 85% psyllium husk?': {
+        q: '85%纯度车前子壳的最小起订量是多少？',
+        a: '没有最小起订量。我们供应从小批量样品测试到整箱货。FOB Mundra 交付。每批货物包含 COA 和装箱单。来自 Siddhpur 的交货期为 7 天。'
+      },
+      'Does 95% psyllium husk meet the NF monograph?': {
+        q: '95%纯度车前子壳符合 NF 标准吗？',
+        a: '是的。95%等级符合国家处方集 (NF) 中的车前子壳标准。最低溶胀度为 40 ml/g。我们可以根据要求提供符合 NF 参数标注的 COA。'
+      },
+      'What is the swell volume of 95% psyllium husk?': {
+        q: '95%车前子壳的溶胀度是多少？',
+        a: '根据我们的规格，最低为 40 ml/g。这满足了 NF 的门槛，适用于膳食补充剂和功能性食品应用。'
+      },
+      'Can I use 95% psyllium husk for capsule filling?': {
+        q: '我可以将 95% 纯度车前子壳用于胶囊填充吗？',
+        a: '可以，规格为 20-60 目。对于胶囊填充设备，填充时的水分必须 ≤10% 以防结块。我们可以根据要求提供水分控制包装。'
+      },
+      'How is 95% different from 98% psyllium husk?': {
+        q: '95%纯度与98%纯度车前子壳有什么不同？',
+        a: '95%符合 NF 标准。98%符合 USP 和 EP 标准。溶胀度差异为 40 ml/g (95%) 对 45 ml/g (98%)。如果您的产品标签或规格指定了 USP 或 EP，您需要使用 98% 或 99% 等级。'
+      },
+      'Does 98% psyllium husk meet USP and EP standards?': {
+        q: '98%纯度车前子壳符合 USP 和 EP 标准吗？',
+        a: '是的。98%等级符合 USP 和 EP 的标准参数 —— 溶胀度、水分 (≤12%)、总灰分 (≤3.5%)、酸不溶性灰分 (≤0.5%) 和微生物指标。我们可以根据要求提供标注相应药典的 COA。'
+      },
+      'What swell volume does 98% psyllium husk have?': {
+        q: '98%车前子壳的溶胀度是多少？',
+        a: '根据我们的规格，最低为 45 ml/g。USP 和 EP 规定的最低要求为 40 ml/g，因此 98% 等级超过了药典门槛。每批货物都包含实际的 COA 值。'
+      },
+      'Is 98% psyllium husk suitable for laxative products?': {
+        q: '98%纯度车前子壳适合泻药产品吗？',
+        a: '适合。98%等级常用于泻药胶囊填充和袋装冲剂产品。如果您的成品在 USP 或 EP 下注册，请与您的 QA 团队确认规格指定的是 98% 还是 99% 等级。'
+      },
+      'What documentation comes with 98% psyllium husk?': {
+        q: '98%纯度车前子壳随附什么文件？',
+        a: '经 NABL 认可的实验室 COA（溶胀度、水分、灰分、微生物、重金属）、商业发票、装箱单、原产地证明和植物检疫证书。我们可以根据要求提供清真和犹太认证声明。'
+      },
+      'What swell volume does 99% psyllium husk have?': {
+        q: '99%车前子壳的溶胀度是多少？',
+        a: '根据我们的规格，最低为 50 ml/g。USP 和 EP 标准规定最低为 40 ml/g，99%等级持续超出此范围。每批货物的 COA 均有实际测试值。'
+      },
+      'Is your 99% psyllium husk USP, EP, and IP compliant?': {
+        q: '你们的 99% 车前子壳符合 USP、EP 和 IP 标准吗？',
+        a: '是的。我们可以根据要求提供符合 USP、EP 或 IP 标准的 COA。参数包括溶胀度、水分、总灰分 (≤3.0%)、酸不溶性灰分 (≤0.4%)、重金属和完整的微生物指标。询价时请说明您的药典版本。'
+      },
+      'What is the minimum order for 99% psyllium husk?': {
+        q: '99%纯度车前子壳的最小起订量是多少？',
+        a: '没有最小起订量。提供 10 公斤、25 公斤或 50 公斤的食品级包装袋。大额订单可提供 1000 公斤的吨袋包装。FOB Mundra 交付。交货期 7 天。'
+      },
+      'Can I get a sample of 99% psyllium husk with COA before ordering?': {
+        q: '下单前我可以获得 99% 车前子壳带 COA 的样品吗？',
+        a: '可以。我们免费发送 100-500 克样品，并附带由经 NABL 认可的实验室出具的完整 COA。请提供您的目标药典、邮寄地址和级别。来自古吉拉特邦 Siddhpur 的样品交货期为 3-5 个工作日。'
+      },
+      'What mesh size is 40–60 mesh psyllium powder?': {
+        q: '40–60目的车前子粉筛网尺寸是多少？',
+        a: '40–60 目 ASTM 相当于 250–425 微米的粒径。在这种粒径下，颗粒在大多数成品中都是可见的。适用于可以接受粗糙质地的应用 —— 无麸质手工面包、高纤维谷物或动物饲料混合粉。'
+      },
+      'Can 85% psyllium powder be used in gluten-free bakery?': {
+        q: '85%纯度的车前子粉可以用于无麸质烘焙吗？',
+        a: '可以。车前子粉占面粉总重量 of 1-3% 时，可以锁水并改善无麸质面团的组织结构。85% / 40-60 目的较粗粒径在成品组织中可能略微可见，但在大多数手工艺风格的面包中都是可接受的。'
+      },
+      'Is 85% / 40–60 mesh powder food-grade?': {
+        q: '85% / 40-60 目的粉末是食品级吗？',
+        a: '85%等级是食品级的。但它不符合 NF、USP 或 EP 药典对补剂或药物标签的溶胀度门槛要求。'
+      },
+      'What is the minimum order for 85% psyllium husk powder?': {
+        q: '85%纯度车前子壳粉的起订量是多少？',
+        a: '没有起订量。提供 10 公斤、25 公斤和 50 公斤包装袋 —— 可以只订购一袋。FOB Mundra 交付。每批货物均提供 COA。'
+      },
+      'What viscosity does 95% / 80 mesh psyllium powder produce?': {
+        q: '95% / 80目的车前子粉产生什么粘度？',
+        a: '在 1% 水溶液中粘度约为 100 cP。适用于需要建立一定粘度但不需要更细等级那种强凝胶行为的功能性食品和补剂应用。'
+      },
+      'Is 95% / 80 mesh suitable for capsule filling?': {
+        q: '95% / 80目适合胶囊填充吗？',
+        a: '适合。在 80 目（177 微米）下，流动性适合剂量器和夯锤型胶囊填充设备。填充时水分应 ≤10%。我们可以根据要求为水分敏感型应用提供带密封内衬的 HDPE 包装。'
+      },
+      'Does 95% psyllium powder meet NF requirements?': {
+        q: '95%纯度的车前子粉符合 NF 要求吗？',
+        a: '是的。95%等级符合 NF 国家处方集标准。我们可以根据要求提供符合 NF 参数的 COA。对于标有 USP 或 EP 的 COA，请使用 98% 或 99% 等级。'
+      },
+      'What swell volume does 95% / 80 mesh powder have?': {
+        q: '95% / 80目的车前子粉溶胀度是多少？',
+        a: '根据我们的规格，最低为 42 ml/g。'
+      },
+      'Is 98% / 100 mesh psyllium powder USP and EP compliant?': {
+        q: '98% / 100目的车前子粉符合 USP 和 EP 标准吗？',
+        a: '是的。我们可以根据要求提供标注符合 USP 或 EP 参数的 COA。参数包括溶胀度 (≥48 ml/g)、水分 (≤12%)、总灰分 (≤3.5%)、酸不溶性灰分、重金属和完整的微生物指标。'
+      },
+      'What particle size is 100 mesh psyllium powder?': {
+        q: '100目的车前子粉粒径是多少？',
+        a: '149微米或更小。在这种粒径下，粉末能够均匀分散在固体冲剂饮料中，并且在大多数食品应用中不会产生可见的颗粒质地。对于胶囊填充设备，流动性良好。'
+      },
+      'What viscosity does 98% / 100 mesh powder produce?': {
+        q: '98% / 100目的粉末产生什么粘度？',
+        a: '在 1% 水溶液中粘度约为 250 cP。由于更细的粒径和更大的表面积暴露，比 80 目等级的粘度更高。适用于固体饮料混合粉、药物悬浮液和功能性食品基质。'
+      },
+      'Can I get a COA sample before ordering 98% psyllium powder?': {
+        q: '下单前我可以获得 98% 车前子粉带 COA 的样品吗？',
+        a: '可以。我们免费发送 100-500 克样品，并附带标注符合您指定药典的 COA。请提供您的级别、目数、目标标准和邮寄地址。样品交货期为 3-5 个工作日。'
+      },
+      'What mesh size is 200 mesh psyllium powder?': {
+        q: '200目的车前子粉筛网尺寸是多少？',
+        a: '200 目 ASTM 相当于 75 微米或更小。这是我们供应的最细的标准等级。用于需要均匀、超细颗粒分布的领域 —— 化妆品配方、高端膳食补充剂粉末和药物生产。'
+      },
+      'What viscosity does 99% / 200 mesh psyllium powder produce?': {
+        q: '99% / 200目的车前子粉产生什么粘度？',
+        a: '在 1% 水溶液中粘度约为 400 cP —— 是我们粉末系列中最高的。这反映了在最细粒径下的最大粘液暴露。这对于需要增稠或形成凝胶的功能性应用至关重要。'
+      },
+      'Is 99% / 200 mesh powder USP, EP, and IP compliant?': {
+        q: '99% / 200目的粉末符合 USP、EP 和 IP 标准吗？',
+        a: '是的。我们可以根据要求提供符合 USP、EP 或 IP 标准 of COA。溶胀度 ≥55 ml/g，水分 ≤10%，总灰分 ≤3.0%。请说明您的药典版本和目的地市场要求。'
+      },
+      'Is 200 mesh psyllium powder used in cosmetics?': {
+        q: '200目的车前子粉可以用于化妆品吗？',
+        a: '可以。在 200 目（75 微米）下，粉末在用于面霜、面膜等化妆品和个人护理品的液体配方中可以平滑分散。我们可以根据要求提供重金属检测和完整的原料证明文件。'
+      },
+      'What is psyllium khakha powder?': {
+        q: '什么是车前子 Khakha 粉？',
+        a: 'Khakha 是车前子壳经过碾磨和分离后留下的副产品。它包含内种皮和残留的胚乳 —— 30-40% 粗纤维，8-12% 粗蛋白和高粘液质的可溶性纤维。这是一种高价值饲料原料，而非简单废物。'
+      },
+      'What crude fibre content does Feed Grade A have?': {
+        q: '饲料 A 级具有什么粗纤维含量？',
+        a: '30-40% 粗纤维。总灰分 ≤8%。水分 ≤12%。比起 Grade B，它的粒径更粗（20-40 目）。'
+      },
+      'Can khakha Feed Grade A be used in ruminant feed?': {
+        q: '饲料 A 级 Khakha 可以用于反刍动物饲料吗？',
+        a: '可以。牛和水牛饲料是其主要应用。车前子 Khakha 中的可溶性纤维有助于肠道蠕动和水分保持。既适用于农场直接喂养计划，也适用于商业复合饲料制造。'
+      },
+      'What packaging is available for khakha Feed Grade A?': {
+        q: '饲料 A 级 Khakha 提供什么包装？',
+        a: '25公斤、50公斤和1000公斤的吨袋包装。每批货物均提供包含粗纤维、粗蛋白、水分和灰分参数的 COA。买方可自费进行其他测试（重金属、霉菌毒素）。'
+      },
+      'How is Feed Grade B different from Feed Grade A?': {
+        q: '饲料 B 级与饲料 A 级有什么不同？',
+        a: '具有较低的粗纤维（25-30% 对 30-40%）和更细的粒径（40-60目 对 20-40目）。灰分略高（≤10% 对 ≤8%）。Grade B 适用于颗粒饲料制造或预混料混合中对均匀混合要求高、但对最大纤维含量要求次之的领域。'
+      },
+      'Is khakha Feed Grade B suitable for poultry feed?': {
+        q: '饲料 B 级 Khakha 适合用于家禽饲料吗？',
+        a: '适合。细粒径（40-60目）在禽类预混料和复合饲料中能均匀混合。25-30% 的纤维含量有助于肉鸡和蛋鸡日粮的肠道健康。'
+      },
+      'What is the price difference between Grade A and Grade B?': {
+        q: 'Grade A 与 Grade B 之间的价格差异是多少？',
+        a: '由于粗纤维含量较低，Grade B 的价格通常略低于 Grade A。请将您的需求量和目的地告知我们，以获得最新的即期报价。'
+      },
+      'What documentation comes with khakha powder?': {
+        q: '车前子 Khakha 粉随附什么文件？',
+        a: '包含水分、粗纤维、粗蛋白和总灰分参数的 COA。每批货物均提供装箱单和原产地证明。买方可自费进行其他分析（霉菌毒素、重金属、农残）。'
+      },
+      'What is industrial grade psyllium used for?': {
+        q: '工业级车前子有什么用途？',
+        a: '用于造纸和包装（作为黏合剂）、纺织上浆（作为上浆液中的锁水剂）、吸收性产品和农业土壤改良。工业级价格低于食品级外壳，不可供人类食用。'
+      },
+      'What mesh size is standard industrial psyllium?': {
+        q: '标准工业级车前子的目数是多少？',
+        a: '40–60 目 ASTM。粗纤维 40-55%。重金属参数可按照买方规格定制 —— 请在询价时确认限量。'
+      }
+    },
+    notes: {
+      'Pharma and OTC brands targeting NOP certification for US-market dietary supplement powders or capsule fills. Complies with 95% purity monograph requirement.':
+        '针对美国市场膳食补充剂粉末或胶囊填充寻找 NOP 认证的医药和非处方药品牌。完全符合 95% 纯度药典标准。',
+      'US food brands require NOP certification for USDA Organic labelling on cereals, bread mixes, and powder blends. Meets standard food parameters.':
+        '美国食品品牌在麦片、面包粉和混合粉上使用 USDA 有机标签时需要 NOP 认证。符合标准食品参数要求。',
+      'Supplement brands launching certified organic fiber products. Single-origin lot documentation and transaction certificate (TC) per shipment.':
+        '推出认证有机纤维产品的膳食补充剂品牌。每批货物均随附单一产地批次文件和交易证书 (TC)。',
+      'Not specified for animal feed. While NOP certified, pricing makes it uneconomical for livestock compound feed.':
+        '未指定用于动物饲料。虽然通过了 NOP 认证，但在价格上对于牲畜配合饲料来说并不经济。',
+      'European pharma and supplement manufacturers requiring EU organic status and a TRACES COI import certificate. Complies with basic pharmacopoeia purity.':
+        '需要欧盟有机身份和 TRACES COI 进口证书的欧洲制药和补剂制造商。符合基本药典纯度标准。',
+      'European food brands requiring the EU organic leaf logo. Standard food-grade microbiology and purity ≥95%.':
+        '需要欧盟有机绿叶标志的欧洲食品品牌。符合标准食品级微生物指标，纯度 ≥95%。',
+      'EU dietary supplement brands. Batch-specific TRACES COI provided to support organic import validation.':
+        '欧盟膳食补充剂品牌。提供批次专属的 TRACES COI 以支持有机进口核验。',
+      'Not justified for animal feed. Use standard feed-grade husk.':
+        '对于动物饲料不合理。请使用标准饲料级车前子壳。',
+      'For millers and ingredient processors producing food-grade or NF-grade husk. Standard seed (98%, ≤2% foreign matter) is sufficient for milling output up to 95% husk purity.':
+        '适用于生产食品级或 NF 级车前子壳的磨粉商和原料加工商。标准级种子（98%，异物 ≤2%）足以支持磨出高达 95% 纯度的外壳。',
+      'Food millers use standard seed to produce food-grade husk (85%) and NF husk (95%). Origin records and lot traceability per shipment.':
+        '食品加工商使用标准级种子来磨制食品级外壳 (85%) 和 NF 外壳 (95%)。每批货物均随附产地记录和批次追溯。',
+      'Ingredient processors producing NF-grade husk for supplement manufacturers. Standard seed supports NF output; sortex seed is needed for USP/EP target purity.':
+        '为补剂制造商生产 NF 级外壳的原料加工商。标准级种子支持磨出符合 NF 标准的外壳；如果目标是 USP/EP 纯度，则需要使用色选级种子。',
+      'Feed manufacturers use seed directly in compound feed as a fibre source or as milling feedstock for khakha. Standard grade is the cost-effective input for feed-use programs.':
+        '饲料制造商在配合饲料中直接使用种子作为纤维源，或将其作为磨制 Khakha 的原料。标准级是饲料应用计划中最具成本效益的投入原料。',
+      'Millers producing 98%+ purity husk for pharma-grade supply specify sortex seed. Foreign matter ≤0.5% reduces contamination variance and improves husk separation yield.':
+        '为制药级供应生产 98% 以上纯度车前子壳的磨粉商指定使用色选级种子。异物 ≤0.5% 可以减少污染波动并提高外壳的分离得率。',
+      'High-purity food ingredient processors use sortex seed to achieve consistent 95%+ husk output with less reprocessing.':
+        '高纯度食品原料加工商使用色选级种子，以实现稳定的 95% 以上外壳产出，减少二次加工。',
+      'Millers targeting USP/EP annotated husk use sortex as input. The 8–12% premium over standard is typically recovered in improved husk yield and fewer rejected batches.':
+        '以 USP/EP 标注外壳为目标的磨粉商使用色选级作为原料。相比标准级种子 8-12% 的溢价通常可以通过提高外壳得率和减少退单批次来收回。',
+      'Sortex premium is not justified for animal feed applications. Use standard seed for feed input.':
+        '色选溢价在动物饲料应用中并不合理。请使用标准级种子作为饲料投入。'
+    }
+  },
+  ar: {
+    leads: {
+      'Psyllium seeds (Plantago ovata) 98% purity, machine-cleaned. Air separator and gravity table cleaned to remove light particles and foreign matter (≤2%). For millers, feed manufacturers, and ingredient processors. Germination ≥85% confirmed for seed-quality lots; not tested for milling use.':
+        'بذور السيليوم (بلانتاجو أوفاتا) نقاوة 98%، منظفة آلياً. منظفة بالفاصل الهوائي وطاولة الجاذبية لإزالة الجسيمات الخفيفة والمواد الغريبة (≤2%). لمنتجي ومصنعي الأعلاف والمكونات.发芽率经确认为 ≥85%.',
+      'Psyllium seeds 99% purity, optically sorted. Foreign matter ≤0.5% versus ≤2% in standard grade. Commands an 8–12% price premium. Preferred by millers producing 98%+ purity husk grades where seed purity directly affects finished husk yield and consistency.':
+        'بذور السيليوم نقاوة 99%، مفروزة بصرياً. المواد الغريبة ≤0.5% مقارنة بـ ≤2% في الدرجة القياسية. تزيد السعر بنسبة 8–12%. مفضلة للمطاحن التي تنتج نقاوة +98%.',
+      'Psyllium husk 85% purity from Siddhpur, Gujarat. Swell volume minimum 30 ml/g. Below the NF and USP thresholds for supplement and laxative monographs. Used in animal feed, industrial fibre blending, and cost-sensitive food applications where pharmacopoeia compliance is not required.':
+        'قشور السيليوم نقاوة 85% من سيدهبور، غوجارات. حجم الانتفاخ الأدنى 30 مل/جم. تستخدم في أعلاف الحيوانات والأغذية الحساسة للتكلفة حيث لا يشترط مطابقة دستور الأدوية.',
+      'Psyllium husk 95% purity, NF-compliant. Swell volume minimum 40 ml/g. Used in dietary fibre supplements, functional cereals, and food fibre enrichment where the pharmacopoeia standard is Food / NF rather than USP or EP. COA annotated to NF on request.':
+        'قشور السيليوم نقاوة 95%، متوافقة مع دساتير الأدوية الوطنية (NF). حجم الانتفاخ الأدنى 40 مل/جم. تستخدم في المكملات والأغذية.',
+      'Psyllium husk 98% purity, USP and EP compliant. Swell volume minimum 45 ml/g. For laxative capsule fills, OTC sachet products, and supplement formulations requiring a full USP or EP COA. NABL-accredited lab testing per shipment.':
+        'قشور السيليوم نقاوة 98%، متوافقة مع دستور الأدوية الأمريكي (USP) والأوروبي (EP). حجم الانتفاخ الأدنى 45 مل/جم. لتعبئة الكبسولات المسهلة.',
+      'Psyllium husk 99% purity from Gujarat, India — the pharmaceutical grade. Minimum swell volume 50 ml/g, meeting the Plantago ovata husk monographs in USP, EP, and IP. Used by pharma brands, OTC laxative manufacturers, and supplement companies where a full pharmacopoeia COA is required per lot.':
+        'قشور السيليوم نقاوة 99% من غوجارات، الهند - الدرجة الدوائية. حجم الانتفاخ الأدنى 50 مل/جم. meeting monographs in USP, EP, and IP.',
+      'Psyllium husk powder 85% purity, 40–60 mesh (particle size 250–425 μm). Visible texture in finished products makes it suitable for gluten-free artisan bread and high-fibre cereal. Below NF and USP swell volume thresholds. Lowest cost per unit in our powder range.':
+        'بودرة قشور السيليوم نقاوة 85%، بمقاس 40–60 مش. مناسبة للخبز الخالي من الغلوتين وحبوب الألياف. التكلفة الأقل في البودرة.',
+      'Psyllium husk powder 95% purity at 80 mesh (177 μm). Swell volume minimum 42 ml/g. Viscosity approximately 100 cP at 1% solution. Good flow characteristics for dosator and tamping-pin capsule filling equipment. Used in functional food blends, fibre sachets, and supplement capsules.':
+        'بودرة قشور السيليوم نقاوة 95% بمقاس 80 مش. حجم الانتفاخ الأدنى 42 مل/جم. اللزوجة 100 cP في محلول 1%. مناسب للكبسولات.',
+      'Psyllium husk powder 98% purity at 100 mesh (149 μm). USP and EP compliant. Swell volume minimum 48 ml/g, viscosity approximately 250 cP at 1% solution. For pharma capsule fills, drink mix powders, and functional food applications where a pharmacopoeia COA is required.':
+        'بودرة قشور السيليوم نقاوة 98% بمقاس 100 مش. متوافقة مع دستور الأدوية الأمريكي والأوروبي. لزوجة 250 cP.',
+      'Psyllium husk powder 99% purity at 200 mesh (75 μm). USP, EP, and IP compliant. Swell volume ≥55 ml/g, viscosity approximately 400 cP at 1% solution — the highest in our powder range. Used in cosmetic formulations, premium supplement powders, and pharmaceutical production where maximum mucilage activity and fine uniform particle size are required.':
+        'بودرة قشور السيليوم نقاوة 99% بمقاس 200 مش. متوافقة مع دساتير الأدوية للمستحضرات الفاخرة والأدوية. لزوجة 400 cP.',
+      'Psyllium khakha powder Feed Grade A, 30–40% crude fibre. Coarse particle size (20–40 mesh). Total ash ≤8%. For cattle and buffalo feed programs where maximum fibre bulk is the primary spec and blending into coarse compound feed is standard.':
+        'بودرة كاكا السيليوم درجة أعلاف أ، ألياف خام 30-40%. حجم حبيبات خشن. إجمالي الرماد ≤8%. لبرامج أعلاف الماشية.',
+      'Psyllium khakha powder Feed Grade B, 25–30% crude fibre. Fine particle size (40–60 mesh). For pellet manufacturing and premix blending where uniform mixing in compound feed is more critical than maximum fibre content. Total ash ≤10%.':
+        'بودرة كاكا السيليوم درجة أعلاف ب، ألياف خام 25-30%. حجم حبيبات ناعم. لتصنيع الكريات والخلطات الجاهزة. رماد ≤10%.',
+      'Psyllium fibre for paper, textile sizing, and absorbent applications. 40–55% crude fibre at 40–60 mesh, moisture ≤12%. Heavy metals to buyer specification. Consistent sieve profile and stable moisture are the primary supply requirements for most industrial buying programs.':
+        'ألياف السيليوم للتطبيقات الصناعية مثل الورق وتغرية المنسوجات والامتصاص. ألياف خام 40-55%. رطوبة ≤12%.',
+      'Finer mesh (60–100) and higher crude fibre (50–60%) for cosmetics and personal care. Total ash ≤8%. For applications where particle uniformity and consistent dispersion in aqueous formulations matter.':
+        'مش أنعم (60-100) وألياف خام أعلى (50-60%) لمستحضرات التجميل والعناية الشخصية. رماد ≤8%.',
+      'Food-safe heavy metal limits (Lead, Arsenic, Cadmium within food-grade thresholds). 35–45% crude fibre at 40–80 mesh. Used as a natural fibre source and binder in pet food manufacturing where animal safety documentation is required alongside the standard COA.':
+        'حدود المعادن الثقيلة آمنة للأغذية. تستخدم كألياف طبيعية ورابط في تصنيع أغذية الحيوانات الأليفة مع شهادات الأمان.',
+      'USDA National Organic Program certified psyllium husk for the US market. Certification covers seed origin, growing practices (no synthetic pesticides or fertilisers), processing facility, and handling chain. Transaction certificate (TC) per shipment links the specific lot to the organic certificate. Purity ≥95%, swell volume ≥40 ml/g.':
+        'قشور السيليوم معتمدة من البرنامج العضوي الوطني الأمريكي (USDA NOP) للسوق الأمريكية. شهادة TC لكل شحنة. نقاوة ≥95%.',
+      'EU Organic certified psyllium husk under EU Regulation 2018/848. Certificate of Inspection (COI) provided per shipment for EU customs and import authority requirements. Lot-level traceability and certificate review before purchase order. Purity ≥95%, swell volume ≥40 ml/g.':
+        'قشور السيليوم معتمدة عضويًا في الاتحاد الأوروبي بموجب لائحة الاتحاد الأوروبي 2018/848. شهادة COI لكل شحنة.',
+      'Compressed psyllium cattle feed block (Sagar Gola type) combining husk, khakha, molasses, and mineral mix. Designed for direct farm-level feeding without processing. Supports digestive regularity and hydration retention in dairy cattle and buffalo. Metabolisable energy approximately 9–10 MJ/kg DM.':
+        'قالب علف كبس الماشية من السيليوم (نوع ساغار غولا) يجمع القشور والكاكا والدبس والمعادن. للتغذية المباشرة.',
+      'Loose granule psyllium cattle feed (Sagar Lali type) with khakha as the primary base plus grain mix. Higher crude fibre (30–40%) and protein (4–6%) than Sagar Gola. For cattle, poultry, and ruminant bulk fibre supplementation, or for buyers who blend into a compound feed program.':
+        'علف حبيبي سائب للماشية من السيليوم (نوع ساغار لالي) مع الكاكا كقاعدة أساسية زائد خلطة حبوب.'
+    },
+    faqs: {
+      'What certifications cover your NOP organic psyllium?': {
+        q: 'ما هي الشهادات التي تغطي السيليوم العضوي NOP الخاص بكم؟',
+        a: 'معتمد بموجب البرنامج العضوي الوطني الأمريكي (NOP). تغطي الشهادة مصدر البذور، وممارسات الزراعة، ومنشأة المعالجة، وسلسلة التداول. نقوم بتقديم نسخة الشهادة وشهادة المعاملة (TC) قبل أمر الشراء.'
+      },
+      'What document do US organic importers need per shipment?': {
+        q: 'ما هي المستندات التي يحتاجها مستوردو المنتجات العضوية في أمريكا لكل شحنة؟',
+        a: 'شهادة معاملة (TC) صادرة عن جهة التصديق لكل شحنة. يربط هذا المستند الشحنة المحددة بالشهادة العضوية، ونقدمها كجزء من حزمة مستندات التصدير القياسية.'
+      },
+      'What purity and swell volume does NOP organic psyllium have?': {
+        q: 'ما هي نقاوة وحجم انتفاخ السيليوم العضوي NOP؟',
+        a: 'نقاوة ≥95%، وحجم انتفاخ ≥40 مل/جم كحد أدنى. يتم توفير شهادة تحليل COA مع الرطوبة والميكروبيولوجيا لكل شحنة.'
+      },
+      'What is the price premium for organic psyllium?': {
+        q: 'ما هي زيادة السعر (الأوفر) للسيليوم العضوي؟',
+        a: 'عادة ما تكون بين 25-40% أعلى من الدرجة التقليدية 95% اعتمادًا على توافر المخزون المعتمد وتوقيت السوق. اتصل بنا لمعرفة الأسعار الحالية.'
+      },
+      'What document do EU importers need for organic psyllium?': {
+        q: 'ما هي المستندات التي يحتاجها مستوردو الاتحاد الأوروبي للسيليوم العضوي؟',
+        a: 'شهادة تفتيش (COI) بموجب لائحة الاتحاد الأوروبي 2018/848. يتم إصدارها لكل شحنة وهي مطلوبة من قبل جمارك الاتحاد الأوروبي للاستيراد العضوي.'
+      },
+      'Is your EU organic psyllium certified under the 2018/848 regulation?': {
+        q: 'هل السيليوم العضوي للاتحاد الأوروبي معتمد بموجب لائحة 2018/848؟',
+        a: 'نعم. الدفعات العضوية للاتحاد الأوروبي معتمدة بموجب لائحة الاتحاد الأوروبي 2018/848. يتم توفير نسخة الشهادة و COI قبل أمر الشراء.'
+      },
+      'What is the swell volume of EU organic psyllium?': {
+        q: 'ما هو حجم انتفاخ السيليوم العضوي للاتحاد الأوروبي؟',
+        a: 'حجم انتفاخ ≥40 مل/جم كحد أدنى بنقاوة ≥95%. نفس المواصفات المادية لدرجة NOP - يختلف نطاق الشهادة حسب سوق الوجهة.'
+      },
+      'Can I review the organic certificate before placing an order?': {
+        q: 'هل يمكنني مراجعة الشهادة العضوية قبل تقديم الطلب؟',
+        a: 'نعم. نحن نشارك الشهادة العضوية الحالية وسجلات المنشأ على مستوى الدفعة قبل تأكيد أمر الشراء. هذا أمر قياسي لجميع دفعاتنا العضوية.'
+      }
+    }
+  },
+  nl: {
+    leads: {
+      'Psyllium seeds (Plantago ovata) 98% purity, machine-cleaned. Air separator and gravity table cleaned to remove light particles and foreign matter (≤2%). For millers, feed manufacturers, and ingredient processors. Germination ≥85% confirmed for seed-quality lots; not tested for milling use.':
+        'Psylliumzaden (Plantago ovata) 98% zuiverheid, machine-gereinigd. Luchtafscheider en zwaartekrachttabel gereinigd om lichte deeltjes en vreemde stoffen te verwijderen (≤2%).',
+      'Psyllium seeds 99% purity, optically sorted. Foreign matter ≤0.5% versus ≤2% in standard grade. Commands an 8–12% price premium. Preferred by millers producing 98%+ purity husk grades where seed purity directly affects finished husk yield and consistency.':
+        'Psylliumzaden 99% zuiverheid, optisch gesorteerd. Vreemde stoffen ≤0,5% versus ≤2% in standaardkwaliteit. 8–12% prijspremie.',
+      'Psyllium husk 85% purity from Siddhpur, Gujarat. Swell volume minimum 30 ml/g. Below the NF and USP thresholds for supplement and laxative monographs. Used in animal feed, industrial fibre blending, and cost-sensitive food applications where pharmacopoeia compliance is not required.':
+        'Psylliumvezels 85% zuiverheid uit Siddhpur, Gujarat. Zwelvolume minimaal 30 ml/g. Gebruikt in diervoeder en kostengevoelige levensmiddelen.',
+      'Psyllium husk 95% purity, NF-compliant. Swell volume minimum 40 ml/g. Used in dietary fibre supplements, functional cereals, and food fibre enrichment where the pharmacopoeia standard is Food / NF rather than USP or EP. COA annotated to NF on request.':
+        'Psylliumvezels 95% zuiverheid, NF-conform. Zwelvolume minimaal 40 ml/g. Voor voedingsvezelsupplementen en verrijking.',
+      'Psyllium husk 98% purity, USP and EP compliant. Swell volume minimum 45 ml/g. For laxative capsule fills, OTC sachet products, and supplement formulations requiring a full USP or EP COA. NABL-accredited lab testing per shipment.':
+        'Psylliumvezels 98% zuiverheid, USP- en EP-conform. Zwelvolume minimaal 45 ml/g. Voor laxeercapsules en OTC-sachets.',
+      'Psyllium husk 99% purity from Gujarat, India — the pharmaceutical grade. Minimum swell volume 50 ml/g, meeting the Plantago ovata husk monographs in USP, EP, and IP. Used by pharma brands, OTC laxative manufacturers, and supplement companies where a full pharmacopoeia COA is required per lot.':
+        'Psylliumvezels 99% zuiverheid uit Gujarat, India — de farmaceutische kwaliteit. Minimaal zwelvolume 50 ml/g.',
+      'Psyllium husk powder 85% purity, 40–60 mesh (particle size 250–425 μm). Visible texture in finished products makes it suitable for gluten-free artisan bread and high-fibre cereal. Below NF and USP swell volume thresholds. Lowest cost per unit in our powder range.':
+        'Psylliumvezelpoeder 85% zuiverheid, 40–60 mesh. Geschikt voor glutenvrij ambachtelijk brood. Laagste prijs per eenheid.',
+      'Psyllium husk powder 95% purity at 80 mesh (177 μm). Swell volume minimum 42 ml/g. Viscosity approximately 100 cP at 1% solution. Good flow characteristics for dosator and tamping-pin capsule filling equipment. Used in functional food blends, fibre sachets, and supplement capsules.':
+        'Psylliumvezelpoeder 95% zuiverheid bij 80 mesh. Zwelvolume minimaal 42 ml/g. Viscositeit 100 cP in 1% oplossing.',
+      'Psyllium husk powder 98% purity at 100 mesh (149 μm). USP and EP compliant. Swell volume minimum 48 ml/g, viscosity approximately 250 cP at 1% solution. For pharma capsule fills, drink mix powders, and functional food applications where a pharmacopoeia COA is required.':
+        'Psylliumvezelpoeder 98% zuiverheid bij 100 mesh. USP- en EP-conform. Viscositeit 250 cP.',
+      'Psyllium husk powder 99% purity at 200 mesh (75 μm). USP, EP, and IP compliant. Swell volume ≥55 ml/g, viscosity approximately 400 cP at 1% solution — the highest in our powder range. Used in cosmetic formulations, premium supplement powders, and pharmaceutical production where maximum mucilage activity and fine uniform particle size are required.':
+        'Psylliumvezelpoeder 99% zuiverheid bij 200 mesh. USP-, EP- en IP-conform. Viscositeit 400 cP.',
+      'Psyllium khakha powder Feed Grade A, 30–40% crude fibre. Coarse particle size (20–40 mesh). Total ash ≤8%. For cattle and buffalo feed programs where maximum fibre bulk is the primary spec and blending into coarse compound feed is standard.':
+        'Psyllium khakhapoeder Diervoederkwaliteit A, 30–40% ruwe celstof. Grof mesh. Totale as ≤8%. Voor rundvee- en buffelvoer.',
+      'Psyllium khakha powder Feed Grade B, 25–30% crude fibre. Fine particle size (40–60 mesh). For pellet manufacturing and premix blending where uniform mixing in compound feed is more critical than maximum fibre content. Total ash ≤10%.':
+        'Psyllium khakhapoeder Diervoederkwaliteit B, 25–30% ruwe celstof. Fijn mesh. Voor pelletfabricage en premixen. Totale as ≤10%.',
+      'Psyllium fibre for paper, textile sizing, and absorbent applications. 40–55% crude fibre at 40–60 mesh, moisture ≤12%. Heavy metals to buyer specification. Consistent sieve profile and stable moisture are the primary supply requirements for most industrial buying programs.':
+        'Psylliumvezels voor papier-, textiel- en absorberende toepassingen. 40-55% ruwe celstof bij 40-60 mesh, vocht ≤12%.',
+      'Finer mesh (60–100) and higher crude fibre (50–60%) for cosmetics and personal care. Total ash ≤8%. For applications where particle uniformity and consistent dispersion in aqueous formulations matter.':
+        'Fijnere mesh (60-100) en hogere ruwe celstof (50-60%) voor cosmetica en persoonlijke verzorging. Totale as ≤8%.',
+      'Food-safe heavy metal limits (Lead, Arsenic, Cadmium within food-grade thresholds). 35–45% crude fibre at 40–80 mesh. Used as a natural fibre source and binder in pet food manufacturing where animal safety documentation is required alongside the standard COA.':
+        'Voedselveilige limieten voor zware metalen. Natuurlijke vezelbron en bindmiddel voor de productie van diervoeding.',
+      'USDA National Organic Program certified psyllium husk for the US market. Certification covers seed origin, growing practices (no synthetic pesticides or fertilisers), processing facility, and handling chain. Transaction certificate (TC) per shipment links the specific lot to the organic certificate. Purity ≥95%, swell volume ≥40 ml/g.':
+        'USDA National Organic Program gecertificeerde psylliumvezels voor de Amerikaanse markt. TC per zending. Zuiverheid ≥95%.',
+      'EU Organic certified psyllium husk under EU Regulation 2018/848. Certificate of Inspection (COI) provided per shipment for EU customs and import authority requirements. Lot-level traceability and certificate review before purchase order. Purity ≥95%, swell volume ≥40 ml/g.':
+        'EU Biologisch gecertificeerde psylliumvezels onder EU-verordening 2018/848. COI verstrekt per zending.',
+      'Compressed psyllium cattle feed block (Sagar Gola type) combining husk, khakha, molasses, and mineral mix. Designed for direct farm-level feeding without processing. Supports digestive regularity and hydration retention in dairy cattle and buffalo. Metabolisable energy approximately 9–10 MJ/kg DM.':
+        'Geperst psyllium veevoederblok (type Sagar Gola) met vezels, khakha, melasse en mineralen. Voor directe voeding.',
+      'Loose granule psyllium cattle feed (Sagar Lali type) with khakha as the primary base plus grain mix. Higher crude fibre (30–40%) and protein (4–6%) than Sagar Gola. For cattle, poultry, and ruminant bulk fibre supplementation, or for buyers who blend into a compound feed program.':
+        'Los psyllium veevoer in korrelvorm (type Sagar Lali) met khakha als primaire basis en graanmix. Hoger in celstof.'
+    },
+    faqs: {
+      'What certifications cover your NOP organic psyllium?': {
+        q: 'Welke certificeringen dekken uw NOP biologische psyllium?',
+        a: 'Gecertificeerd onder het USDA National Organic Program (NOP). De certificering dekt de zaadbron, teeltpraktijken, verwerkingsfaciliteit en distributieketen. We delen het certificaat en de Transaction Certificate (TC) voorafgaand aan de bestelling.'
+      },
+      'What document do US organic importers need per shipment?': {
+        q: 'Welk document hebben Amerikaanse importeurs van biologische producten per zending nodig?',
+        a: 'Een Transaction Certificate (TC) uitgegeven door de certificeerder per zending. Dit document koppelt de specifieke partij aan het biologische certificaat. We leveren dit standaard mee.'
+      },
+      'What purity and swell volume does NOP organic psyllium have?': {
+        q: 'Welke zuiverheid en zwelvolume heeft NOP biologische psyllium?',
+        a: 'Minimaal ≥95% zuiverheid, zwelvolume ≥40 ml/g. Analyse-certificaat (COA) met vocht en microbiologie per zending meegeleverd.'
+      },
+      'What is the price premium for organic psyllium?': {
+        q: 'Wat is de meerprijs voor biologische psyllium?',
+        a: 'Meestal 25-40% boven de conventionele 95% kwaliteit, afhankelijk van gecertificeerde voorraden en marktomstandigheden. Neem contact op voor actuele prijzen.'
+      },
+      'What document do EU importers need for organic psyllium?': {
+        q: 'Welk document hebben EU-importeurs nodig voor biologische psyllium?',
+        a: 'Een Certificate of Inspection (COI) onder EU-verordening 2018/848. Dit wordt per zending uitgegeven en is vereist door de EU-douane voor biologische import.'
+      },
+      'Is your EU organic psyllium certified under the 2018/848 regulation?': {
+        q: 'Is uw EU biologische psyllium gecertificeerd onder verordening 2018/848?',
+        a: 'Ja. Biologische batches voor de EU zijn gecertificeerd onder EU-verordening 2018/848. Kopie van het certificaat en COI worden voorafgaand aan de bestelling gedeeld.'
+      },
+      'What is the swell volume of EU organic psyllium?': {
+        q: 'Wat is het zwelvolume van EU biologische psyllium?',
+        a: 'Minimaal ≥40 ml/g bij ≥95% zuiverheid. Fysisch identiek aan de NOP-kwaliteit — alleen de certificering verschilt per bestemmingsmarkt.'
+      },
+      'Can I review the organic certificate before placing an order?': {
+        q: 'Kan ik het biologische certificaat inzien voordat ik een bestelling plaats?',
+        a: 'Ja. Wij delen het actuele biologische certificaat en de herkomstgegevens voorafgaand aan de bestelbevestiging. Dit is standaard voor al onze biologische partijen.'
+      }
+    }
+  }
+};
+
+export function translateLead(lead: string, lang: LanguageCode): string {
+  const map = productI18n[lang]?.leads;
+  if (!map) return lead;
+  return map[lead] ?? lead;
+}
+
+export function translateFaqQ(q: string, lang: LanguageCode): string {
+  const map = productI18n[lang]?.faqs;
+  if (!map) return q;
+  return map[q]?.q ?? q;
+}
+
+export function translateFaqA(q: string, a: string, lang: LanguageCode): string {
+  const map = productI18n[lang]?.faqs;
+  if (!map) return a;
+  return map[q]?.a ?? a;
+}
+
+export function translateNote(note: string, lang: LanguageCode): string {
+  const map = productI18n[lang]?.notes;
+  if (!map) return note;
+  return map[note] ?? note;
+}
+
+export const productNameI18n: Partial<Record<LanguageCode, Record<string, string>>> = {
+  zh: {
+    'Psyllium Seeds': '车前子种子',
+    'Psyllium Husk': '车前子壳',
+    'Psyllium Husk Powder': '车前子壳粉',
+    'Psyllium Khakha Powder': '车前子 Khakha 粉',
+    'Industrial Grade Psyllium': '工业级车前子',
+    'Organic Psyllium': '有机车前子',
+    'Psyllium Cattle Feed': '车前子牛饲料'
+  },
+  ar: {
+    'Psyllium Seeds': 'بذور السيليوم',
+    'Psyllium Husk': 'قشور السيليوم',
+    'Psyllium Husk Powder': 'بودرة قشور السيليوم',
+    'Psyllium Khakha Powder': 'بودرة كاكا السيليوم',
+    'Industrial Grade Psyllium': 'سيليوم الدرجة الصناعية',
+    'Organic Psyllium': 'سيليوم عضوي',
+    'Psyllium Cattle Feed': 'علف الماشية من السيليوم'
+  },
+  nl: {
+    'Psyllium Seeds': 'Psylliumzaden',
+    'Psyllium Husk': 'Psylliumvezels',
+    'Psyllium Husk Powder': 'Psylliumvezelpoeder',
+    'Psyllium Khakha Powder': 'Psyllium khakhapoeder',
+    'Industrial Grade Psyllium': 'Industriële kwaliteit psyllium',
+    'Organic Psyllium': 'Biologische psyllium',
+    'Psyllium Cattle Feed': 'Psyllium veevoer'
+  }
+};
+
+export const productLabelI18n: Partial<Record<LanguageCode, Record<string, string>>> = {
+  zh: {
+    'Seed raw material': '种子原料',
+    'High-purity fibre': '高纯度纤维',
+    'Standard & ultra-fine powders': '标准与超细粉末',
+    'Feed by-product': '饲料副产品',
+    'Industrial fibre & binder': '工业纤维与粘合剂',
+    'NOP & EU certified organic': 'NOP & 欧盟认证有机',
+    'Processed animal feed': '加工动物饲料'
+  },
+  ar: {
+    'Seed raw material': 'مادة خام بذور',
+    'High-purity fibre': 'ألياف عالية النقاوة',
+    'Standard & ultra-fine powders': 'بودرة قياسية وفائقة النعومة',
+    'Feed by-product': 'منتج ثانوي للأعلاف',
+    'Industrial fibre & binder': 'ألياف ورابط صناعي',
+    'NOP & EU certified organic': 'عضوي معتمد من NOP والاتحاد الأوروبي',
+    'Processed animal feed': 'علف حيواني مصنع'
+  },
+  nl: {
+    'Seed raw material': 'Zaadgrondstof',
+    'High-purity fibre': 'Hoogwaardige vezels',
+    'Standard & ultra-fine powders': 'Standaard & ultrafijne poeders',
+    'Feed by-product': 'Bijproduct voor diervoeder',
+    'Industrial fibre & binder': 'Industriële vezel & bindmiddel',
+    'NOP & EU certified organic': 'NOP & EU gecertificeerd biologisch',
+    'Processed animal feed': 'Verwerkt diervoeder'
+  }
+};
+
+export const productHeroI18n: Partial<Record<LanguageCode, Record<string, string>>> = {
+  zh: {
+    'Cleaned Plantago ovata seed for millers, ingredient processors, and feed buyers.': '为磨粉商、原料加工商和饲料买家提供清洁的卵叶车前草种子。',
+    'Bulk psyllium husk from Siddhpur, Gujarat — the export processing hub.': '来自出口加工中心古吉拉特邦 Siddhpur 的散装车前子壳。',
+    'Premium psyllium husk powder in 40 to 200 mesh for global food and pharma buyers.': '为全球食品和制药买家提供 40 至 200 目的优质车前子壳粉。',
+    'Fibre-rich khakha powder for animal feed, agriculture, and compound feed manufacturing.': '富含纤维的 Khakha 粉，适用于动物饲料、农业和配合饲料制造。',
+    'Psyllium powder and husk for industrial binding, sizing, and absorbent applications.': '用于工业粘合、上浆和吸水应用的车前子粉和外壳。',
+    'Certified organic psyllium husk and powder under USDA NOP and EU regulations.': '根据美国 USDA NOP 和欧盟法规认证的有机车前子壳和粉末。',
+    'High-fibre cattle feed pellets and blocks with psyllium, khakha, and mineral mix.': '含有车前子、Khakha 和矿物质混合料的高纤维牛饲料颗粒和饲料块。'
+  },
+  ar: {
+    'Cleaned Plantago ovata seed for millers, ingredient processors, and feed buyers.': 'بذور بلانتاجو أوفاتا منظفة للمطاحن ومصنعي المكونات ومشتري الأعلاف.',
+    'Bulk psyllium husk from Siddhpur, Gujarat — the export processing hub.': 'قشور السيليوم بالجملة من سيدهبور، غوجارات - مركز معالجة التصدير.',
+    'Premium psyllium husk powder in 40 to 200 mesh for global food and pharma buyers.': 'بودرة قشور السيليوم الفاخرة من 40 إلى 200 مش لمشتري الأغذية والأدوية عالميًا.',
+    'Fibre-rich khakha powder for animal feed, agriculture, and compound feed manufacturing.': 'بودرة كاكا غنية بالألياف لعلف الحيوانات والزراعة وتصنيع الأعلاف المركبة.',
+    'Psyllium powder and husk for industrial binding, sizing, and absorbent applications.': 'بودرة وقشور السيليوم للتطبيقات الصناعية كالربط والتغرية والامتصاص.',
+    'Certified organic psyllium husk and powder under USDA NOP and EU regulations.': 'قشور وبودرة السيليوم معتمدة عضويًا بموجب لوائح NOP الأمريكية والاتحاد الأوروبي.',
+    'High-fibre cattle feed pellets and blocks with psyllium, khakha, and mineral mix.': 'قوالب وحبيبات علف الماشية عالية الألياف مع السيليوم والكاكا والخلطة المعدنية.'
+  },
+  nl: {
+    'Cleaned Plantago ovata seed for millers, ingredient processors, and feed buyers.': 'Gereinigd Plantago ovata zaad voor molenaars, ingrediëntenverwerkers en voederkopers.',
+    'Bulk psyllium husk from Siddhpur, Gujarat — the export processing hub.': 'Bulk psylliumvezels uit Siddhpur, Gujarat — de exportverwerkingshub.',
+    'Premium psyllium husk powder in 40 to 200 mesh for global food and pharma buyers.': 'Premium psylliumvezelpoeder in 40 tot 200 mesh voor wereldwijde levensmiddelen- en farmaceutische kopers.',
+    'Fibre-rich khakha powder for animal feed, agriculture, and compound feed manufacturing.': 'Vezelrijk khakhapoeder voor diervoeder, landbouw en de productie van mengvoeder.',
+    'Psyllium powder and husk for industrial binding, sizing, and absorbent applications.': 'Psylliumpoeder en -vezels voor industriële binding, verstijving en absorberende toepassingen.',
+    'Certified organic psyllium husk and powder under USDA NOP and EU regulations.': 'Gecertificeerde biologische psylliumvezels en -poeder onder USDA NOP en EU-regelgeving.',
+    'High-fibre cattle feed pellets and blocks with psyllium, khakha, and mineral mix.': 'Vezelrijke veevoederpellets en -blokken met psyllium, khakha en mineralenmix.'
+  }
+};
+
+export const productSummaryI18n: Partial<Record<LanguageCode, Record<string, string>>> = {
+  zh: {
+    'Bulk psyllium seed supply from Gujarat and Rajasthan with origin records, lot traceability, and export packing.': '来自古吉拉特邦和拉贾斯坦邦的大宗车前子种子供应，具有产地记录、批次可追溯性和出口包装。',
+    'High-mucilage Plantago ovata husk in 85%, 95%, 98%, and 99% purity. Sourced directly from our Siddhpur facility with lot COA.': '纯度为 85%、95%、98% 和 99% 的高粘液卵叶车前草壳。直接从我们的 Siddhpur 工厂采购，附带批次 COA。',
+    'High-viscosity Plantago ovata powder milled from selected husk lots. Custom mesh sizes, USP/EP/NF compliant grades, and bulk packing.': '由精选外壳批次磨制的高粘度卵叶车前子粉。定制目数、符合 USP/EP/NF 标准的等级以及大宗包装。',
+    'Cost-effective psyllium by-product with consistent crude fibre, moisture, and particle size for feed formulators and distributors.': '具有稳定粗纤维、水分和粒径的高性价比车前子副产品，适用于饲料配方商和分销商。',
+    'Natural, high-mucilage binders for green binding, soil control, and cosmetic formulations. Consistent mesh and moisture.': '用于绿色粘合、土壤控制和化妆品配方的天然高粘液粘合剂。目数和水分稳定。',
+    'Traceable organic psyllium supply from certified growers in Gujarat and Rajasthan. Transaction Certificate (TC) per shipment.': '来自古吉拉特邦和拉贾斯坦邦认证种植户的可追溯有机车前子供应。每批货物随附交易证书 (TC)。',
+    'Premium veterinary-use feed designed for dairy cattle, buffalo, and horses. Promotes digestive health and hydration.': '专为奶牛、水牛和马设计的优质兽用饲料。促进消化健康和水分保持。'
+  },
+  ar: {
+    'Bulk psyllium seed supply from Gujarat and Rajasthan with origin records, lot traceability, and export packing.': 'توريد بذور السيليوم بالجملة من غوجارات وراجستان مع سجلات المنشأ وتتبع الشحنات وتعبئة التصدير.',
+    'High-mucilage Plantago ovata husk in 85%, 95%, 98%, and 99% purity. Sourced directly from our Siddhpur facility with lot COA.': 'قشور بلانتاجو أوفاتا عالية الصمغ بنقاوة 85% و 95% و 98% و 99%. مصنعة مباشرة بمصنعنا مع شهادة COA.',
+    'High-viscosity Plantago ovata powder milled from selected husk lots. Custom mesh sizes, USP/EP/NF compliant grades, and bulk packing.': 'بودرة بلانتاجو أوفاتا عالية اللزوجة مطحونة من قشور مختارة. مقاسات مش مخصصة وتوافق دستوري وتعبئة بالجملة.',
+    'Cost-effective psyllium by-product with consistent crude fibre, moisture, and particle size for feed formulators and distributors.': 'منتج ثانوي للسيليوم فعال التكلفة مع ألياف خام ورطوبة وحبيبات متسقة لمركبي وموزعي الأعلاف.',
+    'Natural, high-mucilage binders for green binding, soil control, and cosmetic formulations. Consistent mesh and moisture.': 'روابط طبيعية عالية الصمغ للربط الأخضر ومكافحة التربة وتركيبات مستحضرات التجميل. مش ورطوبة ثابتة.',
+    'Traceable organic psyllium supply from certified growers in Gujarat and Rajasthan. Transaction Certificate (TC) per shipment.': 'إمدادات سيليوم عضوي يمكن تتبعها من مزارعين معتمدين في غوجارات وراجستان. شهادة TC مع كل شحنة.',
+    'Premium veterinary-use feed designed for dairy cattle, buffalo, and horses. Promotes digestive health and hydration.': 'علف ممتاز للاستخدام البيطري مصمم لأبقار الحليب والجاموس والخيول. يعزز الهضم والترطيب.'
+  },
+  nl: {
+    'Bulk psyllium seed supply from Gujarat and Rajasthan with origin records, lot traceability, and export packing.': 'Levering van bulk psylliumzaden uit Gujarat en Rajasthan met herkomstgegevens, traceerbaarheid en exportverpakking.',
+    'High-mucilage Plantago ovata husk in 85%, 95%, 98%, and 99% purity. Sourced directly from our Siddhpur facility with lot COA.': 'Hoogwaardige Plantago ovata vezels in 85%, 95%, 98% en 99% zuiverheid. Rechtstreeks uit onze Siddhpur-faciliteit met COA.',
+    'High-viscosity Plantago ovata powder milled from selected husk lots. Custom mesh sizes, USP/EP/NF compliant grades, and bulk packing.': 'Hoogvisceus Plantago ovata poeder gemalen uit geselecteerde vezelpartijen. Aangepaste mesh-groottes, USP/EP/NF-conforme graden en bulkverpakking.',
+    'Cost-effective psyllium by-product with consistent crude fibre, moisture, and particle size for feed formulators and distributors.': 'Kosteneffectief psylliumbijproduct met consistente ruwe celstof, vochtgehalte en deeltjesgrootte voor mengvoerformuleerders.',
+    'Natural, high-mucilage binders for green binding, soil control, and cosmetic formulations. Consistent mesh and moisture.': 'Natuurlijke bindmiddelen met hoog slijmgehalte voor ecologische binding, bodembeheer en cosmetische formuleringen.',
+    'Traceable organic psyllium supply from certified growers in Gujarat and Rajasthan. Transaction Certificate (TC) per shipment.': 'Traceerbare levering van biologische psyllium van gecertificeerde telers in Gujarat en Rajasthan. TC per zending.',
+    'Premium veterinary-use feed designed for dairy cattle, buffalo, and horses. Promotes digestive health and hydration.': 'Premium voeder voor veterinair gebruik, ontworpen voor melkvee, buffels en paarden. Bevordert spijsvertering en hydratatie.'
+  }
+};
+
+export const productGradeLabelI18n: Partial<Record<LanguageCode, Record<string, string>>> = {
+  zh: {
+    'Standard': '标准级',
+    'Sortex': '色选级',
+    'Husk 85%': '85% 纯度整壳',
+    'Husk 95% (NF)': '95% 纯度整壳 (NF)',
+    'Husk 98% (USP/EP)': '98% 纯度整壳 (USP/EP)',
+    'Husk 99% (Pharma)': '99% 纯度整壳 (制药级)',
+    'Powder 85% / 40-60m': '85% 纯度粉末 / 40-60 目',
+    'Powder 95% / 80m': '95% 纯度粉末 / 80 目',
+    'Powder 98% / 100m (USP)': '98% 纯度粉末 / 100 目 (USP)',
+    'Powder 99% / 200m (Pharma)': '99% 纯度粉末 / 200 目 (制药级)',
+    'Feed Grade A': '饲料 A 级',
+    'Feed Grade B': '饲料 B 级',
+    'Industrial Fibre 40-60m': '工业纤维 40-60 目',
+    'Cosmetics Powder 60-100m': '化妆品粉末 60-100 目',
+    'Pet Food Binder 40-80m': '宠物食品粘合剂 40-80 目',
+    'Organic Husk 95% (NOP)': '有机整壳 95% (NOP)',
+    'Organic Husk 95% (EU)': '有机整壳 95% (欧盟)',
+    'Cattle Feed Block (Gola)': '压缩牛饲料块 (Gola)',
+    'Granule Feed (Lali)': '散装颗粒饲料 (Lali)',
+    'Feed Grade A (30–40% fibre)': '饲料 A 级 (30–40% 纤维)',
+    'Feed Grade B (25–30% fibre)': '饲料 B 级 (25–30% 纤维)'
+  },
+  ar: {
+    'Standard': 'قياسي',
+    'Sortex': 'سورتكس (مفروز)',
+    'Husk 85%': 'قشور 85%',
+    'Husk 95% (NF)': 'قشور 95% (NF)',
+    'Husk 98% (USP/EP)': 'قشور 98% (USP/EP)',
+    'Husk 99% (Pharma)': 'قشور 99% (دوائي)',
+    'Powder 85% / 40-60m': 'بودرة 85% / 40-60 مش',
+    'Powder 95% / 80m': 'بودرة 95% / 80 مش',
+    'Powder 98% / 100m (USP)': 'بودرة 98% / 100 مش (USP)',
+    'Powder 99% / 200m (Pharma)': 'بودرة 99% / 200 مش (دوائي)',
+    'Feed Grade A': 'درجة أعلاف أ',
+    'Feed Grade B': 'درجة أعلاف ب',
+    'Industrial Fibre 40-60m': 'ألياف صناعية 40-60 مش',
+    'Cosmetics Powder 60-100m': 'بودرة مستحضرات تجميل 60-100 مش',
+    'Pet Food Binder 40-80m': 'رابط طعام حيوانات أليفة 40-80 مش',
+    'Organic Husk 95% (NOP)': 'قشور عضوية 95% (NOP)',
+    'Organic Husk 95% (EU)': 'قشور عضوية 95% (الاتحاد الأوروبي)',
+    'Cattle Feed Block (Gola)': 'قالب علف الماشية (جولا)',
+    'Granule Feed (Lali)': 'علف حبيبي (لالي)',
+    'Feed Grade A (30–40% fibre)': 'درجة أعلاف أ (30-40% ألياف)',
+    'Feed Grade B (25–30% fibre)': 'درجة أعلاف ب (25-30% ألياف)'
+  },
+  nl: {
+    'Standard': 'Standaard',
+    'Sortex': 'Sortex',
+    'Husk 85%': 'Vezels 85%',
+    'Husk 95% (NF)': 'Vezels 95% (NF)',
+    'Husk 98% (USP/EP)': 'Vezels 98% (USP/EP)',
+    'Husk 99% (Pharma)': 'Vezels 99% (Pharma)',
+    'Powder 85% / 40-60m': 'Poeder 85% / 40-60m',
+    'Powder 95% / 80m': 'Poeder 95% / 80m',
+    'Powder 98% / 100m (USP)': 'Poeder 98% / 100m (USP)',
+    'Powder 99% / 200m (Pharma)': 'Poeder 99% / 200m (Pharma)',
+    'Feed Grade A': 'Diervoederkwaliteit A',
+    'Feed Grade B': 'Diervoederkwaliteit B',
+    'Industrial Fibre 40-60m': 'Industriële vezel 40-60m',
+    'Cosmetics Powder 60-100m': 'Cosmeticapoeder 60-100m',
+    'Pet Food Binder 40-80m': 'Petfood bindmiddel 40-80m',
+    'Organic Husk 95% (NOP)': 'Biologische vezels 95% (NOP)',
+    'Organic Husk 95% (EU)': 'Biologische vezels 95% (EU)',
+    'Cattle Feed Block (Gola)': 'Geperst veevoerblok (Gola)',
+    'Granule Feed (Lali)': 'Veevoer in korrels (Lali)',
+    'Feed Grade A (30–40% fibre)': 'Diervoederkwaliteit A (30–40% celstof)',
+    'Feed Grade B (25–30% fibre)': 'Diervoederkwaliteit B (25–30% celstof)'
+  }
+};
+
+export function translateProductName(name: string, lang: LanguageCode): string {
+  const map = productNameI18n[lang];
+  if (!map) return name;
+  return map[name] ?? name;
+}
+
+export function translateProductLabel(label: string, lang: LanguageCode): string {
+  const map = productLabelI18n[lang];
+  if (!map) return label;
+  return map[label] ?? label;
+}
+
+export function translateProductHero(hero: string, lang: LanguageCode): string {
+  const map = productHeroI18n[lang];
+  if (!map) return hero;
+  return map[hero] ?? hero;
+}
+
+export function translateProductSummary(summary: string, lang: LanguageCode): string {
+  const map = productSummaryI18n[lang];
+  if (!map) return summary;
+  return map[summary] ?? summary;
+}
+
+export function translateProductGradeLabel(gradeLabel: string, lang: LanguageCode): string {
+  const map = productGradeLabelI18n[lang];
+  if (!map) return gradeLabel;
+  return map[gradeLabel] ?? gradeLabel;
+}
+
+

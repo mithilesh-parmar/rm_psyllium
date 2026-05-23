@@ -24,7 +24,7 @@ const itemListSchema = {
       '@type': 'ListItem',
       position: _pos++,
       name: `${product.name} — ${(product as any).gradeLabels?.[i] ?? product.grades[i]}`,
-      url: `https://www.rmpsyllium.com/${lang}/products/${product.slug}/#${slug}`
+      url: `https://rmpsyllium.com/${lang}/products/${product.slug}/#${slug}`
     }))
   )
 };
