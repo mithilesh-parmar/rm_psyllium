@@ -1,0 +1,360 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ProductDirectory from '../../../components/ProductDirectory.astro';
+import { copy, getLanguage, languages, products } from '../../../data/site';
+
+export function getStaticPaths() {
+  return languages.map((language) => ({
+    params: { lang: language.code }
+  }));
+}
+
+const lang = getLanguage(Astro.params.lang);
+const t = copy[lang];
+
+let _pos = 1;
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Psyllium Products — RM Psyllium',
+  description: t.productsListLead,
+  numberOfItems: products.reduce((sum, p) => sum + p.gradeslugs.length, 0),
+  itemListElement: products.flatMap((product) =>
+    product.gradeslugs.map((slug, i) => ({
+      '@type': 'ListItem',
+      position: _pos++,
+      name: `${product.name} — ${(product as any).gradeLabels?.[i] ?? product.grades[i]}`,
+      url: `https://rmpsyllium.com/${lang}/products/${product.slug}/#${slug}`
+    }))
+  )
+};
+---
+<BaseLayout
+  lang={lang}
+  title={`${t.productsListTitle} | RM Psyllium`}
+  description={t.productsListLead}
+  structuredData={itemListSchema}
+>
+  <div class="pl-wrap">
+    <!-- HEADER -->
+    <header class="pl-header">
+      <div class="pl-header-inner">
+        <div class="pl-header-copy">
+          <p class="pl-kicker">{t.productsPageKicker}</p>
+          <h1>{t.productsListTitle}<br /><em>{t.productsPageH1Suffix}</em></h1>
+          <p class="pl-lead">{t.productsListLead}</p>
+        </div>
+        <div class="pl-header-stats">
+          <div class="pl-hstat"><strong>2,000 MT</strong><span>{t.productsPageCapacityLabel}</span></div>
+          <div class="pl-hstat"><strong>85–99%</strong><span>{t.productsPagePurityLabel}</span></div>
+          <div class="pl-hstat"><strong>From 1 KG</strong><span>{t.productsPageMoqLabel}</span></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- PRODUCT DIRECTORY -->
+    <section class="pl-section">
+      <div class="pl-container">
+        <ProductDirectory products={products} lang={lang} />
+      </div>
+    </section>
+
+    <!-- SPEC COMPARISON TEASER -->
+    <section class="pl-section pl-section--cream">
+      <div class="pl-container">
+        <p class="pl-kicker">{t.productsPageGradeKicker}</p>
+        <h2 class="pl-compare-title">{t.productsPageGradeTitle}</h2>
+        <div class="pl-table-wrap">
+          <table class="pl-table">
+            <thead>
+              <tr>
+                <th>Parameter</th>
+                <th>85%</th>
+                <th>95%</th>
+                <th>98%</th>
+                <th>99%</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Swell volume (ml/g min)</td><td>30</td><td>40</td><td>45</td><td>50</td></tr>
+              <tr><td>Moisture (% max)</td><td>12</td><td>12</td><td>12</td><td>12</td></tr>
+              <tr><td>Total ash (% max)</td><td>4.0</td><td>4.0</td><td>3.5</td><td>3.0</td></tr>
+              <tr><td>Pharmacopoeia</td><td>Food grade</td><td>Food / NF</td><td>USP / EP</td><td>USP / EP / IP</td></tr>
+              <tr><td>Typical application</td><td>Feed, industrial</td><td>Supplement, food</td><td>Pharma, capsule</td><td>Pharma laxative</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="pl-table-note">{t.productsPageTableNote} <a href={`/${lang}/quality/`}>{t.productsPageViewQuality}</a></p>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="pl-cta-band">
+      <div class="pl-container">
+        <div class="pl-cta-inner">
+          <div>
+            <h2>{t.productsPageCtaTitle}</h2>
+            <p>{t.productsPageCtaBody}</p>
+          </div>
+          <div class="pl-cta-btns">
+            <a class="pl-btn pl-btn-primary" href={`/${lang}/contact/`}>{t.navContact}</a>
+            <a class="pl-btn pl-btn-wa" href="https://wa.me/918949817791" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .pl-wrap {
+    --f: 'Inter', system-ui, -apple-system, sans-serif;
+    --ink: #1a1c18;
+    --soft: #484c43;
+    --mute: #6b6f65;
+    --rule: rgba(26, 28, 24, 0.1);
+    --sage: #4a6630;
+    --sage-pale: #d8e0c8;
+    --cream: #f5f3ed;
+    --white: #ffffff;
+    --dark: #1a1c18;
+  }
+
+  /* ---- header ---- */
+  .pl-header {
+    background: var(--cream);
+    border-bottom: 1px solid var(--rule);
+    padding: clamp(4rem, 7vw, 7rem) 0 clamp(3rem, 5vw, 5rem);
+  }
+
+  .pl-header-inner {
+    width: min(1140px, calc(100% - 128px));
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: clamp(3rem, 5vw, 5rem);
+    align-items: center;
+  }
+
+  .pl-kicker {
+    margin: 0 0 20px;
+    color: var(--sage);
+    font-family: var(--f);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .pl-header-copy h1 {
+    margin: 0;
+    font-family: var(--f);
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.02;
+    color: var(--ink);
+  }
+
+  .pl-header-copy h1 em {
+    color: var(--sage);
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .pl-lead {
+    margin: 20px 0 0;
+    color: var(--soft);
+    font-family: var(--f);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.65;
+    max-width: 520px;
+  }
+
+  .pl-header-stats { display: grid; gap: 16px; }
+
+  .pl-hstat {
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    background: var(--white);
+    padding: 20px 24px;
+  }
+
+  .pl-hstat strong {
+    display: block;
+    font-family: var(--f);
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+    line-height: 1;
+  }
+
+  .pl-hstat span {
+    display: block;
+    margin-top: 6px;
+    font-family: var(--f);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--mute);
+  }
+
+
+  /* ---- container ---- */
+  .pl-container {
+    width: min(1140px, calc(100% - 128px));
+    margin-inline: auto;
+  }
+
+  .pl-section {
+    padding: clamp(4rem, 7vw, 7rem) 0;
+  }
+
+  .pl-section--cream {
+    background: var(--cream);
+  }
+
+  /* ---- comparison table ---- */
+  .pl-compare-title {
+    margin: 0 0 28px;
+    font-family: var(--f);
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    color: var(--ink);
+  }
+
+  .pl-table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    background: var(--white);
+  }
+
+  .pl-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--f);
+    font-size: 13px;
+  }
+
+  .pl-table th {
+    padding: 14px 20px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--mute);
+    background: var(--cream);
+    border-bottom: 1px solid var(--rule);
+    white-space: nowrap;
+  }
+
+  .pl-table td {
+    padding: 13px 20px;
+    color: var(--soft);
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+
+  .pl-table tr:last-child td { border-bottom: 0; }
+
+  .pl-table td:first-child {
+    font-weight: 500;
+    color: var(--ink);
+    white-space: nowrap;
+  }
+
+  .pl-table-note {
+    margin: 16px 0 0;
+    font-family: var(--f);
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--mute);
+  }
+
+  .pl-table-note a {
+    color: var(--sage);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  /* ---- CTA band ---- */
+  .pl-cta-band {
+    background: var(--dark);
+    padding: clamp(4rem, 7vw, 7rem) 0;
+  }
+
+  .pl-cta-inner {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: clamp(2rem, 4vw, 4rem);
+    align-items: center;
+  }
+
+  .pl-cta-inner h2 {
+    margin: 0 0 12px;
+    font-family: var(--f);
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    color: #fff;
+  }
+
+  .pl-cta-inner > div > p {
+    margin: 0;
+    color: rgba(255,255,255,0.65);
+    font-family: var(--f);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.65;
+    max-width: 520px;
+  }
+
+  .pl-cta-btns {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .pl-btn {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    padding: 13px 24px;
+    font-family: var(--f);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .pl-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px -12px rgba(26,28,24,0.2);
+  }
+
+  .pl-btn-primary { background: #fff; color: var(--dark); }
+  .pl-btn-wa { background: #25d366; color: #fff; }
+
+  /* ---- responsive ---- */
+  @media (max-width: 1100px) {
+    .pl-header-inner, .pl-container { width: calc(100% - 80px); }
+  }
+
+  @media (max-width: 860px) {
+    .pl-header-inner, .pl-container { width: calc(100% - 48px); }
+    .pl-header-inner { grid-template-columns: 1fr; }
+    .pl-header-stats { grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .pl-lead { max-width: 100%; }
+    .pl-cta-inner { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 640px) {
+    .pl-header-inner, .pl-container { width: calc(100% - 32px); }
+    .pl-header-stats { grid-template-columns: 1fr; }
+  }
+</style>

@@ -1,0 +1,54 @@
+name: Agent 3 — Content Generation (Weekly)
+
+on:
+  schedule:
+    - cron: "0 4 * * 1"  # Every Monday 4am UTC
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Max briefs to process"
+        default: "5"
+        required: false
+      test_mode:
+        description: "Test mode (skip DB writes)"
+        type: boolean
+        default: false
+
+jobs:
+  generate-content:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        working-directory: agent3_content_generation
+        run: pip install -r requirements.txt
+
+      - name: Run Agent 3 batch
+        working-directory: agent3_content_generation
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          NETLIFY_BUILD_HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          LIMIT="${{ github.event.inputs.limit || '5' }}"
+          TEST_FLAG="${{ github.event.inputs.test_mode == 'true' && '--test-mode' || '' }}"
+          python -m src.main --batch-mode --limit "$LIMIT" $TEST_FLAG
+
+      - name: Upload generated content artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: generated-content-${{ github.run_id }}
+          path: agent3_content_generation/output/content/
+          retention-days: 14

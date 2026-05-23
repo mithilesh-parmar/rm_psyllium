@@ -1,0 +1,89 @@
+{
+  "business_profile": {
+    "domain": "rmpsyllium.com",
+    "core_products": [
+      "psyllium_husk_85_99_purity",
+      "psyllium_husk_powder_mesh_40_200",
+      "psyllium_khakha_powder_feed_grade",
+      "industrial_grade_psyllium",
+      "organic_psyllium_usda_eu_nop",
+      "psyllium_cattle_feed"
+    ],
+    "unique_value_props": [
+      "40_years_manufacturing_experience_partner",
+      "in_house_processing_not_trading_desk",
+      "custom_spec_development_before_quote",
+      "coa_full_documentation_pre_shipment",
+      "fob_mundra_port_advantage",
+      "moq_500kg_flexible_trials"
+    ],
+    "certifications": ["FSSAI", "APEDA", "Spices_Board", "IEC_Active"],
+    "capacity_mt_per_year": 2000,
+    "lead_time_days": "14-21"
+  },
+  "target_regions": ["US", "DE", "FR", "NL", "BD", "UK", "CA"],
+  "languages": ["en", "de"],
+  "seed_query_clusters": {
+    "supplier_qualification": [
+      "how to verify GMP certification for psyllium husk suppliers in India",
+      "what documents to request from Indian psyllium exporter",
+      "psyllium supplier audit checklist",
+      "how to evaluate psyllium husk manufacturer reliability"
+    ],
+    "technical_specs": [
+      "psyllium husk mesh size 80 vs 100 difference",
+      "psyllium husk purity 85 vs 99 percent comparison",
+      "psyllium husk moisture content specification",
+      "psyllium swelling volume USP method test"
+    ],
+    "pricing_logistics": [
+      "psyllium husk bulk price per MT from India",
+      "FOB Mundra port psyllium export cost",
+      "psyllium husk MOQ for trial order from India",
+      "lead time for psyllium husk shipment from Gujarat"
+    ],
+    "organic_sustainability": [
+      "NOP vs EU-NOP organic certification difference psyllium",
+      "USDA organic psyllium husk supplier India",
+      "EU organic psyllium import requirements",
+      "organic psyllium husk supply chain traceability"
+    ],
+    "khakha_animal_feed": [
+      "khakha powder fiber content cattle feed India",
+      "psyllium khakha powder nutritional profile",
+      "bulk khakha powder supplier Gujarat",
+      "psyllium husk by-product cattle feed specifications"
+    ],
+    "industrial_specialty": [
+      "industrial grade psyllium husk for paper manufacturing",
+      "psyllium mucilage viscosity specifications industrial use",
+      "psyllium husk textile sizing application",
+      "high viscosity psyllium husk powder specifications"
+    ],
+    "compliance_documentation": [
+      "what documents are required to import psyllium husk from India to USA",
+      "FDA prior notice requirements psyllium supplement import",
+      "psyllium husk EFSA novel food status",
+      "phytosanitary certificate psyllium husk India export"
+    ]
+  },
+  "manual_competitor_queries": [
+    "jyot overseas psyllium husk review",
+    "satnam psyllium organic certification BRC",
+    "mantra psyllium cattle feed quality",
+    "psyllium husk supplier India comparison",
+    "best psyllium husk exporter gujarat india"
+  ],
+  "aeo_scoring_weights": {
+    "answerability": 0.4,
+    "citation_potential": 0.3,
+    "conversational_match": 0.2,
+    "commercial_fit": 0.1
+  },
+  "output_filters": {
+    "min_aeo_score": 7.0,
+    "min_word_count": 3,
+    "exclude_branded_queries": true,
+    "question_format_bonus": 0.5
+  }
+}

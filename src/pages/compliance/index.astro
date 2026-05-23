@@ -3,107 +3,498 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import ComplianceGrid from '../../components/ComplianceGrid.astro';
 ---
 <BaseLayout
-  title="Compliance & Traceability | RM Psyllium"
-  description="RM Psyllium compliance positioning for US and EU procurement: certifications, traceability, COA, and export documentation."
+  title="Psyllium COA, Traceability & Export Documents | RM Psyllium"
+  description="Review COA, traceability, food safety, Halal, Kosher, phytosanitary, fumigation, origin, and export documentation support for bulk psyllium buyers."
 >
-  <section class="section intro">
-    <div class="container intro-grid">
-      <div>
-        <p class="eyebrow">Compliance</p>
-        <h1>Documentation-first supply for regulated buyers.</h1>
-        <p>
-          This page is structured for procurement and QA teams that need proof before sampling:
-          certification status, lot traceability, quality checks, and export paperwork.
-        </p>
+  <!-- INTRO -->
+  <section class="cl-intro">
+    <div class="cl-intro-inner">
+      <div class="cl-intro-copy">
+        <p class="cl-kicker">Quality &amp; Compliance</p>
+        <h1>Documents buyers need<br /><em>before shipment.</em></h1>
+        <p>Procurement and QA teams can review COA parameters, lot traceability, food safety records, and export paperwork before samples or purchase orders.</p>
       </div>
-      <img src="/assets/compliance-lab.svg" width="1200" height="760" alt="Compliance laboratory placeholder" loading="eager" decoding="async" />
+      <div class="cl-intro-stats">
+        <div class="cl-stat">
+          <strong>47</strong>
+          <span>COA test parameters</span>
+        </div>
+        {/*
+        <div class="cl-stat">
+          <strong>FSSAI</strong>
+          <span>Facility registered</span>
+        </div>
+        */}
+        <div class="cl-stat">
+          <strong>FOB</strong>
+          <span>Mundra · Kandla · JNPT</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container">
+  <!-- COMPLIANCE GRID -->
+  <section class="cl-section">
+    <div class="cl-container">
+      <div class="cl-section-label"><span>Documentation types</span><i></i></div>
       <ComplianceGrid />
     </div>
   </section>
 
-  <section class="section checklist-band">
-    <div class="container checklist">
+  {/*
+  <!-- CERTIFICATIONS -->
+  <section class="cl-section cl-section--cream">
+    <div class="cl-container">
+      <div class="cl-section-label"><span>Certifications</span><i></i></div>
+      <h2>Quality standards we hold<br /><em>and are working towards.</em></h2>
+      <div class="cl-cert-grid">
+        <div class="cl-cert-card">
+          <div class="cl-cert-header">
+            <h3>FSSAI</h3>
+            <span class="cl-badge cl-badge--green">Registered</span>
+          </div>
+          <p>Food Safety &amp; Standards Authority of India</p>
+        </div>
+        <div class="cl-cert-card">
+          <div class="cl-cert-header">
+            <h3>ISO 22000 / HACCP</h3>
+            <span class="cl-badge cl-badge--amber">In progress</span>
+          </div>
+          <p>Food safety management system</p>
+        </div>
+        <div class="cl-cert-card">
+          <div class="cl-cert-header">
+            <h3>Halal</h3>
+            <span class="cl-badge cl-badge--amber">In progress</span>
+          </div>
+          <p>Halal certification body</p>
+        </div>
+        <div class="cl-cert-card">
+          <div class="cl-cert-header">
+            <h3>Kosher</h3>
+            <span class="cl-badge cl-badge--amber">In progress</span>
+          </div>
+          <p>Kosher certification body</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  */}
+
+  <!-- CHECKLIST BAND -->
+  <section class="cl-section cl-section--dark">
+    <div class="cl-container cl-checklist">
       <div>
+        <p class="cl-kicker cl-kicker--light">Before you order</p>
         <h2>Buyer verification checklist</h2>
-        <p>Replace placeholder claims with verified certificate IDs, expiry dates, and issuing bodies before publishing.</p>
+        <p>Ask for current documents by product, lot, and destination market before confirming a bulk order.</p>
       </div>
       <ul>
-        <li>Current organic certification scope</li>
-        <li>FDA registration and facility details</li>
-        <li>HALAL and KOSHER certificate copies</li>
+        <li>Current organic certification scope and lot coverage</li>
+        {/* <li>FSSAI registration and facility details</li> */}
+        {/* <li>Halal and Kosher certificate copies (where required)</li> */}
         <li>COA sample and test parameter ranges</li>
         <li>Lot traceability and recall process</li>
+        <li>Phytosanitary and fumigation certificates</li>
       </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT CTA -->
+  <section class="cl-section">
+    <div class="cl-container cl-cta">
+      <div>
+        <h2>Need documents before ordering?</h2>
+        <p>Email us with your product, lot requirements, and destination. We'll share current COA, certificate copies, and documentation status within 24 hours.</p>
+      </div>
+      <div class="cl-cta-buttons">
+        <a class="cl-btn cl-btn-primary" href="mailto:export@rmpsyllium.com">Email export desk</a>
+        <a class="cl-btn cl-btn-secondary" href="https://wa.me/918949817791" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
     </div>
   </section>
 </BaseLayout>
 
 <style>
-  h1,
-  h2 {
-    margin: 0.45rem 0 1rem;
-    line-height: 1.05;
+  /* tokens */
+  :root {
+    --cl-ink: #1a1c18;
+    --cl-soft: #484c43;
+    --cl-mute: #6b6f65;
+    --cl-rule: rgba(26, 28, 24, 0.1);
+    --cl-sage: #4a6630;
+    --cl-sage-pale: #d8e0c8;
+    --cl-warm: #b8753a;
+    --cl-cream: #f5f3ed;
+    --cl-paper: #fafaf8;
+    --cl-dark: #1a1c18;
+    --cl-f: 'Inter', system-ui, -apple-system, sans-serif;
   }
 
-  h1 {
-    font-size: clamp(2.7rem, 7vw, 5.1rem);
+  /* ---- layout ---- */
+  .cl-container {
+    width: min(1140px, calc(100% - 128px));
+    margin-inline: auto;
   }
 
-  h2 {
-    font-size: clamp(2rem, 4vw, 3rem);
+  .cl-section {
+    padding: clamp(4rem, 7vw, 7rem) 0;
   }
 
-  p,
-  li {
-    color: #54707e;
-    line-height: 1.62;
+  .cl-section--cream {
+    background: var(--cl-cream);
   }
 
-  .intro {
-    background: #f6f8f4;
+  .cl-section--dark {
+    background: var(--cl-dark);
   }
 
-  .intro-grid,
-  .checklist {
-    display: grid;
-    grid-template-columns: 0.95fr 1.05fr;
+  .cl-section-label {
+    display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 14px;
+    margin-bottom: 32px;
+    color: var(--cl-sage);
+    font-family: var(--cl-f);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
   }
 
-  .intro img {
-    border: 1px solid #dfe6dc;
-    border-radius: 8px;
-    background: #ffffff;
+  .cl-section-label i {
+    flex: 1;
+    max-width: 400px;
+    height: 1px;
+    background: var(--cl-rule);
   }
 
-  .checklist-band {
-    background: #14213d;
+  /* ---- intro ---- */
+  .cl-intro {
+    background: var(--cl-cream);
+    padding: clamp(4rem, 7vw, 7rem) 0 clamp(3rem, 5vw, 5rem);
+    border-bottom: 1px solid var(--cl-rule);
   }
 
-  .checklist h2,
-  .checklist-band p,
-  .checklist li {
-    color: #ffffff;
-  }
-
-  .checklist ul {
+  .cl-intro-inner {
+    width: min(1140px, calc(100% - 128px));
+    margin-inline: auto;
     display: grid;
-    gap: 0.8rem;
+    grid-template-columns: 1.4fr 1fr;
+    gap: clamp(3rem, 5vw, 5rem);
+    align-items: center;
+  }
+
+  .cl-kicker {
+    margin: 0 0 20px;
+    color: var(--cl-sage);
+    font-family: var(--cl-f);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .cl-kicker--light {
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 16px;
+  }
+
+  .cl-intro-copy h1 {
     margin: 0;
+    font-family: var(--cl-f);
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.02;
+    color: var(--cl-ink);
+  }
+
+  .cl-intro-copy h1 em {
+    color: var(--cl-sage);
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .cl-intro-copy p {
+    margin: 20px 0 0;
+    color: var(--cl-soft);
+    font-family: var(--cl-f);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.65;
+    max-width: 520px;
+  }
+
+  .cl-intro-stats {
+    display: grid;
+    gap: 16px;
+  }
+
+  .cl-stat {
+    border: 1px solid var(--cl-rule);
     border-radius: 8px;
-    background: rgba(255, 255, 255, 0.08);
-    padding: 1.4rem 1.4rem 1.4rem 2.4rem;
+    background: #fff;
+    padding: 20px 24px;
+  }
+
+  .cl-stat strong {
+    display: block;
+    font-family: var(--cl-f);
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--cl-ink);
+    line-height: 1;
+  }
+
+  .cl-stat span {
+    display: block;
+    margin-top: 6px;
+    font-family: var(--cl-f);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--cl-mute);
+  }
+
+  /* ---- section h2 ---- */
+  .cl-section h2 {
+    margin: 0 0 40px;
+    font-family: var(--cl-f);
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1.05;
+    color: var(--cl-ink);
+  }
+
+  .cl-section h2 em {
+    color: var(--cl-sage);
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  /* ---- certifications ---- */
+  .cl-cert-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    max-width: 760px;
+  }
+
+  .cl-cert-card {
+    border: 1px solid var(--cl-rule);
+    border-radius: 8px;
+    background: #fff;
+    padding: 24px;
+  }
+
+  .cl-cert-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+
+  .cl-cert-card h3 {
+    margin: 0;
+    font-family: var(--cl-f);
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--cl-ink);
+  }
+
+  .cl-cert-card p {
+    margin: 0;
+    font-family: var(--cl-f);
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--cl-mute);
+    line-height: 1.5;
+  }
+
+  .cl-badge {
+    flex-shrink: 0;
+    border-radius: 999px;
+    padding: 4px 10px;
+    font-family: var(--cl-f);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .cl-badge--green {
+    background: rgba(74, 102, 48, 0.12);
+    color: #354d20;
+  }
+
+  .cl-badge--amber {
+    background: rgba(184, 117, 58, 0.12);
+    color: #b8753a;
+  }
+
+  /* ---- dark checklist ---- */
+  .cl-checklist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(3rem, 5vw, 5rem);
+    align-items: start;
+  }
+
+  .cl-checklist h2 {
+    color: #fff;
+    margin-top: 0;
+  }
+
+  .cl-checklist > div > p {
+    margin: 16px 0 0;
+    color: rgba(255,255,255,0.65);
+    font-family: var(--cl-f);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.65;
+  }
+
+  .cl-checklist ul {
+    display: grid;
+    gap: 12px;
+    margin: 0;
+    list-style: none;
+    padding: 28px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    background: rgba(255,255,255,0.05);
+  }
+
+  .cl-checklist li {
+    padding-left: 20px;
+    position: relative;
+    color: rgba(255,255,255,0.85);
+    font-family: var(--cl-f);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.55;
+  }
+
+  .cl-checklist li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--cl-sage);
+    opacity: 0.8;
+  }
+
+  /* ---- CTA ---- */
+  .cl-cta {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: clamp(2rem, 4vw, 4rem);
+    align-items: center;
+  }
+
+  .cl-cta h2 {
+    margin: 0 0 12px;
+    font-family: var(--cl-f);
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    color: var(--cl-ink);
+  }
+
+  .cl-cta > div > p {
+    margin: 0;
+    color: var(--cl-soft);
+    font-family: var(--cl-f);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.65;
+    max-width: 560px;
+  }
+
+  .cl-cta-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .cl-btn {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    padding: 13px 24px;
+    font-family: var(--cl-f);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: transform 0.25s cubic-bezier(.2,.7,.3,1), box-shadow 0.25s;
+  }
+
+  .cl-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px -12px rgba(26, 28, 24, 0.2);
+  }
+
+  .cl-btn-primary {
+    background: var(--cl-ink);
+    color: #fff;
+  }
+
+  .cl-btn-secondary {
+    background: #25d366;
+    color: #fff;
+  }
+
+  /* ---- responsive ---- */
+  @media (max-width: 1100px) {
+    .cl-container,
+    .cl-intro-inner {
+      width: calc(100% - 80px);
+    }
   }
 
   @media (max-width: 860px) {
-    .intro-grid,
-    .checklist {
+    .cl-container,
+    .cl-intro-inner {
+      width: calc(100% - 48px);
+    }
+
+    .cl-intro-inner {
+      grid-template-columns: 1fr;
+    }
+
+    .cl-intro-stats {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cl-cert-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .cl-checklist {
+      grid-template-columns: 1fr;
+    }
+
+    .cl-cta {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 540px) {
+    .cl-container,
+    .cl-intro-inner {
+      width: calc(100% - 32px);
+    }
+
+    .cl-intro-stats {
       grid-template-columns: 1fr;
     }
   }

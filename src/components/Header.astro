@@ -1,192 +1,557 @@
 ---
-import { copy, getLanguage, languages } from '../data/site';
+import { getLanguage, languages } from '../data/site';
 
 const lang = getLanguage(Astro.params.lang);
-const c = copy[lang];
-const productHref = `/${lang}/products/psyllium-husk/`;
-const regionHref = `/${lang}/regions/united-states/`;
-const industryHref = `/${lang}/industries/pharma-nutraceutical/`;
+const currentLanguage = languages.find(l => l.code === lang);
 ---
+
+<!-- Desktop header -->
 <header class="site-header">
   <a class="brand" href={`/${lang}/`} aria-label="RM Psyllium home">
-    <span class="brand-mark" aria-hidden="true">RM</span>
-    <span>
-      <strong>RM Psyllium</strong>
-      <small>Global psyllium supply</small>
-    </span>
+    <img src="/assets/logo-header.webp" alt="RM Psyllium" class="brand-logo" width="160" height="44" />
   </a>
 
-  <input class="nav-toggle" id="nav-toggle" type="checkbox" aria-label="Open navigation" />
-  <label class="nav-button" for="nav-toggle" aria-hidden="true">
-    <span></span>
-    <span></span>
-    <span></span>
-  </label>
-
   <nav class="site-nav" aria-label="Primary navigation">
-    <a href={productHref}>{c.navProducts}</a>
-    <a href={regionHref}>{c.navRegions}</a>
-    <a href={industryHref}>{c.navIndustries}</a>
-    <a href="/compliance/">{c.navCompliance}</a>
-    <a href={`/${lang}/insights/husk-vs-powder-buyer-guide/`}>{c.navInsights}</a>
-    <div class="language-switcher" aria-label="Language switcher">
-      {languages.map((language) => (
-        <a class:list={{ active: language.code === lang }} href={`/${language.code}/`}>
-          {language.code.toUpperCase()}
-        </a>
-      ))}
+    <a href={`/${lang}/`}>Home</a>
+    <a href={`/${lang}/products/`}>Products</a>
+    <a href={`/${lang}/quality/`}>Quality</a>
+    <a href={`/${lang}/insights/`}>Buyer Guides</a>
+    <a href={`/${lang}/faq/`}>FAQ</a>
+    <a href={`/${lang}/contact/`}>Contact</a>
+    <div class="lang-dropdown" aria-label="Language switcher">
+      <button class="lang-trigger" aria-haspopup="listbox" aria-expanded="false" aria-label={`Language: ${currentLanguage?.label}`}>
+        <span class="lang-globe" aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.2"/><ellipse cx="7" cy="7" rx="2.5" ry="6" stroke="currentColor" stroke-width="1.2"/><line x1="1" y1="5" x2="13" y2="5" stroke="currentColor" stroke-width="1.2"/><line x1="1" y1="9" x2="13" y2="9" stroke="currentColor" stroke-width="1.2"/></svg>
+        </span>
+        <span class="lang-current">{lang.toUpperCase()}</span>
+        <span class="lang-chevron" aria-hidden="true">
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </button>
+      <ul class="lang-menu" role="listbox" aria-label="Select language">
+        {languages.map((language) => (
+          <li role="option" aria-selected={language.code === lang}>
+            <a href={`/${language.code}/`} class:list={{ active: language.code === lang }}>
+              <span class="lang-code">{language.code.toUpperCase()}</span>
+              <span class="lang-label">{language.label}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
     </div>
-    <a class="nav-cta" href="/#spec" data-track="quote_click">{c.cta}</a>
+    <a class="nav-cta" href="/#talk" data-track="quote_click">Get Quote <span aria-hidden="true"></span></a>
   </nav>
+
+  <!-- Hamburger: three staggered-width bars that morph to × on open -->
+  <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 </header>
 
+<!-- Windows Phone-style fullscreen overlay -->
+<div class="wp-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Navigation">
+
+  <!-- Accent stripe — the narrow left-edge bar characteristic of Metro UI -->
+  <div class="wp-stripe" aria-hidden="true"></div>
+
+  <div class="wp-panel">
+
+    <!-- Top bar -->
+    <div class="wp-top">
+      <a class="wp-logo-link" href={`/${lang}/`} aria-label="RM Psyllium home">
+        <img src="/assets/logo-header.webp" alt="RM Psyllium" width="130" height="36" />
+      </a>
+      <button class="wp-close" aria-label="Close navigation">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <line x1="1" y1="1" x2="15" y2="15" stroke="currentColor" stroke-width="2" stroke-linecap="square"/>
+          <line x1="15" y1="1" x2="1" y2="15" stroke="currentColor" stroke-width="2" stroke-linecap="square"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Nav links -->
+    <nav class="wp-nav" aria-label="Mobile navigation">
+      <a class="wp-link" href={`/${lang}/`}>
+        <span class="wp-num">00</span><span class="wp-text">Home</span>
+      </a>
+      <a class="wp-link" href={`/${lang}/products/`}>
+        <span class="wp-num">01</span><span class="wp-text">Products</span>
+      </a>
+      <a class="wp-link" href={`/${lang}/quality/`}>
+        <span class="wp-num">02</span><span class="wp-text">Quality</span>
+      </a>
+      <a class="wp-link" href={`/${lang}/insights/`}>
+        <span class="wp-num">03</span><span class="wp-text">Buyer Guides</span>
+      </a>
+      <a class="wp-link" href={`/${lang}/faq/`}>
+        <span class="wp-num">04</span><span class="wp-text">FAQ</span>
+      </a>
+      <a class="wp-link" href={`/${lang}/contact/`}>
+        <span class="wp-num">05</span><span class="wp-text">Contact</span>
+      </a>
+    </nav>
+
+    <!-- Footer: lang + CTA -->
+    <div class="wp-foot">
+      <div class="wp-lang-dropdown">
+        <button class="wp-lang-trigger" aria-haspopup="listbox" aria-expanded="false">
+          <span class="wp-lang-globe" aria-hidden="true">
+            <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.3"/><ellipse cx="7" cy="7" rx="2.5" ry="6" stroke="currentColor" stroke-width="1.3"/><line x1="1" y1="5" x2="13" y2="5" stroke="currentColor" stroke-width="1.3"/><line x1="1" y1="9" x2="13" y2="9" stroke="currentColor" stroke-width="1.3"/></svg>
+          </span>
+          <span class="wp-lang-cur">{lang.toUpperCase()} — {currentLanguage?.label}</span>
+          <span class="wp-lang-chev" aria-hidden="true">
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </button>
+        <ul class="wp-lang-menu" role="listbox" aria-label="Select language">
+          {languages.map((language) => (
+            <li role="option" aria-selected={language.code === lang}>
+              <a class:list={['wp-lang-opt', { active: language.code === lang }]} href={`/${language.code}/`}>
+                <span class="wp-lang-opt-code">{language.code.toUpperCase()}</span>
+                <span class="wp-lang-opt-label">{language.label}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <a class="wp-cta" href="/#talk" data-track="quote_click">
+        Get Quote
+        <span class="wp-dot" aria-hidden="true"></span>
+      </a>
+    </div>
+
+  </div>
+</div>
+
 <style>
+  /* ── Shared (desktop reuse) ──────────────────────────────── */
+  .brand { display: inline-flex; align-items: center; flex-shrink: 0; }
+  .brand-logo { height: 40px; width: auto; object-fit: contain; }
+
+  /* ── Desktop language dropdown ──────────────────────────── */
+  .lang-dropdown { position: relative; }
+
+  .lang-trigger {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    min-height: 34px;
+    padding: 0 0.6rem;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    background: transparent;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    color: var(--ink);
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s;
+    white-space: nowrap;
+  }
+  .lang-trigger:hover { border-color: var(--accent); background: rgba(0,0,0,0.02); }
+  .lang-trigger[aria-expanded="true"] { border-color: var(--accent); }
+  .lang-globe { display: flex; align-items: center; color: var(--muted); }
+  .lang-chevron {
+    display: flex; align-items: center; color: var(--muted);
+    transition: transform 0.2s ease;
+  }
+  .lang-trigger[aria-expanded="true"] .lang-chevron { transform: rotate(180deg); }
+
+  .lang-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    min-width: 160px;
+    background: #fff;
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+    padding: 0.35rem 0;
+    list-style: none;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6px);
+    transition: opacity 0.18s ease, transform 0.18s ease, visibility 0s linear 0.18s;
+    z-index: 200;
+  }
+  .lang-menu.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: opacity 0.18s ease, transform 0.18s ease, visibility 0s linear 0s;
+  }
+  .lang-menu li a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.9rem;
+    text-decoration: none;
+    transition: background 0.12s;
+  }
+  .lang-menu li a:hover { background: rgba(0,0,0,0.03); }
+  .lang-menu li a.active { background: rgba(0,0,0,0.05); }
+  .lang-code {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.14em;
+    color: var(--accent);
+    flex-shrink: 0;
+    min-width: 28px;
+  }
+  .lang-label {
+    font-size: 0.8rem;
+    color: var(--ink);
+    font-weight: 500;
+  }
+
+  .nav-cta {
+    display: inline-flex;
+    min-height: 40px;
+    align-items: center;
+    gap: 0.5rem;
+    border: 0;
+    border-radius: 999px;
+    background: var(--ink);
+    color: #fff !important;
+    padding: 0 1.25rem;
+  }
+  .nav-cta span {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    animation: pulse 1.8s ease-in-out infinite;
+  }
+
+  /* ── Desktop header ──────────────────────────────────────── */
   .site-header {
     position: sticky;
     top: 0;
-    z-index: 30;
+    z-index: 100;
     display: flex;
-    min-height: 76px;
+    height: 80px;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid rgba(16, 35, 63, 0.07);
-    background: rgba(255, 253, 247, 0.76);
-    padding: 0 4.5vw;
-    backdrop-filter: blur(18px);
-  }
-
-  .brand {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.75rem;
-  }
-
-  .brand-mark {
-    display: grid;
-    width: 44px;
-    height: 44px;
-    place-items: center;
-    border-radius: 999px;
-    background: var(--dark);
-    color: #ffffff;
-    font-size: 0.86rem;
-    font-weight: 880;
-  }
-
-  .brand strong,
-  .brand small {
-    display: block;
-  }
-
-  .brand strong {
-    font-size: 1rem;
-    line-height: 1.1;
-  }
-
-  .brand small {
-    color: #64748b;
-    font-size: 0.74rem;
-    line-height: 1.2;
+    border-bottom: 1px solid rgba(26,28,24,0.1);
+    background: rgba(255,255,255,0.92);
+    padding: 0 56px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
   .site-nav {
     display: flex;
     align-items: center;
-    gap: 1.15rem;
-    color: #253b55;
-    font-size: 0.88rem;
-    font-weight: 760;
-  }
-
-  .site-nav a:hover {
-    color: #2d6a4f;
-  }
-
-  .language-switcher {
-    display: flex;
-    gap: 0.15rem;
-    border: 1px solid rgba(16, 35, 63, 0.1);
-    border-radius: 999px;
-    background: #ffffff;
-    padding: 0.18rem;
-  }
-
-  .language-switcher a {
-    display: grid;
-    min-width: 34px;
-    min-height: 30px;
-    place-items: center;
-    border-radius: 999px;
-    font-size: 0.72rem;
-  }
-
-  .language-switcher a.active {
-    background: var(--mint);
+    gap: 2rem;
     color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+  }
+  .site-nav a:hover { color: var(--accent); }
+  .site-nav .lang-dropdown {
+    border-left: 1px solid var(--rule);
+    padding-left: 1rem;
   }
 
-  .nav-cta {
-    display: inline-flex;
-    min-height: 42px;
-    align-items: center;
-    border-radius: 999px;
-    background: var(--dark);
-    color: #ffffff !important;
-    padding: 0 1rem;
-  }
+  /* Desktop: hide mobile-only elements */
+  .nav-toggle { display: none; }
+  .wp-overlay  { display: none; }
 
-  .nav-toggle,
-  .nav-button {
-    display: none;
-  }
+  /* ── Mobile ──────────────────────────────────────────────── */
+  @media (max-width: 900px) {
+    .site-header { padding: 0 1.25rem; }
+    .site-nav    { display: none; }
 
-  @media (max-width: 980px) {
-    .site-header {
-      padding: 0 1rem;
-    }
-
-    .nav-button {
-      display: grid;
-      width: 44px;
-      height: 44px;
-      place-content: center;
-      gap: 5px;
-      border: 1px solid rgba(16, 35, 63, 0.14);
-      border-radius: 12px;
-      cursor: pointer;
-    }
-
-    .nav-button span {
-      display: block;
-      width: 20px;
-      height: 2px;
-      background: var(--dark);
-    }
-
-    .site-nav {
-      position: absolute;
-      inset: 76px 1rem auto 1rem;
-      display: none;
-      flex-direction: column;
-      align-items: stretch;
-      border: 1px solid rgba(16, 35, 63, 0.1);
-      border-radius: 16px;
-      background: #fffdf7;
-      padding: 0.9rem;
-      box-shadow: 0 24px 70px rgba(16, 35, 63, 0.14);
-    }
-
-    .site-nav a {
-      min-height: 44px;
-      padding: 0.75rem;
-    }
-
-    .language-switcher {
-      justify-content: space-between;
-    }
-
-    .nav-toggle:checked ~ .site-nav {
+    /* ── Hamburger button ────────────────────────────────── */
+    .nav-toggle {
       display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;   /* staggered bars align right */
+      width: 44px; height: 44px;
+      gap: 6px;
+      border: none;
+      background: none;
+      padding: 0;
+      cursor: pointer;
+      flex-shrink: 0;
+      -webkit-tap-highlight-color: transparent;
     }
+    .nav-toggle span {
+      display: block;
+      height: 2px;
+      background: var(--ink);
+      border-radius: 1px;
+      transform-origin: center;
+      transition:
+        width    0.28s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.28s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity  0.2s ease;
+    }
+    /* Descending widths — characteristic Metro stagger */
+    .nav-toggle span:nth-child(1) { width: 22px; }
+    .nav-toggle span:nth-child(2) { width: 16px; }
+    .nav-toggle span:nth-child(3) { width: 10px; }
+
+    /* Morph to × when open */
+    .nav-toggle.is-open span:nth-child(1) {
+      width: 22px;
+      transform: translateY(8px) rotate(45deg);
+    }
+    .nav-toggle.is-open span:nth-child(2) {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+    .nav-toggle.is-open span:nth-child(3) {
+      width: 22px;
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* ── Fullscreen overlay ──────────────────────────────── */
+    .wp-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 500;
+      display: flex;
+      /* WP: panel sweeps in from the left edge */
+      transform: translateX(-100%);
+      visibility: hidden;
+      transition:
+        transform   0.32s cubic-bezier(0.2, 0, 0, 1),
+        visibility  0s   linear 0.32s;
+      will-change: transform;
+    }
+    .wp-overlay.open {
+      transform: translateX(0);
+      visibility: visible;
+      transition:
+        transform   0.32s cubic-bezier(0.2, 0, 0, 1),
+        visibility  0s   linear 0s;
+    }
+
+    /* Left-edge accent stripe — Metro signature */
+    .wp-stripe {
+      width: 5px;
+      flex-shrink: 0;
+      align-self: stretch;
+      background: var(--accent);
+    }
+
+    /* Main panel — site's cream surface color */
+    .wp-panel {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background: var(--surface);
+      height: 100vh;
+      height: 100dvh;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    /* Top bar */
+    .wp-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1.5rem;
+      height: 70px;
+      flex-shrink: 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .wp-logo-link img {
+      height: 34px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    /* Square × close button */
+    .wp-close {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px; height: 44px;
+      border: none;
+      background: none;
+      color: var(--muted);
+      cursor: pointer;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+      transition: color 0.15s ease;
+    }
+    .wp-close:hover,
+    .wp-close:focus-visible { color: var(--ink); outline: none; }
+
+    /* Nav links */
+    .wp-nav {
+      display: flex;
+      flex-direction: column;
+      padding: 1.25rem 1.5rem 1rem 2rem;
+      flex: 1;
+    }
+
+    /* Each link: number prefix + large bold text */
+    .wp-link {
+      display: flex;
+      align-items: baseline;
+      gap: 0.8rem;
+      padding: 0.65rem 0;
+      border-bottom: 1px solid var(--rule);
+      text-decoration: none;
+      opacity: 0;
+      transform: translateX(36px);
+      transition:
+        opacity   0.22s ease-out,
+        transform 0.28s cubic-bezier(0.2, 0, 0, 1),
+        color     0.15s ease;
+    }
+    .wp-link:last-child { border-bottom: none; }
+
+    .wp-num {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      flex-shrink: 0;
+      opacity: 0.6;
+      transition: opacity 0.15s ease;
+    }
+    .wp-text {
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      line-height: 1;
+      color: var(--ink);
+      transition: color 0.15s ease;
+    }
+    .wp-link:hover .wp-text { color: var(--accent); }
+    .wp-link:hover .wp-num  { opacity: 1; }
+
+    .wp-overlay.open .wp-link:nth-child(1) { opacity:1; transform:none; transition-delay:0.06s; }
+    .wp-overlay.open .wp-link:nth-child(2) { opacity:1; transform:none; transition-delay:0.11s; }
+    .wp-overlay.open .wp-link:nth-child(3) { opacity:1; transform:none; transition-delay:0.16s; }
+    .wp-overlay.open .wp-link:nth-child(4) { opacity:1; transform:none; transition-delay:0.21s; }
+    .wp-overlay.open .wp-link:nth-child(5) { opacity:1; transform:none; transition-delay:0.26s; }
+    .wp-overlay.open .wp-link:nth-child(6) { opacity:1; transform:none; transition-delay:0.31s; }
+
+    /* Footer */
+    .wp-foot {
+      padding: 1.25rem 1.5rem 2.75rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      border-top: 1px solid var(--rule);
+      opacity: 0;
+      transform: translateY(14px);
+      transition:
+        opacity   0.2s  ease-out,
+        transform 0.24s cubic-bezier(0.2, 0, 0, 1);
+    }
+    .wp-overlay.open .wp-foot {
+      opacity: 1;
+      transform: none;
+      transition-delay: 0.37s;
+    }
+
+    /* Mobile language dropdown */
+    .wp-lang-dropdown { position: relative; }
+
+    .wp-lang-trigger {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      min-height: 44px;
+      padding: 0 0.875rem;
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      background: transparent;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      color: var(--ink);
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
+      -webkit-tap-highlight-color: transparent;
+      transition: border-color 0.15s;
+    }
+    .wp-lang-trigger[aria-expanded="true"] { border-color: var(--accent); }
+    .wp-lang-globe { display: flex; align-items: center; color: var(--muted); }
+    .wp-lang-cur { flex: 1; }
+    .wp-lang-chev {
+      display: flex; align-items: center; color: var(--muted);
+      transition: transform 0.2s ease;
+    }
+    .wp-lang-trigger[aria-expanded="true"] .wp-lang-chev { transform: rotate(180deg); }
+
+    .wp-lang-menu {
+      list-style: none;
+      margin: 0.35rem 0 0;
+      padding: 0.35rem 0;
+      background: #fff;
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.22s ease;
+    }
+    .wp-lang-menu.open { max-height: 400px; }
+
+    .wp-lang-opt {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.6rem 1rem;
+      text-decoration: none;
+      -webkit-tap-highlight-color: transparent;
+      transition: background 0.12s;
+    }
+    .wp-lang-opt:hover,
+    .wp-lang-opt.active { background: rgba(0,0,0,0.04); }
+    .wp-lang-opt-code {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.14em;
+      color: var(--accent);
+      min-width: 28px;
+    }
+    .wp-lang-opt-label {
+      font-size: 0.85rem;
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    /* CTA — ink background, matches desktop nav-cta */
+    .wp-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.625rem;
+      min-height: 52px;
+      padding: 0 1.5rem;
+      border-radius: 4px;
+      background: var(--ink);
+      color: var(--page-bg);
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .wp-dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+      animation: pulse 1.8s ease-in-out infinite;
+    }
+  }
+
+  @keyframes pulse {
+    0%,100% { transform: scale(1);    opacity: 0.9; }
+    50%      { transform: scale(1.15); opacity: 1;   }
   }
 </style>

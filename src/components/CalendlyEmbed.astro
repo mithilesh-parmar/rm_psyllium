@@ -4,11 +4,11 @@ const bookingUrl = import.meta.env.PUBLIC_BOOKING_URL || '';
 <section id="book" class="booking panel">
   <div>
     <p class="eyebrow">Sourcing Call</p>
-    <h2>{bookingUrl ? 'Book a 15-minute sourcing call' : 'Booking link coming soon'}</h2>
+    <h2>{bookingUrl ? 'Book a 15-minute sourcing call' : 'Request a sourcing call by email'}</h2>
     <p>
       {bookingUrl
         ? 'Choose a time and bring your target grade, mesh, packaging, monthly volume, and destination market.'
-        : 'Calendly is intentionally parked until the final booking URL is available. Spec form submissions still capture buyer intent and route to the thank-you page.'}
+        : 'Send your product, grade, mesh, monthly volume, packing, and destination market. Our export desk will reply with the next available call slot.'}
     </p>
   </div>
   {bookingUrl ? (
@@ -20,8 +20,8 @@ const bookingUrl = import.meta.env.PUBLIC_BOOKING_URL || '';
       height="630"
     ></iframe>
   ) : (
-    <div class="booking-placeholder" aria-label="Booking placeholder">
-      <strong>Placeholder schedule</strong>
+    <div class="booking-placeholder" aria-label="Request sourcing call">
+      <strong>Sourcing call request</strong>
       <span>15 min procurement fit call</span>
       <span>Spec alignment and export readiness</span>
       <a class="btn btn-primary" href="mailto:sourcing@rmpsyllium.com?subject=RM%20Psyllium%20Sourcing%20Call" data-track="email_booking_click">Email Sourcing Team</a>

@@ -1,0 +1,449 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { blogPosts, copy, getLanguage, languages } from '../../../data/site';
+
+export function getStaticPaths() {
+  return languages.flatMap((language) =>
+    blogPosts.map((post) => ({
+      params: { lang: language.code, post: post.slug },
+      props: { post }
+    }))
+  );
+}
+
+const lang = getLanguage(Astro.params.lang);
+const t = copy[lang];
+const { post } = Astro.props;
+
+const formattedDate = new Date(post.date).toLocaleDateString('en-GB', {
+  day: 'numeric', month: 'long', year: 'numeric'
+});
+
+const relatedPosts = blogPosts
+  .filter((p) => p.slug !== post.slug && p.category === post.category)
+  .slice(0, 3);
+
+const blogPostSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: post.title,
+  description: post.summary,
+  datePublished: post.date,
+  dateModified: post.date,
+  author: {
+    '@type': 'Organization',
+    name: 'RM Psyllium',
+    url: 'https://www.rmpsyllium.com'
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'RM Psyllium',
+    url: 'https://www.rmpsyllium.com'
+  },
+  url: `https://www.rmpsyllium.com/${lang}/blog/${post.slug}/`,
+  keywords: `psyllium, ${post.category.toLowerCase()}, psyllium supplier India, Siddhpur Gujarat`
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `https://www.rmpsyllium.com/${lang}/` },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: `https://www.rmpsyllium.com/${lang}/blog/` },
+    { '@type': 'ListItem', position: 3, name: post.title, item: `https://www.rmpsyllium.com/${lang}/blog/${post.slug}/` }
+  ]
+};
+---
+<BaseLayout
+  lang={lang}
+  title={`${post.title} | RM Psyllium Blog`}
+  description={post.summary}
+  structuredData={[blogPostSchema, breadcrumbSchema]}
+>
+  <article class="bp-wrap">
+    <!-- HEADER -->
+    <header class="bp-header">
+      <div class="bp-header-inner">
+        <div class="bp-header-copy">
+          <nav class="bp-breadcrumb" aria-label="Breadcrumb">
+            <a href={`/${lang}/`}>{t.pdBreadcrumbHome}</a>
+            <span aria-hidden="true">›</span>
+            <a href={`/${lang}/blog/`}>{t.navBlog}</a>
+            <span aria-hidden="true">›</span>
+            <span>{post.category}</span>
+          </nav>
+          <p class="bp-kicker">{post.category}</p>
+          <h1>{post.title}<br /><em>{post.category}.</em></h1>
+          <p class="bp-lead">{post.summary}</p>
+          <time datetime={post.date}>{formattedDate}</time>
+        </div>
+        <div class="bp-header-stats">
+          <div class="bp-hstat"><strong>{post.category}</strong><span>{t.blogTopicLabel}</span></div>
+          <div class="bp-hstat"><strong>{formattedDate}</strong><span>{t.insightsPublishedLabel}</span></div>
+          <div class="bp-hstat"><strong>RM Psyllium</strong><span>{t.blogAuthorLabel}</span></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- BODY + SIDEBAR -->
+    <div class="bp-body-wrap">
+      <div class="bp-body-inner">
+        <div class="bp-content">
+          {post.body.map((para) => <p>{para}</p>)}
+
+          {relatedPosts.length > 0 && (
+            <div class="bp-related">
+              <p class="bp-related-label">{t.relatedArticles}</p>
+              {relatedPosts.map((rel) => (
+                <a class="bp-related-link" href={`/${lang}/blog/${rel.slug}/`}>
+                  {rel.title} →
+                </a>
+              ))}
+            </div>
+          )}
+        </div>
+
+        <aside class="bp-sidebar">
+          <div class="bp-cta-card">
+            <p class="bp-cta-label">{t.readyToSource}</p>
+            <h3>{t.sampleCoaTitle}</h3>
+            <p>{t.sampleCoaBody}</p>
+            <a class="bp-btn bp-btn-primary" href={`/${lang}/contact/`}>{t.navContact}</a>
+            <a class="bp-btn bp-btn-wa" href="https://wa.me/918949817791" target="_blank" rel="noopener">{t.heroCtaWhatsApp}</a>
+          </div>
+
+          <div class="bp-meta-card">
+            <div class="bp-meta-row"><strong>{t.blogCategoryLabel}</strong><span>{post.category}</span></div>
+            <div class="bp-meta-row"><strong>{t.insightsPublishedLabel}</strong><span>{formattedDate}</span></div>
+            <div class="bp-meta-row"><strong>{t.blogAuthorLabel}</strong><span>RM Psyllium Export Team</span></div>
+            <div class="bp-meta-row"><strong>{t.insightsSourceLabel}</strong><span>{t.sourceLocation}</span></div>
+          </div>
+
+          <div class="bp-nav-card">
+            <p class="bp-cta-label">{t.moreResources}</p>
+            <a href={`/${lang}/faq/`}>{t.navFaq} →</a>
+            <a href={`/${lang}/quality/`}>{t.navQuality} →</a>
+            <a href={`/${lang}/products/`}>{t.navProducts} →</a>
+            <a href={`/${lang}/insights/`}>{t.navInsights} →</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .bp-wrap {
+    --f: 'Inter', system-ui, -apple-system, sans-serif;
+    --ink: #1a1c18;
+    --soft: #484c43;
+    --mute: #6b6f65;
+    --rule: rgba(26, 28, 24, 0.1);
+    --sage: #4a6630;
+    --cream: #f5f3ed;
+    --white: #ffffff;
+  }
+
+  /* breadcrumb */
+  .bp-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+    font-family: var(--f);
+    font-size: 12px;
+    color: var(--mute);
+  }
+
+  .bp-breadcrumb a {
+    color: var(--mute);
+    text-decoration: none;
+  }
+
+  .bp-breadcrumb a:hover { color: var(--sage); }
+
+  /* header */
+  .bp-header {
+    background: var(--cream);
+    border-bottom: 1px solid var(--rule);
+    padding: clamp(3rem, 6vw, 6rem) 0 clamp(2.5rem, 4vw, 4.5rem);
+  }
+
+  .bp-header-inner {
+    width: min(1140px, calc(100% - 128px));
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: clamp(3rem, 5vw, 5rem);
+    align-items: center;
+  }
+
+  .bp-kicker {
+    margin: 0 0 16px;
+    color: var(--sage);
+    font-family: var(--f);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .bp-header-copy h1 {
+    margin: 0;
+    font-family: var(--f);
+    font-size: clamp(2rem, 4.5vw, 3.6rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+    color: var(--ink);
+  }
+
+  .bp-header-copy h1 em {
+    color: var(--sage);
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .bp-lead {
+    margin: 16px 0 0;
+    color: var(--soft);
+    font-family: var(--f);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.65;
+    max-width: 520px;
+  }
+
+  time {
+    display: inline-block;
+    margin-top: 16px;
+    color: var(--mute);
+    font-family: var(--f);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+  }
+
+  .bp-header-stats { display: grid; gap: 16px; }
+
+  .bp-hstat {
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    background: var(--white);
+    padding: 20px 24px;
+  }
+
+  .bp-hstat strong {
+    display: block;
+    font-family: var(--f);
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    line-height: 1.2;
+  }
+
+  .bp-hstat span {
+    display: block;
+    margin-top: 6px;
+    font-family: var(--f);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--mute);
+  }
+
+  /* body */
+  .bp-body-wrap {
+    padding: clamp(4rem, 7vw, 7rem) 0;
+  }
+
+  .bp-body-inner {
+    width: min(1100px, calc(100% - 128px));
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: clamp(3rem, 5vw, 5rem);
+    align-items: start;
+  }
+
+  /* content */
+  .bp-content p {
+    margin: 0 0 24px;
+    font-family: var(--f);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--soft);
+    line-height: 1.75;
+    max-width: 660px;
+  }
+
+  .bp-content p:last-child { margin-bottom: 0; }
+
+  .bp-related {
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 1px solid var(--rule);
+    display: grid;
+    gap: 10px;
+  }
+
+  .bp-related-label {
+    margin: 0;
+    color: var(--mute);
+    font-family: var(--f);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .bp-related-link {
+    color: var(--ink);
+    font-family: var(--f);
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    line-height: 1.4;
+  }
+
+  .bp-related-link:hover { color: var(--sage); }
+
+  /* sidebar */
+  .bp-sidebar {
+    position: sticky;
+    top: 104px;
+    display: grid;
+    gap: 16px;
+  }
+
+  .bp-cta-card {
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    background: var(--white);
+    padding: 24px;
+    box-shadow: 0 8px 24px -12px rgba(26,28,24,0.12);
+    display: grid;
+    gap: 8px;
+  }
+
+  .bp-cta-label {
+    margin: 0;
+    color: var(--sage);
+    font-family: var(--f);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .bp-cta-card h3 {
+    margin: 0;
+    font-family: var(--f);
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+    line-height: 1.15;
+  }
+
+  .bp-cta-card > p {
+    margin: 4px 0 8px;
+    font-family: var(--f);
+    font-size: 13px;
+    color: var(--soft);
+    line-height: 1.6;
+  }
+
+  .bp-meta-card {
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    background: var(--cream);
+    padding: 20px 24px;
+    display: grid;
+    gap: 12px;
+  }
+
+  .bp-meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  .bp-meta-row strong {
+    font-family: var(--f);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--mute);
+    white-space: nowrap;
+  }
+
+  .bp-meta-row span {
+    font-family: var(--f);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--ink);
+    text-align: right;
+  }
+
+  .bp-nav-card {
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    background: var(--white);
+    padding: 20px 24px;
+    display: grid;
+    gap: 10px;
+  }
+
+  .bp-nav-card a {
+    color: var(--ink);
+    font-family: var(--f);
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .bp-nav-card a:hover { color: var(--sage); }
+
+  .bp-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    padding: 12px 20px;
+    font-family: var(--f);
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .bp-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px -8px rgba(26,28,24,0.2);
+  }
+
+  .bp-btn-primary { background: var(--ink); color: #fff; }
+  .bp-btn-wa { background: #25d366; color: #fff; }
+
+  @media (max-width: 1100px) {
+    .bp-header-inner, .bp-body-inner { width: calc(100% - 80px); }
+  }
+
+  @media (max-width: 860px) {
+    .bp-header-inner, .bp-body-inner { width: calc(100% - 48px); }
+    .bp-header-inner { grid-template-columns: 1fr; }
+    .bp-header-stats { grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .bp-lead { max-width: 100%; }
+    .bp-body-inner { grid-template-columns: 1fr; }
+    .bp-sidebar { position: static; grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 540px) {
+    .bp-header-inner, .bp-body-inner { width: calc(100% - 32px); }
+    .bp-header-stats { grid-template-columns: 1fr; }
+    .bp-sidebar { grid-template-columns: 1fr; }
+  }
+</style>

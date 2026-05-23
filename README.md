@@ -110,13 +110,13 @@ In GA4, mark the most important events as conversions after data appears. In Cla
 
 ## Media Replacement Checklist
 
-Replace these placeholder assets before launch:
+Generated facility and product imagery now lives in `public/assets/generated/`.
+Before launch, review the generated photography against real RM Psyllium facility
+photos when available and replace any asset that should be fully authentic.
 
-- `public/assets/hero-processing.svg`
-- `public/assets/product-bag.svg`
-- `public/assets/compliance-lab.svg`
-- `public/assets/factory-walkthrough.svg`
-- `public/assets/playbook-preview.svg`
+Remaining launch media tasks:
+
+- `public/assets/compliance-lab.svg`, if a compliance/lab visual is added to an active page
 - `public/playbook-rm-psyllium.pdf`
 - `public/favicon.svg`, if a final brand mark exists
 

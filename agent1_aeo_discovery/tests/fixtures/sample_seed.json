@@ -1,0 +1,32 @@
+{
+  "business_profile": {
+    "domain": "rmpsyllium.com",
+    "core_products": ["psyllium_husk_85_99_purity"],
+    "certifications": ["FSSAI", "APEDA"],
+    "capacity_mt_per_year": 2000,
+    "lead_time_days": "14-21"
+  },
+  "target_regions": ["US"],
+  "languages": ["en"],
+  "seed_query_clusters": {
+    "supplier_qualification": [
+      "how to verify GMP certification for psyllium husk suppliers in India",
+      "what documents to request from Indian psyllium exporter"
+    ],
+    "technical_specs": [
+      "psyllium husk mesh size 80 vs 100 difference"
+    ]
+  },
+  "manual_competitor_queries": [],
+  "aeo_scoring_weights": {
+    "answerability": 0.4,
+    "citation_potential": 0.3,
+    "conversational_match": 0.2,
+    "commercial_fit": 0.1
+  },
+  "output_filters": {
+    "min_aeo_score": 7.0,
+    "min_word_count": 3,
+    "question_format_bonus": 0.5
+  }
+}

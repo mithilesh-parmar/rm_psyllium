@@ -1,0 +1,75 @@
+{
+  "company": "RM Psyllium (Asia Agro Exports)",
+  "website": "https://rmpsyllium.com",
+  "origin_country": "India",
+  "shipping_port": "FOB Mundra",
+  "founding_experience_years": 40,
+  "founder_signature_template": "Founder, RM Psyllium | 40 years psyllium manufacturing experience",
+  "contact_email": "info@rmpsyllium.com",
+  "min_order_qty_kg": 500,
+  "products": {
+    "psyllium_husk": {
+      "purity_range": "85-99%",
+      "mesh_options": ["40", "60", "80", "100", "200"],
+      "moisture_max": "10",
+      "swelling_volume_min": "40",
+      "bulk_density_kg_m3": null,
+      "variants": ["85%", "95%", "99%"],
+      "test_methods": {
+        "purity": "USP <561>",
+        "moisture": "Loss on Drying",
+        "mesh": "Sieve Analysis",
+        "swelling": "USP Method"
+      }
+    },
+    "psyllium_powder": {
+      "mesh_range": "40-200",
+      "bulk_density_kg_m3": "350-450",
+      "test_methods": {
+        "bulk_density": "ASTM D1895",
+        "mesh": "Sieve Analysis"
+      }
+    },
+    "khakha_powder": {
+      "fiber_content_min": "25",
+      "grade": "feed_A_or_B",
+      "test_methods": {
+        "fiber": "AOAC 985.29"
+      }
+    }
+  },
+  "certifications_current": ["FSSAI", "APEDA", "IEC"],
+  "certifications_pending": ["GMP", "ISO 22000", "HACCP"],
+  "certifications_pending_eta": "Q3 2026",
+  "differentiators": [
+    "40 years in-house manufacturing",
+    "in-house processing and milling",
+    "custom spec development on request",
+    "pre-shipment COA with every batch",
+    "FOB Mundra with flexible incoterms",
+    "MOQ 500 kg"
+  ],
+  "target_markets": ["US", "EU", "AU", "CA", "UK", "DE"],
+  "target_buyers": [
+    "nutraceutical manufacturers",
+    "pharma third-party manufacturers",
+    "feed mills",
+    "industrial ingredient buyers",
+    "private label supplement brands"
+  ],
+  "tone_guidelines": "Professional, data-first, transparent about certification status, zero consumer language",
+  "internal_links": {
+    "products": "/products/",
+    "psyllium_husk": "/products/psyllium-husk",
+    "psyllium_powder": "/products/psyllium-powder",
+    "compliance": "/compliance/",
+    "contact": "/contact/",
+    "guides": "/guides/",
+    "sample_coa": "/resources/sample-coa.pdf"
+  },
+  "regional_regulatory_refs": {
+    "US": ["FDA 21 CFR Part 117", "DSHEA", "GRAS status"],
+    "EU": ["EFSA", "Novel Food Regulation EU 2015/2283", "EU Organic 2018/848"],
+    "IN": ["FSSAI", "APEDA", "Spices Board guidelines"]
+  }
+}

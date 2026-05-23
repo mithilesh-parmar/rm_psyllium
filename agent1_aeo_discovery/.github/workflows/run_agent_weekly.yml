@@ -1,0 +1,70 @@
+name: Run AEO Query Agent Weekly
+
+on:
+  schedule:
+    - cron: '0 2 * * 1'  # Every Monday at 2 AM UTC
+  workflow_dispatch:
+    inputs:
+      cluster:
+        description: 'Specific cluster to run (leave empty for all)'
+        required: false
+        default: ''
+      region:
+        description: 'Specific region (leave empty for all)'
+        required: false
+        default: ''
+      test_mode:
+        description: 'Test mode — skip Supabase writes'
+        type: boolean
+        required: false
+        default: false
+
+jobs:
+  run-agent:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Agent 1
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          BUDGET_THRESHOLD_USD: '10.0'
+          MAX_SERPAPI_CALLS_PER_RUN: '100'
+        run: |
+          ARGS="--config config/seed_input.json"
+          if [ -n "${{ github.event.inputs.cluster }}" ]; then
+            ARGS="$ARGS --cluster ${{ github.event.inputs.cluster }}"
+          fi
+          if [ -n "${{ github.event.inputs.region }}" ]; then
+            ARGS="$ARGS --region ${{ github.event.inputs.region }}"
+          fi
+          if [ "${{ github.event.inputs.test_mode }}" = "true" ]; then
+            ARGS="$ARGS --test-mode"
+          fi
+          python src/main.py $ARGS
+
+      - name: Upload outputs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: aeo-outputs-${{ github.run_id }}
+          path: outputs/
+          retention-days: 30

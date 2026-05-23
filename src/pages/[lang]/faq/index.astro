@@ -1,0 +1,513 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { copy, localizedFaq, getLanguage, languages } from '../../../data/site';
+
+export function getStaticPaths() {
+  return languages.map((language) => ({
+    params: { lang: language.code }
+  }));
+}
+
+const lang = getLanguage(Astro.params.lang);
+const t = copy[lang];
+const faqItems = localizedFaq[lang];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map(({ q, a }: { q: string; a: string }) => ({
+    '@type': 'Question',
+    name: q,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: a
+    }
+  }))
+};
+
+const orgSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'RM Psyllium',
+  url: 'https://www.rmpsyllium.com',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Patan Road, Khali, Char Rasta, Nedra',
+    addressLocality: 'Siddhpur',
+    addressRegion: 'Gujarat',
+    postalCode: '384151',
+    addressCountry: 'IN'
+  },
+  contactPoint: {
+    '@type': 'ContactPoint',
+    telephone: '+91-89498-17791',
+    contactType: 'sales',
+    email: 'export@rmpsyllium.com'
+  }
+};
+---
+<BaseLayout
+  lang={lang}
+  title={`${t.faqTitle} | RM Psyllium`}
+  description={t.faqLead}
+  structuredData={[faqSchema, orgSchema]}
+>
+  <div class="faq-wrap">
+    <!-- HEADER -->
+    <header class="faq-header">
+      <div class="faq-header-inner">
+        <div class="faq-header-copy">
+          <p class="faq-kicker">FAQ</p>
+          <h1>{t.faqTitle}<br /><em>{t.faqPageAnswered}</em></h1>
+          <p class="faq-lead">{t.faqLead}</p>
+        </div>
+        <div class="faq-header-stats">
+          <div class="faq-hstat"><strong>From 1 KG</strong><span>{t.faqPageMinOrderLabel}</span></div>
+          <div class="faq-hstat"><strong>7 d</strong><span>{t.faqPageLeadTimeLabel}</span></div>
+          <div class="faq-hstat"><strong>85–99%</strong><span>{t.faqPagePurityLabel}</span></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- FAQ LIST -->
+    <section class="faq-section">
+      <div class="faq-inner">
+        <div class="faq-left">
+          <p class="faq-cta-label">FAQ</p>
+          <h2>{t.faqPageCommonTitle}</h2>
+          <p class="faq-left-desc">{t.faqPageCommonBody}</p>
+
+          <div class="faq-cta-card">
+            <p class="faq-cta-label">{t.faqPageStillHaveQ}</p>
+            <h3>{t.faqPageTalkExport}</h3>
+            <p>{t.faqPageTalkBody}</p>
+            <a class="faq-btn faq-btn-wa" href="https://wa.me/918949817791" target="_blank" rel="noopener">{t.faqPageWaBtn}</a>
+            <a class="faq-btn faq-btn-email" href="mailto:export@rmpsyllium.com">{t.faqPageEmailBtn}</a>
+          </div>
+
+          <div class="faq-quick-facts">
+            <p class="faq-cta-label">{t.faqPageQuickFacts}</p>
+            <ul>
+              <li><strong>{t.faqPageMoqFact}</strong> No minimum — from 1 KG</li>
+              <li><strong>{t.faqPageCapacityFact}</strong> 2,000 MT/year</li>
+              <li><strong>{t.faqPageLeadFact}</strong> 7 days</li>
+              <li><strong>{t.faqPagePortsFact}</strong> Mundra · Kandla · JNPT</li>
+              <li><strong>{t.faqPageGradesFact}</strong> 85%, 95%, 98%, 99%</li>
+              <li><strong>{t.faqPageSampleFact}</strong> 100–500 g with COA</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="faq-list">
+          {faqItems.map(({ q, a }: { q: string; a: string }, i: number) => (
+            <details class="faq-item" open={i === 0}>
+              <summary class="faq-q">
+                <span>{q}</span>
+                <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </summary>
+              <div class="faq-a">
+                <p>{a}</p>
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- BOTTOM CTA -->
+    <section class="faq-bottom">
+      <div class="faq-bottom-inner">
+        <h2>{t.productsPageCtaTitle}</h2>
+        <p>{t.productsPageCtaBody}</p>
+        <div class="faq-bottom-btns">
+          <a class="faq-btn faq-btn-primary" href={`/${lang}/contact/`}>{t.navContact}</a>
+          <a class="faq-btn faq-btn-wa" href="https://wa.me/918949817791" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .faq-wrap {
+    --f: 'Inter', system-ui, -apple-system, sans-serif;
+    --ink: #1a1c18;
+    --soft: #484c43;
+    --mute: #6b6f65;
+    --rule: rgba(26, 28, 24, 0.1);
+    --sage: #4a6630;
+    --sage-pale: #d8e0c8;
+    --cream: #f5f3ed;
+    --white: #ffffff;
+    --dark: #1a1c18;
+  }
+
+  /* ---- header ---- */
+  .faq-header {
+    background: var(--cream);
+    border-bottom: 1px solid var(--rule);
+    padding: clamp(4rem, 7vw, 7rem) 0 clamp(3rem, 5vw, 5rem);
+  }
+
+  .faq-header-inner {
+    width: min(1140px, calc(100% - 128px));
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: clamp(3rem, 5vw, 5rem);
+    align-items: center;
+  }
+
+  .faq-kicker {
+    margin: 0 0 20px;
+    color: var(--sage);
+    font-family: var(--f);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .faq-header-copy h1 {
+    margin: 0;
+    font-family: var(--f);
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.02;
+    color: var(--ink);
+  }
+
+  .faq-header-copy h1 em {
+    color: var(--sage);
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .faq-lead {
+    margin: 20px 0 0;
+    color: var(--soft);
+    font-family: var(--f);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.65;
+    max-width: 520px;
+  }
+
+  .faq-header-stats { display: grid; gap: 16px; }
+
+  .faq-hstat {
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    background: var(--white);
+    padding: 20px 24px;
+  }
+
+  .faq-hstat strong {
+    display: block;
+    font-family: var(--f);
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+    line-height: 1;
+  }
+
+  .faq-hstat span {
+    display: block;
+    margin-top: 6px;
+    font-family: var(--f);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--mute);
+  }
+
+  /* ---- body ---- */
+  .faq-section {
+    padding: clamp(4rem, 7vw, 7rem) 0;
+  }
+
+  .faq-inner {
+    width: min(1100px, calc(100% - 128px));
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: clamp(3rem, 5vw, 6rem);
+    align-items: start;
+  }
+
+  /* ---- left column ---- */
+  .faq-left {
+    position: sticky;
+    top: 104px;
+    display: grid;
+    gap: 20px;
+  }
+
+  .faq-left h2 {
+    margin: 8px 0 0;
+    font-family: var(--f);
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1.05;
+    color: var(--ink);
+  }
+
+  .faq-left h2 em {
+    color: var(--sage);
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .faq-left-desc {
+    margin: 0;
+    color: var(--soft);
+    font-family: var(--f);
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  /* ---- accordion ---- */
+  .faq-list {
+    display: grid;
+    gap: 0;
+    border-top: 1px solid var(--rule);
+  }
+
+  .faq-item {
+    border-bottom: 1px solid var(--rule);
+    background: var(--white);
+  }
+
+  .faq-q {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 22px 24px;
+    cursor: pointer;
+    list-style: none;
+    color: var(--ink);
+    font-family: var(--f);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+    user-select: none;
+  }
+
+  .faq-q::-webkit-details-marker { display: none; }
+
+  .faq-chevron {
+    flex-shrink: 0;
+    color: var(--mute);
+    transition: transform 0.25s cubic-bezier(.2,.7,.3,1);
+  }
+
+  details[open] .faq-chevron {
+    transform: rotate(180deg);
+  }
+
+  details[open] .faq-q {
+    color: var(--sage);
+  }
+
+  .faq-a {
+    padding: 0 24px 22px;
+  }
+
+  .faq-a p {
+    margin: 0;
+    font-family: var(--f);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--soft);
+    line-height: 1.75;
+  }
+
+  /* ---- sidebar cards (now inside left column) ---- */
+
+  .faq-cta-card {
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    background: var(--white);
+    padding: 24px;
+    box-shadow: 0 8px 24px -12px rgba(26,28,24,0.12);
+    display: grid;
+    gap: 8px;
+  }
+
+  .faq-cta-label {
+    margin: 0;
+    color: var(--sage);
+    font-family: var(--f);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .faq-cta-card h3 {
+    margin: 0;
+    font-family: var(--f);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+    line-height: 1.15;
+  }
+
+  .faq-cta-card > p {
+    margin: 4px 0 8px;
+    font-family: var(--f);
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--soft);
+    line-height: 1.6;
+  }
+
+  .faq-quick-facts {
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    background: var(--cream);
+    padding: 20px 24px;
+  }
+
+  .faq-quick-facts ul {
+    margin: 12px 0 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 10px;
+  }
+
+  .faq-quick-facts li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: var(--f);
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--soft);
+  }
+
+  .faq-quick-facts strong {
+    font-weight: 600;
+    color: var(--ink);
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  /* ---- buttons ---- */
+  .faq-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    padding: 12px 20px;
+    font-family: var(--f);
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.25s cubic-bezier(.2,.7,.3,1), box-shadow 0.25s;
+    box-sizing: border-box;
+  }
+
+  .faq-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px -8px rgba(26,28,24,0.2);
+  }
+
+  .faq-btn-primary {
+    background: var(--ink);
+    color: #fff;
+  }
+
+  .faq-btn-wa {
+    background: #25d366;
+    color: #fff;
+  }
+
+  .faq-btn-email {
+    background: transparent;
+    color: var(--ink);
+    border: 1px solid rgba(26,28,24,0.2);
+  }
+
+  /* ---- bottom CTA ---- */
+  .faq-bottom {
+    background: var(--dark);
+    padding: clamp(4rem, 7vw, 7rem) 0;
+  }
+
+  .faq-bottom-inner {
+    width: min(1140px, calc(100% - 128px));
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .faq-bottom-inner h2 {
+    margin: 0 auto;
+    max-width: 640px;
+    font-family: var(--f);
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    color: #fff;
+    line-height: 1.05;
+  }
+
+  .faq-bottom-inner > p {
+    margin: 20px auto 0;
+    max-width: 520px;
+    color: rgba(255,255,255,0.65);
+    font-family: var(--f);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.65;
+  }
+
+  .faq-bottom-btns {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 32px;
+    flex-wrap: wrap;
+  }
+
+  .faq-bottom .faq-btn-primary {
+    background: #fff;
+    color: var(--ink);
+  }
+
+  /* ---- responsive ---- */
+  @media (max-width: 1100px) {
+    .faq-header-inner, .faq-inner, .faq-bottom-inner { width: calc(100% - 80px); }
+  }
+
+  @media (max-width: 860px) {
+    .faq-header-inner, .faq-inner, .faq-bottom-inner { width: calc(100% - 48px); }
+    .faq-header-inner { grid-template-columns: 1fr; }
+    .faq-header-stats { grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .faq-lead { max-width: 100%; }
+    .faq-inner { grid-template-columns: 1fr; }
+    .faq-left { position: static; }
+  }
+
+  @media (max-width: 600px) {
+    .faq-header-inner, .faq-inner, .faq-bottom-inner { width: calc(100% - 32px); }
+    .faq-header-stats { grid-template-columns: 1fr; }
+    .faq-bottom-btns {
+      flex-direction: column;
+      align-items: center;
+    }
+    .faq-bottom-btns .faq-btn {
+      width: 100%;
+      max-width: 280px;
+    }
+  }
+</style>

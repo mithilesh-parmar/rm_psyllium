@@ -1,0 +1,413 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import SpecBuilder from '../../../components/SpecBuilder.astro';
+import { copy, getLanguage, languages } from '../../../data/site';
+
+export function getStaticPaths() {
+  return languages.map((language) => ({
+    params: { lang: language.code }
+  }));
+}
+
+const lang = getLanguage(Astro.params.lang);
+const t = copy[lang];
+
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: 'RM Psyllium',
+  description: 'Psyllium husk manufacturer and bulk exporter from Siddhpur, Gujarat, India.',
+  url: 'https://www.rmpsyllium.com',
+  telephone: ['+91-89498-17791', '+91-80000-08381'],
+  email: 'export@rmpsyllium.com',
+  sameAs: 'https://share.google/sB9TCu6qWpMwYlWBt',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Patan Road, Khali, Char Rasta, Nedra',
+    addressLocality: 'Siddhpur',
+    addressRegion: 'Gujarat',
+    postalCode: '384151',
+    addressCountry: 'IN'
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: '23.7782',
+    longitude: '72.3806'
+  },
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+    opens: '09:00',
+    closes: '18:00'
+  }
+};
+---
+<BaseLayout
+  lang={lang}
+  title={`${t.contactTitle} | RM Psyllium`}
+  description={t.contactLead}
+  structuredData={localBusinessSchema}
+>
+  <div class="ct-wrap">
+    <!-- HEADER -->
+    <header class="ct-header">
+      <div class="ct-header-inner">
+        <div class="ct-header-copy">
+          <p class="ct-kicker">{t.navContact}</p>
+          <h1>{t.contactTitle}</h1>
+          <p class="ct-lead">{t.contactLead}</p>
+        </div>
+        <div class="ct-header-stats">
+          <div class="ct-hstat"><strong>24 hr</strong><span>{t.contactResponseTimeLabel}</span></div>
+          <div class="ct-hstat"><strong>From 1 KG</strong><span>{t.contactMinOrderLabel}</span></div>
+          <div class="ct-hstat"><strong>FOB</strong><span>Mundra · Kandla · JNPT</span></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- CONTACT GRID -->
+    <section class="ct-section">
+      <div class="ct-grid">
+        <!-- LEFT: Contact info -->
+        <div class="ct-info">
+          <div class="ct-info-block">
+            <p class="ct-label">{t.contactExportDeskLabel}</p>
+            <a class="ct-link-big" href="mailto:export@rmpsyllium.com">export@rmpsyllium.com</a>
+            <a class="ct-link-big" href="https://wa.me/918949817791" target="_blank" rel="noopener">+91 89498 17791</a>
+            <a class="ct-link-big" href="tel:+918000008381">+91 80000 08381</a>
+          </div>
+
+          <div class="ct-channels">
+            <a class="ct-channel-btn ct-wa" href="https://wa.me/918949817791" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              {t.contactWaBtn}
+            </a>
+            <a class="ct-channel-btn ct-email" href="mailto:export@rmpsyllium.com">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+              {t.contactEmailBtn}
+            </a>
+          </div>
+
+          <div class="ct-info-block">
+            <p class="ct-label">{t.contactFacilityLabel}</p>
+            <address>
+              Patan Road, Khali, Char Rasta<br />
+              Nedra, Siddhpur, Gujarat 384151<br />
+              India
+            </address>
+          </div>
+
+          <div class="ct-details-grid">
+            {/*
+            <div class="ct-detail">
+              <span class="ct-detail-label">IEC</span>
+              <span>0124007841</span>
+            </div>
+            <div class="ct-detail">
+              <span class="ct-detail-label">FSSAI</span>
+              <span>Registered</span>
+            </div>
+            */}
+            <div class="ct-detail">
+              <span class="ct-detail-label">{t.contactCapacityLabel}</span>
+              <span>2,000 MT/year</span>
+            </div>
+            <div class="ct-detail">
+              <span class="ct-detail-label">Min. Order</span>
+              <span>No minimum — from 1 KG</span>
+            </div>
+            <div class="ct-detail">
+              <span class="ct-detail-label">{t.contactLeadTimeLabel}</span>
+              <span>7 days</span>
+            </div>
+            <div class="ct-detail">
+              <span class="ct-detail-label">{t.contactPortsLabel}</span>
+              <span>Mundra · Kandla · JNPT</span>
+            </div>
+          </div>
+
+          <!-- Map embed: single pin at RM Psyllium address, no nearby business search -->
+          <div class="ct-map">
+            <iframe
+              src="https://maps.google.com/maps?q=Patan+Road,+Nedra,+Siddhpur,+Gujarat+384151,+India&t=m&z=16&output=embed&iwloc=near"
+              width="100%"
+              height="200"
+              style="border:0;border-radius:8px;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="RM Psyllium location — Siddhpur, Gujarat"
+            ></iframe>
+            <a class="ct-gmap-link" href="https://share.google/sB9TCu6qWpMwYlWBt" target="_blank" rel="noopener">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              View our Google Profile
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT: Quote form -->
+        <div class="ct-form-wrap">
+          <SpecBuilder />
+        </div>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .ct-wrap {
+    --f: 'Inter', system-ui, -apple-system, sans-serif;
+    --ink: #1a1c18;
+    --soft: #484c43;
+    --mute: #6b6f65;
+    --rule: rgba(26, 28, 24, 0.1);
+    --sage: #4a6630;
+    --cream: #f5f3ed;
+    --white: #ffffff;
+  }
+
+  /* ---- header ---- */
+  .ct-header {
+    background: var(--cream);
+    border-bottom: 1px solid var(--rule);
+    padding: clamp(4rem, 7vw, 7rem) 0 clamp(3rem, 5vw, 5rem);
+  }
+
+  .ct-header-inner {
+    width: min(1140px, calc(100% - 128px));
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: clamp(3rem, 5vw, 5rem);
+    align-items: center;
+  }
+
+  .ct-kicker {
+    margin: 0 0 20px;
+    color: var(--sage);
+    font-family: var(--f);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .ct-header-copy h1 {
+    margin: 0;
+    font-family: var(--f);
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.02;
+    color: var(--ink);
+  }
+
+  .ct-header-copy h1 em {
+    color: var(--sage);
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .ct-lead {
+    margin: 20px 0 0;
+    color: var(--soft);
+    font-family: var(--f);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.65;
+    max-width: 520px;
+  }
+
+  .ct-header-stats { display: grid; gap: 16px; }
+
+  .ct-hstat {
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    background: var(--white);
+    padding: 20px 24px;
+  }
+
+  .ct-hstat strong {
+    display: block;
+    font-family: var(--f);
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+    line-height: 1;
+  }
+
+  .ct-hstat span {
+    display: block;
+    margin-top: 6px;
+    font-family: var(--f);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--mute);
+  }
+
+  /* ---- section ---- */
+  .ct-section {
+    padding: clamp(4rem, 7vw, 7rem) 0;
+  }
+
+  .ct-grid {
+    width: min(1100px, calc(100% - 128px));
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: clamp(3rem, 5vw, 5rem);
+    align-items: start;
+  }
+
+  /* ---- contact info ---- */
+  .ct-info {
+    display: grid;
+    gap: 32px;
+  }
+
+  .ct-info-block {
+    display: grid;
+    gap: 8px;
+  }
+
+  .ct-label {
+    margin: 0;
+    color: var(--mute);
+    font-family: var(--f);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .ct-link-big {
+    display: block;
+    color: var(--ink);
+    font-family: var(--f);
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    text-decoration: none;
+    line-height: 1.3;
+  }
+
+  .ct-link-big:hover { color: var(--sage); }
+
+  .ct-channels {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .ct-channel-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 999px;
+    padding: 10px 18px;
+    font-family: var(--f);
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .ct-channel-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px -8px rgba(26,28,24,0.2);
+  }
+
+  .ct-wa { background: #25d366; color: #fff; }
+  .ct-email { background: var(--ink); color: #fff; }
+
+  address {
+    font-family: var(--f);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--soft);
+    line-height: 1.7;
+    font-style: normal;
+  }
+
+  .ct-details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 20px;
+    background: var(--cream);
+  }
+
+  .ct-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .ct-detail-label {
+    color: var(--mute);
+    font-family: var(--f);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .ct-detail span:not(.ct-detail-label) {
+    color: var(--ink);
+    font-family: var(--f);
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .ct-map {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--rule);
+  }
+
+  .ct-gmap-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+    color: var(--sage);
+    font-family: var(--f);
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .ct-gmap-link:hover { text-decoration: underline; }
+
+  /* ---- form ---- */
+  .ct-form-wrap {
+    position: sticky;
+    top: 104px;
+  }
+
+  /* ---- responsive ---- */
+  @media (max-width: 1100px) {
+    .ct-header-inner, .ct-grid { width: calc(100% - 80px); }
+  }
+
+  @media (max-width: 860px) {
+    .ct-header-inner, .ct-grid { width: calc(100% - 48px); }
+    .ct-header-inner { grid-template-columns: 1fr; }
+    .ct-header-stats { grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .ct-lead { max-width: 100%; }
+    .ct-grid { grid-template-columns: 1fr; }
+    .ct-form-wrap { position: static; }
+  }
+
+  @media (max-width: 540px) {
+    .ct-header-inner, .ct-grid { width: calc(100% - 32px); }
+    .ct-header-stats { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 540px) {
+    .ct-header-inner, .ct-grid { width: calc(100% - 32px); }
+  }
+</style>

@@ -1,0 +1,49 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls /Users/mithileshparmar/Development/sancor_systems/rm_psyllium/)",
+      "Read(//Users/mithileshparmar/Development/sancor_systems/rm_psyllium/**)",
+      "Bash(pip install *)",
+      "Bash(python -m pytest tests/ -v)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); q=d['queries'][0]; print\\(json.dumps\\(q, indent=2\\)\\)\")",
+      "Bash(python -m pytest tests/ -q)",
+      "Bash(npx tsc *)",
+      "Bash(node_modules/.bin/tsc --noEmit)",
+      "Bash(npx astro *)",
+      "Bash(npm run *)",
+      "Bash(which node *)",
+      "Read(//Users/mithileshparmar/.nvm/versions/node/**)",
+      "Bash(~/.nvm/versions/node/v22.22.3/bin/node ~/.nvm/versions/node/v22.22.3/bin/npm run build)",
+      "Bash(npx --prefix /Users/mithileshparmar/Development/sancor_systems/rm_psyllium tsc --noEmit --project /Users/mithileshparmar/Development/sancor_systems/rm_psyllium/tsconfig.json)",
+      "Bash(node_modules/.bin/astro check *)",
+      "Bash(awk 'NR>=16 && /^\\\\}> *=/' /Users/mithileshparmar/Development/sancor_systems/rm_psyllium/src/data/site.ts)",
+      "Bash(/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/node_modules/.bin/tsc -p /Users/mithileshparmar/Development/sancor_systems/rm_psyllium/tsconfig.json --noEmit)",
+      "Bash(nvm list *)",
+      "Bash(/Users/mithileshparmar/.nvm/versions/node/v22.22.3/bin/node node_modules/.bin/astro check)",
+      "Bash(grep -v \"^$\")",
+      "Bash(curl -sI \"https://share.google/sB9TCu6qWpMwYlWBt\")",
+      "Bash(curl -sL \"https://share.google/sB9TCu6qWpMwYlWBt\")",
+      "Bash(sips -z 48 48 /Users/mithileshparmar/Development/sancor_systems/rm_psyllium/public/favicon-180.png --out /Users/mithileshparmar/Development/sancor_systems/rm_psyllium/public/favicon-48.png)"
+    ],
+    "additionalDirectories": [
+      "/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/agent2_content_strategy/config",
+      "/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/agent2_content_strategy/src",
+      "/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/agent2_content_strategy/scripts",
+      "/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/agent2_content_strategy/tests",
+      "/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/agent2_content_strategy/.github/workflows",
+      "/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/agent2_content_strategy",
+      "/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/agent3_content_generation/config",
+      "/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/agent3_content_generation/src/prompts",
+      "/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/agent3_content_generation/src",
+      "/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/agent3_content_generation/tests",
+      "/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/agent3_content_generation/scripts",
+      "/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/agent3_content_generation",
+      "/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/src/data",
+      "/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/src/components",
+      "/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/src/pages",
+      "/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/public",
+      "/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/src/layouts",
+      "/Users/mithileshparmar/Development/sancor_systems/rm_psyllium"
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+scoring:
+  weights:
+    answerability: 0.4
+    citation_potential: 0.3
+    conversational_match: 0.2
+    commercial_fit: 0.1
+  threshold: 7.0
+  question_format_bonus: 0.5
+
+# Rule-based scoring (no LLM cost)
+rule_based:
+  answerability:
+    # Score 8-10 if query contains specific answerable patterns
+    high_score_patterns:
+      - "how to"
+      - "what is"
+      - "what are"
+      - "which"
+      - "how does"
+      - "how much"
+      - "what documents"
+      - "difference between"
+      - "vs"
+      - "comparison"
+    # Score 5-6 if query contains vague/broad terms
+    low_score_patterns:
+      - "best"
+      - "good"
+      - "top"
+  conversational_match:
+    question_starters:
+      - "how"
+      - "what"
+      - "which"
+      - "can"
+      - "should"
+      - "where"
+      - "when"
+      - "why"
+      - "does"
+      - "is"
+      - "are"
+    word_count_range: [3, 15]
+    spec_terms:
+      - "mesh"
+      - "purity"
+      - "moisture"
+      - "coa"
+      - "gmp"
+      - "fda"
+      - "efsa"
+      - "mq"
+      - "fob"
+      - "mt"
+      - "kg"
+      - "certification"
+      - "organic"
+      - "usp"
+      - "haccp"
+      - "iso"
+      - "bulk"
+
+# LLM-evaluated scoring factors (incur cost — use Groq free tier)
+llm_evaluated:
+  - citation_potential
+  - commercial_fit
+
+filters:
+  min_word_count: 3
+  max_word_count: 20
+  exclude_patterns:
+    - "reddit"
+    - "quora"
+    - "youtube"
+    - "amazon"
+
+cost_controls:
+  max_serpapi_calls_per_run: 100
+  max_llm_calls_per_cluster: 50
+  budget_threshold_usd: 10.0
+  llm_cache_ttl_hours: 168  # 1 week

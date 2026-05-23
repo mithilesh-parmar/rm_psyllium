@@ -1,0 +1,83 @@
+# Compliance language enforcement rules for Agent 3 content generation
+
+pending_certification_language:
+  GMP: "We are finalizing GMP audit documentation in Q3 2026"
+  "ISO 22000": "ISO 22000 certification is in progress — target completion Q3 2026"
+  HACCP: "HACCP certification audit is scheduled for Q3 2026"
+
+# Language to never use under any circumstances
+prohibited_phrases:
+  - "best in class"
+  - "premium quality"
+  - "trusted by thousands"
+  - "world class"
+  - "unmatched quality"
+  - "boosts digestion"
+  - "improves gut health"
+  - "natural remedy"
+  - "heals"
+  - "cures"
+  - "FDA approved"
+  - "GMP certified"  # until audit complete
+  - "ISO 22000 certified"  # until audit complete
+  - "HACCP certified"  # until audit complete
+  - "guaranteed delivery"
+  - "fastest shipping"
+  - "cheapest"
+  - "lowest price"
+
+# Claims that require human review flags
+review_required_claims:
+  - "GMP"
+  - "ISO 22000"
+  - "HACCP"
+  - "organic"
+  - "FDA"
+  - "EU certified"
+  - "clinical"
+  - "tested by"
+
+# Required disclosure if mentioning pending certifications
+certification_disclaimer_template: >
+  RM Psyllium is finalizing {cert_name} audit documentation (target: Q3 2026).
+  All current shipments include full COA, phytosanitary certificate, and
+  facility registration details aligned with {cert_name} principles.
+
+# Shipment timeline limits (never guarantee beyond)
+shipment_timeline_max_days: 21
+shipment_timeline_standard: "14-21 business days ex-works"
+
+# Required elements for every article
+mandatory_elements:
+  - spec_table_placeholder      # psyllium spec table with purity/mesh/moisture
+  - compliance_footnote         # pending cert disclosure if mentioned
+  - founder_signature_note      # founder note at end
+  - coa_download_link           # link to sample COA
+
+# Regulatory citation requirements by region
+regulatory_citations:
+  US:
+    - "FDA 21 CFR Part 117 — Current Good Manufacturing Practice"
+    - "USP <561> — Articles of Botanical Origin"
+  EU:
+    - "EU Regulation 178/2002 — General Food Law"
+    - "EFSA Novel Food Regulation 2015/2283"
+  IN:
+    - "FSSAI Food Safety and Standards Act 2006"
+    - "APEDA Export Standards"
+
+# Tone enforcement
+tone_rules:
+  preferred_voice: "third_person_professional"
+  sentence_structure: "subject_verb_object_clear"
+  data_presentation: "lead_with_spec_then_explanation"
+  cta_placement: "after_value_delivery_not_before"
+  founder_voice: "transparent_about_limitations_proud_of_capabilities"
+  prohibited_consumer_terms:
+    - "health benefits"
+    - "wellness"
+    - "natural"
+    - "superfood"
+    - "gut health"
+    - "weight loss"
+    - "detox"

@@ -1,7 +1,8 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import SpecBuilder from '../../../components/SpecBuilder.astro';
-import { getLanguage, languages, products } from '../../../data/site';
+import { copy, getLanguage, languages, products, translateParam, translateApp, translateBestFor, translateLead, translateFaqQ, translateFaqA, translateNote, translateProductName, translateProductLabel, translateProductHero, translateProductSummary, translateProductGradeLabel } from '../../../data/site';
+
 
 export function getStaticPaths() {
   return languages.flatMap((language) =>
@@ -13,186 +14,840 @@ export function getStaticPaths() {
 }
 
 const lang = getLanguage(Astro.params.lang);
+const t = copy[lang];
 const { product } = Astro.props;
+
+type GradeNote = { app: string; note: string };
+type GradeFaqItem = { q: string; a: string };
+type GradeCopy = { lead?: string; bestFor?: string; applicationNotes?: GradeNote[] };
+type SpecRow = { parameter: string; values: Record<string, string> };
+type PharmaTier = 'food' | 'nf' | 'usp' | 'ip';
+type SuitLevel = 'yes' | 'cond' | 'no' | 'none';
+
+const gradeLabels: string[] = (product as any).gradeLabels ?? [];
+const specTable: SpecRow[] = (product as any).specTable ?? [];
+
+// Per-grade data
+const gradeData = product.gradeslugs.map((slug, i) => {
+  const label = gradeLabels[i] ?? '';
+  const gCopy: GradeCopy = (product as any).gradeCopy?.[label] ?? {};
+  const gFaq: GradeFaqItem[] = (product as any).gradeFaq?.[label] ?? [];
+  const gNotes: GradeNote[] = gCopy.applicationNotes ?? [];
+  return { slug, label, gCopy, gFaq, gNotes };
+});
+
+// Deduplicated FAQs across all grades
+const seenQs = new Set<string>();
+const uniqueFaqs: GradeFaqItem[] = gradeData.flatMap((g) => g.gFaq).filter((f) => {
+  if (seenQs.has(f.q)) return false;
+  seenQs.add(f.q);
+  return true;
+});
+
+// Helper: map pharmacopoeia text to a color tier
+function getPharmaTier(pharma: string): PharmaTier {
+  if (!pharma || pharma === '—') return 'food';
+  if (pharma.includes('IP')) return 'ip';
+  if (pharma.includes('USP') || pharma.includes('EP')) return 'usp';
+  if (pharma.includes('NF')) return 'nf';
+  return 'food';
+}
+
+// Helper: derive suitability level from note text + bestFor field
+function getSuit(app: string, note: string, bestFor: string): SuitLevel {
+  const lower = note.toLowerCase().trimStart();
+  const bfl = (bestFor || '').toLowerCase();
+  // Explicit unsuitability
+  if (lower.startsWith('not suitable') || lower.startsWith('not recommended') || lower.startsWith('sortex premium is not')) return 'no';
+  // Not applicable
+  if (lower.startsWith('not used') || lower.includes('not justified for') || lower.startsWith('not specified for animal feed')) return 'none';
+  // Primary fit — check bestFor contains app-related keywords
+  const appKeywords: Record<string, string[]> = {
+    'Pharma': ['pharma', 'laxative', 'capsule fill', 'otc'],
+    'Nutraceutical': ['nutraceutical', 'supplement', 'sachet'],
+    'Food and bakery': ['food', 'bakery', 'cereal'],
+    'Animal feed': ['animal feed', 'cattle', 'feed'],
+    'Animal Feed': ['animal feed', 'cattle', 'feed'],
+    'Capsule filling': ['capsule'],
+    'Gluten-free bakery': ['bakery', 'bread', 'gluten'],
+    'Health drinks & drink mixes': ['drink', 'mix'],
+    'Cosmetics & personal care': ['cosmetic', 'personal care'],
+    'Functional food blends': ['food blend', 'supplement', 'functional'],
+  };
+  const kws = appKeywords[app] ?? [app.toLowerCase().split(/[\s/&]/)[0]];
+  if (kws.some(kw => bfl.includes(kw))) return 'yes';
+  // Note starts with a clear primary description
+  if (lower.startsWith('primary use')) return 'yes';
+  const first40 = lower.slice(0, 40);
+  if (first40.includes('primary')) return 'yes';
+  return 'cond';
+}
+
+// Extract pharma and swell volume rows from specTable
+const pharmaRow = specTable.find(r => r.parameter.toLowerCase().includes('pharmacopoeia'));
+const swellRow  = specTable.find(r => r.parameter.toLowerCase().includes('swell'));
+const purityRow = specTable.find(r => r.parameter.toLowerCase().includes('purity') || r.parameter.toLowerCase().startsWith('purity'));
+
+// Per-grade tier info (for hero compliance cards)
+const gradeTiers = gradeData.map(g => ({
+  ...g,
+  pharma: pharmaRow?.values[g.label] ?? '—',
+  swell:  swellRow?.values[g.label]  ?? '—',
+  purity: purityRow?.values[g.label] ?? g.label,
+  pharmaTier: getPharmaTier(pharmaRow?.values[g.label] ?? ''),
+}));
+
+// Suitability matrix: apps from first grade's notes
+const matrixApps = gradeData[0]?.gNotes.map(n => n.app) ?? [];
+const suitMatrix = matrixApps.map(app => ({
+  app,
+  suits: gradeData.map(g => {
+    const n = g.gNotes.find(note => note.app === app);
+    if (!n) return 'none' as SuitLevel;
+    return getSuit(app, n.note, g.gCopy.bestFor ?? '');
+  })
+}));
+const hasMatrix = suitMatrix.length > 0;
+
+// Spec table: compute bar widths for quantitative rows
+const swellValues  = gradeData.map(g => parseFloat(swellRow?.values[g.label]  ?? '0'));
+const purityValues = gradeData.map(g => parseFloat((purityRow?.values[g.label] ?? '0').replace(/[^0-9.]/g, '')));
+const maxSwell  = Math.max(...swellValues,  1);
+const maxPurity = Math.max(...purityValues, 1);
+
+// Product image mappings for schema validation
+const productImages: Record<string, string[]> = {
+  'psyllium-seeds': ['/assets/generated/facility-bags-gujarat.webp'],
+  'psyllium-husk': [
+    '/assets/generated/psyllium-husk-export-bag.webp',
+    '/assets/generated/psyllium-husk-99-grade.webp',
+    '/assets/generated/psyllium-husk-98-grade.webp',
+    '/assets/generated/psyllium-husk-95-grade.webp',
+    '/assets/generated/psyllium-husk-85-grade.webp',
+  ],
+  'psyllium-husk-powder': ['/assets/generated/psyllium-husk-export-bag.webp'],
+  'psyllium-khakha-powder': ['/assets/generated/psyllium-husk-export-bag.webp'],
+  'industrial-grade-psyllium': ['/assets/generated/facility-bags-gujarat.webp'],
+  'organic-psyllium': ['/assets/generated/facility-bags-gujarat.webp'],
+  'psyllium-cattle-feed': ['/assets/generated/facility-bags-gujarat.webp'],
+};
+
+const images = (productImages[product.slug] ?? ['/assets/generated/facility-bags-gujarat.webp']).map(
+  (img) => `https://rmpsyllium.com${img}`
+);
+
+// Structured data
+const productSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: product.name,
+  description: product.hero,
+  image: images,
+  material: 'Plantago ovata',
+  countryOfOrigin: 'India',
+  category: product.label,
+  brand: { '@type': 'Brand', name: 'RM Psyllium' }
+};
+
+const faqSchema = uniqueFaqs.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: uniqueFaqs.map((f) => ({
+    '@type': 'Question',
+    name: translateFaqQ(f.q, lang),
+    acceptedAnswer: { '@type': 'Answer', text: translateFaqA(f.q, f.a, lang) }
+  }))
+} : null;
+
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home',     item: `https://rmpsyllium.com/${lang}/` },
+    { '@type': 'ListItem', position: 2, name: 'Products', item: `https://rmpsyllium.com/${lang}/products/` },
+    { '@type': 'ListItem', position: 3, name: product.name, item: `https://rmpsyllium.com/${lang}/products/${product.slug}/` }
+  ]
+};
+
+const schemas = [productSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])];
 ---
 <BaseLayout
   lang={lang}
-  title={`${product.name} Supplier | RM Psyllium`}
+  title={`${product.name} Supplier India | RM Psyllium`}
   description={product.hero}
+  structuredData={schemas}
 >
-  <section class="section product-hero">
-    <div class="container product-grid">
-      <div>
-        <span class="kicker">{product.label}</span>
-        <h1 class="title-xl">{product.name}</h1>
-        <p class="lead">{product.hero}</p>
-        <div class="actions">
-          <a class="btn btn-primary" href="#spec">Request Product Quote</a>
-          <a class="btn btn-secondary" href={`/${lang}/industries/pharma-nutraceutical/`}>View Applications</a>
+<div class="pd-wrap">
+
+  <!-- ═══════════════════════════════════════
+       HERO — copy left · grade pills right
+  ══════════════════════════════════════════ -->
+  <section class="pd-intro">
+    <div class="pd-container">
+      <div class="pd-intro-grid">
+
+        <!-- LEFT: copy -->
+        <div class="pd-intro-copy">
+          <nav class="pd-breadcrumb" aria-label="Breadcrumb">
+            <a href={`/${lang}/`}>{t.pdBreadcrumbHome}</a>
+            <span aria-hidden="true">›</span>
+            <a href={`/${lang}/products/`}>{t.navProducts}</a>
+            <span aria-hidden="true">›</span>
+            <span>{product.name}</span>
+          </nav>
+          <p class="pd-kicker">{product.label}</p>
+          <h1>{product.name}<br /><em>{t.pdFromGujarat}</em></h1>
+          <p class="pd-lead">{product.hero}</p>
+          <p class="pd-summary">{product.summary}</p>
+          <div class="pd-actions">
+            <a class="pd-btn pd-btn-primary" href="#spec">{t.requestQuoteCta}</a>
+            {hasMatrix && (
+              <a class="pd-btn pd-btn-ghost" href="#matrix">{t.pdFindMyGrade}</a>
+            )}
+          </div>
+        </div>
+
+        <!-- RIGHT: grade pills + meta panel -->
+        <div class="pd-pills-panel">
+          <p class="pd-pills-heading">{t.pdAvailableGrades}</p>
+          <div class="pd-grade-pills" role="list" aria-label={t.pdAvailableGrades}>
+            {gradeTiers.map((g) => (
+              <a class="pd-grade-pill" href={`#${g.slug}`} role="listitem">
+                <span class="pd-pill-label">{g.label}</span>
+                <span class="pd-pill-meta">
+                  {g.pharma !== '—' && (
+                    <span class={`pd-ph-badge pd-ph-${g.pharmaTier}`}>{g.pharma}</span>
+                  )}
+                  {g.swell !== '—' && (
+                    <span class="pd-pill-swell">{g.swell} ml/g</span>
+                  )}
+                </span>
+              </a>
+            ))}
+          </div>
+
+          <div class="pd-panel-meta">
+            <div class="pd-panel-meta-block">
+              <p class="pd-pills-heading">{t.pdPackagingOptions}</p>
+              <ul class="pd-panel-meta-list">
+                {product.packaging.map((p) => <li>{p}</li>)}
+              </ul>
+            </div>
+            <div class="pd-panel-meta-block">
+              <p class="pd-pills-heading">{t.pdApplicationsLabel}</p>
+              <ul class="pd-panel-meta-list">
+                {product.applications.map((a) => <li>{a}</li>)}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SUITABILITY MATRIX
+  ══════════════════════════════════════════ -->
+  {hasMatrix && (
+    <section class="pd-section" id="matrix">
+      <div class="pd-container">
+        <p class="pd-section-kicker">{t.pdApplicationFit}</p>
+        <h2 class="pd-section-title">{t.pdWhichGrade}</h2>
+        <div class="pd-matrix-scroll">
+          <table class="pd-matrix">
+            <thead>
+              <tr>
+                <th class="pd-matrix-th-app">{t.pdApplicationsLabel}</th>
+                {gradeTiers.map(g => (
+                  <th>
+                    <div class="pd-matrix-th-inner">
+                      <span class="pd-matrix-th-pct">{g.label}</span>
+                      {g.pharma !== '—' && (
+                        <span class={`pd-ph-badge pd-ph-${g.pharmaTier} pd-ph-xs`}>{g.pharma}</span>
+                      )}
+                    </div>
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {suitMatrix.map(row => (
+                <tr>
+                  <td class="pd-matrix-app-label">{translateApp(row.app, lang)}</td>
+                  {row.suits.map(suit => (
+                    <td class={`pd-suit-cell pd-suit-${suit}`}>
+                      <span class="pd-suit-icon">
+                        {suit === 'yes' ? '✓' : suit === 'cond' ? '◑' : suit === 'no' ? '✗' : '—'}
+                      </span>
+                      <span class="pd-suit-text">
+                        {suit === 'yes' ? t.pdPrimary : suit === 'cond' ? t.pdConditional : suit === 'no' ? t.pdNotSuitable : t.pdNotUsed}
+                      </span>
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div class="pd-matrix-legend">
+          <span class="pd-leg pd-leg-yes"><span>✓</span> {t.pdLegendPrimary}</span>
+          <span class="pd-leg pd-leg-cond"><span>◑</span> {t.pdLegendConditional}</span>
+          <span class="pd-leg pd-leg-no"><span>✗</span> {t.pdLegendNotSuitable}</span>
+          <span class="pd-leg pd-leg-none"><span>—</span> {t.pdLegendNotApplicable}</span>
         </div>
       </div>
-      <div class="product-visual">
-        <div class="visual-bg"></div>
-        <img src="/assets/product-bag.svg" width="900" height="900" alt={`${product.name} packaging placeholder`} />
+    </section>
+  )}
+
+  <!-- ═══════════════════════════════════════
+       SPEC COMPARISON TABLE (with bar charts)
+  ══════════════════════════════════════════ -->
+  {specTable.length > 0 && (
+    <section class="pd-section pd-section--cream">
+      <div class="pd-container">
+        <p class="pd-section-kicker">{t.pdSpecifications}</p>
+        <h2 class="pd-section-title">{t.pdCompareGradesTitle.replace('{name}', product.name)}</h2>
+        <div class="pd-table-wrap">
+          <table class="pd-spec-table">
+            <thead>
+              <tr>
+                <th class="pd-spec-th-param">{t.pdParameter}</th>
+                {gradeLabels.map((label) => <th>{label}</th>)}
+              </tr>
+            </thead>
+            <tbody>
+              {specTable.map((row, _ri) => {
+                const isSwell  = row.parameter.toLowerCase().includes('swell');
+                const isPurity = row.parameter.toLowerCase().startsWith('purity') || row.parameter.toLowerCase().includes('husk content') || row.parameter.toLowerCase().includes('husk %');
+                const isBar = isSwell || isPurity;
+                const maxVal = isSwell ? maxSwell : maxPurity;
+                return (
+                  <tr class={isBar ? 'pd-bar-row' : ''}>
+                    <td class="pd-spec-param">{translateParam(row.parameter, lang)}</td>
+                    {gradeLabels.map((label, _gi) => {
+                      const raw = row.values[label] ?? '—';
+                      const num = parseFloat(raw.replace(/[^0-9.]/g, ''));
+                      const pct = isBar && !isNaN(num) ? Math.round((num / maxVal) * 100) : 0;
+                      if (isBar && !isNaN(num)) {
+                        return (
+                          <td>
+                            <div class="pd-bc">
+                              <strong>{raw}</strong>
+                              <div class="pd-bt"><div class="pd-bf" style={`width:${pct}%`}></div></div>
+                            </div>
+                          </td>
+                        );
+                      }
+                      if (row.parameter.toLowerCase().includes('pharmacopoeia') && raw !== '—') {
+                        const tier = getPharmaTier(raw);
+                        return <td><span class={`pd-ph-badge pd-ph-${tier}`}>{raw}</span></td>;
+                      }
+                      if (raw === 'Absent') {
+                        return <td class="pd-cell-pass">{raw}</td>;
+                      }
+                      return <td>{raw}</td>;
+                    })}
+                  </tr>
+                );
+              })}
+              {gradeData.some((g) => g.gCopy.bestFor) && (
+                <tr class="pd-spec-bestfor-row">
+                  <td class="pd-spec-param">{t.pdBestFor}</td>
+                  {gradeData.map((g) => (
+                    <td class="pd-spec-bestfor-cell">{translateBestFor(g.gCopy.bestFor ?? '', lang)}</td>
+                  ))}
+                </tr>
+              )}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- ═══════════════════════════════════════
+       GRADE CARDS — 2-column grid
+  ══════════════════════════════════════════ -->
+  <section class="pd-section" id="grades">
+    <div class="pd-container">
+      <p class="pd-section-kicker">{t.pdGradeDetails}</p>
+      <h2 class="pd-section-title">{t.pdSelectGrade}</h2>
+      <div class="pd-grade-grid">
+        {gradeTiers.map((g, _i) => {
+          const threeSpecs = specTable.slice(0, 3).map(row => ({
+            param: row.parameter,
+            val: row.values[g.label] ?? '—'
+          }));
+          return (
+            <div class="pd-grade-card" id={g.slug}>
+              <div class="pd-grade-card-top">
+                <span class="pd-grade-card-pct">{g.label}</span>
+                {g.pharma !== '—' && (
+                  <span class={`pd-ph-badge pd-ph-${g.pharmaTier}`}>{g.pharma}</span>
+                )}
+              </div>
+              {g.gCopy.bestFor && (
+                <p class="pd-grade-card-for">{translateBestFor(g.gCopy.bestFor, lang)}</p>
+              )}
+              {g.gCopy.lead && (
+                <p class="pd-grade-card-lead">{translateLead(g.gCopy.lead, lang)}</p>
+              )}
+              {threeSpecs.length > 0 && (
+                <ul class="pd-grade-specs">
+                  {threeSpecs.map(s => (
+                    <li>
+                      <span class="pd-gs-param">{translateParam(s.param, lang).replace(/\s*\(.*\)/, '')}</span>
+                      <span class="pd-gs-val">{s.val}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+              <a class="pd-btn pd-btn-ghost pd-btn-sm" href="#spec">{t.requestQuoteCta}</a>
+            </div>
+          );
+        })}
       </div>
     </div>
   </section>
 
-  <section class="section-tight intro">
-    <div class="container intro-line">
-      <span>Supply fit</span>
-      <div>
-        <p>{product.summary}</p>
-        <small>Final specifications, certificates, and claims should be replaced with verified RM Psyllium documentation before launch.</small>
+  <!-- ═══════════════════════════════════════
+       FAQ (deduplicated across grades)
+  ══════════════════════════════════════════ -->
+  {uniqueFaqs.length > 0 && (
+    <section class="pd-section pd-section--cream">
+      <div class="pd-container">
+        <div class="pd-faq-grid">
+          <div class="pd-faq-copy">
+            <p class="pd-section-kicker">{t.pdCommonQuestions}</p>
+            <h2 class="pd-section-title">{t.pdFaqIntro}<br /><em>{t.pdFaqIntroSuffix}</em></h2>
+            <p class="pd-faq-desc">{t.pdFaqDesc}</p>
+          </div>
+          <div class="pd-faq-list">
+            {uniqueFaqs.map(item => (
+              <details class="pd-faq-item">
+                <summary>
+                  <span>{translateFaqQ(item.q, lang)}</span>
+                  <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </summary>
+                <p>{translateFaqA(item.q, item.a, lang)}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- ═══════════════════════════════════════
+       QUOTE FORM
+  ══════════════════════════════════════════ -->
+  <section class="pd-quote" id="spec">
+    <div class="pd-container">
+      <div class="pd-contact-grid">
+        <div class="pd-contact-copy">
+          <div class="pd-contact-label"><span>{t.pdRequestQuoteLabel}</span><i></i></div>
+          <h2>{t.requestQuoteBandTitle}<br /><em>{t.pdWithin24h}</em></h2>
+          <p>{t.requestQuoteBandLead}</p>
+        </div>
+        <SpecBuilder productSlug={product.slug} />
       </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container detail-grid">
-      <article>
-        <h2>Grades</h2>
-        {product.grades.map((item) => <p>{item}</p>)}
-      </article>
-      <article>
-        <h2>Specifications</h2>
-        {product.specs.map((item) => <p>{item}</p>)}
-      </article>
-      <article>
-        <h2>Applications</h2>
-        {product.applications.map((item) => <p>{item}</p>)}
-      </article>
-      <article>
-        <h2>Packaging</h2>
-        {product.packaging.map((item) => <p>{item}</p>)}
-      </article>
+  <!-- ═══════════════════════════════════════
+       DARK CTA BAND
+  ══════════════════════════════════════════ -->
+  <section class="pd-cta-band">
+    <div class="pd-container">
+      <div class="pd-cta-inner">
+        <div>
+          <h2>{t.pdReadyToSource.replace('{name}', product.name)}</h2>
+          <p>{t.pdCtaBody}</p>
+        </div>
+        <div class="pd-cta-btns">
+          <a class="pd-btn pd-btn-light" href="#spec">{t.requestQuoteCta}</a>
+          <a class="pd-btn pd-btn-wa" href="https://wa.me/918949817791" target="_blank" rel="noopener">{t.contactWaBtn}</a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="section band" id="spec">
-    <div class="container quote-grid">
-      <div>
-        <span class="kicker">Quote path</span>
-        <h2 class="title-lg">Turn this product page into a sales-qualified brief.</h2>
-        <p class="lead">The same form works across every product, language, ICP, and region.</p>
-      </div>
-      <div class="panel spec-panel">
-        <SpecBuilder />
-      </div>
-    </div>
-  </section>
+</div>
 </BaseLayout>
 
 <style>
-  .product-hero {
-    padding-top: 5.5rem;
+  /* variables on the wrapper so Astro scoping doesn't break them */
+  .pd-wrap {
+    --pd-ink: #1a1c18;
+    --pd-soft: #484c43;
+    --pd-mute: #6b6f65;
+    --pd-rule: rgba(26, 28, 24, 0.1);
+    --pd-sage: #4a6630;
+    --pd-sage-pale: #d8e0c8;
+    --pd-cream: #f5f3ed;
+    --pd-white: #ffffff;
+    --pd-dark: #1a1c18;
+    --pd-f: 'Inter', system-ui, -apple-system, sans-serif;
+    --ph-food-bg: #f1f5f9; --ph-food-txt: #475569;
+    --ph-nf-bg:   #eff6ff; --ph-nf-txt:   #2563eb;
+    --ph-usp-bg:  #f5f3ff; --ph-usp-txt:  #7c3aed;
+    --ph-ip-bg:   #fef3c7; --ph-ip-txt:   #b45309;
+    --suit-yes-bg:  #dcfce7; --suit-yes-txt:  #166534;
+    --suit-cond-bg: #fef9c3; --suit-cond-txt: #92400e;
+    --suit-no-bg:   #fee2e2; --suit-no-txt:   #991b1b;
+    --suit-none-bg: #f3f4f6; --suit-none-txt: #9ca3af;
   }
 
-  .product-grid,
-  .quote-grid {
+  /* ── container ── */
+  .pd-container {
+    width: min(1140px, calc(100% - 128px));
+    margin-inline: auto;
+  }
+
+  /* ── breadcrumb ── */
+  .pd-breadcrumb {
+    display: flex; align-items: center; gap: 8px; margin-bottom: 28px;
+    font-family: var(--pd-f); font-size: 12px; color: var(--pd-mute);
+  }
+  .pd-breadcrumb a { color: var(--pd-mute); text-decoration: none; }
+  .pd-breadcrumb a:hover { color: var(--pd-sage); }
+
+  /* ── hero intro ── */
+  .pd-intro {
+    background: var(--pd-cream);
+    border-bottom: 1px solid var(--pd-rule);
+    padding: clamp(4rem, 7vw, 7rem) 0 clamp(3rem, 5vw, 5rem);
+  }
+  .pd-intro-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(320px, 0.7fr);
+    grid-template-columns: 1.3fr 1fr;
+    gap: clamp(3rem, 5vw, 5rem);
     align-items: center;
-    gap: 3rem;
+  }
+  .pd-intro-copy { min-width: 0; }
+
+  /* ── grade pills panel (hero right) ── */
+  .pd-pills-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .pd-pills-heading {
+    margin: 0;
+    font-family: var(--pd-f);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--pd-mute);
+  }
+  .pd-grade-pills {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .pd-grade-pill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--pd-white);
+    border: 1px solid var(--pd-rule);
+    border-radius: 10px;
+    padding: 12px 16px;
+    text-decoration: none;
+    transition: border-color 0.18s, box-shadow 0.18s;
+  }
+  .pd-grade-pill:hover {
+    border-color: var(--pd-sage);
+    box-shadow: 0 2px 12px rgba(74,102,48,0.1);
+  }
+  .pd-pill-label {
+    font-family: var(--pd-f);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--pd-ink);
+  }
+  .pd-pill-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .pd-pill-swell {
+    font-family: var(--pd-f);
+    font-size: 12px;
+    color: var(--pd-mute);
+    font-weight: 500;
+    white-space: nowrap;
   }
 
-  .actions {
+  .pd-kicker {
+    margin: 0 0 20px; color: var(--pd-sage); font-family: var(--pd-f);
+    font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+  }
+  .pd-intro h1 {
+    margin: 0; font-family: var(--pd-f);
+    font-size: clamp(2.4rem, 5vw, 4rem); font-weight: 800;
+    letter-spacing: -0.03em; line-height: 1.02; color: var(--pd-ink);
+    max-width: 680px;
+  }
+  .pd-intro h1 em { color: var(--pd-sage); font-style: italic; font-weight: 300; }
+  .pd-lead {
+    margin: 20px 0 0; color: var(--pd-soft); font-family: var(--pd-f);
+    font-size: 17px; font-weight: 400; line-height: 1.65; max-width: 520px;
+  }
+  .pd-summary {
+    margin: 10px 0 0; color: var(--pd-mute); font-family: var(--pd-f);
+    font-size: 14px; line-height: 1.65; max-width: 520px;
+  }
+  .pd-actions {
+    display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px;
+  }
+
+  /* ── grade pills (hero) ── */
+  .pd-grade-pills {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.75rem;
-    margin-top: 1.5rem;
+    gap: 10px;
+    margin-top: 36px;
+  }
+  .pd-grade-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--pd-white);
+    border: 1px solid var(--pd-rule);
+    border-radius: 999px;
+    padding: 8px 16px 8px 14px;
+    text-decoration: none;
+    transition: border-color 0.18s, box-shadow 0.18s;
+  }
+  .pd-grade-pill:hover {
+    border-color: var(--pd-sage);
+    box-shadow: 0 2px 10px rgba(74,102,48,0.12);
+  }
+  .pd-pill-label {
+    font-family: var(--pd-f);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--pd-ink);
+    white-space: nowrap;
+  }
+  .pd-pill-swell {
+    font-family: var(--pd-f);
+    font-size: 12px;
+    color: var(--pd-mute);
+    font-weight: 500;
+    white-space: nowrap;
   }
 
-  .product-visual {
-    position: relative;
+  /* ── pharmacopoeia badges ── */
+  .pd-ph-badge {
+    display: inline-block; border-radius: 999px;
+    padding: 3px 10px; font-family: var(--pd-f);
+    font-size: 10px; font-weight: 600; letter-spacing: 0.02em; white-space: nowrap;
+  }
+  .pd-ph-food { background: var(--ph-food-bg); color: var(--ph-food-txt); }
+  .pd-ph-nf   { background: var(--ph-nf-bg);   color: var(--ph-nf-txt); }
+  .pd-ph-usp  { background: var(--ph-usp-bg);  color: var(--ph-usp-txt); }
+  .pd-ph-ip   { background: var(--ph-ip-bg);   color: var(--ph-ip-txt); }
+  .pd-ph-xs   { padding: 2px 7px; font-size: 9px; }
+
+  /* ── buttons ── */
+  .pd-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    border-radius: 999px; padding: 13px 24px;
+    font-family: var(--pd-f); font-size: 14px; font-weight: 600; line-height: 1;
+    text-decoration: none;
+    transition: transform 0.25s cubic-bezier(.2,.7,.3,1), box-shadow 0.25s;
+  }
+  .pd-btn:hover { transform: translateY(-3px); box-shadow: 0 12px 28px -12px rgba(26,28,24,0.2); }
+  .pd-btn-primary { background: var(--pd-ink); color: #fff; }
+  .pd-btn-ghost { background: transparent; color: var(--pd-ink); border: 1px solid rgba(26,28,24,0.2); }
+  .pd-btn-ghost:hover { border-color: var(--pd-sage-pale); }
+  .pd-btn-wa    { background: #25d366; color: #fff; }
+  .pd-btn-light { background: #fff; color: var(--pd-dark); }
+  .pd-btn-sm    { padding: 8px 16px; font-size: 12px; }
+
+  /* ── generic section ── */
+  .pd-section { padding: clamp(4rem, 6vw, 6rem) 0; }
+  .pd-section--cream { background: var(--pd-cream); }
+  .pd-section-kicker {
+    margin: 0 0 12px; color: var(--pd-sage); font-family: var(--pd-f);
+    font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+  }
+  .pd-section-title {
+    margin: 0 0 32px; font-family: var(--pd-f);
+    font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 800;
+    letter-spacing: -0.025em; color: var(--pd-ink); line-height: 1.05;
+  }
+
+  /* ── suitability matrix ── */
+  .pd-matrix-scroll {
+    overflow-x: auto; border: 1px solid var(--pd-rule);
+    border-radius: 10px; background: var(--pd-white);
+  }
+  .pd-matrix { width: 100%; border-collapse: collapse; font-family: var(--pd-f); font-size: 13px; }
+  .pd-matrix thead { background: var(--pd-cream); border-bottom: 1.5px solid var(--pd-rule); }
+  .pd-matrix thead th { padding: 14px 18px; text-align: left; }
+  .pd-matrix-th-app { min-width: 180px; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--pd-mute); }
+  .pd-matrix-th-inner { display: flex; flex-direction: column; gap: 5px; }
+  .pd-matrix-th-pct { font-size: 1.2rem; font-weight: 800; letter-spacing: -0.02em; color: var(--pd-ink); }
+  .pd-matrix-app-label { padding: 14px 18px; font-weight: 600; color: var(--pd-ink); border-bottom: 1px solid var(--pd-rule); font-size: 13px; white-space: nowrap; }
+  .pd-matrix tr:last-child td { border-bottom: 0; }
+  .pd-suit-cell { padding: 13px 18px; text-align: center; border-bottom: 1px solid rgba(0,0,0,0.04); }
+  .pd-suit-icon { display: block; font-size: 15px; font-weight: 700; line-height: 1; }
+  .pd-suit-text { display: block; font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; margin-top: 3px; }
+  .pd-suit-yes  { background: var(--suit-yes-bg);  color: var(--suit-yes-txt); }
+  .pd-suit-cond { background: var(--suit-cond-bg); color: var(--suit-cond-txt); }
+  .pd-suit-no   { background: var(--suit-no-bg);   color: var(--suit-no-txt); }
+  .pd-suit-none { background: var(--suit-none-bg); color: var(--suit-none-txt); }
+  .pd-matrix-legend { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+  .pd-leg { display: inline-flex; align-items: center; gap: 5px; font-family: var(--pd-f); font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 999px; }
+  .pd-leg-yes  { background: var(--suit-yes-bg);  color: var(--suit-yes-txt); }
+  .pd-leg-cond { background: var(--suit-cond-bg); color: var(--suit-cond-txt); }
+  .pd-leg-no   { background: var(--suit-no-bg);   color: var(--suit-no-txt); }
+  .pd-leg-none { background: var(--suit-none-bg); color: var(--suit-none-txt); }
+
+  /* ── spec table + bar rows ── */
+  .pd-table-wrap { overflow-x: auto; border: 1px solid var(--pd-rule); border-radius: 8px; background: var(--pd-white); }
+  .pd-spec-table { width: 100%; border-collapse: collapse; font-family: var(--pd-f); font-size: 13px; }
+  .pd-spec-table thead tr { background: var(--pd-cream); border-bottom: 1px solid var(--pd-rule); }
+  .pd-spec-table th { padding: 12px 20px; text-align: left; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--pd-mute); white-space: nowrap; }
+  .pd-spec-th-param { min-width: 200px; }
+  .pd-spec-table td { padding: 12px 20px; color: var(--pd-soft); border-bottom: 1px solid var(--pd-rule); vertical-align: middle; white-space: nowrap; }
+  .pd-spec-table tr:last-child td { border-bottom: 0; }
+  .pd-spec-param { font-weight: 600; color: var(--pd-ink); }
+  .pd-cell-pass { color: #166534; font-weight: 600; }
+  .pd-spec-bestfor-row { background: rgba(216,224,200,0.2); }
+  .pd-spec-bestfor-cell { white-space: normal !important; font-size: 12px; line-height: 1.5; color: var(--pd-mute) !important; }
+  /* bar cells */
+  .pd-bar-row td { padding-top: 10px; padding-bottom: 10px; }
+  .pd-bc { display: flex; flex-direction: column; gap: 5px; min-width: 90px; }
+  .pd-bc strong { font-size: 13px; font-weight: 700; color: var(--pd-ink); }
+  .pd-bt { height: 5px; background: var(--pd-rule); border-radius: 3px; overflow: hidden; }
+  .pd-bf { height: 100%; background: var(--pd-sage); border-radius: 3px; }
+
+  /* ── grade cards 2-col grid ── */
+  .pd-grade-grid {
     display: grid;
-    min-height: 480px;
-    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
-
-  .visual-bg {
-    position: absolute;
-    inset: 10% 4% 4%;
-    border-radius: 42px;
-    background: linear-gradient(135deg, rgba(223, 241, 230, 0.95), rgba(255, 253, 247, 0.76));
-    box-shadow: 0 30px 90px rgba(16, 35, 63, 0.13);
+  .pd-grade-card {
+    border: 1px solid var(--pd-rule); border-radius: 12px;
+    background: var(--pd-white); padding: 26px;
+    display: flex; flex-direction: column; gap: 16px;
+    transition: border-color 0.2s, box-shadow 0.2s;
   }
-
-  .product-visual img {
-    position: relative;
-    width: min(82%, 400px);
-    border-radius: 28px;
-    box-shadow: 0 26px 80px rgba(16, 35, 63, 0.18);
+  .pd-grade-card:hover { border-color: var(--pd-sage-pale); box-shadow: 0 8px 28px -8px rgba(26,28,24,0.1); }
+  .pd-grade-card-top { display: flex; align-items: center; gap: 12px; }
+  .pd-grade-card-pct {
+    font-family: var(--pd-f); font-size: 2rem; font-weight: 800;
+    letter-spacing: -0.04em; color: var(--pd-ink); line-height: 1;
   }
+  .pd-grade-card-for { margin: 0; color: var(--pd-soft); font-family: var(--pd-f); font-size: 13px; font-weight: 500; line-height: 1.55; }
+  .pd-grade-card-lead { margin: 0; color: var(--pd-mute); font-family: var(--pd-f); font-size: 12px; line-height: 1.6; }
+  /* key specs list */
+  .pd-grade-specs { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 0; }
+  .pd-grade-specs li { display: flex; justify-content: space-between; align-items: center; font-family: var(--pd-f); font-size: 12px; padding: 7px 0; border-bottom: 1px solid var(--pd-rule); }
+  .pd-grade-specs li:last-child { border-bottom: 0; }
+  .pd-gs-param { color: var(--pd-mute); font-weight: 400; }
+  .pd-gs-val   { color: var(--pd-ink);  font-weight: 700; }
+  /* application fit chips in grade card */
+  .pd-grade-apps { display: flex; flex-direction: column; gap: 8px; }
+  .pd-grade-apps-label { font-family: var(--pd-f); font-size: 10px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--pd-mute); margin: 0; }
+  .pd-grade-apps-grid { display: flex; flex-wrap: wrap; gap: 6px; }
+  .pd-app-chip { display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 999px; font-family: var(--pd-f); font-size: 11px; font-weight: 600; }
+  .pd-app-chip-name::before { margin-right: 3px; }
+  .pd-app-chip--yes::before  { content: '✓'; }
+  .pd-app-chip--cond::before { content: '◑'; }
+  .pd-app-chip--no::before   { content: '✗'; }
+  .pd-app-chip--none::before { content: '—'; }
+  .pd-app-chip--yes  { background: var(--suit-yes-bg);  color: var(--suit-yes-txt); }
+  .pd-app-chip--cond { background: var(--suit-cond-bg); color: var(--suit-cond-txt); }
+  .pd-app-chip--no   { background: var(--suit-no-bg);   color: var(--suit-no-txt); }
+  .pd-app-chip--none { background: var(--suit-none-bg); color: var(--suit-none-txt); }
 
-  .intro {
-    padding-top: 0;
+  /* ── faq ── */
+  .pd-faq-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: clamp(3rem, 5vw, 6rem); align-items: start; }
+  .pd-faq-copy .pd-section-kicker { margin-bottom: 16px; }
+  .pd-faq-copy .pd-section-title { margin-bottom: 0; }
+  .pd-faq-copy .pd-section-title em { color: var(--pd-sage); font-style: italic; font-weight: 300; }
+  .pd-faq-desc { margin: 20px 0 0; color: var(--pd-soft); font-family: var(--pd-f); font-size: 15px; line-height: 1.65; max-width: 340px; }
+  .pd-faq-item { border-top: 1px solid var(--pd-rule); background: var(--pd-white); }
+  .pd-faq-item:last-child { border-bottom: 1px solid var(--pd-rule); }
+  .pd-faq-item summary {
+    display: flex; justify-content: space-between; align-items: center; gap: 16px;
+    padding: 18px 24px; cursor: pointer; list-style: none;
+    font-family: var(--pd-f); font-size: 14px; font-weight: 600; line-height: 1.4;
+    color: var(--pd-ink); user-select: none;
   }
+  .pd-faq-item summary::-webkit-details-marker { display: none; }
+  .pd-faq-item summary svg { flex-shrink: 0; color: var(--pd-sage); transition: transform 0.2s; }
+  .pd-faq-item[open] summary svg { transform: rotate(180deg); }
+  .pd-faq-item p { margin: 0 0 16px; padding: 0 24px; color: var(--pd-soft); font-family: var(--pd-f); font-size: 14px; line-height: 1.7; }
 
-  .intro-line {
+  /* ── packaging / meta ── */
+  /* ── panel meta (packaging + applications in hero right) ── */
+  .pd-panel-meta {
     display: grid;
-    grid-template-columns: 180px 1fr;
-    gap: 2rem;
-    border-block: 1px solid rgba(16, 35, 63, 0.1);
-    padding-block: 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding-top: 4px;
+    border-top: 1px solid var(--pd-rule);
+    margin-top: 6px;
   }
-
-  .intro-line span {
-    color: #2d6a4f;
-    font-weight: 840;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+  .pd-panel-meta-block { display: flex; flex-direction: column; gap: 10px; }
+  .pd-panel-meta-list {
+    margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px;
   }
-
-  .intro-line p {
-    margin: 0;
-    color: #253b55;
-    font-size: clamp(1.4rem, 3vw, 2.2rem);
-    line-height: 1.28;
+  .pd-panel-meta-list li {
+    font-family: var(--pd-f); font-size: 13px; color: var(--pd-soft);
+    padding-left: 12px; position: relative; line-height: 1.4;
   }
+  .pd-panel-meta-list li::before { content: '·'; position: absolute; left: 0; color: var(--pd-sage); font-weight: 700; }
 
-  .intro-line small {
-    display: block;
-    margin-top: 0.9rem;
-    color: #64748b;
-    line-height: 1.5;
+  /* ── quote / contact form (matches homepage) ── */
+  .pd-quote { padding: clamp(5rem, 8vw, 8rem) 0; border-top: 1px solid var(--pd-rule); }
+  .pd-contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: clamp(3rem, 5vw, 6rem); align-items: start; }
+  .pd-contact-label { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
+  .pd-contact-label span { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--pd-mute); }
+  .pd-contact-label i { flex: 1; height: 1px; background: var(--pd-rule); }
+  .pd-contact-copy h2 { margin: 0; font-family: var(--pd-f); font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; color: var(--pd-ink); }
+  .pd-contact-copy h2 em { color: var(--pd-sage); font-style: italic; font-weight: 300; }
+  .pd-contact-copy > p { margin: 20px 0 0; color: var(--pd-soft); font-size: 16px; font-weight: 400; line-height: 1.65; max-width: 400px; }
+
+  /* ── dark CTA band ── */
+  .pd-cta-band { background: var(--pd-dark); padding: clamp(4rem, 7vw, 7rem) 0; }
+  .pd-cta-inner { display: grid; grid-template-columns: 1fr auto; gap: clamp(2rem, 4vw, 4rem); align-items: center; }
+  .pd-cta-inner h2 { margin: 0 0 12px; font-family: var(--pd-f); font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 800; letter-spacing: -0.025em; color: #fff; }
+  .pd-cta-inner > div > p { margin: 0; color: rgba(255,255,255,0.65); font-family: var(--pd-f); font-size: 15px; line-height: 1.65; max-width: 520px; }
+  .pd-cta-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+
+  /* ── responsive ── */
+  @media (max-width: 1100px) { .pd-container { width: calc(100% - 80px); } }
+  @media (max-width: 860px) {
+    .pd-container { width: calc(100% - 48px); }
+    .pd-intro-grid { grid-template-columns: 1fr; }
+    .pd-lead { max-width: 100%; }
+    .pd-grade-pills { flex-direction: row; flex-wrap: wrap; }
+    .pd-grade-pill { flex: 1 1 calc(50% - 4px); min-width: 140px; }
+    .pd-grade-grid { grid-template-columns: 1fr; }
+    .pd-faq-grid { grid-template-columns: 1fr; }
+    .pd-faq-desc { max-width: 100%; }
+    .pd-contact-grid { grid-template-columns: 1fr; }
+    .pd-cta-inner { grid-template-columns: 1fr; }
+    .pd-panel-meta { grid-template-columns: 1fr 1fr; }
   }
-
-  .detail-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-  }
-
-  .detail-grid article {
-    border: 1px solid rgba(16, 35, 63, 0.1);
-    border-radius: 18px;
-    background: #fffdf7;
-    padding: 1.3rem;
-  }
-
-  h2 {
-    margin: 0 0 1rem;
-    font-size: 1.2rem;
-  }
-
-  .detail-grid p {
-    margin: 0.55rem 0;
-    color: #64748b;
-    line-height: 1.45;
-  }
-
-  .spec-panel {
-    padding: 1.25rem;
-    color: var(--ink);
-  }
-
-  @media (max-width: 960px) {
-    .product-grid,
-    .quote-grid,
-    .detail-grid,
-    .intro-line {
-      grid-template-columns: 1fr;
-    }
+  @media (max-width: 640px) {
+    .pd-container { width: calc(100% - 32px); }
+    .pd-grade-pill { flex: 1 1 100%; }
+    .pd-panel-meta { grid-template-columns: 1fr; }
   }
 </style>

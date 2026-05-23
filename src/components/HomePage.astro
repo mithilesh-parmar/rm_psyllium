@@ -1,0 +1,1106 @@
+---
+import { getLanguage, products, copy, localizedFaq, type LanguageCode } from '../data/site';
+import SpecBuilder from './SpecBuilder.astro';
+import ProductDirectory from './ProductDirectory.astro';
+
+export interface Props {
+  lang?: LanguageCode;
+}
+
+const lang = getLanguage(Astro.props.lang || Astro.params.lang);
+const t = copy[lang];
+const faqItems = localizedFaq[lang];
+
+const certifications = [
+  { name: 'FSSAI', body: t.qualityFssaiDesc, logo: '/assets/certs/fssai.svg' },
+  { name: 'APEDA', body: t.qualityApedaDesc, logo: '/assets/certs/apeda.svg' },
+  { name: 'Spices Board', body: t.qualitySpicesBoardDesc, logo: '/assets/certs/spices-board.svg' },
+];
+---
+
+<div class="hp4">
+  <!-- SECTION 1: HERO — full-bleed grid, copy aligned to container, image to right edge -->
+  <section class="hp4-hero" id="top">
+    <div class="hp4-hero-grid">
+      <div class="hp4-hero-copy">
+        <div class="hp4-badge"><span class="hp4-dot"></span>{t.heroBadge}</div>
+        <h1>{t.heroTitle}</h1>
+        <p>{t.heroBody}</p>
+        <div class="hp4-actions">
+          <a class="hp4-btn hp4-btn-primary" href="#talk" data-track="hero_cta_click">{t.cta} <span aria-hidden="true">→</span></a>
+          <a class="hp4-btn hp4-btn-whatsapp" href="https://wa.me/918949817791" target="_blank" rel="noopener" data-track="hero_whatsapp_click">{t.heroCtaWhatsApp}</a>
+        </div>
+        <div class="hp4-trust-row">
+          <span class="hp4-trust-highlight">No minimum order</span>
+          <span>{t.heroTrustCoa}</span>
+        </div>
+      </div>
+      <div class="hp4-hero-media">
+        <img
+          class="hp4-media-img hp4-media-img--tall"
+          src="/assets/generated/facility-bags-gujarat.webp"
+          width="1122"
+          height="1402"
+          alt="Psyllium export bags stacked inside a Gujarat processing facility warehouse"
+          loading="eager"
+          decoding="async"
+        />
+        <aside class="hp4-overlay-card">
+          <div class="hp4-overlay-row hp4-overlay-row--moq"><strong>No MOQ</strong><span>From 1 KG</span></div>
+          <div class="hp4-overlay-row"><strong>{t.heroLeadTimeLabel}</strong><span>{t.heroLeadTimeValue}</span></div>
+          <div class="hp4-overlay-row"><strong>{t.heroSampleLabel}</strong><span>{t.heroSampleValue}</span></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: STATS BAR -->
+  <section class="hp4-proof">
+    <div class="hp4-container">
+    <div class="hp4-stats">
+      <div><strong>2,000 <em>MT</em></strong><span>{t.statCapacityLabel}</span></div>
+      <div><strong>40+ <em>yrs</em></strong><span>{t.statHistoryLabel}</span></div>
+      <div><strong>7 <em>days</em></strong><span>{t.statLeadLabel}</span></div>
+      <div><strong>1 <em>KG</em></strong><span>{t.statMoqLabel}</span></div>
+    </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: PRODUCTS -->
+  <section class="hp4-section" id="products">
+    <div class="hp4-container">
+      <div class="hp4-section-label"><span>{t.labelProducts}</span><i></i></div>
+      <div class="hp4-section-header">
+        <h2>{t.hpProductsTitle}</h2>
+        <p>{t.hpProductsBody}</p>
+      </div>
+      <ProductDirectory products={products} lang={lang} />
+    </div>
+  </section>
+
+  <!-- SECTION 4: WHY RM PSYLLIUM -->
+  <section class="hp4-section hp4-section--cream" id="why">
+    <div class="hp4-container">
+      <div class="hp4-section-label"><span>{t.labelWhyUs}</span><i></i></div>
+      <h2 class="hp4-section-title">{t.hpWhyTitle}</h2>
+      <div class="hp4-diff-grid">
+        <div class="hp4-diff">
+          <div class="hp4-diff-num">01</div>
+          <h3>{t.hpDiff1Title}</h3>
+          <p>{t.hpDiff1Body}</p>
+        </div>
+        <div class="hp4-diff">
+          <div class="hp4-diff-num">02</div>
+          <h3>{t.hpDiff2Title}</h3>
+          <p>{t.hpDiff2Body}</p>
+        </div>
+        <div class="hp4-diff">
+          <div class="hp4-diff-num">03</div>
+          <h3>{t.hpDiff3Title}</h3>
+          <p>{t.hpDiff3Body}</p>
+        </div>
+        <div class="hp4-diff">
+          <div class="hp4-diff-num">04</div>
+          <h3>{t.hpDiff4Title}</h3>
+          <p>{t.hpDiff4Body}</p>
+        </div>
+        <div class="hp4-diff hp4-diff--highlight">
+          <div class="hp4-diff-num">05</div>
+          <h3>{t.hpDiff5Title}</h3>
+          <p>{t.hpDiff5Body}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: PROCESS -->
+  <section class="hp4-section" id="process">
+    <div class="hp4-container">
+      <div class="hp4-section-label"><span>{t.labelProcess}</span><i></i><span>{t.labelStepsOne}</span></div>
+      <h2 class="hp4-section-title">{t.hpProcessTitle}</h2>
+      <div class="hp4-process-grid">
+        <div class="hp4-process-steps">
+          <div class="hp4-step"><span class="hp4-step-num">01</span><div><strong>{t.hpStep1Title}</strong><p>{t.hpStep1Body}</p></div></div>
+          <div class="hp4-step"><span class="hp4-step-num">02</span><div><strong>{t.hpStep2Title}</strong><p>{t.hpStep2Body}</p></div></div>
+          <div class="hp4-step"><span class="hp4-step-num">03</span><div><strong>{t.hpStep3Title}</strong><p>{t.hpStep3Body}</p></div></div>
+          <div class="hp4-step"><span class="hp4-step-num">04</span><div><strong>{t.hpStep4Title}</strong><p>{t.hpStep4Body}</p></div></div>
+          <div class="hp4-step"><span class="hp4-step-num">05</span><div><strong>{t.hpStep5Title}</strong><p>{t.hpStep5Body}</p></div></div>
+        </div>
+        <img
+          class="hp4-media-img hp4-media-img--process"
+          src="/assets/generated/milling-line-gujarat.webp"
+          width="1086"
+          height="1448"
+          alt="Psyllium milling and cleaning line inside a Gujarat processing facility"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+    </div>
+  </section>
+
+  {/*
+  <section class="hp4-section hp4-section--cream" id="certifications">
+    <div class="hp4-container">
+      <div class="hp4-section-label"><span>{t.labelCredentials}</span><i></i></div>
+      <h2 class="hp4-section-title" style="margin-bottom: 40px; font-size: clamp(1.8rem, 3vw, 2.6rem);">{t.hpCredTitle}</h2>
+      <div class="hp4-cert-logos">
+        {certifications.map((cert) => (
+          <img
+            class="hp4-cert-logo-img"
+            src={cert.logo}
+            alt={`${cert.name} — ${cert.body}`}
+            width="120"
+            height="64"
+            loading="lazy"
+            decoding="async"
+          />
+        ))}
+        <div class="hp4-iec-badge">
+          <strong>IEC</strong>
+          <span>0124007841</span>
+          <small>{t.hpIecActive}</small>
+        </div>
+      </div>
+    </div>
+  </section>
+  */}
+
+  <!-- SECTION 7: FAQ -->
+  <section class="hp4-section" id="faq">
+    <div class="hp4-container">
+      <div class="hp4-faq-grid">
+        <div class="hp4-faq-copy">
+          <div class="hp4-section-label"><span>FAQ</span><i></i></div>
+          <h2>{t.hpFaqTitle}</h2>
+          <p>{t.hpFaqBody}</p>
+        </div>
+        <div class="hp4-faq-list">
+          {faqItems.map((item) => (
+            <details class="hp4-faq-item">
+              <summary><span>{item.q}</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+              <p>{item.a}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: CONTACT / QUOTE FORM -->
+  <section class="hp4-section" id="talk">
+    <div class="hp4-container">
+      <div class="hp4-contact-grid">
+        <div class="hp4-contact-copy">
+          <div class="hp4-section-label"><span>{t.labelContact}</span><i></i></div>
+          <h2>{t.hpContactTitle}</h2>
+          <p>{t.hpContactBody}</p>
+          <div class="hp4-contact-channels">
+            <a class="hp4-channel" href="mailto:export@rmpsyllium.com">
+              <strong>{t.hpContactEmailLabel}</strong>
+              <span>export@rmpsyllium.com</span>
+            </a>
+            <a class="hp4-channel" href="https://wa.me/918949817791" target="_blank" rel="noopener">
+              <strong>WhatsApp / Call</strong>
+              <span>+91 89498 17791</span>
+            </a>
+            <a class="hp4-channel hp4-channel--secondary" href="tel:+918000008381">
+              <strong>Call</strong>
+              <span>+91 80000 08381</span>
+            </a>
+            <div class="hp4-channel">
+              <strong>{t.hpContactResponseLabel}</strong>
+              <span>{t.hpContactResponseValue}</span>
+            </div>
+          </div>
+        </div>
+        <SpecBuilder />
+      </div>
+    </div>
+  </section>
+
+  <!-- STICKY MOBILE BAR -->
+  <div class="hp4-sticky-bar" id="stickyBarV4">
+    <a class="hp4-btn hp4-btn-primary" href="#talk" data-track="sticky_cta_click">{t.hpGetQuote}</a>
+    <a class="hp4-btn hp4-btn-whatsapp" href="https://wa.me/918949817791" target="_blank" rel="noopener" data-track="sticky_whatsapp_click">WhatsApp</a>
+  </div>
+</div>
+
+<script>
+  const stickyBarV4 = document.getElementById('stickyBarV4');
+  if (stickyBarV4) {
+    const hero = document.querySelector('.hp4-hero');
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        stickyBarV4.classList.toggle('is-visible', !entry.isIntersecting);
+      },
+      { threshold: 0 }
+    );
+    if (hero) observer.observe(hero);
+  }
+</script>
+
+<style>
+  .hp4 {
+    --hp4-f: 'Inter', system-ui, -apple-system, sans-serif;
+    --hp4-white: #ffffff;
+    --hp4-paper: #fafaf8;
+    --hp4-cream: #f5f3ed;
+    --hp4-ink: #1a1c18;
+    --hp4-soft: #484c43;
+    --hp4-mute: #6b6f65;
+    --hp4-rule: rgba(26, 28, 24, 0.1);
+    --hp4-sage: #4a6630;
+    --hp4-sage-deep: #354d20;
+    --hp4-sage-pale: #d8e0c8;
+    --hp4-warm: #b8753a;
+    background: var(--hp4-white);
+    color: var(--hp4-ink);
+    font-family: var(--hp4-f);
+    overflow-x: clip;
+  }
+
+  .hp4 em {
+    color: var(--hp4-sage);
+    font-style: italic;
+  }
+
+  /* CONTAINER — matches product page centering */
+  .hp4-container {
+    width: min(1140px, calc(100% - 128px));
+    margin-inline: auto;
+  }
+
+  /* HERO — full-bleed, copy indented to match container, image goes to right edge */
+  .hp4-hero {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hp4-hero-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 0;
+    align-items: center;
+    min-height: clamp(560px, 80vh, 860px);
+  }
+
+  .hp4-hero-copy {
+    padding: clamp(4rem, 7vw, 7rem) clamp(3rem, 5vw, 5rem) clamp(4rem, 7vw, 7rem) clamp(40px, 5vw, 80px);
+  }
+
+  .hp4-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--hp4-sage-pale);
+    border-radius: 999px;
+    background: rgba(216, 224, 200, 0.3);
+    padding: 7px 14px;
+    color: var(--hp4-sage);
+    font-family: var(--hp4-f);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+
+  .hp4-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--hp4-sage);
+    animation: hp4-pulse 1.8s ease-in-out infinite;
+  }
+
+  .hp4-hero h1 {
+    margin: 28px 0 0;
+    font-family: var(--hp4-f);
+    font-size: clamp(3rem, 5.5vw, 5rem);
+    font-weight: 800;
+    letter-spacing: -0.035em;
+    line-height: 1.02;
+    text-wrap: balance;
+  }
+
+  .hp4-hero h1 em {
+    font-weight: 300;
+    letter-spacing: -0.02em;
+  }
+
+.hp4-h1-tag {
+    display: inline;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.65em;
+    letter-spacing: 0.01em;
+    vertical-align: middle;
+  }
+
+  .hp4-h1-tag--grade {
+    color: var(--hp4-sage-deep);
+  }
+
+  .hp4-h1-tag--moq {
+    color: var(--hp4-sage-deep);
+  }
+
+  .hp4-hero p {
+    margin: 24px 0 0;
+    max-width: 520px;
+    color: var(--hp4-soft);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.65;
+  }
+
+  .hp4-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 32px;
+  }
+
+  .hp4-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    padding: 14px 24px;
+    font-family: var(--hp4-f);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
+    transition: transform 0.25s cubic-bezier(.2,.7,.3,1), box-shadow 0.25s, background 0.2s;
+    cursor: pointer;
+  }
+
+  .hp4-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px -12px rgba(26, 28, 24, 0.2);
+  }
+
+  .hp4-btn-primary {
+    background: var(--hp4-ink);
+    color: var(--hp4-white);
+  }
+
+  .hp4-btn-whatsapp {
+    background: #25d366;
+    color: #fff;
+  }
+
+  .hp4-trust-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 28px;
+  }
+
+  .hp4-trust-row span {
+    border: 1px solid rgba(26, 28, 24, 0.18);
+    border-radius: 999px;
+    padding: 6px 13px;
+    font-family: var(--hp4-f);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    color: var(--hp4-ink);
+    background: var(--hp4-paper);
+  }
+
+  .hp4-trust-highlight {
+    background: var(--hp4-sage-deep) !important;
+    border-color: var(--hp4-sage-deep) !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+  }
+
+
+
+  .hp4-hero-media {
+    position: relative;
+    height: 100%;
+    align-self: stretch;
+  }
+
+  .hp4-media-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    display: block;
+    object-fit: cover;
+    background: var(--hp4-sage-pale);
+    border-radius: 8px;
+  }
+
+  .hp4-media-img--tall {
+    height: 100%;
+    width: 100%;
+    aspect-ratio: unset;
+    border-radius: 0;
+    object-position: center;
+  }
+
+  .hp4-media-img--process {
+    aspect-ratio: 3 / 4;
+    max-height: 600px;
+    width: auto;
+    max-width: 100%;
+    position: sticky;
+    top: 100px;
+  }
+
+  .hp4-overlay-card {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    background: var(--hp4-white);
+    border: 1px solid var(--hp4-rule);
+    padding: 20px 24px;
+    box-shadow: 0 12px 28px -16px rgba(26,28,24,0.18);
+    display: grid;
+    gap: 14px;
+    min-width: 270px;
+    border-radius: 8px;
+  }
+
+  .hp4-overlay-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .hp4-overlay-row strong {
+    font-family: var(--hp4-f);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--hp4-mute);
+  }
+
+  .hp4-overlay-row--moq strong {
+    color: var(--hp4-sage);
+    font-size: 13px;
+  }
+
+  .hp4-overlay-row--moq span {
+    font-size: 12px;
+    color: var(--hp4-mute);
+    font-weight: 500;
+  }
+
+  .hp4-overlay-row span {
+    color: var(--hp4-ink);
+    font-family: var(--hp4-f);
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  /* STATS BAR */
+  .hp4-proof {
+    border-top: 1px solid var(--hp4-rule);
+    border-bottom: 1px solid var(--hp4-rule);
+    background: var(--hp4-cream);
+    padding: 48px 0;
+  }
+
+  .hp4-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+
+  .hp4-stats strong {
+    display: block;
+    font-family: var(--hp4-f);
+    font-size: clamp(2.2rem, 3.5vw, 3.2rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    color: var(--hp4-ink);
+  }
+
+  .hp4-stats strong em {
+    font-style: normal;
+    font-size: 0.6em;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+  }
+
+  .hp4-stats span {
+    display: block;
+    margin-top: 8px;
+    font-family: var(--hp4-f);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    color: var(--hp4-mute);
+  }
+
+  /* SECTIONS */
+  .hp4-section {
+    padding: clamp(5rem, 8vw, 8rem) 0;
+  }
+
+  .hp4-section--cream {
+    background: var(--hp4-cream);
+  }
+
+  .hp4-section-label {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 28px;
+    color: var(--hp4-sage);
+    font-family: var(--hp4-f);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .hp4-section-label i {
+    flex: 1;
+    max-width: 400px;
+    height: 1px;
+    background: var(--hp4-rule);
+  }
+
+  .hp4-section-label span:last-child:not(:first-child) {
+    color: var(--hp4-mute);
+    font-weight: 500;
+  }
+
+  .hp4-section-header {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: clamp(2rem, 4vw, 4rem);
+    align-items: end;
+    margin-bottom: 56px;
+  }
+
+  .hp4-section-header h2,
+  .hp4-section-title,
+  .hp4-contact-copy h2 {
+    margin: 0;
+    font-family: var(--hp4-f);
+    font-size: clamp(2.6rem, 4.5vw, 4rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.02;
+  }
+
+  .hp4-section-header h2 em,
+  .hp4-section-title em,
+  .hp4-contact-copy h2 em {
+    font-weight: 300;
+  }
+
+  .hp4-section-header p {
+    margin: 0;
+    color: var(--hp4-soft);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.65;
+    max-width: 480px;
+  }
+
+  .hp4-section-title {
+    margin-bottom: 56px;
+  }
+
+  /* DIFFERENTIATORS */
+  .hp4-diff-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+
+  .hp4-diff {
+    border-top: 2px solid var(--hp4-sage);
+    padding-top: 24px;
+  }
+
+  .hp4-diff.hp4-diff--highlight {
+    background: var(--hp4-sage);
+    border-top: none;
+    border-radius: 6px;
+    padding: 24px;
+    color: var(--hp4-white);
+  }
+
+  .hp4-diff.hp4-diff--highlight .hp4-diff-num,
+  .hp4-diff.hp4-diff--highlight h3,
+  .hp4-diff.hp4-diff--highlight p {
+    color: var(--hp4-white);
+  }
+
+  .hp4-diff-num {
+    font-family: var(--hp4-f);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--hp4-sage);
+    margin-bottom: 12px;
+  }
+
+  .hp4-diff h3 {
+    margin: 0;
+    font-family: var(--hp4-f);
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+
+  .hp4-diff p {
+    margin: 12px 0 0;
+    color: var(--hp4-soft);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.65;
+  }
+
+  /* PROCESS */
+  .hp4-process-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(3rem, 5vw, 5rem);
+    align-items: start;
+  }
+
+  .hp4-process-steps {
+    display: grid;
+    gap: 0;
+  }
+
+  .hp4-step {
+    display: flex;
+    gap: 20px;
+    padding: 24px 0;
+    border-top: 1px solid var(--hp4-rule);
+  }
+
+  .hp4-step:last-child {
+    border-bottom: 1px solid var(--hp4-rule);
+  }
+
+  .hp4-step-num {
+    flex-shrink: 0;
+    width: 32px;
+    font-family: var(--hp4-f);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: var(--hp4-sage);
+    padding-top: 3px;
+  }
+
+  .hp4-step strong {
+    display: block;
+    font-family: var(--hp4-f);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .hp4-step p {
+    margin: 8px 0 0;
+    color: var(--hp4-soft);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  /* CERTIFICATIONS */
+  .hp4-cert-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(24px, 4vw, 56px);
+  }
+
+  .hp4-cert-logo-img {
+    display: block;
+    width: auto;
+    height: 56px;
+    max-width: 120px;
+    object-fit: contain;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+  }
+
+  .hp4-cert-logo-img:hover {
+    opacity: 1;
+  }
+
+  .hp4-iec-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    padding: 10px 20px;
+    border: 1px solid var(--hp4-rule);
+    border-radius: 8px;
+    background: var(--hp4-white);
+    opacity: 0.85;
+  }
+
+  .hp4-iec-badge strong {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    color: var(--hp4-ink);
+  }
+
+  .hp4-iec-badge span {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--hp4-soft);
+    letter-spacing: 0.02em;
+  }
+
+  .hp4-iec-badge small {
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--hp4-mute);
+    letter-spacing: 0.01em;
+  }
+
+  /* FAQ */
+  .hp4-faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: clamp(3rem, 5vw, 6rem);
+    align-items: start;
+  }
+
+  .hp4-faq-copy .hp4-section-label {
+    margin-bottom: 20px;
+  }
+
+  .hp4-faq-copy h2 {
+    margin: 0;
+  }
+
+  .hp4-faq-copy > p {
+    margin: 20px 0 0;
+    color: var(--hp4-soft);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.65;
+    max-width: 340px;
+  }
+
+  .hp4-faq-list {
+    display: grid;
+    gap: 0;
+  }
+
+  .hp4-faq-item {
+    border-top: 1px solid var(--hp4-rule);
+    background: var(--hp4-white);
+  }
+
+  .hp4-faq-item:last-child {
+    border-bottom: 1px solid var(--hp4-rule);
+  }
+
+  .hp4-faq-item summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 24px;
+    cursor: pointer;
+    list-style: none;
+    font-family: var(--hp4-f);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--hp4-ink);
+    user-select: none;
+  }
+
+  .hp4-faq-item summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .hp4-faq-item summary svg {
+    flex-shrink: 0;
+    color: var(--hp4-sage);
+    transition: transform 0.25s cubic-bezier(.2,.7,.3,1);
+  }
+
+  .hp4-faq-item[open] summary svg {
+    transform: rotate(180deg);
+  }
+
+  .hp4-faq-item p {
+    margin: 0 0 20px;
+    padding: 0 24px;
+    color: var(--hp4-soft);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+  }
+
+  /* CONTACT / FORM */
+  .hp4-contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: clamp(3rem, 5vw, 6rem);
+    align-items: start;
+  }
+
+  .hp4-contact-copy .hp4-section-label {
+    margin-bottom: 20px;
+  }
+
+  .hp4-contact-copy h2 {
+    margin: 0;
+  }
+
+  .hp4-contact-copy > p {
+    margin: 20px 0 0;
+    color: var(--hp4-soft);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.65;
+    max-width: 400px;
+  }
+
+  .hp4-contact-channels {
+    display: grid;
+    gap: 10px;
+    margin-top: 32px;
+  }
+
+  .hp4-channel {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    border: 1px solid var(--hp4-rule);
+    border-radius: 8px;
+    padding: 14px 18px;
+    text-decoration: none;
+    color: var(--hp4-ink);
+    transition: border-color 0.2s;
+  }
+
+  .hp4-channel:hover {
+    border-color: var(--hp4-sage-pale);
+  }
+
+  .hp4-channel--secondary {
+    opacity: 0.65;
+    font-size: 0.92em;
+  }
+
+  .hp4-channel--secondary:hover {
+    opacity: 1;
+  }
+
+  .hp4-channel strong {
+    font-family: var(--hp4-f);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--hp4-sage);
+  }
+
+  .hp4-channel span {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--hp4-ink);
+  }
+
+  /* FORM */
+  .hp4-form {
+    background: var(--hp4-cream);
+    padding: 32px;
+    border-radius: 12px;
+  }
+
+  .hp4-form header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--hp4-rule);
+  }
+
+  .hp4-form header span {
+    font-family: var(--hp4-f);
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .hp4-form header small {
+    font-family: var(--hp4-f);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--hp4-sage);
+  }
+
+  .hp4-form-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+
+  .hp4-form-full {
+    grid-column: 1 / -1;
+  }
+
+  .hp4-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .hp4-form label span {
+    font-family: var(--hp4-f);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--hp4-soft);
+  }
+
+  .hp4-form input,
+  .hp4-form select,
+  .hp4-form textarea {
+    width: 100%;
+    border: 1px solid var(--hp4-rule);
+    border-radius: 6px;
+    background: var(--hp4-white);
+    padding: 10px 12px;
+    font-family: var(--hp4-f);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--hp4-ink);
+    outline: none;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+  }
+
+  .hp4-form input:focus,
+  .hp4-form select:focus,
+  .hp4-form textarea:focus {
+    border-color: var(--hp4-sage);
+  }
+
+  .hp4-form textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+
+  .hp4-form .hp4-btn {
+    width: 100%;
+    margin-top: 6px;
+    padding: 16px 24px;
+    font-size: 15px;
+    border-radius: 8px;
+  }
+
+  /* STICKY BAR */
+  .hp4-sticky-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    gap: 12px;
+    padding: 12px 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-top: 1px solid var(--hp4-rule);
+    backdrop-filter: blur(10px);
+    transform: translateY(100%);
+    transition: transform 0.35s cubic-bezier(.2,.7,.3,1);
+  }
+
+  .hp4-sticky-bar.is-visible {
+    transform: translateY(0);
+  }
+
+  .hp4-sticky-bar .hp4-btn {
+    flex: 1;
+    border-radius: 8px;
+  }
+
+  /* ANIMATIONS */
+  @keyframes hp4-pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(0.85); }
+  }
+
+  /* RESPONSIVE */
+  @media (min-width: 981px) {
+    .hp4-sticky-bar {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .hp4-container { width: calc(100% - 80px); }
+    .hp4-proof { padding: 40px 0; }
+    .hp4-section { padding: clamp(4rem, 6vw, 6rem) 0; }
+    .hp4-cert-grid { grid-template-columns: repeat(4, 1fr); }
+  }
+
+  @media (max-width: 860px) {
+    .hp4-container { width: calc(100% - 48px); }
+    .hp4-hero-grid { grid-template-columns: 1fr; min-height: unset; }
+    .hp4-hero-copy { padding: 40px 24px 32px; }
+    .hp4-hero-media { height: 56vw; min-height: 280px; max-height: 420px; }
+    .hp4-media-img--tall { border-radius: 0; height: 100%; aspect-ratio: unset; }
+    .hp4-hero h1 { font-size: clamp(2.4rem, 8vw, 3.6rem); }
+    .hp4-overlay-card { display: none; }
+    .hp4-proof { padding: 32px 0; }
+    .hp4-stats { grid-template-columns: repeat(2, 1fr); }
+    .hp4-section { padding: clamp(3rem, 5vw, 5rem) 0; }
+    .hp4-section-header { grid-template-columns: 1fr; gap: 16px; }
+    .hp4-diff-grid { grid-template-columns: repeat(2, 1fr); }
+    .hp4-cert-grid { grid-template-columns: repeat(3, 1fr); }
+    .hp4-process-grid { grid-template-columns: 1fr; }
+    .hp4-media-img--process { display: none; }
+    .hp4-contact-grid { grid-template-columns: 1fr; }
+    .hp4-faq-grid { grid-template-columns: 1fr; }
+    .hp4-faq-copy > p { max-width: 100%; }
+    .hp4-form-fields { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 540px) {
+    .hp4-container { width: calc(100% - 32px); }
+    .hp4-hero-copy { padding: 32px 16px 28px; }
+    .hp4-hero h1 {
+      font-size: 2.1rem;
+      line-height: 1.08;
+      overflow-wrap: anywhere;
+    }
+    .hp4-hero p {
+      max-width: 100%;
+      font-size: 16px;
+      overflow-wrap: anywhere;
+    }
+    .hp4-diff-grid { grid-template-columns: 1fr; }
+    .hp4-cert-grid { grid-template-columns: repeat(2, 1fr); }
+    .hp4-form { padding: 24px 16px; }
+  }
+</style>

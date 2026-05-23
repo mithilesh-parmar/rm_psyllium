@@ -1,7 +1,35 @@
+```
+# Dependencies
 node_modules/
+
+# Build outputs
 dist/
+build/
 .astro/
-.DS_Store
+
+# Environment variables
 .env
-.env.*
-!.env.example
+.env.local
+*.env.*
+
+# IDE specific
+.vscode/
+.idea/
+
+# Python cache (if any Python files exist in project)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+```
