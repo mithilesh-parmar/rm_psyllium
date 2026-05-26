@@ -99,7 +99,9 @@
       "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --version)",
       "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless=new --no-sandbox --disable-gpu --disable-software-rasterizer '--print-to-pdf=/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/RM Psyllium Brochure 2026.pdf' --print-to-pdf-no-header --no-pdf-header-footer --run-all-compositor-stages-before-draw --virtual-time-budget=5000 'file:///Users/mithileshparmar/Development/sancor_systems/rm_psyllium/RM Psyllium Brochure v5.html')",
       "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless=new --no-sandbox --disable-gpu '--print-to-pdf=/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/RM Psyllium Brochure 2026 v6.pdf' --print-to-pdf-no-header --no-pdf-header-footer --run-all-compositor-stages-before-draw --virtual-time-budget=5000 'file:///Users/mithileshparmar/Development/sancor_systems/rm_psyllium/RM Psyllium Brochure v6.html')",
-      "Bash(grep -v \"^Trying\\\\|^$\")"
+      "Bash(grep -v \"^Trying\\\\|^$\")",
+      "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless=new --no-sandbox --print-to-pdf=/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/business_card.pdf --no-pdf-header-footer --print-to-pdf-no-header file:///Users/mithileshparmar/Development/sancor_systems/rm_psyllium/business_card.html)",
+      "Bash(open /Users/mithileshparmar/Development/sancor_systems/rm_psyllium/business_card.pdf)"
     ],
     "additionalDirectories": [
       "/Users/mithileshparmar/Development/sancor_systems/rm_psyllium/src/pages/[lang]",

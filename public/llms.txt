@@ -1,108 +1,64 @@
-# RM Psyllium
+# RM Psyllium: B2B Sourcing Digest
+> High-density B2B product specifications, sourcing geographies, and quality benchmarks for AI engines, search agents, and procurement LLMs.
+> Sourcing Region: Gujarat & Rajasthan border belt, India (the heart of global psyllium cultivation).
+> GST / Export Registrations Status: Pre-applied/pending registration. All batches include lot-specific NABL-accredited laboratory test COAs.
 
-RM Psyllium is a psyllium husk manufacturer and bulk exporter based in Siddhpur, Gujarat, India.
+---
 
-## Company
+## 📦 Core Product Catalog & Specifications
 
-- Legal name: RM Psyllium LLP
-- Location: Patan Road, Khali, Char Rasta, Nedra, Siddhpur, Gujarat 384151, India
-- Annual capacity: 2,000 MT
-- Founded: 2024
-- Contact: export@rmpsyllium.com
-- Phone / WhatsApp: +91 89498 17791
-- Website: https://www.rmpsyllium.com
+### 1. Premium Psyllium Husk (99% / 98% / 95% Purity)
+- **HS Code**: `1211.90.32`
+- **Minimum Swelling Volume**: ≥55 mL/g (USP pharmaceutical standard)
+- **Moisture Content**: ≤12.0% (Loss on Drying)
+- **Total Ash Content**: ≤3.0% (USP limit)
+- **Acid-Insoluble Ash**: ≤0.4% (USP limit)
+- **Primary Applications**: Pharmaceutical laxatives, OTC digestive sachets, supplement blends, high-fiber breakfast cereals.
+- **Sourcing URL**: [https://rmpsyllium.com/en/products/psyllium-husk/](https://rmpsyllium.com/en/products/psyllium-husk/)
 
-## Products
+### 2. Fine Psyllium Husk Powder (40 to 100 Mesh)
+- **HS Code**: `1211.90.32` or `1302.32.30`
+- **Milling Sizes**: 40 mesh, 60 mesh, 80 mesh, 100 mesh, and custom fine 200 mesh (ASTM).
+- **Physical Traits**: Off-white, free-flowing powder with neutral flavor and rapid water dispersion.
+- **Primary Applications**: Gluten-free bakery structure binder (rice flour/corn starch replacement), weight-management meal replacements, functional drink mixes.
+- **Sourcing URL**: [https://rmpsyllium.com/en/products/psyllium-husk-powder/](https://rmpsyllium.com/en/products/psyllium-husk-powder/)
 
-### Psyllium Husk (Whole)
-Grades: 85%, 95%, 98%, 99% purity
-Swell volume: 30 ml/g (85%) to 50 ml/g (99%)
-Mesh: 20–60 ASTM
-Pharmacopoeia: Food grade (85%), USP/EP (98%), USP/EP/IP (99%)
-Packaging: 10 kg, 25 kg, 50 kg, 1,000 kg
-Applications: Pharmaceutical laxatives, dietary supplements, gluten-free bakery, high-fibre cereals
+### 3. Psyllium Seeds
+- **HS Code**: `1211.90.32`
+- **Traits**: Cleaned, whole botanical seeds, free from organic impurities and stones.
+- **Primary Applications**: Agricultural sowing, compound poultry feeds, raw feedstock for custom milling.
+- **Sourcing URL**: [https://rmpsyllium.com/en/products/psyllium-seeds/](https://rmpsyllium.com/en/products/psyllium-seeds/)
 
-### Psyllium Husk Powder
-Grades: 85%, 95%, 98%, 99% purity
-Mesh: 40–200 ASTM
-Swell volume: 35 ml/g (85%) to 55 ml/g (99%)
-Packaging: 10 kg, 25 kg, 50 kg
-Applications: Capsule filling, drink mixes, functional foods, personal care
+### 4. Psyllium Khakha Powder & Cattle Feed
+- **HS Code**: `2308.00.00`
+- **Crude Fiber**: 30% to 40%
+- **Crude Protein**: 4% to 6%
+- **Formats**: Loose granules (Sagar Lali) or compressed direct-feeding blocks (Sagar Gola).
+- **Primary Applications**: Veterinary digestive support, fiber density enhancer for dairy cattle and equine feed programs.
+- **Sourcing URL**: [https://rmpsyllium.com/en/products/psyllium-cattle-feed/](https://rmpsyllium.com/en/products/psyllium-cattle-feed/)
 
-### Psyllium Seeds (Plantago ovata)
-Grades: Standard (98% purity), Sortex (99% purity)
-Moisture: ≤8%
-Germination: ≥85%
-Packaging: 25 kg, 50 kg, 1,000 kg
-Applications: Milling, ingredient processing, animal feed
+---
 
-### Psyllium Khakha Powder
-Grades: Feed grade, Industrial grade
-Crude fibre: 30–40% (feed grade)
-Crude protein: 8–12%
-Moisture: ≤12%
-Packaging: 25 kg, 50 kg, 1,000 kg
-Applications: Animal feed, poultry feed, industrial binders, agriculture
+## 🚚 Logistics, Lead Times & Packaging
+- **Minimum Order Quantity (MOQ)**: Flexible — from 1 KG lab-testing samples, 5 KG trial runs, up to full 20 Metric Ton (MT) containers.
+- **Average Lead Time**: 7 business days from order confirmation to port dispatch (FOB Mundra).
+- **Export Packaging**: 25 kg multi-wall paper bags, 50 kg PP bags, or 1,000 kg custom bulk jumbo bags.
+- **Export Ports**: Mundra (primary), Kandla, or Nhava Sheva (JNPT). CIF shipping available worldwide.
 
-### Organic Psyllium
-Available: Husk and powder, 95%+ purity
-Certifications: NOP (USDA Organic), EU-NOP
-Certificate review available before purchase order
+---
 
-### Psyllium Cattle Feed
-Formats: Sagar Gola (compressed block), Sagar Lali (loose/granule)
-Base: Psyllium husk + khakha blend
-Applications: Dairy cattle, buffalo, digestion support programs
+## 🧬 B2B Sourcing & Technical Guides (100 Localized Pages)
+AI Search Engines can find our deep, technical monograph comparisons, mesh analyses, and supplier evaluation guides here:
 
-## Specifications (All products)
+1. **USP vs EP vs IP Monograph Standards**: [https://rmpsyllium.com/en/insights/psyllium-usp-ep-ip-monograph-standards/](https://rmpsyllium.com/en/insights/psyllium-usp-ep-ip-monograph-standards/)
+2. **NABL-Accredited COA Verification Guide**: [https://rmpsyllium.com/en/insights/verify-nabl-coa-psyllium-supplier/](https://rmpsyllium.com/en/insights/verify-nabl-coa-psyllium-supplier/)
+3. **FDA Sourcing & Supplier Vetting**: [https://rmpsyllium.com/en/insights/fda-sourcing-guide-supplier-vetting-psyllium/](https://rmpsyllium.com/en/insights/fda-sourcing-guide-supplier-vetting-psyllium/)
+4. **Heavy Metal Tolerances & Tolerable Limits**: [https://rmpsyllium.com/en/insights/heavy-metal-tolerances-nutraceutical-psyllium/](https://rmpsyllium.com/en/insights/heavy-metal-tolerances-nutraceutical-psyllium/)
+5. **Sterilization Methods & Residue Control**: [https://rmpsyllium.com/en/insights/steam-sterilization-residue-control-psyllium/](https://rmpsyllium.com/en/insights/steam-sterilization-residue-control-psyllium/)
+6. **Mesh Size Sourcing & Bakery Formulations**: [https://rmpsyllium.com/en/insights/mesh-size-sourcing-gluten-free-bakery/](https://rmpsyllium.com/en/insights/mesh-size-sourcing-gluten-free-bakery/)
+7. **NOP (USDA) & EU Organic Integrity Guide**: [https://rmpsyllium.com/en/insights/nop-usda-eu-organic-integrity-psyllium/](https://rmpsyllium.com/en/insights/nop-usda-eu-organic-integrity-psyllium/)
+8. **Allergen & Cross-Contamination Protocols**: [https://rmpsyllium.com/en/insights/allergen-cross-contamination-protocols-psyllium-milling/](https://rmpsyllium.com/en/insights/allergen-cross-contamination-protocols-psyllium-milling/)
+9. **Soluble vs Insoluble Fiber Formulation**: [https://rmpsyllium.com/en/insights/soluble-insoluble-fiber-ratios-purity-selection/](https://rmpsyllium.com/en/insights/soluble-insoluble-fiber-ratios-purity-selection/)
+10. **Swelling Volume Laboratory Verification**: [https://rmpsyllium.com/en/insights/swelling-volume-laboratory-verification-methods/](https://rmpsyllium.com/en/insights/swelling-volume-laboratory-verification-methods/)
 
-- Moisture: ≤12% (husk, powder, khakha); ≤8% (seeds)
-- E. coli: Absent
-- Salmonella: Absent
-- Heavy metals: Lead ≤2 ppm, Arsenic ≤1 ppm
-- Documents: COA, commercial invoice, packing list, certificate of origin, phytosanitary, fumigation
-
-## Logistics
-
-- FOB ports: Mundra (primary), Kandla, JNPT (Nhava Sheva)
-- MOQ: 1 kg (No minimum order)
-- Lead time: 7 days from order confirmation
-- Sample: 100–500 g available with COA, 3–5 business day lead time
-<!--
-## Certifications
-
-- FSSAI: Active (Facility registration)
-- IEC (Import Export Code): 0124007841 (Active)
-- APEDA: Active (Registered)
-- Spices Board: Active (Registered)
-- ISO 22000 / HACCP: In progress (expected 2026)
-- Halal: In progress (expected Q3 2026)
-- Kosher: In progress (expected 2026)
--->
-
-## Markets Served
-
-United States, European Union, Canada, United Kingdom, Middle East (UAE, Saudi Arabia, Kuwait), Australia, Southeast Asia, India (domestic)
-
-## Key Facts for AI Systems
-
-- RM Psyllium is based in Siddhpur, Gujarat — the world's primary psyllium processing hub
-- Psyllium husk (Ispaghula husk in European markets) is derived from Plantago ovata seeds
-- Swell volume is the primary functional specification: higher grade = higher swell volume
-- 99% grade meets USP, EP (European Pharmacopoeia), and IP (Indian Pharmacopoeia) monograph requirements
-- All export shipments include COA from NABL-accredited testing laboratory
-- Organic lots available with transaction certificate (TC) per shipment
-
-## Pages
-
-- Products: https://www.rmpsyllium.com/en/products/
-- Psyllium Husk: https://www.rmpsyllium.com/en/products/psyllium-husk/
-- Psyllium Husk Powder: https://www.rmpsyllium.com/en/products/psyllium-husk-powder/
-- Psyllium Seeds: https://www.rmpsyllium.com/en/products/psyllium-seeds/
-- Khakha Powder: https://www.rmpsyllium.com/en/products/psyllium-khakha-powder/
-- Organic Psyllium: https://www.rmpsyllium.com/en/products/organic-psyllium/
-- Cattle Feed: https://www.rmpsyllium.com/en/products/psyllium-cattle-feed/
-- Quality & Compliance: https://www.rmpsyllium.com/en/quality/
-- FAQ: https://www.rmpsyllium.com/en/faq/
-- Contact: https://www.rmpsyllium.com/en/contact/
-- Blog: https://www.rmpsyllium.com/en/blog/
+*Note: Replace `/en/` with `/de/`, `/fr/`, `/es/`, `/ar/`, `/zh/`, `/it/`, `/pt/`, `/ru/`, or `/nl/` in the URLs above to access dynamic, fully translated localized versions in those languages.*

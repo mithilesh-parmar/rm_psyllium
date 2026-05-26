@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visiting Card — RM Psyllium LLP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg:       #fafaf7;
+      --surface:  #f5f3ec;
+      --green:    #5f7044;
+      --green-dk: #4a5a33;
+      --green-lt: #dfe4cf;
+      --gold:     #b8753a;
+      --gold-lt:  rgba(184,117,58,0.55);
+      --dark:     #1a1c18;
+      --ink:      #1a1c18;
+      --muted:    #7a7e72;
+      --rule:     rgba(26,28,24,0.10);
+
+      /* 3.5 × 2 in at 96 dpi × 2 = 672 × 384 px */
+      --cw: 672px;
+      --ch: 384px;
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: #e2dfd7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 56px 24px 48px;
+      gap: 0;
+    }
+
+    /* ── Page header ── */
+    .page-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 40px;
+    }
+
+    .page-eyebrow {
+      font-size: 9.5px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #a09b93;
+      font-weight: 600;
+    }
+
+    .page-title {
+      font-size: 13px;
+      color: #5a564f;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+    }
+
+    /* ── Cards row ── */
+    .cards-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 36px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card-label {
+      font-size: 9px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #a09b93;
+      font-weight: 600;
+    }
+
+    /* ── Flip mechanics ── */
+    .flip-container {
+      width: var(--cw);
+      height: var(--ch);
+      perspective: 1400px;
+      cursor: pointer;
+    }
+
+    .flip-inner {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.72s cubic-bezier(0.45, 0, 0.15, 1);
+      will-change: transform;
+    }
+
+    .flip-container.is-flipped .flip-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-face {
+      position: absolute;
+      inset: 0;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow:
+        0 1px 2px rgba(26,28,24,0.06),
+        0 6px 18px rgba(26,28,24,0.11),
+        0 20px 48px rgba(26,28,24,0.09);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .flip-container:hover .card-face {
+      box-shadow:
+        0 2px 4px rgba(26,28,24,0.07),
+        0 10px 28px rgba(26,28,24,0.14),
+        0 32px 64px rgba(26,28,24,0.12);
+    }
+
+    /* ══════════════════════════════════════════
+       FRONT CARD
+    ══════════════════════════════════════════ */
+    .card-front {
+      background: var(--bg);
+      display: flex;
+      flex-direction: row;
+    }
+
+    /* Olive stripe */
+    .front-stripe {
+      width: 16px;
+      flex-shrink: 0;
+      background: var(--green);
+      position: relative;
+    }
+
+    .front-stripe::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(255,255,255,0.06) 0%, transparent 60%);
+    }
+
+    /* Main content area */
+    .front-body {
+      flex: 1;
+      padding: 34px 32px 26px 26px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Company brand */
+    .brand-row {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      margin-bottom: 3px;
+    }
+
+    .brand-main {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: 0.075em;
+      color: var(--green);
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .brand-llp {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      color: var(--gold);
+      text-transform: uppercase;
+      line-height: 1;
+      padding-bottom: 1px;
+    }
+
+    .brand-sub {
+      font-size: 9px;
+      letter-spacing: 0.07em;
+      color: var(--muted);
+      font-weight: 400;
+      margin-bottom: 18px;
+      line-height: 1;
+    }
+
+    /* Person */
+    .person-name {
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--dark);
+      letter-spacing: 0.01em;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    /* Gold rule */
+    .gold-rule {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .gold-rule-line {
+      width: 36px;
+      height: 1.5px;
+      background: var(--gold);
+    }
+
+    .gold-rule-dot {
+      width: 3.5px;
+      height: 3.5px;
+      border-radius: 50%;
+      background: var(--gold);
+      opacity: 0.5;
+    }
+
+    /* Contact list */
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .contact-ico {
+      width: 12px;
+      height: 12px;
+      flex-shrink: 0;
+      color: var(--green);
+      opacity: 0.85;
+    }
+
+    .contact-val {
+      font-size: 10px;
+      color: var(--muted);
+      letter-spacing: 0.025em;
+      font-weight: 400;
+      line-height: 1;
+    }
+
+    /* Botanical leaf motif — bottom right */
+    .leaf-motif {
+      position: absolute;
+      bottom: -4px;
+      right: -4px;
+      width: 110px;
+      height: 110px;
+      opacity: 0.13;
+      pointer-events: none;
+    }
+
+    /* Subtle warm surface tint — top right */
+    .front-tint {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 160px;
+      height: 160px;
+      background: radial-gradient(ellipse at top right, rgba(184,117,58,0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+
+    /* ══════════════════════════════════════════
+       BACK CARD
+    ══════════════════════════════════════════ */
+    .card-back {
+      background: var(--dark);
+      transform: rotateY(180deg);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Large watermark */
+    .wm {
+      position: absolute;
+      top: 50%;
+      left: 48%;
+      transform: translate(-50%, -58%);
+      font-size: 260px;
+      font-weight: 900;
+      color: rgba(255,255,255,0.03);
+      letter-spacing: -0.06em;
+      line-height: 1;
+      user-select: none;
+      pointer-events: none;
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Subtle noise overlay */
+    .back-noise {
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+      opacity: 0.025;
+      pointer-events: none;
+    }
+
+    /* Thin gold top line */
+    .back-top-line {
+      height: 2px;
+      background: linear-gradient(90deg, transparent 0%, var(--gold) 30%, var(--gold) 70%, transparent 100%);
+      opacity: 0.4;
+      flex-shrink: 0;
+    }
+
+    /* Back body */
+    .back-body {
+      flex: 1;
+      padding: 28px 36px 0;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .back-brand-row {
+      display: flex;
+      align-items: baseline;
+      gap: 7px;
+      margin-bottom: 3px;
+    }
+
+    .back-brand-main {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: var(--gold);
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    .back-brand-llp {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      color: var(--gold-lt);
+      text-transform: uppercase;
+    }
+
+    .back-tagline {
+      font-size: 9.5px;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+      margin-bottom: 22px;
+    }
+
+    /* Products */
+    .products {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      flex: 1;
+      gap: 0;
+    }
+
+    .product {
+      padding-right: 16px;
+      position: relative;
+    }
+
+    .product + .product {
+      padding-left: 20px;
+      border-left: 1px solid rgba(255,255,255,0.07);
+    }
+
+    .product-name {
+      font-size: 11px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.88);
+      letter-spacing: 0.04em;
+      margin-bottom: 5px;
+      line-height: 1.3;
+    }
+
+    .product-grades {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .product-grade {
+      font-size: 9px;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+      line-height: 1.5;
+    }
+
+    /* Cert bar */
+    .cert-bar {
+      background: var(--green);
+      padding: 10px 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      position: relative;
+      z-index: 1;
+      margin-top: 22px;
+      flex-shrink: 0;
+    }
+
+    .cert-item {
+      font-size: 8px;
+      font-weight: 700;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.88);
+      white-space: nowrap;
+    }
+
+    .cert-sep {
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.35);
+      flex-shrink: 0;
+    }
+
+    /* ── Controls ── */
+    .controls {
+      margin-top: 32px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn {
+      font-family: 'Inter', sans-serif;
+      font-size: 9.5px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 10px 22px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.18s ease;
+    }
+
+    .btn-primary {
+      background: var(--green);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: var(--green-dk);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(95,112,68,0.35);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: #8a867e;
+      border: 1px solid rgba(26,28,24,0.16);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--green);
+      color: var(--green);
+    }
+
+    .click-hint {
+      margin-top: 14px;
+      font-size: 9px;
+      color: #a09b93;
+      letter-spacing: 0.08em;
+      text-align: center;
+    }
+
+    /* ── Print styles ── */
+    @media print {
+      @page { margin: 0.5in; size: 8.5in 11in; }
+
+      body {
+        background: white;
+        padding: 0;
+        justify-content: flex-start;
+        gap: 0.5in;
+      }
+
+      .page-header, .controls, .click-hint, .card-label { display: none !important; }
+
+      .cards-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5in;
+      }
+
+      .flip-container {
+        width: 3.5in;
+        height: 2in;
+        perspective: none;
+        cursor: default;
+      }
+
+      .flip-inner {
+        transform: none !important;
+        transition: none;
+      }
+
+      .flip-container.is-flipped .flip-inner {
+        transform: none !important;
+      }
+
+      .card-face {
+        box-shadow: 0 0 0 0.5px rgba(0,0,0,0.15);
+        transition: none;
+        border-radius: 5px;
+      }
+
+      /* Show front on front-card, back on back-card */
+      #frontCard .card-back { display: none; }
+      #backCard  .card-front { display: none; }
+      #backCard  .card-back  { transform: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="page-header">
+    <span class="page-eyebrow">Visiting Card Preview</span>
+    <span class="page-title">RM Psyllium LLP · Standard 3.5 × 2 in</span>
+  </header>
+
+  <div class="cards-row">
+
+    <!-- ─── FRONT ─── -->
+    <div class="card-wrap">
+      <span class="card-label">Front</span>
+      <div class="flip-container" id="frontCard" onclick="flip(this)">
+        <div class="flip-inner">
+
+          <!-- Front face -->
+          <div class="card-face card-front">
+            <div class="front-stripe"></div>
+            <div class="front-body">
+              <div class="front-tint"></div>
+
+              <div class="brand-row">
+                <span class="brand-main">RM Psyllium</span>
+                <span class="brand-llp">LLP</span>
+              </div>
+              <div class="brand-sub">Bulk Psyllium Manufacturer &amp; Exporter</div>
+
+              <div class="person-name">Mithilesh Parmar</div>
+
+              <div class="gold-rule">
+                <div class="gold-rule-line"></div>
+                <div class="gold-rule-dot"></div>
+              </div>
+
+              <div class="contacts">
+                <div class="contact-row">
+                  <!-- Phone -->
+                  <svg class="contact-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.53a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                  <span class="contact-val">+91 80000 08381</span>
+                </div>
+                <div class="contact-row">
+                  <!-- Email -->
+                  <svg class="contact-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                  <span class="contact-val">export@rmpsyllium.com</span>
+                </div>
+                <div class="contact-row">
+                  <!-- Globe -->
+                  <svg class="contact-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="2" y1="12" x2="22" y2="12"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                  </svg>
+                  <span class="contact-val">www.rmpsyllium.com</span>
+                </div>
+                <div class="contact-row">
+                  <!-- Pin -->
+                  <svg class="contact-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                  <span class="contact-val">Siddhpur, Gujarat, India</span>
+                </div>
+              </div>
+
+              <!-- Botanical leaf corner -->
+              <svg class="leaf-motif" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Primary leaf -->
+                <path d="M115 115 C115 115 12 105 6 6 C42 18 94 64 115 115Z" fill="#5f7044"/>
+                <!-- Secondary leaf -->
+                <path d="M115 115 C115 115 60 122 28 80 C62 72 98 92 115 115Z" fill="#5f7044" opacity="0.55"/>
+                <!-- Vein lines -->
+                <line x1="60" y1="60" x2="115" y2="115" stroke="#fafaf7" stroke-width="0.9" opacity="0.22"/>
+                <path d="M38 80 Q72 70 115 115" stroke="#fafaf7" stroke-width="0.6" fill="none" opacity="0.18"/>
+                <path d="M68 38 Q90 72 115 115" stroke="#fafaf7" stroke-width="0.6" fill="none" opacity="0.18"/>
+                <path d="M86 18 Q96 66 115 115" stroke="#fafaf7" stroke-width="0.6" fill="none" opacity="0.18"/>
+                <path d="M104 6 Q108 56 115 115" stroke="#fafaf7" stroke-width="0.5" fill="none" opacity="0.14"/>
+              </svg>
+
+            </div>
+          </div>
+
+          <!-- Back face (seen when this card is flipped) -->
+          <div class="card-face card-back">
+            <div class="wm">RM</div>
+            <div class="back-noise"></div>
+            <div class="back-top-line"></div>
+            <div class="back-body">
+              <div class="back-brand-row">
+                <span class="back-brand-main">RM Psyllium</span>
+                <span class="back-brand-llp">LLP</span>
+              </div>
+              <div class="back-tagline">Direct-from-source psyllium · 38+ export markets</div>
+
+              <div class="products">
+                <div class="product">
+                  <div class="product-name">Psyllium Husk</div>
+                  <div class="product-grades">
+                    <span class="product-grade">USP / EP / BP</span>
+                    <span class="product-grade">85% · 95% · 99%</span>
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="product-name">Psyllium Powder</div>
+                  <div class="product-grades">
+                    <span class="product-grade">Fine &amp; Coarse</span>
+                    <span class="product-grade">Pharma &amp; Food grade</span>
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="product-name">Psyllium Seeds</div>
+                  <div class="product-grades">
+                    <span class="product-grade">Cleaned &amp; Sorted</span>
+                    <span class="product-grade">Feed &amp; Industrial</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cert-bar">
+              <span class="cert-item">NABL Accredited</span>
+              <div class="cert-sep"></div>
+              <span class="cert-item">ISO Certified</span>
+              <div class="cert-sep"></div>
+              <span class="cert-item">2,000 MT Annual Capacity</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── BACK ─── -->
+    <div class="card-wrap">
+      <span class="card-label">Back</span>
+      <div class="flip-container is-flipped" id="backCard" onclick="flip(this)">
+        <div class="flip-inner">
+
+          <!-- Front face (visible when back-card flips) -->
+          <div class="card-face card-front">
+            <div class="front-stripe"></div>
+            <div class="front-body">
+              <div class="front-tint"></div>
+
+              <div class="brand-row">
+                <span class="brand-main">RM Psyllium</span>
+                <span class="brand-llp">LLP</span>
+              </div>
+              <div class="brand-sub">Bulk Psyllium Manufacturer &amp; Exporter</div>
+
+              <div class="person-name">Mithilesh Parmar</div>
+
+              <div class="gold-rule">
+                <div class="gold-rule-line"></div>
+                <div class="gold-rule-dot"></div>
+              </div>
+
+              <div class="contacts">
+                <div class="contact-row">
+                  <svg class="contact-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.53a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                  <span class="contact-val">+91 80000 08381</span>
+                </div>
+                <div class="contact-row">
+                  <svg class="contact-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                  <span class="contact-val">export@rmpsyllium.com</span>
+                </div>
+                <div class="contact-row">
+                  <svg class="contact-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="2" y1="12" x2="22" y2="12"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                  </svg>
+                  <span class="contact-val">www.rmpsyllium.com</span>
+                </div>
+                <div class="contact-row">
+                  <svg class="contact-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                  <span class="contact-val">Siddhpur, Gujarat, India</span>
+                </div>
+              </div>
+
+              <svg class="leaf-motif" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M115 115 C115 115 12 105 6 6 C42 18 94 64 115 115Z" fill="#5f7044"/>
+                <path d="M115 115 C115 115 60 122 28 80 C62 72 98 92 115 115Z" fill="#5f7044" opacity="0.55"/>
+                <line x1="60" y1="60" x2="115" y2="115" stroke="#fafaf7" stroke-width="0.9" opacity="0.22"/>
+                <path d="M38 80 Q72 70 115 115" stroke="#fafaf7" stroke-width="0.6" fill="none" opacity="0.18"/>
+                <path d="M68 38 Q90 72 115 115" stroke="#fafaf7" stroke-width="0.6" fill="none" opacity="0.18"/>
+                <path d="M86 18 Q96 66 115 115" stroke="#fafaf7" stroke-width="0.6" fill="none" opacity="0.18"/>
+                <path d="M104 6 Q108 56 115 115" stroke="#fafaf7" stroke-width="0.5" fill="none" opacity="0.14"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Back face -->
+          <div class="card-face card-back">
+            <div class="wm">RM</div>
+            <div class="back-noise"></div>
+            <div class="back-top-line"></div>
+            <div class="back-body">
+              <div class="back-brand-row">
+                <span class="back-brand-main">RM Psyllium</span>
+                <span class="back-brand-llp">LLP</span>
+              </div>
+              <div class="back-tagline">Direct-from-source psyllium · 38+ export markets</div>
+
+              <div class="products">
+                <div class="product">
+                  <div class="product-name">Psyllium Husk</div>
+                  <div class="product-grades">
+                    <span class="product-grade">USP / EP / BP</span>
+                    <span class="product-grade">85% · 95% · 99%</span>
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="product-name">Psyllium Powder</div>
+                  <div class="product-grades">
+                    <span class="product-grade">Fine &amp; Coarse</span>
+                    <span class="product-grade">Pharma &amp; Food grade</span>
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="product-name">Psyllium Seeds</div>
+                  <div class="product-grades">
+                    <span class="product-grade">Cleaned &amp; Sorted</span>
+                    <span class="product-grade">Feed &amp; Industrial</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cert-bar">
+              <span class="cert-item">NABL Accredited</span>
+              <div class="cert-sep"></div>
+              <span class="cert-item">ISO Certified</span>
+              <div class="cert-sep"></div>
+              <span class="cert-item">2,000 MT Annual Capacity</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="controls">
+    <button class="btn btn-primary" onclick="flipAll()">Flip Both Cards</button>
+    <button class="btn btn-secondary" onclick="window.print()">Print / Export PDF</button>
+  </div>
+
+  <p class="click-hint">Click any card to flip it individually · Print to PDF for production-ready files</p>
+
+  <script>
+    function flip(el) {
+      el.classList.toggle('is-flipped');
+    }
+
+    function flipAll() {
+      document.querySelectorAll('.flip-container').forEach(el => {
+        el.classList.toggle('is-flipped');
+      });
+    }
+  </script>
+
+</body>
+</html>

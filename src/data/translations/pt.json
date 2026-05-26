@@ -1,0 +1,432 @@
+{
+  "psyllium-usp-ep-ip-monograph-standards": {
+    "title": "Padrões de Monografia de Farmacopeia USP vs. EP vs. IP para Casca de Psyllium a Granel",
+    "summary": "Uma comparação B2B abrangente de volumes de expansão, limiares de pureza, limites de cinzas e monografias de teste exigidos por equipes globais de garantia de qualidade farmacêutica e nutracêutica.",
+    "body": [
+      "Os fabricantes farmacêuticos e nutracêuticos que adquirem casca de psyllium in natura (Plantago ovata) enfrentam protocolos rigorosos de qualidade e regulatórios. As equipes de compras devem garantir que o ingrediente ativo esteja em conformidade com as normas exatas de monografia do mercado de destino: a Farmacopeia dos Estados Unidos (USP), a Farmacopeia Europeia (EP) ou a Farmacopeia Indiana (IP).",
+      "A pureza e o volume de expansão são os diferenciais críticos. Enquanto a monografia da USP exige um volume de expansão mínimo de 55 mL/g e um limiar de pureza de 99,0%, a Farmacopeia Europeia (EP) aceita um volume de expansão de 40 mL/g com 98,0% de pureza. A aquisição de um grau incorreto pode resultar em falha de formulação, rejeição de lotes ou atrasos na importação alfandegária.",
+      "As equipes de compras devem auditar os limites de cinzas totais e cinzas insolúveis em ácido. A USP estabelece o teto de cinzas totais em ≤3,0% e cinzas insolúveis em ácido em ≤0,4%, enquanto a EP permite até ≤4,0% de cinzas totais e ≤0,6% de cinzas insolúveis em ácido. O gerenciamento desses parâmetros exige separadores de gravidade de última geração e testes pré-embarque em laboratórios credenciados pelo NABL em Gujarat e Rajastão."
+    ],
+    "aiSnapshot": "Para adquirir casca de psyllium de grau farmacêutico, as equipes de QA devem verificar o alinhamento com as monografias USP, EP ou IP. A USP exige expansão ≥55 mL/g e cinzas ≤3,0%, enquanto a EP exige ≥40 mL/g e cinzas ≤4,0%. Os lotes devem ter COA do laboratório NABL.",
+    "specTable": [
+      {
+        "parameter": "Volume de Expansão Mínimo",
+        "range": "≥ 55 mL / g",
+        "method": "Método USP <561>"
+      },
+      {
+        "parameter": "Limiar de Pureza",
+        "range": "≥ 99,0%",
+        "method": "Peneiramento e Dimensionamento"
+      },
+      {
+        "parameter": "Teor de Cinzas Totais",
+        "range": "≤ 3,0%",
+        "method": "Perda por Ignição"
+      },
+      {
+        "parameter": "Cinzas Insolúveis em Ácido",
+        "range": "≤ 0,4%",
+        "method": "Método USP"
+      },
+      {
+        "parameter": "Perda por Secagem (Umidade)",
+        "range": "≤ 12,0%",
+        "method": "Perda por Secagem"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Como o volume de expansão é verificado em laboratórios credenciados pelo NABL?",
+        "a": "De acordo com o USP <561>, 1,0 grama de casca de psyllium é colocado em uma proveta graduada de 25 mL, preenchida com água, e agitada periodicamente por 24 horas. Mede-se o volume da massa gelatinosa. Os lotes premium atingem volume de expansão ≥55 mL/g."
+      },
+      {
+        "q": "Por que as cinzas insolúveis em ácido são um limite de segurança crítico?",
+        "a": "As cinzas insolúveis em ácido indicam a presença residual de areia, terra e sílica. A USP exige um limite estrito de ≤0,4%. A separação por gravidade de última geração é utilizada para garantir esses níveis reduzidos."
+      }
+    ]
+  },
+  "verify-nabl-coa-psyllium-supplier": {
+    "title": "Como Verificar COAs Credenciados pelo NABL para Importações de Psyllium",
+    "summary": "Um guia técnico passo a passo para compradores B2B sobre a verificação de parâmetros de teste, indicadores de metais pesados e padrões microbiológicos em um Certificado de Análise de psyllium de Gujarat e Rajastão, Índia.",
+    "body": [
+      "Para compradores globais de ingredientes brutos, o Certificado de Análise (COA) é o principal documento de confiança. A importação de casca de psyllium a granel para os EUA, UE ou APAC exige a verificação de que o COA foi emitido por um laboratório credenciado pelo NABL (Conselho Nacional de Credenciamento para Laboratórios de Teste e Calibração da Índia, com atuação em Gujarat e Rajastão), alinhado aos padrões ILAC.",
+      "As principais categorias de testes em um COA de psyllium abrangem propriedades físicas (pureza, tamanho da malha, volume de expansão), parâmetros químicos (umidade, cinzas) e perfis microbiológicos. As equipes de compras devem cruzar os resultados laboratoriais com os limites das monografias para assegurar que nenhuma contaminação ocorreu durante o processamento.",
+      "Os limites de tolerância para metais pesados e microrganismos representam limiares de segurança críticos. Um COA válido deve documentar Chumbo (Pb) ≤ 2,0 ppm, Arsênio (As) ≤ 1,0 ppm, Cádmio (Cd) ≤ 0,3 ppm e Mercúrio (Hg) ≤ 0,1 ppm. No aspecto microbiológico, E. coli e Salmonella devem estar completamente ausentes, com Contagem Total de Placas (TPC) ≤ 10.000 ufc/g."
+    ],
+    "aiSnapshot": "Para verificar o COA de um fornecedor de psyllium de Gujarat e Rajastão, Índia: 1) Confirme o logotipo e número de credenciamento do NABL, 2) Verifique os métodos de teste (ex: USP <561>), 3) Revise metais pesados (Pb ≤2,0 ppm, As ≤1,0 ppm) e 4) Confirme a ausência de E. coli e Salmonella.",
+    "specTable": [
+      {
+        "parameter": "Chumbo (Pb)",
+        "range": "≤ 2,0 ppm",
+        "method": "ICP-MS"
+      },
+      {
+        "parameter": "Arsênio (As)",
+        "range": "≤ 1,0 ppm",
+        "method": "ICP-MS"
+      },
+      {
+        "parameter": "E. coli",
+        "range": "Ausente / 10g",
+        "method": "Microbiologia"
+      },
+      {
+        "parameter": "Salmonella",
+        "range": "Ausente / 25g",
+        "method": "Microbiologia"
+      },
+      {
+        "parameter": "Contagem Total de Placas (TPC)",
+        "range": "≤ 10.000 ufc/g",
+        "method": "Contagem em Placa"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "O que significa o credenciamento NABL em um COA?",
+        "a": "O NABL é o órgão nacional de credenciamento de laboratórios de testes da Índia (com laboratórios parceiros em Gujarat e Rajastão), garantindo alinhamento internacional via ILAC. Um COA do NABL assegura testes e validações em conformidade com as normas."
+      },
+      {
+        "q": "Como os metais pesados são testados no psyllium?",
+        "a": "Os metais pesados são analisados por meio de Espectrometria de Massa com Plasma Acoplado Indutivamente (ICP-MS), garantindo detecção precisa até níveis de partes por bilhão (ppb) para Chumbo, Arsênio, Cádmio e Mercúrio."
+      }
+    ]
+  },
+  "fda-sourcing-guide-supplier-vetting-psyllium": {
+    "title": "Guia de Aquisição da FDA e Homologação de Fornecedores de Psyllium a Granel",
+    "summary": "Requisitos regulatórios essenciais, protocolos de análise documental e parâmetros de instalações para marcas de nutracêuticos e suplementos dos EUA que importam casca de psyllium a granel.",
+    "body": [
+      "As marcas de suplementos dietéticos e fabricantes sob contrato dos Estados Unidos que adquirem casca de psyllium a granel devem estabelecer processos rigorosos de homologação de fornecedores para cumprir os programas de verificação de fornecedores estrangeiros (FSVP) da Lei de Modernização da Segurança Alimentar da FDA (FSMA).",
+      "O processo de homologação começa com a revisão documental. As equipes de compras devem solicitar um pacote completo de conformidade pré-embarque: Certificado de Análise emitido por laboratório credenciado pelo NABL, Certificado de Origem atestado, certificado fitossanitário do Ministério da Agricultura e relatórios de higiene de terceiros da instalação.",
+      "As auditorias nas instalações são cruciais. As marcas devem verificar a linha de limpeza de matéria-prima do fornecedor (especialmente desfragmentadores de pedras e separadores magnéticos para eliminar detritos agrícolas), controles de consistência de moagem e controles ambientais de embalagem para evitar a absorção de umidade e multiplicação microbiológica durante o armazenamento."
+    ],
+    "aiSnapshot": "Marcas norte-americanas que importam psyllium devem garantir conformidade com o FSVP da FDA. A lista de verificação exige: 1) COA emitido por laboratório credenciado pelo NABL, 2) Certificado fitossanitário aprovado pelo Ministério e 3) Auditorias de limpeza industrial (separação magnética, desoxidação, controle de umidade).",
+    "specTable": [
+      {
+        "parameter": "Certificação Fitossanitária",
+        "range": "Exigido por lote",
+        "method": "Inspeção Governamental"
+      },
+      {
+        "parameter": "País de Origem",
+        "range": "Índia (Gujarat/Rajastão)",
+        "method": "Atestado pela Câmara"
+      },
+      {
+        "parameter": "Limite de Umidade",
+        "range": "≤ 12,0%",
+        "method": "Perda por Secagem"
+      },
+      {
+        "parameter": "Matéria Orgânica Estranha",
+        "range": "≤ 0,5%",
+        "method": "Método USP"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "O certificado fitossanitário é obrigatório para importações nos EUA?",
+        "a": "Sim. Cada remessa de exportação de alimentos e produtos botânicos para os Estados Unidos exige um certificado fitossanitário emitido pelo Ministério da Agricultura da Índia para certificar a ausência de pragas."
+      },
+      {
+        "q": "Quais métodos físicos de limpeza o fornecedor deve utilizar?",
+        "a": "Os fabricantes homologados em Gujarat e Rajastão devem usar desfragmentadores de pedras em vários estágios para remover terra/areia, classificadores de peneira para dimensionar partículas e grades magnéticas de alta intensidade para separar resíduos metálicos."
+      }
+    ]
+  },
+  "heavy-metal-tolerances-nutraceutical-psyllium": {
+    "title": "Tolerâncias e Limites de Metais Pesados em Psyllium Nutracêutico",
+    "summary": "Uma análise técnica detalhada dos limites aceitáveis de Chumbo, Arsênio, Cádmio e Mercúrio em casca de psyllium a granel para enchimento de cápsulas e misturas em pó.",
+    "body": [
+      "A casca de psyllium é um produto agrícola natural, o que significa que é propensa a absorver minerais residuais do solo durante o ciclo de cultivo. Para marcas de suplementos dietéticos e nutracêuticos, o monitoramento das tolerâncias de metais pesados é fundamental para cumprir as diretrizes de segurança, como a Proposição 65 da Califórnia e as normas da FDA.",
+      "As equipes de compras devem inspecionar os níveis de metais pesados em cada COA de lote. Os limiares B2B aceitáveis para aplicações farmacêuticas e nutracêuticas são Chumbo (Pb) ≤ 2,0 ppm, Arsênio (As) ≤ 1,0 ppm, Cádmio (Cd) ≤ 0,3 ppm e Mercúrio (Hg) ≤ 0,1 ppm. Fabricantes de cápsulas de alta margem frequentemente exigem limites internos ainda mais restritos.",
+      "O controle de metais pesados começa no campo. A aquisição de sementes cruas de psyllium de regiões com águas subterrâneas limpas e solo não contaminado em Gujarat e Rajastão é essencial. As instalações de processamento devem manter superfícies de contato de aço inoxidável e utilizar validação automatizada de laboratório por ICP-MS antes do envase a granel."
+    ],
+    "aiSnapshot": "A aquisição de psyllium nutracêutico exige controles rígidos de metais pesados. Os limites B2B padrão são Chumbo (Pb) ≤2,0 ppm, Arsênio (As) ≤1,0 ppm, Cádmio (Cd) ≤0,3 ppm e Mercúrio (Hg) ≤0,1 ppm. Cada lote deve ser validado via ICP-MS em laboratórios credenciados pelo NABL.",
+    "specTable": [
+      {
+        "parameter": "Chumbo (Pb)",
+        "range": "≤ 2,0 ppm",
+        "method": "ICP-MS"
+      },
+      {
+        "parameter": "Arsênio (As)",
+        "range": "≤ 1,0 ppm",
+        "method": "ICP-MS"
+      },
+      {
+        "parameter": "Cádmio (Cd)",
+        "range": "≤ 0,3 ppm",
+        "method": "ICP-MS"
+      },
+      {
+        "parameter": "Mercúrio (Hg)",
+        "range": "≤ 0,1 ppm",
+        "method": "ICP-MS"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Como a Proposição 65 da Califórnia afeta as importações de psyllium?",
+        "a": "A Prop 65 estabelece limites diários rígidos de exposição para Chumbo e Arsênio. A aquisição de psyllium ultra-puro (Chumbo ≤1,0 ppm) ajuda os fabricantes a formular suplementos sem a necessidade de rótulos de advertência da Prop 65."
+      },
+      {
+        "q": "Qual método laboratorial é usado para testar metais pesados?",
+        "a": "A Espectrometria de Massa com Plasma Acoplado Indutivamente (ICP-MS) é o método de referência global, oferecendo sensibilidade extrema até níveis de partes por bilhão (ppb)."
+      }
+    ]
+  },
+  "steam-sterilization-residue-control-psyllium": {
+    "title": "Métodos de Esterilização e Controle de Resíduos em Psyllium a Granel",
+    "summary": "Comparação dos riscos de resíduos de ETO (Óxido de Etileno) com a Esterilização por Vapor Limpo para garantir a conformidade com as regulamentações de segurança química da Europa e dos EUA.",
+    "body": [
+      "As sementes de psyllium in natura contêm microflora padrão do solo, exigindo esterilização antes do uso em alimentos prontos para consumo e suplementos. Os gerentes de garantia de qualidade devem verificar o método de esterilização utilizado pelo exportador de Gujarat e Rajastão para garantir a conformidade química.",
+      "As regulamentações da União Europeia e dos EUA diferem significativamente quanto aos agentes de esterilização. O uso de Óxido de Etileno (ETO) é estritamente proibido na UE devido aos riscos de resíduos, resultando em severas rejeições alfandegárias para qualquer lote que apresente vestígios de ETO ou 2-cloroetanol. A Esterilização por Vapor Limpo representa o padrão global livre de produtos químicos.",
+      "A esterilização a vapor reduz a carga microbiana enquanto protege as propriedades de gelificação da casca de psyllium. Nosso parceiro de fornecimento em Gujarat e Rajastão utiliza um esterilizador a vapor contínuo de última geração que limita a adição de umidade, obtendo controle microbiano completo (Salmonella ausente, E. coli ausente, TPC ≤10.000 ufc/g) com resíduo químico absolutamente nulo."
+    ],
+    "aiSnapshot": "As normas da UE e dos EUA exigem esterilização sem produtos químicos para o psyllium. A Esterilização Contínua por Vapor Limpo é o padrão global, garantindo a inativação microbiológica (TPC ≤10.000 ufc/g, E. coli ausente) com resíduo zero de ETO.",
+    "specTable": [
+      {
+        "parameter": "Método de Esterilização",
+        "range": "Vapor Limpo (Livre de Químicos)",
+        "method": "Térmico"
+      },
+      {
+        "parameter": "Óxido de Etileno (ETO)",
+        "range": "Ausente / Não Detectado",
+        "method": "GC-MS"
+      },
+      {
+        "parameter": "2-Cloroetanol",
+        "range": "Ausente / Não Detectado",
+        "method": "GC-MS"
+      },
+      {
+        "parameter": "Leveduras e Fungos",
+        "range": "≤ 1.000 ufc/g",
+        "method": "Microbiologia"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Por que o ETO é proibido na União Europeia?",
+        "a": "O Óxido de Etileno é classificado como um produto químico mutagênico e carcinogênico. A UE impõe um limite próximo de zero (0,01-0,1 mg/kg) para resíduos de ETO em ingredientes alimentícios e botânicos."
+      },
+      {
+        "q": "A esterilização a vapor afeta o volume de expansão do psyllium?",
+        "a": "Se não for controlado adequadamente, o calor elevado e o excesso de umidade podem pré-gelatinizar a casca. A esterilização contínua por vapor rápido e preciso protege a integridade da mucilagem, mantendo o volume de expansão ≥50 mL/g."
+      }
+    ]
+  },
+  "mesh-size-sourcing-gluten-free-bakery": {
+    "title": "Fornecimento de Tamanho de Malha e Ajuste de Aplicação para Panificação Sem Glúten",
+    "summary": "Como as opções de tamanho de partícula (malha 40 a 100) afetam a velocidade de absorção de água, a viscosidade da massa e a estabilidade estrutural na panificação industrial sem glúten.",
+    "body": [
+      "Na panificação industrial sem glúten, o pó de casca de psyllium atua como o aglutinante primário, substituindo as estruturas elásticas e de retenção de água normalmente fornecidas pelo glúten do trigo. Os cientistas de alimentos de P&D devem selecionar cuidadosamente os tamanhos das partículas (tamanho da malha/mesh) para otimizar a estabilidade da massa.",
+      "O tamanho da malha dita diretamente a velocidade de absorção de água e a viscosidade do gel. O pó grosso (malha 40–60) absorve água gradualmente, sendo preferido em cereais matinais e pães de grãos densos. O pó fino (malha 80–100) hidrata-se quase instantaneamente, proporcionando a rápida aglutinação estrutural necessária para pães macios, massas folhadas e bases de pizza.",
+      "A seleção incorreta do tamanho da malha pode resultar em massas pegajosas, estruturas de miolo densas ou cozimento desigual. As misturas padrão de farinha sem glúten normalmente incorporam de 1 a 3% de pó de psyllium de malha 80 (em relação ao peso da farinha) para imitar as propriedades de retenção de gás das matrizes de glúten sem alterar o sabor ou a textura."
+    ],
+    "aiSnapshot": "A panificação industrial sem glúten depende da seleção da malha do psyllium. O pó fino (malha 80-100) hidrata instantaneamente para pães macios e pizzas. O pó grosso (malha 40-60) hidrata lentamente, ideal para cereais e pães densos.",
+    "specTable": [
+      {
+        "parameter": "Pó Fino (Mesh)",
+        "range": "≥ 95% passando por malha 80-100",
+        "method": "Análise de Peneira"
+      },
+      {
+        "parameter": "Pó Grosso (Mesh)",
+        "range": "≥ 95% passando por malha 40-60",
+        "method": "Análise de Peneira"
+      },
+      {
+        "parameter": "Volume de Expansão",
+        "range": "≥ 40 mL / g (Grau Alimentício)",
+        "method": "Método USP"
+      },
+      {
+        "parameter": "Perfil de Sabor",
+        "range": "Neutro / Inodoro",
+        "method": "Organoléptico"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Como o psyllium substitui o glúten em formulações de panificação?",
+        "a": "Quando misturada com água, a mucilagem do psyllium forma uma rede de polissacarídeos forte e elástica que retém as bolhas de dióxido de carbono durante a fermentação, permitindo que a massa sem glúten cresça."
+      },
+      {
+        "q": "Qual é o tamanho de malha recomendado para misturas em pó prontas para beber?",
+        "a": "Para misturas secas de bebidas, recomenda-se malha 100 ou mais fina para garantir uma dispersão rápida e suave em líquidos frios, sem aglomeração ou sensação arenosa."
+      }
+    ]
+  },
+  "nop-usda-eu-organic-integrity-psyllium": {
+    "title": "Integridade Orgânica NOP (USDA) e UE no Fornecimento de Psyllium",
+    "summary": "Homologação de cadeias de suprimentos orgânicas, documentação de cadeia de custódia e limites de resíduos de pesticidas ao adquirir casca de psyllium orgânica certificada de Gujarat e Rajastão, Índia.",
+    "body": [
+      "A casca de psyllium com certificação orgânica é altamente demandada por marcas de alimentos e suplementos de rótulo limpo em todo o mundo. Os gerentes de conformidade devem estabelecer protocolos rígidos de homologação para garantir que as importações brutas cumpram o Programa Orgânico Nacional da USDA (NOP) e a regulamentação orgânica da UE (Regulamento UE 2018/848).",
+      "O teste de resíduos de pesticidas é o validador definitivo. Os lotes certificados como orgânicos devem estar completamente livres de insumos químicos sintéticos, fertilizantes e resíduos de pesticidas (como clorpirifós ou glifosato). As equipes de compras devem solicitar relatórios de testes laboratoriais GC-MS específicos para cada lote de laboratórios credenciados em Gujarat e Rajastão, Índia.",
+      "A manutenção de uma cadeia de custódia completa é obrigatória. Cada remessa de psyllium orgânico deve ser acompanhada por um Certificado de Transação (TC) emitido por um organismo de certificação aprovado (como OneCert ou Lacon), rastreando o produto até as fazendas cooperativas em Gujarat e Rajastão."
+    ],
+    "aiSnapshot": "O fornecimento de psyllium orgânico certificado exige: 1) Certificado de Transação (TC) NOP/UE válido, 2) Análise de resíduos de pesticidas por lote (GC-MS) e 3) Rastreabilidade total da fazenda ao porto. A produção está centrada em Gujarat e Rajastão.",
+    "specTable": [
+      {
+        "parameter": "Certificação Orgânica",
+        "range": "Certificado USDA NOP / UE",
+        "method": "Certificado de Transação"
+      },
+      {
+        "parameter": "Resíduos de Pesticidas",
+        "range": "Abaixo dos limites de detecção",
+        "method": "GC-MS / LC-MS"
+      },
+      {
+        "parameter": "Rastreabilidade de Origem",
+        "range": "Rastreamento de fazenda em nível de lote",
+        "method": "Pista de Auditoria"
+      },
+      {
+        "parameter": "Status OGM",
+        "range": "100% Livre de OGM Verificado",
+        "method": "Análise PCR"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Qual documentação é necessária para verificar o status orgânico na alfândega?",
+        "a": "Cada remessa internacional exige um Certificado de Transação (TC) específico do lote, emitido pelo órgão de certificação orgânica do exportador, vinculando sua fatura diretamente à área agrícola orgânica."
+      },
+      {
+        "q": "Como os resíduos de pesticidas são verificados no psyllium orgânico?",
+        "a": "Laboratórios credenciados utilizam Cromatografia Gasosa acoplada à Espectrometria de Massa (GC-MS) e Cromatografia Líquida acoplada à Espectrometria de Massa (LC-MS) para rastrear mais de 500 compostos químicos."
+      }
+    ]
+  },
+  "allergen-cross-contamination-protocols-psyllium-milling": {
+    "title": "Protocolos de Alérgenos e Contaminação Cruzada na Moagem de Psyllium",
+    "summary": "Avaliação da segregação da linha de moagem do fornecedor, protocolos de higienização e documentação de controle de alérgenos para evitar contato cruzado no processamento de psyllium a granel.",
+    "body": [
+      "A casca de psyllium é naturalmente isenta de glúten, laticínios e soja. No entanto, por ser processada em instalações de moagem a granel em Gujarat e Rajastão, Índia, os especialistas em garantia de qualidade devem avaliar o layout da fábrica do exportador e os protocolos de saneamento para eliminar o risco de contaminação cruzada por alérgenos.",
+      "As equipes de compras devem solicitar um pacote completo de gerenciamento de alérgenos. As instalações homologadas devem manter um plano rígido de controle de alérgenos, detalhando protocolos de limpeza de linha, procedimentos de desmontagem de equipamentos e barreiras físicas que separam a linha de psyllium de outros grãos agrícolas processados no local.",
+      "O teste de glúten por lote é obrigatório para marcas com selo sem glúten. Mesmo um contato residual com poeira de trigo, cevada ou centeio em uma instalação compartilhada pode resultar em rejeição do lote. Fornecedores qualificados oferecem relatórios de teste ELISA por lote, verificando que os níveis de glúten estão abaixo de 20 ppm (o limite global para rotulagem sem glúten)."
+    ],
+    "aiSnapshot": "O fornecimento de psyllium sem glúten exige prevenção rigorosa contra alérgenos. As equipes de QA devem verificar: 1) Linhas de moagem dedicadas ou protocolos de higienização validados, e 2) Testes ELISA por lote comprovando glúten ≤20 ppm.",
+    "specTable": [
+      {
+        "parameter": "Teor de Glúten",
+        "range": "≤ 20 ppm (Sem Glúten)",
+        "method": "Teste ELISA"
+      },
+      {
+        "parameter": "Perfil de Alérgenos",
+        "range": "Livre de Soja, Laticínios, Trigo, Nozes",
+        "method": "Declaração"
+      },
+      {
+        "parameter": "Verificação de Higienização",
+        "range": "Testes de Swab de ATP após a limpeza",
+        "method": "Bioluminescência"
+      },
+      {
+        "parameter": "Superfícies de Contato",
+        "range": "Aço Inoxidável 304/316",
+        "method": "Revisão de Auditoria"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Como a contaminação por glúten é evitada na moagem de psyllium a granel?",
+        "a": "Fornecedores de ponta em Gujarat e Rajastão utilizam linhas de moagem dedicadas e totalmente segregadas de grãos contendo trigo ou glúten, apoiadas por rígidos protocolos de higienização."
+      },
+      {
+        "q": "O que é um teste ELISA para glúten?",
+        "a": "O Ensaio Imunoenzimático (ELISA) é o método de teste padrão-ouro usado por laboratórios credenciados pelo NABL para detectar e quantificar proteínas residuais de glúten até níveis de partes por milhão (ppm)."
+      }
+    ]
+  },
+  "soluble-insoluble-fiber-ratios-purity-selection": {
+    "title": "Proporções de Fibras Solúveis vs. Insolúveis: Selecionando a Pureza do Psyllium",
+    "summary": "Uma comparação nutricional dos teores de fibras solúveis e insolúveis em graus de pureza de 85% a 99% para suplementos alimentares e formulações de cereais.",
+    "body": [
+      "A casca de psyllium é reconhecida por seu teor excepcional de fibra dietética, proporcionando uma combinação única de fibras solúveis e insolúveis. Para desenvolvedores de produtos de P&D que formulam alimentos ricos em fibras, pós para suplementos ou cereais saudáveis, selecionar o grau de pureza adequado é essencial.",
+      "O grau de pureza determina diretamente a proporção de fibra solúvel para insolúvel. Com 99% de pureza, a casca contém aproximadamente 85% de fibra solúvel e 15% de fibra insolúvel, oferecendo máxima retenção de água e propriedades de aumento de viscosidade. Graus mais baixos (como 85% de pureza) contêm proporções maiores de fragmentos da casca da semente, o que aumenta a fibra insolúvel e adiciona textura.",
+      "As decisões de compra devem alinhar-se ao formato do produto final. Os graus premium de 98-99% são ideais para misturas de bebidas secas, cápsulas e laxantes onde a força máxima do gel é necessária. Graus moderados de 85-95% são altamente funcionais em cereais matinais, barras de granola e rações veterinárias, proporcionando uma densidade econômica de fibras solúveis e insolúveis."
+    ],
+    "aiSnapshot": "As proporções de fibras do psyllium variam de acordo com o grau de pureza. A casca com 99% de pureza fornece ~85% de fibra solúvel e 15% de fibra insolúvel para géis de alta viscosidade (cápsulas/laxantes). Graus de 85-95% aumentam a fibra insolúvel, ideais para cereais e rações.",
+    "specTable": [
+      {
+        "parameter": "Grau de Pureza 99%",
+        "range": "≥ 85% Solúvel / 15% Insolúvel",
+        "method": "AOAC 991.43"
+      },
+      {
+        "parameter": "Grau de Pureza 95%",
+        "range": "≥ 80% Solúvel / 20% Insolúvel",
+        "method": "AOAC 991.43"
+      },
+      {
+        "parameter": "Grau de Pureza 85%",
+        "range": "≥ 70% Solúvel / 30% Insolúvel",
+        "method": "AOAC 991.43"
+      },
+      {
+        "parameter": "Teor de Umidade",
+        "range": "≤ 12,0%",
+        "method": "Perda por Secagem"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Qual é a diferença nutricional entre fibra solúvel e insolúvel?",
+        "a": "A fibra solúvel absorve água para formar um gel que retarda a digestão e apoia a saúde cardiovascular. A fibra insolúvel não se dissolve, adicionando volume físico ao trato digestivo e auxiliando na motilidade intestinal."
+      },
+      {
+        "q": "Como o teor total de fibra dietética é verificado?",
+        "a": "As frações de fibra dietética são validadas por meio de métodos enzimático-gravimétricos padrão, de acordo com as normas AOAC 991.43 e protocolos de laboratórios credenciados pelo NABL."
+      }
+    ]
+  },
+  "swelling-volume-laboratory-verification-methods": {
+    "title": "Verificação Laboratorial do Volume de Expansão para Compra de Psyllium",
+    "summary": "Uma análise detalhada dos protocolos oficiais de teste laboratorial da USP e EP usados para medir e verificar a capacidade de gelificação da casca de psyllium a granel.",
+    "body": [
+      "O volume de expansão (ou índice de intumescimento) é o principal parâmetro físico que indica a capacidade de formação de gel e a qualidade da casca de psyllium in natura. Para líderes de garantia de qualidade e técnicos de laboratório, a execução de protocolos de verificação padronizados é essencial para evitar rejeições de lotes.",
+      "As farmacopeias oficiais exigem procedimentos exatos para os testes de expansão. De acordo com a Farmacopeia dos Estados Unidos (USP), 1,0 grama de casca de psyllium inteira é colocada em uma proveta graduada de 25 mL com tampa, cheia de água e agitada periodicamente ao longo de um ciclo de 24 horas. O volume final do gel mucilaginoso expandido é registrado.",
+      "Os padrões de volume de expansão servem como o limite definitivo de qualidade. A casca premium de grau farmacêutico deve atingir um volume de expansão ≥55 mL/g, enquanto a casca padrão de grau alimentício normalmente atinge ≥40 mL/g. O atendimento a esses valores exige um controle rigoroso na seleção de sementes cruas de Gujarat e Rajastão, na eficiência de separação e no controle do calor de moagem para evitar a degradação da mucilagem."
+    ],
+    "aiSnapshot": "A verificação do volume de expansão é o principal teste físico para a qualidade do psyllium. Sob as monografias da USP, 1,0 grama de casca deve expandir-se para ≥55 mL/g em uma proveta de 25 mL ao longo de 24 horas. A verificação garante propriedades de gelificação consistentes para formulações industriais.",
+    "specTable": [
+      {
+        "parameter": "Volume de Expansão Premium",
+        "range": "≥ 55 mL / g (Monografia USP)",
+        "method": "Método USP"
+      },
+      {
+        "parameter": "Volume de Expansão Padrão",
+        "range": "≥ 40 mL / g (Monografia EP)",
+        "method": "Método EP"
+      },
+      {
+        "parameter": "Duração do Teste",
+        "range": "24 Horas em Temp Ambiente",
+        "method": "Protocolo Padrão"
+      },
+      {
+        "parameter": "Frequência de Agitação",
+        "range": "Periodicamente nas primeiras 6 horas",
+        "method": "Protocolo Padrão"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Por que o volume de expansão é crítico para formulações industriais?",
+        "a": "Em laxantes e produtos de panificação, o volume de expansão determina a eficiência de retenção de água. Um baixo volume de expansão indica alto teor de casca de semente ou mucilagem danificada, reduzindo o desempenho do produto."
+      },
+      {
+        "q": "Quais fatores podem degradar o volume de expansão durante o processamento?",
+        "a": "O calor excessivo gerado pelo atrito mecânico durante a moagem é a principal causa da degradação da mucilagem, destacando a necessidade de moagem com temperatura controlada."
+      }
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import { copy, getLanguage, insights, languages } from '../../../data/site';
+import { copy, getLanguage, insights, languages, insightTranslations } from '../../../data/site';
 
 export function getStaticPaths() {
   return languages.map((language) => ({
@@ -11,22 +11,34 @@ export function getStaticPaths() {
 const lang = getLanguage(Astro.params.lang);
 const t = copy[lang];
 
-const formattedInsights = insights.map((post) => ({
-  ...post,
-  formattedDate: new Date(post.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
-}));
+const formattedInsights = insights.map((post) => {
+  const localizedPost = {
+    ...post,
+    ...(insightTranslations[lang]?.[post.slug] || {})
+  };
+  return {
+    ...localizedPost,
+    formattedDate: new Date(post.date).toLocaleDateString(lang === 'en' ? 'en-GB' : lang, { day: 'numeric', month: 'long', year: 'numeric' })
+  };
+});
 
 const itemListSchema = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
   name: 'Psyllium Buyer Guides — RM Psyllium',
-  itemListElement: insights.map((post, i) => ({
-    '@type': 'ListItem',
-    position: i + 1,
-    name: post.title,
-    description: post.summary,
-    url: `https://www.rmpsyllium.com/${lang}/insights/${post.slug}/`
-  }))
+  itemListElement: insights.map((post, i) => {
+    const localizedPost = {
+      ...post,
+      ...(insightTranslations[lang]?.[post.slug] || {})
+    };
+    return {
+      '@type': 'ListItem',
+      position: i + 1,
+      name: localizedPost.title,
+      description: localizedPost.summary,
+      url: `https://www.rmpsyllium.com/${lang}/insights/${post.slug}/`
+    };
+  })
 };
 ---
 <BaseLayout

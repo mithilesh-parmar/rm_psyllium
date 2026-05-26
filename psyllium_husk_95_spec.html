@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Psyllium Husk 95% — Product Data Sheet · RM Psyllium</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green-deep:  #1b3828;
+    --green-mid:   #2e5a3e;
+    --green-soft:  #edf2ee;
+    --gold:        #9e7635;
+    --gold-light:  #c9a55a;
+    --cream:       #f6f3ee;
+    --stone:       #8a857e;
+    --border:      #d4cec5;
+    --text:        #1a1a18;
+    --text-soft:   #4a4a46;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 9pt;
+    color: var(--text);
+    background: #ddd9d3;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* ────────── PAGE SHELL ────────── */
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 7mm auto;
+    background: #fff;
+    box-shadow: 0 4px 28px rgba(0,0,0,0.14);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .page-inner {
+    padding: 7mm 13mm 3mm 13mm;
+    flex: 1;
+  }
+
+  /* ────────── HEADER ────────── */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  .logo-img {
+    height: 66px;
+    width: auto;
+    filter: contrast(1.45) brightness(0.76) saturate(1.25);
+  }
+
+  .contact-block {
+    text-align: right;
+    font-size: 8pt;
+    line-height: 1.9;
+    color: var(--text);
+  }
+
+  .contact-block .contact-line {
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+
+  .contact-block .contact-line .ci {
+    font-style: normal;
+    margin-right: 4px;
+    font-size: 8.5pt;
+  }
+
+  .contact-block .tagline {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 8pt;
+    color: var(--green-deep);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  .header-rule {
+    height: 0.75px;
+    background: linear-gradient(to right, transparent 0%, var(--gold) 15%, var(--gold) 85%, transparent 100%);
+    margin-bottom: 8px;
+  }
+
+  /* ────────── SPEC META BAR ────────── */
+  .spec-meta {
+    background: var(--green-deep);
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 6px;
+  }
+
+  .spec-meta-item {
+    flex: 1;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .spec-meta-item + .spec-meta-item {
+    border-left: 1px solid rgba(255,255,255,0.12);
+  }
+
+  .spec-meta-item .meta-label {
+    font-size: 6.5pt;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--gold-light);
+  }
+
+  .spec-meta-item .meta-value {
+    font-size: 8pt;
+    color: rgba(255,255,255,0.88);
+    font-weight: 300;
+    letter-spacing: 0.02em;
+  }
+
+  /* ────────── DOC TITLE ────────── */
+  .doc-title-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 2px 0 6px 0;
+  }
+
+  .doc-title-rule {
+    flex: 1;
+    height: 0.75px;
+    background: var(--border);
+  }
+
+  .doc-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 13pt;
+    font-weight: 700;
+    color: var(--green-deep);
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  /* ────────── SECTION HEADING ────────── */
+  .sec-head {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin: 6px 0 3px 0;
+  }
+
+  .sec-head-bar {
+    width: 3px;
+    height: 13px;
+    background: var(--gold);
+    border-radius: 1px;
+    flex-shrink: 0;
+  }
+
+  .sec-head-text {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 9.5pt;
+    font-weight: 700;
+    color: var(--green-deep);
+    letter-spacing: 0.07em;
+  }
+
+  .sec-head-line {
+    flex: 1;
+    height: 0.75px;
+    background: var(--border);
+  }
+
+  /* ────────── DATA TABLES ────────── */
+  .dt {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 6px;
+    font-size: 8.3pt;
+  }
+
+  .dt td, .dt th {
+    border: 0.5px solid var(--border);
+    padding: 3.4px 9px;
+    vertical-align: top;
+    line-height: 1.45;
+  }
+
+  .dt tbody tr:nth-child(odd)  td { background: #fff; }
+  .dt tbody tr:nth-child(even) td { background: var(--cream); }
+
+  /* left label column — uppercase + tracked for instant scanning */
+  .dt td.lbl {
+    width: 34%;
+    white-space: nowrap;
+    font-weight: 600;
+    color: var(--green-deep);
+    font-size: 7.4pt;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+  }
+
+  .dt td.lbl-w {
+    width: 55%;
+    font-weight: 600;
+    color: var(--green-deep);
+    font-size: 7.4pt;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+  }
+
+  /* value column — regular weight, slightly softer color */
+  .dt td:not(.lbl):not(.lbl-w):not(.no-val):not(.allergen-name) {
+    font-size: 8.6pt;
+    color: var(--text);
+    font-weight: 400;
+    letter-spacing: 0.01em;
+  }
+
+  /* column header row (thead) */
+  .dt thead tr th {
+    background: var(--green-deep);
+    color: #fff;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 600;
+    font-size: 8.5pt;
+    letter-spacing: 0.06em;
+    text-align: left;
+    padding: 6px 10px;
+    border-color: var(--green-mid);
+  }
+
+  .dt thead tr th.center { text-align: center; }
+
+  /* span header inside tbody (Micro, Heavy Metals) */
+  .dt .span-head td {
+    background: var(--green-deep) !important;
+    color: #fff !important;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 600;
+    font-size: 8.8pt;
+    letter-spacing: 0.07em;
+    padding: 6px 10px;
+    border-color: var(--green-mid);
+  }
+
+  /* sub-indent for Microscopically B */
+  .sub-row td.lbl {
+    padding-left: 22px;
+    font-style: normal;
+    color: var(--stone);
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0.02em;
+    font-size: 7.8pt;
+  }
+
+  /* allergen "No" value — styled green */
+  .no-val {
+    color: var(--green-mid);
+    font-weight: 600;
+    text-align: center;
+    font-size: 8.4pt;
+    letter-spacing: 0.04em;
+  }
+
+  /* allergen left col — not label style */
+  .allergen-name {
+    text-align: left !important;
+    font-weight: 400;
+    color: var(--text) !important;
+    white-space: normal !important;
+    font-size: 8.6pt;
+    letter-spacing: 0.01em;
+  }
+
+  /* ────────── APPLICATIONS GRID ────────── */
+  .app-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 0.5px solid var(--border);
+    margin-bottom: 6px;
+  }
+
+  .app-cell {
+    padding: 6px 10px;
+    border: 0.5px solid var(--border);
+    font-size: 8.2pt;
+    line-height: 1.55;
+  }
+
+  .app-cell:nth-child(odd)  { background: #fff; }
+  .app-cell:nth-child(even) { background: var(--cream); }
+
+  .app-cell-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    font-size: 8.5pt;
+    color: var(--green-deep);
+    display: block;
+    margin-bottom: 3px;
+    letter-spacing: 0.04em;
+  }
+
+  .app-cell p {
+    color: var(--text-soft);
+    font-size: 8pt;
+    line-height: 1.55;
+    letter-spacing: 0.01em;
+  }
+
+  /* ────────── NOTE ────────── */
+  .note {
+    font-size: 7.8pt;
+    color: var(--stone);
+    border-left: 2px solid var(--gold);
+    padding: 4px 9px;
+    margin: 6px 0 4px 0;
+    font-style: normal;
+    line-height: 1.55;
+    letter-spacing: 0.01em;
+  }
+
+  /* ────────── PAGE FOOTER ────────── */
+  .page-footer {
+    margin-top: 4mm;
+  }
+
+  .footer-num-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 13mm;
+    font-size: 7pt;
+    color: var(--stone);
+    letter-spacing: 0.05em;
+    border-top: 0.75px solid var(--border);
+  }
+
+  .footer-num-row .doc-ref {
+    font-style: italic;
+  }
+
+  .footer-bar {
+    background: var(--green-deep);
+    color: rgba(255,255,255,0.78);
+    font-size: 7.5pt;
+    text-align: center;
+    padding: 5.5px 13mm;
+    letter-spacing: 0.04em;
+    border-top: 1.5px solid var(--gold);
+  }
+
+  /* ────────── PAGE BREAK ────────── */
+  .page-break {
+    page-break-after: always;
+    break-after: page;
+    height: 0;
+    overflow: hidden;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* ────────── PRINT ────────── */
+  @media print {
+    @page { margin: 0; size: A4; }
+    body { background: #fff; }
+    .page {
+      margin: 0;
+      box-shadow: none;
+      width: 210mm;
+      height: 297mm;
+      overflow: hidden;
+    }
+    .page-break { page-break-after: always; break-after: page; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ════════════════════════════ PAGE 1 ════════════════════════════ -->
+<div class="page">
+  <div class="page-inner">
+
+    <!-- HEADER -->
+    <div class="header">
+      <img src="./logo.png" class="logo-img" alt="RM Psyllium">
+      <div class="contact-block">
+        <div class="tagline">Manufacturer of Psyllium Products</div>
+        <div class="contact-line"><span class="ci">📞</span>8949817791, 8000008381</div>
+        <div class="contact-line"><span class="ci">📧</span>export@rmpsyllium.com</div>
+        <div class="contact-line"><span class="ci">🌐</span>rmpsyllium.com</div>
+      </div>
+    </div>
+
+    <div class="header-rule"></div>
+
+    <!-- SPEC META BAR -->
+    <div class="spec-meta">
+      <div class="spec-meta-item">
+        <span class="meta-label">Spec. No.</span>
+        <span class="meta-value">RM/PH/07</span>
+      </div>
+      <div class="spec-meta-item">
+        <span class="meta-label">Revision No.</span>
+        <span class="meta-value">01</span>
+      </div>
+      <div class="spec-meta-item">
+        <span class="meta-label">Effective Date</span>
+        <span class="meta-value">21 / 05 / 2026</span>
+      </div>
+      <div class="spec-meta-item">
+        <span class="meta-label">Review Date</span>
+        <span class="meta-value">On or Before 3 Years From Effective Date</span>
+      </div>
+    </div>
+
+    <!-- DOC TITLE -->
+    <div class="doc-title-row">
+      <div class="doc-title-rule"></div>
+      <div class="doc-title">Data Sheet</div>
+      <div class="doc-title-rule"></div>
+    </div>
+
+    <!-- PRODUCT INFO -->
+    <div class="sec-head">
+      <div class="sec-head-bar"></div>
+      <div class="sec-head-text">Product Information</div>
+      <div class="sec-head-line"></div>
+    </div>
+
+    <table class="dt">
+      <tbody>
+        <tr><td class="lbl">Product Name</td><td>Psyllium Husk 95% Pure Whole U.S.P./EP.</td></tr>
+        <tr><td class="lbl">Part Used</td><td>Plantago Seed, Plantago Ovate.</td></tr>
+        <tr><td class="lbl">Composition</td><td>100% Husk of Plantago Ovata.</td></tr>
+        <tr><td class="lbl">Botanical Source</td><td>Plantago Ovata.</td></tr>
+        <tr><td class="lbl">Harmonized System Tariff No.</td><td>12119032</td></tr>
+        <tr><td class="lbl">Classification</td><td>PH. EUR. / USP, Food Grade</td></tr>
+        <tr><td class="lbl">Functional Properties</td><td>Natural Dietary Fiber, Hygroscopic, Mucilaginous, Water Holding Capacity, Gel Formation, Help In Constipation, Cholesterol And Control Of Diabetes, Use As Binder Or May Be Thickener</td></tr>
+        <tr><td class="lbl">Appearance</td><td>No Visible Impurities, No Visible Microbiological Contamination</td></tr>
+        <tr><td class="lbl">Country Of Origin</td><td>India</td></tr>
+        <tr><td class="lbl">Preservative</td><td>None</td></tr>
+        <tr><td class="lbl">Shelf Life</td><td>2 Years From The Date Of Manufacture</td></tr>
+        <tr><td class="lbl">Cultivation</td><td>Harvested</td></tr>
+      </tbody>
+    </table>
+
+    <!-- TESTING ITEMS -->
+    <div class="sec-head">
+      <div class="sec-head-bar"></div>
+      <div class="sec-head-text">Testing Items &amp; Specifications</div>
+      <div class="sec-head-line"></div>
+    </div>
+
+    <table class="dt">
+      <thead>
+        <tr>
+          <th style="width:38%">Testing Items</th>
+          <th>Specifications</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="lbl">Appearance</td><td>Pale Buff White Colored Husk. The Odour Is Not Marked</td></tr>
+        <tr>
+          <td class="lbl">Identifications (Microscopically A)<br><br><strong>As Per USP</strong></td>
+          <td>Mounted In Cresol-Cell, Viewed Microscopically Are Composed Of Polygonal Prismatic Cells Having 4 To 6 Straight Or Slightly Wavy Walls</td>
+        </tr>
+        <tr class="sub-row">
+          <td class="lbl">(Microscopically B)</td>
+          <td>Mounted In Alcohol &amp; Irrigated With Water Viewed Microscopically, The Mucilage In The Outer Part Of The Epidermal Cells Swells Rapidly Goes Into Solution</td>
+        </tr>
+        <tr><td class="lbl">Taste</td><td>Bland Mucilaginous</td></tr>
+        <tr><td class="lbl">Texture</td><td>Husk</td></tr>
+        <tr style="font-weight:700;"><td class="lbl" style="font-weight:700;">Purity</td><td>Not Less Than 95%</td></tr>
+        <tr><td class="lbl">Moisture</td><td>12% Maximum</td></tr>
+        <tr><td class="lbl">Total Ash</td><td>4% Maximum</td></tr>
+        <tr><td class="lbl">Acid Insoluble Ash</td><td>1% Maximum</td></tr>
+        <tr style="font-weight:700;"><td class="lbl" style="font-weight:700;">Swell Volume</td><td>Not Less Than 40 Ml/Gm</td></tr>
+        <tr><td class="lbl">PH</td><td>4–7</td></tr>
+        <tr><td class="lbl">Light Extraneous Matter</td><td>5% Maximum</td></tr>
+        <tr><td class="lbl">Heavy Extraneous Matter</td><td>1% Maximum</td></tr>
+        <tr><td class="lbl">Foreign Smell / Test</td><td>None</td></tr>
+        <tr><td class="lbl">Foreign Bodies (Stones, Glass &amp; Metals)</td><td>None</td></tr>
+        <tr><td class="lbl">Total Consumable Fiber</td><td>About 78%</td></tr>
+        <tr><td class="lbl">Insect Fragments Including Mites</td><td>27 Parts / 25 Gm</td></tr>
+      </tbody>
+    </table>
+
+  </div><!-- /page-inner -->
+
+  <div class="page-footer">
+    <div class="footer-num-row">
+      <span class="doc-ref">RM/PH/07 — Rev. 01</span>
+      <span>Page 1 of 3</span>
+    </div>
+    <div class="footer-bar">RM Psyllium, Patan Road, Khali, Char Rasta, Nedra, Siddhpur, Gujarat 384151</div>
+  </div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- ════════════════════════════ PAGE 2 ════════════════════════════ -->
+<div class="page">
+  <div class="page-inner">
+
+    <!-- HEADER -->
+    <div class="header">
+      <img src="./logo.png" class="logo-img" alt="RM Psyllium">
+      <div class="contact-block">
+        <div class="tagline">Manufacturer of Psyllium Products</div>
+        <div class="contact-line"><span class="ci">📞</span>8949817791, 8000008381</div>
+        <div class="contact-line"><span class="ci">📧</span>export@rmpsyllium.com</div>
+        <div class="contact-line"><span class="ci">🌐</span>rmpsyllium.com</div>
+      </div>
+    </div>
+
+    <div class="header-rule"></div>
+
+    <!-- MICROBIOLOGICAL + HEAVY METALS -->
+    <div class="sec-head">
+      <div class="sec-head-bar"></div>
+      <div class="sec-head-text">Microbiological Limits &amp; Heavy Metals</div>
+      <div class="sec-head-line"></div>
+    </div>
+
+    <table class="dt">
+      <tbody>
+        <tr class="span-head"><td colspan="2">Microbiological Limits *</td></tr>
+        <tr><td class="lbl-w">Total Aerobic Plate Count</td><td>Max. 100,000 Cfu/Gm</td></tr>
+        <tr><td class="lbl-w">Total Yeast &amp; Mould Per Gm</td><td>Max. 1,000 Cfu/Gm</td></tr>
+        <tr><td class="lbl-w">E. Coli Per Gm</td><td>Absent</td></tr>
+        <tr><td class="lbl-w">Coliform</td><td>Max. 100 Cfu/Gm</td></tr>
+        <tr><td class="lbl-w">Salmonella Per 25 Gram</td><td>Absent</td></tr>
+        <tr><td class="lbl-w">Pseudomonas aeruginosa</td><td>&lt;10 Cfu/Gm</td></tr>
+        <tr><td class="lbl-w">Staphylococcus Aureus</td><td>&lt;10 Cfu/Gm</td></tr>
+
+        <tr class="span-head"><td colspan="2">Heavy Metals</td></tr>
+        <tr><td class="lbl-w">Lead (Pb)</td><td>&lt; 1 PPM</td></tr>
+        <tr><td class="lbl-w">Cadmium (Cd)</td><td>&lt; 0.5 PPM</td></tr>
+        <tr><td class="lbl-w">Arsenic (As)</td><td>&lt; 0.5 PPM</td></tr>
+        <tr><td class="lbl-w">Mercury (Hg)</td><td>&lt; 0.1 PPM</td></tr>
+      </tbody>
+    </table>
+
+    <p class="note">* Steam sterilization is available upon request and will significantly reduce microbiological counts.</p>
+
+    <!-- COMPLIANCE & LOGISTICS -->
+    <div class="sec-head">
+      <div class="sec-head-bar"></div>
+      <div class="sec-head-text">Compliance, Packaging &amp; Logistics</div>
+      <div class="sec-head-line"></div>
+    </div>
+
+    <table class="dt">
+      <tbody>
+        <tr><td class="lbl">Pesticide</td><td>As Per USP-561 &amp; According EU 396/2005 — Meets Requirements</td></tr>
+        <tr style="font-weight:700;"><td class="lbl" style="font-weight:700;">Certified</td><td>BRC, FSSAI, ISO 22000, FSSC 22000, Kosher, Halal, GMP, HACCP</td></tr>
+        <tr><td class="lbl">Regulation</td><td>The Product Shall Fit The European Laws / USP Laws. In Case Of New Requests, The New Obligations Will Be Sent For Application.</td></tr>
+        <tr><td class="lbl">GMO</td><td>Non-GMO. Does Not Contain GMO, Was Not Processed Using GMO Raw Material Or GMO Based Auxiliary Agents.</td></tr>
+        <tr><td class="lbl">Storage</td><td>Store In Tightly Sealed Containers In A Cool, Dry Area. Protect From Insect Infestation, Excess Moisture, Strong Odors &amp; Any Adulterants</td></tr>
+        <tr><td class="lbl">Packaging</td><td>Multi Wall Paper Bonded Poly Woven Bags With PE In Liner Or Big Bags [Super Sacks] With Product Name, Production Date, Batch/Lot Number, Net Weight, Gross Weight Clearly Marked.</td></tr>
+        <tr style="font-weight:700;"><td class="lbl" style="font-weight:700;">Shelf Life (Unopened)</td><td>2 Years From The Date Of Manufacture</td></tr>
+        <tr><td class="lbl">Packing Size</td><td>Available In 10 Kgs, 15 Kgs, 25 Kgs, 450 Kgs, 500 Kgs, 950 Kgs, 1,000 Kgs</td></tr>
+        <tr><td class="lbl">Palletization</td><td>Available With Wooden / Plastic Palletization With / Without Corrugated Boxes Wrapped With Gummed Shrink Paper</td></tr>
+        <tr style="font-weight:700;"><td class="lbl" style="font-weight:700;">Container Capacity</td><td>20 Feet — 12 MT Floor Loaded&nbsp;&nbsp;|&nbsp;&nbsp;40 Feet — 25 MT Floor Loaded</td></tr>
+      </tbody>
+    </table>
+
+  </div><!-- /page-inner -->
+
+  <div class="page-footer">
+    <div class="footer-num-row">
+      <span class="doc-ref">RM/PH/07 — Rev. 01</span>
+      <span>Page 2 of 3</span>
+    </div>
+    <div class="footer-bar">RM Psyllium, Patan Road, Khali, Char Rasta, Nedra, Siddhpur, Gujarat 384151</div>
+  </div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- ════════════════════════════ PAGE 3 ════════════════════════════ -->
+<div class="page">
+  <div class="page-inner">
+
+    <!-- HEADER -->
+    <div class="header">
+      <img src="./logo.png" class="logo-img" alt="RM Psyllium">
+      <div class="contact-block">
+        <div class="tagline">Manufacturer of Psyllium Products</div>
+        <div class="contact-line"><span class="ci">📞</span>8949817791, 8000008381</div>
+        <div class="contact-line"><span class="ci">📧</span>export@rmpsyllium.com</div>
+        <div class="contact-line"><span class="ci">🌐</span>rmpsyllium.com</div>
+      </div>
+    </div>
+
+    <div class="header-rule"></div>
+
+    <!-- ALLERGENS -->
+    <div class="sec-head">
+      <div class="sec-head-bar"></div>
+      <div class="sec-head-text">Allergen Declaration</div>
+      <div class="sec-head-line"></div>
+    </div>
+
+    <table class="dt">
+      <thead>
+        <tr>
+          <th style="width:46%; text-align:left">Allergen</th>
+          <th class="center">Present In Product</th>
+          <th class="center">Processed On Equipment</th>
+          <th class="center">Used On Site</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="allergen-name">Gluten</td>
+          <td class="no-val">No</td><td class="no-val">No</td><td class="no-val">No</td>
+        </tr>
+        <tr>
+          <td class="allergen-name">Wheat And Products Thereof</td>
+          <td class="no-val">No</td><td class="no-val">No</td><td class="no-val">No</td>
+        </tr>
+        <tr>
+          <td class="allergen-name">Other Cereals Containing Gluten (Rye, Barley, Oats, Spelt, Kamut) And Products Thereof</td>
+          <td class="no-val">No</td><td class="no-val">No</td><td class="no-val">No</td>
+        </tr>
+        <tr>
+          <td class="allergen-name">Crustacean And Products Thereof</td>
+          <td class="no-val">No</td><td class="no-val">No</td><td class="no-val">No</td>
+        </tr>
+        <tr>
+          <td class="allergen-name">Mustard And Products Thereof</td>
+          <td class="no-val">No</td><td class="no-val">No</td><td class="no-val">No</td>
+        </tr>
+        <tr>
+          <td class="allergen-name">Sesame Seeds And Products Thereof</td>
+          <td class="no-val">No</td><td class="no-val">No</td><td class="no-val">No</td>
+        </tr>
+        <tr>
+          <td class="allergen-name">Celery And Products Thereof</td>
+          <td class="no-val">No</td><td class="no-val">No</td><td class="no-val">No</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- APPLICATIONS -->
+    <div class="sec-head">
+      <div class="sec-head-bar"></div>
+      <div class="sec-head-text">Industry Applications</div>
+      <div class="sec-head-line"></div>
+    </div>
+
+    <div class="app-grid">
+      <div class="app-cell">
+        <span class="app-cell-title">Pharmaceutical Industry</span>
+        <p>Laxation, Diabetes, Cholesterol Level, Hemorrhoids…</p>
+      </div>
+      <div class="app-cell">
+        <span class="app-cell-title">Food &amp; Beverage Industry</span>
+        <p>Ice Cream, Biscuits, Rice, Instant Noodles, Breakfast Cereals, Bakery Products, Beverages, Processed Packed Foods, Fruit Drinks, Flavored Drinks, Cakes, Jams…</p>
+      </div>
+      <div class="app-cell">
+        <span class="app-cell-title">Dietary Supplement Industry</span>
+        <p>Capsules, Diet Supplements, Powder, Granules…</p>
+      </div>
+      <div class="app-cell">
+        <span class="app-cell-title">Pet Food Industry</span>
+        <p>Intestinal Disorders, Diarrhea, Hindgut, Milk-Off Take, Hair Balls Removal…</p>
+      </div>
+      <div class="app-cell" style="grid-column: 1 / -1;">
+        <span class="app-cell-title">Cosmetic Industry</span>
+        <p>Skin Care Products, Anti-Aging Herbal Products…</p>
+      </div>
+    </div>
+
+  </div><!-- /page-inner -->
+
+  <div class="page-footer">
+    <div class="footer-num-row">
+      <span class="doc-ref">RM/PH/07 — Rev. 01</span>
+      <span>Page 3 of 3</span>
+    </div>
+    <div class="footer-bar">RM Psyllium, Patan Road, Khali, Char Rasta, Nedra, Siddhpur, Gujarat 384151</div>
+  </div>
+</div>
+
+</body>
+</html>

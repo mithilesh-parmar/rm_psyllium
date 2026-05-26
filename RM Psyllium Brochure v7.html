@@ -1,0 +1,1974 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>RM Psyllium — Export Catalogue 2026</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ── TOKENS (same design system as v5/v6) ──────────────────── */
+:root {
+  --bg:       #fafaf7;
+  --bg-2:     #f3f3ed;
+  --bg-3:     #ecece4;
+  --ink:      #1a1a1a;
+  --ink-2:    #2e2e2c;
+  --ink-3:    #4a4a44;
+  --ink-4:    #73736d;
+  --ink-5:    #a0a09a;
+  --green:    #2d5a27;
+  --green-2:  #1f4019;
+  --green-3:  #143012;
+  --green-s:  #e3ebde;
+  --gold:     #c8a95a;
+  --gold-2:   #a48535;
+  --gold-s:   #f0e6cf;
+  --accent:   #2d5a27;
+  --rule:     #e8e3dc;
+  --rule-2:   #d4cfc4;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body {
+  margin: 0; padding: 0;
+  background: #cbc8bc;
+  color: var(--ink);
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "ss01","cv11";
+}
+.stack {
+  display: flex; flex-direction: column;
+  align-items: center; gap: 24px;
+  padding: 40px 16px 80px;
+}
+
+/* ── PAGE SHELL ─────────────────────────────────────────────── */
+.page {
+  width: 210mm; height: 297mm;
+  background: var(--bg);
+  position: relative; overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,.05), 0 24px 60px -14px rgba(0,0,0,.22), 0 10px 20px -10px rgba(0,0,0,.14);
+  border: 1px solid #c4c0b6;
+  color: var(--ink);
+  display: flex; flex-direction: column;
+}
+.page.padded { padding: 10mm 13mm 9mm; }
+.page-body { flex: 1; display: flex; flex-direction: column; }
+
+/* ── SHARED CHROME ──────────────────────────────────────────── */
+.hdr {
+  display: flex; justify-content: space-between; align-items: center;
+  padding-bottom: 6px; border-bottom: 1px solid var(--rule); margin-bottom: 9px;
+}
+.hdr .nav {
+  font-family: "JetBrains Mono", monospace; font-size: 8px;
+  letter-spacing: .22em; text-transform: uppercase; color: var(--ink-4);
+  display: flex; gap: 10px;
+}
+.hdr .nav b { color: var(--ink); font-weight: 500; }
+
+.brand { display: inline-flex; align-items: center; text-decoration: none; color: var(--ink); }
+.brand img { height: 19px; width: auto; display: block; }
+
+.ftr {
+  padding-top: 7px; border-top: 1px solid var(--rule); margin-top: auto;
+  display: flex; justify-content: space-between; align-items: center;
+  font-family: "JetBrains Mono", monospace; font-size: 7.5px;
+  letter-spacing: .2em; text-transform: uppercase; color: var(--ink-4);
+}
+.ftr b { color: var(--ink); }
+.ftr .nxt { color: var(--accent); }
+
+.cta-row {
+  display: flex; justify-content: space-between; align-items: baseline;
+  margin-top: 14px; padding-top: 8px; border-top: 1px dashed var(--rule-2);
+  font-family: "JetBrains Mono", monospace; font-size: 8px;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3);
+  margin-bottom: 6px;
+}
+.cta-row .nxt { color: var(--accent); font-weight: 500; }
+
+/* ── TYPE ATOMS ─────────────────────────────────────────────── */
+.eyebrow {
+  font-family: "JetBrains Mono", monospace; font-size: 8px;
+  letter-spacing: .26em; text-transform: uppercase; color: var(--accent); font-weight: 500;
+}
+.pill {
+  font-family: "JetBrains Mono", monospace; font-size: 7.5px;
+  letter-spacing: .02em; font-weight: 500;
+  padding: 2px 5px; background: var(--bg-2);
+  border: 1px solid var(--rule-2); color: var(--ink-2); display: inline-block;
+}
+.pill.g  { background: var(--green-s); color: var(--green); border-color: #c5d2c0; }
+.pill.au { background: var(--gold-s);  color: var(--gold-2); border-color: #dfc99c; }
+.pill.dk { background: var(--ink); color: #fff; border-color: var(--ink); }
+
+/* ── SECTION RULE ───────────────────────────────────────────── */
+.sec-rule {
+  display: flex; justify-content: space-between; align-items: flex-end;
+  border-bottom: 2px solid var(--ink); padding-bottom: 7px; margin-bottom: 10px;
+}
+.sec-rule .l .eyebrow { display: block; margin-bottom: 4px; }
+.sec-rule .l h1 {
+  margin: 0; font-size: 22px; font-weight: 700;
+  letter-spacing: -.02em; line-height: 1.07; color: var(--ink);
+}
+.sec-rule .l h1 em { font-style: normal; color: var(--accent); }
+.sec-rule .r {
+  text-align: right; font-family: "JetBrains Mono", monospace;
+  font-size: 8px; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--ink-4); line-height: 1.75;
+}
+.sec-rule .r b { color: var(--ink); }
+
+
+/* ============================================================
+   PAGE 1 — SPLIT COVER
+   Left 46 %: type on dark green
+   Right 54 %: full-bleed photo, diagonal clip
+   ============================================================ */
+.cover {
+  padding: 0;
+  background: var(--green-3);
+  color: #fff;
+  flex-direction: row;
+}
+
+.cover .cv-l {
+  width: 46%;
+  position: relative; z-index: 2;
+  display: flex; flex-direction: column;
+  padding: 13mm 0 11mm 12mm;
+  flex-shrink: 0;
+}
+
+/* thin divider line */
+.cover .cv-l::after {
+  content: "";
+  position: absolute; right: 0; top: 0; bottom: 0; width: 1px;
+  background: rgba(255,255,255,.12);
+}
+
+.cover .cv-r {
+  flex: 1; position: relative; overflow: hidden;
+}
+.cover .cv-r img {
+  width: 100%; height: 100%; object-fit: cover;
+  opacity: .5; filter: contrast(1.05) saturate(.88); display: block;
+}
+.cover .cv-r::before {
+  content: "";
+  position: absolute; inset: 0; z-index: 1;
+  background: linear-gradient(100deg, var(--green-3) 0%, rgba(20,48,18,.55) 28%, rgba(20,48,18,.1) 100%);
+}
+
+/* brand bar top */
+.cover .cv-brand img { height: 25px; filter: invert(1) brightness(1.05); }
+.cover .cv-doc-ref {
+  position: absolute; top: 13mm; right: 12mm; z-index: 3;
+  font-family: "JetBrains Mono", monospace; font-size: 8px;
+  letter-spacing: .22em; text-transform: uppercase;
+  color: rgba(255,255,255,.36); line-height: 1.7; text-align: right;
+}
+.cover .cv-doc-ref b { color: rgba(255,255,255,.7); }
+
+/* centre block */
+.cover .cv-center { margin-top: auto; padding-right: 11mm; }
+.cover .cv-eyebrow {
+  font-family: "JetBrains Mono", monospace; font-size: 8px;
+  letter-spacing: .28em; text-transform: uppercase;
+  color: var(--gold); font-weight: 500; display: block; margin-bottom: 12px;
+}
+.cover .cv-headline {
+  font-size: 60px; font-weight: 800;
+  letter-spacing: -.052em; line-height: .87; color: #fff; margin: 0;
+}
+.cover .cv-headline em { font-style: normal; color: var(--gold); }
+.cover .cv-tag {
+  margin-top: 15px; font-size: 11.5px; line-height: 1.62;
+  color: rgba(255,255,255,.6); font-weight: 300;
+}
+.cover .cv-tag b { color: #fff; font-weight: 500; }
+
+/* credential list bottom */
+.cover .cv-creds {
+  margin-top: 20px; padding-top: 14px;
+  border-top: 1px solid rgba(255,255,255,.14);
+  display: flex; flex-direction: column; gap: 5px;
+  padding-right: 11mm;
+}
+.cover .cv-cred {
+  display: grid; grid-template-columns: 46px 1fr; gap: 7px;
+  font-family: "JetBrains Mono", monospace; font-size: 7.5px;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: rgba(255,255,255,.34); align-items: baseline;
+}
+.cover .cv-cred b {
+  color: rgba(255,255,255,.72); font-family: "Inter", sans-serif;
+  font-size: 10.5px; font-weight: 500; letter-spacing: 0;
+  text-transform: none;
+}
+
+/* stat strip — floats over the right photo panel at the bottom */
+.cover .cv-stats {
+  position: absolute; bottom: 0; right: 0; left: 46%; z-index: 4;
+  display: grid; grid-template-columns: repeat(4,1fr);
+  background: rgba(13,36,11,.84);
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+.cover .cv-stats .s {
+  padding: 8px 10px; border-right: 1px solid rgba(255,255,255,.08);
+}
+.cover .cv-stats .s:last-child { border-right: none; }
+.cover .cv-stats .sk {
+  font-family: "JetBrains Mono", monospace; font-size: 7px;
+  letter-spacing: .18em; text-transform: uppercase; color: rgba(255,255,255,.34);
+}
+.cover .cv-stats .sv {
+  font-size: 14px; font-weight: 700; color: #fff;
+  letter-spacing: -.03em; margin-top: 2px; line-height: 1;
+}
+.cover .cv-stats .sv small {
+  font-family: "JetBrains Mono", monospace; font-size: 8.5px;
+  color: rgba(255,255,255,.5); margin-left: 1px; letter-spacing: 0; font-weight: 500;
+}
+
+
+/* ============================================================
+   PAGE 2 — BUYER OVERVIEW
+   Full-width ink statement → 3 ICP cards → key numbers → TOC
+   ============================================================ */
+.ov-statement {
+  background: var(--ink); color: #fff;
+  padding: 22px 24px; margin-bottom: 20px;
+  display: grid; grid-template-columns: 1fr 52mm; gap: 18px; align-items: center;
+}
+.ov-statement .q {
+  font-size: 13.5px; font-weight: 600; line-height: 1.42; letter-spacing: -.01em;
+}
+.ov-statement .q em { color: var(--gold); font-style: normal; }
+.ov-statement .aside {
+  font-family: "JetBrains Mono", monospace; font-size: 8px;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: rgba(255,255,255,.38); line-height: 1.75; text-align: right;
+}
+.ov-statement .aside b { color: rgba(255,255,255,.76); }
+ 
+.p2-main-grid {
+  display: grid;
+  grid-template-columns: 82mm 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.p2-media {
+  border: 1px solid var(--rule);
+  background: var(--bg-2);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.p2-media .media-stack {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 6px;
+  flex: 1;
+  padding: 6px 6px 0;
+  min-height: 0;
+}
+.p2-media .media-stack img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+  filter: brightness(0.97) contrast(1.02);
+}
+.p2-media .media-caption {
+  padding: 6px 12px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid var(--rule);
+  flex-shrink: 0;
+}
+.p2-media .media-caption b {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 7.5px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--green-2);
+}
+.p2-media .media-caption span {
+  font-size: 8.5px;
+  color: var(--ink-3);
+  margin-top: 1px;
+}
+.p2-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: space-between;
+}
+.p2-infrastructure {
+  background: var(--green-s);
+  border: 1px solid #c5d2c0;
+  padding: 14px 16px;
+}
+.p2-infrastructure .infra-title {
+  font-family: "JetBrains Mono", monospace; font-size: 8px;
+  letter-spacing: .18em; text-transform: uppercase; color: var(--green-2);
+  font-weight: 600; margin-bottom: 8px; padding-bottom: 5px;
+  border-bottom: 1px dashed #b2c5ad;
+}
+.p2-infrastructure .infra-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 14px;
+}
+.p2-infrastructure .infra-card {
+  display: flex;
+  flex-direction: column;
+}
+.p2-infrastructure .infra-card b {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 8px;
+  letter-spacing: .06em;
+  color: var(--ink);
+  margin-bottom: 2px;
+  display: block;
+}
+.p2-infrastructure .infra-card span {
+  font-size: 8.5px;
+  line-height: 1.35;
+  color: var(--ink-3);
+}
+ 
+.key-nums {
+  display: grid; grid-template-columns: repeat(4,1fr);
+  border: 1px solid var(--ink); margin-bottom: 20px;
+}
+.key-nums > div {
+  padding: 20px 20px; border-right: 1px solid var(--rule);
+}
+.key-nums > div:last-child { border-right: none; }
+.key-nums .kk {
+  font-family: "JetBrains Mono", monospace; font-size: 7.5px;
+  letter-spacing: .2em; text-transform: uppercase; color: var(--ink-4);
+}
+.key-nums .kv {
+  font-size: 25px; font-weight: 700; color: var(--ink);
+  margin-top: 3px; letter-spacing: -.03em; line-height: 1;
+}
+.key-nums .kv small {
+  font-family: "JetBrains Mono", monospace; font-weight: 500;
+  font-size: 10px; color: var(--ink-3); margin-left: 2px;
+}
+.key-nums .kd { margin-top: 4px; font-size: 9px; line-height: 1.4; color: var(--ink-3); }
+
+.toc-vertical {
+  margin-top: 12px;
+  border-top: 1px solid var(--rule);
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.toc-vertical .toc-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 10px;
+  line-height: 1.2;
+}
+.toc-vertical .toc-left {
+  display: flex;
+  align-items: baseline;
+  flex: 1;
+}
+.toc-vertical .toc-num {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 8.5px;
+  color: var(--accent);
+  font-weight: 600;
+  width: 14mm;
+  flex-shrink: 0;
+}
+.toc-vertical .toc-title {
+  font-weight: 600;
+  color: var(--ink);
+  flex-shrink: 0;
+}
+.toc-vertical .toc-leader {
+  flex: 1;
+  border-bottom: 1px dotted var(--rule-2);
+  margin: 0 8px;
+  height: 1px;
+}
+.toc-vertical .toc-sub {
+  font-size: 9px;
+  color: var(--ink-4);
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.cat-hero {
+  display: grid; grid-template-columns: 1fr 60mm; border: 1px solid #c8d8c3; margin-bottom: 16px;
+}
+.cat-hero .ch-l {
+  padding: 10px 14px; border-right: 1px solid #c8d8c3;
+  background: var(--green-s);
+  display: flex; flex-direction: column; gap: 4px;
+}
+.cat-hero .ch-l .eyebrow { color: var(--green-2); }
+.cat-hero .ch-l .ch-name {
+  font-size: 13px; font-weight: 700; letter-spacing: -.015em;
+  line-height: 1.1; color: var(--ink); margin: 0;
+}
+.cat-hero .ch-l .ch-desc {
+  font-size: 9px; line-height: 1.35; color: var(--ink-3);
+}
+.cat-hero .ch-l .ch-grades { display: flex; flex-wrap: wrap; gap: 3px; }
+.cat-hero .ch-r {
+  padding: 10px 12px; background: var(--green);
+  display: flex; flex-direction: column; justify-content: space-between;
+}
+.cat-hero .ch-r .ck {
+  font-family: "JetBrains Mono", monospace; font-size: 7px;
+  letter-spacing: .2em; text-transform: uppercase; color: var(--gold);
+}
+.cat-hero .ch-r .cv {
+  font-size: 10.5px; font-weight: 600; color: #fff;
+  margin-top: 1px; letter-spacing: -.005em; line-height: 1.15;
+}
+.cat-hero .ch-r .cv small {
+  display: block; font-weight: 400; font-size: 8px;
+  color: rgba(255,255,255,.58); margin-top: 2px; line-height: 1.3;
+}
+ 
+.cat-t { display: flex; flex-direction: column; margin-bottom: 8px; }
+.cat-t .row {
+  display: grid;
+  grid-template-columns: 7mm 38mm 1fr 28mm 25mm;
+  gap: 8px; padding: 7px 0;
+  border-bottom: 1px solid var(--rule);
+  align-items: start; min-height: 0;
+}
+.cat-t .row.hd {
+  flex: none; padding: 4px 0 3px;
+  border-bottom: 1.5px solid var(--ink);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 7.5px; letter-spacing: .2em; text-transform: uppercase; color: var(--ink-3);
+}
+.cat-t .row .idx {
+  font-family: "JetBrains Mono", monospace; font-size: 9px; color: var(--accent); font-weight: 600;
+}
+.cat-t .row .nm { font-size: 11.5px; font-weight: 600; color: var(--ink); letter-spacing: -.005em; line-height: 1.15; }
+.cat-t .row .nm small {
+  display: block; font-family: "JetBrains Mono", monospace;
+  font-weight: 400; font-size: 7.5px; color: var(--ink-4);
+  letter-spacing: .04em; margin-top: 2px;
+}
+.cat-t .row .gr { display: flex; flex-wrap: wrap; gap: 2px; }
+.cat-t .row .cm { font-family: "JetBrains Mono", monospace; font-size: 8.5px; color: var(--ink-2); line-height: 1.4; }
+.cat-t .row .ap { font-size: 9px; color: var(--ink-3); line-height: 1.35; text-align: right; }
+.cat-t .row .ap b { color: var(--ink); font-weight: 500; }
+ 
+.cat-summary {
+  display: grid; grid-template-columns: repeat(3,1fr);
+  border: 1px solid var(--rule); background: var(--bg-2); margin-top: 10px; margin-bottom: 0;
+}
+.cat-summary > div { padding: 10px 12px; border-right: 1px solid var(--rule-2); }
+.cat-summary > div:last-child { border-right: none; }
+.cat-summary .sk {
+  font-family: "JetBrains Mono", monospace; font-size: 7.5px;
+  letter-spacing: .2em; text-transform: uppercase; color: var(--ink-4);
+}
+.cat-summary .sv { font-size: 13px; font-weight: 600; color: var(--ink); margin-top: 3px; letter-spacing: -.005em; }
+.cat-summary .sd { font-size: 9px; color: var(--ink-4); margin-top: 2px; line-height: 1.4; }
+
+
+/* ============================================================
+   PAGE 4 — TDS
+   Unchanged structural format, tighter density
+   ============================================================ */
+.tds-head {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  padding-bottom: 7px; border-bottom: 2px solid var(--ink);
+}
+.tds-head .doc {
+  font-family: "JetBrains Mono", monospace; font-size: 8px;
+  letter-spacing: .24em; text-transform: uppercase; color: var(--accent); font-weight: 500;
+}
+.tds-head h1 { font-size: 21px; font-weight: 700; margin: 5px 0 3px; letter-spacing: -.02em; line-height: 1.04; }
+.tds-head .latin { font-size: 10px; font-style: italic; color: var(--ink-3); }
+.tds-head .r {
+  text-align: right; font-family: "JetBrains Mono", monospace;
+  font-size: 8px; letter-spacing: .14em; color: var(--ink-4);
+  text-transform: uppercase; line-height: 1.65;
+}
+.tds-head .r b { color: var(--ink); }
+
+.tds-meta {
+  display: grid; grid-template-columns: repeat(4,1fr);
+  border-bottom: 1px solid var(--ink); padding: 16px 0; margin-bottom: 24px;
+  font-family: "JetBrains Mono", monospace; font-size: 8px;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--ink-4);
+}
+.tds-meta div b {
+  display: block; color: var(--ink); font-weight: 600;
+  font-size: 10px; letter-spacing: .04em; text-transform: none; margin-top: 4px;
+}
+
+.tds-body { display: grid; grid-template-columns: 1fr 60mm; gap: 9px; flex: 1; align-items: stretch; }
+.tds-tables { display: flex; flex-direction: column; gap: 6px; }
+.tds-tab { border: 1px solid var(--ink); }
+.tds-tab:last-child { margin-bottom: 0; }
+.tds-tab .ttl {
+  background: var(--ink); color: #fff;
+  padding: 4.5px 9px; font-family: "JetBrains Mono", monospace;
+  font-size: 8px; letter-spacing: .18em; text-transform: uppercase;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.tds-tab .ttl span { color: #888; font-weight: 400; }
+.tds-rr { display: grid; grid-template-columns: 43mm 1fr 27mm; border-top: 1px solid var(--rule); font-size: 9px; }
+.tds-rr:first-child { border-top: none; }
+.tds-rr > div { padding: 4.5px 10px; }
+.tds-rr .p { font-weight: 500; color: var(--ink); }
+.tds-rr .v { font-family: "JetBrains Mono", monospace; font-size: 8.5px; color: var(--ink-2); border-left: 1px solid var(--rule); }
+.tds-rr .m { font-family: "JetBrains Mono", monospace; font-size: 8px; letter-spacing: .06em; color: var(--ink-4); text-transform: uppercase; border-left: 1px solid var(--rule); text-align: right; }
+.tds-rr.rh { background: var(--bg-2); }
+.tds-rr.rh > div { font-family: "JetBrains Mono", monospace; font-size: 7.5px; letter-spacing: .18em; text-transform: uppercase; color: var(--ink-4); font-weight: 600; }
+
+.tds-side { display: flex; flex-direction: column; gap: 10px; }
+.tds-side .img { height: 40mm; background: var(--bg-3); overflow: hidden; border: 1px solid var(--rule); flex: none; }
+.tds-side .img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.tds-side .blk { border: 1px solid var(--rule); padding: 14px 18px; }
+.tds-side .blk .k { font-family: "JetBrains Mono", monospace; font-size: 7.5px; letter-spacing: .18em; text-transform: uppercase; color: var(--ink-4); }
+.tds-side .blk .v { font-size: 12.5px; font-weight: 600; color: var(--ink); margin-top: 3px; letter-spacing: -.005em; line-height: 1.2; }
+.tds-side .blk .v small { display: block; font-weight: 400; font-size: 9px; color: var(--ink-3); margin-top: 2px; line-height: 1.4; }
+.tds-side .blk.ak { background: var(--green); border-color: var(--green); margin-top: auto; }
+.tds-side .blk.ak .k { color: var(--gold); }
+.tds-side .blk.ak .v { color: #fff; font-family: "JetBrains Mono", monospace; font-weight: 500; font-size: 11px; letter-spacing: .04em; }
+.tds-side .blk.ak .v small { color: rgba(255,255,255,.64); }
+
+.tds-foot {
+  margin-top: 20px; padding: 12px 16px; background: var(--green); color: #fff;
+  display: flex; justify-content: space-between; align-items: center;
+  font-family: "JetBrains Mono", monospace; font-size: 8px;
+  letter-spacing: .14em; text-transform: uppercase;
+}
+.tds-foot b { color: var(--gold); }
+
+
+/* ============================================================
+   PAGE 5 — APPLICATIONS — HORIZONTAL STRIPS
+   Each strip: [Sector label / ICP] | [3 use cases] | [Grades]
+   ============================================================ */
+.app-strips { display: flex; flex-direction: column; margin-bottom: 0; margin-top: 12px; }
+.app-strip {
+  display: grid; grid-template-columns: 46mm 1fr 46mm;
+  min-height: 0; padding: 26px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.app-strip:last-child { border-bottom: none; }
+
+.app-strip .as-l {
+  padding: 9px 16px 9px 0;
+  border-right: 1px solid var(--rule);
+  display: flex; flex-direction: column; justify-content: center;
+}
+.app-strip .as-l .sn {
+  font-family: "JetBrains Mono", monospace; font-size: 9px;
+  color: var(--accent); font-weight: 600; margin-bottom: 3px;
+}
+.app-strip .as-l .sector {
+  font-size: 13px; font-weight: 700; color: var(--ink);
+  letter-spacing: -.01em; line-height: 1.1;
+}
+.app-strip .as-l .icp {
+  font-family: "JetBrains Mono", monospace; font-size: 7.5px;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--ink-4); margin-top: 5px; line-height: 1.55;
+}
+.app-strip .as-l .icp b { color: var(--accent); }
+
+.app-strip .as-m {
+  padding: 9px 20px; display: flex;
+  flex-direction: column; gap: 10px; justify-content: center;
+}
+.app-strip .use {
+  display: grid; grid-template-columns: 10px 1fr; gap: 5px;
+  font-size: 9.5px; line-height: 1.45; color: var(--ink-2);
+}
+.app-strip .use .ar {
+  color: var(--accent); font-family: "JetBrains Mono", monospace;
+  font-weight: 600; font-size: 9px;
+}
+.app-strip .use b { color: var(--ink); }
+
+.app-strip .as-r {
+  padding: 9px 0 9px 20px;
+  border-left: 1px solid var(--rule);
+  display: flex; flex-direction: column; justify-content: center; gap: 5px;
+}
+.app-strip .as-r .rk {
+  font-family: "JetBrains Mono", monospace; font-size: 7.5px;
+  letter-spacing: .2em; text-transform: uppercase; color: var(--ink-4); margin-bottom: 2px;
+}
+.app-strip .as-r .pills { display: flex; flex-wrap: wrap; gap: 3px; }
+
+
+/* ============================================================
+   PAGE 6 — QUALITY
+   Full-width promise block → 5-step process → 2-col docs+params
+   ============================================================ */
+.q-promise {
+  background: var(--green); color: #fff;
+  padding: 18px 20px; margin-bottom: 20px;
+  display: grid; grid-template-columns: 1fr 50mm; gap: 14px; align-items: center;
+}
+.q-promise .qp-quote {
+  font-size: 14px; font-weight: 600; line-height: 1.4; letter-spacing: -.01em;
+}
+.q-promise .qp-quote em { color: var(--gold); font-style: normal; }
+.q-promise .qp-aside {
+  text-align: right; font-family: "JetBrains Mono", monospace;
+  font-size: 8px; letter-spacing: .18em; text-transform: uppercase;
+  color: rgba(255,255,255,.42); line-height: 1.75;
+}
+.q-promise .qp-aside b { color: rgba(255,255,255,.82); }
+
+.process {
+  display: grid; grid-template-columns: repeat(5,1fr);
+  border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink);
+  margin-bottom: 20px;
+}
+.process > div { padding: 16px 14px 18px; border-right: 1px solid var(--rule); }
+.process > div:last-child { border-right: none; }
+.process .n {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 20px; height: 20px; border-radius: 50%;
+  background: var(--ink); color: #fff;
+  font-family: "JetBrains Mono", monospace; font-weight: 600; font-size: 9px;
+}
+.process .lbl { margin-top: 6px; font-family: "JetBrains Mono", monospace; font-size: 7.5px; letter-spacing: .2em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+.process .t { margin-top: 2px; font-size: 11px; font-weight: 600; color: var(--ink); letter-spacing: -.005em; }
+.process .d { margin-top: 4px; font-size: 9px; line-height: 1.45; color: var(--ink-3); }
+
+.q-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+.q-docs { border: 1px solid var(--rule); background: #fff; padding: 18px 20px; display: flex; flex-direction: column; }
+.q-docs h4 { margin: 0 0 5px; font-size: 11.5px; font-weight: 600; border-bottom: 1px solid var(--rule); padding-bottom: 5px; letter-spacing: -.005em; display: flex; justify-content: space-between; align-items: baseline; flex-shrink: 0; }
+.q-docs h4 .tag { font-family: "JetBrains Mono", monospace; font-size: 8px; color: var(--accent); letter-spacing: .18em; font-weight: 500; text-transform: uppercase; }
+.q-docs .row { display: grid; grid-template-columns: 11px 1fr auto; gap: 6px; align-items: baseline; padding: 9px 0; border-bottom: 1px dashed var(--rule); font-size: 9.5px; color: var(--ink-2); }
+.q-docs .row:last-child { border-bottom: none; }
+.q-docs .row .ck { color: var(--green); font-weight: 700; font-size: 9.5px; }
+.q-docs .row .st { font-family: "JetBrains Mono", monospace; font-size: 7.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-4); }
+.q-docs .row .st.opt { color: var(--accent); }
+
+.q-params { border: 1px solid var(--rule); background: #fff; padding: 18px 20px; display: flex; flex-direction: column; }
+.q-params h4 { margin: 0 0 5px; font-size: 11.5px; font-weight: 600; border-bottom: 1px solid var(--rule); padding-bottom: 5px; letter-spacing: -.005em; display: flex; justify-content: space-between; flex-shrink: 0; }
+.q-params h4 .tag { font-family: "JetBrains Mono", monospace; font-size: 8px; color: var(--accent); letter-spacing: .18em; font-weight: 500; text-transform: uppercase; }
+.q-pgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 12px; }
+.q-param { padding: 8px 0; border-bottom: 1px dashed var(--rule); font-size: 9.5px; color: var(--ink-3); line-height: 1.35; }
+.q-param:nth-last-child(-n+2) { border-bottom: none; }
+.q-param b { display: block; font-size: 9.5px; font-weight: 600; color: var(--ink); }
+
+
+/* ============================================================
+   PAGE 7 — DIRECT VS TRADING
+   Green positioning header → compare table → 3 callout boxes
+   ============================================================ */
+.cmp-hdr {
+  background: var(--green); color: #fff;
+  padding: 16px 20px; margin-bottom: 20px;
+  display: grid; grid-template-columns: 1fr 52mm; gap: 14px; align-items: center;
+}
+.cmp-hdr .eyebrow { color: var(--gold); margin-bottom: 4px; }
+.cmp-hdr h2 { margin: 0; font-size: 19px; font-weight: 700; color: #fff; letter-spacing: -.018em; line-height: 1.1; }
+.cmp-hdr .r { font-family: "JetBrains Mono", monospace; font-size: 8px; letter-spacing: .16em; text-transform: uppercase; color: rgba(255,255,255,.44); line-height: 1.72; text-align: right; }
+.cmp-hdr .r b { color: #fff; }
+
+.cmp-t { border: 1px solid var(--ink); margin-bottom: 20px; display: flex; flex-direction: column; }
+.cmp-t .hd {
+  display: grid; grid-template-columns: 52mm 1fr 1fr;
+  background: var(--bg-2); border-bottom: 1.5px solid var(--ink); flex: none;
+}
+.cmp-t .hd > div { padding: 12px 14px; font-family: "JetBrains Mono", monospace; font-size: 7.5px; letter-spacing: .2em; text-transform: uppercase; color: var(--ink-3); font-weight: 600; border-right: 1px solid var(--rule); }
+.cmp-t .hd > div:last-child { border-right: none; }
+.cmp-t .hd .us { background: var(--green); color: #fff; }
+.cmp-t .row { display: grid; grid-template-columns: 52mm 1fr 1fr; border-top: 1px solid var(--rule); min-height: 0; }
+.cmp-t .row > div { padding: 11px 14px; font-size: 9.5px; line-height: 1.45; color: var(--ink-2); border-right: 1px solid var(--rule); }
+.cmp-t .row > div:last-child { border-right: none; }
+.cmp-t .row .q { font-weight: 600; color: var(--ink); font-size: 10px; }
+.cmp-t .row .x { color: var(--ink-3); }
+.cmp-t .row .y { background: rgba(45,90,39,.04); }
+.cmp-t .row .y .ck { color: var(--green); font-weight: 700; margin-right: 3px; }
+
+.cmp-boxes { margin-top: 20px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; flex-shrink: 0; margin-bottom: 4px; }
+.cmp-boxes .b {
+  border: 1px solid var(--rule-2); padding: 14px 16px;
+  background: var(--green-s); border-left: 3px solid var(--green-2);
+}
+.cmp-boxes .b .cb-label {
+  font-family: "JetBrains Mono", monospace; font-size: 7.5px;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--green-2); font-weight: 600;
+  border-bottom: 1px dashed #b2c5ad; padding-bottom: 5px; margin-bottom: 8px;
+  display: block;
+}
+.cmp-boxes .b .cb-val {
+  font-size: 11.5px; font-weight: 600; color: var(--ink);
+  letter-spacing: -.005em; line-height: 1.2;
+}
+.cmp-boxes .b .cb-val small {
+  display: block; font-weight: 400; font-size: 9px;
+  color: var(--ink-3); margin-top: 3px; line-height: 1.4;
+}
+
+
+/* ============================================================
+   PAGE 8 — BACK COVER
+   ============================================================ */
+.bk { padding: 0; background: var(--green-3); color: #fff; position: relative; }
+.bk .bk-photo { position: absolute; left: 0; right: 0; top: 0; height: 48%; z-index: 0; overflow: hidden; }
+.bk .bk-photo img { width: 100%; height: 100%; object-fit: cover; opacity: .28; filter: contrast(1.04); }
+.bk .bk-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,48,18,.52) 0%, rgba(20,48,18,.82) 62%, rgba(20,48,18,1) 100%); }
+
+.bk-top { position: relative; z-index: 2; padding: 15mm 13mm 0; display: flex; justify-content: space-between; align-items: flex-start; }
+.bk-top .brand img { filter: invert(1) brightness(1.05); height: 25px; }
+.bk-top .ref { font-family: "JetBrains Mono", monospace; font-size: 8px; letter-spacing: .22em; text-transform: uppercase; color: rgba(255,255,255,.36); text-align: right; line-height: 1.7; }
+.bk-top .ref b { color: rgba(255,255,255,.7); }
+
+.bk-body { position: relative; z-index: 2; padding: 0 13mm; margin-top: 28mm; }
+.bk-body .eyebrow { color: var(--gold); display: block; margin-bottom: 11px; }
+.bk-body h2 { font-size: 50px; font-weight: 800; letter-spacing: -.046em; line-height: .9; color: #fff; margin: 0; }
+.bk-body h2 em { font-style: normal; color: var(--gold); }
+.bk-body .sub { margin-top: 14px; max-width: 133mm; font-size: 11.5px; line-height: 1.6; color: rgba(255,255,255,.58); font-weight: 300; }
+.bk-body .sub b { color: rgba(255,255,255,.86); font-weight: 500; }
+
+.bk-contact {
+  position: relative; z-index: 2;
+  margin: auto 13mm 13mm;
+  padding: 20px 24px;
+  border: 1px solid rgba(255,255,255,.15);
+  background: rgba(255,255,255,.04);
+}
+.bk-contact .row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px 22px; }
+.bk-contact .col { display: flex; flex-direction: column; gap: 6px; }
+.bk-contact h5 { margin: 0 0 4px; font-family: "JetBrains Mono", monospace; font-size: 8px; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); font-weight: 500; padding-bottom: 6px; border-bottom: 1px solid rgba(255,255,255,.13); }
+.bk-contact .ln { display: grid; grid-template-columns: 68px 1fr; gap: 8px; align-items: baseline; }
+.bk-contact .ln .k { font-family: "JetBrains Mono", monospace; font-size: 8px; letter-spacing: .16em; text-transform: uppercase; color: rgba(255,255,255,.34); }
+.bk-contact .ln .v { font-size: 13px; font-weight: 500; color: rgba(255,255,255,.86); letter-spacing: -.005em; line-height: 1.3; }
+.bk-contact .ln .v a { color: rgba(255,255,255,.86); text-decoration: none; }
+.bk-contact .person { display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: baseline; padding: 5px 0; border-bottom: 1px dashed rgba(255,255,255,.12); }
+.bk-contact .person:last-child { border-bottom: none; }
+.bk-contact .person .nm { font-size: 12px; font-weight: 500; color: rgba(255,255,255,.86); letter-spacing: -.005em; }
+.bk-contact .person .nm small { display: block; font-family: "JetBrains Mono", monospace; font-size: 8px; font-weight: 400; color: rgba(255,255,255,.34); letter-spacing: .08em; text-transform: uppercase; margin-top: 1px; }
+.bk-contact .person .ph { font-family: "JetBrains Mono", monospace; font-size: 11px; color: rgba(255,255,255,.78); font-weight: 500; letter-spacing: .02em; text-align: right; }
+
+.bk-ft {
+  position: relative; z-index: 2;
+  padding: 16px 13mm; border-top: 1px solid rgba(255,255,255,.12);
+  display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; align-items: end;
+  font-family: "JetBrains Mono", monospace; font-size: 8px;
+  letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.32);
+}
+.bk-ft b { color: rgba(255,255,255,.62); font-weight: 600; display: block; margin-bottom: 3px; }
+.bk-ft .col { line-height: 1.7; }
+.bk-ft .center { text-align: center; }
+.bk-ft .right { text-align: right; }
+
+/* ── NEW VISUAL PANELS FOR WHITESPACE ELIMINATION ───────────── */
+/* Page 2: Custom Processing Capabilities */
+.ov-capabilities {
+  padding: 16px 18px;
+  background: var(--bg-2); border: 1px solid var(--rule-2);
+}
+.ov-capabilities .oc-title {
+  font-family: "JetBrains Mono", monospace; font-size: 8px;
+  letter-spacing: .18em; text-transform: uppercase; color: var(--accent);
+  font-weight: 600; margin-bottom: 10px; padding-bottom: 6px;
+  border-bottom: 1px dashed var(--rule-2);
+}
+.ov-capabilities .oc-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px 24px;
+}
+.ov-capabilities .oc-step {
+  font-size: 9.5px; line-height: 1.45; color: var(--ink-3);
+}
+.ov-capabilities .oc-step b {
+  display: block; font-family: "JetBrains Mono", monospace; font-size: 8px;
+  letter-spacing: .06em; color: var(--ink); margin-bottom: 3px;
+}
+
+/* Page 3: Mesh Reference */
+.mesh-ref {
+  margin-top: 9px; padding: 10px 12px;
+  background: var(--green-s); border: 1px solid #c5d2c0;
+}
+.mesh-ref .mr-hdr {
+  font-family: "JetBrains Mono", monospace; font-size: 8px;
+  letter-spacing: .18em; text-transform: uppercase; color: var(--green-2);
+  font-weight: 600; margin-bottom: 6px; padding-bottom: 5px;
+  border-bottom: 1px dashed #b2c5ad;
+}
+.mesh-ref .mr-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 7px 16px;
+}
+.mesh-ref .mr-grid > div {
+  font-size: 9.5px; line-height: 1.4; color: var(--ink-3);
+}
+.mesh-ref .mr-grid b {
+  display: block; color: var(--green-2); font-weight: 600; font-size: 9.5px; margin-bottom: 1px;
+}
+
+/* Page 4: TDS Declarations */
+.tds-declarations {
+  margin-top: 14px; padding: 12px 16px;
+  background: var(--bg-2); border: 1px solid var(--rule-2);
+}
+.tds-declarations .dec-title {
+  font-family: "JetBrains Mono", monospace; font-size: 8px;
+  letter-spacing: .18em; text-transform: uppercase; color: var(--accent);
+  font-weight: 600; margin-bottom: 8px; padding-bottom: 5px;
+  border-bottom: 1px dashed var(--rule-2);
+}
+.tds-declarations .dec-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px 16px;
+}
+.tds-declarations .dec-grid span {
+  font-size: 9px; color: var(--ink-3); display: block;
+}
+.tds-declarations .dec-grid b {
+  display: block; color: var(--ink-2); font-size: 9px; font-weight: 600; margin-bottom: 2px;
+}
+
+/* Page 5: Viscosity & Formulation */
+.formulation-guide {
+  margin-top: 24px; padding: 18px 20px;
+  background: var(--bg-2); border: 1px solid var(--rule-2);
+}
+.formulation-guide .fg-title {
+  font-family: "JetBrains Mono", monospace; font-size: 8px;
+  letter-spacing: .18em; text-transform: uppercase; color: var(--accent);
+  font-weight: 600; margin-bottom: 8px; padding-bottom: 5px;
+  border-bottom: 1px dashed var(--rule-2);
+}
+.formulation-guide .fg-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px;
+}
+.formulation-guide .fg-card {
+  display: flex; flex-direction: column;
+}
+.formulation-guide .fg-k {
+  font-size: 10.5px; font-weight: 700; color: var(--ink); letter-spacing: -.01em;
+}
+.formulation-guide .fg-v {
+  font-family: "JetBrains Mono", monospace; font-size: 8.5px; color: var(--accent);
+  font-weight: 600; margin: 2px 0 3px; text-transform: uppercase;
+}
+.formulation-guide .fg-d {
+  font-size: 9px; line-height: 1.35; color: var(--ink-3);
+}
+
+/* Page 6: Quality Release Protocol */
+.q-release {
+  margin-top: 24px; padding: 18px 20px;
+  background: var(--bg-2); border: 1px solid var(--rule-2);
+}
+.q-release .qr-title {
+  font-family: "JetBrains Mono", monospace; font-size: 8px;
+  letter-spacing: .18em; text-transform: uppercase; color: var(--accent);
+  font-weight: 600; margin-bottom: 10px; padding-bottom: 6px;
+  border-bottom: 1px dashed var(--rule-2);
+}
+.q-release .qr-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px 24px;
+}
+.q-release .qr-item {
+  font-size: 9.5px; line-height: 1.45; color: var(--ink-3);
+}
+.q-release .qr-item b {
+  display: block; color: var(--accent); font-weight: 600; font-size: 9.5px; margin-bottom: 3px;
+}
+
+/* Page 7: Sourcing Guarantee */
+.risk-mitigation {
+  margin-top: 24px; padding: 18px 20px;
+  background: var(--green-s); border: 1px solid #c5d2c0;
+}
+.risk-mitigation .rm-title {
+  font-family: "JetBrains Mono", monospace; font-size: 8px;
+  letter-spacing: .18em; text-transform: uppercase; color: var(--green-2);
+  font-weight: 600; margin-bottom: 8px; padding-bottom: 5px;
+  border-bottom: 1px dashed #b2c5ad;
+}
+.risk-mitigation .rm-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px 24px;
+}
+.risk-mitigation .rm-grid > div {
+  font-size: 9.5px; line-height: 1.4; color: var(--ink-3);
+}
+.risk-mitigation .rm-grid b {
+  display: block; color: var(--green-2); font-weight: 600; font-size: 9.5px; margin-bottom: 2px;
+}
+
+/* ── SCREEN ONLY PREVIEW ENHANCEMENTS ───────────────────────── */
+@media screen {
+  .stack {
+    background: #e2decb;
+    background-image: radial-gradient(#d1cea2 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+  .page {
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+    border-radius: 6px;
+  }
+  .page:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent);
+    box-shadow: 0 10px 20px rgba(0,0,0,.08), 0 35px 90px -10px rgba(0,0,0,.32);
+  }
+  /* Elegant screen-only floating page indicator labels */
+  .page::before {
+    content: attr(data-screen-label);
+    position: absolute;
+    left: -145px;
+    top: 15px;
+    width: 125px;
+    text-align: right;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    color: var(--green-2);
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0.8;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 4px;
+    pointer-events: none;
+  }
+  /* Custom scrollbar for premium aesthetic */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #e2decb;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--green);
+    border: 2px solid #e2decb;
+    border-radius: 6px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--green-2);
+  }
+}
+
+/* ── PRINT ──────────────────────────────────────────────────── */
+@media print {
+  html, body { background: #fff; }
+  .stack { padding: 0; gap: 0; }
+  .page { box-shadow: none; border: none; page-break-after: always; break-after: page; }
+  .page:last-child { page-break-after: auto; break-after: auto; }
+}
+@page { size: A4; margin: 0; }
+</style>
+</head>
+<body>
+<div class="stack">
+
+
+<!-- ============================================================
+     PAGE 1 — SPLIT COVER
+     ============================================================ -->
+<section class="page cover" data-screen-label="01 Front Cover">
+
+  <!-- Left column: type -->
+  <div class="cv-l">
+    <a class="brand cv-brand" href="#">
+      <img src="https://rmpsyllium.com/assets/logo-header.webp" alt="RM Psyllium"/>
+    </a>
+
+    <div class="cv-center">
+      <span class="cv-eyebrow">Manufacturer · Siddhpur, Gujarat, India</span>
+      <h1 class="cv-headline">Psyllium<br/>to <em>spec.</em><br/>Direct.</h1>
+      <p class="cv-tag">
+        <b>Pharmacopoeia-grade husk, powder, seeds and organic</b> — milled in Siddhpur and dispatched direct from the facility. No trading layer. No minimum order.
+      </p>
+    </div>
+
+    <div class="cv-creds">
+      <div class="cv-cred">
+        <span>Pharma</span>
+        <b>USP · EP · IP · NF</b>
+      </div>
+      <div class="cv-cred">
+        <span>Organic</span>
+        <b>USDA NOP · EU-NOP</b>
+      </div>
+      <div class="cv-cred">
+        <span>Testing</span>
+        <b>NABL-accredited · per lot</b>
+      </div>
+      <div class="cv-cred">
+        <span>Port</span>
+        <b>Mundra · Kandla · JNPT</b>
+      </div>
+    </div>
+  </div>
+
+  <!-- Document ref top-right -->
+  <div class="cv-doc-ref">Bulk Catalogue · <b>Vol. 2026</b></div>
+
+  <!-- Right column: photo -->
+  <div class="cv-r">
+    <img src="https://rmpsyllium.com/assets/generated/facility-bags-gujarat.webp" alt=""/>
+  </div>
+
+  <!-- Stats strip overlays the bottom of the photo -->
+  <div class="cv-stats">
+    <div class="s"><div class="sk">Capacity</div><div class="sv">2,000<small>MT/yr</small></div></div>
+    <div class="s"><div class="sk">Sample dispatch</div><div class="sv">5<small>days</small></div></div>
+    <div class="s"><div class="sk">Lead time FOB</div><div class="sv">7<small>days</small></div></div>
+    <div class="s"><div class="sk">Grades</div><div class="sv">17<small>SKUs</small></div></div>
+  </div>
+
+</section>
+
+
+<!-- ============================================================
+     PAGE 2 — BUYER OVERVIEW
+     ============================================================ -->
+<section class="page padded" data-screen-label="02 Buyer Overview">
+  <div class="hdr">
+    <a class="brand" href="#"><img src="https://rmpsyllium.com/assets/logo-header.webp" alt="RM Psyllium"/></a>
+    <div class="nav"><span>02 / 08</span><b>Buyer overview · Contents</b></div>
+  </div>
+
+  <div class="page-body">
+
+    <!-- Full-width positioning statement -->
+    <div class="ov-statement">
+      <div class="q">
+        We mill. We test. We ship direct.<br/>
+        <em>No agent, no trading layer, no template COA — every lot starts and ends in our facility.</em>
+      </div>
+      <div class="aside">
+        Plantago ovata<br/>
+        Origin <b>Gujarat, India</b><br/>
+        FOB <b>Mundra · Kandla · JNPT</b><br/>
+        <b>Pharmacopoeia-compliant</b>
+      </div>
+    </div>
+
+        <!-- Two-Column Industrial Layout -->
+    <div class="p2-main-grid">
+      
+      <!-- Left Column: Process & Media Stack -->
+      <div class="p2-media">
+        <div class="media-stack">
+          <img src="Process_image.png" alt="RM Psyllium Processing Floor and Active Milling Line"/>
+          <img src="https://rmpsyllium.com/assets/generated/facility-bags-gujarat.webp" alt="Bulk Warehouse Inventory Storage Siddhpur"/>
+        </div>
+        <div class="media-caption">
+          <b>Integrated Siddhpur Plant</b>
+          <span>Processing floor &amp; rare-earth magnet-screened packaging lines</span>
+        </div>
+      </div>
+
+      <!-- Right Column: Capabilities & Infrastructure -->
+      <div class="p2-content">
+        
+        <!-- B2B Custom Processing Capabilities -->
+        <div class="ov-capabilities">
+          <div class="oc-title">B2B Custom Processing Capabilities</div>
+          <div class="oc-grid">
+            <div class="oc-step"><b>Purity Calibration</b> Sifting calibrated to 85%, 95%, 98%, or 99% USP purity. No custom blending; each lot is milled to order from raw seed.</div>
+            <div class="oc-step"><b>Mesh Size Customization</b> Precision grinding from coarse flakes (40 mesh) to ultra-fine powders (200 mesh) for custom hydration.</div>
+            <div class="oc-step"><b>B2B Export Packaging</b> 25 kg multi-wall paper cartons with heat-sealed food-grade inner HDPE lining, paper sacks, or bulk fiber drums.</div>
+            <div class="oc-step"><b>Global Audit Compliance</b> Complete alignment with GMP, HACCP, ISO 22000, Kosher, Halal, USDA Organic, and EU Organic standards.</div>
+          </div>
+        </div>
+
+        <!-- B2B Infrastructure & Plant Scale -->
+        <div class="p2-infrastructure">
+          <div class="infra-title">Milling Infrastructure &amp; Plant Scale</div>
+          <div class="infra-grid">
+            <div class="infra-card">
+              <b>Raw Seed Sorting &amp; De-Stoning</b>
+              <span>High-efficiency vibratory screens, Buhler gravity de-stoners, and color Sortex sorting lines to eliminate crop contaminants.</span>
+            </div>
+            <div class="infra-card">
+              <b>Low-Temp Impact Milling</b>
+              <span>Specialized pin &amp; classifier mills operating under strict thermal control to preserve psyllium swelling index (&ge;40 mL/g).</span>
+            </div>
+            <div class="infra-card">
+              <b>Positive-Pressure Clean Rooms</b>
+              <span>Milling and packing floors operate under HEPA-filtered positive pressure to eliminate dust and micro contamination.</span>
+            </div>
+            <div class="infra-card">
+              <b>Rare-Earth Metal Magnet Grid</b>
+              <span>In-line 10,000 Gauss magnetic bars and dual-frequency detectors check every kilogram down to 1.5mm stainless steel sensitivity.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Key numbers -->
+    <div class="key-nums">
+      <div>
+        <div class="kk">Annual capacity</div>
+        <div class="kv">2,000<small>MT</small></div>
+        <div class="kd">Husk-equivalent across all SKUs</div>
+      </div>
+      <div>
+        <div class="kk">Minimum order</div>
+        <div class="kv">1<small>KG</small></div>
+        <div class="kd">No MOQ · samples ship in 5 days</div>
+      </div>
+      <div>
+        <div class="kk">Lead time to FOB</div>
+        <div class="kv">7<small>days</small></div>
+        <div class="kd">From confirmed purchase order</div>
+      </div>
+      <div>
+        <div class="kk">Grades in stock</div>
+        <div class="kv">17<small>SKUs</small></div>
+        <div class="kd">Across seven product lines</div>
+      </div>
+    </div>
+
+    <!-- Elegant Vertical TOC with Dotted Leaders -->
+    <div class="toc-vertical">
+      <div class="toc-item">
+        <div class="toc-left">
+          <span class="toc-num">Page 03</span>
+          <span class="toc-title">Product Catalogue &amp; Mesh Standards</span>
+          <span class="toc-leader"></span>
+        </div>
+        <span class="toc-sub">Seven product lines · calibrated sifting &amp; particle sizes</span>
+      </div>
+      <div class="toc-item">
+        <div class="toc-left">
+          <span class="toc-num">Page 04</span>
+          <span class="toc-title">Technical Data Sheet (99% USP)</span>
+          <span class="toc-leader"></span>
+        </div>
+        <span class="toc-sub">Physical specifications, chemical bounds, microbial load &amp; certifications</span>
+      </div>
+      <div class="toc-item">
+        <div class="toc-left">
+          <span class="toc-num">Page 05</span>
+          <span class="toc-title">Industry Applications</span>
+          <span class="toc-leader"></span>
+        </div>
+        <span class="toc-sub">Pharma excipient, bakery binding, equine feeds &amp; oil-well viscosifiers</span>
+      </div>
+      <div class="toc-item">
+        <div class="toc-left">
+          <span class="toc-num">Page 06</span>
+          <span class="toc-title">Quality Assurance &amp; Release Control</span>
+          <span class="toc-leader"></span>
+        </div>
+        <span class="toc-sub">5-stage tracing, dual COA lab verification &amp; 24-month control retains</span>
+      </div>
+      <div class="toc-item">
+        <div class="toc-left">
+          <span class="toc-num">Page 07</span>
+          <span class="toc-title">Manufacturer-Direct Comparison</span>
+          <span class="toc-leader"></span>
+        </div>
+        <span class="toc-sub">Direct supply advantages, budget price protection &amp; audit rights</span>
+      </div>
+      <div class="toc-item">
+        <div class="toc-left">
+          <span class="toc-num">Page 08</span>
+          <span class="toc-title">Back Cover &amp; Export Contact Desk</span>
+          <span class="toc-leader"></span>
+        </div>
+        <span class="toc-sub">Primary direct communication lines &amp; international dispatch ports</span>
+      </div>
+    </div>
+
+    <div class="ftr">
+      <span>RM Psyllium · Bulk Catalogue 2026 · Overview</span>
+      <span class="nxt">→ p. 03 · Product catalogue</span>
+      <span><b>02</b> / 08</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     PAGE 3 — PRODUCT CATALOGUE
+     ============================================================ -->
+<section class="page padded" data-screen-label="03 Catalogue">
+  <div class="hdr">
+    <a class="brand" href="#"><img src="https://rmpsyllium.com/assets/logo-header.webp" alt="RM Psyllium"/></a>
+    <div class="nav"><span>03 / 08</span><b>Product catalogue</b></div>
+  </div>
+
+  <div class="page-body">
+    <div class="sec-rule">
+      <div class="l">
+        <span class="eyebrow">Section 01 · Products</span>
+        <h1>Seven product lines. Every grade your formulation needs.</h1>
+      </div>
+      <div class="r">
+        Plantago ovata · <b>Origin: Gujarat, India</b><br/>
+        Custom mesh and purity on request.<br/>
+        <b>Pricing within 24 hours.</b>
+      </div>
+    </div>
+
+    <!-- Featured grade spotlight -->
+    <div class="cat-hero">
+      <div class="ch-l">
+        <span class="eyebrow">Most requested grade</span>
+        <p class="ch-name">Psyllium Husk 99% USP · EP · IP · NF</p>
+        <p class="ch-desc">Pharmacopoeia-grade flaked husk. Swelling index ≥ 40 mL/g, tested per lot by NABL-accredited lab. Single mill run per shipment — no blending to grade. Full TDS on p. 04.</p>
+        <div class="ch-grades">
+          <span class="pill g">99% USP</span>
+          <span class="pill g">99% EP</span>
+          <span class="pill g">99% IP</span>
+          <span class="pill g">98%</span>
+          <span class="pill g">95%</span>
+          <span class="pill g">85%</span>
+        </div>
+      </div>
+      <div class="ch-r">
+        <div>
+          <div class="ck">Pack</div>
+          <div class="cv">25 KG carton<small>HDPE-lined, four-ply corrugated</small></div>
+        </div>
+        <div>
+          <div class="ck">Container load</div>
+          <div class="cv">12 / 24 MT<small>20 ft / 40 ft HC, palletised</small></div>
+        </div>
+        <div>
+          <div class="ck">Sample</div>
+          <div class="cv">100–500 g<small>COA travels with parcel · 5 days</small></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Full catalogue table -->
+    <div class="cat-t">
+      <div class="row hd">
+        <div>№</div><div>Product line</div><div>Grades available</div><div>Compliance</div><div style="text-align:right;">Pack / load</div>
+      </div>
+      <div class="row">
+        <div class="idx">01</div>
+        <div class="nm">Psyllium Seeds<small>Plantago ovata · whole, cleaned</small></div>
+        <div class="gr"><span class="pill">Standard 98%</span><span class="pill">Sortex 99%</span></div>
+        <div class="cm">Food grade<br/>Foreign matter ≤ 1%</div>
+        <div class="ap"><b>25 / 50 KG</b> PP<br/>20 ft · 20 MT</div>
+      </div>
+      <div class="row">
+        <div class="idx">02</div>
+        <div class="nm">Psyllium Husk<small>Flaked, separated from seed coat</small></div>
+        <div class="gr"><span class="pill g">85%</span><span class="pill g">95%</span><span class="pill g">98%</span><span class="pill g">99%</span></div>
+        <div class="cm">USP · EP · IP<br/>NF · Food</div>
+        <div class="ap"><b>25 KG</b> carton<br/>HDPE-lined</div>
+      </div>
+      <div class="row">
+        <div class="idx">03</div>
+        <div class="nm">Psyllium Husk Powder<small>Ground husk, five mesh grades</small></div>
+        <div class="gr"><span class="pill">40m</span><span class="pill">60m</span><span class="pill">80m</span><span class="pill">100m</span><span class="pill">200m</span></div>
+        <div class="cm">USP · EP · Food<br/>Custom PSD on PO</div>
+        <div class="ap"><b>25 KG</b> carton<br/>Foil / poly / drum</div>
+      </div>
+      <div class="row">
+        <div class="idx">04</div>
+        <div class="nm">Organic Psyllium<small>Husk &amp; powder · dedicated organic line</small></div>
+        <div class="gr"><span class="pill au">NOP</span><span class="pill au">EU-NOP</span><span class="pill g">95%+</span></div>
+        <div class="cm">USDA NOP<br/>EU 2018/848</div>
+        <div class="ap"><b>25 KG</b> organic<br/>Audit-traceable</div>
+      </div>
+      <div class="row">
+        <div class="idx">05</div>
+        <div class="nm">Psyllium Khakha Powder<small>Refined byproduct meal</small></div>
+        <div class="gr"><span class="pill">Grade A · 30–40%</span><span class="pill">Grade B · 25–30%</span></div>
+        <div class="cm">Feed grade<br/>Protein-rich fibre</div>
+        <div class="ap"><b>40 / 50 KG</b> PP<br/>25 MT container</div>
+      </div>
+      <div class="row">
+        <div class="idx">06</div>
+        <div class="nm">Industrial Grade Psyllium<small>Husk &amp; powder · technical use</small></div>
+        <div class="gr"><span class="pill">Standard</span><span class="pill">Premium</span><span class="pill">Pet food</span></div>
+        <div class="cm">Buyer spec<br/>Tech grade</div>
+        <div class="ap"><b>50 KG</b> bag<br/>Jumbo (1 MT)</div>
+      </div>
+      <div class="row" style="border-bottom:1.5px solid var(--ink);">
+        <div class="idx">07</div>
+        <div class="nm">Psyllium Cattle Feed<small>Coarse meal · livestock</small></div>
+        <div class="gr"><span class="pill">Sagar Gola</span><span class="pill">Sagar Lali</span></div>
+        <div class="cm">Feed grade</div>
+        <div class="ap"><b>50 KG</b> PP<br/>Loose / containerised</div>
+      </div>
+    </div>
+
+    <!-- Mesh Size Reference Panel -->
+    <div class="mesh-ref">
+      <div class="mr-hdr">Mesh Size &amp; Particle Size Distribution (PSD) Standards</div>
+      <div class="mr-grid">
+        <div><b>40 Mesh (425 μm)</b> Coarse flaked powder. Retains &le; 5% on sieve. Optimizes mechanical swelling index in chewable tablets and dry laxative powders.</div>
+        <div><b>60/80 Mesh (250/180 μm)</b> Medium granular powder. High flowability. Designed for high-speed capsule filling lines and clinical nutrient formulations.</div>
+        <div><b>100 Mesh (150 μm)</b> Fine binder powder. &ge; 95% sieve pass. Replaces gluten structure to restore elasticity and moisture retention in allergen-free baking.</div>
+        <div><b>200 Mesh (75 μm)</b> Ultra-fine micro-powder. Instant cold-water hydration. Disperses without grittiness or sedimentation in RTD beverages and drink mixes.</div>
+      </div>
+    </div>
+
+    <div class="cat-summary">
+      <div>
+        <div class="sk">Sample to container</div>
+        <div class="sv">1 KG → 25 MT</div>
+        <div class="sd">Tier pricing at 5 KG · 100 KG · 1 MT · container load.</div>
+      </div>
+      <div>
+        <div class="sk">Sample timeline</div>
+        <div class="sv">100–500 g · 5 days</div>
+        <div class="sd">COA travels with the parcel. No surprises at scale.</div>
+      </div>
+      <div>
+        <div class="sk">Custom specification</div>
+        <div class="sv">Quoted in 24 hours</div>
+        <div class="sd">Send mesh, purity, microbial limits, packing format.</div>
+      </div>
+    </div>
+
+    <div class="ftr">
+      <span>RM Psyllium · Catalogue · 7 product lines · 17 grades</span>
+      <span class="nxt">→ p. 04 · Technical Data Sheet</span>
+      <span><b>03</b> / 08</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     PAGE 4 — TECHNICAL DATA SHEET
+     ============================================================ -->
+<section class="page padded" data-screen-label="04 Specification Sheet">
+  <div class="hdr">
+    <a class="brand" href="#"><img src="https://rmpsyllium.com/assets/logo-header.webp" alt="RM Psyllium"/></a>
+    <div class="nav"><span>04 / 08</span><b>Technical Data Sheet</b></div>
+  </div>
+
+  <div class="page-body">
+    <div class="tds-head">
+      <div class="l">
+        <div class="doc">Technical Specification · Flagship Grade Reference (99% USP)</div>
+        <h1>Psyllium Husk · 99% Purity</h1>
+        <div class="latin">Plantago ovata Forsk. · Plantaginaceae · Pharmacopoeial monograph compliant</div>
+      </div>
+      <div class="r">
+        Rev. 04 · 02 / 2026<br/>
+        Supersedes Rev. 03<br/>
+        <b>Page 1 of 1</b>
+      </div>
+    </div>
+
+    <div class="tds-meta">
+      <div>Product code<b>RMP-HUSK-99-USP</b></div>
+      <div>Pharmacopoeia<b>USP · EP · IP · NF</b></div>
+      <div>HS code<b>1211.90.99</b></div>
+      <div>CAS<b>8063-16-9</b></div>
+    </div>
+
+    <div class="tds-body">
+      <div class="tds-tables">
+
+        <div class="tds-tab">
+          <div class="ttl">Physical &amp; organoleptic <span>Tested per lot</span></div>
+          <div class="tds-rr rh"><div>Parameter</div><div>Specification</div><div>Method</div></div>
+          <div class="tds-rr"><div class="p">Appearance</div><div class="v">Pinkish-white to cream flakes, free-flowing</div><div class="m">Visual</div></div>
+          <div class="tds-rr"><div class="p">Odour</div><div class="v">Characteristic; no foreign odour</div><div class="m">Sensory</div></div>
+          <div class="tds-rr"><div class="p">Taste</div><div class="v">Bland, mucilaginous</div><div class="m">Sensory</div></div>
+          <div class="tds-rr"><div class="p">Foreign matter</div><div class="v">≤ 1.0% w/w</div><div class="m">USP &lt;561&gt;</div></div>
+          <div class="tds-rr"><div class="p">Bulk density</div><div class="v">0.18 – 0.22 g/mL</div><div class="m">USP &lt;616&gt;</div></div>
+          <div class="tds-rr"><div class="p">Swelling index</div><div class="v">≥ 40 mL/g</div><div class="m">EP 2.8.4</div></div>
+        </div>
+
+        <div class="tds-tab">
+          <div class="ttl">Chemical analysis <span>NABL-accredited lab</span></div>
+          <div class="tds-rr rh"><div>Parameter</div><div>Specification</div><div>Method</div></div>
+          <div class="tds-rr"><div class="p">Husk purity</div><div class="v">≥ 99.0% w/w</div><div class="m">Sieve / visual</div></div>
+          <div class="tds-rr"><div class="p">Loss on drying</div><div class="v">≤ 10.0% w/w</div><div class="m">USP &lt;731&gt;</div></div>
+          <div class="tds-rr"><div class="p">Total ash</div><div class="v">≤ 4.0% w/w</div><div class="m">USP &lt;561&gt;</div></div>
+          <div class="tds-rr"><div class="p">Acid-insoluble ash</div><div class="v">≤ 1.0% w/w</div><div class="m">USP &lt;561&gt;</div></div>
+          <div class="tds-rr"><div class="p">Heavy metals (total)</div><div class="v">≤ 10 ppm</div><div class="m">USP &lt;231&gt;</div></div>
+          <div class="tds-rr"><div class="p">Lead (Pb)</div><div class="v">≤ 1.0 ppm</div><div class="m">ICP-MS</div></div>
+          <div class="tds-rr"><div class="p">Arsenic (As)</div><div class="v">≤ 1.0 ppm</div><div class="m">ICP-MS</div></div>
+          <div class="tds-rr"><div class="p">Cadmium · Mercury</div><div class="v">≤ 0.5 ppm · ≤ 0.1 ppm</div><div class="m">ICP-MS</div></div>
+          <div class="tds-rr"><div class="p">Pesticide residues</div><div class="v">Complies, EP 2.8.13</div><div class="m">GC-MS / LC-MS</div></div>
+        </div>
+
+        <div class="tds-tab">
+          <div class="ttl">Microbiological <span>USP &lt;2021&gt; · &lt;2022&gt;</span></div>
+          <div class="tds-rr rh"><div>Parameter</div><div>Specification</div><div>Method</div></div>
+          <div class="tds-rr"><div class="p">Total plate count</div><div class="v">≤ 10⁴ cfu/g</div><div class="m">USP &lt;61&gt;</div></div>
+          <div class="tds-rr"><div class="p">Yeast &amp; mould</div><div class="v">≤ 10³ cfu/g</div><div class="m">USP &lt;61&gt;</div></div>
+          <div class="tds-rr"><div class="p">E. coli</div><div class="v">Absent / 10 g</div><div class="m">USP &lt;62&gt;</div></div>
+          <div class="tds-rr"><div class="p">Salmonella spp.</div><div class="v">Absent / 25 g</div><div class="m">USP &lt;62&gt;</div></div>
+          <div class="tds-rr"><div class="p">Aflatoxins (total)</div><div class="v">≤ 10 ppb</div><div class="m">HPLC-FLD</div></div>
+        </div>
+
+      </div>
+
+      <div class="tds-side">
+        <div class="img">
+          <img src="https://rmpsyllium.com/assets/generated/milling-line-gujarat.webp" alt="Psyllium milling and cleaning line"/>
+        </div>
+        <div class="blk">
+          <div class="k">Packing</div>
+          <div class="v">25 KG carton<small>HDPE-lined, four-ply corrugated. Inner poly food-grade.</small></div>
+        </div>
+        <div class="blk">
+          <div class="k">Container load</div>
+          <div class="v">12 / 24 MT<small>20 ft / 40 ft HC, palletised. Stuff plan on request.</small></div>
+        </div>
+        <div class="blk">
+          <div class="k">Shelf life</div>
+          <div class="v">24 months<small>Stored ≤ 25 °C, dry, away from sunlight.</small></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dietary Compliance Declarations -->
+    <div class="tds-declarations">
+      <div class="dec-title">Dietary Compliance &amp; Certifications · Complete TDS available for all 17 SKUs</div>
+      <div class="dec-grid">
+        <div>
+          <b>Gluten-Free (&lt;20 ppm)</b>
+          <span>Batch-tested via competitive ELISA assays. 100% compliant with US FDA and EC No 41/2009 standards.</span>
+        </div>
+        <div>
+          <b>Non-GMO Certified</b>
+          <span>Derived from 100% identity-preserved, non-GM seeds. Fully traceable from crop sowing.</span>
+        </div>
+        <div>
+          <b>Allergen-Free Line</b>
+          <span>Produced on a dedicated line free from wheat, gluten, soy, nuts, dairy, and eggs. No cross-contamination.</span>
+        </div>
+        <div>
+          <b>ETO &amp; Gamma Free</b>
+          <span>100% free of Ethylene Oxide and Gamma treatment. Sterilization executed strictly via validated dry steam.</span>
+        </div>
+        <div>
+          <b>Kosher &amp; Halal</b>
+          <span>Year-round Kosher and Halal certified. Fully audited processing lines with complete traceability.</span>
+        </div>
+        <div>
+          <b>100% Plant-Based</b>
+          <span>Pure botanical Plantago ovata fiber. Zero animal derivatives, zero processing aids, and zero animal testing.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="tds-foot">
+      <span>RMP-TDS-001 · Authorised: <b>Quality Head, RM Psyllium LLP</b></span>
+      <span><b>export@rmpsyllium.com</b> · +91 89498 17791</span>
+    </div>
+
+    <div class="ftr">
+      <span>RM Psyllium · TDS · Husk 99% USP · RMP-TDS-001</span>
+      <span class="nxt">→ p. 05 · Applications by industry</span>
+      <span><b>04</b> / 08</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     PAGE 5 — APPLICATIONS BY INDUSTRY (HORIZONTAL STRIPS)
+     ============================================================ -->
+<section class="page padded" data-screen-label="05 Applications">
+  <div class="hdr">
+    <a class="brand" href="#"><img src="https://rmpsyllium.com/assets/logo-header.webp" alt="RM Psyllium"/></a>
+    <div class="nav"><span>05 / 08</span><b>Industry applications</b></div>
+  </div>
+
+  <div class="page-body">
+    <div class="sec-rule">
+      <div class="l">
+        <span class="eyebrow">Section 03 · By industry</span>
+        <h1>Which grade fits your application — by sector.</h1>
+      </div>
+      <div class="r">
+        Four sectors · twelve typical uses<br/>
+        <b>Pharma · Food · Feed · Industrial</b><br/>
+        Grade depends on your monograph.
+      </div>
+    </div>
+
+    <div class="app-strips">
+
+      <!-- Strip 01: Pharma -->
+      <div class="app-strip">
+        <div class="as-l">
+          <div class="sn">01</div>
+          <div class="sector">Pharma &amp;<br/>Nutraceutical</div>
+          <div class="icp">Procurement managers<br/><b>Europe · USA · audited buyers</b></div>
+        </div>
+        <div class="as-m">
+          <div class="use"><span class="ar">→</span><span><b>Bulk-forming laxative formulations.</b> Husk 99% USP/EP. Swell volume ≥ 40 mL/g, tested per lot.</span></div>
+          <div class="use"><span class="ar">→</span><span><b>Cholesterol-claim capsules.</b> FDA-recognised soluble-fibre health claim. Lot-traceable purity per shipment.</span></div>
+          <div class="use"><span class="ar">→</span><span><b>Tablet binder / disintegrant.</b> Pharma-excipient use. Microbial load within pharmacopoeial limits.</span></div>
+        </div>
+        <div class="as-r">
+          <div class="rk">Recommended grades</div>
+          <div class="pills">
+            <span class="pill g">Husk 99% USP</span>
+            <span class="pill g">Husk 99% EP</span>
+            <span class="pill">Powder 80–100m</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Strip 02: Food -->
+      <div class="app-strip">
+        <div class="as-l">
+          <div class="sn">02</div>
+          <div class="sector">Food &amp;<br/>Bakery</div>
+          <div class="icp">Clean-label brands<br/><b>Gluten-free · keto · D2C</b></div>
+        </div>
+        <div class="as-m">
+          <div class="use"><span class="ar">→</span><span><b>Gluten-free bread &amp; tortillas.</b> At 2–4% inclusion, replaces gluten structure. Sensory-neutral.</span></div>
+          <div class="use"><span class="ar">→</span><span><b>Keto baked goods.</b> Net-carb neutral; functional-fibre claim without grain-derived starch.</span></div>
+          <div class="use"><span class="ar">→</span><span><b>Drink mixes &amp; dairy fortification.</b> 200m mesh disperses without grit at typical inclusion rates.</span></div>
+        </div>
+        <div class="as-r">
+          <div class="rk">Recommended grades</div>
+          <div class="pills">
+            <span class="pill">Powder 100m</span>
+            <span class="pill">Powder 200m</span>
+            <span class="pill au">Organic NOP</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Strip 03: Feed -->
+      <div class="app-strip">
+        <div class="as-l">
+          <div class="sn">03</div>
+          <div class="sector">Animal<br/>Feed</div>
+          <div class="icp">Compound-feed<br/><b>manufacturers</b></div>
+        </div>
+        <div class="as-m">
+          <div class="use"><span class="ar">→</span><span><b>Equine &amp; ruminant digestion.</b> Khakha meal as crude-fibre carrier in compounded feed rations.</span></div>
+          <div class="use"><span class="ar">→</span><span><b>Poultry pellet binding.</b> Moisture management; cost-effective versus synthetic gums at scale.</span></div>
+          <div class="use"><span class="ar">→</span><span><b>Premium pet food.</b> Hairball control and GI-health SKUs in dry-format products.</span></div>
+        </div>
+        <div class="as-r">
+          <div class="rk">Recommended grades</div>
+          <div class="pills">
+            <span class="pill">Khakha A</span>
+            <span class="pill">Khakha B</span>
+            <span class="pill">Cattle Sagar</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Strip 04: Industrial -->
+      <div class="app-strip">
+        <div class="as-l">
+          <div class="sn">04</div>
+          <div class="sector">Industrial &amp;<br/>Personal Care</div>
+          <div class="icp">Oil-field · cosmetic<br/><b>formulators</b></div>
+        </div>
+        <div class="as-m">
+          <div class="use"><span class="ar">→</span><span><b>Oil-well drilling fluids.</b> Viscosifier and fluid-loss control; compatible with bentonite-based systems.</span></div>
+          <div class="use"><span class="ar">→</span><span><b>Paper, textile sizing, adhesives.</b> Natural binder, water-soluble, no synthetic residue.</span></div>
+          <div class="use"><span class="ar">→</span><span><b>Masks &amp; hair stylers.</b> Mucilage film-former, biodegradable, INCI-listed.</span></div>
+        </div>
+        <div class="as-r">
+          <div class="rk">Recommended grades</div>
+          <div class="pills">
+            <span class="pill">Industrial Std</span>
+            <span class="pill">Industrial Premium</span>
+            <span class="pill g">Husk 85%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formulation & Viscosity Guidelines -->
+    <div class="formulation-guide">
+      <div class="fg-title">Viscosity &amp; Formulation Design Guidelines</div>
+      <div class="fg-grid">
+        <div class="fg-card">
+          <div class="fg-k">Pharma Laxatives</div>
+          <div class="fg-v">5.0g – 7.5g per dose</div>
+          <div class="fg-d">Target swelling index of &ge; 40 mL/g. Formulated with 99% USP grade to guarantee high-viscosity binding and reliable moisture retention.</div>
+        </div>
+        <div class="fg-card">
+          <div class="fg-k">Gluten-Free Bakery</div>
+          <div class="fg-v">2.0% – 4.0% weight</div>
+          <div class="fg-d">Provides gas-retention structure and improves crumb elasticity in wheat-free doughs. Recommends 100 mesh standard at 2.0% to 4.0% dry flour weight.</div>
+        </div>
+        <div class="fg-card">
+          <div class="fg-k">Fiber Fortification</div>
+          <div class="fg-v">3.4g per serving</div>
+          <div class="fg-d">Achieves &ge; 3.4g soluble fiber per serving to support FDA/EFSA fiber claims. Recommends 200 mesh micro-powder for rapid, sediment-free cold dissolution.</div>
+        </div>
+        <div class="fg-card">
+          <div class="fg-k">Equine &amp; Ruminant</div>
+          <div class="fg-v">10.0% – 15.0% ration</div>
+          <div class="fg-d">Acts as an excellent physical sand-clearing carrier and digestive texturizer. Recommends 30–40 mesh coarse Khakha Grade A at 10.0% to 15.0% feed ration.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-row">
+      <span>Unsure which grade fits? Send your finished-product spec — we recommend and sample.</span>
+      <span class="nxt">→ p. 06 · Quality &amp; documentation</span>
+    </div>
+    <div class="ftr">
+      <span>RM Psyllium · Applications by industry · Four sectors</span>
+      <span><b>05</b> / 08</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     PAGE 6 — QUALITY & DOCUMENTATION
+     ============================================================ -->
+<section class="page padded" data-screen-label="06 Quality">
+  <div class="hdr">
+    <a class="brand" href="#"><img src="https://rmpsyllium.com/assets/logo-header.webp" alt="RM Psyllium"/></a>
+    <div class="nav"><span>06 / 08</span><b>Quality &amp; documentation</b></div>
+  </div>
+
+  <div class="page-body">
+    <div class="sec-rule">
+      <div class="l">
+        <span class="eyebrow">Section 04 · Quality &amp; process</span>
+        <h1>No COA, no release. Tested independently before dispatch — <em>every lot.</em></h1>
+      </div>
+      <div class="r">
+        Five stages · NABL-accredited<br/>
+        <b>Two results per shipment</b><br/>
+        In-house + third-party retain.
+      </div>
+    </div>
+
+    <!-- Promise block -->
+    <div class="q-promise">
+      <div class="qp-quote">
+        If a lot tests 97.8%, it ships labelled <em>98% at a discount</em> — or it goes back through the mill.<br/>
+        Marginal lots are downgraded or remilled. <em>Never blended to grade.</em>
+      </div>
+      <div class="qp-aside">
+        In-house lab<br/>
+        + independent retain<br/>
+        <b>Per lot. Every lot.</b>
+      </div>
+    </div>
+
+    <!-- 5-step process -->
+    <div class="process">
+      <div>
+        <div class="n">01</div>
+        <div class="lbl">Source</div>
+        <div class="t">Origin sourced</div>
+        <div class="d">Seed from contracted farms in Unjha &amp; North Gujarat. Origin records maintained per lot.</div>
+      </div>
+      <div>
+        <div class="n">02</div>
+        <div class="lbl">Clean</div>
+        <div class="t">De-stone &amp; sieve</div>
+        <div class="d">Four sieve stages, metal detection, gravity separation before lot enters storage.</div>
+      </div>
+      <div>
+        <div class="n">03</div>
+        <div class="lbl">Mill</div>
+        <div class="t">Husk &amp; grade</div>
+        <div class="d">Roller-mill to buyer-specified purity and mesh. No bleaching, no acid treatment.</div>
+      </div>
+      <div>
+        <div class="n">04</div>
+        <div class="lbl">Test</div>
+        <div class="t">NABL lab release</div>
+        <div class="d">Purity, swell, microbial, heavy metals, pesticide. Marginal lots downgraded — not blended up.</div>
+      </div>
+      <div>
+        <div class="n">05</div>
+        <div class="lbl">Pack &amp; ship</div>
+        <div class="t">Documented dispatch</div>
+        <div class="d">Fumigated, lined cartons. Full export pack emailed before the truck leaves the yard.</div>
+      </div>
+    </div>
+
+    <!-- Docs + parameters -->
+    <div class="q-cols">
+      <div class="q-docs">
+        <h4>Documentation per shipment <span class="tag">Pre-dispatch</span></h4>
+        <div class="row"><span class="ck">✓</span><span>Certificate of Analysis (COA) — lot-specific</span><span class="st">Standard</span></div>
+        <div class="row"><span class="ck">✓</span><span>Commercial invoice &amp; packing list</span><span class="st">Standard</span></div>
+        <div class="row"><span class="ck">✓</span><span>Phytosanitary certificate</span><span class="st">Standard</span></div>
+        <div class="row"><span class="ck">✓</span><span>Fumigation certificate</span><span class="st">Standard</span></div>
+        <div class="row"><span class="ck">✓</span><span>Material Safety Data Sheet (MSDS)</span><span class="st">Standard</span></div>
+        <div class="row"><span class="ck">✓</span><span>Certificate of Origin (Chamber-attested)</span><span class="st">Standard</span></div>
+        <div class="row"><span class="ck">✓</span><span>Halal &amp; Kosher certification</span><span class="st opt">On request</span></div>
+        <div class="row"><span class="ck">✓</span><span>Allergen / non-GMO declaration</span><span class="st opt">On request</span></div>
+        <div class="row"><span class="ck">✓</span><span>USDA NOP / EU-NOP organic certificate</span><span class="st opt">Organic line</span></div>
+      </div>
+
+      <div class="q-params">
+        <h4>Parameters tested per lot <span class="tag">10 points</span></h4>
+        <div class="q-pgrid">
+          <div class="q-param"><b>Purity</b>Husk % w/w</div>
+          <div class="q-param"><b>Swelling index</b>mL/g · EP 2.8.4</div>
+          <div class="q-param"><b>Particle size</b>PSD / mesh pass %</div>
+          <div class="q-param"><b>Moisture</b>Loss on drying</div>
+          <div class="q-param"><b>Ash</b>Total + acid-insoluble</div>
+          <div class="q-param"><b>Foreign matter</b>Visual / sieve</div>
+          <div class="q-param"><b>Microbial</b>TPC · yeast · mould</div>
+          <div class="q-param"><b>Pathogens</b>E. coli · Salmonella</div>
+          <div class="q-param"><b>Heavy metals</b>ICP-MS · 4 elements</div>
+          <div class="q-param"><b>Aflatoxins</b>HPLC-FLD · ≤ 10 ppb</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quality Release & Lot Control Protocol -->
+    <div class="q-release">
+      <div class="qr-title">Quality Release &amp; Lot Control Protocol</div>
+      <div class="qr-grid">
+        <div class="qr-item">
+          <b>Strict Lot Isolation</b>
+          <span>Every processed batch is milled, packaged, and isolated in our climate-controlled warehouse. No batch leaves isolation until the full monograph laboratory clearance is officially granted.</span>
+        </div>
+        <div class="qr-item">
+          <b>Dual COA Verification</b>
+          <span>Shipments are released only when both our in-house laboratory and an independent, accredited third-party NABL laboratory confirm full pharmacopoeial monograph compliance.</span>
+        </div>
+        <div class="qr-item">
+          <b>24-Month Retain Archiving</b>
+          <span>We retain a 500g sealed control sample of every exported batch for 24 months. This ensures absolute traceability, reference materials for future R&amp;D, and complete customer peace of mind.</span>
+        </div>
+        <div class="qr-item">
+          <b>100% Non-Blending Policy</b>
+          <span>We never blend marginal husk batches to achieve grade. Off-spec milling runs are immediately and permanently downgraded to animal feed or remilled. Quality is absolute.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ftr">
+      <span>RM Psyllium · Quality &amp; documentation</span>
+      <span class="nxt">→ p. 07 · Direct vs trading-desk</span>
+      <span><b>06</b> / 08</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     PAGE 7 — DIRECT MANUFACTURER VS TRADING-DESK
+     ============================================================ -->
+<section class="page padded" data-screen-label="07 Direct vs Trading">
+  <div class="hdr">
+    <a class="brand" href="#"><img src="https://rmpsyllium.com/assets/logo-header.webp" alt="RM Psyllium"/></a>
+    <div class="nav"><span>07 / 08</span><b>Direct manufacturer vs trading-desk</b></div>
+  </div>
+
+  <div class="page-body">
+    <div class="sec-rule">
+      <div class="l">
+        <span class="eyebrow">Section 05 · Procurement comparison</span>
+        <h1>The spec you write is the spec we mill — <em>not the spec we found in inventory.</em></h1>
+      </div>
+      <div class="r">
+        Seven procurement questions<br/>
+        every QA and buying team asks.
+      </div>
+    </div>
+
+    <!-- Green header -->
+    <div class="cmp-hdr">
+      <div>
+        <div class="eyebrow">A question every QA team asks sooner or later</div>
+        <h2>Who actually processed this lot?<br/>Where? When? On which line?</h2>
+      </div>
+      <div class="r">
+        One source of truth.<br/>
+        One COA. One lot ref.<br/>
+        <b>One number to call.</b>
+      </div>
+    </div>
+
+    <!-- Compare table -->
+    <div class="cmp-t">
+      <div class="hd">
+        <div>Procurement question</div>
+        <div>Trading-desk exporter</div>
+        <div class="us">RM Psyllium · direct manufacturer</div>
+      </div>
+      <div class="row">
+        <div class="q">Who actually milled this husk?</div>
+        <div class="x">Typically 2–3 third-party processors blended for inventory; unspecified on COA</div>
+        <div class="y"><span class="ck">✓</span>Our facility. Single lot, single mill run. Floor visit available on request.</div>
+      </div>
+      <div class="row">
+        <div class="q">When was this lot tested?</div>
+        <div class="x">COA may predate the goods; sometimes carried forward from supplier's certificate</div>
+        <div class="y"><span class="ck">✓</span>Tested the week of dispatch. Retain sample held 24 months.</div>
+      </div>
+      <div class="row">
+        <div class="q">Can we tighten the PSD or mesh?</div>
+        <div class="x">Bound to existing stock — either it matches or it does not</div>
+        <div class="y"><span class="ck">✓</span>Mesh, purity, swell, microbial limits — milled to your tolerance on PO.</div>
+      </div>
+      <div class="row">
+        <div class="q">Lot-to-lot consistency on reorders?</div>
+        <div class="x">Variable; each order draws from whatever was sourced that month</div>
+        <div class="y"><span class="ck">✓</span>Same farm contracts, same mill calibration, same operator — year on year.</div>
+      </div>
+      <div class="row">
+        <div class="q">If a problem arises post-dispatch?</div>
+        <div class="x">Long chain — agent → exporter → mill → farmer. Resolution in weeks.</div>
+        <div class="y"><span class="ck">✓</span>One call. The person who answers can walk to the mill and pull the retain.</div>
+      </div>
+      <div class="row">
+        <div class="q">Margin layers between buyer and seed?</div>
+        <div class="x">Typically two or three: agent, exporter, processor mark-ups</div>
+        <div class="y"><span class="ck">✓</span>None. Manufacturer pricing direct to the buyer.</div>
+      </div>
+      <div class="row" style="border-bottom:none;">
+        <div class="q">Sample-to-bulk pricing transparency?</div>
+        <div class="x">Sample often quoted at retail; bulk re-priced near PO</div>
+        <div class="y"><span class="ck">✓</span>Published tiers at 5 KG · 100 KG · 1 MT · container. No surprises.</div>
+      </div>
+    </div>
+
+    <!-- Sourcing Risk Mitigation Guarantees -->
+    <div class="risk-mitigation">
+      <div class="rm-title">Sourcing Risk Mitigation Guarantees</div>
+      <div class="rm-grid">
+        <div>
+          <b>12-Month Price Protection</b>
+          <span>Hedge your procurement budget against raw crop volatility. Secure a 12-month fixed pricing lock on committed annual purchase agreements.</span>
+        </div>
+        <div>
+          <b>Unrestricted Audit Rights</b>
+          <span>Verify facility compliance with your own QA inspectors. Active B2B contract buyers have full physical audit access with 14 days notice.</span>
+        </div>
+        <div>
+          <b>60-Day Safety Buffer Stock</b>
+          <span>Eliminate supply chain interruption risks. We hold a dedicated, pre-cleared 60-day inventory reserve of your custom specification in our warehouse.</span>
+        </div>
+        <div>
+          <b>5-Day Global Sample Release</b>
+          <span>Accelerate your R&amp;D timeline. Custom sieved and specific purity samples (100g to 1kg) are prepared and dispatched globally within 5 business days.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Callout boxes -->
+    <div class="cmp-boxes">
+      <div class="b">
+        <div class="cb-label">Pharma / nutraceutical</div>
+        <div class="cb-val">Manufacturer-direct is auditable<small>Lot maps to farm receipt, mill date, lab batch. Survives a QA review.</small></div>
+      </div>
+      <div class="b">
+        <div class="cb-label">Clean-label D2C</div>
+        <div class="cb-val">The origin story holds<small>Our facility and region can be named on-pack — accurately, not approximated.</small></div>
+      </div>
+      <div class="b">
+        <div class="cb-label">Food / gluten-free</div>
+        <div class="cb-val">Mesh stays where you set it<small>40, 60, 80, 100, 200 — calibrated each shift, not "approximately".</small></div>
+      </div>
+    </div>
+
+    <div class="ftr">
+      <span>RM Psyllium · Direct manufacturer vs trading-desk</span>
+      <span class="nxt">→ p. 08 · Contact</span>
+      <span><b>07</b> / 08</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     PAGE 8 — BACK COVER / CONTACT
+     ============================================================ -->
+<section class="page bk" data-screen-label="08 Back Cover">
+  <div class="bk-photo">
+    <img src="https://rmpsyllium.com/assets/generated/milling-line-gujarat.webp" alt=""/>
+  </div>
+
+  <div class="bk-top">
+    <a class="brand" href="#">
+      <img src="https://rmpsyllium.com/assets/logo-header.webp" alt="RM Psyllium"/>
+    </a>
+    <div class="ref">End of catalogue · <b>Vol. 2026</b></div>
+  </div>
+
+  <div class="bk-body">
+    <span class="eyebrow">Get in touch</span>
+    <h2>Send your spec.<br/><em>We take it<br/>from there.</em></h2>
+    <p class="sub">
+      Grade, mesh, packing, destination port, monthly volume — send what you have. We respond with pricing, a sample COA, and dispatch options.
+      <b>Export team available Mon–Sat, 09:00–19:00 IST.</b>
+    </p>
+  </div>
+
+  <div class="bk-contact">
+    <div class="row">
+      <div class="col">
+        <h5>Primary contact</h5>
+        <div class="ln"><div class="k">Email</div><div class="v"><a href="mailto:export@rmpsyllium.com">export@rmpsyllium.com</a></div></div>
+        <div class="ln"><div class="k">WhatsApp</div><div class="v"><a href="https://wa.me/918949817791">+91 89498 17791</a></div></div>
+        <div class="ln"><div class="k">Website</div><div class="v"><a href="https://rmpsyllium.com">rmpsyllium.com</a></div></div>
+        <div class="ln"><div class="k">Hours</div><div class="v">Mon–Sat · 09:00–19:00 IST</div></div>
+      </div>
+      <div class="col">
+        <h5>Export team</h5>
+        <div class="person">
+          <div class="nm">Mithilesh Parmar<small>Export Sales</small></div>
+          <div class="ph">+91 85610 57510</div>
+        </div>
+        <div class="person">
+          <div class="nm">Ravi Joshi<small>Export Sales</small></div>
+          <div class="ph">+91 80000 08381</div>
+        </div>
+        <div class="person">
+          <div class="nm">Export Desk<small>General inquiries</small></div>
+          <div class="ph">+91 89498 17791</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bk-ft">
+    <div class="col">
+      <b>RM Psyllium LLP</b>
+      Patan Road, Khali, Char Rasta,<br/>
+      Nedra, Siddhpur, Gujarat 384151 · India
+    </div>
+    <div class="col center">
+      <b>FOB · CIF · CFR · DAP</b>
+      Mundra · Kandla · JNPT<br/>
+      USD · EUR · INR · TT &amp; LC at sight
+    </div>
+    <div class="col right">
+      <b>© 2026 RM Psyllium LLP</b>
+      All grades to specification<br/>
+      REF · RMP-EXP-2026-A4
+    </div>
+  </div>
+</section>
+
+
+</div>
+</body>
+</html>
