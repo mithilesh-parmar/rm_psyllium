@@ -115,39 +115,6 @@ const purityValues = gradeData.map(g => parseFloat((purityRow?.values[g.label] ?
 const maxSwell  = Math.max(...swellValues,  1);
 const maxPurity = Math.max(...purityValues, 1);
 
-// Product image mappings for schema validation
-const productImages: Record<string, string[]> = {
-  'psyllium-seeds': ['/assets/generated/facility-bags-gujarat.webp'],
-  'psyllium-husk': [
-    '/assets/generated/psyllium-husk-export-bag.webp',
-    '/assets/generated/psyllium-husk-99-grade.webp',
-    '/assets/generated/psyllium-husk-98-grade.webp',
-    '/assets/generated/psyllium-husk-95-grade.webp',
-    '/assets/generated/psyllium-husk-85-grade.webp',
-  ],
-  'psyllium-husk-powder': ['/assets/generated/psyllium-husk-export-bag.webp'],
-  'psyllium-khakha-powder': ['/assets/generated/psyllium-husk-export-bag.webp'],
-  'industrial-grade-psyllium': ['/assets/generated/facility-bags-gujarat.webp'],
-  'organic-psyllium': ['/assets/generated/facility-bags-gujarat.webp'],
-  'psyllium-cattle-feed': ['/assets/generated/facility-bags-gujarat.webp'],
-};
-
-const images = (productImages[product.slug] ?? ['/assets/generated/facility-bags-gujarat.webp']).map(
-  (img) => `https://rmpsyllium.com${img}`
-);
-
-// Structured data
-const productSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Product',
-  name: product.name,
-  description: product.hero,
-  image: images,
-  material: 'Plantago ovata',
-  countryOfOrigin: 'India',
-  category: product.label,
-  brand: { '@type': 'Brand', name: 'RM Psyllium' }
-};
 
 const faqSchema = uniqueFaqs.length > 0 ? {
   '@context': 'https://schema.org',
@@ -170,7 +137,7 @@ const breadcrumbSchema = {
   ]
 };
 
-const schemas = [productSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])];
+const schemas = [breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])];
 ---
 <BaseLayout
   lang={lang}

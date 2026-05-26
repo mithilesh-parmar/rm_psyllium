@@ -6,8 +6,6 @@ RM Psyllium is a psyllium husk manufacturer and bulk exporter based in Siddhpur,
 
 - Legal name: RM Psyllium LLP
 - Location: Patan Road, Khali, Char Rasta, Nedra, Siddhpur, Gujarat 384151, India
-<!-- - IEC (Import Export Code): 0124007841 -->
-<!-- - FSSAI Registered -->
 - Annual capacity: 2,000 MT
 - Founded: 2024
 - Contact: export@rmpsyllium.com
@@ -73,11 +71,13 @@ Applications: Dairy cattle, buffalo, digestion support programs
 <!--
 ## Certifications
 
-- FSSAI: In progress
-- IEC: In progress
+- FSSAI: Active (Facility registration)
+- IEC (Import Export Code): 0124007841 (Active)
+- APEDA: Active (Registered)
+- Spices Board: Active (Registered)
 - ISO 22000 / HACCP: In progress (expected 2026)
 - Halal: In progress (expected Q3 2026)
-- Kosher: In progress
+- Kosher: In progress (expected 2026)
 -->
 
 ## Markets Served
