@@ -3,6 +3,20 @@ import { copy, getLanguage } from '../data/site';
 const year = new Date().getFullYear();
 const lang = getLanguage(Astro.params.lang);
 const t = copy[lang];
+
+const aboutLabels: Record<string, string> = {
+  en: 'About Us',
+  es: 'Sobre nosotros',
+  fr: 'À propos',
+  de: 'Über uns',
+  ar: 'من نحن',
+  zh: '关于我们',
+  nl: 'Over ons',
+  it: 'Chi siamo',
+  pt: 'Sobre nós',
+  ru: 'О нас',
+};
+const aboutLabel = aboutLabels[lang] || 'About Us';
 ---
 
 <footer class="footer">
@@ -44,6 +58,7 @@ const t = copy[lang];
     <div>
       <h2>{t.footerResources}</h2>
       <nav aria-label={t.footerResources}>
+        <a href={`/${lang}/about/`}>{aboutLabel}</a>
         <a href={`/${lang}/insights/`}>{t.navInsights}</a>
         <a href={`/${lang}/quality/`}>{t.navQuality}</a>
         <a href={`/${lang}/faq/`}>{t.navFaq}</a>

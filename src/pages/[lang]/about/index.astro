@@ -1,0 +1,714 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getLanguage, languages } from '../../../data/site';
+
+export function getStaticPaths() {
+  return languages.map((language) => ({
+    params: { lang: language.code }
+  }));
+}
+
+const lang = getLanguage(Astro.params.lang);
+
+// Localized content for the About page to maintain full type-safety without polluting global site copy
+const content: Record<string, {
+  kicker: string;
+  title: string;
+  lead: string;
+  historyTitle: string;
+  historyLead: string;
+  historyBody1: string;
+  historyBody2: string;
+  facilityTitle: string;
+  facilityDesc: string;
+  statCapacity: string;
+  statHistory: string;
+  statExperience: string;
+  statPurity: string;
+  statLabelCapacity: string;
+  statLabelHistory: string;
+  statLabelExperience: string;
+  statLabelPurity: string;
+  valueTitle: string;
+  value1Title: string;
+  value1Desc: string;
+  value2Title: string;
+  value2Desc: string;
+  value3Title: string;
+  value3Desc: string;
+  ctaTitle: string;
+  ctaBody: string;
+  ctaBtnEmail: string;
+  ctaBtnWa: string;
+}> = {
+  en: {
+    kicker: 'Operational Provenance',
+    title: 'Where nature meets industrial precision.',
+    lead: 'Over 40 years of manufacturing experience inside the Siddhpur processing floor — delivering pure, batch-tested psyllium to global procurement and QA teams.',
+    historyTitle: 'Our Story & Heritage',
+    historyLead: 'Siddhpur, Gujarat is the global center of the psyllium industry. This is where we process, mill, and ship every container.',
+    historyBody1: 'RM Psyllium LLP is a direct-from-source manufacturer and bulk exporter of premium psyllium husk, powder, and seeds. Our roots are firmly planted in the rich agricultural soil of Siddhpur, Gujarat — the epicenter of the global psyllium trade. Built on over 40 years of deep operational and milling knowledge, we serve high-trust buyers in food, pharmaceuticals, and animal nutrition.',
+    historyBody2: 'We are not trading-desk brokers. We process in-house. This means we maintain absolute control over the entire supply chain — from farm-level seed cleaning to multi-stage magnetic filtration, controlled roller milling, and final laboratory validation. What we quote is exactly what is manufactured, packed, and loaded onto shipping containers at Mundra Port.',
+    facilityTitle: 'Vertically Integrated Facility',
+    facilityDesc: 'Based in Siddhpur, Gujarat, our modern processing plant operates with a 2,000 MT annual capacity. The facility is custom-designed for zero-chemical processing, relying purely on mechanical separation and gravity-grading to preserve the native mucilage and swelling volume of the raw husk.',
+    statCapacity: '2,000 MT',
+    statHistory: '40+ Years',
+    statExperience: 'In-House',
+    statPurity: '99.5%+',
+    statLabelCapacity: 'Annual Capacity',
+    statLabelHistory: 'Operational Knowledge',
+    statLabelExperience: 'Milling & Processing',
+    statLabelPurity: 'Pharma Grade Purity',
+    valueTitle: 'Our Manufacturing Standards',
+    value1Title: 'Zero-Chemical Separation',
+    value1Desc: 'We rely exclusively on physical cleaning, mechanical sorting, and gap-controlled roller milling. No chemical bleaching, acid treatments, or synthetic additives are ever introduced.',
+    value2Title: 'NABL Lab Validation',
+    value2Desc: 'Every batch undergoes rigorous chemical and microbiological screening before packing. We analyze 47 distinct parameters to ensure strict pharmacopoeia and heavy-metal compliance.',
+    value3Title: 'Full Chain Custody',
+    value3Desc: 'From contracting seed growers across North Gujarat to container dispatch at Mundra, Kandla, or Nhava Sheva, every lot carries complete origin and traceability documentation.',
+    ctaTitle: 'Need QA documents before sampling?',
+    ctaBody: 'Contact our export desk directly. We will share sample COAs, facility audit parameters, and certification timelines within 24 hours.',
+    ctaBtnEmail: 'Email Export Desk',
+    ctaBtnWa: 'WhatsApp Us',
+  },
+  es: {
+    kicker: 'Procedencia Operativa',
+    title: 'Donde la naturaleza se une a la precisión industrial.',
+    lead: 'Más de 40 años de experiencia de fabricación en la planta de procesamiento de Siddhpur: entrega de psyllium puro y verificado por lotes a los equipos globales de compras y control de calidad.',
+    historyTitle: 'Nuestra Historia y Patrimonio',
+    historyLead: 'Siddhpur, Gujarat, es el centro mundial de la industria del psyllium. Aquí es donde procesamos, molemos y enviamos cada contenedor.',
+    historyBody1: 'RM Psyllium LLP es un fabricante directo y exportador a granel de cáscara, polvo y semillas de psyllium premium. Nuestras raíces están firmemente plantadas en el fértil suelo agrícola de Siddhpur, Gujarat, el epicentro del comercio mundial de psyllium. Respaldados por más de 40 años de profundo conocimiento operativo y de molienda, servimos a compradores de alta confianza en alimentos, productos farmacéuticos y nutrición animal.',
+    historyBody2: 'No somos intermediarios comerciales. Procesamos internamente. Esto significa que mantenemos un control absoluto sobre toda la cadena de suministro, desde la limpieza de semillas a nivel de campo hasta la filtración magnética de múltiples etapas, la molienda controlada por rodillos y la validación final de laboratorio. Lo que cotizamos es exactamente lo que se fabrica, envasa y carga en contenedores de envío en el puerto de Mundra.',
+    facilityTitle: 'Instalaciones Verticalmente Integradas',
+    facilityDesc: 'Ubicada en Siddhpur, Gujarat, nuestra moderna planta de procesamiento opera con una capacidad anual de 2,000 TM. La instalación está diseñada para el procesamiento sin químicos, dependiendo puramente de la separación mecánica y clasificación por gravedad para preservar el mucílago nativo y el volumen de hinchamiento de la cáscara cruda.',
+    statCapacity: '2,000 TM',
+    statHistory: '40+ Años',
+    statExperience: 'Interna',
+    statPurity: '99.5%+',
+    statLabelCapacity: 'Capacidad Anual',
+    statLabelHistory: 'Conocimiento Operativo',
+    statLabelExperience: 'Molienda y Procesamiento',
+    statLabelPurity: 'Pureza de Grado Farmacéutico',
+    valueTitle: 'Nuestros Estándares de Fabricación',
+    value1Title: 'Separación Sin Químicos',
+    value1Desc: 'Dependemos exclusivamente de la limpieza física, clasificación mecánica y molienda por rodillos con separación controlada. Nunca se introducen blanqueamientos químicos, tratamientos ácidos o aditivos sintéticos.',
+    value2Title: 'Validación de Laboratorio NABL',
+    value2Desc: 'Cada lote se somete a rigurosos análisis químicos y microbiológicos antes de envasar. Analizamos 47 parámetros distintos para garantizar el estricto cumplimiento de la farmacopea y metales pesados.',
+    value3Title: 'Custodia Completa de la Cadena',
+    value3Desc: 'Desde la contratación de cultivadores de semillas en el norte de Gujarat hasta el despacho de contenedores en Mundra, Kandla o Nhava Sheva, cada lote lleva documentación completa de origen y trazabilidad.',
+    ctaTitle: '¿Necesita documentos de control de calidad antes del muestreo?',
+    ctaBody: 'Póngase en contacto directamente con nuestra oficina de exportación. Compartiremos COAs de muestra, parámetros de auditoría de instalaciones y plazos de certificación en 24 horas.',
+    ctaBtnEmail: 'Email al Equipo de Exportación',
+    ctaBtnWa: 'WhatsApp',
+  },
+  fr: {
+    kicker: 'Provenance Opérationnelle',
+    title: 'Quand la nature rencontre la précision industrielle.',
+    lead: 'Plus de 40 ans d\'expérience de fabrication au sein de l\'usine de Siddhpur — fournissant du psyllium pur, testé par lot, aux équipes d\'achat et d\'assurance qualité mondiales.',
+    historyTitle: 'Notre Histoire & Notre Héritage',
+    historyLead: 'Siddhpur, Gujarat, est le centre mondial de l\'industrie du psyllium. C\'est là que nous transformons, moulons et expédions chaque conteneur.',
+    historyBody1: 'RM Psyllium LLP est un producteur direct et exportateur en vrac de cosse, poudre et graine de psyllium premium. Nos racines sont solidement ancrées dans les terres agricoles de Siddhpur, Gujarat — l\'épicentre du commerce mondial du psyllium. Forts de plus de 40 ans d\'expertise opérationnelle et de mouture, nous servons des clients exigeants dans les secteurs de l\'alimentation, de la pharmacie et de la nutrition animale.',
+    historyBody2: 'Nous ne sommes pas des courtiers commerciaux. Nous transformons dans notre propre usine. Cela signifie que nous gardons un contrôle absolu sur toute la chaîne d\'approvisionnement — du nettoyage des graines au champ à la filtration magnétique multi-étapes, au broyage contrôlé par cylindres et à la validation finale en laboratoire. Ce que nous devisons est exactement ce qui est fabriqué, conditionné et expédié depuis le port de Mundra.',
+    facilityTitle: 'Usine Verticalement Intégrée',
+    facilityDesc: 'Située à Siddhpur, Gujarat, notre usine de traitement moderne fonctionne avec une capacité annuelle de 2 000 tonnes. Le site est spécialement conçu pour un traitement sans produit chimique, reposant uniquement sur la séparation mécanique et le tri densimétrique pour préserver le mucilage naturel et le volume de gonflement de la cosse brute.',
+    statCapacity: '2 000 T',
+    statHistory: '40+ Ans',
+    statExperience: 'Intégrée',
+    statPurity: '99.5%+',
+    statLabelCapacity: 'Capacité Annuelle',
+    statLabelHistory: 'Savoir-Faire Opérationnel',
+    statLabelExperience: 'Broyage & Transformation',
+    statLabelPurity: 'Pureté de Grade Pharma',
+    valueTitle: 'Nos Standards de Fabrication',
+    value1Title: 'Séparation Sans Produit Chimique',
+    value1Desc: 'Nous comptons exclusivement sur le nettoyage physique, le tri mécanique et le broyage à cylindres contrôlé. Aucun blanchiment chimique, traitement acide ou additif synthétique n\'est introduit.',
+    value2Title: 'Validation Labo NABL',
+    value2Desc: 'Chaque lot est soumis à un criblage chimique et microbiologique rigoureux avant conditionnement. Nous analysons 47 paramètres distincts pour garantir la conformité aux pharmacopées et sur les métaux lourds.',
+    value3Title: 'Traçabilité de Bout en Bout',
+    value3Desc: 'De la contractualisation avec les cultivateurs du nord du Gujarat à l\'expédition des conteneurs à Mundra, Kandla ou Nhava Sheva, chaque lot dispose d\'une documentation complète d\'origine et de suivi.',
+    ctaTitle: 'Besoin de documents qualité avant essai ?',
+    ctaBody: 'Contactez directement notre service export. Nous partagerons des exemples de COA, les paramètres d\'audit de notre usine et nos calendriers de certification sous 24 heures.',
+    ctaBtnEmail: 'Email au Service Export',
+    ctaBtnWa: 'WhatsApp',
+  },
+  de: {
+    kicker: 'Operative Herkunft',
+    title: 'Wo Natur auf industrielle Präzision trifft.',
+    lead: 'Über 40 Jahre Erfahrung in der Herstellung auf der Produktionsfläche in Siddhpur — wir liefern reines, chargengeprüftes Flohsamenschalen-Material an globale Einkaufs- und QA-Teams.',
+    historyTitle: 'Unsere Geschichte & Tradition',
+    historyLead: 'Siddhpur, Gujarat ist das globale Zentrum der Flohsamen-Industrie. Hier verarbeiten, mahlen und verschiffen wir jeden Container.',
+    historyBody1: 'RM Psyllium LLP ist ein direkter Hersteller und Großexporteur von erstklassigen Flohsamenschalen, -pulver und -samen. Unsere Wurzeln liegen tief im fruchtbaren landwirtschaftlichen Boden von Siddhpur, Gujarat — dem Epizentrum des weltweiten Flohsamenhandels. Basierend auf über 40 Jahren fundiertem Betriebs- und Vermahlungs-Know-how bedienen wir anspruchsvolle Einkäufer in Lebensmitteln, Pharmazeutika und Tiernahrung.',
+    historyBody2: 'Wir sind keine reinen Handelsmakler. Wir verarbeiten selbst in unserer Anlage. Das bedeutet, dass wir die absolute Kontrolle über die gesamte Lieferkette behalten — von der Samenreinigung beim Landwirt über die mehrstufige Magnetfiltration, die kontrollierte Walzenvermahlung bis zur abschließenden Laborvalidierung. Was wir anbieten, ist genau das, was hergestellt, verpackt und am Hafen von Mundra verladen wird.',
+    facilityTitle: 'Vertikal Integrierte Produktionsstätte',
+    facilityDesc: 'Unsere moderne Verarbeitungsanlage in Siddhpur, Gujarat, arbeitet mit einer jährlichen Kapazität von 2.000 Tonnen. Die Anlage ist speziell für eine chemiefreie Verarbeitung ausgelegt und stützt sich ausschließlich auf mechanische Trennung und Schwerkraftsortierung, um die natürliche Schleimstoffstruktur und das Quellvolumen der rohen Schale zu erhalten.',
+    statCapacity: '2.000 t',
+    statHistory: '40+ Jahre',
+    statExperience: 'In-House',
+    statPurity: '99.5%+',
+    statLabelCapacity: 'Jährliche Kapazität',
+    statLabelHistory: 'Betriebliches Know-how',
+    statLabelExperience: 'Vermahlung & Verarbeitung',
+    statLabelPurity: 'Pharmazeutische Reinheit',
+    valueTitle: 'Unsere Produktionsstandards',
+    value1Title: 'Chemiefreie Trennung',
+    value1Desc: 'Wir stützen uns ausschließlich auf physikalische Reinigung, mechanische Sortierung und Walzenvermahlung mit kontrolliertem Mahlspalt. Es werden niemals chemische Bleichmittel, Säurebehandlungen oder synthetische Zusatzstoffe eingesetzt.',
+    value2Title: 'NABL-Laborvalidierung',
+    value2Desc: 'Jede Charge durchläuft vor dem Verpacken eine strenge chemische und mikrobiologische Untersuchung. Wir analysieren 47 verschiedene Parameter, um die strikte Einhaltung der Arzneibücher und Schwermetallgrenzwerte zu garantieren.',
+    value3Title: 'Lückenlose Dokumentation',
+    value3Desc: 'Von der Vertragsgestaltung mit den Samenbauern in Nord-Gujarat bis zum Containerversand in Mundra, Kandla oder Nhava Sheva — jede Charge trägt eine vollständige Herkunfts- und Rückverfolgbarkeitsdokumentation.',
+    ctaTitle: 'Benötigen Sie Qualitätsunterlagen vor einer Bemusterung?',
+    ctaBody: 'Kontaktieren Sie unsere Exportabteilung direkt. Wir senden Ihnen innerhalb von 24 Stunden Muster-COAs, Auditparameter der Anlage und Zertifizierungspläne zu.',
+    ctaBtnEmail: 'Exportabteilung kontaktieren',
+    ctaBtnWa: 'WhatsApp',
+  },
+  ar: {
+    kicker: 'المنشأ التشغيلي',
+    title: 'حيث تلتقي الطبيعة مع الدقة الصناعية.',
+    lead: 'أكثر من 40 عامًا من الخبرة في التصنيع داخل منشأة معالجة سيدهبور - نقدم سيلليوم نقيًا ومختبرًا لكل دفعة لفرق المشتريات وضمان الجودة العالمية.',
+    historyTitle: 'قصتنا وتراثنا',
+    historyLead: 'سيدهبور، غوجارات هي المركز العالمي لصناعة السيلليوم. هذا هو المكان الذي نقوم فيه بمعالجة وطحن وشحن كل حاوية.',
+    historyBody1: 'RM Psyllium LLP هي شركة مصنعة مباشرة ومصدرة بالجملة لقشور السيلليوم الممتازة والمسحوق والبذور. تم زرع جذورنا بقوة في التربة الزراعية الغنية في سيدهبور، غوجارات - مركز تجارة السيلليوم العالمية. بناءً على أكثر من 40 عامًا من المعرفة العميقة بالتشغيل والطحن، فإننا نخدم المشترين ذوي الثقة العالية في الأغذية والأدوية وتغذية الحيوان.',
+    historyBody2: 'نحن لسنا وسطاء تجاريين. نحن نقوم بالمعالجة داخليًا. وهذا يعني أننا نحافظ على السيطرة المطلقة على سلسلة التوريد بأكملها - بدءًا من تنظيف البذور على مستوى المزرعة وحتى الترشيح المغناطيسي متعدد المراحل، والطحن الخاضع للرقابة، والتحقق النهائي من المختبر. ما نقتبسه هو بالضبط ما يتم تصنيعه وتعبئته وتحميله في حاويات الشحن في ميناء موندرا.',
+    facilityTitle: 'منشأة متكاملة رأسياً',
+    facilityDesc: 'يقع مصنع المعالجة الحديث الخاص بنا في سيدهبور، غوجارات، ويعمل بقدرة سنوية تبلغ 2000 طن متري. تم تصميم المنشأة خصيصًا للمعالجة الخالية من المواد الكيميائية، وتعتمد فقط على الفصل الميكانيكي وتصنيف الجاذبية للحفاظ على الصمغ الطبيعي وحجم تورم القشرة الخام.',
+    statCapacity: '2,000 طن',
+    statHistory: '40+ عاماً',
+    statExperience: 'داخلي',
+    statPurity: '99.5%+',
+    statLabelCapacity: 'القدرة السنوية',
+    statLabelHistory: 'المعرفة التشغيلية',
+    statLabelExperience: 'الطحن والمعالجة',
+    statLabelPurity: 'نقاوة الدرجة الدوائية',
+    valueTitle: 'معايير التصنيع لدينا',
+    value1Title: 'الفصل الخالي من المواد الكيميائية',
+    value1Desc: 'نحن نعتمد حصريًا على التنظيف الفيزيائي، والفرز الميكانيكي، والطحن بالأسطوانات الخاضع للرقابة. لا يتم استخدام أي تبييض كيميائي أو معالجات حمضية أو إضافات صناعية على الإطلاق.',
+    value2Title: 'التحقق من مختبر NABL',
+    value2Desc: 'تخضع كل دفعة لفحص كيميائي وميكروبيولوجي صارم قبل التعبئة. نقوم بتحليل 47 معلمة متميزة لضمان الامتثال الصارم لدستور الأدوية والمعادن الثقيلة.',
+    value3Title: 'تتبع السلسلة بالكامل',
+    value3Desc: 'بدءًا من التعاقد مع مزارعي البذور في شمال غوجارات وحتى شحن الحاويات في موندرا أو كاندلا أو نهافا شيفا، تحمل كل دفعة وثائق منشأ وتتبع كاملة.',
+    ctaTitle: 'هل تحتاج إلى وثائق الجودة قبل أخذ العينات؟',
+    ctaBody: 'اتصل بمكتب التصدير لدينا مباشرة. سنشارك عينات شهادات التحليل (COA)، ومعلمات تدقيق المنشأة، والجداول الزمنية للحصول على الشهادات في غضون 24 ساعة.',
+    ctaBtnEmail: 'مراسلتنا عبر البريد الإلكتروني',
+    ctaBtnWa: 'واتساب',
+  },
+  zh: {
+    kicker: '制造源头与工艺',
+    title: '大自然与工业精度的融合。',
+    lead: '在印度古吉拉特邦 Siddhpur 加工厂拥有 40 多年的制造经验——为全球采购和 QA 团队提供纯净、分批测试的圆苞车前子壳与粉。',
+    historyTitle: '我们的故事与传承',
+    historyLead: '印度古吉拉特邦的 Siddhpur 是全球车前子产业的中心。这正是我们加工、磨粉并出运每一个集装箱的地方。',
+    historyBody1: 'RM Psyllium LLP 是一家直接源头制造商和优质车前子壳、粉和种子的散装出口商。我们的根基牢固地扎在古吉拉特邦 Siddhpur 富饶的农业土壤中——这里是全球车前子贸易的核心。基于 40 多年深厚的运营和碾磨知识，我们为食品、制药和动物营养领域的高信任买家提供优质服务。',
+    historyBody2: '我们不是贸易商。我们自主加工。这意味着我们对整个供应链保持绝对控制——从农场级的种子清洁到多级磁过滤、受控辊磨和最终的实验室验证。我们所报价的，正是我们在 Mundra 港装运集装箱的制造、包装和装载标准。',
+    facilityTitle: '垂直整合的加工厂',
+    facilityDesc: '我们位于古吉拉特邦 Siddhpur 的现代化加工厂年产能达 2,000 吨。该设施专为无化学加工而设计，完全依靠机械分离和重力分级来保留原始外壳的天然粘液和膨胀体积。',
+    statCapacity: '2,000 吨',
+    statHistory: '40+ 年',
+    statExperience: '自主生产',
+    statPurity: '99.5%+',
+    statLabelCapacity: '年产能',
+    statLabelHistory: '运营知识',
+    statLabelExperience: '碾磨与加工',
+    statLabelPurity: '医药级纯度',
+    valueTitle: '我们的制造标准',
+    value1Title: '零化学分离',
+    value1Desc: '我们完全依靠物理清洁、机械分选和间隙受控辊磨。绝不引入任何化学漂白、酸处理或合成添加剂。',
+    value2Title: 'NABL 实验室验证',
+    value2Desc: '每批产品在包装前都经过严格的化学和微生物筛选。我们分析 47 个不同的参数，以确保严格符合药典和重金属限值要求。',
+    value3Title: '完整链条监管',
+    value3Desc: '从在北古吉拉特邦签约种子种植户，到 Mundra、Kandla 或 Nhava Sheva 的集装箱运送，每个批次都附有完整的原产地和可追溯性文件。',
+    ctaTitle: '采样前需要质检报告文件吗？',
+    ctaBody: '请直接与我们的出口业务部门联系。我们将在 24 小时内分享样品 COA、设施审核参数和认证时间表。',
+    ctaBtnEmail: '联系出口部门',
+    ctaBtnWa: '微信 / WhatsApp',
+  },
+  nl: {
+    kicker: 'Operationele Herkomst',
+    title: 'Waar natuur en industriële precisie samenkomen.',
+    lead: 'Meer dan 40 jaar productie-ervaring in de fabriek in Siddhpur — levering van pure, per batch geteste psyllium aan wereldwijde inkoop- en QA-teams.',
+    historyTitle: 'Ons Verhaal & Erfgoed',
+    historyLead: 'Siddhpur, Gujarat is het wereldwijde centrum van de psylliumindustrie. Dit is waar we elke container verwerken, malen en verzenden.',
+    historyBody1: 'RM Psyllium LLP is een rechtstreekse fabrikant en bulkexporteur van premium psylliumvezels (husk), poeder en zaden. Onze wortels liggen stevig verankerd in de rijke landbouwgrond van Siddhpur, Gujarat — het epicentrum van de wereldwijde psylliumhandel. Gebouwd op meer dan 40 jaar diepgaande operationele en maalkennis, bedienen we veeleisende kopers in de levensmiddelen-, farmaceutische en diervoedingsindustrie.',
+    historyBody2: 'Wij zijn geen handelsmakelaars. Wij verwerken zelf in onze fabriek. Dit betekent dat we absolute controle behouden over de gehele toeleveringsketen — van zaadreiniging bij de boer tot meertraps magnetische filtratie, gecontroleerde walsmaling en definitieve laboratoriumvalidatie. Wat we offreren is exact wat we produceren, verpakken en verschepen via de haven van Mundra.',
+    facilityTitle: 'Verticaal Geïntegreerde Fabriek',
+    facilityDesc: 'Onze moderne verwerkingsfabriek in Siddhpur, Gujarat heeft een jaarlijkse capaciteit van 2.000 ton. De faciliteit is speciaal ontworpen voor chemievrije verwerking, puur vertrouwend op mechanische scheiding en zwaartekrachtsortering om de natuurlijke slijmstoffen en het zwelvolume van de ruwe husk te behouden.',
+    statCapacity: '2.000 ton',
+    statHistory: '40+ Jaar',
+    statExperience: 'Eigen Fabriek',
+    statPurity: '99.5%+',
+    statLabelCapacity: 'Jaarlijkse Capaciteit',
+    statLabelHistory: 'Operationele Kennis',
+    statLabelExperience: 'Maling & Verwerking',
+    statLabelPurity: 'Farmaceutische Zuiverheid',
+    valueTitle: 'Onze Productienormen',
+    value1Title: 'Chemievrije Scheiding',
+    value1Desc: 'We vertrouwen uitsluitend op fysieke reiniging, mechanisch sorteren en walsmaling met gecontroleerde tussenruimte. Er worden nooit chemische bleekmiddelen, zuurbehandelingen of synthetische additieven gebruikt.',
+    value2Title: 'NABL-Labvalidatie',
+    value2Desc: 'Elke batch ondergaat een strenge chemische en microbiologische screening vóór het verpakken. We analyseren 47 verschillende parameters om te voldoen aan de strenge farmaceutische en zware metalen-richtlijnen.',
+    value3Title: 'Volledige Traceerbaarheid',
+    value3Desc: 'Van de contractering met zaadkwekers in Noord-Gujarat tot de containerverzending in Mundra, Kandla of Nhava Sheva — elke batch is voorzien van volledige herkomst- en traceerbaarheidsdocumentatie.',
+    ctaTitle: 'QA-documenten nodig voor proefmonsters?',
+    ctaBody: 'Neem direct contact op met onze exportdesk. We sturen binnen 24 uur voorbeeld-COA\'s, fabrieksauditparameters en certificeringstijdlijnen.',
+    ctaBtnEmail: 'E-mail Exportdesk',
+    ctaBtnWa: 'WhatsApp ons',
+  },
+  it: {
+    kicker: 'Provenienza Operativa',
+    title: 'Dove la natura incontra la precisione industriale.',
+    lead: 'Oltre 40 anni di esperienza produttiva all\'interno dello stabilimento di Siddhpur: fornitura di psyllium puro e testato per lotto ai team di acquisto e controllo qualità globali.',
+    historyTitle: 'La Nostra Storia e Tradizione',
+    historyLead: 'Siddhpur, Gujarat è il centro mondiale dell\'industria dello psyllium. È qui che lavoriamo, maciniamo e spediamo ogni container.',
+    historyBody1: 'RM Psyllium LLP è un produttore diretto ed esportatore all\'ingrosso di cuticola, polvere e semi di psyllium premium. Le nostre radici sono saldamente piantate nel ricco terreno agricolo di Siddhpur, Gujarat, l\'epicentro del commercio globale di psyllium. Forti di oltre 40 anni di profonda conoscenza operativa e di macinazione, serviamo acquirenti di alta fiducia nei settori alimentare, farmaceutico e della nutrizione animale.',
+    historyBody2: 'Non siamo broker commerciali. Lavoriamo nel nostro stabilimento. Ciò significa che manteniamo un controllo assoluto su tutta la catena di approvvigionamento, dalla pulizia dei semi al livello del campo alla filtrazione magnetica multistadio, alla macinazione a rulli controllata e alla validazione finale in laboratorio. Ciò che offriamo è esattamente ciò che viene prodotto, confezionato e spedito dal porto di Mundra.',
+    facilityTitle: 'Stabilimento Verticalmente Integrato',
+    facilityDesc: 'Situato a Siddhpur, Gujarat, il nostro moderno impianto di lavorazione opera con una capacità annuale di 2.000 tonnellate. La struttura è progettata per una lavorazione senza prodotti chimici, basandosi esclusivamente sulla separazione meccanica e sulla cernita densimetrica per preservare la mucillagine naturale e il volume di rigonfiamento della cuticola grezza.',
+    statCapacity: '2.000 ton',
+    statHistory: '40+ Anni',
+    statExperience: 'Interna',
+    statPurity: '99.5%+',
+    statLabelCapacity: 'Capacità Annuale',
+    statLabelHistory: 'Conoscenza Operativa',
+    statLabelExperience: 'Macinazione & Lavorazione',
+    statLabelPurity: 'Purezza di Grado Farmaceutico',
+    valueTitle: 'I Nostri Standard Produttivi',
+    value1Title: 'Separazione Senza Prodotti Chimici',
+    value1Desc: 'Ci basiamo esclusivamente sulla pulizia fisica, sulla cernita meccanica e sulla macinazione a rulli controllata. Non vengono mai introdotti trattamenti chimici di sbiancamento, acidi o additivi sintetici.',
+    value2Title: 'Validazione di Laboratorio NABL',
+    value2Desc: 'Ogni lotto è sottoposto a rigidi controlli chimici e microbiologici prima del confezionamento. Analizziamo 47 parametri distinti per garantire la conformità alla farmacopea e ai metalli pesanti.',
+    value3Title: 'Tracciabilità Totale della Filiera',
+    value3Desc: 'Dalla contrattazione con i coltivatori di semi nel nord del Gujarat fino alla spedizione dei container a Mundra, Kandla o Nhava Sheva, ogni lotto è provvisto di una documentazione completa sull\'origine e sul tracciamento.',
+    ctaTitle: 'Hai bisogno di documenti QA prima del campionamento?',
+    ctaBody: 'Contatta direttamente il nostro ufficio esportazioni. Condivideremo esempi di COA, parametri di audit del nostro stabilimento e tempistiche di certificazione entro 24 ore.',
+    ctaBtnEmail: 'Email all\'Ufficio Esportazioni',
+    ctaBtnWa: 'WhatsApp',
+  },
+  pt: {
+    kicker: 'Proveniência Operacional',
+    title: 'Onde a natureza se une à precisão industrial.',
+    lead: 'Mais de 40 anos de experiência de fabricação na planta de processamento de Siddhpur — entregando psyllium puro e verificado por lotes para equipes globais de compras e controle de qualidade.',
+    historyTitle: 'Nossa História e Patrimônio',
+    historyLead: 'Siddhpur, Gujarat é o centro mundial da indústria de psyllium. É aqui que processamos, moemos e enviamos cada contêiner.',
+    historyBody1: 'RM Psyllium LLP é uma fabricante direta e exportadora a granel de casca, pó e sementes de psyllium premium. Nossas raízes estão firmemente plantadas no fértil solo agrícola de Siddhpur, Gujarat — o epicentro do comércio global de psyllium. Construídos com base em mais de 40 anos de profundo conhecimento operacional e de moagem, servimos compradores de alta confiança nos setores de alimentos, produtos farmacêuticos e nutrição animal.',
+    historyBody2: 'Não somos intermediários comerciais. Processamos internamente em nossa própria fábrica. Isso significa que mantemos o controle absoluto sobre toda a cadeia de suprimentos — desde a limpeza de sementes a nível de campo até a filtragem magnética de múltiplos estágios, moagem controlada por rolos e validação final de laboratório. O que cotamos é exatamente o que é fabricado, embalado e despachado no porto de Mundra.',
+    facilityTitle: 'Instalações Verticalmente Integradas',
+    facilityDesc: 'Situada em Siddhpur, Gujarat, nossa moderna planta de processamento opera com capacidade anual de 2.000 toneladas. A instalação foi projetada especificamente para o processamento sem químicos, dependendo exclusivamente da separação mecânica e classificação por gravidade para preservar a mucilagem natural e o volume de inchaço da casca crua.',
+    statCapacity: '2.000 toneladas',
+    statHistory: '40+ Anos',
+    statExperience: 'Interna',
+    statPurity: '99.5%+',
+    statLabelCapacity: 'Capacidade Anual',
+    statLabelHistory: 'Conhecimento Operacional',
+    statLabelExperience: 'Moagem e Processamento',
+    statLabelPurity: 'Pureza de Grau Farmacêutico',
+    valueTitle: 'Nossos Padrões de Fabricação',
+    value1Title: 'Separacão Sem Produtos Químicos',
+    value1Desc: 'Dependemos exclusivamente da limpeza física, classificação mecânica e moagem por rolos com folga controlada. Nenhum branqueamento químico, tratamento ácido ou aditivo sintético é introduzido.',
+    value2Title: 'Validação de Laboratório NABL',
+    value2Desc: 'Cada lote passa por triagem química e microbiológica rigorosa antes do embalamento. Analisamos 47 parâmetros distintos para garantir total conformidade com farmacopeias e controle de metais pesados.',
+    value3Title: 'Custódia Completa de Cadeia',
+    value3Desc: 'Desde a contratação com os plantadores de sementes no norte de Gujarat até o embarque do contêiner em Mundra, Kandla ou Nhava Sheva, cada lote carrega documentação de origem e rastreabilidade total.',
+    ctaTitle: 'Precisa de documentos de controle de qualidade antes da amostragem?',
+    ctaBody: 'Entre em contato diretamente com nossa central de exportação. Compartilharemos COAs de amostra, parâmetros de auditoria das instalações e prazos de certificação em 24 horas.',
+    ctaBtnEmail: 'Email Central de Exportação',
+    ctaBtnWa: 'WhatsApp',
+  },
+  ru: {
+    kicker: 'Производственное происхождение',
+    title: 'Где природа встречается с промышленной точностью.',
+    lead: 'Более 40 лет опыта работы на перерабатывающем заводе в Сиддхпуре — поставка чистой, протестированной по партиям шелухи подорожника (псиллиума) для мировых команд по закупкам и качеству.',
+    historyTitle: 'Наша история и наследие',
+    historyLead: 'Сиддхпур, Гуджарат — мировой центр производства псиллиума. Здесь мы перерабатываем, перемалываем и отгружаем каждый контейнер.',
+    historyBody1: 'RM Psyllium LLP — прямой производитель и экспортер премиальной шелухи псиллиума, порошка и семян. Наши корни находятся на богатых сельскохозяйственных землях Сиддхпура, штат Гуджарат — эпицентра мировой торговли псиллиумом. Опираясь на более чем 40-летний опыт работы и помола, мы обслуживаем надежных покупателей пищевых ингредиентов, фармацевтических субстанций и кормов для животных.',
+    historyBody2: 'Мы не торговые брокеры. Мы перерабатываем сырье на собственном предприятии. Это означает полный контроль над всей цепочкой поставок — от очистки семян до многоступенчатой магнитной сепарации, вальцового помола и лабораторных анализов. Качество по спецификациям — то, что производится, упаковывается и грузится в порту Мундра.',
+    facilityTitle: 'Вертикально интегрированный завод',
+    facilityDesc: 'Наш современный завод в Сиддхпуре, Гуджарат, обладает годовой мощностью 2000 тонн. Предприятие спроектировано для безхимической переработки, основанной исключительно на механической очистке и калибровке для сохранения естественной слизи и объема набухания сырья.',
+    statCapacity: '2 000 тонн',
+    statHistory: '40+ Лет',
+    statExperience: 'Собственное',
+    statPurity: '99.5%+',
+    statLabelCapacity: 'Годовая мощность',
+    statLabelHistory: 'Операционный опыт',
+    statLabelExperience: 'Помол и переработка',
+    statLabelPurity: 'Фармацевтическая чистота',
+    valueTitle: 'Наши производственные стандарты',
+    value1Title: 'Безхимическая очистка',
+    value1Desc: 'Мы полагаемся исключительно на физическую очистку, механическую сортировку и контролируемый вальцовый помол. Никакого химического отбеливания, кислотной обработки или добавок.',
+    value2Title: 'Лабораторные тесты NABL',
+    value2Desc: 'Каждая партия проходит строгий химический и микробиологический контроль перед упаковкой. Мы анализируем 47 параметров на соответствие фармакопеям и содержание тяжелых металлов.',
+    value3Title: 'Полная прослеживаемость',
+    value3Desc: 'От фермерских хозяйств в Северном Гуджарате до отправки из портов Мундра или Кандла — каждая партия сопровождается полными документами происхождения.',
+    ctaTitle: 'Нужны качественные документы перед заказом образцов?',
+    ctaBody: 'Свяжитесь напрямую с нашим экспортным отделом. Мы предоставим образцы COA, параметры аудита завода и график сертификации в течение 24 часов.',
+    ctaBtnEmail: 'Написать в отдел экспорта',
+    ctaBtnWa: 'WhatsApp',
+  },
+};
+
+const c = content[lang] || content.en;
+---
+<BaseLayout
+  lang={lang}
+  title={`${c.title} | About RM Psyllium`}
+  description={c.lead}
+>
+  <div class="ab-wrap">
+    <!-- SECTION 1: HERO -->
+    <header class="ab-hero">
+      <div class="ab-container">
+        <p class="ab-kicker">{c.kicker}</p>
+        <h1>{c.title}</h1>
+        <p class="ab-lead">{c.lead}</p>
+      </div>
+    </header>
+
+    <!-- SECTION 2: HERITAGE & PROVENANCE -->
+    <section class="ab-section">
+      <div class="ab-container ab-grid">
+        <div class="ab-copy-block">
+          <div class="ab-section-label"><span>{c.historyTitle}</span><i></i></div>
+          <h2>{c.historyLead}</h2>
+          <p>{c.historyBody1}</p>
+          <p>{c.historyBody2}</p>
+        </div>
+        <div class="ab-image-block">
+          <img src="/assets/generated/facility-bags-gujarat.webp" width="1122" height="1402" alt="Psyllium bags inside Siddhpur Gujarat facility" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: STATS & CAPACITY -->
+    <section class="ab-section ab-section--cream">
+      <div class="ab-container">
+        <div class="ab-section-label"><span>Scale &amp; Capacity</span><i></i></div>
+        <div class="ab-stats">
+          <div class="ab-stat"><strong>{c.statCapacity}</strong><span>{c.statLabelCapacity}</span></div>
+          <div class="ab-stat"><strong>{c.statHistory}</strong><span>{c.statLabelHistory}</span></div>
+          <div class="ab-stat"><strong>{c.statExperience}</strong><span>{c.statLabelExperience}</span></div>
+          <div class="ab-stat"><strong>{c.statPurity}</strong><span>{c.statLabelPurity}</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: PLANT & FACILITY -->
+    <section class="ab-section">
+      <div class="ab-container ab-grid ab-grid--reverse">
+        <div class="ab-copy-block">
+          <div class="ab-section-label"><span>Processing Plant</span><i></i></div>
+          <h2>{c.facilityTitle}</h2>
+          <p>{c.facilityDesc}</p>
+        </div>
+        <div class="ab-image-block">
+          <img src="/assets/generated/milling-line-gujarat.webp" width="1086" height="1448" alt="Milling line inside Gujarat processing facility" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: VALUES & STANDARDS -->
+    <section class="ab-section ab-section--cream">
+      <div class="ab-container">
+        <div class="ab-section-label"><span>{c.valueTitle}</span><i></i></div>
+        <div class="ab-values-grid">
+          <div class="ab-value-card">
+            <h3>{c.value1Title}</h3>
+            <p>{c.value1Desc}</p>
+          </div>
+          <div class="ab-value-card">
+            <h3>{c.value2Title}</h3>
+            <p>{c.value2Desc}</p>
+          </div>
+          <div class="ab-value-card">
+            <h3>{c.value3Title}</h3>
+            <p>{c.value3Desc}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: CTA -->
+    <section class="ab-section">
+      <div class="ab-container ab-cta">
+        <div>
+          <h2>{c.ctaTitle}</h2>
+          <p>{c.ctaBody}</p>
+        </div>
+        <div class="ab-cta-buttons">
+          <a class="ab-btn ab-btn-primary" href="mailto:export@rmpsyllium.com">{c.ctaBtnEmail}</a>
+          <a class="ab-btn ab-btn-secondary" href="https://wa.me/918949817791" target="_blank" rel="noopener">{c.ctaBtnWa}</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .ab-wrap {
+    --ab-ink: #1a1c18;
+    --ab-soft: #484c43;
+    --ab-mute: #6b6f65;
+    --ab-rule: rgba(26, 28, 24, 0.1);
+    --ab-sage: #4a6630;
+    --ab-cream: #f5f3ed;
+    --ab-white: #ffffff;
+    --ab-f: 'Inter', system-ui, -apple-system, sans-serif;
+    background: var(--ab-white);
+    color: var(--ab-ink);
+    font-family: var(--ab-f);
+  }
+
+  .ab-container {
+    width: min(1140px, calc(100% - 128px));
+    margin-inline: auto;
+  }
+
+  .ab-section {
+    padding: clamp(4rem, 7vw, 7rem) 0;
+  }
+
+  .ab-section--cream {
+    background: var(--ab-cream);
+  }
+
+  .ab-section-label {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 32px;
+    color: var(--ab-sage);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .ab-section-label i {
+    flex: 1;
+    max-width: 400px;
+    height: 1px;
+    background: var(--ab-rule);
+  }
+
+  /* ---- hero ---- */
+  .ab-hero {
+    background: var(--ab-cream);
+    border-bottom: 1px solid var(--ab-rule);
+    padding: clamp(5rem, 8vw, 8rem) 0 clamp(4rem, 6vw, 6rem);
+  }
+
+  .ab-kicker {
+    margin: 0 0 20px;
+    color: var(--ab-sage);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .ab-hero h1 {
+    margin: 0;
+    font-size: clamp(2.4rem, 5vw, 4.2rem);
+    font-weight: 850;
+    letter-spacing: -0.03em;
+    line-height: 1.02;
+    color: var(--ab-ink);
+  }
+
+  .ab-lead {
+    margin: 24px 0 0;
+    color: var(--ab-soft);
+    font-size: clamp(1.05rem, 2vw, 1.25rem);
+    font-weight: 400;
+    line-height: 1.6;
+    max-width: 680px;
+  }
+
+  /* ---- grids ---- */
+  .ab-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: clamp(3rem, 5vw, 5rem);
+    align-items: center;
+  }
+
+  .ab-grid--reverse {
+    grid-template-columns: 0.8fr 1.2fr;
+  }
+
+  .ab-copy-block h2 {
+    margin: 0 0 28px;
+    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+
+  .ab-copy-block p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--ab-soft);
+    margin: 0 0 20px;
+  }
+
+  .ab-copy-block p:last-child {
+    margin-bottom: 0;
+  }
+
+  .ab-image-block img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--ab-rule);
+    aspect-ratio: 4 / 3;
+  }
+
+  /* ---- stats ---- */
+  .ab-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+
+  .ab-stat strong {
+    display: block;
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    font-weight: 850;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    color: var(--ab-ink);
+  }
+
+  .ab-stat span {
+    display: block;
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--ab-mute);
+  }
+
+  /* ---- values ---- */
+  .ab-values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+
+  .ab-value-card {
+    border-top: 2px solid var(--ab-sage);
+    padding-top: 20px;
+  }
+
+  .ab-value-card h3 {
+    margin: 0 0 12px;
+    font-size: 17px;
+    font-weight: 750;
+    letter-spacing: -0.01em;
+  }
+
+  .ab-value-card p {
+    margin: 0;
+    font-size: 13.5px;
+    line-height: 1.65;
+    color: var(--ab-soft);
+  }
+
+  /* ---- cta ---- */
+  .ab-cta {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: clamp(2rem, 4vw, 4rem);
+    align-items: center;
+  }
+
+  .ab-cta h2 {
+    margin: 0 0 12px;
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    color: var(--ab-ink);
+  }
+
+  .ab-cta p {
+    margin: 0;
+    color: var(--ab-soft);
+    font-size: 15px;
+    line-height: 1.65;
+    max-width: 560px;
+  }
+
+  .ab-cta-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .ab-btn {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    padding: 13px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: transform 0.25s cubic-bezier(.2,.7,.3,1), box-shadow 0.25s;
+  }
+
+  .ab-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px -12px rgba(26, 28, 24, 0.2);
+  }
+
+  .ab-btn-primary {
+    background: var(--ab-ink);
+    color: #fff;
+  }
+
+  .ab-btn-secondary {
+    background: #25d366;
+    color: #fff;
+  }
+
+  /* ---- responsive ---- */
+  @media (max-width: 1100px) {
+    .ab-container {
+      width: calc(100% - 80px);
+    }
+  }
+
+  @media (max-width: 860px) {
+    .ab-container {
+      width: calc(100% - 48px);
+    }
+
+    .ab-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .ab-image-block {
+      order: 2;
+    }
+
+    .ab-stats {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .ab-values-grid {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .ab-cta {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 540px) {
+    .ab-container {
+      width: calc(100% - 32px);
+    }
+
+    .ab-stats {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
