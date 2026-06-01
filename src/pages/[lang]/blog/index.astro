@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import { blogPosts, copy, getLanguage, languages } from '../../../data/site';
+import { blogPosts, blogPostTranslations, copy, getLanguage, languages } from '../../../data/site';
 
 export function getStaticPaths() {
   return languages.map((language) => ({
@@ -13,28 +13,31 @@ const t = copy[lang];
 
 const categories = [...new Set(blogPosts.map((p) => p.category))];
 
-const formattedPosts = blogPosts.map((post) => ({
-  ...post,
-  formattedDate: new Date(post.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
-}));
+const formattedPosts = blogPosts.map((post) => {
+  const localized = { ...post, ...(blogPostTranslations[lang]?.[post.slug] || {}) };
+  return {
+    ...localized,
+    formattedDate: new Date(post.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
+  };
+});
 
 const blogSchema = {
   '@context': 'https://schema.org',
   '@type': 'Blog',
   name: 'RM Psyllium Blog',
   description: t.blogLead,
-  url: `https://www.rmpsyllium.com/${lang}/blog/`,
+  url: `https://rmpsyllium.com/${lang}/blog/`,
   publisher: {
     '@type': 'Organization',
     name: 'RM Psyllium',
-    url: 'https://www.rmpsyllium.com'
+    url: 'https://rmpsyllium.com'
   },
   blogPost: blogPosts.map((post) => ({
     '@type': 'BlogPosting',
     headline: post.title,
     description: post.summary,
     datePublished: post.date,
-    url: `https://www.rmpsyllium.com/${lang}/blog/${post.slug}/`,
+    url: `https://rmpsyllium.com/${lang}/blog/${post.slug}/`,
     author: { '@type': 'Organization', name: 'RM Psyllium' }
   }))
 };
@@ -60,9 +63,9 @@ const blogSchema = {
       <div class="bl-filter-inner">
         <span class="bl-filter-label">{t.blogTopicsLabel}</span>
         <div class="bl-filter-tags">
-          <a class="bl-tag bl-tag--active" href={`/${lang}/blog/`}>{t.blogAllLabel}</a>
+          <button class="bl-tag bl-tag--active" data-filter="all">{t.blogAllLabel}</button>
           {categories.map((cat) => (
-            <a class="bl-tag" href={`#${cat.toLowerCase()}`}>{cat}</a>
+            <button class="bl-tag" data-filter={cat}>{t.blogCategories[cat] ?? cat}</button>
           ))}
         </div>
       </div>
@@ -71,16 +74,16 @@ const blogSchema = {
     <!-- POSTS GRID -->
     <section class="bl-section">
       <div class="bl-container">
-        <div class="bl-grid">
+        <div class="bl-grid" id="bl-grid">
           {formattedPosts.map((post) => (
-            <a class="bl-card" href={`/${lang}/blog/${post.slug}/`}>
+            <a class="bl-card" data-cat={post.category} href={`/${lang}/blog/${post.slug}/`}>
               <div class="bl-card-top">
-                <span class="bl-card-cat">{post.category}</span>
+                <span class="bl-card-cat">{t.blogCategories[post.category] ?? post.category}</span>
                 <time datetime={post.date}>{post.formattedDate}</time>
               </div>
               <h2>{post.title}</h2>
               <p>{post.summary}</p>
-              <span class="bl-card-read">Read article →</span>
+              <span class="bl-card-read">{t.blogReadArticle}</span>
             </a>
           ))}
         </div>
@@ -92,8 +95,8 @@ const blogSchema = {
       <div class="bl-container">
         <div class="bl-cta-inner">
           <div>
-            <h2>Have a sourcing question?</h2>
-            <p>Our export team answers technical and commercial questions about psyllium grades, mesh, certifications, and export documentation.</p>
+            <h2>{t.sourcingQuestion}</h2>
+            <p>{t.sourcingQuestionBody}</p>
           </div>
           <div class="bl-cta-btns">
             <a class="bl-btn bl-btn-primary" href={`/${lang}/faq/`}>{t.navFaq}</a>
@@ -104,6 +107,26 @@ const blogSchema = {
     </section>
   </div>
 </BaseLayout>
+
+<script>
+(function () {
+  var tags = document.querySelectorAll<HTMLButtonElement>('.bl-tag');
+  var cards = document.querySelectorAll<HTMLElement>('.bl-card');
+
+  tags.forEach(function (tag) {
+    tag.addEventListener('click', function () {
+      var filter = tag.dataset.filter;
+
+      tags.forEach(function (t) { t.classList.remove('bl-tag--active'); });
+      tag.classList.add('bl-tag--active');
+
+      cards.forEach(function (card) {
+        card.style.display = (filter === 'all' || card.dataset.cat === filter) ? '' : 'none';
+      });
+    });
+  });
+})();
+</script>
 
 <style>
   .bl-wrap {
@@ -195,6 +218,9 @@ const blogSchema = {
   }
 
   .bl-tag {
+    appearance: none;
+    background: none;
+    cursor: pointer;
     border: 1px solid var(--rule);
     border-radius: 999px;
     padding: 5px 14px;

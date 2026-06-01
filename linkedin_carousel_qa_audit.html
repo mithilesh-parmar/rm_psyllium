@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RM Psyllium — QA Audit Checklist Carousel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #14213d;
+  --offwhite: #f6f8f4;
+  --green: #2f6f4e;
+  --mustard: #c6842e;
+  --white: #ffffff;
+}
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #07090f;
+  font-family: 'Inter', -apple-system, sans-serif;
+  padding: 56px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 52px;
+}
+
+.page-title {
+  color: #2a3a5a;
+  font-size: 11px;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.slide-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.slide-tag {
+  color: #2a3a5a;
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* ─── BASE SLIDE ─── */
+.slide {
+  width: 1080px;
+  height: 1080px;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── SHARED: BRAND STRIP ─── */
+.brand-strip {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 82px;
+  background: var(--green);
+  display: flex;
+  align-items: center;
+  padding: 0 64px;
+  justify-content: space-between;
+}
+.brand-strip__name {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 5px;
+  color: var(--white);
+  text-transform: uppercase;
+}
+.brand-strip__tag {
+  font-size: 10.5px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: rgba(255,255,255,0.6);
+  text-transform: uppercase;
+}
+
+/* ─── SHARED: LIGHT FOOTER ─── */
+.light-footer {
+  position: absolute;
+  bottom: 44px; left: 64px; right: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.light-footer__brand {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(20,33,61,0.28);
+}
+.light-footer__num {
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: rgba(20,33,61,0.28);
+}
+
+/* ─────────────────────────────────────────────
+   SLIDE 1 — COVER (NAVY)
+───────────────────────────────────────────── */
+.s1 { background: var(--navy); }
+
+.s1__left-bar {
+  position: absolute;
+  left: 0; top: 148px; bottom: 82px;
+  width: 7px;
+  background: linear-gradient(to bottom, var(--mustard) 0%, var(--green) 100%);
+}
+
+.s1__top-detail {
+  position: absolute;
+  top: 74px; left: 64px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.s1__top-dot {
+  width: 13px; height: 13px;
+  border: 2px solid var(--mustard);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.s1__top-line { width: 220px; height: 2px; background: var(--mustard); }
+.s1__top-label {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: var(--mustard);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.s1__circle {
+  position: absolute;
+  right: -140px;
+  top: 50%;
+  transform: translateY(-52%);
+  width: 620px; height: 620px;
+  opacity: 0.07;
+}
+
+.s1__title {
+  position: absolute;
+  top: 176px; left: 64px; right: 220px;
+}
+.s1__title span {
+  display: block;
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 0.91;
+  letter-spacing: -2.5px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.s1__title span.gold { color: var(--mustard); }
+
+.s1__rule {
+  position: absolute;
+  top: 588px; left: 64px;
+  width: 130px; height: 5px;
+  background: var(--green);
+}
+
+.s1__sub {
+  position: absolute;
+  top: 616px; left: 64px;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  color: rgba(255,255,255,0.4);
+  text-transform: uppercase;
+}
+
+.s1__bottom {
+  position: absolute;
+  bottom: 108px; left: 64px; right: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.s1__bottom-hint {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: rgba(255,255,255,0.3);
+  text-transform: uppercase;
+}
+.s1__bottom-count {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  color: var(--mustard);
+  text-transform: uppercase;
+}
+
+/* ─────────────────────────────────────────────
+   SLIDE 2 — BOTANICAL IDENTITY (OFF-WHITE)
+───────────────────────────────────────────── */
+.s2 { background: var(--offwhite); }
+
+.s2__bg-circle {
+  position: absolute;
+  right: -90px;
+  top: 50%;
+  transform: translateY(-48%);
+  width: 500px; height: 500px;
+  opacity: 0.065;
+}
+
+.s2__big-num {
+  position: absolute;
+  top: -24px; left: 38px;
+  font-size: 280px;
+  font-weight: 900;
+  letter-spacing: -16px;
+  line-height: 1;
+  color: var(--mustard);
+  opacity: 0.065;
+  user-select: none;
+  pointer-events: none;
+}
+
+.s2__overline {
+  position: absolute;
+  top: 62px; left: 64px;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 3.5px;
+  color: var(--green);
+  text-transform: uppercase;
+}
+.s2__step-badge {
+  position: absolute;
+  top: 56px; right: 64px;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--mustard);
+  text-transform: uppercase;
+}
+
+.s2__title {
+  position: absolute;
+  top: 136px; left: 64px; right: 360px;
+}
+.s2__step-label {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--mustard);
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.s2__title h2 {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 0.93;
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+.s2__title h2 em {
+  font-style: normal;
+  color: var(--green);
+}
+.s2__title-rule {
+  margin-top: 24px;
+  width: 78px; height: 4px;
+  background: var(--green);
+}
+
+.s2__checklist {
+  position: absolute;
+  top: 462px; left: 64px; right: 64px;
+}
+.s2__check-header {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 3.5px;
+  color: var(--green);
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+.s2__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  padding-bottom: 28px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid rgba(20,33,61,0.09);
+}
+.s2__item:last-child { border-bottom: none; margin-bottom: 0; }
+.s2__item-icon { flex-shrink: 0; width: 28px; height: 28px; margin-top: 2px; }
+.s2__item-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: -0.3px;
+  margin-bottom: 5px;
+}
+.s2__item-desc {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: rgba(20,33,61,0.52);
+}
+
+/* ─────────────────────────────────────────────
+   SLIDE 3 — PHYSICAL QUALITY (NAVY)
+───────────────────────────────────────────── */
+.s3 { background: var(--navy); }
+
+.s3__bg-grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.032;
+}
+
+.s3__overline {
+  position: absolute;
+  top: 62px; left: 64px;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 3.5px;
+  color: var(--mustard);
+  text-transform: uppercase;
+}
+.s3__step-badge {
+  position: absolute;
+  top: 56px; right: 64px;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: rgba(255,255,255,0.22);
+  text-transform: uppercase;
+}
+
+.s3__title {
+  position: absolute;
+  top: 136px; left: 64px;
+}
+.s3__title h2 {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 0.92;
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.s3__title h2 em { font-style: normal; color: var(--mustard); }
+.s3__title-rule { margin-top: 24px; width: 78px; height: 4px; background: var(--green); }
+
+.s3__grid {
+  position: absolute;
+  top: 376px; left: 64px; right: 64px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.s3__cell {
+  border: 1px solid rgba(255,255,255,0.09);
+  padding: 30px 32px 28px;
+  background: rgba(255,255,255,0.02);
+  position: relative;
+}
+.s3__cell::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 4px;
+  background: var(--green);
+}
+.s3__cell-label {
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.38);
+  margin-bottom: 10px;
+}
+.s3__cell-value {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  line-height: 1;
+  color: var(--mustard);
+  margin-bottom: 7px;
+}
+.s3__cell-spec {
+  font-size: 11.5px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.4);
+  letter-spacing: 0.3px;
+}
+
+.s3__sieve {
+  position: absolute;
+  bottom: 108px; left: 64px; right: 64px;
+}
+.s3__sieve-label {
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.25);
+  margin-bottom: 14px;
+}
+.s3__bars {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+  height: 52px;
+  margin-bottom: 8px;
+}
+.s3__bar { flex: 1; }
+.s3__bar-labels {
+  display: flex;
+  gap: 10px;
+}
+.s3__bar-tick {
+  flex: 1;
+  text-align: center;
+  font-size: 10px;
+  color: rgba(255,255,255,0.25);
+  letter-spacing: 0.3px;
+}
+
+/* ─────────────────────────────────────────────
+   SLIDE 4 — MICROBIAL (OFF-WHITE)
+───────────────────────────────────────────── */
+.s4 { background: var(--offwhite); }
+
+.s4__nabl {
+  position: absolute;
+  top: 50px; right: 64px;
+}
+
+.s4__overline {
+  position: absolute;
+  top: 62px; left: 64px;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 3.5px;
+  color: var(--mustard);
+  text-transform: uppercase;
+}
+
+.s4__title {
+  position: absolute;
+  top: 134px; left: 64px; right: 200px;
+}
+.s4__title h2 {
+  font-size: 62px;
+  font-weight: 900;
+  line-height: 0.92;
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+.s4__title h2 em { font-style: normal; color: var(--green); }
+.s4__title-rule { margin-top: 22px; width: 78px; height: 4px; background: var(--green); }
+
+.s4__grid {
+  position: absolute;
+  top: 388px; left: 64px; right: 64px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.s4__col-header {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding-bottom: 14px;
+  border-bottom: 2px solid currentColor;
+  margin-bottom: 0;
+}
+.s4__col-header.micro { color: var(--green); }
+.s4__col-header.metals { color: var(--mustard); }
+
+.s4__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 0;
+  border-bottom: 1px solid rgba(20,33,61,0.07);
+}
+.s4__row-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--navy);
+  letter-spacing: -0.2px;
+}
+.s4__row-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.s4__row-limit {
+  font-size: 11.5px;
+  font-weight: 400;
+  color: rgba(20,33,61,0.45);
+}
+.s4__pass {
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--green);
+  background: rgba(47,111,78,0.1);
+  padding: 3px 8px;
+  text-transform: uppercase;
+}
+
+/* ─────────────────────────────────────────────
+   SLIDE 5 — CERTIFICATIONS (NAVY)
+───────────────────────────────────────────── */
+.s5 { background: var(--navy); }
+
+.s5__corner { position: absolute; width: 44px; height: 44px; opacity: 0.35; }
+.s5__corner--tl { top: 38px; left: 38px; border-top: 2px solid var(--mustard); border-left: 2px solid var(--mustard); }
+.s5__corner--tr { top: 38px; right: 38px; border-top: 2px solid var(--mustard); border-right: 2px solid var(--mustard); }
+.s5__corner--bl { bottom: 38px; left: 38px; border-bottom: 2px solid var(--mustard); border-left: 2px solid var(--mustard); }
+.s5__corner--br { bottom: 38px; right: 38px; border-bottom: 2px solid var(--mustard); border-right: 2px solid var(--mustard); }
+
+.s5__overline {
+  position: absolute;
+  top: 62px; left: 64px;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 3.5px;
+  color: var(--mustard);
+  text-transform: uppercase;
+}
+.s5__step-badge {
+  position: absolute;
+  top: 56px; right: 64px;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: rgba(255,255,255,0.2);
+  text-transform: uppercase;
+}
+
+.s5__title {
+  position: absolute;
+  top: 136px; left: 64px;
+}
+.s5__title h2 {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 0.92;
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.s5__title h2 em { font-style: normal; color: var(--mustard); }
+.s5__title-rule { margin-top: 24px; width: 78px; height: 4px; background: var(--green); }
+
+.s5__cert-grid {
+  position: absolute;
+  top: 368px; left: 64px; right: 64px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 18px;
+}
+.s5__cert-tile {
+  border: 1px solid rgba(198,132,46,0.25);
+  padding: 28px 24px 24px;
+  background: rgba(255,255,255,0.025);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.s5__cert-tile::after {
+  content: '✓';
+  position: absolute;
+  top: 16px; right: 18px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--green);
+}
+.s5__cert-icon { width: 34px; height: 34px; }
+.s5__cert-name {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: -0.2px;
+  line-height: 1.2;
+}
+.s5__cert-body {
+  font-size: 10px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.38);
+  letter-spacing: 0.2px;
+  line-height: 1.55;
+}
+
+/* ─────────────────────────────────────────────
+   SLIDE 6 — PACKAGING (OFF-WHITE)
+───────────────────────────────────────────── */
+.s6 { background: var(--offwhite); }
+
+.s6__bg-grid {
+  position: absolute;
+  right: 0; bottom: 82px;
+  width: 520px; height: 420px;
+  opacity: 0.048;
+}
+
+.s6__overline {
+  position: absolute;
+  top: 62px; left: 64px;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 3.5px;
+  color: var(--mustard);
+  text-transform: uppercase;
+}
+.s6__step-badge {
+  position: absolute;
+  top: 56px; right: 64px;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--mustard);
+  text-transform: uppercase;
+}
+
+.s6__title {
+  position: absolute;
+  top: 136px; left: 64px;
+}
+.s6__title h2 {
+  font-size: 62px;
+  font-weight: 900;
+  line-height: 0.92;
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+.s6__title h2 em { font-style: normal; color: var(--green); }
+.s6__title-rule { margin-top: 22px; width: 78px; height: 4px; background: var(--green); }
+
+.s6__specs {
+  position: absolute;
+  top: 386px; left: 64px; right: 64px;
+}
+.s6__spec-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 26px;
+  padding: 26px 0;
+  border-bottom: 1px solid rgba(20,33,61,0.09);
+}
+.s6__spec-row:first-child { border-top: 1px solid rgba(20,33,61,0.09); }
+.s6__spec-num {
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--mustard);
+  opacity: 0.32;
+  letter-spacing: -1px;
+  line-height: 1;
+  min-width: 58px;
+  padding-top: 2px;
+}
+.s6__spec-body { flex: 1; }
+.s6__spec-title {
+  font-size: 16.5px;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: -0.3px;
+  margin-bottom: 5px;
+}
+.s6__spec-detail {
+  font-size: 12.5px;
+  font-weight: 400;
+  color: rgba(20,33,61,0.48);
+  line-height: 1.55;
+  letter-spacing: 0.1px;
+}
+.s6__spec-badge {
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--green);
+  background: rgba(47,111,78,0.1);
+  padding: 5px 12px;
+  text-transform: uppercase;
+  align-self: center;
+  white-space: nowrap;
+}
+
+/* ─────────────────────────────────────────────
+   SLIDE 7 — CTA (NAVY)
+───────────────────────────────────────────── */
+.s7 { background: var(--navy); }
+
+.s7__bg {
+  position: absolute;
+  inset: 0;
+  opacity: 0.045;
+}
+
+.s7__overline {
+  position: absolute;
+  top: 62px; left: 64px;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 3.5px;
+  color: var(--green);
+  text-transform: uppercase;
+}
+.s7__step-badge {
+  position: absolute;
+  top: 56px; right: 64px;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: rgba(255,255,255,0.2);
+  text-transform: uppercase;
+}
+
+.s7__statement {
+  position: absolute;
+  top: 156px; left: 64px; right: 64px;
+}
+.s7__statement span {
+  display: block;
+  font-size: 86px;
+  font-weight: 900;
+  line-height: 0.90;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.s7__statement span.gold { color: var(--mustard); }
+
+.s7__cta-box {
+  position: absolute;
+  top: 554px; left: 64px; right: 64px;
+  background: var(--green);
+  padding: 36px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.s7__cta-eyebrow {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: rgba(255,255,255,0.55);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.s7__cta-headline {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: -0.3px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+.s7__cta-arrow {
+  width: 58px; height: 58px;
+  border: 2px solid rgba(255,255,255,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.s7__contact {
+  position: absolute;
+  top: 732px; left: 64px; right: 64px;
+}
+.s7__contact-divider {
+  height: 1px;
+  background: rgba(255,255,255,0.1);
+  margin-bottom: 28px;
+}
+.s7__contact-row {
+  display: flex;
+  gap: 52px;
+}
+.s7__contact-label {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  color: rgba(255,255,255,0.3);
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+.s7__contact-val {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: -0.2px;
+}
+.s7__contact-val.gold { color: var(--mustard); }
+</style>
+</head>
+<body>
+
+<p class="page-title">RM Psyllium · QA Audit Checklist · LinkedIn Carousel · 1080 × 1080px</p>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 1 — COVER
+══════════════════════════════════════════════ -->
+<div class="slide-wrapper">
+  <p class="slide-tag">Cover Slide</p>
+  <div class="slide s1">
+
+    <!-- Background dot grid -->
+    <svg style="position:absolute;inset:0;width:100%;height:100%;opacity:0.038;" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="p-dots" x="0" y="0" width="54" height="54" patternUnits="userSpaceOnUse">
+          <circle cx="27" cy="27" r="1.4" fill="#ffffff"/>
+        </pattern>
+      </defs>
+      <rect width="1080" height="1080" fill="url(#p-dots)"/>
+    </svg>
+
+    <!-- Right decorative circle -->
+    <svg class="s1__circle" viewBox="0 0 620 620" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="310" cy="310" r="300" fill="none" stroke="#2f6f4e" stroke-width="1.5"/>
+      <circle cx="310" cy="310" r="240" fill="none" stroke="#2f6f4e" stroke-width="1"/>
+      <circle cx="310" cy="310" r="180" fill="none" stroke="#2f6f4e" stroke-width="0.75"/>
+      <circle cx="310" cy="310" r="120" fill="none" stroke="#c6842e" stroke-width="1"/>
+      <circle cx="310" cy="310" r="60" fill="none" stroke="#c6842e" stroke-width="1.5"/>
+      <circle cx="310" cy="310" r="5" fill="#c6842e"/>
+      <line x1="10" y1="310" x2="610" y2="310" stroke="#fff" stroke-width="0.5"/>
+      <line x1="310" y1="10" x2="310" y2="610" stroke="#fff" stroke-width="0.5"/>
+      <line x1="97" y1="97" x2="523" y2="523" stroke="#fff" stroke-width="0.3"/>
+      <line x1="523" y1="97" x2="97" y2="523" stroke="#fff" stroke-width="0.3"/>
+    </svg>
+
+    <div class="s1__left-bar"></div>
+
+    <div class="s1__top-detail">
+      <div class="s1__top-dot"></div>
+      <div class="s1__top-line"></div>
+      <div class="s1__top-label">B2B Procurement Guide · Gujarat, India</div>
+    </div>
+
+    <div class="s1__title">
+      <span>THE QA AUDIT</span>
+      <span>CHECKLIST FOR</span>
+      <span>BULK PSYLLIUM</span>
+      <span class="gold">SOURCING</span>
+    </div>
+
+    <div class="s1__rule"></div>
+    <div class="s1__sub">A Supplier Qualification Framework</div>
+
+    <div class="s1__bottom">
+      <div class="s1__bottom-hint">Swipe through all 6 audit checkpoints</div>
+      <div class="s1__bottom-count">7 Slides</div>
+    </div>
+
+    <div class="brand-strip">
+      <div class="brand-strip__name">RM Psyllium</div>
+      <div class="brand-strip__tag">Gujarat · India · Export Specialists</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 2 — BOTANICAL IDENTITY
+══════════════════════════════════════════════ -->
+<div class="slide-wrapper">
+  <p class="slide-tag">Slide 02 — Botanical Identity Verification</p>
+  <div class="slide s2">
+
+    <!-- Large lab circle -->
+    <svg class="s2__bg-circle" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="250" cy="250" r="240" fill="none" stroke="#2f6f4e" stroke-width="1.5"/>
+      <circle cx="250" cy="250" r="186" fill="none" stroke="#2f6f4e" stroke-width="1"/>
+      <circle cx="250" cy="250" r="132" fill="none" stroke="#2f6f4e" stroke-width="0.75"/>
+      <circle cx="250" cy="250" r="78" fill="#2f6f4e" fill-opacity="0.08" stroke="#2f6f4e" stroke-width="1"/>
+      <line x1="10" y1="250" x2="490" y2="250" stroke="#14213d" stroke-width="0.5"/>
+      <line x1="250" y1="10" x2="250" y2="490" stroke="#14213d" stroke-width="0.5"/>
+      <!-- Seed scatter -->
+      <ellipse cx="290" cy="210" rx="7" ry="4" fill="#2f6f4e" opacity="0.5" transform="rotate(-20 290 210)"/>
+      <ellipse cx="225" cy="280" rx="6" ry="3.5" fill="#2f6f4e" opacity="0.4" transform="rotate(15 225 280)"/>
+      <ellipse cx="315" cy="285" rx="8" ry="4.5" fill="#2f6f4e" opacity="0.35" transform="rotate(30 315 285)"/>
+      <ellipse cx="198" cy="228" rx="5.5" ry="3" fill="#c6842e" opacity="0.45" transform="rotate(-10 198 228)"/>
+      <ellipse cx="268" cy="322" rx="6" ry="3.5" fill="#2f6f4e" opacity="0.4" transform="rotate(5 268 322)"/>
+      <ellipse cx="316" cy="238" rx="7" ry="4" fill="#2f6f4e" opacity="0.35" transform="rotate(-35 316 238)"/>
+      <ellipse cx="240" cy="188" rx="5" ry="3" fill="#c6842e" opacity="0.3" transform="rotate(20 240 188)"/>
+    </svg>
+
+    <div class="s2__big-num">01</div>
+
+    <div class="s2__overline">Audit Step 01 of 06</div>
+    <div class="s2__step-badge">01 / 06</div>
+
+    <div class="s2__title">
+      <div class="s2__step-label">Botanical Identity</div>
+      <h2>BOTANICAL<br><em>IDENTITY</em><br>VERIFICATION</h2>
+      <div class="s2__title-rule"></div>
+    </div>
+
+    <div class="s2__checklist">
+      <div class="s2__check-header">What Auditors Require</div>
+
+      <div class="s2__item">
+        <svg class="s2__item-icon" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1.5" y="1.5" width="25" height="25" fill="none" stroke="#2f6f4e" stroke-width="1.5"/>
+          <polyline points="7,14 12,19.5 21,8.5" fill="none" stroke="#2f6f4e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div>
+          <div class="s2__item-title">Species Certification (Plantago ovata)</div>
+          <div class="s2__item-desc">Botanical identity document confirming Plantago ovata Forssk., signed by a certified taxonomist or accredited herbarium</div>
+        </div>
+      </div>
+
+      <div class="s2__item">
+        <svg class="s2__item-icon" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1.5" y="1.5" width="25" height="25" fill="none" stroke="#2f6f4e" stroke-width="1.5"/>
+          <polyline points="7,14 12,19.5 21,8.5" fill="none" stroke="#2f6f4e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div>
+          <div class="s2__item-title">Microscopy &amp; Morphology Reports</div>
+          <div class="s2__item-desc">Seed coat &amp; husk morphology confirmed under 40× optical microscopy — photomicrographs included in CoA documentation package</div>
+        </div>
+      </div>
+
+      <div class="s2__item">
+        <svg class="s2__item-icon" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1.5" y="1.5" width="25" height="25" fill="none" stroke="#2f6f4e" stroke-width="1.5"/>
+          <polyline points="7,14 12,19.5 21,8.5" fill="none" stroke="#2f6f4e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div>
+          <div class="s2__item-title">USP / EP Botanical Spec Compliance</div>
+          <div class="s2__item-desc">Tested against Psyllium Husk monographs per USP 43 and European Pharmacopoeia 10.0 — full compliance documentation available</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="light-footer">
+      <div class="light-footer__brand">RM Psyllium</div>
+      <div class="light-footer__num">rmpsyllium.com</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 3 — PHYSICAL QUALITY
+══════════════════════════════════════════════ -->
+<div class="slide-wrapper">
+  <p class="slide-tag">Slide 03 — Physical Quality Parameters</p>
+  <div class="slide s3">
+
+    <svg class="s3__bg-grid" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="p-grid" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+          <path d="M80 0 L80 80 M0 80 L80 80" fill="none" stroke="#fff" stroke-width="0.5"/>
+        </pattern>
+      </defs>
+      <rect width="1080" height="1080" fill="url(#p-grid)"/>
+    </svg>
+
+    <div class="s3__overline">Audit Step 02 of 06</div>
+    <div class="s3__step-badge">02 / 06</div>
+
+    <div class="s3__title">
+      <h2>PHYSICAL<br>QUALITY<br><em>PARAMETERS</em></h2>
+      <div class="s3__title-rule"></div>
+    </div>
+
+    <div class="s3__grid">
+      <div class="s3__cell">
+        <div class="s3__cell-label">Husk Purity</div>
+        <div class="s3__cell-value">≥ 99.0%</div>
+        <div class="s3__cell-spec">BP / USP Standard Requirement</div>
+      </div>
+      <div class="s3__cell">
+        <div class="s3__cell-label">Moisture Content</div>
+        <div class="s3__cell-value">≤ 11.0%</div>
+        <div class="s3__cell-spec">Loss on Drying (LOD) Method</div>
+      </div>
+      <div class="s3__cell">
+        <div class="s3__cell-label">Bulk Density</div>
+        <div class="s3__cell-value">0.45–0.55</div>
+        <div class="s3__cell-spec">g/mL · Tapped &amp; Untapped</div>
+      </div>
+      <div class="s3__cell">
+        <div class="s3__cell-label">Sieve Retention (#40)</div>
+        <div class="s3__cell-value">≥ 95%</div>
+        <div class="s3__cell-spec">ASTM E11 Sieve Analysis</div>
+      </div>
+    </div>
+
+    <div class="s3__sieve">
+      <div class="s3__sieve-label">Typical Sieve Analysis Distribution Profile</div>
+      <div class="s3__bars">
+        <div class="s3__bar" style="height:22%;background:rgba(198,132,46,0.35);"></div>
+        <div class="s3__bar" style="height:40%;background:rgba(198,132,46,0.55);"></div>
+        <div class="s3__bar" style="height:100%;background:var(--green);opacity:0.85;"></div>
+        <div class="s3__bar" style="height:82%;background:var(--green);opacity:0.75;"></div>
+        <div class="s3__bar" style="height:58%;background:var(--green);opacity:0.6;"></div>
+        <div class="s3__bar" style="height:30%;background:rgba(198,132,46,0.45);"></div>
+        <div class="s3__bar" style="height:12%;background:rgba(198,132,46,0.3);"></div>
+      </div>
+      <div class="s3__bar-labels">
+        <div class="s3__bar-tick">#20</div>
+        <div class="s3__bar-tick">#30</div>
+        <div class="s3__bar-tick">#40</div>
+        <div class="s3__bar-tick">#60</div>
+        <div class="s3__bar-tick">#80</div>
+        <div class="s3__bar-tick">#100</div>
+        <div class="s3__bar-tick">Pan</div>
+      </div>
+    </div>
+
+    <div class="brand-strip">
+      <div class="brand-strip__name">RM Psyllium</div>
+      <div class="brand-strip__tag">Physical Testing · NABL Certified Laboratory</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 4 — MICROBIAL & HEAVY METAL
+══════════════════════════════════════════════ -->
+<div class="slide-wrapper">
+  <p class="slide-tag">Slide 04 — Microbial &amp; Heavy Metal Testing</p>
+  <div class="slide s4">
+
+    <!-- NABL badge -->
+    <svg class="s4__nabl" width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="48" cy="48" r="45" fill="none" stroke="#2f6f4e" stroke-width="1.5"/>
+      <circle cx="48" cy="48" r="38" fill="none" stroke="#2f6f4e" stroke-width="0.75"/>
+      <text x="48" y="40" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="800" fill="#2f6f4e" letter-spacing="2">NABL</text>
+      <text x="48" y="54" text-anchor="middle" font-family="Inter,sans-serif" font-size="7.5" font-weight="600" fill="#2f6f4e" letter-spacing="1.5">ACCREDITED</text>
+      <text x="48" y="66" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" font-weight="400" fill="rgba(47,111,78,0.65)" letter-spacing="0.5">ISO/IEC 17025</text>
+    </svg>
+
+    <div class="s4__overline">Audit Step 03 of 06</div>
+
+    <div class="s4__title">
+      <h2>MICROBIAL &amp;<br>HEAVY METAL<br><em>TESTING</em></h2>
+      <div class="s4__title-rule"></div>
+    </div>
+
+    <div class="s4__grid">
+      <!-- Microbial column -->
+      <div>
+        <div class="s4__col-header micro">Microbial Limits</div>
+        <div class="s4__row">
+          <div class="s4__row-name">Total Plate Count</div>
+          <div class="s4__row-right">
+            <div class="s4__row-limit">≤ 10⁵ CFU/g</div>
+            <div class="s4__pass">Pass</div>
+          </div>
+        </div>
+        <div class="s4__row">
+          <div class="s4__row-name">E. coli</div>
+          <div class="s4__row-right">
+            <div class="s4__row-limit">Absent / g</div>
+            <div class="s4__pass">Pass</div>
+          </div>
+        </div>
+        <div class="s4__row">
+          <div class="s4__row-name">Salmonella spp.</div>
+          <div class="s4__row-right">
+            <div class="s4__row-limit">Absent / 25g</div>
+            <div class="s4__pass">Pass</div>
+          </div>
+        </div>
+        <div class="s4__row">
+          <div class="s4__row-name">Yeast &amp; Mold</div>
+          <div class="s4__row-right">
+            <div class="s4__row-limit">≤ 10³ CFU/g</div>
+            <div class="s4__pass">Pass</div>
+          </div>
+        </div>
+        <div class="s4__row" style="border-bottom:none;">
+          <div class="s4__row-name">Aflatoxin (Total)</div>
+          <div class="s4__row-right">
+            <div class="s4__row-limit">≤ 4 µg/kg</div>
+            <div class="s4__pass">Pass</div>
+          </div>
+        </div>
+      </div>
+      <!-- Heavy metals column -->
+      <div>
+        <div class="s4__col-header metals">Heavy Metals</div>
+        <div class="s4__row">
+          <div class="s4__row-name">Lead (Pb)</div>
+          <div class="s4__row-right">
+            <div class="s4__row-limit">≤ 0.5 ppm</div>
+            <div class="s4__pass">Pass</div>
+          </div>
+        </div>
+        <div class="s4__row">
+          <div class="s4__row-name">Arsenic (As)</div>
+          <div class="s4__row-right">
+            <div class="s4__row-limit">≤ 0.5 ppm</div>
+            <div class="s4__pass">Pass</div>
+          </div>
+        </div>
+        <div class="s4__row">
+          <div class="s4__row-name">Cadmium (Cd)</div>
+          <div class="s4__row-right">
+            <div class="s4__row-limit">≤ 0.2 ppm</div>
+            <div class="s4__pass">Pass</div>
+          </div>
+        </div>
+        <div class="s4__row">
+          <div class="s4__row-name">Mercury (Hg)</div>
+          <div class="s4__row-right">
+            <div class="s4__row-limit">≤ 0.1 ppm</div>
+            <div class="s4__pass">Pass</div>
+          </div>
+        </div>
+        <div class="s4__row" style="border-bottom:none;">
+          <div class="s4__row-name">Pesticide Residues</div>
+          <div class="s4__row-right">
+            <div class="s4__row-limit">ND / MRL</div>
+            <div class="s4__pass">Pass</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="light-footer">
+      <div class="light-footer__brand">RM Psyllium</div>
+      <div class="light-footer__num">03 / 06</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 5 — CERTIFICATIONS
+══════════════════════════════════════════════ -->
+<div class="slide-wrapper">
+  <p class="slide-tag">Slide 05 — Certifications &amp; Compliance</p>
+  <div class="slide s5">
+
+    <!-- Certificate corner ornaments -->
+    <div class="s5__corner s5__corner--tl"></div>
+    <div class="s5__corner s5__corner--tr"></div>
+    <div class="s5__corner s5__corner--bl"></div>
+    <div class="s5__corner s5__corner--br"></div>
+
+    <div class="s5__overline">Audit Step 04 of 06</div>
+    <div class="s5__step-badge">04 / 06</div>
+
+    <div class="s5__title">
+      <h2>CERTIFICATIONS<br>&amp; <em>COMPLIANCE</em></h2>
+      <div class="s5__title-rule"></div>
+    </div>
+
+    <div class="s5__cert-grid">
+
+      <div class="s5__cert-tile">
+        <svg class="s5__cert-icon" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="4" width="30" height="26" rx="1" fill="none" stroke="#c6842e" stroke-width="1.5"/>
+          <line x1="7" y1="10" x2="27" y2="10" stroke="#c6842e" stroke-width="1" opacity="0.4"/>
+          <line x1="7" y1="15" x2="21" y2="15" stroke="#c6842e" stroke-width="1" opacity="0.4"/>
+          <line x1="7" y1="20" x2="23" y2="20" stroke="#c6842e" stroke-width="1" opacity="0.4"/>
+          <circle cx="27" cy="24" r="5" fill="none" stroke="#c6842e" stroke-width="1.5"/>
+          <circle cx="27" cy="24" r="2" fill="#c6842e" opacity="0.5"/>
+        </svg>
+        <div class="s5__cert-name">FSSC 22000</div>
+        <div class="s5__cert-body">Food Safety System<br>Certification v6.0</div>
+      </div>
+
+      <div class="s5__cert-tile">
+        <svg class="s5__cert-icon" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="17,2 32,10 32,24 17,32 2,24 2,10" fill="none" stroke="#c6842e" stroke-width="1.5"/>
+          <polygon points="17,7 27,13 27,21 17,27 7,21 7,13" fill="none" stroke="#c6842e" stroke-width="0.5" opacity="0.4"/>
+          <text x="17" y="21" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" font-weight="800" fill="#c6842e" letter-spacing="0.3">HACCP</text>
+        </svg>
+        <div class="s5__cert-name">HACCP</div>
+        <div class="s5__cert-body">Hazard Analysis &amp;<br>Critical Control Points</div>
+      </div>
+
+      <div class="s5__cert-tile">
+        <svg class="s5__cert-icon" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="17" cy="17" r="14" fill="none" stroke="#2f6f4e" stroke-width="1.5"/>
+          <circle cx="17" cy="17" r="9" fill="none" stroke="#2f6f4e" stroke-width="0.5" opacity="0.4"/>
+          <text x="17" y="14" text-anchor="middle" font-family="Inter,sans-serif" font-size="6" font-weight="700" fill="#2f6f4e" letter-spacing="0.5">EU</text>
+          <text x="17" y="23" text-anchor="middle" font-family="Inter,sans-serif" font-size="5.5" font-weight="700" fill="#2f6f4e" letter-spacing="0.3">ORGANIC</text>
+        </svg>
+        <div class="s5__cert-name">EU Organic</div>
+        <div class="s5__cert-body">European Union<br>Organic Regulation 2018/848</div>
+      </div>
+
+      <div class="s5__cert-tile">
+        <svg class="s5__cert-icon" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="17" cy="17" r="14" fill="none" stroke="#c6842e" stroke-width="1.5"/>
+          <text x="17" y="14" text-anchor="middle" font-family="Inter,sans-serif" font-size="6" font-weight="700" fill="#c6842e">USDA</text>
+          <text x="17" y="22" text-anchor="middle" font-family="Inter,sans-serif" font-size="5" font-weight="700" fill="#c6842e" letter-spacing="0.3">NOP ORGANIC</text>
+        </svg>
+        <div class="s5__cert-name">USDA NOP</div>
+        <div class="s5__cert-body">National Organic<br>Program Certified</div>
+      </div>
+
+      <div class="s5__cert-tile">
+        <svg class="s5__cert-icon" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 3 C10 3 4 9.5 4 17 C4 22 6.5 26.5 12 30 L17 32 L22 30 C27.5 26.5 30 22 30 17 C30 9.5 24 3 17 3Z" fill="none" stroke="#2f6f4e" stroke-width="1.5"/>
+          <text x="17" y="20" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#2f6f4e">HALAL</text>
+        </svg>
+        <div class="s5__cert-name">Halal</div>
+        <div class="s5__cert-body">International Halal<br>Accreditation Body</div>
+      </div>
+
+      <div class="s5__cert-tile">
+        <svg class="s5__cert-icon" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+          <rect x="3" y="3" width="28" height="28" fill="none" stroke="#2f6f4e" stroke-width="1.5"/>
+          <rect x="8" y="8" width="18" height="18" fill="none" stroke="#2f6f4e" stroke-width="0.5" opacity="0.35"/>
+          <text x="17" y="22" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="#2f6f4e">✡</text>
+        </svg>
+        <div class="s5__cert-name">Kosher</div>
+        <div class="s5__cert-body">Kosher Certified by<br>Recognized Certifying Body</div>
+      </div>
+
+    </div>
+
+    <div class="brand-strip">
+      <div class="brand-strip__name">RM Psyllium</div>
+      <div class="brand-strip__tag">All Certificates Available on Request</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 6 — PACKAGING & COLD CHAIN
+══════════════════════════════════════════════ -->
+<div class="slide-wrapper">
+  <p class="slide-tag">Slide 06 — Packaging &amp; Cold Chain Integrity</p>
+  <div class="slide s6">
+
+    <!-- Container grid background -->
+    <svg class="s6__bg-grid" viewBox="0 0 520 420" xmlns="http://www.w3.org/2000/svg">
+      <rect x="16" y="16" width="488" height="388" fill="none" stroke="#14213d" stroke-width="2"/>
+      <line x1="88" y1="16" x2="88" y2="404" stroke="#14213d" stroke-width="1"/>
+      <line x1="160" y1="16" x2="160" y2="404" stroke="#14213d" stroke-width="1"/>
+      <line x1="232" y1="16" x2="232" y2="404" stroke="#14213d" stroke-width="1"/>
+      <line x1="304" y1="16" x2="304" y2="404" stroke="#14213d" stroke-width="1"/>
+      <line x1="376" y1="16" x2="376" y2="404" stroke="#14213d" stroke-width="1"/>
+      <line x1="448" y1="16" x2="448" y2="404" stroke="#14213d" stroke-width="1"/>
+      <line x1="16" y1="88" x2="504" y2="88" stroke="#14213d" stroke-width="0.75"/>
+      <line x1="16" y1="160" x2="504" y2="160" stroke="#14213d" stroke-width="0.75"/>
+      <line x1="16" y1="232" x2="504" y2="232" stroke="#14213d" stroke-width="0.75"/>
+      <line x1="16" y1="304" x2="504" y2="304" stroke="#14213d" stroke-width="0.75"/>
+    </svg>
+
+    <div class="s6__overline">Audit Step 05 of 06</div>
+    <div class="s6__step-badge">05 / 06</div>
+
+    <div class="s6__title">
+      <h2>PACKAGING &amp;<br>COLD CHAIN<br><em>INTEGRITY</em></h2>
+      <div class="s6__title-rule"></div>
+    </div>
+
+    <div class="s6__specs">
+      <div class="s6__spec-row">
+        <div class="s6__spec-num">01</div>
+        <div class="s6__spec-body">
+          <div class="s6__spec-title">HDPE Food-Grade Inner Liner</div>
+          <div class="s6__spec-detail">25kg / 50kg multi-wall kraft + HDPE liner · Virgin food-contact resin · FDA 21 CFR 177.1520 compliant · Heat-sealed closure</div>
+        </div>
+        <div class="s6__spec-badge">FDA</div>
+      </div>
+      <div class="s6__spec-row">
+        <div class="s6__spec-num">02</div>
+        <div class="s6__spec-body">
+          <div class="s6__spec-title">Moisture Vapour Barrier</div>
+          <div class="s6__spec-detail">MVTR &lt;5 g/m²/day · Validated at 38°C / 90% RH · Silica gel desiccant option for hygroscopic grades on request</div>
+        </div>
+        <div class="s6__spec-badge">Tested</div>
+      </div>
+      <div class="s6__spec-row">
+        <div class="s6__spec-num">03</div>
+        <div class="s6__spec-body">
+          <div class="s6__spec-title">Lot Coding &amp; Traceability</div>
+          <div class="s6__spec-detail">Lot No. · Mfg. Date · Expiry · Batch CoA QR code on each bag · Full backward traceability to farm &amp; harvest level</div>
+        </div>
+        <div class="s6__spec-badge">GS1</div>
+      </div>
+      <div class="s6__spec-row">
+        <div class="s6__spec-num">04</div>
+        <div class="s6__spec-body">
+          <div class="s6__spec-title">Container Loading Protocol</div>
+          <div class="s6__spec-detail">FCL / LCL · Pre-shipment fumigation certificate · Container humidity check · Dunnage bags · Independent surveyor sign-off</div>
+        </div>
+        <div class="s6__spec-badge">FCL/LCL</div>
+      </div>
+    </div>
+
+    <div class="light-footer">
+      <div class="light-footer__brand">RM Psyllium</div>
+      <div class="light-footer__num">05 / 06</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     SLIDE 7 — CTA
+══════════════════════════════════════════════ -->
+<div class="slide-wrapper">
+  <p class="slide-tag">Slide 07 — CTA / Why RM Psyllium</p>
+  <div class="slide s7">
+
+    <!-- Background geometry -->
+    <svg class="s7__bg" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="p-cta" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+          <circle cx="30" cy="30" r="1.2" fill="#ffffff"/>
+        </pattern>
+      </defs>
+      <rect width="1080" height="1080" fill="url(#p-cta)"/>
+      <!-- Decorative right-side circles -->
+      <circle cx="880" cy="210" r="260" fill="none" stroke="#2f6f4e" stroke-width="1"/>
+      <circle cx="880" cy="210" r="196" fill="none" stroke="#2f6f4e" stroke-width="0.5"/>
+      <circle cx="880" cy="210" r="130" fill="none" stroke="#c6842e" stroke-width="0.75"/>
+      <circle cx="880" cy="210" r="64" fill="none" stroke="#c6842e" stroke-width="1"/>
+      <line x1="620" y1="210" x2="1080" y2="210" stroke="#fff" stroke-width="0.4"/>
+      <line x1="880" y1="0" x2="880" y2="470" stroke="#fff" stroke-width="0.4"/>
+    </svg>
+
+    <div class="s7__overline">RM Psyllium · Audit Summary</div>
+    <div class="s7__step-badge">06 / 06</div>
+
+    <div class="s7__statement">
+      <span>WHY RM</span>
+      <span>PSYLLIUM PASSES</span>
+      <span class="gold">EVERY AUDIT.</span>
+    </div>
+
+    <div class="s7__cta-box">
+      <div>
+        <div class="s7__cta-eyebrow">Next Step — Request Today</div>
+        <div class="s7__cta-headline">Full CoA Package +<br>Supplier Questionnaire</div>
+      </div>
+      <div class="s7__cta-arrow">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 13H21M15 7L21 13L15 19" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="s7__contact">
+      <div class="s7__contact-divider"></div>
+      <div class="s7__contact-row">
+        <div>
+          <div class="s7__contact-label">Email</div>
+          <div class="s7__contact-val">info@rmpsyllium.com</div>
+        </div>
+        <div>
+          <div class="s7__contact-label">Website</div>
+          <div class="s7__contact-val gold">www.rmpsyllium.com</div>
+        </div>
+        <div>
+          <div class="s7__contact-label">Origin</div>
+          <div class="s7__contact-val">Gujarat, India</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-strip">
+      <div class="brand-strip__name">RM Psyllium Export</div>
+      <div class="brand-strip__tag">FSSC 22000 · HACCP · EU Organic · Halal · Kosher</div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

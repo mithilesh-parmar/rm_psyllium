@@ -9,15 +9,41 @@
     ],
     "aiSnapshot": "Voor de inkoop van farmaceutische psyllium moeten QA-teams de USP-, EP- of IP-monografie verifiëren. USP vereist een zwelvolume ≥55 mL/g met as ≤3,0%, terwijl EP ≥40 mL/g met as ≤4,0% voorschrijft. Alle zendingen vereisen partijspecifieke NABL COA's.",
     "specTable": [
-      { "parameter": "Minimaal Zwelvolume", "range": "≥ 55 mL / g", "method": "USP <561> Methode" },
-      { "parameter": "Zuiverheidsdrempel", "range": "≥ 99.0%", "method": "Zeven & Dimensionering" },
-      { "parameter": "Totaal Asgehalte", "range": "≤ 3.0%", "method": "Gloeiverlies" },
-      { "parameter": "In Zuur Onoplosbare As", "range": "≤ 0.4%", "method": "USP Methode" },
-      { "parameter": "Droogverlies (Vochtgehalte)", "range": "≤ 12.0%", "method": "Droogverlies" }
+      {
+        "parameter": "Minimaal Zwelvolume",
+        "range": "≥ 55 mL / g",
+        "method": "USP <561> Methode"
+      },
+      {
+        "parameter": "Zuiverheidsdrempel",
+        "range": "≥ 99.0%",
+        "method": "Zeven & Dimensionering"
+      },
+      {
+        "parameter": "Totaal Asgehalte",
+        "range": "≤ 3.0%",
+        "method": "Gloeiverlies"
+      },
+      {
+        "parameter": "In Zuur Onoplosbare As",
+        "range": "≤ 0.4%",
+        "method": "USP Methode"
+      },
+      {
+        "parameter": "Droogverlies (Vochtgehalte)",
+        "range": "≤ 12.0%",
+        "method": "Droogverlies"
+      }
     ],
     "faqs": [
-      { "q": "Hoe het zwelvolume wordt geverifieerd in NABL-laboratoria?", "a": "Onder USP <561> wordt 1,0 gram psyllium husk in een maatcilinder van 25 mL geplaatst, gevuld met water en gedurende 24 uur periodiek geschud. Het volume van de gegeleerde massa wordt gemeten. Premium partijen bereiken een zwelvolume van ≥55 mL/g." },
-      { "q": "Waarom is in zuur onoplosbare as een kritische veiligheidslimiet?", "a": "In zuur onoplosbare as duidt op resterend zand, vuil en silica. De USP hanteert een strikte limiet van ≤0,4%. Geavanceerde zwaartekrachtscheiding wordt ingezet om deze lage niveaus te garanderen." }
+      {
+        "q": "Hoe het zwelvolume wordt geverifieerd in NABL-laboratoria?",
+        "a": "Onder USP <561> wordt 1,0 gram psyllium husk in een maatcilinder van 25 mL geplaatst, gevuld met water en gedurende 24 uur periodiek geschud. Het volume van de gegeleerde massa wordt gemeten. Premium partijen bereiken een zwelvolume van ≥55 mL/g."
+      },
+      {
+        "q": "Waarom is in zuur onoplosbare as een kritische veiligheidslimiet?",
+        "a": "In zuur onoplosbare as duidt op resterend zand, vuil en silica. De USP hanteert een strikte limiet van ≤0,4%. Geavanceerde zwaartekrachtscheiding wordt ingezet om deze lage niveaus te garanderen."
+      }
     ]
   },
   "verify-nabl-coa-psyllium-supplier": {
@@ -30,15 +56,41 @@
     ],
     "aiSnapshot": "Het verifiëren van een Indiase psyllium COA vereist: 1) Controle van het NABL-logo en accreditatienummer, 2) Verificatie van testmethoden (bijv. USP <561>), 3) Analyse van zware metalen (Pb ≤2,0 ppm) en 4) Bevestiging van afwezigheid van E. coli en Salmonella.",
     "specTable": [
-      { "parameter": "Lood (Pb)", "range": "≤ 2.0 ppm", "method": "ICP-MS" },
-      { "parameter": "Arseen (As)", "range": "≤ 1.0 ppm", "method": "ICP-MS" },
-      { "parameter": "E. coli", "range": "Afwezig / 10g", "method": "Microbiologie" },
-      { "parameter": "Salmonella", "range": "Afwezig / 25g", "method": "Microbiologie" },
-      { "parameter": "Totaal Kiemgetal (TPC)", "range": "≤ 10.000 kve/g", "method": "Kiemgetalbepaling" }
+      {
+        "parameter": "Lood (Pb)",
+        "range": "≤ 2.0 ppm",
+        "method": "ICP-MS"
+      },
+      {
+        "parameter": "Arseen (As)",
+        "range": "≤ 1.0 ppm",
+        "method": "ICP-MS"
+      },
+      {
+        "parameter": "E. coli",
+        "range": "Afwezig / 10g",
+        "method": "Microbiologie"
+      },
+      {
+        "parameter": "Salmonella",
+        "range": "Afwezig / 25g",
+        "method": "Microbiologie"
+      },
+      {
+        "parameter": "Totaal Kiemgetal (TPC)",
+        "range": "≤ 10.000 kve/g",
+        "method": "Kiemgetalbepaling"
+      }
     ],
     "faqs": [
-      { "q": "Wat is een NABL-accreditatie op een COA?", "a": "NABL is de nationale accreditatie-instantie van India voor testlaboratoria, die zorgt voor internationale afstemming via ILAC. Een NABL COA garandeert dat tests en validaties voldoen aan de geldende normen." },
-      { "q": "Hoe worden zware metalen getest in psyllium?", "a": "Zware metalen worden getest met behulp van inductief gekoppeld plasma-massaspectrometrie (ICP-MS), wat een nauwkeurige detectie mogelijk maakt tot in parts-per-billion (ppb) voor Lood, Arseen, Cadmium en Kwik." }
+      {
+        "q": "Wat is een NABL-accreditatie op een COA?",
+        "a": "NABL is de nationale accreditatie-instantie van India voor testlaboratoria, die zorgt voor internationale afstemming via ILAC. Een NABL COA garandeert dat tests en validaties voldoen aan de geldende normen."
+      },
+      {
+        "q": "Hoe worden zware metalen getest in psyllium?",
+        "a": "Zware metalen worden getest met behulp van inductief gekoppeld plasma-massaspectrometrie (ICP-MS), wat een nauwkeurige detectie mogelijk maakt tot in parts-per-billion (ppb) voor Lood, Arseen, Cadmium en Kwik."
+      }
     ]
   },
   "fda-sourcing-guide-supplier-vetting-psyllium": {
@@ -51,14 +103,36 @@
     ],
     "aiSnapshot": "Amerikaanse importeurs van psyllium moeten voldoen aan de FDA FSVP. De inkoopchecklist vereist: 1) Partijspecifiek NABL-geaccrediteerd COA, 2) Door het ministerie goedgekeurd fytosanitair certificaat en 3) Fabrieksaudits (magnetische scheiding, ontstenen, vochtcontrole).",
     "specTable": [
-      { "parameter": "Fytosanitair Certificaat", "range": "Vereist per partij", "method": "Overheidsinspectie" },
-      { "parameter": "Land van Herkomst", "range": "India (Gujarat/Rajasthan)", "method": "Gecertificeerd door KvK" },
-      { "parameter": "Vochtlimiet", "range": "≤ 12.0%", "method": "Droogverlies" },
-      { "parameter": "Vreemde Organische Stoffen", "range": "≤ 0.5%", "method": "USP Methode" }
+      {
+        "parameter": "Fytosanitair Certificaat",
+        "range": "Vereist per partij",
+        "method": "Overheidsinspectie"
+      },
+      {
+        "parameter": "Land van Herkomst",
+        "range": "India (Gujarat/Rajasthan)",
+        "method": "Gecertificeerd door KvK"
+      },
+      {
+        "parameter": "Vochtlimiet",
+        "range": "≤ 12.0%",
+        "method": "Droogverlies"
+      },
+      {
+        "parameter": "Vreemde Organische Stoffen",
+        "range": "≤ 0.5%",
+        "method": "USP Methode"
+      }
     ],
     "faqs": [
-      { "q": "Is een fytosanitair certificaat verplicht voor import naar de VS?", "a": "Ja. Elke exportzending van voedingsmiddelen en botanische ingrediënten naar de Verenigde Staten vereist een fytosanitair certificaat dat is afgegeven door het Indiase Ministerie van Landbouw om een plaagvrije status aan te tonen." },
-      { "q": "Welke fysieke reinigingsmethoden moet een leverancier gebruiken?", "a": "Gekwalificeerde fabrikanten moeten gebruikmaken van meertraps ontsteners om vuil/zand te verwijderen, zeefclassificatoren voor de deeltjesgrootte en magnetische roosters met hoge intensiteit om metaalresten te scheiden." }
+      {
+        "q": "Is een fytosanitair certificaat verplicht voor import naar de VS?",
+        "a": "Ja. Elke exportzending van voedingsmiddelen en botanische ingrediënten naar de Verenigde Staten vereist een fytosanitair certificaat dat is afgegeven door het Indiase Ministerie van Landbouw om een plaagvrije status aan te tonen."
+      },
+      {
+        "q": "Welke fysieke reinigingsmethoden moet een leverancier gebruiken?",
+        "a": "Gekwalificeerde fabrikanten moeten gebruikmaken van meertraps ontsteners om vuil/zand te verwijderen, zeefclassificatoren voor de deeltjesgrootte en magnetische roosters met hoge intensiteit om metaalresten te scheiden."
+      }
     ]
   },
   "heavy-metal-tolerances-nutraceutical-psyllium": {
@@ -71,14 +145,36 @@
     ],
     "aiSnapshot": "Nutraceutische psylliuminkoop vereist strikte controle op zware metalen. Standaard B2B-limieten zijn Lood (Pb) ≤2,0 ppm, Arseen (As) ≤1,0 ppm, Cadmium (Cd) ≤0,3 ppm en Kwik (Hg) ≤0,1 ppm. Elke partij wordt geverifieerd via ICP-MS in NABL-laboratoria.",
     "specTable": [
-      { "parameter": "Lood (Pb)", "range": "≤ 2.0 ppm", "method": "ICP-MS" },
-      { "parameter": "Arseen (As)", "range": "≤ 1.0 ppm", "method": "ICP-MS" },
-      { "parameter": "Cadmium (Cd)", "range": "≤ 0.3 ppm", "method": "ICP-MS" },
-      { "parameter": "Kwik (Hg)", "range": "≤ 0.1 ppm", "method": "ICP-MS" }
+      {
+        "parameter": "Lood (Pb)",
+        "range": "≤ 2.0 ppm",
+        "method": "ICP-MS"
+      },
+      {
+        "parameter": "Arseen (As)",
+        "range": "≤ 1.0 ppm",
+        "method": "ICP-MS"
+      },
+      {
+        "parameter": "Cadmium (Cd)",
+        "range": "≤ 0.3 ppm",
+        "method": "ICP-MS"
+      },
+      {
+        "parameter": "Kwik (Hg)",
+        "range": "≤ 0.1 ppm",
+        "method": "ICP-MS"
+      }
     ],
     "faqs": [
-      { "q": "Welke invloed heeft California Proposition 65 op de import van psyllium?", "a": "Prop 65 stelt strikte dagelijkse blootstellingslimieten voor Lood en Arseen. De inkoop van ultra-zuivere psyllium (Lood ≤1,0 ppm) helpt fabrikanten bij het formuleren van supplementen zonder dat er Prop 65-waarschuwingsetiketten nodig zijn." },
-      { "q": "Welke laboratoriummethode wordt gebruikt om zware metalen te testen?", "a": "Inductief gekoppeld plasma-massaspectrometrie (ICP-MS) is de wereldwijde referentiemethode en biedt een extreme gevoeligheid tot op deeltjes per miljard (ppb)." }
+      {
+        "q": "Welke invloed heeft California Proposition 65 op de import van psyllium?",
+        "a": "Prop 65 stelt strikte dagelijkse blootstellingslimieten voor Lood en Arseen. De inkoop van ultra-zuivere psyllium (Lood ≤1,0 ppm) helpt fabrikanten bij het formuleren van supplementen zonder dat er Prop 65-waarschuwingsetiketten nodig zijn."
+      },
+      {
+        "q": "Welke laboratoriummethode wordt gebruikt om zware metalen te testen?",
+        "a": "Inductief gekoppeld plasma-massaspectrometrie (ICP-MS) is de wereldwijde referentiemethode en biedt een extreme gevoeligheid tot op deeltjes per miljard (ppb)."
+      }
     ]
   },
   "steam-sterilization-residue-control-psyllium": {
@@ -91,14 +187,36 @@
     ],
     "aiSnapshot": "De regelgeving in de EU en de VS schrijft chemicaliënvrije sterilisatie van psyllium voor. Continue stoomsterilisatie is de wereldwijde norm voor een volledige microbiologische deactivatie (TPC ≤10.000 kve/g, E. coli afwezig) zonder ETO-residuen.",
     "specTable": [
-      { "parameter": "Sterilisatiemethode", "range": "Schone Stoom (Chemicaliën-Vrij)", "method": "Thermisch" },
-      { "parameter": "Ethyleenoxide (ETO)", "range": "Afwezig / Niet Gedetecteerd", "method": "GC-MS" },
-      { "parameter": "2-Chloorethanol", "range": "Afwezig / Niet Gedetecteerd", "method": "GC-MS" },
-      { "parameter": "Gisten en Schimmels", "range": "≤ 1.000 kve/g", "method": "Microbiologie" }
+      {
+        "parameter": "Sterilisatiemethode",
+        "range": "Schone Stoom (Chemicaliën-Vrij)",
+        "method": "Thermisch"
+      },
+      {
+        "parameter": "Ethyleenoxide (ETO)",
+        "range": "Afwezig / Niet Gedetecteerd",
+        "method": "GC-MS"
+      },
+      {
+        "parameter": "2-Chloorethanol",
+        "range": "Afwezig / Niet Gedetecteerd",
+        "method": "GC-MS"
+      },
+      {
+        "parameter": "Gisten en Schimmels",
+        "range": "≤ 1.000 kve/g",
+        "method": "Microbiologie"
+      }
     ],
     "faqs": [
-      { "q": "Waarom is ETO verboden in de Europese Unie?", "a": "Ethyleenoxide is geclassificeerd als een mutageen en carcinogeen chemisch middel. De EU handhaaft een limiet die dicht bij nul ligt (0,01-0,1 mg/kg) voor ETO-residuen in voedingsmiddelen en botanische ingrediënten." },
-      { "q": "Heeft stoomsterilisatie invloed op het zwelvolume van psyllium?", "a": "Bij onvoldoende procesbeheersing kunnen hoge hitte en overtollig vocht de husk vooraf geleren. Een nauwkeurige, snelle continue stoomsterilisatie beschermt de integriteit van de slijmstoffen, waardoor een zwelvolume van ≥50 mL/g behouden blijft." }
+      {
+        "q": "Waarom is ETO verboden in de Europese Unie?",
+        "a": "Ethyleenoxide is geclassificeerd als een mutageen en carcinogeen chemisch middel. De EU handhaaft een limiet die dicht bij nul ligt (0,01-0,1 mg/kg) voor ETO-residuen in voedingsmiddelen en botanische ingrediënten."
+      },
+      {
+        "q": "Heeft stoomsterilisatie invloed op het zwelvolume van psyllium?",
+        "a": "Bij onvoldoende procesbeheersing kunnen hoge hitte en overtollig vocht de husk vooraf geleren. Een nauwkeurige, snelle continue stoomsterilisatie beschermt de integriteit van de slijmstoffen, waardoor een zwelvolume van ≥50 mL/g behouden blijft."
+      }
     ]
   },
   "mesh-size-sourcing-gluten-free-bakery": {
@@ -111,14 +229,36 @@
     ],
     "aiSnapshot": "Industrieel glutenvrij bakken is volledig afhankelijk van de mesh-grootte van psyllium. Fijn poeder (80-100 mesh) hydrateert direct voor zacht brood en pizza. Grof poeder (40-60 mesh) hydrateert langzaam, ideaal voor ontbijtgranen en stevig brood.",
     "specTable": [
-      { "parameter": "Fijn Poeder Mesh", "range": "≥ 95% doorlaatbaar bij 80-100 mesh", "method": "Zeefanalyse" },
-      { "parameter": "Grof Poeder Mesh", "range": "≥ 95% doorlaatbaar bij 40-60 mesh", "method": "Zeefanalyse" },
-      { "parameter": "Zwelvolume", "range": "≥ 40 mL / g (Levensmiddelenkwaliteit)", "method": "USP Methode" },
-      { "parameter": "Smaakprofiel", "range": "Neutraal / Geurloos", "method": "Organoleptisch" }
+      {
+        "parameter": "Fijn Poeder Mesh",
+        "range": "≥ 95% doorlaatbaar bij 80-100 mesh",
+        "method": "Zeefanalyse"
+      },
+      {
+        "parameter": "Grof Poeder Mesh",
+        "range": "≥ 95% doorlaatbaar bij 40-60 mesh",
+        "method": "Zeefanalyse"
+      },
+      {
+        "parameter": "Zwelvolume",
+        "range": "≥ 40 mL / g (Levensmiddelenkwaliteit)",
+        "method": "USP Methode"
+      },
+      {
+        "parameter": "Smaakprofiel",
+        "range": "Neutraal / Geurloos",
+        "method": "Organoleptisch"
+      }
     ],
     "faqs": [
-      { "q": "Hoe vervangt psyllium gluten in bakkerijformuleringen?", "a": "Wanneer het met water wordt gemengd, vormt het psylliumslijm een sterk, elastisch polysacharidenetwerk dat koolstofdioxidebubbels vasthoudt tijdens de fermentatie, waardoor glutenvrij deeg kan rijzen." },
-      { "q": "Wat is de aanbevolen mesh-grootte voor kant-en-klare drankpoeders?", "a": "Voor droge drankmengsels wordt een maaswijdte van 100 mesh of fijner aanbevolen om een snelle, gladde dispersie in koude vloeistoffen te garanderen zonder klonteren of zanderigheid." }
+      {
+        "q": "Hoe vervangt psyllium gluten in bakkerijformuleringen?",
+        "a": "Wanneer het met water wordt gemengd, vormt het psylliumslijm een sterk, elastisch polysacharidenetwerk dat koolstofdioxidebubbels vasthoudt tijdens de fermentatie, waardoor glutenvrij deeg kan rijzen."
+      },
+      {
+        "q": "Wat is de aanbevolen mesh-grootte voor kant-en-klare drankpoeders?",
+        "a": "Voor droge drankmengsels wordt een maaswijdte van 100 mesh of fijner aanbevolen om een snelle, gladde dispersie in koude vloeistoffen te garanderen zonder klonteren of zanderigheid."
+      }
     ]
   },
   "nop-usda-eu-organic-integrity-psyllium": {
@@ -131,14 +271,36 @@
     ],
     "aiSnapshot": "Inkoop van biologische psyllium vereist: 1) Geldig NOP/EU Transactiecertificaat (TC), 2) Partijspecifieke screening op pesticidenresiduen (GC-MS) en 3) Traceerbaarheid van boerderij tot haven. De inkoop is gecentreerd in Gujarat en Rajasthan.",
     "specTable": [
-      { "parameter": "Biologische Certificering", "range": "USDA NOP / EU Gecertificeerd", "method": "Transactiecertificaat (TC)" },
-      { "parameter": "Pesticidenresidu", "range": "Onder de detectiegrenzen", "method": "GC-MS / LC-MS" },
-      { "parameter": "Traceerbaarheid Herkomst", "range": "Tracking van boerderijen op partijniveau", "method": "Audit Trail" },
-      { "parameter": "GGO-Status", "range": "100% Geverifieerd Non-GMO", "method": "PCR-Analyse" }
+      {
+        "parameter": "Biologische Certificering",
+        "range": "USDA NOP / EU Gecertificeerd",
+        "method": "Transactiecertificaat (TC)"
+      },
+      {
+        "parameter": "Pesticidenresidu",
+        "range": "Onder de detectiegrenzen",
+        "method": "GC-MS / LC-MS"
+      },
+      {
+        "parameter": "Traceerbaarheid Herkomst",
+        "range": "Tracking van boerderijen op partijniveau",
+        "method": "Audit Trail"
+      },
+      {
+        "parameter": "GGO-Status",
+        "range": "100% Geverifieerd Non-GMO",
+        "method": "PCR-Analyse"
+      }
     ],
     "faqs": [
-      { "q": "Welke documentatie is vereist om de biologische status bij de douane te verifiëren?", "a": "Elke internationale zending vereist een partijspecifiek Transactiecertificaat (TC) afgegeven door de biologische certificeringsinstantie van de exporteur, dat uw factuur rechtstreeks koppelt aan biologische landbouwgrond." },
-      { "q": "Hoe worden pesticidenresiduen in biologische psyllium geverifieerd?", "a": "Geaccrediteerde laboratoria maken gebruik van gaschromatografie-massaspectrometrie (GC-MS) en vloeistofchromatografie-massaspectrometrie (LC-MS) om te screenen op meer dan 500 chemische verbindingen." }
+      {
+        "q": "Welke documentatie is vereist om de biologische status bij de douane te verifiëren?",
+        "a": "Elke internationale zending vereist een partijspecifiek Transactiecertificaat (TC) afgegeven door de biologische certificeringsinstantie van de exporteur, dat uw factuur rechtstreeks koppelt aan biologische landbouwgrond."
+      },
+      {
+        "q": "Hoe worden pesticidenresiduen in biologische psyllium geverifieerd?",
+        "a": "Geaccrediteerde laboratoria maken gebruik van gaschromatografie-massaspectrometrie (GC-MS) en vloeistofchromatografie-massaspectrometrie (LC-MS) om te screenen op meer dan 500 chemische verbindingen."
+      }
     ]
   },
   "allergen-cross-contamination-protocols-psyllium-milling": {
@@ -151,14 +313,36 @@
     ],
     "aiSnapshot": "De inkoop van glutenvrije psyllium vereist een strikte preventie van kruiscontact met allergenen. QA-teams moeten controleren: 1) Toegewijde maallijnen of gevalideerde reinigingsprotocollen en 2) Partijspecifieke ELISA-testen die aantonen dat glutengehaltes ≤20 ppm zijn.",
     "specTable": [
-      { "parameter": "Glutengehalte", "range": "≤ 20 ppm (Glutenvrij)", "method": "ELISA Test" },
-      { "parameter": "Allergenenprofiel", "range": "Vrij van soja, zuivel, tarwe en noten", "method": "Verklaring" },
-      { "parameter": "Validatie van Reiniging", "range": "ATP-swabtests na reiniging", "method": "Bioluminescentie" },
-      { "parameter": "Contactoppervlakken in Fabriek", "range": "304/316 Roestvrij Staal", "method": "Auditbeoordeling" }
+      {
+        "parameter": "Glutengehalte",
+        "range": "≤ 20 ppm (Glutenvrij)",
+        "method": "ELISA Test"
+      },
+      {
+        "parameter": "Allergenenprofiel",
+        "range": "Vrij van soja, zuivel, tarwe en noten",
+        "method": "Verklaring"
+      },
+      {
+        "parameter": "Validatie van Reiniging",
+        "range": "ATP-swabtests na reiniging",
+        "method": "Bioluminescentie"
+      },
+      {
+        "parameter": "Contactoppervlakken in Fabriek",
+        "range": "304/316 Roestvrij Staal",
+        "method": "Auditbeoordeling"
+      }
     ],
     "faqs": [
-      { "q": "Hoe wordt glutenbesmetting voorkomen bij het malen van bulk psyllium?", "a": "Top-tier leveranciers maken gebruik van specifieke maallijnen die volledig zijn gescheiden van tarwe of glutenbevattende granen, ondersteund door strikte reinigingsprotocollen." },
-      { "q": "Wat is een ELISA-test voor gluten?", "a": "Enzyme-Linked Immunosorbent Assay (ELISA) is de gouden standaard testmethode die door NABL-laboratoria wordt gebruikt om sporen van glutenproteïnen te detecteren en te kwantificeren tot in parts-per-billion (ppb)." }
+      {
+        "q": "Hoe wordt glutenbesmetting voorkomen bij het malen van bulk psyllium?",
+        "a": "Top-tier leveranciers maken gebruik van specifieke maallijnen die volledig zijn gescheiden van tarwe of glutenbevattende granen, ondersteund door strikte reinigingsprotocollen."
+      },
+      {
+        "q": "Wat is een ELISA-test voor gluten?",
+        "a": "Enzyme-Linked Immunosorbent Assay (ELISA) is de gouden standaard testmethode die door NABL-laboratoria wordt gebruikt om sporen van glutenproteïnen te detecteren en te kwantificeren tot in parts-per-billion (ppb)."
+      }
     ]
   },
   "soluble-insoluble-fiber-ratios-purity-selection": {
@@ -171,14 +355,36 @@
     ],
     "aiSnapshot": "De vezelverhoudingen van psyllium variëren per zuiverheidsklasse. Premium 99% zuivere husk levert ~85% oplosbare en 15% onoplosbare vezels voor hoogviscositeitsgels (capsules). Lagere klassen (85-95%) verhogen de onoplosbare vezels, ideaal voor diervoeder en ontbijtgranen.",
     "specTable": [
-      { "parameter": "99% Zuiverheidsklasse", "range": "≥ 85% Oplosbaar / 15% Onoplosbaar", "method": "AOAC 991.43" },
-      { "parameter": "95% Zuiverheidsklasse", "range": "≥ 80% Oplosbaar / 20% Onoplosbaar", "method": "AOAC 991.43" },
-      { "parameter": "85% Zuiverheidsklasse", "range": "≥ 70% Oplosbaar / 30% Onoplosbaar", "method": "AOAC 991.43" },
-      { "parameter": "Vochtgehalte", "range": "≤ 12.0%", "method": "Droogverlies" }
+      {
+        "parameter": "99% Zuiverheidsklasse",
+        "range": "≥ 85% Oplosbaar / 15% Onoplosbaar",
+        "method": "AOAC 991.43"
+      },
+      {
+        "parameter": "95% Zuiverheidsklasse",
+        "range": "≥ 80% Oplosbaar / 20% Onoplosbaar",
+        "method": "AOAC 991.43"
+      },
+      {
+        "parameter": "85% Zuiverheidsklasse",
+        "range": "≥ 70% Oplosbaar / 30% Onoplosbaar",
+        "method": "AOAC 991.43"
+      },
+      {
+        "parameter": "Vochtgehalte",
+        "range": "≤ 12.0%",
+        "method": "Droogverlies"
+      }
     ],
     "faqs": [
-      { "q": "Wat is het voedingstechnische verschil tussen oplosbare en onoplosbare vezels?", "a": "Oplosbare vezels absorberen water om een gel te vormen die de spijsvertering vertraagt en de cardiovasculaire gezondheid ondersteunt. Onoplosbare vezels lossen niet op, voegen fysieke bulk toe aan het spijsverteringskanaal en bevorderen de darmmotiliteit." },
-      { "q": "Hoe wordt het totale gehalte aan voedingsvezels geverifieerd?", "a": "Voedingsvezelfracties worden gevalideerd met behulp van standaard enzymatisch-gravimetrische methoden volgens AOAC 991.43 en NABL-laboratoriumprotocollen." }
+      {
+        "q": "Wat is het voedingstechnische verschil tussen oplosbare en onoplosbare vezels?",
+        "a": "Oplosbare vezels absorberen water om een gel te vormen die de spijsvertering vertraagt en de cardiovasculaire gezondheid ondersteunt. Onoplosbare vezels lossen niet op, voegen fysieke bulk toe aan het spijsverteringskanaal en bevorderen de darmmotiliteit."
+      },
+      {
+        "q": "Hoe wordt het totale gehalte aan voedingsvezels geverifieerd?",
+        "a": "Voedingsvezelfracties worden gevalideerd met behulp van standaard enzymatisch-gravimetrische methoden volgens AOAC 991.43 en NABL-laboratoriumprotocollen."
+      }
     ]
   },
   "swelling-volume-laboratory-verification-methods": {
@@ -191,14 +397,590 @@
     ],
     "aiSnapshot": "Verificatie van het zwelvolume is de belangrijkste fysieke test voor psylliumkwaliteit. Volgens USP-monografieën moet 1,0 gram husk in 24 uur zwellen tot ≥55 mL/g. Dit zorgt voor consistente gelerende eigenschappen in industriële formuleringen.",
     "specTable": [
-      { "parameter": "Premium Zwelvolume", "range": "≥ 55 mL / g (USP-monografie)", "method": "USP Methode" },
-      { "parameter": "Standaard Zwelvolume", "range": "≥ 40 mL / g (EP-monografie)", "method": "EP Methode" },
-      { "parameter": "Testduur", "range": "24 uur bij kamertemperatuur", "method": "Standaard Protocol" },
-      { "parameter": "Schudfrequentie", "range": "Periodiek gedurende de eerste 6 uur", "method": "Standaard Protocol" }
+      {
+        "parameter": "Premium Zwelvolume",
+        "range": "≥ 55 mL / g (USP-monografie)",
+        "method": "USP Methode"
+      },
+      {
+        "parameter": "Standaard Zwelvolume",
+        "range": "≥ 40 mL / g (EP-monografie)",
+        "method": "EP Methode"
+      },
+      {
+        "parameter": "Testduur",
+        "range": "24 uur bij kamertemperatuur",
+        "method": "Standaard Protocol"
+      },
+      {
+        "parameter": "Schudfrequentie",
+        "range": "Periodiek gedurende de eerste 6 uur",
+        "method": "Standaard Protocol"
+      }
     ],
     "faqs": [
-      { "q": "Waarom is het zwelvolume cruciaal voor industriële formuleringen?", "a": "In laxeermiddelen en bakkerijproducten bepaalt het zwelvolume de efficiëntie van de waterbinding. Een laag zwelvolume duidt op een hoog gehalte aan zaadhuiden of beschadigde slijmstoffen, wat de productprestaties vermindert." },
-      { "q": "Welke factoren kunnen het zwelvolume tijdens de verwerking verminderen?", "a": "Overmatige hitte die wordt gegenereerd door mechanische wrijving tijdens het malen is de belangrijkste oorzaak van degradatie van de slijmstoffen, wat de noodzaak van temperatuurgecontroleerd malen onderstreept." }
+      {
+        "q": "Waarom is het zwelvolume cruciaal voor industriële formuleringen?",
+        "a": "In laxeermiddelen en bakkerijproducten bepaalt het zwelvolume de efficiëntie van de waterbinding. Een laag zwelvolume duidt op een hoog gehalte aan zaadhuiden of beschadigde slijmstoffen, wat de productprestaties vermindert."
+      },
+      {
+        "q": "Welke factoren kunnen het zwelvolume tijdens de verwerking verminderen?",
+        "a": "Overmatige hitte die wordt gegenereerd door mechanische wrijving tijdens het malen is de belangrijkste oorzaak van degradatie van de slijmstoffen, wat de noodzaak van temperatuurgecontroleerd malen onderstreept."
+      }
+    ]
+  },
+  "blogPosts": {
+    "psyllium-husk-99-purity-supplier-india": {
+      "title": "Psylliumschil 99% Zuiverheid: Leveranciersgids voor Farmaceutische Kopers",
+      "summary": "Wat 99% zuiverheid betekent, welke farmacopees worden voldaan en hoe u kunt inkopen vanuit Gujarat.",
+      "body": [
+        "Psylliumschil met 99% zuiverheid vertegenwoordigt de farmaceutische kwaliteitsklasse — het hoogste beschikbare schilgehalte uit Indische verwerkingsfaciliteiten. Bij deze kwaliteit is het schilgehalte (het zaadtegument van Plantago ovata) minimaal 99 gewichtsprocent, met een minimaal zwelvolume van 50 mL/g. Dit zwelvolume is de primaire functionele specificatie voor laxatieve monografieën onder USP, Europese Farmacopee (EF) en Indische Farmacopee (IF).",
+        "Voor farmaceutische kopers moet kwaliteit 99% vergezeld gaan van een volledig COA met: zwelvolume, vocht (≤12%), totale as (≤3%), zuuroplosbare as (≤0,4%), zware metalen (Lood ≤2 ppm, Arseen ≤1 ppm) en microbiologie (E. coli afwezig, Salmonella afwezig, TKA ≤10.000 KVE/g). Deze parameters komen direct overeen met de Plantago ovata schil monografieën in USP en EF. Kopers dienen testrapporten van een NABL-geaccrediteerd laboratorium in India aan te vragen.",
+        "Inkoop van kwaliteit 99% uit Gujarat vereist bevestiging dat de verwerkingsfaciliteit de maal- en scheidingscapaciteit heeft om deze zuiverheid consistent te bereiken. Het district Unjha in Gujarat is het primaire psylliumverwerkingscentrum in India met meer dan 80% van het wereldaanbod. Wij leveren kwaliteit 99% schil in zakken van 10 kg, 25 kg en 50 kg met volledige documentatie. Deel uw farmacopee-eis en doelmarkt mee — wij verstrekken een voorbeeld-COA ter beoordeling vóór elke inkooporder."
+      ]
+    },
+    "psyllium-export-india-fob-mundra": {
+      "title": "Psylliumexport vanuit India: FOB Mundra vs Kandla vs JNPT",
+      "summary": "Havenvergelijking voor bulkkopers van psyllium — vrachtkosten, transittijden en scheepsfrequentie.",
+      "body": [
+        "India exporteert psyllium via drie primaire havens: Mundra (Gujarat), Kandla (Gujarat) en JNPT/Nhava Sheva (Maharashtra). Voor psylliumkopers beïnvloedt havenkeuze vrachtkosten, transittijd en containeraanbod. De meeste Gujarat-gebaseerde verwerkers, waaronder RM Psyllium, gebruiken Mundra als primaire haven vanwege de nabijheid (ca. 220 km van onze Siddhpur-faciliteit) en hoge scheepsfrequentie naar Europa, VS Oostkust, Midden-Oosten en Australië.",
+        "Haven Mundra (MUND) wordt beheerd door Adani Ports en verwerkt het hoogste containervolume van India. De scheepsfrequentie naar de belangrijkste bestemmingshavens (Rotterdam, Felixstowe, New York, Jeddah, Colombo) is doorgaans 2–4 afvaarten per week. Transittijd naar Rotterdam ca. 20–23 dagen; naar New York ca. 25–28 dagen; naar Jeddah ca. 8–10 dagen.",
+        "Bij CIF-orders selecteren wij de haven op basis van uw bestemming en de rederij met het beste tarief bij boeking. Bij FOB-orders nomineert u de expediteur en coördineren wij direct met hem. Exportdocumentatie wordt in onze faciliteit voorbereid en 3–5 dagen vóór belading ingediend. Deel uw bestemmingshaven mee en wij verstrekken een indicatieve vrachtofferte naast de productprijs."
+      ]
+    },
+    "psyllium-husk-usp-ep-pharmacopoeia": {
+      "title": "USP vs EF vs IF: Psylliumschil Farmacopee-standaarden Uitgelegd",
+      "summary": "Hoe zwelvolume-, as- en zuiverheidsstandaarden verschillen tussen de Amerikaanse, Europese en Indische farmacopees.",
+      "body": [
+        "Psylliumschil is gemonografeerd in drie belangrijke farmacopees: de United States Pharmacopeia (USP), de Europese Farmacopee (EF) en de Indische Farmacopee (IF). Hoewel alle drie Plantago ovata schil beschrijven, verschillen de specifieke testparameters en acceptatiecriteria op manieren die van belang zijn voor kopers die psyllium importeren voor farmaceutisch gebruik.",
+        "De USP monografie voor psylliumschil vereist een minimaal zwelvolume van 40 mL/g, vocht ≤12% en totale as ≤4%. De EF monografie (Ispaghula Husk) specificeert een minimale zwelindex van 40 met specifieke identificatietests inclusief microscopie en chemische reacties. De IF monografie is grotendeels afgestemd op USP met mogelijke kleine verschillen in testmethodologie.",
+        "Voor export naar Europa is de EF-term 'Ispaghula Husk' — hetzelfde product. Europese kopers vragen doorgaans een COA aan dat is geannoteerd tegen EF-parameters inclusief zwelindex, vreemd materiaal, microbiologie en pesticidenresidulimeten conform EU-regelgeving. Wij leveren met COA geannoteerd op de door de koper gespecificeerde farmacopee op verzoek."
+      ]
+    },
+    "psyllium-seed-supplier-gujarat-rajasthan": {
+      "title": "Psylliumzaadleverancier uit Gujarat en Rajasthan",
+      "summary": "Gewasoorsprong, sortex- vs machinegeschoonde kwaliteiten, en bulkzaadinkoop voor molens en verwerkers.",
+      "body": [
+        "Plantago ovata (psyllium) zaden worden voornamelijk verbouwd in Gujarat en Rajasthan, met Mehsana, Banaskantha en Kutch in Gujarat en Barmer, Jalore en Jodhpur in Rajasthan als voornaamste teeltgebieden. De oogst is een rabi-gewas (winter), gezaaid oktober–november en geoogst februari–maart. De jaarlijkse productie in India wordt geschat op 100.000–150.000 MT zaad, waarvan ca. 85% in verwerkte vorm wordt geëxporteerd.",
+        "Zaden zijn beschikbaar in twee hoofdkwaliteiten: machinegeschoond (standaard) met zuiverheid doorgaans ≥98%; en sortex-kwaliteit met optisch sorteren dat ≥99% zuiverheid bereikt met vreemd materiaal ≤0,5%. Sortex-kwaliteit heeft een prijspremium van 8–12%, maar wordt geprefereerd door molens die consistente schilrendementen nodig hebben.",
+        "Zaadspecificaties te bevestigen vóór aankoop: zuiverheid (98% of 99%), vocht (≤8%), kiemkracht (≥85% voor zaadzaad; niet vereist voor maling) en chargetracering. Wij leveren zaden in zakken van 25 kg, 50 kg en jumbo bags van 1.000 kg. Herkomstdocumentatie, chargetracering en monster voor pre-verzendtest worden bij elke order meegeleverd."
+      ]
+    },
+    "organic-psyllium-nop-eu-certification": {
+      "title": "Biologisch Psyllium: NOP vs EU Biologisch Certificering voor Export",
+      "summary": "Certificaatbereik, vereisten voor chargetracering en hoe biologische documentatie aan te vragen bij Indische exporteurs.",
+      "body": [
+        "Biologisch psyllium uit India wordt gecertificeerd onder twee hoofdkaders: het USDA National Organic Program (NOP) voor de Amerikaanse markt en EU Biologisch voor de Europese markt. Indische biologische verwerkers worden gecertificeerd door geaccrediteerde certificeringsinstanties waaronder Control Union, ECOCERT India, Lacon en SGS. Kopers moeten bevestigen dat het certificaat het specifieke product, de chargdatums en de doelmarkt omvat.",
+        "NOP-certificering vereist dat de zaadherkomst, teeltpraktijken (geen synthetische pesticiden of meststoffen), verwerkingsfaciliteit en verwerkingsketen allemaal biologisch gecertificeerd zijn. Het transactieattest (TA) dat per zending wordt afgegeven koppelt de specifieke charge aan de biologische certificering. EU-kopers hebben een inspectieattest (IA) nodig conform EU Verordening 2018/848.",
+        "Bij RM Psyllium worden biologische charges op verzoek geleverd op basis van de actuele gecertificeerde voorraadaanvulling. Wij verstrekken de biologische certificaatkopie, chargeherkomstregistraties en TA-documentatie vóór orderbevestiging. Biologisch psyllium heeft een premium van 25–40% boven conventioneel afhankelijk van kwaliteit en certificatiebereik."
+      ]
+    },
+    "psyllium-husk-gluten-free-bakery": {
+      "title": "Psylliumschil in Glutenvrije Bakkerij: Kwaliteits- en Zeefmaat Selectie",
+      "summary": "Hoe zeefmaat en zuiverheid waterbinding, kruimelstructuur en glutenvrij broodprestaties beïnvloeden.",
+      "body": [
+        "Psylliumschil wordt gebruikt in glutenvrije bakkerij als structuur- en waterbindmiddel — het vervangt deels de glutennetwerkfuncties die brooddeeg in staat stellen gas vast te houden en vorm te behouden tijdens het bakken. Het slijm in psyllium vormt een gel bij hydratatie, die viscositeit en elasticiteit geeft aan glutenvrij deeg van rijstmeel, maïszetmeel, tapioca en vergelijkbare bases.",
+        "Voor bakkerijapplicaties wordt zuiverheid van 95% of 98% in zeefmaat 80–100 het meest gespecificeerd. Fijnere zeefmaat (100+) disperseert sneller en produceert een gladder kruimel. Grovere zeefmaat (40–60) kan zichtbaar zijn in het eindproduct. Kwaliteit 85% wordt gebruikt in kostensensiete formuleringen.",
+        "Typische gebruikspercentages in glutenvrije broodformuleringen zijn 1–3% van het totale meelgewicht. Boven 3% kan psyllium een dicht, gumachtig kruimel produceren. Kopers dienen een monster van 100–200 g met COA aan te vragen en laboratoriumtests uit te voeren vóór een bulkorder. Wij kunnen productgegevens over zwelvolume en vocht voor elke kwaliteit verstrekken."
+      ]
+    },
+    "psyllium-supplement-capsule-filling": {
+      "title": "Psyllium voor Capsulvulling: Zeefmaat, Stroomgedrag en Kwaliteitsgids",
+      "summary": "Praktische gids voor supplementenfabrikanten over het selecteren van de juiste schilzeefmaat voor capsulvulapparatuur.",
+      "body": [
+        "Psylliumschil is een van de meest geëncapsuleerde voedingsvezels in gelatine- en vegetarische (HPMC) capsules voor laxatieve en spijsverteringsgezondheidsupplementen. De belangrijkste uitdaging bij capsulvulling is vloeibaarheid — psylliumschil is vezelig en hygroscopisch, wat kan leiden tot klontering en brugvorming in trechters van vulinstallaties. Zeefmaatselectie en vochtcontrole zijn de twee primaire variabelen.",
+        "Voor standaard capsulvulapparatuur (doseer- of stampstifttype) is gehele schil in zeefmaat 40–60 de voorkeurspecificatie. Bij deze zeefmaat zijn deeltjes groot genoeg om te stromen zonder brugvorming maar klein genoeg om gelijkmatig in het capsulichaam te pakken. Onder 40 mesh kan de schil niet efficiënt pakken. Boven 60 mesh wordt het poeder hygroskopischer.",
+        "Vochtcontrole is kritisch: schil boven 10% vocht klontert in de trechter en veroorzaakt variatie in vulgewicht. Wij testen vocht bij verzending en kunnen op verzoek vochtgecontroleerde verpakking (verzegelde HDPE-liner met droger) verstrekken. Deel capsulgrootte, doelvulgewicht en apparatuurtype mee — wij adviseren de passende kwaliteit, zeefmaat en vochtspecificatie."
+      ]
+    },
+    "psyllium-halal-kosher-documentation": {
+      "title": "Halal en Koosjer Psyllium: Welke Documenten Kopers Nodig Hebben",
+      "summary": "Welke markten halal- of koosjercertificaten vereisen, wat het certificeringsproces omvat en de huidige status bij RM Psyllium.",
+      "body": [
+        "Psylliumschil is een plantaardig product zonder dierlijke inputs bij verwerking en wordt algemeen beschouwd als acceptabel onder zowel halal- als koosjerdieetvereisten. Veel kopers — met name in het Midden-Oosten, Zuidoost-Azië en voor de Amerikaanse koosjer supplementenmarkt — vereisen echter formele certificering van een erkend orgaan.",
+        "Voor halal-certificering zijn erkende instanties in India Halal India, Jamiat Ulama-i-Hind Halal Trust en internationale instanties zoals IFANCA. Het certificaat omvat de faciliteit, de specifieke producten en de certificeringsperiode (doorgaans één jaar). Een kopie van het halal-certificaat per zending met charge-niveau endossement is wat de meeste Midden-Oosterse importautoriteiten vereisen.",
+        "Bij RM Psyllium is halal- en koosjerdocumentatie op verzoek beschikbaar. Wij verstrekken een halal-verklaring die bevestigt dat psylliumschil een puur plantaardig product is zonder dierlijke inputs in teelt, verwerking of verpakking — geaccepteerd door de meeste importautoriteiten voor gebruik als voedsel- en supplementingredient. Neem contact op met uw specifieke certificeringsinstantievereiste."
+      ]
+    },
+    "bulk-psyllium-import-usa-fda": {
+      "title": "Psylliumimport naar de VS: FDA-, Etikettering- en COA-vereisten",
+      "summary": "Wat Amerikaanse supplement- en voedingsmiddelmerken nodig hebben vóór het importeren van bulkpsyllium uit India.",
+      "body": [
+        "In bulk geïmporteerde psylliumschil naar de Verenigde Staten valt onder de bevoegdheid van de FDA als ingrediënt voor voedingssupplementen of voedselingredient afhankelijk van het beoogde gebruik. De FDA vereist geen voorafgaande goedkeuring voor bulkpsylliuminvoer, maar zendingen zijn onderworpen aan FDA-importscreening en exporterende faciliteiten zijn onderworpen aan FSMA-leveranciersverificatievereisten.",
+        "Voor toepassingen als voedingssupplement moet psylliumschil voldoen aan USP-monografiespecificaties. De COA bij elke zending moet bevatten: identificatie (botanisch), zwelvolume, vocht, as, microbiologie (TKA, gist, schimmel, E. coli, Salmonella) en zware metalen. Voor voedseltoepassingen heeft psylliumschil GRAS-status in de VS als bron van oplosbare voedingsvezels.",
+        "FDA Voorafgaande Kennisgeving is vereist voor alle voedsel- en supplementenzendingen die de VS binnenkomen, elektronisch ingediend via PNSI vóór aankomst. Amerikaanse importeurs regelen dit doorgaans, maar wij kunnen alle benodigde productdetails verstrekken. Wij verzenden naar VS-havens via Mundra of JNPT met een typische transittijd van 25–30 dagen naar Oostkusthavens."
+      ]
+    },
+    "psyllium-khakha-animal-feed-specifications": {
+      "title": "Psyllium Khakha Poeder voor Diervoeder: Specificaties en Toepassingen",
+      "summary": "Ruwvezelgehalte, vochtspecificaties en voederformulering toepassingen voor khakha poeder kopers.",
+      "body": [
+        "Psyllium khakha poeder is het bijproduct dat overblijft na het malen en scheiden van psylliumschil van het zaad. Het bestaat voornamelijk uit het binnenste zaadtegument en resterend endosperm, en bevat een aanzienlijke hoeveelheid uit slijm afgeleide oplosbare vezels — doorgaans 30–40% ruwe vezels op gewicht. Dit vezelgehalte, gecombineerd met 8–12% ruw eiwit en een laag kostenniveau ten opzichte van gehele schil, maakt het een nuttig voederingredient voor formulatoren van herkauwers- en pluimveevoer.",
+        "Voederkwaliteits-khakha wordt primair gespecificeerd op vocht (≤12%), ruwe vezels (30–40%), ruw eiwit (8–12%) en totale as (≤8%). Vreemd materiaal en zandgehalte dienen bevestigd te worden — overmatig zand of silica kan as verhogen en verteerbaarheid verminderen. Deeltjesgrootte beïnvloedt menggedrag: grovere deeltjes (20–40 mesh) zijn standaard voor de meeste voedertoepassingen.",
+        "Toepassingen van khakha in diervoeder omvatten: rund- en buffelvoer (spijsverteringsondersteuning, hydratatiebehoud), pluimveevoer als vezelzout, en vis- en aquacultuurvoer als natuurlijk bindmiddel. Wij leveren in zakken van 25 kg, 50 kg en jumbo bags van 1.000 kg. Voederkwaliteitsloten worden geleverd met een basis-analyse-COA (vocht, ruwe vezels, ruw eiwit, as) en paklijst."
+      ]
+    },
+    "psyllium-husk-gmp-compliant-manufacturer-india": {
+      "title": "GMP-conform Psylliumschil Fabrikant India: Faciliteits- en Documentatiestandaarden",
+      "summary": "Wat een GMP-conforme faciliteit betekent voor psylliumverwerking, BP-graadspecificaties en de documentatielijst die farmaceutische kopers moeten opvragen.",
+      "body": [
+        "Farmaceutische kopers die psylliumschil uit India inkopen hebben meer nodig dan alleen een zuiverheidskwaliteit — zij hebben bevestiging nodig dat de verwerkingsfaciliteit opereert onder gedocumenteerde kwaliteitscontroles conform Good Manufacturing Practice (GMP) standaarden. Voor psyllium betekent GMP-conforme verwerking: gecontroleerde maalomgevingen, gedocumenteerde reinigingsprocedures, plaagdierbeheersregistraties, chargetracering en gekalibreerde apparatuur.",
+        "RM Psyllium exploiteert een GMP-conforme faciliteit in Siddhpur, Gujarat. Onze faciliteit onderhoudt batchproductieregistraties, apparatuurkalibratieregelingen en in-process kwaliteitscontroles voor elke productiecyclus.",
+        "Het standaard documentatiepakket van RM Psyllium omvat: (1) NABL-geaccrediteerd laboratorium-COA geannoteerd conform gespecificeerde USP, EP, BP of IP; (2) Certificaat van Oorsprong afgegeven door de Kamer van Koophandel Gujarat; (3) Fytosanitair certificaat; (4) GMP-conformiteitverklaring van de faciliteit; (5) Paklijst en handelsfactuur."
+      ]
+    },
+    "plantago-ovata-husk-bulk-exporter-india": {
+      "title": "Bulkexporteur Plantago Ovata Schil uit India: Kwaliteiten, Isabgol Naamgeving en Exportvoorwaarden",
+      "summary": "Waarom plantago ovata en isabgol naar hetzelfde product verwijzen, exportkwaliteitsopties en documentatie voor farmaceutische en voedingskopers.",
+      "body": [
+        "Internationale kopers komen vaak twee namen tegen voor hetzelfde ingredient: plantago ovata en isabgol. Beide verwijzen naar het schil van het zaad van Plantago ovata Forsk., voornamelijk verbouwd in Gujarat en Rajasthan. De term 'isabgol' wordt veel gebruikt in de Zuid-Aziatische handel, terwijl 'plantago ovata' de voorkeursbotanische naam is in Europese en Noord-Amerikaanse farmacopees.",
+        "India vertegenwoordigt meer dan 85% van de wereldproductie van psyllium. Siddhpur, in het district Patan, Gujarat, is het historische verwerkingscentrum waar maal-, zwaartekrachtscheiding- en verpakkingsinstallaties ruw zaad omzetten in farmacopee- of voedingskwaliteitsschil."
+      ],
+      "sections": [
+        {
+          "heading": "Isabgol vs Plantago Ovata: Zelfde Product, Andere Namen",
+          "body": "De botanische, gebruiks- en handelsnamen voor dit grondstof worden vaak door elkaar gebruikt. Europese kopers specificeren doorgaans 'Plantago ovata husk' met verwijzing naar EF of BP. Noord-Amerikaanse kopers specificeren 'psyllium husk' met verwijzing naar USP. Midden-Oosterse en Zuid-Aziatische kopers specificeren vaak 'isabgol' of 'ispaghula'. Alle verwijzen naar hetzelfde ingrediënt uit Siddhpur."
+        },
+        {
+          "heading": "Exportkwaliteitsvergelijking",
+          "body": "Verschillende toepassingen vereisen verschillende zuiverheidsniveaus en zwelvolumes.",
+          "table": {
+            "headers": [
+              "Kwaliteit",
+              "Zuiverheid",
+              "Zwelvolume",
+              "Typische Toepassing"
+            ],
+            "rows": [
+              [
+                "Farmacopee Kwaliteit (USP/EF/BP)",
+                "≥ 99%",
+                "≥ 55 mL/g (USP)",
+                "Laxeermiddelen, vezelcapsules"
+              ],
+              [
+                "Premium Voedingskwaliteit",
+                "≥ 98%",
+                "≥ 50 mL/g",
+                "Supplementen, repenvoeding"
+              ],
+              [
+                "Standaard Voedingskwaliteit",
+                "≥ 95%",
+                "≥ 40 mL/g",
+                "Functionele voedingsmiddelen, bakkerij"
+              ],
+              [
+                "Commerciële Kwaliteit",
+                "≥ 85%",
+                "≥ 30 mL/g",
+                "Diervoeder, industrieel gebruik"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Standaard Exportdocumentatiepakket",
+          "body": "Het standaardpakket omvat: (1) NABL-geaccrediteerd laboratorium-COA met USP/IP-parameters; (2) Certificaat van Oorsprong Kamer van Koophandel Gujarat; (3) Fytosanitair certificaat; (4) GMP-conformiteitverklaring; (5) Microbiologisch analyserapport."
+        }
+      ]
+    },
+    "psyllium-husk-powder-wholesale-supplier-india": {
+      "title": "Groothandelsleverancier Psylliumschilpoeder India: Gids Kwaliteiten 85%, 95%, 98%",
+      "summary": "Kwaliteits- en zeefmaatselectie voor supplement- en functionele voedselfabrikanten die in bulk inkopen vanuit Gujarat.",
+      "body": [
+        "Psylliumschilpoeder verschilt van gehele schil in deeltjesgrootte — de deeltjes zijn gemalen om specifieke zeefmaat- en stroomkenmerken te bereiken die voldoen aan formuleringsbehoeften van supplementen en voedingsmiddelen.",
+        "RM Psyllium produceert psylliumschilpoeder in kwaliteiten 85%, 95% en 98% met meerdere zeefmaatspecificaties, met traceerbare charges en NABL laboratorium-COA voor elke zending."
+      ],
+      "sections": [
+        {
+          "heading": "Wat Elke Poederkwaliteit Biedt",
+          "body": "Juiste kwaliteitsselectie garandeert regulatoire conformiteit en formulatieprestaties.",
+          "table": {
+            "headers": [
+              "Kwaliteit",
+              "Zuiverheid",
+              "Zwelvolume",
+              "Zeefmaat",
+              "Toepassing"
+            ],
+            "rows": [
+              [
+                "98% (Farmacopee Kwaliteit)",
+                "≥ 98%",
+                "≥ 55 mL/g",
+                "60–80 mesh",
+                "Capsules, tabletten, supplementen"
+              ],
+              [
+                "95% (Premium Voedingskwaliteit)",
+                "≥ 95%",
+                "≥ 45 mL/g",
+                "40–60 mesh",
+                "Voedingsrepen, functionele bakkerij"
+              ],
+              [
+                "85% (Standaard Voedingskwaliteit)",
+                "≥ 85%",
+                "≥ 35 mL/g",
+                "20–40 mesh",
+                "Functionele voedingsmiddelen, vezelmengsels"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Zeefmaatselectie voor Supplementenproductie",
+          "body": "Voor encapsulering (gelatine of HPMC capsules) wordt zeefmaat 60–80 aanbevolen voor optimale stroomvermogen. Voor poedermix in sachets biedt zeefmaat 40–60 balans tussen dispergeerbaarheid en stroom. Voor glutenvrije bakkerijapplicaties biedt zeefmaat 20–40 structurele bindeigenschappen."
+        },
+        {
+          "heading": "MOQ en Verpakkingsopties",
+          "body": "Standaard MOQ: 1 metrische ton per SKU kwaliteit en zeefmaat. Verpakking: PP-zakken van 25 kg met dubbel PE-liner, FIBC bigbags van 500 kg of 1.000 kg. Aangepaste etikettering beschikbaar vanaf 5 MT. Monsters van 100–500 g met volledig COA beschikbaar vóór elke order."
+        }
+      ]
+    },
+    "psyllium-husk-private-label-supplement-india": {
+      "title": "Psyllium Privatelabel Supplement India: Bulk OEM Inkoopvereisten",
+      "summary": "Wat supplementmerken en OEM-fabrikanten nodig hebben voor inkoop van gecertificeerd non-GMO psyllium voor privatelabelproducten.",
+      "body": [
+        "Supplementmerken en contractfabrikanten (CMO/CDMO) die psylliumschil zoeken voor privatelabelproducten hebben leveranciers nodig die volledige ingrediëntendocumentatie, chargetraceerbaarheid en aanpasbare verpakking bieden.",
+        "RM Psyllium levert farmaceutische en voedingskwaliteit psylliumschil aan OEM-fabrikanten met NABL-laboratoriumrapporten, non-GMO-verklaringen en aangepaste verpakkingsopties."
+      ],
+      "sections": [
+        {
+          "heading": "Non-GMO Documentatie: Wat Kopers Nodig Hebben",
+          "body": "Plantago ovata is een niet genetisch gemodificeerde soort. Er bestaan geen goedgekeurde GM-variëteiten van deze soort. Beschikbare documentatie: (1) Non-GMO-verklaring op bedrijfsbriefpapier; (2) Botanische identiteit bevestigd door microscopie; (3) NABL laboratorium-COA die afwezigheid van transgene sequenties verifieert."
+        },
+        {
+          "heading": "Typisch OEM-Specificatiepakket",
+          "body": "Het standaard specificatiepakket voor OEM-kopers omvat: volledig COA met ≥20 geteste parameters, veiligheidsinformatieblad (VIB), technische productspecificatie, microbiologisch rapport, pesticideanalyse (panel 200+ verbindingen) en allergenenconformiteitsverklaring."
+        },
+        {
+          "heading": "Verpakking voor Supplementmerken",
+          "body": "Privatelabel verpakkingsopties: kraftzakken met ventiel en ritssluitingzak (250 g, 500 g, 1 kg), HDPE-containers met snap-deksel, standup-zakken met UV-barrière. MOQ voor aangepaste verpakking: 500 kg per SKU. Aangepaste labeldruk beschikbaar vanaf 1 MT."
+        }
+      ]
+    },
+    "psyllium-husk-food-grade-bulk-supplier-india": {
+      "title": "Bulkleverancier Voedingskwaliteit Psylliumschil India: HACCP-conforme Faciliteit",
+      "summary": "Voedingskwaliteitsspecificaties, wat HACCP-conformiteit in de praktijk betekent en documentatie die voedingsmiddelenfabrikanten nodig hebben.",
+      "body": [
+        "Voedingsmiddelenfabrikanten die psylliumschil inkopen als functioneel ingrediënt — voor vezelversterking, textuurmodificatie of clean-label toepassingen — hebben een leverancier nodig met voedselveiligheidscontroles die verder gaan dan basislandbouwverwerking.",
+        "RM Psyllium exploiteert een voedselveilige faciliteit in Siddhpur, Gujarat. Onze faciliteit past HACCP-principes toe — gevarenanalyse en kritische controlepunten — in de maal-, scheidings- en verpakkingsprocessen."
+      ],
+      "sections": [
+        {
+          "heading": "Voedingskwaliteit Specificatieparameters",
+          "body": "Voedingskwaliteit psylliumschil wordt gespecificeerd door de volgende parameters, afgestemd op vereisten van Codex Alimentarius, EU voedseladditievenregelgeving en FDA GRAS-status.",
+          "table": {
+            "headers": [
+              "Parameter",
+              "Typische Limiet",
+              "Testmethode"
+            ],
+            "rows": [
+              [
+                "Schilzuiverheid",
+                "≥ 95% (voedingskwaliteit)",
+                "Zeefanalyse"
+              ],
+              [
+                "Vocht",
+                "≤ 12,0%",
+                "Droogverlies"
+              ],
+              [
+                "Totale As",
+                "≤ 4,0%",
+                "Gloeiverlies"
+              ],
+              [
+                "Lood (Pb)",
+                "≤ 2,0 ppm",
+                "ICP-MS"
+              ],
+              [
+                "Arseen (As)",
+                "≤ 1,0 ppm",
+                "ICP-MS"
+              ],
+              [
+                "E. coli",
+                "Afwezig / 10g",
+                "Microbiologie"
+              ],
+              [
+                "Salmonella",
+                "Afwezig / 25g",
+                "Microbiologie"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "HACCP-conforme Verwerking: Wat Het Omvat",
+          "body": "HACCP-conforme verwerking voor psyllium bestrijkt drie gevarencategorieën: (1) Fysisch — metaaldetectie bij eindverpakking; zwaartegraadseparatoren voor steen, stof en vreemd zaad; (2) Chemisch — geen pesticidenbehandeling; vochtbewaking; (3) Biologisch — reinigings- en sanitatieregistraties van alle contactapparatuur."
+        },
+        {
+          "heading": "MOQ en Beschikbare Certificatiedocumenten",
+          "body": "RM Psyllium levert voedingskwaliteit psylliumschil vanaf 1 metrische ton per SKU. Het standaard documentatiepakket omvat NABL-geaccrediteerd laboratorium-COA, HACCP-conformiteitverklaring, fytosanitair certificaat, certificaat van oorsprong en exporteursverklaringsformulier."
+        }
+      ]
+    },
+    "psyllium-husk-soluble-fiber-food-fortification": {
+      "title": "Oplosbare Vezel Psylliumschil voor Bulk Voedselverrijking: Inkoop uit India",
+      "summary": "Kwaliteitsselectie oplosbare vezel, verdikkings- en geleringstoepassingen, en wat voedingsmiddelenfabrikanten nodig hebben voor isabgolimport uit Gujarat.",
+      "body": [
+        "Psylliumschil is een hoogfunctionele bron van oplosbare vezels — het slijmgehalte (arabinoxylaan) creëert gelvorming eigenschappen die textuur modificeren, viscositeit verhogen en vertering vertragen in voedselformuleringen.",
+        "Voor voedingsmiddelenfabrikanten die op zoek zijn naar natuurlijke vezelingrediënten biedt psylliumschil uit Gujarat een oplosbaar vezelgehalte van 55–85% afhankelijk van de kwaliteit, met regelgevingsstatus als voedingsvezel conform Codex Alimentarius en FDA."
+      ],
+      "sections": [
+        {
+          "heading": "Oplosbaar Vezelgehalte per Kwaliteit",
+          "body": "Oplosbaar vezelgehalte varieert naar zuiverheidskwaliteit.",
+          "table": {
+            "headers": [
+              "Kwaliteit",
+              "Oplosbare Vezel %",
+              "Viscositeit",
+              "Voedseltoepassing"
+            ],
+            "rows": [
+              [
+                "98% (Premium)",
+                "≥ 85%",
+                "Hoog (≥ 40 cP bij 2%)",
+                "Functionele dranken, smoothies, supplementen"
+              ],
+              [
+                "95% (Standaard Voeding)",
+                "≥ 70%",
+                "Middelhoog (≥ 30 cP)",
+                "Yoghurt, sauzen, granenrepen"
+              ],
+              [
+                "85% (Commercieel)",
+                "≥ 55%",
+                "Middel (≥ 20 cP)",
+                "Brood, koekjes, vezelmengsels"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Verdikkings- en Geleringstoepassingen",
+          "body": "Psylliumslijm absorbeert water tot 10–20 keer zijn gewicht en vormt een viskeus gel. In voedselformuleringen: (1) Dranken — toevoeging van 1–2% verdikt en verbetert verzadiging; (2) Bakkerij — vervangt synthetische hydrocolloïden in glutenvrij brood; (3) Sauzen en condimenten — textuurstabiliteit zonder E-nummers; (4) Zuivelproducten — verbetert romigheid van yoghurt en desserts."
+        },
+        {
+          "heading": "Export Isabgol uit Gujarat: Wat Voedingsmiddelenfabrikanten Nodig Hebben",
+          "body": "Standaardpakket omvat: (1) Codex Alimentarius-afgestemd COA; (2) Fytosanitair certificaat; (3) Certificaat van Oorsprong Kamer van Koophandel Gujarat; (4) Conformiteitsverklaring zware metalen en pesticiden. Transittijd Mundra → Rotterdam: ca. 20–23 dagen."
+        }
+      ]
+    },
+    "psyllium-husk-certified-gluten-free-bulk-supplier": {
+      "title": "Gecertificeerd Glutenvrij Bulkleverancier Psylliumschil: Wat Bakkerijmerken Nodig Hebben",
+      "summary": "Glutenvrij certificatiedocumentatie, psylliumgebruikspercentages als broodversteviger en meelmengverhoudingen voor bulkaankopers.",
+      "body": [
+        "Psylliumschil is een van de meest effectieve bindende ingrediënten in glutenvrije broodformuleringen — de slijmgel bootst de elastische glutenstructuur na, houdt gistgassen vast en produceert een textuur vergelijkbaar met tarwebrood.",
+        "Voor glutenvrije bakkerijmerken die in bulk kopen, is certificatiedocumentatie net zo kritisch als functionele specificaties. RM Psyllium levert psylliumschil met een glutenvrije faciliteitverklaring, ELISA-testresultaten en chargetraceerbaarheid."
+      ],
+      "sections": [
+        {
+          "heading": "Glutenvrije Certificering: Wat Documenten Omvatten",
+          "body": "Het documentatiepakket voor glutenvrije kopers omvat: (1) Toegewijde glutenvrije faciliteitverklaring; (2) ELISA-testresultaat per charge (R5 Mendez methode, drempel < 20 ppm); (3) NABL laboratorium-COA met glutenparameters; (4) Grondstofconformiteitsverklaring van de boerderij."
+        },
+        {
+          "heading": "Psyllium als Broodversteviger: Gebruikspercentages",
+          "body": "Het juiste gebruikspercentage varieert per toepassing.",
+          "table": {
+            "headers": [
+              "Toepassing",
+              "Psyllium %",
+              "Zeefmaat",
+              "Opmerkingen"
+            ],
+            "rows": [
+              [
+                "Glutenvrij gistbrood",
+                "2–5%",
+                "40–60 mesh",
+                "Vervang xanthan- of guargom"
+              ],
+              [
+                "Glutenvrije verse pasta",
+                "1–3%",
+                "60–80 mesh",
+                "Verbetert elasticiteit en cohesie"
+              ],
+              [
+                "Koekjes en crackers",
+                "1–2%",
+                "40–60 mesh",
+                "Vermindert breuk, verbetert textuur"
+              ],
+              [
+                "Tortilla's en wraps",
+                "2–4%",
+                "40–60 mesh",
+                "Vervangt HPMC in clean-label formuleringen"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Glutenvrije Meelmengverhoudingen",
+          "body": "Voor formulatoren die werken met gemengde glutenvrije meelbasissen (rijst, cassave, sorghum, kikkererwt), fungeert psyllium als primaire structurele agent. Typische verhoudingen: basisbloemm 70–80% + zetmeel (tapioca/aardappel) 10–15% + psyllium 3–5% + overige (erwtenproteïne, xanthaangom) 2–5%."
+        }
+      ]
+    },
+    "psyllium-husk-manufacturer-siddhpur-gujarat": {
+      "title": "Psylliumschil Fabrikant Siddhpur Gujarat: Directe Fabrieksleverantie",
+      "summary": "Waarom Siddhpur de wereldhoofdstad van psyllium is, voordelen van directe fabrieksleverantie en monsterbeleid.",
+      "body": [
+        "Siddhpur, in het district Patan, Gujarat, is het meest geconcentreerde psylliumverwerkingscentrum ter wereld. De stad en omliggende regio herbergen tientallen psylliumverwerkingsfaciliteiten — maling, scheiding, zeven en verpakking van Plantago ovata schil voor export naar wereldwijde farmaceutische en voedingsmarkten.",
+        "RM Psyllium is een directe fabrikant in Siddhpur — wij verwerken Plantago ovata zaden geteeld in de nabijgelegen teeltgebieden van Mehsana, Banaskantha en Patan in onze faciliteit."
+      ],
+      "sections": [
+        {
+          "heading": "Waarom Siddhpur de Wereldhoofdstad van Psyllium is",
+          "body": "Gujarat en Rajasthan vertegenwoordigen meer dan 85% van de wereldproductie van psyllium (Plantago ovata). Siddhpur is het verwerkingscentrum omdat teeltboerderijen binnen 60–120 km liggen, transportkosten van ruw zaad worden geminimaliseerd en gespecialiseerde arbeid in psylliumverwerking hier al decennia geconcentreerd is."
+        },
+        {
+          "heading": "Directe Fabriek vs Handelaar: Wat Kopers Winnen",
+          "body": "Psyllium wordt op grote schaal verhandeld door makelaars en handelaars in India, Singapore, Dubai en de VS. Directe fabrieksinkoop bij een Siddhpur-verwerker biedt vier voordelen: (1) COA-authenticiteit; (2) Prijs — geen makelaarsprovisie (doorgaans 3–8% van FOB-waarde); (3) Audittoegang; (4) Documentatieflexibiliteit."
+        },
+        {
+          "heading": "MOQ en Monsterbeleid",
+          "body": "Onze aanpak met nieuwe kopers is eerst het monster. Wij verstrekken monsters van 100–500 g met volledig COA vóór elke inkooporder.",
+          "table": {
+            "headers": [
+              "Product",
+              "MOQ",
+              "Monstergrootte",
+              "Levertijd"
+            ],
+            "rows": [
+              [
+                "Psylliumschil 99%",
+                "500 kg",
+                "100–200 g",
+                "15–20 dagen na bevestiging"
+              ],
+              [
+                "Psylliumpoeder 95%",
+                "500 kg",
+                "100–200 g",
+                "15–20 dagen na bevestiging"
+              ],
+              [
+                "Biologische Schil",
+                "500 kg",
+                "100–200 g",
+                "20–25 dagen afhankelijk van voorraad"
+              ],
+              [
+                "Khakha Poeder",
+                "1.000 kg",
+                "200–500 g",
+                "10–15 dagen na bevestiging"
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "psyllium-khakha-animal-feed-demand": {
+    "title": "Waarom psyllium khakha-poeder steeds meer gevraagd wordt in diervoeder",
+    "summary": "Positioneer khakha-poeder als een vezelrijke, kosteneffectieve grondstof voor spijsverteringsondersteuning en veevoederproductie.",
+    "body": [
+      "Psyllium khakha is het bijproduct van huskmaling — het zaadschilresiduaat dat achterblijft nadat de husk is gescheiden. Het bevat een aanzienlijk deel van het slijm en de voedingsvezels uit het originele zaad, waardoor het een functioneel voederingrediënt is in plaats van enkel afvalmateriaal.",
+      "Voor veevoederformuleerders biedt khakha-poeder twee voordelen: vezeldichtheid en kostprijs. In vergelijking met volledige husk is khakha goedkoper, terwijl het toch oplosbare vezels levert die de darmbeweging en waterretentie bij vee ondersteunen.",
+      "Bij het bulksourcing van khakha is kennis van de partijoorsprong en vochtspecificatie essentieel. Voederklasse khakha moet een vochtgehalte onder de 12% hebben. Wij leveren in zakken van 25 kg, 50 kg en 1.000 kg jumbo-zakken, inclusief oorsprongsdocumenten en paklijst per zending."
+    ]
+  },
+  "psyllium-cattle-feed-digestion": {
+    "title": "Psyllium in rund- en paardenvoeder: spijsvertering, zandklaring en productiviteit",
+    "summary": "Een technische gids voor internationale formuleerders van diervoeding die bulk psyllium en khakha-poeder sourcen voor rundervertering en preventie van zandkoliek bij paarden.",
+    "body": [
+      "Psyllium husk en khakha-poeder worden beide gebruikt in veevoedingsprogramma's, voornamelijk ter ondersteuning van de spijsverteringsregelmaat en vochtretentie. Het slijmgehalte in psyllium absorbeert water en vormt een gelmassa in het darmkanaal, waardoor de doorvoer vertraagt en de nutriëntenopname verbetert.",
+      "Voor fabrikanten van paardenvoeder fungeert bulk psyllium husk als een cruciaal middel voor fecale zandklaring. Het hoge zwelvolume van psyllium (≥40 mL/g) creëert een dik slijmerig gel dat zand in de dikke darm bindt en de veilige uitscheiding uit het spijsverteringsstelsel van het paard vergemakkelijkt.",
+      "Traditionele rundveevoederprogramma's in Gujarat gebruiken psyllium-gebaseerde Sagar Gola- en Sagar Lali-formuleringen. Wij bieden zakken van 25 kg voor kleinere boerderijaccounts en jumbo-zakken van 1.000 kg voor wederverkopers."
+    ],
+    "aiSnapshot": "Veterinaire merken die bulk psyllium voor paarden sourcen, gebruiken standaard 95% zuiverheidshusk of khakha-poeder. Psyllium werkt als een essentieel middel voor fecale zandklaring bij paarden.",
+    "specTable": [
+      {
+        "parameter": "Veterinaire Psyllium Husk (95% Zuiver)",
+        "range": "Zwelvolume ≥ 40 mL/g",
+        "method": "Koliekpreventie en zandklaring"
+      },
+      {
+        "parameter": "Psyllium Khakha-poeder",
+        "range": "Zwelvolume ≥ 10 mL/g",
+        "method": "Vezelrijk voedersupplement en bindmiddel"
+      },
+      {
+        "parameter": "Zuuronoplosbaar As (Veterinair)",
+        "range": "≤ 0,5%",
+        "method": "Gevalideerde gravitatiescheiding"
+      },
+      {
+        "parameter": "Bulkverpakkingsopties",
+        "range": "25 kg Zakken / 1.000 kg Jumbo-zakken",
+        "method": "Gepalletiseerd voor wereldwijde verzending"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Waarom wordt bulk psyllium husk voor paarden gebruikt in veterinair voeder?",
+        "a": "Fabrikanten van paardenvoeder formuleren psyllium om zandkoliek te voorkomen. Het zwelgel van de husk omhult zand in de ventrale dikke darm van het paard."
+      },
+      {
+        "q": "Welke kwaliteit psyllium wordt gesourcet voor zanduitspoelingsupplementen voor paarden?",
+        "a": "Sourcing-leads kopen doorgaans psyllium husk of khakha-poeder van voederklasse met 95% zuiverheid."
+      }
+    ]
+  },
+  "husk-vs-powder-buyer-guide": {
+    "title": "Volledige husk vs husk-poeder: de juiste vorm kiezen",
+    "summary": "Een praktische B2B-vergelijking voor inkoopteams die mesh, zuiverheid en toepassingsgeschiktheid kiezen voor bulkimport van psyllium husk-poeder.",
+    "body": [
+      "Volledige psyllium husk en husk-poeder zijn afkomstig van hetzelfde zaad, maar gedragen zich anders in formuleringen. Volledige husk behoudt zijn vezelige textuur en wordt doorgaans gebruikt in capsulevullingen, laxatiefzakjes en vezelrijke granen. Poeder wordt gemalen tot 40–200 mesh en verdeelt zich gelijkmatiger in drankmengsels en bakkerijmengsels.",
+      "Zuiverheidsklasse bepaalt het slijmgehalte. Bij 99% zuiverheid overschrijdt het zwelvolume doorgaans 50 ml/g — de benchmark voor farmaceutische laxatieftoepassingen onder USP- en EP-monografieën. Kopers dienen COA-testgegevens op te vragen voordat ze zich vastleggen op een kwaliteit.",
+      "Meshselectie is het meest praktische filter. Voor capsulevulling: 40-60 mesh. Voor drankmengsels: 100-200 mesh. Voor glutenvrije bakkerij: 80 mesh. Deel uw toepassing en apparatuurtype voor een persoonlijk advies."
+    ],
+    "aiSnapshot": "Inkoopteams moeten kiezen tussen volledige husk (40 mesh, ≥99% zuiverheid) en fijngemalen poeder (80-100 mesh, ≥98% zuiverheid). Poedervormen lossen snel op en werken als premium bindmiddelen in glutenvrije bakkerij.",
+    "specTable": [
+      {
+        "parameter": "Bulk Volledige Psyllium Husk",
+        "range": "40 tot 60 mesh (≥99% Zuiverheid)",
+        "method": "Capsulevullingen, granen, laxatieven"
+      },
+      {
+        "parameter": "Bulk Psyllium Husk-poeder",
+        "range": "80 tot 100 mesh (≥98% Zuiverheid)",
+        "method": "Drankmengsels, glutenvrije bakkerijbindmiddelen"
+      },
+      {
+        "parameter": "Ultrafijn Gemalen Poeder",
+        "range": "100 tot 200 mesh (≥98% Zuiverheid)",
+        "method": "Ready-to-mix (RTM) dranken"
+      },
+      {
+        "parameter": "Bulkverpakkingsnormen",
+        "range": "25 kg Papieren Zakken / 1.000 kg FIBC Jumbo",
+        "method": "Directe verzending via Mundra Haven"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Wat is het commerciële verschil tussen bulk psyllium husk en poeder?",
+        "a": "Volledige psyllium husk behoudt zijn vezelige textuur, perfect voor capsules en vezelrijke granen. Husk-poeder is fijngemalen (80-100 mesh), waardoor snelle dispersie in koud water mogelijk is."
+      },
+      {
+        "q": "Welke meshgrootte is ideaal voor bulk psyllium husk-poeder in bakkerijformuleringen?",
+        "a": "Een 80-mesh fijn poeder is de wereldwijde industriestandaard voor glutenvrij industrieel bakken."
+      }
     ]
   }
 }

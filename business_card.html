@@ -1,1290 +1,764 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RM Psyllium — Business Card Studio</title>
-  <style>
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RM Psyllium — Brand Identity Studio</title>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{background:#0d0d0d;min-height:100vh;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;display:flex;flex-direction:column;align-items:center;padding:36px 24px 80px}
+.studio-title{color:#2a2a2a;font-size:10px;letter-spacing:.22em;text-transform:uppercase;margin-bottom:28px;font-weight:400}
 
-    body {
-      background: #0d0d0d;
-      min-height: 100vh;
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 44px 24px 80px;
-    }
+/* ── VARIANT NAV ── */
+.nav-wrap{display:flex;flex-direction:column;align-items:center;gap:8px;margin-bottom:44px;position:sticky;top:16px;z-index:100}
+.tab-row{display:flex;gap:3px;background:#161616;border-radius:100px;padding:4px;border:1px solid #1e1e1e}
+.tab-btn{padding:7px 16px;border-radius:100px;border:none;background:transparent;color:#3a3a3a;font-size:10px;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:background .15s,color .15s;font-family:inherit;white-space:nowrap}
+.tab-btn:hover{color:#777}
+.tab-btn.active{background:#2d5a27;color:#fff}
 
-    .page-title {
-      color: #333;
-      font-size: 10px;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      margin-bottom: 32px;
-      font-weight: 400;
-    }
+/* ── SECTION HEADERS ── */
+.section-hd{color:#2a2a2a;font-size:9px;letter-spacing:.28em;text-transform:uppercase;margin:52px 0 22px;font-weight:500;border-bottom:1px solid #1c1c1c;padding-bottom:12px;align-self:stretch;text-align:left}
 
-    /* ── TAB NAV ── */
-    .tab-nav {
-      display: flex;
-      gap: 3px;
-      background: #181818;
-      border-radius: 100px;
-      padding: 4px;
-      margin-bottom: 52px;
-      border: 1px solid #222;
-    }
+/* ── CONTENT AREA ── */
+.cat-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.bc-vp {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.bc-vp.active {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+}
+.theme-display {
+  display: block;
+}
+.cards-row{display:flex;gap:48px;align-items:flex-start}
+.card-wrap{display:flex;flex-direction:column;align-items:center;gap:10px}
+.card-label{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#2e2e2e;font-weight:500}
+.card{width:336px;height:192px;border-radius:8px;overflow:hidden;position:relative;flex-shrink:0}
+.print-btn{margin-top:36px;padding:9px 26px;background:transparent;border:1px solid #222;color:#3a3a3a;font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;cursor:pointer;border-radius:4px;font-family:inherit;transition:border-color .15s,color .15s}
+.print-btn:hover{border-color:#444;color:#777}
 
-    .tab-btn {
-      padding: 8px 18px;
-      border-radius: 100px;
-      border: none;
-      background: transparent;
-      color: #444;
-      font-size: 10.5px;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      cursor: pointer;
-      transition: background 0.18s, color 0.18s;
-      font-family: inherit;
-      white-space: nowrap;
-    }
-    .tab-btn:hover { color: #888; }
-    .tab-btn.active { background: #fff; color: #111; }
+/* ────────────────────────────────────────────────────
+   THEME CSS VARS  (tv1 – tv10)
+──────────────────────────────────────────────────── */
+.tv1 {
+  --bg: #f5f2ec; --fg: #1a2214; --acc: #2d5a27; --sub: #aaa; --rule: #d8d0c4;
+  --hbg: #2d5a27; --hfg: rgba(255,255,255,0.9); --hsub: rgba(255,255,255,0.5);
+  --nmf: Georgia, "Times New Roman", serif;
+  --bdf: "Helvetica Neue", Helvetica, sans-serif;
+  --lf: none; --lhf: brightness(0) invert(1);
+}
+.tv2 {
+  --bg: #111; --fg: #f0e8d5; --acc: #c9a84c; --sub: #555; --rule: #2a2a2a;
+  --hbg: #c9a84c; --hfg: rgba(0,0,0,0.75); --hsub: rgba(0,0,0,0.5);
+  --nmf: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  --bdf: "Helvetica Neue", Helvetica, sans-serif;
+  --lf: brightness(0) invert(1) sepia(0.35); --lhf: brightness(0);
+}
+.tv3 {
+  --bg: #fff; --fg: #111; --acc: #2d5a27; --sub: #bbb; --rule: #e8e8e8;
+  --hbg: #2d5a27; --hfg: rgba(255,255,255,0.9); --hsub: rgba(255,255,255,0.5);
+  --nmf: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --bdf: "Helvetica Neue", Helvetica, sans-serif;
+  --lf: none; --lhf: brightness(0) invert(1);
+}
+.tv4 {
+  --bg: #fff; --fg: #111; --acc: #2d5a27; --sub: #bbb; --rule: #f0f0f0;
+  --hbg: #2d5a27; --hfg: rgba(255,255,255,0.9); --hsub: rgba(255,255,255,0.5);
+  --nmf: Georgia, serif;
+  --bdf: "Helvetica Neue", Helvetica, sans-serif;
+  --lf: none; --lhf: brightness(0) invert(1);
+}
+.tv5 {
+  --bg: #d4b896; --fg: #3a2010; --acc: #7a5230; --sub: #8b6040; --rule: rgba(101,67,33,0.2);
+  --hbg: #3a2010; --hfg: #d4b896; --hsub: rgba(212,184,150,0.55);
+  --nmf: Georgia, "Times New Roman", serif;
+  --bdf: "Helvetica Neue", Helvetica, sans-serif;
+  --lf: none; --lhf: brightness(0) saturate(0) invert(0.85);
+}
+.tv6 {
+  --bg: #fff; --fg: #111; --acc: #111; --sub: #bbb; --rule: #111;
+  --hbg: #111; --hfg: rgba(255,255,255,0.9); --hsub: rgba(255,255,255,0.5);
+  --nmf: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --bdf: "Helvetica Neue", Helvetica, sans-serif;
+  --lf: none; --lhf: brightness(0) invert(1);
+}
+.tv7 {
+  --bg: #fafaf8; --fg: #222; --acc: #2d5a27; --sub: #ccc; --rule: #ececec;
+  --hbg: #2d5a27; --hfg: rgba(255,255,255,0.75); --hsub: rgba(255,255,255,0.4);
+  --nmf: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --bdf: "Helvetica Neue", Helvetica, sans-serif;
+  --lf: none; --lhf: brightness(0) invert(1);
+}
+.tv8 {
+  --bg: #fff; --fg: #111; --acc: #2d5a27; --sub: #bbb; --rule: #f0f0f0;
+  --hbg: #2d5a27; --hfg: rgba(255,255,255,0.9); --hsub: rgba(255,255,255,0.5);
+  --nmf: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --bdf: "Helvetica Neue", Helvetica, sans-serif;
+  --lf: none; --lhf: brightness(0) invert(1);
+}
+.tv9 {
+  --bg: #fff; --fg: #111; --acc: #111; --sub: #888; --rule: #111;
+  --hbg: #111; --hfg: rgba(255,255,255,0.9); --hsub: rgba(255,255,255,0.5);
+  --nmf: "Courier New", Courier, monospace;
+  --bdf: "Courier New", Courier, monospace;
+  --lf: none; --lhf: brightness(0) invert(1);
+}
+.tv10 {
+  --bg: #1c1c1e; --fg: #f0f0f0; --acc: #5a9e52; --sub: #555; --rule: #2a2a2a;
+  --hbg: #141414; --hfg: rgba(240,240,240,0.85); --hsub: rgba(240,240,240,0.35);
+  --nmf: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --bdf: "Helvetica Neue", Helvetica, sans-serif;
+  --lf: brightness(0) invert(1); --lhf: brightness(0) invert(1);
+}
 
-    /* ── PANELS ── */
-    .tab-panel { display: none; flex-direction: column; align-items: center; }
-    .tab-panel.active { display: flex; }
+/* ────────────────────────────────────────────────────
+   BUSINESS CARD VARIANT STYLES (v1–v10)
+──────────────────────────────────────────────────── */
+/* V1 WARM CLASSIC */
+.v1f{background:#f5f2ec;display:flex;flex-direction:column;justify-content:space-between;padding:20px 24px 15px}
+.v1f-top{display:flex;justify-content:space-between;align-items:flex-start}
+.v1f-logo{height:60px;width:auto;object-fit:contain;margin:-10px 0 -8px -16px}
+.v1f-loc{text-align:right;font-size:9px;color:#aaa;line-height:1.65;letter-spacing:.02em}
+.v1f-people{display:flex;align-items:center}
+.v1f-person{flex:1}
+.v1f-person:first-child{padding-right:14px;border-right:1px solid #d8d0c4}
+.v1f-person:last-child{padding-left:14px}
+.v1f-name{font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#1a2214;letter-spacing:-.01em;line-height:1.2;margin-bottom:4px}
+.v1f-phone{font-size:8.5px;color:#aaa;letter-spacing:.04em}
+.v1f-bottom{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #d8d0c4;padding-top:9px}
+.v1f-email{font-size:7.5px;color:#aaa;letter-spacing:.02em}
+.v1f-web{font-size:7.5px;color:#3d6b35;letter-spacing:.04em}
+.v1b{background:#2d5a27;display:flex;flex-direction:column;justify-content:space-between;padding:18px 22px 16px;position:relative;overflow:hidden}
+.v1b-wm{position:absolute;right:-8px;bottom:-18px;font-family:Georgia,serif;font-size:120px;font-weight:700;color:rgba(255,255,255,.07);line-height:1;user-select:none;pointer-events:none;letter-spacing:-4px}
+.v1b-logo{height:48px;width:auto;object-fit:contain;object-position:left center;filter:brightness(0) invert(1);margin:-8px 0 -6px -12px}
+.v1b-tags{display:flex;flex-wrap:wrap;gap:4px}
+.v1b-tag{font-size:6.5px;font-weight:500;letter-spacing:.14em;color:rgba(255,255,255,.65);border:1px solid rgba(255,255,255,.22);border-radius:3px;padding:2.5px 6px;text-transform:uppercase}
+.v1b-bot{display:flex;justify-content:space-between;align-items:flex-end}
+.v1b-addr{font-size:7px;color:rgba(255,255,255,.45);letter-spacing:.03em;line-height:1.65}
+.v1b-web{font-size:8px;color:rgba(255,255,255,.7);letter-spacing:.05em}
 
-    .cards-row {
-      display: flex;
-      gap: 52px;
-      align-items: flex-start;
-    }
+/* V2 DARK LUXURY */
+.v2f{background:#111;display:flex;flex-direction:column;justify-content:space-between;padding:18px 22px 15px}
+.v2f-top{display:flex;justify-content:space-between;align-items:flex-start}
+.v2f-logo{height:50px;width:auto;object-fit:contain;filter:brightness(0) invert(1) sepia(.4) saturate(2) hue-rotate(5deg);margin:-8px 0 -6px -14px;opacity:.78}
+.v2f-loc{text-align:right;font-size:8px;color:#c9a84c;line-height:1.75;letter-spacing:.1em;font-family:'Palatino Linotype','Book Antiqua',Palatino,serif;font-style:italic}
+.v2f-rule{height:1px;background:linear-gradient(to right,transparent,#c9a84c 15%,#c9a84c 85%,transparent);opacity:.45}
+.v2f-people{display:flex;align-items:center}
+.v2f-person{flex:1}
+.v2f-person:first-child{padding-right:14px;border-right:1px solid #2a2a2a}
+.v2f-person:last-child{padding-left:14px}
+.v2f-name{font-family:'Palatino Linotype','Book Antiqua',Palatino,serif;font-size:14.5px;color:#f0e8d5;letter-spacing:.02em;line-height:1.2;margin-bottom:4px}
+.v2f-phone{font-size:8px;color:#c9a84c;letter-spacing:.1em}
+.v2f-bottom{display:flex;justify-content:space-between;align-items:center}
+.v2f-email{font-size:7.5px;color:#444;letter-spacing:.04em}
+.v2f-web{font-size:7.5px;color:#c9a84c;letter-spacing:.1em}
+.v2b{background:linear-gradient(135deg,#c9a84c 0%,#a07828 50%,#b8922e 100%);display:flex;flex-direction:column;justify-content:space-between;padding:18px 22px 16px;position:relative;overflow:hidden}
+.v2b::before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(45deg,transparent,transparent 18px,rgba(0,0,0,.04) 18px,rgba(0,0,0,.04) 19px)}
+.v2b-logo{height:44px;width:auto;object-fit:contain;object-position:left center;filter:brightness(0);margin:-7px 0 -5px -12px;opacity:.65;position:relative}
+.v2b-tags{display:flex;flex-wrap:wrap;gap:4px;position:relative}
+.v2b-tag{font-size:6.5px;font-weight:600;letter-spacing:.14em;color:rgba(0,0,0,.55);border:1px solid rgba(0,0,0,.18);border-radius:2px;padding:2.5px 6px;text-transform:uppercase}
+.v2b-bot{display:flex;justify-content:space-between;align-items:flex-end;position:relative}
+.v2b-addr{font-size:7px;color:rgba(0,0,0,.5);letter-spacing:.03em;line-height:1.65}
+.v2b-web{font-size:8px;color:rgba(0,0,0,.65);letter-spacing:.07em}
 
-    .card-wrap {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
+/* V3 SWISS MINIMAL */
+.v3f{background:#fff;display:flex;flex-direction:column;justify-content:space-between;padding:18px 22px 14px}
+.v3f-top{display:flex;justify-content:space-between;align-items:flex-start}
+.v3f-logo{height:34px;width:auto;object-fit:contain;margin:-4px 0 0 -8px}
+.v3f-origin{font-size:7px;letter-spacing:.24em;text-transform:uppercase;color:#c8c8c8;text-align:right;line-height:1.7}
+.v3f-rule{height:1px;background:#ebebeb}
+.v3f-people{display:flex;align-items:stretch}
+.v3f-person{flex:1}
+.v3f-person:first-child{padding-right:16px;border-right:1px solid #efefef}
+.v3f-person:last-child{padding-left:16px}
+.v3f-name{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:15.5px;font-weight:700;color:#111;letter-spacing:-.03em;line-height:1.1;margin-bottom:5px}
+.v3f-phone{font-size:8px;color:#bbb;letter-spacing:.06em}
+.v3f-bottom{display:flex;justify-content:space-between;align-items:center}
+.v3f-email{font-size:7.5px;color:#bbb;letter-spacing:.02em}
+.v3f-web{font-size:9px;font-weight:700;color:#2d5a27;letter-spacing:-.01em}
+.v3b{background:#fff;display:flex;flex-direction:column;justify-content:space-between;padding:20px 22px}
+.v3b-logo{height:38px;width:auto;object-fit:contain;object-position:left center;margin:-6px 0 0 -8px}
+.v3b-mid{display:flex;gap:2px;flex-wrap:wrap;align-items:center}
+.v3b-tag{font-size:6px;font-weight:700;letter-spacing:.2em;color:#d0d0d0;text-transform:uppercase}
+.v3b-tag+.v3b-tag::before{content:'·';margin-right:2px;color:#e0e0e0}
+.v3b-bot{display:flex;justify-content:space-between;align-items:flex-end}
+.v3b-addr{font-size:7px;color:#ccc;letter-spacing:.02em;line-height:1.7}
+.v3b-web{font-size:11px;font-weight:700;color:#2d5a27;letter-spacing:-.02em}
 
-    .card-label {
-      font-size: 9px;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: #333;
-      font-weight: 500;
-    }
+/* V4 BOLD SPLIT */
+.v4f{background:#fff;display:flex;position:relative;overflow:hidden}
+.v4f-green{width:130px;background:#2d5a27;display:flex;flex-direction:column;justify-content:space-between;padding:16px 0 14px 18px;position:relative;flex-shrink:0;z-index:1}
+.v4f-green::after{content:'';position:absolute;right:-18px;top:0;bottom:0;width:36px;background:#2d5a27;clip-path:polygon(0 0,0 100%,100% 100%)}
+.v4f-logo{height:42px;width:auto;object-fit:contain;filter:brightness(0) invert(1);margin:-6px 0 0 -10px;position:relative;z-index:1}
+.v4f-loc{font-size:7.5px;color:rgba(255,255,255,.45);letter-spacing:.1em;line-height:1.7;text-transform:uppercase;position:relative;z-index:1}
+.v4f-white{flex:1;display:flex;flex-direction:column;justify-content:center;padding:14px 16px 30px 28px}
+.v4f-accent{width:22px;height:2px;background:#2d5a27;margin-bottom:11px}
+.v4f-person{margin-bottom:9px}
+.v4f-person:last-child{margin-bottom:0}
+.v4f-name{font-family:Georgia,serif;font-size:13px;color:#111;letter-spacing:.01em;line-height:1.2}
+.v4f-phone{font-size:7.5px;color:#bbb;letter-spacing:.05em;margin-top:2px}
+.v4f-strip{position:absolute;bottom:0;right:0;left:130px;background:#f5f5f5;padding:5px 16px 5px 28px;display:flex;justify-content:space-between;align-items:center}
+.v4f-email{font-size:7px;color:#bbb;letter-spacing:.03em}
+.v4f-web{font-size:7px;color:#2d5a27;font-weight:700;letter-spacing:.06em}
+.v4b{background:#2d5a27;display:flex;position:relative;overflow:hidden}
+.v4b-white{width:120px;background:#fff;display:flex;flex-direction:column;justify-content:space-between;padding:16px 0 14px 18px;position:relative;flex-shrink:0;z-index:1}
+.v4b-white::after{content:'';position:absolute;right:-18px;top:0;bottom:0;width:36px;background:#fff;clip-path:polygon(0 0,0 100%,100% 100%)}
+.v4b-logo{height:38px;width:auto;object-fit:contain;object-position:left center;margin:-6px 0 0 -10px;position:relative;z-index:1}
+.v4b-addr{font-size:6.5px;color:#ccc;letter-spacing:.02em;line-height:1.7;position:relative;z-index:1}
+.v4b-green{flex:1;display:flex;flex-direction:column;justify-content:center;padding:14px 16px 14px 30px}
+.v4b-tags{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:12px}
+.v4b-tag{font-size:6.5px;font-weight:500;letter-spacing:.14em;color:rgba(255,255,255,.55);border:1px solid rgba(255,255,255,.2);border-radius:2px;padding:2px 6px;text-transform:uppercase}
+.v4b-web{font-size:10px;color:rgba(255,255,255,.85);letter-spacing:.04em;font-family:Georgia,serif}
 
-    /* ── CARD SHELL ── */
-    .card {
-      width: 336px;   /* 3.5in @ 96dpi */
-      height: 192px;  /* 2in  @ 96dpi */
-      border-radius: 8px;
-      overflow: hidden;
-      position: relative;
-      flex-shrink: 0;
-    }
+/* V5 NATURAL KRAFT */
+.v5f{background:#d4b896;display:flex;flex-direction:column;justify-content:space-between;padding:18px 22px 15px;position:relative}
+.v5f::before{content:'';position:absolute;inset:0;pointer-events:none;border-radius:8px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.12'/%3E%3C/svg%3E");background-size:200px;mix-blend-mode:multiply;opacity:.5}
+.v5f::after{content:'';position:absolute;inset:7px;border:1px solid rgba(101,67,33,.2);pointer-events:none;border-radius:3px}
+.v5f-top{display:flex;justify-content:space-between;align-items:flex-start;position:relative;z-index:1}
+.v5f-logo{height:50px;width:auto;object-fit:contain;mix-blend-mode:multiply;margin:-8px 0 -6px -14px}
+.v5f-loc{text-align:right;font-size:8px;color:#7a5230;line-height:1.7;letter-spacing:.08em;font-family:Georgia,serif;font-style:italic}
+.v5f-people{display:flex;align-items:center;position:relative;z-index:1}
+.v5f-person{flex:1}
+.v5f-person:first-child{padding-right:14px;border-right:1px solid rgba(101,67,33,.25)}
+.v5f-person:last-child{padding-left:14px}
+.v5f-name{font-family:Georgia,'Times New Roman',serif;font-size:14px;color:#3a2010;letter-spacing:.01em;line-height:1.2;margin-bottom:4px}
+.v5f-phone{font-size:8px;color:#8b6040;letter-spacing:.05em}
+.v5f-bottom{display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(101,67,33,.18);padding-top:8px;position:relative;z-index:1}
+.v5f-email{font-size:7.5px;color:#8b6040;letter-spacing:.03em}
+.v5f-web{font-size:7.5px;color:#3a2010;font-weight:600;letter-spacing:.06em}
+.v5b{background:#2c1a0e;display:flex;flex-direction:column;justify-content:space-between;padding:18px 22px 15px;position:relative;overflow:hidden}
+.v5b::after{content:'';position:absolute;inset:7px;border:1px solid rgba(212,184,150,.1);pointer-events:none;border-radius:3px}
+.v5b-dot{position:absolute;right:10px;top:10px;bottom:10px;width:130px;opacity:.07;pointer-events:none;background-image:radial-gradient(circle,#d4b896 1px,transparent 1px),radial-gradient(circle,#d4b896 1px,transparent 1px),radial-gradient(circle,#d4b896 1.5px,transparent 1.5px);background-size:12px 12px,8px 8px,20px 20px;background-position:0 0,6px 6px,3px 3px}
+.v5b-logo{height:44px;width:auto;object-fit:contain;object-position:left center;filter:brightness(0) invert(1);margin:-7px 0 -5px -12px;opacity:.65;position:relative;z-index:1}
+.v5b-tags{display:flex;flex-wrap:wrap;gap:4px;position:relative;z-index:1}
+.v5b-tag{font-size:6.5px;letter-spacing:.14em;color:rgba(212,184,150,.55);border:1px solid rgba(212,184,150,.18);border-radius:2px;padding:2.5px 6px;text-transform:uppercase;font-family:Georgia,serif}
+.v5b-bot{display:flex;justify-content:space-between;align-items:flex-end;position:relative;z-index:1}
+.v5b-addr{font-size:7px;color:rgba(212,184,150,.4);letter-spacing:.03em;line-height:1.7}
+.v5b-web{font-size:8px;color:rgba(212,184,150,.65);letter-spacing:.06em;font-family:Georgia,serif;font-style:italic}
 
-    /* ── PRINT BUTTON ── */
-    .print-btn {
-      margin-top: 36px;
-      padding: 9px 26px;
-      background: transparent;
-      border: 1px solid #2a2a2a;
-      color: #444;
-      font-size: 9.5px;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      cursor: pointer;
-      border-radius: 4px;
-      font-family: inherit;
-      transition: border-color 0.15s, color 0.15s;
-    }
-    .print-btn:hover { border-color: #555; color: #888; }
+/* V6 RULED WHITE */
+.v6f{background:#fff;display:flex;flex-direction:column;justify-content:space-between;padding:0}
+.v6f-top{border-top:2px solid #111;padding:14px 22px 12px;display:flex;justify-content:space-between;align-items:center}
+.v6f-co{font-size:8px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:#111}
+.v6f-loc{font-size:8px;color:#bbb;letter-spacing:.08em}
+.v6f-mid{border-top:1px solid #e8e8e8;padding:14px 22px;display:flex;align-items:center}
+.v6f-person{flex:1}
+.v6f-person:first-child{padding-right:18px;border-right:1px solid #e8e8e8}
+.v6f-person:last-child{padding-left:18px}
+.v6f-name{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14.5px;font-weight:400;color:#111;letter-spacing:-.01em;line-height:1.2;margin-bottom:4px}
+.v6f-phone{font-size:8px;color:#bbb;letter-spacing:.06em}
+.v6f-bot{border-top:1px solid #e8e8e8;border-bottom:2px solid #111;padding:9px 22px;display:flex;justify-content:space-between;align-items:center}
+.v6f-email{font-size:7.5px;color:#bbb;letter-spacing:.02em}
+.v6f-web{font-size:7.5px;font-weight:700;color:#111;letter-spacing:.04em}
+.v6b{background:#fff;display:flex;flex-direction:column;justify-content:space-between;padding:0}
+.v6b-top{border-top:2px solid #111;padding:14px 22px 12px}
+.v6b-logo{height:36px;width:auto;object-fit:contain;margin:-4px 0 0 -8px}
+.v6b-mid{border-top:1px solid #e8e8e8;padding:10px 22px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.v6b-tag{font-size:7px;letter-spacing:.18em;text-transform:uppercase;color:#ccc}
+.v6b-tag+.v6b-tag::before{content:'/';margin-right:10px;color:#e0e0e0}
+.v6b-bot{border-top:1px solid #e8e8e8;border-bottom:2px solid #111;padding:9px 22px;display:flex;justify-content:space-between;align-items:center}
+.v6b-addr{font-size:7px;color:#ccc;letter-spacing:.02em;line-height:1.6}
+.v6b-web{font-size:8px;font-weight:700;color:#111;letter-spacing:.04em}
 
+/* V7 GHOST */
+.v7f{background:#fafaf8;display:flex;flex-direction:column;justify-content:space-between;padding:22px 26px 18px}
+.v7f-top{display:flex;justify-content:space-between;align-items:flex-start}
+.v7f-logo{height:28px;width:auto;object-fit:contain;opacity:.35;margin:0 0 0 -6px}
+.v7f-loc{font-size:7.5px;color:#d0d0d0;letter-spacing:.12em;text-align:right;line-height:1.7}
+.v7f-people{display:flex;align-items:center}
+.v7f-person{flex:1}
+.v7f-person:first-child{padding-right:16px;border-right:1px solid #ececec}
+.v7f-person:last-child{padding-left:16px}
+.v7f-name{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:15px;font-weight:300;color:#222;letter-spacing:-.01em;line-height:1.2;margin-bottom:5px}
+.v7f-phone{font-size:8px;color:#ccc;letter-spacing:.06em}
+.v7f-bot{display:flex;justify-content:space-between;align-items:center}
+.v7f-email{font-size:7.5px;color:#ccc;letter-spacing:.02em}
+.v7f-web{font-size:7.5px;color:#2d5a27;letter-spacing:.04em;opacity:.7}
+.v7b{background:#fafaf8;display:flex;flex-direction:column;justify-content:space-between;padding:22px 26px 18px}
+.v7b-logo{height:28px;width:auto;object-fit:contain;opacity:.3;margin:0 0 0 -6px}
+.v7b-mid{display:flex;flex-direction:column;gap:3px}
+.v7b-tag-row{display:flex;gap:8px}
+.v7b-tag{font-size:7px;color:#d8d8d8;letter-spacing:.14em;text-transform:uppercase}
+.v7b-bot{display:flex;justify-content:space-between;align-items:flex-end}
+.v7b-addr{font-size:7px;color:#d0d0d0;letter-spacing:.02em;line-height:1.65}
+.v7b-web{font-size:8px;color:#2d5a27;opacity:.6;letter-spacing:.05em}
 
-    /* ══════════════════════════════════════════════════
-       V1 — WARM CLASSIC
-    ══════════════════════════════════════════════════ */
-    .v1f {
-      background: #f5f2ec;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 20px 24px 15px;
-    }
-    .v1f-top { display: flex; justify-content: space-between; align-items: flex-start; }
-    .v1f-logo { height: 60px; width: auto; object-fit: contain; margin: -10px 0 -8px -16px; }
-    .v1f-loc {
-      text-align: right; font-size: 9px; color: #aaa;
-      line-height: 1.65; letter-spacing: 0.02em;
-      font-family: 'Helvetica Neue', Helvetica, sans-serif;
-    }
-    .v1f-people { display: flex; align-items: center; }
-    .v1f-person { flex: 1; }
-    .v1f-person:first-child { padding-right: 14px; border-right: 1px solid #d8d0c4; }
-    .v1f-person:last-child  { padding-left: 14px; }
-    .v1f-name {
-      font-family: 'Georgia', 'Times New Roman', serif;
-      font-size: 15px; color: #1a2214; letter-spacing: -0.01em;
-      line-height: 1.2; margin-bottom: 4px;
-    }
-    .v1f-phone { font-size: 8.5px; color: #aaa; letter-spacing: 0.04em; }
-    .v1f-bottom {
-      display: flex; justify-content: space-between; align-items: center;
-      border-top: 1px solid #d8d0c4; padding-top: 9px;
-    }
-    .v1f-email { font-size: 7.5px; color: #aaa; letter-spacing: 0.02em; }
-    .v1f-web   { font-size: 7.5px; color: #3d6b35; letter-spacing: 0.04em; }
+/* V8 GREEN EDGE */
+.v8f{background:#fff;display:flex;align-items:stretch}
+.v8f-stripe{width:4px;background:#2d5a27;flex-shrink:0}
+.v8f-body{flex:1;display:flex;flex-direction:column;justify-content:space-between;padding:18px 20px 15px}
+.v8f-top{display:flex;justify-content:space-between;align-items:flex-start}
+.v8f-logo{height:32px;width:auto;object-fit:contain;margin:-4px 0 0 -6px}
+.v8f-loc{font-size:7.5px;color:#c8c8c8;letter-spacing:.1em;text-align:right;line-height:1.7}
+.v8f-people{display:flex;align-items:center}
+.v8f-person{flex:1}
+.v8f-person:first-child{padding-right:14px;border-right:1px solid #f0f0f0}
+.v8f-person:last-child{padding-left:14px}
+.v8f-name{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;font-weight:500;color:#111;letter-spacing:-.01em;line-height:1.2;margin-bottom:4px}
+.v8f-phone{font-size:8px;color:#bbb;letter-spacing:.06em}
+.v8f-bot{display:flex;justify-content:space-between;align-items:center}
+.v8f-email{font-size:7.5px;color:#bbb;letter-spacing:.02em}
+.v8f-web{font-size:7.5px;font-weight:600;color:#2d5a27;letter-spacing:.04em}
+.v8b{background:#fff;display:flex;align-items:stretch}
+.v8b-stripe{width:4px;background:#2d5a27;flex-shrink:0}
+.v8b-body{flex:1;display:flex;flex-direction:column;justify-content:space-between;padding:18px 20px 15px}
+.v8b-logo{height:32px;width:auto;object-fit:contain;margin:-4px 0 0 -6px}
+.v8b-tags{display:flex;flex-wrap:wrap;gap:3px;align-items:center}
+.v8b-tag{font-size:6.5px;letter-spacing:.16em;text-transform:uppercase;color:#ccc}
+.v8b-tag+.v8b-tag::before{content:'·';margin-right:3px;color:#ddd}
+.v8b-bot{display:flex;justify-content:space-between;align-items:flex-end}
+.v8b-addr{font-size:7px;color:#ccc;letter-spacing:.02em;line-height:1.65}
+.v8b-web{font-size:8px;font-weight:600;color:#2d5a27;letter-spacing:.04em}
 
-    .v1b {
-      background: #2d5a27;
-      display: flex; flex-direction: column; justify-content: space-between;
-      padding: 18px 22px 16px; position: relative; overflow: hidden;
-    }
-    .v1b-wm {
-      position: absolute; right: -8px; bottom: -18px;
-      font-family: 'Georgia', serif; font-size: 120px; font-weight: 700;
-      color: rgba(255,255,255,0.07); line-height: 1;
-      user-select: none; pointer-events: none; letter-spacing: -4px;
-    }
-    .v1b-logo { height: 48px; width: auto; object-fit: contain; object-position: left center; filter: brightness(0) invert(1); margin: -8px 0 -6px -12px; }
-    .v1b-tags { display: flex; flex-wrap: wrap; gap: 4px; }
-    .v1b-tag {
-      font-size: 6.5px; font-weight: 500; letter-spacing: 0.14em;
-      color: rgba(255,255,255,0.65); border: 1px solid rgba(255,255,255,0.22);
-      border-radius: 3px; padding: 2.5px 6px; text-transform: uppercase;
-    }
-    .v1b-bot { display: flex; justify-content: space-between; align-items: flex-end; }
-    .v1b-addr { font-size: 7px; color: rgba(255,255,255,0.45); letter-spacing: 0.03em; line-height: 1.65; }
-    .v1b-web  { font-size: 8px; color: rgba(255,255,255,0.7); letter-spacing: 0.05em; }
+/* V9 MONO */
+.v9f{background:#fff;display:flex;flex-direction:column;justify-content:space-between;padding:18px 22px 15px;font-family:'Courier New',Courier,monospace}
+.v9f-top{display:flex;justify-content:space-between;align-items:flex-start}
+.v9f-co{font-size:9.5px;font-weight:700;letter-spacing:.08em;color:#111;text-transform:uppercase}
+.v9f-loc{font-size:7.5px;color:#aaa;text-align:right;line-height:1.65;letter-spacing:.04em}
+.v9f-rule{height:1px;background:#111}
+.v9f-people{display:flex;align-items:flex-start;gap:0}
+.v9f-person{flex:1}
+.v9f-person:first-child{padding-right:14px}
+.v9f-person:last-child{padding-left:14px;border-left:1px solid #e0e0e0}
+.v9f-label{font-size:6.5px;letter-spacing:.16em;color:#bbb;text-transform:uppercase;margin-bottom:3px}
+.v9f-name{font-size:12.5px;font-weight:700;color:#111;letter-spacing:.02em;line-height:1.2;margin-bottom:3px}
+.v9f-phone{font-size:8.5px;color:#555;letter-spacing:.04em}
+.v9f-rule2{height:1px;background:#111}
+.v9f-bot{display:flex;justify-content:space-between;align-items:center}
+.v9f-email{font-size:7.5px;color:#888;letter-spacing:.02em}
+.v9f-web{font-size:7.5px;color:#111;font-weight:700;letter-spacing:.04em}
+.v9b{background:#fff;display:flex;flex-direction:column;justify-content:space-between;padding:18px 22px 15px;font-family:'Courier New',Courier,monospace}
+.v9b-header{display:flex;justify-content:space-between;align-items:flex-start}
+.v9b-logo{height:30px;width:auto;object-fit:contain;margin:-4px 0 0 -8px}
+.v9b-date{font-size:7px;color:#ccc;letter-spacing:.06em;text-align:right}
+.v9b-rule{height:1px;background:#111}
+.v9b-tags{display:flex;flex-wrap:wrap;gap:6px}
+.v9b-tag{font-size:7px;color:#888;letter-spacing:.1em;text-transform:uppercase}
+.v9b-rule2{height:1px;background:#ddd}
+.v9b-bot{display:flex;justify-content:space-between;align-items:flex-end}
+.v9b-addr{font-size:6.5px;color:#aaa;letter-spacing:.04em;line-height:1.7}
+.v9b-web{font-size:8px;font-weight:700;color:#111;letter-spacing:.04em}
 
+/* V10 CHARCOAL */
+.v10f{background:#1c1c1e;display:flex;flex-direction:column;justify-content:space-between;padding:20px 24px 16px}
+.v10f-top{display:flex;justify-content:space-between;align-items:flex-start}
+.v10f-logo{height:36px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.4;margin:-4px 0 0 -8px}
+.v10f-loc{font-size:7.5px;color:#444;letter-spacing:.1em;text-align:right;line-height:1.7}
+.v10f-people{display:flex;align-items:center}
+.v10f-person{flex:1}
+.v10f-person:first-child{padding-right:16px;border-right:1px solid #2e2e2e}
+.v10f-person:last-child{padding-left:16px}
+.v10f-name{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14.5px;font-weight:400;color:#f0f0f0;letter-spacing:-.01em;line-height:1.2;margin-bottom:4px}
+.v10f-phone{font-size:8px;color:#555;letter-spacing:.06em}
+.v10f-bot{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #2a2a2a;padding-top:9px}
+.v10f-email{font-size:7.5px;color:#444;letter-spacing:.02em}
+.v10f-web{font-size:7.5px;color:#5a9e52;letter-spacing:.06em}
+.v10b{background:#141414;display:flex;flex-direction:column;justify-content:space-between;padding:20px 24px 16px}
+.v10b-logo{height:34px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.25;margin:-4px 0 0 -8px}
+.v10b-tags{display:flex;flex-wrap:wrap;gap:4px}
+.v10b-tag{font-size:6.5px;letter-spacing:.16em;text-transform:uppercase;color:#333}
+.v10b-tag+.v10b-tag::before{content:'·';margin-right:4px;color:#2a2a2a}
+.v10b-bot{display:flex;justify-content:space-between;align-items:flex-end;border-top:1px solid #222;padding-top:9px}
+.v10b-addr{font-size:7px;color:#3a3a3a;letter-spacing:.02em;line-height:1.65}
+.v10b-web{font-size:8px;color:#5a9e52;letter-spacing:.06em}
 
-    /* ══════════════════════════════════════════════════
-       V2 — DARK LUXURY
-    ══════════════════════════════════════════════════ */
-    .v2f {
-      background: #111;
-      display: flex; flex-direction: column; justify-content: space-between;
-      padding: 18px 22px 15px;
-    }
-    .v2f-top { display: flex; justify-content: space-between; align-items: flex-start; }
-    .v2f-logo {
-      height: 50px; width: auto; object-fit: contain;
-      filter: brightness(0) invert(1) sepia(0.4) saturate(2) hue-rotate(5deg);
-      margin: -8px 0 -6px -14px; opacity: 0.78;
-    }
-    .v2f-loc {
-      text-align: right; font-size: 8px; color: #c9a84c;
-      line-height: 1.75; letter-spacing: 0.1em;
-      font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-      font-style: italic;
-    }
-    .v2f-rule {
-      height: 1px;
-      background: linear-gradient(to right, transparent, #c9a84c 15%, #c9a84c 85%, transparent);
-      opacity: 0.45;
-    }
-    .v2f-people { display: flex; align-items: center; }
-    .v2f-person { flex: 1; }
-    .v2f-person:first-child { padding-right: 14px; border-right: 1px solid #2a2a2a; }
-    .v2f-person:last-child  { padding-left: 14px; }
-    .v2f-name {
-      font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-      font-size: 14.5px; color: #f0e8d5; letter-spacing: 0.02em; line-height: 1.2; margin-bottom: 4px;
-    }
-    .v2f-phone { font-size: 8px; color: #c9a84c; letter-spacing: 0.1em; }
-    .v2f-bottom { display: flex; justify-content: space-between; align-items: center; }
-    .v2f-email { font-size: 7.5px; color: #444; letter-spacing: 0.04em; }
-    .v2f-web   { font-size: 7.5px; color: #c9a84c; letter-spacing: 0.1em; }
+/* ────────────────────────────────────────────────────
+   PACKAGING BAGS  (theme-aware via CSS vars)
+──────────────────────────────────────────────────── */
+.bags-row{display:flex;gap:40px;align-items:flex-end;flex-wrap:wrap;justify-content:center}
+.bag-wrap{display:flex;flex-direction:column;align-items:center;gap:12px}
+.bag-size-lbl{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#2e2e2e;font-weight:500}
 
-    .v2b {
-      background: #b8922e;
-      background-image: linear-gradient(135deg, #c9a84c 0%, #a07828 50%, #b8922e 100%);
-      display: flex; flex-direction: column; justify-content: space-between;
-      padding: 18px 22px 16px; position: relative; overflow: hidden;
-    }
-    .v2b::before {
-      content: '';
-      position: absolute; inset: 0;
-      background-image: repeating-linear-gradient(
-        45deg, transparent, transparent 18px,
-        rgba(0,0,0,0.04) 18px, rgba(0,0,0,0.04) 19px
-      );
-    }
-    .v2b-logo {
-      height: 44px; width: auto; object-fit: contain; object-position: left center;
-      filter: brightness(0); margin: -7px 0 -5px -12px; opacity: 0.65; position: relative;
-    }
-    .v2b-tags { display: flex; flex-wrap: wrap; gap: 4px; position: relative; }
-    .v2b-tag {
-      font-size: 6.5px; font-weight: 600; letter-spacing: 0.14em;
-      color: rgba(0,0,0,0.55); border: 1px solid rgba(0,0,0,0.18);
-      border-radius: 2px; padding: 2.5px 6px; text-transform: uppercase;
-    }
-    .v2b-bot { display: flex; justify-content: space-between; align-items: flex-end; position: relative; }
-    .v2b-addr { font-size: 7px; color: rgba(0,0,0,0.5); letter-spacing: 0.03em; line-height: 1.65; }
-    .v2b-web  { font-size: 8px; color: rgba(0,0,0,0.65); letter-spacing: 0.07em; }
+/* ── 3D STAND-UP POUCH ── */
+/* scene: 210×284 (frontW=175 frontH=270 dX=35 dY=14) */
+.sp3{position:relative;width:210px;height:284px;filter:drop-shadow(8px 14px 28px rgba(0,0,0,.55))}
+.sp3-front{position:absolute;left:0;top:14px;width:175px;height:270px;background:var(--bg);overflow:hidden;display:flex;flex-direction:column}
+.sp3-side{position:absolute;inset:0;background:var(--hbg);opacity:.55;clip-path:polygon(175px 14px,210px 0,210px 270px,175px 284px)}
+.sp3-seal{background:var(--hbg);padding:9px 13px;display:flex;justify-content:space-between;align-items:center;flex-shrink:0}
+.sp3-logo{height:20px;filter:var(--lhf);opacity:.9}
+.sp3-wt{font-family:var(--bdf);font-size:18px;font-weight:700;color:var(--hfg);letter-spacing:-.03em;line-height:1}
+.sp3-body{flex:1;padding:12px 12px 8px;display:flex;flex-direction:column}
+.sp3-product{font-family:var(--nmf);font-size:17px;font-weight:700;color:var(--fg);line-height:1.15;letter-spacing:-.01em;margin-bottom:3px}
+.sp3-grade{font-family:var(--bdf);font-size:6px;letter-spacing:.14em;text-transform:uppercase;color:var(--sub);margin-bottom:9px}
+.sp3-rule{height:1px;background:var(--rule);margin-bottom:9px}
+.sp3-origin{font-family:var(--bdf);font-size:6px;color:var(--sub);letter-spacing:.03em;line-height:1.75;margin-bottom:7px}
+.sp3-certs{display:flex;gap:3px;flex-wrap:wrap}
+.sp3-cert{font-family:var(--bdf);font-size:5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--acc);border:1px solid var(--acc);border-radius:2px;padding:1px 3px;opacity:.8}
+.sp3-footer{padding:7px 12px;border-top:1px solid var(--rule);display:flex;justify-content:space-between;align-items:center;flex-shrink:0;margin-top:auto}
+.sp3-barcode{width:40px;height:18px;background:repeating-linear-gradient(90deg,var(--fg) 0,var(--fg) 1px,transparent 1px,transparent 3px,var(--fg) 3px,var(--fg) 4px,transparent 4px,transparent 6px,var(--fg) 6px,var(--fg) 8px,transparent 8px,transparent 11px);opacity:.28;border-radius:1px}
+.sp3-web{font-family:var(--bdf);font-size:5.5px;color:var(--acc);font-weight:700;letter-spacing:.04em}
+.sp3-gusset{height:16px;background:linear-gradient(to bottom,rgba(0,0,0,.08),transparent);flex-shrink:0}
 
+/* ── 3D PP WOVEN BAG ── */
+/* scene: 264×306 (frontW=218 frontH=288 dX=46 dY=18) */
+.pp3{position:relative;width:264px;height:306px;filter:drop-shadow(10px 18px 34px rgba(0,0,0,.55))}
+.pp3-front{position:absolute;left:0;top:18px;width:218px;height:288px;overflow:hidden;display:flex;flex-direction:column;background-color:#e8e3d8;background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.45) 0,rgba(255,255,255,.45) 1.5px,transparent 1.5px,transparent 5px),repeating-linear-gradient(90deg,rgba(255,255,255,.35) 0,rgba(255,255,255,.35) 1.5px,transparent 1.5px,transparent 5px)}
+.pp3-side{position:absolute;inset:0;clip-path:polygon(218px 18px,264px 0,264px 288px,218px 306px);background-color:#c4bfb3;background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.3) 0,rgba(255,255,255,.3) 1.5px,transparent 1.5px,transparent 5px),repeating-linear-gradient(90deg,rgba(255,255,255,.2) 0,rgba(255,255,255,.2) 1.5px,transparent 1.5px,transparent 5px)}
+.pp3-top-face{position:absolute;inset:0;clip-path:polygon(0 18px,218px 18px,264px 0,46px 0);background:repeating-linear-gradient(90deg,#bfae96 0,#bfae96 10px,#ad9c82 10px,#ad9c82 14px)}
+.pp3-stitch{height:18px;background:repeating-linear-gradient(90deg,#c8b89a 0,#c8b89a 10px,#b5a688 10px,#b5a688 14px);flex-shrink:0}
+.pp3-woven-body{flex:1;padding:13px;display:flex;flex-direction:column}
+.pp3-label{background:var(--bg);border-radius:3px;padding:12px 14px;box-shadow:0 1px 8px rgba(0,0,0,.1);flex:1;display:flex;flex-direction:column}
+.pp3-lbl-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:9px}
+.pp3-logo{height:26px;filter:var(--lf)}
+.pp3-wt{font-family:var(--bdf);font-size:20px;font-weight:700;color:var(--acc);letter-spacing:-.02em;line-height:1}
+.pp3-product{font-family:var(--nmf);font-size:14px;font-weight:700;color:var(--fg);line-height:1.2;margin-bottom:2px}
+.pp3-grade{font-family:var(--bdf);font-size:6.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--sub)}
+.pp3-rule{height:1px;background:var(--rule);margin:9px 0}
+.pp3-info{display:flex;justify-content:space-between;align-items:flex-end;gap:6px;margin-bottom:9px}
+.pp3-origin{font-family:var(--bdf);font-size:6px;color:var(--sub);letter-spacing:.03em;line-height:1.75;flex:1}
+.pp3-certs{display:flex;gap:3px;flex-direction:column}
+.pp3-cert{font-family:var(--bdf);font-size:5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--acc);border:1px solid var(--acc);border-radius:2px;padding:1px 4px;opacity:.8;text-align:center}
+.pp3-footer{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--rule);padding-top:7px;margin-top:auto}
+.pp3-email{font-family:var(--bdf);font-size:5.5px;color:var(--sub);letter-spacing:.02em}
+.pp3-web{font-family:var(--bdf);font-size:6.5px;font-weight:700;color:var(--acc);letter-spacing:.04em}
 
-    /* ══════════════════════════════════════════════════
-       V3 — SWISS MINIMAL
-    ══════════════════════════════════════════════════ */
-    .v3f {
-      background: #ffffff;
-      display: flex; flex-direction: column; justify-content: space-between;
-      padding: 18px 22px 14px;
-    }
-    .v3f-top { display: flex; justify-content: space-between; align-items: flex-start; }
-    .v3f-logo { height: 34px; width: auto; object-fit: contain; margin: -4px 0 0 -8px; }
-    .v3f-origin {
-      font-size: 7px; letter-spacing: 0.24em; text-transform: uppercase;
-      color: #c8c8c8; text-align: right; line-height: 1.7;
-    }
-    .v3f-rule { height: 1px; background: #ebebeb; }
-    .v3f-people { display: flex; align-items: stretch; }
-    .v3f-person { flex: 1; }
-    .v3f-person:first-child { padding-right: 16px; border-right: 1px solid #efefef; }
-    .v3f-person:last-child  { padding-left: 16px; }
-    .v3f-name {
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      font-size: 15.5px; font-weight: 700; color: #111;
-      letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 5px;
-    }
-    .v3f-phone { font-size: 8px; color: #bbb; letter-spacing: 0.06em; }
-    .v3f-bottom { display: flex; justify-content: space-between; align-items: center; }
-    .v3f-email { font-size: 7.5px; color: #bbb; letter-spacing: 0.02em; }
-    .v3f-web   { font-size: 9px; font-weight: 700; color: #2d5a27; letter-spacing: -0.01em; }
+/* ── 3D FIBC JUMBO BAG ── */
+/* scene: 304×328 (frontW=254 frontH=308 dX=50 dY=20) */
+.fb3{display:flex;flex-direction:column;align-items:flex-start}
+.fb3-loops-row{display:flex;gap:56px;padding-left:16px;margin-bottom:-6px;position:relative;z-index:5}
+.fb3-loop{width:20px;height:26px;border:5px solid #b8b0a0;border-bottom:none;border-radius:8px 8px 0 0}
+.fb3-scene{position:relative;width:304px;height:328px;filter:drop-shadow(10px 18px 34px rgba(0,0,0,.55))}
+.fb3-front{position:absolute;left:0;top:20px;width:254px;height:308px;overflow:hidden;display:flex;flex-direction:column;background-color:#eeebe4;background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.5) 0,rgba(255,255,255,.5) 2px,transparent 2px,transparent 8px),repeating-linear-gradient(90deg,rgba(255,255,255,.4) 0,rgba(255,255,255,.4) 2px,transparent 2px,transparent 8px)}
+.fb3-side{position:absolute;inset:0;clip-path:polygon(254px 20px,304px 0,304px 308px,254px 328px);background-color:#d0ccc4;background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.35) 0,rgba(255,255,255,.35) 2px,transparent 2px,transparent 8px),repeating-linear-gradient(90deg,rgba(255,255,255,.25) 0,rgba(255,255,255,.25) 2px,transparent 2px,transparent 8px)}
+.fb3-top-face{position:absolute;inset:0;clip-path:polygon(0 20px,254px 20px,304px 0,50px 0);background-color:#dedbd4;background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.4) 0,rgba(255,255,255,.4) 2px,transparent 2px,transparent 8px),repeating-linear-gradient(90deg,rgba(255,255,255,.3) 0,rgba(255,255,255,.3) 2px,transparent 2px,transparent 8px)}
+.fb3-band{background:var(--hbg);padding:12px 18px;display:flex;justify-content:space-between;align-items:center;flex-shrink:0}
+.fb3-logo{height:26px;filter:var(--lhf);opacity:.9}
+.fb3-wt-area{text-align:right}
+.fb3-wt-lbl{font-family:var(--bdf);font-size:5.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--hsub);display:block}
+.fb3-wt{font-family:var(--bdf);font-size:24px;font-weight:700;color:var(--hfg);letter-spacing:-.02em;line-height:1}
+.fb3-woven-body{flex:1;padding:13px;display:flex;flex-direction:column}
+.fb3-panel{background:var(--bg);border-radius:3px;padding:12px 14px;box-shadow:0 1px 6px rgba(0,0,0,.08);flex:1;display:flex;flex-direction:column}
+.fb3-product{font-family:var(--nmf);font-size:16px;font-weight:700;color:var(--fg);margin-bottom:2px;line-height:1.2}
+.fb3-grade{font-family:var(--bdf);font-size:6.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--sub)}
+.fb3-rule{height:1px;background:var(--rule);margin:9px 0}
+.fb3-meta{display:flex;justify-content:space-between;align-items:flex-end;gap:8px;margin-bottom:9px}
+.fb3-origin{font-family:var(--bdf);font-size:6px;color:var(--sub);letter-spacing:.03em;line-height:1.75;flex:1}
+.fb3-certs{display:flex;gap:3px;flex-wrap:wrap;justify-content:flex-end}
+.fb3-cert{font-family:var(--bdf);font-size:5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--acc);border:1px solid var(--acc);border-radius:2px;padding:1px 4px;opacity:.8}
+.fb3-footer{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--rule);padding-top:7px;margin-top:auto}
+.fb3-addr{font-family:var(--bdf);font-size:5.5px;color:var(--sub);letter-spacing:.02em}
+.fb3-web{font-family:var(--bdf);font-size:6.5px;font-weight:700;color:var(--acc);letter-spacing:.04em}
 
-    .v3b {
-      background: #fff;
-      display: flex; flex-direction: column; justify-content: space-between;
-      padding: 20px 22px;
-    }
-    .v3b-logo { height: 38px; width: auto; object-fit: contain; object-position: left center; margin: -6px 0 0 -8px; }
-    .v3b-mid { display: flex; gap: 2px; flex-wrap: wrap; align-items: center; }
-    .v3b-tag {
-      font-size: 6px; font-weight: 700; letter-spacing: 0.2em;
-      color: #d0d0d0; text-transform: uppercase;
-    }
-    .v3b-tag + .v3b-tag::before { content: '·'; margin-right: 2px; color: #e0e0e0; }
-    .v3b-bot { display: flex; justify-content: space-between; align-items: flex-end; }
-    .v3b-addr { font-size: 7px; color: #ccc; letter-spacing: 0.02em; line-height: 1.7; }
-    .v3b-web  { font-size: 11px; font-weight: 700; color: #2d5a27; letter-spacing: -0.02em; }
-
-
-    /* ══════════════════════════════════════════════════
-       V4 — BOLD SPLIT
-    ══════════════════════════════════════════════════ */
-    .v4f {
-      background: #fff;
-      display: flex; position: relative; overflow: hidden;
-    }
-    .v4f-green {
-      width: 130px;
-      background: #2d5a27;
-      display: flex; flex-direction: column; justify-content: space-between;
-      padding: 16px 0 14px 18px;
-      position: relative; flex-shrink: 0; z-index: 1;
-    }
-    .v4f-green::after {
-      content: '';
-      position: absolute; right: -18px; top: 0; bottom: 0; width: 36px;
-      background: #2d5a27;
-      clip-path: polygon(0 0, 0 100%, 100% 100%);
-    }
-    .v4f-logo { height: 42px; width: auto; object-fit: contain; filter: brightness(0) invert(1); margin: -6px 0 0 -10px; position: relative; z-index: 1; }
-    .v4f-loc {
-      font-size: 7.5px; color: rgba(255,255,255,0.45);
-      letter-spacing: 0.1em; line-height: 1.7;
-      text-transform: uppercase; position: relative; z-index: 1;
-    }
-    .v4f-white {
-      flex: 1;
-      display: flex; flex-direction: column; justify-content: center;
-      padding: 14px 16px 30px 28px;
-    }
-    .v4f-accent { width: 22px; height: 2px; background: #2d5a27; margin-bottom: 11px; }
-    .v4f-person { margin-bottom: 9px; }
-    .v4f-person:last-child { margin-bottom: 0; }
-    .v4f-name {
-      font-family: 'Georgia', serif; font-size: 13px; color: #111;
-      letter-spacing: 0.01em; line-height: 1.2;
-    }
-    .v4f-phone { font-size: 7.5px; color: #bbb; letter-spacing: 0.05em; margin-top: 2px; }
-    .v4f-strip {
-      position: absolute; bottom: 0; right: 0; left: 130px;
-      background: #f5f5f5; padding: 5px 16px 5px 28px;
-      display: flex; justify-content: space-between; align-items: center;
-    }
-    .v4f-email { font-size: 7px; color: #bbb; letter-spacing: 0.03em; }
-    .v4f-web   { font-size: 7px; color: #2d5a27; font-weight: 700; letter-spacing: 0.06em; }
-
-    .v4b {
-      background: #2d5a27;
-      display: flex; position: relative; overflow: hidden;
-    }
-    .v4b-white {
-      width: 120px;
-      background: #fff;
-      display: flex; flex-direction: column; justify-content: space-between;
-      padding: 16px 0 14px 18px;
-      position: relative; flex-shrink: 0; z-index: 1;
-    }
-    .v4b-white::after {
-      content: '';
-      position: absolute; right: -18px; top: 0; bottom: 0; width: 36px;
-      background: #fff;
-      clip-path: polygon(0 0, 0 100%, 100% 100%);
-    }
-    .v4b-logo { height: 38px; width: auto; object-fit: contain; object-position: left center; margin: -6px 0 0 -10px; position: relative; z-index: 1; }
-    .v4b-addr { font-size: 6.5px; color: #ccc; letter-spacing: 0.02em; line-height: 1.7; position: relative; z-index: 1; }
-    .v4b-green {
-      flex: 1;
-      display: flex; flex-direction: column; justify-content: center;
-      padding: 14px 16px 14px 30px;
-    }
-    .v4b-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 12px; }
-    .v4b-tag {
-      font-size: 6.5px; font-weight: 500; letter-spacing: 0.14em;
-      color: rgba(255,255,255,0.55); border: 1px solid rgba(255,255,255,0.2);
-      border-radius: 2px; padding: 2px 6px; text-transform: uppercase;
-    }
-    .v4b-web { font-size: 10px; color: rgba(255,255,255,0.85); letter-spacing: 0.04em; font-family: 'Georgia', serif; }
-
-
-    /* ══════════════════════════════════════════════════
-       V5 — NATURAL KRAFT
-    ══════════════════════════════════════════════════ */
-    .v5f {
-      background: #d4b896;
-      display: flex; flex-direction: column; justify-content: space-between;
-      padding: 18px 22px 15px; position: relative;
-    }
-    /* Grain overlay */
-    .v5f::before {
-      content: '';
-      position: absolute; inset: 0; pointer-events: none; border-radius: 8px;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.12'/%3E%3C/svg%3E");
-      background-size: 200px;
-      mix-blend-mode: multiply;
-      opacity: 0.5;
-    }
-    /* Inner ruled border */
-    .v5f::after {
-      content: ''; position: absolute; inset: 7px;
-      border: 1px solid rgba(101,67,33,0.2);
-      pointer-events: none; border-radius: 3px;
-    }
-    .v5f-top { display: flex; justify-content: space-between; align-items: flex-start; position: relative; z-index: 1; }
-    .v5f-logo { height: 50px; width: auto; object-fit: contain; mix-blend-mode: multiply; margin: -8px 0 -6px -14px; }
-    .v5f-loc {
-      text-align: right; font-size: 8px; color: #7a5230;
-      line-height: 1.7; letter-spacing: 0.08em;
-      font-family: 'Georgia', serif; font-style: italic;
-    }
-    .v5f-people { display: flex; align-items: center; position: relative; z-index: 1; }
-    .v5f-person { flex: 1; }
-    .v5f-person:first-child { padding-right: 14px; border-right: 1px solid rgba(101,67,33,0.25); }
-    .v5f-person:last-child  { padding-left: 14px; }
-    .v5f-name {
-      font-family: 'Georgia', 'Times New Roman', serif;
-      font-size: 14px; color: #3a2010; letter-spacing: 0.01em; line-height: 1.2; margin-bottom: 4px;
-    }
-    .v5f-phone { font-size: 8px; color: #8b6040; letter-spacing: 0.05em; }
-    .v5f-bottom {
-      display: flex; justify-content: space-between; align-items: center;
-      border-top: 1px solid rgba(101,67,33,0.18); padding-top: 8px;
-      position: relative; z-index: 1;
-    }
-    .v5f-email { font-size: 7.5px; color: #8b6040; letter-spacing: 0.03em; }
-    .v5f-web   { font-size: 7.5px; color: #3a2010; font-weight: 600; letter-spacing: 0.06em; }
-
-    .v5b {
-      background: #2c1a0e;
-      display: flex; flex-direction: column; justify-content: space-between;
-      padding: 18px 22px 15px; position: relative; overflow: hidden;
-    }
-    .v5b::after {
-      content: ''; position: absolute; inset: 7px;
-      border: 1px solid rgba(212,184,150,0.1);
-      pointer-events: none; border-radius: 3px;
-    }
-    /* Botanical dot watermark */
-    .v5b-dot {
-      position: absolute; right: 10px; top: 10px; bottom: 10px; width: 130px;
-      opacity: 0.07; pointer-events: none;
-      background-image:
-        radial-gradient(circle, #d4b896 1px, transparent 1px),
-        radial-gradient(circle, #d4b896 1px, transparent 1px),
-        radial-gradient(circle, #d4b896 1.5px, transparent 1.5px);
-      background-size: 12px 12px, 8px 8px, 20px 20px;
-      background-position: 0 0, 6px 6px, 3px 3px;
-    }
-    .v5b-logo { height: 44px; width: auto; object-fit: contain; object-position: left center; filter: brightness(0) invert(1); margin: -7px 0 -5px -12px; opacity: 0.65; position: relative; z-index: 1; }
-    .v5b-tags { display: flex; flex-wrap: wrap; gap: 4px; position: relative; z-index: 1; }
-    .v5b-tag {
-      font-size: 6.5px; letter-spacing: 0.14em;
-      color: rgba(212,184,150,0.55); border: 1px solid rgba(212,184,150,0.18);
-      border-radius: 2px; padding: 2.5px 6px; text-transform: uppercase;
-      font-family: 'Georgia', serif;
-    }
-    .v5b-bot { display: flex; justify-content: space-between; align-items: flex-end; position: relative; z-index: 1; }
-    .v5b-addr { font-size: 7px; color: rgba(212,184,150,0.4); letter-spacing: 0.03em; line-height: 1.7; }
-    .v5b-web  { font-size: 8px; color: rgba(212,184,150,0.65); letter-spacing: 0.06em; font-family: 'Georgia', serif; font-style: italic; }
-
-
-    /* ══════════════════════════════════════════════════
-       V6 — RULED WHITE
-       White, black rules as structure, all-caps co. name
-    ══════════════════════════════════════════════════ */
-    .v6f {
-      background: #fff;
-      display: flex; flex-direction: column; justify-content: space-between;
-      padding: 0;
-    }
-    .v6f-top {
-      border-top: 2px solid #111;
-      padding: 14px 22px 12px;
-      display: flex; justify-content: space-between; align-items: center;
-    }
-    .v6f-co {
-      font-size: 8px; font-weight: 700; letter-spacing: 0.3em;
-      text-transform: uppercase; color: #111;
-    }
-    .v6f-loc { font-size: 8px; color: #bbb; letter-spacing: 0.08em; }
-    .v6f-mid {
-      border-top: 1px solid #e8e8e8;
-      padding: 14px 22px;
-      display: flex; align-items: center;
-    }
-    .v6f-person { flex: 1; }
-    .v6f-person:first-child { padding-right: 18px; border-right: 1px solid #e8e8e8; }
-    .v6f-person:last-child  { padding-left: 18px; }
-    .v6f-name {
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      font-size: 14.5px; font-weight: 400; color: #111;
-      letter-spacing: -0.01em; line-height: 1.2; margin-bottom: 4px;
-    }
-    .v6f-phone { font-size: 8px; color: #bbb; letter-spacing: 0.06em; }
-    .v6f-bot {
-      border-top: 1px solid #e8e8e8; border-bottom: 2px solid #111;
-      padding: 9px 22px;
-      display: flex; justify-content: space-between; align-items: center;
-    }
-    .v6f-email { font-size: 7.5px; color: #bbb; letter-spacing: 0.02em; }
-    .v6f-web   { font-size: 7.5px; font-weight: 700; color: #111; letter-spacing: 0.04em; }
-
-    .v6b {
-      background: #fff;
-      display: flex; flex-direction: column; justify-content: space-between;
-      padding: 0;
-    }
-    .v6b-top {
-      border-top: 2px solid #111;
-      padding: 14px 22px 12px;
-    }
-    .v6b-logo { height: 36px; width: auto; object-fit: contain; margin: -4px 0 0 -8px; }
-    .v6b-mid {
-      border-top: 1px solid #e8e8e8;
-      padding: 10px 22px;
-      display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
-    }
-    .v6b-tag { font-size: 7px; letter-spacing: 0.18em; text-transform: uppercase; color: #ccc; }
-    .v6b-tag + .v6b-tag::before { content: '/'; margin-right: 10px; color: #e0e0e0; }
-    .v6b-bot {
-      border-top: 1px solid #e8e8e8; border-bottom: 2px solid #111;
-      padding: 9px 22px;
-      display: flex; justify-content: space-between; align-items: center;
-    }
-    .v6b-addr { font-size: 7px; color: #ccc; letter-spacing: 0.02em; line-height: 1.6; }
-    .v6b-web  { font-size: 8px; font-weight: 700; color: #111; letter-spacing: 0.04em; }
+/* ────────────────────────────────────────────────────
+   LETTERHEAD  (theme-aware)
+──────────────────────────────────────────────────── */
+.lh-page{width:370px;height:524px;background:var(--bg);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 6px 36px rgba(0,0,0,.35)}
+.lh-hd{border-bottom:2px solid var(--acc);padding:16px 26px 13px;display:flex;justify-content:space-between;align-items:flex-end;flex-shrink:0}
+.lh-logo{height:32px;filter:var(--lf)}
+.lh-co-name{font-family:var(--nmf);font-size:13px;font-weight:700;color:var(--fg);letter-spacing:.04em}
+.lh-co-tag{font-family:var(--bdf);font-size:6px;letter-spacing:.2em;text-transform:uppercase;color:var(--sub);margin-top:2px;text-align:center}
+.lh-contact{text-align:right;font-family:var(--bdf);font-size:6.5px;color:var(--sub);letter-spacing:.03em;line-height:1.7}
+.lh-subhd{background:var(--hbg);padding:5px 26px;display:flex;justify-content:space-between;flex-shrink:0}
+.lh-subhd-item{font-family:var(--bdf);font-size:5.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--hsub)}
+.lh-body{flex:1;padding:20px 26px 14px;display:flex;flex-direction:column;gap:0}
+.lh-date-row{display:flex;gap:14px;margin-bottom:14px}
+.lh-date-line{height:1px;width:100px;background:var(--rule)}
+.lh-ref-line{height:1px;width:70px;background:var(--rule)}
+.lh-para{display:flex;flex-direction:column;gap:7px;margin-bottom:12px}
+.lh-p{height:1px;background:var(--rule)}
+.w100{width:100%}.w92{width:92%}.w85{width:85%}.w78{width:78%}.w96{width:96%}.w70{width:70%}.w88{width:88%}
+.lh-sig-block{margin-top:auto;display:flex;flex-direction:column;gap:6px}
+.lh-sig-line{height:1px;width:110px;background:var(--rule)}
+.lh-sig-name{font-family:var(--bdf);font-size:7px;color:var(--sub);letter-spacing:.06em}
+.lh-ft{border-top:1px solid var(--rule);padding:7px 26px;display:flex;justify-content:space-between;align-items:center;flex-shrink:0}
+.lh-ft-item{font-family:var(--bdf);font-size:6px;color:var(--sub);letter-spacing:.04em}
+.lh-ft-web{font-family:var(--bdf);font-size:6.5px;font-weight:700;color:var(--acc);letter-spacing:.04em}
 
 
-    /* ══════════════════════════════════════════════════
-       V7 — GHOST (ultra-light, lots of air)
-    ══════════════════════════════════════════════════ */
-    .v7f {
-      background: #fafaf8;
-      display: flex; flex-direction: column; justify-content: space-between;
-      padding: 22px 26px 18px;
-    }
-    .v7f-top { display: flex; justify-content: space-between; align-items: flex-start; }
-    .v7f-logo { height: 28px; width: auto; object-fit: contain; opacity: 0.35; margin: 0 0 0 -6px; }
-    .v7f-loc { font-size: 7.5px; color: #d0d0d0; letter-spacing: 0.12em; text-align: right; line-height: 1.7; }
-    .v7f-people { display: flex; align-items: center; }
-    .v7f-person { flex: 1; }
-    .v7f-person:first-child { padding-right: 16px; border-right: 1px solid #ececec; }
-    .v7f-person:last-child  { padding-left: 16px; }
-    .v7f-name {
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      font-size: 15px; font-weight: 300; color: #222;
-      letter-spacing: -0.01em; line-height: 1.2; margin-bottom: 5px;
-    }
-    .v7f-phone { font-size: 8px; color: #ccc; letter-spacing: 0.06em; }
-    .v7f-bot { display: flex; justify-content: space-between; align-items: center; }
-    .v7f-email { font-size: 7.5px; color: #ccc; letter-spacing: 0.02em; }
-    .v7f-web   { font-size: 7.5px; color: #2d5a27; letter-spacing: 0.04em; opacity: 0.7; }
-
-    .v7b {
-      background: #fafaf8;
-      display: flex; flex-direction: column; justify-content: space-between;
-      padding: 22px 26px 18px;
-    }
-    .v7b-logo { height: 28px; width: auto; object-fit: contain; opacity: 0.3; margin: 0 0 0 -6px; }
-    .v7b-mid { display: flex; flex-direction: column; gap: 3px; }
-    .v7b-tag-row { display: flex; gap: 8px; }
-    .v7b-tag { font-size: 7px; color: #d8d8d8; letter-spacing: 0.14em; text-transform: uppercase; }
-    .v7b-bot { display: flex; justify-content: space-between; align-items: flex-end; }
-    .v7b-addr { font-size: 7px; color: #d0d0d0; letter-spacing: 0.02em; line-height: 1.65; }
-    .v7b-web  { font-size: 8px; color: #2d5a27; opacity: 0.6; letter-spacing: 0.05em; }
-
-
-    /* ══════════════════════════════════════════════════
-       V8 — GREEN EDGE (single stripe accent)
-    ══════════════════════════════════════════════════ */
-    .v8f {
-      background: #fff;
-      display: flex; align-items: stretch;
-    }
-    .v8f-stripe { width: 4px; background: #2d5a27; flex-shrink: 0; }
-    .v8f-body {
-      flex: 1; display: flex; flex-direction: column; justify-content: space-between;
-      padding: 18px 20px 15px;
-    }
-    .v8f-top { display: flex; justify-content: space-between; align-items: flex-start; }
-    .v8f-logo { height: 32px; width: auto; object-fit: contain; margin: -4px 0 0 -6px; }
-    .v8f-loc { font-size: 7.5px; color: #c8c8c8; letter-spacing: 0.1em; text-align: right; line-height: 1.7; }
-    .v8f-people { display: flex; align-items: center; }
-    .v8f-person { flex: 1; }
-    .v8f-person:first-child { padding-right: 14px; border-right: 1px solid #f0f0f0; }
-    .v8f-person:last-child  { padding-left: 14px; }
-    .v8f-name {
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      font-size: 14px; font-weight: 500; color: #111;
-      letter-spacing: -0.01em; line-height: 1.2; margin-bottom: 4px;
-    }
-    .v8f-phone { font-size: 8px; color: #bbb; letter-spacing: 0.06em; }
-    .v8f-bot { display: flex; justify-content: space-between; align-items: center; }
-    .v8f-email { font-size: 7.5px; color: #bbb; letter-spacing: 0.02em; }
-    .v8f-web   { font-size: 7.5px; font-weight: 600; color: #2d5a27; letter-spacing: 0.04em; }
-
-    .v8b {
-      background: #fff;
-      display: flex; align-items: stretch;
-    }
-    .v8b-stripe { width: 4px; background: #2d5a27; flex-shrink: 0; }
-    .v8b-body {
-      flex: 1; display: flex; flex-direction: column; justify-content: space-between;
-      padding: 18px 20px 15px;
-    }
-    .v8b-logo { height: 32px; width: auto; object-fit: contain; margin: -4px 0 0 -6px; }
-    .v8b-tags { display: flex; flex-wrap: wrap; gap: 3px; align-items: center; }
-    .v8b-tag { font-size: 6.5px; letter-spacing: 0.16em; text-transform: uppercase; color: #ccc; }
-    .v8b-tag + .v8b-tag::before { content: '·'; margin-right: 3px; color: #ddd; }
-    .v8b-bot { display: flex; justify-content: space-between; align-items: flex-end; }
-    .v8b-addr { font-size: 7px; color: #ccc; letter-spacing: 0.02em; line-height: 1.65; }
-    .v8b-web  { font-size: 8px; font-weight: 600; color: #2d5a27; letter-spacing: 0.04em; }
-
-
-    /* ══════════════════════════════════════════════════
-       V9 — MONO (monospaced, receipt-like precision)
-    ══════════════════════════════════════════════════ */
-    .v9f {
-      background: #fff;
-      display: flex; flex-direction: column; justify-content: space-between;
-      padding: 18px 22px 15px; font-family: 'Courier New', 'Courier', monospace;
-    }
-    .v9f-top { display: flex; justify-content: space-between; align-items: flex-start; }
-    .v9f-co { font-size: 9.5px; font-weight: 700; letter-spacing: 0.08em; color: #111; text-transform: uppercase; }
-    .v9f-loc { font-size: 7.5px; color: #aaa; text-align: right; line-height: 1.65; letter-spacing: 0.04em; }
-    .v9f-rule { height: 1px; background: #111; }
-    .v9f-people { display: flex; align-items: flex-start; gap: 0; }
-    .v9f-person { flex: 1; }
-    .v9f-person:first-child { padding-right: 14px; }
-    .v9f-person:last-child  { padding-left: 14px; border-left: 1px solid #e0e0e0; }
-    .v9f-label { font-size: 6.5px; letter-spacing: 0.16em; color: #bbb; text-transform: uppercase; margin-bottom: 3px; }
-    .v9f-name  { font-size: 12.5px; font-weight: 700; color: #111; letter-spacing: 0.02em; line-height: 1.2; margin-bottom: 3px; }
-    .v9f-phone { font-size: 8.5px; color: #555; letter-spacing: 0.04em; }
-    .v9f-rule2 { height: 1px; background: #111; }
-    .v9f-bot { display: flex; justify-content: space-between; align-items: center; }
-    .v9f-email { font-size: 7.5px; color: #888; letter-spacing: 0.02em; }
-    .v9f-web   { font-size: 7.5px; color: #111; font-weight: 700; letter-spacing: 0.04em; }
-
-    .v9b {
-      background: #fff;
-      display: flex; flex-direction: column; justify-content: space-between;
-      padding: 18px 22px 15px; font-family: 'Courier New', 'Courier', monospace;
-    }
-    .v9b-header { display: flex; justify-content: space-between; align-items: flex-start; }
-    .v9b-logo { height: 30px; width: auto; object-fit: contain; margin: -4px 0 0 -8px; }
-    .v9b-date { font-size: 7px; color: #ccc; letter-spacing: 0.06em; text-align: right; }
-    .v9b-rule { height: 1px; background: #111; }
-    .v9b-tags { display: flex; flex-wrap: wrap; gap: 6px; }
-    .v9b-tag  { font-size: 7px; color: #888; letter-spacing: 0.1em; text-transform: uppercase; }
-    .v9b-rule2 { height: 1px; background: #ddd; }
-    .v9b-bot { display: flex; justify-content: space-between; align-items: flex-end; }
-    .v9b-addr { font-size: 6.5px; color: #aaa; letter-spacing: 0.04em; line-height: 1.7; }
-    .v9b-web  { font-size: 8px; font-weight: 700; color: #111; letter-spacing: 0.04em; }
-
-
-    /* ══════════════════════════════════════════════════
-       V10 — CHARCOAL (dark, pure type)
-    ══════════════════════════════════════════════════ */
-    .v10f {
-      background: #1c1c1e;
-      display: flex; flex-direction: column; justify-content: space-between;
-      padding: 20px 24px 16px;
-    }
-    .v10f-top { display: flex; justify-content: space-between; align-items: flex-start; }
-    .v10f-logo { height: 36px; width: auto; object-fit: contain; filter: brightness(0) invert(1); opacity: 0.4; margin: -4px 0 0 -8px; }
-    .v10f-loc { font-size: 7.5px; color: #444; letter-spacing: 0.1em; text-align: right; line-height: 1.7; }
-    .v10f-people { display: flex; align-items: center; }
-    .v10f-person { flex: 1; }
-    .v10f-person:first-child { padding-right: 16px; border-right: 1px solid #2e2e2e; }
-    .v10f-person:last-child  { padding-left: 16px; }
-    .v10f-name {
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      font-size: 14.5px; font-weight: 400; color: #f0f0f0;
-      letter-spacing: -0.01em; line-height: 1.2; margin-bottom: 4px;
-    }
-    .v10f-phone { font-size: 8px; color: #555; letter-spacing: 0.06em; }
-    .v10f-bot {
-      display: flex; justify-content: space-between; align-items: center;
-      border-top: 1px solid #2a2a2a; padding-top: 9px;
-    }
-    .v10f-email { font-size: 7.5px; color: #444; letter-spacing: 0.02em; }
-    .v10f-web   { font-size: 7.5px; color: #5a9e52; letter-spacing: 0.06em; }
-
-    .v10b {
-      background: #141414;
-      display: flex; flex-direction: column; justify-content: space-between;
-      padding: 20px 24px 16px;
-    }
-    .v10b-logo { height: 34px; width: auto; object-fit: contain; filter: brightness(0) invert(1); opacity: 0.25; margin: -4px 0 0 -8px; }
-    .v10b-tags { display: flex; flex-wrap: wrap; gap: 4px; }
-    .v10b-tag  { font-size: 6.5px; letter-spacing: 0.16em; text-transform: uppercase; color: #333; }
-    .v10b-tag + .v10b-tag::before { content: '·'; margin-right: 4px; color: #2a2a2a; }
-    .v10b-bot { display: flex; justify-content: space-between; align-items: flex-end; border-top: 1px solid #222; padding-top: 9px; }
-    .v10b-addr { font-size: 7px; color: #3a3a3a; letter-spacing: 0.02em; line-height: 1.65; }
-    .v10b-web  { font-size: 8px; color: #5a9e52; letter-spacing: 0.06em; }
-
-
-    /* ══════════════════════════════════════════════════
-       PRINT
-    ══════════════════════════════════════════════════ */
-    @media print {
-      body { background: white; display: block; padding: 0; }
-      .tab-nav, .card-label, .print-btn, .page-title { display: none !important; }
-      .tab-panel { display: none !important; }
-      .tab-panel.printing {
-        display: flex !important;
-        flex-direction: row;
-      }
-      .tab-panel.printing .cards-row {
-        flex-direction: column;
-        gap: 0;
-      }
-      .card {
-        border-radius: 0;
-        width: 3.5in; height: 2in;
-        page-break-after: always;
-        break-after: page;
-      }
-      .card:last-child {
-        page-break-after: auto;
-        break-after: auto;
-      }
-    }
-  </style>
+/* ── PRINT ── */
+@media print{
+  body{background:white;display:block;padding:0}
+  .nav-wrap,.card-label,.print-btn,.studio-title,.pkg-size-lbl,.section-hd{display:none!important}
+  .cat-panel{display:none!important}
+  .cat-panel.printing{display:flex!important;flex-direction:column;align-items:flex-start}
+  .cat-panel.printing .bc-vp{display:none!important}
+  .cat-panel.printing .bc-vp.active{display:flex!important;flex-direction:column}
+  .cards-row{flex-direction:column;gap:0}
+  .card{border-radius:0;width:3.5in;height:2in;page-break-after:always;break-after:page}
+  .card:last-child{page-break-after:auto;break-after:auto}
+}
+</style>
 </head>
 <body>
 
-  <p class="page-title">RM Psyllium — Business Card Studio</p>
+<p class="studio-title">RM Psyllium — Brand Identity Studio</p>
 
-  <nav class="tab-nav">
-    <button class="tab-btn active" data-tab="1">Warm Classic</button>
-    <button class="tab-btn" data-tab="2">Dark Luxury</button>
-    <button class="tab-btn" data-tab="3">Swiss Minimal</button>
-    <button class="tab-btn" data-tab="4">Bold Split</button>
-    <button class="tab-btn" data-tab="5">Natural Kraft</button>
-    <button class="tab-btn" data-tab="6">Ruled White</button>
-    <button class="tab-btn" data-tab="7">Ghost</button>
-    <button class="tab-btn" data-tab="8">Green Edge</button>
-    <button class="tab-btn" data-tab="9">Mono</button>
-    <button class="tab-btn" data-tab="10">Charcoal</button>
-  </nav>
+<div class="nav-wrap">
+  <div class="tab-row var-row">
+    <button class="tab-btn var-tab active" data-v="1">Classic</button>
+    <button class="tab-btn var-tab" data-v="2">Luxury</button>
+    <button class="tab-btn var-tab" data-v="3">Swiss</button>
+    <button class="tab-btn var-tab" data-v="4">Split</button>
+    <button class="tab-btn var-tab" data-v="5">Kraft</button>
+    <button class="tab-btn var-tab" data-v="6">Ruled</button>
+    <button class="tab-btn var-tab" data-v="7">Ghost</button>
+    <button class="tab-btn var-tab" data-v="8">Edge</button>
+    <button class="tab-btn var-tab" data-v="9">Mono</button>
+    <button class="tab-btn var-tab" data-v="10">Charcoal</button>
+  </div>
+</div>
 
 
-  <!-- ══ V1: WARM CLASSIC ══ -->
-  <div class="tab-panel active" id="tab-1">
+<!-- ══════════════ BUSINESS CARD ══════════════ -->
+<div class="cat-panel" data-cat="bc">
+<div class="section-hd">Business Card</div>
+
+  <div class="bc-vp active" data-v="1">
     <div class="cards-row">
-      <div class="card-wrap">
-        <div class="card-label">Front</div>
-        <div class="card v1f">
-          <div class="v1f-top">
-            <img class="v1f-logo" src="logo.png" alt="RM Psyllium" />
-            <div class="v1f-loc">Siddhpur<br>Gujarat, India</div>
-          </div>
-          <div class="v1f-people">
-            <div class="v1f-person">
-              <div class="v1f-name">Mithilesh Parmar</div>
-              <div class="v1f-phone">+91 89498 17791</div>
-            </div>
-            <div class="v1f-person">
-              <div class="v1f-name">Ravi Joshi</div>
-              <div class="v1f-phone">+91 80000 08381</div>
-            </div>
-          </div>
-          <div class="v1f-bottom">
-            <span class="v1f-email">export@rmpsyllium.com</span>
-            <span class="v1f-web">rmpsyllium.com</span>
-          </div>
-        </div>
-      </div>
-      <div class="card-wrap">
-        <div class="card-label">Back</div>
-        <div class="card v1b">
-          <div class="v1b-wm">RM</div>
-          <img class="v1b-logo" src="logo.png" alt="RM Psyllium" />
-          <div class="v1b-tags">
-            <span class="v1b-tag">Husk</span>
-            <span class="v1b-tag">Powder</span>
-            <span class="v1b-tag">Seeds</span>
-            <span class="v1b-tag">Organic</span>
-            <span class="v1b-tag">Feed</span>
-            <span class="v1b-tag">Industrial</span>
-          </div>
-          <div class="v1b-bot">
-            <div>
-              <div class="v1b-addr">Patan Road, Khali Char Rasta, Nedra</div>
-              <div class="v1b-addr">Siddhpur, Gujarat 384151</div>
-            </div>
-            <div class="v1b-web">rmpsyllium.com</div>
-          </div>
-        </div>
-      </div>
+      <div class="card-wrap"><div class="card-label">Front</div><div class="card v1f"><div class="v1f-top"><img class="v1f-logo" src="logo.png" alt="RM Psyllium"><div class="v1f-loc">Siddhpur<br>Gujarat, India</div></div><div class="v1f-people"><div class="v1f-person"><div class="v1f-name">Mithilesh Parmar</div><div class="v1f-phone">+91 89498 17791</div></div><div class="v1f-person"><div class="v1f-name">Ravi Joshi</div><div class="v1f-phone">+91 80000 08381</div></div></div><div class="v1f-bottom"><span class="v1f-email">export@rmpsyllium.com</span><span class="v1f-web">rmpsyllium.com</span></div></div></div>
+      <div class="card-wrap"><div class="card-label">Back</div><div class="card v1b"><div class="v1b-wm">RM</div><img class="v1b-logo" src="logo.png" alt="RM Psyllium"><div class="v1b-tags"><span class="v1b-tag">Husk</span><span class="v1b-tag">Powder</span><span class="v1b-tag">Seeds</span><span class="v1b-tag">Organic</span><span class="v1b-tag">Feed</span><span class="v1b-tag">Industrial</span></div><div class="v1b-bot"><div><div class="v1b-addr">Patan Road, Khali Char Rasta, Nedra</div><div class="v1b-addr">Siddhpur, Gujarat 384151</div></div><div class="v1b-web">rmpsyllium.com</div></div></div></div>
     </div>
-    <button class="print-btn" onclick="printVariant('tab-1')">Print this variant</button>
   </div>
 
-
-  <!-- ══ V2: DARK LUXURY ══ -->
-  <div class="tab-panel" id="tab-2">
+  <div class="bc-vp" data-v="2">
     <div class="cards-row">
-      <div class="card-wrap">
-        <div class="card-label">Front</div>
-        <div class="card v2f">
-          <div class="v2f-top">
-            <img class="v2f-logo" src="logo.png" alt="RM Psyllium" />
-            <div class="v2f-loc">Siddhpur<br>Gujarat, India</div>
-          </div>
-          <div class="v2f-rule"></div>
-          <div class="v2f-people">
-            <div class="v2f-person">
-              <div class="v2f-name">Mithilesh Parmar</div>
-              <div class="v2f-phone">+91 89498 17791</div>
-            </div>
-            <div class="v2f-person">
-              <div class="v2f-name">Ravi Joshi</div>
-              <div class="v2f-phone">+91 80000 08381</div>
-            </div>
-          </div>
-          <div class="v2f-rule"></div>
-          <div class="v2f-bottom">
-            <span class="v2f-email">export@rmpsyllium.com</span>
-            <span class="v2f-web">rmpsyllium.com</span>
-          </div>
-        </div>
-      </div>
-      <div class="card-wrap">
-        <div class="card-label">Back</div>
-        <div class="card v2b">
-          <img class="v2b-logo" src="logo.png" alt="RM Psyllium" />
-          <div class="v2b-tags">
-            <span class="v2b-tag">Husk</span>
-            <span class="v2b-tag">Powder</span>
-            <span class="v2b-tag">Seeds</span>
-            <span class="v2b-tag">Organic</span>
-            <span class="v2b-tag">Feed</span>
-            <span class="v2b-tag">Industrial</span>
-          </div>
-          <div class="v2b-bot">
-            <div>
-              <div class="v2b-addr">Patan Road, Khali Char Rasta, Nedra</div>
-              <div class="v2b-addr">Siddhpur, Gujarat 384151</div>
-            </div>
-            <div class="v2b-web">rmpsyllium.com</div>
-          </div>
-        </div>
-      </div>
+      <div class="card-wrap"><div class="card-label">Front</div><div class="card v2f"><div class="v2f-top"><img class="v2f-logo" src="logo.png" alt="RM Psyllium"><div class="v2f-loc">Siddhpur<br>Gujarat, India</div></div><div class="v2f-rule"></div><div class="v2f-people"><div class="v2f-person"><div class="v2f-name">Mithilesh Parmar</div><div class="v2f-phone">+91 89498 17791</div></div><div class="v2f-person"><div class="v2f-name">Ravi Joshi</div><div class="v2f-phone">+91 80000 08381</div></div></div><div class="v2f-rule"></div><div class="v2f-bottom"><span class="v2f-email">export@rmpsyllium.com</span><span class="v2f-web">rmpsyllium.com</span></div></div></div>
+      <div class="card-wrap"><div class="card-label">Back</div><div class="card v2b"><img class="v2b-logo" src="logo.png" alt="RM Psyllium"><div class="v2b-tags"><span class="v2b-tag">Husk</span><span class="v2b-tag">Powder</span><span class="v2b-tag">Seeds</span><span class="v2b-tag">Organic</span><span class="v2b-tag">Feed</span><span class="v2b-tag">Industrial</span></div><div class="v2b-bot"><div><div class="v2b-addr">Patan Road, Khali Char Rasta, Nedra</div><div class="v2b-addr">Siddhpur, Gujarat 384151</div></div><div class="v2b-web">rmpsyllium.com</div></div></div></div>
     </div>
-    <button class="print-btn" onclick="printVariant('tab-2')">Print this variant</button>
   </div>
 
-
-  <!-- ══ V3: SWISS MINIMAL ══ -->
-  <div class="tab-panel" id="tab-3">
+  <div class="bc-vp" data-v="3">
     <div class="cards-row">
-      <div class="card-wrap">
-        <div class="card-label">Front</div>
-        <div class="card v3f">
-          <div class="v3f-top">
-            <img class="v3f-logo" src="logo.png" alt="RM Psyllium" />
-            <div class="v3f-origin">Psyllium Husk<br>Export · Gujarat</div>
-          </div>
-          <div class="v3f-rule"></div>
-          <div class="v3f-people">
-            <div class="v3f-person">
-              <div class="v3f-name">Mithilesh<br>Parmar</div>
-              <div class="v3f-phone">+91 89498 17791</div>
-            </div>
-            <div class="v3f-person">
-              <div class="v3f-name">Ravi<br>Joshi</div>
-              <div class="v3f-phone">+91 80000 08381</div>
-            </div>
-          </div>
-          <div class="v3f-bottom">
-            <span class="v3f-email">export@rmpsyllium.com</span>
-            <span class="v3f-web">rmpsyllium.com</span>
-          </div>
-        </div>
-      </div>
-      <div class="card-wrap">
-        <div class="card-label">Back</div>
-        <div class="card v3b">
-          <img class="v3b-logo" src="logo.png" alt="RM Psyllium" />
-          <div class="v3b-mid">
-            <span class="v3b-tag">Husk</span>
-            <span class="v3b-tag">Powder</span>
-            <span class="v3b-tag">Seeds</span>
-            <span class="v3b-tag">Organic</span>
-            <span class="v3b-tag">Feed</span>
-            <span class="v3b-tag">Industrial</span>
-          </div>
-          <div class="v3b-bot">
-            <div>
-              <div class="v3b-addr">Patan Road, Khali Char Rasta, Nedra</div>
-              <div class="v3b-addr">Siddhpur, Gujarat 384151</div>
-            </div>
-            <div class="v3b-web">rmpsyllium.com</div>
-          </div>
-        </div>
-      </div>
+      <div class="card-wrap"><div class="card-label">Front</div><div class="card v3f"><div class="v3f-top"><img class="v3f-logo" src="logo.png" alt="RM Psyllium"><div class="v3f-origin">Psyllium Husk<br>Export · Gujarat</div></div><div class="v3f-rule"></div><div class="v3f-people"><div class="v3f-person"><div class="v3f-name">Mithilesh<br>Parmar</div><div class="v3f-phone">+91 89498 17791</div></div><div class="v3f-person"><div class="v3f-name">Ravi<br>Joshi</div><div class="v3f-phone">+91 80000 08381</div></div></div><div class="v3f-bottom"><span class="v3f-email">export@rmpsyllium.com</span><span class="v3f-web">rmpsyllium.com</span></div></div></div>
+      <div class="card-wrap"><div class="card-label">Back</div><div class="card v3b"><img class="v3b-logo" src="logo.png" alt="RM Psyllium"><div class="v3b-mid"><span class="v3b-tag">Husk</span><span class="v3b-tag">Powder</span><span class="v3b-tag">Seeds</span><span class="v3b-tag">Organic</span><span class="v3b-tag">Feed</span><span class="v3b-tag">Industrial</span></div><div class="v3b-bot"><div><div class="v3b-addr">Patan Road, Khali Char Rasta, Nedra</div><div class="v3b-addr">Siddhpur, Gujarat 384151</div></div><div class="v3b-web">rmpsyllium.com</div></div></div></div>
     </div>
-    <button class="print-btn" onclick="printVariant('tab-3')">Print this variant</button>
   </div>
 
-
-  <!-- ══ V4: BOLD SPLIT ══ -->
-  <div class="tab-panel" id="tab-4">
+  <div class="bc-vp" data-v="4">
     <div class="cards-row">
-      <div class="card-wrap">
-        <div class="card-label">Front</div>
-        <div class="card v4f">
-          <div class="v4f-green">
-            <img class="v4f-logo" src="logo.png" alt="RM Psyllium" />
-            <div class="v4f-loc">Siddhpur<br>Gujarat</div>
-          </div>
-          <div class="v4f-white">
-            <div class="v4f-accent"></div>
-            <div class="v4f-person">
-              <div class="v4f-name">Mithilesh Parmar</div>
-              <div class="v4f-phone">+91 89498 17791</div>
-            </div>
-            <div class="v4f-person">
-              <div class="v4f-name">Ravi Joshi</div>
-              <div class="v4f-phone">+91 80000 08381</div>
-            </div>
-          </div>
-          <div class="v4f-strip">
-            <span class="v4f-email">export@rmpsyllium.com</span>
-            <span class="v4f-web">rmpsyllium.com</span>
-          </div>
-        </div>
-      </div>
-      <div class="card-wrap">
-        <div class="card-label">Back</div>
-        <div class="card v4b">
-          <div class="v4b-white">
-            <img class="v4b-logo" src="logo.png" alt="RM Psyllium" />
-            <div>
-              <div class="v4b-addr">Patan Road, Khali Char Rasta</div>
-              <div class="v4b-addr">Siddhpur, Gujarat 384151</div>
-            </div>
-          </div>
-          <div class="v4b-green">
-            <div class="v4b-tags">
-              <span class="v4b-tag">Husk</span>
-              <span class="v4b-tag">Powder</span>
-              <span class="v4b-tag">Seeds</span>
-              <span class="v4b-tag">Organic</span>
-              <span class="v4b-tag">Feed</span>
-              <span class="v4b-tag">Industrial</span>
-            </div>
-            <div class="v4b-web">rmpsyllium.com</div>
-          </div>
-        </div>
-      </div>
+      <div class="card-wrap"><div class="card-label">Front</div><div class="card v4f"><div class="v4f-green"><img class="v4f-logo" src="logo.png" alt="RM Psyllium"><div class="v4f-loc">Siddhpur<br>Gujarat</div></div><div class="v4f-white"><div class="v4f-accent"></div><div class="v4f-person"><div class="v4f-name">Mithilesh Parmar</div><div class="v4f-phone">+91 89498 17791</div></div><div class="v4f-person"><div class="v4f-name">Ravi Joshi</div><div class="v4f-phone">+91 80000 08381</div></div></div><div class="v4f-strip"><span class="v4f-email">export@rmpsyllium.com</span><span class="v4f-web">rmpsyllium.com</span></div></div></div>
+      <div class="card-wrap"><div class="card-label">Back</div><div class="card v4b"><div class="v4b-white"><img class="v4b-logo" src="logo.png" alt="RM Psyllium"><div><div class="v4b-addr">Patan Road, Khali Char Rasta</div><div class="v4b-addr">Siddhpur, Gujarat 384151</div></div></div><div class="v4b-green"><div class="v4b-tags"><span class="v4b-tag">Husk</span><span class="v4b-tag">Powder</span><span class="v4b-tag">Seeds</span><span class="v4b-tag">Organic</span><span class="v4b-tag">Feed</span><span class="v4b-tag">Industrial</span></div><div class="v4b-web">rmpsyllium.com</div></div></div></div>
     </div>
-    <button class="print-btn" onclick="printVariant('tab-4')">Print this variant</button>
   </div>
 
-
-  <!-- ══ V5: NATURAL KRAFT ══ -->
-  <div class="tab-panel" id="tab-5">
+  <div class="bc-vp" data-v="5">
     <div class="cards-row">
-      <div class="card-wrap">
-        <div class="card-label">Front</div>
-        <div class="card v5f">
-          <div class="v5f-top">
-            <img class="v5f-logo" src="logo.png" alt="RM Psyllium" />
-            <div class="v5f-loc">Siddhpur<br>Gujarat, India</div>
-          </div>
-          <div class="v5f-people">
-            <div class="v5f-person">
-              <div class="v5f-name">Mithilesh Parmar</div>
-              <div class="v5f-phone">+91 89498 17791</div>
-            </div>
-            <div class="v5f-person">
-              <div class="v5f-name">Ravi Joshi</div>
-              <div class="v5f-phone">+91 80000 08381</div>
-            </div>
-          </div>
-          <div class="v5f-bottom">
-            <span class="v5f-email">export@rmpsyllium.com</span>
-            <span class="v5f-web">rmpsyllium.com</span>
-          </div>
-        </div>
-      </div>
-      <div class="card-wrap">
-        <div class="card-label">Back</div>
-        <div class="card v5b">
-          <div class="v5b-dot"></div>
-          <img class="v5b-logo" src="logo.png" alt="RM Psyllium" />
-          <div class="v5b-tags">
-            <span class="v5b-tag">Husk</span>
-            <span class="v5b-tag">Powder</span>
-            <span class="v5b-tag">Seeds</span>
-            <span class="v5b-tag">Organic</span>
-            <span class="v5b-tag">Feed</span>
-            <span class="v5b-tag">Industrial</span>
-          </div>
-          <div class="v5b-bot">
-            <div>
-              <div class="v5b-addr">Patan Road, Khali Char Rasta, Nedra</div>
-              <div class="v5b-addr">Siddhpur, Gujarat 384151</div>
-            </div>
-            <div class="v5b-web">rmpsyllium.com</div>
-          </div>
-        </div>
-      </div>
+      <div class="card-wrap"><div class="card-label">Front</div><div class="card v5f"><div class="v5f-top"><img class="v5f-logo" src="logo.png" alt="RM Psyllium"><div class="v5f-loc">Siddhpur<br>Gujarat, India</div></div><div class="v5f-people"><div class="v5f-person"><div class="v5f-name">Mithilesh Parmar</div><div class="v5f-phone">+91 89498 17791</div></div><div class="v5f-person"><div class="v5f-name">Ravi Joshi</div><div class="v5f-phone">+91 80000 08381</div></div></div><div class="v5f-bottom"><span class="v5f-email">export@rmpsyllium.com</span><span class="v5f-web">rmpsyllium.com</span></div></div></div>
+      <div class="card-wrap"><div class="card-label">Back</div><div class="card v5b"><div class="v5b-dot"></div><img class="v5b-logo" src="logo.png" alt="RM Psyllium"><div class="v5b-tags"><span class="v5b-tag">Husk</span><span class="v5b-tag">Powder</span><span class="v5b-tag">Seeds</span><span class="v5b-tag">Organic</span><span class="v5b-tag">Feed</span><span class="v5b-tag">Industrial</span></div><div class="v5b-bot"><div><div class="v5b-addr">Patan Road, Khali Char Rasta, Nedra</div><div class="v5b-addr">Siddhpur, Gujarat 384151</div></div><div class="v5b-web">rmpsyllium.com</div></div></div></div>
     </div>
-    <button class="print-btn" onclick="printVariant('tab-5')">Print this variant</button>
   </div>
 
-
-  <!-- ══ V6: RULED WHITE ══ -->
-  <div class="tab-panel" id="tab-6">
+  <div class="bc-vp" data-v="6">
     <div class="cards-row">
-      <div class="card-wrap">
-        <div class="card-label">Front</div>
-        <div class="card v6f">
-          <div class="v6f-top">
-            <span class="v6f-co">RM Psyllium</span>
-            <span class="v6f-loc">Siddhpur, Gujarat</span>
-          </div>
-          <div class="v6f-mid">
-            <div class="v6f-person">
-              <div class="v6f-name">Mithilesh Parmar</div>
-              <div class="v6f-phone">+91 89498 17791</div>
-            </div>
-            <div class="v6f-person">
-              <div class="v6f-name">Ravi Joshi</div>
-              <div class="v6f-phone">+91 80000 08381</div>
-            </div>
-          </div>
-          <div class="v6f-bot">
-            <span class="v6f-email">export@rmpsyllium.com</span>
-            <span class="v6f-web">rmpsyllium.com</span>
-          </div>
-        </div>
-      </div>
-      <div class="card-wrap">
-        <div class="card-label">Back</div>
-        <div class="card v6b">
-          <div class="v6b-top">
-            <img class="v6b-logo" src="logo.png" alt="RM Psyllium" />
-          </div>
-          <div class="v6b-mid">
-            <span class="v6b-tag">Husk</span>
-            <span class="v6b-tag">Powder</span>
-            <span class="v6b-tag">Seeds</span>
-            <span class="v6b-tag">Organic</span>
-            <span class="v6b-tag">Feed</span>
-            <span class="v6b-tag">Industrial</span>
-          </div>
-          <div class="v6b-bot">
-            <div>
-              <div class="v6b-addr">Patan Road, Khali Char Rasta, Nedra</div>
-              <div class="v6b-addr">Siddhpur, Gujarat 384151</div>
-            </div>
-            <div class="v6b-web">rmpsyllium.com</div>
-          </div>
-        </div>
-      </div>
+      <div class="card-wrap"><div class="card-label">Front</div><div class="card v6f"><div class="v6f-top"><span class="v6f-co">RM Psyllium</span><span class="v6f-loc">Siddhpur, Gujarat</span></div><div class="v6f-mid"><div class="v6f-person"><div class="v6f-name">Mithilesh Parmar</div><div class="v6f-phone">+91 89498 17791</div></div><div class="v6f-person"><div class="v6f-name">Ravi Joshi</div><div class="v6f-phone">+91 80000 08381</div></div></div><div class="v6f-bot"><span class="v6f-email">export@rmpsyllium.com</span><span class="v6f-web">rmpsyllium.com</span></div></div></div>
+      <div class="card-wrap"><div class="card-label">Back</div><div class="card v6b"><div class="v6b-top"><img class="v6b-logo" src="logo.png" alt="RM Psyllium"></div><div class="v6b-mid"><span class="v6b-tag">Husk</span><span class="v6b-tag">Powder</span><span class="v6b-tag">Seeds</span><span class="v6b-tag">Organic</span><span class="v6b-tag">Feed</span><span class="v6b-tag">Industrial</span></div><div class="v6b-bot"><div><div class="v6b-addr">Patan Road, Khali Char Rasta, Nedra</div><div class="v6b-addr">Siddhpur, Gujarat 384151</div></div><div class="v6b-web">rmpsyllium.com</div></div></div></div>
     </div>
-    <button class="print-btn" onclick="printVariant('tab-6')">Print this variant</button>
   </div>
 
-
-  <!-- ══ V7: GHOST ══ -->
-  <div class="tab-panel" id="tab-7">
+  <div class="bc-vp" data-v="7">
     <div class="cards-row">
-      <div class="card-wrap">
-        <div class="card-label">Front</div>
-        <div class="card v7f">
-          <div class="v7f-top">
-            <img class="v7f-logo" src="logo.png" alt="RM Psyllium" />
-            <div class="v7f-loc">Siddhpur<br>Gujarat, India</div>
-          </div>
-          <div class="v7f-people">
-            <div class="v7f-person">
-              <div class="v7f-name">Mithilesh Parmar</div>
-              <div class="v7f-phone">+91 89498 17791</div>
-            </div>
-            <div class="v7f-person">
-              <div class="v7f-name">Ravi Joshi</div>
-              <div class="v7f-phone">+91 80000 08381</div>
-            </div>
-          </div>
-          <div class="v7f-bot">
-            <span class="v7f-email">export@rmpsyllium.com</span>
-            <span class="v7f-web">rmpsyllium.com</span>
-          </div>
-        </div>
-      </div>
-      <div class="card-wrap">
-        <div class="card-label">Back</div>
-        <div class="card v7b">
-          <img class="v7b-logo" src="logo.png" alt="RM Psyllium" />
-          <div class="v7b-mid">
-            <div class="v7b-tag-row">
-              <span class="v7b-tag">Husk</span>
-              <span class="v7b-tag">Powder</span>
-              <span class="v7b-tag">Seeds</span>
-            </div>
-            <div class="v7b-tag-row">
-              <span class="v7b-tag">Organic</span>
-              <span class="v7b-tag">Feed</span>
-              <span class="v7b-tag">Industrial</span>
-            </div>
-          </div>
-          <div class="v7b-bot">
-            <div>
-              <div class="v7b-addr">Patan Road, Khali Char Rasta, Nedra</div>
-              <div class="v7b-addr">Siddhpur, Gujarat 384151</div>
-            </div>
-            <div class="v7b-web">rmpsyllium.com</div>
-          </div>
-        </div>
-      </div>
+      <div class="card-wrap"><div class="card-label">Front</div><div class="card v7f"><div class="v7f-top"><img class="v7f-logo" src="logo.png" alt="RM Psyllium"><div class="v7f-loc">Siddhpur<br>Gujarat, India</div></div><div class="v7f-people"><div class="v7f-person"><div class="v7f-name">Mithilesh Parmar</div><div class="v7f-phone">+91 89498 17791</div></div><div class="v7f-person"><div class="v7f-name">Ravi Joshi</div><div class="v7f-phone">+91 80000 08381</div></div></div><div class="v7f-bot"><span class="v7f-email">export@rmpsyllium.com</span><span class="v7f-web">rmpsyllium.com</span></div></div></div>
+      <div class="card-wrap"><div class="card-label">Back</div><div class="card v7b"><img class="v7b-logo" src="logo.png" alt="RM Psyllium"><div class="v7b-mid"><div class="v7b-tag-row"><span class="v7b-tag">Husk</span><span class="v7b-tag">Powder</span><span class="v7b-tag">Seeds</span></div><div class="v7b-tag-row"><span class="v7b-tag">Organic</span><span class="v7b-tag">Feed</span><span class="v7b-tag">Industrial</span></div></div><div class="v7b-bot"><div><div class="v7b-addr">Patan Road, Khali Char Rasta, Nedra</div><div class="v7b-addr">Siddhpur, Gujarat 384151</div></div><div class="v7b-web">rmpsyllium.com</div></div></div></div>
     </div>
-    <button class="print-btn" onclick="printVariant('tab-7')">Print this variant</button>
   </div>
 
-
-  <!-- ══ V8: GREEN EDGE ══ -->
-  <div class="tab-panel" id="tab-8">
+  <div class="bc-vp" data-v="8">
     <div class="cards-row">
-      <div class="card-wrap">
-        <div class="card-label">Front</div>
-        <div class="card v8f">
-          <div class="v8f-stripe"></div>
-          <div class="v8f-body">
-            <div class="v8f-top">
-              <img class="v8f-logo" src="logo.png" alt="RM Psyllium" />
-              <div class="v8f-loc">Siddhpur<br>Gujarat, India</div>
+      <div class="card-wrap"><div class="card-label">Front</div><div class="card v8f"><div class="v8f-stripe"></div><div class="v8f-body"><div class="v8f-top"><img class="v8f-logo" src="logo.png" alt="RM Psyllium"><div class="v8f-loc">Siddhpur<br>Gujarat, India</div></div><div class="v8f-people"><div class="v8f-person"><div class="v8f-name">Mithilesh Parmar</div><div class="v8f-phone">+91 89498 17791</div></div><div class="v8f-person"><div class="v8f-name">Ravi Joshi</div><div class="v8f-phone">+91 80000 08381</div></div></div><div class="v8f-bot"><span class="v8f-email">export@rmpsyllium.com</span><span class="v8f-web">rmpsyllium.com</span></div></div></div></div>
+      <div class="card-wrap"><div class="card-label">Back</div><div class="card v8b"><div class="v8b-stripe"></div><div class="v8b-body"><img class="v8b-logo" src="logo.png" alt="RM Psyllium"><div class="v8b-tags"><span class="v8b-tag">Husk</span><span class="v8b-tag">Powder</span><span class="v8b-tag">Seeds</span><span class="v8b-tag">Organic</span><span class="v8b-tag">Feed</span><span class="v8b-tag">Industrial</span></div><div class="v8b-bot"><div><div class="v8b-addr">Patan Road, Khali Char Rasta, Nedra</div><div class="v8b-addr">Siddhpur, Gujarat 384151</div></div><div class="v8b-web">rmpsyllium.com</div></div></div></div>
+    </div>
+  </div>
+
+  <div class="bc-vp" data-v="9">
+    <div class="cards-row">
+      <div class="card-wrap"><div class="card-label">Front</div><div class="card v9f"><div class="v9f-top"><span class="v9f-co">RM Psyllium</span><div class="v9f-loc">Siddhpur, Gujarat<br>India 384151</div></div><div class="v9f-rule"></div><div class="v9f-people"><div class="v9f-person"><div class="v9f-label">Contact</div><div class="v9f-name">Mithilesh Parmar</div><div class="v9f-phone">+91 89498 17791</div></div><div class="v9f-person"><div class="v9f-label">Contact</div><div class="v9f-name">Ravi Joshi</div><div class="v9f-phone">+91 80000 08381</div></div></div><div class="v9f-rule2"></div><div class="v9f-bot"><span class="v9f-email">export@rmpsyllium.com</span><span class="v9f-web">rmpsyllium.com</span></div></div></div>
+      <div class="card-wrap"><div class="card-label">Back</div><div class="card v9b"><div class="v9b-header"><img class="v9b-logo" src="logo.png" alt="RM Psyllium"><div class="v9b-date">Est. Siddhpur</div></div><div class="v9b-rule"></div><div class="v9b-tags"><span class="v9b-tag">Husk</span><span class="v9b-tag">Powder</span><span class="v9b-tag">Seeds</span><span class="v9b-tag">Organic</span><span class="v9b-tag">Feed</span><span class="v9b-tag">Industrial</span></div><div class="v9b-rule2"></div><div class="v9b-bot"><div><div class="v9b-addr">Patan Road, Khali Char Rasta, Nedra</div><div class="v9b-addr">Siddhpur, Gujarat 384151</div></div><div class="v9b-web">rmpsyllium.com</div></div></div></div>
+    </div>
+  </div>
+
+  <div class="bc-vp" data-v="10">
+    <div class="cards-row">
+      <div class="card-wrap"><div class="card-label">Front</div><div class="card v10f"><div class="v10f-top"><img class="v10f-logo" src="logo.png" alt="RM Psyllium"><div class="v10f-loc">Siddhpur<br>Gujarat, India</div></div><div class="v10f-people"><div class="v10f-person"><div class="v10f-name">Mithilesh Parmar</div><div class="v10f-phone">+91 89498 17791</div></div><div class="v10f-person"><div class="v10f-name">Ravi Joshi</div><div class="v10f-phone">+91 80000 08381</div></div></div><div class="v10f-bot"><span class="v10f-email">export@rmpsyllium.com</span><span class="v10f-web">rmpsyllium.com</span></div></div></div>
+      <div class="card-wrap"><div class="card-label">Back</div><div class="card v10b"><img class="v10b-logo" src="logo.png" alt="RM Psyllium"><div class="v10b-tags"><span class="v10b-tag">Husk</span><span class="v10b-tag">Powder</span><span class="v10b-tag">Seeds</span><span class="v10b-tag">Organic</span><span class="v10b-tag">Feed</span><span class="v10b-tag">Industrial</span></div><div class="v10b-bot"><div><div class="v10b-addr">Patan Road, Khali Char Rasta, Nedra</div><div class="v10b-addr">Siddhpur, Gujarat 384151</div></div><div class="v10b-web">rmpsyllium.com</div></div></div></div>
+    </div>
+  </div>
+
+  <button class="print-btn" onclick="printCat('bc')">Print this variant</button>
+</div>
+
+
+<!-- ══════════════ PACKAGING ══════════════ -->
+<div class="cat-panel" data-cat="pkg">
+<div class="section-hd">Packaging</div>
+  <div class="theme-display tv1" id="pkg-theme">
+    <div class="bags-row">
+
+      <!-- Stand-up Pouch 500g -->
+      <div class="bag-wrap">
+        <div class="bag-size-lbl">Stand-up Pouch · 500 g</div>
+        <div class="sp3">
+          <div class="sp3-side"></div>
+          <div class="sp3-front">
+            <div class="sp3-seal">
+              <img class="sp3-logo" src="logo.png" alt="RM Psyllium">
+              <div class="sp3-wt">500g</div>
             </div>
-            <div class="v8f-people">
-              <div class="v8f-person">
-                <div class="v8f-name">Mithilesh Parmar</div>
-                <div class="v8f-phone">+91 89498 17791</div>
-              </div>
-              <div class="v8f-person">
-                <div class="v8f-name">Ravi Joshi</div>
-                <div class="v8f-phone">+91 80000 08381</div>
+            <div class="sp3-body">
+              <div class="sp3-product">Psyllium<br>Husk 99%</div>
+              <div class="sp3-grade">Premium · Export Grade</div>
+              <div class="sp3-rule"></div>
+              <div class="sp3-origin">Origin: Siddhpur, Gujarat, India<br>Psyllium ovata Forsk.</div>
+              <div class="sp3-certs"><span class="sp3-cert">Organic</span><span class="sp3-cert">Food Grade</span><span class="sp3-cert">Non-GMO</span></div>
+            </div>
+            <div class="sp3-footer">
+              <div class="sp3-barcode"></div>
+              <div class="sp3-web">rmpsyllium.com</div>
+            </div>
+            <div class="sp3-gusset"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PP Woven Bag 25 kg -->
+      <div class="bag-wrap">
+        <div class="bag-size-lbl">PP Woven Bag · 25 kg</div>
+        <div class="pp3">
+          <div class="pp3-side"></div>
+          <div class="pp3-top-face"></div>
+          <div class="pp3-front">
+            <div class="pp3-stitch"></div>
+            <div class="pp3-woven-body">
+              <div class="pp3-label">
+                <div class="pp3-lbl-top">
+                  <img class="pp3-logo" src="logo.png" alt="RM Psyllium">
+                  <div class="pp3-wt">25 KG</div>
+                </div>
+                <div class="pp3-product">Psyllium Husk 99%</div>
+                <div class="pp3-grade">Premium Export Grade · Psyllium ovata Forsk.</div>
+                <div class="pp3-rule"></div>
+                <div class="pp3-info">
+                  <div class="pp3-origin">Origin: Siddhpur, Gujarat, India<br>Batch: _______ &nbsp;|&nbsp; Mfg: _______</div>
+                  <div class="pp3-certs"><span class="pp3-cert">Organic</span><span class="pp3-cert">Food Grade</span></div>
+                </div>
+                <div class="pp3-footer">
+                  <span class="pp3-email">export@rmpsyllium.com</span>
+                  <span class="pp3-web">rmpsyllium.com</span>
+                </div>
               </div>
             </div>
-            <div class="v8f-bot">
-              <span class="v8f-email">export@rmpsyllium.com</span>
-              <span class="v8f-web">rmpsyllium.com</span>
-            </div>
           </div>
         </div>
       </div>
-      <div class="card-wrap">
-        <div class="card-label">Back</div>
-        <div class="card v8b">
-          <div class="v8b-stripe"></div>
-          <div class="v8b-body">
-            <img class="v8b-logo" src="logo.png" alt="RM Psyllium" />
-            <div class="v8b-tags">
-              <span class="v8b-tag">Husk</span>
-              <span class="v8b-tag">Powder</span>
-              <span class="v8b-tag">Seeds</span>
-              <span class="v8b-tag">Organic</span>
-              <span class="v8b-tag">Feed</span>
-              <span class="v8b-tag">Industrial</span>
-            </div>
-            <div class="v8b-bot">
-              <div>
-                <div class="v8b-addr">Patan Road, Khali Char Rasta, Nedra</div>
-                <div class="v8b-addr">Siddhpur, Gujarat 384151</div>
+
+      <!-- FIBC Jumbo Bag 500 kg -->
+      <div class="bag-wrap">
+        <div class="bag-size-lbl">FIBC Jumbo Bag · 500 kg</div>
+        <div class="fb3">
+          <div class="fb3-loops-row">
+            <div class="fb3-loop"></div>
+            <div class="fb3-loop"></div>
+            <div class="fb3-loop"></div>
+            <div class="fb3-loop"></div>
+          </div>
+          <div class="fb3-scene">
+            <div class="fb3-side"></div>
+            <div class="fb3-top-face"></div>
+            <div class="fb3-front">
+              <div class="fb3-band">
+                <img class="fb3-logo" src="logo.png" alt="RM Psyllium">
+                <div class="fb3-wt-area"><span class="fb3-wt-lbl">Net Weight</span><div class="fb3-wt">500 KG</div></div>
               </div>
-              <div class="v8b-web">rmpsyllium.com</div>
+              <div class="fb3-woven-body">
+                <div class="fb3-panel">
+                  <div class="fb3-product">Psyllium Seeds</div>
+                  <div class="fb3-grade">Bulk · Sortex Clean · Psyllium ovata Forsk.</div>
+                  <div class="fb3-rule"></div>
+                  <div class="fb3-meta">
+                    <div class="fb3-origin">Origin: Siddhpur, Gujarat, India<br>Batch: _______ &nbsp;|&nbsp; Mfg: _______ &nbsp;|&nbsp; Exp: _______</div>
+                    <div class="fb3-certs"><span class="fb3-cert">Organic</span><span class="fb3-cert">ISO 22000</span><span class="fb3-cert">Non-GMO</span><span class="fb3-cert">Food Grade</span></div>
+                  </div>
+                  <div class="fb3-footer">
+                    <span class="fb3-addr">Patan Road, Nedra, Siddhpur</span>
+                    <span class="fb3-web">rmpsyllium.com</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+
+    </div>
+  </div>
+  <button class="print-btn" onclick="printCat('pkg')">Print this variant</button>
+</div>
+
+
+<!-- ══════════════ LETTERHEAD ══════════════ -->
+<div class="cat-panel" data-cat="lh">
+<div class="section-hd">Letterhead</div>
+  <div class="theme-display tv1" id="lh-theme">
+    <div class="lh-page">
+      <div class="lh-hd">
+        <img class="lh-logo" src="logo.png" alt="RM Psyllium">
+        <div><div class="lh-co-name">RM Psyllium</div><div class="lh-co-tag">Psyllium Husk Exporters · Gujarat, India</div></div>
+        <div class="lh-contact">export@rmpsyllium.com<br>+91 89498 17791<br>rmpsyllium.com</div>
+      </div>
+      <div class="lh-subhd">
+        <span class="lh-subhd-item">Psyllium Husk</span>
+        <span class="lh-subhd-item">Psyllium Powder</span>
+        <span class="lh-subhd-item">Psyllium Seeds</span>
+        <span class="lh-subhd-item">Organic · ISO 22000</span>
+      </div>
+      <div class="lh-body">
+        <div class="lh-date-row"><div class="lh-date-line"></div><div class="lh-ref-line"></div></div>
+        <div class="lh-para">
+          <div class="lh-p w100"></div><div class="lh-p w96"></div><div class="lh-p w88"></div><div class="lh-p w92"></div>
+        </div>
+        <div class="lh-para">
+          <div class="lh-p w100"></div><div class="lh-p w85"></div><div class="lh-p w96"></div><div class="lh-p w78"></div><div class="lh-p w92"></div>
+        </div>
+        <div class="lh-para">
+          <div class="lh-p w100"></div><div class="lh-p w70"></div>
+        </div>
+        <div class="lh-sig-block">
+          <div class="lh-sig-line"></div>
+          <div class="lh-sig-name">Mithilesh Parmar &nbsp;·&nbsp; Director</div>
+        </div>
+      </div>
+      <div class="lh-ft">
+        <span class="lh-ft-item">Patan Road, Khali Char Rasta, Nedra</span>
+        <span class="lh-ft-item">Siddhpur, Gujarat 384151</span>
+        <span class="lh-ft-item">+91 89498 17791</span>
+        <span class="lh-ft-web">rmpsyllium.com</span>
       </div>
     </div>
-    <button class="print-btn" onclick="printVariant('tab-8')">Print this variant</button>
   </div>
+  <button class="print-btn" onclick="printCat('lh')">Print this variant</button>
+</div>
 
 
-  <!-- ══ V9: MONO ══ -->
-  <div class="tab-panel" id="tab-9">
-    <div class="cards-row">
-      <div class="card-wrap">
-        <div class="card-label">Front</div>
-        <div class="card v9f">
-          <div class="v9f-top">
-            <span class="v9f-co">RM Psyllium</span>
-            <div class="v9f-loc">Siddhpur, Gujarat<br>India 384151</div>
-          </div>
-          <div class="v9f-rule"></div>
-          <div class="v9f-people">
-            <div class="v9f-person">
-              <div class="v9f-label">Contact</div>
-              <div class="v9f-name">Mithilesh Parmar</div>
-              <div class="v9f-phone">+91 89498 17791</div>
-            </div>
-            <div class="v9f-person">
-              <div class="v9f-label">Contact</div>
-              <div class="v9f-name">Ravi Joshi</div>
-              <div class="v9f-phone">+91 80000 08381</div>
-            </div>
-          </div>
-          <div class="v9f-rule2"></div>
-          <div class="v9f-bot">
-            <span class="v9f-email">export@rmpsyllium.com</span>
-            <span class="v9f-web">rmpsyllium.com</span>
-          </div>
-        </div>
-      </div>
-      <div class="card-wrap">
-        <div class="card-label">Back</div>
-        <div class="card v9b">
-          <div class="v9b-header">
-            <img class="v9b-logo" src="logo.png" alt="RM Psyllium" />
-            <div class="v9b-date">EST. SIDDHPUR</div>
-          </div>
-          <div class="v9b-rule"></div>
-          <div class="v9b-tags">
-            <span class="v9b-tag">Husk</span>
-            <span class="v9b-tag">Powder</span>
-            <span class="v9b-tag">Seeds</span>
-            <span class="v9b-tag">Organic</span>
-            <span class="v9b-tag">Feed</span>
-            <span class="v9b-tag">Industrial</span>
-          </div>
-          <div class="v9b-rule2"></div>
-          <div class="v9b-bot">
-            <div>
-              <div class="v9b-addr">Patan Road, Khali Char Rasta, Nedra</div>
-              <div class="v9b-addr">Siddhpur, Gujarat 384151</div>
-            </div>
-            <div class="v9b-web">rmpsyllium.com</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="print-btn" onclick="printVariant('tab-9')">Print this variant</button>
-  </div>
 
+<script>
+let activeVar = 1;
 
-  <!-- ══ V10: CHARCOAL ══ -->
-  <div class="tab-panel" id="tab-10">
-    <div class="cards-row">
-      <div class="card-wrap">
-        <div class="card-label">Front</div>
-        <div class="card v10f">
-          <div class="v10f-top">
-            <img class="v10f-logo" src="logo.png" alt="RM Psyllium" />
-            <div class="v10f-loc">Siddhpur<br>Gujarat, India</div>
-          </div>
-          <div class="v10f-people">
-            <div class="v10f-person">
-              <div class="v10f-name">Mithilesh Parmar</div>
-              <div class="v10f-phone">+91 89498 17791</div>
-            </div>
-            <div class="v10f-person">
-              <div class="v10f-name">Ravi Joshi</div>
-              <div class="v10f-phone">+91 80000 08381</div>
-            </div>
-          </div>
-          <div class="v10f-bot">
-            <span class="v10f-email">export@rmpsyllium.com</span>
-            <span class="v10f-web">rmpsyllium.com</span>
-          </div>
-        </div>
-      </div>
-      <div class="card-wrap">
-        <div class="card-label">Back</div>
-        <div class="card v10b">
-          <img class="v10b-logo" src="logo.png" alt="RM Psyllium" />
-          <div class="v10b-tags">
-            <span class="v10b-tag">Husk</span>
-            <span class="v10b-tag">Powder</span>
-            <span class="v10b-tag">Seeds</span>
-            <span class="v10b-tag">Organic</span>
-            <span class="v10b-tag">Feed</span>
-            <span class="v10b-tag">Industrial</span>
-          </div>
-          <div class="v10b-bot">
-            <div>
-              <div class="v10b-addr">Patan Road, Khali Char Rasta, Nedra</div>
-              <div class="v10b-addr">Siddhpur, Gujarat 384151</div>
-            </div>
-            <div class="v10b-web">rmpsyllium.com</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="print-btn" onclick="printVariant('tab-10')">Print this variant</button>
-  </div>
+function render() {
+  document.querySelectorAll('.var-tab').forEach(t => t.classList.toggle('active', +t.dataset.v === activeVar));
+  document.querySelectorAll('.bc-vp').forEach(p => p.classList.toggle('active', +p.dataset.v === activeVar));
+  ['pkg','lh'].forEach(c => {
+    const el = document.getElementById(c + '-theme');
+    if (el) el.className = 'theme-display tv' + activeVar;
+  });
+}
 
+document.querySelectorAll('.var-tab').forEach(t => t.addEventListener('click', () => { activeVar = +t.dataset.v; render(); }));
 
-  <script>
-    document.querySelectorAll('.tab-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-        document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
-        btn.classList.add('active');
-        document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
-      });
-    });
+render();
 
-    function printVariant(tabId) {
-      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('printing'));
-      document.getElementById(tabId).classList.add('printing');
-      window.print();
-      setTimeout(() => document.getElementById(tabId).classList.remove('printing'), 800);
-    }
-  </script>
+function printCat(cat) {
+  document.querySelectorAll('.cat-panel').forEach(p => p.classList.remove('printing'));
+  document.querySelector('.cat-panel[data-cat="' + cat + '"]').classList.add('printing');
+  window.print();
+  setTimeout(() => document.querySelectorAll('.cat-panel').forEach(p => p.classList.remove('printing')), 800);
+}
+</script>
 </body>
 </html>

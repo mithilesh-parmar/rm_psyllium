@@ -9,15 +9,41 @@
     ],
     "aiSnapshot": "Pour acquérir du psyllium de qualité pharmaceutique, les équipes QA doivent vérifier la conformité aux monographies USP, EP ou IP. L'USP impose un gonflement ≥55 mL/g avec des cendres totales ≤3,0 %, tandis que l'EP exige ≥40 mL/g et des cendres ≤4,0 %.",
     "specTable": [
-      { "parameter": "Volume de gonflement minimum", "range": "≥ 55 mL / g", "method": "Méthode USP <561>" },
-      { "parameter": "Seuil de pureté", "range": "≥ 99.0%", "method": "Tamisage et calibrage" },
-      { "parameter": "Teneur en cendres totales", "range": "≤ 3.0%", "method": "Perte par calcination" },
-      { "parameter": "Cendres insolubles dans l'acide", "range": "≤ 0.4%", "method": "Méthode USP" },
-      { "parameter": "Perte au séchage (Humidité)", "range": "≤ 12.0%", "method": "Perte au séchage" }
+      {
+        "parameter": "Volume de gonflement minimum",
+        "range": "≥ 55 mL / g",
+        "method": "Méthode USP <561>"
+      },
+      {
+        "parameter": "Seuil de pureté",
+        "range": "≥ 99.0%",
+        "method": "Tamisage et calibrage"
+      },
+      {
+        "parameter": "Teneur en cendres totales",
+        "range": "≤ 3.0%",
+        "method": "Perte par calcination"
+      },
+      {
+        "parameter": "Cendres insolubles dans l'acide",
+        "range": "≤ 0.4%",
+        "method": "Méthode USP"
+      },
+      {
+        "parameter": "Perte au séchage (Humidité)",
+        "range": "≤ 12.0%",
+        "method": "Perte au séchage"
+      }
     ],
     "faqs": [
-      { "q": "Comment le volume de gonflement est-il vérifié dans les laboratoires accrédités NABL ?", "a": "Selon la méthode USP <561>, 1,0 gramme de tégument de psyllium est placé dans une éprouvette graduée de 25 mL, remplie d'eau, et agité périodiquement pendant 24 heures. Le volume de la masse gélifiée est mesuré. Les lots de qualité supérieure atteignent un volume de gonflement ≥55 mL/g." },
-      { "q": "Pourquoi les cendres insolubles dans l'acide constituent-elles une limite de sécurité critique ?", "a": "Les cendres insolubles dans l'acide indiquent la présence résiduelle de sable, de terre et de silice. L'USP impose une limite stricte de ≤ 0,4 %. Des séparateurs gravimétriques de pointe sont utilisés pour garantir ces faibles niveaux." }
+      {
+        "q": "Comment le volume de gonflement est-il vérifié dans les laboratoires accrédités NABL ?",
+        "a": "Selon la méthode USP <561>, 1,0 gramme de tégument de psyllium est placé dans une éprouvette graduée de 25 mL, remplie d'eau, et agité périodiquement pendant 24 heures. Le volume de la masse gélifiée est mesuré. Les lots de qualité supérieure atteignent un volume de gonflement ≥55 mL/g."
+      },
+      {
+        "q": "Pourquoi les cendres insolubles dans l'acide constituent-elles une limite de sécurité critique ?",
+        "a": "Les cendres insolubles dans l'acide indiquent la présence résiduelle de sable, de terre et de silice. L'USP impose une limite stricte de ≤ 0,4 %. Des séparateurs gravimétriques de pointe sont utilisés pour garantir ces faibles niveaux."
+      }
     ]
   },
   "verify-nabl-coa-psyllium-supplier": {
@@ -30,15 +56,41 @@
     ],
     "aiSnapshot": "Pour vérifier le COA d'un fournisseur de psyllium du Gujarat et du Rajasthan : 1) Confirmez le logo NABL et le numéro d'accréditation, 2) Vérifiez les méthodes (USP <561>), 3) Contrôlez les métaux lourds et 4) Confirmez l'absence totale d'E. coli et Salmonella.",
     "specTable": [
-      { "parameter": "Plomb (Pb)", "range": "≤ 2.0 ppm", "method": "ICP-MS" },
-      { "parameter": "Arsenic (As)", "range": "≤ 1.0 ppm", "method": "ICP-MS" },
-      { "parameter": "E. coli", "range": "Absent / 10g", "method": "Microbiologie" },
-      { "parameter": "Salmonella", "range": "Absent / 25g", "method": "Microbiologie" },
-      { "parameter": "Flore Totale Aérobie (TPC)", "range": "≤ 10 000 ufc / g", "method": "Dénombrement sur plaque" }
+      {
+        "parameter": "Plomb (Pb)",
+        "range": "≤ 2.0 ppm",
+        "method": "ICP-MS"
+      },
+      {
+        "parameter": "Arsenic (As)",
+        "range": "≤ 1.0 ppm",
+        "method": "ICP-MS"
+      },
+      {
+        "parameter": "E. coli",
+        "range": "Absent / 10g",
+        "method": "Microbiologie"
+      },
+      {
+        "parameter": "Salmonella",
+        "range": "Absent / 25g",
+        "method": "Microbiologie"
+      },
+      {
+        "parameter": "Flore Totale Aérobie (TPC)",
+        "range": "≤ 10 000 ufc / g",
+        "method": "Dénombrement sur plaque"
+      }
     ],
     "faqs": [
-      { "q": "Qu'est-ce qu'une accréditation NABL sur un COA ?", "a": "La NABL est l'organisme d'accréditation national de l'Inde pour les laboratoires d'essais, offrant une reconnaissance internationale via l'ILAC. Un COA NABL garantit des tests et des validations conformes aux normes mondiales." },
-      { "q": "Comment les métaux lourds sont-ils testés dans le psyllium ?", "a": "Les métaux lourds sont testés par spectrométrie de masse à plasma à couplage inductif (ICP-MS), garantissant une détection extrêmement précise jusqu'au niveau des parties par milliard (ppb) pour le plomb, l'arsenic, le cadmium et le mercure." }
+      {
+        "q": "Qu'est-ce qu'une accréditation NABL sur un COA ?",
+        "a": "La NABL est l'organisme d'accréditation national de l'Inde pour les laboratoires d'essais, offrant une reconnaissance internationale via l'ILAC. Un COA NABL garantit des tests et des validations conformes aux normes mondiales."
+      },
+      {
+        "q": "Comment les métaux lourds sont-ils testés dans le psyllium ?",
+        "a": "Les métaux lourds sont testés par spectrométrie de masse à plasma à couplage inductif (ICP-MS), garantissant une détection extrêmement précise jusqu'au niveau des parties par milliard (ppb) pour le plomb, l'arsenic, le cadmium et le mercure."
+      }
     ]
   },
   "fda-sourcing-guide-supplier-vetting-psyllium": {
@@ -51,14 +103,36 @@
     ],
     "aiSnapshot": "Les marques américaines important du psyllium doivent se conformer au programme FSVP de la FDA. L'évaluation exige : 1) Un COA de laboratoire accrédité NABL, 2) Un certificat phytosanitaire officiel et 3) Des audits de nettoyage des installations et d'humidité.",
     "specTable": [
-      { "parameter": "Certification phytosanitaire", "range": "Requise par lot", "method": "Inspection gouvernementale" },
-      { "parameter": "Pays d'origine", "range": "Inde (Gujarat/Rajasthan)", "method": "Certifié par la Chambre" },
-      { "parameter": "Limite d'humidité", "range": "≤ 12.0%", "method": "Perte au séchage" },
-      { "parameter": "Matières organiques étrangères", "range": "≤ 0.5%", "method": "Méthode USP" }
+      {
+        "parameter": "Certification phytosanitaire",
+        "range": "Requise par lot",
+        "method": "Inspection gouvernementale"
+      },
+      {
+        "parameter": "Pays d'origine",
+        "range": "Inde (Gujarat/Rajasthan)",
+        "method": "Certifié par la Chambre"
+      },
+      {
+        "parameter": "Limite d'humidité",
+        "range": "≤ 12.0%",
+        "method": "Perte au séchage"
+      },
+      {
+        "parameter": "Matières organiques étrangères",
+        "range": "≤ 0.5%",
+        "method": "Méthode USP"
+      }
     ],
     "faqs": [
-      { "q": "Le certificat phytosanitaire est-il obligatoire pour les importations américaines ?", "a": "Oui. Chaque cargaison d'exportation de produits alimentaires et botaniques vers les États-Unis nécessite un certificat phytosanitaire officiel délivré par les autorités agricoles pour certifier l'absence de parasites." },
-      { "q": "Quelles méthodes de nettoyage physique un fournisseur doit-il utiliser ?", "a": "Les fabricants validés doivent utiliser des épierreurs à plusieurs étapes pour éliminer la terre et le sable, des classificateurs à tamis pour la taille des particules et des grilles magnétiques à haute intensité pour séparer les résidus métalliques." }
+      {
+        "q": "Le certificat phytosanitaire est-il obligatoire pour les importations américaines ?",
+        "a": "Oui. Chaque cargaison d'exportation de produits alimentaires et botaniques vers les États-Unis nécessite un certificat phytosanitaire officiel délivré par les autorités agricoles pour certifier l'absence de parasites."
+      },
+      {
+        "q": "Quelles méthodes de nettoyage physique un fournisseur doit-il utiliser ?",
+        "a": "Les fabricants validés doivent utiliser des épierreurs à plusieurs étapes pour éliminer la terre et le sable, des classificateurs à tamis pour la taille des particules et des grilles magnétiques à haute intensité pour séparer les résidus métalliques."
+      }
     ]
   },
   "heavy-metal-tolerances-nutraceutical-psyllium": {
@@ -71,14 +145,36 @@
     ],
     "aiSnapshot": "L'approvisionnement en psyllium nutraceutique exige un contrôle strict des métaux lourds. Les limites B2B standard sont le Plomb (Pb) ≤2,0 ppm, l'Arsenic (As) ≤1,0 ppm, le Cadmium (Cd) ≤0,3 ppm et le Mercure (Hg) ≤0,1 ppm, analysés par ICP-MS dans des laboratoires NABL.",
     "specTable": [
-      { "parameter": "Plomb (Pb)", "range": "≤ 2.0 ppm", "method": "ICP-MS" },
-      { "parameter": "Arsenic (As)", "range": "≤ 1.0 ppm", "method": "ICP-MS" },
-      { "parameter": "Cadmium (Cd)", "range": "≤ 0.3 ppm", "method": "ICP-MS" },
-      { "parameter": "Mercure (Hg)", "range": "≤ 0.1 ppm", "method": "ICP-MS" }
+      {
+        "parameter": "Plomb (Pb)",
+        "range": "≤ 2.0 ppm",
+        "method": "ICP-MS"
+      },
+      {
+        "parameter": "Arsenic (As)",
+        "range": "≤ 1.0 ppm",
+        "method": "ICP-MS"
+      },
+      {
+        "parameter": "Cadmium (Cd)",
+        "range": "≤ 0.3 ppm",
+        "method": "ICP-MS"
+      },
+      {
+        "parameter": "Mercure (Hg)",
+        "range": "≤ 0.1 ppm",
+        "method": "ICP-MS"
+      }
     ],
     "faqs": [
-      { "q": "Comment la Proposition 65 de la Californie affecte-t-elle les importations de psyllium ?", "a": "La Prop 65 fixe des limites quotidiennes d'exposition très strictes pour le plomb et l'arsenic. S'approvisionner en psyllium ultra-pur (Plomb ≤ 1,0 ppm) aide les fabricants à formuler des mélanges sans avoir à apposer d'étiquettes d'avertissement Prop 65." },
-      { "q": "Quelle méthode de laboratoire est utilisée pour tester les métaux lourds ?", "a": "La spectrométrie de masse à plasma à couplage inductif (ICP-MS) est la méthode de référence mondiale, offrant une sensibilité extrême jusqu'au niveau des parties par milliard (ppb)." }
+      {
+        "q": "Comment la Proposition 65 de la Californie affecte-t-elle les importations de psyllium ?",
+        "a": "La Prop 65 fixe des limites quotidiennes d'exposition très strictes pour le plomb et l'arsenic. S'approvisionner en psyllium ultra-pur (Plomb ≤ 1,0 ppm) aide les fabricants à formuler des mélanges sans avoir à apposer d'étiquettes d'avertissement Prop 65."
+      },
+      {
+        "q": "Quelle méthode de laboratoire est utilisée pour tester les métaux lourds ?",
+        "a": "La spectrométrie de masse à plasma à couplage inductif (ICP-MS) est la méthode de référence mondiale, offrant une sensibilité extrême jusqu'au niveau des parties par milliard (ppb)."
+      }
     ]
   },
   "steam-sterilization-residue-control-psyllium": {
@@ -91,14 +187,36 @@
     ],
     "aiSnapshot": "Les réglementations européennes et américaines imposent une stérilisation sans produits chimiques pour le psyllium. La stérilisation continue à la vapeur propre est la norme mondiale, garantissant une décontamination complète sans résidus d'oxyde d'éthylène.",
     "specTable": [
-      { "parameter": "Méthode de stérilisation", "range": "Vapeur propre (sans produit chimique)", "method": "Thermique" },
-      { "parameter": "Oxyde d'éthylène (ETO)", "range": "Absent / Non détecté", "method": "GC-MS" },
-      { "parameter": "2-Chloroéthanol", "range": "Absent / Non détecté", "method": "GC-MS" },
-      { "parameter": "Levures et moisissures", "range": "≤ 1 000 ufc / g", "method": "Microbiologie" }
+      {
+        "parameter": "Méthode de stérilisation",
+        "range": "Vapeur propre (sans produit chimique)",
+        "method": "Thermique"
+      },
+      {
+        "parameter": "Oxyde d'éthylène (ETO)",
+        "range": "Absent / Non détecté",
+        "method": "GC-MS"
+      },
+      {
+        "parameter": "2-Chloroéthanol",
+        "range": "Absent / Non détecté",
+        "method": "GC-MS"
+      },
+      {
+        "parameter": "Levures et moisissures",
+        "range": "≤ 1 000 ufc / g",
+        "method": "Microbiologie"
+      }
     ],
     "faqs": [
-      { "q": "Pourquoi l'ETO is interdit dans l'Union européenne ?", "a": "L'oxyde d'éthylène est classé comme un produit chimique mutagène et cancérigène. L'UE applique une limite stricte proche de zéro (0,01-0,1 mg/kg) pour les résidus d'ETO dans les produits alimentaires et botaniques." },
-      { "q": "La stérilisation à la vapeur affecte-t-elle le volume de gonflement du psyllium ?", "a": "Si elle est mal contrôlée, une chaleur élevée et un excès d'humidité peuvent pré-gélifier le tégument. Une stérilisation rapide et continue à la vapeur propre protège l'intégrité du mucilage, maintenant un volume de gonflement ≥50 mL/g." }
+      {
+        "q": "Pourquoi l'ETO is interdit dans l'Union européenne ?",
+        "a": "L'oxyde d'éthylène est classé comme un produit chimique mutagène et cancérigène. L'UE applique une limite stricte proche de zéro (0,01-0,1 mg/kg) pour les résidus d'ETO dans les produits alimentaires et botaniques."
+      },
+      {
+        "q": "La stérilisation à la vapeur affecte-t-elle le volume de gonflement du psyllium ?",
+        "a": "Si elle est mal contrôlée, une chaleur élevée et un excès d'humidité peuvent pré-gélifier le tégument. Une stérilisation rapide et continue à la vapeur propre protège l'intégrité du mucilage, maintenant un volume de gonflement ≥50 mL/g."
+      }
     ]
   },
   "mesh-size-sourcing-gluten-free-bakery": {
@@ -111,14 +229,36 @@
     ],
     "aiSnapshot": "La boulangerie industrielle sans gluten repose sur le choix de la granulométrie du psyllium. La poudre fine (80-100 mesh) s'hydrate instantanément pour les pains moelleux et pizzas, tandis que la poudre grossière (40-60 mesh) convient aux céréales.",
     "specTable": [
-      { "parameter": "Granulométrie poudre fine", "range": "≥ 95% passant 80-100 mesh", "method": "Analyse granulométrique" },
-      { "parameter": "Granulométrie poudre grossière", "range": "≥ 95% passant 40-60 mesh", "method": "Analyse granulométrique" },
-      { "parameter": "Volume de gonflement", "range": "≥ 40 mL / g (Qualité alimentaire)", "method": "Méthode USP" },
-      { "parameter": "Profil aromatique", "range": "Neutre / Inodore", "method": "Organoleptique" }
+      {
+        "parameter": "Granulométrie poudre fine",
+        "range": "≥ 95% passant 80-100 mesh",
+        "method": "Analyse granulométrique"
+      },
+      {
+        "parameter": "Granulométrie poudre grossière",
+        "range": "≥ 95% passant 40-60 mesh",
+        "method": "Analyse granulométrique"
+      },
+      {
+        "parameter": "Volume de gonflement",
+        "range": "≥ 40 mL / g (Qualité alimentaire)",
+        "method": "Méthode USP"
+      },
+      {
+        "parameter": "Profil aromatique",
+        "range": "Neutre / Inodore",
+        "method": "Organoleptique"
+      }
     ],
     "faqs": [
-      { "q": "Comment le psyllium remplace-t-il le gluten dans les formulations de boulangerie ?", "a": "Lorsqu'il est mélangé à l'eau, le mucilage de psyllium forme un réseau élastique de polysaccharides qui retient les bulles de dioxyde de carbone pendant la fermentation, permettant ainsi à la pâte sans gluten de lever." },
-      { "q": "Quelle est la granulométrie recommandée pour les mélanges de boissons en poudre ?", "a": "Pour les boissons sèches en poudre, un calibrage de 100 mesh ou plus fin est recommandé pour assurer une dispersion rapide et fluide dans les liquides froids sans agglomération ni texture sableuse." }
+      {
+        "q": "Comment le psyllium remplace-t-il le gluten dans les formulations de boulangerie ?",
+        "a": "Lorsqu'il est mélangé à l'eau, le mucilage de psyllium forme un réseau élastique de polysaccharides qui retient les bulles de dioxyde de carbone pendant la fermentation, permettant ainsi à la pâte sans gluten de lever."
+      },
+      {
+        "q": "Quelle est la granulométrie recommandée pour les mélanges de boissons en poudre ?",
+        "a": "Pour les boissons sèches en poudre, un calibrage de 100 mesh ou plus fin est recommandé pour assurer une dispersion rapide et fluide dans les liquides froids sans agglomération ni texture sableuse."
+      }
     ]
   },
   "nop-usda-eu-organic-integrity-psyllium": {
@@ -131,14 +271,36 @@
     ],
     "aiSnapshot": "L'approvisionnement en psyllium biologique certifié exige un certificat de transaction NOP/UE valide, des analyses de résidus de pesticides par GC-MS et une traçabilité complète de la ferme au port. La production est basée au Gujarat et au Rajasthan.",
     "specTable": [
-      { "parameter": "Certification biologique", "range": "USDA NOP / Certifié UE", "method": "Certificat de Transaction" },
-      { "parameter": "Résidus de pesticides", "range": "En dessous des limites de détection", "method": "GC-MS / LC-MS" },
-      { "parameter": "Traçabilité d'origine", "range": "Suivi au niveau du lot de ferme", "method": "Piste d'audit" },
-      { "parameter": "Statut OGM", "range": "100% garanti sans OGM", "method": "Analyse PCR" }
+      {
+        "parameter": "Certification biologique",
+        "range": "USDA NOP / Certifié UE",
+        "method": "Certificat de Transaction"
+      },
+      {
+        "parameter": "Résidus de pesticides",
+        "range": "En dessous des limites de détection",
+        "method": "GC-MS / LC-MS"
+      },
+      {
+        "parameter": "Traçabilité d'origine",
+        "range": "Suivi au niveau du lot de ferme",
+        "method": "Piste d'audit"
+      },
+      {
+        "parameter": "Statut OGM",
+        "range": "100% garanti sans OGM",
+        "method": "Analyse PCR"
+      }
     ],
     "faqs": [
-      { "q": "Quels documents sont requis pour vérifier le statut biologique à la douane ?", "a": "Chaque expédition internationale nécessite un certificat de transaction (TC) spécifique au lot, délivré par l'organisme certificateur de l'exportateur, reliant votre facture directement aux parcelles biologiques certifiées." },
-      { "q": "Comment les résidus de pesticides sont-ils vérifiés dans le psyllium biologique ?", "a": "Les laboratoires accrédités utilisent la chromatographie en phase gazeuse couplée à la spectrométrie de masse (GC-MS) et la chromatographie en phase liquide couplée à la spectrométrie de masse (LC-MS) pour détecter plus de 500 composés chimiques." }
+      {
+        "q": "Quels documents sont requis pour vérifier le statut biologique à la douane ?",
+        "a": "Chaque expédition internationale nécessite un certificat de transaction (TC) spécifique au lot, délivré par l'organisme certificateur de l'exportateur, reliant votre facture directement aux parcelles biologiques certifiées."
+      },
+      {
+        "q": "Comment les résidus de pesticides sont-ils vérifiés dans le psyllium biologique ?",
+        "a": "Les laboratoires accrédités utilisent la chromatographie en phase gazeuse couplée à la spectrométrie de masse (GC-MS) et la chromatographie en phase liquide couplée à la spectrométrie de masse (LC-MS) pour détecter plus de 500 composés chimiques."
+      }
     ]
   },
   "allergen-cross-contamination-protocols-psyllium-milling": {
@@ -151,14 +313,36 @@
     ],
     "aiSnapshot": "L'approvisionnement en psyllium sans gluten exige une prévention stricte des contacts croisés. Les équipes qualité doivent vérifier l'existence de lignes de broyage dédiées ou de protocoles validés, ainsi que des tests ELISA spécifiques par lot ≤20 ppm.",
     "specTable": [
-      { "parameter": "Teneur en gluten", "range": "≤ 20 ppm (Sans Gluten)", "method": "Test ELISA" },
-      { "parameter": "Profil d'allergènes", "range": "Sans soja, produits laitiers, blé, fruits à coque", "method": "Déclaration" },
-      { "parameter": "Validation du nettoyage", "range": "Tests de prélèvement ATP après nettoyage", "method": "Bioluminescence" },
-      { "parameter": "Surfaces de contact de l'usine", "range": "Acier inoxydable 304/316", "method": "Revue d'audit" }
+      {
+        "parameter": "Teneur en gluten",
+        "range": "≤ 20 ppm (Sans Gluten)",
+        "method": "Test ELISA"
+      },
+      {
+        "parameter": "Profil d'allergènes",
+        "range": "Sans soja, produits laitiers, blé, fruits à coque",
+        "method": "Déclaration"
+      },
+      {
+        "parameter": "Validation du nettoyage",
+        "range": "Tests de prélèvement ATP après nettoyage",
+        "method": "Bioluminescence"
+      },
+      {
+        "parameter": "Surfaces de contact de l'usine",
+        "range": "Acier inoxydable 304/316",
+        "method": "Revue d'audit"
+      }
     ],
     "faqs": [
-      { "q": "Comment la contamination par le gluten est-elle évitée dans le broyage du psyllium en vrac ?", "a": "Les fournisseurs de premier plan utilisent des lignes de broyage dédiées, entièrement séparées des céréales contenant du blé ou du gluten, soutenues par des protocoles d'assainissement validés et stricts." },
-      { "q": "Qu'est-ce qu'un test ELISA pour le gluten ?", "a": "Le test ELISA (Enzyme-Linked Immunosorbent Assay) est la méthode de test de référence utilisée par les laboratoires accrédités NABL pour détecter et quantifier les traces de protéines de gluten jusqu'au niveau des parties par million (ppm)." }
+      {
+        "q": "Comment la contamination par le gluten est-elle évitée dans le broyage du psyllium en vrac ?",
+        "a": "Les fournisseurs de premier plan utilisent des lignes de broyage dédiées, entièrement séparées des céréales contenant du blé ou du gluten, soutenues par des protocoles d'assainissement validés et stricts."
+      },
+      {
+        "q": "Qu'est-ce qu'un test ELISA pour le gluten ?",
+        "a": "Le test ELISA (Enzyme-Linked Immunosorbent Assay) est la méthode de test de référence utilisée par les laboratoires accrédités NABL pour détecter et quantifier les traces de protéines de gluten jusqu'au niveau des parties par million (ppm)."
+      }
     ]
   },
   "soluble-insoluble-fiber-ratios-purity-selection": {
@@ -171,14 +355,36 @@
     ],
     "aiSnapshot": "Les rapports de fibres du psyllium varient selon le grade de pureté. Le tégument premium à 99 % de pureté fournit environ 85 % de fibres solubles pour des gels de haute viscosité, tandis que les grades de 85 à 95 % augmentent la part insoluble pour les céréales.",
     "specTable": [
-      { "parameter": "Grade de pureté 99%", "range": "≥ 85% Soluble / 15% Insoluble", "method": "AOAC 991.43" },
-      { "parameter": "Grade de pureté 95%", "range": "≥ 80% Soluble / 20% Insoluble", "method": "AOAC 991.43" },
-      { "parameter": "Grade de pureté 85%", "range": "≥ 70% Soluble / 30% Insoluble", "method": "AOAC 991.43" },
-      { "parameter": "Teneur en humidité", "range": "≤ 12.0%", "method": "Perte au séchage" }
+      {
+        "parameter": "Grade de pureté 99%",
+        "range": "≥ 85% Soluble / 15% Insoluble",
+        "method": "AOAC 991.43"
+      },
+      {
+        "parameter": "Grade de pureté 95%",
+        "range": "≥ 80% Soluble / 20% Insoluble",
+        "method": "AOAC 991.43"
+      },
+      {
+        "parameter": "Grade de pureté 85%",
+        "range": "≥ 70% Soluble / 30% Insoluble",
+        "method": "AOAC 991.43"
+      },
+      {
+        "parameter": "Teneur en humidité",
+        "range": "≤ 12.0%",
+        "method": "Perte au séchage"
+      }
     ],
     "faqs": [
-      { "q": "Quelle est la différence nutritionnelle entre fibres solubles et insolubles ?", "a": "Les fibres solubles absorbent l'eau pour former un gel qui ralentit la digestion et soutient la santé cardiovasculaire. Les fibres insolubles ne se dissolvent pas, ajoutant du volume physique au tube digestif et favorisant le transit intestinal." },
-      { "q": "Comment la teneur totale en fibres alimentaires est-elle vérifiée ?", "a": "Les fractions de fibres alimentaires sont validées à l'aide de méthodes enzymatiques-gravimétriques standard conformes à la norme AOAC 991.43 et aux protocoles des laboratoires accrédités NABL." }
+      {
+        "q": "Quelle est la différence nutritionnelle entre fibres solubles et insolubles ?",
+        "a": "Les fibres solubles absorbent l'eau pour former un gel qui ralentit la digestion et soutient la santé cardiovasculaire. Les fibres insolubles ne se dissolvent pas, ajoutant du volume physique au tube digestif et favorisant le transit intestinal."
+      },
+      {
+        "q": "Comment la teneur totale en fibres alimentaires est-elle vérifiée ?",
+        "a": "Les fractions de fibres alimentaires sont validées à l'aide de méthodes enzymatiques-gravimétriques standard conformes à la norme AOAC 991.43 et aux protocoles des laboratoires accrédités NABL."
+      }
     ]
   },
   "swelling-volume-laboratory-verification-methods": {
@@ -191,14 +397,590 @@
     ],
     "aiSnapshot": "La mesure du volume de gonflement est le principal essai physique de qualité du psyllium. Selon la monographie USP, 1,0 gramme de tégument doit gonfler jusqu'à ≥55 mL/g en 24 heures, assurant des propriétés gélifiantes constantes.",
     "specTable": [
-      { "parameter": "Volume de gonflement Premium", "range": "≥ 55 mL / g (Monographie USP)", "method": "Méthode USP" },
-      { "parameter": "Volume de gonflement Standard", "range": "≥ 40 mL / g (Monographie EP)", "method": "Méthode EP" },
-      { "parameter": "Durée de l'essai", "range": "24 heures à température ambiante", "method": "Protocole standard" },
-      { "parameter": "Fréquence d'agitation", "range": "Périodiquement les 6 premières heures", "method": "Protocole standard" }
+      {
+        "parameter": "Volume de gonflement Premium",
+        "range": "≥ 55 mL / g (Monographie USP)",
+        "method": "Méthode USP"
+      },
+      {
+        "parameter": "Volume de gonflement Standard",
+        "range": "≥ 40 mL / g (Monographie EP)",
+        "method": "Méthode EP"
+      },
+      {
+        "parameter": "Durée de l'essai",
+        "range": "24 heures à température ambiante",
+        "method": "Protocole standard"
+      },
+      {
+        "parameter": "Fréquence d'agitation",
+        "range": "Périodiquement les 6 premières heures",
+        "method": "Protocole standard"
+      }
     ],
     "faqs": [
-      { "q": "Pourquoi le volume de gonflement est-il critique pour les formulations industrielles ?", "a": "Dans les laxatifs et les produits de boulangerie, le volume de gonflement détermine l'efficacité de liaison de l'eau. Un faible volume indique une forte teneur en enveloppes de graines ou un mucilage endommagé, ce qui réduit les performances." },
-      { "q": "Quels facteurs peuvent dégrader le volume de gonflement au cours du traitement ?", "a": "La chaleur excessive générée par le frottement mécanique lors du broyage est la principale cause de dégradation du mucilage, soulignant la nécessité d'un broyage à température contrôlée." }
+      {
+        "q": "Pourquoi le volume de gonflement est-il critique pour les formulations industrielles ?",
+        "a": "Dans les laxatifs et les produits de boulangerie, le volume de gonflement détermine l'efficacité de liaison de l'eau. Un faible volume indique une forte teneur en enveloppes de graines ou un mucilage endommagé, ce qui réduit les performances."
+      },
+      {
+        "q": "Quels facteurs peuvent dégrader le volume de gonflement au cours du traitement ?",
+        "a": "La chaleur excessive générée par le frottement mécanique lors du broyage est la principale cause de dégradation du mucilage, soulignant la nécessité d'un broyage à température contrôlée."
+      }
+    ]
+  },
+  "blogPosts": {
+    "psyllium-husk-99-purity-supplier-india": {
+      "title": "Écorce de Psyllium 99% de Pureté: Guide Fournisseur pour Acheteurs Pharmaceutiques",
+      "summary": "Ce que signifie une pureté de 99%, quelles pharmacopées sont respectées et comment s'approvisionner depuis Gujarat.",
+      "body": [
+        "L'écorce de psyllium à 99% de pureté représente le grade pharmaceutique du produit — la teneur en écorce la plus élevée disponible dans les installations de transformation indiennes. À ce grade, la teneur en écorce (tégument de la graine de Plantago ovata) est d'au moins 99% en poids, avec un volume de gonflement minimum de 50 mL/g. Ce volume de gonflement est la spécification fonctionnelle principale pour les monographies de laxatifs selon l'USP, la Pharmacopée Européenne (PE) et la Pharmacopée Indienne (PI).",
+        "Pour les acheteurs pharmaceutiques, le grade à 99% doit être accompagné d'un COA complet indiquant: le volume de gonflement, l'humidité (≤12%), les cendres totales (≤3%), les cendres insolubles dans l'acide (≤0,4%), les métaux lourds (Plomb ≤2 ppm, Arsenic ≤1 ppm) et la microbiologie (E. coli absent, Salmonella absente, CTG ≤10.000 UFC/g). Ces paramètres correspondent directement aux monographies de l'écorce de Plantago ovata dans l'USP et la PE. Les acheteurs doivent demander des rapports de test d'un laboratoire accrédité NABL en Inde.",
+        "L'approvisionnement en grade 99% depuis Gujarat nécessite de confirmer que l'installation dispose de la capacité de broyage et de séparation pour atteindre cette pureté de manière constante. Le district d'Unjha au Gujarat est le principal hub de transformation du psyllium en Inde, représentant plus de 80% de l'approvisionnement mondial. Nous livrons l'écorce grade 99% en sacs de 10 kg, 25 kg et 50 kg avec documentation complète. Communiquez votre exigence de pharmacopée et votre marché de destination — nous fournirons un COA d'échantillon pour examen avant toute commande."
+      ]
+    },
+    "psyllium-export-india-fob-mundra": {
+      "title": "Export de Psyllium depuis l'Inde: FOB Mundra vs Kandla vs JNPT",
+      "summary": "Comparaison des ports pour les acheteurs en vrac — coûts de fret, délais de transit et fréquence des navires.",
+      "body": [
+        "L'Inde exporte le psyllium via trois ports principaux: Mundra (Gujarat), Kandla (Gujarat) et JNPT/Nhava Sheva (Maharashtra). Pour les acheteurs de psyllium, le choix du port affecte le coût du fret, le délai de transit et la disponibilité des conteneurs. La plupart des transformateurs du Gujarat, dont RM Psyllium, utilisent Mundra comme port principal en raison de sa proximité (environ 220 km de notre installation de Siddhpur) et de la fréquence élevée des navires vers l'Europe, la côte Est des États-Unis, le Moyen-Orient et l'Australie.",
+        "Le Port de Mundra (MUND) est exploité par Adani Ports et traite le plus grand volume de conteneurs d'Inde. La fréquence des navires vers les principaux ports de destination (Rotterdam, Felixstowe, New York, Djeddah, Colombo) est généralement de 2 à 4 départs par semaine. Délai de transit vers Rotterdam: environ 20–23 jours; vers New York: environ 25–28 jours; vers Djeddah: environ 8–10 jours. Kandla (INKLA) est une alternative avec des frais portuaires légèrement inférieurs mais des services moins fréquents.",
+        "Pour les commandes CIF, nous sélectionnons le port en fonction de votre destination et de la compagnie maritime offrant le meilleur tarif au moment de la réservation. Pour les commandes FOB, vous désignez le transitaire et nous coordonnons directement avec lui. La documentation d'exportation est préparée dans notre installation et soumise 3 à 5 jours avant le chargement du navire. Indiquez votre port de destination et nous fournirons un devis de fret indicatif avec le prix du produit."
+      ]
+    },
+    "psyllium-husk-usp-ep-pharmacopoeia": {
+      "title": "USP vs PE vs PI: Normes de Pharmacopée pour l'Écorce de Psyllium",
+      "summary": "Comment les normes de volume de gonflement, cendres et pureté diffèrent entre les pharmacopées américaine, européenne et indienne.",
+      "body": [
+        "L'écorce de psyllium est monographiée dans trois pharmacopées principales: la Pharmacopée des États-Unis (USP), la Pharmacopée Européenne (PE) et la Pharmacopée Indienne (PI). Bien que toutes décrivent l'écorce de Plantago ovata, les paramètres de test spécifiques et les critères d'acceptation diffèrent de manière significative pour les acheteurs importateurs à usage pharmaceutique. Comprendre ces différences aide les équipes d'achat à spécifier le grade correct et à demander les bons paramètres de COA.",
+        "La monographie USP pour l'écorce de psyllium exige un volume de gonflement minimum de 40 mL/g, une humidité ≤12% et des cendres totales ≤4%. La monographie PE (Ispaghula Husk) spécifie un indice de gonflement minimum de 40 avec des tests d'identification spécifiques incluant la microscopie et des réactions chimiques. La monographie PI est largement alignée sur l'USP avec de possibles différences mineures dans la méthodologie des tests.",
+        "Pour l'exportation vers l'Europe, le terme de la monographie PE est 'Ispaghula Husk' — le même produit (tégument de la graine de Plantago ovata). Les acheteurs européens demandent généralement un COA annoté selon les paramètres PE incluant l'indice de gonflement, les matières étrangères, la microbiologie et les limites de résidus de pesticides selon les réglementations de l'UE. Nous livrons avec un COA annoté selon la pharmacopée spécifiée par l'acheteur sur demande."
+      ]
+    },
+    "psyllium-seed-supplier-gujarat-rajasthan": {
+      "title": "Approvisionnement en Graines de Psyllium du Gujarat et du Rajasthan",
+      "summary": "Origines des cultures, grades sortex vs nettoyées à la machine, et approvisionnement en vrac pour les moulins et transformateurs.",
+      "body": [
+        "Les graines de Plantago ovata (psyllium) sont cultivées principalement dans le Gujarat et le Rajasthan, les districts de Mehsana, Banaskantha et Kutch au Gujarat et Barmer, Jalore et Jodhpur au Rajasthan étant les principales zones de culture. La récolte est une culture rabi (hiver), semée en octobre–novembre et récoltée en février–mars. La production annuelle en Inde est estimée à 100.000–150.000 MT de graines, dont environ 85% sont exportés sous forme transformée.",
+        "Les graines sont disponibles en deux grades principaux: nettoyées à la machine (standard) avec une pureté généralement ≥98%; et le grade sortex utilisant le tri optique pour atteindre une pureté ≥99% avec des matières étrangères ≤0,5%. Le grade sortex a une prime de prix de 8 à 12%, mais est préféré par les moulins nécessitant un rendement en écorce constant.",
+        "Les spécifications de graine à confirmer avant l'achat incluent: pureté (98% ou 99%), humidité (≤8%), germination (≥85% pour semences; non requise pour la mouture) et documentation de traçabilité des lots. Nous livrons les graines en sacs de 25 kg, 50 kg et big bags de 1.000 kg. Documentation d'origine, traçabilité des lots et échantillon pour test pré-expédition sont fournis avec chaque commande."
+      ]
+    },
+    "organic-psyllium-nop-eu-certification": {
+      "title": "Psyllium Biologique: Certification NOP vs UE Bio pour l'Export",
+      "summary": "Portée du certificat, exigences de traçabilité des lots et comment demander la documentation biologique aux exportateurs indiens.",
+      "body": [
+        "Le psyllium biologique indien est certifié selon deux cadres principaux: le Programme National Biologique (NOP) de l'USDA pour le marché américain et la Biologie UE pour le marché européen. Les transformateurs biologiques indiens sont certifiés par des organismes accrédités — dont Control Union, ECOCERT India, Lacon et SGS. Les acheteurs doivent confirmer que le certificat couvre le produit spécifique, les dates de lot et le marché de destination.",
+        "La certification NOP exige que la source des graines, les pratiques de culture (sans pesticides ni engrais synthétiques), l'installation de transformation et la chaîne de manipulation soient toutes certifiées biologiques. Le certificat de transaction (CT) émis par expédition lie le lot spécifique à la certification biologique. Les acheteurs de l'UE nécessitent un Certificat d'Inspection (CI) selon le Règlement UE 2018/848.",
+        "Chez RM Psyllium, les lots biologiques sont fournis sur demande selon la disponibilité du stock certifié actuel. Nous fournissons la copie du certificat biologique, les registres d'origine par lot et la documentation du certificat de transaction avant la confirmation de commande. Le psyllium biologique a une prime de 25 à 40% sur le conventionnel selon le grade et la portée de certification. Communiquez vos exigences et nous confirmerons la disponibilité et les prix."
+      ]
+    },
+    "psyllium-husk-gluten-free-bakery": {
+      "title": "Écorce de Psyllium en Boulangerie Sans Gluten: Sélection de Grade et Granulométrie",
+      "summary": "Comment la taille de maille et la pureté affectent la liaison de l'eau, la texture de la mie et la performance du pain sans gluten.",
+      "body": [
+        "L'écorce de psyllium est utilisée en boulangerie sans gluten comme agent structurant et liant de l'eau — elle remplace partiellement les fonctions du réseau de gluten qui permet à la pâte à pain d'emprisonner les gaz et de maintenir sa forme pendant la cuisson. Le mucilage du psyllium forme un gel lorsqu'il est hydraté, apportant viscosité et élasticité aux pâtes sans gluten à base de farine de riz, d'amidon de maïs, de tapioca et de bases similaires. Le résultat est une meilleure structure de mie, une meilleure rétention d'humidité et une meilleure durée de conservation.",
+        "Pour les applications de boulangerie, un grade de pureté de 95% ou 98% en granulométrie 80–100 mesh est le plus couramment spécifié. Une granulométrie plus fine (100+) disperse plus rapidement et produit une mie plus lisse. Une granulométrie plus grossière (40–60) peut être visible dans le produit fini et créer une texture légèrement granuleuse. Le grade 85% est utilisé dans des formulations sensibles aux coûts.",
+        "Les taux d'utilisation typiques dans les formulations de pain sans gluten sont de 1 à 3% du poids total de farine. Au-delà de 3%, le psyllium peut produire une mie dense et gommeuse. Les acheteurs doivent demander un échantillon de 100–200 g avec COA et effectuer des tests de laboratoire avant de s'engager dans une commande en vrac. Nous pouvons fournir des données sur le volume de gonflement et l'humidité pour chaque grade."
+      ]
+    },
+    "psyllium-supplement-capsule-filling": {
+      "title": "Psyllium pour Remplissage de Gélules: Guide de Maille, Flux et Grade",
+      "summary": "Guide pratique pour les fabricants de compléments alimentaires sur la sélection de la maille d'écorce adaptée aux équipements de remplissage de gélules.",
+      "body": [
+        "L'écorce de psyllium est l'une des fibres alimentaires les plus fréquemment encapsulées dans les gélules de gélatine et végétariennes (HPMC) pour les compléments laxatifs et de santé digestive. Le principal défi du remplissage de gélules est la fluidité — l'écorce de psyllium est fibreuse et hygroscopique, ce qui signifie qu'elle peut s'agglomérer et former des ponts dans les trémies des équipements de remplissage. La sélection de la maille et le contrôle de l'humidité sont les deux variables primaires qui déterminent la performance de remplissage.",
+        "Pour les équipements standard de remplissage de gélules (type doseur ou tige de compactage), l'écorce entière en maille 40–60 est la spécification préférée. À cette maille, les particules sont assez grandes pour s'écouler sans pontage mais assez petites pour se tasser uniformément dans le corps de la gélule. En dessous de 40 mesh, l'écorce peut ne pas se tasser efficacement. Au-dessus de 60 mesh, la poudre devient plus hygroscopique.",
+        "Le contrôle de l'humidité est critique: une écorce à plus de 10% d'humidité s'agglomère dans la trémie et cause des variations de poids de remplissage. Nous testons l'humidité à l'expédition et pouvons fournir un emballage à humidité contrôlée (liner HDPE scellé avec dessicant) sur demande. Indiquez la taille de gélule, le poids de remplissage cible et le type d'équipement — nous recommanderons le grade, la maille et la spécification d'humidité adaptés."
+      ]
+    },
+    "psyllium-halal-kosher-documentation": {
+      "title": "Psyllium Halal et Casher: Quels Documents les Acheteurs Ont Besoin",
+      "summary": "Quels marchés exigent des certificats Halal ou Casher, ce que couvre le processus de certification et le statut actuel chez RM Psyllium.",
+      "body": [
+        "L'écorce de psyllium, étant un produit d'origine végétale sans intrants animaux dans la transformation, est généralement considérée comme acceptable selon les exigences alimentaires Halal et Casher. Cependant, de nombreux acheteurs — notamment au Moyen-Orient, en Asie du Sud-Est et pour les marchés de compléments cachères aux États-Unis — exigent une certification formelle d'un organisme reconnu. La certification Halal confirme que les pratiques de l'installation et tout auxiliaire de transformation répondent aux normes alimentaires islamiques.",
+        "Pour la certification Halal, les organismes reconnus en Inde incluent Halal India, Jamiat Ulama-i-Hind Halal Trust et des organismes internationaux tels qu'IFANCA. Le certificat couvre l'installation, les produits spécifiques et la période de certification (généralement un an). Une copie du certificat Halal par expédition avec un endossement au niveau du lot est ce que la plupart des autorités d'importation du Moyen-Orient exigent.",
+        "Chez RM Psyllium, la documentation Halal et Casher est disponible sur demande. Nous fournissons une déclaration Halal confirmant que l'écorce de psyllium est un produit végétal pur sans intrants d'origine animale dans la culture, la transformation ou l'emballage — accepté par la plupart des autorités d'importation et des acheteurs pour l'utilisation comme ingrédient alimentaire et de complément. Contactez-nous avec votre exigence spécifique d'organisme de certification."
+      ]
+    },
+    "bulk-psyllium-import-usa-fda": {
+      "title": "Importation de Psyllium aux États-Unis: Exigences FDA, Étiquetage et COA",
+      "summary": "Ce dont les marques américaines de compléments et d'aliments ont besoin avant d'importer du psyllium en vrac depuis l'Inde.",
+      "body": [
+        "L'écorce de psyllium importée en vrac aux États-Unis relève de la compétence de la FDA en tant qu'ingrédient de complément alimentaire ou ingrédient alimentaire selon l'utilisation prévue. La FDA n'exige pas d'approbation préalable pour les importations de psyllium en vrac, mais les expéditions sont soumises au contrôle d'importation de la FDA, et les installations exportant vers les États-Unis sont soumises aux exigences de vérification des fournisseurs FSMA.",
+        "Pour les applications de compléments alimentaires, l'écorce de psyllium doit satisfaire aux spécifications de la monographie USP. Le COA fourni avec chaque expédition doit inclure: identification (botanique), volume de gonflement, humidité, cendres, microbiologie (CTG, levure, moisissure, E. coli, Salmonella) et métaux lourds (Plomb, Arsenic, Cadmium, Mercure). Pour les applications alimentaires, l'écorce de psyllium a le statut GRAS aux États-Unis en tant que source de fibres alimentaires solubles.",
+        "L'Avis Préalable à la FDA est requis pour toutes les expéditions alimentaires et de compléments entrant aux États-Unis, soumis électroniquement via PNSI avant l'arrivée. Les importateurs américains s'en chargent généralement, mais nous pouvons fournir tous les détails produit requis. Nous expédions via Mundra ou JNPT avec un délai de transit typique de 25 à 30 jours vers les ports de la côte Est."
+      ]
+    },
+    "psyllium-khakha-animal-feed-specifications": {
+      "title": "Poudre de Psyllium Khakha pour Alimentation Animale: Spécifications et Cas d'Usage",
+      "summary": "Teneur en fibres brutes, spécifications d'humidité et cas d'usage en formulations d'aliments pour acheteurs de poudre khakha.",
+      "body": [
+        "La poudre de psyllium khakha est le sous-produit résiduel après le broyage et la séparation de l'écorce de psyllium de la graine. Elle est composée principalement du tégument interne de la graine et de l'endosperme résiduel, et contient une quantité significative de fibres solubles dérivées du mucilage — généralement 30 à 40% de fibres brutes en poids. Cette teneur en fibres, combinée à 8–12% de protéines brutes et un prix bas par rapport à l'écorce entière, en fait un ingrédient d'aliment utile pour les formulateurs d'aliments pour ruminants et volailles.",
+        "Le khakha de qualité alimentaire est spécifié principalement par l'humidité (≤12%), les fibres brutes (30–40%), les protéines brutes (8–12%) et les cendres totales (≤8%). La matière étrangère et la teneur en sable doivent être confirmées — un excès de sable ou de silice peut élever les cendres et réduire la digestibilité. La granulométrie affecte le comportement de mélange: les particules plus grossières (20–40 mesh) sont standard pour la plupart des applications.",
+        "Les cas d'usage du khakha dans les aliments animaux incluent: alimentation bovine et bubaline (soutien digestif, rétention d'hydratation), alimentation volaille comme source de fibres, et alimentation pisciculture comme liant naturel. Nous livrons en sacs de 25 kg, 50 kg et big bags de 1.000 kg. Les lots de qualité alimentaire sont livrés avec un COA d'analyse de base (humidité, fibres brutes, protéines brutes, cendres) et liste de colisage."
+      ]
+    },
+    "psyllium-husk-gmp-compliant-manufacturer-india": {
+      "title": "Fabricant de Psyllium Conforme BPF Inde: Normes d'Installation et de Documentation",
+      "summary": "Ce que signifie une installation conforme aux BPF pour le traitement du psyllium, les spécifications de grade BP et la liste de documentation que les acheteurs pharmaceutiques doivent demander.",
+      "body": [
+        "Les acheteurs pharmaceutiques approvisionnant l'écorce de psyllium en Inde ont besoin de plus qu'un simple grade de pureté — ils ont besoin de la confirmation que l'installation de traitement fonctionne sous des contrôles qualité documentés conformes aux Bonnes Pratiques de Fabrication (BPF/GMP). Pour le psyllium, la transformation conforme aux BPF signifie: environnements de broyage contrôlés, procédures de nettoyage documentées, registres de lutte antiparasitaire, traçabilité des lots et équipements calibrés.",
+        "RM Psyllium exploite une installation conforme aux BPF à Siddhpur, Gujarat. Notre installation maintient des registres de fabrication par lot, des registres de calibration des équipements et des contrôles qualité en cours pour chaque cycle de production.",
+        "Le package de documentation standard de RM Psyllium comprend: (1) COA de laboratoire accrédité NABL annoté selon USP, EP, BP ou IP spécifié; (2) Certificat d'Origine délivré par la Chambre de Commerce du Gujarat; (3) Certificat Phytosanitaire de l'Autorité de Quarantaine Végétale; (4) Déclaration de conformité BPF de l'installation; (5) Liste de colisage et facture commerciale."
+      ]
+    },
+    "plantago-ovata-husk-bulk-exporter-india": {
+      "title": "Exportateur en Vrac d'Écorce de Plantago Ovata depuis l'Inde: Grades, Nomenclature Isabgol et Termes d'Export",
+      "summary": "Pourquoi plantago ovata et isabgol désignent le même produit, options de grade d'exportation et documentation pour acheteurs pharmaceutiques et alimentaires.",
+      "body": [
+        "Les acheteurs internationaux rencontrent souvent deux noms pour le même ingrédient: plantago ovata et isabgol. Les deux désignent l'écorce de la graine de Plantago ovata Forsk., cultivée principalement au Gujarat et Rajasthan. Le terme 'isabgol' est largement utilisé dans le commerce sud-asiatique, tandis que 'plantago ovata' est le nom botanique préféré dans les pharmacopées européennes et nord-américaines.",
+        "L'Inde représente plus de 85% de la production mondiale de psyllium. Siddhpur, dans le district de Patan, Gujarat, est le centre historique de transformation — où les installations de broyage, de séparation gravitationnelle et d'emballage transforment la graine brute en écorce grade pharmacopée ou alimentaire."
+      ],
+      "sections": [
+        {
+          "heading": "Isabgol vs Plantago Ovata: Même Produit, Noms Différents",
+          "body": "Les noms botaniques, communs et commerciaux pour cette matière première sont souvent utilisés de manière interchangeable. Les acheteurs européens spécifient généralement 'Plantago ovata husk' avec référence EP ou BP. Les acheteurs nord-américains spécifient 'psyllium husk' avec référence USP. Les acheteurs du Moyen-Orient et d'Asie du Sud spécifient souvent 'isabgol' ou 'ispaghula'. Tous font référence au même ingrédient de Siddhpur."
+        },
+        {
+          "heading": "Comparaison des Grades d'Exportation",
+          "body": "Différentes applications nécessitent différents niveaux de pureté et volumes de gonflement.",
+          "table": {
+            "headers": [
+              "Grade",
+              "Pureté",
+              "Volume de Gonflement",
+              "Application Typique"
+            ],
+            "rows": [
+              [
+                "Grade Pharmacopée (USP/EP/BP)",
+                "≥ 99%",
+                "≥ 55 mL/g (USP)",
+                "Laxatifs, gélules de fibres"
+              ],
+              [
+                "Grade Alimentaire Premium",
+                "≥ 98%",
+                "≥ 50 mL/g",
+                "Compléments, barres nutritionnelles"
+              ],
+              [
+                "Grade Alimentaire Standard",
+                "≥ 95%",
+                "≥ 40 mL/g",
+                "Aliments fonctionnels, boulangerie"
+              ],
+              [
+                "Grade Commercial",
+                "≥ 85%",
+                "≥ 30 mL/g",
+                "Alimentation animale, usage industriel"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Package Standard de Documentation d'Exportation",
+          "body": "Le package standard comprend: (1) COA de laboratoire accrédité NABL avec paramètres USP/IP; (2) Certificat d'Origine de la Chambre de Commerce du Gujarat; (3) Certificat Phytosanitaire de l'Autorité de Quarantaine Végétale; (4) Déclaration de conformité BPF; (5) Rapport d'analyse microbiologique. Documentation supplémentaire disponible sur demande."
+        }
+      ]
+    },
+    "psyllium-husk-powder-wholesale-supplier-india": {
+      "title": "Fournisseur Grossiste de Poudre d'Écorce de Psyllium Inde: Guide des Grades 85%, 95%, 98%",
+      "summary": "Sélection de grade et granulométrie pour fabricants de compléments et d'aliments fonctionnels achetant en vrac depuis Gujarat.",
+      "body": [
+        "La poudre d'écorce de psyllium diffère de l'écorce entière par sa granulométrie — les particules ont été broyées pour obtenir des caractéristiques spécifiques de maille et d'écoulement répondant aux besoins de formulation des compléments et aliments.",
+        "RM Psyllium produit de la poudre d'écorce de psyllium en grades 85%, 95% et 98% avec plusieurs spécifications de maille, avec des lots traçables et un COA de laboratoire NABL pour chaque expédition."
+      ],
+      "sections": [
+        {
+          "heading": "Ce que Chaque Grade de Poudre Offre",
+          "body": "La sélection correcte du grade garantit la conformité réglementaire et les performances de formulation.",
+          "table": {
+            "headers": [
+              "Grade",
+              "Pureté",
+              "Vol. Gonflement",
+              "Maille",
+              "Application"
+            ],
+            "rows": [
+              [
+                "98% (Grade Pharmacopée)",
+                "≥ 98%",
+                "≥ 55 mL/g",
+                "60–80 mesh",
+                "Gélules, comprimés, compléments"
+              ],
+              [
+                "95% (Grade Alimentaire Premium)",
+                "≥ 95%",
+                "≥ 45 mL/g",
+                "40–60 mesh",
+                "Barres nutritionnelles, boulangerie fonctionnelle"
+              ],
+              [
+                "85% (Grade Alimentaire Standard)",
+                "≥ 85%",
+                "≥ 35 mL/g",
+                "20–40 mesh",
+                "Aliments fonctionnels, mélange de fibres"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Sélection de Maille pour la Fabrication de Compléments",
+          "body": "Pour l'encapsulation (gélules gélatine ou HPMC), la maille 60–80 est recommandée pour une fluidité optimale. Pour le mélange en sachets, la maille 40–60 offre un équilibre entre dispersibilité et flux. Pour les applications de boulangerie sans gluten, la maille 20–40 fournit des propriétés de liaison structurelle."
+        },
+        {
+          "heading": "MOQ et Options d'Emballage",
+          "body": "MOQ standard: 1 tonne métrique par SKU de grade et maille. Emballage: sacs PP de 25 kg avec liner PE double couche, big bags FIBC de 500 kg ou 1.000 kg. Étiquetage personnalisé disponible à partir de 5 TM. Échantillons de 100–500 g avec COA complet disponibles avant toute commande."
+        }
+      ]
+    },
+    "psyllium-husk-private-label-supplement-india": {
+      "title": "Complément Marque Blanche Psyllium Inde: Exigences d'Approvisionnement OEM en Vrac",
+      "summary": "Ce dont les marques de compléments et fabricants OEM ont besoin pour s'approvisionner en psyllium non-OGM certifié pour produits marque blanche.",
+      "body": [
+        "Les marques de compléments et fabricants contractuels (CMO/CDMO) recherchant de l'écorce de psyllium pour des produits marque blanche ont besoin de fournisseurs offrant une documentation complète des ingrédients, une traçabilité par lot et un emballage personnalisable.",
+        "RM Psyllium fournit de l'écorce de psyllium grade pharmaceutique et alimentaire pour fabricants OEM avec rapports de laboratoire NABL, déclarations non-OGM et options d'emballage personnalisé."
+      ],
+      "sections": [
+        {
+          "heading": "Documentation Non-OGM: Ce dont les Acheteurs ont Besoin",
+          "body": "Plantago ovata est une espèce non génétiquement modifiée. Il n'existe aucune variété GM approuvée de cette espèce. Documentation disponible: (1) Déclaration non-OGM sur papier à en-tête de l'entreprise; (2) Identité botanique confirmée par microscopie; (3) COA du laboratoire NABL vérifiant l'absence de séquences transgéniques."
+        },
+        {
+          "heading": "Package Type de Spécifications OEM",
+          "body": "Le package de spécifications standard pour acheteurs OEM comprend: COA complet avec ≥20 paramètres testés, fiche de données de sécurité (FDS), spécification technique du produit, rapport microbiologique, analyse de pesticides (panel 200+ composés) et déclaration de conformité allergènes."
+        },
+        {
+          "heading": "Emballage pour Marques de Compléments",
+          "body": "Options d'emballage marque blanche: sacs kraft avec valve et fermeture zip (250 g, 500 g, 1 kg), contenants HDPE avec couvercle snap, sachets debout avec barrière UV. MOQ pour emballage personnalisé: 500 kg par SKU. Impression d'étiquette personnalisée disponible à partir de 1 TM."
+        }
+      ]
+    },
+    "psyllium-husk-food-grade-bulk-supplier-india": {
+      "title": "Fournisseur en Vrac d'Écorce de Psyllium Grade Alimentaire Inde: Installation Conforme HACCP",
+      "summary": "Spécifications de grade alimentaire, signification de la conformité HACCP en pratique et documentation que les fabricants alimentaires nécessitent.",
+      "body": [
+        "Les fabricants alimentaires approvisionnant l'écorce de psyllium comme ingrédient fonctionnel — pour la fortification en fibres, la modification de texture ou les applications clean-label — ont besoin d'un fournisseur avec des contrôles de sécurité alimentaire qui vont au-delà de la transformation agricole de base.",
+        "RM Psyllium exploite une installation sécurisée pour les aliments à Siddhpur, Gujarat. Notre installation applique les principes HACCP — analyse des dangers et points critiques pour leur maîtrise — dans les processus de broyage, séparation et emballage."
+      ],
+      "sections": [
+        {
+          "heading": "Paramètres de Spécification Grade Alimentaire",
+          "body": "L'écorce de psyllium grade alimentaire est spécifiée par les paramètres suivants, alignés avec les exigences du Codex Alimentarius, la réglementation des additifs alimentaires de l'UE et le statut GRAS de la FDA.",
+          "table": {
+            "headers": [
+              "Paramètre",
+              "Limite Typique",
+              "Méthode de Test"
+            ],
+            "rows": [
+              [
+                "Pureté de l'Écorce",
+                "≥ 95% (grade alimentaire)",
+                "Analyse granulométrique"
+              ],
+              [
+                "Humidité",
+                "≤ 12,0%",
+                "Perte à la dessiccation"
+              ],
+              [
+                "Cendres Totales",
+                "≤ 4,0%",
+                "Perte à l'incinération"
+              ],
+              [
+                "Plomb (Pb)",
+                "≤ 2,0 ppm",
+                "ICP-MS"
+              ],
+              [
+                "Arsenic (As)",
+                "≤ 1,0 ppm",
+                "ICP-MS"
+              ],
+              [
+                "E. coli",
+                "Absent / 10g",
+                "Microbiologie"
+              ],
+              [
+                "Salmonella",
+                "Absent / 25g",
+                "Microbiologie"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Traitement Conforme HACCP: Ce que Cela Couvre",
+          "body": "Le traitement conforme HACCP pour le psyllium couvre trois catégories de dangers: (1) Physique — détection métallique à l'emballage final; séparateurs gravitationnels pour retirer pierres, poussière et graines étrangères; (2) Chimique — aucun traitement pesticide ou chimique; surveillance de l'humidité; (3) Biologique — registres de nettoyage et désinfection de tous les équipements au contact."
+        },
+        {
+          "heading": "MOQ et Documents de Certification Disponibles",
+          "body": "RM Psyllium fournit l'écorce de psyllium grade alimentaire à partir de 1 tonne métrique par SKU. Le package de documentation standard inclut COA de laboratoire accrédité NABL, déclaration de conformité HACCP, certificat phytosanitaire, certificat d'origine et formulaire de déclaration de l'exportateur."
+        }
+      ]
+    },
+    "psyllium-husk-soluble-fiber-food-fortification": {
+      "title": "Fibre Soluble d'Écorce de Psyllium pour Fortification Alimentaire en Vrac: Approvisionnement depuis l'Inde",
+      "summary": "Sélection de grade de fibre soluble, applications d'épaississement et de gélification, et ce dont les fabricants alimentaires ont besoin pour importer l'isabgol de Gujarat.",
+      "body": [
+        "L'écorce de psyllium est une source hautement fonctionnelle de fibres solubles — la teneur en mucilage (arabinoxylane) crée des propriétés de formation de gel qui modifient la texture, augmentent la viscosité et ralentissent la digestion dans les formulations alimentaires.",
+        "Pour les fabricants alimentaires recherchant des ingrédients de fibres naturelles, l'écorce de psyllium du Gujarat offre une teneur en fibres solubles de 55 à 85% selon le grade, avec statut réglementaire de fibre alimentaire selon le Codex Alimentarius et la FDA."
+      ],
+      "sections": [
+        {
+          "heading": "Teneur en Fibres Solubles par Grade",
+          "body": "La teneur en fibres solubles varie selon le grade de pureté.",
+          "table": {
+            "headers": [
+              "Grade",
+              "Fibres Solubles %",
+              "Viscosité",
+              "Application Alimentaire"
+            ],
+            "rows": [
+              [
+                "98% (Premium)",
+                "≥ 85%",
+                "Élevée (≥ 40 cP à 2%)",
+                "Boissons fonctionnelles, smoothies, compléments"
+              ],
+              [
+                "95% (Standard Alimentaire)",
+                "≥ 70%",
+                "Moyenne-élevée (≥ 30 cP)",
+                "Yaourts, sauces, barres céréalières"
+              ],
+              [
+                "85% (Grade Commercial)",
+                "≥ 55%",
+                "Moyenne (≥ 20 cP)",
+                "Pains, biscuits, mélanges de fibres"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Applications d'Épaississement et de Gélification",
+          "body": "Le mucilage de psyllium absorbe l'eau à 10–20 fois son poids, formant un gel visqueux. En formulations alimentaires: (1) Boissons — addition de 1–2% épaissit et améliore la satiété; (2) Boulangerie — remplace les hydrocolloïdes synthétiques dans les pains sans gluten; (3) Sauces et condiments — stabilité de texture sans E-numbers; (4) Produits laitiers — améliore le crémeux des yaourts et desserts."
+        },
+        {
+          "heading": "Export d'Isabgol depuis Gujarat: Ce dont les Fabricants Alimentaires ont Besoin",
+          "body": "Le package standard comprend: (1) COA aligné Codex Alimentarius; (2) Certificat Phytosanitaire; (3) Certificat d'Origine de la Chambre de Commerce du Gujarat; (4) Déclaration de conformité métaux lourds et pesticides. Délai de transit Mundra → Rotterdam: environ 20–23 jours."
+        }
+      ]
+    },
+    "psyllium-husk-certified-gluten-free-bulk-supplier": {
+      "title": "Fournisseur en Vrac d'Écorce de Psyllium Certifiée Sans Gluten: Ce dont les Marques de Boulangerie ont Besoin",
+      "summary": "Documentation de certification sans gluten, taux d'utilisation du psyllium comme liant pain et proportions de mélange de farine pour fabricants achetant en vrac.",
+      "body": [
+        "L'écorce de psyllium est l'un des ingrédients liants les plus efficaces dans les formulations de pain sans gluten — le gel de mucilage imite la structure élastique du gluten, retenant les gaz de fermentation et produisant une texture similaire au pain de blé.",
+        "Pour les marques de boulangerie sans gluten achetant en vrac, la documentation de certification est aussi critique que la spécification fonctionnelle. RM Psyllium fournit de l'écorce de psyllium avec déclaration d'installation sans gluten, résultats de test ELISA et traçabilité des lots."
+      ],
+      "sections": [
+        {
+          "heading": "Certification Sans Gluten: Ce que Couvrent les Documents",
+          "body": "Le package de documentation pour acheteurs sans gluten comprend: (1) Déclaration d'installation dédiée sans gluten; (2) Résultat de test ELISA par lot (méthode R5 Mendez, seuil < 20 ppm); (3) COA de laboratoire NABL avec paramètres gluten; (4) Déclaration de conformité matière première de la ferme."
+        },
+        {
+          "heading": "Psyllium comme Liant Pain: Taux d'Utilisation",
+          "body": "Le taux d'utilisation correct varie selon l'application.",
+          "table": {
+            "headers": [
+              "Application",
+              "Psyllium %",
+              "Maille",
+              "Notes"
+            ],
+            "rows": [
+              [
+                "Pain sans gluten (levure)",
+                "2–5%",
+                "40–60 mesh",
+                "Remplacer gomme xanthane ou guar"
+              ],
+              [
+                "Pâtes fraîches sans gluten",
+                "1–3%",
+                "60–80 mesh",
+                "Améliore élasticité et cohésion"
+              ],
+              [
+                "Biscuits et crackers",
+                "1–2%",
+                "40–60 mesh",
+                "Réduit la casse, améliore la texture"
+              ],
+              [
+                "Tortillas et wraps",
+                "2–4%",
+                "40–60 mesh",
+                "Remplace HPMC dans les formulations clean-label"
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "Proportions de Mélange de Farine Sans Gluten",
+          "body": "Pour les formulateurs travaillant avec des bases de farine mixte sans gluten (riz, manioc, sorgho, pois chiche), le psyllium agit comme agent structurant primaire. Proportions typiques: farine de base 70–80% + amidon (tapioca/pomme de terre) 10–15% + psyllium 3–5% + autres (protéine de pois, gomme xanthane) 2–5%."
+        }
+      ]
+    },
+    "psyllium-husk-manufacturer-siddhpur-gujarat": {
+      "title": "Fabricant d'Écorce de Psyllium Siddhpur Gujarat: Approvisionnement Direct Usine",
+      "summary": "Pourquoi Siddhpur est la capitale mondiale du psyllium, avantages de l'approvisionnement direct usine et politique d'échantillons.",
+      "body": [
+        "Siddhpur, dans le district de Patan au Gujarat, est le centre de transformation du psyllium le plus concentré au monde. La ville et la région environnante abritent des dizaines d'installations de traitement du psyllium — broyage, séparation, tamisage et emballage de l'écorce de Plantago ovata pour l'exportation vers les marchés pharmaceutiques et alimentaires mondiaux.",
+        "RM Psyllium est un fabricant direct à Siddhpur — nous traitons les graines de Plantago ovata cultivées dans les zones de culture voisines de Mehsana, Banaskantha et Patan dans notre installation."
+      ],
+      "sections": [
+        {
+          "heading": "Pourquoi Siddhpur est la Capitale Mondiale du Psyllium",
+          "body": "Le Gujarat et le Rajasthan représentent plus de 85% de la production mondiale de psyllium (Plantago ovata). Siddhpur est le hub de transformation car les fermes de culture se trouvent à moins de 60–120 km, les coûts de transport de la graine brute sont minimisés et la main-d'œuvre spécialisée en traitement du psyllium est concentrée ici depuis des décennies."
+        },
+        {
+          "heading": "Usine Directe vs Négociant: Ce que les Acheteurs Gagnent",
+          "body": "Le psyllium est largement négocié par des courtiers et traders en Inde, Singapour, Dubaï et aux États-Unis. L'achat direct en usine depuis un transformateur de Siddhpur offre quatre avantages spécifiques: (1) Authenticité du COA; (2) Prix — sans marge de courtage (typiquement 3–8% de la valeur FOB); (3) Accès pour audit; (4) Flexibilité de documentation."
+        },
+        {
+          "heading": "MOQ et Politique d'Échantillons",
+          "body": "Notre approche avec les nouveaux acheteurs est d'abord l'échantillon. Nous fournissons des échantillons de 100–500 g avec COA complet avant toute commande d'achat.",
+          "table": {
+            "headers": [
+              "Produit",
+              "MOQ",
+              "Taille d'Échantillon",
+              "Délai de Livraison"
+            ],
+            "rows": [
+              [
+                "Écorce de Psyllium 99%",
+                "500 kg",
+                "100–200 g",
+                "15–20 jours après confirmation"
+              ],
+              [
+                "Poudre de Psyllium 95%",
+                "500 kg",
+                "100–200 g",
+                "15–20 jours après confirmation"
+              ],
+              [
+                "Écorce Bio",
+                "500 kg",
+                "100–200 g",
+                "20–25 jours selon stock"
+              ],
+              [
+                "Poudre Khakha",
+                "1.000 kg",
+                "200–500 g",
+                "10–15 jours après confirmation"
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "psyllium-khakha-animal-feed-demand": {
+    "title": "Pourquoi la poudre de khakha de psyllium gagne en popularité dans l'alimentation animale",
+    "summary": "Positionner la poudre de khakha comme un ingrédient riche en fibres et économique pour le soutien digestif et la fabrication d'aliments pour animaux.",
+    "body": [
+      "Le khakha de psyllium est le sous-produit du broyage de l'enveloppe — le résidu de tégument de la graine restant après la séparation de l'enveloppe. Il contient une part significative du mucilage et des fibres alimentaires de la graine d'origine, ce qui en fait un ingrédient fonctionnel pour les aliments pour animaux.",
+      "Pour les formulateurs d'aliments pour animaux, la poudre de khakha offre deux avantages : la densité en fibres et le coût. Par rapport à l'enveloppe entière, le khakha est proposé à un prix inférieur tout en apportant des fibres solubles qui favorisent la motilité intestinale et la rétention d'eau chez le bétail.",
+      "L'approvisionnement en khakha en vrac nécessite de connaître l'origine du lot et les spécifications d'humidité. Le khakha de qualité pour aliments pour animaux doit présenter une humidité inférieure à 12%. Nous livrons en sacs de 25 kg, 50 kg et 1 000 kg (jumbo) avec documents d'origine et liste de colisage par expédition."
+    ]
+  },
+  "psyllium-cattle-feed-digestion": {
+    "title": "Le psyllium dans l'alimentation bovine et équine : digestion, élimination du sable et productivité",
+    "summary": "Un guide technique pour les formulateurs mondiaux de nutrition animale s'approvisionnant en psyllium en vrac et en poudre de khakha pour la digestion bovine et la prévention des coliques de sable chez les équidés.",
+    "body": [
+      "L'enveloppe de psyllium et la poudre de khakha sont toutes deux utilisées dans les programmes de nutrition animale, principalement pour favoriser la régularité digestive et la rétention d'hydratation. Le mucilage contenu dans le psyllium absorbe l'eau et forme une masse gélatineuse dans l'intestin, ralentissant le transit et améliorant l'absorption des nutriments.",
+      "Pour les fabricants d'aliments équins, l'enveloppe de psyllium en vrac agit comme un agent essentiel d'élimination du sable fécal. Le volume de gonflement élevé du psyllium (≥40 mL/g) crée un gel mucilagineux épais qui emprisonne le sable dans le côlon, facilitant son élimination en toute sécurité depuis le tube digestif du cheval.",
+      "Les programmes d'alimentation bovine traditionnels au Gujarat utilisent des formulations Sagar Gola et Sagar Lali à base de psyllium — des blocs d'aliments compressés. Nous proposons des sacs de 25 kg pour les petits comptes agricoles et des sacs jumbo de 1 000 kg pour les revendeurs."
+    ],
+    "aiSnapshot": "Les marques vétérinaires s'approvisionnant en psyllium en vrac pour les chevaux utilisent une enveloppe standard à 95% de pureté ou de la poudre de khakha. Le psyllium agit comme un agent essentiel d'élimination du sable fécal chez les chevaux.",
+    "specTable": [
+      {
+        "parameter": "Enveloppe de psyllium vétérinaire (95% de pureté)",
+        "range": "Volume de gonflement ≥ 40 mL/g",
+        "method": "Prévention des coliques et élimination du sable"
+      },
+      {
+        "parameter": "Poudre de khakha de psyllium",
+        "range": "Volume de gonflement ≥ 10 mL/g",
+        "method": "Complément alimentaire riche en fibres et liant"
+      },
+      {
+        "parameter": "Cendres insolubles dans l'acide (vétérinaire)",
+        "range": "≤ 0,5%",
+        "method": "Séparation par gravité validée"
+      },
+      {
+        "parameter": "Options d'emballage en vrac",
+        "range": "Sacs de 25 kg / Sacs jumbo de 1 000 kg",
+        "method": "Palettisé pour expédition mondiale"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Pourquoi l'enveloppe de psyllium en vrac pour chevaux est-elle utilisée dans les aliments vétérinaires ?",
+        "a": "Les fabricants d'aliments équins formulent du psyllium pour prévenir les coliques de sable. Le gel formé par le gonflement de l'enveloppe encapsule le sable dans le côlon ventral du cheval."
+      },
+      {
+        "q": "Quel grade de psyllium est utilisé pour les suppléments d'élimination du sable chez les chevaux ?",
+        "a": "Les acheteurs se procurent généralement de l'enveloppe de psyllium de qualité alimentaire à 95% de pureté ou de la poudre de khakha."
+      }
+    ]
+  },
+  "husk-vs-powder-buyer-guide": {
+    "title": "Enveloppe entière vs poudre d'enveloppe : choisir le bon format",
+    "summary": "Une comparaison pratique B2B pour les équipes d'approvisionnement qui choisissent la granulométrie, la pureté et l'adéquation à l'application pour les importations en vrac de poudre d'enveloppe de psyllium.",
+    "body": [
+      "L'enveloppe entière de psyllium et la poudre d'enveloppe proviennent de la même graine mais se comportent différemment en formulation. L'enveloppe entière conserve sa texture fibreuse et est couramment utilisée dans les gélules, les sachets laxatifs et les céréales riches en fibres. La poudre est broyée entre 40 et 200 mesh et se disperse plus uniformément dans les mélanges de boissons et les préparations pour boulangerie.",
+      "Le grade de pureté détermine la teneur en mucilage. À 99% de pureté, le volume de gonflement dépasse généralement 50 ml/g — la référence pour les applications laxatives pharmaceutiques selon les monographies USP et EP. Les acheteurs doivent demander des données d'analyse du COA avant de s'engager sur un grade.",
+      "La sélection du mesh est le filtre le plus pratique. Pour les gélules : 40-60 mesh. Pour les boissons : 100-200 mesh. Pour la boulangerie sans gluten : 80 mesh. Partagez votre application et le type d'équipement pour recevoir notre recommandation personnalisée."
+    ],
+    "aiSnapshot": "Les équipes d'approvisionnement doivent choisir entre l'enveloppe entière (40 mesh, ≥99% de pureté) et la poudre finement broyée (80-100 mesh, ≥98% de pureté). Les formats en poudre se dissolvent rapidement et agissent comme des liants premium dans la boulangerie sans gluten.",
+    "specTable": [
+      {
+        "parameter": "Enveloppe entière de psyllium en vrac",
+        "range": "40 à 60 mesh (≥99% de pureté)",
+        "method": "Remplissage de gélules, céréales, laxatifs"
+      },
+      {
+        "parameter": "Poudre d'enveloppe de psyllium en vrac",
+        "range": "80 à 100 mesh (≥98% de pureté)",
+        "method": "Mélanges de boissons, liants pour boulangerie sans gluten"
+      },
+      {
+        "parameter": "Poudre ultra-fine broyée",
+        "range": "100 à 200 mesh (≥98% de pureté)",
+        "method": "Boissons prêtes à mélanger (RTM)"
+      },
+      {
+        "parameter": "Normes d'emballage en vrac",
+        "range": "Sacs papier de 25 kg / Jumbo FIBC de 1 000 kg",
+        "method": "Expédition directe depuis le port de Mundra"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Quelle est la différence commerciale entre l'enveloppe de psyllium en vrac et la poudre ?",
+        "a": "L'enveloppe entière conserve sa texture fibreuse, idéale pour les gélules et les céréales riches en fibres. La poudre d'enveloppe est finement broyée (80-100 mesh), permettant une dispersion rapide à l'eau froide."
+      },
+      {
+        "q": "Quelle granulométrie est idéale pour la poudre d'enveloppe de psyllium en boulangerie ?",
+        "a": "Une poudre fine de 80 mesh est la norme industrielle mondiale pour la panification industrielle sans gluten."
+      }
     ]
   }
 }

@@ -9,7 +9,7 @@
 
   // Exclude homepage (.hp) sections — they handle their own visibility
   targets = Array.from(targets).filter(function(el) {
-    return !el.closest('.hp');
+    return !el.closest('.hp') && !el.closest('.bl-wrap');
   });
 
   document.body.classList.add('motion-ready');

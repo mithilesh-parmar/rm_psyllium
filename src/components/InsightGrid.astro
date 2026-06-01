@@ -1,12 +1,12 @@
 ---
-import { insights } from '../data/site';
+import { blogPosts } from '../data/site';
 
 const lang = Astro.params.lang || 'en';
 ---
 <div class="insight-grid">
-  {insights.map((post, index) => (
-    <a class:list={['insight-card', { lead: index === 0 }]} href={`/${lang}/insights/${post.slug}/`}>
-      <span>{post.audience}</span>
+  {blogPosts.map((post, index) => (
+    <a class:list={['insight-card', { lead: index === 0 }]} href={`/${lang}/blog/${post.slug}/`}>
+      <span>{post.audience ?? post.category}</span>
       <h3>{post.title}</h3>
       <p>{post.summary}</p>
       <time datetime={post.date}>{post.date}</time>

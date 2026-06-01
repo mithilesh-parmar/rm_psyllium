@@ -1,3 +1,164 @@
 /playbook /resources/playbook 301
 /book /#book 302
+
+# Insights → Blog 301 redirects (en)
+/en/insights/ /en/blog/ 301
+/en/insights/psyllium-khakha-animal-feed-demand/ /en/blog/psyllium-khakha-animal-feed-demand/ 301
+/en/insights/psyllium-cattle-feed-digestion/ /en/blog/psyllium-cattle-feed-digestion/ 301
+/en/insights/husk-vs-powder-buyer-guide/ /en/blog/husk-vs-powder-buyer-guide/ 301
+/en/insights/psyllium-usp-ep-ip-monograph-standards/ /en/blog/psyllium-usp-ep-ip-monograph-standards/ 301
+/en/insights/verify-nabl-coa-psyllium-supplier/ /en/blog/verify-nabl-coa-psyllium-supplier/ 301
+/en/insights/fda-sourcing-guide-supplier-vetting-psyllium/ /en/blog/fda-sourcing-guide-supplier-vetting-psyllium/ 301
+/en/insights/heavy-metal-tolerances-nutraceutical-psyllium/ /en/blog/heavy-metal-tolerances-nutraceutical-psyllium/ 301
+/en/insights/steam-sterilization-residue-control-psyllium/ /en/blog/steam-sterilization-residue-control-psyllium/ 301
+/en/insights/mesh-size-sourcing-gluten-free-bakery/ /en/blog/mesh-size-sourcing-gluten-free-bakery/ 301
+/en/insights/nop-usda-eu-organic-integrity-psyllium/ /en/blog/nop-usda-eu-organic-integrity-psyllium/ 301
+/en/insights/allergen-cross-contamination-protocols-psyllium-milling/ /en/blog/allergen-cross-contamination-protocols-psyllium-milling/ 301
+/en/insights/soluble-insoluble-fiber-ratios-purity-selection/ /en/blog/soluble-insoluble-fiber-ratios-purity-selection/ 301
+/en/insights/swelling-volume-laboratory-verification-methods/ /en/blog/swelling-volume-laboratory-verification-methods/ 301
+
+# Insights → Blog 301 redirects (es)
+/es/insights/ /es/blog/ 301
+/es/insights/psyllium-khakha-animal-feed-demand/ /es/blog/psyllium-khakha-animal-feed-demand/ 301
+/es/insights/psyllium-cattle-feed-digestion/ /es/blog/psyllium-cattle-feed-digestion/ 301
+/es/insights/husk-vs-powder-buyer-guide/ /es/blog/husk-vs-powder-buyer-guide/ 301
+/es/insights/psyllium-usp-ep-ip-monograph-standards/ /es/blog/psyllium-usp-ep-ip-monograph-standards/ 301
+/es/insights/verify-nabl-coa-psyllium-supplier/ /es/blog/verify-nabl-coa-psyllium-supplier/ 301
+/es/insights/fda-sourcing-guide-supplier-vetting-psyllium/ /es/blog/fda-sourcing-guide-supplier-vetting-psyllium/ 301
+/es/insights/heavy-metal-tolerances-nutraceutical-psyllium/ /es/blog/heavy-metal-tolerances-nutraceutical-psyllium/ 301
+/es/insights/steam-sterilization-residue-control-psyllium/ /es/blog/steam-sterilization-residue-control-psyllium/ 301
+/es/insights/mesh-size-sourcing-gluten-free-bakery/ /es/blog/mesh-size-sourcing-gluten-free-bakery/ 301
+/es/insights/nop-usda-eu-organic-integrity-psyllium/ /es/blog/nop-usda-eu-organic-integrity-psyllium/ 301
+/es/insights/allergen-cross-contamination-protocols-psyllium-milling/ /es/blog/allergen-cross-contamination-protocols-psyllium-milling/ 301
+/es/insights/soluble-insoluble-fiber-ratios-purity-selection/ /es/blog/soluble-insoluble-fiber-ratios-purity-selection/ 301
+/es/insights/swelling-volume-laboratory-verification-methods/ /es/blog/swelling-volume-laboratory-verification-methods/ 301
+
+# Insights → Blog 301 redirects (de)
+/de/insights/ /de/blog/ 301
+/de/insights/psyllium-khakha-animal-feed-demand/ /de/blog/psyllium-khakha-animal-feed-demand/ 301
+/de/insights/psyllium-cattle-feed-digestion/ /de/blog/psyllium-cattle-feed-digestion/ 301
+/de/insights/husk-vs-powder-buyer-guide/ /de/blog/husk-vs-powder-buyer-guide/ 301
+/de/insights/psyllium-usp-ep-ip-monograph-standards/ /de/blog/psyllium-usp-ep-ip-monograph-standards/ 301
+/de/insights/verify-nabl-coa-psyllium-supplier/ /de/blog/verify-nabl-coa-psyllium-supplier/ 301
+/de/insights/fda-sourcing-guide-supplier-vetting-psyllium/ /de/blog/fda-sourcing-guide-supplier-vetting-psyllium/ 301
+/de/insights/heavy-metal-tolerances-nutraceutical-psyllium/ /de/blog/heavy-metal-tolerances-nutraceutical-psyllium/ 301
+/de/insights/steam-sterilization-residue-control-psyllium/ /de/blog/steam-sterilization-residue-control-psyllium/ 301
+/de/insights/mesh-size-sourcing-gluten-free-bakery/ /de/blog/mesh-size-sourcing-gluten-free-bakery/ 301
+/de/insights/nop-usda-eu-organic-integrity-psyllium/ /de/blog/nop-usda-eu-organic-integrity-psyllium/ 301
+/de/insights/allergen-cross-contamination-protocols-psyllium-milling/ /de/blog/allergen-cross-contamination-protocols-psyllium-milling/ 301
+/de/insights/soluble-insoluble-fiber-ratios-purity-selection/ /de/blog/soluble-insoluble-fiber-ratios-purity-selection/ 301
+/de/insights/swelling-volume-laboratory-verification-methods/ /de/blog/swelling-volume-laboratory-verification-methods/ 301
+
+# Insights → Blog 301 redirects (fr)
+/fr/insights/ /fr/blog/ 301
+/fr/insights/psyllium-khakha-animal-feed-demand/ /fr/blog/psyllium-khakha-animal-feed-demand/ 301
+/fr/insights/psyllium-cattle-feed-digestion/ /fr/blog/psyllium-cattle-feed-digestion/ 301
+/fr/insights/husk-vs-powder-buyer-guide/ /fr/blog/husk-vs-powder-buyer-guide/ 301
+/fr/insights/psyllium-usp-ep-ip-monograph-standards/ /fr/blog/psyllium-usp-ep-ip-monograph-standards/ 301
+/fr/insights/verify-nabl-coa-psyllium-supplier/ /fr/blog/verify-nabl-coa-psyllium-supplier/ 301
+/fr/insights/fda-sourcing-guide-supplier-vetting-psyllium/ /fr/blog/fda-sourcing-guide-supplier-vetting-psyllium/ 301
+/fr/insights/heavy-metal-tolerances-nutraceutical-psyllium/ /fr/blog/heavy-metal-tolerances-nutraceutical-psyllium/ 301
+/fr/insights/steam-sterilization-residue-control-psyllium/ /fr/blog/steam-sterilization-residue-control-psyllium/ 301
+/fr/insights/mesh-size-sourcing-gluten-free-bakery/ /fr/blog/mesh-size-sourcing-gluten-free-bakery/ 301
+/fr/insights/nop-usda-eu-organic-integrity-psyllium/ /fr/blog/nop-usda-eu-organic-integrity-psyllium/ 301
+/fr/insights/allergen-cross-contamination-protocols-psyllium-milling/ /fr/blog/allergen-cross-contamination-protocols-psyllium-milling/ 301
+/fr/insights/soluble-insoluble-fiber-ratios-purity-selection/ /fr/blog/soluble-insoluble-fiber-ratios-purity-selection/ 301
+/fr/insights/swelling-volume-laboratory-verification-methods/ /fr/blog/swelling-volume-laboratory-verification-methods/ 301
+
+# Insights → Blog 301 redirects (ar)
+/ar/insights/ /ar/blog/ 301
+/ar/insights/psyllium-khakha-animal-feed-demand/ /ar/blog/psyllium-khakha-animal-feed-demand/ 301
+/ar/insights/psyllium-cattle-feed-digestion/ /ar/blog/psyllium-cattle-feed-digestion/ 301
+/ar/insights/husk-vs-powder-buyer-guide/ /ar/blog/husk-vs-powder-buyer-guide/ 301
+/ar/insights/psyllium-usp-ep-ip-monograph-standards/ /ar/blog/psyllium-usp-ep-ip-monograph-standards/ 301
+/ar/insights/verify-nabl-coa-psyllium-supplier/ /ar/blog/verify-nabl-coa-psyllium-supplier/ 301
+/ar/insights/fda-sourcing-guide-supplier-vetting-psyllium/ /ar/blog/fda-sourcing-guide-supplier-vetting-psyllium/ 301
+/ar/insights/heavy-metal-tolerances-nutraceutical-psyllium/ /ar/blog/heavy-metal-tolerances-nutraceutical-psyllium/ 301
+/ar/insights/steam-sterilization-residue-control-psyllium/ /ar/blog/steam-sterilization-residue-control-psyllium/ 301
+/ar/insights/mesh-size-sourcing-gluten-free-bakery/ /ar/blog/mesh-size-sourcing-gluten-free-bakery/ 301
+/ar/insights/nop-usda-eu-organic-integrity-psyllium/ /ar/blog/nop-usda-eu-organic-integrity-psyllium/ 301
+/ar/insights/allergen-cross-contamination-protocols-psyllium-milling/ /ar/blog/allergen-cross-contamination-protocols-psyllium-milling/ 301
+/ar/insights/soluble-insoluble-fiber-ratios-purity-selection/ /ar/blog/soluble-insoluble-fiber-ratios-purity-selection/ 301
+/ar/insights/swelling-volume-laboratory-verification-methods/ /ar/blog/swelling-volume-laboratory-verification-methods/ 301
+
+# Insights → Blog 301 redirects (zh)
+/zh/insights/ /zh/blog/ 301
+/zh/insights/psyllium-khakha-animal-feed-demand/ /zh/blog/psyllium-khakha-animal-feed-demand/ 301
+/zh/insights/psyllium-cattle-feed-digestion/ /zh/blog/psyllium-cattle-feed-digestion/ 301
+/zh/insights/husk-vs-powder-buyer-guide/ /zh/blog/husk-vs-powder-buyer-guide/ 301
+/zh/insights/psyllium-usp-ep-ip-monograph-standards/ /zh/blog/psyllium-usp-ep-ip-monograph-standards/ 301
+/zh/insights/verify-nabl-coa-psyllium-supplier/ /zh/blog/verify-nabl-coa-psyllium-supplier/ 301
+/zh/insights/fda-sourcing-guide-supplier-vetting-psyllium/ /zh/blog/fda-sourcing-guide-supplier-vetting-psyllium/ 301
+/zh/insights/heavy-metal-tolerances-nutraceutical-psyllium/ /zh/blog/heavy-metal-tolerances-nutraceutical-psyllium/ 301
+/zh/insights/steam-sterilization-residue-control-psyllium/ /zh/blog/steam-sterilization-residue-control-psyllium/ 301
+/zh/insights/mesh-size-sourcing-gluten-free-bakery/ /zh/blog/mesh-size-sourcing-gluten-free-bakery/ 301
+/zh/insights/nop-usda-eu-organic-integrity-psyllium/ /zh/blog/nop-usda-eu-organic-integrity-psyllium/ 301
+/zh/insights/allergen-cross-contamination-protocols-psyllium-milling/ /zh/blog/allergen-cross-contamination-protocols-psyllium-milling/ 301
+/zh/insights/soluble-insoluble-fiber-ratios-purity-selection/ /zh/blog/soluble-insoluble-fiber-ratios-purity-selection/ 301
+/zh/insights/swelling-volume-laboratory-verification-methods/ /zh/blog/swelling-volume-laboratory-verification-methods/ 301
+
+# Insights → Blog 301 redirects (pt)
+/pt/insights/ /pt/blog/ 301
+/pt/insights/psyllium-khakha-animal-feed-demand/ /pt/blog/psyllium-khakha-animal-feed-demand/ 301
+/pt/insights/psyllium-cattle-feed-digestion/ /pt/blog/psyllium-cattle-feed-digestion/ 301
+/pt/insights/husk-vs-powder-buyer-guide/ /pt/blog/husk-vs-powder-buyer-guide/ 301
+/pt/insights/psyllium-usp-ep-ip-monograph-standards/ /pt/blog/psyllium-usp-ep-ip-monograph-standards/ 301
+/pt/insights/verify-nabl-coa-psyllium-supplier/ /pt/blog/verify-nabl-coa-psyllium-supplier/ 301
+/pt/insights/fda-sourcing-guide-supplier-vetting-psyllium/ /pt/blog/fda-sourcing-guide-supplier-vetting-psyllium/ 301
+/pt/insights/heavy-metal-tolerances-nutraceutical-psyllium/ /pt/blog/heavy-metal-tolerances-nutraceutical-psyllium/ 301
+/pt/insights/steam-sterilization-residue-control-psyllium/ /pt/blog/steam-sterilization-residue-control-psyllium/ 301
+/pt/insights/mesh-size-sourcing-gluten-free-bakery/ /pt/blog/mesh-size-sourcing-gluten-free-bakery/ 301
+/pt/insights/nop-usda-eu-organic-integrity-psyllium/ /pt/blog/nop-usda-eu-organic-integrity-psyllium/ 301
+/pt/insights/allergen-cross-contamination-protocols-psyllium-milling/ /pt/blog/allergen-cross-contamination-protocols-psyllium-milling/ 301
+/pt/insights/soluble-insoluble-fiber-ratios-purity-selection/ /pt/blog/soluble-insoluble-fiber-ratios-purity-selection/ 301
+/pt/insights/swelling-volume-laboratory-verification-methods/ /pt/blog/swelling-volume-laboratory-verification-methods/ 301
+
+# Insights → Blog 301 redirects (it)
+/it/insights/ /it/blog/ 301
+/it/insights/psyllium-khakha-animal-feed-demand/ /it/blog/psyllium-khakha-animal-feed-demand/ 301
+/it/insights/psyllium-cattle-feed-digestion/ /it/blog/psyllium-cattle-feed-digestion/ 301
+/it/insights/husk-vs-powder-buyer-guide/ /it/blog/husk-vs-powder-buyer-guide/ 301
+/it/insights/psyllium-usp-ep-ip-monograph-standards/ /it/blog/psyllium-usp-ep-ip-monograph-standards/ 301
+/it/insights/verify-nabl-coa-psyllium-supplier/ /it/blog/verify-nabl-coa-psyllium-supplier/ 301
+/it/insights/fda-sourcing-guide-supplier-vetting-psyllium/ /it/blog/fda-sourcing-guide-supplier-vetting-psyllium/ 301
+/it/insights/heavy-metal-tolerances-nutraceutical-psyllium/ /it/blog/heavy-metal-tolerances-nutraceutical-psyllium/ 301
+/it/insights/steam-sterilization-residue-control-psyllium/ /it/blog/steam-sterilization-residue-control-psyllium/ 301
+/it/insights/mesh-size-sourcing-gluten-free-bakery/ /it/blog/mesh-size-sourcing-gluten-free-bakery/ 301
+/it/insights/nop-usda-eu-organic-integrity-psyllium/ /it/blog/nop-usda-eu-organic-integrity-psyllium/ 301
+/it/insights/allergen-cross-contamination-protocols-psyllium-milling/ /it/blog/allergen-cross-contamination-protocols-psyllium-milling/ 301
+/it/insights/soluble-insoluble-fiber-ratios-purity-selection/ /it/blog/soluble-insoluble-fiber-ratios-purity-selection/ 301
+/it/insights/swelling-volume-laboratory-verification-methods/ /it/blog/swelling-volume-laboratory-verification-methods/ 301
+
+# Insights → Blog 301 redirects (nl)
+/nl/insights/ /nl/blog/ 301
+/nl/insights/psyllium-khakha-animal-feed-demand/ /nl/blog/psyllium-khakha-animal-feed-demand/ 301
+/nl/insights/psyllium-cattle-feed-digestion/ /nl/blog/psyllium-cattle-feed-digestion/ 301
+/nl/insights/husk-vs-powder-buyer-guide/ /nl/blog/husk-vs-powder-buyer-guide/ 301
+/nl/insights/psyllium-usp-ep-ip-monograph-standards/ /nl/blog/psyllium-usp-ep-ip-monograph-standards/ 301
+/nl/insights/verify-nabl-coa-psyllium-supplier/ /nl/blog/verify-nabl-coa-psyllium-supplier/ 301
+/nl/insights/fda-sourcing-guide-supplier-vetting-psyllium/ /nl/blog/fda-sourcing-guide-supplier-vetting-psyllium/ 301
+/nl/insights/heavy-metal-tolerances-nutraceutical-psyllium/ /nl/blog/heavy-metal-tolerances-nutraceutical-psyllium/ 301
+/nl/insights/steam-sterilization-residue-control-psyllium/ /nl/blog/steam-sterilization-residue-control-psyllium/ 301
+/nl/insights/mesh-size-sourcing-gluten-free-bakery/ /nl/blog/mesh-size-sourcing-gluten-free-bakery/ 301
+/nl/insights/nop-usda-eu-organic-integrity-psyllium/ /nl/blog/nop-usda-eu-organic-integrity-psyllium/ 301
+/nl/insights/allergen-cross-contamination-protocols-psyllium-milling/ /nl/blog/allergen-cross-contamination-protocols-psyllium-milling/ 301
+/nl/insights/soluble-insoluble-fiber-ratios-purity-selection/ /nl/blog/soluble-insoluble-fiber-ratios-purity-selection/ 301
+/nl/insights/swelling-volume-laboratory-verification-methods/ /nl/blog/swelling-volume-laboratory-verification-methods/ 301
+
+# Insights → Blog 301 redirects (ru)
+/ru/insights/ /ru/blog/ 301
+/ru/insights/psyllium-khakha-animal-feed-demand/ /ru/blog/psyllium-khakha-animal-feed-demand/ 301
+/ru/insights/psyllium-cattle-feed-digestion/ /ru/blog/psyllium-cattle-feed-digestion/ 301
+/ru/insights/husk-vs-powder-buyer-guide/ /ru/blog/husk-vs-powder-buyer-guide/ 301
+/ru/insights/psyllium-usp-ep-ip-monograph-standards/ /ru/blog/psyllium-usp-ep-ip-monograph-standards/ 301
+/ru/insights/verify-nabl-coa-psyllium-supplier/ /ru/blog/verify-nabl-coa-psyllium-supplier/ 301
+/ru/insights/fda-sourcing-guide-supplier-vetting-psyllium/ /ru/blog/fda-sourcing-guide-supplier-vetting-psyllium/ 301
+/ru/insights/heavy-metal-tolerances-nutraceutical-psyllium/ /ru/blog/heavy-metal-tolerances-nutraceutical-psyllium/ 301
+/ru/insights/steam-sterilization-residue-control-psyllium/ /ru/blog/steam-sterilization-residue-control-psyllium/ 301
+/ru/insights/mesh-size-sourcing-gluten-free-bakery/ /ru/blog/mesh-size-sourcing-gluten-free-bakery/ 301
+/ru/insights/nop-usda-eu-organic-integrity-psyllium/ /ru/blog/nop-usda-eu-organic-integrity-psyllium/ 301
+/ru/insights/allergen-cross-contamination-protocols-psyllium-milling/ /ru/blog/allergen-cross-contamination-protocols-psyllium-milling/ 301
+/ru/insights/soluble-insoluble-fiber-ratios-purity-selection/ /ru/blog/soluble-insoluble-fiber-ratios-purity-selection/ 301
+/ru/insights/swelling-volume-laboratory-verification-methods/ /ru/blog/swelling-volume-laboratory-verification-methods/ 301
+
 /* /404 404

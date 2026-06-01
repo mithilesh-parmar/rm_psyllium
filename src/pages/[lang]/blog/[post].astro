@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import { blogPosts, copy, getLanguage, languages } from '../../../data/site';
+import { blogPosts, blogPostTranslations, copy, getLanguage, languages } from '../../../data/site';
 
 export function getStaticPaths() {
   return languages.flatMap((language) =>
@@ -15,6 +15,11 @@ const lang = getLanguage(Astro.params.lang);
 const t = copy[lang];
 const { post } = Astro.props;
 
+const localizedPost = {
+  ...post,
+  ...(blogPostTranslations[lang]?.[post.slug] || {})
+};
+
 const formattedDate = new Date(post.date).toLocaleDateString('en-GB', {
   day: 'numeric', month: 'long', year: 'numeric'
 });
@@ -26,21 +31,22 @@ const relatedPosts = blogPosts
 const blogPostSchema = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
-  headline: post.title,
-  description: post.summary,
+  headline: localizedPost.title,
+  description: localizedPost.summary,
   datePublished: post.date,
   dateModified: post.date,
+  inLanguage: lang,
   author: {
     '@type': 'Organization',
     name: 'RM Psyllium',
-    url: 'https://www.rmpsyllium.com'
+    url: 'https://rmpsyllium.com'
   },
   publisher: {
     '@type': 'Organization',
     name: 'RM Psyllium',
-    url: 'https://www.rmpsyllium.com'
+    url: 'https://rmpsyllium.com'
   },
-  url: `https://www.rmpsyllium.com/${lang}/blog/${post.slug}/`,
+  url: `https://rmpsyllium.com/${lang}/blog/${post.slug}/`,
   keywords: `psyllium, ${post.category.toLowerCase()}, psyllium supplier India, Siddhpur Gujarat`
 };
 
@@ -48,16 +54,16 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: `https://www.rmpsyllium.com/${lang}/` },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: `https://www.rmpsyllium.com/${lang}/blog/` },
-    { '@type': 'ListItem', position: 3, name: post.title, item: `https://www.rmpsyllium.com/${lang}/blog/${post.slug}/` }
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `https://rmpsyllium.com/${lang}/` },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: `https://rmpsyllium.com/${lang}/blog/` },
+    { '@type': 'ListItem', position: 3, name: post.title, item: `https://rmpsyllium.com/${lang}/blog/${post.slug}/` }
   ]
 };
 ---
 <BaseLayout
   lang={lang}
-  title={`${post.title} | RM Psyllium Blog`}
-  description={post.summary}
+  title={`${localizedPost.title} | RM Psyllium`}
+  description={localizedPost.summary}
   structuredData={[blogPostSchema, breadcrumbSchema]}
 >
   <article class="bp-wrap">
@@ -70,15 +76,15 @@ const breadcrumbSchema = {
             <span aria-hidden="true">›</span>
             <a href={`/${lang}/blog/`}>{t.navBlog}</a>
             <span aria-hidden="true">›</span>
-            <span>{post.category}</span>
+            <span>{t.blogCategories[post.category] ?? post.category}</span>
           </nav>
-          <p class="bp-kicker">{post.category}</p>
-          <h1>{post.title}<br /><em>{post.category}.</em></h1>
-          <p class="bp-lead">{post.summary}</p>
+          <p class="bp-kicker">{t.blogCategories[post.category] ?? post.category}</p>
+          <h1>{localizedPost.title}<br /><em>{t.blogCategories[post.category] ?? post.category}.</em></h1>
+          <p class="bp-lead">{localizedPost.summary}</p>
           <time datetime={post.date}>{formattedDate}</time>
         </div>
         <div class="bp-header-stats">
-          <div class="bp-hstat"><strong>{post.category}</strong><span>{t.blogTopicLabel}</span></div>
+          <div class="bp-hstat"><strong>{t.blogCategories[post.category] ?? post.category}</strong><span>{t.blogTopicLabel}</span></div>
           <div class="bp-hstat"><strong>{formattedDate}</strong><span>{t.insightsPublishedLabel}</span></div>
           <div class="bp-hstat"><strong>RM Psyllium</strong><span>{t.blogAuthorLabel}</span></div>
         </div>
@@ -89,14 +95,96 @@ const breadcrumbSchema = {
     <div class="bp-body-wrap">
       <div class="bp-body-inner">
         <div class="bp-content">
-          {post.body.map((para) => <p>{para}</p>)}
+          {localizedPost.aiSnapshot && (
+            <div class="bp-ai-snapshot">
+              <p class="bp-ai-snapshot-label">AI Answer Snapshot</p>
+              <p>{localizedPost.aiSnapshot}</p>
+            </div>
+          )}
+
+          {localizedPost.body.map((para: string) => <p>{para}</p>)}
+
+          {localizedPost.specTable && localizedPost.specTable.length > 0 && (
+            <div class="bp-spec-section">
+              <h2>Specification Reference</h2>
+              <div class="bp-table-wrap">
+                <table>
+                  <thead>
+                    <tr><th>Parameter</th><th>Range / Limit</th><th>Method</th></tr>
+                  </thead>
+                  <tbody>
+                    {localizedPost.specTable.map((row: any) => (
+                      <tr>
+                        <td>{row.parameter}</td>
+                        <td>{row.range}</td>
+                        <td>{row.method}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          )}
+
+          {localizedPost.faqs && localizedPost.faqs.length > 0 && (
+            <div class="bp-faqs">
+              <h2>Frequently Asked Questions</h2>
+              {localizedPost.faqs.map((faqItem: any) => (
+                <details class="bp-faq-item">
+                  <summary class="bp-faq-q">{faqItem.q}</summary>
+                  <p class="bp-faq-a">{faqItem.a}</p>
+                </details>
+              ))}
+            </div>
+          )}
+
+          {localizedPost.sections?.map((section: any) => (
+            <div class="bp-section">
+              <h2>{section.heading}</h2>
+              <p>{section.body}</p>
+              {section.table && (
+                <div class="bp-table-wrap">
+                  <table>
+                    <thead>
+                      <tr>{section.table.headers.map((h: string) => <th>{h}</th>)}</tr>
+                    </thead>
+                    <tbody>
+                      {section.table.rows.map((row: string[]) => (
+                        <tr>{row.map((cell: string) => <td>{cell}</td>)}</tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              )}
+            </div>
+          ))}
+
+          {localizedPost.internalLinks && localizedPost.internalLinks.length > 0 && (
+            <div class="bp-internal-links">
+              <p class="bp-related-label">{t.relatedArticles}</p>
+              {localizedPost.internalLinks.map((link: any) => (
+                <a class="bp-related-link" href={`/${lang}${link.path}`}>{link.text} →</a>
+              ))}
+            </div>
+          )}
+
+          {localizedPost.cta === 'sample' && (
+            <div class="bp-inline-cta">
+              <a href={`/${lang}/contact/`}>{t.ctaSampleRequest} →</a>
+            </div>
+          )}
+          {localizedPost.cta === 'spec-sheet' && (
+            <div class="bp-inline-cta">
+              <a href={`/${lang}/contact/`}>{t.ctaSpecSheet} →</a>
+            </div>
+          )}
 
           {relatedPosts.length > 0 && (
             <div class="bp-related">
               <p class="bp-related-label">{t.relatedArticles}</p>
               {relatedPosts.map((rel) => (
                 <a class="bp-related-link" href={`/${lang}/blog/${rel.slug}/`}>
-                  {rel.title} →
+                  {(blogPostTranslations[lang]?.[rel.slug] as any)?.title ?? rel.title} →
                 </a>
               ))}
             </div>
@@ -113,7 +201,7 @@ const breadcrumbSchema = {
           </div>
 
           <div class="bp-meta-card">
-            <div class="bp-meta-row"><strong>{t.blogCategoryLabel}</strong><span>{post.category}</span></div>
+            <div class="bp-meta-row"><strong>{t.blogCategoryLabel}</strong><span>{t.blogCategories[post.category] ?? post.category}</span></div>
             <div class="bp-meta-row"><strong>{t.insightsPublishedLabel}</strong><span>{formattedDate}</span></div>
             <div class="bp-meta-row"><strong>{t.blogAuthorLabel}</strong><span>RM Psyllium Export Team</span></div>
             <div class="bp-meta-row"><strong>{t.insightsSourceLabel}</strong><span>{t.sourceLocation}</span></div>
@@ -124,7 +212,7 @@ const breadcrumbSchema = {
             <a href={`/${lang}/faq/`}>{t.navFaq} →</a>
             <a href={`/${lang}/quality/`}>{t.navQuality} →</a>
             <a href={`/${lang}/products/`}>{t.navProducts} →</a>
-            <a href={`/${lang}/insights/`}>{t.navInsights} →</a>
+            <a href={`/${lang}/blog/`}>{t.navBlog} →</a>
           </div>
         </aside>
       </div>
@@ -445,5 +533,206 @@ const breadcrumbSchema = {
     .bp-header-inner, .bp-body-inner { width: calc(100% - 32px); }
     .bp-header-stats { grid-template-columns: 1fr; }
     .bp-sidebar { grid-template-columns: 1fr; }
+  }
+
+  /* sections */
+  .bp-section {
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 1px solid var(--rule);
+    max-width: 660px;
+  }
+
+  .bp-section h2 {
+    margin: 0 0 12px;
+    font-family: var(--f);
+    font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--sage);
+    line-height: 1.2;
+  }
+
+  .bp-section > p {
+    margin: 0 0 16px;
+    font-family: var(--f);
+    font-size: 16px;
+    color: var(--soft);
+    line-height: 1.75;
+  }
+
+  /* spec tables */
+  .bp-table-wrap {
+    overflow-x: auto;
+    border-radius: 8px;
+    border: 1px solid var(--rule);
+    margin-top: 16px;
+  }
+
+  .bp-table-wrap table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--f);
+    font-size: 14px;
+  }
+
+  .bp-table-wrap th {
+    background: var(--sage);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 10px 14px;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  .bp-table-wrap td {
+    padding: 10px 14px;
+    border-top: 1px solid var(--rule);
+    color: var(--soft);
+    line-height: 1.5;
+    vertical-align: top;
+  }
+
+  .bp-table-wrap tr:nth-child(even) td {
+    background: var(--cream);
+  }
+
+  /* internal links */
+  .bp-internal-links {
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 1px solid var(--rule);
+    display: grid;
+    gap: 10px;
+    max-width: 660px;
+  }
+
+  /* inline CTA */
+  .bp-inline-cta {
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 2px solid var(--sage);
+    max-width: 660px;
+  }
+
+  .bp-inline-cta a {
+    font-family: var(--f);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--sage);
+    text-decoration: none;
+    letter-spacing: -0.01em;
+  }
+
+  .bp-inline-cta a:hover {
+    text-decoration: underline;
+  }
+
+  /* ai snapshot */
+  .bp-ai-snapshot {
+    margin-bottom: 32px;
+    padding: 20px 24px;
+    border-left: 3px solid var(--sage);
+    background: color-mix(in srgb, var(--sage) 6%, transparent);
+    border-radius: 0 8px 8px 0;
+    max-width: 660px;
+  }
+
+  .bp-ai-snapshot-label {
+    margin: 0 0 8px;
+    color: var(--sage);
+    font-family: var(--f);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .bp-ai-snapshot > p:last-child {
+    margin: 0;
+    font-family: var(--f);
+    font-size: 15px;
+    color: var(--soft);
+    line-height: 1.7;
+  }
+
+  /* spec table section */
+  .bp-spec-section {
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 1px solid var(--rule);
+    max-width: 660px;
+  }
+
+  .bp-spec-section h2 {
+    margin: 0 0 16px;
+    font-family: var(--f);
+    font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--sage);
+    line-height: 1.2;
+  }
+
+  /* faqs */
+  .bp-faqs {
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 1px solid var(--rule);
+    max-width: 660px;
+  }
+
+  .bp-faqs h2 {
+    margin: 0 0 20px;
+    font-family: var(--f);
+    font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--sage);
+    line-height: 1.2;
+  }
+
+  .bp-faq-item {
+    border-top: 1px solid var(--rule);
+  }
+
+  .bp-faq-item:last-child {
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .bp-faq-q {
+    cursor: pointer;
+    padding: 16px 0;
+    font-family: var(--f);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.4;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .bp-faq-q::after {
+    content: '+';
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--sage);
+    flex-shrink: 0;
+  }
+
+  details[open] .bp-faq-q::after { content: '−'; }
+
+  .bp-faq-a {
+    margin: 0 0 20px;
+    font-family: var(--f);
+    font-size: 15px;
+    color: var(--soft);
+    line-height: 1.75;
   }
 </style>

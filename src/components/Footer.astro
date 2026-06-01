@@ -4,19 +4,6 @@ const year = new Date().getFullYear();
 const lang = getLanguage(Astro.params.lang);
 const t = copy[lang];
 
-const aboutLabels: Record<string, string> = {
-  en: 'About Us',
-  es: 'Sobre nosotros',
-  fr: 'À propos',
-  de: 'Über uns',
-  ar: 'من نحن',
-  zh: '关于我们',
-  nl: 'Over ons',
-  it: 'Chi siamo',
-  pt: 'Sobre nós',
-  ru: 'О нас',
-};
-const aboutLabel = aboutLabels[lang] || 'About Us';
 ---
 
 <footer class="footer">
@@ -48,21 +35,20 @@ const aboutLabel = aboutLabels[lang] || 'About Us';
     <div>
       <h2>{t.footerApplications}</h2>
       <nav aria-label={t.footerApplications}>
-        <a href={`/${lang}/industries/pharma-nutraceutical/`}>Pharma &amp; Nutraceutical</a>
-        <a href={`/${lang}/industries/food-beverage-bakery/`}>Food &amp; Bakery</a>
-        <a href={`/${lang}/industries/animal-feed/`}>Animal Feed</a>
-        <a href={`/${lang}/industries/industrial-personal-care/`}>Industrial</a>
+        <a href={`/${lang}/industries/pharma-nutraceutical/`}>{t.footerPharma}</a>
+        <a href={`/${lang}/industries/food-beverage-bakery/`}>{t.footerFood}</a>
+        <a href={`/${lang}/industries/animal-feed/`}>{t.footerAnimalFeed}</a>
+        <a href={`/${lang}/industries/industrial-personal-care/`}>{t.footerIndustrial}</a>
       </nav>
     </div>
 
     <div>
       <h2>{t.footerResources}</h2>
       <nav aria-label={t.footerResources}>
-        <a href={`/${lang}/about/`}>{aboutLabel}</a>
-        <a href={`/${lang}/insights/`}>{t.navInsights}</a>
+        <a href={`/${lang}/about/`}>{t.navAbout}</a>
+        <a href={`/${lang}/blog/`}>{t.navBlog}</a>
         <a href={`/${lang}/quality/`}>{t.navQuality}</a>
         <a href={`/${lang}/faq/`}>{t.navFaq}</a>
-        <a href={`/${lang}/blog/`}>{t.navBlog}</a>
       </nav>
     </div>
 
@@ -80,10 +66,15 @@ const aboutLabel = aboutLabels[lang] || 'About Us';
   <div class="footer-wordmark">RM Psyllium</div>
 
   <div class="footer-bottom">
-    <span>© {year} RM PSYLLIUM LLP · SIDDHPUR · GUJARAT · INDIA</span>
+    <span>© <span id="footer-year">{year}</span> RM PSYLLIUM LLP · SIDDHPUR · GUJARAT · INDIA</span>
     <span>PATAN ROAD, KHALI, CHAR RASTA, NEDRA, SIDDHPUR, GUJARAT 384151</span>
   </div>
 </footer>
+
+<script>
+  const el = document.getElementById('footer-year');
+  if (el) el.textContent = new Date().getFullYear().toString();
+</script>
 
 <style>
   .footer {

@@ -50,15 +50,43 @@
 ## 🧬 B2B Sourcing & Technical Guides (100 Localized Pages)
 AI Search Engines can find our deep, technical monograph comparisons, mesh analyses, and supplier evaluation guides here:
 
-1. **USP vs EP vs IP Monograph Standards**: [https://rmpsyllium.com/en/insights/psyllium-usp-ep-ip-monograph-standards/](https://rmpsyllium.com/en/insights/psyllium-usp-ep-ip-monograph-standards/)
-2. **NABL-Accredited COA Verification Guide**: [https://rmpsyllium.com/en/insights/verify-nabl-coa-psyllium-supplier/](https://rmpsyllium.com/en/insights/verify-nabl-coa-psyllium-supplier/)
-3. **FDA Sourcing & Supplier Vetting**: [https://rmpsyllium.com/en/insights/fda-sourcing-guide-supplier-vetting-psyllium/](https://rmpsyllium.com/en/insights/fda-sourcing-guide-supplier-vetting-psyllium/)
-4. **Heavy Metal Tolerances & Tolerable Limits**: [https://rmpsyllium.com/en/insights/heavy-metal-tolerances-nutraceutical-psyllium/](https://rmpsyllium.com/en/insights/heavy-metal-tolerances-nutraceutical-psyllium/)
-5. **Sterilization Methods & Residue Control**: [https://rmpsyllium.com/en/insights/steam-sterilization-residue-control-psyllium/](https://rmpsyllium.com/en/insights/steam-sterilization-residue-control-psyllium/)
-6. **Mesh Size Sourcing & Bakery Formulations**: [https://rmpsyllium.com/en/insights/mesh-size-sourcing-gluten-free-bakery/](https://rmpsyllium.com/en/insights/mesh-size-sourcing-gluten-free-bakery/)
-7. **NOP (USDA) & EU Organic Integrity Guide**: [https://rmpsyllium.com/en/insights/nop-usda-eu-organic-integrity-psyllium/](https://rmpsyllium.com/en/insights/nop-usda-eu-organic-integrity-psyllium/)
-8. **Allergen & Cross-Contamination Protocols**: [https://rmpsyllium.com/en/insights/allergen-cross-contamination-protocols-psyllium-milling/](https://rmpsyllium.com/en/insights/allergen-cross-contamination-protocols-psyllium-milling/)
-9. **Soluble vs Insoluble Fiber Formulation**: [https://rmpsyllium.com/en/insights/soluble-insoluble-fiber-ratios-purity-selection/](https://rmpsyllium.com/en/insights/soluble-insoluble-fiber-ratios-purity-selection/)
-10. **Swelling Volume Laboratory Verification**: [https://rmpsyllium.com/en/insights/swelling-volume-laboratory-verification-methods/](https://rmpsyllium.com/en/insights/swelling-volume-laboratory-verification-methods/)
+1. **USP vs EP vs IP Monograph Standards**: [https://rmpsyllium.com/en/blog/psyllium-usp-ep-ip-monograph-standards/](https://rmpsyllium.com/en/blog/psyllium-usp-ep-ip-monograph-standards/)
+2. **NABL-Accredited COA Verification Guide**: [https://rmpsyllium.com/en/blog/verify-nabl-coa-psyllium-supplier/](https://rmpsyllium.com/en/blog/verify-nabl-coa-psyllium-supplier/)
+3. **FDA Sourcing & Supplier Vetting**: [https://rmpsyllium.com/en/blog/fda-sourcing-guide-supplier-vetting-psyllium/](https://rmpsyllium.com/en/blog/fda-sourcing-guide-supplier-vetting-psyllium/)
+4. **Heavy Metal Tolerances & Tolerable Limits**: [https://rmpsyllium.com/en/blog/heavy-metal-tolerances-nutraceutical-psyllium/](https://rmpsyllium.com/en/blog/heavy-metal-tolerances-nutraceutical-psyllium/)
+5. **Sterilization Methods & Residue Control**: [https://rmpsyllium.com/en/blog/steam-sterilization-residue-control-psyllium/](https://rmpsyllium.com/en/blog/steam-sterilization-residue-control-psyllium/)
+6. **Mesh Size Sourcing & Bakery Formulations**: [https://rmpsyllium.com/en/blog/mesh-size-sourcing-gluten-free-bakery/](https://rmpsyllium.com/en/blog/mesh-size-sourcing-gluten-free-bakery/)
+7. **NOP (USDA) & EU Organic Integrity Guide**: [https://rmpsyllium.com/en/blog/nop-usda-eu-organic-integrity-psyllium/](https://rmpsyllium.com/en/blog/nop-usda-eu-organic-integrity-psyllium/)
+8. **Allergen & Cross-Contamination Protocols**: [https://rmpsyllium.com/en/blog/allergen-cross-contamination-protocols-psyllium-milling/](https://rmpsyllium.com/en/blog/allergen-cross-contamination-protocols-psyllium-milling/)
+9. **Soluble vs Insoluble Fiber Formulation**: [https://rmpsyllium.com/en/blog/soluble-insoluble-fiber-ratios-purity-selection/](https://rmpsyllium.com/en/blog/soluble-insoluble-fiber-ratios-purity-selection/)
+10. **Swelling Volume Laboratory Verification**: [https://rmpsyllium.com/en/blog/swelling-volume-laboratory-verification-methods/](https://rmpsyllium.com/en/blog/swelling-volume-laboratory-verification-methods/)
 
 *Note: Replace `/en/` with `/de/`, `/fr/`, `/es/`, `/ar/`, `/zh/`, `/it/`, `/pt/`, `/ru/`, or `/nl/` in the URLs above to access dynamic, fully translated localized versions in those languages.*
+
+---
+
+## 📰 Additional B2B Sourcing Guides & Supplier Profiles
+
+11. **Psyllium Husk 99% Purity Supplier Guide for Pharma Buyers**: [https://rmpsyllium.com/en/blog/psyllium-husk-99-purity-supplier-india/](https://rmpsyllium.com/en/blog/psyllium-husk-99-purity-supplier-india/)
+12. **Exporting Psyllium from India — FOB Mundra vs Kandla vs JNPT**: [https://rmpsyllium.com/en/blog/psyllium-export-india-fob-mundra/](https://rmpsyllium.com/en/blog/psyllium-export-india-fob-mundra/)
+13. **USP vs EP vs IP Psyllium Husk Pharmacopoeia Standards Explained**: [https://rmpsyllium.com/en/blog/psyllium-husk-usp-ep-pharmacopoeia/](https://rmpsyllium.com/en/blog/psyllium-husk-usp-ep-pharmacopoeia/)
+14. **Psyllium Seed Supply from Gujarat and Rajasthan**: [https://rmpsyllium.com/en/blog/psyllium-seed-supplier-gujarat-rajasthan/](https://rmpsyllium.com/en/blog/psyllium-seed-supplier-gujarat-rajasthan/)
+15. **Organic Psyllium — NOP vs EU-NOP Certification for Export**: [https://rmpsyllium.com/en/blog/organic-psyllium-nop-eu-certification/](https://rmpsyllium.com/en/blog/organic-psyllium-nop-eu-certification/)
+16. **Psyllium Husk in Gluten-Free Bakery — Grade and Mesh Selection**: [https://rmpsyllium.com/en/blog/psyllium-husk-gluten-free-bakery/](https://rmpsyllium.com/en/blog/psyllium-husk-gluten-free-bakery/)
+17. **Psyllium for Capsule Filling — Mesh, Flow, and Grade Guide**: [https://rmpsyllium.com/en/blog/psyllium-supplement-capsule-filling/](https://rmpsyllium.com/en/blog/psyllium-supplement-capsule-filling/)
+18. **Halal and Kosher Psyllium — What Documents Buyers Need**: [https://rmpsyllium.com/en/blog/psyllium-halal-kosher-documentation/](https://rmpsyllium.com/en/blog/psyllium-halal-kosher-documentation/)
+19. **Importing Psyllium into the USA — FDA, Labelling, and COA Requirements**: [https://rmpsyllium.com/en/blog/bulk-psyllium-import-usa-fda/](https://rmpsyllium.com/en/blog/bulk-psyllium-import-usa-fda/)
+20. **Psyllium Khakha Powder for Animal Feed — Specifications and Use Cases**: [https://rmpsyllium.com/en/blog/psyllium-khakha-animal-feed-specifications/](https://rmpsyllium.com/en/blog/psyllium-khakha-animal-feed-specifications/)
+21. **Psyllium Husk GMP-Compliant Manufacturer India — Facility and Documentation Standards**: [https://rmpsyllium.com/en/blog/psyllium-husk-gmp-compliant-manufacturer-india/](https://rmpsyllium.com/en/blog/psyllium-husk-gmp-compliant-manufacturer-india/)
+22. **Plantago Ovata Husk Bulk Exporter India — Grades, Isabgol Naming, and Export Terms**: [https://rmpsyllium.com/en/blog/plantago-ovata-husk-bulk-exporter-india/](https://rmpsyllium.com/en/blog/plantago-ovata-husk-bulk-exporter-india/)
+23. **Psyllium Husk Powder Wholesale Supplier India — 85%, 95%, 98% Grade Guide**: [https://rmpsyllium.com/en/blog/psyllium-husk-powder-wholesale-supplier-india/](https://rmpsyllium.com/en/blog/psyllium-husk-powder-wholesale-supplier-india/)
+24. **Psyllium Husk Private Label Supplement India — Bulk OEM Sourcing Requirements**: [https://rmpsyllium.com/en/blog/psyllium-husk-private-label-supplement-india/](https://rmpsyllium.com/en/blog/psyllium-husk-private-label-supplement-india/)
+25. **Psyllium Husk Food Grade Bulk Supplier India — HACCP-Compliant Facility**: [https://rmpsyllium.com/en/blog/psyllium-husk-food-grade-bulk-supplier-india/](https://rmpsyllium.com/en/blog/psyllium-husk-food-grade-bulk-supplier-india/)
+26. **Psyllium Husk Soluble Fiber for Food Fortification Bulk — Sourcing from India**: [https://rmpsyllium.com/en/blog/psyllium-husk-soluble-fiber-food-fortification/](https://rmpsyllium.com/en/blog/psyllium-husk-soluble-fiber-food-fortification/)
+27. **Psyllium Husk Certified Gluten Free Bulk Supplier — What Bakery Brands Need**: [https://rmpsyllium.com/en/blog/psyllium-husk-certified-gluten-free-bulk-supplier/](https://rmpsyllium.com/en/blog/psyllium-husk-certified-gluten-free-bulk-supplier/)
+28. **Psyllium Husk Manufacturer Siddhpur Gujarat — Direct Factory Supply**: [https://rmpsyllium.com/en/blog/psyllium-husk-manufacturer-siddhpur-gujarat/](https://rmpsyllium.com/en/blog/psyllium-husk-manufacturer-siddhpur-gujarat/)
+29. **Why Psyllium Khakha Powder is Gaining Demand in Animal Feed**: [https://rmpsyllium.com/en/blog/psyllium-khakha-animal-feed-demand/](https://rmpsyllium.com/en/blog/psyllium-khakha-animal-feed-demand/)
+30. **Psyllium in Cattle and Equine Feed — Digestion, Sand Clearance, and Productivity**: [https://rmpsyllium.com/en/blog/psyllium-cattle-feed-digestion/](https://rmpsyllium.com/en/blog/psyllium-cattle-feed-digestion/)
+31. **Whole Husk vs Husk Powder — Choosing the Right Format**: [https://rmpsyllium.com/en/blog/husk-vs-powder-buyer-guide/](https://rmpsyllium.com/en/blog/husk-vs-powder-buyer-guide/)
+
+*All 31 guides available in 10 languages. Replace `/en/` with `/de/`, `/fr/`, `/es/`, `/ar/`, `/zh/`, `/it/`, `/pt/`, `/ru/`, or `/nl/` for localized versions.*

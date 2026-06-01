@@ -1,7 +1,8 @@
 ---
-import { getLanguage, languages } from '../data/site';
+import { getLanguage, languages, copy } from '../data/site';
 
 const lang = getLanguage(Astro.params.lang);
+const t = copy[lang];
 const currentLanguage = languages.find(l => l.code === lang);
 
 // Find the equivalent path in other languages
@@ -35,13 +36,13 @@ const getTargetHref = (code: string) => {
   </a>
 
   <nav class="site-nav" aria-label="Primary navigation">
-    <a href={`/${lang}/`}>Home</a>
-    <a href={`/${lang}/products/`}>Products</a>
-    <a href={`/${lang}/quality/`}>Quality</a>
-    <a href={`/${lang}/about/`}>About</a>
-    <a href={`/${lang}/insights/`}>Buyer Guides</a>
-    <a href={`/${lang}/faq/`}>FAQ</a>
-    <a href={`/${lang}/contact/`}>Contact</a>
+    <a href={`/${lang}/`}>{t.navHome}</a>
+    <a href={`/${lang}/products/`}>{t.navProducts}</a>
+    <a href={`/${lang}/quality/`}>{t.navQuality}</a>
+    <a href={`/${lang}/about/`}>{t.navAbout}</a>
+    <a href={`/${lang}/blog/`}>{t.navBlog}</a>
+    <a href={`/${lang}/faq/`}>{t.navFaq}</a>
+    <a href={`/${lang}/contact/`}>{t.navContact}</a>
     <div class="lang-dropdown" aria-label="Language switcher">
       <button class="lang-trigger" aria-haspopup="listbox" aria-expanded="false" aria-label={`Language: ${currentLanguage?.label}`}>
         <span class="lang-globe" aria-hidden="true">
@@ -63,7 +64,7 @@ const getTargetHref = (code: string) => {
         ))}
       </ul>
     </div>
-    <a class="nav-cta" href={`/${lang}/#talk`} data-track="quote_click">Get Quote <span aria-hidden="true"></span></a>
+    <a class="nav-cta" href={`/${lang}/#talk`} data-track="quote_click">{t.cta} <span aria-hidden="true"></span></a>
   </nav>
 
   <!-- Hamburger: three staggered-width bars that morph to × on open -->
@@ -98,25 +99,25 @@ const getTargetHref = (code: string) => {
     <!-- Nav links -->
     <nav class="wp-nav" aria-label="Mobile navigation">
       <a class="wp-link" href={`/${lang}/`}>
-        <span class="wp-num">00</span><span class="wp-text">Home</span>
+        <span class="wp-num">00</span><span class="wp-text">{t.navHome}</span>
       </a>
       <a class="wp-link" href={`/${lang}/products/`}>
-        <span class="wp-num">01</span><span class="wp-text">Products</span>
+        <span class="wp-num">01</span><span class="wp-text">{t.navProducts}</span>
       </a>
       <a class="wp-link" href={`/${lang}/quality/`}>
-        <span class="wp-num">02</span><span class="wp-text">Quality</span>
+        <span class="wp-num">02</span><span class="wp-text">{t.navQuality}</span>
       </a>
       <a class="wp-link" href={`/${lang}/about/`}>
-        <span class="wp-num">03</span><span class="wp-text">About</span>
+        <span class="wp-num">03</span><span class="wp-text">{t.navAbout}</span>
       </a>
-      <a class="wp-link" href={`/${lang}/insights/`}>
-        <span class="wp-num">04</span><span class="wp-text">Buyer Guides</span>
+      <a class="wp-link" href={`/${lang}/blog/`}>
+        <span class="wp-num">04</span><span class="wp-text">{t.navBlog}</span>
       </a>
       <a class="wp-link" href={`/${lang}/faq/`}>
-        <span class="wp-num">05</span><span class="wp-text">FAQ</span>
+        <span class="wp-num">05</span><span class="wp-text">{t.navFaq}</span>
       </a>
       <a class="wp-link" href={`/${lang}/contact/`}>
-        <span class="wp-num">06</span><span class="wp-text">Contact</span>
+        <span class="wp-num">06</span><span class="wp-text">{t.navContact}</span>
       </a>
     </nav>
 
@@ -144,7 +145,7 @@ const getTargetHref = (code: string) => {
         </ul>
       </div>
       <a class="wp-cta" href={`/${lang}/#talk`} data-track="quote_click">
-        Get Quote
+        {t.cta}
         <span class="wp-dot" aria-hidden="true"></span>
       </a>
     </div>

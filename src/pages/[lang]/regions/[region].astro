@@ -1,0 +1,444 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import SpecBuilder from '../../../components/SpecBuilder.astro';
+import { copy, getLanguage, languages, regions } from '../../../data/site';
+
+export function getStaticPaths() {
+  return languages.flatMap((language) =>
+    regions.map((region) => ({
+      params: { lang: language.code, region: region.slug },
+      props: { region }
+    }))
+  );
+}
+
+const lang = getLanguage(Astro.params.lang);
+const t = copy[lang];
+const { region } = Astro.props;
+
+const regionSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: `${region.name} Psyllium Husk Supplier | RM Psyllium`,
+  description: region.headline,
+  url: `https://rmpsyllium.com/${lang}/regions/${region.slug}/`,
+  inLanguage: lang,
+  publisher: {
+    '@type': 'Organization',
+    name: 'RM Psyllium',
+    url: 'https://rmpsyllium.com'
+  }
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `https://rmpsyllium.com/${lang}/` },
+    { '@type': 'ListItem', position: 2, name: region.name, item: `https://rmpsyllium.com/${lang}/regions/${region.slug}/` }
+  ]
+};
+---
+<BaseLayout
+  lang={lang}
+  title={`Psyllium Husk Supplier ${region.name} | RM Psyllium`}
+  description={region.headline}
+  structuredData={[regionSchema, breadcrumbSchema]}
+>
+  <!-- Hero -->
+  <section class="rg-section">
+    <div class="rg-container rg-hero-grid">
+      <div>
+        <nav class="rg-breadcrumb" aria-label="Breadcrumb">
+          <a href={`/${lang}/`}>{t.pdBreadcrumbHome}</a>
+          <span aria-hidden="true">›</span>
+          <span>{region.name}</span>
+        </nav>
+        <span class="rg-kicker">{t.navRegions || 'Regions'}</span>
+        <h1 class="rg-title">{region.name}</h1>
+        <p class="rg-lead">{region.headline}</p>
+      </div>
+      <div class="rg-focus-panel">
+        {region.focus.map((item) => <span class="rg-focus-item">{item}</span>)}
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Buyers + Regulatory -->
+  {(region as any).keyBuyers && (
+    <section class="rg-section-tight">
+      <div class="rg-container rg-info-grid">
+        <div>
+          <h2 class="rg-section-title">{t.regionKeyBuyers}</h2>
+          <ul class="rg-buyer-list">
+            {(region as any).keyBuyers.map((buyer: string) => <li>{buyer}</li>)}
+          </ul>
+        </div>
+        <div>
+          <h2 class="rg-section-title">{t.regionRegulatory}</h2>
+          <p class="rg-regulatory">{(region as any).regulatory}</p>
+          <p class="rg-logistics-note">{(region as any).logistics}</p>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Use Cases -->
+  {(region as any).useCases && (
+    <section class="rg-section-tight rg-bg-warm">
+      <div class="rg-container">
+        <h2 class="rg-section-title">{t.industryUseCases || 'Use Cases'}</h2>
+        <div class="rg-use-case-grid">
+          {(region as any).useCases.map((uc: any) => (
+            <div class="rg-use-case-card">
+              <strong>{uc.title}</strong>
+              <p>{uc.body}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Specs + Documents -->
+  {(region as any).keySpecs && (
+    <section class="rg-section-tight">
+      <div class="rg-container rg-specs-docs-grid">
+        <div>
+          <h2 class="rg-section-title">{t.industryKeySpecs || 'Key Specifications'}</h2>
+          <ul class="rg-spec-list">
+            {(region as any).keySpecs.map((spec: string) => <li>{spec}</li>)}
+          </ul>
+        </div>
+        <div>
+          <h2 class="rg-section-title">{t.industryDocuments || 'Documents Available'}</h2>
+          <ul class="rg-doc-list">
+            {(region as any).documents.map((doc: string) => <li>{doc}</li>)}
+          </ul>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Buyer Note + Quote CTA -->
+  <section class="rg-quote-section" id="spec">
+    <div class="rg-container rg-quote-grid">
+      <div class="rg-quote-copy">
+        <span class="rg-kicker">{t.industryBuyerNote || 'Ready to Source'}</span>
+        <h2>{t.industryMatchGrade || 'Request a Sample or Spec Sheet'}</h2>
+        <p class="rg-buyer-note">{(region as any).buyerNote || region.headline}</p>
+        <div class="rg-contact-channels">
+          <a class="rg-channel" href="mailto:export@rmpsyllium.com">
+            <strong>{t.hpContactEmailLabel || 'Email'}</strong>
+            <span>export@rmpsyllium.com</span>
+          </a>
+          <a class="rg-channel" href="https://wa.me/918949817791" target="_blank" rel="noopener">
+            <strong>WhatsApp / Call</strong>
+            <span>+91 89498 17791</span>
+          </a>
+          <a class="rg-channel rg-channel--secondary" href="tel:+918000008381">
+            <strong>Call</strong>
+            <span>+91 80000 08381</span>
+          </a>
+          <div class="rg-channel">
+            <strong>{t.hpContactResponseLabel || 'Response time'}</strong>
+            <span>{t.hpContactResponseValue || 'Within 24 hours'}</span>
+          </div>
+        </div>
+      </div>
+      <SpecBuilder />
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  :root {
+    --rg-ink: #1a1c18;
+    --rg-soft: #484c43;
+    --rg-mute: #6b6f65;
+    --rg-sage: #4a6630;
+    --rg-cream: #f5f3ed;
+    --rg-rule: rgba(26, 28, 24, 0.1);
+    --rg-white: #ffffff;
+    --rg-f: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  .rg-section {
+    padding: clamp(3rem, 6vw, 6rem) 0 clamp(2.5rem, 4vw, 4.5rem);
+    background: var(--rg-cream);
+    border-bottom: 1px solid var(--rg-rule);
+  }
+
+  .rg-section-tight {
+    padding: clamp(2.5rem, 5vw, 5rem) 0;
+  }
+
+  .rg-bg-warm { background: #fffdf7; }
+
+  .rg-container {
+    width: min(1140px, calc(100% - 128px));
+    margin-inline: auto;
+  }
+
+  .rg-hero-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: clamp(2.5rem, 5vw, 5rem);
+    align-items: center;
+  }
+
+  .rg-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    font-family: var(--rg-f);
+    font-size: 12px;
+    color: var(--rg-mute);
+  }
+
+  .rg-breadcrumb a { color: var(--rg-mute); text-decoration: none; }
+  .rg-breadcrumb a:hover { color: var(--rg-sage); }
+
+  .rg-kicker {
+    display: block;
+    margin-bottom: 14px;
+    font-family: var(--rg-f);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--rg-sage);
+  }
+
+  .rg-title {
+    margin: 0;
+    font-family: var(--rg-f);
+    font-size: clamp(2rem, 4.5vw, 3.4rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+    color: var(--rg-ink);
+  }
+
+  .rg-lead {
+    margin: 16px 0 0;
+    font-family: var(--rg-f);
+    font-size: 17px;
+    color: var(--rg-soft);
+    line-height: 1.65;
+    max-width: 520px;
+  }
+
+  .rg-focus-panel {
+    display: grid;
+    gap: 12px;
+  }
+
+  .rg-focus-item {
+    border: 1px solid var(--rg-rule);
+    border-radius: 10px;
+    background: var(--rg-white);
+    padding: 14px 18px;
+    font-family: var(--rg-f);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--rg-ink);
+  }
+
+  .rg-section-title {
+    font-family: var(--rg-f);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: var(--rg-ink);
+    margin: 0 0 1rem;
+  }
+
+  .rg-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .rg-buyer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .rg-buyer-list li {
+    padding: 10px 14px 10px 2rem;
+    border-radius: 8px;
+    background: #dff1e6;
+    font-family: var(--rg-f);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--rg-ink);
+    position: relative;
+  }
+
+  .rg-buyer-list li::before {
+    content: '→';
+    position: absolute;
+    left: 10px;
+    color: var(--rg-sage);
+  }
+
+  .rg-regulatory {
+    font-family: var(--rg-f);
+    font-size: 14px;
+    line-height: 1.65;
+    color: var(--rg-soft);
+    margin: 0 0 12px;
+  }
+
+  .rg-logistics-note {
+    font-family: var(--rg-f);
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--rg-mute);
+    margin: 0;
+    padding: 10px 14px;
+    border-left: 3px solid var(--rg-sage);
+    background: var(--rg-cream);
+    border-radius: 0 6px 6px 0;
+  }
+
+  .rg-use-case-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+
+  .rg-use-case-card {
+    border: 1px solid var(--rg-rule);
+    border-radius: 14px;
+    background: var(--rg-white);
+    padding: 1.25rem;
+  }
+
+  .rg-use-case-card strong {
+    display: block;
+    font-family: var(--rg-f);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--rg-ink);
+    margin-bottom: 0.5rem;
+  }
+
+  .rg-use-case-card p {
+    font-family: var(--rg-f);
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--rg-soft);
+    margin: 0;
+  }
+
+  .rg-specs-docs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .rg-spec-list,
+  .rg-doc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .rg-spec-list li,
+  .rg-doc-list li {
+    padding: 10px 12px 10px 2.25rem;
+    border-radius: 8px;
+    font-family: var(--rg-f);
+    font-size: 14px;
+    line-height: 1.45;
+    position: relative;
+  }
+
+  .rg-spec-list li { background: #f0f7ff; color: var(--rg-ink); }
+  .rg-spec-list li::before { content: '→'; position: absolute; left: 10px; color: #3b82f6; font-weight: 700; }
+
+  .rg-doc-list li { background: #f0faf4; color: var(--rg-ink); }
+  .rg-doc-list li::before { content: '✓'; position: absolute; left: 10px; color: #16a34a; font-weight: 700; }
+
+  .rg-quote-section {
+    padding: clamp(5rem, 8vw, 8rem) 0;
+    border-top: 1px solid var(--rg-rule);
+  }
+
+  .rg-quote-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 0.72fr);
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .rg-buyer-note {
+    font-family: var(--rg-f);
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--rg-soft);
+    margin: 0 0 1.5rem;
+  }
+
+  .rg-contact-channels {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .rg-channel {
+    border: 1px solid var(--rg-rule);
+    border-radius: 10px;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s;
+  }
+
+  .rg-channel:hover { border-color: var(--rg-sage); }
+  .rg-channel--secondary { grid-column: span 1; }
+
+  .rg-channel strong {
+    display: block;
+    font-family: var(--rg-f);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--rg-mute);
+    margin-bottom: 4px;
+  }
+
+  .rg-channel span {
+    font-family: var(--rg-f);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--rg-ink);
+  }
+
+  @media (max-width: 1100px) {
+    .rg-container { width: calc(100% - 80px); }
+  }
+
+  @media (max-width: 860px) {
+    .rg-container { width: calc(100% - 48px); }
+    .rg-hero-grid, .rg-info-grid, .rg-specs-docs-grid, .rg-quote-grid { grid-template-columns: 1fr; }
+    .rg-contact-channels { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 540px) {
+    .rg-container { width: calc(100% - 32px); }
+  }
+</style>
