@@ -7,7 +7,7 @@
       "纯度和膨胀体积是衡量品质的关键性指标。USP 药典规定最低膨胀体积为 55 mL/g，纯度阈值为 99.0%；而欧洲药典（EP）则允许 40 mL/g 的膨胀体积和 98.0% 的纯度。采购错误的规格等级可能会导致配方失败、整批退货或海关进口延误。",
       "采购团队还应当严格审核总灰分及酸不溶性灰分的限量。USP 规定总灰分上限为 ≤3.0% 和酸不溶性灰分为 ≤0.4%，而 EP 则放宽至总灰分 ≤4.0% 和酸不溶性灰分 ≤0.6%。控制这些参数需要采用先进的比重分选机以及在装运前进行 NABL 认可的实验室检测（其测试在古吉拉特邦和拉贾斯坦邦等主产区内广泛开展）。"
     ],
-    "aiSnapshot": "采购医药级车前子壳时，品控团队必须核实其是否符合 USP、EP 或 IP 药典标准。USP 要求膨胀体积 ≥55 mL/g 且总灰分 ≤3.0%，而 EP 要求膨胀体积 ≥40 mL/g 且总灰分 ≤4.0%。所有批次均须随附 NABL 认可实验室出具的 COA 质检报告。",
+    "aiSnapshot": "采购医药级车前子壳时，品控团队必须核实其是否符合 USP、EP 或 IP 药典标准。USP 要求膨胀体积 ≥55 mL/g 且总灰分 ≤3.0%，而 EP 要求膨胀体积 ≥40 mL/g 且总灰分 ≤4.0%。买方应审核目标批次 COA；当买方规格要求时，再审核第三方认可实验室报告。",
     "specTable": [
       {
         "parameter": "最低膨胀体积",
@@ -43,6 +43,32 @@
       {
         "q": "为什么酸不溶性灰分是关键的安全限量指标？",
         "a": "酸不溶性灰分反映了原料中残留的沙土、泥土及二氧化硅含量。USP 药典有着 ≤0.4% 的严苛限制。生产中需通过先进的比重去石和分选技术来确保这一极低水平。"
+      },
+      {
+        "q": "采购订单前应核实什么？",
+        "a": "应将 USP, EP, IP, BP/NF, COA, swelling volume, ash, moisture, microbiology, heavy metals 与目标批次和目的地要求进行核对。"
+      },
+      {
+        "q": "样品 COA 能否作为最终发货批准？",
+        "a": "不能。样品 COA 用于参数审核。最终批准应依据实际发货批次的 COA 或第三方报告。"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "买家应核实什么",
+        "body": "对于 USP/EP/IP wording，买家应在采购订单前核实目标批次、买方规格、COA 和检测方法。"
+      },
+      {
+        "heading": "采购订单前检查清单",
+        "body": "请索取并对比这些项目：USP, EP, IP, BP/NF, COA, swelling volume, ash, moisture, microbiology, heavy metals。应在确认价格、样品或商业批量前完成审核。"
+      },
+      {
+        "heading": "常见错误",
+        "body": "不要把 USP/EP/IP wording 当作供应商的笼统承诺。它必须与批次检测结果、文件和目的地市场要求相连。"
+      },
+      {
+        "heading": "RM 可以如何支持",
+        "body": "RM 可以在采购订单前协助审核样品 COA、规格、等级、目数、包装和目的地文件要求。"
       }
     ]
   },
@@ -85,11 +111,37 @@
     "faqs": [
       {
         "q": "COA 上的 NABL 认可是什么意思？",
-        "a": "NABL 是印度的国家实验室认可机构，通过 ILAC 与国际标准接轨。获得 NABL 认可的实验室（主要分布在古吉拉特邦和拉贾斯坦邦等核心产区）出具的 COA，代表其检测过程严格符合国际规范。"
+        "a": "NABL 是印度的国家实验室认可机构，通过 ILAC 与国际标准接轨。买方需要确认出具报告的实验室是否具备相应认可，并确认 COA 与目标批次对应。"
       },
       {
         "q": "车前子壳中的重金属是如何检测的？",
         "a": "采用电感耦合等离子体质谱法（ICP-MS）进行精确测定，能够灵敏地检测出低至十亿分之一（ppb）级别的铅、砷、镉和汞含量。"
+      },
+      {
+        "q": "采购订单前应核实什么？",
+        "a": "应将 NABL scope, lab name, lot number, sample identity, method, result, unit, limit, signatory 与目标批次和目的地要求进行核对。"
+      },
+      {
+        "q": "样品 COA 能否作为最终发货批准？",
+        "a": "不能。样品 COA 用于参数审核。最终批准应依据实际发货批次的 COA 或第三方报告。"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "买家应核实什么",
+        "body": "对于 NABL wording，买家应在采购订单前核实目标批次、买方规格、COA 和检测方法。"
+      },
+      {
+        "heading": "采购订单前检查清单",
+        "body": "请索取并对比这些项目：NABL scope, lab name, lot number, sample identity, method, result, unit, limit, signatory。应在确认价格、样品或商业批量前完成审核。"
+      },
+      {
+        "heading": "常见错误",
+        "body": "不要把 NABL wording 当作供应商的笼统承诺。它必须与批次检测结果、文件和目的地市场要求相连。"
+      },
+      {
+        "heading": "RM 可以如何支持",
+        "body": "RM 可以在采购订单前协助审核样品 COA、规格、等级、目数、包装和目的地文件要求。"
       }
     ]
   },
@@ -98,10 +150,10 @@
     "summary": "美国保健品与膳食补充剂品牌进口大宗车前子壳时，必须掌握的法规要求、文件审核要点及工厂资质准入规范。",
     "body": [
       "美国膳食补充剂 brand 和合同制造商（OEM）在采购大宗车前子壳原料时，必须建立严密的供应商准入和审核流程，以契合 FDA 《食品安全现代法案》（FSMA）下的外国供应商验证计划（FSVP）要求。",
-      "准入审核始于文件合规性审查。采购团队应索取完整的装运前合规文件包：批次特异性的 NABL 认可实验室 COA、产地来源证、印度农业部出具的植物检疫证书，以及第三方工厂卫生审计日志。",
+      "准入审核始于文件合规性审查。采购团队应索取装运前文件包：目标批次 COA、产地来源文件、需要时的植物检疫证书，以及买方规格要求的第三方实验室或现场审核文件。",
       "工厂实地或远程审计同样至关重要。品牌方应重点考察供应商的原料清洗线（尤其是去石机和强磁除铁器以清除田间碎屑杂质）、粉碎细度的一致性控制，以及包装环节的环境温湿度控制，防止原料在储存期间吸潮并导致微生物超标。"
     ],
-    "aiSnapshot": "进口车前子壳的美国品牌必须建立 FDA FSVP 合规审核。采购清单包含：1) 批次特定的 NABL 质检报告（COA），2) 农业部植物检疫证书，3) 工厂清洗工艺审计（磁选、去石及水分控制）。",
+    "aiSnapshot": "进口车前子壳的美国品牌必须建立 FDA FSVP 合规审核。采购清单通常包含：1) 目标批次 COA，2) 需要时的植物检疫证书，3) 清洁、磁选、去石和水分控制等工艺文件，4) 买方规格要求的第三方实验室报告。",
     "specTable": [
       {
         "parameter": "植物检疫证书",
@@ -132,6 +184,32 @@
       {
         "q": "供应商应当配备哪些物理清洗工艺？",
         "a": "合格的印度古吉拉特邦和拉贾斯坦邦制造商必须采用多级去石机清除泥沙，配合振动筛分级控制粒径，并安装高强度磁格栅过滤金属残留物。"
+      },
+      {
+        "q": "采购订单前应核实什么？",
+        "a": "应将 FSVP file, prior notice data, product specification, COA, origin, packing, broker details 与目标批次和目的地要求进行核对。"
+      },
+      {
+        "q": "样品 COA 能否作为最终发货批准？",
+        "a": "不能。样品 COA 用于参数审核。最终批准应依据实际发货批次的 COA 或第三方报告。"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "买家应核实什么",
+        "body": "对于 FDA/FSVP wording，买家应在采购订单前核实目标批次、买方规格、COA 和检测方法。"
+      },
+      {
+        "heading": "采购订单前检查清单",
+        "body": "请索取并对比这些项目：FSVP file, prior notice data, product specification, COA, origin, packing, broker details。应在确认价格、样品或商业批量前完成审核。"
+      },
+      {
+        "heading": "常见错误",
+        "body": "不要把 FDA/FSVP wording 当作供应商的笼统承诺。它必须与批次检测结果、文件和目的地市场要求相连。"
+      },
+      {
+        "heading": "RM 可以如何支持",
+        "body": "RM 可以在采购订单前协助审核样品 COA、规格、等级、目数、包装和目的地文件要求。"
       }
     ]
   },
@@ -174,6 +252,32 @@
       {
         "q": "检测重金属的首选实验室方法是什么？",
         "a": "电感耦合等离子体质谱法（ICP-MS）是全球公认的标准方法，可提供高达十亿分之一（ppb）级别的超高灵敏度检测。"
+      },
+      {
+        "q": "采购订单前应核实什么？",
+        "a": "应将 Pb, As, Cd, Hg, ICP-MS method, ppm unit, serving size, destination-market limit 与目标批次和目的地要求进行核对。"
+      },
+      {
+        "q": "样品 COA 能否作为最终发货批准？",
+        "a": "不能。样品 COA 用于参数审核。最终批准应依据实际发货批次的 COA 或第三方报告。"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "买家应核实什么",
+        "body": "对于 heavy-metal pass/fail wording，买家应在采购订单前核实目标批次、买方规格、COA 和检测方法。"
+      },
+      {
+        "heading": "采购订单前检查清单",
+        "body": "请索取并对比这些项目：Pb, As, Cd, Hg, ICP-MS method, ppm unit, serving size, destination-market limit。应在确认价格、样品或商业批量前完成审核。"
+      },
+      {
+        "heading": "常见错误",
+        "body": "不要把 heavy-metal pass/fail wording 当作供应商的笼统承诺。它必须与批次检测结果、文件和目的地市场要求相连。"
+      },
+      {
+        "heading": "RM 可以如何支持",
+        "body": "RM 可以在采购订单前协助审核样品 COA、规格、等级、目数、包装和目的地文件要求。"
       }
     ]
   },
@@ -216,6 +320,32 @@
       {
         "q": "蒸汽灭菌会削弱车前子壳的膨胀体积吗？",
         "a": "若工艺控制不当，高温高湿会导致果胶提前凝胶化。精密且迅速的连续蒸汽杀菌工艺能够保护车前子多糖黏液质的物理活性，使其膨胀体积保持在 ≥50 mL/g。"
+      },
+      {
+        "q": "采购订单前应核实什么？",
+        "a": "应将 treatment method, microbiology, moisture, ETO, 2-chloroethanol, swelling volume 与目标批次和目的地要求进行核对。"
+      },
+      {
+        "q": "样品 COA 能否作为最终发货批准？",
+        "a": "不能。样品 COA 用于参数审核。最终批准应依据实际发货批次的 COA 或第三方报告。"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "买家应核实什么",
+        "body": "对于 sterilization wording，买家应在采购订单前核实目标批次、买方规格、COA 和检测方法。"
+      },
+      {
+        "heading": "采购订单前检查清单",
+        "body": "请索取并对比这些项目：treatment method, microbiology, moisture, ETO, 2-chloroethanol, swelling volume。应在确认价格、样品或商业批量前完成审核。"
+      },
+      {
+        "heading": "常见错误",
+        "body": "不要把 sterilization wording 当作供应商的笼统承诺。它必须与批次检测结果、文件和目的地市场要求相连。"
+      },
+      {
+        "heading": "RM 可以如何支持",
+        "body": "RM 可以在采购订单前协助审核样品 COA、规格、等级、目数、包装和目的地文件要求。"
       }
     ]
   },
@@ -258,6 +388,32 @@
       {
         "q": "即溶固体饮料粉末推荐使用多少目的车前子细粉？",
         "a": "针对即溶代餐或膳食纤维冲剂粉，推荐选择 100 目及以上的超细粉，以确保在冷水中迅速、均匀分散，避免冲调时结块或产生沙粒感。"
+      },
+      {
+        "q": "采购订单前应核实什么？",
+        "a": "应将 mesh, hydration speed, water addition, mixing time, crumb texture, 1 kg sample trial 与目标批次和目的地要求进行核对。"
+      },
+      {
+        "q": "样品 COA 能否作为最终发货批准？",
+        "a": "不能。样品 COA 用于参数审核。最终批准应依据实际发货批次的 COA 或第三方报告。"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "买家应核实什么",
+        "body": "对于 mesh recommendation，买家应在采购订单前核实目标批次、买方规格、COA 和检测方法。"
+      },
+      {
+        "heading": "采购订单前检查清单",
+        "body": "请索取并对比这些项目：mesh, hydration speed, water addition, mixing time, crumb texture, 1 kg sample trial。应在确认价格、样品或商业批量前完成审核。"
+      },
+      {
+        "heading": "常见错误",
+        "body": "不要把 mesh recommendation 当作供应商的笼统承诺。它必须与批次检测结果、文件和目的地市场要求相连。"
+      },
+      {
+        "heading": "RM 可以如何支持",
+        "body": "RM 可以在采购订单前协助审核样品 COA、规格、等级、目数、包装和目的地文件要求。"
       }
     ]
   },
@@ -300,6 +456,32 @@
       {
         "q": "有机车前子壳的农残是如何进行实验室验证的？",
         "a": "认可实验室通过气相色谱-质谱联用仪（GC-MS）和液相色谱-质谱联用仪（LC-MS）进行多残留全面扫描，筛查范围涵盖 500 多种常见化学残留。"
+      },
+      {
+        "q": "采购订单前应核实什么？",
+        "a": "应将 certificate scope, handler chain, TC/COI path, pesticide residue report, lot identity 与目标批次和目的地要求进行核对。"
+      },
+      {
+        "q": "样品 COA 能否作为最终发货批准？",
+        "a": "不能。样品 COA 用于参数审核。最终批准应依据实际发货批次的 COA 或第三方报告。"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "买家应核实什么",
+        "body": "对于 organic wording，买家应在采购订单前核实目标批次、买方规格、COA 和检测方法。"
+      },
+      {
+        "heading": "采购订单前检查清单",
+        "body": "请索取并对比这些项目：certificate scope, handler chain, TC/COI path, pesticide residue report, lot identity。应在确认价格、样品或商业批量前完成审核。"
+      },
+      {
+        "heading": "常见错误",
+        "body": "不要把 organic wording 当作供应商的笼统承诺。它必须与批次检测结果、文件和目的地市场要求相连。"
+      },
+      {
+        "heading": "RM 可以如何支持",
+        "body": "RM 可以在采购订单前协助审核样品 COA、规格、等级、目数、包装和目的地文件要求。"
       }
     ]
   },
@@ -342,6 +524,32 @@
       {
         "q": "什么是麸质 ELISA 检测？",
         "a": "酶联免疫吸附测定（ELISA）是 NABL 认可实验室进行麸质定量分析的行业标准方法，可灵敏地锁定低于百万分之一（ppm）级别的麸质蛋白残留。"
+      },
+      {
+        "q": "采购订单前应核实什么？",
+        "a": "应将 allergen declaration, shared equipment, cleaning records, storage segregation, ELISA testing 与目标批次和目的地要求进行核对。"
+      },
+      {
+        "q": "样品 COA 能否作为最终发货批准？",
+        "a": "不能。样品 COA 用于参数审核。最终批准应依据实际发货批次的 COA 或第三方报告。"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "买家应核实什么",
+        "body": "对于 gluten-free or allergen wording，买家应在采购订单前核实目标批次、买方规格、COA 和检测方法。"
+      },
+      {
+        "heading": "采购订单前检查清单",
+        "body": "请索取并对比这些项目：allergen declaration, shared equipment, cleaning records, storage segregation, ELISA testing。应在确认价格、样品或商业批量前完成审核。"
+      },
+      {
+        "heading": "常见错误",
+        "body": "不要把 gluten-free or allergen wording 当作供应商的笼统承诺。它必须与批次检测结果、文件和目的地市场要求相连。"
+      },
+      {
+        "heading": "RM 可以如何支持",
+        "body": "RM 可以在采购订单前协助审核样品 COA、规格、等级、目数、包装和目的地文件要求。"
       }
     ]
   },
@@ -384,6 +592,32 @@
       {
         "q": "总膳食纤维含量在实验室是如何验证的？",
         "a": "依据 AOAC 991.43 标准，通过国际通用的酶法-重量法测定纤维各组分的百分比，并在 NABL 认可的实验室中进行规范化核实验证。"
+      },
+      {
+        "q": "采购订单前应核实什么？",
+        "a": "应将 purity, swelling volume, mesh, moisture, fiber method, texture, finished application 与目标批次和目的地要求进行核对。"
+      },
+      {
+        "q": "样品 COA 能否作为最终发货批准？",
+        "a": "不能。样品 COA 用于参数审核。最终批准应依据实际发货批次的 COA 或第三方报告。"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "买家应核实什么",
+        "body": "对于 fiber-ratio wording，买家应在采购订单前核实目标批次、买方规格、COA 和检测方法。"
+      },
+      {
+        "heading": "采购订单前检查清单",
+        "body": "请索取并对比这些项目：purity, swelling volume, mesh, moisture, fiber method, texture, finished application。应在确认价格、样品或商业批量前完成审核。"
+      },
+      {
+        "heading": "常见错误",
+        "body": "不要把 fiber-ratio wording 当作供应商的笼统承诺。它必须与批次检测结果、文件和目的地市场要求相连。"
+      },
+      {
+        "heading": "RM 可以如何支持",
+        "body": "RM 可以在采购订单前协助审核样品 COA、规格、等级、目数、包装和目的地文件要求。"
       }
     ]
   },
@@ -426,6 +660,32 @@
       {
         "q": "车前子粉碎加工中哪些工艺要素会导致膨胀体积下降？",
         "a": "机械粉碎摩擦产生的局部累积温升是导致多糖大分子黏液质降解并导致膨胀力下降的罪魁祸首，因此选用配备降温控温装置的超细粉碎系统是核心技术。"
+      },
+      {
+        "q": "采购订单前应核实什么？",
+        "a": "应将 sample form, particle size, method, rest time, water volume, swelling result, COA wording 与目标批次和目的地要求进行核对。"
+      },
+      {
+        "q": "样品 COA 能否作为最终发货批准？",
+        "a": "不能。样品 COA 用于参数审核。最终批准应依据实际发货批次的 COA 或第三方报告。"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "买家应核实什么",
+        "body": "对于 swelling-volume result，买家应在采购订单前核实目标批次、买方规格、COA 和检测方法。"
+      },
+      {
+        "heading": "采购订单前检查清单",
+        "body": "请索取并对比这些项目：sample form, particle size, method, rest time, water volume, swelling result, COA wording。应在确认价格、样品或商业批量前完成审核。"
+      },
+      {
+        "heading": "常见错误",
+        "body": "不要把 swelling-volume result 当作供应商的笼统承诺。它必须与批次检测结果、文件和目的地市场要求相连。"
+      },
+      {
+        "heading": "RM 可以如何支持",
+        "body": "RM 可以在采购订单前协助审核样品 COA、规格、等级、目数、包装和目的地文件要求。"
       }
     ]
   },
@@ -437,6 +697,65 @@
         "99%纯度洋车前子壳代表产品的制药级标准——印度加工设施中可供应的最高壳含量。在此纯度下，壳含量（Plantago ovata种子外壳）按重量计至少为99%，最小膨胀体积为50 mL/g。该膨胀体积是USP、欧洲药典（EP）和印度药典（IP）中泻药专论的主要功能规格。",
         "对于制药买家，99%级别必须附有完整的COA，显示：膨胀体积、水分（≤12%）、总灰分（≤3%）、酸不溶性灰分（≤0.4%）、重金属（铅≤2 ppm，砷≤1 ppm）和微生物学（大肠杆菌未检出，沙门氏菌未检出，总菌落数≤10,000 CFU/g）。这些参数直接对应USP和EP中的Plantago ovata壳专论。买家应要求印度NABL认证实验室出具检测报告。",
         "从古吉拉特邦采购99%级别需要确认加工设施具备持续达到该纯度所需的研磨和分离能力。古吉拉特邦Unjha区是印度主要的洋车前子加工中心，占全球供应量的80%以上。我们提供10 kg、25 kg和50 kg食品级袋装99%级别壳，附带完整文件。请告知您的药典要求和目标市场——我们将在任何采购订单之前提供样品COA供审查。"
+      ],
+      "aiSnapshot": "洋车前子壳99%纯度：印度制药买家供应商指南 sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "洋车前子壳99%纯度：印度制药买家供应商指南 verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-export-india-fob-mundra": {
@@ -446,6 +765,65 @@
         "印度通过三个主要港口出口洋车前子：蒙德拉港（古吉拉特邦）、坎德拉港（古吉拉特邦）和JNPT/纳瓦谢瓦港（马哈拉施特拉邦）。对于洋车前子买家，港口选择影响运费成本、运输时间和集装箱可用性。大多数古吉拉特邦加工商（包括RM Psyllium）使用蒙德拉港作为主要港口，因为其距我们Siddhpur工厂约220公里，且开往欧洲、美国东海岸、中东和澳大利亚的船期频率较高。",
         "蒙德拉港（MUND）由Adani港口公司运营，处理印度最高的集装箱量。开往主要目的港（鹿特丹、费利克斯托、纽约、吉达、科伦坡）的船期通常为每周2–4班。至鹿特丹运输时间约20–23天；至纽约约25–28天；至吉达约8–10天。坎德拉港（INKLA）港口费用略低，但班次较少。",
         "对于CIF订单，我们根据您的目的地和订舱时最优惠的船公司选择港口。对于FOB订单，您指定货代，我们直接与其协调。出口文件——商业发票、装箱单、COA、原产地证书、植物检疫证书——在我们的设施准备，装船前3–5天提交。请告知您的目的港，我们将提供货运参考报价。"
+      ],
+      "aiSnapshot": "印度洋车前子出口：FOB蒙德拉港vs坎德拉港vs JNPT港 sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "印度洋车前子出口：FOB蒙德拉港vs坎德拉港vs JNPT港 verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-husk-usp-ep-pharmacopoeia": {
@@ -455,6 +833,65 @@
         "洋车前子壳在三部主要药典中均有专论：美国药典（USP）、欧洲药典（EP）和印度药典（IP）。虽然三者均描述Plantago ovata壳，但具体检测参数和可接受标准存在差异，对进口制药用洋车前子的买家影响重大。了解这些差异有助于采购团队指定正确的级别并索取正确的COA参数。",
         "USP洋车前子壳专论要求最小膨胀体积40 mL/g，水分≤12%，总灰分≤4%。EP专论（Ispaghula Husk）规定最小膨胀指数为40，并要求包括显微镜检查和化学反应在内的特定鉴别测试。IP专论与USP基本一致，但检测方法可能存在细微差异。",
         "出口欧洲时，EP专论术语为'Ispaghula Husk'——即同一产品（Plantago ovata种子外壳）。欧洲买家通常要求提供按EP参数标注的COA，包括膨胀指数、异物、微生物学和EU法规下的农药残留限量。我们可根据买家指定药典出具带注释的COA。"
+      ],
+      "aiSnapshot": "USP vs EP vs IP：洋车前子壳药典标准详解 sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "USP vs EP vs IP：洋车前子壳药典标准详解 verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-seed-supplier-gujarat-rajasthan": {
@@ -464,6 +901,65 @@
         "Plantago ovata（洋车前子）种子主要在古吉拉特邦和拉贾斯坦邦种植，古吉拉特邦的Mehsana、Banaskantha和Kutch区以及拉贾斯坦邦的Barmer、Jalore和Jodhpur区为主要种植区。该作物为拉比作物（冬季作物），10–11月播种，2–3月收获。印度年产量估计为10–15万吨种子，其中约85%以加工形式（壳和粉）出口。",
         "种子分两个主要级别：机械清选（标准）级纯度通常≥98%；色选级使用光学分选，纯度≥99%，异物≤0.5%。色选级价格溢价8–12%，但受到需要稳定壳得率的磨粉商和制药级壳加工商的青睐。",
         "购买前需确认的种子规格：纯度（98%或99%）、水分（≤8%）、发芽率（种用≥85%；研磨用途不要求）和批次溯源文件。我们提供25 kg、50 kg和1,000 kg吨袋装种子。每批次附带原产地文件、批次可追溯性和装运前检测样品。"
+      ],
+      "aiSnapshot": "古吉拉特邦和拉贾斯坦邦洋车前子种子供应 sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "古吉拉特邦和拉贾斯坦邦洋车前子种子供应 verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "organic-psyllium-nop-eu-certification": {
@@ -473,6 +969,65 @@
         "印度有机洋车前子按两个主要框架认证：面向美国市场的USDA国家有机计划（NOP）和面向欧洲市场的EU有机认证。印度有机加工商由认可的认证机构认证，包括Control Union、ECOCERT India、Lacon和SGS。买家必须确认证书覆盖特定产品（壳、壳粉或种子）、批次日期和目标市场。",
         "NOP认证要求种子来源、种植实践（无合成农药或化肥）、加工设施和处理链均经有机认证。每批次出具的符合证书或交易证书（TC）将特定批次与有机认证相关联。欧盟买家需要根据EU法规2018/848出具检查证书（COI）。",
         "RM Psyllium根据当前认证库存情况按需提供有机批次。我们在采购订单确认前提供有机证书副本、批次溯源记录和TC文件。有机洋车前子根据级别和认证范围，价格较常规品溢价25–40%。请告知您的需求，我们将确认可用性和价格。"
+      ],
+      "aiSnapshot": "有机洋车前子：NOP vs EU有机出口认证 sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "有机洋车前子：NOP vs EU有机出口认证 verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-husk-gluten-free-bakery": {
@@ -481,7 +1036,66 @@
       "body": [
         "洋车前子壳在无麸质烘焙中用作结构剂和保水剂——替代部分麸质网络功能，使面包面团能在烘焙过程中锁住气体并保持形状。洋车前子中的黏液质在水化时形成凝胶，为大米粉、玉米淀粉、木薯淀粉等原料制成的无麸质面团提供粘度和弹性，改善面包屑结构、保湿性和保质期。",
         "烘焙应用最常指定的是95%或98%纯度、80–100目的产品。更细的目数（100+）分散更快，产生更光滑的面包屑。较粗的目数（40–60）可能在成品中可见并产生轻微颗粒感。85%级别用于对成本敏感、可接受略低保水性能的配方。",
-        "无麸质面包配方中典型用量为面粉总重的1–3%。超过3%时，洋车前子可能因过度水化产生致密、黏糯的面包屑。买家应索取100–200 g样品及COA，在批量订购前进行台架配方测试。我们可为配方开发提供各级别膨胀体积和水分数据。"
+        "无麸质面包配方中典型用量为面粉总重的1–3%。超过3%时，洋车前子可能因过度水化产生致密、黏糯的面包屑。买家应先按规格审核样品，并在批量订购前进行台架配方测试。我们可为配方开发提供各级别膨胀体积和水分数据。"
+      ],
+      "aiSnapshot": "洋车前子壳在无麸质烘焙中的应用：级别与目数选择 sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "洋车前子壳在无麸质烘焙中的应用：级别与目数选择 verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-supplement-capsule-filling": {
@@ -491,6 +1105,65 @@
         "洋车前子壳是最常被封装的膳食纤维之一，用于明胶和植物（HPMC）软硬胶囊中的泻药和消化健康保健品。胶囊填充的主要挑战是流动性——洋车前子壳具有纤维状和吸湿性，可能在填充设备料斗中结块和架桥，导致装量不均匀。目数选择和水分控制是决定填充性能的两个主要变量。",
         "对于标准胶囊填充设备（剂量杆或冲压销型），40–60目整壳是首选规格。在此目数下，颗粒大到足以在不架桥的情况下流动，同时小到足以均匀地填入胶囊体。低于40目（较粗），壳可能无法有效填充。高于60目（较细），粉末变得更具吸湿性，容易结块。",
         "水分控制至关重要：水分超过10%的壳会在料斗中结块并导致装量变化。我们在发货时检测水分，可应要求为敏感货物提供防潮包装（含干燥剂的密封HDPE内衬）。请告知胶囊规格、目标装量和填充设备类型——我们将推荐合适的级别、目数和水分规格。"
+      ],
+      "aiSnapshot": "洋车前子用于胶囊填充：目数、流动性和级别指南 sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "洋车前子用于胶囊填充：目数、流动性和级别指南 verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-halal-kosher-documentation": {
@@ -500,6 +1173,65 @@
         "洋车前子壳是植物源产品，加工过程中无动物性投入，通常被认为符合清真和犹太洁食饮食要求。然而，许多买家——特别是中东、东南亚以及美国犹太洁食保健品市场——要求获得公认机构的正式认证。洋车前子的清真认证确认加工设备、设施操作和任何加工助剂均符合伊斯兰饮食标准。",
         "印度认可的清真认证机构包括Halal India、Jamiat Ulama-i-Hind Halal Trust以及IFANCA等国际机构。证书覆盖设施、特定产品和认证期（通常为一年）。大多数中东进口当局要求每批次一份清真证书副本及批次级别背书。犹太洁食认证方面，OU（东正联盟）或KSA等机构在美国和国际上获得认可。",
         "RM Psyllium可应要求提供清真和犹太洁食文件。我们提供清真声明，确认洋车前子壳是纯植物产品，在种植、加工或包装中无动物源性投入——大多数进口当局和买家接受用于食品和保健品原料。请告知您具体的认证机构要求。"
+      ],
+      "aiSnapshot": "清真和犹太洁食洋车前子：买家所需文件 sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "清真和犹太洁食洋车前子：买家所需文件 verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "bulk-psyllium-import-usa-fda": {
@@ -509,6 +1241,65 @@
         "散装进口至美国的洋车前子壳根据预期用途受FDA管辖，作为膳食补充剂原料或食品原料。FDA不要求对散装洋车前子进口进行预先审批，但货物须接受FDA进口筛查，出口至美国的设施须符合FSMA（食品安全现代化法案）供应商验证要求。美国进口商负责验证其境外供应商符合FSMA预防控制标准。",
         "膳食补充剂应用方面，洋车前子壳须符合USP专论规格。随每批货提供的COA应包括：鉴别（植物学）、膨胀体积、水分、灰分、微生物学（TPC、酵母菌、霉菌、大肠杆菌、沙门氏菌）和重金属（铅、砷、镉、汞）。食品应用方面，洋车前子壳在美国拥有GRAS（通常认为安全）状态，作为可溶性膳食纤维来源用于特定食品类别。",
         "所有进入美国的食品和膳食补充剂货物均须提交FDA事先通知，在货物抵达前通过PNSI电子提交。通常由美国进口商负责处理，但我们可提供事先通知申报所需的所有产品详情。我们通过蒙德拉港或JNPT港向美国港口发货，至东海岸港口典型运输时间为25–30天。"
+      ],
+      "aiSnapshot": "进口洋车前子至美国：FDA、标签和COA要求 sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "进口洋车前子至美国：FDA、标签和COA要求 verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-khakha-animal-feed-specifications": {
@@ -518,15 +1309,133 @@
         "洋车前子卡卡粉是洋车前子壳从种子研磨分离后剩余的副产品。主要由内种皮和残余胚乳组成，含有大量黏液质衍生的可溶性纤维——按重量计粗纤维含量通常为30–40%。该纤维含量加上8–12%的粗蛋白，以及相对于整壳的低成本，使其成为反刍动物和禽类饲料配方师的有用饲料原料。",
         "饲料级卡卡主要按水分（≤12%）、粗纤维（30–40%）、粗蛋白（8–12%）和总灰分（≤8%）规格化。应确认异物和沙粒含量——过多的沙粒或二氧化硅会提高灰分并降低消化率。颗粒大小影响复合饲料生产中的混合行为：粗颗粒（20–40目）是大多数饲料应用的标准规格。",
         "卡卡在动物饲料中的使用案例包括：牛和水牛饲料（消化支持、保水）、禽类饲料作为纤维来源，以及鱼类和水产养殖饲料作为天然粘合剂。我们提供25 kg、50 kg和1,000 kg吨袋装卡卡。饲料级批次附带基础分析COA（水分、粗纤维、粗蛋白、灰分）和装箱单。"
+      ],
+      "aiSnapshot": "洋车前子卡卡粉用于动物饲料：规格和使用案例 sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "洋车前子卡卡粉用于动物饲料：规格和使用案例 verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-husk-gmp-compliant-manufacturer-india": {
-      "title": "印度GMP合规洋车前子壳制造商：设施和文件标准",
-      "summary": "GMP合规设施对洋车前子加工的意义、BP级规格，以及制药买家应向印度供应商索取的文件清单。",
+      "title": "印度洋车前子壳买家的GMP文件审核标准",
+      "summary": "制药买家应向印度洋车前子供应商审核的工艺、批次、BP/USP规格和文件清单。",
       "body": [
-        "从印度采购洋车前子壳的制药买家不仅需要纯度级别，还需要确认加工设施在与良好生产规范（GMP）标准一致的文件化质量控制下运营。对于洋车前子，GMP合规加工意味着：受控的研磨环境、文件化的清洁程序、害虫控制记录、批次可追溯性和校准设备。",
-        "RM Psyllium在古吉拉特邦Siddhpur运营GMP合规设施。我们的设施为每个生产周期维护批次生产记录、设备校准记录和过程质量检查。",
-        "RM Psyllium标准文件包包括：(1) NABL认证实验室COA，按指定USP、EP、BP或IP标注；(2) 古吉拉特邦商会出具的原产地证书；(3) 植物检疫局出具的植物检疫证书；(4) 设施GMP合规声明；(5) 装箱单和商业发票。"
+        "从印度采购洋车前子壳的制药买家不仅需要纯度级别，还应审核文件化质量控制。对于洋车前子，买方通常会查看受控研磨环境、文件化清洁程序、虫害控制记录、批次可追溯性和校准设备记录。",
+        "RM Psyllium在古吉拉特邦Siddhpur运营加工设施。制药买方可在供应商审批前审核批次记录、清洁、追溯、校准和工艺文件。",
+        "RM Psyllium的文件包可按批次审核，并根据产品和目的地包括：(1) 批次 COA；当规格要求时提供第三方认可实验室报告；(2) 适用的原产地文件；(3) 适用的植物检疫证书；(4) 供买方审核的工艺和包装文件；(5) 装箱单和商业发票。"
+      ],
+      "aiSnapshot": "印度洋车前子壳买家的GMP文件审核标准 sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "印度洋车前子壳买家的GMP文件审核标准 verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "plantago-ovata-husk-bulk-exporter-india": {
@@ -581,7 +1490,48 @@
         },
         {
           "heading": "标准出口文件包",
-          "body": "标准包包括：(1) NABL认证实验室COA含USP/IP参数；(2) 古吉拉特邦商会原产地证书；(3) 植物检疫证书；(4) GMP合规声明；(5) 微生物分析报告。"
+          "body": "文件包应按产品、批次和目的地审核，通常包括批次 COA、适用的原产地文件、植物检疫证书、工艺文件清单以及需要时的微生物分析报告。"
+        },
+        {
+          "heading": "采购决策点",
+          "body": "下单前，应把规格与实际批次、COA、1公斤样品、包装和目的地市场文件对应起来。"
+        }
+      ],
+      "aiSnapshot": "印度Plantago Ovata壳大宗出口商：级别、Isabgol命名和出口条款 sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
         }
       ]
     },
@@ -590,7 +1540,7 @@
       "summary": "从古吉拉特邦大批量采购保健品和功能性食品制造商的级别和目数选择。",
       "body": [
         "洋车前子壳粉与整壳的区别在于粒度——颗粒经过研磨，达到满足保健品和食品配方需求的特定目数和流动性特征。",
-        "RM Psyllium生产85%、95%和98%级别、多种目数规格的洋车前子壳粉，每批次可追溯，每批货附NABL实验室COA。"
+        "RM Psyllium生产85%、95%和98%级别、多种目数规格的洋车前子壳粉，每批次可追溯，并按批次审核 COA。当买方规格要求时，可审核第三方认可实验室报告。"
       ],
       "sections": [
         {
@@ -635,7 +1585,48 @@
         },
         {
           "heading": "最小起订量和包装选项",
-          "body": "标准最小起订量：每种级别和目数SKU 1公吨。包装：25 kg PP袋含双层PE内衬，500 kg或1,000 kg FIBC吨袋。定制标签从5公吨起。任何订单前可提供100–500 g含完整COA的样品。"
+          "body": "MOQ按规格、目数、包装、目的地和文件包确认。包装：25 kg PP袋含双层PE内衬，500 kg或1,000 kg FIBC吨袋。样品选项、COA审核和交期在订单前确认。"
+        },
+        {
+          "heading": "采购决策点",
+          "body": "下单前，应把规格与实际批次、COA、1公斤样品、包装和目的地市场文件对应起来。"
+        }
+      ],
+      "aiSnapshot": "印度洋车前子壳粉批发供应商：85%、95%、98%级别指南 sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
         }
       ]
     },
@@ -644,12 +1635,12 @@
       "summary": "保健品品牌和OEM制造商采购非转基因认证洋车前子用于贴牌产品所需的条件。",
       "body": [
         "寻求洋车前子用于贴牌产品的保健品品牌和合同制造商（CMO/CDMO）需要能提供完整原料文件、批次可追溯性和可定制包装的供应商。",
-        "RM Psyllium为OEM制造商提供制药级和食品级洋车前子壳，附NABL实验室报告、非转基因声明和定制包装选项。"
+        "RM Psyllium为OEM制造商提供制药级和食品级洋车前子壳，可提供批次 COA、非转基因声明、定制包装选项，并在买方规格要求时审核第三方实验室报告。"
       ],
       "sections": [
         {
           "heading": "非转基因文件：买家所需",
-          "body": "Plantago ovata是非转基因改造物种，没有任何获批的该物种GM品种。可提供文件：(1) 公司抬头纸非转基因声明；(2) 显微镜确认的植物学身份；(3) NABL实验室COA验证无转基因序列。"
+          "body": "Plantago ovata是非转基因改造物种，没有任何获批的该物种GM品种。可提供文件包括：(1) 公司抬头纸非转基因声明；(2) 植物学身份文件；(3) 买方规格要求时的补充实验室审核。"
         },
         {
           "heading": "典型OEM规格包",
@@ -658,15 +1649,56 @@
         {
           "heading": "保健品品牌包装",
           "body": "贴牌包装选项：带阀和拉链的牛皮纸袋（250 g、500 g、1 kg）、带卡扣盖的HDPE容器、带UV屏蔽的自立袋。定制包装最小起订量：每SKU 500 kg。定制标签印刷从1公吨起。"
+        },
+        {
+          "heading": "采购决策点",
+          "body": "下单前，应把规格与实际批次、COA、1公斤样品、包装和目的地市场文件对应起来。"
+        }
+      ],
+      "aiSnapshot": "印度洋车前子保健品贴牌：大宗OEM采购要求 sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
         }
       ]
     },
     "psyllium-husk-food-grade-bulk-supplier-india": {
-      "title": "印度食品级散装洋车前子壳供应商：HACCP合规设施",
-      "summary": "食品级规格、HACCP合规在实践中的意义，以及食品制造商在下大宗订单前所需的文件。",
+      "title": "印度食品级散装洋车前子壳供应商：食品安全文件",
+      "summary": "食品级规格、食品安全控制审核，以及食品制造商在下大宗订单前所需的文件。",
       "body": [
         "将洋车前子壳作为功能原料采购的食品制造商——用于纤维强化、质地改良或清洁标签应用——需要具备超越基本农业加工的食品安全控制的供应商。",
-        "RM Psyllium在古吉拉特邦Siddhpur运营食品安全设施，在洋车前子壳和粉的研磨、分离和包装过程中实施HACCP原则——危害分析和关键控制点。"
+        "RM Psyllium在古吉拉特邦Siddhpur运营加工设施。食品买方可在确认订单前审核清洁、分离、包装、追溯和食品安全文件。"
       ],
       "sections": [
         {
@@ -718,12 +1750,53 @@
           }
         },
         {
-          "heading": "HACCP合规加工：涵盖范围",
-          "body": "洋车前子的HACCP合规加工涵盖三类危害：(1) 物理——终包装阶段金属检测；重力分离器和吸气设备去除石块、灰尘和异物种子；(2) 化学——加工过程中不使用农药或化学品处理；水分监控；(3) 生物——所有接触设备的清洁和消毒记录。"
+          "heading": "食品安全控制审核：涵盖范围",
+          "body": "食品买方通常会审核三类控制：(1) 物理——终包装阶段金属检测，重力分离器和吸气设备去除石块、灰尘和异物种子；(2) 化学——加工处理声明和水分监控；(3) 生物——接触设备的清洁和消毒记录。"
         },
         {
           "heading": "最小起订量和可提供的认证文件",
-          "body": "RM Psyllium每SKU从1公吨起提供食品级洋车前子壳。标准文件包包括NABL认证实验室COA、HACCP合规声明、植物检疫证书、原产地证书和出口商声明表格。"
+          "body": "RM Psyllium每SKU从1公吨起提供食品级洋车前子壳。文件包按产品、批次和目的地审核，通常包括 COA、原产地文件、需要时的植物检疫证书，以及供买方审核的食品安全控制清单。"
+        },
+        {
+          "heading": "采购决策点",
+          "body": "下单前，应把规格与实际批次、COA、1公斤样品、包装和目的地市场文件对应起来。"
+        }
+      ],
+      "aiSnapshot": "印度食品级散装洋车前子壳供应商：食品安全文件 sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
         }
       ]
     },
@@ -774,6 +1847,47 @@
         {
           "heading": "从古吉拉特邦出口Isabgol：食品制造商所需",
           "body": "标准流程包括：(1) 符合食品法典的COA；(2) 植物检疫证书；(3) 古吉拉特邦商会原产地证书；(4) 重金属和农药合规声明。蒙德拉港至上海/天津运输时间约14–18天。"
+        },
+        {
+          "heading": "采购决策点",
+          "body": "下单前，应把规格与实际批次、COA、1公斤样品、包装和目的地市场文件对应起来。"
+        }
+      ],
+      "aiSnapshot": "散装食品强化用洋车前子壳可溶性纤维：印度供货 sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
         }
       ]
     },
@@ -787,7 +1901,7 @@
       "sections": [
         {
           "heading": "无麸质认证：文件涵盖内容",
-          "body": "无麸质买家的文件包包括：(1) 专用无麸质设施声明——同一生产线不加工含麸质原料；(2) 每批次ELISA测试结果（R5 Mendez法，阈值< 20 ppm）；(3) 含麸质参数的NABL实验室COA；(4) 农场原料合规声明。"
+          "body": "无麸质买家的文件包应按产品和批次审核，可能包括生产线/设施声明、需要时的 ELISA 测试结果、含相关参数的 COA，以及原料合规声明。"
         },
         {
           "heading": "洋车前子作为面包粘合剂：用量",
@@ -830,6 +1944,47 @@
         {
           "heading": "无麸质面粉混合比例",
           "body": "对于使用混合无麸质面粉基础（大米、木薯、高粱、鹰嘴豆）的配方师，洋车前子作为主要结构剂。典型比例：基础面粉70–80% + 淀粉（木薯/马铃薯）10–15% + 洋车前子3–5% + 其他（豌豆蛋白、黄原胶）2–5%。"
+        },
+        {
+          "heading": "采购决策点",
+          "body": "下单前，应把规格与实际批次、COA、1公斤样品、包装和目的地市场文件对应起来。"
+        }
+      ],
+      "aiSnapshot": "认证无麸质散装洋车前子壳供应商：烘焙品牌所需条件 sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
         }
       ]
     },
@@ -851,7 +2006,7 @@
         },
         {
           "heading": "最小起订量和样品政策",
-          "body": "我们对新买家的做法是先样品。我们在任何采购订单之前提供100–500 g附完整COA的样品。",
+          "body": "我们对新买家的做法是先审核规格和样品。适配等级可提供 1 kg 样品包；商业批量、COA 表述和目的地文件需在采购订单前确认。",
           "table": {
             "headers": [
               "产品",
@@ -862,30 +2017,71 @@
             "rows": [
               [
                 "洋车前子壳99%",
-                "500 kg",
-                "100–200 g",
-                "确认后15–20天"
+                "按规格和文件",
+                "规格审核后",
+                "PO审核后"
               ],
               [
                 "洋车前子粉95%",
-                "500 kg",
-                "100–200 g",
-                "确认后15–20天"
+                "按规格和文件",
+                "规格审核后",
+                "PO审核后"
               ],
               [
                 "有机壳",
-                "500 kg",
-                "100–200 g",
-                "视库存20–25天"
+                "按文件范围",
+                "证书审核后",
+                "库存和文件审核后"
               ],
               [
                 "卡卡粉",
-                "1,000 kg",
-                "200–500 g",
-                "确认后10–15天"
+                "按包装和目的地",
+                "用途审核后",
+                "PO审核后"
               ]
             ]
           }
+        },
+        {
+          "heading": "采购决策点",
+          "body": "下单前，应把规格与实际批次、COA、1公斤样品、包装和目的地市场文件对应起来。"
+        }
+      ],
+      "aiSnapshot": "古吉拉特邦Siddhpur洋车前子壳制造商：工厂直供 sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
         }
       ]
     }
@@ -897,6 +2093,65 @@
       "车前子卡卡是车前子壳研磨的副产品——种皮残留物，在壳被分离后留下。它保留了原始种子中相当一部分黏液质和膳食纤维，使其成为功能性饲料成分而非简单的废料。",
       "对于饲料配方师而言，卡卡粉具有两大优势：纤维密度高且成本低。与完整的壳相比，卡卡价格更低，同时仍能提供可溶性纤维，支持牲畜的肠道蠕动和水分保留。",
       "批量采购卡卡需要了解批次产地和水分规格。饲料级卡卡的水分含量应低于12%。我们提供25公斤、50公斤及1,000公斤吨袋包装，每批次附带原产地证明文件和装箱单。"
+    ],
+    "aiSnapshot": "psyllium khakha demand 应按批次、规格和应用审核，而不是按宽泛供应商说法判断。买家应在采购订单前核实 feed grade, fiber, moisture, ash, particle size, packing, and destination use。",
+    "sections": [
+      {
+        "heading": "买家应核实什么",
+        "body": "对于 psyllium khakha demand，买家应核实 feed grade, fiber, moisture, ash, particle size, packing, and destination use。目标是把商业需求连接到实际批次、样品、COA 和目的地文件。"
+      },
+      {
+        "heading": "如何阅读 COA 或规格",
+        "body": "逐项查看参数、单位、方法、结果、限值、批次身份和报告日期。如成品文件需要特定方法或表述，应在样品或订单前确认。"
+      },
+      {
+        "heading": "常见错误",
+        "body": "不要只按等级或证书关键词采购。应确认测试批次支持什么，以及哪些文件可以审核。"
+      },
+      {
+        "heading": "RM 可以如何支持审核",
+        "body": "RM 可在采购订单前审核等级、目数、样品 COA、产品规格、包装、原产地和目的地文件要求。"
+      }
+    ],
+    "specTable": [
+      {
+        "parameter": "Grade / Application",
+        "range": "Buyer-specific",
+        "method": "Specification review"
+      },
+      {
+        "parameter": "Sample Review",
+        "range": "1 kg sample where available",
+        "method": "Pre-PO review"
+      },
+      {
+        "parameter": "COA Parameters",
+        "range": "Lot-specific",
+        "method": "COA / third-party report where required"
+      },
+      {
+        "parameter": "Packing and Documents",
+        "range": "Destination-specific",
+        "method": "Buyer checklist"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "采购订单前应确认什么？",
+        "a": "应确认 feed grade, fiber, moisture, ash, particle size, packing, and destination use、目标应用、样品、包装和目的地文件。"
+      },
+      {
+        "q": "样品 COA 能否用于最终放行？",
+        "a": "不能。样品 COA 用于初步审核。最终放行应依据实际发货批次 COA 或所需第三方报告。"
+      },
+      {
+        "q": "表述能否匹配买家规格？",
+        "a": "只有当测试批次结果和文件支持时，才可审核相应表述。"
+      },
+      {
+        "q": "如何避免采购延误？",
+        "a": "报价前提供等级、目数、应用、目的地国家、月用量和文件清单。"
+      }
     ]
   },
   "psyllium-cattle-feed-digestion": {
@@ -938,6 +2193,32 @@
       {
         "q": "马类排沙补充剂采购何种等级的车前子？",
         "a": "采购方通常采购纯度95%的饲料级车前子壳或卡卡粉。"
+      },
+      {
+        "q": "供应商应提供哪些文件？",
+        "a": "下单前应审核样品COA、规格、包装、产地和适用的目的地文件。"
+      },
+      {
+        "q": "如果买方需要认证怎么办？",
+        "a": "批准前应核实真实证书、范围、签发机构、有效期以及产品或批次覆盖范围。"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "买家应核实什么",
+        "body": "对于 psyllium for cattle and equine feed，买家应核实 feed-use suitability, fiber, moisture, ash, dosage plan, packing, and COA。目标是把商业需求连接到实际批次、样品、COA 和目的地文件。"
+      },
+      {
+        "heading": "如何阅读 COA 或规格",
+        "body": "逐项查看参数、单位、方法、结果、限值、批次身份和报告日期。如成品文件需要特定方法或表述，应在样品或订单前确认。"
+      },
+      {
+        "heading": "常见错误",
+        "body": "不要只按等级或证书关键词采购。应确认测试批次支持什么，以及哪些文件可以审核。"
+      },
+      {
+        "heading": "RM 可以如何支持审核",
+        "body": "RM 可在采购订单前审核等级、目数、样品 COA、产品规格、包装、原产地和目的地文件要求。"
       }
     ]
   },
@@ -980,6 +2261,32 @@
       {
         "q": "批量车前子壳粉在烘焙配方中的理想目数是多少？",
         "a": "80目细粉是无麸质工业烘焙的全球行业标准。"
+      },
+      {
+        "q": "供应商应提供哪些文件？",
+        "a": "下单前应审核样品COA、规格、包装、产地和适用的目的地文件。"
+      },
+      {
+        "q": "如果买方需要认证怎么办？",
+        "a": "批准前应核实真实证书、范围、签发机构、有效期以及产品或批次覆盖范围。"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "买家应核实什么",
+        "body": "对于 whole husk versus husk powder，买家应核实 application, mesh, hydration speed, texture, dosage, sample trial, and COA。目标是把商业需求连接到实际批次、样品、COA 和目的地文件。"
+      },
+      {
+        "heading": "如何阅读 COA 或规格",
+        "body": "逐项查看参数、单位、方法、结果、限值、批次身份和报告日期。如成品文件需要特定方法或表述，应在样品或订单前确认。"
+      },
+      {
+        "heading": "常见错误",
+        "body": "不要只按等级或证书关键词采购。应确认测试批次支持什么，以及哪些文件可以审核。"
+      },
+      {
+        "heading": "RM 可以如何支持审核",
+        "body": "RM 可在采购订单前审核等级、目数、样品 COA、产品规格、包装、原产地和目的地文件要求。"
       }
     ]
   }

@@ -17,9 +17,6 @@ const orgSchema = {
   '@type': 'Organization',
   name: 'RM Psyllium',
   url: 'https://rmpsyllium.com',
-  hasCredential: [
-    { '@type': 'EducationalOccupationalCredential', credentialCategory: 'FSSAI Registration', recognizedBy: { '@type': 'Organization', name: 'Food Safety and Standards Authority of India' } }
-  ],
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Patan Road, Khali, Char Rasta, Nedra',
@@ -29,6 +26,20 @@ const orgSchema = {
     addressCountry: 'IN'
   }
 };
+
+const qualityInternalLinks = [
+  { text: 'Verify COA guide', href: `/${lang}/blog/verify-nabl-coa-psyllium-supplier/` },
+  { text: 'Pharmacopoeia wording guide', href: `/${lang}/blog/psyllium-usp-ep-ip-monograph-standards/` },
+  { text: 'Heavy-metal review guide', href: `/${lang}/blog/heavy-metal-tolerances-nutraceutical-psyllium/` },
+  { text: 'Request sample review', href: `/${lang}/contact/` }
+];
+
+const qualityReferenceLinks = [
+  { text: 'NABL Membership Directory', href: 'https://www.nabl.org/engage/membership-directory/' },
+  { text: 'USP Dietary Supplements and Herbal Medicines', href: 'https://www.usp.org/dietary-supplements-herbal-medicines' },
+  { text: 'European Pharmacopoeia - EDQM', href: 'https://www.edqm.eu/en/the-european-pharmacopoeia' },
+  { text: 'FDA FSVP rule overview', href: 'https://www.fda.gov/food/food-safety-modernization-act-fsma/fsma-final-rule-foreign-supplier-verification-programs-fsvp-importers-food-humans-and-animals' }
+];
 ---
 <BaseLayout
   lang={lang}
@@ -46,19 +57,17 @@ const orgSchema = {
       </div>
       <div class="cl-intro-stats">
         <div class="cl-stat">
-          <strong>47</strong>
+          <strong>COA</strong>
           <span>{t.qualityCoaStatLabel}</span>
         </div>
-        {/*
         <div class="cl-stat">
-          <strong>FSSAI</strong>
+          <strong>Spec</strong>
           <span>{t.qualityFssaiStatLabel}</span>
         </div>
         <div class="cl-stat">
-          <strong>APEDA</strong>
+          <strong>Docs</strong>
           <span>{t.qualityApedaStatLabel}</span>
         </div>
-        */}
       </div>
     </div>
   </section>
@@ -71,46 +80,33 @@ const orgSchema = {
     </div>
   </section>
 
-  {/*
-  <!-- CERTIFICATIONS -->
+  <!-- BUYER VERIFICATION REFERENCES -->
   <section class="cl-section cl-section--cream">
     <div class="cl-container">
-      <div class="cl-section-label"><span>{t.labelCredentials}</span><i></i></div>
-      <h2>{t.qualityCredTitle}</h2>
-      <p class="cl-cert-lead">{t.qualityCredLead}</p>
-      <div class="cl-cert-grid">
-        <div class="cl-cert-card">
-          <div class="cl-cert-header">
-            <h3>FSSAI</h3>
-            <span class="cl-badge cl-badge--green">{t.qualityBadgeRegistered}</span>
-          </div>
-          <p>{t.qualityFssaiDesc}</p>
+      <div class="cl-section-label"><span>Buyer verification links</span><i></i></div>
+      <h2>References your QA team can verify.</h2>
+      <div class="cl-reference-grid">
+        <div class="cl-reference-card">
+          <h3>RM buyer guides</h3>
+          {qualityInternalLinks.map((link) => (
+            <a href={link.href}>
+              <span>{link.text}</span>
+              <strong aria-hidden="true">&rarr;</strong>
+            </a>
+          ))}
         </div>
-        <div class="cl-cert-card">
-          <div class="cl-cert-header">
-            <h3>APEDA</h3>
-            <span class="cl-badge cl-badge--green">{t.qualityBadgeRegistered}</span>
-          </div>
-          <p>{t.qualityApedaDesc}</p>
-        </div>
-        <div class="cl-cert-card">
-          <div class="cl-cert-header">
-            <h3>Spices Board</h3>
-            <span class="cl-badge cl-badge--green">{t.qualityBadgeRegistered}</span>
-          </div>
-          <p>{t.qualitySpicesBoardDesc}</p>
-        </div>
-        <div class="cl-cert-card">
-          <div class="cl-cert-header">
-            <h3>IEC 0124007841</h3>
-            <span class="cl-badge cl-badge--green">{t.qualityBadgeActive}</span>
-          </div>
-          <p>{t.qualityIecDesc}</p>
+        <div class="cl-reference-card">
+          <h3>External reference sources</h3>
+          {qualityReferenceLinks.map((link) => (
+            <a href={link.href} target="_blank" rel="noopener">
+              <span>{link.text}</span>
+              <strong aria-hidden="true">external</strong>
+            </a>
+          ))}
         </div>
       </div>
     </div>
   </section>
-  */}
 
   <!-- CONTACT CTA -->
   <section class="cl-section">
@@ -339,6 +335,51 @@ const orgSchema = {
   .cl-badge--green { background: rgba(74,102,48,0.12); color: #354d20; }
   .cl-badge--amber { background: rgba(184,117,58,0.12); color: #b8753a; }
 
+  .cl-reference-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    max-width: 900px;
+  }
+
+  .cl-reference-card {
+    border: 1px solid var(--cl-rule);
+    border-radius: 8px;
+    background: #fff;
+    padding: 24px;
+  }
+
+  .cl-reference-card h3 {
+    margin: 0 0 14px;
+    font-family: var(--cl-f);
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    color: var(--cl-ink);
+  }
+
+  .cl-reference-card a {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    border-top: 1px solid var(--cl-rule);
+    padding: 12px 0;
+    color: var(--cl-soft);
+    font-family: var(--cl-f);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-decoration: none;
+  }
+
+  .cl-reference-card a:hover { color: var(--cl-sage); }
+  .cl-reference-card strong {
+    flex: 0 0 auto;
+    color: var(--cl-sage);
+    font-size: 12px;
+    font-weight: 700;
+  }
+
   .cl-cta {
     display: grid;
     grid-template-columns: 1fr auto;
@@ -397,7 +438,8 @@ const orgSchema = {
     .cl-intro-inner { grid-template-columns: 1fr; }
     .cl-intro-stats { grid-template-columns: repeat(3, 1fr); }
     .cl-cert-grid { grid-template-columns: 1fr; }
-.cl-cta { grid-template-columns: 1fr; }
+    .cl-reference-grid { grid-template-columns: 1fr; }
+    .cl-cta { grid-template-columns: 1fr; }
   }
 
   @media (max-width: 540px) {

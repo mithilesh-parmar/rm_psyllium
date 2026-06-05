@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RM Psyllium — Document Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/doc.css">
+<link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- LEFT: control panel -->
+  <aside class="panel">
+    <div class="panel-head">
+      <div class="brand">
+        <img src="./assets/logo.png" alt="RM Psyllium">
+        <div class="t">Document Studio<small>RM Psyllium</small></div>
+      </div>
+    </div>
+
+    <section>
+      <h3>Documents</h3>
+      <div id="selector"></div>
+    </section>
+
+    <section>
+      <div id="form"></div>
+    </section>
+
+    <div class="btn-row">
+      <button id="btn-master" class="btn btn-ghost">⚙ Master</button>
+      <button id="btn-print" class="btn btn-gold">⬇ Save as PDF</button>
+    </div>
+    <div class="btn-row" style="border-top:none; padding-top:0;">
+      <button id="btn-export" class="btn btn-ghost">Export data</button>
+      <button id="btn-import" class="btn btn-ghost">Import data</button>
+    </div>
+  </aside>
+
+  <!-- RIGHT: live A4 preview -->
+  <main class="stage" id="stage">
+    <div class="empty">Loading…</div>
+  </main>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<!-- engine + components + data, then self-registering templates -->
+<script src="./js/store.js"></script>
+<script src="./js/engine.js"></script>
+<script src="./js/components.js"></script>
+<script src="./js/master.js"></script>
+<script src="./js/commercial.js"></script>
+
+<!-- templates (each self-registers) -->
+<script src="./templates/coa.js"></script>
+<script src="./templates/spec.js"></script>
+<script src="./templates/quotation.js"></script>
+<script src="./templates/proforma-invoice.js"></script>
+<script src="./templates/commercial-invoice.js"></script>
+<script src="./templates/packing-list.js"></script>
+<script src="./templates/sales-contract.js"></script>
+<script src="./templates/declaration.js"></script>
+<script src="./templates/certificate-of-origin.js"></script>
+<script src="./templates/shipping-instructions.js"></script>
+
+<!-- controller last -->
+<script src="./js/app.js"></script>
+</body>
+</html>

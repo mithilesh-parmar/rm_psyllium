@@ -14,14 +14,14 @@ Large global psyllium mills ignore low-volume and custom-spec buyers. RM Psylliu
     *   Sourcing agents claiming "high purity" but shipping batches that fail QA tests at destination ports (moisture, swelling volume, or microbial limits).
     *   Lack of batch-level traceability and delayed Certificate of Analysis (COA) deliveries that slow down manufacturing lines.
     *   Fluctuating middleman pricing from trading desks.
-*   **The RM Psyllium Hook**: Direct-from-source manufacturing in Siddhpur, lot-specific NABL-accredited COA provided before dispatch, custom formulation matching.
+*   **The RM Psyllium Hook**: Direct-from-source manufacturing in Siddhpur, third-party NABL-accredited lab report where requested provided before dispatch, custom formulation matching.
 
 ### ICP B: Product Formulation Consultants & R&D Chemists
 *   **Target Sectors**: Food ingredients consultants, pharmaceutical formulation labs, functional food R&D houses.
 *   **Key Pain Points**:
     *   Inability to procure small, high-purity (e.g., 99% USP) or custom-milled (e.g., 100 mesh) samples for bench-top formulation trials. Large mills refuse to handle orders below 5–20 Metric Tons.
     *   Difficulty in matching custom viscosity or swelling profiles for clean-label, gluten-free binders.
-*   **The RM Psyllium Hook**: Free 100–500g lab samples with COA shipped in 5 business days; flexible trial orders starting at 500 KG.
+*   **The RM Psyllium Hook**: 1 kg sample options, COA review, and commercial lot planning confirmed after grade, document, and destination review.
 
 ### ICP C: Domestic Indian Merchant Exporters & Trading Desks
 *   **Target Sectors**: Export houses, general commodity traders, agricultural broker networks in India.
@@ -35,7 +35,7 @@ Large global psyllium mills ignore low-volume and custom-spec buyers. RM Psylliu
 *   **Key Pain Points**:
     *   Exclusion from high-quality direct supplies due to massive Minimum Order Quantities (MOQs) of major processing mills.
     *   Forced to buy repackaged, stale, or marked-up psyllium husk from distributors.
-*   **The RM Psyllium Hook**: A strict "No MOQ" policy to democratize high-grade psyllium sourcing, supporting buyers from pilot launch to full container loads.
+*   **The RM Psyllium Hook**: A sample-first sourcing policy to democratize high-grade psyllium sourcing, supporting buyers from pilot launch to full container loads.
 
 ---
 
@@ -49,7 +49,7 @@ Instead of hiding the fact that the plant is under construction, the narrative c
 
 ### Key Differentiators vs. Competitors (Jyot, Satnam, Mantra):
 1.  **Deep Operations Expertise**: While competitors lead with generic corporate messages, RM Psyllium highlights its leadership: a family with **20 years of agricultural seed processing experience**, partnered with an operations lead who has managed **psyllium processing for 40 years** inside Siddhpur's largest plants.
-2.  **No MOQ Philosophy**: Explicitly targeting the high-value buyers that major competitors ignore.
+2.  **Sample-first sourcing Philosophy**: Explicitly targeting the high-value buyers that major competitors ignore.
 3.  **Specification-First Sourcing**: Moving B2B procurement away from "off-the-shelf catalogues" to custom-engineered mesh sizes and purity grades.
 
 ---
@@ -75,12 +75,12 @@ Formulation         (Pre-launch Diary)     (Lead Gen CTAs)    & B2B Operations
 
 ### Pillar 2: Building in Public (The Pre-Launch Diary)
 *   *Objective*: Create anticipation and document reliability.
-*   *Key Topics*: Siddhpur plant setup, machinery selection (cleaning, milling, magnetic separators), FSSAI and APEDA registration milestones, and QA system designs.
+*   *Key Topics*: Siddhpur plant setup, machinery selection (cleaning, milling, magnetic separators), buyer documentation packs, lot traceability, and QA system designs.
 *   *Goal*: Show, don't just tell, our deep manufacturing knowledge.
 
 ### Pillar 3: Sourcing De-risked (Direct Lead Generation)
 *   *Objective*: Drive conversions and calendar bookings.
-*   *Key Topics*: The "No MOQ" philosophy, the 100–500g laboratory sample program, contract manufacturing for domestic merchant exporters, and custom packaging options.
+*   *Key Topics*: The "Sample-first sourcing" philosophy, the spec-reviewed sample program, contract manufacturing for domestic merchant exporters, and custom packaging options.
 *   *Goal*: Direct traffic to the website's Interactive Spec-Builder.
 
 ### Pillar 4: Trade Logistics & B2B Operations

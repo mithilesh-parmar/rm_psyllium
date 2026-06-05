@@ -43,6 +43,32 @@
       {
         "q": "Почему зола, нерастворимая в кислоте, является критическим показателем безопасности?",
         "a": "Зола, нерастворимая в кислоте, указывает на наличие остаточного песка, почвы и диоксида кремния. Стандарт USP предписывает жесткий лимит ≤0,4%. Для обеспечения таких низких показателей используется высокотехнологичная гравитационная сепарация."
+      },
+      {
+        "q": "Что проверить до заказа?",
+        "a": "Проверьте USP, EP, IP, BP/NF, COA, swelling volume, ash, moisture, microbiology, heavy metals относительно целевой партии и требований страны назначения."
+      },
+      {
+        "q": "Достаточно ли образца COA для финального одобрения?",
+        "a": "Нет. Образец COA нужен для проверки параметров. Финальное одобрение должно основываться на COA или отчете фактически отгружаемой партии."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Что должен проверить покупатель",
+        "body": "Для USP/EP/IP wording проверьте целевую партию, спецификацию покупателя, COA и метод до размещения заказа."
+      },
+      {
+        "heading": "Чеклист до PO",
+        "body": "Запросите и сравните: USP, EP, IP, BP/NF, COA, swelling volume, ash, moisture, microbiology, heavy metals. Проверку нужно сделать до цены, образца или коммерческой партии."
+      },
+      {
+        "heading": "Частая ошибка",
+        "body": "Не воспринимайте USP/EP/IP wording как общее обещание поставщика. Это должно быть связано с результатами партии, документами и рынком назначения."
+      },
+      {
+        "heading": "Как RM может помочь",
+        "body": "RM может проверить образец COA, спецификацию, сорт, mesh, упаковку и документы назначения до заказа."
       }
     ]
   },
@@ -85,11 +111,37 @@
     "faqs": [
       {
         "q": "Что означает аккредитация NABL в сертификате анализа (COA)?",
-        "a": "NABL — это национальный орган по аккредитации испытательных лабораторий Индии, обеспечивающий международное признание результатов через систему ILAC. Наличие COA от NABL гарантирует проведение испытаний в строгом соответствии с глобальными стандартами."
+        "a": "NABL — национальный орган по аккредитации испытательных лабораторий Индии, обеспечивающий международное признание результатов через систему ILAC. Для покупателя важно проверить, что лаборатория-эмитент аккредитована, а COA относится к конкретной партии."
       },
       {
         "q": "Каким методом тестируют содержание тяжелых металлов в псиллиуме?",
         "a": "Содержание тяжелых металлов определяется методом масс-спектрометрии с индуктивно связанной плазмой (ICP-MS), обеспечивающим высочайшую точность обнаружения на уровне частей на миллиард (ppb) для свинца, мышьяка, кадмия и ртути."
+      },
+      {
+        "q": "Что проверить до заказа?",
+        "a": "Проверьте NABL scope, lab name, lot number, sample identity, method, result, unit, limit, signatory относительно целевой партии и требований страны назначения."
+      },
+      {
+        "q": "Достаточно ли образца COA для финального одобрения?",
+        "a": "Нет. Образец COA нужен для проверки параметров. Финальное одобрение должно основываться на COA или отчете фактически отгружаемой партии."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Что должен проверить покупатель",
+        "body": "Для NABL wording проверьте целевую партию, спецификацию покупателя, COA и метод до размещения заказа."
+      },
+      {
+        "heading": "Чеклист до PO",
+        "body": "Запросите и сравните: NABL scope, lab name, lot number, sample identity, method, result, unit, limit, signatory. Проверку нужно сделать до цены, образца или коммерческой партии."
+      },
+      {
+        "heading": "Частая ошибка",
+        "body": "Не воспринимайте NABL wording как общее обещание поставщика. Это должно быть связано с результатами партии, документами и рынком назначения."
+      },
+      {
+        "heading": "Как RM может помочь",
+        "body": "RM может проверить образец COA, спецификацию, сорт, mesh, упаковку и документы назначения до заказа."
       }
     ]
   },
@@ -132,6 +184,32 @@
       {
         "q": "Какие методы физической очистки должен использовать поставщик?",
         "a": "Проверенные производители должны применять многоступенчатые камнеотделители для удаления грязи и песка, ситовые классификаторы для фракционирования и высокоинтенсивные магнитные решетки для улавливания металлических примесей."
+      },
+      {
+        "q": "Что проверить до заказа?",
+        "a": "Проверьте FSVP file, prior notice data, product specification, COA, origin, packing, broker details относительно целевой партии и требований страны назначения."
+      },
+      {
+        "q": "Достаточно ли образца COA для финального одобрения?",
+        "a": "Нет. Образец COA нужен для проверки параметров. Финальное одобрение должно основываться на COA или отчете фактически отгружаемой партии."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Что должен проверить покупатель",
+        "body": "Для FDA/FSVP wording проверьте целевую партию, спецификацию покупателя, COA и метод до размещения заказа."
+      },
+      {
+        "heading": "Чеклист до PO",
+        "body": "Запросите и сравните: FSVP file, prior notice data, product specification, COA, origin, packing, broker details. Проверку нужно сделать до цены, образца или коммерческой партии."
+      },
+      {
+        "heading": "Частая ошибка",
+        "body": "Не воспринимайте FDA/FSVP wording как общее обещание поставщика. Это должно быть связано с результатами партии, документами и рынком назначения."
+      },
+      {
+        "heading": "Как RM может помочь",
+        "body": "RM может проверить образец COA, спецификацию, сорт, mesh, упаковку и документы назначения до заказа."
       }
     ]
   },
@@ -174,6 +252,32 @@
       {
         "q": "Какой лабораторный метод применяется для анализа содержания тяжелых металлов?",
         "a": "Масс-спектрометрия с индуктивно связанной плазмой (ICP-MS) является международным эталоном, обеспечивая высочайшую селективность и чувствительность до частей на миллиард (ppb)."
+      },
+      {
+        "q": "Что проверить до заказа?",
+        "a": "Проверьте Pb, As, Cd, Hg, ICP-MS method, ppm unit, serving size, destination-market limit относительно целевой партии и требований страны назначения."
+      },
+      {
+        "q": "Достаточно ли образца COA для финального одобрения?",
+        "a": "Нет. Образец COA нужен для проверки параметров. Финальное одобрение должно основываться на COA или отчете фактически отгружаемой партии."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Что должен проверить покупатель",
+        "body": "Для heavy-metal pass/fail wording проверьте целевую партию, спецификацию покупателя, COA и метод до размещения заказа."
+      },
+      {
+        "heading": "Чеклист до PO",
+        "body": "Запросите и сравните: Pb, As, Cd, Hg, ICP-MS method, ppm unit, serving size, destination-market limit. Проверку нужно сделать до цены, образца или коммерческой партии."
+      },
+      {
+        "heading": "Частая ошибка",
+        "body": "Не воспринимайте heavy-metal pass/fail wording как общее обещание поставщика. Это должно быть связано с результатами партии, документами и рынком назначения."
+      },
+      {
+        "heading": "Как RM может помочь",
+        "body": "RM может проверить образец COA, спецификацию, сорт, mesh, упаковку и документы назначения до заказа."
       }
     ]
   },
@@ -216,6 +320,32 @@
       {
         "q": "Влияет ли паровая стерилизация на объем набухания псиллиума?",
         "a": "При некорректном ведении процесса высокая температура и избыточная влага могут вызвать преждевременное желирование шелухи. Высокоточная кратковременная паровая стерилизация сохраняет структуру слизистых полисахаридов, поддерживая объем набухания ≥50 мл/г."
+      },
+      {
+        "q": "Что проверить до заказа?",
+        "a": "Проверьте treatment method, microbiology, moisture, ETO, 2-chloroethanol, swelling volume относительно целевой партии и требований страны назначения."
+      },
+      {
+        "q": "Достаточно ли образца COA для финального одобрения?",
+        "a": "Нет. Образец COA нужен для проверки параметров. Финальное одобрение должно основываться на COA или отчете фактически отгружаемой партии."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Что должен проверить покупатель",
+        "body": "Для sterilization wording проверьте целевую партию, спецификацию покупателя, COA и метод до размещения заказа."
+      },
+      {
+        "heading": "Чеклист до PO",
+        "body": "Запросите и сравните: treatment method, microbiology, moisture, ETO, 2-chloroethanol, swelling volume. Проверку нужно сделать до цены, образца или коммерческой партии."
+      },
+      {
+        "heading": "Частая ошибка",
+        "body": "Не воспринимайте sterilization wording как общее обещание поставщика. Это должно быть связано с результатами партии, документами и рынком назначения."
+      },
+      {
+        "heading": "Как RM может помочь",
+        "body": "RM может проверить образец COA, спецификацию, сорт, mesh, упаковку и документы назначения до заказа."
       }
     ]
   },
@@ -258,6 +388,32 @@
       {
         "q": "Какой размер частиц рекомендуется для сухих быстрорастворимых напитков?",
         "a": "Для сухих смесей быстрорастворимых напитков рекомендуется использовать фракцию 100 меш или тоньше, что гарантирует быстрое, однородное распределение в холодных жидкостях без комкования и ощущения крупинок."
+      },
+      {
+        "q": "Что проверить до заказа?",
+        "a": "Проверьте mesh, hydration speed, water addition, mixing time, crumb texture, 1 kg sample trial относительно целевой партии и требований страны назначения."
+      },
+      {
+        "q": "Достаточно ли образца COA для финального одобрения?",
+        "a": "Нет. Образец COA нужен для проверки параметров. Финальное одобрение должно основываться на COA или отчете фактически отгружаемой партии."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Что должен проверить покупатель",
+        "body": "Для mesh recommendation проверьте целевую партию, спецификацию покупателя, COA и метод до размещения заказа."
+      },
+      {
+        "heading": "Чеклист до PO",
+        "body": "Запросите и сравните: mesh, hydration speed, water addition, mixing time, crumb texture, 1 kg sample trial. Проверку нужно сделать до цены, образца или коммерческой партии."
+      },
+      {
+        "heading": "Частая ошибка",
+        "body": "Не воспринимайте mesh recommendation как общее обещание поставщика. Это должно быть связано с результатами партии, документами и рынком назначения."
+      },
+      {
+        "heading": "Как RM может помочь",
+        "body": "RM может проверить образец COA, спецификацию, сорт, mesh, упаковку и документы назначения до заказа."
       }
     ]
   },
@@ -300,6 +456,32 @@
       {
         "q": "Как проверяется отсутствие остатков пестицидов в органическом псиллиуме?",
         "a": "Аккредитованные лаборатории используют методы газовой хромато-масс-спектрометрии (ГХ-МС) и жидкостной хромато-масс-спектрометрии (ВЭЖХ-МС) для скрининга более чем 500 химических соединений."
+      },
+      {
+        "q": "Что проверить до заказа?",
+        "a": "Проверьте certificate scope, handler chain, TC/COI path, pesticide residue report, lot identity относительно целевой партии и требований страны назначения."
+      },
+      {
+        "q": "Достаточно ли образца COA для финального одобрения?",
+        "a": "Нет. Образец COA нужен для проверки параметров. Финальное одобрение должно основываться на COA или отчете фактически отгружаемой партии."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Что должен проверить покупатель",
+        "body": "Для organic wording проверьте целевую партию, спецификацию покупателя, COA и метод до размещения заказа."
+      },
+      {
+        "heading": "Чеклист до PO",
+        "body": "Запросите и сравните: certificate scope, handler chain, TC/COI path, pesticide residue report, lot identity. Проверку нужно сделать до цены, образца или коммерческой партии."
+      },
+      {
+        "heading": "Частая ошибка",
+        "body": "Не воспринимайте organic wording как общее обещание поставщика. Это должно быть связано с результатами партии, документами и рынком назначения."
+      },
+      {
+        "heading": "Как RM может помочь",
+        "body": "RM может проверить образец COA, спецификацию, сорт, mesh, упаковку и документы назначения до заказа."
       }
     ]
   },
@@ -342,6 +524,32 @@
       {
         "q": "Что представляет собой тест ELISA на содержание глютена?",
         "a": "Иммуноферментный анализ (ELISA) — эталонный лабораторный метод, используемый аккредитованными NABL лабораториями для качественного обнаружения и точного количественного определения следовых белков глютена на уровне частей на миллион (ppm)."
+      },
+      {
+        "q": "Что проверить до заказа?",
+        "a": "Проверьте allergen declaration, shared equipment, cleaning records, storage segregation, ELISA testing относительно целевой партии и требований страны назначения."
+      },
+      {
+        "q": "Достаточно ли образца COA для финального одобрения?",
+        "a": "Нет. Образец COA нужен для проверки параметров. Финальное одобрение должно основываться на COA или отчете фактически отгружаемой партии."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Что должен проверить покупатель",
+        "body": "Для gluten-free or allergen wording проверьте целевую партию, спецификацию покупателя, COA и метод до размещения заказа."
+      },
+      {
+        "heading": "Чеклист до PO",
+        "body": "Запросите и сравните: allergen declaration, shared equipment, cleaning records, storage segregation, ELISA testing. Проверку нужно сделать до цены, образца или коммерческой партии."
+      },
+      {
+        "heading": "Частая ошибка",
+        "body": "Не воспринимайте gluten-free or allergen wording как общее обещание поставщика. Это должно быть связано с результатами партии, документами и рынком назначения."
+      },
+      {
+        "heading": "Как RM может помочь",
+        "body": "RM может проверить образец COA, спецификацию, сорт, mesh, упаковку и документы назначения до заказа."
       }
     ]
   },
@@ -384,6 +592,32 @@
       {
         "q": "Каким образом подтверждается общее содержание пищевых волокон в сырье?",
         "a": "Фракции пищевых волокон определяются ферментативно-гравиметрическим методом в соответствии с протоколом AOAC 991.43 в условиях лабораторий NABL."
+      },
+      {
+        "q": "Что проверить до заказа?",
+        "a": "Проверьте purity, swelling volume, mesh, moisture, fiber method, texture, finished application относительно целевой партии и требований страны назначения."
+      },
+      {
+        "q": "Достаточно ли образца COA для финального одобрения?",
+        "a": "Нет. Образец COA нужен для проверки параметров. Финальное одобрение должно основываться на COA или отчете фактически отгружаемой партии."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Что должен проверить покупатель",
+        "body": "Для fiber-ratio wording проверьте целевую партию, спецификацию покупателя, COA и метод до размещения заказа."
+      },
+      {
+        "heading": "Чеклист до PO",
+        "body": "Запросите и сравните: purity, swelling volume, mesh, moisture, fiber method, texture, finished application. Проверку нужно сделать до цены, образца или коммерческой партии."
+      },
+      {
+        "heading": "Частая ошибка",
+        "body": "Не воспринимайте fiber-ratio wording как общее обещание поставщика. Это должно быть связано с результатами партии, документами и рынком назначения."
+      },
+      {
+        "heading": "Как RM может помочь",
+        "body": "RM может проверить образец COA, спецификацию, сорт, mesh, упаковку и документы назначения до заказа."
       }
     ]
   },
@@ -426,6 +660,32 @@
       {
         "q": "Какие факторы могут приводить к снижению объема набухания при переработке?",
         "a": "Избыточный нагрев, возникающий из-за механического трения при измельчении сырья, является основной причиной термического повреждения слизи, что требует строгого контроля температур при помоле."
+      },
+      {
+        "q": "Что проверить до заказа?",
+        "a": "Проверьте sample form, particle size, method, rest time, water volume, swelling result, COA wording относительно целевой партии и требований страны назначения."
+      },
+      {
+        "q": "Достаточно ли образца COA для финального одобрения?",
+        "a": "Нет. Образец COA нужен для проверки параметров. Финальное одобрение должно основываться на COA или отчете фактически отгружаемой партии."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Что должен проверить покупатель",
+        "body": "Для swelling-volume result проверьте целевую партию, спецификацию покупателя, COA и метод до размещения заказа."
+      },
+      {
+        "heading": "Чеклист до PO",
+        "body": "Запросите и сравните: sample form, particle size, method, rest time, water volume, swelling result, COA wording. Проверку нужно сделать до цены, образца или коммерческой партии."
+      },
+      {
+        "heading": "Частая ошибка",
+        "body": "Не воспринимайте swelling-volume result как общее обещание поставщика. Это должно быть связано с результатами партии, документами и рынком назначения."
+      },
+      {
+        "heading": "Как RM может помочь",
+        "body": "RM может проверить образец COA, спецификацию, сорт, mesh, упаковку и документы назначения до заказа."
       }
     ]
   },
@@ -435,7 +695,66 @@
       "summary": "Производители фармацевтических и нутрицевтических продуктов, закупающие шелуху псиллиума оптом, нуждаются в надёжной документации о чистоте. В этой статье рассматривается, что означает «99% шелуха псиллиума», как её верифицировать и что включает стандартный пакет документов от индийского экспортёра.",
       "body": [
         "Шелуха псиллиума 99% чистоты — это высочайший фармацевтический класс, используемый производителями таблеток, пищевых волокон и функциональных продуктов питания. «99%» означает содержание шелухи по отношению к общей биомассе плода — оставшийся 1% составляет мелкие волокна семян и природная влажность.",
-        "Прямые поставки с фабрики в Сиддхпуре, Гуджарат — мировом центре производства псиллиума — обеспечивают единообразие партий и полный контроль документации. RM Psyllium поставляет шелуху 99% для фармацевтических, нутрицевтических и пищевых применений с анализами NABL-аккредитованных лабораторий."
+        "Прямые поставки с перерабатывающей площадки в Сиддхпуре, Гуджарат — важном центре производства псиллиума — помогают покупателям проверять партии, происхождение и документы до заказа. RM Psyllium поставляет шелуху 99% для фармацевтических, нутрицевтических и пищевых применений с COA по партии и отчётами сторонних аккредитованных лабораторий там, где это требуется спецификацией покупателя."
+      ],
+      "aiSnapshot": "Поставщик шелухи псиллиума 99% чистоты из Индии: фармацевтическое и нутрицевтическое качество sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "Поставщик шелухи псиллиума 99% чистоты из Индии: фармацевтическое и нутрицевтическое качество verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-export-india-fob-mundra": {
@@ -443,7 +762,66 @@
       "summary": "FOB Мундра является стандартным условием для экспорта псиллиума из Индии. В этой статье рассматривается, что включают экспортные условия, типичные сроки выполнения заказа и портовая логистика из Сиддхпура.",
       "body": [
         "Порт Мундра в Гуджарате является основным экспортным портом для шелухи псиллиума из Индии. Для покупателей, закупающих FOB Мундра, поставщик несёт ответственность за доставку груза в порт и его погрузку на судно; ответственность переходит к покупателю в момент пересечения борта судна.",
-        "Стандартные экспортные сроки из Сиддхпура: 15–20 рабочих дней для стандартных заказов от 1 до 5 МТ; 25–30 рабочих дней для крупных заказов свыше 10 МТ или заказов с индивидуальными спецификациями. Экспортная документация включает: COA, фитосанитарный сертификат, Certificate of Origin, коммерческий счёт-фактуру и упаковочный лист, готовые к таможенному оформлению в вашей стране."
+        "Экспортные сроки из Сиддхпура подтверждаются после проверки спецификации, объёма, упаковки, пункта назначения и пакета документов. Экспортная документация может включать COA, фитосанитарный сертификат, Certificate of Origin, коммерческий счёт-фактуру и упаковочный лист в зависимости от продукта, партии и требований страны назначения."
+      ],
+      "aiSnapshot": "Экспорт псиллиума из Индии FOB Мундра: условия поставки, сроки и документация sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "Экспорт псиллиума из Индии FOB Мундра: условия поставки, сроки и документация verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-husk-usp-ep-pharmacopoeia": {
@@ -452,6 +830,65 @@
       "body": [
         "United States Pharmacopeia (USP) и European Pharmacopoeia (EP/BP) устанавливают слегка различающиеся стандарты для шелухи псиллиума. Оба требуют минимального набухающего объёма ≥40 мл/г, однако методы испытаний и сопутствующие требования различаются. Фармацевтическим покупателям следует указывать фармакопею, соответствующую их рынку сбыта.",
         "Индийские производители, экспортирующие в ЕС, обычно поставляют COA по ЕФ; в США — COA по USP. RM Psyllium может предоставить аналитические сертификаты по обеим фармакопеям, а также по Индийской фармакопее (ИФ), обеспечивая гибкость для мульти-рыночных покупателей."
+      ],
+      "aiSnapshot": "Шелуха псиллиума по стандартам USP и Европейской фармакопеи: сравнение для фармацевтических покупателей sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "Шелуха псиллиума по стандартам USP и Европейской фармакопеи: сравнение для фармацевтических покупателей verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-seed-supplier-gujarat-rajasthan": {
@@ -460,6 +897,65 @@
       "body": [
         "Около 85% мирового производства псиллиума сосредоточено в двух районах Индии: районе Мехсана в Гуджарате и районе Джалоре в Раджастане. Уникальные чёрные хлопковые почвы Гуджарата дают шелуху с более высоким набухающим объёмом — ключевым показателем качества для фармацевтических применений.",
         "Прямые закупки семян у поставщиков в Гуджарате позволяют обойти оптовые наценки. Семена псиллиума отличаются от шелухи псиллиума (отделённой кожуры) — семена используются в специальных кормовых и промышленных применениях, тогда как шелуха является основным продуктом для фармацевтических и пищевых применений."
+      ],
+      "aiSnapshot": "Поставщик семян псиллиума из Гуджарата и Раджастана: прямые закупки с фермы sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "Поставщик семян псиллиума из Гуджарата и Раджастана: прямые закупки с фермы verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "organic-psyllium-nop-eu-certification": {
@@ -468,6 +964,65 @@
       "body": [
         "Органический псиллиум производится в соответствии с Национальной программой органического производства (NOP) для рынка США или Регламентом ЕС №2018/848 для европейских покупателей. Индийские фермы проходят трёхлетний переходный период перед получением органического сертификата; экспортируемые партии требуют транзакционных сертификатов (TC) помимо сертификата объекта.",
         "RM Psyllium поставляет органический псиллиум с двойной сертификацией NOP/ЕС по запросу. Органические партии отделены от обычных на протяжении всей цепочки переработки и поставок для обеспечения целостности сертификации и полной прослеживаемости от фермы до экспортного порта."
+      ],
+      "aiSnapshot": "Органический псиллиум с сертификацией NOP и ЕС из Индии: цепочка поставок и документация sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "Органический псиллиум с сертификацией NOP и ЕС из Индии: цепочка поставок и документация verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-husk-gluten-free-bakery": {
@@ -476,6 +1031,65 @@
       "body": [
         "Псиллиум стал незаменимым ингредиентом в хлебопечении без глютена — его мукополисахаридный гель создаёт сеть, аналогичную клейковине, удерживающую газ CO₂ в процессе выпечки. Без псиллиума безглютеновое тесто имеет тенденцию к рассыпанию и не обеспечивает структуру хлеба.",
         "Шелуха псиллиума обеспечивает наилучшую функциональность связующего при использовании в диапазоне 1–5% от веса муки. Более тонкий помол (60–80 меш) обеспечивает более равномерное распределение в тесте; более грубый помол (40 меш) создаёт видимую структуру шелухи в готовом изделии — что само по себе является маркетинговым преимуществом для артизанских безглютеновых брендов."
+      ],
+      "aiSnapshot": "Шелуха псиллиума для безглютеновой выпечки: функция связующего и уровни использования sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "Шелуха псиллиума для безглютеновой выпечки: функция связующего и уровни использования verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-supplement-capsule-filling": {
@@ -484,6 +1098,65 @@
       "body": [
         "Наполнение капсул шелухой псиллиума требует порошка с однородным размером частиц и правильной насыпной плотностью для предсказуемой работы капсуленаполнительного оборудования. Слишком тонкий помол создаёт проблемы с сыпучестью; слишком грубый — неравномерное наполнение капсул.",
         "Оптимальный диапазон тонкости помола для наполнения капсул: 40–60 меш. Насыпная плотность порошка шелухи псиллиума 99% обычно составляет 200–300 г/л. RM Psyllium может предоставить порошок с контролируемыми параметрами насыпной плотности и тонкости помола, оптимизированный для вашего оборудования для наполнения капсул."
+      ],
+      "aiSnapshot": "Шелуха псиллиума для наполнения капсул пищевых добавок: спецификации порошка и совместимость sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "Шелуха псиллиума для наполнения капсул пищевых добавок: спецификации порошка и совместимость verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-halal-kosher-documentation": {
@@ -492,6 +1165,65 @@
       "body": [
         "Сертификация халяль и кошер для псиллиума подтверждает, что в процессе обработки не использовались запрещённые вещества, а условия производства соответствуют религиозным требованиям. Большинство покупателей на рынках Ближнего Востока, Юго-Восточной Азии и США запрашивают хотя бы одну из этих сертификаций для пищевых ингредиентов.",
         "Документация по халяль и кошер предоставляется по запросу. Шелуха псиллиума по своей природе является растительным ингредиентом, не содержащим спирта и свинины — тем не менее аккредитованные сертификаты органов, как JAKIM (Малайзия), IFANCA (США) или KLBD (Великобритания), стандартно запрашиваются B2B-покупателями для систем управления качеством поставщиков."
+      ],
+      "aiSnapshot": "Документация по халяль и кошер для псиллиума: что нужно B2B-покупателям sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "Документация по халяль и кошер для псиллиума: что нужно B2B-покупателям verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "bulk-psyllium-import-usa-fda": {
@@ -499,7 +1231,66 @@
       "summary": "Импортёры псиллиума в США сталкиваются с конкретными требованиями FDA — предварительное уведомление о продуктах питания, регистрация объектов и соответствие стандартам FDA. Это руководство охватывает всё, что должны знать покупатели при поиске поставщика шелухи псиллиума из Индии.",
       "body": [
         "США — крупнейший импортёр шелухи псиллиума в мире, используемой в пищевых добавках, функциональных продуктах питания и фармацевтических препаратах. FDA регулирует псиллиум как пищевой ингредиент и активный ингредиент ОТС-лекарств, что создаёт двойные требования к соответствию для покупателей.",
-        "Индийские экспортёры, поставляющие на рынок США, должны иметь регистрацию предприятия в FDA, соблюдать требования FSMA по предварительному уведомлению о продуктах питания и предоставлять документацию, соответствующую требованиям входящей проверки американских брендов. RM Psyllium имеет регистрацию FDA и соблюдает требования HACCP."
+        "Индийские поставщики, работающие с рынком США, должны учитывать требования FDA/FSMA, предварительные уведомления и документацию для входящей проверки американских брендов. Покупателям следует проверять регистрационный статус, FSVP-документы, COA партии и применимые требования до заказа."
+      ],
+      "aiSnapshot": "Оптовый импорт псиллиума в США: требования FDA и руководство по документации sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "Оптовый импорт псиллиума в США: требования FDA и руководство по документации verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-khakha-animal-feed-specifications": {
@@ -508,6 +1299,65 @@
       "body": [
         "Хакха псиллиума — это высевки и мелкие побочные продукты, образующиеся при сортировке шелухи псиллиума. Несмотря на более низкое содержание шелухи по сравнению с продуктами фармацевтического класса, хакха содержит значительное количество пищевых волокон и используется в качестве кормового ингредиента для жвачных животных, птицы и аквакультуры.",
         "Производители кормов закупают хакху псиллиума как экономичный источник клетчатки, улучшающий моторику кишечника и здоровье пищеварительной системы у животных. Отечественный и экспортный спрос на хакху поступает преимущественно от производителей кормов в Индии, Европе и странах Ближнего Востока. RM Psyllium экспортирует хакху с соответствующими документами для корма животных."
+      ],
+      "aiSnapshot": "Хакха псиллиума и кормовые применения: спецификации для производителей кормов sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "Хакха псиллиума и кормовые применения: спецификации для производителей кормов verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-husk-gmp-compliant-manufacturer-india": {
@@ -515,7 +1365,7 @@
       "summary": "Что означает соответствие GMP для производства шелухи псиллиума, спецификации класса BP и какую документацию должны запрашивать фармацевтические покупатели.",
       "body": [
         "Соответствие GMP для производителей шелухи псиллиума означает выполнение требований Министерства здравоохранения Индии (Schedule M), которые перекликаются с PICS GMP и EU GMP для экспортируемых партий. Объекты проходят инспекции, обеспечивающие наличие документированных СОП для каждого этапа производства: от поступления сырья до маркировки отгрузочного контейнера.",
-        "Фармацевтические покупатели, закупающие шелуху псиллиума для таблеток, капсул или готовых лекарственных форм, обычно требуют производителей GMP-уровня с документацией класса BP или USP. RM Psyllium работает в GMP-совместимом производственном объекте в Сиддхпуре, Гуджарат."
+        "Фармацевтические покупатели, закупающие шелуху псиллиума для таблеток, капсул или готовых лекарственных форм, обычно проверяют документацию процесса, записи партии и соответствие требуемым фармакопейным параметрам. RM Psyllium работает с перерабатывающей площадки в Сиддхпуре, Гуджарат, и предоставляет документы для проверки покупателем до заказа."
       ],
       "sections": [
         {
@@ -557,7 +1407,48 @@
         },
         {
           "heading": "Перечень документации для фармацевтических покупателей",
-          "body": "Стандартный пакет: COA с параметрами ЕФ/USP, технический паспорт, декларация GMP-соответствия, анализ тяжёлых металлов NABL, декларация об аллергенах, фитосанитарный сертификат и экспортная лицензия APEDA."
+          "body": "Покупатели должны запросить образец COA с параметрами EP/USP, технический паспорт, декларацию аллергенов, фитосанитарные требования, коммерческие документы и чеклист документов по стране назначения до PO."
+        },
+        {
+          "heading": "Точка решения для закупки",
+          "body": "До заказа свяжите спецификацию с реальной партией, COA, образцом 1 кг, упаковкой и документами целевого рынка."
+        }
+      ],
+      "aiSnapshot": "Производитель шелухи псиллиума GMP в Индии: стандарты производственного объекта и документации sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
         }
       ]
     },
@@ -613,7 +1504,48 @@
         },
         {
           "heading": "Стандартный экспортный пакет документации",
-          "body": "Экспортный пакет включает: COA NABL-аккредитованной лаборатории, сертификат APEDA, фитосанитарный сертификат, Certificate of Origin DGFT, коммерческий счёт-фактура и упаковочный лист. Для ЕС: EUR.1; ASEAN: Form D."
+          "body": "Перед экспортом покупатели должны проверить требования к COA, фитосанитарному сертификату, Certificate of Origin, коммерческому инвойсу, упаковочному листу и документам страны назначения."
+        },
+        {
+          "heading": "Точка решения для закупки",
+          "body": "До заказа свяжите спецификацию с реальной партией, COA, образцом 1 кг, упаковкой и документами целевого рынка."
+        }
+      ],
+      "aiSnapshot": "Оптовый экспортёр шелухи Plantago ovata из Индии: классы качества, номенклатура исабгол и условия экспорта sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
         }
       ]
     },
@@ -668,6 +1600,47 @@
         {
           "heading": "МОЗ и варианты упаковки",
           "body": "МОЗ: 1 тонна для стандартных классов; 500 кг для специальных спецификаций. Упаковка: 25 кг многослойные PP-мешки. Образцы 200 г доступны до оформления заказа."
+        },
+        {
+          "heading": "Точка решения для закупки",
+          "body": "До заказа свяжите спецификацию с реальной партией, COA, образцом 1 кг, упаковкой и документами целевого рынка."
+        }
+      ],
+      "aiSnapshot": "Оптовый поставщик порошка шелухи псиллиума из Индии: руководство по классам 85%, 95%, 98% sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
         }
       ]
     },
@@ -690,15 +1663,56 @@
         {
           "heading": "Упаковка для брендов пищевых добавок",
           "body": "Доступна упаковка в 25 кг PP-мешках или индивидуальная. МОЗ: 500 кг для специальных спецификаций; 1 тонна для стандартных марок."
+        },
+        {
+          "heading": "Точка решения для закупки",
+          "body": "До заказа свяжите спецификацию с реальной партией, COA, образцом 1 кг, упаковкой и документами целевого рынка."
+        }
+      ],
+      "aiSnapshot": "Производство пищевых добавок под собственной торговой маркой с шелухой псиллиума в Индии: требования к OEM-закупкам sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
         }
       ]
     },
     "psyllium-husk-food-grade-bulk-supplier-india": {
-      "title": "Оптовый поставщик пищевого псиллиума из Индии: производство с сертификатом HACCP",
+      "title": "Оптовый поставщик пищевого псиллиума из Индии: документы пищевой безопасности",
       "summary": "Производители пищевых продуктов, закупающие шелуху псиллиума оптом, нуждаются в проверенной документации о пищевой безопасности.",
       "body": [
         "Шелуха псиллиума пищевого класса используется в широком спектре применений — от связующего агента в хлебопекарных смесях без глютена до источника клетчатки в обогащённых злаках. Производители пищевых продуктов требуют документации пищевой безопасности, а не только COA химических испытаний.",
-        "RM Psyllium работает в производственном объекте с сертификатом HACCP в Сиддхпуре."
+        "RM Psyllium работает на перерабатывающей площадке в Сиддхпуре. Покупатели пищевого сырья могут проверить документы по очистке, разделению потоков, упаковке, прослеживаемости и пищевой безопасности до подтверждения заказа."
       ],
       "sections": [
         {
@@ -751,6 +1765,47 @@
         {
           "heading": "МОЗ и доступные сертификационные документы",
           "body": "МОЗ: 1 MT. Пакет: COA пищевого класса с микробиологическими параметрами, декларация HACCP, список аллергенов, декларация non-GMO. По запросу: спецификация по пестицидам, сертификат халяль, отчёт AFM."
+        },
+        {
+          "heading": "Точка решения для закупки",
+          "body": "До заказа свяжите спецификацию с реальной партией, COA, образцом 1 кг, упаковкой и документами целевого рынка."
+        }
+      ],
+      "aiSnapshot": "Оптовый поставщик пищевого псиллиума из Индии: документы пищевой безопасности sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
         }
       ]
     },
@@ -801,6 +1856,47 @@
         {
           "heading": "Экспорт исабгол из Гуджарата: что нужно производителям пищевых продуктов",
           "body": "Производители пищевых продуктов должны проверить: соответствие MRL пестицидов, статус пищевой добавки в целевом рынке и микробиологические параметры. RM Psyllium предоставляет документацию под конкретные рынки."
+        },
+        {
+          "heading": "Точка решения для закупки",
+          "body": "До заказа свяжите спецификацию с реальной партией, COA, образцом 1 кг, упаковкой и документами целевого рынка."
+        }
+      ],
+      "aiSnapshot": "Шелуха псиллиума — растворимая клетчатка для обогащения продуктов питания оптом: поставки из Индии sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
         }
       ]
     },
@@ -857,6 +1953,47 @@
         {
           "heading": "Соотношения в смесях безглютеновой муки",
           "body": "Эффективные соотношения: 60–70% основная мука + 15–20% крахмал + 15–20% белок + 2–5% псиллиум. Скорректируйте в зависимости от набухающего объёма партии."
+        },
+        {
+          "heading": "Точка решения для закупки",
+          "body": "До заказа свяжите спецификацию с реальной партией, COA, образцом 1 кг, упаковкой и документами целевого рынка."
+        }
+      ],
+      "aiSnapshot": "Сертифицированный оптовый поставщик безглютенового псиллиума: что нужно хлебопекарным брендам sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
         }
       ]
     },
@@ -889,30 +2026,71 @@
             "rows": [
               [
                 "Шелуха псиллиума 99%",
-                "1 MT",
-                "200 г бесплатно",
-                "15–20 рабочих дней"
+                "По сорту и документам",
+                "После проверки спецификации",
+                "После проверки заказа"
               ],
               [
                 "Порошок шелухи 95%",
-                "1 MT",
-                "200 г бесплатно",
-                "15–20 рабочих дней"
+                "По mesh и упаковке",
+                "После проверки спецификации",
+                "После проверки заказа"
               ],
               [
                 "Органический псиллиум",
-                "500 кг",
-                "200 г бесплатно",
-                "20–25 рабочих дней"
+                "По охвату сертификата и партии",
+                "После проверки документов",
+                "После проверки наличия и документов"
               ],
               [
                 "Семена псиллиума",
-                "2 MT",
-                "200 г бесплатно",
-                "15–20 рабочих дней"
+                "По упаковке и назначению",
+                "После проверки применения",
+                "После проверки заказа"
               ]
             ]
           }
+        },
+        {
+          "heading": "Точка решения для закупки",
+          "body": "До заказа свяжите спецификацию с реальной партией, COA, образцом 1 кг, упаковкой и документами целевого рынка."
+        }
+      ],
+      "aiSnapshot": "Производитель шелухи псиллиума в Сиддхпуре, Гуджарат: прямые поставки с фабрики sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
         }
       ]
     }
@@ -924,6 +2102,65 @@
       "Псиллиум хакха — это побочный продукт помола шелухи: остаток семенной оболочки, остающийся после отделения шелухи. Он содержит значительную долю слизи и пищевых волокон исходного семени, что делает его функциональным кормовым ингредиентом.",
       "Для разработчиков кормовых рецептур порошок хакха предлагает два преимущества: плотность клетчатки и стоимость. По сравнению с цельной шелухой хакха стоит дешевле, при этом обеспечивая растворимую клетчатку, поддерживающую перистальтику кишечника у скота.",
       "Закупка хакха оптом требует знания происхождения партии и норм влажности. Хакха кормового класса должна иметь влажность ниже 12%. Мы поставляем в мешках по 25 кг, 50 кг и биг-бэгах по 1000 кг с документами о происхождении."
+    ],
+    "aiSnapshot": "psyllium khakha demand нужно оценивать по партии, спецификации и применению, а не по общим заявлениям поставщика. Покупателю следует проверить feed grade, fiber, moisture, ash, particle size, packing, and destination use до заказа.",
+    "sections": [
+      {
+        "heading": "Что проверить покупателю",
+        "body": "Для psyllium khakha demand покупатель должен проверить feed grade, fiber, moisture, ash, particle size, packing, and destination use. Цель — связать коммерческий запрос с реальной партией, образцом, COA и документами назначения."
+      },
+      {
+        "heading": "Как читать COA или спецификацию",
+        "body": "Проверьте параметр, единицу, метод, результат, лимит, идентификацию партии и дату отчета. Требуемый метод или формулировку подтвердите до образца или заказа."
+      },
+      {
+        "heading": "Частая ошибка",
+        "body": "Не покупайте только по grade или слову сертификата. Уточняйте, что подтверждает испытанная партия и какие документы доступны для проверки."
+      },
+      {
+        "heading": "Как RM помогает",
+        "body": "RM может проверить grade, mesh, COA образца, спецификацию, упаковку, происхождение и документы назначения до заказа."
+      }
+    ],
+    "specTable": [
+      {
+        "parameter": "Grade / Application",
+        "range": "Buyer-specific",
+        "method": "Specification review"
+      },
+      {
+        "parameter": "Sample Review",
+        "range": "1 kg sample where available",
+        "method": "Pre-PO review"
+      },
+      {
+        "parameter": "COA Parameters",
+        "range": "Lot-specific",
+        "method": "COA / third-party report where required"
+      },
+      {
+        "parameter": "Packing and Documents",
+        "range": "Destination-specific",
+        "method": "Buyer checklist"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Что подтвердить до заказа?",
+        "a": "Подтвердите feed grade, fiber, moisture, ash, particle size, packing, and destination use, применение, образец, упаковку и документы назначения."
+      },
+      {
+        "q": "Достаточно ли COA образца для финального одобрения?",
+        "a": "Нет. Он нужен для первичной проверки. Финальное одобрение должно опираться на COA отгружаемой партии или сторонний отчет, если требуется."
+      },
+      {
+        "q": "Можно ли согласовать формулировку со спецификацией?",
+        "a": "Только если результаты и документы испытанной партии это поддерживают."
+      },
+      {
+        "q": "Как избежать задержек?",
+        "a": "Передайте grade, mesh, применение, страну, месячный объем и список документов до расчета цены."
+      }
     ]
   },
   "psyllium-cattle-feed-digestion": {
@@ -965,6 +2202,32 @@
       {
         "q": "Какой класс псиллиума закупается для добавок по выведению песка у лошадей?",
         "a": "Как правило, закупается шелуха псиллиума кормового класса 95% чистоты или порошок хакха."
+      },
+      {
+        "q": "Какие документы запросить у поставщика?",
+        "a": "Нужны образец COA, спецификация, упаковка, происхождение и документы целевого рынка до размещения заказа."
+      },
+      {
+        "q": "Если требуется сертификация?",
+        "a": "Проверьте реальный сертификат, область действия, орган выдачи, срок действия и покрытие продукта или партии."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Что проверить покупателю",
+        "body": "Для psyllium for cattle and equine feed покупатель должен проверить feed-use suitability, fiber, moisture, ash, dosage plan, packing, and COA. Цель — связать коммерческий запрос с реальной партией, образцом, COA и документами назначения."
+      },
+      {
+        "heading": "Как читать COA или спецификацию",
+        "body": "Проверьте параметр, единицу, метод, результат, лимит, идентификацию партии и дату отчета. Требуемый метод или формулировку подтвердите до образца или заказа."
+      },
+      {
+        "heading": "Частая ошибка",
+        "body": "Не покупайте только по grade или слову сертификата. Уточняйте, что подтверждает испытанная партия и какие документы доступны для проверки."
+      },
+      {
+        "heading": "Как RM помогает",
+        "body": "RM может проверить grade, mesh, COA образца, спецификацию, упаковку, происхождение и документы назначения до заказа."
       }
     ]
   },
@@ -1007,6 +2270,32 @@
       {
         "q": "Какой размер сетки оптимален для порошка шелухи псиллиума в рецептурах выпечки?",
         "a": "Тонкий порошок 80 меш является мировым отраслевым стандартом для безглютеновой промышленной выпечки."
+      },
+      {
+        "q": "Какие документы запросить у поставщика?",
+        "a": "Нужны образец COA, спецификация, упаковка, происхождение и документы целевого рынка до размещения заказа."
+      },
+      {
+        "q": "Если требуется сертификация?",
+        "a": "Проверьте реальный сертификат, область действия, орган выдачи, срок действия и покрытие продукта или партии."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Что проверить покупателю",
+        "body": "Для whole husk versus husk powder покупатель должен проверить application, mesh, hydration speed, texture, dosage, sample trial, and COA. Цель — связать коммерческий запрос с реальной партией, образцом, COA и документами назначения."
+      },
+      {
+        "heading": "Как читать COA или спецификацию",
+        "body": "Проверьте параметр, единицу, метод, результат, лимит, идентификацию партии и дату отчета. Требуемый метод или формулировку подтвердите до образца или заказа."
+      },
+      {
+        "heading": "Частая ошибка",
+        "body": "Не покупайте только по grade или слову сертификата. Уточняйте, что подтверждает испытанная партия и какие документы доступны для проверки."
+      },
+      {
+        "heading": "Как RM помогает",
+        "body": "RM может проверить grade, mesh, COA образца, спецификацию, упаковку, происхождение и документы назначения до заказа."
       }
     ]
   }

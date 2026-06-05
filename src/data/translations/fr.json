@@ -43,6 +43,32 @@
       {
         "q": "Pourquoi les cendres insolubles dans l'acide constituent-elles une limite de sécurité critique ?",
         "a": "Les cendres insolubles dans l'acide indiquent la présence résiduelle de sable, de terre et de silice. L'USP impose une limite stricte de ≤ 0,4 %. Des séparateurs gravimétriques de pointe sont utilisés pour garantir ces faibles niveaux."
+      },
+      {
+        "q": "Que faut-il vérifier avant la commande ?",
+        "a": "Vérifiez USP, EP, IP, BP/NF, COA, swelling volume, ash, moisture, microbiology, heavy metals par rapport au lot cible et aux exigences de destination."
+      },
+      {
+        "q": "Un COA échantillon suffit-il pour approuver l’expédition finale ?",
+        "a": "Non. Le COA échantillon sert à vérifier la couverture des paramètres. L’approbation finale doit utiliser le COA ou rapport du lot expédié."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Ce que l’acheteur doit vérifier",
+        "body": "Pour USP/EP/IP wording, vérifiez le lot cible, la spécification acheteur, le COA et la méthode avant la commande."
+      },
+      {
+        "heading": "Checklist avant commande",
+        "body": "Demandez et comparez ces points : USP, EP, IP, BP/NF, COA, swelling volume, ash, moisture, microbiology, heavy metals. La revue doit être faite avant prix, échantillon ou lot commercial."
+      },
+      {
+        "heading": "Erreur courante",
+        "body": "Ne traitez pas USP/EP/IP wording comme une promesse générale du fournisseur. Reliez-le aux résultats du lot, aux documents et au marché cible."
+      },
+      {
+        "heading": "Comment RM peut aider",
+        "body": "RM peut revoir le COA échantillon, la spécification, le grade, la maille, l’emballage et les documents de destination avant commande."
       }
     ]
   },
@@ -85,11 +111,37 @@
     "faqs": [
       {
         "q": "Qu'est-ce qu'une accréditation NABL sur un COA ?",
-        "a": "La NABL est l'organisme d'accréditation national de l'Inde pour les laboratoires d'essais, offrant une reconnaissance internationale via l'ILAC. Un COA NABL garantit des tests et des validations conformes aux normes mondiales."
+        "a": "La NABL est l'organisme d'accréditation national de l'Inde pour les laboratoires d'essais, avec reconnaissance internationale via l'ILAC. Pour l'acheteur, le point clé est de vérifier que le laboratoire émetteur est accrédité et que le COA correspond au lot spécifique."
       },
       {
         "q": "Comment les métaux lourds sont-ils testés dans le psyllium ?",
         "a": "Les métaux lourds sont testés par spectrométrie de masse à plasma à couplage inductif (ICP-MS), garantissant une détection extrêmement précise jusqu'au niveau des parties par milliard (ppb) pour le plomb, l'arsenic, le cadmium et le mercure."
+      },
+      {
+        "q": "Que faut-il vérifier avant la commande ?",
+        "a": "Vérifiez NABL scope, lab name, lot number, sample identity, method, result, unit, limit, signatory par rapport au lot cible et aux exigences de destination."
+      },
+      {
+        "q": "Un COA échantillon suffit-il pour approuver l’expédition finale ?",
+        "a": "Non. Le COA échantillon sert à vérifier la couverture des paramètres. L’approbation finale doit utiliser le COA ou rapport du lot expédié."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Ce que l’acheteur doit vérifier",
+        "body": "Pour NABL wording, vérifiez le lot cible, la spécification acheteur, le COA et la méthode avant la commande."
+      },
+      {
+        "heading": "Checklist avant commande",
+        "body": "Demandez et comparez ces points : NABL scope, lab name, lot number, sample identity, method, result, unit, limit, signatory. La revue doit être faite avant prix, échantillon ou lot commercial."
+      },
+      {
+        "heading": "Erreur courante",
+        "body": "Ne traitez pas NABL wording comme une promesse générale du fournisseur. Reliez-le aux résultats du lot, aux documents et au marché cible."
+      },
+      {
+        "heading": "Comment RM peut aider",
+        "body": "RM peut revoir le COA échantillon, la spécification, le grade, la maille, l’emballage et les documents de destination avant commande."
       }
     ]
   },
@@ -132,6 +184,32 @@
       {
         "q": "Quelles méthodes de nettoyage physique un fournisseur doit-il utiliser ?",
         "a": "Les fabricants validés doivent utiliser des épierreurs à plusieurs étapes pour éliminer la terre et le sable, des classificateurs à tamis pour la taille des particules et des grilles magnétiques à haute intensité pour séparer les résidus métalliques."
+      },
+      {
+        "q": "Que faut-il vérifier avant la commande ?",
+        "a": "Vérifiez FSVP file, prior notice data, product specification, COA, origin, packing, broker details par rapport au lot cible et aux exigences de destination."
+      },
+      {
+        "q": "Un COA échantillon suffit-il pour approuver l’expédition finale ?",
+        "a": "Non. Le COA échantillon sert à vérifier la couverture des paramètres. L’approbation finale doit utiliser le COA ou rapport du lot expédié."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Ce que l’acheteur doit vérifier",
+        "body": "Pour FDA/FSVP wording, vérifiez le lot cible, la spécification acheteur, le COA et la méthode avant la commande."
+      },
+      {
+        "heading": "Checklist avant commande",
+        "body": "Demandez et comparez ces points : FSVP file, prior notice data, product specification, COA, origin, packing, broker details. La revue doit être faite avant prix, échantillon ou lot commercial."
+      },
+      {
+        "heading": "Erreur courante",
+        "body": "Ne traitez pas FDA/FSVP wording comme une promesse générale du fournisseur. Reliez-le aux résultats du lot, aux documents et au marché cible."
+      },
+      {
+        "heading": "Comment RM peut aider",
+        "body": "RM peut revoir le COA échantillon, la spécification, le grade, la maille, l’emballage et les documents de destination avant commande."
       }
     ]
   },
@@ -174,6 +252,32 @@
       {
         "q": "Quelle méthode de laboratoire est utilisée pour tester les métaux lourds ?",
         "a": "La spectrométrie de masse à plasma à couplage inductif (ICP-MS) est la méthode de référence mondiale, offrant une sensibilité extrême jusqu'au niveau des parties par milliard (ppb)."
+      },
+      {
+        "q": "Que faut-il vérifier avant la commande ?",
+        "a": "Vérifiez Pb, As, Cd, Hg, ICP-MS method, ppm unit, serving size, destination-market limit par rapport au lot cible et aux exigences de destination."
+      },
+      {
+        "q": "Un COA échantillon suffit-il pour approuver l’expédition finale ?",
+        "a": "Non. Le COA échantillon sert à vérifier la couverture des paramètres. L’approbation finale doit utiliser le COA ou rapport du lot expédié."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Ce que l’acheteur doit vérifier",
+        "body": "Pour heavy-metal pass/fail wording, vérifiez le lot cible, la spécification acheteur, le COA et la méthode avant la commande."
+      },
+      {
+        "heading": "Checklist avant commande",
+        "body": "Demandez et comparez ces points : Pb, As, Cd, Hg, ICP-MS method, ppm unit, serving size, destination-market limit. La revue doit être faite avant prix, échantillon ou lot commercial."
+      },
+      {
+        "heading": "Erreur courante",
+        "body": "Ne traitez pas heavy-metal pass/fail wording comme une promesse générale du fournisseur. Reliez-le aux résultats du lot, aux documents et au marché cible."
+      },
+      {
+        "heading": "Comment RM peut aider",
+        "body": "RM peut revoir le COA échantillon, la spécification, le grade, la maille, l’emballage et les documents de destination avant commande."
       }
     ]
   },
@@ -216,6 +320,32 @@
       {
         "q": "La stérilisation à la vapeur affecte-t-elle le volume de gonflement du psyllium ?",
         "a": "Si elle est mal contrôlée, une chaleur élevée et un excès d'humidité peuvent pré-gélifier le tégument. Une stérilisation rapide et continue à la vapeur propre protège l'intégrité du mucilage, maintenant un volume de gonflement ≥50 mL/g."
+      },
+      {
+        "q": "Que faut-il vérifier avant la commande ?",
+        "a": "Vérifiez treatment method, microbiology, moisture, ETO, 2-chloroethanol, swelling volume par rapport au lot cible et aux exigences de destination."
+      },
+      {
+        "q": "Un COA échantillon suffit-il pour approuver l’expédition finale ?",
+        "a": "Non. Le COA échantillon sert à vérifier la couverture des paramètres. L’approbation finale doit utiliser le COA ou rapport du lot expédié."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Ce que l’acheteur doit vérifier",
+        "body": "Pour sterilization wording, vérifiez le lot cible, la spécification acheteur, le COA et la méthode avant la commande."
+      },
+      {
+        "heading": "Checklist avant commande",
+        "body": "Demandez et comparez ces points : treatment method, microbiology, moisture, ETO, 2-chloroethanol, swelling volume. La revue doit être faite avant prix, échantillon ou lot commercial."
+      },
+      {
+        "heading": "Erreur courante",
+        "body": "Ne traitez pas sterilization wording comme une promesse générale du fournisseur. Reliez-le aux résultats du lot, aux documents et au marché cible."
+      },
+      {
+        "heading": "Comment RM peut aider",
+        "body": "RM peut revoir le COA échantillon, la spécification, le grade, la maille, l’emballage et les documents de destination avant commande."
       }
     ]
   },
@@ -258,6 +388,32 @@
       {
         "q": "Quelle est la granulométrie recommandée pour les mélanges de boissons en poudre ?",
         "a": "Pour les boissons sèches en poudre, un calibrage de 100 mesh ou plus fin est recommandé pour assurer une dispersion rapide et fluide dans les liquides froids sans agglomération ni texture sableuse."
+      },
+      {
+        "q": "Que faut-il vérifier avant la commande ?",
+        "a": "Vérifiez mesh, hydration speed, water addition, mixing time, crumb texture, 1 kg sample trial par rapport au lot cible et aux exigences de destination."
+      },
+      {
+        "q": "Un COA échantillon suffit-il pour approuver l’expédition finale ?",
+        "a": "Non. Le COA échantillon sert à vérifier la couverture des paramètres. L’approbation finale doit utiliser le COA ou rapport du lot expédié."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Ce que l’acheteur doit vérifier",
+        "body": "Pour mesh recommendation, vérifiez le lot cible, la spécification acheteur, le COA et la méthode avant la commande."
+      },
+      {
+        "heading": "Checklist avant commande",
+        "body": "Demandez et comparez ces points : mesh, hydration speed, water addition, mixing time, crumb texture, 1 kg sample trial. La revue doit être faite avant prix, échantillon ou lot commercial."
+      },
+      {
+        "heading": "Erreur courante",
+        "body": "Ne traitez pas mesh recommendation comme une promesse générale du fournisseur. Reliez-le aux résultats du lot, aux documents et au marché cible."
+      },
+      {
+        "heading": "Comment RM peut aider",
+        "body": "RM peut revoir le COA échantillon, la spécification, le grade, la maille, l’emballage et les documents de destination avant commande."
       }
     ]
   },
@@ -300,6 +456,32 @@
       {
         "q": "Comment les résidus de pesticides sont-ils vérifiés dans le psyllium biologique ?",
         "a": "Les laboratoires accrédités utilisent la chromatographie en phase gazeuse couplée à la spectrométrie de masse (GC-MS) et la chromatographie en phase liquide couplée à la spectrométrie de masse (LC-MS) pour détecter plus de 500 composés chimiques."
+      },
+      {
+        "q": "Que faut-il vérifier avant la commande ?",
+        "a": "Vérifiez certificate scope, handler chain, TC/COI path, pesticide residue report, lot identity par rapport au lot cible et aux exigences de destination."
+      },
+      {
+        "q": "Un COA échantillon suffit-il pour approuver l’expédition finale ?",
+        "a": "Non. Le COA échantillon sert à vérifier la couverture des paramètres. L’approbation finale doit utiliser le COA ou rapport du lot expédié."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Ce que l’acheteur doit vérifier",
+        "body": "Pour organic wording, vérifiez le lot cible, la spécification acheteur, le COA et la méthode avant la commande."
+      },
+      {
+        "heading": "Checklist avant commande",
+        "body": "Demandez et comparez ces points : certificate scope, handler chain, TC/COI path, pesticide residue report, lot identity. La revue doit être faite avant prix, échantillon ou lot commercial."
+      },
+      {
+        "heading": "Erreur courante",
+        "body": "Ne traitez pas organic wording comme une promesse générale du fournisseur. Reliez-le aux résultats du lot, aux documents et au marché cible."
+      },
+      {
+        "heading": "Comment RM peut aider",
+        "body": "RM peut revoir le COA échantillon, la spécification, le grade, la maille, l’emballage et les documents de destination avant commande."
       }
     ]
   },
@@ -342,6 +524,32 @@
       {
         "q": "Qu'est-ce qu'un test ELISA pour le gluten ?",
         "a": "Le test ELISA (Enzyme-Linked Immunosorbent Assay) est la méthode de test de référence utilisée par les laboratoires accrédités NABL pour détecter et quantifier les traces de protéines de gluten jusqu'au niveau des parties par million (ppm)."
+      },
+      {
+        "q": "Que faut-il vérifier avant la commande ?",
+        "a": "Vérifiez allergen declaration, shared equipment, cleaning records, storage segregation, ELISA testing par rapport au lot cible et aux exigences de destination."
+      },
+      {
+        "q": "Un COA échantillon suffit-il pour approuver l’expédition finale ?",
+        "a": "Non. Le COA échantillon sert à vérifier la couverture des paramètres. L’approbation finale doit utiliser le COA ou rapport du lot expédié."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Ce que l’acheteur doit vérifier",
+        "body": "Pour gluten-free or allergen wording, vérifiez le lot cible, la spécification acheteur, le COA et la méthode avant la commande."
+      },
+      {
+        "heading": "Checklist avant commande",
+        "body": "Demandez et comparez ces points : allergen declaration, shared equipment, cleaning records, storage segregation, ELISA testing. La revue doit être faite avant prix, échantillon ou lot commercial."
+      },
+      {
+        "heading": "Erreur courante",
+        "body": "Ne traitez pas gluten-free or allergen wording comme une promesse générale du fournisseur. Reliez-le aux résultats du lot, aux documents et au marché cible."
+      },
+      {
+        "heading": "Comment RM peut aider",
+        "body": "RM peut revoir le COA échantillon, la spécification, le grade, la maille, l’emballage et les documents de destination avant commande."
       }
     ]
   },
@@ -384,6 +592,32 @@
       {
         "q": "Comment la teneur totale en fibres alimentaires est-elle vérifiée ?",
         "a": "Les fractions de fibres alimentaires sont validées à l'aide de méthodes enzymatiques-gravimétriques standard conformes à la norme AOAC 991.43 et aux protocoles des laboratoires accrédités NABL."
+      },
+      {
+        "q": "Que faut-il vérifier avant la commande ?",
+        "a": "Vérifiez purity, swelling volume, mesh, moisture, fiber method, texture, finished application par rapport au lot cible et aux exigences de destination."
+      },
+      {
+        "q": "Un COA échantillon suffit-il pour approuver l’expédition finale ?",
+        "a": "Non. Le COA échantillon sert à vérifier la couverture des paramètres. L’approbation finale doit utiliser le COA ou rapport du lot expédié."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Ce que l’acheteur doit vérifier",
+        "body": "Pour fiber-ratio wording, vérifiez le lot cible, la spécification acheteur, le COA et la méthode avant la commande."
+      },
+      {
+        "heading": "Checklist avant commande",
+        "body": "Demandez et comparez ces points : purity, swelling volume, mesh, moisture, fiber method, texture, finished application. La revue doit être faite avant prix, échantillon ou lot commercial."
+      },
+      {
+        "heading": "Erreur courante",
+        "body": "Ne traitez pas fiber-ratio wording comme une promesse générale du fournisseur. Reliez-le aux résultats du lot, aux documents et au marché cible."
+      },
+      {
+        "heading": "Comment RM peut aider",
+        "body": "RM peut revoir le COA échantillon, la spécification, le grade, la maille, l’emballage et les documents de destination avant commande."
       }
     ]
   },
@@ -426,6 +660,32 @@
       {
         "q": "Quels facteurs peuvent dégrader le volume de gonflement au cours du traitement ?",
         "a": "La chaleur excessive générée par le frottement mécanique lors du broyage est la principale cause de dégradation du mucilage, soulignant la nécessité d'un broyage à température contrôlée."
+      },
+      {
+        "q": "Que faut-il vérifier avant la commande ?",
+        "a": "Vérifiez sample form, particle size, method, rest time, water volume, swelling result, COA wording par rapport au lot cible et aux exigences de destination."
+      },
+      {
+        "q": "Un COA échantillon suffit-il pour approuver l’expédition finale ?",
+        "a": "Non. Le COA échantillon sert à vérifier la couverture des paramètres. L’approbation finale doit utiliser le COA ou rapport du lot expédié."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Ce que l’acheteur doit vérifier",
+        "body": "Pour swelling-volume result, vérifiez le lot cible, la spécification acheteur, le COA et la méthode avant la commande."
+      },
+      {
+        "heading": "Checklist avant commande",
+        "body": "Demandez et comparez ces points : sample form, particle size, method, rest time, water volume, swelling result, COA wording. La revue doit être faite avant prix, échantillon ou lot commercial."
+      },
+      {
+        "heading": "Erreur courante",
+        "body": "Ne traitez pas swelling-volume result comme une promesse générale du fournisseur. Reliez-le aux résultats du lot, aux documents et au marché cible."
+      },
+      {
+        "heading": "Comment RM peut aider",
+        "body": "RM peut revoir le COA échantillon, la spécification, le grade, la maille, l’emballage et les documents de destination avant commande."
       }
     ]
   },
@@ -437,6 +697,65 @@
         "L'écorce de psyllium à 99% de pureté représente le grade pharmaceutique du produit — la teneur en écorce la plus élevée disponible dans les installations de transformation indiennes. À ce grade, la teneur en écorce (tégument de la graine de Plantago ovata) est d'au moins 99% en poids, avec un volume de gonflement minimum de 50 mL/g. Ce volume de gonflement est la spécification fonctionnelle principale pour les monographies de laxatifs selon l'USP, la Pharmacopée Européenne (PE) et la Pharmacopée Indienne (PI).",
         "Pour les acheteurs pharmaceutiques, le grade à 99% doit être accompagné d'un COA complet indiquant: le volume de gonflement, l'humidité (≤12%), les cendres totales (≤3%), les cendres insolubles dans l'acide (≤0,4%), les métaux lourds (Plomb ≤2 ppm, Arsenic ≤1 ppm) et la microbiologie (E. coli absent, Salmonella absente, CTG ≤10.000 UFC/g). Ces paramètres correspondent directement aux monographies de l'écorce de Plantago ovata dans l'USP et la PE. Les acheteurs doivent demander des rapports de test d'un laboratoire accrédité NABL en Inde.",
         "L'approvisionnement en grade 99% depuis Gujarat nécessite de confirmer que l'installation dispose de la capacité de broyage et de séparation pour atteindre cette pureté de manière constante. Le district d'Unjha au Gujarat est le principal hub de transformation du psyllium en Inde, représentant plus de 80% de l'approvisionnement mondial. Nous livrons l'écorce grade 99% en sacs de 10 kg, 25 kg et 50 kg avec documentation complète. Communiquez votre exigence de pharmacopée et votre marché de destination — nous fournirons un COA d'échantillon pour examen avant toute commande."
+      ],
+      "aiSnapshot": "Écorce de Psyllium 99% de Pureté: Guide Fournisseur pour Acheteurs Pharmaceutiques doit etre examine par lot, specification et usage final, pas par des affirmations generales du fournisseur. L'acheteur doit verifier grade, maille, COA, emballage, echantillon de 1 kg et documents de destination avant commande.",
+      "sections": [
+        {
+          "heading": "Ce que cela signifie pour les achats",
+          "body": "Écorce de Psyllium 99% de Pureté: Guide Fournisseur pour Acheteurs Pharmaceutiques aide les achats et la qualite a relier la demande commerciale a un lot reel. La decision doit s'appuyer sur specification, COA, echantillon et usage final."
+        },
+        {
+          "heading": "Checklist avant commande",
+          "body": "Verifiez grade, purete, maille, humidite, cendres, microbiologie, metaux lourds, emballage, origine et exigences du marche de destination."
+        },
+        {
+          "heading": "Lire le COA",
+          "body": "Comparez numero de lot, methode, resultat, unite et limite. Un COA d'echantillon sert a la revue initiale; le lot final doit etre approuve avec les documents du lot expedie."
+        },
+        {
+          "heading": "Erreur courante",
+          "body": "Ne transformez pas les termes biologique, FDA, GMP, Halal, Kosher ou pharmacopee en promesses fournisseur. Verifiez le perimetre, le lot et le document requis."
+        },
+        {
+          "heading": "Comment RM peut aider",
+          "body": "RM peut examiner grade, maille, COA d'echantillon, specification, emballage, origine, echantillon de 1 kg et documents de destination avant commande."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revue principale",
+          "range": "Grade, maille, purete et usage final"
+        },
+        {
+          "label": "Document",
+          "range": "COA d'echantillon, specification et documents de destination"
+        },
+        {
+          "label": "Echantillon",
+          "range": "Echantillon de 1 kg si le grade et la destination correspondent"
+        },
+        {
+          "label": "Avant PO",
+          "range": "Confirmer lot, emballage, essais et delai"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que verifier en premier?",
+          "a": "Verifiez grade, maille, purete, COA, usage final, emballage, echantillon de 1 kg et documents du marche de destination."
+        },
+        {
+          "q": "Le COA d'echantillon approuve-t-il l'expedition finale?",
+          "a": "Non. Il aide a examiner les parametres. L'expedition finale doit etre revue avec le COA ou rapport du lot expedie."
+        },
+        {
+          "q": "Comment eviter les affirmations exagerees?",
+          "a": "Demandez perimetre, lot, methode d essai, resultat et document applicable. Refusez les affirmations generales sans preuve specifique."
+        },
+        {
+          "q": "Quand demander un echantillon?",
+          "a": "Avant de confirmer un volume commercial, surtout si hydratation, texture, maille ou documents reglementaires sont importants."
+        }
       ]
     },
     "psyllium-export-india-fob-mundra": {
@@ -446,6 +765,65 @@
         "L'Inde exporte le psyllium via trois ports principaux: Mundra (Gujarat), Kandla (Gujarat) et JNPT/Nhava Sheva (Maharashtra). Pour les acheteurs de psyllium, le choix du port affecte le coût du fret, le délai de transit et la disponibilité des conteneurs. La plupart des transformateurs du Gujarat, dont RM Psyllium, utilisent Mundra comme port principal en raison de sa proximité (environ 220 km de notre installation de Siddhpur) et de la fréquence élevée des navires vers l'Europe, la côte Est des États-Unis, le Moyen-Orient et l'Australie.",
         "Le Port de Mundra (MUND) est exploité par Adani Ports et traite le plus grand volume de conteneurs d'Inde. La fréquence des navires vers les principaux ports de destination (Rotterdam, Felixstowe, New York, Djeddah, Colombo) est généralement de 2 à 4 départs par semaine. Délai de transit vers Rotterdam: environ 20–23 jours; vers New York: environ 25–28 jours; vers Djeddah: environ 8–10 jours. Kandla (INKLA) est une alternative avec des frais portuaires légèrement inférieurs mais des services moins fréquents.",
         "Pour les commandes CIF, nous sélectionnons le port en fonction de votre destination et de la compagnie maritime offrant le meilleur tarif au moment de la réservation. Pour les commandes FOB, vous désignez le transitaire et nous coordonnons directement avec lui. La documentation d'exportation est préparée dans notre installation et soumise 3 à 5 jours avant le chargement du navire. Indiquez votre port de destination et nous fournirons un devis de fret indicatif avec le prix du produit."
+      ],
+      "aiSnapshot": "Export de Psyllium depuis l'Inde: FOB Mundra vs Kandla vs JNPT doit etre examine par lot, specification et usage final, pas par des affirmations generales du fournisseur. L'acheteur doit verifier grade, maille, COA, emballage, echantillon de 1 kg et documents de destination avant commande.",
+      "sections": [
+        {
+          "heading": "Ce que cela signifie pour les achats",
+          "body": "Export de Psyllium depuis l'Inde: FOB Mundra vs Kandla vs JNPT aide les achats et la qualite a relier la demande commerciale a un lot reel. La decision doit s'appuyer sur specification, COA, echantillon et usage final."
+        },
+        {
+          "heading": "Checklist avant commande",
+          "body": "Verifiez grade, purete, maille, humidite, cendres, microbiologie, metaux lourds, emballage, origine et exigences du marche de destination."
+        },
+        {
+          "heading": "Lire le COA",
+          "body": "Comparez numero de lot, methode, resultat, unite et limite. Un COA d'echantillon sert a la revue initiale; le lot final doit etre approuve avec les documents du lot expedie."
+        },
+        {
+          "heading": "Erreur courante",
+          "body": "Ne transformez pas les termes biologique, FDA, GMP, Halal, Kosher ou pharmacopee en promesses fournisseur. Verifiez le perimetre, le lot et le document requis."
+        },
+        {
+          "heading": "Comment RM peut aider",
+          "body": "RM peut examiner grade, maille, COA d'echantillon, specification, emballage, origine, echantillon de 1 kg et documents de destination avant commande."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revue principale",
+          "range": "Grade, maille, purete et usage final"
+        },
+        {
+          "label": "Document",
+          "range": "COA d'echantillon, specification et documents de destination"
+        },
+        {
+          "label": "Echantillon",
+          "range": "Echantillon de 1 kg si le grade et la destination correspondent"
+        },
+        {
+          "label": "Avant PO",
+          "range": "Confirmer lot, emballage, essais et delai"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que verifier en premier?",
+          "a": "Verifiez grade, maille, purete, COA, usage final, emballage, echantillon de 1 kg et documents du marche de destination."
+        },
+        {
+          "q": "Le COA d'echantillon approuve-t-il l'expedition finale?",
+          "a": "Non. Il aide a examiner les parametres. L'expedition finale doit etre revue avec le COA ou rapport du lot expedie."
+        },
+        {
+          "q": "Comment eviter les affirmations exagerees?",
+          "a": "Demandez perimetre, lot, methode d essai, resultat et document applicable. Refusez les affirmations generales sans preuve specifique."
+        },
+        {
+          "q": "Quand demander un echantillon?",
+          "a": "Avant de confirmer un volume commercial, surtout si hydratation, texture, maille ou documents reglementaires sont importants."
+        }
       ]
     },
     "psyllium-husk-usp-ep-pharmacopoeia": {
@@ -455,6 +833,65 @@
         "L'écorce de psyllium est monographiée dans trois pharmacopées principales: la Pharmacopée des États-Unis (USP), la Pharmacopée Européenne (PE) et la Pharmacopée Indienne (PI). Bien que toutes décrivent l'écorce de Plantago ovata, les paramètres de test spécifiques et les critères d'acceptation diffèrent de manière significative pour les acheteurs importateurs à usage pharmaceutique. Comprendre ces différences aide les équipes d'achat à spécifier le grade correct et à demander les bons paramètres de COA.",
         "La monographie USP pour l'écorce de psyllium exige un volume de gonflement minimum de 40 mL/g, une humidité ≤12% et des cendres totales ≤4%. La monographie PE (Ispaghula Husk) spécifie un indice de gonflement minimum de 40 avec des tests d'identification spécifiques incluant la microscopie et des réactions chimiques. La monographie PI est largement alignée sur l'USP avec de possibles différences mineures dans la méthodologie des tests.",
         "Pour l'exportation vers l'Europe, le terme de la monographie PE est 'Ispaghula Husk' — le même produit (tégument de la graine de Plantago ovata). Les acheteurs européens demandent généralement un COA annoté selon les paramètres PE incluant l'indice de gonflement, les matières étrangères, la microbiologie et les limites de résidus de pesticides selon les réglementations de l'UE. Nous livrons avec un COA annoté selon la pharmacopée spécifiée par l'acheteur sur demande."
+      ],
+      "aiSnapshot": "USP vs PE vs PI: Normes de Pharmacopée pour l'Écorce de Psyllium doit etre examine par lot, specification et usage final, pas par des affirmations generales du fournisseur. L'acheteur doit verifier grade, maille, COA, emballage, echantillon de 1 kg et documents de destination avant commande.",
+      "sections": [
+        {
+          "heading": "Ce que cela signifie pour les achats",
+          "body": "USP vs PE vs PI: Normes de Pharmacopée pour l'Écorce de Psyllium aide les achats et la qualite a relier la demande commerciale a un lot reel. La decision doit s'appuyer sur specification, COA, echantillon et usage final."
+        },
+        {
+          "heading": "Checklist avant commande",
+          "body": "Verifiez grade, purete, maille, humidite, cendres, microbiologie, metaux lourds, emballage, origine et exigences du marche de destination."
+        },
+        {
+          "heading": "Lire le COA",
+          "body": "Comparez numero de lot, methode, resultat, unite et limite. Un COA d'echantillon sert a la revue initiale; le lot final doit etre approuve avec les documents du lot expedie."
+        },
+        {
+          "heading": "Erreur courante",
+          "body": "Ne transformez pas les termes biologique, FDA, GMP, Halal, Kosher ou pharmacopee en promesses fournisseur. Verifiez le perimetre, le lot et le document requis."
+        },
+        {
+          "heading": "Comment RM peut aider",
+          "body": "RM peut examiner grade, maille, COA d'echantillon, specification, emballage, origine, echantillon de 1 kg et documents de destination avant commande."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revue principale",
+          "range": "Grade, maille, purete et usage final"
+        },
+        {
+          "label": "Document",
+          "range": "COA d'echantillon, specification et documents de destination"
+        },
+        {
+          "label": "Echantillon",
+          "range": "Echantillon de 1 kg si le grade et la destination correspondent"
+        },
+        {
+          "label": "Avant PO",
+          "range": "Confirmer lot, emballage, essais et delai"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que verifier en premier?",
+          "a": "Verifiez grade, maille, purete, COA, usage final, emballage, echantillon de 1 kg et documents du marche de destination."
+        },
+        {
+          "q": "Le COA d'echantillon approuve-t-il l'expedition finale?",
+          "a": "Non. Il aide a examiner les parametres. L'expedition finale doit etre revue avec le COA ou rapport du lot expedie."
+        },
+        {
+          "q": "Comment eviter les affirmations exagerees?",
+          "a": "Demandez perimetre, lot, methode d essai, resultat et document applicable. Refusez les affirmations generales sans preuve specifique."
+        },
+        {
+          "q": "Quand demander un echantillon?",
+          "a": "Avant de confirmer un volume commercial, surtout si hydratation, texture, maille ou documents reglementaires sont importants."
+        }
       ]
     },
     "psyllium-seed-supplier-gujarat-rajasthan": {
@@ -464,6 +901,65 @@
         "Les graines de Plantago ovata (psyllium) sont cultivées principalement dans le Gujarat et le Rajasthan, les districts de Mehsana, Banaskantha et Kutch au Gujarat et Barmer, Jalore et Jodhpur au Rajasthan étant les principales zones de culture. La récolte est une culture rabi (hiver), semée en octobre–novembre et récoltée en février–mars. La production annuelle en Inde est estimée à 100.000–150.000 MT de graines, dont environ 85% sont exportés sous forme transformée.",
         "Les graines sont disponibles en deux grades principaux: nettoyées à la machine (standard) avec une pureté généralement ≥98%; et le grade sortex utilisant le tri optique pour atteindre une pureté ≥99% avec des matières étrangères ≤0,5%. Le grade sortex a une prime de prix de 8 à 12%, mais est préféré par les moulins nécessitant un rendement en écorce constant.",
         "Les spécifications de graine à confirmer avant l'achat incluent: pureté (98% ou 99%), humidité (≤8%), germination (≥85% pour semences; non requise pour la mouture) et documentation de traçabilité des lots. Nous livrons les graines en sacs de 25 kg, 50 kg et big bags de 1.000 kg. Documentation d'origine, traçabilité des lots et échantillon pour test pré-expédition sont fournis avec chaque commande."
+      ],
+      "aiSnapshot": "Approvisionnement en Graines de Psyllium du Gujarat et du Rajasthan doit etre examine par lot, specification et usage final, pas par des affirmations generales du fournisseur. L'acheteur doit verifier grade, maille, COA, emballage, echantillon de 1 kg et documents de destination avant commande.",
+      "sections": [
+        {
+          "heading": "Ce que cela signifie pour les achats",
+          "body": "Approvisionnement en Graines de Psyllium du Gujarat et du Rajasthan aide les achats et la qualite a relier la demande commerciale a un lot reel. La decision doit s'appuyer sur specification, COA, echantillon et usage final."
+        },
+        {
+          "heading": "Checklist avant commande",
+          "body": "Verifiez grade, purete, maille, humidite, cendres, microbiologie, metaux lourds, emballage, origine et exigences du marche de destination."
+        },
+        {
+          "heading": "Lire le COA",
+          "body": "Comparez numero de lot, methode, resultat, unite et limite. Un COA d'echantillon sert a la revue initiale; le lot final doit etre approuve avec les documents du lot expedie."
+        },
+        {
+          "heading": "Erreur courante",
+          "body": "Ne transformez pas les termes biologique, FDA, GMP, Halal, Kosher ou pharmacopee en promesses fournisseur. Verifiez le perimetre, le lot et le document requis."
+        },
+        {
+          "heading": "Comment RM peut aider",
+          "body": "RM peut examiner grade, maille, COA d'echantillon, specification, emballage, origine, echantillon de 1 kg et documents de destination avant commande."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revue principale",
+          "range": "Grade, maille, purete et usage final"
+        },
+        {
+          "label": "Document",
+          "range": "COA d'echantillon, specification et documents de destination"
+        },
+        {
+          "label": "Echantillon",
+          "range": "Echantillon de 1 kg si le grade et la destination correspondent"
+        },
+        {
+          "label": "Avant PO",
+          "range": "Confirmer lot, emballage, essais et delai"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que verifier en premier?",
+          "a": "Verifiez grade, maille, purete, COA, usage final, emballage, echantillon de 1 kg et documents du marche de destination."
+        },
+        {
+          "q": "Le COA d'echantillon approuve-t-il l'expedition finale?",
+          "a": "Non. Il aide a examiner les parametres. L'expedition finale doit etre revue avec le COA ou rapport du lot expedie."
+        },
+        {
+          "q": "Comment eviter les affirmations exagerees?",
+          "a": "Demandez perimetre, lot, methode d essai, resultat et document applicable. Refusez les affirmations generales sans preuve specifique."
+        },
+        {
+          "q": "Quand demander un echantillon?",
+          "a": "Avant de confirmer un volume commercial, surtout si hydratation, texture, maille ou documents reglementaires sont importants."
+        }
       ]
     },
     "organic-psyllium-nop-eu-certification": {
@@ -472,7 +968,66 @@
       "body": [
         "Le psyllium biologique indien est certifié selon deux cadres principaux: le Programme National Biologique (NOP) de l'USDA pour le marché américain et la Biologie UE pour le marché européen. Les transformateurs biologiques indiens sont certifiés par des organismes accrédités — dont Control Union, ECOCERT India, Lacon et SGS. Les acheteurs doivent confirmer que le certificat couvre le produit spécifique, les dates de lot et le marché de destination.",
         "La certification NOP exige que la source des graines, les pratiques de culture (sans pesticides ni engrais synthétiques), l'installation de transformation et la chaîne de manipulation soient toutes certifiées biologiques. Le certificat de transaction (CT) émis par expédition lie le lot spécifique à la certification biologique. Les acheteurs de l'UE nécessitent un Certificat d'Inspection (CI) selon le Règlement UE 2018/848.",
-        "Chez RM Psyllium, les lots biologiques sont fournis sur demande selon la disponibilité du stock certifié actuel. Nous fournissons la copie du certificat biologique, les registres d'origine par lot et la documentation du certificat de transaction avant la confirmation de commande. Le psyllium biologique a une prime de 25 à 40% sur le conventionnel selon le grade et la portée de certification. Communiquez vos exigences et nous confirmerons la disponibilité et les prix."
+        "Pour les achats biologiques, RM Psyllium examine d'abord la portée du certificat, le lot, le marché de destination et les documents requis. Partagez vos exigences afin que nous confirmions les documents pouvant être revus avant cotation."
+      ],
+      "aiSnapshot": "Psyllium Biologique: Certification NOP vs UE Bio pour l'Export doit etre examine par lot, specification et usage final, pas par des affirmations generales du fournisseur. L'acheteur doit verifier grade, maille, COA, emballage, echantillon de 1 kg et documents de destination avant commande.",
+      "sections": [
+        {
+          "heading": "Ce que cela signifie pour les achats",
+          "body": "Psyllium Biologique: Certification NOP vs UE Bio pour l'Export aide les achats et la qualite a relier la demande commerciale a un lot reel. La decision doit s'appuyer sur specification, COA, echantillon et usage final."
+        },
+        {
+          "heading": "Checklist avant commande",
+          "body": "Verifiez grade, purete, maille, humidite, cendres, microbiologie, metaux lourds, emballage, origine et exigences du marche de destination."
+        },
+        {
+          "heading": "Lire le COA",
+          "body": "Comparez numero de lot, methode, resultat, unite et limite. Un COA d'echantillon sert a la revue initiale; le lot final doit etre approuve avec les documents du lot expedie."
+        },
+        {
+          "heading": "Erreur courante",
+          "body": "Ne transformez pas les termes biologique, FDA, GMP, Halal, Kosher ou pharmacopee en promesses fournisseur. Verifiez le perimetre, le lot et le document requis."
+        },
+        {
+          "heading": "Comment RM peut aider",
+          "body": "RM peut examiner grade, maille, COA d'echantillon, specification, emballage, origine, echantillon de 1 kg et documents de destination avant commande."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revue principale",
+          "range": "Grade, maille, purete et usage final"
+        },
+        {
+          "label": "Document",
+          "range": "COA d'echantillon, specification et documents de destination"
+        },
+        {
+          "label": "Echantillon",
+          "range": "Echantillon de 1 kg si le grade et la destination correspondent"
+        },
+        {
+          "label": "Avant PO",
+          "range": "Confirmer lot, emballage, essais et delai"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que verifier en premier?",
+          "a": "Verifiez grade, maille, purete, COA, usage final, emballage, echantillon de 1 kg et documents du marche de destination."
+        },
+        {
+          "q": "Le COA d'echantillon approuve-t-il l'expedition finale?",
+          "a": "Non. Il aide a examiner les parametres. L'expedition finale doit etre revue avec le COA ou rapport du lot expedie."
+        },
+        {
+          "q": "Comment eviter les affirmations exagerees?",
+          "a": "Demandez perimetre, lot, methode d essai, resultat et document applicable. Refusez les affirmations generales sans preuve specifique."
+        },
+        {
+          "q": "Quand demander un echantillon?",
+          "a": "Avant de confirmer un volume commercial, surtout si hydratation, texture, maille ou documents reglementaires sont importants."
+        }
       ]
     },
     "psyllium-husk-gluten-free-bakery": {
@@ -481,7 +1036,66 @@
       "body": [
         "L'écorce de psyllium est utilisée en boulangerie sans gluten comme agent structurant et liant de l'eau — elle remplace partiellement les fonctions du réseau de gluten qui permet à la pâte à pain d'emprisonner les gaz et de maintenir sa forme pendant la cuisson. Le mucilage du psyllium forme un gel lorsqu'il est hydraté, apportant viscosité et élasticité aux pâtes sans gluten à base de farine de riz, d'amidon de maïs, de tapioca et de bases similaires. Le résultat est une meilleure structure de mie, une meilleure rétention d'humidité et une meilleure durée de conservation.",
         "Pour les applications de boulangerie, un grade de pureté de 95% ou 98% en granulométrie 80–100 mesh est le plus couramment spécifié. Une granulométrie plus fine (100+) disperse plus rapidement et produit une mie plus lisse. Une granulométrie plus grossière (40–60) peut être visible dans le produit fini et créer une texture légèrement granuleuse. Le grade 85% est utilisé dans des formulations sensibles aux coûts.",
-        "Les taux d'utilisation typiques dans les formulations de pain sans gluten sont de 1 à 3% du poids total de farine. Au-delà de 3%, le psyllium peut produire une mie dense et gommeuse. Les acheteurs doivent demander un échantillon de 100–200 g avec COA et effectuer des tests de laboratoire avant de s'engager dans une commande en vrac. Nous pouvons fournir des données sur le volume de gonflement et l'humidité pour chaque grade."
+        "Les taux d'utilisation typiques dans les formulations de pain sans gluten sont de 1 à 3% du poids total de farine. Au-delà de 3%, le psyllium peut produire une mie dense et gommeuse. Les acheteurs doivent demander un échantillon revu selon spécification et effectuer des tests de laboratoire avant de s'engager dans une commande en vrac. Nous pouvons fournir des données sur le volume de gonflement et l'humidité pour chaque grade."
+      ],
+      "aiSnapshot": "Écorce de Psyllium en Boulangerie Sans Gluten: Sélection de Grade et Granulométrie doit etre examine par lot, specification et usage final, pas par des affirmations generales du fournisseur. L'acheteur doit verifier grade, maille, COA, emballage, echantillon de 1 kg et documents de destination avant commande.",
+      "sections": [
+        {
+          "heading": "Ce que cela signifie pour les achats",
+          "body": "Écorce de Psyllium en Boulangerie Sans Gluten: Sélection de Grade et Granulométrie aide les achats et la qualite a relier la demande commerciale a un lot reel. La decision doit s'appuyer sur specification, COA, echantillon et usage final."
+        },
+        {
+          "heading": "Checklist avant commande",
+          "body": "Verifiez grade, purete, maille, humidite, cendres, microbiologie, metaux lourds, emballage, origine et exigences du marche de destination."
+        },
+        {
+          "heading": "Lire le COA",
+          "body": "Comparez numero de lot, methode, resultat, unite et limite. Un COA d'echantillon sert a la revue initiale; le lot final doit etre approuve avec les documents du lot expedie."
+        },
+        {
+          "heading": "Erreur courante",
+          "body": "Ne transformez pas les termes biologique, FDA, GMP, Halal, Kosher ou pharmacopee en promesses fournisseur. Verifiez le perimetre, le lot et le document requis."
+        },
+        {
+          "heading": "Comment RM peut aider",
+          "body": "RM peut examiner grade, maille, COA d'echantillon, specification, emballage, origine, echantillon de 1 kg et documents de destination avant commande."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revue principale",
+          "range": "Grade, maille, purete et usage final"
+        },
+        {
+          "label": "Document",
+          "range": "COA d'echantillon, specification et documents de destination"
+        },
+        {
+          "label": "Echantillon",
+          "range": "Echantillon de 1 kg si le grade et la destination correspondent"
+        },
+        {
+          "label": "Avant PO",
+          "range": "Confirmer lot, emballage, essais et delai"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que verifier en premier?",
+          "a": "Verifiez grade, maille, purete, COA, usage final, emballage, echantillon de 1 kg et documents du marche de destination."
+        },
+        {
+          "q": "Le COA d'echantillon approuve-t-il l'expedition finale?",
+          "a": "Non. Il aide a examiner les parametres. L'expedition finale doit etre revue avec le COA ou rapport du lot expedie."
+        },
+        {
+          "q": "Comment eviter les affirmations exagerees?",
+          "a": "Demandez perimetre, lot, methode d essai, resultat et document applicable. Refusez les affirmations generales sans preuve specifique."
+        },
+        {
+          "q": "Quand demander un echantillon?",
+          "a": "Avant de confirmer un volume commercial, surtout si hydratation, texture, maille ou documents reglementaires sont importants."
+        }
       ]
     },
     "psyllium-supplement-capsule-filling": {
@@ -491,6 +1105,65 @@
         "L'écorce de psyllium est l'une des fibres alimentaires les plus fréquemment encapsulées dans les gélules de gélatine et végétariennes (HPMC) pour les compléments laxatifs et de santé digestive. Le principal défi du remplissage de gélules est la fluidité — l'écorce de psyllium est fibreuse et hygroscopique, ce qui signifie qu'elle peut s'agglomérer et former des ponts dans les trémies des équipements de remplissage. La sélection de la maille et le contrôle de l'humidité sont les deux variables primaires qui déterminent la performance de remplissage.",
         "Pour les équipements standard de remplissage de gélules (type doseur ou tige de compactage), l'écorce entière en maille 40–60 est la spécification préférée. À cette maille, les particules sont assez grandes pour s'écouler sans pontage mais assez petites pour se tasser uniformément dans le corps de la gélule. En dessous de 40 mesh, l'écorce peut ne pas se tasser efficacement. Au-dessus de 60 mesh, la poudre devient plus hygroscopique.",
         "Le contrôle de l'humidité est critique: une écorce à plus de 10% d'humidité s'agglomère dans la trémie et cause des variations de poids de remplissage. Nous testons l'humidité à l'expédition et pouvons fournir un emballage à humidité contrôlée (liner HDPE scellé avec dessicant) sur demande. Indiquez la taille de gélule, le poids de remplissage cible et le type d'équipement — nous recommanderons le grade, la maille et la spécification d'humidité adaptés."
+      ],
+      "aiSnapshot": "Psyllium pour Remplissage de Gélules: Guide de Maille, Flux et Grade doit etre examine par lot, specification et usage final, pas par des affirmations generales du fournisseur. L'acheteur doit verifier grade, maille, COA, emballage, echantillon de 1 kg et documents de destination avant commande.",
+      "sections": [
+        {
+          "heading": "Ce que cela signifie pour les achats",
+          "body": "Psyllium pour Remplissage de Gélules: Guide de Maille, Flux et Grade aide les achats et la qualite a relier la demande commerciale a un lot reel. La decision doit s'appuyer sur specification, COA, echantillon et usage final."
+        },
+        {
+          "heading": "Checklist avant commande",
+          "body": "Verifiez grade, purete, maille, humidite, cendres, microbiologie, metaux lourds, emballage, origine et exigences du marche de destination."
+        },
+        {
+          "heading": "Lire le COA",
+          "body": "Comparez numero de lot, methode, resultat, unite et limite. Un COA d'echantillon sert a la revue initiale; le lot final doit etre approuve avec les documents du lot expedie."
+        },
+        {
+          "heading": "Erreur courante",
+          "body": "Ne transformez pas les termes biologique, FDA, GMP, Halal, Kosher ou pharmacopee en promesses fournisseur. Verifiez le perimetre, le lot et le document requis."
+        },
+        {
+          "heading": "Comment RM peut aider",
+          "body": "RM peut examiner grade, maille, COA d'echantillon, specification, emballage, origine, echantillon de 1 kg et documents de destination avant commande."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revue principale",
+          "range": "Grade, maille, purete et usage final"
+        },
+        {
+          "label": "Document",
+          "range": "COA d'echantillon, specification et documents de destination"
+        },
+        {
+          "label": "Echantillon",
+          "range": "Echantillon de 1 kg si le grade et la destination correspondent"
+        },
+        {
+          "label": "Avant PO",
+          "range": "Confirmer lot, emballage, essais et delai"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que verifier en premier?",
+          "a": "Verifiez grade, maille, purete, COA, usage final, emballage, echantillon de 1 kg et documents du marche de destination."
+        },
+        {
+          "q": "Le COA d'echantillon approuve-t-il l'expedition finale?",
+          "a": "Non. Il aide a examiner les parametres. L'expedition finale doit etre revue avec le COA ou rapport du lot expedie."
+        },
+        {
+          "q": "Comment eviter les affirmations exagerees?",
+          "a": "Demandez perimetre, lot, methode d essai, resultat et document applicable. Refusez les affirmations generales sans preuve specifique."
+        },
+        {
+          "q": "Quand demander un echantillon?",
+          "a": "Avant de confirmer un volume commercial, surtout si hydratation, texture, maille ou documents reglementaires sont importants."
+        }
       ]
     },
     "psyllium-halal-kosher-documentation": {
@@ -499,7 +1172,66 @@
       "body": [
         "L'écorce de psyllium, étant un produit d'origine végétale sans intrants animaux dans la transformation, est généralement considérée comme acceptable selon les exigences alimentaires Halal et Casher. Cependant, de nombreux acheteurs — notamment au Moyen-Orient, en Asie du Sud-Est et pour les marchés de compléments cachères aux États-Unis — exigent une certification formelle d'un organisme reconnu. La certification Halal confirme que les pratiques de l'installation et tout auxiliaire de transformation répondent aux normes alimentaires islamiques.",
         "Pour la certification Halal, les organismes reconnus en Inde incluent Halal India, Jamiat Ulama-i-Hind Halal Trust et des organismes internationaux tels qu'IFANCA. Le certificat couvre l'installation, les produits spécifiques et la période de certification (généralement un an). Une copie du certificat Halal par expédition avec un endossement au niveau du lot est ce que la plupart des autorités d'importation du Moyen-Orient exigent.",
-        "Chez RM Psyllium, la documentation Halal et Casher est disponible sur demande. Nous fournissons une déclaration Halal confirmant que l'écorce de psyllium est un produit végétal pur sans intrants d'origine animale dans la culture, la transformation ou l'emballage — accepté par la plupart des autorités d'importation et des acheteurs pour l'utilisation comme ingrédient alimentaire et de complément. Contactez-nous avec votre exigence spécifique d'organisme de certification."
+        "Pour les lots RM Psyllium, les acheteurs peuvent demander une déclaration d'origine végétale et examiner toute exigence Halal ou Casher formelle avant commande. Une déclaration végétale ne remplace pas une certification formelle lorsque l'étiquette, le distributeur ou l'importateur l'exige."
+      ],
+      "aiSnapshot": "Psyllium Halal et Casher: Quels Documents les Acheteurs Ont Besoin doit etre examine par lot, specification et usage final, pas par des affirmations generales du fournisseur. L'acheteur doit verifier grade, maille, COA, emballage, echantillon de 1 kg et documents de destination avant commande.",
+      "sections": [
+        {
+          "heading": "Ce que cela signifie pour les achats",
+          "body": "Psyllium Halal et Casher: Quels Documents les Acheteurs Ont Besoin aide les achats et la qualite a relier la demande commerciale a un lot reel. La decision doit s'appuyer sur specification, COA, echantillon et usage final."
+        },
+        {
+          "heading": "Checklist avant commande",
+          "body": "Verifiez grade, purete, maille, humidite, cendres, microbiologie, metaux lourds, emballage, origine et exigences du marche de destination."
+        },
+        {
+          "heading": "Lire le COA",
+          "body": "Comparez numero de lot, methode, resultat, unite et limite. Un COA d'echantillon sert a la revue initiale; le lot final doit etre approuve avec les documents du lot expedie."
+        },
+        {
+          "heading": "Erreur courante",
+          "body": "Ne transformez pas les termes biologique, FDA, GMP, Halal, Kosher ou pharmacopee en promesses fournisseur. Verifiez le perimetre, le lot et le document requis."
+        },
+        {
+          "heading": "Comment RM peut aider",
+          "body": "RM peut examiner grade, maille, COA d'echantillon, specification, emballage, origine, echantillon de 1 kg et documents de destination avant commande."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revue principale",
+          "range": "Grade, maille, purete et usage final"
+        },
+        {
+          "label": "Document",
+          "range": "COA d'echantillon, specification et documents de destination"
+        },
+        {
+          "label": "Echantillon",
+          "range": "Echantillon de 1 kg si le grade et la destination correspondent"
+        },
+        {
+          "label": "Avant PO",
+          "range": "Confirmer lot, emballage, essais et delai"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que verifier en premier?",
+          "a": "Verifiez grade, maille, purete, COA, usage final, emballage, echantillon de 1 kg et documents du marche de destination."
+        },
+        {
+          "q": "Le COA d'echantillon approuve-t-il l'expedition finale?",
+          "a": "Non. Il aide a examiner les parametres. L'expedition finale doit etre revue avec le COA ou rapport du lot expedie."
+        },
+        {
+          "q": "Comment eviter les affirmations exagerees?",
+          "a": "Demandez perimetre, lot, methode d essai, resultat et document applicable. Refusez les affirmations generales sans preuve specifique."
+        },
+        {
+          "q": "Quand demander un echantillon?",
+          "a": "Avant de confirmer un volume commercial, surtout si hydratation, texture, maille ou documents reglementaires sont importants."
+        }
       ]
     },
     "bulk-psyllium-import-usa-fda": {
@@ -509,6 +1241,65 @@
         "L'écorce de psyllium importée en vrac aux États-Unis relève de la compétence de la FDA en tant qu'ingrédient de complément alimentaire ou ingrédient alimentaire selon l'utilisation prévue. La FDA n'exige pas d'approbation préalable pour les importations de psyllium en vrac, mais les expéditions sont soumises au contrôle d'importation de la FDA, et les installations exportant vers les États-Unis sont soumises aux exigences de vérification des fournisseurs FSMA.",
         "Pour les applications de compléments alimentaires, l'écorce de psyllium doit satisfaire aux spécifications de la monographie USP. Le COA fourni avec chaque expédition doit inclure: identification (botanique), volume de gonflement, humidité, cendres, microbiologie (CTG, levure, moisissure, E. coli, Salmonella) et métaux lourds (Plomb, Arsenic, Cadmium, Mercure). Pour les applications alimentaires, l'écorce de psyllium a le statut GRAS aux États-Unis en tant que source de fibres alimentaires solubles.",
         "L'Avis Préalable à la FDA est requis pour toutes les expéditions alimentaires et de compléments entrant aux États-Unis, soumis électroniquement via PNSI avant l'arrivée. Les importateurs américains s'en chargent généralement, mais nous pouvons fournir tous les détails produit requis. Nous expédions via Mundra ou JNPT avec un délai de transit typique de 25 à 30 jours vers les ports de la côte Est."
+      ],
+      "aiSnapshot": "Importation de Psyllium aux États-Unis: Exigences FDA, Étiquetage et COA doit etre examine par lot, specification et usage final, pas par des affirmations generales du fournisseur. L'acheteur doit verifier grade, maille, COA, emballage, echantillon de 1 kg et documents de destination avant commande.",
+      "sections": [
+        {
+          "heading": "Ce que cela signifie pour les achats",
+          "body": "Importation de Psyllium aux États-Unis: Exigences FDA, Étiquetage et COA aide les achats et la qualite a relier la demande commerciale a un lot reel. La decision doit s'appuyer sur specification, COA, echantillon et usage final."
+        },
+        {
+          "heading": "Checklist avant commande",
+          "body": "Verifiez grade, purete, maille, humidite, cendres, microbiologie, metaux lourds, emballage, origine et exigences du marche de destination."
+        },
+        {
+          "heading": "Lire le COA",
+          "body": "Comparez numero de lot, methode, resultat, unite et limite. Un COA d'echantillon sert a la revue initiale; le lot final doit etre approuve avec les documents du lot expedie."
+        },
+        {
+          "heading": "Erreur courante",
+          "body": "Ne transformez pas les termes biologique, FDA, GMP, Halal, Kosher ou pharmacopee en promesses fournisseur. Verifiez le perimetre, le lot et le document requis."
+        },
+        {
+          "heading": "Comment RM peut aider",
+          "body": "RM peut examiner grade, maille, COA d'echantillon, specification, emballage, origine, echantillon de 1 kg et documents de destination avant commande."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revue principale",
+          "range": "Grade, maille, purete et usage final"
+        },
+        {
+          "label": "Document",
+          "range": "COA d'echantillon, specification et documents de destination"
+        },
+        {
+          "label": "Echantillon",
+          "range": "Echantillon de 1 kg si le grade et la destination correspondent"
+        },
+        {
+          "label": "Avant PO",
+          "range": "Confirmer lot, emballage, essais et delai"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que verifier en premier?",
+          "a": "Verifiez grade, maille, purete, COA, usage final, emballage, echantillon de 1 kg et documents du marche de destination."
+        },
+        {
+          "q": "Le COA d'echantillon approuve-t-il l'expedition finale?",
+          "a": "Non. Il aide a examiner les parametres. L'expedition finale doit etre revue avec le COA ou rapport du lot expedie."
+        },
+        {
+          "q": "Comment eviter les affirmations exagerees?",
+          "a": "Demandez perimetre, lot, methode d essai, resultat et document applicable. Refusez les affirmations generales sans preuve specifique."
+        },
+        {
+          "q": "Quand demander un echantillon?",
+          "a": "Avant de confirmer un volume commercial, surtout si hydratation, texture, maille ou documents reglementaires sont importants."
+        }
       ]
     },
     "psyllium-khakha-animal-feed-specifications": {
@@ -518,6 +1309,65 @@
         "La poudre de psyllium khakha est le sous-produit résiduel après le broyage et la séparation de l'écorce de psyllium de la graine. Elle est composée principalement du tégument interne de la graine et de l'endosperme résiduel, et contient une quantité significative de fibres solubles dérivées du mucilage — généralement 30 à 40% de fibres brutes en poids. Cette teneur en fibres, combinée à 8–12% de protéines brutes et un prix bas par rapport à l'écorce entière, en fait un ingrédient d'aliment utile pour les formulateurs d'aliments pour ruminants et volailles.",
         "Le khakha de qualité alimentaire est spécifié principalement par l'humidité (≤12%), les fibres brutes (30–40%), les protéines brutes (8–12%) et les cendres totales (≤8%). La matière étrangère et la teneur en sable doivent être confirmées — un excès de sable ou de silice peut élever les cendres et réduire la digestibilité. La granulométrie affecte le comportement de mélange: les particules plus grossières (20–40 mesh) sont standard pour la plupart des applications.",
         "Les cas d'usage du khakha dans les aliments animaux incluent: alimentation bovine et bubaline (soutien digestif, rétention d'hydratation), alimentation volaille comme source de fibres, et alimentation pisciculture comme liant naturel. Nous livrons en sacs de 25 kg, 50 kg et big bags de 1.000 kg. Les lots de qualité alimentaire sont livrés avec un COA d'analyse de base (humidité, fibres brutes, protéines brutes, cendres) et liste de colisage."
+      ],
+      "aiSnapshot": "Poudre de Psyllium Khakha pour Alimentation Animale: Spécifications et Cas d'Usage doit etre examine par lot, specification et usage final, pas par des affirmations generales du fournisseur. L'acheteur doit verifier grade, maille, COA, emballage, echantillon de 1 kg et documents de destination avant commande.",
+      "sections": [
+        {
+          "heading": "Ce que cela signifie pour les achats",
+          "body": "Poudre de Psyllium Khakha pour Alimentation Animale: Spécifications et Cas d'Usage aide les achats et la qualite a relier la demande commerciale a un lot reel. La decision doit s'appuyer sur specification, COA, echantillon et usage final."
+        },
+        {
+          "heading": "Checklist avant commande",
+          "body": "Verifiez grade, purete, maille, humidite, cendres, microbiologie, metaux lourds, emballage, origine et exigences du marche de destination."
+        },
+        {
+          "heading": "Lire le COA",
+          "body": "Comparez numero de lot, methode, resultat, unite et limite. Un COA d'echantillon sert a la revue initiale; le lot final doit etre approuve avec les documents du lot expedie."
+        },
+        {
+          "heading": "Erreur courante",
+          "body": "Ne transformez pas les termes biologique, FDA, GMP, Halal, Kosher ou pharmacopee en promesses fournisseur. Verifiez le perimetre, le lot et le document requis."
+        },
+        {
+          "heading": "Comment RM peut aider",
+          "body": "RM peut examiner grade, maille, COA d'echantillon, specification, emballage, origine, echantillon de 1 kg et documents de destination avant commande."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revue principale",
+          "range": "Grade, maille, purete et usage final"
+        },
+        {
+          "label": "Document",
+          "range": "COA d'echantillon, specification et documents de destination"
+        },
+        {
+          "label": "Echantillon",
+          "range": "Echantillon de 1 kg si le grade et la destination correspondent"
+        },
+        {
+          "label": "Avant PO",
+          "range": "Confirmer lot, emballage, essais et delai"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que verifier en premier?",
+          "a": "Verifiez grade, maille, purete, COA, usage final, emballage, echantillon de 1 kg et documents du marche de destination."
+        },
+        {
+          "q": "Le COA d'echantillon approuve-t-il l'expedition finale?",
+          "a": "Non. Il aide a examiner les parametres. L'expedition finale doit etre revue avec le COA ou rapport du lot expedie."
+        },
+        {
+          "q": "Comment eviter les affirmations exagerees?",
+          "a": "Demandez perimetre, lot, methode d essai, resultat et document applicable. Refusez les affirmations generales sans preuve specifique."
+        },
+        {
+          "q": "Quand demander un echantillon?",
+          "a": "Avant de confirmer un volume commercial, surtout si hydratation, texture, maille ou documents reglementaires sont importants."
+        }
       ]
     },
     "psyllium-husk-gmp-compliant-manufacturer-india": {
@@ -525,8 +1375,67 @@
       "summary": "Ce que signifie une installation conforme aux BPF pour le traitement du psyllium, les spécifications de grade BP et la liste de documentation que les acheteurs pharmaceutiques doivent demander.",
       "body": [
         "Les acheteurs pharmaceutiques approvisionnant l'écorce de psyllium en Inde ont besoin de plus qu'un simple grade de pureté — ils ont besoin de la confirmation que l'installation de traitement fonctionne sous des contrôles qualité documentés conformes aux Bonnes Pratiques de Fabrication (BPF/GMP). Pour le psyllium, la transformation conforme aux BPF signifie: environnements de broyage contrôlés, procédures de nettoyage documentées, registres de lutte antiparasitaire, traçabilité des lots et équipements calibrés.",
-        "RM Psyllium exploite une installation conforme aux BPF à Siddhpur, Gujarat. Notre installation maintient des registres de fabrication par lot, des registres de calibration des équipements et des contrôles qualité en cours pour chaque cycle de production.",
-        "Le package de documentation standard de RM Psyllium comprend: (1) COA de laboratoire accrédité NABL annoté selon USP, EP, BP ou IP spécifié; (2) Certificat d'Origine délivré par la Chambre de Commerce du Gujarat; (3) Certificat Phytosanitaire de l'Autorité de Quarantaine Végétale; (4) Déclaration de conformité BPF de l'installation; (5) Liste de colisage et facture commerciale."
+        "RM Psyllium opère à Siddhpur, Gujarat, avec nettoyage, mouture, emballage et documentation de lot contrôlés. Les acheteurs peuvent examiner les documents de procédé et les contrôles qualité disponibles avant commande.",
+        "Le package documentaire de RM Psyllium peut être examiné par lot et comprend, selon le produit et la destination: (1) COA du lot, avec rapport de laboratoire tiers accrédité lorsque la spécification l'exige; (2) certificat d'origine lorsque applicable; (3) certificat phytosanitaire lorsque applicable; (4) documents de procédé et d'emballage disponibles pour revue acheteur; (5) liste de colisage et facture commerciale."
+      ],
+      "aiSnapshot": "Fabricant de Psyllium Conforme BPF Inde: Normes d'Installation et de Documentation doit etre examine par lot, specification et usage final, pas par des affirmations generales du fournisseur. L'acheteur doit verifier grade, maille, COA, emballage, echantillon de 1 kg et documents de destination avant commande.",
+      "sections": [
+        {
+          "heading": "Ce que cela signifie pour les achats",
+          "body": "Fabricant de Psyllium Conforme BPF Inde: Normes d'Installation et de Documentation aide les achats et la qualite a relier la demande commerciale a un lot reel. La decision doit s'appuyer sur specification, COA, echantillon et usage final."
+        },
+        {
+          "heading": "Checklist avant commande",
+          "body": "Verifiez grade, purete, maille, humidite, cendres, microbiologie, metaux lourds, emballage, origine et exigences du marche de destination."
+        },
+        {
+          "heading": "Lire le COA",
+          "body": "Comparez numero de lot, methode, resultat, unite et limite. Un COA d'echantillon sert a la revue initiale; le lot final doit etre approuve avec les documents du lot expedie."
+        },
+        {
+          "heading": "Erreur courante",
+          "body": "Ne transformez pas les termes biologique, FDA, GMP, Halal, Kosher ou pharmacopee en promesses fournisseur. Verifiez le perimetre, le lot et le document requis."
+        },
+        {
+          "heading": "Comment RM peut aider",
+          "body": "RM peut examiner grade, maille, COA d'echantillon, specification, emballage, origine, echantillon de 1 kg et documents de destination avant commande."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revue principale",
+          "range": "Grade, maille, purete et usage final"
+        },
+        {
+          "label": "Document",
+          "range": "COA d'echantillon, specification et documents de destination"
+        },
+        {
+          "label": "Echantillon",
+          "range": "Echantillon de 1 kg si le grade et la destination correspondent"
+        },
+        {
+          "label": "Avant PO",
+          "range": "Confirmer lot, emballage, essais et delai"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que verifier en premier?",
+          "a": "Verifiez grade, maille, purete, COA, usage final, emballage, echantillon de 1 kg et documents du marche de destination."
+        },
+        {
+          "q": "Le COA d'echantillon approuve-t-il l'expedition finale?",
+          "a": "Non. Il aide a examiner les parametres. L'expedition finale doit etre revue avec le COA ou rapport du lot expedie."
+        },
+        {
+          "q": "Comment eviter les affirmations exagerees?",
+          "a": "Demandez perimetre, lot, methode d essai, resultat et document applicable. Refusez les affirmations generales sans preuve specifique."
+        },
+        {
+          "q": "Quand demander un echantillon?",
+          "a": "Avant de confirmer un volume commercial, surtout si hydratation, texture, maille ou documents reglementaires sont importants."
+        }
       ]
     },
     "plantago-ovata-husk-bulk-exporter-india": {
@@ -582,6 +1491,47 @@
         {
           "heading": "Package Standard de Documentation d'Exportation",
           "body": "Le package standard comprend: (1) COA de laboratoire accrédité NABL avec paramètres USP/IP; (2) Certificat d'Origine de la Chambre de Commerce du Gujarat; (3) Certificat Phytosanitaire de l'Autorité de Quarantaine Végétale; (4) Déclaration de conformité BPF; (5) Rapport d'analyse microbiologique. Documentation supplémentaire disponible sur demande."
+        },
+        {
+          "heading": "Point de decision achat",
+          "body": "Avant confirmation, reliez la specification au lot reel, au COA, a l echantillon de 1 kg, a l emballage et aux documents requis par le marche de destination."
+        }
+      ],
+      "aiSnapshot": "Exportateur en Vrac d'Écorce de Plantago Ovata depuis l'Inde: Grades, Nomenclature Isabgol et Termes d'Export doit etre examine par lot, specification et usage final, pas par des affirmations generales du fournisseur. L'acheteur doit verifier grade, maille, COA, emballage, echantillon de 1 kg et documents de destination avant commande.",
+      "specTable": [
+        {
+          "label": "Revue principale",
+          "range": "Grade, maille, purete et usage final"
+        },
+        {
+          "label": "Document",
+          "range": "COA d'echantillon, specification et documents de destination"
+        },
+        {
+          "label": "Echantillon",
+          "range": "Echantillon de 1 kg si le grade et la destination correspondent"
+        },
+        {
+          "label": "Avant PO",
+          "range": "Confirmer lot, emballage, essais et delai"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que verifier en premier?",
+          "a": "Verifiez grade, maille, purete, COA, usage final, emballage, echantillon de 1 kg et documents du marche de destination."
+        },
+        {
+          "q": "Le COA d'echantillon approuve-t-il l'expedition finale?",
+          "a": "Non. Il aide a examiner les parametres. L'expedition finale doit etre revue avec le COA ou rapport du lot expedie."
+        },
+        {
+          "q": "Comment eviter les affirmations exagerees?",
+          "a": "Demandez perimetre, lot, methode d essai, resultat et document applicable. Refusez les affirmations generales sans preuve specifique."
+        },
+        {
+          "q": "Quand demander un echantillon?",
+          "a": "Avant de confirmer un volume commercial, surtout si hydratation, texture, maille ou documents reglementaires sont importants."
         }
       ]
     },
@@ -590,7 +1540,7 @@
       "summary": "Sélection de grade et granulométrie pour fabricants de compléments et d'aliments fonctionnels achetant en vrac depuis Gujarat.",
       "body": [
         "La poudre d'écorce de psyllium diffère de l'écorce entière par sa granulométrie — les particules ont été broyées pour obtenir des caractéristiques spécifiques de maille et d'écoulement répondant aux besoins de formulation des compléments et aliments.",
-        "RM Psyllium produit de la poudre d'écorce de psyllium en grades 85%, 95% et 98% avec plusieurs spécifications de maille, avec des lots traçables et un COA de laboratoire NABL pour chaque expédition."
+        "RM Psyllium produit de la poudre d'écorce de psyllium en grades 85%, 95% et 98% avec plusieurs spécifications de maille, des lots traçables et un COA revu par lot. Les rapports de laboratoire tiers accrédité peuvent être examinés lorsque la spécification acheteur l'exige."
       ],
       "sections": [
         {
@@ -635,7 +1585,48 @@
         },
         {
           "heading": "MOQ et Options d'Emballage",
-          "body": "MOQ standard: 1 tonne métrique par SKU de grade et maille. Emballage: sacs PP de 25 kg avec liner PE double couche, big bags FIBC de 500 kg ou 1.000 kg. Étiquetage personnalisé disponible à partir de 5 TM. Échantillons de 100–500 g avec COA complet disponibles avant toute commande."
+          "body": "La MOQ est confirmée selon le grade, la maille, l'emballage, la destination et le dossier documentaire. Emballage: sacs PP de 25 kg avec liner PE double couche, big bags FIBC de 500 kg ou 1.000 kg. Les options d'échantillon, de révision COA et de délai sont confirmées avant toute commande."
+        },
+        {
+          "heading": "Point de decision achat",
+          "body": "Avant confirmation, reliez la specification au lot reel, au COA, a l echantillon de 1 kg, a l emballage et aux documents requis par le marche de destination."
+        }
+      ],
+      "aiSnapshot": "Fournisseur Grossiste de Poudre d'Écorce de Psyllium Inde: Guide des Grades 85%, 95%, 98% doit etre examine par lot, specification et usage final, pas par des affirmations generales du fournisseur. L'acheteur doit verifier grade, maille, COA, emballage, echantillon de 1 kg et documents de destination avant commande.",
+      "specTable": [
+        {
+          "label": "Revue principale",
+          "range": "Grade, maille, purete et usage final"
+        },
+        {
+          "label": "Document",
+          "range": "COA d'echantillon, specification et documents de destination"
+        },
+        {
+          "label": "Echantillon",
+          "range": "Echantillon de 1 kg si le grade et la destination correspondent"
+        },
+        {
+          "label": "Avant PO",
+          "range": "Confirmer lot, emballage, essais et delai"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que verifier en premier?",
+          "a": "Verifiez grade, maille, purete, COA, usage final, emballage, echantillon de 1 kg et documents du marche de destination."
+        },
+        {
+          "q": "Le COA d'echantillon approuve-t-il l'expedition finale?",
+          "a": "Non. Il aide a examiner les parametres. L'expedition finale doit etre revue avec le COA ou rapport du lot expedie."
+        },
+        {
+          "q": "Comment eviter les affirmations exagerees?",
+          "a": "Demandez perimetre, lot, methode d essai, resultat et document applicable. Refusez les affirmations generales sans preuve specifique."
+        },
+        {
+          "q": "Quand demander un echantillon?",
+          "a": "Avant de confirmer un volume commercial, surtout si hydratation, texture, maille ou documents reglementaires sont importants."
         }
       ]
     },
@@ -644,7 +1635,7 @@
       "summary": "Ce dont les marques de compléments et fabricants OEM ont besoin pour s'approvisionner en psyllium non-OGM certifié pour produits marque blanche.",
       "body": [
         "Les marques de compléments et fabricants contractuels (CMO/CDMO) recherchant de l'écorce de psyllium pour des produits marque blanche ont besoin de fournisseurs offrant une documentation complète des ingrédients, une traçabilité par lot et un emballage personnalisable.",
-        "RM Psyllium fournit de l'écorce de psyllium grade pharmaceutique et alimentaire pour fabricants OEM avec rapports de laboratoire NABL, déclarations non-OGM et options d'emballage personnalisé."
+        "RM Psyllium fournit de l'écorce de psyllium grade pharmaceutique et alimentaire pour fabricants OEM avec COA par lot, déclarations non-OGM, options d'emballage personnalisé et rapports de laboratoire tiers lorsque la spécification l'exige."
       ],
       "sections": [
         {
@@ -658,6 +1649,47 @@
         {
           "heading": "Emballage pour Marques de Compléments",
           "body": "Options d'emballage marque blanche: sacs kraft avec valve et fermeture zip (250 g, 500 g, 1 kg), contenants HDPE avec couvercle snap, sachets debout avec barrière UV. MOQ pour emballage personnalisé: 500 kg par SKU. Impression d'étiquette personnalisée disponible à partir de 1 TM."
+        },
+        {
+          "heading": "Point de decision achat",
+          "body": "Avant confirmation, reliez la specification au lot reel, au COA, a l echantillon de 1 kg, a l emballage et aux documents requis par le marche de destination."
+        }
+      ],
+      "aiSnapshot": "Complément Marque Blanche Psyllium Inde: Exigences d'Approvisionnement OEM en Vrac doit etre examine par lot, specification et usage final, pas par des affirmations generales du fournisseur. L'acheteur doit verifier grade, maille, COA, emballage, echantillon de 1 kg et documents de destination avant commande.",
+      "specTable": [
+        {
+          "label": "Revue principale",
+          "range": "Grade, maille, purete et usage final"
+        },
+        {
+          "label": "Document",
+          "range": "COA d'echantillon, specification et documents de destination"
+        },
+        {
+          "label": "Echantillon",
+          "range": "Echantillon de 1 kg si le grade et la destination correspondent"
+        },
+        {
+          "label": "Avant PO",
+          "range": "Confirmer lot, emballage, essais et delai"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que verifier en premier?",
+          "a": "Verifiez grade, maille, purete, COA, usage final, emballage, echantillon de 1 kg et documents du marche de destination."
+        },
+        {
+          "q": "Le COA d'echantillon approuve-t-il l'expedition finale?",
+          "a": "Non. Il aide a examiner les parametres. L'expedition finale doit etre revue avec le COA ou rapport du lot expedie."
+        },
+        {
+          "q": "Comment eviter les affirmations exagerees?",
+          "a": "Demandez perimetre, lot, methode d essai, resultat et document applicable. Refusez les affirmations generales sans preuve specifique."
+        },
+        {
+          "q": "Quand demander un echantillon?",
+          "a": "Avant de confirmer un volume commercial, surtout si hydratation, texture, maille ou documents reglementaires sont importants."
         }
       ]
     },
@@ -666,7 +1698,7 @@
       "summary": "Spécifications de grade alimentaire, signification de la conformité HACCP en pratique et documentation que les fabricants alimentaires nécessitent.",
       "body": [
         "Les fabricants alimentaires approvisionnant l'écorce de psyllium comme ingrédient fonctionnel — pour la fortification en fibres, la modification de texture ou les applications clean-label — ont besoin d'un fournisseur avec des contrôles de sécurité alimentaire qui vont au-delà de la transformation agricole de base.",
-        "RM Psyllium exploite une installation sécurisée pour les aliments à Siddhpur, Gujarat. Notre installation applique les principes HACCP — analyse des dangers et points critiques pour leur maîtrise — dans les processus de broyage, séparation et emballage."
+        "RM Psyllium exploite une installation de transformation à Siddhpur, Gujarat. Les acheteurs alimentaires peuvent examiner les contrôles de nettoyage, séparation, emballage, traçabilité et documentation de sécurité alimentaire avant confirmation de commande."
       ],
       "sections": [
         {
@@ -719,11 +1751,52 @@
         },
         {
           "heading": "Traitement Conforme HACCP: Ce que Cela Couvre",
-          "body": "Le traitement conforme HACCP pour le psyllium couvre trois catégories de dangers: (1) Physique — détection métallique à l'emballage final; séparateurs gravitationnels pour retirer pierres, poussière et graines étrangères; (2) Chimique — aucun traitement pesticide ou chimique; surveillance de l'humidité; (3) Biologique — registres de nettoyage et désinfection de tous les équipements au contact."
+          "body": "La revue des contrôles de sécurité alimentaire couvre trois catégories: (1) Physique — détection métallique à l'emballage final; séparateurs gravitationnels pour retirer pierres, poussière et graines étrangères; (2) Chimique — déclarations de procédé et surveillance de l'humidité; (3) Biologique — registres de nettoyage et désinfection des équipements au contact."
         },
         {
           "heading": "MOQ et Documents de Certification Disponibles",
-          "body": "RM Psyllium fournit l'écorce de psyllium grade alimentaire à partir de 1 tonne métrique par SKU. Le package de documentation standard inclut COA de laboratoire accrédité NABL, déclaration de conformité HACCP, certificat phytosanitaire, certificat d'origine et formulaire de déclaration de l'exportateur."
+          "body": "RM Psyllium fournit l'écorce de psyllium grade alimentaire à partir de 1 tonne métrique par SKU. Le package documentaire est revu par produit, lot et destination, et inclut COA, documents d'origine, certificat phytosanitaire lorsque applicable et checklist de contrôles de sécurité alimentaire pour revue acheteur."
+        },
+        {
+          "heading": "Point de decision achat",
+          "body": "Avant confirmation, reliez la specification au lot reel, au COA, a l echantillon de 1 kg, a l emballage et aux documents requis par le marche de destination."
+        }
+      ],
+      "aiSnapshot": "Fournisseur en Vrac d'Écorce de Psyllium Grade Alimentaire Inde: Installation Conforme HACCP doit etre examine par lot, specification et usage final, pas par des affirmations generales du fournisseur. L'acheteur doit verifier grade, maille, COA, emballage, echantillon de 1 kg et documents de destination avant commande.",
+      "specTable": [
+        {
+          "label": "Revue principale",
+          "range": "Grade, maille, purete et usage final"
+        },
+        {
+          "label": "Document",
+          "range": "COA d'echantillon, specification et documents de destination"
+        },
+        {
+          "label": "Echantillon",
+          "range": "Echantillon de 1 kg si le grade et la destination correspondent"
+        },
+        {
+          "label": "Avant PO",
+          "range": "Confirmer lot, emballage, essais et delai"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que verifier en premier?",
+          "a": "Verifiez grade, maille, purete, COA, usage final, emballage, echantillon de 1 kg et documents du marche de destination."
+        },
+        {
+          "q": "Le COA d'echantillon approuve-t-il l'expedition finale?",
+          "a": "Non. Il aide a examiner les parametres. L'expedition finale doit etre revue avec le COA ou rapport du lot expedie."
+        },
+        {
+          "q": "Comment eviter les affirmations exagerees?",
+          "a": "Demandez perimetre, lot, methode d essai, resultat et document applicable. Refusez les affirmations generales sans preuve specifique."
+        },
+        {
+          "q": "Quand demander un echantillon?",
+          "a": "Avant de confirmer un volume commercial, surtout si hydratation, texture, maille ou documents reglementaires sont importants."
         }
       ]
     },
@@ -774,6 +1847,47 @@
         {
           "heading": "Export d'Isabgol depuis Gujarat: Ce dont les Fabricants Alimentaires ont Besoin",
           "body": "Le package standard comprend: (1) COA aligné Codex Alimentarius; (2) Certificat Phytosanitaire; (3) Certificat d'Origine de la Chambre de Commerce du Gujarat; (4) Déclaration de conformité métaux lourds et pesticides. Délai de transit Mundra → Rotterdam: environ 20–23 jours."
+        },
+        {
+          "heading": "Point de decision achat",
+          "body": "Avant confirmation, reliez la specification au lot reel, au COA, a l echantillon de 1 kg, a l emballage et aux documents requis par le marche de destination."
+        }
+      ],
+      "aiSnapshot": "Fibre Soluble d'Écorce de Psyllium pour Fortification Alimentaire en Vrac: Approvisionnement depuis l'Inde doit etre examine par lot, specification et usage final, pas par des affirmations generales du fournisseur. L'acheteur doit verifier grade, maille, COA, emballage, echantillon de 1 kg et documents de destination avant commande.",
+      "specTable": [
+        {
+          "label": "Revue principale",
+          "range": "Grade, maille, purete et usage final"
+        },
+        {
+          "label": "Document",
+          "range": "COA d'echantillon, specification et documents de destination"
+        },
+        {
+          "label": "Echantillon",
+          "range": "Echantillon de 1 kg si le grade et la destination correspondent"
+        },
+        {
+          "label": "Avant PO",
+          "range": "Confirmer lot, emballage, essais et delai"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que verifier en premier?",
+          "a": "Verifiez grade, maille, purete, COA, usage final, emballage, echantillon de 1 kg et documents du marche de destination."
+        },
+        {
+          "q": "Le COA d'echantillon approuve-t-il l'expedition finale?",
+          "a": "Non. Il aide a examiner les parametres. L'expedition finale doit etre revue avec le COA ou rapport du lot expedie."
+        },
+        {
+          "q": "Comment eviter les affirmations exagerees?",
+          "a": "Demandez perimetre, lot, methode d essai, resultat et document applicable. Refusez les affirmations generales sans preuve specifique."
+        },
+        {
+          "q": "Quand demander un echantillon?",
+          "a": "Avant de confirmer un volume commercial, surtout si hydratation, texture, maille ou documents reglementaires sont importants."
         }
       ]
     },
@@ -830,6 +1944,47 @@
         {
           "heading": "Proportions de Mélange de Farine Sans Gluten",
           "body": "Pour les formulateurs travaillant avec des bases de farine mixte sans gluten (riz, manioc, sorgho, pois chiche), le psyllium agit comme agent structurant primaire. Proportions typiques: farine de base 70–80% + amidon (tapioca/pomme de terre) 10–15% + psyllium 3–5% + autres (protéine de pois, gomme xanthane) 2–5%."
+        },
+        {
+          "heading": "Point de decision achat",
+          "body": "Avant confirmation, reliez la specification au lot reel, au COA, a l echantillon de 1 kg, a l emballage et aux documents requis par le marche de destination."
+        }
+      ],
+      "aiSnapshot": "Fournisseur en Vrac d'Écorce de Psyllium Certifiée Sans Gluten: Ce dont les Marques de Boulangerie ont Besoin doit etre examine par lot, specification et usage final, pas par des affirmations generales du fournisseur. L'acheteur doit verifier grade, maille, COA, emballage, echantillon de 1 kg et documents de destination avant commande.",
+      "specTable": [
+        {
+          "label": "Revue principale",
+          "range": "Grade, maille, purete et usage final"
+        },
+        {
+          "label": "Document",
+          "range": "COA d'echantillon, specification et documents de destination"
+        },
+        {
+          "label": "Echantillon",
+          "range": "Echantillon de 1 kg si le grade et la destination correspondent"
+        },
+        {
+          "label": "Avant PO",
+          "range": "Confirmer lot, emballage, essais et delai"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que verifier en premier?",
+          "a": "Verifiez grade, maille, purete, COA, usage final, emballage, echantillon de 1 kg et documents du marche de destination."
+        },
+        {
+          "q": "Le COA d'echantillon approuve-t-il l'expedition finale?",
+          "a": "Non. Il aide a examiner les parametres. L'expedition finale doit etre revue avec le COA ou rapport du lot expedie."
+        },
+        {
+          "q": "Comment eviter les affirmations exagerees?",
+          "a": "Demandez perimetre, lot, methode d essai, resultat et document applicable. Refusez les affirmations generales sans preuve specifique."
+        },
+        {
+          "q": "Quand demander un echantillon?",
+          "a": "Avant de confirmer un volume commercial, surtout si hydratation, texture, maille ou documents reglementaires sont importants."
         }
       ]
     },
@@ -851,7 +2006,7 @@
         },
         {
           "heading": "MOQ et Politique d'Échantillons",
-          "body": "Notre approche avec les nouveaux acheteurs est d'abord l'échantillon. Nous fournissons des échantillons de 100–500 g avec COA complet avant toute commande d'achat.",
+          "body": "Notre approche avec les nouveaux acheteurs est d'abord l'échantillon. Nous confirmons la taille de l'échantillon, les options de révision COA et le délai avant toute commande d'achat.",
           "table": {
             "headers": [
               "Produit",
@@ -862,30 +2017,71 @@
             "rows": [
               [
                 "Écorce de Psyllium 99%",
-                "500 kg",
-                "100–200 g",
-                "15–20 jours après confirmation"
+                "Selon grade et documents",
+                "Après révision spécification",
+                "Après révision PO"
               ],
               [
                 "Poudre de Psyllium 95%",
-                "500 kg",
-                "100–200 g",
-                "15–20 jours après confirmation"
+                "Selon grade et documents",
+                "Après révision spécification",
+                "Après révision PO"
               ],
               [
                 "Écorce Bio",
-                "500 kg",
-                "100–200 g",
-                "20–25 jours selon stock"
+                "Selon portée documentaire",
+                "Après révision certificat",
+                "Après révision stock et documents"
               ],
               [
                 "Poudre Khakha",
-                "1.000 kg",
-                "200–500 g",
-                "10–15 jours après confirmation"
+                "Selon emballage et destination",
+                "Après révision usage",
+                "Après révision PO"
               ]
             ]
           }
+        },
+        {
+          "heading": "Point de decision achat",
+          "body": "Avant confirmation, reliez la specification au lot reel, au COA, a l echantillon de 1 kg, a l emballage et aux documents requis par le marche de destination."
+        }
+      ],
+      "aiSnapshot": "Fabricant d'Écorce de Psyllium Siddhpur Gujarat: Approvisionnement Direct Usine doit etre examine par lot, specification et usage final, pas par des affirmations generales du fournisseur. L'acheteur doit verifier grade, maille, COA, emballage, echantillon de 1 kg et documents de destination avant commande.",
+      "specTable": [
+        {
+          "label": "Revue principale",
+          "range": "Grade, maille, purete et usage final"
+        },
+        {
+          "label": "Document",
+          "range": "COA d'echantillon, specification et documents de destination"
+        },
+        {
+          "label": "Echantillon",
+          "range": "Echantillon de 1 kg si le grade et la destination correspondent"
+        },
+        {
+          "label": "Avant PO",
+          "range": "Confirmer lot, emballage, essais et delai"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que verifier en premier?",
+          "a": "Verifiez grade, maille, purete, COA, usage final, emballage, echantillon de 1 kg et documents du marche de destination."
+        },
+        {
+          "q": "Le COA d'echantillon approuve-t-il l'expedition finale?",
+          "a": "Non. Il aide a examiner les parametres. L'expedition finale doit etre revue avec le COA ou rapport du lot expedie."
+        },
+        {
+          "q": "Comment eviter les affirmations exagerees?",
+          "a": "Demandez perimetre, lot, methode d essai, resultat et document applicable. Refusez les affirmations generales sans preuve specifique."
+        },
+        {
+          "q": "Quand demander un echantillon?",
+          "a": "Avant de confirmer un volume commercial, surtout si hydratation, texture, maille ou documents reglementaires sont importants."
         }
       ]
     }
@@ -897,6 +2093,65 @@
       "Le khakha de psyllium est le sous-produit du broyage de l'enveloppe — le résidu de tégument de la graine restant après la séparation de l'enveloppe. Il contient une part significative du mucilage et des fibres alimentaires de la graine d'origine, ce qui en fait un ingrédient fonctionnel pour les aliments pour animaux.",
       "Pour les formulateurs d'aliments pour animaux, la poudre de khakha offre deux avantages : la densité en fibres et le coût. Par rapport à l'enveloppe entière, le khakha est proposé à un prix inférieur tout en apportant des fibres solubles qui favorisent la motilité intestinale et la rétention d'eau chez le bétail.",
       "L'approvisionnement en khakha en vrac nécessite de connaître l'origine du lot et les spécifications d'humidité. Le khakha de qualité pour aliments pour animaux doit présenter une humidité inférieure à 12%. Nous livrons en sacs de 25 kg, 50 kg et 1 000 kg (jumbo) avec documents d'origine et liste de colisage par expédition."
+    ],
+    "aiSnapshot": "psyllium khakha demand doit être examiné par lot, spécification et application, pas par des affirmations générales du fournisseur. Les acheteurs doivent vérifier feed grade, fiber, moisture, ash, particle size, packing, and destination use avant commande.",
+    "sections": [
+      {
+        "heading": "Ce que les acheteurs doivent vérifier",
+        "body": "Pour psyllium khakha demand, les acheteurs doivent vérifier feed grade, fiber, moisture, ash, particle size, packing, and destination use. L’objectif est de relier la demande commerciale au lot réel, à l’échantillon, au COA et aux documents de destination."
+      },
+      {
+        "heading": "Comment lire le COA ou la spécification",
+        "body": "Vérifiez paramètre, unité, méthode, résultat, limite, identité du lot et date du rapport. Si votre dossier exige une méthode ou une formulation précise, confirmez-la avant échantillon ou commande."
+      },
+      {
+        "heading": "Erreur fréquente",
+        "body": "N’achetez pas seulement sur un grade ou un mot-clé de certificat. Demandez ce que le lot testé soutient et quels documents peuvent être examinés."
+      },
+      {
+        "heading": "Comment RM peut aider",
+        "body": "RM peut examiner grade, maille, COA échantillon, spécification, emballage, origine et documents de destination avant commande."
+      }
+    ],
+    "specTable": [
+      {
+        "parameter": "Grade / Application",
+        "range": "Buyer-specific",
+        "method": "Specification review"
+      },
+      {
+        "parameter": "Sample Review",
+        "range": "1 kg sample where available",
+        "method": "Pre-PO review"
+      },
+      {
+        "parameter": "COA Parameters",
+        "range": "Lot-specific",
+        "method": "COA / third-party report where required"
+      },
+      {
+        "parameter": "Packing and Documents",
+        "range": "Destination-specific",
+        "method": "Buyer checklist"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Que confirmer avant commande ?",
+        "a": "Confirmez feed grade, fiber, moisture, ash, particle size, packing, and destination use, application cible, échantillon, emballage et documents de destination."
+      },
+      {
+        "q": "Un COA échantillon suffit-il pour approuver l’expédition finale ?",
+        "a": "Non. Il sert à la revue initiale. L’approbation finale doit utiliser le COA du lot expédié ou un rapport tiers si requis."
+      },
+      {
+        "q": "La formulation peut-elle suivre la spécification acheteur ?",
+        "a": "Elle peut être examinée seulement lorsque les résultats et documents du lot testé la soutiennent."
+      },
+      {
+        "q": "Comment éviter les retards d’achat ?",
+        "a": "Partagez grade, maille, application, pays de destination, volume mensuel et liste documentaire avant cotation."
+      }
     ]
   },
   "psyllium-cattle-feed-digestion": {
@@ -938,6 +2193,32 @@
       {
         "q": "Quel grade de psyllium est utilisé pour les suppléments d'élimination du sable chez les chevaux ?",
         "a": "Les acheteurs se procurent généralement de l'enveloppe de psyllium de qualité alimentaire à 95% de pureté ou de la poudre de khakha."
+      },
+      {
+        "q": "Quel document demander au fournisseur?",
+        "a": "Demandez COA d echantillon, specification, emballage, origine et documents de destination applicables avant commande."
+      },
+      {
+        "q": "Si une certification est exigee?",
+        "a": "Verifiez certificat reel, perimetre, organisme emetteur, validite et couverture produit ou lot avant approbation."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Ce que les acheteurs doivent vérifier",
+        "body": "Pour psyllium for cattle and equine feed, les acheteurs doivent vérifier feed-use suitability, fiber, moisture, ash, dosage plan, packing, and COA. L’objectif est de relier la demande commerciale au lot réel, à l’échantillon, au COA et aux documents de destination."
+      },
+      {
+        "heading": "Comment lire le COA ou la spécification",
+        "body": "Vérifiez paramètre, unité, méthode, résultat, limite, identité du lot et date du rapport. Si votre dossier exige une méthode ou une formulation précise, confirmez-la avant échantillon ou commande."
+      },
+      {
+        "heading": "Erreur fréquente",
+        "body": "N’achetez pas seulement sur un grade ou un mot-clé de certificat. Demandez ce que le lot testé soutient et quels documents peuvent être examinés."
+      },
+      {
+        "heading": "Comment RM peut aider",
+        "body": "RM peut examiner grade, maille, COA échantillon, spécification, emballage, origine et documents de destination avant commande."
       }
     ]
   },
@@ -980,6 +2261,32 @@
       {
         "q": "Quelle granulométrie est idéale pour la poudre d'enveloppe de psyllium en boulangerie ?",
         "a": "Une poudre fine de 80 mesh est la norme industrielle mondiale pour la panification industrielle sans gluten."
+      },
+      {
+        "q": "Quel document demander au fournisseur?",
+        "a": "Demandez COA d echantillon, specification, emballage, origine et documents de destination applicables avant commande."
+      },
+      {
+        "q": "Si une certification est exigee?",
+        "a": "Verifiez certificat reel, perimetre, organisme emetteur, validite et couverture produit ou lot avant approbation."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Ce que les acheteurs doivent vérifier",
+        "body": "Pour whole husk versus husk powder, les acheteurs doivent vérifier application, mesh, hydration speed, texture, dosage, sample trial, and COA. L’objectif est de relier la demande commerciale au lot réel, à l’échantillon, au COA et aux documents de destination."
+      },
+      {
+        "heading": "Comment lire le COA ou la spécification",
+        "body": "Vérifiez paramètre, unité, méthode, résultat, limite, identité du lot et date du rapport. Si votre dossier exige une méthode ou une formulation précise, confirmez-la avant échantillon ou commande."
+      },
+      {
+        "heading": "Erreur fréquente",
+        "body": "N’achetez pas seulement sur un grade ou un mot-clé de certificat. Demandez ce que le lot testé soutient et quels documents peuvent être examinés."
+      },
+      {
+        "heading": "Comment RM peut aider",
+        "body": "RM peut examiner grade, maille, COA échantillon, spécification, emballage, origine et documents de destination avant commande."
       }
     ]
   }

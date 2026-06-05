@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certificate of Analysis — Psyllium Husk 95% · RM Psyllium</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green-deep:  #1b3828;
+    --green-mid:   #2e5a3e;
+    --green-soft:  #edf2ee;
+    --gold:        #9e7635;
+    --gold-light:  #c9a55a;
+    --cream:       #f6f3ee;
+    --stone:       #8a857e;
+    --border:      #d4cec5;
+    --text:        #1a1a18;
+    --text-soft:   #4a4a46;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 9pt;
+    color: var(--text);
+    background: #ddd9d3;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* ────────── PAGE SHELL ────────── */
+  .page {
+    position: relative;
+    width: 210mm;
+    min-height: 297mm;
+    margin: 7mm auto;
+    background: #fff;
+    box-shadow: 0 4px 28px rgba(0,0,0,0.14);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* ────────── WATERMARK ────────── */
+  .watermark {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-22deg);
+    width: 135mm;
+    opacity: 0.06;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .page-inner, .page-footer { position: relative; z-index: 1; }
+
+  .page-inner {
+    padding: 7mm 13mm 3mm 13mm;
+    flex: 1;
+  }
+
+  /* ────────── HEADER ────────── */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  .logo-img {
+    height: 88px;
+    width: auto;
+    filter: contrast(1.15) saturate(1.1);
+  }
+
+  .contact-block {
+    text-align: right;
+    font-size: 8pt;
+    line-height: 1.9;
+    color: var(--text);
+  }
+
+  .contact-block .contact-line {
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+
+  .contact-block .contact-line .ci {
+    font-style: normal;
+    margin-right: 4px;
+    font-size: 8.5pt;
+  }
+
+  .contact-block .tagline {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 8pt;
+    color: var(--green-deep);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  .header-rule {
+    height: 0.75px;
+    background: linear-gradient(to right, transparent 0%, var(--gold) 15%, var(--gold) 85%, transparent 100%);
+    margin-bottom: 8px;
+  }
+
+  /* ────────── DOC TITLE ────────── */
+  .doc-title-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 4px 0 8px 0;
+  }
+
+  .doc-title-rule {
+    flex: 1;
+    height: 0.75px;
+    background: var(--border);
+  }
+
+  .doc-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 14pt;
+    font-weight: 700;
+    color: var(--green-deep);
+    letter-spacing: 0.30em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  /* ────────── COA META (product + batch) ────────── */
+  .coa-product {
+    background: var(--green-deep);
+    color: #fff;
+    padding: 7px 12px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  .coa-product .cp-label {
+    font-size: 6.8pt;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--gold-light);
+    white-space: nowrap;
+  }
+
+  .coa-product .cp-value {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10.5pt;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  .coa-batch {
+    display: flex;
+    border: 0.5px solid var(--border);
+    border-top: none;
+    margin-bottom: 8px;
+  }
+
+  .coa-batch .cb-item {
+    flex: 1;
+    padding: 5px 11px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .coa-batch .cb-item + .cb-item {
+    border-left: 0.5px solid var(--border);
+  }
+
+  .coa-batch .cb-label {
+    font-size: 6.5pt;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+  }
+
+  .coa-batch .cb-value {
+    font-size: 9pt;
+    color: var(--text);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  /* ────────── SECTION HEADING ────────── */
+  .sec-head {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin: 9px 0 4px 0;
+  }
+
+  .sec-head-bar {
+    width: 3px;
+    height: 13px;
+    background: var(--gold);
+    border-radius: 1px;
+    flex-shrink: 0;
+  }
+
+  .sec-head-text {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 9.5pt;
+    font-weight: 700;
+    color: var(--green-deep);
+    letter-spacing: 0.07em;
+  }
+
+  .sec-head-line {
+    flex: 1;
+    height: 0.75px;
+    background: var(--border);
+  }
+
+  /* ────────── RESULTS TABLE ────────── */
+  .dt {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 6px;
+    font-size: 8.3pt;
+  }
+
+  .dt td, .dt th {
+    border: 0.5px solid var(--border);
+    padding: 3.6px 9px;
+    vertical-align: top;
+    line-height: 1.45;
+  }
+
+  .dt tbody tr:nth-child(odd)  td { background: #fff; }
+  .dt tbody tr:nth-child(even) td { background: var(--cream); }
+
+  /* left column — test name */
+  .dt td.lbl {
+    width: 27%;
+    font-weight: 600;
+    color: var(--green-deep);
+    font-size: 7.6pt;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  /* specification column */
+  .dt td.spec {
+    width: 46%;
+    font-size: 8.4pt;
+    color: var(--text-soft);
+    font-weight: 400;
+    letter-spacing: 0.01em;
+  }
+
+  /* result column */
+  .dt td.res {
+    width: 27%;
+    font-size: 8.8pt;
+    color: var(--green-mid);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+
+  /* column header row */
+  .dt thead tr th {
+    background: var(--green-deep);
+    color: #fff;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 600;
+    font-size: 8.5pt;
+    letter-spacing: 0.06em;
+    text-align: left;
+    padding: 6px 10px;
+    border-color: var(--green-mid);
+  }
+
+  /* span header inside tbody */
+  .dt .span-head td {
+    background: var(--green-mid) !important;
+    color: #fff !important;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 600;
+    font-size: 8.4pt;
+    letter-spacing: 0.07em;
+    padding: 5px 10px;
+    border-color: var(--green-mid);
+    text-transform: uppercase;
+  }
+
+  /* ────────── CONFORMS / REMARKS ────────── */
+  .conforms {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    background: var(--green-soft);
+    border: 0.5px solid var(--gold-light);
+    border-left: 3px solid var(--gold);
+    padding: 7px 12px;
+    margin: 8px 0 4px 0;
+    font-size: 8.4pt;
+    color: var(--green-deep);
+    line-height: 1.5;
+  }
+
+  .conforms .seal {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    font-size: 9pt;
+    color: var(--gold);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  /* ────────── SIGNATURE BLOCK ────────── */
+  .sign-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border: 0.5px solid var(--border);
+    margin-top: 14px;
+  }
+
+  .sign-cell {
+    padding: 10px 14px 9px 14px;
+    text-align: center;
+  }
+
+  .sign-cell + .sign-cell {
+    border-left: 0.5px solid var(--border);
+  }
+
+  .sign-role {
+    font-size: 6.8pt;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+    margin-bottom: 30px;
+  }
+
+  .sign-line {
+    height: 0.75px;
+    background: var(--text-soft);
+    margin: 0 8px 4px 8px;
+  }
+
+  .sign-name {
+    font-size: 8.2pt;
+    font-weight: 600;
+    color: var(--green-deep);
+    letter-spacing: 0.03em;
+  }
+
+  .sign-title {
+    font-size: 7pt;
+    color: var(--stone);
+    letter-spacing: 0.04em;
+    margin-top: 1px;
+  }
+
+  /* ────────── NOTE ────────── */
+  .note {
+    font-size: 7.8pt;
+    color: var(--stone);
+    border-left: 2px solid var(--gold);
+    padding: 4px 9px;
+    margin: 8px 0 4px 0;
+    line-height: 1.55;
+    letter-spacing: 0.01em;
+  }
+
+  /* ────────── PAGE FOOTER ────────── */
+  .page-footer {
+    margin-top: 4mm;
+  }
+
+  .footer-num-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 13mm;
+    font-size: 7pt;
+    color: var(--stone);
+    letter-spacing: 0.05em;
+    border-top: 0.75px solid var(--border);
+  }
+
+  .footer-num-row .doc-ref { font-style: italic; }
+
+  .footer-bar {
+    background: var(--green-deep);
+    color: rgba(255,255,255,0.78);
+    font-size: 7.5pt;
+    text-align: center;
+    padding: 5.5px 13mm;
+    letter-spacing: 0.04em;
+    border-top: 1.5px solid var(--gold);
+  }
+
+  /* ────────── PRINT ────────── */
+  @media print {
+    @page { margin: 0; size: A4; }
+    body { background: #fff; }
+    .page {
+      margin: 0;
+      box-shadow: none;
+      width: 210mm;
+      height: 297mm;
+      overflow: hidden;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- ════════════════════════════ CERTIFICATE OF ANALYSIS ════════════════════════════ -->
+<div class="page">
+  <img src="./logo.png" class="watermark" alt="">
+  <div class="page-inner">
+
+    <!-- HEADER -->
+    <div class="header">
+      <img src="./logo.png" class="logo-img" alt="RM Psyllium">
+      <div class="contact-block">
+        <div class="tagline">Manufacturer of Psyllium Products</div>
+        <div class="contact-line"><span class="ci">📞</span>8949817791, 8000008381</div>
+        <div class="contact-line"><span class="ci">📧</span>export@rmpsyllium.com</div>
+        <div class="contact-line"><span class="ci">🌐</span>rmpsyllium.com</div>
+      </div>
+    </div>
+
+    <div class="header-rule"></div>
+
+    <!-- DOC TITLE -->
+    <div class="doc-title-row">
+      <div class="doc-title-rule"></div>
+      <div class="doc-title">Certificate of Analysis</div>
+      <div class="doc-title-rule"></div>
+    </div>
+
+    <!-- PRODUCT NAME -->
+    <div class="coa-product">
+      <span class="cp-label">Name of Product</span>
+      <span class="cp-value">Psyllium Husk 95% Pure, Whole (Premium Quality)</span>
+    </div>
+
+    <!-- BATCH / DATE BLOCK -->
+    <div class="coa-batch">
+      <div class="cb-item">
+        <span class="cb-label">Batch No.</span>
+        <span class="cb-value">RM/PH95/2605/148</span>
+      </div>
+      <div class="cb-item">
+        <span class="cb-label">Mfg. Date</span>
+        <span class="cb-value">05 / 2026</span>
+      </div>
+      <div class="cb-item">
+        <span class="cb-label">Exp. Date</span>
+        <span class="cb-value">05 / 2028</span>
+      </div>
+      <div class="cb-item">
+        <span class="cb-label">Release Date</span>
+        <span class="cb-value">26 / 05 / 2026</span>
+      </div>
+    </div>
+
+    <!-- ANALYSIS -->
+    <table class="dt">
+      <thead>
+        <tr>
+          <th>Name of Test</th>
+          <th>Specification</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="lbl">Botanical Name</td><td class="spec">….</td><td class="res">Plantago Ovata</td></tr>
+        <tr><td class="lbl">Purity</td><td class="spec">NLT 95%</td><td class="res">95.37%</td></tr>
+        <tr><td class="lbl">Colour (L*)</td><td class="spec">70 – 71</td><td class="res">70.83</td></tr>
+        <tr><td class="lbl">Appearance</td><td class="spec">Pale to medium buff coloured husk having a slight pinkish tinge, a weak characteristic odor and a very mucilaginous taste.</td><td class="res">Pass</td></tr>
+        <tr>
+          <td class="lbl">Identification</td>
+          <td class="spec"><strong>A:</strong> Mounted in cresol-cells, viewed microscopically, are composed of polygonal prismatic cells having 4 to 6 straight or slightly wavy walls. <strong>B:</strong> Mounted in alcohol and irrigated with water, viewed microscopically, the mucilage in the outer part of the epidermal cells swells rapidly and goes into solution.</td>
+          <td class="res">Pass</td>
+        </tr>
+        <tr><td class="lbl">Total Ash</td><td class="spec">NMT 4.0%</td><td class="res">2.34%</td></tr>
+        <tr><td class="lbl">Acid Insoluble Ash</td><td class="spec">NMT 1.0%</td><td class="res">0.30%</td></tr>
+        <tr><td class="lbl">Swell Volume</td><td class="spec">NLT 40 ml/gm</td><td class="res">48.00 ml/gm</td></tr>
+        <tr><td class="lbl">Moisture</td><td class="spec">NMT 12%</td><td class="res">8.29%</td></tr>
+        <tr><td class="lbl">Light Extraneous Matter</td><td class="spec">NMT 5%</td><td class="res">4.63%</td></tr>
+      </tbody>
+    </table>
+
+    <!-- CONFORMS STATEMENT -->
+    <div class="conforms">
+      <span class="seal">Remarks</span>
+      <span>From the above results, we certify that sample conforms to <strong>USP-41</strong> in above respects.</span>
+    </div>
+
+    <p class="note">This Certificate of Analysis is issued for the batch / lot referenced above and is valid only for the consignment supplied against it. Results are based on representative samples drawn at the time of dispatch.</p>
+
+    <!-- SIGNATURES -->
+    <div class="sign-grid">
+      <div class="sign-cell">
+        <div class="sign-role">Analysed by</div>
+        <div class="sign-line"></div>
+        <div class="sign-name">_________________________</div>
+        <div class="sign-title">Quality Control Chemist</div>
+      </div>
+      <div class="sign-cell">
+        <div class="sign-role">Approved by</div>
+        <div class="sign-line"></div>
+        <div class="sign-name">_________________________</div>
+        <div class="sign-title">Quality Assurance Manager</div>
+      </div>
+    </div>
+
+  </div><!-- /page-inner -->
+
+  <div class="page-footer">
+    <div class="footer-num-row">
+      <span class="doc-ref">Certificate of Analysis</span>
+      <span>Page 1 of 1</span>
+    </div>
+    <div class="footer-bar">RM Psyllium, Patan Road, Khali, Char Rasta, Nedra, Siddhpur, Gujarat 384151</div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -43,7 +43,7 @@ Slide 4: Sourcing the Mismatch
 Slide 5: Direct Sourcing Tailored to Your Spec
 - Custom spec milling: We adjust our air classifiers to deliver the exact particle size distribution (PSD) you need.
 - Lot-level validation: Sieve analysis results are documented on every accredited COA.
-- Rapid sample testing: 100g to 500g lab-verified samples shipped to your lab in 5 days.
+- Rapid sample review: sample size, documents, and dispatch timing confirmed after grade and destination review.
 ```
 
 #### 💼 LinkedIn Caption
@@ -84,7 +84,7 @@ Whether you are formulating dietary capsules, high-fiber supplement drinks, or g
 🧪 40 Mesh Coarse: Slow absorption, high visual texture.
 🧪 100 Mesh Fine: Rapid hydration, seamless integration.
 
-We custom-mill to your exact formulation specs in Siddhpur, Gujarat. Tap the link in our bio to request a lot-certified 100g-500g lab sample!
+We custom-mill to your exact formulation specs in Siddhpur, Gujarat. Tap the link in our bio to request a sample review!
 
 #psyllium #foodscience #foodingredients #glutenfreebaking #cleanlabel #qualityassurance #pharmaceuticals #supplychain
 ```
@@ -112,12 +112,12 @@ Slide 3: Why Does Swelling Volume Drop?
 Slide 4: Sourcing Quality, De-risked
 - At RM Psyllium, we utilize temperature-controlled milling rooms to prevent polysaccharide degradation.
 - Multi-stage air classifiers systematically remove seed coat impurities.
-- Every batch is tested in NABL-accredited labs using official USP swelling methodologies.
+- Buyer-required lots can be tested through third-party NABL-accredited labs using official USP swelling methodologies.
 
 Slide 5: Secure High-Performance Batches
 - No generic, "representative" certificates.
-- Your specific lot gets its own pre-shipment NABL-accredited COA.
-- Get a 100g–500g certified sample delivered to your global R&D lab in 5 days.
+- Your specific lot gets its own pre-shipment third-party NABL-accredited lab report.
+- Request a sample review; size, documents, and dispatch timing are confirmed after grade and destination review.
 ```
 
 #### 💼 LinkedIn Caption
@@ -133,7 +133,7 @@ Why does this number drop in cheap sourcing lots?
 2. Lot-blending: Trading desks blending low-grade bypass fractions (khakha powder) to meet a price point.
 3. Thermal degradation: Overheating the crop during grinding, which shears the polysaccharide chains.
 
-We monitor swelling volume at every milling stage inside our Siddhpur crop-belt facility. Every single shipment is backed by a lot-specific NABL COA showing the exact swell volume—verified before the container leaves Mundra port.
+We monitor swelling volume at every milling stage inside our Siddhpur crop-belt facility. Every single shipment is backed by a third-party NABL-accredited lab report where requested showing the exact swell volume—verified before the container leaves Mundra port.
 
 👉 Request a sample with a lot-specific COA for your next production run: https://rmpsyllium.com/en/products/psyllium-husk/
 
@@ -148,7 +148,7 @@ We monitor swelling volume at every milling stage inside our Siddhpur crop-belt 
 
 3/ Three culprits: Seed coat contamination (non-swelling embryo fragments mixed in), thermal degradation during high-speed grinding, or broker lot-blending using low-viscosity khakha powder.
 
-4/ We utilize temperature-controlled milling and multi-stage air classifiers to consistently exceed 40 ml/g swelling volumes. Test the difference with a certified 100g-500g lab sample: https://rmpsyllium.com/en/products/psyllium-husk/
+4/ We utilize temperature-controlled milling and multi-stage air classifiers to consistently exceed 40 ml/g swelling volumes. Test the difference with a sample review: https://rmpsyllium.com/en/products/psyllium-husk/
 ```
 
 #### 📸 Instagram Caption (Visual Post)
@@ -221,7 +221,7 @@ At RM Psyllium, we utilize multi-stage dry-air classifiers and continuous labora
 
 3/ Furthermore, high moisture triggers premature gelation. The psyllium absorbs atmospheric humidity inside the bag, leaving you with clumped powder and destroyed swelling capacity.
 
-4/ We run continuous dry-air processing at our Siddhpur mill to keep moisture under 10%, backed by lot-specific NABL COAs. No generic certificates. Safeguard your supply chain: https://rmpsyllium.com/en/compliance/
+4/ We run continuous dry-air processing at our Siddhpur mill to keep moisture under 10%, backed by third-party NABL-accredited lab reports where requested. No generic certificates. Safeguard your supply chain: https://rmpsyllium.com/en/compliance/
 ```
 
 ---
@@ -251,7 +251,7 @@ Slide 4: Advanced Mechanical Cleaning
 
 Slide 5: Clean Formulations Start at the Source
 - High-purity milling with zero chemical bleaching or acid washing.
-- NABL-certified lot-specific laboratory verification.
+- third-party NABL-accredited lab-tested lot-specific laboratory verification.
 - Request your certified sample today: https://rmpsyllium.com/en/products/psyllium-husk/
 ```
 
@@ -311,7 +311,7 @@ Slide 4: Engineering Temperature Control
 
 Slide 5: Performance-First Sourcing
 - Validate our swelling volume and viscosity parameters in your own lab.
-- 100g to 500g lab samples shipped in 5 business days with full lot-specific NABL COAs.
+- sample options, dispatch timing, and third-party NABL-accredited lab reports confirmed where requested.
 - Build your technical spec: https://rmpsyllium.com/en/products/psyllium-husk-powder/
 ```
 
@@ -402,7 +402,7 @@ Understanding the polymer chemistry allows us to mill psyllium to support your e
 
 3/ It forms a stable mucilage gel that performs consistently from pH 2 to 10. Excellent for acidic dietary drinks and gluten-free baking where structure-building is critical.
 
-4/ We preserve this native polymer structure through gentle mechanical processing in Siddhpur, Gujarat. Secure a lot-certified 100g-500g lab sample to test: https://rmpsyllium.com/en/products/psyllium-husk/
+4/ We preserve this native polymer structure through gentle mechanical processing in Siddhpur, Gujarat. Secure a lot-sample review to test: https://rmpsyllium.com/en/products/psyllium-husk/
 ```
 
 ---
@@ -492,7 +492,7 @@ Slide 4: In-Mill Sterilization & Packing
 
 Slide 5: Safe Sourcing with Direct Mill Pricing
 - Shipped direct from our Siddhpur crop-belt processing facility.
-- Full trace-ready paperwork with lot-specific NABL COAs.
+- Full trace-ready paperwork with third-party NABL-accredited lab reports where requested.
 - Request your certified sample today: https://rmpsyllium.com/en/products/psyllium-husk/
 ```
 
@@ -507,7 +507,7 @@ How we keep microbial loads consistently below strict B2B specs:
 2. Enclosed Automation: Our Siddhpur milling and packaging facility utilizes fully enclosed, automated lines, completely eliminating human-touch contamination during the critical packing phases.
 3. Clean-Air Systems: Positive pressure clean-air systems in our packing rooms prevent the introduction of airborne yeast and mold spores.
 
-Every batch is validated via accredited NABL laboratory testing. 
+Buyer-required lots can be tested through third-party NABL-accredited laboratory testing. 
 
 👉 Review our complete microbiological compliance standards: https://rmpsyllium.com/en/compliance/
 
@@ -520,9 +520,9 @@ Every batch is validated via accredited NABL laboratory testing.
 
 2/ We manage microbial risks through structural engineering: keeping moisture strictly <10% to halt mold growth, and running fully automated, enclosed milling and packing lines.
 
-3/ Our packing rooms operate under positive pressure clean-air systems to block airborne spores. Every single lot gets NABL validation before container loading at Mundra port.
+3/ Our packing rooms operate under positive pressure clean-air systems to block airborne spores. Every single lot gets third-party lab review before container loading at Mundra port.
 
-4/ Direct-from-source processing means knowing exactly what goes into the bag. Request a lot-certified 100g-500g lab sample: https://rmpsyllium.com/en/products/psyllium-husk/
+4/ Direct-from-source processing means knowing exactly what goes into the bag. Request a sample review: https://rmpsyllium.com/en/products/psyllium-husk/
 ```
 
 ---
@@ -552,7 +552,7 @@ Slide 4: Choosing the Spec
 
 Slide 5: Direct-from-Source Performance Sourcing
 - Every batch is tested using Brookfield viscometers and USP swelling cylinders.
-- Shipped direct from our Siddhpur facility with lot-specific NABL COAs.
+- Shipped direct from our Siddhpur facility with third-party NABL-accredited lab reports where requested.
 - Request your certified sample today: https://rmpsyllium.com/en/products/psyllium-husk-powder/
 ```
 
@@ -609,11 +609,11 @@ Slide 3: Sieve Spec Breakdown (80 Mesh Example)
 Slide 4: Engineering the Sieve Profile
 - We adjust our mechanical mills and air classifiers to match your PSD limits.
 - Regular in-process sieve testing maintains lot-to-lot consistency.
-- Sieve analysis results are documented on every accredited NABL COA.
+- Sieve analysis results are documented on every accredited third-party NABL-accredited lab report.
 
 Slide 5: Secure Your Spec-Matching Sourcing
 - Sourced directly from our Siddhpur facility.
-- Standard 100g to 500g lab samples shipped in 5 business days with full lot-specific NABL COAs.
+- Standard sample options, dispatch timing, and third-party NABL-accredited lab reports confirmed where requested.
 - Request your certified sample today: https://rmpsyllium.com/en/products/psyllium-husk-powder/
 ```
 
@@ -628,7 +628,7 @@ A generic "average mesh size" is not enough. You must specify:
 2. Target Fraction: The exact percentage that must pass through your target mesh (e.g., >90% through 80 mesh).
 3. Fines Fraction: The maximum percentage of super-fine dust allowed, which can cause severe clumping in blending lines.
 
-At RM Psyllium, we run mechanical sieve analysis on every batch at our Siddhpur crop-belt facility. The exact PSD breakdown is recorded on your lot-specific NABL COA.
+At RM Psyllium, we run mechanical sieve analysis on every batch at our Siddhpur crop-belt facility. The exact PSD breakdown is recorded on your third-party NABL-accredited lab report where requested.
 
 👉 Review our particle size and custom milling capabilities: https://rmpsyllium.com/en/products/psyllium-husk-powder/
 
@@ -641,7 +641,7 @@ At RM Psyllium, we run mechanical sieve analysis on every batch at our Siddhpur 
 
 2/ A poor PSD means your batch has a mix of coarse grit (jams capsule filling machinery) and fine dust (absorbs moisture rapidly, causing clumping).
 
-3/ We vibrating-screen every lot through standard wire-mesh sieves at our Siddhpur plant to guarantee that 90%+ matches the target mesh. The full PSD is on your lot-specific NABL COA.
+3/ We vibrating-screen every lot through standard wire-mesh sieves at our Siddhpur plant to guarantee that 90%+ matches the target mesh. The full PSD is on your third-party NABL-accredited lab report where requested.
 
 4/ Direct-from-source engineering means matching our machinery to your formula. Get a certified lab sample: https://rmpsyllium.com/en/products/psyllium-husk-powder/
 ```
@@ -701,7 +701,7 @@ We share our comprehensive, lot-specific multi-residue test reports with your co
 
 2/ EU standards set MRLs at the Limit of Quantification (0.01 mg/kg)—effectively zero-tolerance. Systemic insecticides used by unmonitored farmers accumulate in the outer psyllium husk.
 
-3/ We bypass brokers and source directly from audited farming zones in Gujarat. Every batch is screened via GC-MS/MS & LC-MS/MS for 200+ compounds at NABL labs.
+3/ We bypass brokers and source directly from audited farming zones in Gujarat. Buyer-required lots can be screened via GC-MS/MS and LC-MS/MS for pesticide residues through third-party NABL-accredited labs.
 
 4/ Direct-from-source tracking is the only way to guarantee pesticide compliance. Secure your certified B2B supply: https://rmpsyllium.com/en/compliance/
 ```
@@ -733,7 +733,7 @@ Slide 4: Advanced Laboratory Detection
 
 Slide 5: Direct Sourcing, De-risked
 - We manage raw seed dehushing, cleaning, and milling completely in-house in Siddhpur.
-- Every batch is tested in NABL-accredited labs with lot-specific COAs.
+- Buyer-required lots can be tested through third-party NABL-accredited labs with lot-specific reports.
 - Request your certified sample today: https://rmpsyllium.com/en/products/psyllium-husk/
 ```
 
@@ -748,7 +748,7 @@ This dilution creates severe issues for buyers:
 2. Ash Spike: Khakha is heavily contaminated with soil, sand, and farming dust, causing your Total Ash parameters to fail compliance.
 3. Micro Hazards: Raw agricultural residues harbor high bacterial and mold spore counts.
 
-At RM Psyllium, we operate a single, transparent margin. We process everything in-house at our Siddhpur crop-belt facility with lot-specific NABL validation and zero broker blend-ins.
+At RM Psyllium, we operate a single, transparent margin. We process everything in-house at our Siddhpur crop-belt facility with lot-specific third-party lab review and zero broker blend-ins.
 
 👉 Challenge your supplier's quality with a certified sample from us: https://rmpsyllium.com/en/products/psyllium-husk/
 
@@ -793,7 +793,7 @@ Slide 4: The Clean-Label Advantage
 
 Slide 5: Direct-from-Source Clean Sourcing
 - Processing controlled completely in-house in Siddhpur, Gujarat.
-- Lot-specific NABL COAs and comprehensive regulatory documentation.
+- Third-party NABL-accredited lab reports where requested and comprehensive regulatory documentation.
 - Request your certified sample today: https://rmpsyllium.com/en/compliance/
 ```
 
@@ -824,7 +824,7 @@ We utilize multi-stage dry-air classifiers and high-frequency screens to complet
 
 3/ We achieve 99% purity through 100% mechanical separation in Siddhpur. Multi-stage dry-air classifiers isolate the husk without chemical washes.
 
-4/ Secure your solvent-free, clean-label supply chain. Request a lot-certified 100g-500g lab sample to test: https://rmpsyllium.com/en/compliance/
+4/ Secure your solvent-free, clean-label supply chain. Request a sample review to test: https://rmpsyllium.com/en/compliance/
 ```
 
 ---
@@ -854,7 +854,7 @@ Slide 4: Preserving Native Molecular Weights
 
 Slide 5: Direct Sourcing for B2B Formulations
 - Sourced directly from our Siddhpur facility with direct-from-source pricing.
-- Complete lot-level testing and accredited NABL COAs.
+- Complete lot-level testing and third-party NABL-accredited lab reports.
 - Request your certified sample today: https://rmpsyllium.com/en/products/psyllium-husk-powder/
 ```
 
@@ -913,7 +913,7 @@ Slide 4: Red Flag 3: Undefined Particle Size Distribution (PSD)
 - Tight tolerances prevent clumping and machine wear.
 
 Slide 5: Safe Sourcing with Direct Mill Pricing
-- We provide transparent, lot-specific NABL-accredited COAs before shipment dispatch.
+- We can arrange transparent third-party NABL-accredited lab reports where requested before shipment dispatch.
 - Direct physical facility audit options at our Siddhpur facility.
 - Review our complete trade compliance standards: https://rmpsyllium.com/en/compliance/
 ```
@@ -932,7 +932,7 @@ Here are 5 red flags procurement and QA teams must spot on a psyllium COA before
 4. Missing Heavy Metal Testing: The COA lacks lot-specific ICP-MS results for Lead, Cadmium, Arsenic, and Mercury.
 5. Inconsistent Lot Numbers: The batch code on the COA does not match the batch codes printed on the shipping bags.
 
-At RM Psyllium, we believe in complete document transparency. Every container gets its own lot-specific NABL COA showing exact values.
+At RM Psyllium, we believe in complete document transparency. Every container gets its own third-party NABL-accredited lab report where requested showing exact values.
 
 👉 Review our compliance and documentation standard: https://rmpsyllium.com/en/compliance/
 
@@ -947,7 +947,7 @@ At RM Psyllium, we believe in complete document transparency. Every container ge
 
 3/ Red Flag 2: "Representative" footnotes. This means they are using one lab test from 6 months ago to cover hundreds of different batches. Every container needs its own lot-specific NABL test.
 
-4/ We provide transparent, lot-specific NABL-accredited COAs for every single export shipment. No broker shortcuts. Protect your supply chain: https://rmpsyllium.com/en/compliance/
+4/ We can arrange third-party NABL-accredited lab reports where requested for buyer-specified lots. No broker shortcuts. Protect your supply chain: https://rmpsyllium.com/en/compliance/
 ```
 
 ---
@@ -979,7 +979,7 @@ Slide 4: Choosing the Spec
 
 Slide 5: Direct Sourcing for Commercial Bakeries
 - Sourced directly from our Siddhpur facility with direct-from-source pricing.
-- Complete lot-level testing and accredited NABL COAs.
+- Complete lot-level testing and third-party NABL-accredited lab reports.
 - Request your certified sample today: https://rmpsyllium.com/en/products/psyllium-husk-powder/
 ```
 
@@ -1049,11 +1049,11 @@ Slide 3: Mesh Specification: 100 Mesh Fine Powder
 Slide 4: Jacketed Cooling Processing
 - We prevent thermal degradation by running mills strictly below 50°C.
 - Preserves natural flowability and prevents static charge build-up during grinding.
-- Sieve analysis verified on every lot-specific NABL COA.
+- Sieve analysis verified on every third-party NABL-accredited lab report where requested.
 
 Slide 5: Safe Sourcing with Direct Mill Pricing
 - Shipped directly from our Siddhpur facility with direct-from-source pricing.
-- 100g to 500g lab samples shipped in 5 business days.
+- sample options confirmed after grade and destination review.
 - Request your certified sample today: https://rmpsyllium.com/en/products/psyllium-husk-powder/
 ```
 
@@ -1112,7 +1112,7 @@ Slide 4: Sourcing the Veterinary Spec
 
 Slide 5: Safe Sourcing with Direct Mill Sourcing
 - Processing controlled completely in-house in Siddhpur, Gujarat.
-- Lot-specific NABL COAs and comprehensive regulatory documentation.
+- Third-party NABL-accredited lab reports where requested and comprehensive regulatory documentation.
 - Request your certified sample today: https://rmpsyllium.com/en/products/psyllium-cattle-feed/
 ```
 
@@ -1172,7 +1172,7 @@ Slide 4: Direct Sourcing for Drink Formulations
 
 Slide 5: Safe Sourcing with Direct Mill Pricing
 - Shipped directly from our Siddhpur facility with direct-from-source pricing.
-- Standard 100g to 500g lab samples shipped in 5 business days.
+- Standard sample options confirmed after grade and destination review.
 - Request your certified sample today: https://rmpsyllium.com/en/products/psyllium-husk-powder/
 ```
 
@@ -1231,7 +1231,7 @@ Slide 4: Choosing the Spec
 
 Slide 5: Safe Sourcing with Direct Mill Sourcing
 - Processing controlled completely in-house in Siddhpur, Gujarat.
-- Lot-specific NABL COAs and comprehensive regulatory documentation.
+- Third-party NABL-accredited lab reports where requested and comprehensive regulatory documentation.
 - Request your certified sample today: https://rmpsyllium.com/en/products/psyllium-husk-powder/
 ```
 
@@ -1291,7 +1291,7 @@ Slide 4: Sourcing the Food Spec
 
 Slide 5: Safe Sourcing with Direct Mill Pricing
 - Shipped directly from our Siddhpur facility with direct-from-source pricing.
-- Complete lot-level testing and accredited NABL COAs.
+- Complete lot-level testing and third-party NABL-accredited lab reports.
 - Request your certified sample today: https://rmpsyllium.com/en/products/psyllium-husk-powder/
 ```
 
@@ -1306,7 +1306,8 @@ How psyllium optimizes processed meats:
 2. Fat Replacement: It mimics the clean, juicy mouthfeel of animal fats in low-fat sausages and plant-based burger patties.
 3. Stable Emulsification: Prevents syneresis (oil and water separation) during thermal processing, maintaining product weight and texture.
 
-At RM Psyllium, we supply ultra-clean, NABL-certified food-grade powders with moisture levels strictly under 10% to support clean-label food brands.
+At RM Psyllium, we supply food-grade powders for buyer-specified applications.
+Third-party NABL-accredited lab reports can be arranged where buyer specifications require them.
 
 👉 Review our food-grade specifications: https://rmpsyllium.com/en/products/psyllium-husk-powder/
 
@@ -1321,7 +1322,7 @@ At RM Psyllium, we supply ultra-clean, NABL-certified food-grade powders with mo
 
 3/ Psyllium mimics the clean, juicy mouthfeel of fats in low-fat sausages and plant-based burger patties without synthetic chemical binders.
 
-4/ We supply NABL-certified, pesticide-free food-grade powders directly from our Siddhpur crop-belt facility. Secure a certified sample: https://rmpsyllium.com/en/products/psyllium-husk-powder/
+4/ We can arrange third-party NABL-accredited lab testing for buyer-specified food-grade powder lots. Secure a certified sample: https://rmpsyllium.com/en/products/psyllium-husk-powder/
 ```
 
 ---
@@ -1351,7 +1352,7 @@ Slide 4: Sourcing the Feed-Grade Spec
 
 Slide 5: Safe Sourcing with Direct Mill Sourcing
 - Sourced directly from our Siddhpur facility with direct-from-source pricing.
-- Complete lot-level testing and accredited NABL COAs.
+- Complete lot-level testing and third-party NABL-accredited lab reports.
 - Request your certified sample today: https://rmpsyllium.com/en/products/psyllium-cattle-feed/
 ```
 
@@ -1407,7 +1408,7 @@ Slide 3: High Purity Specifications
 Slide 4: Quality & Compliance Control
 - Sourced exclusively from audited farming belts in North Gujarat.
 - Enclosed, positive-pressure milling rooms ensure zero contamination.
-- Full trace-ready paperwork with lot-specific NABL accredited COAs.
+- Full trace-ready paperwork with third-party NABL-accredited lab reports where requested.
 
 Slide 5: Safe Sourcing with Direct Mill Pricing
 - Shipped directly from our Siddhpur facility with direct-from-source pricing.
@@ -1426,7 +1427,7 @@ The therapeutic mechanism of high-purity psyllium mucilage:
 2. Glycemic Management: By creating a viscous matrix, it slows down enzymatic carbohydrate digestion, flattening post-meal blood glucose spikes.
 3. Digestive Stability: High swelling volume (>40 ml/g) regulates transit time, supporting clinical treatments for IBS.
 
-To support medical-grade formulations, we supply high-purity 99% USP grade psyllium husk, with total ash strictly below 3% and complete lot-specific NABL testing.
+To support medical-grade formulations, buyers should review the target lot COA for purity, ash, and buyer-specified pharmacopoeia parameters; third-party NABL-accredited lab testing can be arranged where requested.
 
 👉 Request a certified pharma-grade sample: https://rmpsyllium.com/en/products/psyllium-husk/
 
@@ -1441,7 +1442,7 @@ To support medical-grade formulations, we supply high-purity 99% USP grade psyll
 
 3/ Viscous gel networks slow carbohydrate absorption, flattening postprandial glucose spikes. Crucial for diabetic meal replacements.
 
-4/ We supply high-purity 99% USP grade psyllium husk, with swelling volumes >40 ml/g and total ash under 3%, backed by lot-specific NABL COAs. Secure your pharma supply: https://rmpsyllium.com/en/products/psyllium-husk/
+4/ Buyers can review target lot results for swelling volume and ash; third-party NABL-accredited lab reports can be arranged where requested. Secure your pharma supply: https://rmpsyllium.com/en/products/psyllium-husk/
 ```
 
 ---
@@ -1459,10 +1460,10 @@ Slide 2: The Organic Sourcing Challenge
 - Cross-contamination: Processing organic crops on lines that handle conventional seeds.
 - Traceability: Proving complete organic tracking from farm to export container.
 
-Slide 3: Our Organic Sourcing Program
-- Audit-proven supply chains: Sourcing seeds from certified organic farms in Gujarat.
-- Dedicated processing runs: Processing organic lots on sanitized, isolated lines.
-- Complete regulatory certification (APEDA, organic validation paperwork).
+Slide 3: Organic Documentation Review
+- Organic supply requires certificate review before quotation.
+- Dedicated processing runs must be confirmed before accepting an order.
+- Transaction and lot documentation must match the buyer's destination market.
 
 Slide 4: Zero Chemical Processing
 - Purity achieved through 100% mechanical separation.
@@ -1471,7 +1472,7 @@ Slide 4: Zero Chemical Processing
 
 Slide 5: Safe Sourcing with Direct Mill Pricing
 - Shipped directly from our Siddhpur facility with direct-from-source pricing.
-- Comprehensive lot-level documentation and accredited NABL COAs.
+- Comprehensive lot-level documentation and third-party NABL-accredited lab reports.
 - Request your certified sample today: https://rmpsyllium.com/en/products/organic-psyllium/
 ```
 
@@ -1484,7 +1485,7 @@ A generic "organic certificate" is not enough. You need absolute supply chain tr
 At RM Psyllium, we de-risk organic sourcing through strict operational isolation:
 1. Audited Farming Cooperatives: We source our *Plantago ovata* seeds from long-term certified organic farms in Gujarat and Rajasthan.
 2. Sanitized Milling Campaigns: We process our organic lots in dedicated production runs on sanitized, isolated lines to prevent conventional seed cross-contact.
-3. Multi-Residue Screening: We test every organic batch for over 200 pesticide residues using GC-MS/MS and LC-MS/MS, providing NABL-certified proof of purity.
+3. Multi-Residue Screening: We test every organic batch for over 200 pesticide residues using GC-MS/MS and LC-MS/MS, providing third-party NABL-accredited lab-tested proof of purity.
 
 We deliver complete traceability documentation alongside your shipment.
 
@@ -1527,11 +1528,11 @@ Slide 3: Boiling Stability & Al Dente Texture
 Slide 4: Choosing the Spec
 - 100 Mesh Ultra-Fine Powder is preferred for uniform dispersion.
 - Fine particle size integrates invisibly into pasta dough without dark flakes.
-- Sieve tolerances verified on every lot-specific NABL COA.
+- Sieve tolerances verified on every third-party NABL-accredited lab report where requested.
 
 Slide 5: Safe Sourcing with Direct Mill Pricing
 - Shipped directly from our Siddhpur facility with direct-from-source pricing.
-- Complete lot-level testing and accredited NABL COAs.
+- Complete lot-level testing and third-party NABL-accredited lab reports.
 - Request your certified sample today: https://rmpsyllium.com/en/products/psyllium-husk-powder/
 ```
 
@@ -1591,7 +1592,7 @@ Slide 4: Sourcing the Industrial Spec
 
 Slide 5: Safe Sourcing with Direct Mill Sourcing
 - Sourced directly from our Siddhpur facility with direct-from-source pricing.
-- Complete lot-level testing and accredited NABL COAs.
+- Complete lot-level testing and third-party NABL-accredited lab reports.
 - Request your certified sample today: https://rmpsyllium.com/en/products/psyllium-cattle-feed/
 ```
 
@@ -1651,7 +1652,7 @@ Slide 4: Sourcing the Food Spec
 
 Slide 5: Safe Sourcing with Direct Mill Pricing
 - Shipped directly from our Siddhpur facility with direct-from-source pricing.
-- Complete lot-level testing and accredited NABL COAs.
+- Complete lot-level testing and third-party NABL-accredited lab reports.
 - Request your certified sample today: https://rmpsyllium.com/en/products/psyllium-husk/
 ```
 
@@ -1666,7 +1667,8 @@ How psyllium optimizes breakfast cereals:
 2. Extrusion Binding: The fiber provides excellent binding strength during high-pressure extrusion, preventing cereal flakes and shapes from shattering.
 3. Clean-Label Nutrition: Replaces synthetic fiber additives, allowing a clean-label "high fiber" and "heart healthy" claim on the front of the pack.
 
-We supply food-grade, NABL-certified psyllium husks tailored specifically for breakfast cereal extrusion lines.
+We supply food-grade psyllium husk for cereal extrusion lines.
+Third-party NABL-accredited lab reports can be arranged where requested.
 
 👉 Review our food-grade capabilities: https://rmpsyllium.com/en/products/psyllium-husk/
 
@@ -1707,11 +1709,11 @@ Slide 3: Reconstituting Texture & Creaminess
 Slide 4: Sourcing the Food Spec
 - 100 mesh fine powder is preferred for uniform dispersion and smooth mouthfeel.
 - Jacketed-cool milling preserves polymer structure and prevents grittiness.
-- Sieve tolerances verified on every lot-specific NABL COA.
+- Sieve tolerances verified on every third-party NABL-accredited lab report where requested.
 
 Slide 5: Safe Sourcing with Direct Mill Pricing
 - Shipped directly from our Siddhpur facility with direct-from-source pricing.
-- Complete lot-level testing and accredited NABL COAs.
+- Complete lot-level testing and third-party NABL-accredited lab reports.
 - Request your certified sample today: https://rmpsyllium.com/en/products/psyllium-husk-powder/
 ```
 
@@ -1769,7 +1771,7 @@ Slide 3: High Purity Specifications
 Slide 4: Dual-Shield Sourcing Control
 - Audited farming Cooperatives in Gujarat ensure pesticide-free cultivation.
 - 100% mechanical separation: Zero chemical solvents or bleaching.
-- Complete lot-level testing and accredited NABL COAs.
+- Complete lot-level testing and third-party NABL-accredited lab reports.
 
 Slide 5: Safe Sourcing with Direct Mill Pricing
 - Shipped directly from our Siddhpur facility with direct-from-source pricing.
@@ -1833,7 +1835,7 @@ Slide 4: Sourcing the Industrial Spec
 
 Slide 5: Safe Sourcing with Direct Mill Sourcing
 - Sourced directly from our Siddhpur facility with direct-from-source pricing.
-- Complete lot-level testing and accredited NABL COAs.
+- Complete lot-level testing and third-party NABL-accredited lab reports.
 - Request your certified sample today: https://rmpsyllium.com/en/products/industrial-grade-psyllium/
 ```
 
@@ -1871,7 +1873,7 @@ We supply bulk industrial-grade psyllium directly from our Siddhpur crop-belt de
 
 ## 💼 PILLAR 3: SOURCING DE-RISKED (COMMERCIAL STRATEGY & LEAD GEN)
 
-### 📝 Template 31: The "No MOQ" Advantage
+### 📝 Template 31: The "Sample-first sourcing" Advantage
 #### 📊 Gamma-Ready Slide Outline
 ```text
 Slide 1: Breaking Down the MOQ Wall in Ingredient Sourcing
@@ -1886,19 +1888,19 @@ Slide 2: The Distributor Markup
 
 Slide 3: Our Philosophy: No Minimum Order Quantity
 - We support growth-stage brands from the lab bench to global container scaling.
-- Phase 1: 100g to 500g free lab samples for R&D formulation trials.
+- Phase 1: sample options reviewed for R&D formulation trials.
 - Phase 2: 500 KG flexible trial orders to run pilot batches on your lines.
 - Phase 3: Full 20 MT container shipments (FCL) as your brand scales.
 
 Slide 4: Premium Quality on Every Volume
 - Sieve analysis matching: Custom milling to your exact mesh size.
-- Lot-level NABL COAs provided digital-first on every single order.
+- Third-party NABL-accredited lab reports available where requested before dispatch.
 - Direct-from-source mill pricing with zero middleman commissions.
 
 Slide 5: Build Your Spec in 60 Seconds
 - Go to our Interactive Spec-Builder on our site.
 - Choose your targeted purity, mesh size, and trial volume.
-- Direct quote and sample dispatched within 24 hours: https://rmpsyllium.com/en/products/psyllium-husk/
+- Quote and sample options confirmed after spec review: https://rmpsyllium.com/en/products/psyllium-husk/
 ```
 
 #### 💼 LinkedIn Caption
@@ -1909,12 +1911,12 @@ You contact a major Indian psyllium processor, only to be told: *"Minimum order 
 
 This forces you to buy repackaged, marked-up ingredients from regional distributors. You lose direct-to-source pricing, batch traceability, and control over your technical specifications.
 
-We believe that is wrong. At RM Psyllium, we have a strict "No MOQ" policy:
-- Need 1 KG of high-purity husk for laboratory bench testing? We will ship it with a full NABL COA.
+We believe that is wrong. At RM Psyllium, we have a sample-first sourcing policy:
+- Need 1 KG of high-purity husk for laboratory bench testing? We will ship it with a full third-party NABL-accredited lab report.
 - Need a 500 KG trial batch to run a pilot test on your encapsulation machinery? We will pack and ship it.
 - Ready for a full 20 MT container load? We process and export it FOB Mundra.
 
-We support your growth from formulation to full-scale container operations. You get direct-from-mill pricing and lot-level NABL COAs from day one, regardless of your order size.
+We support your growth from formulation to full-scale container operations. You get direct-from-mill pricing and third-party NABL-accredited lab reports where requested from day one, regardless of your order size.
 
 👉 Configure your mesh and purity requirements directly: https://rmpsyllium.com/en/products/psyllium-husk/
 
@@ -1927,7 +1929,7 @@ Emerging CPG & supplement brands: Locked out of direct mill pricing by massive 5
 
 We’ve eliminated the MOQ barrier. 
 
-From 1 KG R&D samples to 500 KG trial runs and 20 MT containers—get direct-from-mill pricing and lot-level NABL COAs from day one. 
+From 1 KG R&D samples to 500 KG trial runs and 20 MT containers—get direct-from-mill pricing and third-party NABL-accredited lab reports where requested from day one. 
 
 Build your spec: https://rmpsyllium.com/en/products/psyllium-husk/
 ```
@@ -1936,13 +1938,13 @@ Build your spec: https://rmpsyllium.com/en/products/psyllium-husk/
 ```text
 Democratizing ingredient sourcing. 🤝🌾
 
-Emerging supplement and food brands deserve direct-from-mill pricing and lot-level quality control. That’s why we have a strict "No MOQ" policy. 
+Emerging supplement and food brands deserve direct-from-mill pricing and lot-level quality control. That’s why we have a sample-first sourcing policy. 
 
 🧪 R&D Samples: 100g - 500g
 📦 Pilot Batches: 500 KG
 🚢 Full Containers: 20 MT (FCL)
 
-Direct from our Siddhpur crop-belt facility with lot-specific NABL COAs. Tap link in bio to configure your spec!
+Direct from our Siddhpur crop-belt facility with third-party NABL-accredited lab reports where requested. Tap link in bio to configure your spec!
 
 #nomoq #startupgrowth #supplementbrand #dietarysupplement #cpg #glutenfreefood #agribusiness #globaltrade
 ```
@@ -1975,7 +1977,7 @@ Slide 4: Sourcing Directly from Siddhpur
 
 Slide 5: Build a Clean Supply Chain
 - Direct physical facility audit options at our Siddhpur facility.
-- Complete lot-level compliance and accredited NABL COAs.
+- Complete lot-level compliance and third-party NABL-accredited lab reports.
 - Request a direct quote today: https://rmpsyllium.com/en/contact/
 ```
 
@@ -2034,7 +2036,7 @@ Slide 3: The OEM Sourcing Advantage
 - In-house logistics: Packing, container stuffing, and shipping managed directly.
 
 Slide 4: Complete Pre-Shipment Compliance Pack
-- Lot-specific NABL-accredited COA.
+- Third-party NABL-accredited lab report where requested.
 - Ministry-approved Phytosanitary Certificate.
 - Chamber-attested Certificate of Origin (COO).
 - Attested Methyl Bromide/Phosphine Fumigation Certificate.
@@ -2096,7 +2098,7 @@ Slide 2: The Spot-Check Trap
 - You face massive port demurrage fees and customs quarantine risks.
 
 Slide 3: Our Digital-First COA Process
-- Every batch is tested in NABL-accredited labs immediately after packing.
+- Buyer-required lots can be tested through third-party NABL-accredited labs before dispatch.
 - Draft digital COA and export paperwork are compiled instantly.
 - Shared with your QA team to review and approve *before* the container leaves Mundra port.
 
@@ -2154,8 +2156,8 @@ Slide 2: The Sourcing Squeeze
 - Commercial scale: Spot-market buying from brokers leaves you exposed to crop inflation.
 
 Slide 3: Progressive Direct Pricing
-- Phase 1: 100g to 500g free lab samples for R&D formulation validation.
-- Phase 2: 500 KG pilot batches shipped direct with lot-level NABL COAs.
+- Phase 1: sample options reviewed for R&D formulation validation.
+- Phase 2: 500 KG pilot batches shipped direct with third-party NABL-accredited lab reports where requested.
 - Phase 3: Full 20 MT container scaling (FCL) managed directly from Siddhpur.
 - You get consistent direct-from-mill pricing at every growth stage.
 
@@ -2178,8 +2180,8 @@ When you start, distributors squeeze your margins with up to 40% markups on smal
 
 At RM Psyllium, we support your growth path from the laboratory bench to global container logistics:
 
-- Formulation Phase: We ship 100g to 500g certified samples directly to your R&D lab in 5 business days.
-- Pilot Phase: We arrange flexible trial batches starting at 500 KG, providing lot-specific NABL COAs from day one.
+- Formulation Phase: sample size, documentation, and dispatch timing are confirmed after grade and destination review.
+- Pilot Phase: 1 kg sample packs and commercial lot planning are reviewed by grade, packing, destination, and document requirements before quote.
 - Commercial Scale: We mill, pack, and export full 20 MT containers directly from our Siddhpur plant to your destination port.
 
 You get consistent direct-from-source pricing and strict specification control at every single stage of your growth.
@@ -2193,7 +2195,7 @@ You get consistent direct-from-source pricing and strict specification control a
 ```text
 Cereal & supplement startups: Scaling is a margin trap. Distributors squeeze you on small batches; major mills ignore you on pilot runs. 
 
-We support your growth from 1 KG samples to 500 KG trials and 20 MT containers—with direct-from-mill pricing. 
+We support your growth from 1 kg sample review to commercial lot planning and 20 MT containers, with direct-from-mill pricing.
 
 Request a quote: https://rmpsyllium.com/en/products/psyllium-husk/
 ```
@@ -2221,7 +2223,7 @@ Slide 3: Our Open Door Audit Policy
 Slide 4: Operational Traceability
 - Map every step from raw seed cleaning to final bag packing.
 - Review our lot-coding systems and continuous quality control checkpoints.
-- Verify our APEDA, FSSAI, Spices Board, and export compliance registrations.
+- Review sample COA, product specification, origin records, packing details, and destination document checklist.
 
 Slide 5: Safe Sourcing with Direct Mill Sourcing
 - Bypassing brokers saves 12% to 15% in margins and removes quality risks.
@@ -2283,7 +2285,7 @@ Slide 4: Direct Sourcing Economics
 
 Slide 5: Safe Sourcing with Direct Mill Pricing
 - NABL-accredited lot-specific COAs shared before shipping dispatch.
-- 100g to 500g lab samples shipped in 5 business days.
+- sample options confirmed after grade and destination review.
 - Request your certified sample today: https://rmpsyllium.com/en/products/psyllium-husk/
 ```
 
@@ -2337,7 +2339,7 @@ Slide 3: Proactive Sourcing hedging (CSAs)
 Slide 4: Uncompromised Specifications
 - Sieve analysis and viscosity parameters remain consistent across all shipments.
 - Single-point trace-ready supply chain removes manufacturing variables.
-- Lot-specific NABL accredited COAs provided pre-shipment.
+- Third-party NABL-accredited lab reports where requested provided pre-shipment.
 
 Slide 5: Secure Your Supply Chain
 - Direct-from-source processing in Siddhpur, Gujarat.
@@ -2388,8 +2390,8 @@ Slide 2: The Sieve Analysis Mismatch
 - Blending mesh fractions allows controlled, progressive hydration for your formula.
 
 Slide 3: Our R&D Spec Program
-- Shorter timelines: 100g to 500g lab samples shipped in 5 business days.
-- Shipped with lot-specific NABL COAs detailing swelling, moisture, ash, and sieve data.
+- Shorter timelines: sample options confirmed after grade and destination review.
+- Shipped with third-party NABL-accredited lab reports where requested detailing swelling, moisture, ash, and sieve data.
 - Validate quality in your own R&D lab before committing to bulk container orders.
 
 Slide 4: Direct Facility Control
@@ -2425,7 +2427,7 @@ Don't adapt your formulation to the ingredient. Let us mill the ingredient to ma
 ```text
 CPG Formulators: Don’t adapt your product to a generic raw material catalog. We custom-mill psyllium to your exact mesh distribution, viscosity targets, and purity grades. 
 
-Get a certified 100g-500g lab sample shipped in 5 business days. 
+Request a sample review; sample size, documents, and dispatch timing are confirmed after grade and destination review. 
 
 Build your spec: https://rmpsyllium.com/en/products/psyllium-husk-powder/
 ```
@@ -2508,7 +2510,7 @@ Slide 3: Our Structured Traceability System
 - Unique lot codes track the batch from seed cleaning through milling and bagging.
 
 Slide 4: Automated Documentation Tracking
-- Your shipment's lot codes match the NABL COA, Phytosanitary, and packing sheets.
+- Your shipment's lot codes match the third-party NABL-accredited lab report, Phytosanitary, and packing sheets.
 - Enables rapid recall capabilities and smooth compliance audits.
 - Complete regulatory transparency for global supply chain managers.
 
@@ -2527,7 +2529,7 @@ When you source through commodity brokers, this is impossible. They blend lots f
 At RM Psyllium, we implement a comprehensive Batch-to-Farm Traceability system:
 - Farm-Gate Tagging: We source our raw seeds directly from long-term farming cooperatives in Gujarat and Rajasthan, tagging each cargo lot upon arrival at our Siddhpur mill.
 - Mill-Line Isolation: Enclosed processing and lot-coding systems track the batch through seed cleaning, mechanical dehushing, milling, and bag packing.
-- Document Synchronization: Your lot numbers are printed directly on the export-grade bags and match your lot-specific NABL COAs.
+- Document Synchronization: Your lot numbers are printed directly on the export-grade bags and match your third-party NABL-accredited lab reports where requested.
 
 You get complete, audit-proven traceability from the field to your factory gate.
 
@@ -2561,18 +2563,18 @@ Slide 2: The Sample Sourcing Bottleneck
 - When you scale to bulk containers, the quality fails to match the lab sample.
 
 Slide 3: Our R&D Sample Program
-- What you get: 100g to 500g of premium psyllium husk or powder.
+- What you get: sample quantity confirmed after grade, mesh, and destination review.
 - The specs: Milled exactly to your targeted particle size (40 to 100 mesh) and purity.
-- The timeline: Shipped directly to your global R&D lab in 5 business days.
+- The timeline: dispatch timing confirmed after grade, document, and destination review.
 
 Slide 4: Standard-Setting Validation
-- Shipped with lot-specific NABL COAs showing exact moisture, ash, and swelling values.
+- Shipped with third-party NABL-accredited lab reports where requested showing exact moisture, ash, and swelling values.
 - The trial batch you test in the lab is identical to the container load we ship.
 - Bypassing distributor markups and removing technical processing variables.
 
 Slide 5: Request Your Certified Sample Today
 - Go to our site and configure your target spec on our Interactive Spec-Builder.
-- Direct quote and sample dispatched within 24 hours.
+- Quote and sample options confirmed after spec review.
 - Get your certified sample: https://rmpsyllium.com/en/products/psyllium-husk-powder/
 ```
 
@@ -2583,9 +2585,9 @@ Formulating a new high-fiber dietary beverage, gluten-free bakery line, or medic
 You request a sample from a distributor, wait weeks, and receive a repackaged bag without a lot-specific Certificate of Analysis. If the formulation fails, you don't know if it's your formula or the stale ingredient.
 
 At RM Psyllium, we support formulation chemists through our R&D Sample Program:
-- Shorter Timelines: We ship 100g to 500g of premium psyllium directly to your global laboratory in 5 business days.
+- Shorter Timelines: sample size and dispatch timing are confirmed after grade, document, and destination review.
 - Custom Sieve & Viscosity Matching: We mill the sample exactly to your target mesh size (from 40 mesh coarse husk to 100 mesh ultra-fine powder).
-- Certified Quality: Every sample is accompanied by a lot-specific NABL-accredited COA.
+- Certified Quality: Every sample is accompanied by a third-party NABL-accredited lab report where requested.
 
 The raw material you validate in the lab will be identical to the container load we dispatch to your factory gates.
 
@@ -2598,7 +2600,7 @@ The raw material you validate in the lab will be identical to the container load
 ```text
 CPG R&D Chemists: Tired of waiting weeks for uncertified ingredient samples? 
 
-We ship lot-certified 100g-500g psyllium samples—milled to your exact mesh distribution—directly to your global lab in 5 business days. 
+We confirm sample size, mesh, documents, and dispatch timing after reviewing your target specification and destination. 
 
 Order your sample: https://rmpsyllium.com/en/products/psyllium-husk-powder/
 ```
@@ -2690,7 +2692,7 @@ Slide 3: Our Flexible Packaging Program
 Slide 4: Safe Sourcing with Direct Mill Sourcing
 - Sourced and processed inside our own Siddhpur facility in Gujarat.
 - Jacketed-cool mechanical milling preserves natural polymer chains.
-- Sieve analysis and moisture verified on every lot-specific NABL COA.
+- Sieve analysis and moisture verified on every third-party NABL-accredited lab report where requested.
 
 Slide 5: Safe Sourcing with Direct Mill Pricing
 - Direct physical facility audit options at our Siddhpur facility.
@@ -2751,7 +2753,7 @@ Slide 4: Sourcing Directly from Siddhpur
 
 Slide 5: Safe Sourcing with Direct Mill Pricing
 - Direct physical facility audit rights at our Siddhpur facility.
-- 100g to 500g lab samples shipped in 5 business days.
+- sample options confirmed after grade and destination review.
 - Request your certified sample today: https://rmpsyllium.com/en/products/psyllium-husk-powder/
 ```
 
@@ -2859,7 +2861,7 @@ Sourcing psyllium husk from our Siddhpur facility is optimized for international
 ⚓ FOB Mundra: We load your nominated vessel.
 ⚓ CIF Destination: We manage the entire ocean transit.
 
-Lot-certified NABL COAs and fumigation certificates pre-cleared for every container. Tap link in bio to request a quote!
+Third-party NABL-accredited lab reports and fumigation documents can be reviewed where required for the buyer-specified lot. Tap link in bio to request a quote!
 
 #globallogistics #incoterms #fob #cif #importexport #shippingcontainer #agribusiness #qualitycontrol
 ```
@@ -2885,13 +2887,13 @@ Slide 3: HS Code: 2308.00.00
 - Subject to different tariff rates and animal feed import regulations.
 
 Slide 4: Compliance Paperwork Sync
-- Your packaging, commercial invoices, and NABL COAs must state matching HS Codes.
+- Your packaging, commercial invoices, and third-party NABL-accredited lab reports must state matching HS Codes.
 - Ensures seamless Customs tracking and avoids border inspections.
-- Complies with Spices Board and APEDA export guidelines in India.
+- Keeps product, invoice, packing, COA, and destination paperwork aligned before dispatch.
 
 Slide 5: Safe Sourcing with Direct Mill Sourcing
 - Direct mechanical manufacturing inside the Siddhpur crop belt.
-- Lot-specific NABL accredited COAs and export compliance pre-shipment.
+- Third-party NABL-accredited lab reports where requested and export compliance pre-shipment.
 - Learn more about our trade compliance standards: https://rmpsyllium.com/en/compliance/
 ```
 
@@ -2909,7 +2911,7 @@ Sourcing teams must understand the distinct HS Code classifications for psyllium
 - Use Case: Industrial binders and bulk cattle feed ingredients.
 - Compliance: Governed by animal feed import regulations.
 
-At RM Psyllium, we synchronize all shipping documentation—including Commercial Invoices, NABL COAs, and Chamber Certificates of Origin—with the exact HS Codes to ensure zero customs delays.
+At RM Psyllium, we synchronize all shipping documentation—including Commercial Invoices, third-party NABL-accredited lab reports, and Chamber Certificates of Origin—with the exact HS Codes to ensure zero customs delays.
 
 👉 Review our complete trade compliance standards: https://rmpsyllium.com/en/compliance/
 
@@ -2954,7 +2956,7 @@ Slide 4: Ministry-Approved Certification
 
 Slide 5: Safe Sourcing with Direct Mill Pricing
 - Shipped directly from our Siddhpur facility with direct-from-source pricing.
-- Complete lot-level testing and accredited NABL COAs.
+- Complete lot-level testing and third-party NABL-accredited lab reports.
 - Review our compliance framework: https://rmpsyllium.com/en/compliance/
 ```
 
@@ -3006,7 +3008,7 @@ Slide 3: Phosphine Fumigation (Al2P3)
 Slide 4: Attested Fumigation Certificates
 - Cargo stuffed and sealed at our Siddhpur mill or port loading yards.
 - Shipped with official, Chamber-attested Fumigation Certificates.
-- Batch numbers on certificates match your lot-specific NABL COAs.
+- Batch numbers on certificates match your third-party NABL-accredited lab reports where requested.
 
 Slide 5: Safe Sourcing with Direct Mill Pricing
 - Sourced and processed inside our own Siddhpur facility in Gujarat.
@@ -3073,7 +3075,7 @@ Slide 4: Customized Packing Configurations
 
 Slide 5: Safe Sourcing with Direct Mill Pricing
 - Processing controlled completely in-house in Siddhpur, Gujarat.
-- Lot-specific NABL COAs shared digital-first before Mundra departure.
+- Third-party NABL-accredited lab reports where requested shared digital-first before Mundra departure.
 - Request your certified sample today: https://rmpsyllium.com/en/products/psyllium-husk/
 ```
 
@@ -3239,7 +3241,7 @@ Slide 3: Preferential Trade Agreements
 
 Slide 4: Chamber-Attested Documentation
 - We coordinate with licensed chambers of commerce to issue the official COO.
-- Details match your lot-specific NABL COAs and commercial invoices.
+- Details match your third-party NABL-accredited lab reports where requested and commercial invoices.
 - Draft digital copies shared pre-shipment for your compliance review.
 
 Slide 5: Safe Sourcing with Direct Mill Pricing
@@ -3257,7 +3259,7 @@ A Chamber-Attested Certificate of Origin verifies the crop was grown, harvested,
 Why a verified COO is critical for B2B buyers:
 1. Preferential Tariff Access: Under various Free Trade Agreements (FTAs) and GSP schemes, a compliant COO allows you to import psyllium at significantly reduced duty rates.
 2. Customs Compliance: Port authorities require attested COOs to verify trade sanctions compliance and prevent transshipment fraud.
-3. Document Sync: We ensure your COO details—such as crop weight, batch codes, and shipping marks—perfectly match your NABL COAs and Commercial Invoices.
+3. Document Sync: We ensure your COO details—such as crop weight, batch codes, and shipping marks—perfectly match your third-party NABL-accredited lab reports and Commercial Invoices.
 
 At RM Psyllium, we manage the complete COO attestation process directly with local Chambers of Commerce, sharing draft copies before cargo dispatch.
 
@@ -3341,7 +3343,7 @@ Slide 1: The B2B Export Documentation Pack
 - Mismatched shipping documents lead to customs clearance delays.
 - Global procurement teams must verify the 5 non-negotiable documents.
 
-Slide 2: Document 1: Lot-Specific NABL COA
+Slide 2: Document 1: Lot-Specific third-party NABL-accredited lab report
 - Must show numerical values for swelling volume (>40 ml/g), moisture (<10%), and ash (<4%).
 - Verified by an accredited laboratory for the exact shipped batch.
 - Excludes generic or representative certificates.
@@ -3428,7 +3430,7 @@ For international supply chain managers, "Demurrage" is one of the most frustrat
 When your shipping container arrives at the destination port, you typically have a 5-to-7 day "free time" window. If your supplier has delayed the Phytosanitary Certificate, or if the COA contains a clerical error, you cannot file the customs entry. The carrier will charge you up to $300 per day in demurrage fees.
 
 At RM Psyllium, we operate on a strict Demurrage Mitigation protocol:
-1. Pre-Shipment Document Dispatch: We compile and email digital draft copies of all compliance paperwork—including lot-specific NABL COAs—before the cargo departs Mundra port.
+1. Pre-Shipment Document Dispatch: We compile and email digital draft copies of all compliance paperwork—including third-party NABL-accredited lab reports where requested—before the cargo departs Mundra port.
 2. Customs Broker Integration: We coordinate directly with your destination customs broker, sharing drafts to ensure 100% compliance before arrival.
 3. Logistics SLAs: We work with leading carriers to secure extended free-time agreements (up to 14 days) for bulk contract buyers.
 
@@ -3441,7 +3443,7 @@ At RM Psyllium, we operate on a strict Demurrage Mitigation protocol:
 ```text
 Port demurrage fees can hit $300/day per container if your supplier delays shipping paperwork. 
 
-We eliminate this risk by emailing all digital compliance drafts—including lot-specific NABL COAs—before the container leaves Mundra. 
+We eliminate this risk by emailing all digital compliance drafts—including third-party NABL-accredited lab reports where requested—before the container leaves Mundra. 
 
 Manage port logistics: https://rmpsyllium.com/en/compliance/
 ```
@@ -3521,16 +3523,16 @@ Slide 2: Bioterrorism Act Compliance
 Slide 3: FSMA & FSVP Compliance
 - Food Safety Modernization Act (FSMA): Requires foreign suppliers to implement hazard control protocols.
 - Foreign Supplier Verification Program (FSVP): US importers must verify foreign supplier safety.
-- We provide comprehensive compliance documentation to support your FSVP audits.
+- We help buyers organize lot-level documents for importer-led FSVP review.
 
 Slide 4: Clean-Air Automated Processing
-- Automated, enclosed milling and packaging lines to eliminate human touch.
-- Continuous laboratory testing for heavy metals and Salmonella.
-- Lot-specific NABL accredited COAs and Phytosanitary certificates.
+- Mechanical milling and packaging workflow reviewed against buyer specifications.
+- Lot-level COA review for heavy metals, microbiology, purity, moisture, and swelling volume where applicable.
+- Third-party NABL-accredited lab reports can be requested per lot where the buyer requires outside verification.
 
 Slide 5: Safe Sourcing with Direct Mill Pricing
 - Sourced and processed inside our own Siddhpur facility in Gujarat.
-- Shipped from Siddhpur to Mundra port in under 24 hours.
+- FOB/CIF routing, lead time, and destination documents reviewed before quote.
 - Learn more about our US compliance framework: https://rmpsyllium.com/en/compliance/
 ```
 
@@ -3538,24 +3540,24 @@ Slide 5: Safe Sourcing with Direct Mill Pricing
 ```text
 For US dietary supplement and clean-label food brands, compliance with the Food and Drug Administration (FDA) is a non-negotiable gateway. Under the Food Safety Modernization Act (FSMA), US importers are legally responsible for verifying that their foreign suppliers operate under strict hazard control standards.
 
-At RM Psyllium, we simplify FDA and FSVP (Foreign Supplier Verification Program) audits for our US B2B buyers:
+At RM Psyllium, we support FDA and FSVP (Foreign Supplier Verification Program) conversations with document-first buyer review:
 
-- Active FDA Registration: Our Siddhpur mechanical processing facility is fully registered with the FDA.
-- FSMA-Compliant Quality: We operate under rigorous Hazard Analysis Critical Control Point (HACCP) protocols.
-- Proactive Prior Notice Supporting Docs: We compile and share all lot-specific NABL COAs, Phytosanitary details, and packing lists to support your customs filings.
+- Buyer-led FDA check: US importers should verify facility registration, prior notice responsibility, and FSVP requirements before shipment.
+- Lot-level quality review: buyers can review COA, specification, packing, origin, and destination document requirements before PO.
+- Third-party testing support: NABL-accredited lab reports can be requested per lot where outside verification is required.
 
-We build the compliance audit trail alongside our mechanical processing, ensuring smooth clearance at US ports.
+We build the document trail around the buyer's import checklist so shipment planning starts with verifiable records, not vague certification language.
 
 👉 Review our US import compliance framework: https://rmpsyllium.com/en/compliance/
 
-#FDARegistration #FSMA #FSVP #USCustoms #ImportCompliance #B2BSourcing #Nutraceuticals
+#FDA #FSVP #USCustoms #ImportCompliance #B2BSourcing #Nutraceuticals #Psyllium
 ```
 
 #### 🐦 Twitter/X Hook-and-Link Post
 ```text
-US Supplement Brands: Federal customs require active FDA facility registration and strict FSVP validation. 
+US supplement brands: before importing psyllium, verify FDA facility registration responsibility, prior notice workflow, FSVP files, COA format, and lot-level testing.
 
-Our Siddhpur processing plant is fully FDA registered and operates under strict FSMA hazard control protocols, de-risking your imports. 
+RM Psyllium supports buyer document review with COA, specification, packing, origin, and third-party lab options before PO.
 
 Review US compliance: https://rmpsyllium.com/en/compliance/
 ```
@@ -3641,7 +3643,7 @@ Slide 3: Our Logistics SLA Commitments
 - Packaging: Shrink-wrapped palletization with silica desiccants.
 
 Slide 4: Direct Siddhpur facility Operations
-- Complete tracing: Lot codes on bags match your lot-specific NABL COAs.
+- Complete tracing: Lot codes on bags match your third-party NABL-accredited lab reports where requested.
 - Sourced directly from audited farming cooperatives in North Gujarat.
 - Direct-from-source mechanical processing with zero broker markups.
 
@@ -3658,8 +3660,8 @@ When evaluating a B2B agricultural ingredient supplier, your logistics team must
 Commodity brokers and trading desks treat logistics as an afterthought, delaying container bookings and customs filings to squeeze shipping freight margins.
 
 At RM Psyllium, we operate a dedicated B2B Export Logistics Desk with clear, contract-backed SLAs:
-- Mill-to-Port Inland Transit: Stuffed containers are moved from our Siddhpur plant to Mundra Port within 24 hours of packing.
-- Proactive Document Dispatch: Complete digital drafts of all compliance paperwork—including lot-specific NABL COAs—are shared before the cargo departs Mundra.
+- Mill-to-Port Inland Transit: timing is confirmed after packing plan and dispatch review.
+- Proactive Document Dispatch: Complete digital drafts of all compliance paperwork—including third-party NABL-accredited lab reports where requested—are shared before the cargo departs Mundra.
 - In-Container Security: Shrink-wrapped palletization, structural container lining, and high-capacity silica gel desiccants are standard for every container.
 
 Stop playing logistics roulette. Partner with a reliable direct processor.
@@ -3673,7 +3675,7 @@ Stop playing logistics roulette. Partner with a reliable direct processor.
 ```text
 B2B Sourcing: Logistics delays destroy margins. Commodity brokers delay bookings to squeeze sea freight rates; we operate on contract-backed Logistics SLAs. 
 
-We move cargo from mill to Mundra Port within 24 hours. 
+Mill-to-port timing is confirmed after packing plan and dispatch review. 
 
 Check our logistics SLAs: https://rmpsyllium.com/en/contact/
 ```

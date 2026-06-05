@@ -115,6 +115,92 @@ const purityValues = gradeData.map(g => parseFloat((purityRow?.values[g.label] ?
 const maxSwell  = Math.max(...swellValues,  1);
 const maxPurity = Math.max(...purityValues, 1);
 
+const productUrl = `https://rmpsyllium.com/${lang}/products/${product.slug}/`;
+const productGroupId = `rm-${product.slug}`;
+const productImage = 'https://rmpsyllium.com/assets/generated/facility-bags-gujarat.webp';
+const translatedProductName = translateProductName(product.name, lang);
+const translatedProductHero = translateProductHero(product.hero, lang);
+const translatedProductSummary = translateProductSummary(product.summary, lang);
+
+const productGroupProperties = [
+  { '@type': 'PropertyValue', name: 'Product family', value: translatedProductName },
+  { '@type': 'PropertyValue', name: 'Origin', value: 'Siddhpur, Gujarat, India' },
+  { '@type': 'PropertyValue', name: 'Sample review', value: '1 kg sample review available' },
+  { '@type': 'PropertyValue', name: 'Document review', value: 'Sample COA, product specification, packing, origin, and destination documents reviewed before PO' },
+  ...(product.packaging?.length ? [{ '@type': 'PropertyValue', name: 'Packing options', value: product.packaging.join(', ') }] : []),
+  ...(product.applications?.length ? [{ '@type': 'PropertyValue', name: 'Applications', value: product.applications.join(', ') }] : [])
+];
+
+const variantProperties = (grade: typeof gradeData[number]) => [
+  { '@type': 'PropertyValue', name: 'Grade', value: translateProductGradeLabel(grade.label, lang) },
+  { '@type': 'PropertyValue', name: 'Origin', value: 'Siddhpur, Gujarat, India' },
+  { '@type': 'PropertyValue', name: 'Sample review', value: '1 kg sample review available' },
+  { '@type': 'PropertyValue', name: 'Document review', value: 'Lot-level COA and specification review before PO' },
+  ...(grade.gCopy.bestFor ? [{ '@type': 'PropertyValue', name: 'Best for', value: translateBestFor(grade.gCopy.bestFor, lang) }] : []),
+  ...specTable
+    .map((row) => {
+      const value = row.values?.[grade.label];
+      if (!value || value === '—') return null;
+      return {
+        '@type': 'PropertyValue',
+        name: translateParam(row.parameter, lang),
+        value
+      };
+    })
+    .filter(Boolean)
+];
+
+const productGroupSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ProductGroup',
+  name: translatedProductName,
+  description: translatedProductSummary || translatedProductHero,
+  url: productUrl,
+  image: productImage,
+  productGroupID: productGroupId,
+  brand: {
+    '@type': 'Brand',
+    name: 'RM Psyllium'
+  },
+  manufacturer: {
+    '@type': 'Organization',
+    name: 'RM Psyllium LLP',
+    url: 'https://rmpsyllium.com'
+  },
+  category: product.label,
+  variesBy: ['grade', 'purity', 'mesh', 'swelling volume', 'pharmacopoeia reference', 'packing'],
+  additionalProperty: productGroupProperties,
+  hasVariant: gradeData.map((grade) => ({
+    '@type': 'Product',
+    name: `${translatedProductName} ${translateProductGradeLabel(grade.label, lang)}`,
+    description: `${translatedProductName} ${translateProductGradeLabel(grade.label, lang)} variant for buyer review of purity, mesh, swelling volume, packing, sample review, and lot documentation before PO.`,
+    url: productUrl,
+    image: productImage,
+    productID: `${productGroupId}-${grade.slug}`,
+    isVariantOf: {
+      '@type': 'ProductGroup',
+      productGroupID: productGroupId,
+      name: translatedProductName
+    },
+    brand: {
+      '@type': 'Brand',
+      name: 'RM Psyllium'
+    },
+    manufacturer: {
+      '@type': 'Organization',
+      name: 'RM Psyllium LLP',
+      url: 'https://rmpsyllium.com'
+    },
+    additionalProperty: variantProperties(grade)
+  }))
+};
+
+const buyerReviewLinks = [
+  { text: 'Quality document review', href: `/${lang}/quality/` },
+  { text: 'How to verify a COA', href: `/${lang}/blog/verify-nabl-coa-psyllium-supplier/` },
+  { text: 'Pharmacopoeia wording guide', href: `/${lang}/blog/psyllium-usp-ep-ip-monograph-standards/` },
+  { text: 'Request 1 kg sample review', href: `/${lang}/contact/` }
+];
 
 const faqSchema = uniqueFaqs.length > 0 ? {
   '@context': 'https://schema.org',
@@ -137,7 +223,7 @@ const breadcrumbSchema = {
   ]
 };
 
-const schemas = [breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])];
+const schemas = [productGroupSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])];
 ---
 <BaseLayout
   lang={lang}
@@ -333,6 +419,24 @@ const schemas = [breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])];
       </div>
     </section>
   )}
+
+  <!-- ═══════════════════════════════════════
+       BUYER VERIFICATION LINKS
+  ══════════════════════════════════════════ -->
+  <section class="pd-section pd-section--compact">
+    <div class="pd-container">
+      <p class="pd-section-kicker">Buyer verification</p>
+      <h2 class="pd-section-title">Review the documents behind this product.</h2>
+      <div class="pd-review-links">
+        {buyerReviewLinks.map((link) => (
+          <a class="pd-review-link" href={link.href}>
+            <span>{link.text}</span>
+            <strong aria-hidden="true">&rarr;</strong>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
 
   <!-- ═══════════════════════════════════════
        GRADE CARDS — 2-column grid
@@ -644,6 +748,7 @@ const schemas = [breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])];
   /* ── generic section ── */
   .pd-section { padding: clamp(4rem, 6vw, 6rem) 0; }
   .pd-section--cream { background: var(--pd-cream); }
+  .pd-section--compact { padding: clamp(3rem, 5vw, 5rem) 0; }
   .pd-section-kicker {
     margin: 0 0 12px; color: var(--pd-sage); font-family: var(--pd-f);
     font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
@@ -699,6 +804,34 @@ const schemas = [breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])];
   .pd-bc strong { font-size: 13px; font-weight: 700; color: var(--pd-ink); }
   .pd-bt { height: 5px; background: var(--pd-rule); border-radius: 3px; overflow: hidden; }
   .pd-bf { height: 100%; background: var(--pd-sage); border-radius: 3px; }
+
+  /* ── buyer verification links ── */
+  .pd-review-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+
+  .pd-review-link {
+    display: flex;
+    min-height: 88px;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 14px;
+    border: 1px solid var(--pd-rule);
+    border-radius: 8px;
+    background: var(--pd-white);
+    padding: 18px;
+    color: var(--pd-ink);
+    font-family: var(--pd-f);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.35;
+    text-decoration: none;
+  }
+
+  .pd-review-link:hover { border-color: rgba(74,102,48,0.35); }
+  .pd-review-link strong { flex: 0 0 auto; color: var(--pd-sage); }
 
   /* ── grade cards 2-col grid ── */
   .pd-grade-grid {
@@ -806,6 +939,7 @@ const schemas = [breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])];
     .pd-grade-pills { flex-direction: row; flex-wrap: wrap; }
     .pd-grade-pill { flex: 1 1 calc(50% - 4px); min-width: 140px; }
     .pd-grade-grid { grid-template-columns: 1fr; }
+    .pd-review-links { grid-template-columns: repeat(2, 1fr); }
     .pd-faq-grid { grid-template-columns: 1fr; }
     .pd-faq-desc { max-width: 100%; }
     .pd-contact-grid { grid-template-columns: 1fr; }
@@ -815,6 +949,7 @@ const schemas = [breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])];
   @media (max-width: 640px) {
     .pd-container { width: calc(100% - 32px); }
     .pd-grade-pill { flex: 1 1 100%; }
+    .pd-review-links { grid-template-columns: 1fr; }
     .pd-panel-meta { grid-template-columns: 1fr; }
   }
 </style>

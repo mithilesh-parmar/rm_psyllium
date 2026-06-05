@@ -32,4 +32,8 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+# Local working data (raw exports, not website content)
+Psyllium Husk Export data/
+ga/
 ```

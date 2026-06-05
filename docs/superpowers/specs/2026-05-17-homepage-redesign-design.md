@@ -50,7 +50,7 @@ The current 13-section homepage becomes a focused 7-section page. Total scroll d
 - Subhead: `Custom grade, mesh, and packing for pharma, food, feed, and industrial buyers. 12,000 MT/year capacity. FOB Mundra or CIF.`
 - Primary CTA: `Get a Quote` (scrolls to form)
 - Secondary CTA: `WhatsApp Us` (mobile-prominent, links to wa.me)
-- Trust row: `COA per shipment · FSSAI · Halal · Kosher · 38 export markets`
+- Trust row: `Sample COA review · Product specs · Origin records · Packing options`
 
 **Right side:** Real photo of facility/warehouse/product bags. Overlaid card showing:
 - `MOQ: 1 container (18-20 MT)`
@@ -99,7 +99,7 @@ The current 13-section homepage becomes a focused 7-section page. Total scroll d
 **Content:**
 1. **Farm to Container** — Own farmer contracts, own mill, own lab, own export desk. No brokers.
 2. **Custom Specs** — Grade, mesh, packing, and documents tailored per buyer. Not one-size-fits-all.
-3. **Fast Turnaround** — 14-21 day lead time. Small team = faster decisions. Sample in 5 days.
+3. **Fast Turnaround** — 14-21 day lead time. Small team = faster decisions. Sample timing confirmed after spec review.
 4. **Full Documentation** — COA, origin, phyto, fumigation, MSDS, allergen statement per shipment.
 
 **Below grid:** Single CTA: `Tell us what you need →`
@@ -152,7 +152,7 @@ The current 13-section homepage becomes a focused 7-section page. Total scroll d
 
 **Left side:**
 - H2: `Get a bulk quote`
-- Subtext: `Tell us what you need. We'll respond within 24 hours with availability, pricing, and sample options.`
+- Subtext: `Tell us what you need. We'll respond after spec review with availability, pricing, and sample options.`
 - Alternative channels:
   - Email: export@rmpsyllium.com
   - WhatsApp: +91 2767 333 444
@@ -312,7 +312,7 @@ Before implementation can start, you need to supply:
 | 2-3 buyer testimonials | Critical | Even domestic. Name + company + country + 1-2 sentences |
 | MOQ confirmation | Critical | "1 container (18-20 MT)" — confirm this is accurate |
 | Lead time confirmation | Critical | "14-21 days" — confirm |
-| Sample policy | High | "250g free sample + COA" — confirm |
+| Sample policy | High | "1 kg sample packs for matched grades; COA/document review before PO" — confirm |
 | Team/founder photo | Medium | For about page (not homepage) |
 | Certification status | Medium | Which certs are in-process vs. obtained? |
 

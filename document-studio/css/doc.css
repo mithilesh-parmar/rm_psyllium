@@ -1,0 +1,172 @@
+/* ════════════════════════════════════════════════════════════════
+   RM Psyllium — shared DOCUMENT styles
+   Used by every template's preview and by print. Screen + print.
+   ════════════════════════════════════════════════════════════════ */
+
+:root {
+  --green-deep:  #1b3828;
+  --green-mid:   #2e5a3e;
+  --green-soft:  #edf2ee;
+  --gold:        #9e7635;
+  --gold-light:  #c9a55a;
+  --cream:       #f6f3ee;
+  --stone:       #8a857e;
+  --border:      #d4cec5;
+  --text:        #1a1a18;
+  --text-soft:   #4a4a46;
+}
+
+/* ────────── PAGE SHELL ────────── */
+.rm-doc { font-family: 'Open Sans', sans-serif; font-size: 9pt; color: var(--text);
+  -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+
+.rm-doc .page {
+  position: relative;
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.rm-doc .page-inner { padding: 7mm 13mm 3mm 13mm; flex: 1; }
+
+/* ────────── WATERMARK ────────── */
+.rm-doc .watermark {
+  position: absolute; top: 62%; left: 50%;
+  transform: translate(-50%, -50%) rotate(-22deg);
+  width: 135mm; opacity: 0.06; pointer-events: none; z-index: 0;
+}
+.rm-doc .page-inner, .rm-doc .page-footer { position: relative; z-index: 1; }
+
+/* ────────── HEADER ────────── */
+.rm-doc .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; }
+.rm-doc .logo-img { height: 88px; width: auto; filter: contrast(1.15) saturate(1.1); }
+.rm-doc .contact-block { text-align: right; font-size: 8pt; line-height: 1.9; color: var(--text); }
+.rm-doc .contact-block .contact-line { font-weight: 600; letter-spacing: 0.01em; }
+.rm-doc .contact-block .contact-line .ci { font-style: normal; margin-right: 4px; font-size: 8.5pt; }
+.rm-doc .contact-block .tagline {
+  font-weight: 600; font-size: 8pt; color: var(--green-deep);
+  letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 5px;
+}
+.rm-doc .header-rule {
+  height: 0.75px; margin-bottom: 8px;
+  background: linear-gradient(to right, transparent 0%, var(--gold) 15%, var(--gold) 85%, transparent 100%);
+}
+
+/* ────────── DOC TITLE ────────── */
+.rm-doc .doc-title-row { display: flex; align-items: center; gap: 10px; margin: 4px 0 8px 0; }
+.rm-doc .doc-title-rule { flex: 1; height: 0.75px; background: var(--border); }
+.rm-doc .doc-title {
+  font-family: 'Playfair Display', Georgia, serif; font-size: 14pt; font-weight: 700;
+  color: var(--green-deep); letter-spacing: 0.30em; text-transform: uppercase; white-space: nowrap;
+}
+
+/* ────────── META BAR (green) ────────── */
+.rm-doc .spec-meta { background: var(--green-deep); display: flex; justify-content: space-between; align-items: stretch; margin-bottom: 6px; }
+.rm-doc .spec-meta-item { flex: 1; padding: 5px 10px; display: flex; flex-direction: column; gap: 1px; }
+.rm-doc .spec-meta-item + .spec-meta-item { border-left: 1px solid rgba(255,255,255,0.12); }
+.rm-doc .spec-meta-item .meta-label { font-size: 6.5pt; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold-light); }
+.rm-doc .spec-meta-item .meta-value { font-size: 8pt; color: rgba(255,255,255,0.88); font-weight: 300; letter-spacing: 0.02em; }
+
+/* ────────── COA PRODUCT + BATCH BLOCK ────────── */
+.rm-doc .coa-product { background: var(--green-deep); color: #fff; padding: 7px 12px; display: flex; align-items: baseline; gap: 10px; }
+.rm-doc .coa-product .cp-label { font-size: 6.8pt; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold-light); white-space: nowrap; }
+.rm-doc .coa-product .cp-value { font-family: 'Open Sans', sans-serif; font-size: 10.5pt; font-weight: 700; letter-spacing: 0.02em; text-transform: uppercase; color: #fff; }
+.rm-doc .coa-batch { display: flex; border: 0.5px solid var(--border); border-top: none; margin-bottom: 8px; }
+.rm-doc .coa-batch .cb-item { flex: 1; padding: 5px 11px; display: flex; flex-direction: column; gap: 1px; }
+.rm-doc .coa-batch .cb-item + .cb-item { border-left: 0.5px solid var(--border); }
+.rm-doc .coa-batch .cb-label { font-size: 6.5pt; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); }
+.rm-doc .coa-batch .cb-value { font-size: 9pt; color: var(--text); font-weight: 600; letter-spacing: 0.02em; }
+
+/* ────────── SECTION HEADING ────────── */
+.rm-doc .sec-head { display: flex; align-items: center; gap: 7px; margin: 9px 0 4px 0; }
+.rm-doc .sec-head-bar { width: 3px; height: 13px; background: var(--gold); border-radius: 1px; flex-shrink: 0; }
+.rm-doc .sec-head-text { font-family: 'Playfair Display', Georgia, serif; font-size: 9.5pt; font-weight: 700; color: var(--green-deep); letter-spacing: 0.07em; }
+.rm-doc .sec-head-line { flex: 1; height: 0.75px; background: var(--border); }
+
+/* ────────── DATA TABLES ────────── */
+.rm-doc .dt { width: 100%; border-collapse: collapse; margin-bottom: 6px; font-size: 8.3pt; }
+.rm-doc .dt td, .rm-doc .dt th { border: 0.5px solid var(--border); padding: 3.6px 9px; vertical-align: top; line-height: 1.45; }
+.rm-doc .dt tbody tr:nth-child(odd)  td { background: #fff; }
+.rm-doc .dt tbody tr:nth-child(even) td { background: var(--cream); }
+.rm-doc .dt td.lbl { width: 34%; white-space: nowrap; font-weight: 600; color: var(--green-deep); font-size: 7.4pt; text-transform: uppercase; letter-spacing: 0.07em; }
+.rm-doc .dt td.lbl-w { width: 55%; font-weight: 600; color: var(--green-deep); font-size: 7.4pt; text-transform: uppercase; letter-spacing: 0.07em; }
+.rm-doc .dt thead tr th {
+  background: var(--green-deep); color: #fff; font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600; font-size: 8.5pt; letter-spacing: 0.06em; text-align: left; padding: 6px 10px; border-color: var(--green-mid);
+}
+.rm-doc .dt thead tr th.center { text-align: center; }
+.rm-doc .dt .span-head td {
+  background: var(--green-mid) !important; color: #fff !important; font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 600; font-size: 8.4pt; letter-spacing: 0.07em; padding: 5px 10px; border-color: var(--green-mid); text-transform: uppercase;
+}
+.rm-doc .dt .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.rm-doc .dt .center { text-align: center; }
+
+/* spec value column */
+.rm-doc .dt td.spec { width: 46%; font-size: 8.4pt; color: var(--text-soft); font-weight: 400; letter-spacing: 0.01em; }
+.rm-doc .dt td.res  { width: 27%; font-size: 8.8pt; color: var(--green-mid); font-weight: 700; letter-spacing: 0.02em; }
+.rm-doc .dt td.lbl.col27 { width: 27%; }
+
+/* sub rows / allergen */
+.rm-doc .sub-row td.lbl { padding-left: 22px; color: var(--stone); font-weight: 400; text-transform: none; letter-spacing: 0.02em; font-size: 7.8pt; }
+.rm-doc .no-val { color: var(--green-mid); font-weight: 600; text-align: center; font-size: 8.4pt; letter-spacing: 0.04em; }
+.rm-doc .allergen-name { text-align: left !important; font-weight: 400; color: var(--text) !important; white-space: normal !important; font-size: 8.6pt; letter-spacing: 0.01em; }
+
+/* ────────── PARTY BLOCKS (invoices) ────────── */
+.rm-doc .party-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 0.5px solid var(--border); margin-bottom: 6px; }
+.rm-doc .party { padding: 6px 10px; border: 0.5px solid var(--border); }
+.rm-doc .party .p-label { font-size: 6.6pt; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); margin-bottom: 2px; }
+.rm-doc .party .p-name { font-weight: 700; font-size: 9pt; color: var(--green-deep); margin-bottom: 1px; }
+.rm-doc .party .p-body { font-size: 8pt; color: var(--text-soft); line-height: 1.5; }
+.rm-doc .party.full { grid-column: 1 / -1; }
+
+/* ────────── TOTALS ────────── */
+.rm-doc .totals { width: 48%; margin-left: auto; border-collapse: collapse; margin-bottom: 6px; font-size: 8.5pt; }
+.rm-doc .totals td { padding: 3.4px 10px; border: 0.5px solid var(--border); }
+.rm-doc .totals td.t-label { font-weight: 600; color: var(--green-deep); text-transform: uppercase; font-size: 7.4pt; letter-spacing: 0.06em; }
+.rm-doc .totals td.t-val { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.rm-doc .totals tr.grand td { background: var(--green-deep); color: #fff; font-weight: 700; font-size: 9pt; }
+.rm-doc .amount-words { font-size: 8pt; color: var(--text); border-left: 2px solid var(--gold); padding: 5px 10px; margin: 4px 0 6px 0; }
+.rm-doc .amount-words strong { color: var(--green-deep); }
+
+/* ────────── NOTE / CONFORMS ────────── */
+.rm-doc .note { font-size: 7.8pt; color: var(--stone); border-left: 2px solid var(--gold); padding: 4px 9px; margin: 8px 0 4px 0; line-height: 1.55; letter-spacing: 0.01em; }
+.rm-doc .conforms { display: flex; align-items: center; gap: 9px; background: var(--green-soft); border: 0.5px solid var(--gold-light); border-left: 3px solid var(--gold); padding: 7px 12px; margin: 8px 0 4px 0; font-size: 8.4pt; color: var(--green-deep); line-height: 1.5; }
+.rm-doc .conforms .seal { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 9pt; color: var(--gold); letter-spacing: 0.06em; text-transform: uppercase; white-space: nowrap; }
+
+/* ────────── PROSE (declarations / contracts) ────────── */
+.rm-doc .prose { font-size: 9pt; color: var(--text); line-height: 1.7; }
+.rm-doc .prose p { margin-bottom: 9px; }
+.rm-doc .prose strong { color: var(--green-deep); }
+.rm-doc .prose ul { margin: 0 0 9px 18px; }
+.rm-doc .prose li { margin-bottom: 4px; }
+
+/* ────────── APPLICATIONS GRID ────────── */
+.rm-doc .app-grid { display: grid; grid-template-columns: 1fr 1fr; border: 0.5px solid var(--border); margin-bottom: 6px; }
+.rm-doc .app-cell { padding: 6px 10px; border: 0.5px solid var(--border); font-size: 8.2pt; line-height: 1.55; }
+.rm-doc .app-cell:nth-child(odd)  { background: #fff; }
+.rm-doc .app-cell:nth-child(even) { background: var(--cream); }
+.rm-doc .app-cell-title { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 8.5pt; color: var(--green-deep); display: block; margin-bottom: 3px; letter-spacing: 0.04em; }
+.rm-doc .app-cell p { color: var(--text-soft); font-size: 8pt; line-height: 1.55; letter-spacing: 0.01em; }
+
+/* ────────── SIGNATURES ────────── */
+.rm-doc .sign-grid { display: grid; grid-template-columns: 1fr 1fr; border: 0.5px solid var(--border); margin-top: 14px; }
+.rm-doc .sign-cell { padding: 10px 14px 9px 14px; text-align: center; }
+.rm-doc .sign-cell + .sign-cell { border-left: 0.5px solid var(--border); }
+.rm-doc .sign-role { font-size: 6.8pt; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold); margin-bottom: 30px; }
+.rm-doc .sign-line { height: 0.75px; background: var(--text-soft); margin: 0 8px 4px 8px; }
+.rm-doc .sign-name { font-size: 8.2pt; font-weight: 600; color: var(--green-deep); letter-spacing: 0.03em; }
+.rm-doc .sign-title { font-size: 7pt; color: var(--stone); letter-spacing: 0.04em; margin-top: 1px; }
+
+/* ────────── FOOTER ────────── */
+.rm-doc .page-footer { margin-top: 4mm; }
+.rm-doc .footer-num-row { display: flex; justify-content: space-between; align-items: center; padding: 4px 13mm; font-size: 7pt; color: var(--stone); letter-spacing: 0.05em; border-top: 0.75px solid var(--border); }
+.rm-doc .footer-num-row .doc-ref { font-style: italic; }
+.rm-doc .footer-bar { background: var(--green-deep); color: rgba(255,255,255,0.78); font-size: 7.5pt; text-align: center; padding: 5.5px 13mm; letter-spacing: 0.04em; border-top: 1.5px solid var(--gold); }
+
+/* ────────── PAGE BREAK ────────── */
+.rm-doc .page-break { page-break-after: always; break-after: page; height: 0; overflow: hidden; border: none; margin: 0; padding: 0; }

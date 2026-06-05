@@ -43,6 +43,32 @@
       {
         "q": "Warum ist säureunlösliche Asche ein kritischer Sicherheitsgrenzwert?",
         "a": "Säureunlösliche Asche weist auf verbleibenden Sand, Schmutz und Siliziumdioxid ind. Die USP schreibt einen strengen Grenzwert von ≤0,4 % vor. Modernste Schwerkraftabscheidung wird eingesetzt, um diese niedrigen Werte zu garantieren."
+      },
+      {
+        "q": "Was sollte vor der Bestellung geprüft werden?",
+        "a": "Prüfen Sie USP, EP, IP, BP/NF, COA, swelling volume, ash, moisture, microbiology, heavy metals gegen die Zielcharge und die Anforderungen des Zielmarkts."
+      },
+      {
+        "q": "Reicht ein Muster-COA für die finale Freigabe?",
+        "a": "Nein. Ein Muster-COA dient der Parameterprüfung. Die finale Freigabe sollte auf dem COA oder Bericht der tatsächlich versendeten Charge basieren."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Was Käufer prüfen sollten",
+        "body": "Für USP/EP/IP wording sollten Zielcharge, Käuferspezifikation, COA und Methode vor der Bestellung geprüft werden."
+      },
+      {
+        "heading": "Checkliste vor Bestellung",
+        "body": "Diese Punkte anfordern und vergleichen: USP, EP, IP, BP/NF, COA, swelling volume, ash, moisture, microbiology, heavy metals. Die Prüfung sollte vor Preis, Muster oder Handelslos erfolgen."
+      },
+      {
+        "heading": "Häufiger Fehler",
+        "body": "USP/EP/IP wording nicht als allgemeines Lieferantenversprechen behandeln. Es muss mit Chargenergebnissen, Dokumenten und Zielmarkt verknüpft sein."
+      },
+      {
+        "heading": "Wie RM unterstützen kann",
+        "body": "RM kann Muster-COA, Spezifikation, Qualität, Mesh, Verpackung und Zieldokumente vor der Bestellung prüfen."
       }
     ]
   },
@@ -85,11 +111,37 @@
     "faqs": [
       {
         "q": "Was bedeutet eine NABL-Akkreditierung auf einem COA?",
-        "a": "NABL ist Indiens nationale Akkreditierungsstelle für Prüflabore und sichert über ILAC die internationale Anerkennung. Ein NABL-COA garantiert standardkonforme Prüfungen und Validierungen."
+        "a": "NABL ist Indiens nationale Akkreditierungsstelle für Prüflabore und sichert über ILAC internationale Anerkennung. Entscheidend ist, dass der ausstellende Prüfdienstleister akkreditiert ist und der COA eindeutig zur geprüften Charge passt."
       },
       {
         "q": "Wie werden Schwermetalle in Flohsamen getestet?",
         "a": "Schwermetalle werden mittels Massenspektrometrie mit induktiv gekoppeltem Plasma (ICP-MS) getestet. Dies stellt den Nachweis von Blei, Arsen, Cadmium und Quecksilber im Parts-per-Billion (ppb)-Bereich sicher."
+      },
+      {
+        "q": "Was sollte vor der Bestellung geprüft werden?",
+        "a": "Prüfen Sie NABL scope, lab name, lot number, sample identity, method, result, unit, limit, signatory gegen die Zielcharge und die Anforderungen des Zielmarkts."
+      },
+      {
+        "q": "Reicht ein Muster-COA für die finale Freigabe?",
+        "a": "Nein. Ein Muster-COA dient der Parameterprüfung. Die finale Freigabe sollte auf dem COA oder Bericht der tatsächlich versendeten Charge basieren."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Was Käufer prüfen sollten",
+        "body": "Für NABL wording sollten Zielcharge, Käuferspezifikation, COA und Methode vor der Bestellung geprüft werden."
+      },
+      {
+        "heading": "Checkliste vor Bestellung",
+        "body": "Diese Punkte anfordern und vergleichen: NABL scope, lab name, lot number, sample identity, method, result, unit, limit, signatory. Die Prüfung sollte vor Preis, Muster oder Handelslos erfolgen."
+      },
+      {
+        "heading": "Häufiger Fehler",
+        "body": "NABL wording nicht als allgemeines Lieferantenversprechen behandeln. Es muss mit Chargenergebnissen, Dokumenten und Zielmarkt verknüpft sein."
+      },
+      {
+        "heading": "Wie RM unterstützen kann",
+        "body": "RM kann Muster-COA, Spezifikation, Qualität, Mesh, Verpackung und Zieldokumente vor der Bestellung prüfen."
       }
     ]
   },
@@ -132,6 +184,32 @@
       {
         "q": "Welche physikalischen Reinigungsmethoden sollte ein Lieferant nutzen?",
         "a": "Geprüfte Hersteller müssen mehrstufige Entsteiner zur Entfernung von Schmutz/Sand, Siebklassierer für Partikelgrößen und hochintensive Magnetgitter zur Abscheidung von Metallrückständen einsetzen."
+      },
+      {
+        "q": "Was sollte vor der Bestellung geprüft werden?",
+        "a": "Prüfen Sie FSVP file, prior notice data, product specification, COA, origin, packing, broker details gegen die Zielcharge und die Anforderungen des Zielmarkts."
+      },
+      {
+        "q": "Reicht ein Muster-COA für die finale Freigabe?",
+        "a": "Nein. Ein Muster-COA dient der Parameterprüfung. Die finale Freigabe sollte auf dem COA oder Bericht der tatsächlich versendeten Charge basieren."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Was Käufer prüfen sollten",
+        "body": "Für FDA/FSVP wording sollten Zielcharge, Käuferspezifikation, COA und Methode vor der Bestellung geprüft werden."
+      },
+      {
+        "heading": "Checkliste vor Bestellung",
+        "body": "Diese Punkte anfordern und vergleichen: FSVP file, prior notice data, product specification, COA, origin, packing, broker details. Die Prüfung sollte vor Preis, Muster oder Handelslos erfolgen."
+      },
+      {
+        "heading": "Häufiger Fehler",
+        "body": "FDA/FSVP wording nicht als allgemeines Lieferantenversprechen behandeln. Es muss mit Chargenergebnissen, Dokumenten und Zielmarkt verknüpft sein."
+      },
+      {
+        "heading": "Wie RM unterstützen kann",
+        "body": "RM kann Muster-COA, Spezifikation, Qualität, Mesh, Verpackung und Zieldokumente vor der Bestellung prüfen."
       }
     ]
   },
@@ -174,6 +252,32 @@
       {
         "q": "Welche Labormethode wird für den Schwermetalltest verwendet?",
         "a": "Die Massenspektrometrie mit induktiv gekoppeltem Plasma (ICP-MS) ist die globale Referenzmethode und bietet eine extreme Empfindlichkeit bis in den Parts-per-Billion (ppb)-Bereich."
+      },
+      {
+        "q": "Was sollte vor der Bestellung geprüft werden?",
+        "a": "Prüfen Sie Pb, As, Cd, Hg, ICP-MS method, ppm unit, serving size, destination-market limit gegen die Zielcharge und die Anforderungen des Zielmarkts."
+      },
+      {
+        "q": "Reicht ein Muster-COA für die finale Freigabe?",
+        "a": "Nein. Ein Muster-COA dient der Parameterprüfung. Die finale Freigabe sollte auf dem COA oder Bericht der tatsächlich versendeten Charge basieren."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Was Käufer prüfen sollten",
+        "body": "Für heavy-metal pass/fail wording sollten Zielcharge, Käuferspezifikation, COA und Methode vor der Bestellung geprüft werden."
+      },
+      {
+        "heading": "Checkliste vor Bestellung",
+        "body": "Diese Punkte anfordern und vergleichen: Pb, As, Cd, Hg, ICP-MS method, ppm unit, serving size, destination-market limit. Die Prüfung sollte vor Preis, Muster oder Handelslos erfolgen."
+      },
+      {
+        "heading": "Häufiger Fehler",
+        "body": "heavy-metal pass/fail wording nicht als allgemeines Lieferantenversprechen behandeln. Es muss mit Chargenergebnissen, Dokumenten und Zielmarkt verknüpft sein."
+      },
+      {
+        "heading": "Wie RM unterstützen kann",
+        "body": "RM kann Muster-COA, Spezifikation, Qualität, Mesh, Verpackung und Zieldokumente vor der Bestellung prüfen."
       }
     ]
   },
@@ -216,6 +320,32 @@
       {
         "q": "Beeinflusst die Dampfsterilisation das Quellvolumen von Flohsamen?",
         "a": "Bei unsachgemäßer Steuerung können hohe Hitze und Feuchtigkeit die Schalen vorquellen lassen. Eine präzise, schnelle kontinuierliche Dampfsterilisation schützt die Schleimstoffintegrität und erhält ein Quellvolumen von ≥50 mL/g."
+      },
+      {
+        "q": "Was sollte vor der Bestellung geprüft werden?",
+        "a": "Prüfen Sie treatment method, microbiology, moisture, ETO, 2-chloroethanol, swelling volume gegen die Zielcharge und die Anforderungen des Zielmarkts."
+      },
+      {
+        "q": "Reicht ein Muster-COA für die finale Freigabe?",
+        "a": "Nein. Ein Muster-COA dient der Parameterprüfung. Die finale Freigabe sollte auf dem COA oder Bericht der tatsächlich versendeten Charge basieren."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Was Käufer prüfen sollten",
+        "body": "Für sterilization wording sollten Zielcharge, Käuferspezifikation, COA und Methode vor der Bestellung geprüft werden."
+      },
+      {
+        "heading": "Checkliste vor Bestellung",
+        "body": "Diese Punkte anfordern und vergleichen: treatment method, microbiology, moisture, ETO, 2-chloroethanol, swelling volume. Die Prüfung sollte vor Preis, Muster oder Handelslos erfolgen."
+      },
+      {
+        "heading": "Häufiger Fehler",
+        "body": "sterilization wording nicht als allgemeines Lieferantenversprechen behandeln. Es muss mit Chargenergebnissen, Dokumenten und Zielmarkt verknüpft sein."
+      },
+      {
+        "heading": "Wie RM unterstützen kann",
+        "body": "RM kann Muster-COA, Spezifikation, Qualität, Mesh, Verpackung und Zieldokumente vor der Bestellung prüfen."
       }
     ]
   },
@@ -258,6 +388,32 @@
       {
         "q": "Welche Maschenweite wird für trinkfertige Pulver empfohlen?",
         "a": "Für trockene Getränkemischungen wird eine Feinheit von 100 Mesh oder mehr empfohlen, um eine schnelle, klumpenfreie und glatte Dispersion in kalten Flüssigkeiten ohne sandiges Mundgefühl zu sichern."
+      },
+      {
+        "q": "Was sollte vor der Bestellung geprüft werden?",
+        "a": "Prüfen Sie mesh, hydration speed, water addition, mixing time, crumb texture, 1 kg sample trial gegen die Zielcharge und die Anforderungen des Zielmarkts."
+      },
+      {
+        "q": "Reicht ein Muster-COA für die finale Freigabe?",
+        "a": "Nein. Ein Muster-COA dient der Parameterprüfung. Die finale Freigabe sollte auf dem COA oder Bericht der tatsächlich versendeten Charge basieren."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Was Käufer prüfen sollten",
+        "body": "Für mesh recommendation sollten Zielcharge, Käuferspezifikation, COA und Methode vor der Bestellung geprüft werden."
+      },
+      {
+        "heading": "Checkliste vor Bestellung",
+        "body": "Diese Punkte anfordern und vergleichen: mesh, hydration speed, water addition, mixing time, crumb texture, 1 kg sample trial. Die Prüfung sollte vor Preis, Muster oder Handelslos erfolgen."
+      },
+      {
+        "heading": "Häufiger Fehler",
+        "body": "mesh recommendation nicht als allgemeines Lieferantenversprechen behandeln. Es muss mit Chargenergebnissen, Dokumenten und Zielmarkt verknüpft sein."
+      },
+      {
+        "heading": "Wie RM unterstützen kann",
+        "body": "RM kann Muster-COA, Spezifikation, Qualität, Mesh, Verpackung und Zieldokumente vor der Bestellung prüfen."
       }
     ]
   },
@@ -300,6 +456,32 @@
       {
         "q": "Wie werden Pestizidrückstände in Bio-Flohsamen überprüft?",
         "a": "Akkreditierte Labore nutzen Gaschromatographie mit Massenspektrometrie-Kopplung (GC-MS) und Flüssigchromatographie mit Massenspektrometrie-Kopplung (LC-MS), um über 500 Wirkstoffe zu screenen."
+      },
+      {
+        "q": "Was sollte vor der Bestellung geprüft werden?",
+        "a": "Prüfen Sie certificate scope, handler chain, TC/COI path, pesticide residue report, lot identity gegen die Zielcharge und die Anforderungen des Zielmarkts."
+      },
+      {
+        "q": "Reicht ein Muster-COA für die finale Freigabe?",
+        "a": "Nein. Ein Muster-COA dient der Parameterprüfung. Die finale Freigabe sollte auf dem COA oder Bericht der tatsächlich versendeten Charge basieren."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Was Käufer prüfen sollten",
+        "body": "Für organic wording sollten Zielcharge, Käuferspezifikation, COA und Methode vor der Bestellung geprüft werden."
+      },
+      {
+        "heading": "Checkliste vor Bestellung",
+        "body": "Diese Punkte anfordern und vergleichen: certificate scope, handler chain, TC/COI path, pesticide residue report, lot identity. Die Prüfung sollte vor Preis, Muster oder Handelslos erfolgen."
+      },
+      {
+        "heading": "Häufiger Fehler",
+        "body": "organic wording nicht als allgemeines Lieferantenversprechen behandeln. Es muss mit Chargenergebnissen, Dokumenten und Zielmarkt verknüpft sein."
+      },
+      {
+        "heading": "Wie RM unterstützen kann",
+        "body": "RM kann Muster-COA, Spezifikation, Qualität, Mesh, Verpackung und Zieldokumente vor der Bestellung prüfen."
       }
     ]
   },
@@ -342,6 +524,32 @@
       {
         "q": "Was ist ein ELISA-Test für Gluten?",
         "a": "Der Enzyme-Linked Immunosorbent Assay (ELISA) is die Referenzmethode in NABL-akkreditierten Laboren, um kleinste Spuren von Glutenproteinen im Parts-per-Million (ppm)-Bereich nachzuweisen."
+      },
+      {
+        "q": "Was sollte vor der Bestellung geprüft werden?",
+        "a": "Prüfen Sie allergen declaration, shared equipment, cleaning records, storage segregation, ELISA testing gegen die Zielcharge und die Anforderungen des Zielmarkts."
+      },
+      {
+        "q": "Reicht ein Muster-COA für die finale Freigabe?",
+        "a": "Nein. Ein Muster-COA dient der Parameterprüfung. Die finale Freigabe sollte auf dem COA oder Bericht der tatsächlich versendeten Charge basieren."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Was Käufer prüfen sollten",
+        "body": "Für gluten-free or allergen wording sollten Zielcharge, Käuferspezifikation, COA und Methode vor der Bestellung geprüft werden."
+      },
+      {
+        "heading": "Checkliste vor Bestellung",
+        "body": "Diese Punkte anfordern und vergleichen: allergen declaration, shared equipment, cleaning records, storage segregation, ELISA testing. Die Prüfung sollte vor Preis, Muster oder Handelslos erfolgen."
+      },
+      {
+        "heading": "Häufiger Fehler",
+        "body": "gluten-free or allergen wording nicht als allgemeines Lieferantenversprechen behandeln. Es muss mit Chargenergebnissen, Dokumenten und Zielmarkt verknüpft sein."
+      },
+      {
+        "heading": "Wie RM unterstützen kann",
+        "body": "RM kann Muster-COA, Spezifikation, Qualität, Mesh, Verpackung und Zieldokumente vor der Bestellung prüfen."
       }
     ]
   },
@@ -384,6 +592,32 @@
       {
         "q": "Wie wird der Gesamtballaststoffgehalt verifiziert?",
         "a": "Die einzelnen Ballaststofffraktionen werden mittels standardisierter enzymatisch-gravimetrischer Methoden gemäß AOAC 991.43 in NABL-akkreditierten Laboren validiert."
+      },
+      {
+        "q": "Was sollte vor der Bestellung geprüft werden?",
+        "a": "Prüfen Sie purity, swelling volume, mesh, moisture, fiber method, texture, finished application gegen die Zielcharge und die Anforderungen des Zielmarkts."
+      },
+      {
+        "q": "Reicht ein Muster-COA für die finale Freigabe?",
+        "a": "Nein. Ein Muster-COA dient der Parameterprüfung. Die finale Freigabe sollte auf dem COA oder Bericht der tatsächlich versendeten Charge basieren."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Was Käufer prüfen sollten",
+        "body": "Für fiber-ratio wording sollten Zielcharge, Käuferspezifikation, COA und Methode vor der Bestellung geprüft werden."
+      },
+      {
+        "heading": "Checkliste vor Bestellung",
+        "body": "Diese Punkte anfordern und vergleichen: purity, swelling volume, mesh, moisture, fiber method, texture, finished application. Die Prüfung sollte vor Preis, Muster oder Handelslos erfolgen."
+      },
+      {
+        "heading": "Häufiger Fehler",
+        "body": "fiber-ratio wording nicht als allgemeines Lieferantenversprechen behandeln. Es muss mit Chargenergebnissen, Dokumenten und Zielmarkt verknüpft sein."
+      },
+      {
+        "heading": "Wie RM unterstützen kann",
+        "body": "RM kann Muster-COA, Spezifikation, Qualität, Mesh, Verpackung und Zieldokumente vor der Bestellung prüfen."
       }
     ]
   },
@@ -426,16 +660,42 @@
       {
         "q": "Welche Faktoren können das Quellvolumen bei der Verarbeitung beeinträchtigen?",
         "a": "Übermäßige Hitzeentwicklung durch mechanische Reibung beim Mahlen ist die Hauptursache für die Schleimstoffdegradation. Dies unterstreicht die Notwendigkeit temperaturgesteuerter Vermahlung."
+      },
+      {
+        "q": "Was sollte vor der Bestellung geprüft werden?",
+        "a": "Prüfen Sie sample form, particle size, method, rest time, water volume, swelling result, COA wording gegen die Zielcharge und die Anforderungen des Zielmarkts."
+      },
+      {
+        "q": "Reicht ein Muster-COA für die finale Freigabe?",
+        "a": "Nein. Ein Muster-COA dient der Parameterprüfung. Die finale Freigabe sollte auf dem COA oder Bericht der tatsächlich versendeten Charge basieren."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Was Käufer prüfen sollten",
+        "body": "Für swelling-volume result sollten Zielcharge, Käuferspezifikation, COA und Methode vor der Bestellung geprüft werden."
+      },
+      {
+        "heading": "Checkliste vor Bestellung",
+        "body": "Diese Punkte anfordern und vergleichen: sample form, particle size, method, rest time, water volume, swelling result, COA wording. Die Prüfung sollte vor Preis, Muster oder Handelslos erfolgen."
+      },
+      {
+        "heading": "Häufiger Fehler",
+        "body": "swelling-volume result nicht als allgemeines Lieferantenversprechen behandeln. Es muss mit Chargenergebnissen, Dokumenten und Zielmarkt verknüpft sein."
+      },
+      {
+        "heading": "Wie RM unterstützen kann",
+        "body": "RM kann Muster-COA, Spezifikation, Qualität, Mesh, Verpackung und Zieldokumente vor der Bestellung prüfen."
       }
     ]
   },
   "blogPosts": {
     "psyllium-husk-gmp-compliant-manufacturer-india": {
-      "title": "GMP-konformer Psylliumschalen-Hersteller Indien: Anlage- und Dokumentationsstandards",
-      "summary": "Was eine GMP-konforme Anlage für die Psylliumverarbeitung bedeutet, BP-Gradspezifikationen und die Dokumentationscheckliste, die pharmazeutische Einkäufer von indischen Lieferanten anfordern sollten.",
+      "title": "GMP-Dokumentationsstandards für Psylliumschalen-Käufer in Indien",
+      "summary": "Welche Prozess-, Chargen- und BP-/USP-Dokumente pharmazeutische Einkäufer von indischen Psylliumlieferanten prüfen sollten.",
       "body": [
-        "Pharmazeutische Einkäufer, die Psylliumschalen aus Indien beziehen, benötigen mehr als nur eine Reinheitsstufe — sie benötigen die Bestätigung, dass die Verarbeitungsanlage unter dokumentierten Qualitätskontrollen betrieben wird, die den Good Manufacturing Practice (GMP) Standards entsprechen. Für Psyllium bedeutet GMP-konforme Verarbeitung: kontrollierte Mahlumgebungen, dokumentierte Reinigungsverfahren, Schädlingsbekämpfungsunterlagen, Chargennachverfolgbarkeit und kalibrierte Geräte.",
-        "RM Psyllium betreibt eine GMP-konforme Anlage in Siddhpur, Gujarat — dem primären Psylliumverarbeitungszentrum in Indien. Unsere Anlage führt Chargenfabrikationsaufzeichnungen, Gerätekalibrierungsprotokolle und prozessbegleitende Qualitätskontrollen für jeden Produktionslauf durch."
+        "Pharmazeutische Einkäufer, die Psylliumschalen aus Indien beziehen, benötigen mehr als nur eine Reinheitsstufe. Sie sollten Prozessdokumente prüfen, die kontrollierte Mahlumgebungen, dokumentierte Reinigungsverfahren, Schädlingsbekämpfungsunterlagen, Chargennachverfolgbarkeit und kalibrierte Geräte abdecken.",
+        "RM Psyllium betreibt eine Verarbeitungsanlage in Siddhpur, Gujarat. Pharmazeutische Käufer können Chargenaufzeichnungen, Reinigungs-, Rückverfolgbarkeits-, Kalibrierungs- und Prozessdokumente vor Lieferantenfreigabe prüfen."
       ],
       "sections": [
         {
@@ -483,7 +743,52 @@
         },
         {
           "heading": "Dokumentationscheckliste für Pharma-Einkäufer",
-          "body": "Das Standard-Dokumentationspaket von RM Psyllium umfasst: (1) COA aus NABL-akkreditiertem Labor, annotiert nach USP, EP, BP oder IP wie spezifiziert; (2) Ursprungszeugnis der Gujarat Chamber of Commerce; (3) Pflanzenschutzzertifikat der Pflanzenschutzbehörde; (4) GMP-Konformitätserklärung der Anlage auf Firmenbriefpapier; (5) Packliste und Handelsrechnung."
+          "body": "Das Dokumentationspaket von RM Psyllium kann chargenbezogen geprüft werden und umfasst je nach Produkt und Zielmarkt: (1) Chargen-COA, mit Bericht eines akkreditierten Drittlabors, wenn die Spezifikation dies verlangt; (2) Ursprungsdokumente, wenn anwendbar; (3) Pflanzenschutzzertifikat, wenn anwendbar; (4) Prozess- und Verpackungsdokumente zur Käuferprüfung; (5) Packliste und Handelsrechnung."
+        },
+        {
+          "heading": "Entscheidungspunkt fuer Einkauf",
+          "body": "Vor Bestellung Spezifikation mit realer Charge, COA, 1-kg-Muster, Verpackung und den Dokumenten des Zielmarktes verbinden."
+        },
+        {
+          "heading": "Entscheidungspunkt fuer Einkauf",
+          "body": "Vor Bestellung Spezifikation mit realer Charge, COA, 1-kg-Muster, Verpackung und den Dokumenten des Zielmarktes verbinden."
+        }
+      ],
+      "aiSnapshot": "GMP-Dokumentationsstandards für Psylliumschalen-Käufer in Indien sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
         }
       ]
     },
@@ -492,7 +797,7 @@
       "summary": "Spezifikationsparameter für Psylliumschalen in Lebensmittelqualität, was HACCP-konforme Verarbeitung in der Praxis bedeutet und welche Dokumentation Lebensmittelhersteller vor einer Großbestellung ab Siddhpur, Gujarat benötigen.",
       "body": [
         "Lebensmittelhersteller, die Psylliumschalen als funktionellen Inhaltsstoff beziehen — für Ballaststoffanreicherung, Texturmodifikation oder Clean-Label-Anwendungen — benötigen einen Lieferanten mit Lebensmittelsicherheitskontrollen, die über die grundlegende landwirtschaftliche Verarbeitung hinausgehen.",
-        "RM Psyllium betreibt eine lebensmittelsichere Verarbeitungsanlage in Siddhpur, Gujarat. Unsere Anlage wendet HACCP-Grundsätze an — Gefahrenanalyse und kritische Kontrollpunkte — über die Mahl-, Trenn- und Verpackungsprozesse für Psylliumschalen und -pulver in Lebensmittelqualität."
+        "RM Psyllium betreibt eine Verarbeitungsanlage in Siddhpur, Gujarat. Lebensmittelkäufer können Reinigungs-, Trennungs-, Verpackungs-, Rückverfolgbarkeits- und Lebensmittelsicherheitsdokumente vor Auftragsbestätigung prüfen."
       ],
       "sections": [
         {
@@ -546,6 +851,51 @@
         {
           "heading": "HACCP-konforme Verarbeitung: Was abgedeckt wird",
           "body": "HACCP-konforme Verarbeitung für Psyllium deckt drei primäre Gefahrenkategorien ab: (1) Physisch — Metalldetektion bei der Endverpackung; Schwerkraftabscheider und Absaugung zur Entfernung von Steinen, Staub und Fremdsamen während des Mahlens; (2) Chemisch — keine Pestizid- oder chemische Behandlung während der Verarbeitung; Feuchtigkeitsüberwachung zur Verhinderung der Mykotoxinentwicklung; (3) Biologisch — Reinigungs- und Sanitäraufzeichnungen für alle kontaktierenden Geräte."
+        },
+        {
+          "heading": "Entscheidungspunkt fuer Einkauf",
+          "body": "Vor Bestellung Spezifikation mit realer Charge, COA, 1-kg-Muster, Verpackung und den Dokumenten des Zielmarktes verbinden."
+        },
+        {
+          "heading": "Entscheidungspunkt fuer Einkauf",
+          "body": "Vor Bestellung Spezifikation mit realer Charge, COA, 1-kg-Muster, Verpackung und den Dokumenten des Zielmarktes verbinden."
+        }
+      ],
+      "aiSnapshot": "Lebensmittelqualität Psylliumschalen Großlieferant Indien: HACCP-konforme Anlage sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
         }
       ]
     },
@@ -563,7 +913,7 @@
         },
         {
           "heading": "MOQ, Lieferzeit und Musterpolitik",
-          "body": "Unser Ansatz für neue Käuferbeziehungen ist Muster-zuerst. Wir stellen 100–500 g Muster mit vollständigem COA vor jeder Bestellung bereit.",
+          "body": "Unser Ansatz für neue Käuferbeziehungen ist Muster-zuerst. Wir bestätigen Mustergröße, COA-Prüfoptionen und Lieferzeit vor jeder Bestellung.",
           "table": {
             "headers": [
               "Produkt",
@@ -574,24 +924,69 @@
             "rows": [
               [
                 "Psylliumschalen 99% (Pharma)",
-                "100–200 g + COA",
-                "500 kg",
-                "10–15 Werktage"
+                "Nach Spezifikationsprüfung",
+                "Nach Qualität und Dokumenten",
+                "Nach Bestellprüfung"
               ],
               [
                 "Psylliumschalenpulver 98%",
-                "100–200 g + COA",
-                "500 kg",
-                "10–15 Werktage"
+                "Nach Mesh-Prüfung",
+                "Nach Mesh und Verpackung",
+                "Nach Bestellprüfung"
               ],
               [
                 "Bio-Psylliumschalen",
-                "100–200 g + COA + Zert.",
-                "500 kg",
-                "15–20 Werktage"
+                "Zertifikatsumfang vor Angebot prüfen",
+                "Nach Zertifikatsumfang und Lot",
+                "Nach Dokumentenprüfung"
               ]
             ]
           }
+        },
+        {
+          "heading": "Entscheidungspunkt fuer Einkauf",
+          "body": "Vor Bestellung Spezifikation mit realer Charge, COA, 1-kg-Muster, Verpackung und den Dokumenten des Zielmarktes verbinden."
+        },
+        {
+          "heading": "Entscheidungspunkt fuer Einkauf",
+          "body": "Vor Bestellung Spezifikation mit realer Charge, COA, 1-kg-Muster, Verpackung und den Dokumenten des Zielmarktes verbinden."
+        }
+      ],
+      "aiSnapshot": "Psylliumschalen-Hersteller Siddhpur Gujarat: Direktlieferung ab Werk sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
         }
       ]
     },
@@ -637,7 +1032,52 @@
         },
         {
           "heading": "Standard-Exportdokumentationspaket",
-          "body": "Für Plantago-ovata-Schalen-Großlieferungen umfasst der Standarddokumentationssatz: Handelsrechnung und Packliste; COA aus NABL-akkreditiertem Labor; Ursprungszeugnis (Formular A für GSP-berechtigte Märkte); Pflanzengesundheitszeugnis der indischen Pflanzenschutzbehörde; Begasungszeugnis nach Bedarf (USA, Australien, Neuseeland). HS-Code für Psylliumschalen ist 1211.90. COA-Parameter werden auf Anfrage gemäß der gewünschten Pharmakopöe annotiert — USP, EP, BP oder IP."
+          "body": "Für Plantago-ovata-Schalen-Großlieferungen wird der Dokumentensatz nach Produkt, Charge und Zielmarkt geprüft: Handelsrechnung und Packliste; Chargen-COA, mit akkreditiertem Drittlaborbericht, wenn die Spezifikation dies verlangt; Ursprungsdokumente; Pflanzengesundheitszeugnis, wenn erforderlich; Begasungszeugnis nach Bedarf. HS-Code für Psylliumschalen ist 1211.90. COA-Parameter können nur dort auf USP, EP, BP oder IP bezogen werden, wo die geprüften Chargenergebnisse dies stützen."
+        },
+        {
+          "heading": "Entscheidungspunkt fuer Einkauf",
+          "body": "Vor Bestellung Spezifikation mit realer Charge, COA, 1-kg-Muster, Verpackung und den Dokumenten des Zielmarktes verbinden."
+        },
+        {
+          "heading": "Entscheidungspunkt fuer Einkauf",
+          "body": "Vor Bestellung Spezifikation mit realer Charge, COA, 1-kg-Muster, Verpackung und den Dokumenten des Zielmarktes verbinden."
+        }
+      ],
+      "aiSnapshot": "Großexporteur für Plantago-ovata-Schalen aus Indien: Qualitätsstufen, Isabgol-Bezeichnung und Exportbedingungen sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
         }
       ]
     },
@@ -646,7 +1086,7 @@
       "summary": "Qualitäts- und Meshauswahl für Nahrungsergänzungs- und funktionelle Lebensmittelhersteller, die Psylliumschalenpulver in Großmengen aus Gujarat beziehen.",
       "body": [
         "Psylliumschalenpulver wird aus ganzen Psylliumschalen auf eine bestimmte Meshfeinheit gemahlen. Im Gegensatz zur ganzen Schale dispergiert Pulver gleichmäßig in wässrigen Medien und ist die bevorzugte Form für Getränkepulver, funktionelle Lebensmittelvorgemische und bestimmte Nahrungsergänzungsdarreichungsformen. Reinheitsgrad bestimmt Muzingehalt und Quellvolumen; Mesh bestimmt Partikelgröße und Dispersionsgeschwindigkeit.",
-        "RM Psyllium liefert Psylliumschalenpulver in drei Reinheitsgraden aus unserer Anlage in Siddhpur, Gujarat: 85%, 95% und 98%. Alle Qualitäten sind in mehreren Meshspezifikationen erhältlich und mit vollständiger COA aus einem NABL-akkreditierten Labor geliefert. MOQ beginnt bei 100 kg für Erstbestellungen."
+        "RM Psyllium liefert Psylliumschalenpulver in drei Reinheitsgraden aus unserer Anlage in Siddhpur, Gujarat: 85%, 95% und 98%. Alle Qualitäten sind in mehreren Meshspezifikationen erhältlich, mit chargenbezogenem COA und akkreditiertem Drittlaborbericht, wenn die Käuferspezifikation dies verlangt. MOQ wird nach Produkt, Verpackung und Zielmarkt geprüft."
       ],
       "sections": [
         {
@@ -691,7 +1131,48 @@
         },
         {
           "heading": "MOQ und Verpackungsoptionen",
-          "body": "Psylliumschalenpulver wird in mit HDPE ausgekleideten Papiersäcken à 25 kg, 50 kg-HDPE-ausgekleideten Säcken und 500 kg FIBC-Jumbosäcken geliefert. Für feuchtigkeitsempfindliche Anwendungen ist auf Anfrage eine wärmeversiegelte HDPE-Innenauskleidung mit Trockenmitteleinsatz erhältlich. Mustermengen (100–500 g mit COA) werden innerhalb von 3–5 Werktagen aus Siddhpur versandt."
+          "body": "Psylliumschalenpulver wird in mit HDPE ausgekleideten Papiersäcken à 25 kg, 50 kg-HDPE-ausgekleideten Säcken und 500 kg FIBC-Jumbosäcken geliefert. Für feuchtigkeitsempfindliche Anwendungen ist auf Anfrage eine wärmeversiegelte HDPE-Innenauskleidung mit Trockenmitteleinsatz erhältlich. Mustermenge, COA-Prüfoptionen und Versandzeit werden nach Prüfung von Qualität, Mesh, Zielort und Dokumentanforderungen bestätigt."
+        },
+        {
+          "heading": "Entscheidungspunkt fuer Einkauf",
+          "body": "Vor Bestellung Spezifikation mit realer Charge, COA, 1-kg-Muster, Verpackung und den Dokumenten des Zielmarktes verbinden."
+        }
+      ],
+      "aiSnapshot": "Psylliumschalenpulver-Großhandelslieferant Indien: Leitfaden für 85%-, 95%- und 98%-Qualitäten sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
         }
       ]
     },
@@ -714,6 +1195,47 @@
         {
           "heading": "Verpackung für Nahrungsergänzungsmarken",
           "body": "Standardverpackung ist mit HDPE ausgekleidete Papiersäcke à 25 kg und 50 kg-Säcke. Für OEM- und Handelsmärkenkäufer, die produktionsfertige Verpackung benötigen, liefern wir in: versiegelten 1 kg oder 5 kg Innensäcken für den direkten Kapselabfüllraum-Einsatz; HDPE-Schüttgutkontainern für automatisierte Abfülllinien; FIBC-Jumbosäcken (500 kg / 1.000 kg). Neutrale Kennzeichnung (ohne Lieferantenbranding) auf Anfrage erhältlich."
+        },
+        {
+          "heading": "Entscheidungspunkt fuer Einkauf",
+          "body": "Vor Bestellung Spezifikation mit realer Charge, COA, 1-kg-Muster, Verpackung und den Dokumenten des Zielmarktes verbinden."
+        }
+      ],
+      "aiSnapshot": "Psylliumschalen-Handelsmarken-Nahrungsergänzung Indien: OEM-Großbeschaffungsanforderungen sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
         }
       ]
     },
@@ -770,6 +1292,47 @@
         {
           "heading": "Isabgol-Export aus Gujarat: Was Lebensmittelhersteller benötigen",
           "body": "Isabgol-Schalen aus Gujarat tragen den HS-Code 1211.90. Für Lebensmittelimportzwecke benötigen Käufer typischerweise: Lebensmittelqualitäts-COA mit löslichem Fasergehalt (AOAC-Methode), Ursprungszeugnis, Pflanzengesundheitszeugnis und Lebensmittelsicherheitserklärung. Für EU-Importe wird ein Produktspezifikationsblatt gemäß Verordnung (EG) 1169/2011 mitgeliefert. Transitzeiten ab Mundra Port: Rotterdam 20–22 Tage, Hamburg 18–21 Tage, New York 25–28 Tage, Singapur 10–12 Tage."
+        },
+        {
+          "heading": "Entscheidungspunkt fuer Einkauf",
+          "body": "Vor Bestellung Spezifikation mit realer Charge, COA, 1-kg-Muster, Verpackung und den Dokumenten des Zielmarktes verbinden."
+        }
+      ],
+      "aiSnapshot": "Lösliche Psylliumschalenfaser für Lebensmittelanreicherung im Großhandel: Beschaffung aus Indien sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
         }
       ]
     },
@@ -826,6 +1389,47 @@
         {
           "heading": "Glutenfreie Mehlmischungsverhältnisse",
           "body": "In Standard-Glutenfreie-Mehlmischungen für den Großhandel wird Psylliumschalenpulver (80–100 Mesh, 98% Reinheit) typischerweise mit 2–4% des Gesamtmehlgewichts zugefügt. Häufig verwendetes Basisverhältnis: Reismehl 50–60%, Tapiokastärke 20–25%, Kartoffel- oder Maisstärke 10–15%, Psylliumschalenpulver 2–4%. Für Keto- oder Low-Carb-Mehlmischungen wird Psylliumschalenpulver bei höheren Raten (5–8%) in Kombination mit Mandelmehl oder Kokosmehl eingesetzt."
+        },
+        {
+          "heading": "Entscheidungspunkt fuer Einkauf",
+          "body": "Vor Bestellung Spezifikation mit realer Charge, COA, 1-kg-Muster, Verpackung und den Dokumenten des Zielmarktes verbinden."
+        }
+      ],
+      "aiSnapshot": "Zertifizierter Glutenfreier Psylliumschalen-Großlieferant: Was Backwarenmarken brauchen sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
         }
       ]
     },
@@ -836,6 +1440,65 @@
         "Psylliumschalen mit 99% Reinheit stellen den pharmazeutischen Qualitätsstandard dar — den höchsten Schalengehalt aus indischen Verarbeitungsanlagen. Bei dieser Qualität beträgt der Schalengehalt (die Samenhülle von Plantago ovata) mindestens 99 Gewichtsprozent, mit einem Mindestquellvolumen von 50 ml/g. Dieses Quellvolumen ist die primäre funktionale Spezifikation für Laxantien-Monographien in USP, Europäischer Pharmakopöe (EP) und Indischer Pharmakopöe (IP).",
         "Für Pharmakäufer muss die 99%-Qualität von einem vollständigen COA begleitet werden, der Quellvolumen, Feuchtigkeit (≤12%), Gesamtasche (≤3%), säureunlösliche Asche (≤0,4%), Schwermetalle (Blei ≤2 ppm, Arsen ≤1 ppm) und Mikrobiologie (E. coli nicht vorhanden, Salmonella nicht vorhanden, TKZ ≤10.000 KBE/g) aufweist. Diese Parameter entsprechen direkt den Plantago-ovata-Schalen-Monographien in USP und EP. Käufer sollten Prüfberichte von einem NABL-akkreditierten Labor in Indien anfordern.",
         "Die Beschaffung der 99%-Qualität aus Gujarat erfordert die Bestätigung, dass die Verarbeitungsanlage über die erforderliche Mahl- und Trennkapazität verfügt. Der Bezirk Unjha in Gujarat ist das primäre Verarbeitungszentrum in Indien mit über 80% des Weltangebots. Wir liefern 99%-Qualitätsschalen in 10 kg, 25 kg und 50 kg lebensmittelechten Säcken mit vollständiger Dokumentation. Teilen Sie uns Ihre Pharmakopöe-Anforderung und Ihren Zielmarkt mit — wir stellen Ihnen einen Muster-COA vor jeder Bestellung zur Verfügung."
+      ],
+      "aiSnapshot": "Psylliumschalen 99% Reinheit: Lieferantenführer für Pharmakäufer sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "Psylliumschalen 99% Reinheit: Lieferantenführer für Pharmakäufer verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-export-india-fob-mundra": {
@@ -845,6 +1508,65 @@
         "Indien exportiert Psyllium über drei Haupthäfen: Mundra (Gujarat), Kandla (Gujarat) und JNPT/Nhava Sheva (Maharashtra). Für Psylliumkäufer beeinflusst die Hafenwahl Frachtkosten, Transitzeit und Containerverfügbarkeit. Die meisten Gujarat-basierten Verarbeiter, einschließlich RM Psyllium, nutzen Mundra als primären Hafen aufgrund der Nähe (ca. 220 km von unserer Siddhpur-Anlage) und der hohen Schiffsfrequenz nach Europa, US-Ostküste, Naher Osten und Australien.",
         "Mundra Port (MUND) wird von Adani Ports betrieben und verarbeitet das höchste Containervolumen Indiens. Die Schiffsfrequenz zu Hauptzielhäfen (Rotterdam, Felixstowe, New York, Dschidda, Colombo) beträgt typischerweise 2–4 Abfahrten pro Woche. Transitzeit nach Rotterdam ca. 20–23 Tage; nach New York ca. 25–28 Tage; nach Dschidda ca. 8–10 Tage. Kandla (INKLA) ist eine Alternative mit leicht niedrigeren Hafengebühren, aber weniger häufigen Verbindungen.",
         "Bei CIF-Aufträgen wählen wir den Hafen basierend auf Ihrem Zielhafen und der besten Reederei zum Buchungszeitpunkt. Bei FOB-Aufträgen nominieren Sie den Spediteur und wir koordinieren direkt mit ihm. Exportdokumentation — Handelsrechnung, Packliste, COA, Ursprungszeugnis, Pflanzengesundheitszeugnis — wird in unserer Anlage vorbereitet und 3–5 Tage vor Verladung eingereicht. Teilen Sie uns Ihren Zielhafen mit und wir stellen ein indikatives Frachtangebot neben dem Produktpreis bereit."
+      ],
+      "aiSnapshot": "Psylliumexport aus Indien: FOB Mundra vs. Kandla vs. JNPT sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "Psylliumexport aus Indien: FOB Mundra vs. Kandla vs. JNPT verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-husk-usp-ep-pharmacopoeia": {
@@ -854,6 +1576,65 @@
         "Psylliumschalen sind in drei Hauptpharmakopöen monographiert: United States Pharmacopeia (USP), Europäische Pharmakopöe (EP) und Indische Pharmakopöe (IP). Obwohl alle drei Plantago-ovata-Schalen beschreiben, unterscheiden sich die spezifischen Prüfparameter und Akzeptanzkriterien in für Pharmaimporte wesentlicher Weise. Das Verständnis dieser Unterschiede hilft Einkaufsteams, die richtige Qualität zu spezifizieren und die entsprechenden COA-Parameter anzufordern.",
         "Die USP-Monographie für Psylliumschalen erfordert ein Mindestquellvolumen von 40 ml/g, Feuchtigkeit ≤12% und Gesamtasche ≤4%. Die EP-Monographie (Ispaghula Husk) spezifiziert einen Mindestquellindex von 40 mit spezifischen Identifikationstests einschließlich Mikroskopie und chemischer Reaktionen. Die IP-Monographie ist weitgehend mit der USP abgestimmt, kann jedoch geringfügige Unterschiede in der Prüfmethodik aufweisen.",
         "Für den Export nach Europa lautet der EP-Monographiebegriff 'Ispaghula Husk' — dasselbe Produkt (Plantago-ovata-Samenhülle). Europäische Käufer fordern in der Regel ein COA an, das gegen EP-Parameter annotiert ist, einschließlich Quellindex, Fremdmaterial, Mikrobiologie und Pestizidrückstandsgrenzen gemäß EU-Vorschriften. Wir liefern mit auf die jeweilige Pharmakopöe annotiertem COA auf Anfrage."
+      ],
+      "aiSnapshot": "USP vs. EP vs. IP: Psylliumschalen-Pharmakopöenstandards erklärt sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "USP vs. EP vs. IP: Psylliumschalen-Pharmakopöenstandards erklärt verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-seed-supplier-gujarat-rajasthan": {
@@ -863,6 +1644,65 @@
         "Plantago-ovata-Samen (Psyllium) werden hauptsächlich in Gujarat und Rajasthan angebaut. Die Mehsana-, Banaskantha- und Kutch-Distrikte in Gujarat sowie Barmer, Jalore und Jodhpur in Rajasthan sind die wichtigsten Anbaugebiete. Die Ernte ist eine Rabi-Ernte (Winterernte), ausgesät Oktober–November und geerntet Februar–März. Die jährliche Produktion in Indien wird auf 100.000–150.000 MT Samen geschätzt, von denen ca. 85% in verarbeiteter Form exportiert werden.",
         "Samen sind in zwei Hauptqualitäten erhältlich: Maschinengesäuberte (Standard-)Qualität wird mit Luftseparatoren und Schwerkrafttischen gereinigt — Reinheit typischerweise 98% oder höher. Sortex-Qualität verwendet optische Sortierung und erreicht 99%+ Reinheit mit deutlich weniger Fremdmaterial (≤0,5%). Sortex-Qualität hat einen Preisaufschlag von 8–12%, wird aber von Müllern bevorzugt, die konsistente Schalenausbeute benötigen.",
         "Vor dem Kauf zu bestätigende Samenspezifikationen: Reinheit (98% oder 99%), Feuchtigkeit (≤8%), Keimfähigkeit (≥85% für Saatgut; nicht erforderlich für Mahlzwecke) und Chargen-Herkunftsdokumentation. Wir liefern Samen in 25 kg, 50 kg und 1.000 kg Jumbo-Säcken. Herkunftsdokumentation, Chargenrückverfolgbarkeit und eine Probe für Vorabversandtests werden mit jeder Bestellung bereitgestellt."
+      ],
+      "aiSnapshot": "Psylliumsamen-Lieferung aus Gujarat und Rajasthan sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "Psylliumsamen-Lieferung aus Gujarat und Rajasthan verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "organic-psyllium-nop-eu-certification": {
@@ -872,6 +1712,65 @@
         "Bio-Psyllium aus Indien wird unter zwei Hauptrahmen zertifiziert: USDA National Organic Program (NOP) für den US-Markt und EU-Bio (früher EU-NOP-Äquivalenz) für den europäischen Markt. Indische Bio-Verarbeiter werden von akkreditierten Zertifizierungsstellen — darunter Control Union, ECOCERT India, Lacon und SGS — nach diesen Rahmen zertifiziert. Käufer müssen sicherstellen, dass das Zertifikat das spezifische Produkt, die Chargendaten und den Zielmarkt abdeckt.",
         "Die NOP-Zertifizierung erfordert, dass Saatgutquelle, Anbaumethoden (keine synthetischen Pestizide oder Düngemittel), Verarbeitungsanlage und Lieferkette bio-zertifiziert sind. Das Transaktionszertifikat (TC) pro Lieferung verbindet die spezifische Charge mit der Bio-Zertifizierung. EU-Käufer benötigen ein Kontrollzeugnis (COI) gemäß EU-Verordnung 2018/848.",
         "Bei RM Psyllium werden Bio-Chargen auf Anfrage basierend auf aktueller zertifizierter Lagerverfügbarkeit geliefert. Wir stellen Zertifikatkopie, Chargen-Herkunftsnachweise und TC-Dokumentation vor der Auftragsbestätigung bereit. Bio-Psyllium hat je nach Qualität und Zertifizierungsumfang einen Aufschlag von 25–40% gegenüber konventionell. Teilen Sie uns Ihre Anforderungen mit und wir bestätigen Verfügbarkeit und Preisgestaltung."
+      ],
+      "aiSnapshot": "Bio-Psyllium: NOP vs. EU-Biozertifizierung für den Export sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "Bio-Psyllium: NOP vs. EU-Biozertifizierung für den Export verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-husk-gluten-free-bakery": {
@@ -880,7 +1779,66 @@
       "body": [
         "Psylliumschalen werden in der glutenfreien Bäckerei als Struktur- und Wasserbindemittel eingesetzt — sie ersetzen einige Glutennetzwerkfunktionen, die Brotteig ermöglichen, Gas einzuschließen und beim Backen die Form zu behalten. Das Mucilago in Psyllium bildet bei Hydratation ein Gel, das Viskosität und Elastizität in glutenfreien Teigen aus Reismehl, Maisstärke, Tapioka und ähnlichen Basen verleiht. Das Ergebnis ist verbesserte Krumenstruktur, Feuchtigkeitsretention und längere Haltbarkeit.",
         "Für Bäckereianwendungen wird am häufigsten 95%- oder 98%-Reinheitsgrad in 80–100 Mesh spezifiziert. Feineres Mesh (100+) dispergiert schneller und erzeugt eine glattere Krume. Gröberes Mesh (40–60) kann im Endprodukt sichtbar sein und eine leicht körnige Textur erzeugen. 85%-Qualität wird in kostenempfindlichen Formulierungen verwendet, bei denen eine leicht geringere Wasserbindungsleistung akzeptabel ist.",
-        "Typische Einsatzmengen in glutenfreien Brotformulierungen betragen 1–3% des Gesamtmehlgewichts. Oberhalb von 3% kann Psyllium durch Überhydratation eine dichte, gummiartige Krume erzeugen. Käufer sollten eine 100–200 g Probe mit COA anfordern und Tischversuche durchführen, bevor sie eine Großbestellung aufgeben. Wir können Produktdaten zu Quellvolumen und Feuchtigkeit für jede Qualität zur Unterstützung der Formulierungsarbeit bereitstellen."
+        "Typische Einsatzmengen in glutenfreien Brotformulierungen betragen 1–3% des Gesamtmehlgewichts. Oberhalb von 3% kann Psyllium durch Überhydratation eine dichte, gummiartige Krume erzeugen. Käufer sollten ein nach Spezifikation geprüftes Muster anfordern und Tischversuche durchführen, bevor sie eine Großbestellung aufgeben. Wir können Produktdaten zu Quellvolumen und Feuchtigkeit für jede Qualität zur Unterstützung der Formulierungsarbeit bereitstellen."
+      ],
+      "aiSnapshot": "Psylliumschalen in der glutenfreien Bäckerei: Mahlgrad und Siebauswahl sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "Psylliumschalen in der glutenfreien Bäckerei: Mahlgrad und Siebauswahl verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-supplement-capsule-filling": {
@@ -890,6 +1848,65 @@
         "Psylliumschalen sind eine der am häufigsten verkapselten Ballaststoffe in Abführmitteln und Verdauungsgesundheitspräparaten in Gelatine- und HPMC-Kapseln. Die Hauptherausforderung bei der Kapselabfüllung ist die Fließfähigkeit — Psylliumschalen sind faserig und hygroskopisch, was bedeutet, dass sie in Trichtern von Abfüllanlagen verklumpen und Brücken bilden können, was zu ungleichmäßigen Füllgewichten führt. Siebauswahl und Feuchtigkeitskontrolle sind die zwei primären Variablen, die die Abfüllleistung bestimmen.",
         "Für Standard-Kapselabfüllanlagen (Dosator- oder Stempeltyp) ist 40–60 Mesh Ganzhülle die bevorzugte Spezifikation. Bei diesem Mesh sind Partikel groß genug, um ohne Brückenbildung zu fließen, aber klein genug, um gleichmäßig in den Kapselkörper zu packen. Unter 40 Mesh (gröber) kann die Hülle nicht effizient verpacken. Über 60 Mesh (feiner) wird das Pulver hygroskopischer und neigt zum Verklumpen.",
         "Feuchtigkeitskontrolle ist entscheidend: Hülle mit mehr als 10% Feuchtigkeit verklumpt im Trichter und verursacht Füllgewichtsschwankungen. Wir testen die Feuchtigkeit beim Versand und können auf Anfrage feuchtigkeitskontrollierte Verpackung (versiegelter HDPE-Liner mit Trockenmittel) bereitstellen. Teilen Sie uns Kapselgröße, Zielfüllgewicht und Abfüllanlagentyp mit — wir empfehlen die passende Qualität, Sieb und Feuchtigkeitsspezifikation."
+      ],
+      "aiSnapshot": "Psyllium für die Kapselabfüllung: Sieb, Fließverhalten und Qualitätsleitfaden sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "Psyllium für die Kapselabfüllung: Sieb, Fließverhalten und Qualitätsleitfaden verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-halal-kosher-documentation": {
@@ -898,7 +1915,66 @@
       "body": [
         "Psylliumschalen sind ein pflanzliches Produkt ohne tierische Eingangstoffe in der Verarbeitung und gelten allgemein als sowohl Halal- als auch Kosher-akzeptabel. Viele Käufer — insbesondere im Nahen Osten, Südostasien und für US-Kosher-Supplement-Märkte — verlangen jedoch eine formelle Zertifizierung von einer anerkannten Stelle. Die Halal-Zertifizierung bestätigt, dass Verarbeitungsanlagen, Einrichtungspraktiken und etwaige Verarbeitungshilfsmittel islamische Ernährungsstandards erfüllen.",
         "Für die Halal-Zertifizierung sind in Indien anerkannte Stellen Halal India, Jamiat Ulama-i-Hind Halal Trust und internationale Stellen wie IFANCA. Das Zertifikat deckt die Anlage, die spezifischen Produkte und den Zertifizierungszeitraum (typischerweise ein Jahr) ab. Eine Halal-Zertifikatskopie pro Lieferung mit chargenspezifischer Bestätigung ist das, was die meisten Nahost-Importbehörden verlangen. Für Kosher-Zertifizierung sind Stellen wie OU (Orthodox Union) oder KSA in den USA und international anerkannt.",
-        "Bei RM Psyllium sind Halal- und Kosher-Dokumentation auf Anfrage erhältlich. Wir stellen eine Halal-Erklärung bereit, die bestätigt, dass Psylliumschalen ein reines Pflanzenprodukt ohne tierische Eingangsstoffe in Anbau, Verarbeitung oder Verpackung sind — von den meisten Importbehörden und Käufern für Lebensmittel- und Supplement-Zutaten akzeptiert. Kontaktieren Sie uns mit Ihrer spezifischen Zertifizierungsanforderung."
+        "Für RM-Psyllium-Chargen können Käufer eine Erklärung zum pflanzlichen Ursprung anfordern und formale Halal- oder Kosher-Anforderungen vor der Bestellung prüfen. Eine pflanzliche Erklärung ersetzt kein formales Zertifikat, wenn Etikett, Händler oder Importeur eines verlangt."
+      ],
+      "aiSnapshot": "Halal- und Kosher-Psyllium: Welche Dokumente Käufer benötigen sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "Halal- und Kosher-Psyllium: Welche Dokumente Käufer benötigen verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "bulk-psyllium-import-usa-fda": {
@@ -908,6 +1984,65 @@
         "In die USA importierte Psylliumschalen in großen Mengen fallen je nach beabsichtigter Verwendung unter die FDA-Zuständigkeit als Nahrungsergänzungsmittelzutat oder Lebensmittelzutat. Die FDA erfordert keine Vorabgenehmigung für Psylliumimporte, aber Lieferungen unterliegen dem FDA-Importscreening, und Exportanlagen unterliegen den FSMA-Lieferantenverifizierungsanforderungen. US-Importeure sind verantwortlich für die Überprüfung, dass ihre ausländischen Lieferanten FSMA-Standards erfüllen.",
         "Für Nahrungsergänzungsmittelanwendungen muss Psylliumschalen die USP-Monographiespezifikationen erfüllen. Der mit jeder Lieferung bereitgestellte COA sollte enthalten: botanische Identifikation, Quellvolumen, Feuchtigkeit, Asche, Mikrobiologie (TKZ, Hefe, Schimmel, E. coli, Salmonella) und Schwermetalle (Blei, Arsen, Kadmium, Quecksilber). Für Lebensmittelanwendungen hat Psylliumschalen in den USA GRAS-Status als Quelle löslicher Ballaststoffe.",
         "FDA Prior Notice ist für alle Lebensmittel- und Nahrungsergänzungsmittellieferungen in die USA erforderlich. Dies wird elektronisch über das PNSI vor Ankunft der Lieferung eingereicht. US-Importeure übernehmen dies typischerweise, aber wir stellen alle erforderlichen Produktdetails für die Einreichung bereit. Wir verschiffen zu US-Häfen über Mundra oder JNPT mit typischer Transitzeit von 25–30 Tagen zu Ostküstenhäfen."
+      ],
+      "aiSnapshot": "Psylliumimport in die USA: FDA-, Kennzeichnungs- und COA-Anforderungen sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "Psylliumimport in die USA: FDA-, Kennzeichnungs- und COA-Anforderungen verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-khakha-animal-feed-specifications": {
@@ -917,6 +2052,65 @@
         "Psyllium-Khakha-Pulver ist das Nebenprodukt nach der Mahlung und Trennung von Psylliumschalen aus dem Samen. Es besteht hauptsächlich aus der inneren Samenhülle und dem verbleibenden Endosperm und enthält eine beträchtliche Menge löslicher Ballaststoffe — typischerweise 30–40% Rohfaser nach Gewicht. Dieser Fasergehalt zusammen mit 8–12% Rohprotein und einem niedrigen Kostenniveau macht es zu einer nützlichen Futtermittelzutat für Wiederkäuer- und Geflügelfutterformulierer.",
         "Futtermittelqualitäts-Khakha wird hauptsächlich nach Feuchtigkeit (≤12%), Rohfaser (30–40%), Rohprotein (8–12%) und Gesamtasche (≤8%) spezifiziert. Fremdmaterial und Sandgehalt sollten bestätigt werden — überschüssiger Sand oder Kieselsäure kann die Asche erhöhen und die Verdaulichkeit verringern. Mahlgrad oder Partikelgröße beeinflusst das Mischverhalten: Grobere Partikel (20–40 Mesh) sind Standard für die meisten Futteranwendungen.",
         "Anwendungsfälle für Khakha in Tierfutter umfassen: Rinder- und Büffelfutter (Verdauungsunterstützung, Hydratationsretention), Geflügelfutter als Faserquelle und Fisch- und Aquakulturfutter als natürliches Bindemittel. Wir liefern Khakha in 25 kg, 50 kg und 1.000 kg Jumbo-Säcken. Futtermittelqualitätslosen werden mit einem grundlegenden Analyse-COA (Feuchtigkeit, Rohfaser, Rohprotein, Asche) und Packliste geliefert."
+      ],
+      "aiSnapshot": "Psyllium-Khakha-Pulver für Tierfutter: Spezifikationen und Anwendungsfälle sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "Psyllium-Khakha-Pulver für Tierfutter: Spezifikationen und Anwendungsfälle verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     }
   },
@@ -927,6 +2121,65 @@
       "Psyllium-Khakha ist das Nebenprodukt der Spelzenmahlung — der Samenschalenrückstand, der nach der Trennung der Spelze verbleibt. Er enthält einen erheblichen Anteil des Schleims und der Ballaststoffe aus dem ursprünglichen Samen, was ihn zu einer funktionellen Futterkomponente macht und nicht bloßem Abfall.",
       "Für Futtermittelhersteller bietet Khakha-Pulver zwei Vorteile: Ballaststoffdichte und Kosten. Im Vergleich zur ganzen Spelze ist Khakha günstiger, liefert aber dennoch lösliche Ballaststoffe, die die Darmmotilität und Wasserretention bei Nutztieren unterstützen. Käufer aus Südasien und dem Nahen Osten berichten über Anwendungen in Geflügel-, Schweine- und Wiederkäuerfutter.",
       "Für den Großeinkauf von Khakha ist die Kenntnis von Chargenherkunft und Feuchtigkeitsspezifikation erforderlich. Futtermittelqualität-Khakha sollte einen Feuchtigkeitsgehalt unter 12% aufweisen. Wir liefern in 25-kg-, 50-kg- und 1.000-kg-Jumbo-Säcken mit Herkunftsdokumenten und Packliste je Sendung."
+    ],
+    "aiSnapshot": "psyllium khakha demand sollte nach Charge, Spezifikation und Anwendung geprüft werden, nicht nach breiten Lieferantenaussagen. Käufer sollten feed grade, fiber, moisture, ash, particle size, packing, and destination use vor der Bestellung prüfen.",
+    "sections": [
+      {
+        "heading": "Was Käufer prüfen sollten",
+        "body": "Für psyllium khakha demand sollten Käufer feed grade, fiber, moisture, ash, particle size, packing, and destination use prüfen. Ziel ist, die Anfrage mit tatsächlicher Charge, Muster, COA und Zieldokumenten zu verbinden."
+      },
+      {
+        "heading": "COA oder Spezifikation lesen",
+        "body": "Prüfen Sie Parameter, Einheit, Methode, Ergebnis, Grenzwert, Chargenidentität und Berichtdatum. Wenn eine bestimmte Methode oder Formulierung nötig ist, vor Muster oder Bestellung klären."
+      },
+      {
+        "heading": "Häufiger Fehler",
+        "body": "Nicht nur nach Grad oder Zertifikatswort kaufen. Fragen Sie, was die geprüfte Charge unterstützt und welche Dokumente geprüft werden können."
+      },
+      {
+        "heading": "Wie RM unterstützt",
+        "body": "RM kann Grad, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung und Zieldokumente vor Bestellung prüfen."
+      }
+    ],
+    "specTable": [
+      {
+        "parameter": "Grade / Application",
+        "range": "Buyer-specific",
+        "method": "Specification review"
+      },
+      {
+        "parameter": "Sample Review",
+        "range": "1 kg sample where available",
+        "method": "Pre-PO review"
+      },
+      {
+        "parameter": "COA Parameters",
+        "range": "Lot-specific",
+        "method": "COA / third-party report where required"
+      },
+      {
+        "parameter": "Packing and Documents",
+        "range": "Destination-specific",
+        "method": "Buyer checklist"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Was vor Bestellung bestätigen?",
+        "a": "feed grade, fiber, moisture, ash, particle size, packing, and destination use, Zielanwendung, Muster, Verpackung und Zieldokumente bestätigen."
+      },
+      {
+        "q": "Reicht ein Muster-COA für die finale Freigabe?",
+        "a": "Nein. Es dient der Vorprüfung. Final sollte das COA der Liefercharge oder ein Drittbericht verwendet werden."
+      },
+      {
+        "q": "Kann Formulierung an Käufer-Spezifikation angepasst werden?",
+        "a": "Nur wenn Ergebnisse und Dokumente der geprüften Charge dies unterstützen."
+      },
+      {
+        "q": "Wie lassen sich Beschaffungsverzögerungen vermeiden?",
+        "a": "Grad, Mesh, Anwendung, Zielland, Monatsvolumen und Dokumentenliste vor Angebot teilen."
+      }
     ]
   },
   "psyllium-cattle-feed-digestion": {
@@ -968,6 +2221,32 @@
       {
         "q": "Welche Psylliumqualität wird für Sandreinigungssupplemente bei Pferden bezogen?",
         "a": "Einkäufer beziehen in der Regel Psylliumschale in Futterqualität mit 95% Reinheit oder Khakha-Pulver. Bei 95% Reinheit ist das Verhältnis von unlöslichen zu löslichen Ballaststoffen optimal für Darmbewegungen in großen Pferdetrakten."
+      },
+      {
+        "q": "Welche Dokumente sollte der Lieferant senden?",
+        "a": "Muster-COA, Spezifikation, Verpackung, Ursprung und relevante Zieldokumente sollten vor Bestellung geprueft werden."
+      },
+      {
+        "q": "Was wenn eine Zertifizierung verlangt wird?",
+        "a": "Pruefen Sie echtes Zertifikat, Umfang, Aussteller, Gueltigkeit und Produkt- oder Chargenabdeckung vor Freigabe."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Was Käufer prüfen sollten",
+        "body": "Für psyllium for cattle and equine feed sollten Käufer feed-use suitability, fiber, moisture, ash, dosage plan, packing, and COA prüfen. Ziel ist, die Anfrage mit tatsächlicher Charge, Muster, COA und Zieldokumenten zu verbinden."
+      },
+      {
+        "heading": "COA oder Spezifikation lesen",
+        "body": "Prüfen Sie Parameter, Einheit, Methode, Ergebnis, Grenzwert, Chargenidentität und Berichtdatum. Wenn eine bestimmte Methode oder Formulierung nötig ist, vor Muster oder Bestellung klären."
+      },
+      {
+        "heading": "Häufiger Fehler",
+        "body": "Nicht nur nach Grad oder Zertifikatswort kaufen. Fragen Sie, was die geprüfte Charge unterstützt und welche Dokumente geprüft werden können."
+      },
+      {
+        "heading": "Wie RM unterstützt",
+        "body": "RM kann Grad, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung und Zieldokumente vor Bestellung prüfen."
       }
     ]
   },
@@ -1010,6 +2289,32 @@
       {
         "q": "Welche Maschenweite ist ideal für Psylliumschalenpulver in Backwaren-Formulierungen?",
         "a": "Ein feines 80-Mesh-Pulver ist der globale Industriestandard für glutenfreies industrielles Backen. Es integriert sich gleichmäßig in Teigmatrizes, ohne eine körnige Textur zu hinterlassen."
+      },
+      {
+        "q": "Welche Dokumente sollte der Lieferant senden?",
+        "a": "Muster-COA, Spezifikation, Verpackung, Ursprung und relevante Zieldokumente sollten vor Bestellung geprueft werden."
+      },
+      {
+        "q": "Was wenn eine Zertifizierung verlangt wird?",
+        "a": "Pruefen Sie echtes Zertifikat, Umfang, Aussteller, Gueltigkeit und Produkt- oder Chargenabdeckung vor Freigabe."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Was Käufer prüfen sollten",
+        "body": "Für whole husk versus husk powder sollten Käufer application, mesh, hydration speed, texture, dosage, sample trial, and COA prüfen. Ziel ist, die Anfrage mit tatsächlicher Charge, Muster, COA und Zieldokumenten zu verbinden."
+      },
+      {
+        "heading": "COA oder Spezifikation lesen",
+        "body": "Prüfen Sie Parameter, Einheit, Methode, Ergebnis, Grenzwert, Chargenidentität und Berichtdatum. Wenn eine bestimmte Methode oder Formulierung nötig ist, vor Muster oder Bestellung klären."
+      },
+      {
+        "heading": "Häufiger Fehler",
+        "body": "Nicht nur nach Grad oder Zertifikatswort kaufen. Fragen Sie, was die geprüfte Charge unterstützt und welche Dokumente geprüft werden können."
+      },
+      {
+        "heading": "Wie RM unterstützt",
+        "body": "RM kann Grad, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung und Zieldokumente vor Bestellung prüfen."
       }
     ]
   }

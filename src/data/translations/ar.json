@@ -7,7 +7,7 @@
       "يعد النقاء وحجم الانتفاخ من العوامل الحاسمة للتمييز بين درجات الجودة. فبينما يفرض دستور الأدوية الأمريكي (USP) حداً أدنى لحجم الانتفاخ يبلغ 55 مل/جم وعتبة نقاء بنسبة 99.0%، يقبل دستور الأدوية الأوروبي (EP) حجم انتفاخ يبلغ 40 مل/جم عند نقاء 98.0%. قد يؤدي شراء درجة غير مناسبة إلى فشل التركيبة، أو رفض الشحنة، أو تأخيرات في التخليص الجمركي للاستيراد.",
       "ينبغي لفرق المشتريات مراجعة حدود الرماد الكلي والرماد غير القابل للذوبان في الحمض. يحدد دستور الأدوية الأمريكي السقف الأقصى للرماد الكلي بـ ≤3.0% والرماد غير القابل للذوبان في الحمض بـ ≤0.4%، في حين يسمح دستور الأدوية الأوروبي بحد أقصى للرماد الكلي يصل إلى ≤4.0% و≤0.6% للرماد غير القابل للذوبان في الحمض. يتطلب التحكم في هذه المعايير استخدام فواصل جاذبية متطورة وإجراء فحوصات مخبرية قبل الشحن في مختبرات معتمدة من NABL في غوجارات وراجستان."
     ],
-    "aiSnapshot": "لشراء قشور سيليوم بدرجة دوائية، يجب على فرق الجودة التحقق من التوافق مع دساتير الأدوية (USP أو EP أو IP). يفرض دستور USP حجم انتفاخ ≥55 مل/جم ورماد كلي ≤3.0%، بينما يطلب الدستور الأوروبي ≥40 مل/جم ورماد ≤4.0%. يجب إرفاق تقارير COA من مختبر معتمد من NABL.",
+    "aiSnapshot": "لشراء قشور سيليوم بدرجة دوائية، يجب على فرق الجودة التحقق من التوافق مع دساتير الأدوية (USP أو EP أو IP). يفرض دستور USP حجم انتفاخ ≥55 مل/جم ورماد كلي ≤3.0%، بينما يطلب الدستور الأوروبي ≥40 مل/جم ورماد ≤4.0%. يجب مراجعة COA الخاص بالدفعة وتقرير مختبر خارجي معتمد عندما تتطلب مواصفة المشتري ذلك.",
     "specTable": [
       {
         "parameter": "الحد الأدنى لحجم الانتفاخ",
@@ -43,6 +43,32 @@
       {
         "q": "لماذا يعتبر الرماد غير القابل للذوبان في الحمض حداً حرجاً للسلامة؟",
         "a": "يشير الرماد غير القابل للذوبان في الحمض إلى الرمال والأتربة والسيليكا المتبقية. يفرض دستور USP حداً صارماً يبلغ ≤0.4%. ويتم استخدام تقنيات الفصل بالجاذبية الحديثة لضمان هذه المستويات المنخفضة للغاية."
+      },
+      {
+        "q": "ما الذي يجب التحقق منه قبل أمر الشراء؟",
+        "a": "تحقق من USP, EP, IP, BP/NF, COA, swelling volume, ash, moisture, microbiology, heavy metals مقابل الدفعة المستهدفة ومتطلبات الوجهة."
+      },
+      {
+        "q": "هل يكفي COA العينة للموافقة النهائية على الشحنة؟",
+        "a": "لا. COA العينة مفيد لمراجعة المعايير. الموافقة النهائية يجب أن تعتمد على COA أو تقرير الدفعة الفعلية المشحونة."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "ما الذي يجب على المشتري التحقق منه",
+        "body": "بالنسبة إلى USP/EP/IP wording، يجب مراجعة الدفعة المستهدفة ومواصفة المشتري وCOA وطريقة الاختبار قبل أمر الشراء."
+      },
+      {
+        "heading": "قائمة مراجعة قبل أمر الشراء",
+        "body": "اطلب وقارن هذه النقاط: USP, EP, IP, BP/NF, COA, swelling volume, ash, moisture, microbiology, heavy metals. يجب إتمام المراجعة قبل السعر أو العينة أو الدفعة التجارية."
+      },
+      {
+        "heading": "خطأ شائع",
+        "body": "لا تتعامل مع USP/EP/IP wording كادعاء عام من المورد. اربطه بنتائج الدفعة والوثائق ومتطلبات سوق الوجهة."
+      },
+      {
+        "heading": "كيف يمكن أن تدعم RM",
+        "body": "يمكن لـ RM مراجعة COA العينة والمواصفة والدرجة والميش والتغليف ووثائق الوجهة قبل أمر الشراء."
       }
     ]
   },
@@ -50,7 +76,7 @@
     "title": "كيفية التحقق من شهادات COA المعتمدة من NABL لواردات السيليوم",
     "summary": "دليل تقني خطوة بخطوة لمشتري B2B للتحقق من معايير الاختبار، ومؤشرات المعادن الثقيلة، والمعايير الميكروبية في شهادة تحليل قشور السيليوم المصدرة من غوجارات وراجستان بالهند.",
     "body": [
-      "بالنسبة لمشتري المكونات الخام العالميين، تعتبر شهادة التحليل (COA) وثيقة الثقة الأساسية. يتطلب استيراد قشور السيليوم السائبة إلى الولايات المتحدة أو الاتحاد الأوروبي أو منطقة آسيا والمحيط الهادئ التحقق من أن شهادة التحليل صادرة عن مختبر معتمد من NABL (الهيئة الوطنية لاعتماد مختبرات الفحص والمعايرة بالهند، ولها مختبرات شريكة في غوجارات وراجستان)، والمتوافقة مع معايير ILAC الدولية.",
+      "بالنسبة لمشتري المكونات الخام العالميين، تعتبر شهادة التحليل (COA) وثيقة الثقة الأساسية. يجب التحقق من أن COA يخص الدفعة المحددة، وأن تقرير المختبر الخارجي صادر من مختبر معتمد عندما تتطلب مواصفة المشتري ذلك.",
       "تشمل فئات الاختبار الرئيسية في شهادة تحليل السيليوم الخصائص الفيزيائية (النقاء، حجم المش، حجم الانتفاخ)، والمعايير الكيميائية (الرطوبة، الرماد الكلي)، والملف الميكروبيولوجي. يجب على فرق المشتريات مطابقة نتائج المختبر مع حدود دساتير الأدوية لضمان عدم حدوث تلوث أثناء عمليات المعالجة والإنتاج.",
       "تمثل حدود المعادن الثقيلة والملوثات الميكروبية عتبات سلامة حرجة. يجب أن توثق شهادة التحليل الصالحة أن الرصاص (Pb) ≤ 2.0 جزء في المليون، والزرنيخ (As) ≤ 1.0 جزء في المليون، والكادميوم (Cd) ≤ 0.3 جزء في المليون، والزئبق (Hg) ≤ 0.1 جزء في المليون. وفي الجانب الميكروبيولوجي، يجب خلو المنتج تماماً من بكتيريا الإشريكية القولونية (E. coli) والسالمونيلا، مع إجمالي عدد صفائح البكتيريا (TPC) ≤ 10,000 وحدة تشكيل مستعمرة/جم."
     ],
@@ -90,6 +116,32 @@
       {
         "q": "كيف يتم فحص المعادن الثقيلة في قشور السيليوم؟",
         "a": "يتم اختبار المعادن الثقيلة باستخدام تقنية مطيافية الكتلة للبلازما المقترنة حثياً (ICP-MS)، والتي تضمن دقة الكشف حتى مستويات أجزاء من المليار (ppb) للرصاص والزرنيخ والكادميوم والزئبق."
+      },
+      {
+        "q": "ما الذي يجب التحقق منه قبل أمر الشراء؟",
+        "a": "تحقق من NABL scope, lab name, lot number, sample identity, method, result, unit, limit, signatory مقابل الدفعة المستهدفة ومتطلبات الوجهة."
+      },
+      {
+        "q": "هل يكفي COA العينة للموافقة النهائية على الشحنة؟",
+        "a": "لا. COA العينة مفيد لمراجعة المعايير. الموافقة النهائية يجب أن تعتمد على COA أو تقرير الدفعة الفعلية المشحونة."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "ما الذي يجب على المشتري التحقق منه",
+        "body": "بالنسبة إلى NABL wording، يجب مراجعة الدفعة المستهدفة ومواصفة المشتري وCOA وطريقة الاختبار قبل أمر الشراء."
+      },
+      {
+        "heading": "قائمة مراجعة قبل أمر الشراء",
+        "body": "اطلب وقارن هذه النقاط: NABL scope, lab name, lot number, sample identity, method, result, unit, limit, signatory. يجب إتمام المراجعة قبل السعر أو العينة أو الدفعة التجارية."
+      },
+      {
+        "heading": "خطأ شائع",
+        "body": "لا تتعامل مع NABL wording كادعاء عام من المورد. اربطه بنتائج الدفعة والوثائق ومتطلبات سوق الوجهة."
+      },
+      {
+        "heading": "كيف يمكن أن تدعم RM",
+        "body": "يمكن لـ RM مراجعة COA العينة والمواصفة والدرجة والميش والتغليف ووثائق الوجهة قبل أمر الشراء."
       }
     ]
   },
@@ -132,6 +184,32 @@
       {
         "q": "ما هي طرق التنظيف الفيزيائية التي يجب على المورد المعتمد استخدامها؟",
         "a": "يجب على المصنعين المعتمدين في غوجارات وراجستان استخدام أجهزة إزالة الحجارة متعددة المراحل للتخلص من الرمال والأتربة، وغرابيل التصنيف لتحديد أحجام الحبيبات، والشبكات المغناطيسية عالية الكثافة لفصل بقايا المعادن."
+      },
+      {
+        "q": "ما الذي يجب التحقق منه قبل أمر الشراء؟",
+        "a": "تحقق من FSVP file, prior notice data, product specification, COA, origin, packing, broker details مقابل الدفعة المستهدفة ومتطلبات الوجهة."
+      },
+      {
+        "q": "هل يكفي COA العينة للموافقة النهائية على الشحنة؟",
+        "a": "لا. COA العينة مفيد لمراجعة المعايير. الموافقة النهائية يجب أن تعتمد على COA أو تقرير الدفعة الفعلية المشحونة."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "ما الذي يجب على المشتري التحقق منه",
+        "body": "بالنسبة إلى FDA/FSVP wording، يجب مراجعة الدفعة المستهدفة ومواصفة المشتري وCOA وطريقة الاختبار قبل أمر الشراء."
+      },
+      {
+        "heading": "قائمة مراجعة قبل أمر الشراء",
+        "body": "اطلب وقارن هذه النقاط: FSVP file, prior notice data, product specification, COA, origin, packing, broker details. يجب إتمام المراجعة قبل السعر أو العينة أو الدفعة التجارية."
+      },
+      {
+        "heading": "خطأ شائع",
+        "body": "لا تتعامل مع FDA/FSVP wording كادعاء عام من المورد. اربطه بنتائج الدفعة والوثائق ومتطلبات سوق الوجهة."
+      },
+      {
+        "heading": "كيف يمكن أن تدعم RM",
+        "body": "يمكن لـ RM مراجعة COA العينة والمواصفة والدرجة والميش والتغليف ووثائق الوجهة قبل أمر الشراء."
       }
     ]
   },
@@ -143,7 +221,7 @@
       "مشتريات B2B في التطبيقات الدوائية والغذائية هي: الرصاص (Pb) ≤ 2.0 جزء في المليون، والزرنيخ (As) ≤ 1.0 جزء في المليون، والكادميوم (Cd) ≤ 0.3 جزء في المليون، والزئبق (Hg) ≤ 0.1 جزء في المليون. وغالباً ما تطلب شركات تصنيع الكبسولات ذات الهامش المرتفع حدوداً داخلية أكثر صرامة.",
       "تبدأ السيطرة على المعادن الثقيلة من الحقل. يعد الحصول على بذور السيليوم الخام من مناطق تتميز بمياه جوفية نظيفة وتربة غير ملوثة في غوجارات وراجستان أمراً أساسياً. ويجب على منشآت المعالجة بعد ذلك استخدام أسطح اتصال مصنوعة من الفولاذ المقاوم للصدأ (الستانلس ستيل) وإجراء فحوصات مخبرية آلية بتقنية ICP-MS قبل التعبئة النهائية."
     ],
-    "aiSnapshot": "يتطلب شراء السيليوم للمكملات الغذائية رقابة صارمة على المعادن الثقيلة. الحدود القياسية هي الرصاص ≤2.0 جزء في المليون، الزرنيخ ≤1.0 جزء في المليون، الكادميوم ≤0.3 جزء في المليون، والزئبق ≤0.1 جزء في المليون، مع ضرورة الفحص بتقنية ICP-MS في مختبر معتمد من NABL.",
+    "aiSnapshot": "يتطلب شراء السيليوم للمكملات الغذائية رقابة صارمة على المعادن الثقيلة. الحدود القياسية هي الرصاص ≤2.0 جزء في المليون، الزرنيخ ≤1.0 جزء في المليون، الكادميوم ≤0.3 جزء في المليون، والزئبق ≤0.1 جزء في المليون. يجب مراجعة طريقة الاختبار وتقرير مختبر خارجي معتمد عندما تتطلب مواصفة المشتري ذلك.",
     "specTable": [
       {
         "parameter": "الرصاص (Pb)",
@@ -174,6 +252,32 @@
       {
         "q": "ما هي الطريقة المخبرية المستخدمة لاختبار المعادن الثقيلة?",
         "a": "تعد تقنية مطيافية الكتلة للبلازما المقترنة حثياً (ICP-MS) الطريقة المرجعية العالمية، حيث توفر دقة وحساسية عالية تصل إلى أجزاء من المليار (ppb)."
+      },
+      {
+        "q": "ما الذي يجب التحقق منه قبل أمر الشراء؟",
+        "a": "تحقق من Pb, As, Cd, Hg, ICP-MS method, ppm unit, serving size, destination-market limit مقابل الدفعة المستهدفة ومتطلبات الوجهة."
+      },
+      {
+        "q": "هل يكفي COA العينة للموافقة النهائية على الشحنة؟",
+        "a": "لا. COA العينة مفيد لمراجعة المعايير. الموافقة النهائية يجب أن تعتمد على COA أو تقرير الدفعة الفعلية المشحونة."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "ما الذي يجب على المشتري التحقق منه",
+        "body": "بالنسبة إلى heavy-metal pass/fail wording، يجب مراجعة الدفعة المستهدفة ومواصفة المشتري وCOA وطريقة الاختبار قبل أمر الشراء."
+      },
+      {
+        "heading": "قائمة مراجعة قبل أمر الشراء",
+        "body": "اطلب وقارن هذه النقاط: Pb, As, Cd, Hg, ICP-MS method, ppm unit, serving size, destination-market limit. يجب إتمام المراجعة قبل السعر أو العينة أو الدفعة التجارية."
+      },
+      {
+        "heading": "خطأ شائع",
+        "body": "لا تتعامل مع heavy-metal pass/fail wording كادعاء عام من المورد. اربطه بنتائج الدفعة والوثائق ومتطلبات سوق الوجهة."
+      },
+      {
+        "heading": "كيف يمكن أن تدعم RM",
+        "body": "يمكن لـ RM مراجعة COA العينة والمواصفة والدرجة والميش والتغليف ووثائق الوجهة قبل أمر الشراء."
       }
     ]
   },
@@ -216,6 +320,32 @@
       {
         "q": "هل يؤثر التعقيم بالبخار على حجم انتفاخ قشور السيليوم؟",
         "a": "إذا لم يتم التحكم بدقة، فإن الحرارة العالية والرطوبة الزائدة قد تتسبب في تفاعل هلامي مسبق للقشور. لكن التعقيم السريع والمستمر بالبخار الدقيق يحمي سلامة الصمغ النباتي، ويحافظ على حجم انتفاخ ≥50 مل/جم."
+      },
+      {
+        "q": "ما الذي يجب التحقق منه قبل أمر الشراء؟",
+        "a": "تحقق من treatment method, microbiology, moisture, ETO, 2-chloroethanol, swelling volume مقابل الدفعة المستهدفة ومتطلبات الوجهة."
+      },
+      {
+        "q": "هل يكفي COA العينة للموافقة النهائية على الشحنة؟",
+        "a": "لا. COA العينة مفيد لمراجعة المعايير. الموافقة النهائية يجب أن تعتمد على COA أو تقرير الدفعة الفعلية المشحونة."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "ما الذي يجب على المشتري التحقق منه",
+        "body": "بالنسبة إلى sterilization wording، يجب مراجعة الدفعة المستهدفة ومواصفة المشتري وCOA وطريقة الاختبار قبل أمر الشراء."
+      },
+      {
+        "heading": "قائمة مراجعة قبل أمر الشراء",
+        "body": "اطلب وقارن هذه النقاط: treatment method, microbiology, moisture, ETO, 2-chloroethanol, swelling volume. يجب إتمام المراجعة قبل السعر أو العينة أو الدفعة التجارية."
+      },
+      {
+        "heading": "خطأ شائع",
+        "body": "لا تتعامل مع sterilization wording كادعاء عام من المورد. اربطه بنتائج الدفعة والوثائق ومتطلبات سوق الوجهة."
+      },
+      {
+        "heading": "كيف يمكن أن تدعم RM",
+        "body": "يمكن لـ RM مراجعة COA العينة والمواصفة والدرجة والميش والتغليف ووثائق الوجهة قبل أمر الشراء."
       }
     ]
   },
@@ -258,6 +388,32 @@
       {
         "q": "ما هو حجم المش الموصى به لمساحيق المشروبات سريعة التحضير؟",
         "a": "لمزيج المشروبات الجافة، يوصى بحجم 100 مش أو أكثر نعومة لضمان ذوبان سريع وسلس في السوائل الباردة دون تكتل أو ملمس رملي."
+      },
+      {
+        "q": "ما الذي يجب التحقق منه قبل أمر الشراء؟",
+        "a": "تحقق من mesh, hydration speed, water addition, mixing time, crumb texture, 1 kg sample trial مقابل الدفعة المستهدفة ومتطلبات الوجهة."
+      },
+      {
+        "q": "هل يكفي COA العينة للموافقة النهائية على الشحنة؟",
+        "a": "لا. COA العينة مفيد لمراجعة المعايير. الموافقة النهائية يجب أن تعتمد على COA أو تقرير الدفعة الفعلية المشحونة."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "ما الذي يجب على المشتري التحقق منه",
+        "body": "بالنسبة إلى mesh recommendation، يجب مراجعة الدفعة المستهدفة ومواصفة المشتري وCOA وطريقة الاختبار قبل أمر الشراء."
+      },
+      {
+        "heading": "قائمة مراجعة قبل أمر الشراء",
+        "body": "اطلب وقارن هذه النقاط: mesh, hydration speed, water addition, mixing time, crumb texture, 1 kg sample trial. يجب إتمام المراجعة قبل السعر أو العينة أو الدفعة التجارية."
+      },
+      {
+        "heading": "خطأ شائع",
+        "body": "لا تتعامل مع mesh recommendation كادعاء عام من المورد. اربطه بنتائج الدفعة والوثائق ومتطلبات سوق الوجهة."
+      },
+      {
+        "heading": "كيف يمكن أن تدعم RM",
+        "body": "يمكن لـ RM مراجعة COA العينة والمواصفة والدرجة والميش والتغليف ووثائق الوجهة قبل أمر الشراء."
       }
     ]
   },
@@ -300,6 +456,32 @@
       {
         "q": "كيف يتم التحقق من متبقيات المبيدات في السيليوم العضوي؟",
         "a": "تستخدم المختبرات المعتمدة أجهزة كروماتوغرافيا الغاز المقترنة بمطياف الكتلة (GC-MS) وكروماتوغرافيا السائل المقترنة بمطياف الكتلة (LC-MS) للكشف عن أكثر من 500 مركب كيميائي ومبيد."
+      },
+      {
+        "q": "ما الذي يجب التحقق منه قبل أمر الشراء؟",
+        "a": "تحقق من certificate scope, handler chain, TC/COI path, pesticide residue report, lot identity مقابل الدفعة المستهدفة ومتطلبات الوجهة."
+      },
+      {
+        "q": "هل يكفي COA العينة للموافقة النهائية على الشحنة؟",
+        "a": "لا. COA العينة مفيد لمراجعة المعايير. الموافقة النهائية يجب أن تعتمد على COA أو تقرير الدفعة الفعلية المشحونة."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "ما الذي يجب على المشتري التحقق منه",
+        "body": "بالنسبة إلى organic wording، يجب مراجعة الدفعة المستهدفة ومواصفة المشتري وCOA وطريقة الاختبار قبل أمر الشراء."
+      },
+      {
+        "heading": "قائمة مراجعة قبل أمر الشراء",
+        "body": "اطلب وقارن هذه النقاط: certificate scope, handler chain, TC/COI path, pesticide residue report, lot identity. يجب إتمام المراجعة قبل السعر أو العينة أو الدفعة التجارية."
+      },
+      {
+        "heading": "خطأ شائع",
+        "body": "لا تتعامل مع organic wording كادعاء عام من المورد. اربطه بنتائج الدفعة والوثائق ومتطلبات سوق الوجهة."
+      },
+      {
+        "heading": "كيف يمكن أن تدعم RM",
+        "body": "يمكن لـ RM مراجعة COA العينة والمواصفة والدرجة والميش والتغليف ووثائق الوجهة قبل أمر الشراء."
       }
     ]
   },
@@ -342,6 +524,32 @@
       {
         "q": "ما هو اختبار ELISA للغلوتين؟",
         "a": "مقايسة الممتص المناعي المرتبط بالإنزيم (ELISA) هي طريقة الاختبار المعيارية الذهبية التي تستخدمها مختبرات معتمدة من NABL لتحديد كمية بروتينات الغلوتين النزرة بدقة متناهية بأجزاء في المليون (ppm)."
+      },
+      {
+        "q": "ما الذي يجب التحقق منه قبل أمر الشراء؟",
+        "a": "تحقق من allergen declaration, shared equipment, cleaning records, storage segregation, ELISA testing مقابل الدفعة المستهدفة ومتطلبات الوجهة."
+      },
+      {
+        "q": "هل يكفي COA العينة للموافقة النهائية على الشحنة؟",
+        "a": "لا. COA العينة مفيد لمراجعة المعايير. الموافقة النهائية يجب أن تعتمد على COA أو تقرير الدفعة الفعلية المشحونة."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "ما الذي يجب على المشتري التحقق منه",
+        "body": "بالنسبة إلى gluten-free or allergen wording، يجب مراجعة الدفعة المستهدفة ومواصفة المشتري وCOA وطريقة الاختبار قبل أمر الشراء."
+      },
+      {
+        "heading": "قائمة مراجعة قبل أمر الشراء",
+        "body": "اطلب وقارن هذه النقاط: allergen declaration, shared equipment, cleaning records, storage segregation, ELISA testing. يجب إتمام المراجعة قبل السعر أو العينة أو الدفعة التجارية."
+      },
+      {
+        "heading": "خطأ شائع",
+        "body": "لا تتعامل مع gluten-free or allergen wording كادعاء عام من المورد. اربطه بنتائج الدفعة والوثائق ومتطلبات سوق الوجهة."
+      },
+      {
+        "heading": "كيف يمكن أن تدعم RM",
+        "body": "يمكن لـ RM مراجعة COA العينة والمواصفة والدرجة والميش والتغليف ووثائق الوجهة قبل أمر الشراء."
       }
     ]
   },
@@ -384,6 +592,32 @@
       {
         "q": "كيف يتم التحقق من إجمالي محتوى الألياف الغذائية؟",
         "a": "يتم التحقق من أجزاء الألياف الغذائية باستخدام الطرق الإنزيمية-الوزنية القياسية وفقاً لمعايير AOAC 991.43 وبروتوكولات الفحص المعتمدة من مختبرات NABL."
+      },
+      {
+        "q": "ما الذي يجب التحقق منه قبل أمر الشراء؟",
+        "a": "تحقق من purity, swelling volume, mesh, moisture, fiber method, texture, finished application مقابل الدفعة المستهدفة ومتطلبات الوجهة."
+      },
+      {
+        "q": "هل يكفي COA العينة للموافقة النهائية على الشحنة؟",
+        "a": "لا. COA العينة مفيد لمراجعة المعايير. الموافقة النهائية يجب أن تعتمد على COA أو تقرير الدفعة الفعلية المشحونة."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "ما الذي يجب على المشتري التحقق منه",
+        "body": "بالنسبة إلى fiber-ratio wording، يجب مراجعة الدفعة المستهدفة ومواصفة المشتري وCOA وطريقة الاختبار قبل أمر الشراء."
+      },
+      {
+        "heading": "قائمة مراجعة قبل أمر الشراء",
+        "body": "اطلب وقارن هذه النقاط: purity, swelling volume, mesh, moisture, fiber method, texture, finished application. يجب إتمام المراجعة قبل السعر أو العينة أو الدفعة التجارية."
+      },
+      {
+        "heading": "خطأ شائع",
+        "body": "لا تتعامل مع fiber-ratio wording كادعاء عام من المورد. اربطه بنتائج الدفعة والوثائق ومتطلبات سوق الوجهة."
+      },
+      {
+        "heading": "كيف يمكن أن تدعم RM",
+        "body": "يمكن لـ RM مراجعة COA العينة والمواصفة والدرجة والميش والتغليف ووثائق الوجهة قبل أمر الشراء."
       }
     ]
   },
@@ -426,6 +660,32 @@
       {
         "q": "ما هي العوامل التي يمكن أن تؤثر سلباً على حجم الانتفاخ أثناء المعالجة؟",
         "a": "تعد الحرارة الزائدة الناتجة عن الاحتكاك الميكانيكي أثناء عملية الطحن السبب الرئيسي لتلف سلامة الصمغ النباتي، مما يبرز الحاجة إلى الطحن المبرد والمحمي من الحرارة."
+      },
+      {
+        "q": "ما الذي يجب التحقق منه قبل أمر الشراء؟",
+        "a": "تحقق من sample form, particle size, method, rest time, water volume, swelling result, COA wording مقابل الدفعة المستهدفة ومتطلبات الوجهة."
+      },
+      {
+        "q": "هل يكفي COA العينة للموافقة النهائية على الشحنة؟",
+        "a": "لا. COA العينة مفيد لمراجعة المعايير. الموافقة النهائية يجب أن تعتمد على COA أو تقرير الدفعة الفعلية المشحونة."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "ما الذي يجب على المشتري التحقق منه",
+        "body": "بالنسبة إلى swelling-volume result، يجب مراجعة الدفعة المستهدفة ومواصفة المشتري وCOA وطريقة الاختبار قبل أمر الشراء."
+      },
+      {
+        "heading": "قائمة مراجعة قبل أمر الشراء",
+        "body": "اطلب وقارن هذه النقاط: sample form, particle size, method, rest time, water volume, swelling result, COA wording. يجب إتمام المراجعة قبل السعر أو العينة أو الدفعة التجارية."
+      },
+      {
+        "heading": "خطأ شائع",
+        "body": "لا تتعامل مع swelling-volume result كادعاء عام من المورد. اربطه بنتائج الدفعة والوثائق ومتطلبات سوق الوجهة."
+      },
+      {
+        "heading": "كيف يمكن أن تدعم RM",
+        "body": "يمكن لـ RM مراجعة COA العينة والمواصفة والدرجة والميش والتغليف ووثائق الوجهة قبل أمر الشراء."
       }
     ]
   },
@@ -435,7 +695,7 @@
       "summary": "ما يعنيه امتلاك منشأة متوافقة مع GMP لمعالجة قشور السيليوم، ومواصفات درجة BP، وقائمة التحقق من الوثائق التي يجب على مشتري الأدوية طلبها من الموردين الهنود.",
       "body": [
         "يحتاج المشترون الصيدلانيون الذين يستورد قشور السيليوم من الهند إلى أكثر من مجرد درجة نقاء — فهم يحتاجون إلى تأكيد أن منشأة المعالجة تعمل وفق ضوابط جودة موثقة تتوافق مع معايير ممارسات التصنيع الجيدة (GMP). بالنسبة للسيليوم، تعني المعالجة المتوافقة مع GMP: بيئات طحن خاضعة للرقابة، وإجراءات تنظيف موثقة، وسجلات مكافحة الآفات، وتتبع الدُفعات، ومعدات معايَرة.",
-        "تعمل RM Psyllium من منشأة متوافقة مع GMP في سيدبور، غوجارات — المركز الرئيسي لمعالجة قشور السيليوم في الهند. تحتفظ منشأتنا بسجلات تصنيع الدُفعات وسجلات معايرة المعدات وفحوصات الجودة أثناء الإنتاج لكل دورة إنتاجية."
+        "تعمل RM Psyllium من منشأة معالجة في سيدبور، غوجارات. يمكن للمشترين الدوائيين مراجعة سجلات الدُفعات والتنظيف والتتبع والمعايرة ووثائق العملية قبل اعتماد المورد."
       ],
       "sections": [
         {
@@ -483,7 +743,52 @@
         },
         {
           "heading": "قائمة التحقق من الوثائق لمشتري الأدوية",
-          "body": "تشمل حزمة الوثائق القياسية من RM Psyllium: (1) شهادة التحليل (COA) من مختبر معتمد من NABL، موثقة وفق USP أو EP أو BP أو IP حسب المواصفة؛ (2) شهادة المنشأ من غرفة تجارة غوجارات؛ (3) شهادة الصحة النباتية من هيئة الحجر النباتي؛ (4) بيان امتثال GMP للمنشأة على ورق الشركة الرسمي؛ (5) قائمة التعبئة والفاتورة التجارية."
+          "body": "يمكن مراجعة حزمة وثائق RM Psyllium حسب الدفعة وتشمل، حسب المنتج والوجهة: (1) COA للدفعة مع تقرير مختبر خارجي معتمد عندما تتطلب المواصفة ذلك؛ (2) وثائق المنشأ عند الحاجة؛ (3) شهادة صحة نباتية عند الحاجة؛ (4) وثائق العملية والتعبئة لمراجعة المشتري؛ (5) قائمة التعبئة والفاتورة التجارية."
+        },
+        {
+          "heading": "نقطة قرار الشراء",
+          "body": "قبل تأكيد الطلب، اربط المواصفة بالدفعة الفعلية، وCOA، وعينة 1 كجم، والتعبئة، ومستندات سوق الوجهة."
+        },
+        {
+          "heading": "نقطة قرار الشراء",
+          "body": "قبل تأكيد الطلب، اربط المواصفة بالدفعة الفعلية، وCOA، وعينة 1 كجم، والتعبئة، ومستندات سوق الوجهة."
+        }
+      ],
+      "aiSnapshot": "مصنع قشور السيليوم المتوافق مع GMP في الهند: معايير المنشأة والوثائق debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
         }
       ]
     },
@@ -512,24 +817,69 @@
             "rows": [
               [
                 "قشور السيليوم 99% (صيدلاني)",
-                "100–200 غ + COA",
-                "500 كغ",
-                "10–15 يوم عمل"
+                "بعد مراجعة المواصفة",
+                "حسب الدرجة والوثائق",
+                "بعد مراجعة الطلب"
               ],
               [
                 "مسحوق قشور السيليوم 98%",
-                "100–200 غ + COA",
-                "500 كغ",
-                "10–15 يوم عمل"
+                "بعد مراجعة المنخل",
+                "حسب المنخل والتعبئة",
+                "بعد مراجعة الطلب"
               ],
               [
                 "قشور السيليوم العضوي",
-                "100–200 غ + COA + شهادة",
-                "500 كغ",
-                "15–20 يوم عمل"
+                "مراجعة نطاق الشهادة قبل التسعير",
+                "حسب نطاق الشهادة والدفعة",
+                "بعد مراجعة الوثائق"
               ]
             ]
           }
+        },
+        {
+          "heading": "نقطة قرار الشراء",
+          "body": "قبل تأكيد الطلب، اربط المواصفة بالدفعة الفعلية، وCOA، وعينة 1 كجم، والتعبئة، ومستندات سوق الوجهة."
+        },
+        {
+          "heading": "نقطة قرار الشراء",
+          "body": "قبل تأكيد الطلب، اربط المواصفة بالدفعة الفعلية، وCOA، وعينة 1 كجم، والتعبئة، ومستندات سوق الوجهة."
+        }
+      ],
+      "aiSnapshot": "مصنع قشور السيليوم سيدبور غوجارات: توريد مباشر من المصنع debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
         }
       ]
     },
@@ -538,7 +888,7 @@
       "summary": "مواصفات قشور السيليوم بالدرجة الغذائية، وما يعنيه التصنيع المتوافق مع HACCP عملياً، والوثائق التي يحتاجها مصنّعو الأغذية قبل تقديم طلب بالجملة من سيدبور، غوجارات.",
       "body": [
         "يحتاج مصنّعو الأغذية الذين يستخدمون قشور السيليوم كمكوّن وظيفي — لإثراء الألياف أو تعديل القوام أو تطبيقات Clean-Label — إلى مورد يمتلك ضوابط سلامة غذائية تتجاوز معالجة المنتجات الزراعية الأساسية.",
-        "تعمل RM Psyllium من منشأة آمنة غذائياً في سيدبور، غوجارات. تطبّق منشأتنا مبادئ HACCP — تحليل المخاطر ونقاط التحكم الحرجة — عبر عمليات الطحن والفصل والتعبئة لقشور ومسحوق السيليوم بالدرجة الغذائية."
+        "تعمل RM Psyllium من منشأة معالجة في سيدبور، غوجارات. يمكن لمشتري الأغذية مراجعة ضوابط التنظيف والفصل والتعبئة والتتبع ووثائق سلامة الغذاء قبل تأكيد الطلب."
       ],
       "sections": [
         {
@@ -592,6 +942,51 @@
         {
           "heading": "المعالجة المتوافقة مع HACCP: ما تغطيه",
           "body": "تغطي المعالجة المتوافقة مع HACCP لقشور السيليوم ثلاث فئات رئيسية من المخاطر: (1) المادية — كشف المعادن عند التعبئة النهائية؛ وأجهزة الفصل الجاذبي والشفط لإزالة الحجارة والغبار والبذور الغريبة؛ (2) الكيميائية — عدم تطبيق أي معالجة بالمبيدات أثناء المعالجة؛ ومراقبة الرطوبة؛ (3) البيولوجية — سجلات التنظيف والتعقيم لجميع المعدات المتلامسة."
+        },
+        {
+          "heading": "نقطة قرار الشراء",
+          "body": "قبل تأكيد الطلب، اربط المواصفة بالدفعة الفعلية، وCOA، وعينة 1 كجم، والتعبئة، ومستندات سوق الوجهة."
+        },
+        {
+          "heading": "نقطة قرار الشراء",
+          "body": "قبل تأكيد الطلب، اربط المواصفة بالدفعة الفعلية، وCOA، وعينة 1 كجم، والتعبئة، ومستندات سوق الوجهة."
+        }
+      ],
+      "aiSnapshot": "مورد قشور السيليوم بالجملة درجة غذائية في الهند: منشأة متوافقة مع HACCP debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
         }
       ]
     },
@@ -638,6 +1033,51 @@
         {
           "heading": "حزمة وثائق التصدير القياسية",
           "body": "لشحنات قشرة بلانتاغو أوفاتا بالجملة، تشمل مجموعة الوثائق القياسية: الفاتورة التجارية وقائمة التعبئة؛ شهادة التحليل COA من مختبر معتمد NABL؛ شهادة المنشأ (النموذج A للأسواق المؤهلة لـ GSP)؛ شهادة صحة النبات من سلطة الحجر الزراعي الهندية؛ شهادة التدخين حيثما يُطلب (الولايات المتحدة وأستراليا ونيوزيلندا). رمز HS لقشور السيليوم هو 1211.90."
+        },
+        {
+          "heading": "نقطة قرار الشراء",
+          "body": "قبل تأكيد الطلب، اربط المواصفة بالدفعة الفعلية، وCOA، وعينة 1 كجم، والتعبئة، ومستندات سوق الوجهة."
+        },
+        {
+          "heading": "نقطة قرار الشراء",
+          "body": "قبل تأكيد الطلب، اربط المواصفة بالدفعة الفعلية، وCOA، وعينة 1 كجم، والتعبئة، ومستندات سوق الوجهة."
+        }
+      ],
+      "aiSnapshot": "مُصدِّر كميات كبيرة من قشرة بلانتاغو أوفاتا من الهند: الدرجات وتسمية الإسبغول وشروط التصدير debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
         }
       ]
     },
@@ -646,7 +1086,7 @@
       "summary": "اختيار الدرجة والميش لمصنّعي المكملات والأغذية الوظيفية الذين يشترون مسحوق قشرة السيليوم بالجملة من غوجارات بالهند.",
       "body": [
         "يُطحن مسحوق قشرة السيليوم من قشرة السيليوم الكاملة إلى دقة جزيئية محددة. على عكس القشرة الكاملة، يتشتت المسحوق بشكل منتظم في المحاليل المائية، مما يجعله الشكل المفضل لمشروبات المسحوق ومخاليط الأغذية الوظيفية وبعض أشكال جرعات المكملات. تحدد درجة المسحوق محتوى المخاط وحجم الانتفاخ، ويحدد الميش حجم الجزيئات وسرعة التشتت.",
-        "تورد RM Psyllium مسحوق قشرة السيليوم بثلاث درجات نقاء من منشأتنا في سيدبور بغوجارات: 85% و95% و98%. جميع الدرجات متاحة بمواصفات ميش متعددة ومزودة بشهادة COA كاملة من مختبر معتمد NABL. يبدأ الحد الأدنى للطلب من 100 كغ."
+        "تورد RM Psyllium مسحوق قشرة السيليوم بثلاث درجات نقاء من منشأتنا في سيدبور بغوجارات: 85% و95% و98%. جميع الدرجات متاحة بمواصفات ميش متعددة مع COA مراجع حسب الدفعة، ويمكن مراجعة تقرير مختبر خارجي معتمد عندما تتطلب مواصفة المشتري ذلك."
       ],
       "sections": [
         {
@@ -691,7 +1131,48 @@
         },
         {
           "heading": "الحد الأدنى للطلب وخيارات التعبئة",
-          "body": "يُورَّد مسحوق قشرة السيليوم في أكياس ورقية مبطنة بـ HDPE سعة 25 كغ وأكياس 50 كغ وأكياس FIBC جامبو سعة 500 كغ. للتطبيقات الحساسة للرطوبة يتوفر غلاف HDPE داخلي مختوم حرارياً مع مجفف عند الطلب. تُشحن عينات 100–500 غ مع COA من سيدبور خلال 3–5 أيام عمل."
+          "body": "يُورَّد مسحوق قشرة السيليوم في أكياس ورقية مبطنة بـ HDPE سعة 25 كغ وأكياس 50 كغ وأكياس FIBC جامبو سعة 500 كغ. للتطبيقات الحساسة للرطوبة يتوفر غلاف HDPE داخلي مختوم حرارياً مع مجفف عند الطلب. يتم تأكيد كمية العينة وخيارات مراجعة COA ووقت الإرسال بعد وضوح الدرجة والمنخل والوجهة ومتطلبات الوثائق."
+        },
+        {
+          "heading": "نقطة قرار الشراء",
+          "body": "قبل تأكيد الطلب، اربط المواصفة بالدفعة الفعلية، وCOA، وعينة 1 كجم، والتعبئة، ومستندات سوق الوجهة."
+        }
+      ],
+      "aiSnapshot": "مورد جملة مسحوق قشرة السيليوم في الهند: دليل درجات 85% و95% و98% debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
         }
       ]
     },
@@ -714,6 +1195,47 @@
         {
           "heading": "التعبئة لماركات المكملات",
           "body": "التعبئة القياسية أكياس ورقية مبطنة بـ HDPE سعة 25 كغ وأكياس 50 كغ. لمشتري OEM والعلامة الخاصة الذين يحتاجون إلى تعبئة جاهزة للإنتاج نورد في: أكياس داخلية مختومة سعة 1 كغ أو 5 كغ لغرف ملء الكبسولات؛ حاويات HDPE لخطوط الملء الآلي؛ أكياس FIBC جامبو (500 كغ أو 1000 كغ). التوسيم المحايد متاح عند الطلب."
+        },
+        {
+          "heading": "نقطة قرار الشراء",
+          "body": "قبل تأكيد الطلب، اربط المواصفة بالدفعة الفعلية، وCOA، وعينة 1 كجم، والتعبئة، ومستندات سوق الوجهة."
+        }
+      ],
+      "aiSnapshot": "مكمل غذائي بعلامة خاصة من قشرة السيليوم الهندية: متطلبات التوريد OEM بالجملة debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
         }
       ]
     },
@@ -770,6 +1292,47 @@
         {
           "heading": "تصدير الإسبغول من غوجارات: ما يحتاجه مصنّعو الأغذية",
           "body": "تحمل قشرة الإسبغول المصدَّرة من غوجارات الرمز الجمركي HS 1211.90. لأغراض استيراد الأغذية يحتاج المشترون عادةً إلى: COA غذائي مع محتوى الألياف القابلة للذوبان (طريقة AOAC) وشهادة منشأ وشهادة صحة النبات وإعلان سلامة غذائية. أوقات العبور من ميناء موندرا: روتردام 20–22 يوماً وهامبورغ 18–21 يوماً ونيويورك 25–28 يوماً وسنغافورة 10–12 يوماً."
+        },
+        {
+          "heading": "نقطة قرار الشراء",
+          "body": "قبل تأكيد الطلب، اربط المواصفة بالدفعة الفعلية، وCOA، وعينة 1 كجم، والتعبئة، ومستندات سوق الوجهة."
+        }
+      ],
+      "aiSnapshot": "الألياف القابلة للذوبان لتحصين الأغذية بقشرة السيليوم بالجملة: التوريد من الهند debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
         }
       ]
     },
@@ -826,6 +1389,47 @@
         {
           "heading": "نسب خلط الدقيق الخالي من الغلوتين",
           "body": "في مخاليط الدقيق الخالي من الغلوتين القياسية للبيع بالجملة تُضاف قشرة السيليوم (80–100 ميش ونقاء 98%) عادةً بنسبة 2–4% من إجمالي وزن خليط الدقيق. نسبة خلط القاعدة الشائعة: دقيق الأرز 50–60% ونشا التابيوكا 20–25% ونشا البطاطا أو الذرة 10–15% ومسحوق قشرة السيليوم 2–4%. لمخاليط كيتو أو قليلة الكربوهيدرات يُستخدم السيليوم بمعدلات 5–8% مع دقيق اللوز أو جوز الهند."
+        },
+        {
+          "heading": "نقطة قرار الشراء",
+          "body": "قبل تأكيد الطلب، اربط المواصفة بالدفعة الفعلية، وCOA، وعينة 1 كجم، والتعبئة، ومستندات سوق الوجهة."
+        }
+      ],
+      "aiSnapshot": "مورد جملة قشرة السيليوم المعتمدة خالية الغلوتين: ما تحتاجه ماركات المخبوزات debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
         }
       ]
     },
@@ -836,6 +1440,65 @@
         "تمثل قشرة السيليوم بنقاء 99% الدرجة الصيدلانية للمنتج — أعلى محتوى من القشرة المتاح من منشآت المعالجة الهندية. عند هذه الدرجة، يبلغ محتوى القشرة (غلاف البذرة من البلانتاغو أوفاتا) ما لا يقل عن 99% وزنًا، مع حجم انتفاخ لا يقل عن 50 مل/غ. حجم الانتفاخ هذا هو المواصفة الوظيفية الأساسية للملحقات الصيدلانية للمسهلات وفق دساتير USP وEP وIP.",
         "يجب أن تكون الدرجة 99% مصحوبة بشهادة تحليل كاملة (COA) تُظهر: حجم الانتفاخ، الرطوبة (≤12%)، الرماد الكلي (≤3%)، الرماد غير القابل للذوبان في الحمض (≤0.4%)، المعادن الثقيلة (رصاص ≤2 جزء/مليون، زرنيخ ≤1 جزء/مليون)، والميكروبيولوجيا (غياب E. coli والسالمونيلا، TPC ≤10,000 وحدة/غ). يجب على المشترين طلب تقارير الاختبار من مختبر معتمد NABL في الهند.",
         "تحصيل درجة 99% من غوجارات يستلزم التحقق من أن منشأة المعالجة لديها طاقة الطحن والفصل اللازمة. تُعدّ منطقة أونجها في غوجارات مركز المعالجة الرئيسي في الهند بأكثر من 80% من الإمداد العالمي. نوفر قشرة الدرجة 99% في أكياس 10 كغ و25 كغ و50 كغ مع توثيق كامل. أرسل متطلبات دستور الأدوية والسوق المستهدف وسنقدم نموذج COA للمراجعة قبل أي أمر شراء."
+      ],
+      "aiSnapshot": "قشرة السيليوم 99% نقاء: دليل المورد للمشترين الصيدلانيين debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "sections": [
+        {
+          "heading": "Que significa para compras",
+          "body": "قشرة السيليوم 99% نقاء: دليل المورد للمشترين الصيدلانيين ayuda a compras y QA a conectar la solicitud comercial con un lote real. La decision debe basarse en especificacion, COA, muestra y uso final."
+        },
+        {
+          "heading": "Checklist antes de la orden",
+          "body": "Revise grado, pureza, malla, humedad, cenizas, microbiologia, metales pesados, empaque, origen y requisitos del mercado de destino."
+        },
+        {
+          "heading": "Como leer el COA",
+          "body": "Compare numero de lote, metodo, resultado, unidad y limite. Un COA de muestra sirve para revision inicial; el lote final debe aprobarse con documentos del lote enviado."
+        },
+        {
+          "heading": "Error comun",
+          "body": "No convierta terminos como organico, FDA, GMP, Halal, Kosher o farmacopea en promesas del proveedor. Verifique el alcance, el lote y el documento requerido."
+        },
+        {
+          "heading": "Como puede ayudar RM",
+          "body": "RM puede revisar grado, malla, COA de muestra, especificacion, empaque, origen, muestra de 1 kg y documentos de destino antes de la orden."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
+        }
       ]
     },
     "psyllium-export-india-fob-mundra": {
@@ -845,6 +1508,65 @@
         "تُصدّر الهند السيليوم عبر ثلاثة موانئ رئيسية: موندرا (غوجارات)، كاندلا (غوجارات)، وجي إن بي تي/نهافا شيفا (ماهاراشترا). يؤثر اختيار الميناء على تكلفة الشحن وزمن العبور وتوافر الحاويات. تستخدم معظم مصانع غوجارات، بما فيها RM Psyllium، ميناء موندرا كميناء رئيسي نظرًا لقربه (حوالي 220 كم من منشأتنا في سيدهبور) وتردد الرحلات العالي نحو أوروبا والساحل الشرقي الأمريكي والشرق الأوسط وأستراليا.",
         "يُشغّل ميناء موندرا (MUND) شركة أداني بورتس ويتعامل مع أعلى حجم للحاويات في الهند. يبلغ تردد السفن إلى الموانئ الرئيسية (روتردام، فيليكستو، نيويورك، جدة، كولومبو) عادةً 2–4 إبحارات أسبوعيًا. زمن العبور إلى روتردام نحو 20–23 يومًا، وإلى نيويورك نحو 25–28 يومًا، وإلى جدة نحو 8–10 أيام. كاندلا بديل برسوم أقل قليلاً لكن بخدمات أقل تكرارًا.",
         "لأوامر CIF، نختار الميناء بناءً على وجهتك وأفضل شركة شحن وقت الحجز. لأوامر FOB، أنت تُرشّح وكيل الشحن ونتولى التنسيق معه. توثيق التصدير — فاتورة تجارية، قائمة التعبئة، COA، شهادة المنشأ، شهادة الصحة النباتية — يُحضَّر في منشأتنا ويُقدَّم قبل 3–5 أيام من الشحن. أرسل إلينا ميناء الوجهة وسنوفر عرض شحن استرشادي مع سعر المنتج."
+      ],
+      "aiSnapshot": "تصدير السيليوم من الهند: FOB موندرا مقابل كاندلا مقابل JNPT debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "sections": [
+        {
+          "heading": "Que significa para compras",
+          "body": "تصدير السيليوم من الهند: FOB موندرا مقابل كاندلا مقابل JNPT ayuda a compras y QA a conectar la solicitud comercial con un lote real. La decision debe basarse en especificacion, COA, muestra y uso final."
+        },
+        {
+          "heading": "Checklist antes de la orden",
+          "body": "Revise grado, pureza, malla, humedad, cenizas, microbiologia, metales pesados, empaque, origen y requisitos del mercado de destino."
+        },
+        {
+          "heading": "Como leer el COA",
+          "body": "Compare numero de lote, metodo, resultado, unidad y limite. Un COA de muestra sirve para revision inicial; el lote final debe aprobarse con documentos del lote enviado."
+        },
+        {
+          "heading": "Error comun",
+          "body": "No convierta terminos como organico, FDA, GMP, Halal, Kosher o farmacopea en promesas del proveedor. Verifique el alcance, el lote y el documento requerido."
+        },
+        {
+          "heading": "Como puede ayudar RM",
+          "body": "RM puede revisar grado, malla, COA de muestra, especificacion, empaque, origen, muestra de 1 kg y documentos de destino antes de la orden."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
+        }
       ]
     },
     "psyllium-husk-usp-ep-pharmacopoeia": {
@@ -854,6 +1576,65 @@
         "قشرة السيليوم مُدرجة في ثلاثة دساتير أدوية رئيسية: دستور الأدوية الأمريكي (USP)، والدستور الأوروبي (EP)، والدستور الهندي (IP). على الرغم من أن جميعها تصف قشرة البلانتاغو أوفاتا، تختلف معاملات الاختبار المحددة ومعايير القبول بطرق تهم المشترين المستوردين للاستخدام الصيدلاني. فهم هذه الفروق يساعد فرق المشتريات على تحديد الدرجة الصحيحة وطلب معاملات COA المناسبة.",
         "يشترط دستور USP لقشرة السيليوم حجم انتفاخ أدنى 40 مل/غ، ورطوبة ≤12%، ورماد كلي ≤4%. يحدد دستور EP (إسباغولا هاسك) مؤشر انتفاخ أدنى 40 مع اختبارات تعريف محددة تشمل الميكروسكوبيا والتفاعلات الكيميائية. دستور IP منسجم إلى حد بعيد مع USP مع اختلافات بسيطة محتملة في منهجية الاختبار.",
         "للتصدير إلى أوروبا، المصطلح المستخدم في دستور EP هو 'Ispaghula Husk' — وهو نفس المنتج. يطلب المشترون الأوروبيون عادةً COA مُوثَّقًا وفق معاملات EP بما يشمل مؤشر الانتفاخ والمواد الغريبة والميكروبيولوجيا وحدود متبقيات المبيدات وفق اللوائح الأوروبية. نوفر COA موثقًا وفق دستور الأدوية المحدد من المشتري عند الطلب."
+      ],
+      "aiSnapshot": "USP مقابل EP مقابل IP: شرح معايير دساتير الأدوية لقشرة السيليوم debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "sections": [
+        {
+          "heading": "Que significa para compras",
+          "body": "USP مقابل EP مقابل IP: شرح معايير دساتير الأدوية لقشرة السيليوم ayuda a compras y QA a conectar la solicitud comercial con un lote real. La decision debe basarse en especificacion, COA, muestra y uso final."
+        },
+        {
+          "heading": "Checklist antes de la orden",
+          "body": "Revise grado, pureza, malla, humedad, cenizas, microbiologia, metales pesados, empaque, origen y requisitos del mercado de destino."
+        },
+        {
+          "heading": "Como leer el COA",
+          "body": "Compare numero de lote, metodo, resultado, unidad y limite. Un COA de muestra sirve para revision inicial; el lote final debe aprobarse con documentos del lote enviado."
+        },
+        {
+          "heading": "Error comun",
+          "body": "No convierta terminos como organico, FDA, GMP, Halal, Kosher o farmacopea en promesas del proveedor. Verifique el alcance, el lote y el documento requerido."
+        },
+        {
+          "heading": "Como puede ayudar RM",
+          "body": "RM puede revisar grado, malla, COA de muestra, especificacion, empaque, origen, muestra de 1 kg y documentos de destino antes de la orden."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
+        }
       ]
     },
     "psyllium-seed-supplier-gujarat-rajasthan": {
@@ -863,6 +1644,65 @@
         "تُزرع بذور البلانتاغو أوفاتا (السيليوم) بشكل رئيسي في غوجارات وراجستان. مناطق ميهسانا وبناسكانتا وكاتش في غوجارات، وبارمر وجالور وجودهبور في راجستان هي الأكثر إنتاجًا. المحصول زراعة ربيع (شتوية)، تُزرع أكتوبر–نوفمبر وتُحصد فبراير–مارس. تُقدَّر الإنتاجية السنوية بـ100,000–150,000 طن متري من البذور، يُصدَّر نحو 85% منها معالجًا.",
         "تتوفر البذور في درجتين: المنظفة آليًا (قياسية) بنقاء 98% أو أعلى عادةً. درجة سورتكس تستخدم الفرز الضوئي لتحقيق 99%+ مع مواد غريبة ≤0.5%. تتميز درجة سورتكس بعلاوة سعر 8–12% لكنها مفضلة للمطاحن التي تحتاج إنتاجية قشور ثابتة.",
         "مواصفات البذور الواجب التحقق منها قبل الشراء: النقاء (98% أو 99%)، الرطوبة (≤8%)، نسبة الإنبات (≥85% لبذور الزراعة؛ غير مطلوبة للطحن) والتوثيق التتبعي للدفعة. نورد البذور في أكياس 25 كغ و50 كغ وجمبو 1,000 كغ. يُرفق مع كل طلب توثيق المنشأ وتتبع الدفعة وعينة للاختبار قبل الشحن."
+      ],
+      "aiSnapshot": "توريد بذور السيليوم من غوجارات وراجستان debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "sections": [
+        {
+          "heading": "Que significa para compras",
+          "body": "توريد بذور السيليوم من غوجارات وراجستان ayuda a compras y QA a conectar la solicitud comercial con un lote real. La decision debe basarse en especificacion, COA, muestra y uso final."
+        },
+        {
+          "heading": "Checklist antes de la orden",
+          "body": "Revise grado, pureza, malla, humedad, cenizas, microbiologia, metales pesados, empaque, origen y requisitos del mercado de destino."
+        },
+        {
+          "heading": "Como leer el COA",
+          "body": "Compare numero de lote, metodo, resultado, unidad y limite. Un COA de muestra sirve para revision inicial; el lote final debe aprobarse con documentos del lote enviado."
+        },
+        {
+          "heading": "Error comun",
+          "body": "No convierta terminos como organico, FDA, GMP, Halal, Kosher o farmacopea en promesas del proveedor. Verifique el alcance, el lote y el documento requerido."
+        },
+        {
+          "heading": "Como puede ayudar RM",
+          "body": "RM puede revisar grado, malla, COA de muestra, especificacion, empaque, origen, muestra de 1 kg y documentos de destino antes de la orden."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
+        }
       ]
     },
     "organic-psyllium-nop-eu-certification": {
@@ -872,6 +1712,65 @@
         "يُشهَّد السيليوم العضوي الهندي وفق إطارين رئيسيين: NOP الأمريكي للسوق الأمريكي، والعضوية الأوروبية (EU Organic) للسوق الأوروبي. يحصل المعالجون العضويون الهنود على شهاداتهم من جهات معتمدة تشمل Control Union وECOCERT India وLacon وSGS. يجب التحقق من أن الشهادة تغطي المنتج المحدد وتواريخ الدفعة والسوق المستهدف.",
         "تتطلب شهادة NOP أن تكون مصدر البذور وممارسات الزراعة ومنشأة المعالجة وسلسلة التوزيع جميعها معتمدة عضويًا. شهادة المعاملة (TC) الصادرة لكل شحنة تربط الدفعة بالاعتماد العضوي. المشترون الأوروبيون يحتاجون شهادة تفتيش (COI) وفق اللائحة الأوروبية 2018/848.",
         "في RM Psyllium، تُوفَّر الدفعات العضوية عند الطلب بناءً على توافر المخزون المعتمد. نوفر نسخة الشهادة وسجلات منشأ الدفعة وتوثيق TC قبل تأكيد أمر الشراء. السيليوم العضوي بعلاوة سعر 25–40% مقارنةً بالتقليدي. أرسل متطلباتك وسنؤكد التوافر والتسعير."
+      ],
+      "aiSnapshot": "السيليوم العضوي: شهادة NOP مقابل EU العضوية للتصدير debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "sections": [
+        {
+          "heading": "Que significa para compras",
+          "body": "السيليوم العضوي: شهادة NOP مقابل EU العضوية للتصدير ayuda a compras y QA a conectar la solicitud comercial con un lote real. La decision debe basarse en especificacion, COA, muestra y uso final."
+        },
+        {
+          "heading": "Checklist antes de la orden",
+          "body": "Revise grado, pureza, malla, humedad, cenizas, microbiologia, metales pesados, empaque, origen y requisitos del mercado de destino."
+        },
+        {
+          "heading": "Como leer el COA",
+          "body": "Compare numero de lote, metodo, resultado, unidad y limite. Un COA de muestra sirve para revision inicial; el lote final debe aprobarse con documentos del lote enviado."
+        },
+        {
+          "heading": "Error comun",
+          "body": "No convierta terminos como organico, FDA, GMP, Halal, Kosher o farmacopea en promesas del proveedor. Verifique el alcance, el lote y el documento requerido."
+        },
+        {
+          "heading": "Como puede ayudar RM",
+          "body": "RM puede revisar grado, malla, COA de muestra, especificacion, empaque, origen, muestra de 1 kg y documentos de destino antes de la orden."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
+        }
       ]
     },
     "psyllium-husk-gluten-free-bakery": {
@@ -880,7 +1779,66 @@
       "body": [
         "تُستخدم قشرة السيليوم في مخابز الغلوتين الحر كعامل هيكلي وربط للماء — تحل جزئيًا محل وظائف شبكة الغلوتين التي تسمح لعجين الخبز بحبس الغاز والحفاظ على شكله. يكوّن المخاط هلامًا عند ترطيبه يوفر اللزوجة والمرونة في عجائن خالية من الغلوتين مصنوعة من دقيق الأرز ونشا الذرة والتابيوكا، مما يحسن هيكل الفتات واحتباس الرطوبة ومدة الصلاحية.",
         "للتطبيقات في المخابز، تُحدَّد الأكثر شيوعًا درجة نقاء 95% أو 98% بميش 80–100. الميش الأدق (100+) يتشتت أسرع وينتج فتاتًا أنعم. الميش الخشن (40–60) قد يكون مرئيًا في المنتج النهائي. تُستخدم درجة 85% في التركيبات الاقتصادية.",
-        "معدلات الاستخدام في تركيبات الخبز الخالي من الغلوتين هي 1–3% من إجمالي وزن الدقيق. فوق 3% قد ينتج فتات كثيف. ينبغي طلب عينة 100–200 غ مع COA وإجراء اختبارات مكتبية قبل الطلب بالجملة. يمكننا توفير بيانات حجم الانتفاخ والرطوبة لكل درجة لدعم التركيب."
+        "معدلات الاستخدام في تركيبات الخبز الخالي من الغلوتين هي 1–3% من إجمالي وزن الدقيق. فوق 3% قد ينتج فتات كثيف. ينبغي طلب عينة بعد مراجعة المواصفة وإجراء اختبارات مكتبية قبل الطلب بالجملة. يمكننا توفير بيانات حجم الانتفاخ والرطوبة لكل درجة لدعم التركيب."
+      ],
+      "aiSnapshot": "قشرة السيليوم في مخابز الغلوتين الحر: اختيار الدرجة والميش debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "sections": [
+        {
+          "heading": "Que significa para compras",
+          "body": "قشرة السيليوم في مخابز الغلوتين الحر: اختيار الدرجة والميش ayuda a compras y QA a conectar la solicitud comercial con un lote real. La decision debe basarse en especificacion, COA, muestra y uso final."
+        },
+        {
+          "heading": "Checklist antes de la orden",
+          "body": "Revise grado, pureza, malla, humedad, cenizas, microbiologia, metales pesados, empaque, origen y requisitos del mercado de destino."
+        },
+        {
+          "heading": "Como leer el COA",
+          "body": "Compare numero de lote, metodo, resultado, unidad y limite. Un COA de muestra sirve para revision inicial; el lote final debe aprobarse con documentos del lote enviado."
+        },
+        {
+          "heading": "Error comun",
+          "body": "No convierta terminos como organico, FDA, GMP, Halal, Kosher o farmacopea en promesas del proveedor. Verifique el alcance, el lote y el documento requerido."
+        },
+        {
+          "heading": "Como puede ayudar RM",
+          "body": "RM puede revisar grado, malla, COA de muestra, especificacion, empaque, origen, muestra de 1 kg y documentos de destino antes de la orden."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
+        }
       ]
     },
     "psyllium-supplement-capsule-filling": {
@@ -890,6 +1848,65 @@
         "قشرة السيليوم من أكثر الألياف الغذائية تغليفًا في الكبسولات الجيلاتينية وNBAP المستخدمة في مكملات المسهلات وصحة الجهاز الهضمي. التحدي الرئيسي في ملء الكبسولات هو قابلية التدفق — فالقشرة ليفية ومستهلكة للرطوبة مما قد يسبب التكتل وتشكيل الجسور في قماع معدات الملء وأوزان حشو غير منتظمة. اختيار الميش والتحكم في الرطوبة هما المتغيران الأساسيان.",
         "لمعدات ملء الكبسولات القياسية، القشرة الكاملة بميش 40–60 هي المواصفة المفضلة. عند هذا الميش الجسيمات كبيرة كافية للتدفق دون جسور لكن صغيرة كافية للتعبئة المنتظمة. تحت 40 ميش تعبئة أقل كفاءة؛ فوق 60 ميش المسحوق أكثر استهلاكًا للرطوبة.",
         "الرطوبة فوق 10% تسبب تكتلًا وتباينًا في وزن الحشو. نختبر الرطوبة عند الشحن ويمكن توفير تغليف محكوم الرطوبة عند الطلب. أرسل حجم الكبسولة ووزن الحشو المستهدف ونوع المعدات — سنوصي بالدرجة والميش المناسبين."
+      ],
+      "aiSnapshot": "السيليوم لملء الكبسولات: دليل الميش والتدفق والدرجة debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "sections": [
+        {
+          "heading": "Que significa para compras",
+          "body": "السيليوم لملء الكبسولات: دليل الميش والتدفق والدرجة ayuda a compras y QA a conectar la solicitud comercial con un lote real. La decision debe basarse en especificacion, COA, muestra y uso final."
+        },
+        {
+          "heading": "Checklist antes de la orden",
+          "body": "Revise grado, pureza, malla, humedad, cenizas, microbiologia, metales pesados, empaque, origen y requisitos del mercado de destino."
+        },
+        {
+          "heading": "Como leer el COA",
+          "body": "Compare numero de lote, metodo, resultado, unidad y limite. Un COA de muestra sirve para revision inicial; el lote final debe aprobarse con documentos del lote enviado."
+        },
+        {
+          "heading": "Error comun",
+          "body": "No convierta terminos como organico, FDA, GMP, Halal, Kosher o farmacopea en promesas del proveedor. Verifique el alcance, el lote y el documento requerido."
+        },
+        {
+          "heading": "Como puede ayudar RM",
+          "body": "RM puede revisar grado, malla, COA de muestra, especificacion, empaque, origen, muestra de 1 kg y documentos de destino antes de la orden."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
+        }
       ]
     },
     "psyllium-halal-kosher-documentation": {
@@ -899,6 +1916,65 @@
         "قشرة السيليوم منتج نباتي خالٍ من المدخلات الحيوانية وتُعتبر عمومًا مقبولة وفق متطلبات الغذاء الحلال والكوشير. غير أن كثيرًا من المشترين — لا سيما في الشرق الأوسط وجنوب شرق آسيا وأسواق المكملات الكوشير الأمريكية — يشترطون اعتمادًا رسميًا. يؤكد اعتماد الحلال أن معدات المعالجة وممارسات المنشأة وأي مساعدات معالجة تستوفي معايير الغذاء الإسلامي.",
         "الجهات المعترف بها في الهند للحلال: هلال إنديا، جمعية العلماء الهند حلال ترست، وجهات دولية كـIFANCA. تشمل الشهادة المنشأة والمنتجات المحددة وفترة الاعتماد (سنة عادةً). نسخة الشهادة لكل شحنة مع تأكيد على مستوى الدفعة هو ما تتطلبه سلطات الاستيراد في الشرق الأوسط.",
         "في RM Psyllium، وثائق الحلال والكوشير متاحة عند الطلب. نوفر إعلان حلال يؤكد أن قشرة السيليوم منتج نباتي خالص بدون مدخلات حيوانية في الزراعة أو المعالجة أو التعبئة — مقبول من معظم سلطات الاستيراد لاستخدام مكونات الغذاء والمكملات. تواصل معنا بمتطلبات جهة الاعتماد المحددة."
+      ],
+      "aiSnapshot": "السيليوم الحلال والكوشير: الوثائق التي يحتاجها المشترون debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "sections": [
+        {
+          "heading": "Que significa para compras",
+          "body": "السيليوم الحلال والكوشير: الوثائق التي يحتاجها المشترون ayuda a compras y QA a conectar la solicitud comercial con un lote real. La decision debe basarse en especificacion, COA, muestra y uso final."
+        },
+        {
+          "heading": "Checklist antes de la orden",
+          "body": "Revise grado, pureza, malla, humedad, cenizas, microbiologia, metales pesados, empaque, origen y requisitos del mercado de destino."
+        },
+        {
+          "heading": "Como leer el COA",
+          "body": "Compare numero de lote, metodo, resultado, unidad y limite. Un COA de muestra sirve para revision inicial; el lote final debe aprobarse con documentos del lote enviado."
+        },
+        {
+          "heading": "Error comun",
+          "body": "No convierta terminos como organico, FDA, GMP, Halal, Kosher o farmacopea en promesas del proveedor. Verifique el alcance, el lote y el documento requerido."
+        },
+        {
+          "heading": "Como puede ayudar RM",
+          "body": "RM puede revisar grado, malla, COA de muestra, especificacion, empaque, origen, muestra de 1 kg y documentos de destino antes de la orden."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
+        }
       ]
     },
     "bulk-psyllium-import-usa-fda": {
@@ -908,6 +1984,65 @@
         "تخضع قشرة السيليوم المستوردة بالجملة إلى الولايات المتحدة لاختصاص FDA إما كمكوّن مكمل غذائي أو مكوّن غذائي حسب الاستخدام المقصود. لا تشترط FDA موافقة مسبقة لكن الشحنات تخضع لفحص الاستيراد، وتخضع المنشآت المصدِّرة لمتطلبات التحقق من الموردين وفق FSMA. يتحمل المستوردون الأمريكيون مسؤولية التحقق من امتثال مورديهم الأجانب.",
         "للمكملات الغذائية، يجب أن تستوفي القشرة مواصفات دستور USP. يجب أن يتضمن COA: التعريف النباتي، حجم الانتفاخ، الرطوبة، الرماد، الميكروبيولوجيا (TPC، خميرة، عفن، E. coli، سالمونيلا)، والمعادن الثقيلة. للتطبيقات الغذائية، تتمتع القشرة بوضع GRAS في الولايات المتحدة كمصدر للألياف الغذائية القابلة للذوبان.",
         "الإشعار المسبق لـFDA مطلوب لجميع الشحنات الغذائية والتكميلية، يُقدَّم إلكترونيًا عبر PNSI قبل الوصول. عادةً يتولى المستوردون الأمريكيون هذا الإجراء ونحن نوفر جميع تفاصيل المنتج المطلوبة. نشحن عبر موندرا أو JNPT بزمن عبور 25–30 يومًا إلى موانئ الساحل الشرقي."
+      ],
+      "aiSnapshot": "استيراد السيليوم إلى الولايات المتحدة: متطلبات FDA والتسمية وشهادة التحليل debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "sections": [
+        {
+          "heading": "Que significa para compras",
+          "body": "استيراد السيليوم إلى الولايات المتحدة: متطلبات FDA والتسمية وشهادة التحليل ayuda a compras y QA a conectar la solicitud comercial con un lote real. La decision debe basarse en especificacion, COA, muestra y uso final."
+        },
+        {
+          "heading": "Checklist antes de la orden",
+          "body": "Revise grado, pureza, malla, humedad, cenizas, microbiologia, metales pesados, empaque, origen y requisitos del mercado de destino."
+        },
+        {
+          "heading": "Como leer el COA",
+          "body": "Compare numero de lote, metodo, resultado, unidad y limite. Un COA de muestra sirve para revision inicial; el lote final debe aprobarse con documentos del lote enviado."
+        },
+        {
+          "heading": "Error comun",
+          "body": "No convierta terminos como organico, FDA, GMP, Halal, Kosher o farmacopea en promesas del proveedor. Verifique el alcance, el lote y el documento requerido."
+        },
+        {
+          "heading": "Como puede ayudar RM",
+          "body": "RM puede revisar grado, malla, COA de muestra, especificacion, empaque, origen, muestra de 1 kg y documentos de destino antes de la orden."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
+        }
       ]
     },
     "psyllium-khakha-animal-feed-specifications": {
@@ -917,6 +2052,65 @@
         "مسحوق سيليوم كاكا هو المنتج الثانوي المتبقي بعد طحن قشرة السيليوم وفصلها عن البذرة. يتكون من غلاف البذرة الداخلي والسويداء المتبقي ويحتوي على ألياف قابلة للذوبان — عادةً 30–40% ألياف خام بالوزن. هذا المحتوى مع 8–12% بروتين خام وسعر منخفض مقارنةً بالقشرة الكاملة يجعله مكوّنًا علفيًا مفيدًا لمنتجي أعلاف المجترات والدواجن.",
         "يُحدَّد كاكا بدرجة الأعلاف أساسًا بالرطوبة (≤12%)، الألياف الخام (30–40%)، البروتين الخام (8–12%)، والرماد الكلي (≤8%). يجب التحقق من المواد الغريبة ومحتوى الرمل — الرمال الزائدة ترفع الرماد وتقلل قابلية الهضم. الجسيمات الخشنة (20–40 ميش) معيار لمعظم تطبيقات الأعلاف.",
         "حالات استخدام كاكا تشمل: أعلاف الأبقار والجاموس (دعم الجهاز الهضمي)، أعلاف الدواجن كمصدر ألياف، وأعلاف الأسماك ومزارع الاستزراع المائي كرابط طبيعي. نوفر في أكياس 25 كغ و50 كغ وجمبو 1,000 كغ مع COA تحليل أساسي وقائمة تعبئة."
+      ],
+      "aiSnapshot": "مسحوق سيليوم كاكا لأعلاف الحيوانات: المواصفات وحالات الاستخدام debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "sections": [
+        {
+          "heading": "Que significa para compras",
+          "body": "مسحوق سيليوم كاكا لأعلاف الحيوانات: المواصفات وحالات الاستخدام ayuda a compras y QA a conectar la solicitud comercial con un lote real. La decision debe basarse en especificacion, COA, muestra y uso final."
+        },
+        {
+          "heading": "Checklist antes de la orden",
+          "body": "Revise grado, pureza, malla, humedad, cenizas, microbiologia, metales pesados, empaque, origen y requisitos del mercado de destino."
+        },
+        {
+          "heading": "Como leer el COA",
+          "body": "Compare numero de lote, metodo, resultado, unidad y limite. Un COA de muestra sirve para revision inicial; el lote final debe aprobarse con documentos del lote enviado."
+        },
+        {
+          "heading": "Error comun",
+          "body": "No convierta terminos como organico, FDA, GMP, Halal, Kosher o farmacopea en promesas del proveedor. Verifique el alcance, el lote y el documento requerido."
+        },
+        {
+          "heading": "Como puede ayudar RM",
+          "body": "RM puede revisar grado, malla, COA de muestra, especificacion, empaque, origen, muestra de 1 kg y documentos de destino antes de la orden."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
+        }
       ]
     }
   },
@@ -927,6 +2121,65 @@
       "قشرة السيليوم خاخا هي المنتج الثانوي الناتج عن طحن القشرة — بقايا قشرة البذرة التي تتبقى بعد فصل الهسك. تحتوي على نسبة كبيرة من المخاط والألياف الغذائية من البذرة الأصلية، مما يجعلها مكوّناً وظيفياً في الأعلاف وليست مجرد نفايات.",
       "يوفر مسحوق الخاخا لمصنّعي الأعلاف ميزتين رئيسيتين: كثافة الألياف والتكلفة المنخفضة. مقارنةً بالقشرة الكاملة، يُقدَّم الخاخا بسعر أقل مع الحفاظ على الألياف القابلة للذوبان التي تدعم حركة الأمعاء واحتباس الماء في الماشية. وقد أفاد المشترون في جنوب آسيا والشرق الأوسط باستخدامه في أعلاف الدواجن والخنازير والمجترات.",
       "يستلزم شراء الخاخا بالجملة معرفة مصدر الدفعة ومواصفات الرطوبة. يجب أن يكون الخاخا المخصص للأعلاف بمحتوى رطوبة أقل من 12%، مع قدر ضئيل من المواد الغريبة وحجم حبيبات منتظم يناسب الخلط. نوفر التعبئة في أكياس بوزن 25 كجم و50 كجم وأكياس جامبو بوزن 1000 كجم، مع وثائق المنشأ وقائمة التعبئة لكل شحنة."
+    ],
+    "aiSnapshot": "يجب مراجعة psyllium khakha demand حسب الدفعة والمواصفة والتطبيق، وليس حسب ادعاءات عامة من المورد. على المشتري التحقق من feed grade, fiber, moisture, ash, particle size, packing, and destination use قبل أمر الشراء.",
+    "sections": [
+      {
+        "heading": "ما الذي يجب أن يتحقق منه المشتري",
+        "body": "بالنسبة إلى psyllium khakha demand، يجب مراجعة feed grade, fiber, moisture, ash, particle size, packing, and destination use. الهدف هو ربط الطلب التجاري بالدفعة الفعلية والعينة وCOA ووثائق الوجهة."
+      },
+      {
+        "heading": "كيف تقرأ COA أو المواصفة",
+        "body": "راجع المعلمة والوحدة والطريقة والنتيجة والحد وهوية الدفعة وتاريخ التقرير. إذا كان ملفك يحتاج طريقة أو صياغة محددة، أكدها قبل العينة أو الطلب."
+      },
+      {
+        "heading": "خطأ شائع",
+        "body": "لا تشترِ بناءً على الدرجة أو كلمة شهادة فقط. اسأل عمّا تدعمه نتائج الدفعة وما الوثائق القابلة للمراجعة."
+      },
+      {
+        "heading": "كيف يمكن أن تدعم RM المراجعة",
+        "body": "يمكن لـ RM مراجعة الدرجة والمنخل وCOA العينة والمواصفة والتعبئة والمنشأ ووثائق الوجهة قبل الطلب."
+      }
+    ],
+    "specTable": [
+      {
+        "parameter": "Grade / Application",
+        "range": "Buyer-specific",
+        "method": "Specification review"
+      },
+      {
+        "parameter": "Sample Review",
+        "range": "1 kg sample where available",
+        "method": "Pre-PO review"
+      },
+      {
+        "parameter": "COA Parameters",
+        "range": "Lot-specific",
+        "method": "COA / third-party report where required"
+      },
+      {
+        "parameter": "Packing and Documents",
+        "range": "Destination-specific",
+        "method": "Buyer checklist"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "ما الذي يجب تأكيده قبل الطلب؟",
+        "a": "يجب تأكيد feed grade, fiber, moisture, ash, particle size, packing, and destination use، والتطبيق، والعينة، والتعبئة، ووثائق الوجهة."
+      },
+      {
+        "q": "هل يكفي COA العينة للموافقة النهائية؟",
+        "a": "لا. COA العينة للمراجعة الأولية. الموافقة النهائية يجب أن تعتمد على COA دفعة الشحن أو تقرير طرف ثالث عند الحاجة."
+      },
+      {
+        "q": "هل يمكن مطابقة الصياغة مع مواصفة المشتري؟",
+        "a": "يمكن مراجعتها فقط عندما تدعمها نتائج ووثائق الدفعة المختبرة."
+      },
+      {
+        "q": "كيف نتجنب تأخير الشراء؟",
+        "a": "شارك الدرجة والمنخل والتطبيق وبلد الوجهة والحجم الشهري وقائمة الوثائق قبل التسعير."
+      }
     ]
   },
   "psyllium-cattle-feed-digestion": {
@@ -968,6 +2221,32 @@
       {
         "q": "ما درجة السيليوم المستخدمة في مكملات إزالة الرمل لدى الخيول؟",
         "a": "يستورد المشترون عادةً قشرة سيليوم درجة أعلاف بنقاء 95% أو مسحوق الخاخا. عند نقاء 95%، تكون نسبة الألياف غير القابلة للذوبان إلى القابلة للذوبان مثاليةً لتحريك الأمعاء الكبيرة في الجهاز الهضمي للخيول."
+      },
+      {
+        "q": "ما المستندات المطلوبة من المورد؟",
+        "a": "راجع COA للعينة، والمواصفة، والتعبئة، والمنشأ، ومستندات الوجهة قبل الطلب."
+      },
+      {
+        "q": "ماذا لو كانت الشهادة مطلوبة؟",
+        "a": "تحقق من الشهادة الفعلية، والنطاق، والجهة المصدرة، والصلاحية، وتغطية المنتج أو الدفعة قبل الاعتماد."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "ما الذي يجب أن يتحقق منه المشتري",
+        "body": "بالنسبة إلى psyllium for cattle and equine feed، يجب مراجعة feed-use suitability, fiber, moisture, ash, dosage plan, packing, and COA. الهدف هو ربط الطلب التجاري بالدفعة الفعلية والعينة وCOA ووثائق الوجهة."
+      },
+      {
+        "heading": "كيف تقرأ COA أو المواصفة",
+        "body": "راجع المعلمة والوحدة والطريقة والنتيجة والحد وهوية الدفعة وتاريخ التقرير. إذا كان ملفك يحتاج طريقة أو صياغة محددة، أكدها قبل العينة أو الطلب."
+      },
+      {
+        "heading": "خطأ شائع",
+        "body": "لا تشترِ بناءً على الدرجة أو كلمة شهادة فقط. اسأل عمّا تدعمه نتائج الدفعة وما الوثائق القابلة للمراجعة."
+      },
+      {
+        "heading": "كيف يمكن أن تدعم RM المراجعة",
+        "body": "يمكن لـ RM مراجعة الدرجة والمنخل وCOA العينة والمواصفة والتعبئة والمنشأ ووثائق الوجهة قبل الطلب."
       }
     ]
   },
@@ -1010,6 +2289,32 @@
       {
         "q": "ما حجم الشبكة المثالي لمسحوق قشرة السيليوم في تركيبات المخبوزات؟",
         "a": "مسحوق 80 شبكة هو المعيار الصناعي العالمي للخبيز الصناعي الخالي من الغلوتين."
+      },
+      {
+        "q": "ما المستندات المطلوبة من المورد؟",
+        "a": "راجع COA للعينة، والمواصفة، والتعبئة، والمنشأ، ومستندات الوجهة قبل الطلب."
+      },
+      {
+        "q": "ماذا لو كانت الشهادة مطلوبة؟",
+        "a": "تحقق من الشهادة الفعلية، والنطاق، والجهة المصدرة، والصلاحية، وتغطية المنتج أو الدفعة قبل الاعتماد."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "ما الذي يجب أن يتحقق منه المشتري",
+        "body": "بالنسبة إلى whole husk versus husk powder، يجب مراجعة application, mesh, hydration speed, texture, dosage, sample trial, and COA. الهدف هو ربط الطلب التجاري بالدفعة الفعلية والعينة وCOA ووثائق الوجهة."
+      },
+      {
+        "heading": "كيف تقرأ COA أو المواصفة",
+        "body": "راجع المعلمة والوحدة والطريقة والنتيجة والحد وهوية الدفعة وتاريخ التقرير. إذا كان ملفك يحتاج طريقة أو صياغة محددة، أكدها قبل العينة أو الطلب."
+      },
+      {
+        "heading": "خطأ شائع",
+        "body": "لا تشترِ بناءً على الدرجة أو كلمة شهادة فقط. اسأل عمّا تدعمه نتائج الدفعة وما الوثائق القابلة للمراجعة."
+      },
+      {
+        "heading": "كيف يمكن أن تدعم RM المراجعة",
+        "body": "يمكن لـ RM مراجعة الدرجة والمنخل وCOA العينة والمواصفة والتعبئة والمنشأ ووثائق الوجهة قبل الطلب."
       }
     ]
   }

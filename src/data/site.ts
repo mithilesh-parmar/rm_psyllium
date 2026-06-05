@@ -159,34 +159,34 @@ export const copy: Record<LanguageCode, {
     viewApplicationsCta: 'View Applications',
     supplyFitLabel: 'Supply fit',
     requestQuoteBandTitle: 'Get pricing, samples, and documents for this product.',
-    requestQuoteBandLead: 'Share your grade, mesh, packing, destination port, and monthly volume. We\'ll reply with pricing and a sample COA within 24 hours.',
-    complianceTitle: 'Every document your QA team will ask for.',
-    complianceLead: 'COA parameters, lot origin, microbiology, heavy metals, and full export paperwork — shared before the sample ships, not after the PO is signed.',
+    requestQuoteBandLead: 'Share your grade, mesh, packing, destination port, and monthly volume. We respond within 48 hours with pricing, document needs, 1 kg sample options, and a lead-time plan.',
+    complianceTitle: 'Documents your QA team can review before PO.',
+    complianceLead: 'Sample COA parameters, lot origin, microbiology, heavy metals, packing options, and export document requirements reviewed before the buyer commits to a lot.',
     complianceChecklist: 'Buyer verification checklist',
     complianceChecklistLead: 'Ask for current documents by product, lot, and destination market before confirming a bulk order.',
     faqTitle: 'Questions we answer before every first order.',
     faqLead: 'MOQ, grade differences, pharmacopoeia compliance, documentation, lead times, and what happens between PO and shipment.',
     contactTitle: 'Talk to the export desk.',
-    contactLead: 'Share your product, volume, destination, and grade. We respond within 24 hours.',
+    contactLead: 'Share your product, volume, destination, and grade. We respond within 48 hours with pricing, documents, 1 kg sample options, and a lead-time plan.',
     productsListTitle: 'Six psyllium grades. All export-ready.',
-    productsListLead: 'From 85% food-grade to 99% USP/EP/IP pharmaceutical. Custom mesh, packing, and full COA per shipment.',
+    productsListLead: 'From 85% food-grade to 99% high-purity husk. Custom mesh, packing, and COA wording reviewed against the tested lot.',
     blogTitle: 'Sourcing guides for psyllium buyers.',
     blogLead: 'Grade selection, documentation requirements, and what to ask your supplier before the first order.',
     // Hero
     heroBadge: 'Psyllium manufacturer · Gujarat, India',
     heroTitle: 'Bulk psyllium husk & powder manufacturer in Gujarat',
-    heroBody: 'Export-ready for food, nutraceutical & pharma brands worldwide. We source, mill, and ship psyllium husk, powder, and seed — matched to your purity spec, mesh, and documentation requirement. Order any quantity, from 1 KG samples to full containers. What we quote is what ships.',
-    heroTrustCoa: 'COA per shipment',
+    heroBody: 'Export-ready for food, nutraceutical & pharma brands worldwide. We source, mill, and prepare psyllium husk, powder, and seed around your purity spec, mesh, packing, and documentation requirement.',
+    heroTrustCoa: 'Lot documents before dispatch',
     heroLeadTimeLabel: 'Lead time',
     heroSampleLabel: 'Sample',
-    heroLeadTimeValue: '7 days from confirmation',
-    heroSampleValue: '100–500 g with COA, shipped in 5 days',
+    heroLeadTimeValue: 'Planned after spec review',
+    heroSampleValue: '1 kg MOQ for all grades',
     heroCtaWhatsApp: 'WhatsApp Us',
     // Stats bar
     statCapacityLabel: 'Annual processing capacity',
     statHistoryLabel: 'of manufacturing knowledge',
-    statLeadLabel: 'Order to shipment',
-    statMoqLabel: 'Minimum order quantity',
+    statLeadLabel: 'Lot document review',
+    statMoqLabel: 'Mundra · Kandla · JNPT',
     // Homepage sections
     hpProductsTitle: 'Psyllium products for bulk buyers.',
     hpProductsBody: 'Seven product lines. 85% to 99% purity. Grade, mesh, and pharmacopoeia compliance matched to your formulation.',
@@ -199,8 +199,8 @@ export const copy: Record<LanguageCode, {
     hpDiff3Body: 'We process in-house. We are not buying finished product and marking it up. The grade you specify is the grade produced for your lot — not repackaged from someone else\'s inventory.',
     hpDiff4Title: 'Full documentation before dispatch',
     hpDiff4Body: 'COA, origin certificate, phytosanitary, fumigation, MSDS, and allergen statement per shipment. All shared before dispatch — reviewed by your QA team before containers move.',
-    hpDiff5Title: 'Order any quantity',
-    hpDiff5Body: 'No minimum order. We supply 1 KG samples for lab testing, 5 KG trial batches, and full 20 MT containers alike. Order what you need — scale when you\'re ready.',
+    hpDiff5Title: '1 kg samples to bulk lots',
+    hpDiff5Body: 'MOQ starts at 1 kg for every grade. Packing, testing, destination documents, and bulk lot planning are reviewed before quote.',
     hpProcessTitle: 'From seed to export-ready packing.',
     hpProcessStepLabel: '5 steps · one lot',
     hpStep1Title: 'Source',
@@ -217,11 +217,11 @@ export const copy: Record<LanguageCode, {
     hpIecActive: 'Active · Import Export Code',
     hpFaqTitle: 'Questions we get before every first order.',
     hpFaqBody: 'MOQ, grade differences, pharmacopoeia compliance, documentation package — answered directly.',
-    hpContactTitle: 'Share your spec. We respond in 24 hours.',
-    hpContactBody: 'Grade, mesh, packing, destination port, monthly volume — send what you have. We\'ll come back with pricing, a sample COA, and sample dispatch options.',
+    hpContactTitle: 'Share your spec for review.',
+    hpContactBody: 'Grade, mesh, packing, destination port, monthly volume — send what you have. We\'ll come back with pricing, sample COA review, and 1 kg sample dispatch options.',
     hpContactEmailLabel: 'Email',
     hpContactResponseLabel: 'Response time',
-    hpContactResponseValue: 'Typically within 4 hours (IST business hours)',
+    hpContactResponseValue: 'Within 48 hours',
     hpGetQuote: 'Get Quote',
     // Section labels
     labelProducts: 'Products',
@@ -235,32 +235,32 @@ export const copy: Record<LanguageCode, {
     productsPageH1Suffix: 'from Gujarat, India.',
     productsPageCapacityLabel: 'Annual capacity',
     productsPagePurityLabel: 'Purity grades',
-    productsPageMoqLabel: 'Min. order · FOB Mundra',
+    productsPageMoqLabel: 'MOQ for all grades',
     productsPageGradeKicker: 'Grade comparison',
     productsPageGradeTitle: 'Psyllium husk: grade summary',
     productsPageTableNote: 'Full COA parameters available per product and lot.',
     productsPageViewQuality: 'View quality documents →',
     productsPageCtaTitle: 'Share your spec. Get a quote.',
-    productsPageCtaBody: 'Tell us your product, grade, mesh, packing, destination, and monthly volume. We respond within 24 hours with pricing and availability.',
+    productsPageCtaBody: 'Tell us your product, grade, mesh, packing, destination, and monthly volume. We respond within 48 hours with pricing, availability, 1 kg sample options, and a lead-time plan.',
     // Quality page
-    qualityCoaStatLabel: 'COA test parameters',
-    qualityFssaiStatLabel: 'Facility registered',
-    qualityApedaStatLabel: 'Export clearance registered',
+    qualityCoaStatLabel: 'Sample COA before quote',
+    qualityFssaiStatLabel: 'Grade, mesh, purity, packing',
+    qualityApedaStatLabel: 'Export checklist before PO',
     qualityDocTypesLabel: 'Documentation types',
-    qualityCredTitle: 'Credentials your procurement team will ask for.',
-    qualityCredLead: 'FSSAI facility registration, APEDA export clearance, Spices Board listing, and active IEC. Current certificates available on request before sampling.',
-    qualityBadgeRegistered: 'Registered',
-    qualityBadgeActive: 'Active',
-    qualityFssaiDesc: 'Food Safety & Standards Authority of India — facility registration',
-    qualityApedaDesc: 'Agricultural & Processed Food Products Export Development Authority',
-    qualitySpicesBoardDesc: 'Spices Board of India — export quality registration',
-    qualityIecDesc: 'Import Export Code — active for all export shipments',
+    qualityCredTitle: 'Documents your procurement team can review.',
+    qualityCredLead: 'Review the documents behind your lot before PO: sample COA, product specification, origin details, packing options, and destination document checklist.',
+    qualityBadgeRegistered: 'Review',
+    qualityBadgeActive: 'Available',
+    qualityFssaiDesc: 'Sample COA mapped to the requested grade and test parameters',
+    qualityApedaDesc: 'Product specification with purity, mesh, moisture, ash, microbiology, and heavy-metal parameters',
+    qualitySpicesBoardDesc: 'Origin, lot-coding, packing, and dispatch documentation',
+    qualityIecDesc: 'Destination document checklist reviewed before quotation',
     qualityCtaTitle: 'Need documents before ordering?',
-    qualityCtaBody: 'Email us with your product, lot requirements, and destination. We\'ll share current COA, certificate copies, and documentation status within 24 hours.',
+    qualityCtaBody: 'Email us with your product, lot requirements, and destination. We respond within 48 hours with sample COA, specification sheet, origin details, packing options, and document checklist needs before PO.',
     qualityCtaEmailBtn: 'Email export desk',
     // Contact page
     contactResponseTimeLabel: 'Response time',
-    contactMinOrderLabel: 'Min. order',
+    contactMinOrderLabel: 'MOQ',
     contactExportDeskLabel: 'Export desk',
     contactFacilityLabel: 'Facility address',
     contactCapacityLabel: 'Capacity',
@@ -274,7 +274,7 @@ export const copy: Record<LanguageCode, {
     faqPageCommonBody: 'Everything you need to know before placing your first order — grades, documentation, lead times, and compliance.',
     faqPageStillHaveQ: 'Still have questions?',
     faqPageTalkExport: 'Talk to the export desk',
-    faqPageTalkBody: 'Share your product, grade, and destination. We respond within 24 hours.',
+    faqPageTalkBody: 'Share your product, grade, and destination. We respond within 48 hours with 1 kg sample options, documents, pricing, and a lead-time plan.',
     faqPageWaBtn: 'WhatsApp Us',
     faqPageEmailBtn: 'Email export desk',
     faqPageQuickFacts: 'Quick facts',
@@ -284,11 +284,11 @@ export const copy: Record<LanguageCode, {
     faqPagePortsFact: 'Ports',
     faqPageGradesFact: 'Grades',
     faqPageSampleFact: 'Sample',
-    faqPageMinOrderLabel: 'Min. order',
+    faqPageMinOrderLabel: 'MOQ',
     faqPageLeadTimeLabel: 'Lead time',
     faqPagePurityLabel: 'Purity grades',
     // Footer
-    footerBrandDesc: 'RM Psyllium LLP is a direct-from-source manufacturer and bulk exporter of premium psyllium husk, powder, and seeds. Operating from Siddhpur, Gujarat, our facility has a 2,000 MT annual capacity supplying pharma (USP/EP), food, and feed grades globally. MOQ: 1 KG with NABL-accredited COA per shipment.',
+    footerBrandDesc: 'RM Psyllium LLP is a Siddhpur, Gujarat manufacturer and bulk supplier of psyllium husk, husk powder, seeds, khakha powder, and cattle feed with 2,000 MT annual processing capacity for export buyers. Buyers can review sample COA, product specifications, origin details, packing options, and destination document checklist before PO.',
     footerApplications: 'Applications',
     footerResources: 'Resources',
     footerRequestQuote: 'Request a Quote',
@@ -296,7 +296,7 @@ export const copy: Record<LanguageCode, {
     footerPharma: 'Pharma & Nutraceutical', footerFood: 'Food & Bakery', footerAnimalFeed: 'Animal Feed', footerIndustrial: 'Industrial',
     // Spec Builder
     sbTitle: 'Request a quote',
-    sbReplyTime: 'We reply within 24 hours (IST business hours)',
+    sbReplyTime: 'We respond within 48 hours',
     sbNameLabel: 'Name',
     sbEmailLabel: 'Email or Phone',
     sbEmailPlaceholder: 'email or WhatsApp number',
@@ -310,17 +310,17 @@ export const copy: Record<LanguageCode, {
     sbSubmitBtn: 'Send Inquiry',
     // Compliance Grid
     cgItem1Title: 'COA Review',
-    cgItem1Desc: 'Purity, mesh, moisture, ash, swelling volume, microbiology, and heavy-metal parameters shared for buyer review.',
-    cgItem2Title: 'Food Safety',
-    cgItem2Desc: 'Facility, allergen, microbiology, and handling documents available for food, supplement, and pharma buyers.',
-    cgItem3Title: 'Halal & Kosher',
-    cgItem3Desc: 'Halal and Kosher documents can be shared where the current lot and buyer market require them.',
+    cgItem1Desc: 'Purity, mesh, moisture, ash, swelling volume, microbiology, and heavy-metal parameters reviewed against the buyer specification.',
+    cgItem2Title: 'Food Safety Review',
+    cgItem2Desc: 'Allergen, microbiology, handling, packing, and storage information reviewed for food, supplement, and pharma buyers.',
+    cgItem3Title: 'Dietary Document Review',
+    cgItem3Desc: 'Plant-origin, allergen, and buyer-required dietary documentation reviewed where the lot, label, and destination market require it.',
     cgItem4Title: 'Traceability',
     cgItem4Desc: 'Lot-level origin, processing, packing, and shipment records aligned to export review.',
     cgItem5Title: 'Specification Control',
     cgItem5Desc: 'Grade, mesh, moisture, swell volume, and packing requirements confirmed before quote.',
     cgItem6Title: 'Export Documents',
-    cgItem6Desc: 'Commercial invoice, packing list, COA, origin certificate, phyto, and fumigation support for export orders.',
+    cgItem6Desc: 'Commercial invoice, packing list, COA, origin, phyto, and fumigation requirements reviewed for export orders.',
     // Product detail page
     pdBreadcrumbHome: 'Home',
     pdFromGujarat: 'from Gujarat, India.',
@@ -344,17 +344,17 @@ export const copy: Record<LanguageCode, {
     pdFaqIntroSuffix: 'questions.',
     pdFaqDesc: 'Product-specific questions from buyers — grades, documentation, lead times, and compliance.',
     pdRequestQuoteLabel: 'Request Quote',
-    pdWithin24h: 'within 24 hours.',
+    pdWithin24h: 'after review.',
     pdCompareGradesTitle: 'Compare {name} grades',
     pdReadyToSource: 'Ready to source {name}?',
-    pdCtaBody: 'Share your grade, mesh, packing, destination, and monthly volume. We reply with pricing and availability within 24 hours.',
+    pdCtaBody: 'Share your grade, mesh, packing, destination, and monthly volume. We respond within 48 hours with pricing, availability, 1 kg sample options, and a lead-time plan.',
     pdFindMyGrade: 'Find My Grade ↓',
     pdLegendPrimary: 'Primary fit',
     pdLegendConditional: 'Conditional — confirm with QA',
     pdLegendNotSuitable: 'Not suitable',
     pdLegendNotApplicable: 'Not applicable',
-    readyToSource: 'Ready to source?', sampleCoaTitle: 'Get a sample with COA',
-    sampleCoaBody: 'Share your spec — grade, mesh, monthly volume, and destination. We\'ll respond within 24 hours.',
+    readyToSource: 'Ready to source?', sampleCoaTitle: 'Review a 1 kg sample with COA',
+    sampleCoaBody: 'Share your spec — grade, mesh, monthly volume, and destination. We respond within 48 hours with 1 kg sample availability, COA review options, and a lead-time plan.',
     moreResources: 'More resources', topicsCovered: 'Topics covered',
     sourcingQuestion: 'Have a sourcing question?',
     sourcingQuestionBody: 'Our export team answers technical and commercial questions about psyllium grades, mesh, certifications, and export documentation.',
@@ -390,7 +390,7 @@ export const copy: Record<LanguageCode, {
     viewApplicationsCta: 'Ver aplicaciones',
     supplyFitLabel: 'Adecuación de suministro',
     requestQuoteBandTitle: 'Obtenga precios, muestras y documentos para este producto.',
-    requestQuoteBandLead: 'Envíe su grado, malla, empaque, destino y volumen mensual. Le responderemos con disponibilidad y próximos pasos.',
+    requestQuoteBandLead: 'Envíe grado, malla, empaque, destino y volumen mensual. Respondemos en 48 horas con precio, documentos, opciones de muestra de 1 kg y plan de plazo.',
     complianceTitle: 'Documentos necesarios antes del envío.',
     complianceLead: 'Los equipos de compras y QA pueden revisar los parámetros del COA, trazabilidad de lotes y documentos de exportación antes de hacer pedidos.',
     complianceChecklist: 'Lista de verificación del comprador',
@@ -398,7 +398,7 @@ export const copy: Record<LanguageCode, {
     faqTitle: 'Preguntas frecuentes.',
     faqLead: 'Preguntas comunes de equipos de compras y QA sobre grados, certificaciones, exportación y pedidos.',
     contactTitle: 'Hable con el equipo de exportación.',
-    contactLead: 'Comparta su producto, volumen, destino y grado. Respondemos en 24 horas.',
+    contactLead: 'Comparta producto, volumen, destino y grado. Respondemos en 48 horas con precio, documentos, opciones de muestra de 1 kg y plan de plazo.',
     productsListTitle: 'Productos de psyllium de Siddhpur, Gujarat.',
     productsListLead: '7 líneas de productos. Grados 85%–99%. Embalaje de exportación. COA y documentos por pedido.',
     blogTitle: 'Recursos de aprovisionamiento, cumplimiento y aplicación de psyllium.',
@@ -407,17 +407,17 @@ export const copy: Record<LanguageCode, {
     heroBadge: 'Fabricante de psyllium · Gujarat, India',
     heroTitle: 'Psyllium a granel para fabricantes de pharma, suplementos y alimentos.',
     heroBody: 'Abastecemos, molemos y enviamos cáscara de psyllium, polvo y semilla — adaptados a su especificación de pureza, malla y requisitos de documentación. Lo que cotizamos es lo que enviamos.',
-    heroTrustCoa: 'COA por envío',
+    heroTrustCoa: 'Documentos del lote antes del despacho',
     heroLeadTimeLabel: 'Tiempo de entrega',
     heroSampleLabel: 'Muestra',
-    heroLeadTimeValue: '7 días desde la confirmación',
-    heroSampleValue: '100–500 g con COA, enviado en 5 días',
+    heroLeadTimeValue: 'Planificado por grado y puerto',
+    heroSampleValue: 'Disponibles para grados coincidentes',
     heroCtaWhatsApp: 'WhatsApp',
     // Stats bar
     statCapacityLabel: 'Capacidad de procesamiento anual',
     statHistoryLabel: 'años de experiencia en fabricación',
-    statLeadLabel: 'De pedido a envío',
-    statMoqLabel: 'Cantidad mínima de pedido',
+    statLeadLabel: 'Revisión documental del lote',
+    statMoqLabel: 'Mundra · Kandla · JNPT',
     // Homepage sections
     hpProductsTitle: 'Productos de psyllium para compradores mayoristas.',
     hpProductsBody: 'Siete líneas de productos. Del 85% al 99% de pureza. Grado, malla y cumplimiento de farmacopea adaptados a su formulación.',
@@ -430,8 +430,8 @@ export const copy: Record<LanguageCode, {
     hpDiff3Body: 'Procesamos internamente. No compramos producto terminado y lo revendemos. El grado que especifica es el que se produce para su lote — no reempacado del inventario de otro.',
     hpDiff4Title: 'Documentación completa antes del despacho',
     hpDiff4Body: 'COA, certificado de origen, fitosanitario, fumigación, MSDS y declaración de alérgenos por envío. Todo compartido antes del despacho — revisado por su equipo de QA antes de que los contenedores se muevan.',
-    hpDiff5Title: 'Pida cualquier cantidad',
-    hpDiff5Body: 'Sin cantidad mínima de pedido. Suministramos muestras de 1 KG para pruebas de laboratorio, lotes de prueba de 5 KG y contenedores completos de 20 MT. Pida lo que necesite — amplíe cuando esté listo.',
+    hpDiff5Title: 'Cotización primero con muestra',
+    hpDiff5Body: 'El MOQ empieza en 1 kg para todos los grados. Empaque, pruebas, documentos de destino y planificación de lotes a granel se revisan antes de cotizar.',
     hpProcessTitle: 'De la semilla al embalaje listo para exportar.',
     hpProcessStepLabel: '5 pasos · un lote',
     hpStep1Title: 'Abastecer',
@@ -448,11 +448,11 @@ export const copy: Record<LanguageCode, {
     hpIecActive: 'Activo · Código de importación y exportación',
     hpFaqTitle: 'Preguntas que respondemos antes de cada primer pedido.',
     hpFaqBody: 'MOQ, diferencias entre grados, cumplimiento de farmacopea, paquete de documentación — respondidas directamente.',
-    hpContactTitle: 'Comparta su especificación. Respondemos en 24 horas.',
+    hpContactTitle: 'Comparta su especificación para revisión.',
     hpContactBody: 'Grado, malla, embalaje, puerto de destino, volumen mensual — envíe lo que tenga. Le responderemos con precios, un COA de muestra y opciones de envío de muestras.',
     hpContactEmailLabel: 'Correo electrónico',
     hpContactResponseLabel: 'Tiempo de respuesta',
-    hpContactResponseValue: 'Generalmente dentro de 4 horas (horario comercial IST)',
+    hpContactResponseValue: 'Dentro de 48 horas',
     hpGetQuote: 'Solicitar cotización',
     // Section labels
     labelProducts: 'Productos',
@@ -466,28 +466,28 @@ export const copy: Record<LanguageCode, {
     productsPageH1Suffix: 'de Gujarat, India.',
     productsPageCapacityLabel: 'Capacidad anual',
     productsPagePurityLabel: 'Grados de pureza',
-    productsPageMoqLabel: 'Pedido mín. · FOB Mundra',
+    productsPageMoqLabel: 'MOQ para todos los grados',
     productsPageGradeKicker: 'Comparación de grados',
     productsPageGradeTitle: 'Cáscara de psyllium: resumen de grados',
     productsPageTableNote: 'Parámetros completos de COA disponibles por producto y lote.',
     productsPageViewQuality: 'Ver documentos de calidad →',
     productsPageCtaTitle: 'Comparta su especificación. Obtenga una cotización.',
-    productsPageCtaBody: 'Indíquenos su producto, grado, malla, embalaje, destino y volumen mensual. Respondemos en 24 horas con precios y disponibilidad.',
+    productsPageCtaBody: 'Indíquenos producto, grado, malla, empaque, destino y volumen mensual. Respondemos en 48 horas con precio, disponibilidad, opciones de muestra de 1 kg y plan de plazo.',
     // Quality page
-    qualityCoaStatLabel: 'Parámetros de análisis COA',
-    qualityFssaiStatLabel: 'Instalación registrada',
-    qualityApedaStatLabel: 'Autorización de exportación registrada',
+    qualityCoaStatLabel: 'COA de muestra antes de cotizar',
+    qualityFssaiStatLabel: 'Grado, malla, pureza, empaque',
+    qualityApedaStatLabel: 'Checklist de exportación antes del PO',
     qualityDocTypesLabel: 'Tipos de documentación',
-    qualityCredTitle: 'Credenciales que le pedirá su equipo de compras.',
-    qualityCredLead: 'Registro FSSAI, autorización de exportación APEDA, registro en la Junta de Especias e IEC activo. Certificados actuales disponibles a petición antes del muestreo.',
-    qualityBadgeRegistered: 'Registrado',
-    qualityBadgeActive: 'Activo',
-    qualityFssaiDesc: 'Autoridad de Seguridad y Normas Alimentarias de India — registro de instalaciones',
-    qualityApedaDesc: 'Autoridad de Desarrollo de Exportaciones de Productos Agrícolas y Procesados',
-    qualitySpicesBoardDesc: 'Junta de Especias de India — registro de calidad de exportación',
-    qualityIecDesc: 'Código de importación y exportación — activo para todos los envíos de exportación',
+    qualityCredTitle: 'Documentos que su equipo de compras puede revisar.',
+    qualityCredLead: 'Revise los documentos del lote antes del PO: COA de muestra, especificación del producto, origen, opciones de empaque y checklist documental del destino.',
+    qualityBadgeRegistered: 'Revisión',
+    qualityBadgeActive: 'Disponible',
+    qualityFssaiDesc: 'COA de muestra alineado con el grado y los parámetros solicitados',
+    qualityApedaDesc: 'Especificación del producto con pureza, malla, humedad, cenizas, microbiología y metales pesados',
+    qualitySpicesBoardDesc: 'Origen, codificación de lote, empaque y documentación de despacho',
+    qualityIecDesc: 'Checklist documental del destino revisado antes de cotizar',
     qualityCtaTitle: '¿Necesita documentos antes de ordenar?',
-    qualityCtaBody: 'Escríbanos con su producto, requisitos de lote y destino. Compartiremos COA actualizado, copias de certificados y estado de documentación en 24 horas.',
+    qualityCtaBody: 'Escríbanos con su producto, requisitos de lote y destino. Revisaremos COA de muestra, ficha técnica, origen, opciones de empaque y checklist documental antes de la orden.',
     qualityCtaEmailBtn: 'Email al equipo de exportación',
     // Contact page
     contactResponseTimeLabel: 'Tiempo de respuesta',
@@ -505,7 +505,7 @@ export const copy: Record<LanguageCode, {
     faqPageCommonBody: 'Todo lo que necesita saber antes de hacer su primer pedido — grados, documentación, tiempos de entrega y cumplimiento.',
     faqPageStillHaveQ: '¿Tiene más preguntas?',
     faqPageTalkExport: 'Hable con el equipo de exportación',
-    faqPageTalkBody: 'Comparta su producto, grado y destino. Respondemos en 24 horas.',
+    faqPageTalkBody: 'Comparta su producto, grado y destino. Confirmaremos opciones de muestra, documentos, precios y plazo.',
     faqPageWaBtn: 'WhatsApp',
     faqPageEmailBtn: 'Email al equipo de exportación',
     faqPageQuickFacts: 'Datos rápidos',
@@ -519,7 +519,7 @@ export const copy: Record<LanguageCode, {
     faqPageLeadTimeLabel: 'Tiempo de entrega',
     faqPagePurityLabel: 'Grados de pureza',
     // Footer
-    footerBrandDesc: 'RM Psyllium LLP es un fabricante directo y exportador a granel de cáscara, polvo y semillas de psyllium premium. Operando desde Siddhpur, Gujarat, nuestra instalación cuenta con una capacidad anual de 2.000 MT, suministrando grados farmacéutico (USP/EP), alimentario y forrajero a nivel global. MOQ: 1 KG con COA certificado por laboratorio NABL por envío.',
+    footerBrandDesc: 'RM Psyllium LLP es un fabricante y proveedor a granel en Siddhpur, Gujarat, de cáscara de psyllium, polvo de cáscara, semillas, khakha powder y alimento para ganado, con 2.000 MT de capacidad anual de procesamiento para compradores de exportación. Los compradores pueden revisar COA de muestra, especificaciones de producto, origen, opciones de empaque y checklist documental antes de la orden.',
     footerApplications: 'Aplicaciones',
     footerResources: 'Recursos',
     footerRequestQuote: 'Solicitar cotización',
@@ -527,7 +527,7 @@ export const copy: Record<LanguageCode, {
     footerPharma: 'Farmacéutica & Nutracéutica', footerFood: 'Alimentos & Panadería', footerAnimalFeed: 'Alimentación Animal', footerIndustrial: 'Industrial',
     // Spec Builder
     sbTitle: 'Solicitar cotización',
-    sbReplyTime: 'Respondemos en 24 horas (horario comercial IST)',
+    sbReplyTime: 'Revisamos solicitudes durante el horario comercial IST',
     sbNameLabel: 'Nombre',
     sbEmailLabel: 'Email o teléfono',
     sbEmailPlaceholder: 'email o número de WhatsApp',
@@ -575,17 +575,17 @@ export const copy: Record<LanguageCode, {
     pdFaqIntroSuffix: 'frecuentes.',
     pdFaqDesc: 'Preguntas específicas del producto de compradores — grados, documentación, tiempos de entrega y cumplimiento.',
     pdRequestQuoteLabel: 'Solicitar cotización',
-    pdWithin24h: 'en 24 horas.',
+    pdWithin24h: 'después de la revisión.',
     pdCompareGradesTitle: 'Comparar grados de {name}',
     pdReadyToSource: '¿Listo para abastecerse de {name}?',
-    pdCtaBody: 'Comparta su grado, malla, embalaje, destino y volumen mensual. Respondemos con precios y disponibilidad en 24 horas.',
+    pdCtaBody: 'Comparta su grado, malla, embalaje, destino y volumen mensual. Confirmaremos precios, disponibilidad, opciones de muestra y plazo.',
     pdFindMyGrade: 'Encontrar mi grado ↓',
     pdLegendPrimary: 'Uso principal',
     pdLegendConditional: 'Condicional — confirmar con QA',
     pdLegendNotSuitable: 'No adecuado',
     pdLegendNotApplicable: 'No aplica',
     readyToSource: '¿Listo para abastecerse?', sampleCoaTitle: 'Obtener una muestra con COA',
-    sampleCoaBody: 'Comparta su especificación — grado, malla, volumen mensual y destino. Responderemos en 24 horas.',
+    sampleCoaBody: 'Comparta su especificación: grado, malla, volumen mensual y destino. Respondemos en 48 horas con disponibilidad de muestra de 1 kg, revisión de COA y plan de plazo.',
     moreResources: 'Más recursos', topicsCovered: 'Temas cubiertos',
     sourcingQuestion: '¿Tiene alguna pregunta de abastecimiento?',
     sourcingQuestionBody: 'Nuestro equipo de exportación responde preguntas técnicas y comerciales sobre grados, malla, certificaciones y documentación.',
@@ -594,7 +594,7 @@ export const copy: Record<LanguageCode, {
     blogTopicsLabel: 'Temas:', blogAllLabel: 'Todos', blogTopicLabel: 'Tema',
     blogAuthorLabel: 'Autor', blogCategoryLabel: 'Categoría',
     sourceLocation: 'Siddhpur, Gujarat, India', relatedArticles: 'Artículos relacionados',
-    regionKeyBuyers: 'Segmentos de compradores clave', regionRegulatory: 'Contexto regulatorio', ctaSampleRequest: 'Solicitar una muestra gratuita', ctaSpecSheet: 'Descargar hoja de especificaciones',
+    regionKeyBuyers: 'Segmentos de compradores clave', regionRegulatory: 'Contexto regulatorio', ctaSampleRequest: 'Solicitar revisión de muestra', ctaSpecSheet: 'Descargar hoja de especificaciones',
     industryBuyerApp: 'Aplicación del comprador', industryRequestQuote: 'Solicitar cotización de aplicación',
     industryMatchGrade: 'Encuentre el grado, malla, embalaje y documentos adecuados para su aplicación.',
     industryUseCases: 'Aplicaciones comunes', industryKeySpecs: 'Especificaciones clave',
@@ -621,7 +621,7 @@ export const copy: Record<LanguageCode, {
     viewApplicationsCta: 'Voir les applications',
     supplyFitLabel: "Adéquation d'approvisionnement",
     requestQuoteBandTitle: 'Obtenez tarifs, échantillons et documents pour ce produit.',
-    requestQuoteBandLead: 'Envoyez votre grade, maille, conditionnement, destination et volume mensuel. Nous répondrons avec disponibilité et prochaines étapes.',
+    requestQuoteBandLead: 'Envoyez grade, maille, conditionnement, destination et volume mensuel. Nous répondons sous 48 heures avec prix, documents, options d’échantillon de 1 kg et plan de délai.',
     complianceTitle: "Documents dont les acheteurs ont besoin avant l'expédition.",
     complianceLead: "Les équipes achats et QA peuvent examiner les paramètres COA, la traçabilité des lots et les documents d'exportation avant les commandes.",
     complianceChecklist: "Liste de vérification de l'acheteur",
@@ -629,7 +629,7 @@ export const copy: Record<LanguageCode, {
     faqTitle: 'Questions fréquemment posées.',
     faqLead: "Questions courantes des équipes achats et QA sur les grades, certifications, exportation et commandes.",
     contactTitle: "Parlez au service export.",
-    contactLead: 'Partagez votre produit, volume, destination et grade. Nous répondons dans les 24 heures.',
+    contactLead: 'Indiquez produit, volume, destination et grade. Nous répondons sous 48 heures avec prix, documents, options d’échantillon de 1 kg et plan de délai.',
     productsListTitle: 'Produits psyllium de Siddhpur, Gujarat.',
     productsListLead: '7 gammes de produits. Grades 85%–99%. Emballage export. COA et documents par commande.',
     blogTitle: "Ressources d'approvisionnement, conformité et application du psyllium.",
@@ -638,17 +638,17 @@ export const copy: Record<LanguageCode, {
     heroBadge: 'Fabricant de psyllium · Gujarat, Inde',
     heroTitle: 'Psyllium en vrac pour fabricants pharma, compléments et alimentaire.',
     heroBody: 'Nous approvisionnons, moulinons et expédions cosse de psyllium, poudre et graine — adaptés à votre spécification de pureté, maille et exigences documentaires. Ce que nous proposons est ce qui est expédié.',
-    heroTrustCoa: 'COA par expédition',
+    heroTrustCoa: 'Documents de lot avant expédition',
     heroLeadTimeLabel: 'Délai de livraison',
     heroSampleLabel: 'Échantillon',
-    heroLeadTimeValue: '7 jours à partir de la confirmation',
-    heroSampleValue: '100–500 g avec COA, expédié en 5 jours',
+    heroLeadTimeValue: 'Planifié par grade et port',
+    heroSampleValue: 'Disponibles pour grades correspondants',
     heroCtaWhatsApp: 'WhatsApp',
     // Stats bar
     statCapacityLabel: 'Capacité de traitement annuelle',
     statHistoryLabel: 'ans d\'expérience en fabrication',
-    statLeadLabel: 'De la commande à l\'expédition',
-    statMoqLabel: 'Quantité minimale de commande',
+    statLeadLabel: 'Revue documentaire du lot',
+    statMoqLabel: 'Mundra · Kandla · JNPT',
     // Homepage sections
     hpProductsTitle: 'Produits psyllium pour acheteurs en gros.',
     hpProductsBody: 'Sept gammes de produits. 85% à 99% de pureté. Grade, maille et conformité pharmacopée adaptés à votre formulation.',
@@ -661,8 +661,8 @@ export const copy: Record<LanguageCode, {
     hpDiff3Body: 'Nous traitons en interne. Nous n\'achetons pas de produit fini pour le revendre. Le grade que vous spécifiez est le grade produit pour votre lot — pas reconditionné depuis l\'inventaire d\'un tiers.',
     hpDiff4Title: 'Documentation complète avant expédition',
     hpDiff4Body: 'COA, certificat d\'origine, phytosanitaire, fumigation, MSDS et déclaration allergènes par expédition. Tout partagé avant expédition — examiné par votre équipe QA avant que les conteneurs ne bougent.',
-    hpDiff5Title: 'Commandez n\'importe quelle quantité',
-    hpDiff5Body: 'Pas de minimum de commande. Nous livrons des échantillons de 1 KG pour tests en laboratoire, des lots d\'essai de 5 KG et des conteneurs complets de 20 MT. Commandez ce dont vous avez besoin — évoluez quand vous êtes prêt.',
+    hpDiff5Title: 'Devis après revue échantillon',
+    hpDiff5Body: 'Le MOQ commence à 1 kg pour tous les grades. Conditionnement, tests, documents de destination et planification des lots vrac sont revus avant devis.',
     hpProcessTitle: 'De la graine à l\'emballage prêt à l\'export.',
     hpProcessStepLabel: '5 étapes · un lot',
     hpStep1Title: 'Approvisionner',
@@ -679,11 +679,11 @@ export const copy: Record<LanguageCode, {
     hpIecActive: 'Actif · Code import-export',
     hpFaqTitle: 'Questions posées avant chaque première commande.',
     hpFaqBody: 'MOQ, différences de grades, conformité pharmacopée, dossier documentaire — répondues directement.',
-    hpContactTitle: 'Partagez votre spécification. Nous répondons en 24 heures.',
+    hpContactTitle: 'Partagez votre spécification pour révision.',
     hpContactBody: 'Grade, maille, conditionnement, port de destination, volume mensuel — envoyez ce que vous avez. Nous reviendrons avec les tarifs, un COA d\'exemple et des options d\'envoi d\'échantillons.',
     hpContactEmailLabel: 'E-mail',
     hpContactResponseLabel: 'Délai de réponse',
-    hpContactResponseValue: 'Généralement dans les 4 heures (heures ouvrables IST)',
+    hpContactResponseValue: 'Sous 48 heures',
     hpGetQuote: 'Demander un devis',
     // Section labels
     labelProducts: 'Produits',
@@ -697,28 +697,28 @@ export const copy: Record<LanguageCode, {
     productsPageH1Suffix: 'de Gujarat, Inde.',
     productsPageCapacityLabel: 'Capacité annuelle',
     productsPagePurityLabel: 'Grades de pureté',
-    productsPageMoqLabel: 'Cde min. · FOB Mundra',
+    productsPageMoqLabel: 'MOQ pour tous les grades',
     productsPageGradeKicker: 'Comparaison des grades',
     productsPageGradeTitle: 'Cosse de psyllium : résumé des grades',
     productsPageTableNote: 'Paramètres COA complets disponibles par produit et lot.',
     productsPageViewQuality: 'Voir les documents qualité →',
     productsPageCtaTitle: 'Partagez votre spécification. Obtenez un devis.',
-    productsPageCtaBody: 'Indiquez-nous votre produit, grade, maille, conditionnement, destination et volume mensuel. Nous répondons dans les 24 heures avec tarifs et disponibilité.',
+    productsPageCtaBody: 'Indiquez produit, grade, maille, conditionnement, destination et volume mensuel. Nous répondons sous 48 heures avec tarif, disponibilité, options d’échantillon de 1 kg et plan de délai.',
     // Quality page
-    qualityCoaStatLabel: 'Paramètres d\'analyse COA',
-    qualityFssaiStatLabel: 'Installation enregistrée',
-    qualityApedaStatLabel: 'Autorisation d\'exportation enregistrée',
+    qualityCoaStatLabel: 'COA échantillon avant devis',
+    qualityFssaiStatLabel: 'Grade, maille, pureté, conditionnement',
+    qualityApedaStatLabel: 'Checklist export avant PO',
     qualityDocTypesLabel: 'Types de documentation',
-    qualityCredTitle: 'Accréditations demandées par votre équipe achats.',
-    qualityCredLead: 'Enregistrement FSSAI, autorisation d\'exportation APEDA, référencement Spices Board et IEC actif. Certificats actuels disponibles sur demande avant échantillonnage.',
-    qualityBadgeRegistered: 'Enregistré',
-    qualityBadgeActive: 'Actif',
-    qualityFssaiDesc: 'Autorité de sécurité et de normes alimentaires de l\'Inde — enregistrement d\'installation',
-    qualityApedaDesc: 'Autorité de développement des exportations de produits agricoles et transformés',
-    qualitySpicesBoardDesc: 'Conseil des épices de l\'Inde — enregistrement qualité export',
-    qualityIecDesc: 'Code import-export — actif pour toutes les expéditions d\'exportation',
+    qualityCredTitle: 'Documents que votre équipe achats peut examiner.',
+    qualityCredLead: 'Examinez les documents du lot avant le PO : COA échantillon, spécification produit, origine, options de conditionnement et checklist documentaire destination.',
+    qualityBadgeRegistered: 'Revue',
+    qualityBadgeActive: 'Disponible',
+    qualityFssaiDesc: 'COA échantillon aligné sur le grade et les paramètres demandés',
+    qualityApedaDesc: 'Spécification produit avec pureté, maille, humidité, cendres, microbiologie et métaux lourds',
+    qualitySpicesBoardDesc: 'Origine, codification lot, conditionnement et documents d\'expédition',
+    qualityIecDesc: 'Checklist documentaire destination revue avant devis',
     qualityCtaTitle: 'Besoin de documents avant de commander ?',
-    qualityCtaBody: 'Écrivez-nous avec votre produit, exigences de lot et destination. Nous partagerons COA actuel, copies de certificats et statut documentaire dans les 24 heures.',
+    qualityCtaBody: 'Écrivez-nous avec votre produit, exigences de lot et destination. Nous examinerons le COA échantillon, la fiche technique, l\'origine, les options de conditionnement et la checklist documentaire avant commande.',
     qualityCtaEmailBtn: 'E-mail au service export',
     // Contact page
     contactResponseTimeLabel: 'Délai de réponse',
@@ -736,7 +736,7 @@ export const copy: Record<LanguageCode, {
     faqPageCommonBody: 'Tout ce que vous devez savoir avant de passer votre première commande — grades, documentation, délais et conformité.',
     faqPageStillHaveQ: 'D\'autres questions ?',
     faqPageTalkExport: 'Parlez au service export',
-    faqPageTalkBody: 'Partagez votre produit, grade et destination. Nous répondons dans les 24 heures.',
+    faqPageTalkBody: 'Partagez votre produit, grade et destination. Nous confirmerons options d\'échantillon, documents, tarifs et délai.',
     faqPageWaBtn: 'WhatsApp',
     faqPageEmailBtn: 'E-mail au service export',
     faqPageQuickFacts: 'Données clés',
@@ -750,7 +750,7 @@ export const copy: Record<LanguageCode, {
     faqPageLeadTimeLabel: 'Délai de livraison',
     faqPagePurityLabel: 'Grades de pureté',
     // Footer
-    footerBrandDesc: 'RM Psyllium LLP est un fabricant direct et exportateur en vrac de cosse, poudre et graines de psyllium de qualité supérieure. Depuis Siddhpur, Gujarat, notre usine dispose d\'une capacité annuelle de 2 000 MT pour fournir des grades pharmaceutique (USP/EP), alimentaire et fourrager dans le monde entier. MOQ : 1 KG avec COA certifié par laboratoire NABL pour chaque expédition.',
+    footerBrandDesc: 'RM Psyllium LLP est un fabricant et fournisseur vrac à Siddhpur, Gujarat, de cosse de psyllium, poudre de cosse, graines, khakha powder et aliment bétail, avec 2 000 MT de capacité annuelle de transformation pour acheteurs export. Les acheteurs peuvent examiner le COA échantillon, les spécifications produit, l\'origine, les options de conditionnement et la checklist documentaire avant commande.',
     footerApplications: 'Applications',
     footerResources: 'Ressources',
     footerRequestQuote: 'Demander un devis',
@@ -758,7 +758,7 @@ export const copy: Record<LanguageCode, {
     footerPharma: 'Pharma & Nutraceutique', footerFood: 'Alimentation & Boulangerie', footerAnimalFeed: 'Alimentation Animale', footerIndustrial: 'Industriel',
     // Spec Builder
     sbTitle: 'Demander un devis',
-    sbReplyTime: 'Nous répondons dans les 24 heures (heures ouvrables IST)',
+    sbReplyTime: 'Nous examinons les demandes pendant les heures ouvrables IST',
     sbNameLabel: 'Nom',
     sbEmailLabel: 'E-mail ou téléphone',
     sbEmailPlaceholder: 'e-mail ou numéro WhatsApp',
@@ -806,17 +806,17 @@ export const copy: Record<LanguageCode, {
     pdFaqIntroSuffix: 'fréquentes.',
     pdFaqDesc: 'Questions spécifiques au produit des acheteurs — grades, documentation, délais et conformité.',
     pdRequestQuoteLabel: 'Demander un devis',
-    pdWithin24h: 'sous 24 heures.',
+    pdWithin24h: 'après examen.',
     pdCompareGradesTitle: 'Comparer les grades de {name}',
     pdReadyToSource: 'Prêt à acheter {name} ?',
-    pdCtaBody: 'Partagez votre grade, maille, conditionnement, destination et volume mensuel. Nous répondons avec les tarifs et la disponibilité dans les 24 heures.',
+    pdCtaBody: 'Partagez votre grade, maille, conditionnement, destination et volume mensuel. Nous confirmerons tarifs, disponibilité, options d\'échantillon et délai.',
     pdFindMyGrade: 'Trouver mon grade ↓',
     pdLegendPrimary: 'Utilisation principale',
     pdLegendConditional: 'Conditionnel — à confirmer avec QA',
     pdLegendNotSuitable: 'Non adapté',
     pdLegendNotApplicable: 'Non applicable',
     readyToSource: 'Prêt à approvisionner ?', sampleCoaTitle: 'Obtenir un échantillon avec COA',
-    sampleCoaBody: 'Partagez vos specs — grade, maille, volume mensuel et destination. Nous répondrons sous 24 heures.',
+    sampleCoaBody: 'Partagez vos specs : grade, maille, volume mensuel et destination. Nous répondons sous 48 heures avec disponibilité d’échantillon de 1 kg, options de révision COA et plan de délai.',
     moreResources: 'Plus de ressources', topicsCovered: 'Sujets couverts',
     sourcingQuestion: 'Une question sur l\'approvisionnement ?',
     sourcingQuestionBody: 'Notre équipe export répond aux questions techniques et commerciales sur les grades, mailles, certifications et documentation psyllium.',
@@ -825,7 +825,7 @@ export const copy: Record<LanguageCode, {
     blogTopicsLabel: 'Sujets :', blogAllLabel: 'Tous', blogTopicLabel: 'Sujet',
     blogAuthorLabel: 'Auteur', blogCategoryLabel: 'Catégorie',
     sourceLocation: 'Siddhpur, Gujarat, Inde', relatedArticles: 'Articles connexes',
-    regionKeyBuyers: 'Segments d\'acheteurs clés', regionRegulatory: 'Contexte réglementaire', ctaSampleRequest: 'Demander un échantillon gratuit', ctaSpecSheet: 'Télécharger la fiche technique',
+    regionKeyBuyers: 'Segments d\'acheteurs clés', regionRegulatory: 'Contexte réglementaire', ctaSampleRequest: 'Demander une revue échantillon', ctaSpecSheet: 'Télécharger la fiche technique',
     industryBuyerApp: 'Application acheteur', industryRequestQuote: 'Demande de devis application',
     industryMatchGrade: 'Trouvez le grade, la maille, l\'emballage et les documents adaptés à votre application.',
     industryUseCases: 'Applications courantes', industryKeySpecs: 'Spécifications clés',
@@ -852,7 +852,7 @@ export const copy: Record<LanguageCode, {
     viewApplicationsCta: 'Anwendungen ansehen',
     supplyFitLabel: 'Liefereignung',
     requestQuoteBandTitle: 'Erhalten Sie Preise, Muster und Dokumente für dieses Produkt.',
-    requestQuoteBandLead: 'Senden Sie Ihren Reinheitsgrad, Mesh, Verpackung, Bestimmungsort und monatliches Volumen. Wir antworten mit Verfügbarkeit und nächsten Schritten.',
+    requestQuoteBandLead: 'Senden Sie Grad, Mesh, Verpackung, Zielhafen und Monatsvolumen. Wir antworten innerhalb von 48 Stunden mit Preis, Dokumenten, 1-kg-Musteroptionen und Lieferzeitplan.',
     complianceTitle: 'Dokumente, die Käufer vor dem Versand benötigen.',
     complianceLead: 'Einkaufs- und QA-Teams können COA-Parameter, Chargenrückverfolgbarkeit und Exportdokumente vor Bestellungen prüfen.',
     complianceChecklist: 'Käufer-Prüfliste',
@@ -860,7 +860,7 @@ export const copy: Record<LanguageCode, {
     faqTitle: 'Häufig gestellte Fragen.',
     faqLead: 'Häufige Fragen von Einkaufs- und QA-Teams zu Graden, Zertifizierungen, Export und Bestellungen.',
     contactTitle: 'Sprechen Sie mit dem Exportteam.',
-    contactLead: 'Teilen Sie Ihr Produkt, Volumen, Ziel und Grad mit. Wir antworten innerhalb von 24 Stunden.',
+    contactLead: 'Teilen Sie Produkt, Volumen, Ziel und Grad mit. Wir antworten innerhalb von 48 Stunden mit Preis, Dokumenten, 1-kg-Musteroptionen und Lieferzeitplan.',
     productsListTitle: 'Psyllium-Produkte aus Siddhpur, Gujarat.',
     productsListLead: '7 Produktlinien. Grade 85%–99%. Exportverpackung. COA und Dokumente pro Bestellung.',
     blogTitle: 'Ressourcen zu Psyllium-Beschaffung, Compliance und Anwendung.',
@@ -869,17 +869,17 @@ export const copy: Record<LanguageCode, {
     heroBadge: 'Psyllium-Hersteller · Gujarat, Indien',
     heroTitle: 'Psyllium in Bulk für Pharma-, Supplement- und Lebensmittelhersteller.',
     heroBody: 'Wir beziehen, mahlen und versenden Psylliumschalen, Pulver und Samen — abgestimmt auf Ihre Reinheitsspezifikation, Mesh und Dokumentationsanforderungen. Was wir anbieten, wird geliefert.',
-    heroTrustCoa: 'COA pro Sendung',
+    heroTrustCoa: 'Chargendokumente vor Versand',
     heroLeadTimeLabel: 'Lieferzeit',
     heroSampleLabel: 'Muster',
-    heroLeadTimeValue: '7 Tage ab Auftragsbestätigung',
-    heroSampleValue: '100–500 g mit COA, Versand in 5 Tagen',
+    heroLeadTimeValue: 'Nach Grad und Hafen geplant',
+    heroSampleValue: 'Für passende Grade verfügbar',
     heroCtaWhatsApp: 'WhatsApp',
     // Stats bar
     statCapacityLabel: 'Jährliche Verarbeitungskapazität',
     statHistoryLabel: 'Jahre Fertigungserfahrung',
-    statLeadLabel: 'Auftragsabwicklung',
-    statMoqLabel: 'Mindestbestellmenge',
+    statLeadLabel: 'Chargendokumentenprüfung',
+    statMoqLabel: 'Mundra · Kandla · JNPT',
     // Homepage sections
     hpProductsTitle: 'Psyllium-Produkte für Großabnehmer.',
     hpProductsBody: 'Sieben Produktlinien. 85% bis 99% Reinheit. Grad, Mesh und Pharmakopöe-Konformität auf Ihre Formulierung abgestimmt.',
@@ -892,8 +892,8 @@ export const copy: Record<LanguageCode, {
     hpDiff3Body: 'Wir verarbeiten intern. Wir kaufen kein fertiges Produkt und schlagen es auf. Der Reinheitsgrad, den Sie angeben, wird für Ihre Charge produziert — nicht aus dem Lager eines Dritten umverpackt.',
     hpDiff4Title: 'Vollständige Dokumentation vor dem Versand',
     hpDiff4Body: 'COA, Ursprungszeugnis, Pflanzengesundheitszeugnis, Begasungszeugnis, MSDS und Allergen-Erklärung pro Sendung. Alles vor dem Versand geteilt — von Ihrem QA-Team geprüft, bevor die Container bewegt werden.',
-    hpDiff5Title: 'Jede Menge bestellen',
-    hpDiff5Body: 'Keine Mindestbestellmenge. Wir liefern 1-KG-Muster für Labortests, 5-KG-Testchargen und volle 20-MT-Container gleichermaßen. Bestellen Sie, was Sie brauchen — skalieren Sie, wenn Sie bereit sind.',
+    hpDiff5Title: 'Musterbasierte Angebotserstellung',
+    hpDiff5Body: 'Das MOQ beginnt bei 1 kg für jeden Grad. Verpackung, Tests, Zieldokumente und Bulk-Lot-Planung werden vor dem Angebot geprüft.',
     hpProcessTitle: 'Vom Samen zur exportfertigen Verpackung.',
     hpProcessStepLabel: '5 Schritte · eine Charge',
     hpStep1Title: 'Beschaffen',
@@ -910,11 +910,11 @@ export const copy: Record<LanguageCode, {
     hpIecActive: 'Aktiv · Import-Export-Code',
     hpFaqTitle: 'Fragen, die wir vor jeder ersten Bestellung beantworten.',
     hpFaqBody: 'MOQ, Gradunterschiede, Pharmakopöe-Konformität, Dokumentationspaket — direkt beantwortet.',
-    hpContactTitle: 'Senden Sie Ihre Spezifikation. Wir antworten in 24 Stunden.',
+    hpContactTitle: 'Senden Sie Ihre Spezifikation zur Prüfung.',
     hpContactBody: 'Grad, Mesh, Verpackung, Bestimmungshafen, monatliches Volumen — senden Sie, was Sie haben. Wir antworten mit Preisen, einem COA-Muster und Musterversandoptionen.',
     hpContactEmailLabel: 'E-Mail',
     hpContactResponseLabel: 'Antwortzeit',
-    hpContactResponseValue: 'Typischerweise innerhalb von 4 Stunden (IST Geschäftszeiten)',
+    hpContactResponseValue: 'Innerhalb von 48 Stunden',
     hpGetQuote: 'Anfrage senden',
     // Section labels
     labelProducts: 'Produkte',
@@ -928,28 +928,28 @@ export const copy: Record<LanguageCode, {
     productsPageH1Suffix: 'aus Gujarat, Indien.',
     productsPageCapacityLabel: 'Jahreskapazität',
     productsPagePurityLabel: 'Reinheitsgrade',
-    productsPageMoqLabel: 'Mindestbest. · FOB Mundra',
+    productsPageMoqLabel: 'MOQ für alle Grade',
     productsPageGradeKicker: 'Gradvergleich',
     productsPageGradeTitle: 'Psylliumschalen: Gradübersicht',
     productsPageTableNote: 'Vollständige COA-Parameter per Produkt und Charge verfügbar.',
     productsPageViewQuality: 'Qualitätsdokumente ansehen →',
     productsPageCtaTitle: 'Senden Sie Ihre Spezifikation. Erhalten Sie ein Angebot.',
-    productsPageCtaBody: 'Teilen Sie uns Ihr Produkt, Grad, Mesh, Verpackung, Bestimmungsort und monatliches Volumen mit. Wir antworten innerhalb von 24 Stunden mit Preisen und Verfügbarkeit.',
+    productsPageCtaBody: 'Teilen Sie Produkt, Grad, Mesh, Verpackung, Ziel und Monatsvolumen mit. Wir antworten innerhalb von 48 Stunden mit Preis, Verfügbarkeit, 1-kg-Musteroptionen und Lieferzeitplan.',
     // Quality page
-    qualityCoaStatLabel: 'COA-Testparameter',
-    qualityFssaiStatLabel: 'Anlage registriert',
-    qualityApedaStatLabel: 'Exportgenehmigung registriert',
+    qualityCoaStatLabel: 'Muster-COA vor Angebot',
+    qualityFssaiStatLabel: 'Grad, Mesh, Reinheit, Verpackung',
+    qualityApedaStatLabel: 'Export-Checkliste vor PO',
     qualityDocTypesLabel: 'Dokumentationsarten',
-    qualityCredTitle: 'Zulassungen, die Ihr Einkaufsteam anfordern wird.',
-    qualityCredLead: 'FSSAI-Anlageregistrierung, APEDA-Exportgenehmigung, Spices Board-Listung und aktiver IEC. Aktuelle Zertifikate auf Anfrage vor der Bemusterung verfügbar.',
-    qualityBadgeRegistered: 'Registriert',
-    qualityBadgeActive: 'Aktiv',
-    qualityFssaiDesc: 'Behörde für Lebensmittelsicherheit und -standards Indiens — Anlageregistrierung',
-    qualityApedaDesc: 'Behörde für Exportentwicklung landwirtschaftlicher und verarbeiteter Produkte',
-    qualitySpicesBoardDesc: 'Gewürzrat Indiens — Exportqualitätsregistrierung',
-    qualityIecDesc: 'Import-Export-Code — aktiv für alle Exportsendungen',
+    qualityCredTitle: 'Dokumente, die Ihr Einkaufsteam prüfen kann.',
+    qualityCredLead: 'Prüfen Sie die Dokumente zur Charge vor dem PO: Muster-COA, Produktspezifikation, Herkunft, Verpackungsoptionen und Zielland-Dokumentencheckliste.',
+    qualityBadgeRegistered: 'Prüfung',
+    qualityBadgeActive: 'Verfügbar',
+    qualityFssaiDesc: 'Muster-COA passend zu gewünschtem Grad und Prüfparametern',
+    qualityApedaDesc: 'Produktspezifikation mit Reinheit, Mesh, Feuchte, Asche, Mikrobiologie und Schwermetallen',
+    qualitySpicesBoardDesc: 'Herkunft, Chargencodierung, Verpackung und Versanddokumente',
+    qualityIecDesc: 'Zielland-Dokumentencheckliste vor Angebot geprüft',
     qualityCtaTitle: 'Dokumente vor der Bestellung benötigt?',
-    qualityCtaBody: 'Schreiben Sie uns mit Ihrem Produkt, Chargenanforderungen und Bestimmungsort. Wir teilen aktuellen COA, Zertifikatkopien und Dokumentationsstatus innerhalb von 24 Stunden.',
+    qualityCtaBody: 'Schreiben Sie uns mit Produkt, Chargenanforderungen und Bestimmungsort. Wir prüfen Muster-COA, Spezifikation, Herkunft, Verpackungsoptionen und Dokumentencheckliste vor Bestellung.',
     qualityCtaEmailBtn: 'E-Mail an Exportteam',
     // Contact page
     contactResponseTimeLabel: 'Antwortzeit',
@@ -967,7 +967,7 @@ export const copy: Record<LanguageCode, {
     faqPageCommonBody: 'Alles, was Sie vor Ihrer ersten Bestellung wissen müssen — Grade, Dokumentation, Lieferzeiten und Compliance.',
     faqPageStillHaveQ: 'Noch Fragen?',
     faqPageTalkExport: 'Sprechen Sie mit dem Exportteam',
-    faqPageTalkBody: 'Teilen Sie Ihr Produkt, Grad und Bestimmungsort mit. Wir antworten innerhalb von 24 Stunden.',
+    faqPageTalkBody: 'Teilen Sie Produkt, Grad und Bestimmungsort mit. Wir bestätigen Musteroptionen, Dokumente, Preise und Lieferzeit.',
     faqPageWaBtn: 'WhatsApp',
     faqPageEmailBtn: 'E-Mail an Exportteam',
     faqPageQuickFacts: 'Kurzübersicht',
@@ -981,7 +981,7 @@ export const copy: Record<LanguageCode, {
     faqPageLeadTimeLabel: 'Lieferzeit',
     faqPagePurityLabel: 'Reinheitsgrade',
     // Footer
-    footerBrandDesc: 'RM Psyllium LLP ist ein Direkt-Hersteller und Bulk-Exporteur von Premium-Psylliumschalen, -pulver und -samen. Mit Sitz in Siddhpur, Gujarat, verfügt unsere Anlage über eine Jahreskapazität von 2.000 MT und liefert weltweit Pharma- (USP/EP), Lebensmittel- und Futtermittelqualitäten. Mindestbestellmenge (MOQ): 1 KG mit NABL-akkreditiertem COA pro Lieferung.',
+    footerBrandDesc: 'RM Psyllium LLP ist ein Hersteller und Bulk-Lieferant in Siddhpur, Gujarat, für Psylliumschalen, Schalenpulver, Samen, Khakha-Pulver und Viehfutter mit 2.000 MT jährlicher Verarbeitungskapazität für Exportkäufer. Käufer können Muster-COA, Produktspezifikationen, Herkunft, Verpackungsoptionen und Dokumentencheckliste vor Bestellung prüfen.',
     footerApplications: 'Anwendungen',
     footerResources: 'Ressourcen',
     footerRequestQuote: 'Anfrage senden',
@@ -989,7 +989,7 @@ export const copy: Record<LanguageCode, {
     footerPharma: 'Pharma & Nahrungsergänzung', footerFood: 'Lebensmittel & Backwaren', footerAnimalFeed: 'Tierfutter', footerIndustrial: 'Industrie',
     // Spec Builder
     sbTitle: 'Angebot anfordern',
-    sbReplyTime: 'Wir antworten innerhalb von 24 Stunden (IST Geschäftszeiten)',
+    sbReplyTime: 'Wir prüfen Anfragen während der IST-Geschäftszeiten',
     sbNameLabel: 'Name',
     sbEmailLabel: 'E-Mail oder Telefon',
     sbEmailPlaceholder: 'E-Mail oder WhatsApp-Nummer',
@@ -1037,17 +1037,17 @@ export const copy: Record<LanguageCode, {
     pdFaqIntroSuffix: 'Fragen.',
     pdFaqDesc: 'Produktspezifische Käuferfragen — Grade, Dokumentation, Lieferzeiten und Compliance.',
     pdRequestQuoteLabel: 'Angebot anfordern',
-    pdWithin24h: 'innerhalb von 24 Stunden.',
+    pdWithin24h: 'nach Prüfung.',
     pdCompareGradesTitle: '{name}-Grade vergleichen',
     pdReadyToSource: 'Bereit, {name} zu beziehen?',
-    pdCtaBody: 'Teilen Sie Ihren Grad, Mesh, Verpackung, Bestimmungsort und monatliches Volumen mit. Wir antworten innerhalb von 24 Stunden mit Preisen und Verfügbarkeit.',
+    pdCtaBody: 'Teilen Sie Grad, Mesh, Verpackung, Bestimmungsort und monatliches Volumen mit. Wir bestätigen Preise, Verfügbarkeit, Musteroptionen und Lieferzeit.',
     pdFindMyGrade: 'Meinen Grad finden ↓',
     pdLegendPrimary: 'Primäre Eignung',
     pdLegendConditional: 'Bedingt — mit QA bestätigen',
     pdLegendNotSuitable: 'Nicht geeignet',
     pdLegendNotApplicable: 'Nicht anwendbar',
     readyToSource: 'Bereit zur Beschaffung?', sampleCoaTitle: 'Muster mit COA anfordern',
-    sampleCoaBody: 'Teilen Sie Ihre Spezifikation — Qualität, Mesh, Monatsvolumen und Zielort. Wir antworten innerhalb von 24 Stunden.',
+    sampleCoaBody: 'Teilen Sie Ihre Spezifikation: Qualität, Mesh, Monatsvolumen und Zielort. Wir antworten innerhalb von 48 Stunden mit 1-kg-Musterverfügbarkeit, COA-Prüfoptionen und Lieferzeitplan.',
     moreResources: 'Weitere Ressourcen', topicsCovered: 'Behandelte Themen',
     sourcingQuestion: 'Haben Sie eine Beschaffungsfrage?',
     sourcingQuestionBody: 'Unser Exportteam beantwortet technische und kommerzielle Fragen zu Psyllium-Qualitäten, Mesh, Zertifizierungen und Dokumentation.',
@@ -1074,13 +1074,13 @@ export const copy: Record<LanguageCode, {
     specTitle: 'Bulk offerte aanvragen', requestQuoteCta: 'Productofferte aanvragen',
     viewApplicationsCta: 'Toepassingen bekijken', supplyFitLabel: 'Leveringsgeschiktheid',
     requestQuoteBandTitle: 'Ontvang prijzen, monsters en documenten voor dit product.',
-    requestQuoteBandLead: 'Deel uw kwaliteit, mesh, verpakking, bestemmingshaven en maandelijks volume. Wij reageren binnen 24 uur met prijzen en een voorbeeld-COA.',
+    requestQuoteBandLead: 'Deel kwaliteit, mesh, verpakking, bestemmingshaven en maandelijks volume. Wij reageren binnen 48 uur met prijs, documenten, 1 kg monsteropties en levertijdplan.',
     complianceTitle: 'Elk document dat uw QA-team zal opvragen.',
     complianceLead: 'COA-parameters, lotherkomst, microbiologie, zware metalen en volledige exportdocumentatie — gedeeld voordat het monster verzonden wordt, niet nadat de inkooporder is getekend.',
     complianceChecklist: 'Verificatiechecklist voor kopers',
     complianceChecklistLead: 'Vraag om actuele documenten per product, lot en bestemmingsmarkt voordat u een bulkorder bevestigt.',
     faqLead: 'MOQ, graakverschillen, farmacopee-compliance, documentatie, levertijden en wat er gebeurt tussen de inkooporder en de verzending.',
-    contactTitle: 'Praat met de exportafdeling.', contactLead: 'Deel uw product, volume, bestemming en kwaliteit. Wij reageren binnen 24 uur.',
+    contactTitle: 'Praat met de exportafdeling.', contactLead: 'Deel product, volume, bestemming en kwaliteit. Wij reageren binnen 48 uur met prijs, documenten, 1 kg monsteropties en levertijdplan.',
     productsListTitle: 'Zes psyllium kwaliteitsgraden. Allemaal exportklaar.',
     productsListLead: 'Van 85% voedingskwaliteit tot 99% USP/EP/IP farmaceutisch. Aangepaste mesh, verpakking en volledig COA per zending.',
     blogTitle: 'Inkoopgidsen voor psylliumkopers.',
@@ -1088,11 +1088,11 @@ export const copy: Record<LanguageCode, {
     heroBadge: 'Psyllium fabrikant · Gujarat, India',
     heroTitle: 'Bulk psyllium voor farma-, supplement- en voedselproducenten.',
     heroBody: 'Wij sourcen, malen en verzenden psylliumvlozaad, poeder en zaad — afgestemd op uw zuiverheidsspecificatie, mesh en documentatievereiste. Wat wij offreren, wordt verzonden.',
-    heroTrustCoa: 'COA per zending', heroLeadTimeLabel: 'Levertijd', heroSampleLabel: 'Monster',
-    heroLeadTimeValue: '7 dagen na bevestiging', heroSampleValue: '100–500 g met COA, verzonden in 5 dagen',
+    heroTrustCoa: 'Lotdocumenten vóór verzending', heroLeadTimeLabel: 'Levertijd', heroSampleLabel: 'Monster',
+    heroLeadTimeValue: 'Gepland per kwaliteit en haven', heroSampleValue: 'Beschikbaar voor passende kwaliteiten',
     heroCtaWhatsApp: 'WhatsApp', statCapacityLabel: 'Jaarlijkse verwerkingscapaciteit',
-    statHistoryLabel: 'jaar productiervaring', statLeadLabel: 'Bestelling tot verzending',
-    statMoqLabel: 'Minimale bestelhoeveelheid', hpProductsTitle: 'Psylliumproducten voor groothandelkopers.',
+    statHistoryLabel: 'jaar productiervaring', statLeadLabel: 'Lotdocumentcontrole',
+    statMoqLabel: 'Mundra · Kandla · JNPT', hpProductsTitle: 'Psylliumproducten voor groothandelkopers.',
     hpProductsBody: 'Zeven productlijnen. 85% tot 99% zuiverheid. Kwaliteit, mesh en farmacopee-compliance afgestemd op uw formulering.',
     hpWhyTitle: 'Wat ons onderscheidt van een handelsdeskexporteur.',
     hpDiff1Title: '40 jaar op de productieploesvloer',
@@ -1103,8 +1103,8 @@ export const copy: Record<LanguageCode, {
     hpDiff3Body: 'Wij verwerken intern. Wij kopen geen eindproduct en slaan het niet op. De kwaliteit die u specificeert, is de kwaliteit die voor uw lot wordt geproduceerd — niet herverpakt uit het voorraad van iemand anders.',
     hpDiff4Title: 'Volledige documentatie vóór verzending',
     hpDiff4Body: 'COA, oorsprongscertificaat, fytosanitair, fumigatie, MSDS en allergenenverklaring per zending. Alles gedeeld vóór verzending — beoordeeld door uw QA-team voordat containers bewegen.',
-    hpDiff5Title: 'Bestel elke hoeveelheid',
-    hpDiff5Body: 'Geen minimale bestelhoeveelheid. We leveren 1 KG monsters voor laboratoriumtests, proefpartijen van 5 KG en volledige containers van 20 MT. Bestel wat u nodig heeft — schaal op wanneer u klaar bent.',
+    hpDiff5Title: 'Offerte na monsterreview',
+    hpDiff5Body: 'MOQ start bij 1 kg voor elke kwaliteit. Verpakking, testen, bestemmingsdocumenten en bulkplanning worden vóór offerte beoordeeld.',
     hpProcessTitle: 'Van zaad tot exportklare verpakking.', hpProcessStepLabel: '5 stappen · één lot',
     hpStep1Title: 'Sourcen', hpStep1Body: 'Psylliumzaad gesourcet van gecontracteerde boerderijen in Unjha en Noord-Gujarat — de belangrijkste psylliumteeltregio ter wereld. Herkomstregistraties per lot bijgehouden.',
     hpStep2Title: 'Reinigen', hpStep2Body: 'Zaad gereinigd en gesorteerd vóór maling. Steenverwijdering, zeefseparatie en magnetische inspectie in elke fase om vreemd materiaal te verminderen.',
@@ -1114,29 +1114,29 @@ export const copy: Record<LanguageCode, {
     hpCredTitle: 'Geregistreerd bij de instanties die uw QA-team kennen wil.', hpIecActive: 'Actief · Import Export Code',
     hpFaqTitle: 'Vragen die we bij elke eerste bestelling krijgen.',
     hpFaqBody: 'MOQ, graakverschillen, farmacopee-compliance, documentatiepakket — direct beantwoord.',
-    hpContactTitle: 'Deel uw specificatie. Wij reageren binnen 24 uur.',
+    hpContactTitle: 'Deel uw specificatie voor beoordeling.',
     hpContactBody: 'Kwaliteit, mesh, verpakking, bestemmingshaven, maandelijks volume — stuur wat u heeft. Wij reageren met prijzen, een voorbeeld-COA en monsterversendopties.',
     hpContactEmailLabel: 'E-mail', hpContactResponseLabel: 'Reactietijd',
-    hpContactResponseValue: 'Normaal binnen 4 uur (IST kantooruren)', hpGetQuote: 'Offerte aanvragen',
+    hpContactResponseValue: 'Binnen 48 uur', hpGetQuote: 'Offerte aanvragen',
     labelProducts: 'Producten', labelWhyUs: 'Waarom RM Psyllium', labelProcess: 'Proces',
     labelCredentials: 'Certificeringen', labelStepsOne: '5 stappen · één lot', labelContact: 'Contact',
     productsPageKicker: 'Alle producten', productsPageH1Suffix: 'vanuit Gujarat, India.',
     productsPageCapacityLabel: 'Jaarlijkse capaciteit', productsPagePurityLabel: 'Zuiverheidsgraden',
-    productsPageMoqLabel: 'Min. bestelling · FOB Mundra', productsPageGradeKicker: 'Graakvergelijking',
+    productsPageMoqLabel: 'MOQ voor alle kwaliteiten', productsPageGradeKicker: 'Graakvergelijking',
     productsPageGradeTitle: 'Psylliumvlies: graadoverzicht', productsPageTableNote: 'Volledige COA-parameters beschikbaar per product en lot.',
     productsPageViewQuality: 'Kwaliteitsdocumenten bekijken →', productsPageCtaTitle: 'Deel uw specificatie. Ontvang een offerte.',
-    productsPageCtaBody: 'Vertel ons uw product, kwaliteit, mesh, verpakking, bestemming en maandelijks volume. Wij reageren binnen 24 uur met prijzen en beschikbaarheid.',
-    qualityCoaStatLabel: 'COA testparameters', qualityFssaiStatLabel: 'Fabriek geregistreerd',
-    qualityApedaStatLabel: 'Exportgoedkeuring geregistreerd', qualityDocTypesLabel: 'Documentatietypes',
-    qualityCredTitle: 'Certificeringen die uw inkoopteam zal opvragen.',
-    qualityCredLead: 'FSSAI-fabrieksregistratie, APEDA-exportgoedkeuring, Spices Board-vermelding en actieve IEC. Actuele certificaten beschikbaar op aanvraag vóór bemonstering.',
-    qualityBadgeRegistered: 'Geregistreerd', qualityBadgeActive: 'Actief',
-    qualityFssaiDesc: 'Voedselveiligheid en -normen autoriteit van India — fabrieksregistratie',
-    qualityApedaDesc: 'Exportontwikkelingsautoriteit voor landbouw- en verwerkte voedingsproducten',
-    qualitySpicesBoardDesc: 'Kruidentraad van India — exportkwaliteitsregistratie',
-    qualityIecDesc: 'Import Export Code — actief voor alle exportzendingen',
+    productsPageCtaBody: 'Vertel ons product, kwaliteit, mesh, verpakking, bestemming en maandelijks volume. Wij reageren binnen 48 uur met prijs, beschikbaarheid, 1 kg monsteropties en levertijdplan.',
+    qualityCoaStatLabel: 'Monster-COA vóór offerte', qualityFssaiStatLabel: 'Kwaliteit, mesh, zuiverheid, verpakking',
+    qualityApedaStatLabel: 'Exportchecklist vóór PO', qualityDocTypesLabel: 'Documentatietypes',
+    qualityCredTitle: 'Documenten die uw inkoopteam kan beoordelen.',
+    qualityCredLead: 'Bekijk de documenten achter uw lot vóór PO: voorbeeld-COA, productspecificatie, herkomst, verpakkingsopties en bestemmingsdocumentenchecklist.',
+    qualityBadgeRegistered: 'Controle', qualityBadgeActive: 'Beschikbaar',
+    qualityFssaiDesc: 'Voorbeeld-COA afgestemd op de gevraagde kwaliteit en testparameters',
+    qualityApedaDesc: 'Productspecificatie met zuiverheid, mesh, vocht, as, microbiologie en zware metalen',
+    qualitySpicesBoardDesc: 'Herkomst, lotcodering, verpakking en verzenddocumentatie',
+    qualityIecDesc: 'Bestemmingsdocumentenchecklist beoordeeld vóór offerte',
     qualityCtaTitle: 'Documenten nodig vóór bestelling?',
-    qualityCtaBody: 'E-mail ons met uw product, lotvereisten en bestemming. Wij delen actuele COA, certificaatkopieën en documentatiestatus binnen 24 uur.',
+    qualityCtaBody: 'E-mail ons met uw product, lotvereisten en bestemming. Wij beoordelen voorbeeld-COA, specificatie, herkomst, verpakkingsopties en documentenchecklist vóór PO.',
     qualityCtaEmailBtn: 'E-mail exportafdeling', contactResponseTimeLabel: 'Reactietijd',
     contactMinOrderLabel: 'Minimale bestelling', contactExportDeskLabel: 'Exportafdeling',
     contactFacilityLabel: 'Fabrieksadres', contactCapacityLabel: 'Capaciteit',
@@ -1144,14 +1144,14 @@ export const copy: Record<LanguageCode, {
     faqPageAnswered: 'beantwoord.', faqPageCommonTitle: 'Veelgestelde kopervragen.',
     faqPageCommonBody: 'Alles wat u moet weten voordat u uw eerste bestelling plaatst — kwaliteiten, documentatie, levertijden en compliance.',
     faqPageStillHaveQ: 'Nog vragen?', faqPageTalkExport: 'Praat met de exportafdeling',
-    faqPageTalkBody: 'Deel uw product, kwaliteit en bestemming. Wij reageren binnen 24 uur.',
+    faqPageTalkBody: 'Deel uw product, kwaliteit en bestemming. Wij bevestigen monsteropties, documenten, prijzen en levertijd.',
     faqPageWaBtn: 'WhatsApp', faqPageEmailBtn: 'E-mail exportafdeling', faqPageQuickFacts: 'Snelle feiten',
     faqPageMoqFact: 'MOQ', faqPageCapacityFact: 'Capaciteit', faqPageLeadFact: 'Levertijd',
     faqPagePortsFact: 'Havens', faqPageGradesFact: 'Kwaliteiten', faqPageSampleFact: 'Monster',
     faqPageMinOrderLabel: 'Minimale bestelling', faqPageLeadTimeLabel: 'Levertijd', faqPagePurityLabel: 'Zuiverheidsgraden',
-    footerBrandDesc: 'RM Psyllium LLP is een rechtstreekse fabrikant en bulkexporteur van premium psylliumvliezen, -poeder en -zaden. Vanuit Siddhpur, Gujarat, heeft onze fabriek een jaarlijkse capaciteit van 2.000 MT voor de wereldwijde levering van farmaceutische (USP/EP), levensmiddelen- en diervoederkwaliteiten. MOQ: 1 KG met NABL-geaccrediteerd COA per zending.',
+    footerBrandDesc: 'RM Psyllium LLP is een fabrikant en bulkleverancier in Siddhpur, Gujarat, van psylliumvliezen, vliespoeder, zaden, khakha powder en veevoer, met 2.000 MT jaarlijkse verwerkingscapaciteit voor exportkopers. Kopers kunnen voorbeeld-COA, productspecificaties, herkomst, verpakkingsopties en documentenchecklist vóór PO beoordelen.',
     footerApplications: 'Toepassingen', footerResources: 'Bronnen', footerRequestQuote: 'Offerte aanvragen', footerSampleRequest: 'Monsteraanvraag', footerPharma: 'Farma & Nutraceutica', footerFood: 'Voeding & Bakkerij', footerAnimalFeed: 'Diervoeder', footerIndustrial: 'Industrieel',
-    sbTitle: 'Offerte aanvragen', sbReplyTime: 'Wij reageren binnen 24 uur (IST kantooruren)',
+    sbTitle: 'Offerte aanvragen', sbReplyTime: 'Wij beoordelen aanvragen tijdens IST kantooruren',
     sbNameLabel: 'Naam', sbEmailLabel: 'E-mail of telefoon', sbEmailPlaceholder: 'e-mail of WhatsApp-nummer',
     sbProductLabel: 'Productinteresse', sbSelectProduct: 'Selecteer een product', sbCountryLabel: 'Land',
     sbCompanyLabel: 'Bedrijf', sbMessageLabel: 'Bericht / specificaties', sbMessagePlaceholder: 'Kwaliteit, volume, certificeringen, levertijdlijn…',
@@ -1170,13 +1170,13 @@ export const copy: Record<LanguageCode, {
     pdSelectGrade: 'Selecteer uw kwaliteit', pdByApplication: 'Op toepassing', pdCommonQuestions: 'Veelgestelde vragen',
     pdFaqIntro: 'Veelgestelde', pdFaqIntroSuffix: 'vragen.',
     pdFaqDesc: 'Productspecifieke vragen van kopers — kwaliteiten, documentatie, levertijden en compliance.',
-    pdRequestQuoteLabel: 'Offerte aanvragen', pdWithin24h: 'binnen 24 uur.',
+    pdRequestQuoteLabel: 'Offerte aanvragen', pdWithin24h: 'na beoordeling.',
     pdCompareGradesTitle: '{name} kwaliteiten vergelijken', pdReadyToSource: 'Klaar om {name} te sourcen?',
-    pdCtaBody: 'Deel uw kwaliteit, mesh, verpakking, bestemming en maandelijks volume. Wij reageren binnen 24 uur met prijzen en beschikbaarheid.',
+    pdCtaBody: 'Deel uw kwaliteit, mesh, verpakking, bestemming en maandelijks volume. Wij bevestigen prijzen, beschikbaarheid, monsteropties en levertijd.',
     pdFindMyGrade: 'Mijn kwaliteit vinden ↓', pdLegendPrimary: 'Primaire geschiktheid',
     pdLegendConditional: 'Voorwaardelijk — bevestig met QA', pdLegendNotSuitable: 'Niet geschikt', pdLegendNotApplicable: 'Niet van toepassing',
     readyToSource: 'Klaar om in te kopen?', sampleCoaTitle: 'Monster met COA aanvragen',
-    sampleCoaBody: 'Deel uw specificatie — kwaliteit, mesh, maandvolume en bestemming. Wij reageren binnen 24 uur.',
+    sampleCoaBody: 'Deel uw specificatie: kwaliteit, mesh, maandvolume en bestemming. Wij reageren binnen 48 uur met 1 kg monsterbeschikbaarheid, COA-beoordeling en levertijdplan.',
     moreResources: 'Meer resources', topicsCovered: 'Behandelde onderwerpen',
     sourcingQuestion: 'Heeft u een inkoopvraag?',
     sourcingQuestionBody: 'Ons exportteam beantwoordt technische en commerciële vragen over psyllium-kwaliteiten, mesh, certificeringen en documentatie.',
@@ -1203,13 +1203,13 @@ export const copy: Record<LanguageCode, {
     specTitle: 'Richiedi preventivo bulk', requestQuoteCta: 'Richiedi Preventivo Prodotto',
     viewApplicationsCta: 'Visualizza Applicazioni', supplyFitLabel: 'Idoneità fornitura',
     requestQuoteBandTitle: 'Ottieni prezzi, campioni e documenti per questo prodotto.',
-    requestQuoteBandLead: 'Condividi grado, mesh, imballaggio, porto di destinazione e volume mensile. Risponderemo entro 24 ore con prezzi e COA campione.',
+    requestQuoteBandLead: 'Condividi grado, mesh, imballaggio, porto di destinazione e volume mensile. Rispondiamo entro 48 ore con prezzo, documenti, opzioni campione da 1 kg e piano tempi.',
     complianceTitle: 'Ogni documento che il tuo team QA richiederà.',
     complianceLead: 'Parametri COA, origine del lotto, microbiologia, metalli pesanti e documentazione export completa — condivisi prima della spedizione del campione, non dopo la firma dell\'ordine.',
     complianceChecklist: 'Checklist di verifica acquirente',
     complianceChecklistLead: 'Richiedi documenti aggiornati per prodotto, lotto e mercato di destinazione prima di confermare un ordine bulk.',
     faqLead: 'MOQ, differenze di grado, conformità farmacopea, documentazione, tempi di consegna e cosa succede tra l\'ordine e la spedizione.',
-    contactTitle: 'Parla con l\'ufficio export.', contactLead: 'Condividi prodotto, volume, destinazione e grado. Rispondiamo entro 24 ore.',
+    contactTitle: 'Parla con l\'ufficio export.', contactLead: 'Condividi prodotto, volume, destinazione e grado. Rispondiamo entro 48 ore con prezzo, documenti, opzioni campione da 1 kg e piano tempi.',
     productsListTitle: 'Sei gradi di psyllium. Tutti pronti per l\'export.',
     productsListLead: 'Dal 85% qualità alimentare al 99% USP/EP/IP farmaceutico. Mesh personalizzata, imballaggio e COA completo per spedizione.',
     blogTitle: 'Guide di approvvigionamento per acquirenti di psyllium.',
@@ -1217,10 +1217,10 @@ export const copy: Record<LanguageCode, {
     heroBadge: 'Produttore di psyllium · Gujarat, India',
     heroTitle: 'Psyllium bulk per produttori farmaceutici, integratori e alimentari.',
     heroBody: 'Reperiamo, maciniamo e spediamo buccia di psyllium, polvere e seme — corrispondente alle tue specifiche di purezza, mesh e documentazione. Quello che quotizziamo è quello che spediamo.',
-    heroTrustCoa: 'COA per spedizione', heroLeadTimeLabel: 'Tempi di consegna', heroSampleLabel: 'Campione',
-    heroLeadTimeValue: '7 giorni dalla conferma', heroSampleValue: '100–500 g con COA, spedito in 5 giorni',
+    heroTrustCoa: 'Documenti di lotto prima della spedizione', heroLeadTimeLabel: 'Tempi di consegna', heroSampleLabel: 'Campione',
+    heroLeadTimeValue: 'Pianificato per grado e porto', heroSampleValue: 'Disponibili per gradi corrispondenti',
     heroCtaWhatsApp: 'WhatsApp', statCapacityLabel: 'Capacità di elaborazione annuale',
-    statHistoryLabel: 'anni di esperienza produttiva', statLeadLabel: 'Ordine alla spedizione', statMoqLabel: 'Quantità minima d\'ordine',
+    statHistoryLabel: 'anni di esperienza produttiva', statLeadLabel: 'Revisione documenti lotto', statMoqLabel: 'Mundra · Kandla · JNPT',
     hpProductsTitle: 'Prodotti di psyllium per acquirenti bulk.',
     hpProductsBody: 'Sette linee di prodotto. Purezza dall\'85% al 99%. Grado, mesh e conformità farmacopea adattati alla tua formulazione.',
     hpWhyTitle: 'Cosa ci distingue da un esportatore commerciale.',
@@ -1232,8 +1232,8 @@ export const copy: Record<LanguageCode, {
     hpDiff3Body: 'Processiamo internamente. Non compriamo prodotto finito e lo rivediamo. Il grado che specifichi è il grado prodotto per il tuo lotto — non riconfezionato dall\'inventario di qualcun altro.',
     hpDiff4Title: 'Documentazione completa prima della spedizione',
     hpDiff4Body: 'COA, certificato di origine, fitosanitario, fumigazione, MSDS e dichiarazione allergeni per spedizione. Tutto condiviso prima della spedizione — revisionato dal tuo team QA prima che i container si muovano.',
-    hpDiff5Title: 'Ordina qualsiasi quantità',
-    hpDiff5Body: 'Nessun ordine minimo. Forniamo campioni da 1 KG per test di laboratorio, lotti di prova da 5 KG e container completi da 20 MT. Ordina ciò di cui hai bisogno — scala quando sei pronto.',
+    hpDiff5Title: 'Preventivo dopo revisione campione',
+    hpDiff5Body: 'Il MOQ parte da 1 kg per ogni grado. Imballaggio, test, documenti di destinazione e pianificazione dei lotti bulk vengono valutati prima del preventivo.',
     hpProcessTitle: 'Dal seme all\'imballaggio pronto per l\'export.', hpProcessStepLabel: '5 fasi · un lotto',
     hpStep1Title: 'Approvvigionamento', hpStep1Body: 'Seme di psyllium approvvigionato da aziende agricole convenzionate in Unjha e nel Gujarat settentrionale — la principale regione di coltivazione di psyllium al mondo. Registrazioni di origine mantenute per lotto.',
     hpStep2Title: 'Pulitura', hpStep2Body: 'Seme pulito e classificato prima della macinazione. Disabbiatura, separazione a setaccio e ispezione magnetica in ogni fase per ridurre le impurità.',
@@ -1243,29 +1243,29 @@ export const copy: Record<LanguageCode, {
     hpCredTitle: 'Registrato presso gli enti che contano per il tuo team QA.', hpIecActive: 'Attivo · Codice Import Export',
     hpFaqTitle: 'Domande che riceviamo prima di ogni primo ordine.',
     hpFaqBody: 'MOQ, differenze di grado, conformità farmacopea, pacchetto documentale — risposto direttamente.',
-    hpContactTitle: 'Condividi la tua specifica. Rispondiamo in 24 ore.',
+    hpContactTitle: 'Condividi la tua specifica per revisione.',
     hpContactBody: 'Grado, mesh, imballaggio, porto di destinazione, volume mensile — invia quello che hai. Risponderemo con prezzi, un COA campione e opzioni di spedizione campione.',
     hpContactEmailLabel: 'Email', hpContactResponseLabel: 'Tempo di risposta',
-    hpContactResponseValue: 'Tipicamente entro 4 ore (orario lavorativo IST)', hpGetQuote: 'Richiedi Preventivo',
+    hpContactResponseValue: 'Entro 48 ore', hpGetQuote: 'Richiedi Preventivo',
     labelProducts: 'Prodotti', labelWhyUs: 'Perché RM Psyllium', labelProcess: 'Processo',
     labelCredentials: 'Certificazioni', labelStepsOne: '5 fasi · un lotto', labelContact: 'Contatti',
     productsPageKicker: 'Tutti i prodotti', productsPageH1Suffix: 'dal Gujarat, India.',
     productsPageCapacityLabel: 'Capacità annuale', productsPagePurityLabel: 'Gradi di purezza',
-    productsPageMoqLabel: 'Min. ordine · FOB Mundra', productsPageGradeKicker: 'Confronto gradi',
+    productsPageMoqLabel: 'MOQ per tutti i gradi', productsPageGradeKicker: 'Confronto gradi',
     productsPageGradeTitle: 'Buccia di psyllium: riepilogo gradi', productsPageTableNote: 'Parametri COA completi disponibili per prodotto e lotto.',
     productsPageViewQuality: 'Visualizza documenti qualità →', productsPageCtaTitle: 'Condividi la tua specifica. Ottieni un preventivo.',
-    productsPageCtaBody: 'Comunicaci prodotto, grado, mesh, imballaggio, destinazione e volume mensile. Risponderemo entro 24 ore con prezzi e disponibilità.',
-    qualityCoaStatLabel: 'Parametri test COA', qualityFssaiStatLabel: 'Struttura registrata',
-    qualityApedaStatLabel: 'Autorizzazione export registrata', qualityDocTypesLabel: 'Tipi di documentazione',
-    qualityCredTitle: 'Certificazioni che il tuo team acquisti richiederà.',
-    qualityCredLead: 'Registrazione struttura FSSAI, autorizzazione export APEDA, listing Spices Board e IEC attivo. Certificati aggiornati disponibili su richiesta prima del campionamento.',
-    qualityBadgeRegistered: 'Registrato', qualityBadgeActive: 'Attivo',
-    qualityFssaiDesc: 'Autorità per la sicurezza e gli standard alimentari dell\'India — registrazione struttura',
-    qualityApedaDesc: 'Autorità per lo sviluppo dell\'export di prodotti agricoli e trasformati',
-    qualitySpicesBoardDesc: 'Spices Board of India — registrazione qualità export',
-    qualityIecDesc: 'Codice Import Export — attivo per tutte le spedizioni export',
+    productsPageCtaBody: 'Comunicaci prodotto, grado, mesh, imballaggio, destinazione e volume mensile. Rispondiamo entro 48 ore con prezzo, disponibilità, opzioni campione da 1 kg e piano tempi.',
+    qualityCoaStatLabel: 'COA campione prima del preventivo', qualityFssaiStatLabel: 'Grado, mesh, purezza, imballo',
+    qualityApedaStatLabel: 'Checklist export prima del PO', qualityDocTypesLabel: 'Tipi di documentazione',
+    qualityCredTitle: 'Documenti che il tuo team acquisti può esaminare.',
+    qualityCredLead: 'Esamina i documenti del lotto prima del PO: COA campione, specifica prodotto, origine, opzioni di imballaggio e checklist documentale della destinazione.',
+    qualityBadgeRegistered: 'Revisione', qualityBadgeActive: 'Disponibile',
+    qualityFssaiDesc: 'COA campione allineato al grado e ai parametri richiesti',
+    qualityApedaDesc: 'Specifica prodotto con purezza, mesh, umidità, ceneri, microbiologia e metalli pesanti',
+    qualitySpicesBoardDesc: 'Origine, codifica lotto, imballaggio e documenti di spedizione',
+    qualityIecDesc: 'Checklist documentale della destinazione verificata prima del preventivo',
     qualityCtaTitle: 'Hai bisogno di documenti prima di ordinare?',
-    qualityCtaBody: 'Scrivici con il tuo prodotto, requisiti del lotto e destinazione. Condivideremo COA aggiornato, copie certificati e stato documentale entro 24 ore.',
+    qualityCtaBody: 'Scrivici con prodotto, requisiti del lotto e destinazione. Revisioneremo COA campione, specifica, origine, opzioni di imballaggio e checklist documentale prima dell\'ordine.',
     qualityCtaEmailBtn: 'Email ufficio export', contactResponseTimeLabel: 'Tempo di risposta',
     contactMinOrderLabel: 'Ordine minimo', contactExportDeskLabel: 'Ufficio export',
     contactFacilityLabel: 'Indirizzo struttura', contactCapacityLabel: 'Capacità',
@@ -1273,14 +1273,14 @@ export const copy: Record<LanguageCode, {
     faqPageAnswered: 'risposto.', faqPageCommonTitle: 'Domande comuni degli acquirenti.',
     faqPageCommonBody: 'Tutto quello che devi sapere prima di effettuare il primo ordine — gradi, documentazione, tempi di consegna e conformità.',
     faqPageStillHaveQ: 'Hai ancora domande?', faqPageTalkExport: 'Parla con l\'ufficio export',
-    faqPageTalkBody: 'Condividi prodotto, grado e destinazione. Rispondiamo entro 24 ore.',
+    faqPageTalkBody: 'Condividi prodotto, grado e destinazione. Confermeremo opzioni campione, documenti, prezzi e tempi.',
     faqPageWaBtn: 'WhatsApp', faqPageEmailBtn: 'Email ufficio export', faqPageQuickFacts: 'Dati rapidi',
     faqPageMoqFact: 'MOQ', faqPageCapacityFact: 'Capacità', faqPageLeadFact: 'Consegna',
     faqPagePortsFact: 'Porti', faqPageGradesFact: 'Gradi', faqPageSampleFact: 'Campione',
     faqPageMinOrderLabel: 'Ordine minimo', faqPageLeadTimeLabel: 'Tempi di consegna', faqPagePurityLabel: 'Gradi di purezza',
-    footerBrandDesc: 'RM Psyllium LLP è un produttore diretto ed esportatore all\'ingrosso di buccia, polvere e semi di psyllium di qualità premium. Con sede a Siddhpur, Gujarat, il nostro stabilimento ha una capacità annua di 2.000 MT e fornisce gradi farmaceutico (USP/EP), alimentare e zootecnico in tutto il mondo. MOQ: 1 KG con COA certificato da laboratorio NABL per ogni spedizione.',
+    footerBrandDesc: 'RM Psyllium LLP è un produttore e fornitore bulk a Siddhpur, Gujarat, di buccia di psyllium, polvere di buccia, semi, khakha powder e mangime per bovini, con 2.000 MT di capacità annuale di lavorazione per acquirenti export. Gli acquirenti possono revisionare COA campione, specifiche prodotto, origine, opzioni di imballo e checklist documentale prima dell\'ordine.',
     footerApplications: 'Applicazioni', footerResources: 'Risorse', footerRequestQuote: 'Richiedi un Preventivo', footerSampleRequest: 'Richiesta Campione', footerPharma: 'Farmaceutica & Nutraceutica', footerFood: 'Alimenti & Panetteria', footerAnimalFeed: 'Mangimi Animali', footerIndustrial: 'Industriale',
-    sbTitle: 'Richiedi un preventivo', sbReplyTime: 'Rispondiamo entro 24 ore (orario lavorativo IST)',
+    sbTitle: 'Richiedi un preventivo', sbReplyTime: 'Revisioniamo le richieste durante l\'orario lavorativo IST',
     sbNameLabel: 'Nome', sbEmailLabel: 'Email o Telefono', sbEmailPlaceholder: 'email o numero WhatsApp',
     sbProductLabel: 'Interesse prodotto', sbSelectProduct: 'Seleziona un prodotto', sbCountryLabel: 'Paese',
     sbCompanyLabel: 'Azienda', sbMessageLabel: 'Messaggio / specifiche', sbMessagePlaceholder: 'Grado, volume, certificazioni, tempistica di consegna…',
@@ -1299,13 +1299,13 @@ export const copy: Record<LanguageCode, {
     pdSelectGrade: 'Seleziona il tuo grado', pdByApplication: 'Per applicazione', pdCommonQuestions: 'Domande frequenti',
     pdFaqIntro: 'Domande frequenti', pdFaqIntroSuffix: 'degli acquirenti.',
     pdFaqDesc: 'Domande specifiche del prodotto dagli acquirenti — gradi, documentazione, tempi di consegna e conformità.',
-    pdRequestQuoteLabel: 'Richiedi Preventivo', pdWithin24h: 'entro 24 ore.',
+    pdRequestQuoteLabel: 'Richiedi Preventivo', pdWithin24h: 'dopo revisione.',
     pdCompareGradesTitle: 'Confronta gradi {name}', pdReadyToSource: 'Pronto ad approvvigionare {name}?',
-    pdCtaBody: 'Condividi grado, mesh, imballaggio, destinazione e volume mensile. Rispondiamo entro 24 ore con prezzi e disponibilità.',
+    pdCtaBody: 'Condividi grado, mesh, imballaggio, destinazione e volume mensile. Confermeremo prezzi, disponibilità, opzioni campione e tempi.',
     pdFindMyGrade: 'Trova il mio grado ↓', pdLegendPrimary: 'Idoneità primaria',
     pdLegendConditional: 'Condizionale — conferma con QA', pdLegendNotSuitable: 'Non adatto', pdLegendNotApplicable: 'Non applicabile',
     readyToSource: 'Pronto a comprare?', sampleCoaTitle: 'Richiedere un campione con COA',
-    sampleCoaBody: 'Condividi le tue specifiche — grado, mesh, volume mensile e destinazione. Risponderemo entro 24 ore.',
+    sampleCoaBody: 'Condividi le tue specifiche: grado, mesh, volume mensile e destinazione. Rispondiamo entro 48 ore con disponibilità campione da 1 kg, revisione COA e piano tempi.',
     moreResources: 'Più risorse', topicsCovered: 'Argomenti trattati',
     sourcingQuestion: 'Hai domande sull\'approvvigionamento?',
     sourcingQuestionBody: 'Il nostro team export risponde a domande tecniche e commerciali su gradi, mesh, certificazioni e documentazione psyllium.',
@@ -1314,7 +1314,7 @@ export const copy: Record<LanguageCode, {
     blogTopicsLabel: 'Argomenti:', blogAllLabel: 'Tutti', blogTopicLabel: 'Argomento',
     blogAuthorLabel: 'Autore', blogCategoryLabel: 'Categoria',
     sourceLocation: 'Siddhpur, Gujarat, India', relatedArticles: 'Articoli correlati',
-    regionKeyBuyers: 'Segmenti di acquirenti chiave', regionRegulatory: 'Contesto normativo', ctaSampleRequest: 'Richiedi un campione gratuito', ctaSpecSheet: 'Scarica la scheda tecnica',
+    regionKeyBuyers: 'Segmenti di acquirenti chiave', regionRegulatory: 'Contesto normativo', ctaSampleRequest: 'Richiedi revisione campione', ctaSpecSheet: 'Scarica la scheda tecnica',
     industryBuyerApp: 'Applicazione acquirente', industryRequestQuote: 'Richiedi preventivo applicazione',
     industryMatchGrade: 'Abbina la tua applicazione al grado, mesh, imballaggio e documenti giusti.',
     industryUseCases: 'Applicazioni comuni', industryKeySpecs: 'Specifiche chiave',
@@ -1332,13 +1332,13 @@ export const copy: Record<LanguageCode, {
     specTitle: 'Solicitar cotação bulk', requestQuoteCta: 'Solicitar Cotação de Produto',
     viewApplicationsCta: 'Ver Aplicações', supplyFitLabel: 'Adequação de fornecimento',
     requestQuoteBandTitle: 'Obtenha preços, amostras e documentos para este produto.',
-    requestQuoteBandLead: 'Compartilhe grau, mesh, embalagem, porto de destino e volume mensal. Responderemos em 24 horas com preços e COA de amostra.',
+    requestQuoteBandLead: 'Compartilhe grau, mesh, embalagem, porto de destino e volume mensal. Respondemos em 48 horas com preço, documentos, opções de amostra de 1 kg e plano de prazo.',
     complianceTitle: 'Cada documento que sua equipe de QA solicitará.',
     complianceLead: 'Parâmetros de COA, origem do lote, microbiologia, metais pesados e documentação completa de exportação — compartilhados antes do envio da amostra, não após a assinatura do pedido.',
     complianceChecklist: 'Lista de verificação do comprador',
     complianceChecklistLead: 'Solicite documentos atualizados por produto, lote e mercado de destino antes de confirmar um pedido bulk.',
     faqLead: 'MOQ, diferenças de grau, conformidade com farmacopeia, documentação, prazos e o que acontece entre o pedido e o envio.',
-    contactTitle: 'Fale com o setor de exportação.', contactLead: 'Compartilhe produto, volume, destino e grau. Respondemos em 24 horas.',
+    contactTitle: 'Fale com o setor de exportação.', contactLead: 'Compartilhe produto, volume, destino e grau. Respondemos em 48 horas com preço, documentos, opções de amostra de 1 kg e plano de prazo.',
     productsListTitle: 'Seis graus de psyllium. Todos prontos para exportação.',
     productsListLead: 'De 85% qualidade alimentar a 99% USP/EP/IP farmacêutico. Mesh personalizada, embalagem e COA completo por remessa.',
     blogTitle: 'Guias de sourcing para compradores de psyllium.',
@@ -1346,10 +1346,10 @@ export const copy: Record<LanguageCode, {
     heroBadge: 'Fabricante de psyllium · Gujarat, Índia',
     heroTitle: 'Psyllium bulk para fabricantes farmacêuticos, de suplementos e alimentares.',
     heroBody: 'Obtemos, moemos e enviamos casca de psyllium, pó e semente — correspondente às suas especificações de pureza, mesh e documentação. O que cotamos é o que enviamos.',
-    heroTrustCoa: 'COA por remessa', heroLeadTimeLabel: 'Prazo de entrega', heroSampleLabel: 'Amostra',
-    heroLeadTimeValue: '7 dias após confirmação', heroSampleValue: '100–500 g com COA, enviado em 5 dias',
+    heroTrustCoa: 'Documentos do lote antes do despacho', heroLeadTimeLabel: 'Prazo de entrega', heroSampleLabel: 'Amostra',
+    heroLeadTimeValue: 'Planejado por grau e porto', heroSampleValue: 'Disponíveis para graus compatíveis',
     heroCtaWhatsApp: 'WhatsApp', statCapacityLabel: 'Capacidade de processamento anual',
-    statHistoryLabel: 'anos de experiência em fabricação', statLeadLabel: 'Pedido ao envio', statMoqLabel: 'Quantidade mínima do pedido',
+    statHistoryLabel: 'anos de experiência em fabricação', statLeadLabel: 'Revisão documental do lote', statMoqLabel: 'Mundra · Kandla · JNPT',
     hpProductsTitle: 'Produtos de psyllium para compradores bulk.',
     hpProductsBody: 'Sete linhas de produto. 85% a 99% de pureza. Grau, mesh e conformidade farmacopeia adaptados à sua formulação.',
     hpWhyTitle: 'O que nos diferencia de um exportador comercial.',
@@ -1361,8 +1361,8 @@ export const copy: Record<LanguageCode, {
     hpDiff3Body: 'Processamos internamente. Não compramos produto acabado e revendemos. O grau que você especifica é o grau produzido para o seu lote — não reembalado do estoque de outra pessoa.',
     hpDiff4Title: 'Documentação completa antes do despacho',
     hpDiff4Body: 'COA, certificado de origem, fitossanitário, fumigação, MSDS e declaração de alérgenos por remessa. Tudo compartilhado antes do despacho — revisado pela sua equipe de QA antes que os contêineres se movam.',
-    hpDiff5Title: 'Peça qualquer quantidade',
-    hpDiff5Body: 'Sem pedido mínimo. Fornecemos amostras de 1 KG para testes laboratoriais, lotes de teste de 5 KG e contêineres completos de 20 MT. Peça o que precisar — escale quando estiver pronto.',
+    hpDiff5Title: 'Cotação após revisão de amostra',
+    hpDiff5Body: 'O MOQ começa em 1 kg para todos os graus. Embalagem, testes, documentos de destino e planejamento de lotes a granel são revisados antes da cotação.',
     hpProcessTitle: 'Da semente à embalagem pronta para exportação.', hpProcessStepLabel: '5 etapas · um lote',
     hpStep1Title: 'Sourcing', hpStep1Body: 'Semente de psyllium obtida de fazendas contratadas em Unjha e Norte de Gujarat — a principal região de cultivo de psyllium do mundo. Registros de origem mantidos por lote.',
     hpStep2Title: 'Limpeza', hpStep2Body: 'Semente limpa e classificada antes da moagem. Remoção de pedras, separação por peneira e inspeção magnética em cada etapa para reduzir materiais estranhos.',
@@ -1372,29 +1372,29 @@ export const copy: Record<LanguageCode, {
     hpCredTitle: 'Registrado nos órgãos que importam para sua equipe de QA.', hpIecActive: 'Ativo · Código de Importação e Exportação',
     hpFaqTitle: 'Perguntas que recebemos antes de cada primeiro pedido.',
     hpFaqBody: 'MOQ, diferenças de grau, conformidade farmacopeia, pacote de documentação — respondidas diretamente.',
-    hpContactTitle: 'Compartilhe sua especificação. Respondemos em 24 horas.',
+    hpContactTitle: 'Compartilhe sua especificação para revisão.',
     hpContactBody: 'Grau, mesh, embalagem, porto de destino, volume mensal — envie o que você tem. Responderemos com preços, um COA de amostra e opções de envio de amostras.',
     hpContactEmailLabel: 'Email', hpContactResponseLabel: 'Tempo de resposta',
-    hpContactResponseValue: 'Normalmente em 4 horas (horário comercial IST)', hpGetQuote: 'Solicitar Cotação',
+    hpContactResponseValue: 'Em 48 horas', hpGetQuote: 'Solicitar Cotação',
     labelProducts: 'Produtos', labelWhyUs: 'Por que RM Psyllium', labelProcess: 'Processo',
     labelCredentials: 'Credenciais', labelStepsOne: '5 etapas · um lote', labelContact: 'Contato',
     productsPageKicker: 'Todos os produtos', productsPageH1Suffix: 'do Gujarat, Índia.',
     productsPageCapacityLabel: 'Capacidade anual', productsPagePurityLabel: 'Graus de pureza',
-    productsPageMoqLabel: 'Ped. mínimo · FOB Mundra', productsPageGradeKicker: 'Comparação de graus',
+    productsPageMoqLabel: 'MOQ para todos os graus', productsPageGradeKicker: 'Comparação de graus',
     productsPageGradeTitle: 'Casca de psyllium: resumo de graus', productsPageTableNote: 'Parâmetros completos de COA disponíveis por produto e lote.',
     productsPageViewQuality: 'Ver documentos de qualidade →', productsPageCtaTitle: 'Compartilhe sua especificação. Obtenha uma cotação.',
-    productsPageCtaBody: 'Informe produto, grau, mesh, embalagem, destino e volume mensal. Respondemos em 24 horas com preços e disponibilidade.',
-    qualityCoaStatLabel: 'Parâmetros de teste COA', qualityFssaiStatLabel: 'Instalação registrada',
-    qualityApedaStatLabel: 'Autorização de exportação registrada', qualityDocTypesLabel: 'Tipos de documentação',
-    qualityCredTitle: 'Credenciais que sua equipe de compras solicitará.',
-    qualityCredLead: 'Registro de instalação FSSAI, autorização de exportação APEDA, listagem Spices Board e IEC ativo. Certificados atuais disponíveis mediante solicitação antes da amostragem.',
-    qualityBadgeRegistered: 'Registrado', qualityBadgeActive: 'Ativo',
-    qualityFssaiDesc: 'Autoridade de Segurança e Padrões Alimentares da Índia — registro de instalação',
-    qualityApedaDesc: 'Autoridade de Desenvolvimento de Exportação de Produtos Agrícolas e Processados',
-    qualitySpicesBoardDesc: 'Conselho de Especiarias da Índia — registro de qualidade para exportação',
-    qualityIecDesc: 'Código de Importação e Exportação — ativo para todos os envios de exportação',
+    productsPageCtaBody: 'Informe produto, grau, mesh, embalagem, destino e volume mensal. Respondemos em 48 horas com preço, disponibilidade, opções de amostra de 1 kg e plano de prazo.',
+    qualityCoaStatLabel: 'COA de amostra antes da cotação', qualityFssaiStatLabel: 'Grau, malha, pureza, embalagem',
+    qualityApedaStatLabel: 'Checklist de exportação antes do pedido', qualityDocTypesLabel: 'Tipos de documentação',
+    qualityCredTitle: 'Documentos que sua equipe de compras pode revisar.',
+    qualityCredLead: 'Revise os documentos do lote antes do PO: COA de amostra, especificação do produto, origem, opções de embalagem e checklist documental do destino.',
+    qualityBadgeRegistered: 'Revisão', qualityBadgeActive: 'Disponível',
+    qualityFssaiDesc: 'COA de amostra alinhado ao grau e aos parâmetros solicitados',
+    qualityApedaDesc: 'Especificação do produto com pureza, mesh, umidade, cinzas, microbiologia e metais pesados',
+    qualitySpicesBoardDesc: 'Origem, codificação do lote, embalagem e documentos de despacho',
+    qualityIecDesc: 'Checklist documental do destino revisado antes da cotação',
     qualityCtaTitle: 'Precisa de documentos antes de pedir?',
-    qualityCtaBody: 'Envie-nos email com seu produto, requisitos do lote e destino. Compartilharemos COA atual, cópias de certificados e status de documentação em 24 horas.',
+    qualityCtaBody: 'Envie-nos email com produto, requisitos do lote e destino. Revisaremos COA de amostra, especificação, origem, opções de embalagem e checklist documental antes do pedido.',
     qualityCtaEmailBtn: 'Email setor de exportação', contactResponseTimeLabel: 'Tempo de resposta',
     contactMinOrderLabel: 'Pedido mínimo', contactExportDeskLabel: 'Setor de exportação',
     contactFacilityLabel: 'Endereço da instalação', contactCapacityLabel: 'Capacidade',
@@ -1402,14 +1402,14 @@ export const copy: Record<LanguageCode, {
     faqPageAnswered: 'respondidas.', faqPageCommonTitle: 'Perguntas comuns dos compradores.',
     faqPageCommonBody: 'Tudo que você precisa saber antes de fazer seu primeiro pedido — graus, documentação, prazos e conformidade.',
     faqPageStillHaveQ: 'Ainda tem dúvidas?', faqPageTalkExport: 'Fale com o setor de exportação',
-    faqPageTalkBody: 'Compartilhe produto, grau e destino. Respondemos em 24 horas.',
+    faqPageTalkBody: 'Compartilhe produto, grau e destino. Confirmaremos opções de amostra, documentos, preços e prazo.',
     faqPageWaBtn: 'WhatsApp', faqPageEmailBtn: 'Email setor de exportação', faqPageQuickFacts: 'Dados rápidos',
     faqPageMoqFact: 'MOQ', faqPageCapacityFact: 'Capacidade', faqPageLeadFact: 'Prazo',
     faqPagePortsFact: 'Portos', faqPageGradesFact: 'Graus', faqPageSampleFact: 'Amostra',
     faqPageMinOrderLabel: 'Pedido mínimo', faqPageLeadTimeLabel: 'Prazo de entrega', faqPagePurityLabel: 'Graus de pureza',
-    footerBrandDesc: 'RM Psyllium LLP é um fabricante direto e exportador a granel de casca, pó e sementes de psyllium premium. Operando a partir de Siddhpur, Gujarat, nossa instalação possui capacidade anual de 2.000 MT, fornecendo graus farmacêutico (USP/EP), alimentício e forrageiro globalmente. MOQ: 1 KG com COA certificado pelo laboratório NABL por remessa.',
+    footerBrandDesc: 'RM Psyllium LLP é fabricante e fornecedor bulk em Siddhpur, Gujarat, de casca de psyllium, pó de casca, sementes, khakha powder e ração bovina, com 2.000 MT de capacidade anual de processamento para compradores de exportação. Compradores podem revisar COA de amostra, especificações do produto, origem, opções de embalagem e checklist documental antes do pedido.',
     footerApplications: 'Aplicações', footerResources: 'Recursos', footerRequestQuote: 'Solicitar Cotação', footerSampleRequest: 'Solicitar Amostra', footerPharma: 'Farmacêutico & Nutracêutico', footerFood: 'Alimentos & Panificação', footerAnimalFeed: 'Ração Animal', footerIndustrial: 'Industrial',
-    sbTitle: 'Solicitar uma cotação', sbReplyTime: 'Respondemos em 24 horas (horário comercial IST)',
+    sbTitle: 'Solicitar uma cotação', sbReplyTime: 'Revisamos solicitações durante o horário comercial IST',
     sbNameLabel: 'Nome', sbEmailLabel: 'Email ou Telefone', sbEmailPlaceholder: 'email ou número WhatsApp',
     sbProductLabel: 'Interesse de produto', sbSelectProduct: 'Selecione um produto', sbCountryLabel: 'País',
     sbCompanyLabel: 'Empresa', sbMessageLabel: 'Mensagem / especificações', sbMessagePlaceholder: 'Grau, volume, certificações, prazo de entrega…',
@@ -1428,13 +1428,13 @@ export const copy: Record<LanguageCode, {
     pdSelectGrade: 'Selecione seu grau', pdByApplication: 'Por aplicação', pdCommonQuestions: 'Perguntas frequentes',
     pdFaqIntro: 'Perguntas frequentes', pdFaqIntroSuffix: 'dos compradores.',
     pdFaqDesc: 'Perguntas específicas do produto dos compradores — graus, documentação, prazos e conformidade.',
-    pdRequestQuoteLabel: 'Solicitar Cotação', pdWithin24h: 'em 24 horas.',
+    pdRequestQuoteLabel: 'Solicitar Cotação', pdWithin24h: 'após revisão.',
     pdCompareGradesTitle: 'Comparar graus de {name}', pdReadyToSource: 'Pronto para comprar {name}?',
-    pdCtaBody: 'Compartilhe grau, mesh, embalagem, destino e volume mensal. Respondemos em 24 horas com preços e disponibilidade.',
+    pdCtaBody: 'Compartilhe grau, mesh, embalagem, destino e volume mensal. Confirmaremos preços, disponibilidade, opções de amostra e prazo.',
     pdFindMyGrade: 'Encontrar meu grau ↓', pdLegendPrimary: 'Adequação primária',
     pdLegendConditional: 'Condicional — confirme com QA', pdLegendNotSuitable: 'Não adequado', pdLegendNotApplicable: 'Não aplicável',
     readyToSource: 'Pronto para comprar?', sampleCoaTitle: 'Obter amostra com COA',
-    sampleCoaBody: 'Compartilhe sua especificação — grau, malha, volume mensal e destino. Responderemos em 24 horas.',
+    sampleCoaBody: 'Compartilhe sua especificação: grau, malha, volume mensal e destino. Respondemos em 48 horas com disponibilidade de amostra de 1 kg, revisão de COA e plano de prazo.',
     moreResources: 'Mais recursos', topicsCovered: 'Tópicos abordados',
     sourcingQuestion: 'Tem alguma pergunta sobre abastecimento?',
     sourcingQuestionBody: 'Nossa equipe de exportação responde perguntas técnicas e comerciais sobre graus, malha, certificações e documentação de psyllium.',
@@ -1461,13 +1461,13 @@ export const copy: Record<LanguageCode, {
     specTitle: 'Запросить оптовое предложение', requestQuoteCta: 'Запросить цену на продукт',
     viewApplicationsCta: 'Просмотреть применение', supplyFitLabel: 'Соответствие поставки',
     requestQuoteBandTitle: 'Получите цены, образцы и документы для этого продукта.',
-    requestQuoteBandLead: 'Укажите сорт, размол, упаковку, порт назначения и ежемесячный объём. Мы ответим в течение 24 часов с ценами и образцом COA.',
+    requestQuoteBandLead: 'Укажите сорт, размол, упаковку, порт назначения и ежемесячный объём. Мы ответим в течение 48 часов с ценой, документами, вариантами образца 1 кг и планом срока.',
     complianceTitle: 'Каждый документ, который запросит ваш отдел QA.',
     complianceLead: 'Параметры COA, происхождение партии, микробиология, тяжёлые металлы и полный пакет экспортных документов — предоставляется до отправки образца, а не после подписания заказа.',
     complianceChecklist: 'Чек-лист верификации покупателя',
     complianceChecklistLead: 'Запрашивайте актуальные документы по продукту, партии и рынку назначения до подтверждения крупного заказа.',
     faqLead: 'MOQ, различия между сортами, соответствие фармакопее, документация, сроки поставки и что происходит между заказом и отгрузкой.',
-    contactTitle: 'Свяжитесь с экспортным отделом.', contactLead: 'Укажите продукт, объём, назначение и сорт. Отвечаем в течение 24 часов.',
+    contactTitle: 'Свяжитесь с экспортным отделом.', contactLead: 'Укажите продукт, объём, назначение и сорт. Мы ответим в течение 48 часов с ценой, документами, вариантами образца 1 кг и планом срока.',
     productsListTitle: 'Шесть сортов псиллиума. Все готовы к экспорту.',
     productsListLead: 'От 85% пищевого качества до 99% USP/EP/IP фармацевтического. Индивидуальный размол, упаковка и полный COA на каждую партию.',
     blogTitle: 'Руководства по закупкам для покупателей псиллиума.',
@@ -1475,10 +1475,10 @@ export const copy: Record<LanguageCode, {
     heroBadge: 'Производитель псиллиума · Гуджарат, Индия',
     heroTitle: 'Оптовый псиллиум для фармацевтических, суплементных и пищевых производителей.',
     heroBody: 'Мы закупаем, перерабатываем и отгружаем шелуху псиллиума, порошок и семена — в соответствии с вашими требованиями к чистоте, размолу и документации. Что мы предлагаем — то и отгружаем.',
-    heroTrustCoa: 'COA на каждую партию', heroLeadTimeLabel: 'Срок поставки', heroSampleLabel: 'Образец',
-    heroLeadTimeValue: '7 дней после подтверждения', heroSampleValue: '100–500 г с COA, отправка в течение 5 дней',
+    heroTrustCoa: 'Документы партии до отгрузки', heroLeadTimeLabel: 'Срок поставки', heroSampleLabel: 'Образец',
+    heroLeadTimeValue: 'Планируется по сорту и порту', heroSampleValue: 'Доступны для подходящих сортов',
     heroCtaWhatsApp: 'WhatsApp', statCapacityLabel: 'Годовая производственная мощность',
-    statHistoryLabel: 'лет производственного опыта', statLeadLabel: 'От заказа до отгрузки', statMoqLabel: 'Минимальный объём заказа',
+    statHistoryLabel: 'лет производственного опыта', statLeadLabel: 'Проверка документов партии', statMoqLabel: 'Mundra · Kandla · JNPT',
     hpProductsTitle: 'Продукты псиллиума для оптовых покупателей.',
     hpProductsBody: 'Семь продуктовых линеек. От 85% до 99% чистоты. Сорт, размол и соответствие фармакопее — под вашу рецептуру.',
     hpWhyTitle: 'Что отличает нас от торгового экспортёра.',
@@ -1490,8 +1490,8 @@ export const copy: Record<LanguageCode, {
     hpDiff3Body: 'Мы перерабатываем продукт самостоятельно. Мы не покупаем готовый продукт и не перепродаём его. Указанный вами сорт производится специально для вашей партии — не переупаковывается из чужого склада.',
     hpDiff4Title: 'Полная документация до отгрузки',
     hpDiff4Body: 'COA, сертификат происхождения, фитосанитарный, фумигационный, MSDS и декларация об аллергенах на каждую партию. Всё предоставляется до отгрузки — проверяется вашим отделом QA до движения контейнеров.',
-    hpDiff5Title: 'Заказывайте любое количество',
-    hpDiff5Body: 'Нет минимального объёма заказа. Поставляем образцы 1 кг для лабораторных испытаний, пробные партии 5 кг и полные контейнеры 20 МТ. Заказывайте столько, сколько нужно — наращивайте объёмы, когда будете готовы.',
+    hpDiff5Title: 'Предложение после проверки образца',
+    hpDiff5Body: 'MOQ начинается с 1 кг для каждого сорта. Упаковка, испытания, документы назначения и планирование оптовой партии проверяются до предложения.',
     hpProcessTitle: 'От семени до экспортной упаковки.', hpProcessStepLabel: '5 этапов · одна партия',
     hpStep1Title: 'Закупка', hpStep1Body: 'Семена псиллиума закупаются на контрактных фермах в Унджхе и Северном Гуджарате — главном регионе выращивания псиллиума в мире. Записи о происхождении ведутся по партиям.',
     hpStep2Title: 'Очистка', hpStep2Body: 'Семена очищаются и сортируются перед помолом. Камнеотборники, ситовая сепарация и магнитный контроль на каждом этапе для снижения посторонних примесей.',
@@ -1504,26 +1504,26 @@ export const copy: Record<LanguageCode, {
     hpContactTitle: 'Пришлите спецификацию. Ответим в течение 24 часов.',
     hpContactBody: 'Сорт, размол, упаковка, порт назначения, ежемесячный объём — отправьте то, что у вас есть. Ответим с ценами, образцом COA и вариантами отправки образцов.',
     hpContactEmailLabel: 'Email', hpContactResponseLabel: 'Время ответа',
-    hpContactResponseValue: 'Обычно в течение 4 часов (рабочие часы IST)', hpGetQuote: 'Запросить цену',
+    hpContactResponseValue: 'В течение 48 часов', hpGetQuote: 'Запросить цену',
     labelProducts: 'Продукты', labelWhyUs: 'Почему RM Psyllium', labelProcess: 'Процесс',
     labelCredentials: 'Сертификаты', labelStepsOne: '5 этапов · одна партия', labelContact: 'Контакт',
     productsPageKicker: 'Все продукты', productsPageH1Suffix: 'из Гуджарата, Индия.',
     productsPageCapacityLabel: 'Годовая мощность', productsPagePurityLabel: 'Степени чистоты',
-    productsPageMoqLabel: 'Мин. заказ · FOB Мундра', productsPageGradeKicker: 'Сравнение сортов',
+    productsPageMoqLabel: 'MOQ для всех сортов', productsPageGradeKicker: 'Сравнение сортов',
     productsPageGradeTitle: 'Шелуха псиллиума: обзор сортов', productsPageTableNote: 'Полные параметры COA доступны по продукту и партии.',
     productsPageViewQuality: 'Просмотреть документы качества →', productsPageCtaTitle: 'Пришлите спецификацию. Получите предложение.',
-    productsPageCtaBody: 'Укажите продукт, сорт, размол, упаковку, назначение и ежемесячный объём. Ответим в течение 24 часов с ценами и наличием.',
-    qualityCoaStatLabel: 'Параметры испытаний COA', qualityFssaiStatLabel: 'Предприятие зарегистрировано',
-    qualityApedaStatLabel: 'Экспортное разрешение получено', qualityDocTypesLabel: 'Виды документации',
-    qualityCredTitle: 'Сертификаты, которые запросит ваш отдел закупок.',
-    qualityCredLead: 'Регистрация FSSAI, экспортное разрешение APEDA, листинг Spices Board и активный IEC. Актуальные сертификаты предоставляются по запросу до отбора образцов.',
-    qualityBadgeRegistered: 'Зарегистрировано', qualityBadgeActive: 'Активен',
-    qualityFssaiDesc: 'Управление по безопасности пищевых продуктов и стандартам Индии — регистрация предприятия',
-    qualityApedaDesc: 'Управление по развитию экспорта сельскохозяйственной и переработанной продукции',
-    qualitySpicesBoardDesc: 'Совет по специям Индии — регистрация качества экспорта',
-    qualityIecDesc: 'Код импорта и экспорта — активен для всех экспортных отгрузок',
+    productsPageCtaBody: 'Укажите продукт, сорт, размол, упаковку, назначение и ежемесячный объём. Мы ответим в течение 48 часов с ценой, наличием, вариантами образца 1 кг и планом срока.',
+    qualityCoaStatLabel: 'Образец COA до предложения', qualityFssaiStatLabel: 'Сорт, сетка, чистота, упаковка',
+    qualityApedaStatLabel: 'Экспортный чеклист до PO', qualityDocTypesLabel: 'Виды документации',
+    qualityCredTitle: 'Документы, которые может проверить ваш отдел закупок.',
+    qualityCredLead: 'Проверьте документы по партии до PO: образец COA, спецификацию продукта, происхождение, варианты упаковки и чеклист документов для страны назначения.',
+    qualityBadgeRegistered: 'Проверка', qualityBadgeActive: 'Доступно',
+    qualityFssaiDesc: 'Образец COA под требуемый сорт и параметры испытаний',
+    qualityApedaDesc: 'Спецификация продукта с чистотой, mesh, влажностью, золой, микробиологией и тяжёлыми металлами',
+    qualitySpicesBoardDesc: 'Происхождение, кодировка партии, упаковка и отгрузочные документы',
+    qualityIecDesc: 'Чеклист документов для назначения проверяется до предложения',
     qualityCtaTitle: 'Нужны документы перед заказом?',
-    qualityCtaBody: 'Напишите нам с указанием продукта, требований к партии и назначения. Мы предоставим актуальный COA, копии сертификатов и статус документации в течение 24 часов.',
+    qualityCtaBody: 'Напишите нам с указанием продукта, требований к партии и назначения. Мы предоставим образец COA, спецификацию, происхождение, варианты упаковки и чеклист документов в течение 24 часов.',
     qualityCtaEmailBtn: 'Написать в экспортный отдел', contactResponseTimeLabel: 'Время ответа',
     contactMinOrderLabel: 'Минимальный заказ', contactExportDeskLabel: 'Экспортный отдел',
     contactFacilityLabel: 'Адрес предприятия', contactCapacityLabel: 'Мощность',
@@ -1531,14 +1531,14 @@ export const copy: Record<LanguageCode, {
     faqPageAnswered: 'отвечено.', faqPageCommonTitle: 'Частые вопросы покупателей.',
     faqPageCommonBody: 'Всё, что нужно знать перед первым заказом — сорта, документация, сроки поставки и соответствие требованиям.',
     faqPageStillHaveQ: 'Остались вопросы?', faqPageTalkExport: 'Связаться с экспортным отделом',
-    faqPageTalkBody: 'Укажите продукт, сорт и назначение. Отвечаем в течение 24 часов.',
+    faqPageTalkBody: 'Укажите продукт, сорт и назначение. Мы подтвердим варианты образцов, документы, цену и срок поставки.',
     faqPageWaBtn: 'WhatsApp', faqPageEmailBtn: 'Написать в экспортный отдел', faqPageQuickFacts: 'Быстрые факты',
     faqPageMoqFact: 'MOQ', faqPageCapacityFact: 'Мощность', faqPageLeadFact: 'Срок поставки',
     faqPagePortsFact: 'Порты', faqPageGradesFact: 'Сорта', faqPageSampleFact: 'Образец',
     faqPageMinOrderLabel: 'Минимальный заказ', faqPageLeadTimeLabel: 'Срок поставки', faqPagePurityLabel: 'Степени чистоты',
-    footerBrandDesc: 'RM Psyllium LLP — прямой производитель и оптовый экспортёр премиальной шелухи, порошка и семян псиллиума. Наше предприятие в Сиддхпуре (Гуджарат) имеет годовую мощность 2 000 тонн, поставляя продукцию фармацевтического (USP/EP), пищевого и кормового назначения по всему миру. Минимальный заказ (MOQ): 1 кг с сертификатом анализа NABL для каждой партии.',
+    footerBrandDesc: 'RM Psyllium LLP — производитель и оптовый поставщик в Сиддхпуре, Гуджарат, шелухи псиллиума, порошка шелухи, семян, khakha powder и кормов для КРС с годовой перерабатывающей мощностью 2 000 MT для экспортных покупателей. Покупатели могут изучить образец COA, спецификации продукта, происхождение, варианты упаковки и перечень документов до заказа.',
     footerApplications: 'Применение', footerResources: 'Ресурсы', footerRequestQuote: 'Запросить цену', footerSampleRequest: 'Запрос образца', footerPharma: 'Фарма и нутрицевтика', footerFood: 'Продукты и выпечка', footerAnimalFeed: 'Корма для животных', footerIndustrial: 'Промышленный',
-    sbTitle: 'Запросить цену', sbReplyTime: 'Отвечаем в течение 24 часов (рабочие часы IST)',
+    sbTitle: 'Запросить цену', sbReplyTime: 'Мы рассматриваем запросы в рабочие часы IST',
     sbNameLabel: 'Имя', sbEmailLabel: 'Email или телефон', sbEmailPlaceholder: 'email или номер WhatsApp',
     sbProductLabel: 'Интересующий продукт', sbSelectProduct: 'Выберите продукт', sbCountryLabel: 'Страна',
     sbCompanyLabel: 'Компания', sbMessageLabel: 'Сообщение / спецификации', sbMessagePlaceholder: 'Сорт, объём, сертификации, срок поставки…',
@@ -1563,7 +1563,7 @@ export const copy: Record<LanguageCode, {
     pdFindMyGrade: 'Найти мой сорт ↓', pdLegendPrimary: 'Основное соответствие',
     pdLegendConditional: 'Условное — подтвердите с QA', pdLegendNotSuitable: 'Не подходит', pdLegendNotApplicable: 'Не применимо',
     readyToSource: 'Готовы к закупке?', sampleCoaTitle: 'Запросить образец с COA',
-    sampleCoaBody: 'Поделитесь вашими спецификациями — сорт, сетка, ежемесячный объём и пункт назначения. Мы ответим в течение 24 часов.',
+    sampleCoaBody: 'Поделитесь спецификацией: сорт, сетка, ежемесячный объём и пункт назначения. Мы ответим в течение 48 часов с доступностью образца 1 кг, вариантами проверки COA и планом срока.',
     moreResources: 'Больше ресурсов', topicsCovered: 'Охватываемые темы',
     sourcingQuestion: 'Есть вопрос по закупкам?',
     sourcingQuestionBody: 'Наша экспортная команда отвечает на технические и коммерческие вопросы о сортах псиллиума, сетке, сертификатах и документации.',
@@ -1572,7 +1572,7 @@ export const copy: Record<LanguageCode, {
     blogTopicsLabel: 'Темы:', blogAllLabel: 'Все', blogTopicLabel: 'Тема',
     blogAuthorLabel: 'Автор', blogCategoryLabel: 'Категория',
     sourceLocation: 'Сидхпур, Гуджарат, Индия', relatedArticles: 'Похожие статьи',
-    regionKeyBuyers: 'Ключевые сегменты покупателей', regionRegulatory: 'Нормативный контекст', ctaSampleRequest: 'Запросить бесплатный образец', ctaSpecSheet: 'Скачать спецификацию',
+    regionKeyBuyers: 'Ключевые сегменты покупателей', regionRegulatory: 'Нормативный контекст', ctaSampleRequest: 'Запросить проверку образца', ctaSpecSheet: 'Скачать спецификацию',
     industryBuyerApp: 'Применение покупателем', industryRequestQuote: 'Запросить коммерческое предложение',
     industryMatchGrade: 'Подберите подходящий сорт, сетку, упаковку и документы для вашего применения.',
     industryUseCases: 'Типичные применения', industryKeySpecs: 'Ключевые характеристики',
@@ -1590,13 +1590,13 @@ export const copy: Record<LanguageCode, {
     specTitle: 'طلب عرض سعر بالجملة', requestQuoteCta: 'طلب عرض سعر للمنتج',
     viewApplicationsCta: 'عرض التطبيقات', supplyFitLabel: 'ملاءمة التوريد',
     requestQuoteBandTitle: 'احصل على أسعار وعينات ووثائق لهذا المنتج.',
-    requestQuoteBandLead: 'شارك الدرجة والمنخل والتغليف وميناء الوجهة والحجم الشهري. سنرد خلال 24 ساعة بالأسعار ونموذج COA.',
+    requestQuoteBandLead: 'شارك الدرجة والمنخل والتغليف وميناء الوجهة والحجم الشهري. نرد خلال 48 ساعة بالسعر والوثائق وخيارات عينة 1 كغ وخطة المهلة.',
     complianceTitle: 'كل وثيقة سيطلبها فريق ضمان الجودة.',
     complianceLead: 'معاملات COA وأصل الدُفعة والميكروبيولوجيا والمعادن الثقيلة والأوراق التصديرية الكاملة — مشتركة قبل شحن العينة وليس بعد توقيع أمر الشراء.',
     complianceChecklist: 'قائمة تحقق المشتري',
     complianceChecklistLead: 'اطلب الوثائق الحالية حسب المنتج والدُفعة وسوق الوجهة قبل تأكيد طلب بالجملة.',
     faqLead: 'الحد الأدنى للطلب، الفروق بين الدرجات، الامتثال للدساتير، التوثيق، مواعيد التسليم وما يحدث بين الطلب والشحن.',
-    contactTitle: 'تحدث مع مكتب التصدير.', contactLead: 'شارك المنتج والحجم والوجهة والدرجة. نرد في 24 ساعة.',
+    contactTitle: 'تحدث مع مكتب التصدير.', contactLead: 'شارك المنتج والحجم والوجهة والدرجة. نرد خلال 48 ساعة بالسعر والوثائق وخيارات عينة 1 كغ وخطة المهلة.',
     productsListTitle: 'ست درجات من السيليوم. جميعها جاهزة للتصدير.',
     productsListLead: 'من 85% جودة غذائية إلى 99% USP/EP/IP صيدلانية. منخل مخصص وتغليف وCOA كامل لكل شحنة.',
     blogTitle: 'أدلة تحديد المصادر لمشتري السيليوم.',
@@ -1604,10 +1604,10 @@ export const copy: Record<LanguageCode, {
     heroBadge: 'مصنّع سيليوم · غوجارات، الهند',
     heroTitle: 'سيليوم بالجملة لمصنعي الأدوية والمكملات الغذائية والأغذية.',
     heroBody: 'نحصل على قشور السيليوم والمسحوق والبذور ونطحنها ونشحنها — بما يتوافق مع مواصفات النقاء والمنخل والتوثيق. ما نعرضه هو ما يُشحن.',
-    heroTrustCoa: 'COA لكل شحنة', heroLeadTimeLabel: 'مدة التسليم', heroSampleLabel: 'عينة',
-    heroLeadTimeValue: '7 أيام من التأكيد', heroSampleValue: '100–500 غ مع COA، يُشحن في 5 أيام',
+    heroTrustCoa: 'وثائق الدُفعة قبل الشحن', heroLeadTimeLabel: 'مدة التسليم', heroSampleLabel: 'عينة',
+    heroLeadTimeValue: 'تُخطط حسب الدرجة والميناء', heroSampleValue: 'متاحة للدرجات المطابقة',
     heroCtaWhatsApp: 'واتساب', statCapacityLabel: 'الطاقة التصنيعية السنوية',
-    statHistoryLabel: 'عامًا من الخبرة التصنيعية', statLeadLabel: 'من الطلب إلى الشحن', statMoqLabel: 'الحد الأدنى لكمية الطلب',
+    statHistoryLabel: 'عامًا من الخبرة التصنيعية', statLeadLabel: 'مراجعة وثائق الدُفعة', statMoqLabel: 'Mundra · Kandla · JNPT',
     hpProductsTitle: 'منتجات السيليوم للمشترين بالجملة.',
     hpProductsBody: 'سبعة خطوط منتجات. من 85% إلى 99% نقاء. درجة ومنخل وامتثال للدساتير مناسب لتركيبتك.',
     hpWhyTitle: 'ما يميزنا عن مصدّر تجاري.',
@@ -1619,8 +1619,8 @@ export const copy: Record<LanguageCode, {
     hpDiff3Body: 'نعالج داخلياً. لا نشتري منتجاً جاهزاً ونعيد بيعه. الدرجة التي تحددها هي الدرجة المُنتجة لدُفعتك وليست مُعاد تعبئتها من مخزون شخص آخر.',
     hpDiff4Title: 'توثيق كامل قبل الشحن',
     hpDiff4Body: 'COA وشهادة المنشأ وشهادة صحة النبات والتبخير وMSDS وبيان المواد المسببة للحساسية لكل شحنة. كل شيء يُشارك قبل الشحن — يراجعه فريق ضمان الجودة قبل تحريك الحاويات.',
-    hpDiff5Title: 'اطلب أي كمية',
-    hpDiff5Body: 'لا حد أدنى للطلب. نوفر عينات 1 كغ لاختبارات المختبر، ودُفعات تجريبية 5 كغ، وحاويات كاملة 20 طنًا. اطلب ما تحتاجه — وسّع طلبك عندما تكون جاهزًا.',
+    hpDiff5Title: 'عرض سعر بعد مراجعة العينة',
+    hpDiff5Body: 'يبدأ MOQ من 1 كغ لكل الدرجات. نراجع التغليف والاختبارات ووثائق الوجهة وتخطيط الدفعات الكبيرة قبل عرض السعر.',
     hpProcessTitle: 'من البذرة إلى التغليف الجاهز للتصدير.', hpProcessStepLabel: '5 خطوات · دُفعة واحدة',
     hpStep1Title: 'التوريد', hpStep1Body: 'بذور السيليوم مُوردة من مزارع متعاقدة في أونجها وشمال غوجارات — المنطقة الرئيسية لزراعة السيليوم في العالم. سجلات المنشأ محفوظة لكل دُفعة.',
     hpStep2Title: 'التنظيف', hpStep2Body: 'البذور مُنظَّفة ومُصنَّفة قبل الطحن. إزالة الحجارة والفصل بالمنخل والفحص المغناطيسي في كل مرحلة لتقليل المواد الغريبة.',
@@ -1630,29 +1630,29 @@ export const copy: Record<LanguageCode, {
     hpCredTitle: 'مسجل لدى الجهات التي يهتم بها فريق ضمان الجودة.', hpIecActive: 'نشط · كود الاستيراد والتصدير',
     hpFaqTitle: 'أسئلة نتلقاها قبل كل طلب أول.',
     hpFaqBody: 'الحد الأدنى للطلب، فروق الدرجات، امتثال الدساتير، حزمة التوثيق — إجابات مباشرة.',
-    hpContactTitle: 'شارك مواصفاتك. نرد خلال 24 ساعة.',
+    hpContactTitle: 'شارك مواصفاتك للمراجعة.',
     hpContactBody: 'الدرجة والمنخل والتغليف وميناء الوجهة والحجم الشهري — أرسل ما لديك. سنرد بالأسعار ونموذج COA وخيارات إرسال العينات.',
     hpContactEmailLabel: 'البريد الإلكتروني', hpContactResponseLabel: 'وقت الرد',
-    hpContactResponseValue: 'عادةً خلال 4 ساعات (ساعات العمل IST)', hpGetQuote: 'طلب عرض سعر',
+    hpContactResponseValue: 'خلال 48 ساعة', hpGetQuote: 'طلب عرض سعر',
     labelProducts: 'المنتجات', labelWhyUs: 'لماذا RM Psyllium', labelProcess: 'العملية',
     labelCredentials: 'الاعتمادات', labelStepsOne: '5 خطوات · دُفعة واحدة', labelContact: 'تواصل معنا',
     productsPageKicker: 'جميع المنتجات', productsPageH1Suffix: 'من غوجارات، الهند.',
     productsPageCapacityLabel: 'الطاقة السنوية', productsPagePurityLabel: 'درجات النقاء',
-    productsPageMoqLabel: 'الحد الأدنى · FOB موندرا', productsPageGradeKicker: 'مقارنة الدرجات',
+    productsPageMoqLabel: 'MOQ لكل الدرجات', productsPageGradeKicker: 'مقارنة الدرجات',
     productsPageGradeTitle: 'قشور السيليوم: ملخص الدرجات', productsPageTableNote: 'معاملات COA الكاملة متاحة لكل منتج ودُفعة.',
     productsPageViewQuality: 'عرض وثائق الجودة →', productsPageCtaTitle: 'شارك مواصفاتك. احصل على عرض سعر.',
-    productsPageCtaBody: 'أخبرنا بالمنتج والدرجة والمنخل والتغليف والوجهة والحجم الشهري. نرد خلال 24 ساعة بالأسعار والتوافر.',
-    qualityCoaStatLabel: 'معاملات اختبار COA', qualityFssaiStatLabel: 'المنشأة مسجلة',
-    qualityApedaStatLabel: 'تصريح التصدير مسجل', qualityDocTypesLabel: 'أنواع التوثيق',
-    qualityCredTitle: 'الاعتمادات التي سيطلبها فريق المشتريات.',
-    qualityCredLead: 'تسجيل منشأة FSSAI وتصريح تصدير APEDA وقيد Spices Board وIEC نشط. شهادات حالية متاحة بناءً على الطلب قبل أخذ العينات.',
-    qualityBadgeRegistered: 'مسجل', qualityBadgeActive: 'نشط',
-    qualityFssaiDesc: 'هيئة سلامة وجودة الغذاء في الهند — تسجيل المنشأة',
-    qualityApedaDesc: 'هيئة تطوير تصدير المنتجات الزراعية والمصنعة',
-    qualitySpicesBoardDesc: 'مجلس البهارات في الهند — تسجيل جودة التصدير',
-    qualityIecDesc: 'كود الاستيراد والتصدير — نشط لجميع شحنات التصدير',
+    productsPageCtaBody: 'أخبرنا بالمنتج والدرجة والمنخل والتغليف والوجهة والحجم الشهري. نرد خلال 48 ساعة بالسعر والتوافر وخيارات عينة 1 كغ وخطة المهلة.',
+    qualityCoaStatLabel: 'عينة COA قبل عرض السعر', qualityFssaiStatLabel: 'الدرجة والمنخل والنقاء والتغليف',
+    qualityApedaStatLabel: 'قائمة التصدير قبل PO', qualityDocTypesLabel: 'أنواع التوثيق',
+    qualityCredTitle: 'وثائق يمكن لفريق المشتريات مراجعتها.',
+    qualityCredLead: 'راجع وثائق الدفعة قبل أمر الشراء: COA عينة، مواصفة المنتج، تفاصيل المنشأ، خيارات التغليف، وقائمة وثائق الوجهة.',
+    qualityBadgeRegistered: 'مراجعة', qualityBadgeActive: 'متاح',
+    qualityFssaiDesc: 'COA عينة مطابق للدرجة ومعاملات الاختبار المطلوبة',
+    qualityApedaDesc: 'مواصفة المنتج مع النقاء والمنخل والرطوبة والرماد والميكروبيولوجيا والمعادن الثقيلة',
+    qualitySpicesBoardDesc: 'المنشأ وترميز الدفعة والتغليف ووثائق الإرسال',
+    qualityIecDesc: 'مراجعة قائمة وثائق الوجهة قبل عرض السعر',
     qualityCtaTitle: 'هل تحتاج وثائق قبل الطلب?',
-    qualityCtaBody: 'راسلنا بمنتجك ومتطلبات الدُفعة والوجهة. سنشارك COA الحالي ونسخ الشهادات وحالة التوثيق خلال 24 ساعة.',
+    qualityCtaBody: 'راسلنا بالمنتج ومتطلبات الدفعة والوجهة. سنراجع COA العينة والمواصفة والمنشأ وخيارات التغليف وقائمة الوثائق قبل أمر الشراء.',
     qualityCtaEmailBtn: 'مراسلة مكتب التصدير', contactResponseTimeLabel: 'وقت الرد',
     contactMinOrderLabel: 'الحد الأدنى للطلب', contactExportDeskLabel: 'مكتب التصدير',
     contactFacilityLabel: 'عنوان المنشأة', contactCapacityLabel: 'الطاقة الإنتاجية',
@@ -1660,14 +1660,14 @@ export const copy: Record<LanguageCode, {
     faqPageAnswered: 'تمت الإجابة.', faqPageCommonTitle: 'الأسئلة الشائعة للمشترين.',
     faqPageCommonBody: 'كل ما تحتاج معرفته قبل تقديم طلبك الأول — الدرجات والتوثيق ومواعيد التسليم والامتثال.',
     faqPageStillHaveQ: 'لا تزال لديك أسئلة?', faqPageTalkExport: 'تحدث مع مكتب التصدير',
-    faqPageTalkBody: 'شارك المنتج والدرجة والوجهة. نرد خلال 24 ساعة.',
+    faqPageTalkBody: 'شارك المنتج والدرجة والوجهة. سنؤكد خيارات العينة والوثائق والأسعار وموعد التسليم.',
     faqPageWaBtn: 'واتساب', faqPageEmailBtn: 'مراسلة مكتب التصدير', faqPageQuickFacts: 'معلومات سريعة',
     faqPageMoqFact: 'الحد الأدنى', faqPageCapacityFact: 'الطاقة', faqPageLeadFact: 'التسليم',
     faqPagePortsFact: 'الموانئ', faqPageGradesFact: 'الدرجات', faqPageSampleFact: 'العينة',
     faqPageMinOrderLabel: 'الحد الأدنى للطلب', faqPageLeadTimeLabel: 'مدة التسليم', faqPagePurityLabel: 'درجات النقاء',
-    footerBrandDesc: 'شركة RM Psyllium LLP هي مصنّع مباشر ومصدّر بالجملة لقشور ومسحوق وبذور السيليوم الممتازة. تعمل من سيدهبور، غوجارات، وتبلغ الطاقة السنوية لمنشأتنا 2000 طن متري لتزويد درجات الأدوية (USP/EP) والأغذية والأعلاف عالميًا. الحد الأدنى للطلب: 1 كجم مع شهادة تحليل معتمدة من مختبر NABL لكل شحنة.',
+    footerBrandDesc: 'شركة RM Psyllium LLP هي مصنّع ومورّد بالجملة في سيدهبور، غوجارات لقشور السيليوم ومسحوق القشور والبذور وkhakha powder وأعلاف الأبقار، بطاقة معالجة سنوية 2,000 MT للمشترين التصديريين. يمكن للمشترين مراجعة COA عينة ومواصفات المنتج وتفاصيل المنشأ وخيارات التعبئة وقائمة وثائق الوجهة قبل أمر الشراء.',
     footerApplications: 'التطبيقات', footerResources: 'الموارد', footerRequestQuote: 'طلب عرض سعر', footerSampleRequest: 'طلب عينة', footerPharma: 'الدواء والمكملات الغذائية', footerFood: 'الغذاء والمخبوزات', footerAnimalFeed: 'الأعلاف الحيوانية', footerIndustrial: 'الصناعي',
-    sbTitle: 'طلب عرض سعر', sbReplyTime: 'نرد خلال 24 ساعة (ساعات العمل IST)',
+    sbTitle: 'طلب عرض سعر', sbReplyTime: 'نراجع الطلبات خلال ساعات العمل IST',
     sbNameLabel: 'الاسم', sbEmailLabel: 'البريد الإلكتروني أو الهاتف', sbEmailPlaceholder: 'البريد الإلكتروني أو رقم واتساب',
     sbProductLabel: 'المنتج المهتم به', sbSelectProduct: 'اختر منتجاً', sbCountryLabel: 'الدولة',
     sbCompanyLabel: 'الشركة', sbMessageLabel: 'الرسالة / المواصفات', sbMessagePlaceholder: 'الدرجة، الحجم، الشهادات، جدول التسليم…',
@@ -1686,13 +1686,13 @@ export const copy: Record<LanguageCode, {
     pdSelectGrade: 'اختر درجتك', pdByApplication: 'حسب التطبيق', pdCommonQuestions: 'الأسئلة الشائعة',
     pdFaqIntro: 'أسئلة متكررة', pdFaqIntroSuffix: 'من المشترين.',
     pdFaqDesc: 'أسئلة خاصة بالمنتج من المشترين — الدرجات والتوثيق ومواعيد التسليم والامتثال.',
-    pdRequestQuoteLabel: 'طلب عرض سعر', pdWithin24h: 'خلال 24 ساعة.',
+    pdRequestQuoteLabel: 'طلب عرض سعر', pdWithin24h: 'بعد المراجعة.',
     pdCompareGradesTitle: 'مقارنة درجات {name}', pdReadyToSource: 'مستعد لاستيراد {name}?',
-    pdCtaBody: 'شارك الدرجة والمنخل والتغليف والوجهة والحجم الشهري. نرد خلال 24 ساعة بالأسعار والتوافر.',
+    pdCtaBody: 'شارك الدرجة والمنخل والتغليف والوجهة والحجم الشهري. سنؤكد الأسعار والتوافر وخيارات العينة وموعد التسليم.',
     pdFindMyGrade: 'ابحث عن درجتي ↓', pdLegendPrimary: 'الملاءمة الأساسية',
     pdLegendConditional: 'مشروط — تأكد مع ضمان الجودة', pdLegendNotSuitable: 'غير مناسب', pdLegendNotApplicable: 'غير قابل للتطبيق',
     readyToSource: 'مستعد للاستيراد؟', sampleCoaTitle: 'احصل على عينة مع COA',
-    sampleCoaBody: 'شارك مواصفاتك — الدرجة والمنخل والحجم الشهري والوجهة. سنرد خلال 24 ساعة.',
+    sampleCoaBody: 'شارك مواصفاتك: الدرجة والمنخل والحجم الشهري والوجهة. نرد خلال 48 ساعة بتوفر عينة 1 كغ وخيارات مراجعة COA وخطة المهلة.',
     moreResources: 'موارد إضافية', topicsCovered: 'الموضوعات المشمولة',
     sourcingQuestion: 'هل لديك سؤال حول التوريد؟',
     sourcingQuestionBody: 'يجيب فريق التصدير لدينا على الأسئلة التقنية والتجارية حول درجات السيليوم والمنخل والشهادات والتوثيق.',
@@ -1719,24 +1719,24 @@ export const copy: Record<LanguageCode, {
     specTitle: '批量询价', requestQuoteCta: '产品询价',
     viewApplicationsCta: '查看应用', supplyFitLabel: '供应适配性',
     requestQuoteBandTitle: '获取本产品的报价、样品和文件。',
-    requestQuoteBandLead: '提供规格、目数、包装、目的港和月度用量，我们将在24小时内回复报价和样品COA。',
+    requestQuoteBandLead: '提供规格、目数、包装、目的港和月度用量。我们会在48小时内回复价格、文件需求、1 kg样品选项和交期计划。',
     complianceTitle: '您的质量团队所需的每一份文件。',
     complianceLead: 'COA参数、批次来源、微生物学、重金属及完整出口文件——在样品发货前提供，而非在采购订单签署后。',
     complianceChecklist: '买方核查清单',
     complianceChecklistLead: '在确认批量订单前，请按产品、批次和目的市场索取当前文件。',
     faqLead: '最低订量、规格差异、药典合规、文件要求、交货期及从下单到发货的全流程。',
-    contactTitle: '联系出口部门。', contactLead: '提供产品、数量、目的地和规格，我们在24小时内回复。',
+    contactTitle: '联系出口部门。', contactLead: '提供产品、数量、目的地和规格。我们会在48小时内回复价格、文件、1 kg样品选项和交期计划。',
     productsListTitle: '六种车叶草规格，全部出口就绪。',
-    productsListLead: '从85%食品级到99% USP/EP/IP制药级，提供定制目数、包装及每批次完整COA。',
+    productsListLead: '从85%食品级到99%高纯度洋车前子壳。目数、包装和COA表述根据检测批次审核。',
     blogTitle: '车叶草买家采购指南。',
     blogLead: '规格选择、文件要求，以及在首次订购前应向供应商提出的问题。',
     heroBadge: '车叶草制造商 · 印度古吉拉特邦',
     heroTitle: '为制药、保健品及食品制造商提供批量车叶草。',
     heroBody: '我们采购、研磨并发运车叶草皮、粉末和种子——匹配您的纯度规格、目数和文件要求。我们报价即所发。',
-    heroTrustCoa: '每批COA', heroLeadTimeLabel: '交货期', heroSampleLabel: '样品',
-    heroLeadTimeValue: '确认后7天', heroSampleValue: '100–500克含COA，5天内发出',
+    heroTrustCoa: '发货前批次文件', heroLeadTimeLabel: '交货期', heroSampleLabel: '样品',
+    heroLeadTimeValue: '按等级和港口规划', heroSampleValue: '适配等级可提供',
     heroCtaWhatsApp: 'WhatsApp', statCapacityLabel: '年加工产能',
-    statHistoryLabel: '年生产制造经验', statLeadLabel: '下单到发货', statMoqLabel: '最低订量',
+    statHistoryLabel: '年生产制造经验', statLeadLabel: '批次文件审核', statMoqLabel: 'Mundra · Kandla · JNPT',
     hpProductsTitle: '面向批量买家的车叶草产品。',
     hpProductsBody: '七条产品线，纯度85%至99%，规格、目数和药典合规性均根据您的配方量身定制。',
     hpWhyTitle: '我们与贸易型出口商的区别。',
@@ -1747,9 +1747,9 @@ export const copy: Record<LanguageCode, {
     hpDiff3Title: '制造专业知识，非贸易差价',
     hpDiff3Body: '我们自主加工，不购买成品转卖。您指定的规格即为您的批次专门生产——不是从他人库存中重新包装。',
     hpDiff4Title: '发货前完整文件',
-    hpDiff4Body: '每批次提供COA、原产地证、植物检疫证书、熏蒸证书、MSDS及过敏原声明。所有文件在发货前共享——在集装箱移动前由您的质量团队审核。',
-    hpDiff5Title: '任意数量均可订购',
-    hpDiff5Body: '无最低起订量。我们提供1公斤实验室检测样品、5公斤试用批次以及20吨整柜订单。按需订购，随时扩量。',
+    hpDiff4Body: 'COA、原产地证、植物检疫证书、熏蒸证书、MSDS及过敏原声明按产品、批次和目的地要求审核。发货前可供QA团队查看。',
+    hpDiff5Title: '样品审核后报价',
+    hpDiff5Body: '所有等级 MOQ 从 1 kg 起。包装、检测、目的地文件和大货批次计划会在报价前审核。',
     hpProcessTitle: '从种子到出口就绪包装。', hpProcessStepLabel: '5个步骤 · 一批次',
     hpStep1Title: '采购', hpStep1Body: '车叶草种子来自西德普尔和北古吉拉特的合同农场——世界主要车叶草种植区域。每批次保留来源记录。',
     hpStep2Title: '清洁', hpStep2Body: '研磨前对种子进行清洁和分级。各阶段进行去石、筛分和磁力检测，以减少异物。',
@@ -1759,29 +1759,29 @@ export const copy: Record<LanguageCode, {
     hpCredTitle: '在质量团队所关注的机构完成注册。', hpIecActive: '有效 · 进出口代码',
     hpFaqTitle: '我们在每次首单前收到的问题。',
     hpFaqBody: '最低订量、规格差异、药典合规、文件套件——直接回答。',
-    hpContactTitle: '发送您的规格，我们24小时内回复。',
+    hpContactTitle: '发送您的规格用于审核。',
     hpContactBody: '规格、目数、包装、目的港、月度用量——发送您已有的信息。我们将回复报价、样品COA及样品寄送选项。',
     hpContactEmailLabel: '电子邮件', hpContactResponseLabel: '响应时间',
-    hpContactResponseValue: '通常在4小时内（IST工作时间）', hpGetQuote: '询价',
+    hpContactResponseValue: '48小时内', hpGetQuote: '询价',
     labelProducts: '产品', labelWhyUs: '为何选择RM Psyllium', labelProcess: '流程',
     labelCredentials: '资质', labelStepsOne: '5个步骤 · 一批次', labelContact: '联系我们',
     productsPageKicker: '所有产品', productsPageH1Suffix: '来自印度古吉拉特邦。',
     productsPageCapacityLabel: '年产能', productsPagePurityLabel: '纯度规格',
-    productsPageMoqLabel: '最低订量 · FOB蒙德拉', productsPageGradeKicker: '规格对比',
+    productsPageMoqLabel: '所有等级 MOQ', productsPageGradeKicker: '规格对比',
     productsPageGradeTitle: '车叶草皮：规格汇总', productsPageTableNote: '可按产品和批次提供完整COA参数。',
     productsPageViewQuality: '查看质量文件 →', productsPageCtaTitle: '分享您的规格，获取报价。',
-    productsPageCtaBody: '告知我们产品、规格、目数、包装、目的地和月度用量，我们将在24小时内回复报价和供货情况。',
-    qualityCoaStatLabel: 'COA检测参数', qualityFssaiStatLabel: '工厂已注册',
-    qualityApedaStatLabel: '出口许可已注册', qualityDocTypesLabel: '文件类型',
-    qualityCredTitle: '您的采购团队将要求提供的资质。',
-    qualityCredLead: 'FSSAI工厂注册、APEDA出口许可、Spices Board登记及有效IEC。取样前可按需提供当前证书。',
-    qualityBadgeRegistered: '已注册', qualityBadgeActive: '有效',
-    qualityFssaiDesc: '印度食品安全和标准局——工厂注册',
-    qualityApedaDesc: '农业和加工食品出口开发局',
-    qualitySpicesBoardDesc: '印度香料局——出口质量注册',
-    qualityIecDesc: '进出口代码——对所有出口货运有效',
+    productsPageCtaBody: '告知我们产品、规格、目数、包装、目的地和月度用量。我们会在48小时内回复价格、供货情况、1 kg样品选项和交期计划。',
+    qualityCoaStatLabel: '报价前样品COA', qualityFssaiStatLabel: '等级、目数、纯度、包装',
+    qualityApedaStatLabel: 'PO前出口清单', qualityDocTypesLabel: '文件类型',
+    qualityCredTitle: '采购团队可审核的文件。',
+    qualityCredLead: 'PO前审核该批次文件：样品COA、产品规格、原产地信息、包装选项和目的地文件清单。',
+    qualityBadgeRegistered: '审核', qualityBadgeActive: '可提供',
+    qualityFssaiDesc: '按所需等级和检测参数匹配的样品COA',
+    qualityApedaDesc: '包含纯度、目数、水分、灰分、微生物和重金属参数的产品规格',
+    qualitySpicesBoardDesc: '原产地、批次编码、包装和发运文件',
+    qualityIecDesc: '报价前审核目的地文件清单',
     qualityCtaTitle: '下单前需要文件？',
-    qualityCtaBody: '发送邮件告知您的产品、批次要求和目的地。我们将在24小时内提供当前COA、证书副本和文件状态。',
+    qualityCtaBody: '发送邮件告知产品、批次要求和目的地。采购订单前我们会审核样品COA、规格、原产地、包装选项和文件清单需求。',
     qualityCtaEmailBtn: '发邮件给出口部', contactResponseTimeLabel: '响应时间',
     contactMinOrderLabel: '最低订量', contactExportDeskLabel: '出口部门',
     contactFacilityLabel: '工厂地址', contactCapacityLabel: '产能',
@@ -1789,14 +1789,14 @@ export const copy: Record<LanguageCode, {
     faqPageAnswered: '已回答。', faqPageCommonTitle: '买家常见问题。',
     faqPageCommonBody: '首次下单前需要了解的所有信息——规格、文件、交货期和合规要求。',
     faqPageStillHaveQ: '仍有疑问？', faqPageTalkExport: '联系出口部门',
-    faqPageTalkBody: '提供产品、规格和目的地，我们在24小时内回复。',
+    faqPageTalkBody: '提供产品、规格和目的地，我们会确认样品选项、文件、价格和交期。',
     faqPageWaBtn: 'WhatsApp', faqPageEmailBtn: '发邮件给出口部', faqPageQuickFacts: '快速概览',
     faqPageMoqFact: '最低订量', faqPageCapacityFact: '产能', faqPageLeadFact: '交货期',
     faqPagePortsFact: '港口', faqPageGradesFact: '规格', faqPageSampleFact: '样品',
     faqPageMinOrderLabel: '最低订量', faqPageLeadTimeLabel: '交货期', faqPagePurityLabel: '纯度规格',
-    footerBrandDesc: 'RM Psyllium LLP 是优质洋车前子壳、粉及种子的源头制造商 and 散装出口商。总部位于印度古吉拉特邦西德普尔（Siddhpur），我们拥有年产2,000吨的加工厂，全球供应医药级（USP/EP）、食品级和饲料级产品。最低起订量（MOQ）：1 KG，每批次均附带NABL认可的实验室检测COA。',
+    footerBrandDesc: 'RM Psyllium LLP 是印度古吉拉特邦 Siddhpur 的洋车前子壳、壳粉、种子、khakha powder 和牛饲料制造商及批量供应商，年加工产能 2,000 MT，服务出口买家。买家可在采购订单前审核样品COA、产品规格、原产地信息、包装选项和目的地文件清单。',
     footerApplications: '应用领域', footerResources: '资源', footerRequestQuote: '询价', footerSampleRequest: '样品申请', footerPharma: '制药与营养补充品', footerFood: '食品与烘焙', footerAnimalFeed: '动物饲料', footerIndustrial: '工业',
-    sbTitle: '询价', sbReplyTime: '我们在24小时内回复（IST工作时间）',
+    sbTitle: '询价', sbReplyTime: '我们在IST工作时间审核询盘',
     sbNameLabel: '姓名', sbEmailLabel: '电子邮件或电话', sbEmailPlaceholder: '电子邮件或WhatsApp号码',
     sbProductLabel: '感兴趣的产品', sbSelectProduct: '选择产品', sbCountryLabel: '国家',
     sbCompanyLabel: '公司', sbMessageLabel: '留言 / 规格', sbMessagePlaceholder: '规格、数量、认证、交货时间…',
@@ -1815,13 +1815,13 @@ export const copy: Record<LanguageCode, {
     pdSelectGrade: '选择您的规格', pdByApplication: '按应用', pdCommonQuestions: '常见问题',
     pdFaqIntro: '常见', pdFaqIntroSuffix: '问题。',
     pdFaqDesc: '买家关于产品的专项问题——规格、文件、交货期和合规。',
-    pdRequestQuoteLabel: '询价', pdWithin24h: '在24小时内。',
+    pdRequestQuoteLabel: '询价', pdWithin24h: '审核后。',
     pdCompareGradesTitle: '比较{name}规格', pdReadyToSource: '准备好采购{name}了吗？',
-    pdCtaBody: '提供规格、目数、包装、目的地和月度用量，我们将在24小时内回复报价和供货情况。',
+    pdCtaBody: '提供规格、目数、包装、目的地和月度用量，我们会确认价格、供货情况、样品选项和交期。',
     pdFindMyGrade: '找到我的规格 ↓', pdLegendPrimary: '主要适配',
     pdLegendConditional: '条件性——请与质量团队确认', pdLegendNotSuitable: '不适用', pdLegendNotApplicable: '不适用',
     readyToSource: '准备好采购了吗？', sampleCoaTitle: '获取含COA的样品',
-    sampleCoaBody: '分享您的规格——规格、目数、月用量和目的地。我们将在24小时内回复。',
+    sampleCoaBody: '分享您的规格：等级、目数、月用量和目的地。我们会在48小时内回复1 kg样品可用性、COA审核选项和交期计划。',
     moreResources: '更多资源', topicsCovered: '涵盖主题',
     sourcingQuestion: '有采购方面的问题吗？',
     sourcingQuestionBody: '我们的出口团队回答关于车叶草规格、目数、认证和文件的技术和商业问题。',
@@ -1830,7 +1830,7 @@ export const copy: Record<LanguageCode, {
     blogTopicsLabel: '主题：', blogAllLabel: '全部', blogTopicLabel: '主题',
     blogAuthorLabel: '作者', blogCategoryLabel: '分类',
     sourceLocation: '西德普尔，古吉拉特，印度', relatedArticles: '相关文章',
-    regionKeyBuyers: '主要买家群体', regionRegulatory: '监管背景', ctaSampleRequest: '申请免费样品', ctaSpecSheet: '下载规格表',
+    regionKeyBuyers: '主要买家群体', regionRegulatory: '监管背景', ctaSampleRequest: '申请样品审核', ctaSpecSheet: '下载规格表',
     industryBuyerApp: '买家应用', industryRequestQuote: '申请应用报价',
     industryMatchGrade: '将您的应用与正确的规格、目数、包装和文件匹配。',
     industryUseCases: '常见应用', industryKeySpecs: '关键规格',
@@ -2329,7 +2329,7 @@ export const products = [
     specs: ['Moisture: ≤8%', 'Germination: ≥85%', 'Seed count: ~600 per gram'],
     applications: ['Pharma', 'Food', 'Nutraceutical', 'Animal feed'],
     packaging: ['25kg', '50kg', '100kg', '1000kg', 'Loose bulk', 'Custom'],
-    source: 'https://mantrapsyllium.com/psyllium-seed/',
+    source: 'https://rmpsyllium.com/en/products/psyllium-seeds/',
     gradeslugs: ['standard', 'sortex'],
     specTable: [
       { parameter: 'Purity', values: { 'Standard': '≥98%', 'Sortex': '≥99%' } },
@@ -2372,7 +2372,7 @@ export const products = [
         { q: 'What is sortex grade psyllium seed?', a: 'Optically sorted seed at ≥99% purity. Optical sorters remove discolored seeds and foreign particles to achieve foreign matter ≤0.5% — significantly lower than the ≤2% limit in standard machine-clean grade.' },
         { q: 'Why pay a premium for sortex psyllium seeds?', a: 'Higher seed purity produces more consistent husk separation yield. For millers targeting 98% or 99% purity husk, sortex seed reduces reprocessing and improves batch-to-batch consistency. The 8–12% price premium is typically recovered in better husk yield.' },
         { q: 'What germination percentage does sortex seed have?', a: '≥88% germination — higher than the ≥85% minimum for standard grade. Relevant for buyers purchasing seed for replanting or seed-quality lots.' },
-        { q: 'What is the minimum order for sortex psyllium seeds?', a: 'No minimum order. Available in 25 kg, 50 kg, and 1,000 kg bags — from a single bag to a full container. FOB Mundra. Lead time 7 days.' }
+        { q: 'What is the minimum order for sortex psyllium seeds?', a: 'MOQ starts at 1 kg for buyer review. Bulk lot planning depends on bag size, destination, packing, and document needs. Share intended use and destination; we will confirm availability, pricing, and lead-time plan.' }
       ]
     }
   },
@@ -2388,7 +2388,7 @@ export const products = [
     specs: ['Moisture: ≤12%', 'Swell volume: 30–50 ml/g by grade', 'Microbiology: E. coli & Salmonella absent'],
     applications: ['Pharma', 'Nutraceutical', 'Food and bakery', 'Animal feed'],
     packaging: ['10kg', '15kg', '25kg', '50kg', '100kg', '1000kg', 'Loose bulk', 'Custom'],
-    source: 'https://mantrapsyllium.com/psyllium-husk/',
+    source: 'https://rmpsyllium.com/en/products/psyllium-husk/',
     gradeslugs: ['grade-85', 'grade-95', 'grade-98', 'grade-99'],
     specTable: [
       { parameter: 'Purity (Husk Content)', values: { '85%': '≥85%', '95%': '≥95%', '98%': '≥98%', '99%': '≥99%' } },
@@ -2423,7 +2423,7 @@ export const products = [
         ]
       },
       '98%': {
-        lead: 'Psyllium husk 98% purity, USP and EP compliant. Swell volume minimum 45 ml/g. For laxative capsule fills, OTC sachet products, and supplement formulations requiring a full USP or EP COA. NABL-accredited lab testing per shipment.',
+        lead: 'Psyllium husk 98% purity is typically requested for USP or EP documentation. Swell volume target minimum 45 ml/g. For laxative capsule fills, OTC sachet products, and supplement formulations, COA wording should reference the requested standard only where tested lot results support it.',
         bestFor: 'Pharma capsule fills, USP/EP laxative sachets, OTC supplement',
         applicationNotes: [
           { app: 'Pharma', note: 'Laxative capsule fills and OTC sachet products requiring a USP or EP annotated COA. For pharma manufacturers in the US (USP) and EU/UK (EP) markets. COA annotated per lot.' },
@@ -2436,7 +2436,7 @@ export const products = [
         lead: 'Psyllium husk 99% purity from Gujarat, India — the pharmaceutical grade. Minimum swell volume 50 ml/g, meeting the Plantago ovata husk monographs in USP, EP, and IP. Used by pharma brands, OTC laxative manufacturers, and supplement companies where a full pharmacopoeia COA is required per lot.',
         bestFor: 'USP/EP/IP laxative monographs, branded OTC digestive supplements',
         applicationNotes: [
-          { app: 'Pharma', note: 'OTC laxative products registered under USP, EP, or IP monographs. Capsule fills, sachets, and suspensions. COA annotated to USP, EP, or IP per lot from NABL-accredited lab.' },
+          { app: 'Pharma', note: 'OTC laxative products referencing USP, EP, or IP monographs. Capsule fills, sachets, and suspensions. COA wording can reference the requested standard where tested lot results support it.' },
           { app: 'Nutraceutical', note: 'Premium dietary fibre brands in US, EU, UK, and India where the label or retailer QA requires full pharmacopoeia documentation per lot.' },
           { app: 'Food and bakery', note: 'Niche food applications where the formulator requires pharmacopoeia documentation per lot. Uncommon — 95% NF is the standard food-grade choice.' },
           { app: 'Animal feed', note: 'Not used in animal feed. Use 85% grade.' }
@@ -2448,25 +2448,25 @@ export const products = [
         { q: 'Is 85% psyllium husk food-grade?', a: '85% grade is food-grade. It does not meet NF, USP, or EP pharmacopoeia thresholds. For supplement or laxative products that cite a pharmacopoeia standard, use 95% grade minimum.' },
         { q: 'What is the swell volume of 85% psyllium husk?', a: 'Minimum 30 ml/g. This reflects the lower mucilage content at 85% purity and is the lowest swell volume in our husk range.' },
         { q: 'Can 85% psyllium husk be used in animal feed?', a: 'Yes. 85% grade is commonly used in cattle feed and compound animal feed as a fibre source. We supply in 25 kg, 50 kg, and 1,000 kg jumbo bags.' },
-        { q: 'What is the minimum order for 85% psyllium husk?', a: 'No minimum order. We supply from small trial quantities up to full container loads. FOB Mundra. COA and packing list included per shipment. Lead time 7 days from Siddhpur.' }
+        { q: 'What is the minimum order for 85% psyllium husk?', a: 'MOQ starts at 1 kg for buyer review. Bulk lot planning depends on packing, destination, and document needs. Share intended use and destination; we will confirm availability, pricing, and lead-time plan.' }
       ],
       '95%': [
-        { q: 'Does 95% psyllium husk meet the NF monograph?', a: 'Yes. 95% grade meets the Psyllium Husk monograph in the National Formulary (NF). Swell volume minimum 40 ml/g. We provide COA annotated to NF parameters on request.' },
-        { q: 'What is the swell volume of 95% psyllium husk?', a: 'Minimum 40 ml/g per our specification. This meets the NF threshold and is suitable for dietary supplement and functional food applications.' },
+        { q: 'Can 95% psyllium husk be documented against the NF monograph?', a: '95% grade is typically requested for NF-style documentation. COA wording should reference NF parameters only where tested lot results support them.' },
+        { q: 'What is the swell volume of 95% psyllium husk?', a: 'Target minimum is 40 ml/g per specification. Actual lot values should be reviewed on the COA before PO.' },
         { q: 'Can I use 95% psyllium husk for capsule filling?', a: 'Yes, at 20–60 mesh. For capsule filling equipment, moisture must be ≤10% at the time of filling to prevent clumping. We can supply with moisture-controlled packaging on request.' },
-        { q: 'How is 95% different from 98% psyllium husk?', a: '95% meets NF. 98% meets USP and EP. The swell volume difference is 40 ml/g (95%) vs 45 ml/g (98%). If your product label or specification cites USP or EP, you need 98% or 99% grade.' }
+        { q: 'How is 95% different from 98% psyllium husk?', a: '95% is typically used for food and NF-style supplement documentation. 98% is typically requested where USP or EP parameters are part of the buyer specification. Confirm the required standard before PO.' }
       ],
       '98%': [
-        { q: 'Does 98% psyllium husk meet USP and EP standards?', a: 'Yes. 98% grade meets USP (Plantago ovata husk) and EP (Ispaghula husk) monograph parameters — swell volume, moisture (≤12%), total ash (≤3.5%), acid-insoluble ash (≤0.5%), and microbiology. COA annotated to your pharmacopoeia on request.' },
-        { q: 'What swell volume does 98% psyllium husk have?', a: 'Minimum 45 ml/g per our specification. USP and EP specify a minimum of 40 ml/g, so 98% grade exceeds the pharmacopoeia threshold. Actual COA values are included with each shipment.' },
+        { q: 'Does 98% psyllium husk meet USP and EP standards?', a: '98% grade is typically requested for USP or EP documentation. COA wording should reference the requested pharmacopoeia only where tested lot results support the required parameters.' },
+        { q: 'What swell volume does 98% psyllium husk have?', a: 'Target minimum is 45 ml/g per specification. Actual COA values should be reviewed for the lot before PO.' },
         { q: 'Is 98% psyllium husk suitable for laxative products?', a: 'Yes. 98% grade is used in laxative capsule fills and sachet products. If your finished product is registered under a USP or EP monograph, confirm with your QA team whether 98% or 99% grade is specified.' },
-        { q: 'What documentation comes with 98% psyllium husk?', a: 'COA from NABL-accredited laboratory (swell volume, moisture, ash, microbiology, heavy metals), commercial invoice, packing list, certificate of origin, and phytosanitary certificate. Halal and Kosher letters of declaration available on request.' }
+        { q: 'What documentation comes with 98% psyllium husk?', a: 'Buyers can review sample COA parameters such as swell volume, moisture, ash, microbiology, and heavy metals, plus commercial invoice, packing list, certificate of origin, and phytosanitary requirements. Plant-origin declaration can be shared where dietary review is required.' }
       ],
       '99%': [
-        { q: 'What swell volume does 99% psyllium husk have?', a: 'Minimum 50 ml/g per our specification. USP and EP monographs specify 40 ml/g minimum; 99% grade consistently exceeds this. Actual test values are on the COA per shipment.' },
-        { q: 'Is your 99% psyllium husk USP, EP, and IP compliant?', a: 'Yes. We supply COA annotated to USP (Plantago ovata husk), EP (Ispaghula husk), or IP as required. Parameters include swell volume, moisture, total ash (≤3.0%), acid-insoluble ash (≤0.4%), heavy metals, and full microbiology. Specify your pharmacopoeia edition when requesting a quote.' },
-        { q: 'What is the minimum order for 99% psyllium husk?', a: 'No minimum order. Available in 10 kg, 25 kg, or 50 kg food-grade bags. Jumbo bags (1,000 kg) available for larger orders. FOB Mundra. Lead time 7 days.' },
-        { q: 'Can I get a sample of 99% psyllium husk with COA before ordering?', a: 'Yes. We send 100–500 g samples with a full COA from our NABL-accredited lab. Share your target pharmacopoeia, shipping address, and grade. Sample lead time is 3–5 business days from Siddhpur, Gujarat.' }
+        { q: 'What swell volume does 99% psyllium husk have?', a: 'Target minimum is 50 ml/g per specification. Actual test values should be reviewed on the lot COA before PO.' },
+        { q: 'Can 99% psyllium husk be documented against USP, EP, or IP?', a: 'For lots tested against the requested parameters, COA wording can reference USP, EP, or IP where the results support it. Specify your pharmacopoeia edition when requesting a quote.' },
+        { q: 'What is the minimum order for 99% psyllium husk?', a: 'MOQ starts at 1 kg for 99% psyllium husk. Bulk lot planning and packing depend on bag size, destination, and document package. Share your specification and destination before quote.' },
+        { q: 'Can I get a sample of 99% psyllium husk with COA before ordering?', a: 'Yes. Share your target pharmacopoeia, shipping address, and grade. We will confirm 1 kg sample availability and COA review options before dispatch.' }
       ]
     }
   },
@@ -2482,7 +2482,7 @@ export const products = [
     specs: ['Mesh: 40–200 ASTM (4 standard grades)', 'Swell volume: 32–55 ml/g by grade', 'Pharmacopoeia: USP / EP / IP at 99% / 200 mesh'],
     applications: ['Capsule filling', 'Gluten-free bakery', 'Health drinks & drink mixes', 'Cosmetics & personal care', 'Functional food blends'],
     packaging: ['10kg', '15kg', '25kg', '50kg', '100kg', 'Loose bulk', 'Custom'],
-    source: 'https://mantrapsyllium.com/psyllium-husk-powder/',
+    source: 'https://rmpsyllium.com/en/products/psyllium-husk-powder/',
     gradeslugs: ['grade-85-40m', 'grade-95-80m', 'grade-98-100m', 'grade-99-200m'],
     specTable: [
       { parameter: 'Purity (Husk %)',        values: { '85% / 40–60m': '≥85%',    '95% / 80m': '≥95%',    '98% / 100m': '≥98%',    '99% / 200m': '≥99%'    } },
@@ -2548,7 +2548,7 @@ export const products = [
         { q: 'What mesh size is 40–60 mesh psyllium powder?', a: '40–60 mesh ASTM corresponds to particle sizes of 250–425 μm. At this size, particles are visible in most finished products. Suitable for applications where coarse texture is acceptable — gluten-free artisan bread, high-fibre cereal, or animal feed blends.' },
         { q: 'Can 85% psyllium powder be used in gluten-free bakery?', a: 'Yes. At 1–3% of total flour weight, psyllium powder binds water and improves crumb structure in gluten-free doughs. At 85% / 40–60 mesh, the coarser particle size may be slightly visible in the crumb but is acceptable in most artisan-style products.' },
         { q: 'Is 85% / 40–60 mesh powder food-grade?', a: '85% grade is food-grade. It does not meet NF, USP, or EP pharmacopoeia thresholds for supplement or pharmaceutical labeling.' },
-        { q: 'What is the minimum order for 85% psyllium husk powder?', a: 'No minimum order. Available in 10 kg, 25 kg, and 50 kg bags — order as little as a single bag. FOB Mundra. COA per shipment.' }
+        { q: 'What is the minimum order for 85% psyllium husk powder?', a: 'MOQ starts at 1 kg for buyer review. Bulk lot planning depends on mesh, bag size, destination, and document needs. Share intended use and destination; we will confirm availability, pricing, and lead-time plan.' }
       ],
       '95% / 80m': [
         { q: 'What viscosity does 95% / 80 mesh psyllium powder produce?', a: 'Approximately 100 cP at 1% aqueous solution. Suitable for functional food and supplement applications where some viscosity build is needed without the gel-forming behaviour of finer grades.' },
@@ -2560,7 +2560,7 @@ export const products = [
         { q: 'Is 98% / 100 mesh psyllium powder USP and EP compliant?', a: 'Yes. COA annotated to USP or EP parameters available on request. Parameters include swell volume (≥48 ml/g), moisture (≤12%), total ash (≤3.5%), acid-insoluble ash, heavy metals, and full microbiology.' },
         { q: 'What particle size is 100 mesh psyllium powder?', a: '149 μm or smaller. At this particle size, powder disperses uniformly in drink mixes and does not produce visible texture in most food applications. Flow is good for capsule filling equipment.' },
         { q: 'What viscosity does 98% / 100 mesh powder produce?', a: 'Approximately 250 cP at 1% aqueous solution. Higher than 80 mesh grade due to finer particle size and greater surface exposure. Suitable for drink mixes, pharma suspensions, and functional food matrices.' },
-        { q: 'Can I get a COA sample before ordering 98% psyllium powder?', a: 'Yes. 100–500 g samples with COA annotated to your pharmacopoeia. Share your grade, mesh, target standard, and shipping address. Sample lead time 3–5 business days.' }
+        { q: 'Can I get a COA sample before ordering 98% psyllium powder?', a: 'Yes. Share grade, mesh, target standard, and shipping address. We will confirm 1 kg sample availability, COA wording options, and lead time before dispatch.' }
       ],
       '99% / 200m': [
         { q: 'What mesh size is 200 mesh psyllium powder?', a: '200 mesh ASTM corresponds to 75 μm or smaller. This is the finest standard grade we supply. Used where uniform, ultra-fine particle distribution is critical — cosmetic formulations, premium supplement powders, and pharmaceutical production.' },
@@ -2582,7 +2582,7 @@ export const products = [
     specs: ['Crude fibre: 25–40%', 'Moisture: ≤12%', 'Crude protein: 8–12%'],
     applications: ['Cattle & ruminant feed', 'Poultry feed', 'Compound feed manufacturing', 'Soil amendment & agriculture'],
     packaging: ['25kg', '50kg', '100kg', '1000kg', 'Loose bulk', 'Custom'],
-    source: 'https://mantrapsyllium.com/psyllium-khakha-powder/',
+    source: 'https://rmpsyllium.com/en/products/psyllium-khakha-powder/',
     gradeslugs: ['feed-grade-a', 'feed-grade-b'],
     specTable: [
       { parameter: 'Crude Fibre (%)',    values: { 'Feed Grade A': '30–40',        'Feed Grade B': '25–30'        } },
@@ -2642,7 +2642,7 @@ export const products = [
     specs: ['Mesh: 40–100 ASTM', 'Moisture: ≤12%', 'Crude fibre: 35–60%'],
     applications: ['Paper & packaging', 'Cosmetics & personal care', 'Textile sizing', 'Adhesives & binders', 'Pet food manufacturing'],
     packaging: ['25kg', '50kg', '100kg', '1000kg', 'Loose bulk', 'Custom'],
-    source: '',
+    source: 'https://rmpsyllium.com/en/products/industrial-grade-psyllium/',
     gradeslugs: ['standard-industrial', 'premium-industrial', 'pet-food-grade'],
     specTable: [
       { parameter: 'Crude Fibre (%)',      values: { 'Standard Industrial': '40–55',               'Premium Industrial': '50–60',               'Pet Food Grade': '35–45'              } },
@@ -2710,15 +2710,15 @@ export const products = [
     slug: 'organic-psyllium',
     name: 'Organic Psyllium',
     label: 'Organic program',
-    compliance: 'NOP · EU-NOP certified',
+    compliance: 'NOP · EU Organic certificate review',
     hero: 'Organic psyllium lots for buyers who need clean-label sourcing and certificate review.',
     summary: 'Organic husk and powder supply on request, with certificate review, packing details, and export documentation shared before purchase order.',
     grades: ['Organic husk (95%+)', 'Organic powder (95%+)', 'Buyer specification'],
     gradeLabels: ['NOP', 'EU-NOP'],
-    specs: ['NOP / EU-NOP certification available', 'Certificate review before order', 'Lot traceability per shipment'],
+    specs: ['NOP / EU Organic certificate review', 'Certificate and lot scope confirmed before order', 'Lot traceability per shipment'],
     applications: ['Organic foods', 'Supplements', 'Clean-label bakery'],
     packaging: ['10kg', '25kg', '50kg', '100kg', 'Loose bulk', 'Custom'],
-    source: 'https://mantrapsyllium.com/',
+    source: 'https://rmpsyllium.com/en/products/organic-psyllium/',
     gradeslugs: ['nop-certified', 'eu-nop-certified'],
     specTable: [
       { parameter: 'Certification', values: { 'NOP': 'USDA NOP', 'EU-NOP': 'EU Organic' } },
@@ -2729,36 +2729,36 @@ export const products = [
     ],
     gradeCopy: {
       'NOP': {
-        lead: 'USDA National Organic Program certified psyllium husk for the US market. Certification covers seed origin, growing practices (no synthetic pesticides or fertilisers), processing facility, and handling chain. Transaction certificate (TC) per shipment links the specific lot to the organic certificate. Purity ≥95%, swell volume ≥40 ml/g.',
+        lead: 'For US organic buyers, supply is handled only after USDA NOP certificate and lot-scope review. Seed origin, handling chain, transaction certificate availability, purity, and swell volume must be confirmed before quotation.',
         bestFor: 'US organic supplement and food brands, NOP-labeled products',
         applicationNotes: [
-          { app: 'Organic foods', note: 'US organic food manufacturers — cereals, nutrition bars, functional foods — requiring NOP-certified psyllium fibre. Transaction certificate (TC) per shipment.' },
-          { app: 'Supplements', note: 'US dietary supplement brands where the organic claim is a key label benefit. NOP certification covers the full supply chain from seed origin to export.' },
-          { app: 'Clean-label bakery', note: 'US organic bakery brands using psyllium as a fibre binder in gluten-free or high-fibre products where a USDA Organic label is required.' }
+          { app: 'Organic foods', note: 'US organic food manufacturers should request NOP certificate scope, lot coverage, and transaction certificate availability before PO.' },
+          { app: 'Supplements', note: 'US dietary supplement brands should verify that any organic claim is supported by the certifier, lot, handler, and transaction documentation.' },
+          { app: 'Clean-label bakery', note: 'US organic bakery brands should confirm USDA Organic label requirements before quotation.' }
         ]
       },
       'EU-NOP': {
-        lead: 'EU Organic certified psyllium husk under EU Regulation 2018/848. Certificate of Inspection (COI) provided per shipment for EU customs and import authority requirements. Lot-level traceability and certificate review before purchase order. Purity ≥95%, swell volume ≥40 ml/g.',
+        lead: 'For EU organic buyers, supply is handled only after EU Organic certificate, COI pathway, and lot-scope review. Lot traceability, certificate coverage, purity, and swell volume must be confirmed before quotation.',
         bestFor: 'EU organic food and supplement brands, EU import COI',
         applicationNotes: [
-          { app: 'Organic foods', note: 'EU food manufacturers requiring EU Regulation 2018/848 certified psyllium fibre. Certificate of Inspection (COI) per shipment for EU customs.' },
-          { app: 'Supplements', note: 'EU supplement brands carrying the EU organic leaf logo. COI documentation is required at EU import entry — we provide it as part of the standard organic package.' },
-          { app: 'Clean-label bakery', note: 'EU organic bakery brands. Same physical spec as NOP (≥95%, ≥40 ml/g) — certification and documentation differ for the EU market.' }
+          { app: 'Organic foods', note: 'EU food manufacturers should request EU Organic certificate scope and COI pathway review before PO.' },
+          { app: 'Supplements', note: 'EU supplement brands carrying the EU organic leaf logo must verify import documentation before quotation.' },
+          { app: 'Clean-label bakery', note: 'EU organic bakery brands should confirm certificate and COI requirements before committing to a lot.' }
         ]
       }
     },
     gradeFaq: {
       'NOP': [
-        { q: 'What certifications cover your NOP organic psyllium?', a: 'Certified under USDA National Organic Program (NOP) by an accredited certification body. The certificate covers the seed source, growing practices, processing facility, and handling chain. We provide the certificate copy and transaction certificate (TC) before purchase order.' },
-        { q: 'What document do US organic importers need per shipment?', a: 'A transaction certificate (TC) issued by the certifier per shipment. This is the document that links the specific lot and quantity to the organic certificate. We provide it as part of the standard organic documentation package.' },
+        { q: 'What should buyers verify for NOP organic psyllium?', a: 'Buyers should verify certificate scope, legal entity, handler coverage, lot coverage, and transaction certificate availability before purchase order.' },
+        { q: 'What document do US organic importers need per shipment?', a: 'A transaction certificate (TC) issued by the certifier links the specific lot and quantity to the organic certificate. Confirm availability before quotation.' },
         { q: 'What purity and swell volume does NOP organic psyllium have?', a: '≥95% purity, swell volume ≥40 ml/g minimum. COA with moisture, swell volume, and microbiology per shipment.' },
-        { q: 'What is the price premium for organic psyllium?', a: 'Typically 25–40% above conventional 95% grade depending on certified stock availability and market timing. Contact us for current pricing and lot availability before committing to a purchase order.' }
+        { q: 'What is the price premium for organic psyllium?', a: 'Typically 25–40% above conventional 95% grade depending on certificate scope, lot availability, and market timing. Contact us for current pricing and document review before committing to a purchase order.' }
       ],
       'EU-NOP': [
-        { q: 'What document do EU importers need for organic psyllium?', a: 'A Certificate of Inspection (COI) under EU Regulation 2018/848. This is issued per shipment and is required by EU customs for organic import. We provide COI documentation as part of the standard organic documentation package.' },
-        { q: 'Is your EU organic psyllium certified under the 2018/848 regulation?', a: 'Yes. EU organic lots are certified under EU Regulation 2018/848 (which replaced EC 834/2007). Certificate copy and COI provided before purchase order.' },
+        { q: 'What document do EU importers need for organic psyllium?', a: 'A Certificate of Inspection (COI) under EU Regulation 2018/848 is required for organic import. Confirm the COI pathway and certificate scope before quotation.' },
+        { q: 'How should EU organic psyllium be verified?', a: 'Ask for the active certificate scope, certifier, handler coverage, lot coverage, and COI pathway before purchase order.' },
         { q: 'What is the swell volume of EU organic psyllium?', a: '≥40 ml/g minimum at ≥95% purity. Same specification as NOP grade — the certification scope differs by destination market, not by physical product specification.' },
-        { q: 'Can I review the organic certificate before placing an order?', a: 'Yes. We share the current organic certificate and lot-level origin records before purchase order confirmation. This is standard for all our organic lots.' }
+        { q: 'Can I review the organic certificate before placing an order?', a: 'Certificate review should happen before purchase order whenever organic status is part of the buyer specification.' }
       ]
     }
   },
@@ -2774,7 +2774,7 @@ export const products = [
     specs: ['Crude fibre: 25–40%', 'Crude protein: 3–6%', 'Moisture: ≤12%'],
     applications: ['Dairy cattle', 'Buffalo & ruminants', 'Poultry feed', 'Veterinary nutrition', 'Farm supply distributors'],
     packaging: ['25kg', '50kg', '100kg', '1000kg', 'Loose bulk', 'Custom'],
-    source: 'https://mantrapsyllium.com/cattle-feed/',
+    source: 'https://rmpsyllium.com/en/products/psyllium-cattle-feed/',
     gradeslugs: ['sagar-gola', 'sagar-lali'],
     specTable: [
       { parameter: 'Format',                  values: { 'Sagar Gola': 'Compressed block',                     'Sagar Lali': 'Loose / granule'              } },
@@ -2817,13 +2817,13 @@ export const products = [
         { q: 'What is Sagar Gola cattle feed?', a: 'A traditional Gujarat compressed feed block combining psyllium husk, khakha, molasses, and mineral mix. The block format makes it easy to feed to dairy cattle and buffalo without additional processing or measuring. Long history of use in Gujarat and Rajasthan dairy farming.' },
         { q: 'What are the crude fibre and protein levels in Sagar Gola?', a: 'Crude fibre 25–35%, crude protein 3–5%, fat (ether extract) 1.0–2.0%, total ash 4–6%, moisture ≤12%. Metabolisable energy approximately 9–10 MJ/kg DM.' },
         { q: 'How does psyllium in cattle feed support dairy production?', a: 'The mucilage in psyllium absorbs water and forms a gel-like mass in the gut, slowing transit and improving nutrient uptake. This is particularly useful in high-producing dairy cows under heat stress where hydration retention supports milk yield and digestive health.' },
-        { q: 'What packaging is available for Sagar Gola?', a: '25 kg bags for smaller farm accounts, 1,000 kg jumbo bags for distributors and larger operations. FOB Mundra for export. Lead time 7 days.' }
+        { q: 'What packaging is available for Sagar Gola?', a: '25 kg bags for smaller farm accounts and 1,000 kg jumbo bags for distributors and larger operations. FOB Mundra for export. Lead time is planned after quantity, packing, and destination review.' }
       ],
       'Sagar Lali': [
         { q: 'What is Sagar Lali cattle feed?', a: 'Loose granule cattle feed with psyllium khakha as the primary base plus a grain mix. Higher crude fibre (30–40%) and protein (4–6%) than Sagar Gola compressed blocks. Used where the block format is impractical or where the buyer blends psyllium into a compound feed program.' },
         { q: 'How is Sagar Lali different from Sagar Gola?', a: 'Sagar Gola is a compressed block for direct farm feeding. Sagar Lali is a loose granule for blending into compound feeds or for operations that prefer bulk feeding. Sagar Lali has higher fibre (30–40% vs 25–35%) and slightly higher protein (4–6% vs 3–5%).' },
         { q: 'Can Sagar Lali be used in poultry feed?', a: 'Yes. The loose granule format and fine particle size work in poultry compound feed blends. Fibre content (30–40%) contributes to gut health in broiler and layer diets.' },
-        { q: 'What is the minimum order for Sagar Lali?', a: 'No minimum order. Available in 25 kg and 1,000 kg bags. COA with crude fibre, protein, moisture, ash per shipment. FOB Mundra.' }
+        { q: 'What is the minimum order for Sagar Lali?', a: 'MOQ starts at 1 kg for buyer review. Bulk lot planning depends on bag size, destination, and document needs. Available packing includes 25 kg and 1,000 kg bags; COA parameters are reviewed by lot before dispatch.' }
       ]
     }
   }
@@ -2835,7 +2835,7 @@ export const industries = [
     name: 'Pharma & Nutraceutical',
     headline: 'Psyllium husk and powder for capsules, digestive health products, laxatives, and supplement blends.',
     products: ['psyllium-husk', 'psyllium-husk-powder'],
-    proof: ['COA with full pharma panel included', 'USP / EP / IP parameter alignment', 'NABL-accredited test reports available'],
+    proof: ['Sample COA review', 'USP / EP / IP parameter alignment where results support it', 'Third-party lab testing available where required'],
     useCases: [
       {
         title: 'Laxative capsules & OTC sachets',
@@ -2851,7 +2851,7 @@ export const industries = [
       },
       {
         title: 'Private-label supplement sourcing',
-        body: 'Brands and contract manufacturers sourcing pharma-grade husk for private-label SKUs require consistent COA data lot-to-lot. We provide NABL-accredited test reports and annotate COAs to buyer-specified monograph.'
+        body: 'Brands and contract manufacturers sourcing pharma-grade husk for private-label SKUs require consistent COA data lot-to-lot. Third-party lab testing can be arranged where required, and COA wording should match the tested lot results.'
       }
     ],
     keySpecs: [
@@ -2864,7 +2864,7 @@ export const industries = [
     ],
     documents: [
       'Certificate of Analysis (COA) annotated to USP / EP / IP on request',
-      'NABL-accredited laboratory test report',
+      'Third-party laboratory test report where required',
       'Certificate of Origin (Gujarat, India)',
       'Phytosanitary certificate',
       'Halal / Kosher declaration or certificate on request'
@@ -2876,7 +2876,7 @@ export const industries = [
     name: 'Food, Beverage & Bakery',
     headline: 'Psyllium powder and husk for gluten-free bakery, cereals, drink mixes, and clean-label thickening.',
     products: ['psyllium-husk-powder', 'organic-psyllium'],
-    proof: ['Mesh matched to application', 'Organic lots with NOP / EU documentation', 'Food-grade allergen declaration included'],
+    proof: ['Mesh matched to application', 'Organic certificate review where required', 'Food-grade allergen declaration included'],
     useCases: [
       {
         title: 'Gluten-free bread & pastry',
@@ -2892,7 +2892,7 @@ export const industries = [
       },
       {
         title: 'Clean-label thickening & stabilising',
-        body: 'Psyllium husk powder is used as a clean-label alternative to methylcellulose and xanthan gum in sauces, dressings, and prepared food matrices. Organic-certified lots are available for clean-label product positioning.'
+        body: 'Psyllium husk powder is used as a clean-label alternative to methylcellulose and xanthan gum in sauces, dressings, and prepared food matrices. Organic-positioned lots require certificate and lot-scope review before quotation.'
       }
     ],
     keySpecs: [
@@ -2900,14 +2900,14 @@ export const industries = [
       '85% purity for cost-sensitive fibre enrichment',
       'Mesh: 80–100 for bakery, 100–200 for drink mixes, 40–60 for visible-fibre cereals',
       'Moisture ≤ 10% for food-grade handling',
-      'Organic: NOP (US), EU Organic — transaction certificate per lot',
+      'Organic: NOP (US) or EU Organic certificate review where required',
       'Allergen-free (no gluten, nuts, soy, dairy in processing)'
     ],
     documents: [
       'Certificate of Analysis (COA) with food-grade micro panel',
       'Allergen and GMO declaration',
       'Certificate of Origin',
-      'Organic Transaction Certificate (NOP / EU) — for organic lots',
+      'Organic transaction documentation review where required',
       'Phytosanitary certificate'
     ],
     buyerNote: 'Tell us your target application, batch size, and label claim. We will recommend the right grade and mesh, and can send a formulation sample with COA for bench testing before committing to a bulk order.'
@@ -2933,7 +2933,7 @@ export const industries = [
       },
       {
         title: 'Distributor & wholesale supply',
-        body: 'Feed distributors and co-ops sourcing khakha for resale in Gujarat, Rajasthan, and Maharashtra receive jumbo bags (1,000 kg) with lot documentation. Regular supply from Siddhpur with 7 day lead time from order to dispatch.'
+        body: 'Feed distributors and co-ops sourcing khakha for resale in Gujarat, Rajasthan, and Maharashtra can request jumbo bags (1,000 kg) with lot documentation. Lead time is planned after quantity, packing, and destination review.'
       }
     ],
     keySpecs: [
@@ -3004,13 +3004,13 @@ export const regions = [
     regulatory: 'FDA FSMA FSVP — foreign supplier verification required. GRAS status for food use. USP monograph for pharma laxative formulations. Prior Notice required for all food/supplement imports.',
     logistics: 'Mundra Port → New York / Los Angeles: 25–30 days. FOB Mundra standard. HS Code 1211.90.',
     useCases: [
-      { title: 'Dietary Supplement Ingredient (USP Grade)', body: 'US supplement brands sourcing psyllium husk for fiber capsules, laxative sachets, and gut health blends require USP-monograph COA with swell volume, ash, microbiology, and heavy metals. NABL-accredited test reports accepted by FDA FSVP audits.' },
+      { title: 'Dietary Supplement Ingredient (USP Grade)', body: 'US supplement brands sourcing psyllium husk for fiber capsules, laxative sachets, and gut health blends should request USP-referenced COA parameters for swell volume, ash, microbiology, and heavy metals where the tested lot supports it.' },
       { title: 'Functional Food Fortification', body: 'Food manufacturers using psyllium husk as a soluble fiber ingredient in cereals, bars, and bakery products require GRAS-status documentation and food-grade COA. RM Psyllium supplies with full food safety declaration.' },
       { title: 'Gluten-Free Bakery Ingredient', body: 'US gluten-free bakery brands require psyllium husk tested below 20 ppm gluten (FDA threshold) with allergen management records from the processing facility.' }
     ],
-    keySpecs: ['USP swell volume ≥ 40–55 mL/g depending on grade', 'Lead ≤ 2 ppm, Arsenic ≤ 1 ppm (FDA limits)', 'E. coli absent, Salmonella absent, TPC ≤ 100,000 cfu/g', 'Moisture ≤ 12%, Total Ash ≤ 3% (USP)', 'NABL-accredited COA accepted for FSMA supplier verification'],
-    documents: ['USP-annotated COA from NABL-accredited lab', 'Certificate of Origin (USA Form A eligible)', 'Phytosanitary Certificate', 'FDA Prior Notice product details', 'Non-GMO declaration'],
-    buyerNote: 'Share your FDA FSVP documentation requirements, USP grade specification, and destination port — we will provide a COA preview and FOB Mundra price within 24 hours.'
+    keySpecs: ['USP swell volume target reviewed by grade', 'Lead and arsenic reviewed where required by buyer spec', 'Microbiology reviewed by product use', 'Moisture and total ash reviewed against buyer specification', 'Third-party COA review for FSMA supplier verification'],
+    documents: ['USP-referenced COA where tested lot results support it', 'Certificate of Origin requirements', 'Phytosanitary Certificate', 'FDA Prior Notice product details', 'Non-GMO declaration'],
+    buyerNote: 'Share your FDA FSVP documentation requirements, USP grade specification, and destination port. We will review COA preview options, FOB Mundra pricing, and lead time.'
   },
   {
     slug: 'european-union',
@@ -3022,12 +3022,12 @@ export const regions = [
     logistics: 'Mundra Port → Rotterdam: 20–22 days. Mundra → Hamburg: 18–21 days. FOB Mundra standard. EUR.1 Certificate of Origin available for GSP preference.',
     useCases: [
       { title: 'EP-Grade Pharmaceutical Husk', body: 'European pharma manufacturers require Ispaghula Husk EP-annotated COA. RM Psyllium provides COA with EP parameters: swell index, foreign matter, moisture, ash, microbiology, and pesticide screening on request.' },
-      { title: 'EU Organic Certified Supply', body: 'EU organic food and supplement brands require organic psyllium husk with EU Organic certificate under Regulation 2018/848 and per-shipment Certificate of Inspection (COI). We supply certified organic lots with full certificate documentation.' },
+      { title: 'EU Organic Document Review', body: 'EU organic food and supplement brands should request EU Organic certificate scope, lot coverage, and Certificate of Inspection (COI) pathway review before PO.' },
       { title: 'Food Grade Fiber Ingredient', body: 'European food manufacturers sourcing psyllium for functional fiber applications require food safety documentation aligned with EU food safety regulations. Supply available with allergen declaration and product specification sheet.' }
     ],
-    keySpecs: ['EP swell index ≥ 40 mL/g (Ispaghula Husk monograph)', 'EU pesticide MRL compliance (EC 396/2005)', 'Organic: EU 2018/848 certificate + COI per shipment', 'Heavy metals: Pb ≤ 2 ppm, As ≤ 1 ppm, Cd ≤ 0.3 ppm, Hg ≤ 0.1 ppm', 'Moisture ≤ 12%, Total Ash ≤ 4% (EP)'],
-    documents: ['EP-annotated COA (Ispaghula Husk)', 'EU Organic Certificate + COI (organic lots)', 'EUR.1 Certificate of Origin', 'Phytosanitary Certificate', 'EU food safety declaration / product specification sheet'],
-    buyerNote: 'Share your EP grade requirement, destination country, and organic / conventional preference — we will confirm current stock availability and provide a sample COA within 48 hours.'
+    keySpecs: ['EP swell index target reviewed by grade', 'EU pesticide MRL review (EC 396/2005)', 'Organic certificate scope and COI pathway review where required', 'Heavy metals reviewed against buyer specification', 'Moisture and total ash reviewed against EP or buyer specification'],
+    documents: ['EP-referenced COA where tested lot results support it', 'EU Organic certificate and COI pathway review where required', 'EUR.1 Certificate of Origin requirements', 'Phytosanitary Certificate', 'EU food safety declaration / product specification sheet'],
+    buyerNote: 'Share your EP grade requirement, destination country, and organic / conventional preference. We will confirm current availability, COA preview options, and lead time.'
   },
   {
     slug: 'canada',
@@ -3043,7 +3043,7 @@ export const regions = [
     ],
     keySpecs: ['USP swell volume ≥ 40 mL/g', 'Heavy metals within Health Canada limits', 'CFIA food safety documentation available', 'Moisture ≤ 12%, Ash ≤ 3%', 'Microbiology: E. coli absent, Salmonella absent'],
     documents: ['USP-annotated COA', 'Certificate of Origin (CETA-eligible Form A)', 'Phytosanitary Certificate', 'Food safety declaration for CFIA'],
-    buyerNote: 'Share your Health Canada NHP file number, grade requirement, and destination port — we will provide COA and price within 24 hours.'
+    buyerNote: 'Share your Health Canada NHP file number, grade requirement, and destination port. We will review COA requirements, pricing, and lead time.'
   },
   {
     slug: 'middle-east',
@@ -3058,8 +3058,8 @@ export const regions = [
       { title: 'Distributor / Re-Export Supply', body: 'Dubai and Jebel Ali are major re-export hubs for psyllium across MENA and East Africa. Distributor pack sizes (5 kg, 10 kg, 25 kg) and container loads both supplied.' }
     ],
     keySpecs: ['Halal declaration / certificate available', 'Moisture ≤ 12%, low sand content', 'Food-grade COA with microbiology', 'Short transit: 6–10 days to Gulf ports', 'Distributor and retail pack sizes available'],
-    documents: ['Halal declaration or certificate', 'COA from NABL-accredited lab', 'Certificate of Origin', 'Phytosanitary Certificate', 'Packing list and commercial invoice'],
-    buyerNote: 'Share your Halal documentation requirement, grade, and import port — we will confirm availability and CIF Jebel Ali pricing within 24 hours.'
+    documents: ['Plant-origin declaration where dietary review is required', 'Third-party COA where required', 'Certificate of Origin', 'Phytosanitary Certificate', 'Packing list and commercial invoice'],
+    buyerNote: 'Share your dietary document requirement, grade, and import port. We will confirm availability, document options, and CIF Jebel Ali pricing.'
   },
   {
     slug: 'australia',
@@ -3071,12 +3071,12 @@ export const regions = [
     logistics: 'Mundra Port → Melbourne / Sydney: 18–22 days. Fumigation certificate required for all plant material imports.',
     useCases: [
       { title: 'TGA Complementary Medicine Ingredient', body: 'Australian supplement brands require psyllium husk with COA meeting TGA standards for listed complementary medicines. USP-grade documentation accepted.' },
-      { title: 'Organic Health Food', body: 'Australian organic food brands require NOP or EU-NOP certified psyllium husk with organic certificate and transaction certificate per shipment.' },
+      { title: 'Organic Health Food', body: 'Australian organic food brands should request certificate scope, lot coverage, and transaction documentation review before PO.' },
       { title: 'Equine and Livestock Feed', body: 'Australian equine feed manufacturers use psyllium husk for sand colic prevention. Feed-grade husk and khakha powder supplied with basic analysis COA and fumigation certificate.' }
     ],
-    keySpecs: ['Fumigation certificate mandatory for AQIS', 'USP/TGA-compatible COA available', 'Organic: NOP certificate + transaction certificate', 'Moisture ≤ 12%, microbiology compliant', 'Equine grade: swell volume ≥ 40 mL/g'],
-    documents: ['COA from NABL-accredited lab', 'Fumigation Certificate (AQIS requirement)', 'Certificate of Origin', 'Phytosanitary Certificate', 'Organic certificate + TC (organic lots)'],
-    buyerNote: 'Share your TGA listing requirements, grade, and destination port — we will provide COA and FOB price within 24 hours.'
+    keySpecs: ['Fumigation certificate mandatory for AQIS', 'USP/TGA-compatible COA reviewed where required', 'Organic certificate and transaction documentation review', 'Moisture and microbiology reviewed by buyer spec', 'Equine grade swell volume target reviewed by lot'],
+    documents: ['Third-party COA where required', 'Fumigation Certificate (AQIS requirement)', 'Certificate of Origin', 'Phytosanitary Certificate', 'Organic certificate and TC review where required'],
+    buyerNote: 'Share your TGA listing requirements, grade, and destination port. We will review COA requirements, FOB pricing, and lead time.'
   },
 
   // ── NEW COUNTRY PAGES ────────────────────────────────────────────────────
@@ -3090,13 +3090,13 @@ export const regions = [
     regulatory: 'European Pharmacopoeia (EP) — Ispaghula Husk monograph for pharma. BfR (Bundesinstitut für Risikobewertung) food safety. EU Organic Regulation 2018/848. EU Novel Food and food additive regulations.',
     logistics: 'Mundra Port → Hamburg: 18–21 days. Mundra → Bremerhaven: 19–22 days. EUR.1 Certificate of Origin for EU GSP tariff preference.',
     useCases: [
-      { title: 'EP-Pharma Grade for German Manufacturers', body: 'German pharma manufacturers require Ispaghula Husk EP-compliant COA with swell index, moisture, ash, microbiology, and pesticide screening. COA is annotated to EP edition on request.' },
-      { title: 'Bio / EU Organic Certified Supply', body: 'German organic food and supplement brands require EU 2018/848-certified psyllium husk with per-shipment Certificate of Inspection (COI) from an EU-recognised certification body (Control Union, ECOCERT).' },
+      { title: 'EP-Pharma Grade for German Manufacturers', body: 'German pharma manufacturers should request Ispaghula Husk EP-referenced COA parameters for swell index, moisture, ash, microbiology, and pesticide screening where tested lot results support them.' },
+      { title: 'Bio / EU Organic Document Review', body: 'German organic food and supplement brands should request EU 2018/848 certificate scope, lot coverage, and Certificate of Inspection (COI) pathway review before PO.' },
       { title: 'Functional Food Fiber for DACH Market', body: 'Food manufacturers in Germany, Austria, and Switzerland sourcing psyllium as a clean-label fiber ingredient require food safety declaration and product specification sheet aligned with EU regulations.' }
     ],
-    keySpecs: ['EP swell index ≥ 40 mL/g (Ispaghula Husk)', 'EU pesticide MRL compliance per EC 396/2005', 'EU Organic certificate available (2018/848)', 'Heavy metals within EU food safety limits', 'COA annotated to EP or EU-specific parameters'],
-    documents: ['EP-annotated COA (Ispaghula Husk monograph)', 'EUR.1 Certificate of Origin', 'EU Organic Certificate + COI (organic lots)', 'Phytosanitary Certificate', 'EU food safety declaration and product spec sheet'],
-    buyerNote: 'Teilen Sie Ihre EP-Gradanforderung, das Zielprodukt und den Bestimmungshafen mit — wir senden Ihnen ein COA-Muster und einen FOB-Mundra-Preis innerhalb von 24 Stunden.'
+    keySpecs: ['EP swell index target reviewed by grade', 'EU pesticide MRL review per EC 396/2005', 'EU Organic certificate scope review where required', 'Heavy metals reviewed against EU food safety limits', 'COA wording matched to tested lot results'],
+    documents: ['EP-referenced COA where tested lot results support it', 'EUR.1 Certificate of Origin requirements', 'EU Organic certificate and COI pathway review where required', 'Phytosanitary Certificate', 'EU food safety declaration and product spec sheet'],
+    buyerNote: 'Teilen Sie Ihre EP-Gradanforderung, das Zielprodukt und den Bestimmungshafen mit. Wir prüfen COA-Optionen, FOB-Mundra-Preis und Lieferzeit.'
   },
 
   {
@@ -3108,31 +3108,31 @@ export const regions = [
     regulatory: 'British Pharmacopoeia (BP) for pharma and supplement applications. UK FSA food safety regulations. MHRA for medicines. Post-Brexit: UK Certificate of Origin (not EUR.1). UKCA marking may apply to certain finished products.',
     logistics: 'Mundra Port → Felixstowe: 20–23 days. Mundra → Southampton: 21–24 days. UK-specific Certificate of Origin required post-Brexit.',
     useCases: [
-      { title: 'BP Grade for UK Pharma and Supplement Brands', body: 'UK pharma manufacturers and supplement brands require psyllium husk with British Pharmacopoeia (BP) compliant COA. BP parameters align closely with EP — swell index, ash, moisture, microbiology. COA annotated to BP on request.' },
+      { title: 'BP Grade for UK Pharma and Supplement Brands', body: 'UK pharma manufacturers and supplement brands should request British Pharmacopoeia (BP) referenced COA parameters where tested lot results support them. BP parameters align closely with EP: swell index, ash, moisture, and microbiology.' },
       { title: 'UK Functional Food Ingredient', body: 'UK food manufacturers adding psyllium as a soluble fiber ingredient require UK FSA-compatible food safety documentation. Supply available with allergen declaration, product specification sheet, and food grade COA.' },
-      { title: 'Organic Supply for UK Retail', body: 'UK organic food and supplement brands require psyllium husk certified under either UK Organic (post-Brexit recognition) or EU 2018/848 with UK equivalence recognition. Certificate documentation provided per shipment.' }
+      { title: 'Organic Document Review for UK Retail', body: 'UK organic food and supplement brands should request certificate scope, lot coverage, and UK/EU organic recognition review before PO.' }
     ],
     keySpecs: ['BP swell index ≥ 40 mL/g', 'UK pesticide MRL compliance (mirrors EU MRLs)', 'Post-Brexit UK Certificate of Origin available', 'Heavy metals within UK food safety limits', 'Moisture ≤ 12%, Ash ≤ 4% (BP)'],
-    documents: ['BP-annotated COA', 'UK Certificate of Origin (post-Brexit)', 'Phytosanitary Certificate', 'UK food safety declaration', 'Organic certificate (EU 2018/848 or UK Organic)'],
-    buyerNote: 'Share your BP grade requirement, destination port, and post-Brexit documentation needs — we will provide a COA preview and FOB Mundra price within 24 hours.'
+    documents: ['BP-referenced COA where tested lot results support it', 'UK Certificate of Origin requirements', 'Phytosanitary Certificate', 'UK food safety declaration', 'Organic certificate review where required'],
+    buyerNote: 'Share your BP grade requirement, destination port, and post-Brexit documentation needs. We will review COA preview options, FOB Mundra pricing, and lead time.'
   },
 
   {
     slug: 'uae',
     name: 'UAE',
-    headline: 'Psyllium husk exporter for UAE importers, Gulf re-export, and halal-certified supply.',
+    headline: 'Psyllium husk exporter for UAE importers, Gulf re-export, and halal documentation review.',
     focus: ['Halal certification', 'ESMA and GSO compliance', 'Jebel Ali re-export hub'],
     keyBuyers: ['UAE food ingredient importers', 'Gulf supplement distributors', 'Halal food manufacturers', 'Re-export and trading companies (Jebel Ali FZ)'],
     regulatory: 'UAE ESMA (Emirates Authority for Standardisation and Metrology) food safety. GSO (Gulf Standards Organisation) food regulations. Halal certification or declaration required by most UAE food importers. Dubai Municipality food import requirements.',
     logistics: 'Mundra Port → Jebel Ali (Dubai): 6–8 days. Fastest sea route from India to any major global port. Short transit minimises moisture exposure risk.',
     useCases: [
-      { title: 'Halal Dietary Supplement Ingredient', body: 'UAE supplement and wellness brands require psyllium husk with Halal documentation. RM Psyllium provides Halal declaration confirming plant-only origin and no animal-derived processing aids. Formal Halal certification available on request.' },
+      { title: 'Halal Dietary Supplement Ingredient', body: 'UAE supplement and wellness brands often require Halal documentation. RM Psyllium can provide a plant-origin declaration and review any formal certification requirement before PO.' },
       { title: 'Jebel Ali Re-Export and Distribution', body: 'Trading companies based in Jebel Ali FZ sourcing psyllium for MENA, East Africa, and South Asia re-export require flexible pack sizes and rapid re-shipment documentation. Container-load and less-than-container-load (LCL) supply both available.' },
       { title: 'UAE Food Manufacturing Ingredient', body: 'UAE food manufacturers using psyllium husk in fiber supplements, health bars, and functional foods require ESMA-compatible food safety documentation and COA meeting GSO food grade standards.' }
     ],
-    keySpecs: ['Halal declaration / certification available', 'ESMA / GSO food grade parameters met', 'Transit: 6–8 days Mundra to Jebel Ali', 'Moisture ≤ 12%, low foreign matter for Gulf climate storage', 'Certificate of Origin for GCC preferential tariff'],
-    documents: ['Halal declaration or Halal certificate', 'COA from NABL-accredited lab', 'Certificate of Origin (for GCC tariff)', 'Phytosanitary Certificate', 'Dubai Municipality import documentation support'],
-    buyerNote: 'Share your Halal documentation requirement, product grade, and import company details — we will confirm CIF Jebel Ali pricing and availability within 24 hours.'
+    keySpecs: ['Plant-origin declaration for Halal document review', 'ESMA / GSO food grade parameters reviewed against buyer specification', 'Transit: 6–8 days Mundra to Jebel Ali', 'Moisture ≤ 12%, low foreign matter for Gulf climate storage', 'Certificate of Origin where applicable'],
+    documents: ['Plant-origin declaration where dietary review is required', 'Third-party COA where required', 'Certificate of Origin (for GCC tariff)', 'Phytosanitary Certificate', 'Dubai Municipality import documentation support'],
+    buyerNote: 'Share your dietary documentation requirement, product grade, and import company details. We will confirm document options, CIF Jebel Ali pricing, and availability.'
   },
 
   {
@@ -3148,8 +3148,8 @@ export const regions = [
       { title: 'Ingrediente Funcional para Alimentos', body: 'Fabricantes de alimentos funcionais no Brasil que utilizam psyllium como fibra solúvel requerem documentação de segurança alimentar compatível com RDC ANVISA e declaração de origem.' }
     ],
     keySpecs: ['COA compatível com parâmetros USP/EP', 'Metais pesados dentro dos limites ANVISA', 'Microbiologia: E. coli ausente, Salmonella ausente', 'Umidade ≤ 12%, Cinzas ≤ 3–4%', 'Certificado de Origem Form A disponível'],
-    documents: ['COA de laboratório acreditado NABL', 'Certificado de Origem (Form A para SGP)', 'Certificado Fitossanitário', 'Declaração de segurança alimentar', 'Documentação de suporte para registro ANVISA'],
-    buyerNote: 'Compartilhe seus requisitos de conformidade ANVISA, grau do produto e porto de destino — enviaremos uma prévia do COA e preço FOB Mundra em 24 horas.'
+    documents: ['Relatório de laboratório terceiro acreditado NABL quando exigido pela especificação do comprador', 'Certificado de Origem (Form A para SGP)', 'Certificado Fitossanitário', 'Declaração de segurança alimentar', 'Documentação de suporte para registro ANVISA'],
+    buyerNote: 'Compartilhe seus requisitos de conformidade ANVISA, grau do produto e porto de destino. Revisaremos opções de prévia do COA, preço FOB Mundra e prazo de entrega.'
   },
 
   {
@@ -3161,13 +3161,13 @@ export const regions = [
     regulatory: 'JAKIM (Department of Islamic Development Malaysia) Halal certification for halal-labelled products. Ministry of Health Malaysia food safety regulations. SIRIM / MESTI for food manufacturing inputs. ASEAN Certificate of Origin (Form D) for ACFTA tariff preference.',
     logistics: 'Mundra Port → Port Klang: 10–14 days. Mundra → Penang: 10–13 days. Short transit makes Malaysian market very competitive for India-origin psyllium.',
     useCases: [
-      { title: 'Halal Food and Supplement Ingredient', body: 'Malaysian food manufacturers and supplement brands require psyllium husk with JAKIM-compatible Halal documentation. RM Psyllium provides Halal declaration and can arrange formal Halal certification for buyers requiring JAKIM-registered certificates.' },
+      { title: 'Halal Food and Supplement Ingredient', body: 'Malaysian food manufacturers and supplement brands may require JAKIM-compatible Halal documentation. RM Psyllium can provide a plant-origin declaration and review formal certificate requirements before PO.' },
       { title: 'ASEAN Distribution Hub', body: 'Malaysian ingredient importers and distributors sourcing psyllium for ASEAN re-distribution to Indonesia, Thailand, Vietnam, and the Philippines benefit from Malaysia\'s port infrastructure and ACFTA tariff advantages.' },
       { title: 'Functional Food and Fiber Application', body: 'Malaysian food manufacturers using psyllium in fiber beverages, health bars, and baked products require food-grade COA with MOH-compatible safety parameters and allergen declaration.' }
     ],
-    keySpecs: ['JAKIM Halal declaration / certification available', 'ASEAN Form D for ACFTA tariff preference', 'Transit: 10–14 days Mundra to Port Klang', 'MOH-compatible food safety documentation', 'Moisture ≤ 12%, microbiology compliant'],
-    documents: ['Halal declaration or certificate', 'ASEAN Certificate of Origin (Form D)', 'COA from NABL-accredited lab', 'Phytosanitary Certificate', 'Food safety declaration for MOH Malaysia'],
-    buyerNote: 'Share your JAKIM Halal documentation requirement, product grade, and destination port — we will confirm CIF Port Klang pricing and availability within 24 hours.'
+    keySpecs: ['Plant-origin declaration for Halal document review', 'ASEAN Form D where applicable', 'Transit: 10–14 days Mundra to Port Klang', 'MOH-compatible food safety documentation reviewed against buyer specification', 'Moisture ≤ 12%, microbiology reviewed by lot'],
+    documents: ['Plant-origin declaration where dietary review is required', 'ASEAN Certificate of Origin (Form D)', 'Third-party COA where required', 'Phytosanitary Certificate', 'Food safety declaration for MOH Malaysia'],
+    buyerNote: 'Share your dietary documentation requirement, product grade, and destination port. We will confirm document options, CIF Port Klang pricing, and availability.'
   }
 ];
 
@@ -3179,7 +3179,7 @@ export const faq = [
   },
   {
     q: 'What is your minimum order quantity (MOQ)?',
-    a: 'No minimum order. We supply from 1 KG samples for lab testing, 5 KG trial batches, up to full container loads (18–20 MT). Order any quantity — contact us and we will confirm availability and lead time.'
+    a: 'MOQ starts at 1 kg for all listed grades. Bulk lot planning depends on grade, packing, destination, testing, and document package. Share intended use and destination so we can confirm the right sample or container-load route.'
   },
   {
     q: 'Do you supply organic psyllium?',
@@ -3191,7 +3191,7 @@ export const faq = [
   },
   {
     q: 'What is your annual production capacity?',
-    a: 'Our Siddhpur facility has 2,000 MT annual processing capacity across all product lines. We can typically confirm lead time within 48 hours of receiving a confirmed spec sheet and purchase intent.'
+    a: 'Our Siddhpur facility has 2,000 MT annual processing capacity across all product lines. Lead time is planned after we review the specification sheet, packing, destination, and purchase intent.'
   },
   {
     q: 'Which ports do you ship from?',
@@ -3203,11 +3203,7 @@ export const faq = [
   },
   {
     q: 'Can I get a sample before placing a bulk order?',
-    a: 'Yes. We provide 100–500 g samples with COA on request. Share your target grade, mesh, and shipping address. Sample lead time is 3–5 business days from Siddhpur.'
-  },
-  {
-    q: 'What certifications does your facility hold?',
-    a: 'Our facility operations, registrations, and international compliance audits are currently in progress. We prioritize transparency and regulatory compliance for all global export markets. Please contact our export desk directly for the latest updates, compliance timelines, and specific audit requirements for your destination country.'
+    a: 'Yes. 1 kg sample packs are available for all listed grades. Share your target grade, mesh, destination, and document requirements so we can confirm sample availability, COA review options, and lead time before dispatch.'
   },
   {
     q: 'How is psyllium husk different from psyllium husk powder?',
@@ -3219,110 +3215,101 @@ export const localizedFaq: Record<LanguageCode, Array<{ q: string; a: string }>>
   en: faq,
   es: [
     { q: '¿Qué grados de cáscara de psyllium suministran?', a: 'Suministramos grados de pureza del 85%, 95%, 98% y 99%. El grado se refiere al contenido de cáscara — el grado 99% tiene el mayor contenido de mucílago y volumen de hinchamiento (≥50 ml/g), adecuado para monografías de laxantes farmacéuticos (USP/EP/IP). Comparta su aplicación objetivo y le recomendaremos el grado apropiado.' },
-    { q: '¿Cuál es la cantidad mínima de pedido (MOQ)?', a: 'Sin cantidad mínima de pedido. Suministramos desde muestras de 1 KG para pruebas de laboratorio y lotes de 5 KG, hasta contenedores completos de 18–20 MT. Pida la cantidad que necesite — contáctenos y confirmaremos disponibilidad y plazo de entrega.' },
+    { q: '¿Cuál es la cantidad mínima de pedido (MOQ)?', a: 'Hay muestras de 1 kg disponibles para grados compatibles. El tamaño comercial depende del grado, empaque, destino, pruebas y paquete documental. Comparta uso previsto y destino para confirmar la ruta adecuada.' },
     { q: '¿Suministran psyllium orgánico?', a: 'Sí. Suministramos cáscara y polvo de psyllium orgánico a petición. Los lotes orgánicos están disponibles con revisión de certificados antes de la orden de compra. Los compradores deben indicar su mercado de destino y el alcance de certificación requerido — NOP para EE. UU., EU-NOP para Europa.' },
     { q: '¿Qué documentos de exportación proporcionan?', a: 'El conjunto estándar de exportación incluye: factura comercial, lista de empaque, COA, certificado de origen, certificado fitosanitario y certificado de fumigación cuando se requiera. Los certificados Halal y Kosher pueden tramitarse a petición. Todos los documentos se comparten antes del envío.' },
-    { q: '¿Cuál es su capacidad de producción anual?', a: 'Nuestra instalación en Siddhpur tiene una capacidad de procesamiento anual de 2.000 MT en todas las líneas de productos. Generalmente podemos confirmar el tiempo de entrega dentro de las 48 horas de recibir una hoja de especificaciones confirmada e intención de compra.' },
+    { q: '¿Cuál es su capacidad de producción anual?', a: 'Nuestra instalación en Siddhpur tiene una capacidad de procesamiento anual de 2.000 MT en todas las líneas de productos. El plazo se confirma después de revisar especificación, empaque, destino e intención de compra.' },
     { q: '¿Desde qué puertos realizan los envíos?', a: 'Realizamos envíos FOB Mundra, FOB Kandla y FOB JNPT (Nhava Sheva). El precio CIF está disponible a petición. Mundra es nuestro puerto principal para la mayoría de pedidos de exportación debido a la frecuencia de buques hacia Europa, EE. UU. y Oriente Medio.' },
     { q: '¿Qué tamaños de malla están disponibles para el polvo de cáscara de psyllium?', a: 'El polvo de cáscara está disponible en mallas 40, 60, 80, 100 y 200 (ASTM). La selección de malla depende de su aplicación: malla 40–60 para llenado de cápsulas, malla 80–100 para bebidas en polvo y alimentos funcionales, malla 200 para aplicaciones cosméticas o de cuidado personal.' },
-    { q: '¿Puedo obtener una muestra antes de hacer un pedido a granel?', a: 'Sí. Proporcionamos muestras de 100–500 g con COA a petición. Comparta su grado objetivo, malla y dirección de envío. El tiempo de entrega de muestras es de 3 a 5 días hábiles desde Siddhpur.' },
-    { q: '¿Qué certificaciones tiene su instalación?', a: 'Las operaciones, registros y auditorías de cumplimiento internacional de nuestra instalación están actualmente en proceso. Priorizamos la transparencia y el cumplimiento regulatorio para todos los mercados de exportación globales. Póngase en contacto directamente con nuestra oficina de exportación para conocer las últimas actualizaciones, plazos y requisitos de auditoría específicos para su país de destino.' },
+    { q: '¿Puedo obtener una muestra antes de hacer un pedido a granel?', a: 'Sí. Comparta su grado objetivo, malla, destino y requisitos documentales. Confirmaremos disponibilidad de muestra, opciones de revisión de COA y plazo antes del despacho.' },
     { q: '¿En qué se diferencia la cáscara de psyllium del polvo de cáscara de psyllium?', a: 'Ambos provienen de la misma semilla de Plantago ovata pero difieren en forma y aplicación. La cáscara entera conserva su textura fibrosa y se usa en cápsulas, sobres laxantes y cereales de alto contenido en fibra. El polvo se muele a una malla fina y se dispersa uniformemente en bebidas en polvo, mezclas para panadería y alimentos funcionales. El volumen de hinchamiento es ligeramente mayor en el polvo debido a la mayor exposición de la superficie.' },
   ],
   fr: [
     { q: 'Quels grades de cosse de psyllium fournissez-vous ?', a: 'Nous fournissons des grades de pureté de 85%, 95%, 98% et 99%. Le grade correspond à la teneur en cosse — le grade 99% a la teneur en mucilage et le volume de gonflement les plus élevés (≥50 ml/g), adapté aux monographies de laxatifs pharmaceutiques (USP/EP/IP). Partagez votre application cible et nous recommanderons le grade approprié.' },
-    { q: 'Quelle est votre quantité minimale de commande (MOQ) ?', a: 'Pas de minimum de commande. Nous livrons depuis des échantillons de 1 KG pour tests en laboratoire et des lots de 5 KG, jusqu\'à des conteneurs complets de 18–20 MT. Commandez la quantité dont vous avez besoin — contactez-nous et nous confirmerons la disponibilité.' },
+    { q: 'Quelle est votre quantité minimale de commande (MOQ) ?', a: 'Des échantillons de 1 kg sont disponibles pour les grades correspondants. Le volume commercial dépend du grade, de l\'emballage, de la destination, des tests et du dossier documentaire. Partagez l\'usage prévu et la destination pour confirmer la bonne option.' },
     { q: 'Fournissez-vous du psyllium biologique ?', a: 'Oui. Nous fournissons de la cosse et de la poudre de psyllium biologique sur demande. Les lots biologiques sont disponibles avec examen des certificats avant l\'ordre d\'achat. Les acheteurs doivent indiquer leur marché de destination et la portée de certification requise — NOP pour les USA, EU-NOP pour l\'Europe.' },
     { q: 'Quels documents d\'exportation fournissez-vous ?', a: 'Le set d\'exportation standard comprend : facture commerciale, liste de colisage, COA, certificat d\'origine, certificat phytosanitaire et certificat de fumigation si requis. Les certificats Halal et Kosher peuvent être obtenus sur demande. Tous les documents sont partagés avant l\'expédition.' },
     { q: 'Quelle est votre capacité de production annuelle ?', a: 'Notre installation à Siddhpur a une capacité de traitement annuelle de 2 000 MT sur toutes les gammes de produits. Nous pouvons généralement confirmer le délai de livraison dans les 48 heures suivant la réception d\'une fiche de spécifications confirmée et d\'une intention d\'achat.' },
     { q: 'De quels ports expédiez-vous ?', a: 'Nous expédions FOB Mundra, FOB Kandla et FOB JNPT (Nhava Sheva). Le prix CIF est disponible sur demande. Mundra est notre port principal pour la plupart des commandes d\'exportation en raison de la fréquence des navires vers l\'Europe, les USA et le Moyen-Orient.' },
     { q: 'Quelles tailles de maille sont disponibles pour la poudre de cosse de psyllium ?', a: 'La poudre de cosse est disponible en maille 40, 60, 80, 100 et 200 (ASTM). Le choix de maille dépend de votre application : maille 40–60 pour le remplissage de gélules, maille 80–100 pour les boissons en poudre et aliments fonctionnels, maille 200 pour les applications cosmétiques ou de soin personnel.' },
-    { q: 'Puis-je obtenir un échantillon avant de passer une commande en gros ?', a: 'Oui. Nous fournissons des échantillons de 100–500 g avec COA sur demande. Partagez votre grade cible, maille et adresse d\'expédition. Le délai d\'échantillon est de 3 à 5 jours ouvrables depuis Siddhpur.' },
-    { q: 'Quelles certifications votre installation possède-t-elle ?', a: 'Les opérations, enregistrements et audits de conformité internationale de notre usine sont actuellement en cours. Nous accordons la priorité à la transparence et à la conformité réglementaire pour tous les marchés d\'exportation mondiaux. Veuillez contacter directement notre bureau d\'exportation pour obtenir les dernières mises à jour, les calendriers de conformité et les exigences d\'audit spécifiques à votre pays de destination.' },
+    { q: 'Puis-je obtenir un échantillon avant de passer une commande en gros ?', a: 'Oui. Partagez votre grade cible, maille, destination et exigences documentaires. Nous confirmerons la disponibilité de l\'échantillon, les options de révision COA et le délai avant expédition.' },
     { q: 'Quelle est la différence entre la cosse de psyllium et la poudre de cosse de psyllium ?', a: 'Les deux proviennent de la même graine de Plantago ovata mais diffèrent par leur forme et application. La cosse entière conserve sa texture fibreuse et est utilisée dans les gélules, sachets laxatifs et céréales riches en fibres. La poudre est moulue à une maille fine et se disperse uniformément dans les boissons en poudre, mélanges de boulangerie et aliments fonctionnels. Le volume de gonflement est légèrement plus élevé dans la poudre en raison d\'une plus grande exposition de surface.' },
   ],
   nl: [
     { q: 'Welke zuiverheidsgraden voor psylliumvlies levert u?', a: 'Wij leveren zuiverheidsgraden van 85%, 95%, 98% en 99%. De graad verwijst naar het vliesgehalte — 99%-graad heeft het hoogste mucilagehalt en zwelvolume (≥50 ml/g), geschikt voor farmaceutische laxatiefmonografieën (USP/EP/IP). Deel uw doeltoepassing en wij adviseren de juiste graad.' },
-    { q: 'Wat is uw minimale bestelhoeveelheid (MOQ)?', a: 'Geen minimale bestelhoeveelheid. We leveren van 1 KG monsters voor laboratoriumtests en proefpartijen van 5 KG tot volledige containers van 18–20 MT. Bestel elke gewenste hoeveelheid — neem contact op en wij bevestigen beschikbaarheid en levertijd.' },
+    { q: 'Wat is uw minimale bestelhoeveelheid (MOQ)?', a: 'Monsters van 1 kg zijn beschikbaar voor passende kwaliteiten. Commerciële lotgrootte hangt af van kwaliteit, verpakking, bestemming, testen en documentpakket. Deel beoogd gebruik en bestemming om de juiste route te bevestigen.' },
     { q: 'Leveren jullie biologisch psyllium?', a: 'Ja. Wij leveren biologisch psylliumvlies en -poeder op aanvraag. Biologische loten zijn beschikbaar met certificaatbeoordeling vóór de inkooporder. Kopers moeten hun bestemmingsmarkt en vereiste certificeringsomvang opgeven — NOP voor de VS, EU-NOP voor Europa.' },
     { q: 'Welke exportdocumenten verstrekt u?', a: 'Het standaard exportpakket omvat: handelsfactuur, paklijst, COA, oorsprongscertificaat, fytosanitair certificaat en fumigatieverklaring waar vereist. Halal- en kosjercertificaten kunnen op aanvraag worden geregeld. Alle documenten worden vóór verzending gedeeld.' },
-    { q: 'Wat is uw jaarlijkse productiecapaciteit?', a: 'Onze fabriek in Siddhpur heeft een jaarlijkse verwerkingscapaciteit van 2.000 MT over alle productlijnen. Wij kunnen de levertijd doorgaans bevestigen binnen 48 uur na ontvangst van een bevestigde specificatieblad en koopintentie.' },
+    { q: 'Wat is uw jaarlijkse productiecapaciteit?', a: 'Onze fabriek in Siddhpur heeft een jaarlijkse verwerkingscapaciteit van 2.000 MT over alle productlijnen. De levertijd wordt bevestigd na beoordeling van specificatie, verpakking, bestemming en koopintentie.' },
     { q: 'Vanuit welke havens verscheept u?', a: 'Wij verschepen FOB Mundra, FOB Kandla en FOB JNPT (Nhava Sheva). CIF-prijzen zijn op aanvraag beschikbaar. Mundra is onze primaire haven voor de meeste exportorders vanwege de scheepsfrequentie naar Europa, de VS en het Midden-Oosten.' },
     { q: 'Welke meshgroottes zijn beschikbaar voor psylliumvliespoeder?', a: 'Vliespoeder is beschikbaar in mesh 40, 60, 80, 100 en 200 (ASTM). De meshkeuze hangt af van uw toepassing: mesh 40–60 voor capsulevulling, mesh 80–100 voor drankpoeders en functionele voedingsmiddelen, mesh 200 voor cosmetische of persoonlijke verzorgingstoepassingen.' },
-    { q: 'Kan ik een monster ontvangen voordat ik een bulkbestelling plaatst?', a: 'Ja. Wij verstrekken monsters van 100–500 g met COA op aanvraag. Deel uw doelgraad, mesh en verzendadres. De levertijd voor monsters is 3 tot 5 werkdagen vanuit Siddhpur.' },
-    { q: 'Welke certificeringen bezit uw fabriek?', a: 'De activiteiten, registraties en internationale conformiteitsaudits van onze fabriek zijn momenteel in behandeling. Wij geven prioriteit aan transparantie en naleving van de regelgeving voor alle wereldwijde exportmarkten. Neem rechtstreeks contact op met onze exportafdeling voor de laatste updates, planningen en specifieke auditvereisten voor uw bestemmingsland.' },
+    { q: 'Kan ik een monster ontvangen voordat ik een bulkbestelling plaatst?', a: 'Ja. Deel uw doelgraad, mesh, bestemming en documentvereisten. Wij bevestigen monsterbeschikbaarheid, COA-reviewopties en levertijd vóór verzending.' },
     { q: 'Wat is het verschil tussen psylliumvlies en psylliumvliespoeder?', a: 'Beide zijn afkomstig van hetzelfde Plantago ovata-zaad maar verschillen in vorm en toepassing. Heel vlies behoudt zijn vezelige textuur en wordt gebruikt in capsulevullingen, laxatiezakjes en vezelrijke granen. Poeder wordt tot een fijne meshgrootte gemalen en verdeelt zich gelijkmatig in drankpoeders, bakkerijblends en functionele voedingsmiddelen. Het zwelvolume is iets hoger in poeder door grotere oppervlakte-exposure.' },
   ],
   it: [
     { q: 'Quali gradi di purezza di buccia di psyllium fornite?', a: 'Forniamo gradi di purezza dell\'85%, 95%, 98% e 99%. Il grado si riferisce al contenuto di buccia — il grado 99% ha il più alto contenuto di mucillagine e volume di rigonfiamento (≥50 ml/g), adatto alle monografie di lassativi farmaceutici (USP/EP/IP). Condividi la tua applicazione target e consigliamo il grado appropriato.' },
-    { q: 'Qual è la vostra quantità minima d\'ordine (MOQ)?', a: 'Nessun ordine minimo. Forniamo da campioni da 1 KG per test di laboratorio e lotti di prova da 5 KG fino a container completi da 18–20 MT. Ordina la quantità di cui hai bisogno — contattaci e confermeremo disponibilità e tempi di consegna.' },
+    { q: 'Qual è la vostra quantità minima d\'ordine (MOQ)?', a: 'Campioni da 1 kg sono disponibili per gradi corrispondenti. Il lotto commerciale dipende da grado, imballo, destinazione, test e pacchetto documentale. Condividi uso previsto e destinazione per confermare il percorso corretto.' },
     { q: 'Fornite psyllium biologico?', a: 'Sì. Forniamo buccia e polvere di psyllium biologico su richiesta. I lotti biologici sono disponibili con revisione dei certificati prima dell\'ordine. Gli acquirenti devono indicare il mercato di destinazione e l\'ambito di certificazione richiesto — NOP per gli USA, EU-NOP per l\'Europa.' },
     { q: 'Quali documenti di esportazione fornite?', a: 'Il set standard di esportazione include: fattura commerciale, packing list, COA, certificato di origine, certificato fitosanitario e certificato di fumigazione dove richiesto. I certificati Halal e Kosher possono essere ottenuti su richiesta. Tutti i documenti sono condivisi prima della spedizione.' },
     { q: 'Qual è la vostra capacità di produzione annuale?', a: 'Il nostro stabilimento a Siddhpur ha una capacità di lavorazione annuale di 2.000 MT su tutte le linee di prodotto. Di solito possiamo confermare i tempi di consegna entro 48 ore dal ricevimento di una scheda tecnica confermata e di un\'intenzione d\'acquisto.' },
     { q: 'Da quali porti spedite?', a: 'Spediamo FOB Mundra, FOB Kandla e FOB JNPT (Nhava Sheva). I prezzi CIF sono disponibili su richiesta. Mundra è il nostro porto principale per la maggior parte degli ordini export per via della frequenza delle navi verso Europa, USA e Medio Oriente.' },
     { q: 'Quali dimensioni di mesh sono disponibili per la polvere di buccia di psyllium?', a: 'La polvere di buccia è disponibile in mesh 40, 60, 80, 100 e 200 (ASTM). La scelta del mesh dipende dalla tua applicazione: mesh 40–60 per il riempimento di capsule, mesh 80–100 per bevande in polvere e alimenti funzionali, mesh 200 per applicazioni cosmetiche o per la cura personale.' },
-    { q: 'Posso ottenere un campione prima di effettuare un ordine bulk?', a: 'Sì. Forniamo campioni da 100–500 g con COA su richiesta. Condividi il tuo grado target, mesh e indirizzo di spedizione. Il tempo di consegna dei campioni è di 3–5 giorni lavorativi da Siddhpur.' },
-    { q: 'Quali certificazioni possiede il vostro stabilimento?', a: 'Le operazioni, le registrazioni e gli audit di conformità internazionale della nostra struttura sono attualmente in corso. Diamo priorità alla trasparenza e alla conformità normativa per tutti i mercati di esportazione globali. Si prega di contattare direttamente il nostro ufficio export per gli ultimi aggiornamenti, le tempistiche e i requisiti di audit specifici per il proprio paese di destinazione.' },
+    { q: 'Posso ottenere un campione prima di effettuare un ordine bulk?', a: 'Sì. Condividi grado target, mesh, destinazione e requisiti documentali. Confermeremo disponibilità del campione, opzioni di revisione COA e tempi prima della spedizione.' },
     { q: 'Qual è la differenza tra buccia di psyllium e polvere di buccia di psyllium?', a: 'Entrambi provengono dallo stesso seme di Plantago ovata ma differiscono per forma e applicazione. La buccia intera mantiene la sua texture fibrosa e viene utilizzata in capsule, bustine lassative e cereali ad alto contenuto di fibre. La polvere viene macinata a una mesh fine e si disperde uniformemente in bevande in polvere, miscele per panificazione e alimenti funzionali. Il volume di rigonfiamento è leggermente più alto nella polvere per via della maggiore esposizione superficiale.' },
   ],
   pt: [
     { q: 'Quais graus de pureza de casca de psyllium vocês fornecem?', a: 'Fornecemos graus de pureza de 85%, 95%, 98% e 99%. O grau refere-se ao teor de casca — o grau 99% tem o maior teor de mucilagem e volume de intumescimento (≥50 ml/g), adequado para monografias de laxantes farmacêuticos (USP/EP/IP). Compartilhe sua aplicação alvo e recomendaremos o grau apropriado.' },
-    { q: 'Qual é a quantidade mínima de pedido (MOQ)?', a: 'Sem pedido mínimo. Fornecemos desde amostras de 1 KG para testes laboratoriais e lotes de 5 KG até contêineres completos de 18–20 MT. Peça a quantidade que precisar — entre em contato e confirmaremos disponibilidade e prazo de entrega.' },
+    { q: 'Qual é a quantidade mínima de pedido (MOQ)?', a: 'Amostras de 1 kg estão disponíveis para graus compatíveis. O lote comercial depende do grau, embalagem, destino, testes e pacote documental. Compartilhe uso previsto e destino para confirmar a melhor rota.' },
     { q: 'Vocês fornecem psyllium orgânico?', a: 'Sim. Fornecemos casca e pó de psyllium orgânico sob pedido. Lotes orgânicos estão disponíveis com revisão de certificados antes do pedido de compra. Os compradores devem indicar seu mercado de destino e o escopo de certificação necessário — NOP para os EUA, EU-NOP para a Europa.' },
     { q: 'Quais documentos de exportação vocês fornecem?', a: 'O conjunto padrão de exportação inclui: fatura comercial, lista de embalagem, COA, certificado de origem, certificado fitossanitário e certificado de fumigação quando necessário. Certificados Halal e Kosher podem ser providenciados sob pedido. Todos os documentos são compartilhados antes do envio.' },
-    { q: 'Qual é a capacidade de produção anual de vocês?', a: 'Nossa instalação em Siddhpur tem capacidade de processamento anual de 2.000 MT em todas as linhas de produto. Geralmente podemos confirmar o prazo de entrega em 48 horas após receber uma ficha de especificações confirmada e intenção de compra.' },
+    { q: 'Qual é a capacidade de produção anual de vocês?', a: 'Nossa instalação em Siddhpur tem capacidade de processamento anual de 2.000 MT em todas as linhas de produto. O prazo é confirmado após revisão da especificação, embalagem, destino e intenção de compra.' },
     { q: 'De quais portos vocês fazem envios?', a: 'Enviamos FOB Mundra, FOB Kandla e FOB JNPT (Nhava Sheva). Preços CIF estão disponíveis sob pedido. Mundra é nosso porto principal para a maioria dos pedidos de exportação pela frequência de navios para Europa, EUA e Oriente Médio.' },
     { q: 'Quais tamanhos de mesh estão disponíveis para pó de casca de psyllium?', a: 'O pó de casca está disponível em mesh 40, 60, 80, 100 e 200 (ASTM). A escolha do mesh depende da sua aplicação: mesh 40–60 para preenchimento de cápsulas, mesh 80–100 para bebidas em pó e alimentos funcionais, mesh 200 para aplicações cosméticas ou de cuidados pessoais.' },
-    { q: 'Posso obter uma amostra antes de fazer um pedido bulk?', a: 'Sim. Fornecemos amostras de 100–500 g com COA sob pedido. Compartilhe seu grau alvo, mesh e endereço de envio. O prazo de entrega de amostras é de 3 a 5 dias úteis a partir de Siddhpur.' },
-    { q: 'Quais certificações sua instalação possui?', a: 'As operações, registros e auditorias de conformidade internacional de nossa instalação estão atualmente em andamento. Priorizamos a transparência e a conformidade regulatória para todos os mercados globais de exportação. Entre em contato diretamente com o nosso setor de exportação para obter as atualizações mais recentes, cronogramas de conformidade e requisitos de auditoria específicos para o seu país de destino.' },
+    { q: 'Posso obter uma amostra antes de fazer um pedido bulk?', a: 'Sim. Compartilhe seu grau alvo, mesh, destino e requisitos documentais. Confirmaremos disponibilidade de amostra, opções de revisão de COA e prazo antes do envio.' },
     { q: 'Qual é a diferença entre casca de psyllium e pó de casca de psyllium?', a: 'Ambos vêm da mesma semente de Plantago ovata, mas diferem em forma e aplicação. A casca inteira mantém sua textura fibrosa e é usada em cápsulas, sachês laxantes e cereais ricos em fibras. O pó é moído em uma mesh fina e se dispersa uniformemente em bebidas em pó, misturas para panificação e alimentos funcionais. O volume de intumescimento é ligeiramente maior no pó devido à maior exposição superficial.' },
   ],
   ru: [
     { q: 'Какие степени чистоты шелухи псиллиума вы поставляете?', a: 'Мы поставляем степени чистоты 85%, 95%, 98% и 99%. Степень относится к содержанию шелухи — сорт 99% имеет наибольшее содержание муцилагина и объём набухания (≥50 мл/г), подходящий для фармацевтических монографий слабительных средств (USP/EP/IP). Сообщите целевое применение, и мы порекомендуем подходящий сорт.' },
-    { q: 'Какой минимальный объём заказа (MOQ)?', a: 'Нет минимального объёма заказа. Поставляем от образцов 1 кг для лабораторных испытаний и пробных партий 5 кг до полных контейнеров 18–20 МТ. Заказывайте нужное количество — свяжитесь с нами, и мы подтвердим наличие и сроки.' },
+    { q: 'Какой минимальный объём заказа (MOQ)?', a: 'Образцы 1 кг доступны для подходящих сортов. Коммерческий объём зависит от сорта, упаковки, назначения, испытаний и пакета документов. Сообщите применение и пункт назначения, чтобы подтвердить правильный вариант.' },
     { q: 'Вы поставляете органический псиллиум?', a: 'Да. Мы поставляем органическую шелуху и порошок псиллиума по запросу. Органические партии доступны с проверкой сертификатов до оформления заказа. Покупатели должны указать целевой рынок и требуемый охват сертификации — NOP для США, EU-NOP для Европы.' },
     { q: 'Какие экспортные документы вы предоставляете?', a: 'Стандартный пакет экспортных документов включает: коммерческий счёт, упаковочный лист, COA, сертификат происхождения, фитосанитарный сертификат и сертификат фумигации при необходимости. Сертификаты халяль и кошер могут быть оформлены по запросу. Все документы предоставляются до отгрузки.' },
     { q: 'Какова ваша годовая производственная мощность?', a: 'Наше предприятие в Унджхе имеет годовую перерабатывающую мощность 2 000 МТ по всем продуктовым линейкам. Как правило, мы можем подтвердить срок поставки в течение 48 часов после получения подтверждённой спецификации и намерения о покупке.' },
     { q: 'Из каких портов вы отгружаете?', a: 'Мы отгружаем FOB Мундра, FOB Кандла и FOB JNPT (Nhava Sheva). Цены CIF доступны по запросу. Мундра — наш основной порт для большинства экспортных заказов из-за частоты судов в Европу, США и на Ближний Восток.' },
     { q: 'Какие размеры помола доступны для порошка шелухи псиллиума?', a: 'Порошок шелухи доступен в помоле 40, 60, 80, 100 и 200 меш (ASTM). Выбор помола зависит от вашего применения: 40–60 меш для наполнения капсул, 80–100 меш для порошковых напитков и функциональных продуктов, 200 меш для косметических и средств личной гигиены.' },
-    { q: 'Можно ли получить образец перед оформлением крупного заказа?', a: 'Да. Мы предоставляем образцы 100–500 г с COA по запросу. Укажите целевой сорт, помол и адрес доставки. Срок доставки образцов составляет 3–5 рабочих дней из Унджхи.' },
-    { q: 'Какие сертификаты имеет ваше предприятие?', a: 'В настоящее время на нашем предприятии ведутся работы по регистрации, организации операционной деятельности и прохождению международных аудитов соответствия. Мы уделяем приоритетное внимание прозрачности и соблюдению нормативных требований для всех мировых экспортных рынков. Пожалуйста, свяжитесь с нашим экспортным отделом напрямую для получения последней информации, графиков сертификации и конкретных требований к аудиту для вашей страны назначения.' },
+    { q: 'Можно ли получить образец перед оформлением крупного заказа?', a: 'Да. Укажите целевой сорт, помол, пункт назначения и требования к документам. Мы подтвердим наличие образца, варианты проверки COA и срок до отправки.' },
     { q: 'В чём разница между шелухой псиллиума и порошком шелухи псиллиума?', a: 'Оба продукта получают из одного и того же семени Plantago ovata, но различаются по форме и применению. Цельная шелуха сохраняет волокнистую текстуру и используется в наполнителях капсул, пакетиках слабительных и злаках с высоким содержанием клетчатки. Порошок измельчается до мелкого помола и равномерно диспергируется в порошковых напитках, хлебопекарных смесях и функциональных продуктах. Объём набухания в порошке несколько выше из-за большей площади контакта.' },
   ],
   ar: [
     { q: 'ما درجات نقاء قشور السيليوم التي تورّدونها?', a: 'نورّد درجات نقاء 85% و95% و98% و99%. تشير الدرجة إلى محتوى القشرة — درجة 99% لها أعلى محتوى من المخاط وحجم انتفاخ (≥50 مل/غ)، مناسبة لمونوغرافات المسهّلات الصيدلانية (USP/EP/IP). شارك تطبيقك المستهدف وسنوصي بالدرجة المناسبة.' },
-    { q: 'ما الحد الأدنى لكمية الطلب (MOQ)?', a: 'لا حد أدنى للطلب. نورّد من عينات 1 كغ لاختبارات المختبر ودُفعات تجريبية 5 كغ، حتى حاويات كاملة 18–20 طنًا. اطلب الكمية التي تحتاجها — تواصل معنا وسنؤكد التوافر وموعد التسليم.' },
+    { q: 'ما الحد الأدنى لكمية الطلب (MOQ)?', a: 'تتوفر عينات 1 كغ للدرجات المطابقة. يعتمد حجم الدفعة التجارية على الدرجة والتعبئة والوجهة والاختبارات وحزمة الوثائق. شارك الاستخدام والوجهة لتأكيد المسار المناسب.' },
     { q: 'هل تورّدون سيليوم عضوي?', a: 'نعم. نورّد قشور ومسحوق سيليوم عضوي بناءً على الطلب. الدُفعات العضوية متاحة مع مراجعة الشهادات قبل أمر الشراء. يجب على المشترين تحديد سوق وجهتهم ونطاق الشهادات المطلوبة — NOP للولايات المتحدة، وEU-NOP لأوروبا.' },
     { q: 'ما وثائق التصدير التي تقدمونها?', a: 'تشمل حزمة التصدير القياسية: فاتورة تجارية، وقائمة شحن، وCOA، وشهادة منشأ، وشهادة صحة نبات، وشهادة تبخير عند الحاجة. يمكن ترتيب شهادات الحلال والكوشير بناءً على الطلب. تُشارك جميع الوثائق قبل الشحن.' },
-    { q: 'ما طاقتكم الإنتاجية السنوية?', a: 'يمتلك مصنعنا في أونجها طاقة تصنيعية سنوية تبلغ 2,000 طن متري عبر جميع خطوط المنتجات. يمكننا عادةً تأكيد موعد التسليم خلال 48 ساعة من استلام مواصفات مؤكدة ونية شراء.' },
+    { q: 'ما طاقتكم الإنتاجية السنوية?', a: 'يمتلك مصنعنا في أونجها طاقة تصنيعية سنوية تبلغ 2,000 طن متري عبر جميع خطوط المنتجات. يتم تأكيد موعد التسليم بعد مراجعة المواصفة والتعبئة والوجهة ونية الشراء.' },
     { q: 'من أي موانئ تشحنون?', a: 'نشحن FOB موندرا وFOB كاندلا وFOB JNPT (نهافا شيفا). أسعار CIF متاحة بناءً على الطلب. موندرا هو ميناؤنا الرئيسي لمعظم طلبات التصدير بسبب تواتر السفن نحو أوروبا والولايات المتحدة والشرق الأوسط.' },
     { q: 'ما أحجام المنخل المتاحة لمسحوق قشور السيليوم?', a: 'مسحوق القشور متاح بمناخل 40 و60 و80 و100 و200 (ASTM). يعتمد اختيار المنخل على تطبيقك: 40–60 لتعبئة الكبسولات، 80–100 لمساحيق المشروبات والأغذية الوظيفية، 200 للتطبيقات التجميلية والعناية الشخصية.' },
-    { q: 'هل يمكنني الحصول على عينة قبل تقديم طلب بالجملة?', a: 'نعم. نوفر عينات 100–500 غ مع COA بناءً على الطلب. شارك درجتك المستهدفة والمنخل وعنوان الشحن. مدة تسليم العينات 3 إلى 5 أيام عمل من أونجها.' },
-    { q: 'ما الشهادات التي يمتلكها مصنعكم?', a: 'عمليات منشأتنا وتسجيلاتها وعمليات تدقيق الامتثال الدولية قيد التنفيذ حاليًا. نحن نولي الأولوية للشفافية والامتثال التنظيمي لجميع أسواق التصدير العالمية. يرجى الاتصال بمكتب التصدير لدينا مباشرة للحصول على آخر التحديثات والجداول الزمنية للامتثال ومتطلبات التدقيق المحددة لبلد وجهتك.' },
+    { q: 'هل يمكنني الحصول على عينة قبل تقديم طلب بالجملة?', a: 'نعم. شارك الدرجة المستهدفة والمنخل والوجهة ومتطلبات الوثائق. سنؤكد توفر العينة وخيارات مراجعة COA وموعد التسليم قبل الشحن.' },
     { q: 'ما الفرق بين قشور السيليوم ومسحوق قشور السيليوم?', a: 'كلاهما مصدره نفس بذرة Plantago ovata لكنهما يختلفان في الشكل والتطبيق. القشرة الكاملة تحتفظ بقوامها الليفي وتُستخدم في حشو الكبسولات وأكياس المسهّلات والحبوب الغنية بالألياف. المسحوق يُطحن بمنخل ناعم وينتشر بشكل منتظم في مساحيق المشروبات ومخاليط المخبوزات والأغذية الوظيفية. حجم الانتفاخ أعلى قليلاً في المسحوق بسبب زيادة مساحة السطح.' },
   ],
   zh: [
     { q: '你们提供哪些纯度规格的车叶草皮？', a: '我们提供85%、95%、98%和99%纯度规格。规格指的是皮的含量——99%规格具有最高的粘液质含量和膨胀体积（≥50毫升/克），适用于制药泻药专论（USP/EP/IP）。请告知您的目标应用，我们将推荐适合的规格。' },
-    { q: '最低订量（MOQ）是多少？', a: '无最低起订量。我们提供从1公斤实验室检测样品、5公斤试用批次到18–20吨整柜订单的全规格服务。按需订购——联系我们确认供货情况和交货期。' },
-    { q: '你们供应有机车叶草吗？', a: '是的。我们按需供应有机车叶草皮和粉末。有机批次在下采购订单前可进行证书审查。买家需注明目标市场及所需认证范围——美国为NOP，欧洲为EU-NOP。' },
+    { q: '最低订量（MOQ）是多少？', a: '适配等级可提供 1 kg 样品。商业批量取决于规格、包装、目的地、检测和文件要求。请告知用途和目的地，我们会确认合适的样品或整柜方案。' },
+    { q: '你们如何处理有机车前子需求？', a: '有机采购需要先审核证书范围、批次覆盖、目的地市场和交易文件路径。请注明目标市场及所需范围——美国为NOP，欧洲为EU Organic。' },
     { q: '你们提供哪些出口文件？', a: '标准出口文件包括：商业发票、装箱单、COA、原产地证、植物检疫证书及所需的熏蒸证书。清真和犹太洁食证书可按需提供。所有文件在发货前共享。' },
-    { q: '你们的年产能是多少？', a: '我们位于昂杰哈的工厂所有产品线年加工产能为2,000吨。收到确认的规格书和采购意向后，我们通常可在48小时内确认交货期。' },
+    { q: '你们的年产能是多少？', a: '我们位于昂杰哈的工厂所有产品线年加工产能为2,000吨。交期会在审核规格书、包装、目的地和采购意向后确认。' },
     { q: '你们从哪些港口发货？', a: '我们从FOB蒙德拉、FOB坎德拉和FOB JNPT（纳哈瓦·谢瓦）发货。CIF价格可按需提供。由于蒙德拉前往欧洲、美国和中东的船期频繁，它是我们大多数出口订单的主要港口。' },
     { q: '车叶草皮粉有哪些目数可选？', a: '皮粉提供40、60、80、100和200目（ASTM）。目数的选择取决于您的应用：40–60目用于胶囊填充，80–100目用于粉末饮料和功能性食品，200目用于化妆品或个人护理应用。' },
-    { q: '在下批量订单前能否获取样品？', a: '是的。我们按需提供100–500克含COA的样品。请提供您的目标规格、目数和收货地址。从昂杰哈发出的样品交货期为3至5个工作日。' },
-    { q: '你们的工厂持有哪些认证？', a: '我们工厂的运营准备、相关注册和国际合规性审计目前正在积极推进中。我们始终把全球出口市场的透明度与合规性放在首位。请直接联系我们的出口部门，以获取最新的合规进程、时间表以及针对您特定目的国家的审计与资质要求。' },
+    { q: '在下批量订单前能否获取样品？', a: '可以。请提供目标规格、目数、目的地和文件要求。发货前我们会确认样品可用性、COA审核选项和交期。' },
     { q: '车叶草皮与车叶草皮粉有何区别？', a: '两者均来自同一种Plantago ovata种子，但形态和应用不同。整皮保留其纤维质地，用于胶囊填充、泻药袋和高纤维谷物。粉末研磨至细目数，均匀分散于粉末饮料、烘焙混合物和功能性食品中。由于表面积更大，粉末的膨胀体积略高。' },
   ],
   de: [
     { q: 'Welche Reinheitsgrade für Psylliumschalen liefern Sie?', a: 'Wir liefern Reinheitsgrade von 85%, 95%, 98% und 99%. Der Grad bezieht sich auf den Schalengehalt — 99%-Grad hat den höchsten Mucilagehalt und das höchste Quellvolumen (≥50 ml/g), geeignet für pharmazeutische Laxativmonographien (USP/EP/IP). Teilen Sie Ihre Zielanwendung mit und wir empfehlen den geeigneten Grad.' },
-    { q: 'Was ist Ihre Mindestbestellmenge (MOQ)?', a: 'Keine Mindestbestellmenge. Wir liefern von 1-KG-Mustern für Labortests und 5-KG-Testchargen bis zu vollen Containern mit 18–20 MT. Bestellen Sie, was Sie benötigen — kontaktieren Sie uns und wir bestätigen Verfügbarkeit und Lieferzeit.' },
+    { q: 'Was ist Ihre Mindestbestellmenge (MOQ)?', a: '1-kg-Muster sind für passende Qualitäten verfügbar. Die kommerzielle Losgröße hängt von Qualität, Verpackung, Zielmarkt, Tests und Dokumentenpaket ab. Teilen Sie Anwendung und Zielort mit, damit wir die passende Route bestätigen.' },
     { q: 'Liefern Sie Bio-Psyllium?', a: 'Ja. Wir liefern Bio-Psylliumschalen und -pulver auf Anfrage. Bio-Chargen sind mit Zertifikatsprüfung vor der Bestellung verfügbar. Käufer müssen ihren Zielmarkt und den erforderlichen Zertifizierungsumfang angeben — NOP für die USA, EU-NOP für Europa.' },
     { q: 'Welche Exportdokumente stellen Sie bereit?', a: 'Das Standard-Exportpaket umfasst: Handelsrechnung, Packliste, COA, Ursprungszeugnis, Pflanzengesundheitszeugnis und Begasungszeugnis wo erforderlich. Halal- und Kosher-Zertifikate können auf Anfrage arrangiert werden. Alle Dokumente werden vor dem Versand geteilt.' },
-    { q: 'Wie hoch ist Ihre jährliche Produktionskapazität?', a: 'Unsere Anlage in Siddhpur hat eine jährliche Verarbeitungskapazität von 2.000 MT über alle Produktlinien. Wir können die Lieferzeit in der Regel innerhalb von 48 Stunden nach Eingang einer bestätigten Spezifikationsblatt und Kaufabsicht bestätigen.' },
+    { q: 'Wie hoch ist Ihre jährliche Produktionskapazität?', a: 'Unsere Anlage in Siddhpur hat eine jährliche Verarbeitungskapazität von 2.000 MT über alle Produktlinien. Die Lieferzeit wird nach Prüfung von Spezifikation, Verpackung, Zielort und Kaufabsicht bestätigt.' },
     { q: 'Von welchen Häfen versenden Sie?', a: 'Wir versenden FOB Mundra, FOB Kandla und FOB JNPT (Nhava Sheva). CIF-Preise sind auf Anfrage erhältlich. Mundra ist unser Haupthafen für die meisten Exportaufträge aufgrund der Schiffsfrequenz nach Europa, in die USA und in den Nahen Osten.' },
     { q: 'Welche Meshgrößen sind für Psylliumschalenpulver verfügbar?', a: 'Schalenpulver ist in Mesh 40, 60, 80, 100 und 200 (ASTM) erhältlich. Die Mesh-Auswahl hängt von Ihrer Anwendung ab: Mesh 40–60 für Kapselbefüllung, Mesh 80–100 für Getränkepulver und funktionelle Lebensmittel, Mesh 200 für kosmetische oder Körperpflegeanwendungen.' },
-    { q: 'Kann ich ein Muster erhalten, bevor ich eine Großbestellung aufgebe?', a: 'Ja. Wir stellen 100–500 g Muster mit COA auf Anfrage bereit. Teilen Sie Ihren Zielgrad, Mesh und Versandadresse mit. Die Lieferzeit für Muster beträgt 3–5 Werktage ab Siddhpur.' },
-    { q: 'Welche Zertifizierungen besitzt Ihre Anlage?', a: 'Unsere Betriebsabläufe, Registrierungen und internationalen Compliance-Audits befinden sich derzeit im Prozess. Wir legen großen Wert auf absolute Transparenz und die Einhaltung regulatorischer Vorgaben für alle weltweiten Exportmärkte. Bitte wenden Sie sich direkt an unsere Exportabteilung, um aktuelle Informationen, Compliance-Zeitpläne und spezifische Audit-Anforderungen für Ihr Zielland zu erhalten.' },
+    { q: 'Kann ich ein Muster erhalten, bevor ich eine Großbestellung aufgebe?', a: 'Ja. Teilen Sie Zielgrad, Mesh, Zielort und Dokumentanforderungen mit. Wir bestätigen Musterverfügbarkeit, COA-Prüfoptionen und Lieferzeit vor Versand.' },
     { q: 'Was ist der Unterschied zwischen Psylliumschalen und Psylliumschalenpulver?', a: 'Beide stammen aus derselben Plantago ovata-Samen, unterscheiden sich aber in Form und Anwendung. Ganze Schalen behalten ihre faserige Textur und werden in Kapselfüllungen, Laxativbeuteln und ballaststoffreichen Cerealien verwendet. Pulver wird auf eine feine Meshgröße gemahlen und verteilt sich gleichmäßig in Getränkepulvern, Backwarenblends und funktionellen Lebensmitteln. Das Quellvolumen ist im Pulver aufgrund der größeren Oberflächenexponierung leicht höher.' },
   ],
 };
@@ -3341,16 +3328,23 @@ export interface BlogInternalLink {
   path: string; // without lang prefix, e.g. "/products/psyllium-husk/"
 }
 
+export interface BlogReference {
+  text: string;
+  url: string;
+}
+
 export const blogPosts: {
   slug: string;
   title: string;
   category: string;
   date: string;
+  updatedAt?: string;
   summary: string;
   body: string[];
   sections?: BlogSection[];
   cta?: 'sample' | 'spec-sheet';
   internalLinks?: BlogInternalLink[];
+  references?: BlogReference[];
   aiSnapshot?: string;
   specTable?: Array<{ parameter: string; range: string; method: string }>;
   faqs?: Array<{ q: string; a: string }>;
@@ -3361,138 +3355,459 @@ export const blogPosts: {
     title: 'Psyllium Husk 99% Purity: Supplier Guide for Pharma Buyers',
     category: 'Product',
     date: '2026-05-10',
+    updatedAt: '2026-06-04',
     summary: 'What 99% purity means, which pharmacopoeias it meets, and how to source it from Gujarat.',
     body: [
       'Psyllium husk at 99% purity represents the pharmaceutical grade of the product — the highest husk content available from Indian processing facilities. At this grade, the husk content (the seed coat of Plantago ovata) is at least 99% by weight, with a minimum swell volume of 50 ml/g. This swell volume is the primary functional specification for laxative monographs under USP, European Pharmacopoeia (EP), and Indian Pharmacopoeia (IP).',
       'For pharmaceutical buyers, 99% grade must be accompanied by a full COA showing swell volume, moisture (≤12%), total ash (≤3%), acid-insoluble ash (≤0.4%), heavy metals (Lead ≤2 ppm, Arsenic ≤1 ppm), and microbiology (E. coli absent, Salmonella absent, TPC ≤10,000 cfu/g). These parameters map directly to the Plantago ovata husk monographs in USP and EP. Buyers should request test reports from an NABL-accredited laboratory in India.',
       'Sourcing 99% grade from Gujarat requires confirming that the processing facility has the milling and separation capacity to consistently achieve this purity. Unjha district in Gujarat is the primary psyllium processing hub in India, accounting for over 80% of global supply. We supply 99% grade husk in 10 kg, 25 kg, and 50 kg food-grade bags with full documentation. Share your pharmacopoeia requirement and destination market — we will provide a sample COA for review before any purchase order.'
-    ]
+    ],
+    aiSnapshot: '99% psyllium husk should be reviewed by lot, specification, and application rather than by broad supplier claims. Buyers should verify purity, swelling volume, ash, microbiology, heavy metals, sample COA, and packing before PO.',
+    sections: [
+      {
+        heading: 'What buyers should verify',
+        body: 'For 99% psyllium husk, buyers should check purity, swelling volume, ash, microbiology, heavy metals, sample COA, and packing. The goal is to connect the commercial request to the actual lot, sample, COA, and destination documentation.'
+      },
+      {
+        heading: 'How to read the COA or specification',
+        body: 'Read the COA line by line: parameter, unit, method, result, limit, lot identity, and report date. If the finished product file needs a specific method or wording, confirm it before sampling or PO.'
+      },
+      {
+        heading: 'Common sourcing mistake',
+        body: 'Do not buy only from a headline grade or certificate keyword. Ask what the tested lot supports, what documents can be reviewed, and whether the grade is suitable for the target application.'
+      },
+      {
+        heading: 'How RM can support review',
+        body: 'RM can review grade, mesh, sample COA, product specification, packing, origin details, and destination document requirements before PO.'
+      }
+    ],
+    specTable: [
+      { parameter: 'Grade / Application', range: 'Buyer-specific', method: 'Specification review' },
+      { parameter: 'Sample Review', range: '1 kg sample where available', method: 'Pre-PO review' },
+      { parameter: 'COA Parameters', range: 'Lot-specific', method: 'COA / third-party report where required' },
+      { parameter: 'Packing and Documents', range: 'Destination-specific', method: 'Buyer checklist' }
+    ],
+    faqs: [
+      { q: 'What should buyers confirm before PO?', a: 'Confirm purity, swelling volume, ash, microbiology, heavy metals, sample COA, and packing, target application, sample requirement, packing, and destination documents before PO.' },
+      { q: 'Is a sample COA enough for final approval?', a: 'No. A sample COA supports early review. Final approval should use the actual shipment lot COA or third-party report where required.' },
+      { q: 'Can wording be matched to buyer specifications?', a: 'Wording can be reviewed against buyer specifications only where the tested lot results and documents support it.' },
+      { q: 'What is the fastest way to avoid procurement delays?', a: 'Share grade, mesh, target application, destination country, monthly volume, and required document list before quotation.' }
+    ],
   },
   {
     slug: 'psyllium-export-india-fob-mundra',
     title: 'Exporting Psyllium from India: FOB Mundra vs Kandla vs JNPT',
     category: 'Logistics',
     date: '2026-05-05',
+    updatedAt: '2026-06-04',
     summary: 'Port comparison for bulk psyllium buyers — freight, transit times, and vessel frequency.',
     body: [
       'India exports psyllium through three primary ports: Mundra (Gujarat), Kandla (Gujarat), and JNPT/Nhava Sheva (Maharashtra). For psyllium buyers, port selection affects freight cost, transit time to destination, and container availability. Most Gujarat-based processors, including RM Psyllium, use Mundra as their primary port due to its proximity (approximately 220 km from our Siddhpur facility) and high vessel frequency to Europe, the US East Coast, the Middle East, and Australia.',
       'Mundra Port (MUND) is operated by Adani Ports and handles the highest volume of container traffic in India. Vessel frequency to major destination ports (Rotterdam, Felixstowe, New York, Jeddah, Colombo) is typically 2–4 sailings per week. Transit time to Rotterdam is approximately 20–23 days; to New York approximately 25–28 days; to Jeddah approximately 8–10 days. Kandla (INKLA) is an alternative with slightly lower port charges but less frequent services. JNPT is used primarily for buyers in southern India or where specific shipping lines offer better rates.',
-      'For CIF orders, we select the port based on your destination and the shipping line with the best rate at the time of booking. For FOB orders, you nominate the freight forwarder and we coordinate with them directly. Export documentation — commercial invoice, packing list, COA, certificate of origin, phytosanitary certificate — is prepared at our facility and submitted 3–5 days before vessel loading. Share your destination port and we will provide an indicative freight quote alongside the product price.'
-    ]
+      'For CIF orders, we select the port based on your destination and the shipping line with the best rate at the time of booking. For FOB orders, you nominate the freight forwarder and we coordinate with them directly. Export documentation — commercial invoice, packing list, COA, certificate of origin, phytosanitary certificate — is prepared and reviewed against the shipment plan before vessel loading. Share your destination port and we will provide an indicative freight quote alongside the product price.'
+    ],
+    aiSnapshot: 'FOB Mundra psyllium export should be reviewed by lot, specification, and application rather than by broad supplier claims. Buyers should verify port, incoterm, packing, lead time, freight route, origin documents, and destination document requirements before PO.',
+    sections: [
+      {
+        heading: 'What buyers should verify',
+        body: 'For FOB Mundra psyllium export, buyers should check port, incoterm, packing, lead time, freight route, origin documents, and destination document requirements. The goal is to connect the commercial request to the actual lot, sample, COA, and destination documentation.'
+      },
+      {
+        heading: 'How to read the COA or specification',
+        body: 'Read the COA line by line: parameter, unit, method, result, limit, lot identity, and report date. If the finished product file needs a specific method or wording, confirm it before sampling or PO.'
+      },
+      {
+        heading: 'Common sourcing mistake',
+        body: 'Do not buy only from a headline grade or certificate keyword. Ask what the tested lot supports, what documents can be reviewed, and whether the grade is suitable for the target application.'
+      },
+      {
+        heading: 'How RM can support review',
+        body: 'RM can review grade, mesh, sample COA, product specification, packing, origin details, and destination document requirements before PO.'
+      }
+    ],
+    specTable: [
+      { parameter: 'Grade / Application', range: 'Buyer-specific', method: 'Specification review' },
+      { parameter: 'Sample Review', range: '1 kg sample where available', method: 'Pre-PO review' },
+      { parameter: 'COA Parameters', range: 'Lot-specific', method: 'COA / third-party report where required' },
+      { parameter: 'Packing and Documents', range: 'Destination-specific', method: 'Buyer checklist' }
+    ],
+    faqs: [
+      { q: 'What should buyers confirm before PO?', a: 'Confirm port, incoterm, packing, lead time, freight route, origin documents, and destination document requirements, target application, sample requirement, packing, and destination documents before PO.' },
+      { q: 'Is a sample COA enough for final approval?', a: 'No. A sample COA supports early review. Final approval should use the actual shipment lot COA or third-party report where required.' },
+      { q: 'Can wording be matched to buyer specifications?', a: 'Wording can be reviewed against buyer specifications only where the tested lot results and documents support it.' },
+      { q: 'What is the fastest way to avoid procurement delays?', a: 'Share grade, mesh, target application, destination country, monthly volume, and required document list before quotation.' }
+    ],
   },
   {
     slug: 'psyllium-husk-usp-ep-pharmacopoeia',
     title: 'USP vs EP vs IP: Psyllium Husk Pharmacopoeia Standards Explained',
     category: 'Compliance',
     date: '2026-05-24',
+    updatedAt: '2026-06-04',
     summary: 'How swell volume, ash, and purity standards differ across US, European, and Indian pharmacopoeias.',
     body: [
       'Psyllium husk is monographed in three major pharmacopoeias: the United States Pharmacopeia (USP), the European Pharmacopoeia (EP), and the Indian Pharmacopoeia (IP). While all three describe Plantago ovata husk, the specific test parameters and acceptance criteria differ in ways that matter for buyers importing psyllium for pharmaceutical use. Understanding these differences helps procurement teams specify the correct grade and request the right COA parameters.',
       'The USP monograph for Psyllium Husk requires a minimum swell volume of 40 ml/g (some editions specify higher for specific dosage forms), moisture not more than 12%, and total ash not more than 4%. The EP monograph (Ispaghula Husk) specifies a minimum swell index of 40 and has specific identification tests including microscopy and chemical reactions. The IP monograph is largely aligned with USP but may have minor differences in test methodology. For export to the US, buyers should request a COA with parameters cross-referenced to the current USP edition.',
       'For export to Europe, the EP monograph term is "Ispaghula Husk" — which is the same product (Plantago ovata seed husk). European buyers typically request a COA annotated against EP parameters including swell index, foreign matter, microbiology, and pesticide residue limits under EU regulations. We supply with COA annotated to buyer-specified pharmacopoeia on request. Share your destination market and pharmacopoeia edition and we will prepare the COA accordingly.'
-    ]
+    ],
+    aiSnapshot: 'USP, EP, and IP psyllium references should be reviewed by lot, specification, and application rather than by broad supplier claims. Buyers should verify pharmacopoeia wording, lot COA, swelling volume, ash, microbiology, and heavy metals before PO.',
+    sections: [
+      {
+        heading: 'What buyers should verify',
+        body: 'For USP, EP, and IP psyllium references, buyers should check pharmacopoeia wording, lot COA, swelling volume, ash, microbiology, and heavy metals. The goal is to connect the commercial request to the actual lot, sample, COA, and destination documentation.'
+      },
+      {
+        heading: 'How to read the COA or specification',
+        body: 'Read the COA line by line: parameter, unit, method, result, limit, lot identity, and report date. If the finished product file needs a specific method or wording, confirm it before sampling or PO.'
+      },
+      {
+        heading: 'Common sourcing mistake',
+        body: 'Do not buy only from a headline grade or certificate keyword. Ask what the tested lot supports, what documents can be reviewed, and whether the grade is suitable for the target application.'
+      },
+      {
+        heading: 'How RM can support review',
+        body: 'RM can review grade, mesh, sample COA, product specification, packing, origin details, and destination document requirements before PO.'
+      }
+    ],
+    specTable: [
+      { parameter: 'Grade / Application', range: 'Buyer-specific', method: 'Specification review' },
+      { parameter: 'Sample Review', range: '1 kg sample where available', method: 'Pre-PO review' },
+      { parameter: 'COA Parameters', range: 'Lot-specific', method: 'COA / third-party report where required' },
+      { parameter: 'Packing and Documents', range: 'Destination-specific', method: 'Buyer checklist' }
+    ],
+    faqs: [
+      { q: 'What should buyers confirm before PO?', a: 'Confirm pharmacopoeia wording, lot COA, swelling volume, ash, microbiology, and heavy metals, target application, sample requirement, packing, and destination documents before PO.' },
+      { q: 'Is a sample COA enough for final approval?', a: 'No. A sample COA supports early review. Final approval should use the actual shipment lot COA or third-party report where required.' },
+      { q: 'Can wording be matched to buyer specifications?', a: 'Wording can be reviewed against buyer specifications only where the tested lot results and documents support it.' },
+      { q: 'What is the fastest way to avoid procurement delays?', a: 'Share grade, mesh, target application, destination country, monthly volume, and required document list before quotation.' }
+    ],
   },
   {
     slug: 'psyllium-seed-supplier-gujarat-rajasthan',
     title: 'Psyllium Seed Supply from Gujarat and Rajasthan',
     category: 'Sourcing',
     date: '2026-05-22',
+    updatedAt: '2026-06-04',
     summary: 'Crop origins, sortex vs machine-clean grades, and bulk seed sourcing for millers and processors.',
     body: [
       'Plantago ovata (psyllium) seeds are cultivated primarily in Gujarat and Rajasthan, with Mehsana, Banaskantha, and Kutch districts in Gujarat and Barmer, Jalore, and Jodhpur districts in Rajasthan being the main growing areas. The crop is a rabi (winter) crop, sown in October–November and harvested in February–March. Annual production in India is estimated at 100,000–150,000 MT of seed, of which approximately 85% is exported in processed form (husk and powder).',
       'Seeds are available in two main grades based on cleaning method. Machine-clean (standard) grade is cleaned using air separators and gravity tables to remove light particles and foreign matter — purity typically 98% or above. Sortex grade uses optical sorting to remove discolored seeds and foreign matter, achieving 99%+ purity with significantly lower foreign matter (≤0.5%). Sortex grade commands a price premium of 8–12% but is preferred by millers who need consistent husk yield and by pharma-grade husk processors.',
       'Seed specifications buyers should confirm before purchasing include: purity (98% or 99%), moisture (≤8%), germination percentage (≥85% for seed-quality lots; not required for milling use), and lot origin documentation. We supply seeds in 25 kg, 50 kg, and 1,000 kg jumbo bags. Origin documentation, lot traceability, and a sample for pre-shipment testing are provided with each order. Share your intended use (milling, extraction, or feed) and we will recommend the appropriate grade.'
-    ]
+    ],
+    aiSnapshot: 'psyllium seed sourcing should be reviewed by lot, specification, and application rather than by broad supplier claims. Buyers should verify seed purity, foreign matter, moisture, origin, cleaning method, packing, and lot records before PO.',
+    sections: [
+      {
+        heading: 'What buyers should verify',
+        body: 'For psyllium seed sourcing, buyers should check seed purity, foreign matter, moisture, origin, cleaning method, packing, and lot records. The goal is to connect the commercial request to the actual lot, sample, COA, and destination documentation.'
+      },
+      {
+        heading: 'How to read the COA or specification',
+        body: 'Read the COA line by line: parameter, unit, method, result, limit, lot identity, and report date. If the finished product file needs a specific method or wording, confirm it before sampling or PO.'
+      },
+      {
+        heading: 'Common sourcing mistake',
+        body: 'Do not buy only from a headline grade or certificate keyword. Ask what the tested lot supports, what documents can be reviewed, and whether the grade is suitable for the target application.'
+      },
+      {
+        heading: 'How RM can support review',
+        body: 'RM can review grade, mesh, sample COA, product specification, packing, origin details, and destination document requirements before PO.'
+      }
+    ],
+    specTable: [
+      { parameter: 'Grade / Application', range: 'Buyer-specific', method: 'Specification review' },
+      { parameter: 'Sample Review', range: '1 kg sample where available', method: 'Pre-PO review' },
+      { parameter: 'COA Parameters', range: 'Lot-specific', method: 'COA / third-party report where required' },
+      { parameter: 'Packing and Documents', range: 'Destination-specific', method: 'Buyer checklist' }
+    ],
+    faqs: [
+      { q: 'What should buyers confirm before PO?', a: 'Confirm seed purity, foreign matter, moisture, origin, cleaning method, packing, and lot records, target application, sample requirement, packing, and destination documents before PO.' },
+      { q: 'Is a sample COA enough for final approval?', a: 'No. A sample COA supports early review. Final approval should use the actual shipment lot COA or third-party report where required.' },
+      { q: 'Can wording be matched to buyer specifications?', a: 'Wording can be reviewed against buyer specifications only where the tested lot results and documents support it.' },
+      { q: 'What is the fastest way to avoid procurement delays?', a: 'Share grade, mesh, target application, destination country, monthly volume, and required document list before quotation.' }
+    ],
   },
   {
     slug: 'organic-psyllium-nop-eu-certification',
     title: 'Organic Psyllium: NOP vs EU-NOP Certification for Export',
     category: 'Compliance',
     date: '2026-05-21',
+    updatedAt: '2026-06-04',
     summary: 'Certificate scope, lot traceability requirements, and how to request organic documentation from Indian exporters.',
     body: [
-      'Organic psyllium from India is certified under two main frameworks: USDA National Organic Program (NOP) for the US market and EU Organic (formerly EU-NOP equivalence) for the European market. Indian organic processors are certified by accredited certification bodies — including Control Union, ECOCERT India, Lacon, and SGS — under these frameworks. Buyers importing organic psyllium must confirm that the certificate covers the specific product (husk, husk powder, or seed), the lot dates, and the destination market.',
-      'NOP certification for psyllium requires that the seed source, growing practices (no synthetic pesticides or fertilisers), processing facility, and handling chain all be certified organic. The certificate of conformity or transaction certificate (TC) issued per shipment is the document that links the specific lot to the organic certification. For US imports, the TC is issued by the certifier and must accompany the shipment or be provided in the documentation package. EU buyers require a Certificate of Inspection (COI) under EU Regulation 2018/848.',
-      'At RM Psyllium, organic lots are supplied on request based on current certified stock availability. We provide the organic certificate copy, lot-level origin records, and transaction certificate documentation before purchase order confirmation. Organic psyllium commands a 25–40% price premium over conventional depending on grade, certification scope, and market timing. If you need organic documentation for a specific destination market and certification body, share your requirements and we will confirm current availability and pricing.'
-    ]
+      'Organic psyllium from India is reviewed under two main frameworks: USDA National Organic Program (NOP) for the US market and EU Organic for the European market. Buyers importing organic psyllium must confirm that the certificate covers the specific product, lot dates, handler chain, and destination market.',
+      'NOP and EU organic imports depend on certificate scope and transaction documentation. A transaction certificate (TC) or Certificate of Inspection (COI) links the specific lot to the organic certificate where required by the destination market.',
+      'For RM Psyllium, organic supply is handled only after certificate and lot-scope review. Share your destination market, certification body requirement, and document expectations before quotation.'
+    ],
+    aiSnapshot: 'organic psyllium documentation should be reviewed by lot, specification, and application rather than by broad supplier claims. Buyers should verify certificate scope, lot coverage, transaction document pathway, origin, packing, and destination market before PO.',
+    sections: [
+      {
+        heading: 'What buyers should verify',
+        body: 'For organic psyllium documentation, buyers should check certificate scope, lot coverage, transaction document pathway, origin, packing, and destination market. The goal is to connect the commercial request to the actual lot, sample, COA, and destination documentation.'
+      },
+      {
+        heading: 'How to read the COA or specification',
+        body: 'Read the COA line by line: parameter, unit, method, result, limit, lot identity, and report date. If the finished product file needs a specific method or wording, confirm it before sampling or PO.'
+      },
+      {
+        heading: 'Common sourcing mistake',
+        body: 'Do not buy only from a headline grade or certificate keyword. Ask what the tested lot supports, what documents can be reviewed, and whether the grade is suitable for the target application.'
+      },
+      {
+        heading: 'How RM can support review',
+        body: 'RM can review grade, mesh, sample COA, product specification, packing, origin details, and destination document requirements before PO.'
+      }
+    ],
+    specTable: [
+      { parameter: 'Grade / Application', range: 'Buyer-specific', method: 'Specification review' },
+      { parameter: 'Sample Review', range: '1 kg sample where available', method: 'Pre-PO review' },
+      { parameter: 'COA Parameters', range: 'Lot-specific', method: 'COA / third-party report where required' },
+      { parameter: 'Packing and Documents', range: 'Destination-specific', method: 'Buyer checklist' }
+    ],
+    faqs: [
+      { q: 'What should buyers confirm before PO?', a: 'Confirm certificate scope, lot coverage, transaction document pathway, origin, packing, and destination market, target application, sample requirement, packing, and destination documents before PO.' },
+      { q: 'Is a sample COA enough for final approval?', a: 'No. A sample COA supports early review. Final approval should use the actual shipment lot COA or third-party report where required.' },
+      { q: 'Can wording be matched to buyer specifications?', a: 'Wording can be reviewed against buyer specifications only where the tested lot results and documents support it.' },
+      { q: 'What is the fastest way to avoid procurement delays?', a: 'Share grade, mesh, target application, destination country, monthly volume, and required document list before quotation.' }
+    ],
   },
   {
     slug: 'psyllium-husk-gluten-free-bakery',
     title: 'Psyllium Husk in Gluten-Free Bakery: Grade and Mesh Selection',
     category: 'Application',
     date: '2026-05-18',
+    updatedAt: '2026-06-04',
     summary: 'How mesh size and purity affect water binding, crumb texture, and gluten-free bread performance.',
     body: [
       'Psyllium husk is used in gluten-free bakery as a structural and water-binding agent — it replaces some of the gluten network functions that allow bread dough to trap gas and hold shape during baking. The mucilage in psyllium forms a gel when hydrated, providing viscosity and elasticity to gluten-free doughs made from rice flour, corn starch, tapioca, and similar bases. The result is improved crumb structure, moisture retention, and shelf life compared to psyllium-free gluten-free formulations.',
       'For bakery applications, 95% or 98% purity grade in 80–100 mesh is the most commonly specified. Finer mesh (100+) disperses more quickly and produces a smoother crumb. Coarser mesh (40–60) may be visible in the finished product and can create a slightly grainy texture — acceptable in some artisan products but not in industrial bakery. 85% grade is used in cost-sensitive formulations where slightly lower water-binding performance is acceptable.',
-      'Typical usage rates in gluten-free bread formulations are 1–3% of total flour weight. Above 3%, psyllium can produce a dense, gummy crumb due to over-hydration. Buyers should request a 100–200 g sample with COA and run bench-top formulation tests before committing to a bulk order. We can provide product data on swell volume and moisture for each grade to support formulation work. Share your target formulation, batch size, and application and we will recommend the appropriate grade and mesh combination.'
-    ]
+      'Typical usage rates in gluten-free bread formulations are 1–3% of total flour weight. Above 3%, psyllium can produce a dense, gummy crumb due to over-hydration. Buyers should request a 1 kg sample pack with COA review and run bench-top formulation tests before committing to a bulk order. We can provide product data on swell volume and moisture for each grade to support formulation work. Share your target formulation, batch size, and application and we will recommend the appropriate grade and mesh combination.'
+    ],
+    aiSnapshot: 'psyllium for gluten-free bakery should be reviewed by lot, specification, and application rather than by broad supplier claims. Buyers should verify mesh, hydration behavior, purity, gluten-control requirement, sample testing, and application trial before PO.',
+    sections: [
+      {
+        heading: 'What buyers should verify',
+        body: 'For psyllium for gluten-free bakery, buyers should check mesh, hydration behavior, purity, gluten-control requirement, sample testing, and application trial. The goal is to connect the commercial request to the actual lot, sample, COA, and destination documentation.'
+      },
+      {
+        heading: 'How to read the COA or specification',
+        body: 'Read the COA line by line: parameter, unit, method, result, limit, lot identity, and report date. If the finished product file needs a specific method or wording, confirm it before sampling or PO.'
+      },
+      {
+        heading: 'Common sourcing mistake',
+        body: 'Do not buy only from a headline grade or certificate keyword. Ask what the tested lot supports, what documents can be reviewed, and whether the grade is suitable for the target application.'
+      },
+      {
+        heading: 'How RM can support review',
+        body: 'RM can review grade, mesh, sample COA, product specification, packing, origin details, and destination document requirements before PO.'
+      }
+    ],
+    specTable: [
+      { parameter: 'Grade / Application', range: 'Buyer-specific', method: 'Specification review' },
+      { parameter: 'Sample Review', range: '1 kg sample where available', method: 'Pre-PO review' },
+      { parameter: 'COA Parameters', range: 'Lot-specific', method: 'COA / third-party report where required' },
+      { parameter: 'Packing and Documents', range: 'Destination-specific', method: 'Buyer checklist' }
+    ],
+    faqs: [
+      { q: 'What should buyers confirm before PO?', a: 'Confirm mesh, hydration behavior, purity, gluten-control requirement, sample testing, and application trial, target application, sample requirement, packing, and destination documents before PO.' },
+      { q: 'Is a sample COA enough for final approval?', a: 'No. A sample COA supports early review. Final approval should use the actual shipment lot COA or third-party report where required.' },
+      { q: 'Can wording be matched to buyer specifications?', a: 'Wording can be reviewed against buyer specifications only where the tested lot results and documents support it.' },
+      { q: 'What is the fastest way to avoid procurement delays?', a: 'Share grade, mesh, target application, destination country, monthly volume, and required document list before quotation.' }
+    ],
   },
   {
     slug: 'psyllium-supplement-capsule-filling',
     title: 'Psyllium for Capsule Filling: Mesh, Flow, and Grade Guide',
     category: 'Application',
     date: '2026-03-30',
+    updatedAt: '2026-06-04',
     summary: 'Practical guide for supplement manufacturers on selecting the right husk mesh for capsule filling equipment.',
     body: [
       'Psyllium husk is one of the most commonly encapsulated dietary fibres, used in laxative and digestive health supplements sold in gelatin and vegetarian (HPMC) capsules. The key challenge in capsule filling is flowability — psyllium husk is fibrous and hygroscopic, which means it can clump and bridge in filling equipment hoppers, causing inconsistent fill weights. Mesh selection and moisture control are the two primary variables that determine filling performance.',
       'For standard capsule filling equipment (dosator or tamping pin type), 40–60 mesh whole husk is the preferred specification. At this mesh, particles are large enough to flow without bridging but small enough to pack uniformly in the capsule body. Below 40 mesh (coarser), husk may not pack efficiently, leading to low fill weights. Above 60 mesh (finer), the powder becomes more hygroscopic and tends to clump. For powder-in-capsule formats using husk powder rather than whole husk, 60–80 mesh is standard.',
       'Moisture control is critical: husk above 10% moisture will clump in the hopper and cause fill weight variation. Suppliers should provide a COA with moisture tested close to the shipment date. We test moisture at dispatch and can provide moisture-controlled packing (sealed HDPE liner with desiccant) on request for sensitive shipments. Share your capsule size, target fill weight, and filling equipment type — we will recommend the grade, mesh, and moisture specification that matches your production setup.'
-    ]
+    ],
+    aiSnapshot: 'psyllium for capsule filling should be reviewed by lot, specification, and application rather than by broad supplier claims. Buyers should verify mesh, flow, moisture, bulk density, fill weight, COA, and packing before PO.',
+    sections: [
+      {
+        heading: 'What buyers should verify',
+        body: 'For psyllium for capsule filling, buyers should check mesh, flow, moisture, bulk density, fill weight, COA, and packing. The goal is to connect the commercial request to the actual lot, sample, COA, and destination documentation.'
+      },
+      {
+        heading: 'How to read the COA or specification',
+        body: 'Read the COA line by line: parameter, unit, method, result, limit, lot identity, and report date. If the finished product file needs a specific method or wording, confirm it before sampling or PO.'
+      },
+      {
+        heading: 'Common sourcing mistake',
+        body: 'Do not buy only from a headline grade or certificate keyword. Ask what the tested lot supports, what documents can be reviewed, and whether the grade is suitable for the target application.'
+      },
+      {
+        heading: 'How RM can support review',
+        body: 'RM can review grade, mesh, sample COA, product specification, packing, origin details, and destination document requirements before PO.'
+      }
+    ],
+    specTable: [
+      { parameter: 'Grade / Application', range: 'Buyer-specific', method: 'Specification review' },
+      { parameter: 'Sample Review', range: '1 kg sample where available', method: 'Pre-PO review' },
+      { parameter: 'COA Parameters', range: 'Lot-specific', method: 'COA / third-party report where required' },
+      { parameter: 'Packing and Documents', range: 'Destination-specific', method: 'Buyer checklist' }
+    ],
+    faqs: [
+      { q: 'What should buyers confirm before PO?', a: 'Confirm mesh, flow, moisture, bulk density, fill weight, COA, and packing, target application, sample requirement, packing, and destination documents before PO.' },
+      { q: 'Is a sample COA enough for final approval?', a: 'No. A sample COA supports early review. Final approval should use the actual shipment lot COA or third-party report where required.' },
+      { q: 'Can wording be matched to buyer specifications?', a: 'Wording can be reviewed against buyer specifications only where the tested lot results and documents support it.' },
+      { q: 'What is the fastest way to avoid procurement delays?', a: 'Share grade, mesh, target application, destination country, monthly volume, and required document list before quotation.' }
+    ],
   },
   {
     slug: 'psyllium-halal-kosher-documentation',
     title: 'Halal and Kosher Psyllium: What Documents Buyers Need',
     category: 'Compliance',
     date: '2026-03-22',
+    updatedAt: '2026-06-04',
     summary: 'Which markets require Halal or Kosher certificates, what the certification process covers, and current status for RM Psyllium.',
     body: [
       'Psyllium husk, being a plant-derived product with no animal inputs in processing, is generally considered acceptable under both Halal and Kosher dietary requirements. However, many buyers — particularly in the Middle East, Southeast Asia, and for US kosher supplement markets — require formal certification from a recognized body. Halal certification for psyllium confirms that processing equipment, facility practices, and any processing aids (anti-caking agents, flow agents if used) meet Islamic dietary standards. Kosher certification confirms compliance with Jewish dietary laws under rabbinical supervision.',
       'For Halal certification, recognized bodies in India include Halal India, Jamiat Ulama-i-Hind Halal Trust, and international bodies such as IFANCA. The certificate covers the facility, the specific products, and the certification period (typically one year). A Halal certificate copy per shipment, along with a lot-level endorsement, is what most Middle East import authorities and food safety agencies require. For Kosher certification, bodies such as OU (Orthodox Union) or KSA are recognized in the US and internationally.',
-      'At RM Psyllium, Halal and Kosher documentation is available on request. We provide a Halal declaration confirming that psyllium husk is a pure plant product with no animal-derived inputs in cultivation, processing, or packaging — accepted by most import authorities and buyers for food and supplement ingredient use. Contact us with your specific certification body requirement and we will provide the relevant documentation before your purchase order.'
-    ]
+      'For RM Psyllium lots, buyers can request a plant-origin declaration and review any Halal or Kosher certificate requirement before PO. Do not treat plant-origin documentation as a substitute for formal certification where your label, retailer, or importer requires one.'
+    ],
+    aiSnapshot: 'Halal and Kosher psyllium documentation should be reviewed by lot, specification, and application rather than by broad supplier claims. Buyers should verify plant-origin declaration, formal certificate requirement, lot identity, packing, and destination market before PO.',
+    sections: [
+      {
+        heading: 'What buyers should verify',
+        body: 'For Halal and Kosher psyllium documentation, buyers should check plant-origin declaration, formal certificate requirement, lot identity, packing, and destination market. The goal is to connect the commercial request to the actual lot, sample, COA, and destination documentation.'
+      },
+      {
+        heading: 'How to read the COA or specification',
+        body: 'Read the COA line by line: parameter, unit, method, result, limit, lot identity, and report date. If the finished product file needs a specific method or wording, confirm it before sampling or PO.'
+      },
+      {
+        heading: 'Common sourcing mistake',
+        body: 'Do not buy only from a headline grade or certificate keyword. Ask what the tested lot supports, what documents can be reviewed, and whether the grade is suitable for the target application.'
+      },
+      {
+        heading: 'How RM can support review',
+        body: 'RM can review grade, mesh, sample COA, product specification, packing, origin details, and destination document requirements before PO.'
+      }
+    ],
+    specTable: [
+      { parameter: 'Grade / Application', range: 'Buyer-specific', method: 'Specification review' },
+      { parameter: 'Sample Review', range: '1 kg sample where available', method: 'Pre-PO review' },
+      { parameter: 'COA Parameters', range: 'Lot-specific', method: 'COA / third-party report where required' },
+      { parameter: 'Packing and Documents', range: 'Destination-specific', method: 'Buyer checklist' }
+    ],
+    faqs: [
+      { q: 'What should buyers confirm before PO?', a: 'Confirm plant-origin declaration, formal certificate requirement, lot identity, packing, and destination market, target application, sample requirement, packing, and destination documents before PO.' },
+      { q: 'Is a sample COA enough for final approval?', a: 'No. A sample COA supports early review. Final approval should use the actual shipment lot COA or third-party report where required.' },
+      { q: 'Can wording be matched to buyer specifications?', a: 'Wording can be reviewed against buyer specifications only where the tested lot results and documents support it.' },
+      { q: 'What is the fastest way to avoid procurement delays?', a: 'Share grade, mesh, target application, destination country, monthly volume, and required document list before quotation.' }
+    ],
   },
   {
     slug: 'bulk-psyllium-import-usa-fda',
     title: 'Importing Psyllium into the USA: FDA, Labelling, and COA Requirements',
     category: 'Markets',
     date: '2026-03-15',
+    updatedAt: '2026-06-04',
     summary: 'What US supplement and food brands need before importing bulk psyllium from India.',
     body: [
       'Bulk psyllium husk imported into the United States falls under FDA jurisdiction as either a dietary supplement ingredient or a food ingredient, depending on the intended use. The FDA does not require pre-approval for bulk psyllium imports, but shipments are subject to FDA import screening, and facilities exporting to the US are subject to FSMA (Food Safety Modernization Act) supplier verification requirements. US importers are responsible for verifying that their foreign suppliers meet FSMA preventive controls standards.',
       'For dietary supplement applications, psyllium husk must meet USP monograph specifications (or buyer-specified in-house specifications). The COA provided with each shipment should include: identification (botanical), swell volume, moisture, ash, microbiology (TPC, yeast, mold, E. coli, Salmonella), and heavy metals (Lead, Arsenic, Cadmium, Mercury). For food applications, psyllium husk has GRAS (Generally Recognized as Safe) status in the US for use as a source of soluble dietary fibre in specific food categories.',
       'FDA Prior Notice is required for all food and dietary supplement shipments entering the US. This is submitted electronically through the FDA Prior Notice System Interface (PNSI) before the shipment arrives. US importers typically handle this, but we can provide all required product details (product name, description, HS code, manufacturer details, country of origin) for the prior notice filing. We ship to US ports via Mundra or JNPT, with typical transit time of 25–30 days to East Coast ports. Contact us with your import agent details and we will coordinate documentation accordingly.'
-    ]
+    ],
+    aiSnapshot: 'US psyllium import review should be reviewed by lot, specification, and application rather than by broad supplier claims. Buyers should verify FSVP responsibility, prior notice data, COA, origin, packing, broker workflow, and destination use before PO.',
+    sections: [
+      {
+        heading: 'What buyers should verify',
+        body: 'For US psyllium import review, buyers should check FSVP responsibility, prior notice data, COA, origin, packing, broker workflow, and destination use. The goal is to connect the commercial request to the actual lot, sample, COA, and destination documentation.'
+      },
+      {
+        heading: 'How to read the COA or specification',
+        body: 'Read the COA line by line: parameter, unit, method, result, limit, lot identity, and report date. If the finished product file needs a specific method or wording, confirm it before sampling or PO.'
+      },
+      {
+        heading: 'Common sourcing mistake',
+        body: 'Do not buy only from a headline grade or certificate keyword. Ask what the tested lot supports, what documents can be reviewed, and whether the grade is suitable for the target application.'
+      },
+      {
+        heading: 'How RM can support review',
+        body: 'RM can review grade, mesh, sample COA, product specification, packing, origin details, and destination document requirements before PO.'
+      }
+    ],
+    specTable: [
+      { parameter: 'Grade / Application', range: 'Buyer-specific', method: 'Specification review' },
+      { parameter: 'Sample Review', range: '1 kg sample where available', method: 'Pre-PO review' },
+      { parameter: 'COA Parameters', range: 'Lot-specific', method: 'COA / third-party report where required' },
+      { parameter: 'Packing and Documents', range: 'Destination-specific', method: 'Buyer checklist' }
+    ],
+    faqs: [
+      { q: 'What should buyers confirm before PO?', a: 'Confirm FSVP responsibility, prior notice data, COA, origin, packing, broker workflow, and destination use, target application, sample requirement, packing, and destination documents before PO.' },
+      { q: 'Is a sample COA enough for final approval?', a: 'No. A sample COA supports early review. Final approval should use the actual shipment lot COA or third-party report where required.' },
+      { q: 'Can wording be matched to buyer specifications?', a: 'Wording can be reviewed against buyer specifications only where the tested lot results and documents support it.' },
+      { q: 'What is the fastest way to avoid procurement delays?', a: 'Share grade, mesh, target application, destination country, monthly volume, and required document list before quotation.' }
+    ],
   },
   {
     slug: 'psyllium-khakha-animal-feed-specifications',
     title: 'Psyllium Khakha Powder for Animal Feed: Specifications and Use Cases',
     category: 'Product',
     date: '2026-03-08',
+    updatedAt: '2026-06-04',
     summary: 'Crude fibre content, moisture specs, and feed formulation use cases for khakha powder buyers.',
     body: [
       'Psyllium khakha powder is the by-product remaining after psyllium husk is milled and separated from the seed. It consists primarily of the inner seed coat and residual endosperm, and contains a significant amount of mucilage-derived soluble fibre — typically 30–40% crude fibre by weight. This fibre content, combined with 8–12% crude protein and a low-cost price point relative to whole husk, makes it a useful feed ingredient for ruminant and poultry feed formulators.',
       'Feed-grade khakha is specified primarily on moisture (≤12%), crude fibre (30–40%), crude protein (8–12%), and total ash (≤8%). Foreign matter and sand content should be confirmed — excess sand or silica can elevate ash and reduce digestibility. Mesh or particle size affects blending behavior in compound feed manufacturing: coarser particles (20–40 mesh) are standard for most feed applications, while finer mesh (60–80) is used in pellet formulations or where homogeneity in the premix is critical.',
       'Use cases for khakha in animal feed include: cattle and buffalo feed (digestive support, hydration retention), poultry feed as a fibre source, and fish and aquaculture feed as a natural binder. We supply khakha in 25 kg, 50 kg, and 1,000 kg jumbo bags. Feed-grade lots are supplied with a basic analysis COA (moisture, crude fibre, crude protein, ash) and packing list. For buyers requiring more detailed analysis (heavy metals, mycotoxins, pesticide residues), additional testing can be arranged at buyer cost. Share your formulation target and we will confirm current lot availability and pricing.'
-    ]
+    ],
+    aiSnapshot: 'psyllium khakha for animal feed should be reviewed by lot, specification, and application rather than by broad supplier claims. Buyers should verify fiber, protein, ash, moisture, particle size, packing, and feed-use suitability before PO.',
+    sections: [
+      {
+        heading: 'What buyers should verify',
+        body: 'For psyllium khakha for animal feed, buyers should check fiber, protein, ash, moisture, particle size, packing, and feed-use suitability. The goal is to connect the commercial request to the actual lot, sample, COA, and destination documentation.'
+      },
+      {
+        heading: 'How to read the COA or specification',
+        body: 'Read the COA line by line: parameter, unit, method, result, limit, lot identity, and report date. If the finished product file needs a specific method or wording, confirm it before sampling or PO.'
+      },
+      {
+        heading: 'Common sourcing mistake',
+        body: 'Do not buy only from a headline grade or certificate keyword. Ask what the tested lot supports, what documents can be reviewed, and whether the grade is suitable for the target application.'
+      },
+      {
+        heading: 'How RM can support review',
+        body: 'RM can review grade, mesh, sample COA, product specification, packing, origin details, and destination document requirements before PO.'
+      }
+    ],
+    specTable: [
+      { parameter: 'Grade / Application', range: 'Buyer-specific', method: 'Specification review' },
+      { parameter: 'Sample Review', range: '1 kg sample where available', method: 'Pre-PO review' },
+      { parameter: 'COA Parameters', range: 'Lot-specific', method: 'COA / third-party report where required' },
+      { parameter: 'Packing and Documents', range: 'Destination-specific', method: 'Buyer checklist' }
+    ],
+    faqs: [
+      { q: 'What should buyers confirm before PO?', a: 'Confirm fiber, protein, ash, moisture, particle size, packing, and feed-use suitability, target application, sample requirement, packing, and destination documents before PO.' },
+      { q: 'Is a sample COA enough for final approval?', a: 'No. A sample COA supports early review. Final approval should use the actual shipment lot COA or third-party report where required.' },
+      { q: 'Can wording be matched to buyer specifications?', a: 'Wording can be reviewed against buyer specifications only where the tested lot results and documents support it.' },
+      { q: 'What is the fastest way to avoid procurement delays?', a: 'Share grade, mesh, target application, destination country, monthly volume, and required document list before quotation.' }
+    ],
   },
 
   // ── NEW POSTS ────────────────────────────────────────────────────────────
 
   {
     slug: 'psyllium-husk-gmp-compliant-manufacturer-india',
-    title: 'Psyllium Husk GMP-Compliant Manufacturer India: Facility and Documentation Standards',
+    title: 'Psyllium Husk GMP Documentation Checklist for India Suppliers',
     category: 'Compliance',
     date: '2026-05-25',
-    summary: 'What GMP-compliant facility means for psyllium processing, BP grade specifications, and the documentation checklist pharma buyers should request from Indian suppliers.',
+    updatedAt: '2026-06-04',
+    summary: 'What pharma buyers should verify when they need GMP-style documentation, BP grade specifications, and supplier records for psyllium sourcing from India.',
     body: [
-      'Pharmaceutical buyers sourcing psyllium husk from India require more than a purity grade — they need confirmation that the processing facility operates under documented quality controls consistent with Good Manufacturing Practice (GMP) standards. For psyllium, GMP-compliant processing means controlled milling environments, documented cleaning procedures, pest management records, batch traceability, and calibrated equipment. This applies whether the husk is intended for a USP, EP, or British Pharmacopoeia (BP) laxative formulation.',
-      'RM Psyllium operates from a GMP-compliant facility in Siddhpur, Gujarat — the primary psyllium processing hub in India. Our facility maintains batch manufacturing records, equipment calibration logs, and in-process quality checks for each production run. Buyers can request a facility statement confirming applicable GMP controls alongside the COA.'
+      'Pharmaceutical buyers sourcing psyllium husk from India require more than a purity grade. They need documented quality controls: controlled milling areas, cleaning records, pest management records, batch traceability, calibrated equipment, and COA parameters matched to the intended use.',
+      'For RM Psyllium lots, buyers can request a sample COA, product specification, origin details, packing options, and a destination document checklist before PO. GMP certificate language should be used only where an active certificate or audit document exists and covers the requested scope.'
     ],
     sections: [
       {
         heading: 'BP Grade vs USP Grade: Key Parameter Differences',
-        body: 'Psyllium husk supplied to the UK and Commonwealth markets typically references the British Pharmacopoeia (BP), which aligns closely with the European Pharmacopoeia (EP). The key differences from USP center on minimum swell index and ash limits. Both grades are available from our Siddhpur facility with COA annotated to the buyer-specified pharmacopoeia.',
+        body: 'Psyllium husk supplied to the UK and Commonwealth markets may reference the British Pharmacopoeia (BP), which aligns closely with the European Pharmacopoeia (EP). The key differences from USP center on minimum swell index and ash limits. COA wording should reference the buyer-specified pharmacopoeia only where the tested lot results support it.',
         table: {
           headers: ['Parameter', 'BP / EP', 'USP'],
           rows: [
@@ -3507,14 +3822,27 @@ export const blogPosts: {
       },
       {
         heading: 'Pharma Buyer Documentation Checklist',
-        body: 'For a pharma import, the standard documentation package from RM Psyllium includes: (1) COA from NABL-accredited laboratory annotated to USP, EP, BP, or IP as specified; (2) Certificate of Origin issued by the Gujarat Chamber of Commerce; (3) Phytosanitary Certificate from the Plant Quarantine Authority; (4) Facility GMP compliance statement on company letterhead; (5) Packing list and commercial invoice. Additional documents — pesticide residue report, heavy metals panel, microbiology extension — available on request.'
+        body: 'For a pharma import, buyers should request a document pack that may include: (1) COA from a third-party laboratory with USP, EP, BP, or IP wording only where tested results support it; (2) Certificate of Origin requirements; (3) Phytosanitary Certificate requirements; (4) facility/process statement where available; (5) packing list and commercial invoice. Additional pesticide residue, heavy metals, or microbiology testing can be discussed before PO.'
       }
     ],
     internalLinks: [
       { text: 'Psyllium Husk Product Page', path: '/products/psyllium-husk/' },
       { text: 'Pharma & Nutraceutical Buyers', path: '/industries/pharma-nutraceutical/' }
     ],
-    cta: 'sample'
+    cta: 'sample',
+    aiSnapshot: 'GMP-style psyllium documentation should be reviewed by lot, specification, and application rather than by broad supplier claims. Buyers should verify process records, cleaning records, pest control, lot traceability, calibration, and COA before PO.',
+    specTable: [
+      { parameter: 'Grade / Application', range: 'Buyer-specific', method: 'Specification review' },
+      { parameter: 'Sample Review', range: '1 kg sample where available', method: 'Pre-PO review' },
+      { parameter: 'COA Parameters', range: 'Lot-specific', method: 'COA / third-party report where required' },
+      { parameter: 'Packing and Documents', range: 'Destination-specific', method: 'Buyer checklist' }
+    ],
+    faqs: [
+      { q: 'What should buyers confirm before PO?', a: 'Confirm process records, cleaning records, pest control, lot traceability, calibration, and COA, target application, sample requirement, packing, and destination documents before PO.' },
+      { q: 'Is a sample COA enough for final approval?', a: 'No. A sample COA supports early review. Final approval should use the actual shipment lot COA or third-party report where required.' },
+      { q: 'Can wording be matched to buyer specifications?', a: 'Wording can be reviewed against buyer specifications only where the tested lot results and documents support it.' },
+      { q: 'What is the fastest way to avoid procurement delays?', a: 'Share grade, mesh, target application, destination country, monthly volume, and required document list before quotation.' }
+    ],
   },
 
   {
@@ -3522,6 +3850,7 @@ export const blogPosts: {
     title: 'Plantago Ovata Husk Bulk Exporter India: Grades, Isabgol Naming, and Export Terms',
     category: 'Product',
     date: '2026-05-26',
+    updatedAt: '2026-06-04',
     summary: 'Why plantago ovata and isabgol refer to the same product, which export grades are available from India, and what documentation accompanies bulk pharma shipments.',
     body: [
       'Plantago ovata husk — commercially known as isabgol in India and psyllium husk in international trade — is a single product: the seed coat of Plantago ovata Forssk., cultivated primarily in Siddhpur and the broader Unjha belt of Gujarat. When international buyers search for "plantago ovata husk exporter India" or "isabgol pharmaceutical grade bulk," they are referring to the same material. The distinction in nomenclature matters only for pharmacopoeial annotation — the European Pharmacopoeia uses "Ispaghula Husk," the USP uses "Psyllium Husk," and the Indian Pharmacopoeia uses "Isabgol Husk."',
@@ -3542,14 +3871,27 @@ export const blogPosts: {
       },
       {
         heading: 'Standard Export Documentation Package',
-        body: 'For bulk plantago ovata husk shipments, the standard documentation set includes: commercial invoice and packing list; COA from NABL-accredited laboratory; Certificate of Origin (Form A for GSP-eligible markets, standard COO for others); Phytosanitary Certificate from India\'s Plant Quarantine Authority; fumigation certificate where required (US, Australia, New Zealand). HS Code for psyllium husk is 1211.90 (other plants). COA parameters are annotated to buyer-specified pharmacopoeia — USP, EP, BP, or IP — on request.'
+        body: 'For bulk plantago ovata husk shipments, buyers should review commercial invoice and packing list requirements; third-party COA requirements; Certificate of Origin needs; phytosanitary requirements; and fumigation requirements where applicable. HS Code for psyllium husk is commonly reviewed as 1211.90. COA wording should reference buyer-specified pharmacopoeia only where tested lot results support it.'
       }
     ],
     internalLinks: [
       { text: 'Psyllium Husk Product Page', path: '/products/psyllium-husk/' },
       { text: 'European Union Buyers', path: '/regions/european-union/' }
     ],
-    cta: 'sample'
+    cta: 'sample',
+    aiSnapshot: 'Plantago ovata husk export should be reviewed by lot, specification, and application rather than by broad supplier claims. Buyers should verify botanical identity, grade, purity, swelling, origin, packing, and export documents before PO.',
+    specTable: [
+      { parameter: 'Grade / Application', range: 'Buyer-specific', method: 'Specification review' },
+      { parameter: 'Sample Review', range: '1 kg sample where available', method: 'Pre-PO review' },
+      { parameter: 'COA Parameters', range: 'Lot-specific', method: 'COA / third-party report where required' },
+      { parameter: 'Packing and Documents', range: 'Destination-specific', method: 'Buyer checklist' }
+    ],
+    faqs: [
+      { q: 'What should buyers confirm before PO?', a: 'Confirm botanical identity, grade, purity, swelling, origin, packing, and export documents, target application, sample requirement, packing, and destination documents before PO.' },
+      { q: 'Is a sample COA enough for final approval?', a: 'No. A sample COA supports early review. Final approval should use the actual shipment lot COA or third-party report where required.' },
+      { q: 'Can wording be matched to buyer specifications?', a: 'Wording can be reviewed against buyer specifications only where the tested lot results and documents support it.' },
+      { q: 'What is the fastest way to avoid procurement delays?', a: 'Share grade, mesh, target application, destination country, monthly volume, and required document list before quotation.' }
+    ],
   },
 
   {
@@ -3557,10 +3899,11 @@ export const blogPosts: {
     title: 'Psyllium Husk Powder Wholesale Supplier India: 85%, 95%, 98% Grade Guide',
     category: 'Product',
     date: '2026-05-26',
+    updatedAt: '2026-06-04',
     summary: 'Grade and mesh selection for supplement and functional food manufacturers sourcing psyllium husk powder in bulk from Gujarat, India.',
     body: [
       'Psyllium husk powder is milled from whole psyllium husk (Plantago ovata seed coat) to a specified mesh fineness. Unlike whole husk — which retains fibrous structure — powder disperses uniformly in aqueous matrices, making it the preferred format for drink mixes, functional food premixes, and certain supplement dosage forms. Powder grade (purity percentage) determines mucilage content and swell volume; mesh determines particle size and dispersion speed.',
-      'RM Psyllium supplies psyllium husk powder in three purity grades from our Siddhpur, Gujarat facility: 85%, 95%, and 98%. All grades are available in multiple mesh specifications and supplied with full COA from an NABL-accredited laboratory. MOQ starts from 100 kg for initial orders; container-load supply (18–20 MT) is available with 10–15 day production lead time.'
+      'RM Psyllium supplies psyllium husk powder in three purity grades from our Siddhpur, Gujarat facility: 85%, 95%, and 98%. Grades are available in multiple mesh specifications, and buyers can review a sample COA or request third-party testing where required. MOQ and lead time depend on grade, packing, testing, documents, and destination.'
     ],
     sections: [
       {
@@ -3581,14 +3924,27 @@ export const blogPosts: {
       },
       {
         heading: 'MOQ and Packaging Options',
-        body: 'Psyllium husk powder is supplied in 25 kg HDPE-lined paper bags, 50 kg HDPE-lined bags, and 500 kg FIBC jumbo bags. For moisture-sensitive applications (capsule filling), heat-sealed inner HDPE liner with desiccant insert is available on request. Sample quantities (100–500 g with COA) are dispatched from Siddhpur within 3–5 business days.'
+        body: 'Psyllium husk powder is supplied in 25 kg HDPE-lined paper bags, 50 kg HDPE-lined bags, and 500 kg FIBC jumbo bags. For moisture-sensitive applications (capsule filling), heat-sealed inner HDPE liner with desiccant insert is available on request. Sample quantities, COA review options, and dispatch timing are planned after grade, mesh, destination, and document requirements are clear.'
       }
     ],
     internalLinks: [
       { text: 'Psyllium Husk Powder Product Page', path: '/products/psyllium-husk-powder/' },
       { text: 'Pharma & Nutraceutical Buyers', path: '/industries/pharma-nutraceutical/' }
     ],
-    cta: 'sample'
+    cta: 'sample',
+    aiSnapshot: 'psyllium husk powder wholesale sourcing should be reviewed by lot, specification, and application rather than by broad supplier claims. Buyers should verify mesh, grade, moisture, microbiology, application fit, sample COA, and packing before PO.',
+    specTable: [
+      { parameter: 'Grade / Application', range: 'Buyer-specific', method: 'Specification review' },
+      { parameter: 'Sample Review', range: '1 kg sample where available', method: 'Pre-PO review' },
+      { parameter: 'COA Parameters', range: 'Lot-specific', method: 'COA / third-party report where required' },
+      { parameter: 'Packing and Documents', range: 'Destination-specific', method: 'Buyer checklist' }
+    ],
+    faqs: [
+      { q: 'What should buyers confirm before PO?', a: 'Confirm mesh, grade, moisture, microbiology, application fit, sample COA, and packing, target application, sample requirement, packing, and destination documents before PO.' },
+      { q: 'Is a sample COA enough for final approval?', a: 'No. A sample COA supports early review. Final approval should use the actual shipment lot COA or third-party report where required.' },
+      { q: 'Can wording be matched to buyer specifications?', a: 'Wording can be reviewed against buyer specifications only where the tested lot results and documents support it.' },
+      { q: 'What is the fastest way to avoid procurement delays?', a: 'Share grade, mesh, target application, destination country, monthly volume, and required document list before quotation.' }
+    ],
   },
 
   {
@@ -3596,10 +3952,11 @@ export const blogPosts: {
     title: 'Psyllium Husk Private Label Supplement India: Bulk OEM Sourcing Requirements',
     category: 'Application',
     date: '2026-05-27',
+    updatedAt: '2026-06-04',
     summary: 'What supplement brands and CDMOs need when sourcing psyllium husk in bulk for white-label or OEM products from India — non-GMO documentation, batch consistency, and packaging options.',
     body: [
       'Supplement brands and contract manufacturers (CDMOs) sourcing psyllium husk for private label products have requirements that go beyond standard bulk ingredient supply: they need consistent COA parameters across batches, non-GMO identity documentation, packaging options suitable for direct production integration, and the traceability chain that satisfies finished-product compliance audits. Gujarat\'s Siddhpur, as the primary global processing hub for plantago ovata, is the origin point for over 80% of internationally traded psyllium husk.',
-      'RM Psyllium supplies pharmaceutical- and supplement-grade psyllium husk and powder to OEM brands and CDMOs globally. Our Siddhpur facility provides full batch-level COA documentation, non-GMO declarations, and can accommodate branded or neutral packaging for direct production line use. We handle orders from 100 kg trial batches through container-load volumes.'
+      'RM Psyllium supplies pharmaceutical- and supplement-grade psyllium husk and powder to OEM brands and CDMOs globally. Our Siddhpur facility provides full batch-level COA documentation, non-GMO declarations, and can accommodate branded or neutral packaging for direct production line use. We handle validation batches from 100 kg through container-load volumes.'
     ],
     sections: [
       {
@@ -3619,23 +3976,37 @@ export const blogPosts: {
       { text: 'Organic Psyllium Product Page', path: '/products/organic-psyllium/' },
       { text: 'Pharma & Nutraceutical Buyers', path: '/industries/pharma-nutraceutical/' }
     ],
-    cta: 'sample'
+    cta: 'sample',
+    aiSnapshot: 'private-label psyllium supplement sourcing should be reviewed by lot, specification, and application rather than by broad supplier claims. Buyers should verify grade, pharmacopoeia wording, label claims, COA, sample testing, packing, and destination documents before PO.',
+    specTable: [
+      { parameter: 'Grade / Application', range: 'Buyer-specific', method: 'Specification review' },
+      { parameter: 'Sample Review', range: '1 kg sample where available', method: 'Pre-PO review' },
+      { parameter: 'COA Parameters', range: 'Lot-specific', method: 'COA / third-party report where required' },
+      { parameter: 'Packing and Documents', range: 'Destination-specific', method: 'Buyer checklist' }
+    ],
+    faqs: [
+      { q: 'What should buyers confirm before PO?', a: 'Confirm grade, pharmacopoeia wording, label claims, COA, sample testing, packing, and destination documents, target application, sample requirement, packing, and destination documents before PO.' },
+      { q: 'Is a sample COA enough for final approval?', a: 'No. A sample COA supports early review. Final approval should use the actual shipment lot COA or third-party report where required.' },
+      { q: 'Can wording be matched to buyer specifications?', a: 'Wording can be reviewed against buyer specifications only where the tested lot results and documents support it.' },
+      { q: 'What is the fastest way to avoid procurement delays?', a: 'Share grade, mesh, target application, destination country, monthly volume, and required document list before quotation.' }
+    ],
   },
 
   {
     slug: 'psyllium-husk-food-grade-bulk-supplier-india',
-    title: 'Psyllium Husk Food Grade Bulk Supplier India: HACCP-Compliant Facility',
+    title: 'Psyllium Husk Food Grade Bulk Supplier India: HACCP Buyer Checklist',
     category: 'Compliance',
     date: '2026-05-28',
-    summary: 'Food grade psyllium husk specifications, what HACCP-compliant processing means in practice, and the documentation food manufacturers need before placing a bulk order from Siddhpur, Gujarat.',
+    updatedAt: '2026-06-04',
+    summary: 'Food grade psyllium husk specifications, HACCP-style control points buyers should verify, and documentation food manufacturers need before bulk orders from Siddhpur, Gujarat.',
     body: [
       'Food manufacturers sourcing psyllium husk as a functional ingredient — for fiber fortification, texture modification, or clean-label applications — require a supplier with food safety controls that go beyond basic agricultural processing. The key differentiator is not certification language but the actual hazard controls in place: physical contamination prevention, allergen management, moisture control, and documented batch traceability.',
-      'RM Psyllium operates from a food-safe processing facility in Siddhpur, Gujarat. Our facility applies HACCP principles — hazard analysis and critical control point identification — across the milling, separation, and packaging processes for food-grade psyllium husk and powder. Food-grade lots are tested at an NABL-accredited laboratory before dispatch. Standard supply is in 25 kg and 50 kg food-grade bags with full documentation.'
+      'For food-grade psyllium husk and powder, buyers should review the actual controls behind the lot: physical separation, cleaning records, moisture control, allergen review, packing records, and COA parameters. Third-party laboratory testing can be arranged or shared where required by the buyer specification.'
     ],
     sections: [
       {
         heading: 'Food Grade Specification Parameters',
-        body: 'Food-grade psyllium husk is specified on the following parameters. These align with requirements under Codex Alimentarius, EU food additive regulation (E461 — Methyl cellulose is different from psyllium, but psyllium is regulated as a novel food ingredient in EU or as dietary fiber in other markets), FSSAI (India), and US FDA GRAS status.',
+        body: 'Food-grade psyllium husk is usually reviewed on the following parameters. Buyers should confirm the destination regulation, product use, and COA wording before PO.',
         table: {
           headers: ['Parameter', 'Typical Limit', 'Test Method'],
           rows: [
@@ -3652,19 +4023,32 @@ export const blogPosts: {
         }
       },
       {
-        heading: 'HACCP-Compliant Processing: What It Covers',
-        body: 'HACCP-compliant processing for psyllium covers three primary hazard categories: (1) Physical — metal detection at final packaging stage; gravity separation and aspiration to remove stones, dust, and foreign seeds during milling; (2) Chemical — no pesticide or chemical treatment applied during processing; moisture monitoring to prevent mycotoxin development during storage; (3) Biological — cleaning and sanitisation records for all contact equipment; separate milling lines for different grades to prevent cross-contamination; temperature-controlled storage for finished goods awaiting dispatch.'
+        heading: 'HACCP Buyer Checklist: What to Verify',
+        body: 'For psyllium, buyers should verify three primary hazard categories: (1) Physical — final metal-detection approach, gravity separation, aspiration, and foreign-matter controls; (2) Chemical — pesticide review, chemical-treatment declarations, and moisture monitoring; (3) Biological — cleaning and sanitisation records, allergen review, grade separation, and finished-goods storage controls.'
       },
       {
-        heading: 'MOQ and Certification Documents Available',
-        body: 'Food-grade psyllium husk is available from 500 kg minimum (initial order) in 25 kg or 50 kg food-grade PE-lined bags. Standard document package: COA from NABL-accredited lab, Certificate of Origin, phytosanitary certificate, and food safety declaration. For EU buyers, a food business operator declaration and product specification sheet are also available. FSSAI registration documentation available for buyers importing into India or requiring India food authority reference.'
+        heading: 'MOQ and Buyer Document Review',
+        body: 'Food-grade psyllium husk is available in 25 kg or 50 kg food-grade bags depending on grade, packing, and destination. Before PO, buyers can review a sample COA, product specification, Certificate of Origin requirements, phytosanitary and fumigation needs, food safety declaration, and destination document checklist.'
       }
     ],
     internalLinks: [
       { text: 'Psyllium Husk Product Page', path: '/products/psyllium-husk/' },
       { text: 'Food & Beverage Buyers', path: '/industries/food-beverage-bakery/' }
     ],
-    cta: 'sample'
+    cta: 'sample',
+    aiSnapshot: 'food-grade psyllium bulk sourcing should be reviewed by lot, specification, and application rather than by broad supplier claims. Buyers should verify food grade, moisture, microbiology, foreign matter, packing, application fit, and COA before PO.',
+    specTable: [
+      { parameter: 'Grade / Application', range: 'Buyer-specific', method: 'Specification review' },
+      { parameter: 'Sample Review', range: '1 kg sample where available', method: 'Pre-PO review' },
+      { parameter: 'COA Parameters', range: 'Lot-specific', method: 'COA / third-party report where required' },
+      { parameter: 'Packing and Documents', range: 'Destination-specific', method: 'Buyer checklist' }
+    ],
+    faqs: [
+      { q: 'What should buyers confirm before PO?', a: 'Confirm food grade, moisture, microbiology, foreign matter, packing, application fit, and COA, target application, sample requirement, packing, and destination documents before PO.' },
+      { q: 'Is a sample COA enough for final approval?', a: 'No. A sample COA supports early review. Final approval should use the actual shipment lot COA or third-party report where required.' },
+      { q: 'Can wording be matched to buyer specifications?', a: 'Wording can be reviewed against buyer specifications only where the tested lot results and documents support it.' },
+      { q: 'What is the fastest way to avoid procurement delays?', a: 'Share grade, mesh, target application, destination country, monthly volume, and required document list before quotation.' }
+    ],
   },
 
   {
@@ -3672,10 +4056,11 @@ export const blogPosts: {
     title: 'Psyllium Husk Soluble Fiber for Food Fortification Bulk: Sourcing from India',
     category: 'Application',
     date: '2026-05-28',
+    updatedAt: '2026-06-04',
     summary: 'Soluble fiber content by psyllium grade, thickening and gelling behavior in food systems, and how food manufacturers source isabgol husk in bulk from Gujarat for fortification and texture applications.',
     body: [
       'Psyllium husk — also traded as isabgol in Indian and Middle Eastern markets — is one of the highest soluble fiber ingredients available for food fortification at commodity scale. The mucilage in psyllium husk is approximately 70–85% soluble dietary fiber by dry weight, consisting primarily of arabinoxylans. When hydrated, this mucilage forms a viscous gel that provides functional benefits across a broad range of food applications: thickening, water binding, texture stabilization, and fiber label claims.',
-      'Food manufacturers in Europe, North America, and Southeast Asia source psyllium husk and powder from Siddhpur, Gujarat — the origin of over 80% of globally traded psyllium. RM Psyllium supplies food-grade and organic psyllium husk and powder in bulk for food fortification applications, with full food safety documentation and flexible packaging from 500 kg to container loads.'
+      'Food manufacturers in Europe, North America, and Southeast Asia source psyllium husk and powder from Siddhpur, Gujarat — the origin of over 80% of globally traded psyllium. RM Psyllium supplies food-grade psyllium husk and powder in bulk for food fortification applications, with lot-level document review and flexible packaging from 500 kg to container loads.'
     ],
     sections: [
       {
@@ -3704,23 +4089,37 @@ export const blogPosts: {
       { text: 'Psyllium Husk Powder Product Page', path: '/products/psyllium-husk-powder/' },
       { text: 'Food & Beverage Buyers', path: '/industries/food-beverage-bakery/' }
     ],
-    cta: 'spec-sheet'
+    cta: 'spec-sheet',
+    aiSnapshot: 'psyllium soluble fiber fortification should be reviewed by lot, specification, and application rather than by broad supplier claims. Buyers should verify grade, mesh, hydration, dosage, fiber claim requirement, COA, and sample trial before PO.',
+    specTable: [
+      { parameter: 'Grade / Application', range: 'Buyer-specific', method: 'Specification review' },
+      { parameter: 'Sample Review', range: '1 kg sample where available', method: 'Pre-PO review' },
+      { parameter: 'COA Parameters', range: 'Lot-specific', method: 'COA / third-party report where required' },
+      { parameter: 'Packing and Documents', range: 'Destination-specific', method: 'Buyer checklist' }
+    ],
+    faqs: [
+      { q: 'What should buyers confirm before PO?', a: 'Confirm grade, mesh, hydration, dosage, fiber claim requirement, COA, and sample trial, target application, sample requirement, packing, and destination documents before PO.' },
+      { q: 'Is a sample COA enough for final approval?', a: 'No. A sample COA supports early review. Final approval should use the actual shipment lot COA or third-party report where required.' },
+      { q: 'Can wording be matched to buyer specifications?', a: 'Wording can be reviewed against buyer specifications only where the tested lot results and documents support it.' },
+      { q: 'What is the fastest way to avoid procurement delays?', a: 'Share grade, mesh, target application, destination country, monthly volume, and required document list before quotation.' }
+    ],
   },
 
   {
     slug: 'psyllium-husk-certified-gluten-free-bulk-supplier',
-    title: 'Psyllium Husk Certified Gluten Free Bulk Supplier: What Bakery Brands Need',
+    title: 'Psyllium Husk Gluten-Free Bulk Supplier: What Bakery Brands Need',
     category: 'Application',
     date: '2026-05-29',
-    summary: 'Gluten-free certification documentation, bread-binder usage rates by application, and flour blend ratios for bakery brands sourcing psyllium husk in bulk from India.',
+    updatedAt: '2026-06-04',
+    summary: 'Gluten-free documentation, bread-binder usage rates by application, and flour blend ratios for bakery brands sourcing psyllium husk in bulk from India.',
     body: [
-      'Psyllium husk is inherently gluten-free — Plantago ovata is not a cereal grain and contains no gluten proteins. However, for bakery brands making gluten-free claims on finished products, the ingredient must be processed in a facility with documented allergen controls to prevent cross-contamination from gluten-containing grains. This is the certification step that matters: not a chemical test confirming absence of gluten in psyllium, but a process audit confirming dedicated equipment, cleaning validation, and tested finished-product lots.',
-      'RM Psyllium processes psyllium husk in a dedicated facility in Siddhpur, Gujarat without co-processing wheat, barley, rye, or other gluten-containing grains. Gluten-free certification documentation — including allergen management records and lot-level ELISA test reports below 20 ppm — is available on request for brands requiring documented supply chain compliance for their gluten-free product range.'
+      'Psyllium husk is plant-derived and not a cereal grain. However, bakery brands making gluten-free claims on finished products should verify allergen controls, cleaning records, storage segregation, and lot testing where required by their standard.',
+      'For RM Psyllium lots, buyers can request a plant-origin declaration and discuss whether lot-level gluten testing or additional allergen documentation is required for the destination market. Do not treat plant origin as a substitute for a formal gluten-free certificate where your label or retailer requires one.'
     ],
     sections: [
       {
-        heading: 'Gluten-Free Certification: What the Documents Cover',
-        body: 'Gluten-free certification for psyllium husk involves two components: (1) Facility audit documentation — records confirming that no gluten-containing grains are processed on shared equipment without validated cleaning procedures; dedicated milling and packaging lines where applicable; (2) Product testing — ELISA test result for gluten (R5 Mendez method, the CODEX-referenced method) showing <20 ppm total gluten for each certified lot. Per-shipment transaction certificate is issued by the certification body. Buyers should confirm their destination market\'s specific threshold — EU and Codex standard is <20 ppm, US FDA standard is also <20 ppm.'
+        heading: 'Gluten-Free Documentation: What to Ask For',
+        body: 'Gluten-free documentation for psyllium husk usually involves two checks: (1) Facility and process records — whether gluten-containing grains are processed on shared equipment, cleaning procedures, storage segregation, and allergen controls; (2) Product testing — ELISA test result for gluten where required by the buyer standard. Buyers should confirm the destination market threshold and retailer requirements before PO.'
       },
       {
         heading: 'Psyllium as a Bread Binder: Usage Rates by Application',
@@ -3745,7 +4144,20 @@ export const blogPosts: {
       { text: 'Psyllium Husk Product Page', path: '/products/psyllium-husk/' },
       { text: 'Food & Beverage Buyers', path: '/industries/food-beverage-bakery/' }
     ],
-    cta: 'sample'
+    cta: 'sample',
+    aiSnapshot: 'gluten-free psyllium sourcing should be reviewed by lot, specification, and application rather than by broad supplier claims. Buyers should verify gluten-control documents, ELISA testing if required, lot identity, packing, and retailer threshold before PO.',
+    specTable: [
+      { parameter: 'Grade / Application', range: 'Buyer-specific', method: 'Specification review' },
+      { parameter: 'Sample Review', range: '1 kg sample where available', method: 'Pre-PO review' },
+      { parameter: 'COA Parameters', range: 'Lot-specific', method: 'COA / third-party report where required' },
+      { parameter: 'Packing and Documents', range: 'Destination-specific', method: 'Buyer checklist' }
+    ],
+    faqs: [
+      { q: 'What should buyers confirm before PO?', a: 'Confirm gluten-control documents, ELISA testing if required, lot identity, packing, and retailer threshold, target application, sample requirement, packing, and destination documents before PO.' },
+      { q: 'Is a sample COA enough for final approval?', a: 'No. A sample COA supports early review. Final approval should use the actual shipment lot COA or third-party report where required.' },
+      { q: 'Can wording be matched to buyer specifications?', a: 'Wording can be reviewed against buyer specifications only where the tested lot results and documents support it.' },
+      { q: 'What is the fastest way to avoid procurement delays?', a: 'Share grade, mesh, target application, destination country, monthly volume, and required document list before quotation.' }
+    ],
   },
 
   {
@@ -3753,6 +4165,7 @@ export const blogPosts: {
     title: 'Psyllium Husk Manufacturer Siddhpur Gujarat: Direct Factory Supply',
     category: 'Sourcing',
     date: '2026-05-30',
+    updatedAt: '2026-06-04',
     summary: 'Why Siddhpur, Gujarat is the global psyllium processing capital, what direct factory supply means for buyers, and RM Psyllium\'s MOQ and sample policy.',
     body: [
       'Siddhpur, in the Patan district of Gujarat, is the world\'s primary psyllium (isabgol) processing hub. The surrounding districts of Mehsana, Banaskantha, and Unjha account for the majority of India\'s annual psyllium seed harvest — estimated at 100,000–150,000 MT per year — with over 85% processed into husk and powder for export. The Unjha Agricultural Produce Market Committee (APMC) is the largest single trading point for psyllium seed in India, directly adjacent to the processing cluster. Proximity to raw material origin, established milling infrastructure, and a skilled workforce make Siddhpur the lowest-cost and most reliable source for bulk psyllium globally.',
@@ -3768,17 +4181,17 @@ export const blogPosts: {
         body: 'Psyllium is widely traded through brokers and commodity traders in India, Singapore, Dubai, and the US. Buying factory-direct from a Siddhpur processor provides four specific advantages: (1) COA authenticity — the COA is generated from the actual production batch, not a re-issued document from a purchased lot; (2) Price — no broker margin (typically 3–8% of FOB value); (3) Audit access — buyers can arrange factory visits and third-party audits against their supplier qualification requirements; (4) Documentation flexibility — COA can be annotated to buyer-specified pharmacopoeia or food safety standard before dispatch, rather than after.'
       },
       {
-        heading: 'MOQ, Lead Time, and Sample Policy',
-        body: 'Our approach to new buyer relationships is sample-first. We provide 100–500 g samples with full COA before any purchase order.',
+        heading: 'MOQ, Lead Time, and Buyer Review',
+        body: 'For new buyer relationships, we review product grade, COA needs, packing, destination, and document requirements first, then confirm the right sample route or commercial lot plan.',
         table: {
-          headers: ['Product', 'Sample Size', 'MOQ (First Order)', 'Lead Time'],
+          headers: ['Product', 'Sample Review', 'Commercial MOQ', 'Lead Time'],
           rows: [
-            ['Psyllium Husk 99% (pharma)', '100–200 g + COA', '500 kg', '10–15 business days'],
-            ['Psyllium Husk 98% (supplement)', '100–200 g + COA', '500 kg', '10–15 business days'],
-            ['Psyllium Husk Powder 98%', '100–200 g + COA', '500 kg', '10–15 business days'],
-            ['Organic Psyllium Husk', '100–200 g + COA + cert', '500 kg', '15–20 business days'],
-            ['Psyllium Seed (milling grade)', '200–500 g + COA', '1,000 kg', '7–10 business days'],
-            ['Psyllium Khakha Powder', '200–500 g + COA', '1,000 kg', '7–10 business days'],
+            ['Psyllium Husk 99% (pharma)', 'Grade and COA match reviewed', 'By grade and document package', 'Planned after order-file review'],
+            ['Psyllium Husk 98% (supplement)', 'Grade and COA match reviewed', 'By grade and document package', 'Planned after order-file review'],
+            ['Psyllium Husk Powder 98%', 'Mesh and packing match reviewed', 'By mesh and packing', 'Planned after order-file review'],
+            ['Organic Psyllium Husk', 'Certificate scope reviewed before quote', 'By certificate scope and lot', 'Planned after document review'],
+            ['Psyllium Seed (milling grade)', 'Application fit reviewed', 'By bag size and destination', 'Planned after order-file review'],
+            ['Psyllium Khakha Powder', 'Feed-use fit reviewed', 'By bag size and destination', 'Planned after order-file review'],
           ]
         }
       }
@@ -3787,26 +4200,72 @@ export const blogPosts: {
       { text: 'Psyllium Husk Product Page', path: '/products/psyllium-husk/' },
       { text: 'About RM Psyllium', path: '/about/' }
     ],
-    cta: 'sample'
+    cta: 'sample',
+    aiSnapshot: 'Siddhpur psyllium manufacturing should be reviewed by lot, specification, and application rather than by broad supplier claims. Buyers should verify facility process, cleaning, milling, packing, lot traceability, COA, and origin documents before PO.',
+    specTable: [
+      { parameter: 'Grade / Application', range: 'Buyer-specific', method: 'Specification review' },
+      { parameter: 'Sample Review', range: '1 kg sample where available', method: 'Pre-PO review' },
+      { parameter: 'COA Parameters', range: 'Lot-specific', method: 'COA / third-party report where required' },
+      { parameter: 'Packing and Documents', range: 'Destination-specific', method: 'Buyer checklist' }
+    ],
+    faqs: [
+      { q: 'What should buyers confirm before PO?', a: 'Confirm facility process, cleaning, milling, packing, lot traceability, COA, and origin documents, target application, sample requirement, packing, and destination documents before PO.' },
+      { q: 'Is a sample COA enough for final approval?', a: 'No. A sample COA supports early review. Final approval should use the actual shipment lot COA or third-party report where required.' },
+      { q: 'Can wording be matched to buyer specifications?', a: 'Wording can be reviewed against buyer specifications only where the tested lot results and documents support it.' },
+      { q: 'What is the fastest way to avoid procurement delays?', a: 'Share grade, mesh, target application, destination country, monthly volume, and required document list before quotation.' }
+    ],
   },
   {
     slug: 'psyllium-khakha-animal-feed-demand',
     title: 'Why psyllium khakha powder is gaining demand in animal feed',
     category: 'Product',
     date: '2026-05-14',
+    updatedAt: '2026-06-04',
     audience: 'Feed buyers',
     summary: 'Position khakha powder as a fiber-rich, cost-effective input for digestive support and feed manufacturing.',
     body: [
       'Psyllium khakha is the by-product of husk milling — the seed coat residue left after the husk is separated. It carries a significant portion of the mucilage and dietary fibre from the original seed, making it a functional feed ingredient rather than simple waste.',
       'For feed formulators, khakha powder offers two advantages: fibre density and cost. Compared to whole husk, khakha is priced lower while still contributing soluble fibre that supports gut motility and water retention in livestock. Poultry, pig, and ruminant feed applications have all been reported by buyers across South Asia and the Middle East.',
       'Sourcing khakha in bulk requires knowing the lot origin and moisture specification. Feed-grade khakha should be below 12% moisture with low foreign matter and consistent granule size for blending. We supply in 25 kg, 50 kg, and 1,000 kg jumbo bags with origin documents and packing list per shipment.'
-    ]
+    ],
+    aiSnapshot: 'psyllium khakha demand should be reviewed by lot, specification, and application rather than by broad supplier claims. Buyers should verify feed grade, fiber, moisture, ash, particle size, packing, and destination use before PO.',
+    sections: [
+      {
+        heading: 'What buyers should verify',
+        body: 'For psyllium khakha demand, buyers should check feed grade, fiber, moisture, ash, particle size, packing, and destination use. The goal is to connect the commercial request to the actual lot, sample, COA, and destination documentation.'
+      },
+      {
+        heading: 'How to read the COA or specification',
+        body: 'Read the COA line by line: parameter, unit, method, result, limit, lot identity, and report date. If the finished product file needs a specific method or wording, confirm it before sampling or PO.'
+      },
+      {
+        heading: 'Common sourcing mistake',
+        body: 'Do not buy only from a headline grade or certificate keyword. Ask what the tested lot supports, what documents can be reviewed, and whether the grade is suitable for the target application.'
+      },
+      {
+        heading: 'How RM can support review',
+        body: 'RM can review grade, mesh, sample COA, product specification, packing, origin details, and destination document requirements before PO.'
+      }
+    ],
+    specTable: [
+      { parameter: 'Grade / Application', range: 'Buyer-specific', method: 'Specification review' },
+      { parameter: 'Sample Review', range: '1 kg sample where available', method: 'Pre-PO review' },
+      { parameter: 'COA Parameters', range: 'Lot-specific', method: 'COA / third-party report where required' },
+      { parameter: 'Packing and Documents', range: 'Destination-specific', method: 'Buyer checklist' }
+    ],
+    faqs: [
+      { q: 'What should buyers confirm before PO?', a: 'Confirm feed grade, fiber, moisture, ash, particle size, packing, and destination use, target application, sample requirement, packing, and destination documents before PO.' },
+      { q: 'Is a sample COA enough for final approval?', a: 'No. A sample COA supports early review. Final approval should use the actual shipment lot COA or third-party report where required.' },
+      { q: 'Can wording be matched to buyer specifications?', a: 'Wording can be reviewed against buyer specifications only where the tested lot results and documents support it.' },
+      { q: 'What is the fastest way to avoid procurement delays?', a: 'Share grade, mesh, target application, destination country, monthly volume, and required document list before quotation.' }
+    ],
   },
   {
     slug: 'psyllium-cattle-feed-digestion',
     title: 'Psyllium in cattle and equine feed: digestion, sand clearance, and productivity',
     category: 'Product',
     date: '2026-05-21',
+    updatedAt: '2026-06-04',
     audience: 'Veterinary & Feed Sourcing',
     summary: 'A technical guide for global animal nutrition formulators sourcing bulk psyllium and khakha powder for cattle digestion and equine sand colic prevention.',
     body: [
@@ -3823,14 +4282,35 @@ export const blogPosts: {
     ],
     faqs: [
       { q: 'Why is bulk psyllium husk for horses used in veterinary feed?', a: 'Equine feed manufacturers formulate psyllium to prevent sand colic. The husk swelling gel encapsulates sand in the horse\'s ventral colon, lubricating the intestinal tract and ensuring safe excretion of sand residues.' },
-      { q: 'What grade of psyllium is sourced for horse sand clearance supplements?', a: 'Sourcing leads typically procure 95% purity feed-grade psyllium husk or khakha powder. At 95% purity, the insoluble-to-soluble fiber ratio is optimized for bulk bowel movement in large equine tracts.' }
-    ]
+      { q: 'What grade of psyllium is sourced for horse sand clearance supplements?', a: 'Sourcing leads typically procure 95% purity feed-grade psyllium husk or khakha powder. At 95% purity, the insoluble-to-soluble fiber ratio is optimized for bulk bowel movement in large equine tracts.' },
+      { q: 'What should feed buyers verify before PO?', a: 'Review feed-use suitability, fiber, moisture, ash, dosage plan, packing, COA, sample requirement, and destination documentation before confirming a commercial lot.' },
+      { q: 'Is a sample COA enough for final approval?', a: 'No. A sample COA supports early review. Final approval should use the COA or report for the actual shipment lot.' }
+    ],
+    sections: [
+      {
+        heading: 'What buyers should verify',
+        body: 'For psyllium for cattle and equine feed, buyers should check feed-use suitability, fiber, moisture, ash, dosage plan, packing, and COA. The goal is to connect the commercial request to the actual lot, sample, COA, and destination documentation.'
+      },
+      {
+        heading: 'How to read the COA or specification',
+        body: 'Read the COA line by line: parameter, unit, method, result, limit, lot identity, and report date. If the finished product file needs a specific method or wording, confirm it before sampling or PO.'
+      },
+      {
+        heading: 'Common sourcing mistake',
+        body: 'Do not buy only from a headline grade or certificate keyword. Ask what the tested lot supports, what documents can be reviewed, and whether the grade is suitable for the target application.'
+      },
+      {
+        heading: 'How RM can support review',
+        body: 'RM can review grade, mesh, sample COA, product specification, packing, origin details, and destination document requirements before PO.'
+      }
+    ],
   },
   {
     slug: 'husk-vs-powder-buyer-guide',
     title: 'Whole husk vs husk powder: choosing the right format',
     category: 'Product',
     date: '2026-05-18',
+    updatedAt: '2026-06-04',
     audience: 'Food and supplement buyers',
     summary: 'A practical B2B comparison for procurement teams choosing mesh, purity, and application fit for bulk psyllium husk powder imports.',
     body: [
@@ -3847,250 +4327,608 @@ export const blogPosts: {
     ],
     faqs: [
       { q: 'What is the commercial difference between bulk psyllium husk and powder?', a: 'Whole psyllium husk retains its fibrous texture, perfect for capsules and high-fiber cereals where visible fiber is expected. Husk powder is finely milled (80-100 mesh), allowing rapid cold-water dispersion in dietary drink mixes and consistent moisture-binding in industrial baking.' },
-      { q: 'What mesh size is ideal for bulk psyllium husk powder in bakery formulations?', a: 'An 80-mesh fine powder is the global industry standard for gluten-free industrial baking. It integrates uniformly into dough matrices, absorbing water instantly to mimic the elastic, gas-retaining structure of wheat gluten without leaving a gritty texture.' }
-    ]
+      { q: 'What mesh size is ideal for bulk psyllium husk powder in bakery formulations?', a: 'An 80-mesh fine powder is the global industry standard for gluten-free industrial baking. It integrates uniformly into dough matrices, absorbing water instantly to mimic the elastic, gas-retaining structure of wheat gluten without leaving a gritty texture.' },
+      { q: 'What should buyers test before choosing husk or powder?', a: 'Review mesh, hydration speed, texture, dosage, sample trial behavior, COA, and whether the format fits the finished application.' },
+      { q: 'Is the highest mesh always best?', a: 'No. Finer powder hydrates faster, but whole husk or coarser powder may be better where texture, flow, or slow hydration matters.' }
+    ],
+    sections: [
+      {
+        heading: 'What buyers should verify',
+        body: 'For whole husk versus husk powder, buyers should check application, mesh, hydration speed, texture, dosage, sample trial, and COA. The goal is to connect the commercial request to the actual lot, sample, COA, and destination documentation.'
+      },
+      {
+        heading: 'How to read the COA or specification',
+        body: 'Read the COA line by line: parameter, unit, method, result, limit, lot identity, and report date. If the finished product file needs a specific method or wording, confirm it before sampling or PO.'
+      },
+      {
+        heading: 'Common sourcing mistake',
+        body: 'Do not buy only from a headline grade or certificate keyword. Ask what the tested lot supports, what documents can be reviewed, and whether the grade is suitable for the target application.'
+      },
+      {
+        heading: 'How RM can support review',
+        body: 'RM can review grade, mesh, sample COA, product specification, packing, origin details, and destination document requirements before PO.'
+      }
+    ],
   },
   {
     slug: 'psyllium-usp-ep-ip-monograph-standards',
     title: 'USP vs. EP vs. IP Pharmacopoeia Monograph Standards for Bulk Psyllium Husk',
     category: 'Compliance',
     date: '2026-05-26',
+    updatedAt: '2026-06-04',
     audience: 'Procurement & QA',
-    summary: 'A comprehensive B2B comparison of swelling volumes, purity thresholds, ash limits, and testing monographs required by global pharmaceutical and nutraceutical QA teams.',
+    summary: 'A buyer-friendly guide to reading USP, EP, IP, BP, and NF references on psyllium COAs without treating broad pharmacopoeia wording as a blanket claim.',
     body: [
-      'Pharmaceutical and nutraceutical manufacturers sourcing raw psyllium husk (Plantago ovata) face strict quality and regulatory protocols. Sourcing teams must ensure the active material complies with the exact monograph standards of the destination market: the United States Pharmacopeia (USP), the European Pharmacopoeia (EP), or the Indian Pharmacopoeia (IP).',
-      'Purity and swelling volume are the critical differentiators. While the USP monograph mandates a minimum swelling volume of 55 mL/g and a purity threshold of 99.0%, the European Pharmacopoeia (EP) accepts a swell volume of 40 mL/g at 98.0% purity. Sourcing the wrong grade can lead to formulation failure, batch rejections, or customs import delays.',
-      'Sourcing teams should audit total ash limits and acid-insoluble ash. USP sets the total ash ceiling at ≤3.0% and acid-insoluble ash at ≤0.4%, whereas EP permits up to ≤4.0% total ash and ≤0.6% acid-insoluble ash. Managing these parameters requires state-of-the-art gravity separators and NABL-accredited laboratory pre-shipment checks.'
+      'Pharmacopoeia references help buyers align psyllium husk with the quality file used by their finished product. The important point is simple: USP, EP, IP, BP, and NF are test frameworks, not supplier badges. A buyer should connect each reference to the actual lot, method, result, and COA wording.',
+      'The most common parameters are swelling volume, purity, moisture, total ash, acid-insoluble ash, microbiology, and heavy metals. Different buyer files may ask for different limits, so the safest sourcing process is to compare the buyer specification with a sample COA before PO.',
+      'For procurement teams, the practical question is not “does the website say USP or EP?” The practical question is whether the tested lot supports the wording your QA team will accept. Share the target market, pharmacopoeia edition, and COA wording requirement before sampling or commercial planning.'
     ],
-    aiSnapshot: 'To source pharmaceutical-grade psyllium husk, QA teams must verify USP, EP, or IP monograph alignment. USP mandates a swelling volume ≥55 mL/g with total ash ≤3.0%, while the European Pharmacopoeia (EP) requires a swell volume ≥40 mL/g with total ash ≤4.0%. All shipments must include lot-specific NABL laboratory COAs.',
+    aiSnapshot: 'USP, EP, IP, BP, and NF references should be verified against a tested psyllium lot, not treated as blanket supplier claims. Buyers should match the lot COA to swelling volume, ash, moisture, microbiology, heavy metals, and the exact wording required by their QA file.',
     specTable: [
-      { parameter: 'Minimum Swelling Volume', range: '≥ 55 mL / g', method: 'USP <561> Method' },
-      { parameter: 'Purity Threshold', range: '≥ 99.0%', method: 'Sieve & Sizing' },
-      { parameter: 'Total Ash Content', range: '≤ 3.0%', method: 'Loss on Ignition' },
-      { parameter: 'Acid-Insoluble Ash', range: '≤ 0.4%', method: 'USP Method' },
-      { parameter: 'Loss on Drying (Moisture)', range: '≤ 12.0%', method: 'Loss on Drying' }
+      { parameter: 'Swelling Volume / Index', range: 'Buyer-spec or monograph target', method: 'USP / EP / IP method review' },
+      { parameter: 'Purity / Husk Content', range: 'Grade-specific result', method: 'Sieve or buyer method' },
+      { parameter: 'Total Ash', range: 'Buyer or monograph limit', method: 'Loss on ignition' },
+      { parameter: 'Acid-Insoluble Ash', range: 'Buyer or monograph limit', method: 'Pharmacopoeia method' },
+      { parameter: 'Microbiology + Heavy Metals', range: 'Buyer destination limits', method: 'COA / third-party report where required' }
     ],
     faqs: [
-      { q: 'How is swelling volume verified in NABL laboratories?', a: 'Under USP <561>, 1.0 gram of psyllium husk is placed in a 25 mL graduated cylinder, filled with water, and shaken periodically for 24 hours. The volume of the gelled mass is measured. Premium lots reach ≥55 mL/g swelling volume.' },
-      { q: 'Why is acid-insoluble ash a critical safety limit?', a: 'Acid-insoluble ash indicates remaining sand, dirt, and silica. USP mandates a strict limit of ≤0.4%. State-of-the-art gravity separation is used to guarantee these low levels.' }
-    ]
+      { q: 'How should buyers read a USP, EP, or IP claim?', a: 'Treat it as a request for parameter-level verification. Ask which method or edition is being referenced, which lot was tested, and whether the COA wording matches your QA file.' },
+      { q: 'Can one psyllium lot be described as USP, EP, and IP?', a: 'Only if the tested lot results and methods support the wording required by each pharmacopoeia. Buyers should ask for parameter-level alignment, not only a broad standards phrase.' },
+      { q: 'Should the buyer request the pharmacopoeia edition?', a: 'Yes. The buyer should state the target market and current edition or internal specification so the COA wording can be reviewed correctly before PO.' },
+      { q: 'Is purity percentage enough for pharma buying?', a: 'No. Purity is only one part of the review. Swelling volume, ash, moisture, microbiology, heavy metals, and test method references also matter.' }
+    ],
+    sections: [
+          {
+                "heading": "Plain-language rule for pharmacopoeia claims",
+                "body": "USP, EP, BP, IP, and NF are not marketing badges. They are test frameworks. A buyer should connect each claim to a tested lot, the edition or method used, the parameter tested, and the COA wording that their QA team will accept."
+          },
+          {
+                "heading": "Buyer checklist before PO",
+                "body": "Ask for target grade, mesh, pharmacopoeia reference, swelling volume, moisture, total ash, acid-insoluble ash, heavy metals, microbiology, sample COA, packing format, and destination document needs. This turns a broad standards discussion into a specific lot review."
+          },
+          {
+                "heading": "Common mistake",
+                "body": "Do not buy only by purity percentage. A 98% or 99% grade still needs matching test results. If the finished product file names USP, EP, IP, BP, or NF, the lot COA should show the parameter set that supports that wording."
+          },
+          {
+                "heading": "How RM can support review",
+                "body": "RM can review buyer-specified pharmacopoeia wording against sample COA data, product specification, grade, mesh, packing, and destination documents before PO. Final wording should remain tied to tested lot results."
+          }
+    ],
+    references: [
+      { text: 'USP Dietary Supplements and Herbal Medicines', url: 'https://www.usp.org/dietary-supplements-herbal-medicines' },
+      { text: 'European Pharmacopoeia - EDQM', url: 'https://www.edqm.eu/en/the-european-pharmacopoeia' },
+      { text: 'Indian Pharmacopoeia Commission', url: 'https://ipc.gov.in/' }
+    ],
+    internalLinks: [
+      { text: 'Product page', path: '/products/psyllium-husk/' },
+      { text: 'Quality page', path: '/quality/' },
+      { text: 'Related buyer guide', path: '/blog/verify-nabl-coa-psyllium-supplier/' },
+      { text: 'Related buyer guide', path: '/blog/swelling-volume-laboratory-verification-methods/' },
+      { text: 'Sample and COA review', path: '/contact/' }
+    ],
   },
   {
     slug: 'verify-nabl-coa-psyllium-supplier',
     title: 'How to Verify NABL-Accredited COAs for Psyllium Imports',
     category: 'Compliance',
     date: '2026-05-20',
+    updatedAt: '2026-06-04',
     audience: 'Quality Assurance',
-    summary: 'A step-by-step technical guide for B2B buyers on verifying testing parameters, heavy metal indicators, and microbial standards on an Indian psyllium Certificate of Analysis.',
+    summary: 'A practical COA verification guide for psyllium buyers reviewing lab scope, lot identity, methods, heavy metals, microbiology, and shipment linkage.',
     body: [
-      'For global raw ingredient buyers, the Certificate of Analysis (COA) is the primary trust document. Importing bulk psyllium husk into the US, EU, or APAC requires verification that the COA is issued by an NABL-accredited laboratory (National Accreditation Board for Testing and Calibration Laboratories) aligned with ILAC standards.',
-      'Key testing categories on a psyllium COA include physical properties (purity, mesh size, swelling volume), chemical parameters (moisture, ash), and microbiological profiles. Sourcing teams must cross-reference lab results against monograph limits to ensure no contamination occurred during processing.',
-      'Heavy metals and microbial tolerances represent critical safety thresholds. A valid COA must document Lead (Pb) ≤ 2.0 ppm, Arsenic (As) ≤ 1.0 ppm, Cadmium (Cd) ≤ 0.3 ppm, and Mercury (Hg) ≤ 0.1 ppm. On the microbiological side, E. coli and Salmonella must be completely absent, with a Total Plate Count ≤ 10,000 cfu/g.'
+      'For bulk psyllium buyers, the COA is the first trust document. It should tell the buyer what was tested, which lot was tested, which method was used, what the result was, and whether the result fits the buyer specification.',
+      'NABL accreditation should be handled carefully. It belongs to the testing laboratory and the specific tests covered by that laboratory scope. It should not be used to imply that RM Psyllium itself is NABL-accredited or that every possible test is covered.',
+      'A sample COA is useful before PO because it lets the buyer check parameter coverage and wording. Final shipment review should still use a lot-specific COA or third-party lab report tied to the actual material being shipped.'
     ],
-    aiSnapshot: 'To verify an Indian psyllium supplier COA: 1) Confirm NABL logo and accreditation number, 2) Verify testing methods (e.g. USP <561>), 3) Review heavy metals (Pb ≤2.0 ppm, As ≤1.0 ppm), and 4) Confirm complete absence of E. coli and Salmonella.',
+    aiSnapshot: 'To verify a psyllium COA, buyers should check the issuing lab, NABL accreditation scope where applicable, lot number, sample identity, test method, result, unit, limit, and authorized signatory. NABL accreditation applies to the lab and scope, not automatically to RM Psyllium or every shipment.',
     specTable: [
-      { parameter: 'Lead (Pb)', range: '≤ 2.0 ppm', method: 'ICP-MS' },
-      { parameter: 'Arsenic (As)', range: '≤ 1.0 ppm', method: 'ICP-MS' },
-      { parameter: 'E. coli', range: 'Absent / 10g', method: 'Microbiology' },
-      { parameter: 'Salmonella', range: 'Absent / 25g', method: 'Microbiology' },
-      { parameter: 'Total Plate Count (TPC)', range: '≤ 10,000 cfu/g', method: 'Plate Count' }
+      { parameter: 'Lab Identity', range: 'Name + accreditation scope where applicable', method: 'Report / NABL scope review' },
+      { parameter: 'Lot Identity', range: 'Batch or lot number shown', method: 'COA to packing-list match' },
+      { parameter: 'Heavy Metals', range: 'Buyer limits for Pb, As, Cd, Hg', method: 'ICP-MS where required' },
+      { parameter: 'Microbiology', range: 'Buyer limits for TPC, yeast/mold, E. coli, Salmonella', method: 'COA / lab report' },
+      { parameter: 'Method References', range: 'Shown per parameter', method: 'COA review' }
     ],
     faqs: [
-      { q: 'What is an NABL accreditation on a COA?', a: 'NABL is India\'s national accreditation body for testing labs, providing international alignment via ILAC. An NABL COA guarantees standard-compliant testing and validation.' },
-      { q: 'How are heavy metals tested in psyllium?', a: 'Heavy metals are tested using Inductively Coupled Plasma Mass Spectrometry (ICP-MS), ensuring detection down to parts-per-billion (ppb) for Lead, Arsenic, Cadmium, and Mercury.' }
-    ]
+      { q: 'What does NABL mean on a COA?', a: 'NABL is India’s accreditation body for testing and calibration laboratories. Buyers should verify the lab name, accreditation number, scope, and whether the reported tests fall inside that scope.' },
+      { q: 'Does a NABL lab report mean RM Psyllium is NABL-accredited?', a: 'No. NABL accreditation applies to the testing laboratory and its test scope. RM can provide or arrange third-party lab review where required, but should not be described as NABL-accredited.' },
+      { q: 'Is a sample COA enough for final shipment approval?', a: 'No. A sample COA is useful for parameter review. Final release should use the lot-specific COA or report tied to the material being shipped.' },
+      { q: 'What is the biggest COA red flag?', a: 'A COA without lot identity, method references, units, limits, or authorized signatory should be clarified before PO.' }
+    ],
+    sections: [
+          {
+                "heading": "What NABL should mean to a buyer",
+                "body": "NABL accreditation belongs to the testing laboratory and its approved test scope. It does not mean RM Psyllium is NABL-accredited, and it does not automatically cover every parameter. Buyers should verify the lab name, accreditation number, scope, method, sample identity, and lot number."
+          },
+          {
+                "heading": "COA fields that matter most",
+                "body": "A useful psyllium COA should show product name, grade, lot or batch number, sampling date, test date, method, unit, result, acceptance limit, and authorized signatory. If lot identity or method references are missing, ask for clarification before PO."
+          },
+          {
+                "heading": "How to read a sample COA",
+                "body": "A sample COA helps the buyer check whether the document covers the right parameters. It is not final shipment proof. Final release should be based on the lot-specific COA or third-party report for the actual material being shipped."
+          },
+          {
+                "heading": "Buyer checklist before shipment",
+                "body": "Match the COA to the purchase specification, packing list, invoice, sample code, destination requirements, and any third-party report. The same lot number should connect the quality file and the shipment file."
+          }
+    ],
+    references: [
+      { text: 'NABL Membership Directory', url: 'https://www.nabl.org/engage/membership-directory/' },
+      { text: 'ILAC signatory search', url: 'https://ilac.org/signatory-search/' },
+      { text: 'AOAC Official Methods of Analysis', url: 'https://www.aoac.org/official-methods-of-analysis/' }
+    ],
+    internalLinks: [
+      { text: 'Product page', path: '/products/psyllium-husk/' },
+      { text: 'Quality page', path: '/quality/' },
+      { text: 'Related buyer guide', path: '/blog/psyllium-usp-ep-ip-monograph-standards/' },
+      { text: 'Related buyer guide', path: '/blog/heavy-metal-tolerances-nutraceutical-psyllium/' },
+      { text: 'Sample and COA review', path: '/contact/' }
+    ],
   },
   {
     slug: 'fda-sourcing-guide-supplier-vetting-psyllium',
     title: 'FDA Sourcing Guide & Supplier Vetting for Bulk Psyllium',
     category: 'Markets',
     date: '2026-05-15',
+    updatedAt: '2026-06-04',
     audience: 'Procurement Leads',
-    summary: 'Essential regulatory requirements, document vetting protocols, and facility parameters for US nutraceutical and supplement brands importing bulk psyllium husk.',
+    summary: 'A simple US buyer guide to FSVP, prior notice, supplier records, COA review, and psyllium import documentation without overstating supplier registrations.',
     body: [
-      'United States dietary supplement brands and contract manufacturers sourcing bulk psyllium husk must establish rigorous supplier vetting processes to comply with FDA Food Safety Modernization Act (FSMA) foreign supplier verification programs (FSVP).',
-      'The vetting process begins with document reviews. Sourcing teams should request a complete pre-shipment compliance package: lot-specific NABL-accredited Certificate of Analysis, certified Certificate of Origin, phytosanitary certificate from the Ministry of Agriculture, and third-party facility hygiene logs.',
-      'Facility audits are critical. Brands should verify the supplier\'s raw material cleaning line (specifically de-stoning and magnetic separators to eliminate field debris), milling consistency controls, and packaging environmental controls to prevent moisture absorption and microbiological multiplication during storage.'
+      'US psyllium imports are reviewed through the buyer’s food or dietary supplement compliance workflow. FDA and FSMA language should not be used as a broad credibility shortcut. The practical buyer task is to build a supplier file that supports FSVP, entry filing, and finished-product QA.',
+      'Before PO, US buyers should review product specification, sample COA, facility details needed for filing, origin details, packing format, and whether phytosanitary or third-party lab reports are required for the shipment. Prior notice is part of the US food import workflow and is usually coordinated by the importer, broker, or responsible party.',
+      'Supplier vetting should focus on evidence: raw seed cleaning, de-stoning, magnetic separation, milling controls, moisture control, packing records, and lot traceability. These records help buyers qualify a supplier without making unsupported public certification claims.'
     ],
-    aiSnapshot: 'US supplement brands sourcing a white label psyllium husk manufacturer must verify FDA FSVP compliance. A qualified partner provides certified NABL laboratory COAs, custom packaging (25kg bulk to private label retail sachets), and validated steam sterilization protocols.',
+    aiSnapshot: 'US buyers importing psyllium should focus on FSVP records, prior notice workflow, product specification, lot COA, origin details, packing, and supplier process records. FDA-related language should be framed as importer-led verification and document support, not as unsupported supplier registration claims.',
     specTable: [
-      { parameter: 'Phytosanitary Certification', range: 'Required per lot', method: 'Gov Inspection' },
-      { parameter: 'Country of Origin', range: 'India (Gujarat/Rajasthan)', method: 'Chamber Attested' },
-      { parameter: 'Moisture Limit', range: '≤ 12.0%', method: 'Loss on Drying' },
-      { parameter: 'Foreign Organic Matter', range: '≤ 0.5%', method: 'USP Method' }
+      { parameter: 'FSVP File Support', range: 'Importer-led requirement', method: 'Supplier records + buyer review' },
+      { parameter: 'Prior Notice Data', range: 'Product and facility details as required', method: 'Importer / broker workflow' },
+      { parameter: 'Lot COA', range: 'Buyer parameter set', method: 'COA / third-party report where required' },
+      { parameter: 'Origin + Packing', range: 'India origin, packing format, lot link', method: 'Invoice / packing list / origin records' },
+      { parameter: 'Process Controls', range: 'Cleaning, de-stoning, magnets, moisture', method: 'Supplier qualification review' }
     ],
     faqs: [
-      { q: 'How do I vet a white label psyllium husk manufacturer in India for US FDA compliance?', a: 'Verify that the manufacturer operates a facility compliant with cGMP (21 CFR Part 111 for dietary supplements), provides lot-specific NABL-accredited COAs (ICP-MS heavy metals, microbiological assays), and utilizes Clean Steam Sterilization to avoid chemical ETO residues.' },
-      { q: 'What packaging customization options does a private label psyllium manufacturer offer?', a: 'A full-service supplier supports multiple packaging options, ranging from bulk 25 kg paper bags and 1,000 kg jumbo bags to contract retail pouch-filling, ready for custom labels and brand stickers.' }
-    ]
+      { q: 'Who is responsible for FSVP in the US?', a: 'FSVP is generally handled by the US importer. The supplier supports the process by providing product, facility, COA, origin, and shipment information needed for the importer file.' },
+      { q: 'What documents should a US buyer request before PO?', a: 'Request product specification, sample COA, origin details, packing format, broker data needs, and any third-party test reports required by the buyer specification.' },
+      { q: 'Should FDA registration be treated as a supplier claim?', a: 'No. Buyers should verify registration and filing responsibilities directly where required. Public copy should focus on document support and buyer verification until active proof exists.' },
+      { q: 'Does prior notice replace supplier qualification?', a: 'No. Prior notice is an import filing requirement. Supplier qualification still needs COA review, process records, and buyer-specific risk review.' }
+    ],
+    sections: [
+          {
+                "heading": "What US importers should verify",
+                "body": "FSVP is mainly an importer responsibility. US buyers should verify supplier records, product hazard review, COA parameters, prior notice workflow, facility details for filing, and whether extra testing is needed for their finished product category."
+          },
+          {
+                "heading": "Documents to request before PO",
+                "body": "Request product specification, sample COA, lot COA plan, origin details, packing format, HS code review, phytosanitary requirement review, and contact details needed by the importer or broker. Do not wait until cargo is ready to discover missing fields."
+          },
+          {
+                "heading": "Facility questions that matter",
+                "body": "Ask how raw seed is cleaned, how stones and metal are removed, how moisture is controlled, how finished bags are protected, and how batch records connect production to dispatch. These records support buyer qualification without overstating certifications."
+          },
+          {
+                "heading": "Common mistake",
+                "body": "Do not treat “FDA” as a supplier credibility slogan. For US imports, the practical question is whether the importer has the records and supplier verification file needed for its FSVP and entry workflow."
+          }
+    ],
+    references: [
+      { text: 'FDA FSVP final rule overview', url: 'https://www.fda.gov/food/food-safety-modernization-act-fsma/fsma-final-rule-foreign-supplier-verification-programs-fsvp-importers-food-humans-and-animals' },
+      { text: 'FDA FSVP guidance for industry', url: 'https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-industry-foreign-supplier-verification-programs-importers-food-humans-and-animals' },
+      { text: 'FDA prior notice information', url: 'https://www.fda.gov/food/importing-food-products-united-states/prior-notice-imported-foods' }
+    ],
+    internalLinks: [
+      { text: 'Product page', path: '/products/psyllium-husk/' },
+      { text: 'Quality page', path: '/quality/' },
+      { text: 'Related buyer guide', path: '/blog/bulk-psyllium-import-usa-fda/' },
+      { text: 'Related buyer guide', path: '/blog/verify-nabl-coa-psyllium-supplier/' },
+      { text: 'Sample and COA review', path: '/contact/' }
+    ],
   },
   {
     slug: 'heavy-metal-tolerances-nutraceutical-psyllium',
     title: 'Heavy Metal Tolerances & Limits in Nutraceutical Psyllium',
     category: 'Compliance',
     date: '2026-05-10',
+    updatedAt: '2026-06-04',
     audience: 'QA & Compliance',
-    summary: 'A deep analytical review of acceptable Lead, Arsenic, Cadmium, and Mercury limits in bulk psyllium husk for capsule filling and powder blends.',
+    summary: 'A buyer-friendly guide to lead, arsenic, cadmium, and mercury review for psyllium supplement and food applications.',
     body: [
-      'Psyllium husk is a natural agricultural product, meaning it is prone to absorbing trace soil minerals during the growing cycle. For dietary supplement and nutraceutical brands, monitoring heavy metal tolerances is critical to comply with safety guidelines such as California Proposition 65 and FDA guidelines.',
-      'Sourcing teams must inspect heavy metal levels on every lot COA. Acceptable B2B thresholds for pharmaceutical and nutraceutical applications are Lead (Pb) ≤ 2.0 ppm, Arsenic (As) ≤ 1.0 ppm, Cadmium (Cd) ≤ 0.3 ppm, and Mercury (Hg) ≤ 0.1 ppm. High-margin capsule manufacturers frequently request even tighter internal limits.',
-      'Controlling heavy metals begins in the field. Sourcing raw psyllium seed from regions with clean groundwater and uncontaminated soil is essential. Processing facilities must then maintain stainless steel contact surfaces and utilize automated ICP-MS laboratory validation before bulk packaging.'
+      'Psyllium is an agricultural ingredient. Like many botanical ingredients, it can carry trace minerals from soil, irrigation water, dust, or handling. That is why nutraceutical buyers review heavy metals lot by lot rather than relying only on general supplier statements.',
+      'The most common metals reviewed are lead, arsenic, cadmium, and mercury. The acceptable limit depends on the buyer specification, serving size, destination market, and finished product category. Buyers should ask for the unit, method, limit, and result for each metal.',
+      'For supplement brands, a ppm number is only part of the decision. Exposure depends on how much psyllium is used per serving and per day. If the finished product will be sold in markets with strict warning or retailer requirements, buyers should set the limits before PO and confirm whether third-party testing is needed.'
     ],
-    aiSnapshot: 'Nutraceutical psyllium sourcing requires strict heavy metal controls. Standard B2B thresholds are Lead (Pb) ≤2.0 ppm, Arsenic (As) ≤1.0 ppm, Cadmium (Cd) ≤0.3 ppm, and Mercury (Hg) ≤0.1 ppm. Every batch must be verified via ICP-MS analysis in NABL laboratories.',
+    aiSnapshot: 'Heavy metal review for psyllium should be lot-specific. Buyers should check lead, arsenic, cadmium, mercury, unit, method, limit, result, lot number, and serving-size impact before accepting material for nutraceutical use.',
     specTable: [
-      { parameter: 'Lead (Pb)', range: '≤ 2.0 ppm', method: 'ICP-MS' },
-      { parameter: 'Arsenic (As)', range: '≤ 1.0 ppm', method: 'ICP-MS' },
-      { parameter: 'Cadmium (Cd)', range: '≤ 0.3 ppm', method: 'ICP-MS' },
-      { parameter: 'Mercury (Hg)', range: '≤ 0.1 ppm', method: 'ICP-MS' }
+      { parameter: 'Lead (Pb)', range: 'Buyer-specified ppm limit', method: 'ICP-MS where required' },
+      { parameter: 'Arsenic (As)', range: 'Buyer-specified ppm limit', method: 'ICP-MS where required' },
+      { parameter: 'Cadmium (Cd)', range: 'Buyer-specified ppm limit', method: 'ICP-MS where required' },
+      { parameter: 'Mercury (Hg)', range: 'Buyer-specified ppm limit', method: 'ICP-MS where required' },
+      { parameter: 'Serving Size Impact', range: 'Finished-product calculation', method: 'Buyer QA / regulatory review' }
     ],
     faqs: [
-      { q: 'How does California Proposition 65 affect psyllium imports?', a: 'Prop 65 sets strict daily exposure limits for Lead and Arsenic. Sourcing ultra-pure psyllium (Lead ≤1.0 ppm) helps manufacturers formulate supplement blends without requiring Prop 65 warning labels.' },
-      { q: 'What laboratory method is used to test heavy metals?', a: 'Inductively Coupled Plasma Mass Spectrometry (ICP-MS) is the global reference method, offering extreme sensitivity down to parts-per-billion (ppb) levels.' }
-    ]
+      { q: 'Are heavy metal limits the same for every buyer?', a: 'No. Limits depend on destination market, serving size, finished product category, retailer policy, and the buyer specification.' },
+      { q: 'Which test method is commonly requested?', a: 'ICP-MS is commonly requested when low detection limits matter, but the buyer specification should define the accepted method.' },
+      { q: 'When should buyers request third-party heavy metal testing?', a: 'Request third-party testing when the buyer specification requires it, when limits are tight, or when the product will be used in supplements with high daily serving sizes.' },
+      { q: 'Can a supplier statement replace a lot COA?', a: 'No. A supplier statement can explain controls, but lot acceptance should be based on test data tied to the material being shipped.' }
+    ],
+    sections: [
+          {
+                "heading": "Why heavy metals matter in psyllium",
+                "body": "Psyllium is an agricultural ingredient, so trace metals can come from soil, water, or dust. Buyers should review heavy metals by tested lot, not by a general supplier statement. The result should be compared with the buyer specification and destination market."
+          },
+          {
+                "heading": "What to check on the COA",
+                "body": "Check lead, arsenic, cadmium, mercury, method, unit, limit, result, lot number, and test date. ICP-MS is commonly requested where low detection limits matter. If a result is close to the buyer limit, discuss retesting before PO."
+          },
+          {
+                "heading": "Prop 65 and internal limits",
+                "body": "California Prop 65 is exposure-based, so ppm alone does not answer every labeling question. Supplement brands should calculate exposure from serving size, daily dose, formulation, and finished product label requirements."
+          },
+          {
+                "heading": "Common mistake",
+                "body": "Do not compare one supplier’s “pass” result with another supplier’s numeric result without checking limits and methods. A useful comparison needs the same unit, method, and acceptance standard."
+          }
+    ],
+    references: [
+      { text: 'FDA environmental contaminants in food', url: 'https://www.fda.gov/food/chemical-contaminants-pesticides/environmental-contaminants-food' },
+      { text: 'FDA lead in food and foodwares', url: 'https://www.fda.gov/food/environmental-contaminants-food/lead-food-and-foodwares' },
+      { text: 'FDA arsenic in food', url: 'https://www.fda.gov/food/environmental-contaminants-food/arsenic-food' }
+    ],
+    internalLinks: [
+      { text: 'Product page', path: '/products/psyllium-husk/' },
+      { text: 'Quality page', path: '/quality/' },
+      { text: 'Related buyer guide', path: '/blog/verify-nabl-coa-psyllium-supplier/' },
+      { text: 'Related buyer guide', path: '/blog/fda-sourcing-guide-supplier-vetting-psyllium/' },
+      { text: 'Sample and COA review', path: '/contact/' }
+    ],
   },
   {
     slug: 'steam-sterilization-residue-control-psyllium',
     title: 'Sterilization Methods & Residue Control in Bulk Psyllium',
     category: 'Compliance',
     date: '2026-05-05',
+    updatedAt: '2026-06-04',
     audience: 'QA Managers',
-    summary: 'Comparing ETO (Ethylene Oxide) residue hazards with Clean Steam Sterilization to ensure compliance with European and US chemical safety regulations.',
+    summary: 'A practical guide to microbial reduction, steam treatment, ETO residue concerns, and buyer verification for psyllium lots.',
     body: [
-      'Raw psyllium seed contains standard soil microflora, requiring sterilization before use in ready-to-consume food and supplement applications. QA managers must verify the sterilization method used by their Indian exporter to ensure chemical compliance.',
-      'European Union and US regulations differ significantly on sterilization agents. The use of Ethylene Oxide (ETO) is strictly banned in the EU due to residue hazards, with severe customs rejections for any lot showing ETO or 2-chloroethanol traces. Clean Steam Sterilization represents the global, chemical-free standard.',
-      'Steam sterilization reduces microbial loads while protecting the gelling properties of psyllium husk. Our sourcing partner utilizes a state-of-the-art continuous steam sterilizer that limits moisture addition while achieving complete microbial control (Salmonella absent, E. coli absent, TPC ≤10,000 cfu/g) with zero chemical residue.'
+      'Raw botanical ingredients can carry normal environmental microflora. Buyers sourcing psyllium for ready-to-consume foods, supplements, or sensitive formulations should define their microbiology limits before PO and confirm whether treatment or extra testing is required.',
+      'Sterilization method matters because it affects both safety review and functionality. Steam treatment can reduce microbial load, but heat and moisture must be controlled so swelling volume and hydration behavior are not damaged. Chemical-residue topics such as ethylene oxide and 2-chloroethanol should be handled according to buyer and destination-market requirements.',
+      'The buyer should not accept vague phrases like “sterilized” without asking what method was used, which lot was treated, what microbial results were achieved, whether residue testing is required, and whether functional properties were checked after treatment.'
     ],
-    aiSnapshot: 'EU and US regulations mandate chemical-free sterilization for psyllium. Continuous Clean Steam Sterilization is the global standard, ensuring complete microbiological inactivation (TPC ≤10,000 cfu/g, E. coli absent) with absolute zero ETO chemical residue.',
+    aiSnapshot: 'Psyllium sterilization review should cover method, microbial targets, ETO or 2-chloroethanol residue requirements, moisture control, post-treatment handling, and whether swelling volume remains suitable for the buyer application.',
     specTable: [
-      { parameter: 'Sterilization Method', range: 'Clean Steam (Chemical-Free)', method: 'Thermal' },
-      { parameter: 'Ethylene Oxide (ETO)', range: 'Absent / Not Detected', method: 'GC-MS' },
-      { parameter: '2-Chloroethanol', range: 'Absent / Not Detected', method: 'GC-MS' },
-      { parameter: 'Yeasts & Molds', range: '≤ 1,000 cfu/g', method: 'Microbiology' }
+      { parameter: 'Microbial Target', range: 'Buyer-specified limits', method: 'Microbiology COA' },
+      { parameter: 'Treatment Method', range: 'Declared by lot where applicable', method: 'Supplier record / buyer review' },
+      { parameter: 'ETO / 2-Chloroethanol', range: 'Buyer or market requirement', method: 'GC-MS where required' },
+      { parameter: 'Moisture After Treatment', range: 'Buyer limit', method: 'Loss on drying' },
+      { parameter: 'Functional Check', range: 'Swelling / application fit', method: 'COA or buyer trial' }
     ],
     faqs: [
-      { q: 'Why is ETO banned in the European Union?', a: 'Ethylene Oxide is classified as a mutagenic and carcinogenic chemical. The EU enforces a near-zero limit (0.01-0.1 mg/kg) on ETO residues in food and botanical ingredients.' },
-      { q: 'Does steam sterilization affect the swelling volume of psyllium?', a: 'If improperly controlled, high heat and excess moisture can pre-gel the husk. Precise, rapid continuous steam sterilization protects mucilage integrity, maintaining a swell volume ≥50 mL/g.' }
-    ]
+      { q: 'Is steam treatment always required?', a: 'Not always. The need depends on buyer microbiology limits, destination market, intended use, and whether the lot already meets the required microbial specification.' },
+      { q: 'Why do EU buyers ask about ETO?', a: 'ETO and 2-chloroethanol are sensitive residue concerns in EU food supply chains. If the buyer specification bans ETO treatment or requires residue screening, the requirement should be written into the PO.' },
+      { q: 'What should buyers verify after sterilization?', a: 'Verify microbiology, moisture, swelling volume or functional performance, residue requirements, and post-treatment packing controls.' },
+      { q: 'Can sterilization affect swelling volume?', a: 'Yes. Excess heat or moisture can reduce functionality, so buyers should review swelling volume or run application trials after treatment where performance is critical.' }
+    ],
+    sections: [
+          {
+                "heading": "Sterilization choice in plain language",
+                "body": "Sterilization is used to reduce microbial risk. Buyers should ask what method is used, whether the method can affect swelling volume, and whether residue testing is needed for the destination market or buyer specification."
+          },
+          {
+                "heading": "ETO and residue review",
+                "body": "Ethylene oxide and 2-chloroethanol are sensitive residue topics for EU and many global buyers. If the buyer specification bans ETO treatment or requires residue screening, that requirement should be written into the PO and verified by report."
+          },
+          {
+                "heading": "Steam process questions",
+                "body": "For steam-treated material, ask for microbial targets, moisture control, post-treatment handling, packing protection, and whether swelling volume is checked after treatment. Heat and moisture must be managed so functionality is not damaged."
+          },
+          {
+                "heading": "Common mistake",
+                "body": "Do not assume “low micro” means the sterilization method is acceptable for every market. The buyer should verify both microbiology and residue requirements."
+          }
+    ],
+    references: [
+      { text: 'FDA Current Good Manufacturing Practice and preventive controls', url: 'https://www.fda.gov/food/food-safety-modernization-act-fsma/final-rule-preventive-controls-human-food' },
+      { text: 'FDA FSVP final rule overview', url: 'https://www.fda.gov/food/food-safety-modernization-act-fsma/fsma-final-rule-foreign-supplier-verification-programs-fsvp-importers-food-humans-and-animals' },
+      { text: 'AOAC Official Methods of Analysis', url: 'https://www.aoac.org/official-methods-of-analysis/' }
+    ],
+    internalLinks: [
+      { text: 'Product page', path: '/products/psyllium-husk/' },
+      { text: 'Quality page', path: '/quality/' },
+      { text: 'Related buyer guide', path: '/blog/allergen-cross-contamination-protocols-psyllium-milling/' },
+      { text: 'Related buyer guide', path: '/blog/verify-nabl-coa-psyllium-supplier/' },
+      { text: 'Sample and COA review', path: '/contact/' }
+    ],
   },
   {
     slug: 'mesh-size-sourcing-gluten-free-bakery',
     title: 'Mesh Size Sourcing & Application Fit for Gluten-Free Bakery',
     category: 'Application',
     date: '2026-05-25',
+    updatedAt: '2026-06-04',
     audience: 'R&D Food Scientists',
-    summary: 'How particle size options (40 mesh to 100 mesh) affect water absorption velocity, dough viscosity, and structural stability in industrial gluten-free baking.',
+    summary: 'A simple buyer guide to matching psyllium mesh, hydration speed, water addition, and crumb texture in gluten-free bakery trials.',
     body: [
-      'In industrial gluten-free baking, psyllium husk powder functions as the primary binder, replacing the water-retaining and elastic structures typically provided by wheat gluten. R&D food scientists must carefully select particle sizes (mesh size) to optimize dough stability.',
-      'Mesh size directly dictates water absorption velocity and gel viscosity. Coarse powder (40–60 mesh) absorbs water gradually, which is preferred in breakfast cereals and dense grain loaves. Fine powder (80–100 mesh) hydrates almost instantly, providing the rapid structural binding required for soft bread, pastry dough, and pizza crusts.',
-      'Selecting the wrong mesh size can result in sticky dough, dense crumb structures, or uneven baking. Standard gluten-free flour blends typically incorporate 1–3% of 80 mesh psyllium powder by flour weight to mimic the gas-retaining properties of gluten matrices without altering flavor or texture.'
+      'In gluten-free bakery, psyllium helps replace part of the structure normally provided by wheat gluten. It absorbs water and forms a gel network that improves dough strength, gas retention, moisture retention, and crumb texture.',
+      'Mesh size controls how quickly the powder hydrates. Fine powder hydrates faster and gives a smoother texture. Coarser material hydrates more slowly and can be useful where visible fiber or slower water uptake is acceptable. The right mesh depends on the product, mixing system, rest time, and water level.',
+      'Buyers should test a 1 kg sample before commercial planning. The same psyllium grade can behave differently in bread, pizza base, crackers, pasta, and fiber bars. The trial should measure water addition, dough handling, bake loss, crumb, shelf life, and sensory result.'
     ],
-    aiSnapshot: 'Gluten-free industrial baking relies on psyllium mesh size selection. Fine powder (80-100 mesh) hydrates instantly for soft breads, pizza dough, and pastries. Coarse powder (40-60 mesh) hydrates slowly, ideal for cereals and dense grain loaves.',
+    aiSnapshot: 'For gluten-free bakery, psyllium mesh size controls hydration speed and texture. Buyers should match mesh, purity, swelling volume, water addition, mixing time, and application trial results before choosing a commercial grade.',
     specTable: [
-      { parameter: 'Fine Powder Mesh', range: '≥ 95% passing 80-100 mesh', method: 'Sieve Analysis' },
-      { parameter: 'Coarse Powder Mesh', range: '≥ 95% passing 40-60 mesh', method: 'Sieve Analysis' },
-      { parameter: 'Swelling Volume', range: '≥ 40 mL / g (Food Grade)', method: 'USP Method' },
-      { parameter: 'Flavor Profile', range: 'Neutral / Odorless', method: 'Organoleptic' }
+      { parameter: '40-60 Mesh', range: 'Slower hydration', method: 'Cereals, dense loaves, visible texture' },
+      { parameter: '80 Mesh', range: 'Balanced hydration', method: 'Bread, buns, bakery blends' },
+      { parameter: '100 Mesh+', range: 'Fast hydration / smooth texture', method: 'Pizza, pasta, drink mixes' },
+      { parameter: 'Inclusion Rate', range: 'Often 1-3% of flour weight', method: 'Formulation trial' },
+      { parameter: 'Sample Review', range: '1 kg pack for matched grade', method: 'Bench-top trial' }
     ],
     faqs: [
-      { q: 'How does psyllium replace gluten in bakery formulations?', a: 'When mixed with water, psyllium mucilage forms a strong, elastic polysaccharide network that traps carbon dioxide bubbles during fermentation, allowing gluten-free dough to rise.' },
-      { q: 'What is the recommended mesh size for ready-to-mix drink powders?', a: 'For dry beverage mixes, 100 mesh or finer is recommended to ensure rapid, smooth dispersion in cold liquids without clumping or grittiness.' }
-    ]
+      { q: 'Is finer mesh always better for gluten-free bakery?', a: 'No. Finer powder hydrates faster, but it can also clump or over-bind if water and rest time are not adjusted. The best mesh depends on the recipe and process.' },
+      { q: 'How much sample is useful for bakery trials?', a: 'A 1 kg sample pack is usually enough for bench-top trials, water adjustment, crumb checks, and early formulation screening before commercial planning.' },
+      { q: 'What happens if psyllium inclusion is too high?', a: 'Too much psyllium can create gummy crumb, dense texture, and excess water binding. Adjust inclusion rate together with water and rest time.' },
+      { q: 'Which COA fields matter for bakery buyers?', a: 'Mesh, swelling volume, moisture, microbiology, sensory profile, and ash are the most practical fields for bakery application review.' }
+    ],
+    sections: [
+          {
+                "heading": "Mesh size in plain language",
+                "body": "Mesh tells the buyer how fine the powder is. Finer powder hydrates faster and disperses more smoothly. Coarser material hydrates slower and can add visible texture. The right choice depends on dough type, mixing time, and desired crumb."
+          },
+          {
+                "heading": "Bakery trial checklist",
+                "body": "Before bulk order, test a 1 kg sample against flour blend, water addition, mixing time, rest time, proofing behavior, bake loss, crumb texture, and shelf-life target. Psyllium performance is formulation-specific."
+          },
+          {
+                "heading": "Common mistake",
+                "body": "Do not increase psyllium only because the dough feels weak. Too much psyllium can create gummy crumb, dense texture, or slow hydration problems. Adjust water and rest time together with the inclusion rate."
+          },
+          {
+                "heading": "How to read the spec",
+                "body": "Ask for mesh, swelling volume, moisture, ash, microbiology, and sensory profile. For bakery, neutral taste and predictable hydration often matter as much as headline purity."
+          }
+    ],
+    references: [
+      { text: 'FDA gluten and food labeling', url: 'https://www.fda.gov/food/nutrition-education-resources-materials/gluten-and-food-labeling' },
+      { text: 'FDA gluten-free labeling questions and answers', url: 'https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/questions-and-answers-gluten-free-food-labeling-final-rule' },
+      { text: 'Codex Alimentarius food standards', url: 'https://www.fao.org/fao-who-codexalimentarius/en/' }
+    ],
+    internalLinks: [
+      { text: 'Product page', path: '/products/psyllium-husk-powder/' },
+      { text: 'Quality page', path: '/quality/' },
+      { text: 'Related buyer guide', path: '/blog/psyllium-husk-gluten-free-bakery/' },
+      { text: 'Related buyer guide', path: '/blog/allergen-cross-contamination-protocols-psyllium-milling/' },
+      { text: 'Sample and COA review', path: '/contact/' }
+    ],
   },
   {
     slug: 'nop-usda-eu-organic-integrity-psyllium',
     title: 'NOP (USDA) & EU Organic Integrity in Psyllium Sourcing',
     category: 'Compliance',
     date: '2026-05-23',
+    updatedAt: '2026-06-04',
     audience: 'Compliance Managers',
-    summary: 'Vetting organic supply chains, chain-of-custody documentation, and pesticide residue limits when sourcing organic certified psyllium husk from India.',
+    summary: 'How buyers should verify organic psyllium document scope, transaction records, pesticide residue reports, and chain-of-custody before PO.',
     body: [
-      'Organic certified psyllium husk is highly demanded by clean-label food and supplement brands globally. Compliance managers must establish strict vetting protocols to ensure raw imports comply with the USDA National Organic Program (NOP) and EU organic regulation (Regulation EU 2018/848).',
-      'Pesticide residue testing is the ultimate validator. Organic certified lots must be completely free from synthetic chemical inputs, fertilizers, and pesticide residues (such as chlorpyrifos or glyphosate). Sourcing teams must request lot-specific GC-MS laboratory test reports from accredited Indian laboratories.',
-      'Maintaining complete chain-of-custody is mandatory. Every organic psyllium shipment must be accompanied by a Transaction Certificate (TC) issued by an approved certification body (such as OneCert or Lacon) tracing the product back to cooperative farms in Gujarat and Rajasthan.'
+      'Organic psyllium sourcing is document-heavy. A buyer should not rely only on a product name or a general certificate copy. The certificate scope, handler chain, lot, invoice, transaction certificate or COI path, and destination market must connect.',
+      'Pesticide residue review is also important. Buyers should decide which residue screen and limits apply, which lab method is acceptable, and whether the tested sample matches the offered lot. The report should support the buyer’s own brand and importer requirements.',
+      'Before quotation, buyers should share the target market, certificate requirement, quantity, packing, and document expectations. Organic supply should be reviewed lot by lot because certificate scope and transaction documents can change by shipment.'
     ],
-    aiSnapshot: 'Sourcing organic certified psyllium requires: 1) Valid NOP/EU Transaction Certificate (TC), 2) Lot-specific pesticide residue screening (GC-MS), and 3) Farm-to-port supply chain traceability records. Sourcing is centered in Gujarat and Rajasthan.',
+    aiSnapshot: 'Organic psyllium sourcing should be verified through certificate scope, handler coverage, lot identity, transaction certificate or COI path, pesticide residue testing, invoice linkage, and destination-market requirements before PO.',
     specTable: [
-      { parameter: 'Organic Certification', range: 'USDA NOP / EU Certified', method: 'Transaction Cert' },
-      { parameter: 'Pesticide Residue', range: 'Below detection limits', method: 'GC-MS / LC-MS' },
-      { parameter: 'Origin Traceability', range: 'Lot-level farm tracking', method: 'Audit Trail' },
-      { parameter: 'GMO Status', range: '100% Non-GMO Verified', method: 'PCR Analysis' }
+      { parameter: 'Certificate Scope', range: 'Buyer-verified NOP / EU coverage', method: 'Certificate review' },
+      { parameter: 'Transaction Document', range: 'TC / COI path where required', method: 'Shipment document review' },
+      { parameter: 'Pesticide Residue', range: 'Buyer-market limit', method: 'GC-MS / LC-MS where required' },
+      { parameter: 'Lot Traceability', range: 'Farm / handler / packing link', method: 'Chain-of-custody review' },
+      { parameter: 'Invoice Link', range: 'Lot and quantity match', method: 'Document cross-check' }
     ],
     faqs: [
-      { q: 'What documentation is required to verify organic status at customs?', a: 'Every international shipment requires a lot-specific Transaction Certificate (TC) issued by the exporter\'s organic certification body, linking your invoice directly to organic acreage.' },
-      { q: 'How are pesticide residues verified in organic psyllium?', a: 'Accredited laboratories use Gas Chromatography-Mass Spectrometry (GC-MS) and Liquid Chromatography-Mass Spectrometry (LC-MS) to screen for over 500 chemical compounds.' }
-    ]
+      { q: 'Can buyers rely on a certificate copy alone?', a: 'No. The certificate must connect to scope, handler chain, lot, quantity, invoice, and transaction document path for the target shipment.' },
+      { q: 'What should be checked before quoting organic psyllium?', a: 'Check destination market, certificate scope, lot availability, transaction certificate or COI path, pesticide testing needs, packing, and quantity.' },
+      { q: 'Why does lot identity matter for organic supply?', a: 'Organic status is shipment-specific. The buyer should verify that the offered lot and quantity are covered by the relevant documents.' },
+      { q: 'When should pesticide residue testing be requested?', a: 'Request it when the buyer specification, importer, retailer, or destination market requires residue confirmation for the lot.' }
+    ],
+    sections: [
+          {
+                "heading": "Organic sourcing in plain language",
+                "body": "Organic status is proven by documents, not by a product name. Buyers should verify certificate scope, handler chain, target lot, transaction certificate or COI path, invoice link, quantity, and destination market before PO."
+          },
+          {
+                "heading": "Residue testing checklist",
+                "body": "Ask which pesticide screen is required, which lab method is used, which market limit applies, and whether the tested sample matches the offered lot. Residue reports should support the buyer’s brand and importer requirements."
+          },
+          {
+                "heading": "Common mistake",
+                "body": "Do not assume one organic certificate covers every shipment. The certificate, product scope, handler scope, lot, invoice, and transaction document must connect."
+          },
+          {
+                "heading": "Buyer review before quote",
+                "body": "Before quotation, share destination market, certificate requirement, expected quantity, packing, and document path. Organic supply should be reviewed lot by lot and document by document."
+          }
+    ],
+    references: [
+      { text: 'USDA electronic organic import certificates', url: 'https://www.ams.usda.gov/services/organic-certification/international-trade/Electronic-Organic-Import-Certificates' },
+      { text: 'USDA Strengthening Organic Enforcement FAQ', url: 'https://www.ams.usda.gov/rules-regulations/strengthening-organic-enforcement/faq' },
+      { text: 'European Commission organic trade', url: 'https://agriculture.ec.europa.eu/farming/organic-farming/trade_en' }
+    ],
+    internalLinks: [
+      { text: 'Product page', path: '/products/organic-psyllium/' },
+      { text: 'Quality page', path: '/quality/' },
+      { text: 'Related buyer guide', path: '/blog/organic-psyllium-nop-eu-certification/' },
+      { text: 'Related buyer guide', path: '/blog/fda-sourcing-guide-supplier-vetting-psyllium/' },
+      { text: 'Sample and COA review', path: '/contact/' }
+    ],
   },
   {
     slug: 'allergen-cross-contamination-protocols-psyllium-milling',
     title: 'Allergen & Cross-Contamination Protocols in Psyllium Milling',
     category: 'Compliance',
     date: '2026-05-22',
+    updatedAt: '2026-06-04',
     audience: 'QA Specialists',
-    summary: 'Evaluating a supplier\'s milling line separation, cleaning protocols, and allergen control documentation to prevent cross-contact in bulk psyllium processing.',
+    summary: 'A buyer checklist for allergen declarations, shared-equipment risk, cleaning records, gluten testing, and lot-level proof in psyllium processing.',
     body: [
-      'Psyllium husk is naturally gluten-free, dairy-free, and soy-free. However, because it is processed in bulk milling facilities in India, quality assurance specialists must evaluate the exporter\'s facility layout and sanitation protocols to eliminate the risk of allergen cross-contamination.',
-      'Sourcing teams should request a complete allergen management package. Vetted facilities must maintain a strict allergen control plan detailing line cleaning protocols, equipment disassembly procedures, and physical barriers that separate the psyllium line from other agricultural grains processed on site.',
-      'Lot-specific gluten testing is mandatory for gluten-free brands. Even trace contact with wheat, barley, or rye dust in a shared facility can result in batch rejections. Quality suppliers provide lot-specific ELISA test reports verifying gluten levels are below 20 ppm (the global threshold for gluten-free labeling).'
+      'Psyllium is plant-derived and naturally not wheat, barley, rye, dairy, soy, or nut material. But plant origin alone does not answer every allergen question. Buyers still need to review processing, storage, packing, and transport controls.',
+      'For gluten-free or allergen-sensitive finished products, buyers should ask whether the facility handles allergen materials, whether shared equipment is used, what cleaning records exist, whether storage is segregated, and whether lot-level ELISA testing is needed.',
+      'The safest approach is to define the target claim before PO. A general allergen declaration may be enough for some buyers, while retailers or destination markets may require lot-specific test reports or additional facility records.'
     ],
-    aiSnapshot: 'Gluten-free psyllium sourcing requires strict allergen cross-contact prevention. QA teams must verify: 1) Dedicated milling lines or validated sanitization protocols, and 2) Lot-specific ELISA testing proving gluten levels ≤20 ppm.',
+    aiSnapshot: 'Psyllium is plant-derived, but gluten-free or allergen-sensitive buyers should still verify shared-equipment risk, cleaning records, storage segregation, packing controls, allergen declaration, and lot-level testing where required.',
     specTable: [
-      { parameter: 'Gluten Content', range: '≤ 20 ppm (Gluten-Free)', method: 'ELISA Test' },
-      { parameter: 'Allergen Profile', range: 'Free from Soy, Dairy, Wheat, Nuts', method: 'Declaration' },
-      { parameter: 'Sanitization Verification', range: 'ATP Swab Tests after cleaning', method: 'Bioluminescence' },
-      { parameter: 'Facility Contact Surfaces', range: '304/316 Stainless Steel', method: 'Audit Review' }
+      { parameter: 'Allergen Declaration', range: 'Buyer-required format', method: 'Supplier declaration' },
+      { parameter: 'Gluten Testing', range: 'Buyer or retailer threshold', method: 'ELISA where required' },
+      { parameter: 'Shared Equipment Review', range: 'Line and cleaning records', method: 'Supplier qualification' },
+      { parameter: 'Storage + Packing', range: 'Segregation controls', method: 'Process record review' },
+      { parameter: 'Lot Identity', range: 'Test report linked to lot', method: 'COA / report cross-check' }
     ],
     faqs: [
-      { q: 'How is gluten contamination prevented in bulk psyllium milling?', a: 'Top-tier suppliers utilize dedicated milling lines entirely segregated from wheat or gluten-containing grains, backed by strict sanitation protocols.' },
-      { q: 'What is an ELISA test for gluten?', a: 'Enzyme-Linked Immunosorbent Assay (ELISA) is the gold-standard testing method used by NABL laboratories to detect and quantify trace gluten proteins down to parts-per-million (ppm) levels.' }
-    ]
+      { q: 'Is psyllium automatically suitable for gluten-free labels?', a: 'No. Psyllium is plant-derived, but finished gluten-free claims depend on process controls, testing, and buyer or retailer standards.' },
+      { q: 'When is ELISA testing needed?', a: 'ELISA testing is useful when the buyer specification, retailer, or destination market requires lot-level gluten verification.' },
+      { q: 'What should an allergen declaration cover?', a: 'It should cover product origin, known allergen inputs, shared-equipment risk where relevant, and any buyer-required wording.' },
+      { q: 'Can cleaning records replace lot testing?', a: 'Not always. Cleaning records support process control, but lot testing may still be required for specific label claims or retailer programs.' }
+    ],
+    sections: [
+          {
+                "heading": "Plant origin is not enough",
+                "body": "Psyllium is plant-derived and naturally free from major cereal gluten sources, but buyers still need process review. Shared storage, dust, packing lines, and transport can create cross-contact risk if controls are weak."
+          },
+          {
+                "heading": "What allergen documents should show",
+                "body": "Ask for allergen declaration, cleaning approach, storage segregation, line-use information, packing controls, and lot-level testing where required. Gluten-free label claims may need ELISA results or retailer-specific proof."
+          },
+          {
+                "heading": "Common mistake",
+                "body": "Do not use “naturally gluten-free” as a substitute for a buyer’s gluten-free standard. Finished product claims depend on destination rules, retailer requirements, and the buyer’s own QA program."
+          },
+          {
+                "heading": "Buyer checklist before PO",
+                "body": "Confirm target claim, gluten threshold, shared-equipment risk, testing method, lot identity, packing format, and whether a third-party allergen report is needed."
+          }
+    ],
+    references: [
+      { text: 'FDA food allergies', url: 'https://www.fda.gov/food/food-labeling-nutrition/food-allergies' },
+      { text: 'FDA allergen and gluten-free guidance documents', url: 'https://www.fda.gov/food/guidance-documents-regulatory-information-topic-food-and-dietary-supplements/food-allergensgluten-free-guidance-documents-regulatory-information' },
+      { text: 'FDA preventive controls for human food', url: 'https://www.fda.gov/food/food-safety-modernization-act-fsma/final-rule-preventive-controls-human-food' }
+    ],
+    internalLinks: [
+      { text: 'Product page', path: '/products/psyllium-husk/' },
+      { text: 'Quality page', path: '/quality/' },
+      { text: 'Related buyer guide', path: '/blog/mesh-size-sourcing-gluten-free-bakery/' },
+      { text: 'Related buyer guide', path: '/blog/steam-sterilization-residue-control-psyllium/' },
+      { text: 'Sample and COA review', path: '/contact/' }
+    ],
   },
   {
     slug: 'soluble-insoluble-fiber-ratios-purity-selection',
     title: 'Soluble vs. Insoluble Fiber Ratios: Selecting Psyllium Purity',
     category: 'Product',
     date: '2026-05-21',
+    updatedAt: '2026-06-04',
     audience: 'R&D Product Developers',
-    summary: 'A nutritional comparison of soluble and insoluble fiber contents across 85% to 99% purity grades for dietary supplement and cereal formulations.',
+    summary: 'A simple guide to choosing psyllium purity by gel strength, texture, water binding, cost, and finished-product use.',
     body: [
-      'Psyllium husk is renowned for its exceptional dietary fiber content, providing a unique combination of soluble and insoluble fiber. For R&D product developers formulating high-fiber foods, supplement powders, or health cereals, selecting the appropriate purity grade is essential.',
-      'Purity grade directly determines the soluble-to-insoluble fiber ratio. At 99% purity, the husk contains approximately 85% soluble fiber and 15% insoluble fiber, offering maximum water-retention and viscosity-building properties. Lower grades (such as 85% purity) contain higher proportions of seed coat fragments, which increases insoluble fiber and adds bulk texture.',
-      'Sourcing decisions should align with the end-product format. Premium 98–99% grades are ideal for dry drink mixes, capsules, and laxatives where maximum gel strength is required. Moderate 85–95% grades are highly functional in breakfast cereals, granola bars, and veterinary feed, providing cost-effective soluble and insoluble fiber density.'
+      'Psyllium contains both soluble and insoluble fiber. The soluble fraction forms gel and drives water binding. The insoluble fraction adds bulk and texture. Buyers should choose the grade based on the finished product, not only by chasing the highest purity.',
+      'Higher purity generally gives stronger gel performance and cleaner texture. It is useful for capsules, laxative-style sachets, premium drink mixes, and applications where strong swelling is important. Moderate grades can work well in cereals, bars, bakery, and feed where cost and texture also matter.',
+      'R&D teams should test hydration, viscosity, taste, texture, label-claim method, serving size, and processing behavior before bulk purchase. A sample COA helps compare purity, swelling volume, moisture, ash, and mesh before trial work.'
     ],
-    aiSnapshot: 'Psyllium fiber ratios vary by purity grade. Premium 99% purity husk provides ~85% soluble fiber and 15% insoluble fiber for high-viscosity gels (capsules, laxatives). Lower 85-95% purity grades increase insoluble fiber content, ideal for bulk cereals and animal feed.',
+    aiSnapshot: 'Psyllium purity affects soluble fiber behavior, gel strength, texture, and cost. Buyers should match purity, swelling volume, mesh, moisture, and formulation trials to the finished product instead of assuming the highest purity is always the best choice.',
     specTable: [
-      { parameter: '99% Purity Grade', range: '≥ 85% Soluble / 15% Insoluble', method: 'AOAC 991.43' },
-      { parameter: '95% Purity Grade', range: '≥ 80% Soluble / 20% Insoluble', method: 'AOAC 991.43' },
-      { parameter: '85% Purity Grade', range: '≥ 70% Soluble / 30% Insoluble', method: 'AOAC 991.43' },
-      { parameter: 'Moisture Content', range: '≤ 12.0%', method: 'Loss on Drying' }
+      { parameter: '99% Husk', range: 'Highest gel strength', method: 'Capsules, laxative-style products, premium powders' },
+      { parameter: '98% Husk / Powder', range: 'Strong function with broad use', method: 'Supplements, drink mixes, bakery' },
+      { parameter: '95% Husk / Powder', range: 'Balanced cost and function', method: 'Food fiber, cereals, nutraceutical blends' },
+      { parameter: '85% Husk', range: 'More texture / cost-sensitive use', method: 'Feed, industrial fiber, selected food blends' },
+      { parameter: 'Fiber Claim Review', range: 'Destination-market method', method: 'Buyer QA / lab method' }
     ],
     faqs: [
-      { q: 'What is the nutritional difference between soluble and insoluble fiber?', a: 'Soluble fiber absorbs water to form a gel that slows digestion and supports cardiovascular health. Insoluble fiber does not dissolve, adding physical bulk to the digestive tract and supporting intestinal motility.' },
-      { q: 'How is total dietary fiber content verified?', a: 'Dietary fiber fractions are validated using standard enzymatic-gravimetric methods in accordance with AOAC 991.43 and NABL laboratory protocols.' }
-    ]
+      { q: 'Does higher purity always mean the best commercial choice?', a: 'No. Higher purity can improve gel strength, but moderate grades may be better for cereals, bakery, bars, and feed where cost and texture matter.' },
+      { q: 'What should R&D teams test before bulk purchase?', a: 'Test hydration, viscosity, taste, texture, serving size, label claim method, and performance in the finished formulation.' },
+      { q: 'Can purity predict soluble fiber exactly?', a: 'No. Purity is a useful guide, but buyers should verify fiber method, swelling volume, and application performance where claims matter.' },
+      { q: 'Which grade fits drink mixes?', a: 'Many drink mixes use fine 98% powder because it balances dispersion, gel strength, and sensory profile. The final choice should be tested in the actual formula.' }
+    ],
+    sections: [
+          {
+                "heading": "Fiber ratio in plain language",
+                "body": "Higher husk purity generally means more gel-forming soluble fiber and stronger water binding. Lower purity can add more insoluble material and texture. The best grade depends on the finished product, not only the highest percentage."
+          },
+          {
+                "heading": "How to choose grade by application",
+                "body": "For capsules and laxative-style products, buyers usually want higher purity and strong swelling. For cereals, bars, bakery, and feed, moderate purity may provide enough function at a better cost. Always test in the final formulation."
+          },
+          {
+                "heading": "What to ask on the COA",
+                "body": "Ask for purity, swelling volume, moisture, ash, mesh, and dietary fiber method where the claim depends on fiber content. If the finished product makes a fiber claim, confirm the analytical method required by the destination market."
+          },
+          {
+                "heading": "Common mistake",
+                "body": "Do not assume soluble fiber percentage from purity alone. Use purity as a starting point, then verify performance through swelling volume, viscosity, and formulation testing."
+          }
+    ],
+    references: [
+      { text: 'AOAC Official Methods of Analysis', url: 'https://www.aoac.org/official-methods-of-analysis/' },
+      { text: 'FDA dietary fiber nutrition labeling questions and answers', url: 'https://www.fda.gov/food/food-labeling-nutrition/questions-and-answers-dietary-fiber' },
+      { text: 'Codex Alimentarius food standards', url: 'https://www.fao.org/fao-who-codexalimentarius/en/' }
+    ],
+    internalLinks: [
+      { text: 'Product page', path: '/products/psyllium-husk/' },
+      { text: 'Quality page', path: '/quality/' },
+      { text: 'Related buyer guide', path: '/blog/psyllium-husk-soluble-fiber-food-fortification/' },
+      { text: 'Related buyer guide', path: '/blog/husk-vs-powder-buyer-guide/' },
+      { text: 'Sample and COA review', path: '/contact/' }
+    ],
   },
   {
     slug: 'swelling-volume-laboratory-verification-methods',
     title: 'Swelling Volume Laboratory Verification for Psyllium Sourcing',
     category: 'Sourcing',
     date: '2026-05-19',
+    updatedAt: '2026-06-04',
     audience: 'QA & Lab Technicians',
-    summary: 'A detailed review of official USP and EP laboratory testing protocols used to measure and verify the gelling capacity of bulk psyllium husk.',
+    summary: 'A simplified guide to swelling volume, test-method differences, COA review, and sampling questions for psyllium buyers.',
     body: [
-      'Swelling volume (or swelling index) is the primary physical parameter indicating the gel-forming capacity and quality of raw psyllium husk. For QA leads and laboratory technicians, executing standardized verification protocols is essential to prevent batch rejections.',
-      'Official pharmacopoeias mandate exact swelling test procedures. According to the United States Pharmacopeia (USP), 1.0 gram of whole psyllium husk is placed in a 25 mL stoppered graduated cylinder, filled with water, and agitated periodically over a 24-hour cycle. The final volume of the swollen mucilaginous gel is recorded.',
-      'Swell volume standards serve as the ultimate quality threshold. Premium pharmaceutical-grade husk must achieve a swell volume ≥55 mL/g, while standard food-grade husk typically reaches ≥40 mL/g. Meeting these values requires strict control over raw seed selection, separation efficiency, and milling heat control to prevent mucilage degradation.'
+      'Swelling volume is one of the most practical quality tests for psyllium. It shows how much gel-forming mucilage the sample can release under a defined test method. For buyers, it is a direct clue about water binding and formulation performance.',
+      'A swelling result is only meaningful when the method is clear. Whole husk, powder, different particle sizes, different rest times, and different lab steps can produce results that are not directly comparable. Buyers should review method details before comparing suppliers.',
+      'Before sampling, buyers should define the target application, grade, mesh, required swelling volume, COA format, and destination market. A 1 kg sample pack is usually enough for buyer review, internal lab checks, and early formulation screening.'
     ],
-    aiSnapshot: 'Swelling volume verification is the primary physical test for psyllium quality. Under USP monographs, 1.0 gram of husk must swell to ≥55 mL/g in a 25 mL graduated cylinder over 24 hours. Verification ensures consistent gelling properties for industrial formulations.',
+    aiSnapshot: 'Swelling volume tells buyers how much gel-forming mucilage a psyllium lot releases under a defined test method. Buyers should compare results only when sample form, particle size, method, rest time, and COA wording are clear.',
     specTable: [
-      { parameter: 'Premium Swelling Volume', range: '≥ 55 mL / g (USP Monograph)', method: 'USP Method' },
-      { parameter: 'Standard Swelling Volume', range: '≥ 40 mL / g (EP Monograph)', method: 'EP Method' },
-      { parameter: 'Test Duration', range: '24 Hours at Room Temp', method: 'Standard Protocol' },
-      { parameter: 'Agitation Frequency', range: 'Periodically for first 6 hours', method: 'Standard Protocol' }
+      { parameter: 'Sample Form', range: 'Whole husk or powder', method: 'COA / sample label' },
+      { parameter: 'Test Weight + Vessel', range: 'Method-specific', method: 'USP / EP / buyer method' },
+      { parameter: 'Rest Time', range: 'Often 24 hours where specified', method: 'Lab protocol' },
+      { parameter: 'Reading Unit', range: 'mL/g or swelling index', method: 'COA review' },
+      { parameter: 'Application Trial', range: 'Buyer formulation fit', method: '1 kg sample review' }
     ],
     faqs: [
-      { q: 'Why is swelling volume critical for industrial formulations?', a: 'In laxatives and bakery products, swelling volume dictates the water-binding efficiency. Low swell volume indicates high seed shell content or damaged mucilage, which reduces product performance.' },
-      { q: 'What factors can degrade the swelling volume during processing?', a: 'Excessive heat generated by mechanical friction during milling is the primary cause of mucilage degradation, highlighting the need for temperature-controlled milling.' }
-    ]
+      { q: 'Why do swelling volume results differ between labs?', a: 'Differences can come from sample form, particle size, water volume, temperature, agitation, rest time, and reading method.' },
+      { q: 'Can a high-purity lot still fail swelling expectations?', a: 'Yes. Purity helps, but swelling volume also depends on seed quality, milling heat, particle size, moisture, and test method.' },
+      { q: 'Should buyers test whole husk and powder the same way?', a: 'Not without checking the method. Particle size changes hydration behavior, so the method and sample form must be clear.' },
+      { q: 'What should be shared before requesting a sample?', a: 'Share grade, mesh, target application, swelling target, COA format, and destination market so the sample matches the review purpose.' }
+    ],
+    sections: [
+          {
+                "heading": "Plain-language meaning of swelling volume",
+                "body": "Swelling volume shows how much gel-forming mucilage a psyllium sample can release under a defined test method. Higher swelling usually means stronger water binding, but only when compared under the same method and sample form."
+          },
+          {
+                "heading": "Lab comparison checklist",
+                "body": "Check sample form, weight, cylinder size, water volume, rest time, agitation steps, temperature, reading time, and method reference. Small method differences can make two results hard to compare."
+          },
+          {
+                "heading": "Common mistakes",
+                "body": "Do not compare whole husk and powder without checking particle size. Do not compare a supplier specification to an actual tested lot result. Do not assume high purity automatically gives the swelling volume your formulation needs."
+          },
+          {
+                "heading": "What to ask before sampling",
+                "body": "Ask for grade, mesh, target application, required swelling volume, test method, COA format, and destination market. A 1 kg sample pack is usually enough for buyer review, internal lab checks, and early formulation screening."
+          }
+    ],
+    references: [
+      { text: 'USP Dietary Supplements and Herbal Medicines', url: 'https://www.usp.org/dietary-supplements-herbal-medicines' },
+      { text: 'European Pharmacopoeia - EDQM', url: 'https://www.edqm.eu/en/the-european-pharmacopoeia' },
+      { text: 'NABL Membership Directory', url: 'https://www.nabl.org/engage/membership-directory/' }
+    ],
+    internalLinks: [
+      { text: 'Product page', path: '/products/psyllium-husk/' },
+      { text: 'Quality page', path: '/quality/' },
+      { text: 'Related buyer guide', path: '/blog/psyllium-usp-ep-ip-monograph-standards/' },
+      { text: 'Related buyer guide', path: '/blog/verify-nabl-coa-psyllium-supplier/' },
+      { text: 'Sample and COA review', path: '/contact/' }
+    ],
   }
 ];
 
@@ -4132,12 +4970,12 @@ export const industryTranslations: Record<string, Record<string, IndustryTransla
       proof: [
         '包含完整制药级检测的分析证书 (COA)',
         '符合 USP / EP / IP 药典标准参数',
-        '可提供 NABL 认可的实验室检测报告'
+        '可按规格要求安排第三方 NABL 认可实验室报告'
       ],
       useCases: [
         {
           title: '泻药胶囊与非处方药 (OTC) 冲剂袋',
-          body: '纯度为 99% 且溶胀度 ≥50 ml/g 的车前子壳，完全符合 USP 和 EP 药典关于非处方泻药制剂的标准。提供 40-60 目规格，适用于标准胶囊的填充生产。'
+          body: '纯度为 99% 且溶胀度目标 ≥50 ml/g 的车前子壳通常用于引用 USP 或 EP 参数的非处方泻药制剂。COA 表述应仅在目标批次检测结果支持时引用相关标准。'
         },
         {
           title: '消化系统健康补充剂',
@@ -4149,7 +4987,7 @@ export const industryTranslations: Record<string, Record<string, IndustryTransla
         },
         {
           title: 'OEM/白标补充剂采购',
-          body: '品牌商和合同制造商在采购医药级车前子壳用于白标或代工生产时，需要确保批次之间 COA 数据的高度一致性。我们提供经 NABL 认可的报告并出具完全符合买方指定药典的证明。'
+          body: '品牌商和合同制造商在采购高纯度车前子壳用于白标或代工生产时，需要审核目标批次 COA 数据。可在买方规格要求时安排第三方 NABL 认可实验室报告。'
         }
       ],
       keySpecs: [
@@ -4162,7 +5000,7 @@ export const industryTranslations: Record<string, Record<string, IndustryTransla
       ],
       documents: [
         '应买方要求出具符合 USP / EP / IP 的分析证书 (COA)',
-        'NABL 认可的第三方实验室检测报告',
+        '按买方规格要求提供第三方 NABL 认可实验室检测报告',
         '产地来源证（印度古吉拉特邦）',
         '植物检疫证书',
         '可根据要求提供清真 (Halal) / 犹太 (Kosher) 认证或声明'
@@ -4174,7 +5012,7 @@ export const industryTranslations: Record<string, Record<string, IndustryTransla
       headline: '专用于无麸质烘焙、谷物食品、固体饮料混合物及清洁标签增稠的优质车前子粉与整壳。',
       proof: [
         '目数大小可根据客户具体应用进行定制',
-        '有机批次均随附 NOP / EU 有机认证文件',
+        '有机需求需先审核证书范围和批次覆盖',
         '包含食品级过敏原声明'
       ],
       useCases: [
@@ -4284,7 +5122,7 @@ export const industryTranslations: Record<string, Record<string, IndustryTransla
         '40-100 目：适用于工业黏合剂、土壤改良及生态绿化',
         '溶胀度：95% 纯度下可达 40-50 ml/g',
         '水分 ≤ 10%，防止运输与存储中结块，保证流畅喂料',
-        '大宗采购优惠：最低起订量 1 吨 (MT) 起'
+        '商业MOQ按规格、包装、目的地和文件包确认'
       ],
       documents: [
         '包含批次指标范围与检测限的技术数据表 (TDS)',
@@ -4302,12 +5140,12 @@ export const industryTranslations: Record<string, Record<string, IndustryTransla
       proof: [
         'شهادة تحليل (COA) مع فحص صيدلاني كامل',
         'مطابقة لمعايير دستور الأدوية الأمريكي والأوروبي والهنّدي',
-        'تقارير اختبار معتمدة من مختبرات NABL متوفرة'
+        'يمكن ترتيب تقارير مختبر طرف ثالث معتمد من NABL عند طلب المواصفة'
       ],
       useCases: [
         {
           title: 'كبسولات الملينات وأكياس الأدوية اللاوصفية (OTC)',
-          body: 'قشور نقية بنسبة 99% مع حجم انتفاخ ≥50 مل/جم تلبي متطلبات دساتير الأدوية الأمريكية والأوروبية لتركيبات الملينات. متوفرة بحجم 40-60 مش لملء الكبسولات القياسي.'
+          body: 'قشور بنسبة 99% مع هدف حجم انتفاخ ≥50 مل/جم تُطلب عادة للتركيبات التي تشير إلى معايير USP أو EP. يجب أن تشير صياغة COA إلى المعيار المطلوب فقط عندما تدعم نتائج الدفعة ذلك.'
         },
         {
           title: 'مكملات صحة الجهاز الهضمي',
@@ -4319,7 +5157,7 @@ export const industryTranslations: Record<string, Record<string, IndustryTransla
         },
         {
           title: 'توريد المكملات للعلامات الخاصة (OEM/White Label)',
-          body: 'تتطلب العلامات التجارية ومصانع التعاقد التي تبحث عن قشور سيليوم صيدلانية لمنتجاتها بيانات COA متسقة من دفعة لأخرى. نحن نوفر تقارير NABL المعتمدة ونطابق الشهادات حسب طلب المشتري.'
+          body: 'تتطلب العلامات التجارية ومصانع التعاقد التي تبحث عن قشور سيليوم عالية النقاوة مراجعة بيانات COA للدفعة المستهدفة. يمكن ترتيب تقرير مختبر طرف ثالث معتمد من NABL عندما تتطلب مواصفة المشتري ذلك.'
         }
       ],
       keySpecs: [
@@ -4332,7 +5170,7 @@ export const industryTranslations: Record<string, Record<string, IndustryTransla
       ],
       documents: [
         'شهادة تحليل (COA) مطابقة لدساتير الأدوية (USP / EP / IP) عند الطلب',
-        'تقرير اختبار معتمد من مختبر NABL التابع لطرف ثالث',
+        'تقرير مختبر طرف ثالث معتمد من NABL عند طلب مواصفة المشتري',
         'شهادة منشأ (ولاية غوجارات، الهند)',
         'شهادة صحة نباتية',
         'شهادة أو إعلان حلال / كوشر متوفر عند الطلب'
@@ -4370,7 +5208,7 @@ export const industryTranslations: Record<string, Record<string, IndustryTransla
         'نقاء 85% لتدعيم الألياف بأسعار اقتصادية كفؤة',
         'المش: 80-100 للمخبوزات، 100-200 للمشروبات، 40-60 لحبوب الإفطار',
         'الرطوبة ≤ 10% لضمان سلامة الأغذية وسهولة التداول والاستقرار',
-        'عضوي معتمد: NOP (أمريكا) و EU (أوروبا)، مع توفير شهادة المعاملة لكل شحنة',
+        'المتطلبات العضوية تخضع لمراجعة نطاق الشهادة وتغطية الدفعة قبل عرض السعر',
         'خالي من مسببات الحساسية (صناعة خالية تماماً من الغلوتين، المكسرات، الصويا، ومنتجات الألبان)'
       ],
       documents: [
@@ -4472,12 +5310,12 @@ export const industryTranslations: Record<string, Record<string, IndustryTransla
       proof: [
         'COA met volledig farmaceutisch analysepaneel inbegrepen',
         'Afgestemd op USP / EP / IP farmacopee-parameters',
-        'NABL-geaccrediteerde laboratoriumrapporten beschikbaar'
+        'Derde NABL-geaccrediteerde laboratoriumrapporten beschikbaar waar de specificatie dit vereist'
       ],
       useCases: [
         {
           title: 'Laxeercapsules & OTC-zakjes',
-          body: '99% pure psylliumvezels met een zwelvolume van ≥50 ml/g voldoen aan de USP- en EP-monografie-eisen voor vrij verkrijgbare laxeermiddelen. Geleverd in 40-60 mesh voor standaard capsulevulling.'
+          body: '99% psylliumvezels met een doelzwelvolume van ≥50 ml/g worden vaak gevraagd voor formuleringen die USP- of EP-parameters citeren. COA-tekst mag de gevraagde standaard alleen noemen waar de lotresultaten dit ondersteunen.'
         },
         {
           title: 'Supplementen voor spijsvertering',
@@ -4489,7 +5327,7 @@ export const industryTranslations: Record<string, Record<string, IndustryTransla
         },
         {
           title: 'Private label supplementen sourcing',
-          body: 'Merken en loonfabrikanten die psyllium van farmaceutische kwaliteit inkopen voor private label referenties vereisen consistente COA-gegevens per batch. Wij leveren NABL-geaccrediteerde rapporten.'
+          body: 'Merken en loonfabrikanten die hoogzuivere psyllium inkopen voor private label producten moeten de COA-gegevens van het doellot beoordelen. Een rapport van een derde NABL-geaccrediteerd laboratorium kan worden geregeld wanneer de koperspecificatie dit vereist.'
         }
       ],
       keySpecs: [
@@ -4502,7 +5340,7 @@ export const industryTranslations: Record<string, Record<string, IndustryTransla
       ],
       documents: [
         'Certificaat van Analyse (COA) afgestemd op USP / EP / IP op aanvraag',
-        'NABL-geaccrediteerd laboratoriumtestrapport',
+        'Rapport van derde NABL-geaccrediteerd laboratorium waar de koperspecificatie dit vereist',
         'Certificaat van Oorsprong (Gujarat, India)',
         'Fytosanitair certificaat',
         'Halal / Kosher verklaring of certificaat op aanvraag'
@@ -4642,12 +5480,12 @@ export const industryTranslations: Record<string, Record<string, IndustryTransla
       proof: [
         'COA mit vollständigem Pharma-Panel enthalten',
         'Anpassung an USP / EP / IP-Parameter',
-        'NABL-akkreditierte Testberichte verfügbar'
+        'Drittlaborberichte von NABL-akkreditierten Laboren verfügbar, wenn die Spezifikation dies verlangt'
       ],
       useCases: [
         {
           title: 'Abführmittelkapseln & OTC-Beutel',
-          body: '99% reine Schalen mit einem Quellvolumen von ≥50 ml/g erfüllen die USP- und EP-Monographieanforderungen für rezeptfreie Abführmittelformulierungen. Geliefert in 40–60 Mesh für Standard-Dosierkapselabfüllung.'
+          body: '99% Schalen mit Ziel-Quellvolumen ≥50 ml/g werden häufig für Formulierungen angefragt, die USP- oder EP-Parameter zitieren. COA-Text sollte den gewünschten Standard nur nennen, wenn die Chargenergebnisse dies unterstützen.'
         },
         {
           title: 'Nahrungsergänzungsmittel für die Verdauung',
@@ -4659,7 +5497,7 @@ export const industryTranslations: Record<string, Record<string, IndustryTransla
         },
         {
           title: 'Private-Label-Zukauf von Nahrungsergänzungsmitteln',
-          body: 'Marken und Lohnhersteller, die Schalen in Pharmaqualität für Private-Label-Produkte beziehen, benötigen konsistente COA-Daten von Charge zu Charge. Wir liefern NABL-akkreditierte Laborberichte.'
+          body: 'Marken und Lohnhersteller, die hochreine Schalen für Private-Label-Produkte beziehen, sollten die COA-Daten der Zielcharge prüfen. Ein Bericht eines dritten NABL-akkreditierten Labors kann arrangiert werden, wenn die Käuferspezifikation dies verlangt.'
         }
       ],
       keySpecs: [
@@ -4672,7 +5510,7 @@ export const industryTranslations: Record<string, Record<string, IndustryTransla
       ],
       documents: [
         'Analysenzertifikat (COA) auf Anfrage nach USP / EP / IP ausgewiesen',
-        'NABL-akkreditierter Labortestbericht',
+        'Bericht eines dritten NABL-akkreditierten Labors, wenn die Käuferspezifikation dies verlangt',
         'Ursprungszeugnis (Gujarat, Indien)',
         'Phytosanitäres Zertifikat',
         'Halal- / Koscher-Erklärung oder -Zertifikat auf Anfrage'
@@ -4812,12 +5650,12 @@ export const industryTranslations: Record<string, Record<string, IndustryTransla
       proof: [
         'COA con panel farmacéutico completo incluido',
         'Alineación con parámetros USP / EP / IP',
-        'Informes de prueba acreditados por NABL disponibles'
+        'Informes de laboratorio tercero acreditado por NABL disponibles cuando la especificación lo requiera'
       ],
       useCases: [
         {
           title: 'Cápsulas laxantes y sobres OTC',
-          body: 'La cáscara de pureza del 99% con un volumen de hinchamiento de ≥50 ml/g cumple con los requisitos de las monografías USP y EP para formulaciones laxantes de venta libre. Suministrado en malla 40–60 para llenado de cápsulas dosificadoras estándar.'
+          body: 'La cáscara del 99% con volumen de hinchamiento objetivo ≥50 ml/g suele solicitarse para formulaciones que citan parámetros USP o EP. El COA debe citar el estándar solicitado solo cuando los resultados del lote lo respalden.'
         },
         {
           title: 'Suplementos de salud digestiva',
@@ -4829,7 +5667,7 @@ export const industryTranslations: Record<string, Record<string, IndustryTransla
         },
         {
           title: 'Abastecimiento de suplementos de marca blanca',
-          body: 'Las marcas y fabricantes contratados que buscan cáscara de grado farmacéutico para referencias de marca blanca requieren datos de COA consistentes lote a lote. Proporcionamos informes de prueba acreditados por NABL y anotamos los COA según la monografía especificada por el comprador.'
+          body: 'Las marcas y fabricantes contratados que buscan cáscara de alta pureza para marca blanca deben revisar los datos de COA del lote objetivo. Se puede coordinar un informe de laboratorio tercero acreditado por NABL cuando la especificación del comprador lo requiera.'
         }
       ],
       keySpecs: [
@@ -4842,7 +5680,7 @@ export const industryTranslations: Record<string, Record<string, IndustryTransla
       ],
       documents: [
         'Certificado de análisis (COA) anotado según USP / EP / IP a solicitud',
-        'Informe de prueba de laboratorio acreditado por NABL',
+        'Informe de laboratorio tercero acreditado por NABL cuando lo requiera la especificación del comprador',
         'Certificado de origen (Gujarat, India)',
         'Certificado fitosanitario',
         'Declaración o certificado Halal / Kosher bajo solicitud'
@@ -4982,12 +5820,12 @@ export const industryTranslations: Record<string, Record<string, IndustryTransla
       proof: [
         'COA avec panel pharmaceutique complet inclus',
         'Alignement sur les spécifications USP / EP / IP',
-        'Rapports d\'essais accrédités par la NABL disponibles'
+        'Rapports de laboratoire tiers accrédité NABL disponibles lorsque la spécification l\'exige'
       ],
       useCases: [
         {
           title: 'Gélules laxatives & sachets OTC',
-          body: 'Le tégument d\'une pureté de 99% avec un volume de gonflement de ≥50 ml/g répond aux exigences des monographies USP et EP pour les formulations de laxatifs en vente libre. Fourni en maille 40–60 pour le remplissage standard de gélules.'
+          body: 'Le tégument 99% avec volume de gonflement cible ≥50 ml/g est souvent demandé pour les formulations citant des paramètres USP ou EP. Le COA ne doit citer la norme demandée que lorsque les résultats du lot le justifient.'
         },
         {
           title: 'Compléments de santé digestive',
@@ -4999,7 +5837,7 @@ export const industryTranslations: Record<string, Record<string, IndustryTransla
         },
         {
           title: 'Sourcing de suppléments en marque blanche',
-          body: 'Les marques et fabricants à façon qui sourcent du psyllium de qualité pharmaceutique exigent des données COA constantes d\'un lot à l\'autre. Nous fournissons des rapports accrédités et annotons les COA selon la monographie de l\'acheteur.'
+          body: 'Les marques et fabricants à façon qui sourcent du psyllium haute pureté doivent examiner les données COA du lot cible. Un rapport de laboratoire tiers accrédité NABL peut être organisé lorsque la spécification de l\'acheteur l\'exige.'
         }
       ],
       keySpecs: [
@@ -5012,7 +5850,7 @@ export const industryTranslations: Record<string, Record<string, IndustryTransla
       ],
       documents: [
         'Certificat d\'analyse (COA) annoté USP / EP / IP sur demande',
-        'Rapport d\'essai de laboratoire accrédité par la NABL',
+        'Rapport de laboratoire tiers accrédité NABL lorsque la spécification de l\'acheteur l\'exige',
         'Certificat d\'origine (Gujarat, Inde)',
         'Certificat phytosanitaire',
         'Déclaration ou certificat Halal / Kosher sur demande'
@@ -5152,12 +5990,12 @@ export const industryTranslations: Record<string, Record<string, IndustryTransla
       proof: [
         'COA con pannello farmaceutico completo incluso',
         'Allineamento con parametri USP / EP / IP',
-        'Rapporti di prova accreditati da NABL disponibili'
+        'Rapporti di laboratorio terzo accreditato NABL disponibili quando richiesto dalla specifica'
       ],
       useCases: [
         {
           title: 'Capsule lassative e bustine OTC',
-          body: 'La cuticola pura al 99% con un volume di rigonfiamento ≥50 ml/g soddisfa i requisiti USP ed EP per le formulazioni lassative da banco. Fornita in mesh 40–60 per il riempimento standard delle capsule.'
+          body: 'La cuticola al 99% con volume di rigonfiamento target ≥50 ml/g è spesso richiesta per formulazioni che citano parametri USP o EP. Il COA dovrebbe citare lo standard richiesto solo quando i risultati del lotto lo supportano.'
         },
         {
           title: 'Integratori per il benessere digestivo',
@@ -5169,7 +6007,7 @@ export const industryTranslations: Record<string, Record<string, IndustryTransla
         },
         {
           title: 'Fornitura di integratori a marchio privato',
-          body: 'I marchi e i produttori che acquistano psillio di grado farmaceutico per prodotti private-label richiedono dati COA costanti. Forniamo rapporti NABL e annotiamo i COA in base alle monografie richieste.'
+          body: 'I marchi e i produttori che acquistano psillio ad alta purezza per prodotti private-label devono revisionare i dati COA del lotto target. Un rapporto di laboratorio terzo accreditato NABL può essere organizzato quando richiesto dalla specifica dell\'acquirente.'
         }
       ],
       keySpecs: [
@@ -5182,7 +6020,7 @@ export const industryTranslations: Record<string, Record<string, IndustryTransla
       ],
       documents: [
         'Certificato di analisi (COA) annotato USP / EP / IP su richiesta',
-        'Rapporto di prova di laboratorio accreditato NABL',
+        'Rapporto di laboratorio terzo accreditato NABL quando richiesto dalla specifica dell\'acquirente',
         'Certificato di origine (Gujarat, India)',
         'Certificato fitosanitario',
         'Dichiarazione o certificato Halal / Kosher su richiesta'
@@ -5322,12 +6160,12 @@ export const industryTranslations: Record<string, Record<string, IndustryTransla
       proof: [
         'COA com painel farmacêutico completo incluído',
         'Alinhamento com parâmetros USP / EP / IP',
-        'Relatórios de teste credenciados pela NABL disponíveis'
+        'Relatórios de laboratório terceiro acreditado NABL disponíveis quando a especificação exigir'
       ],
       useCases: [
         {
           title: 'Cápsulas laxantes e saquetas OTC',
-          body: 'A casca de pureza de 99% com um volume de expansão de ≥50 ml/g atende aos requisitos das monografias USP e EP para formulações laxativas de venda livre. Fornecido em malha 40–60 para enchimento de cápsulas.'
+          body: 'A casca 99% com volume de expansão alvo ≥50 ml/g costuma ser solicitada para formulações que citam parâmetros USP ou EP. O COA deve citar o padrão solicitado apenas quando os resultados do lote sustentarem isso.'
         },
         {
           title: 'Suplementos de saúde digestiva',
@@ -5339,7 +6177,7 @@ export const industryTranslations: Record<string, Record<string, IndustryTransla
         },
         {
           title: 'Sourcing de suplementos em marca própria',
-          body: 'Marcas e fabricantes contratados que buscam casca de grau farmacêutico para private-label exigem dados de COA consistentes lote a lote. Fornecemos relatórios NABL e anotamos os COAs conforme a monografia.'
+          body: 'Marcas e fabricantes contratados que buscam casca de alta pureza para private-label devem revisar os dados de COA do lote alvo. Um relatório de laboratório terceiro acreditado NABL pode ser coordenado quando a especificação do comprador exigir.'
         }
       ],
       keySpecs: [
@@ -5352,7 +6190,7 @@ export const industryTranslations: Record<string, Record<string, IndustryTransla
       ],
       documents: [
         'Certificado de análise (COA) anotado USP / EP / IP sob solicitação',
-        'Relatório de teste de laboratório credenciado pela NABL',
+        'Relatório de laboratório terceiro acreditado NABL quando a especificação do comprador exigir',
         'Certificado de origem (Gujarat, Índia)',
         'Certificado fitossanitário',
         'Declaração ou certificado Halal / Kosher sob solicitação'
@@ -5492,12 +6330,12 @@ export const industryTranslations: Record<string, Record<string, IndustryTransla
       proof: [
         'Сертификат анализа (COA) с полным фармацевтическим профилем включен',
         'Соответствие спецификациям USP / EP / IP',
-        'Доступны протоколы испытаний аккредитованной NABL лаборатории'
+        'Доступны отчеты сторонней лаборатории, аккредитованной NABL, если этого требует спецификация'
       ],
       useCases: [
         {
           title: 'Капсулы со слабительным и саше без рецепта',
-          body: 'Шелуха чистотой 99% с объемом набухания ≥50 мл/г соответствует требованиям монографий USP и EP для безрецептурных слабительных препаратов. Поставляется фракцией 40–60 меш для стандартного наполнения капсул.'
+          body: 'Шелуха 99% с целевым объемом набухания ≥50 мл/г часто запрашивается для рецептур, где указаны параметры USP или EP. Формулировка COA должна ссылаться на стандарт только тогда, когда результаты партии это подтверждают.'
         },
         {
           title: 'Добавки для здоровья пищеварительной системы',
@@ -5509,7 +6347,7 @@ export const industryTranslations: Record<string, Record<string, IndustryTransla
         },
         {
           title: 'Поставки пищевых добавок под собственной торговой маркой (Private Label)',
-          body: 'Брендам и производителям, закупающим шелуху фарма-класса для линеек СТМ, требуются стабильные данные COA от партии к партии. Мы предоставляем отчеты NABL и оформляем COA в соответствии со спецификацией.'
+          body: 'Брендам и производителям, закупающим высокочистую шелуху для линеек СТМ, следует проверять данные COA целевой партии. Отчет сторонней лаборатории, аккредитованной NABL, может быть организован, если этого требует спецификация покупателя.'
         }
       ],
       keySpecs: [
@@ -5522,7 +6360,7 @@ export const industryTranslations: Record<string, Record<string, IndustryTransla
       ],
       documents: [
         'Сертификат анализа (COA) с аннотацией под монографии USP / EP / IP на заказ',
-        'Протокол испытаний аккредитованной NABL лаборатории',
+        'Отчет сторонней лаборатории, аккредитованной NABL, если этого требует спецификация покупателя',
         'Сертификат происхождения (Гуджарат, Индия)',
         'Фитосанитарный сертификат',
         'Декларация или сертификат Халяль / Кошер по запросу'
@@ -5673,8 +6511,8 @@ export const productI18n: Record<string, {
         '来自古吉拉特邦 Siddhpur 的 85% 纯度车前子壳。溶胀度最低 30 ml/g。低于补剂和泻药药典的 NF 和 USP 门槛。用于动物饲料、工业纤维混合和对成本敏感的食品应用。',
       'Psyllium husk 95% purity, NF-compliant. Swell volume minimum 40 ml/g. Used in dietary fibre supplements, functional cereals, and food fibre enrichment where the pharmacopoeia standard is Food / NF rather than USP or EP. COA annotated to NF on request.':
         '符合 NF 标准的 95% 纯度车前子壳。溶胀度最低 40 ml/g。用于膳食纤维补充剂、功能性谷物和食品纤维强化，药典标准为食品级/NF 级，而非 USP 或 EP。',
-      'Psyllium husk 98% purity, USP and EP compliant. Swell volume minimum 45 ml/g. For laxative capsule fills, OTC sachet products, and supplement formulations requiring a full USP or EP COA. NABL-accredited lab testing per shipment.':
-        '符合 USP 和 EP 标准的 98% 纯度车前子壳。溶胀度最低 45 ml/g。用于泻药胶囊填充、非处方药袋装产品以及需要完整 USP 或 EP 分析证书 (COA) 的补剂配方。',
+      'Psyllium husk 98% purity is typically requested for USP or EP documentation. Swell volume target minimum 45 ml/g. For laxative capsule fills, OTC sachet products, and supplement formulations, COA wording should reference the requested standard only where tested lot results support it.':
+        '98% 纯度车前子壳通常用于 USP 或 EP 文件需求。溶胀度目标最低 45 ml/g。COA 文字仅应在批次检测结果支持时引用所需标准。',
       'Psyllium husk 99% purity from Gujarat, India — the pharmaceutical grade. Minimum swell volume 50 ml/g, meeting the Plantago ovata husk monographs in USP, EP, and IP. Used by pharma brands, OTC laxative manufacturers, and supplement companies where a full pharmacopoeia COA is required per lot.':
         '来自印度古吉拉特邦的 99% 纯度车前子壳 —— 制药级。最低溶胀度 50 ml/g，符合 USP、EP 和 IP 中的车前子壳药典。用于需要批次完整药典 COA 的制药品牌 and 补剂公司。',
       'Psyllium husk powder 85% purity, 40–60 mesh (particle size 250–425 μm). Visible texture in finished products makes it suitable for gluten-free artisan bread and high-fibre cereal. Below NF and USP swell volume thresholds. Lowest cost per unit in our powder range.':
@@ -5695,10 +6533,10 @@ export const productI18n: Record<string, {
         '更细目数（60-100 目）和更高粗纤维（50-60%）的车前子工业粉，适用于化妆品和个人护理。总灰分 ≤8%。适用于要求颗粒均匀和水相配方分散稳定性的应用。',
       'Food-safe heavy metal limits (Lead, Arsenic, Cadmium within food-grade thresholds). 35–45% crude fibre at 40–80 mesh. Used as a natural fibre source and binder in pet food manufacturing where animal safety documentation is required alongside the standard COA.':
         '食品级安全重金属限量（铅、砷、镉在食品级门槛内）。40-80 目下 35-45% 粗纤维。用作宠物食品制造中的天然纤维源和黏合剂，需随附动物安全文件和标准 COA。',
-      'USDA National Organic Program certified psyllium husk for the US market. Certification covers seed origin, growing practices (no synthetic pesticides or fertilisers), processing facility, and handling chain. Transaction certificate (TC) per shipment links the specific lot to the organic certificate. Purity ≥95%, swell volume ≥40 ml/g.':
-        '针对美国市场的美国国家有机计划 (NOP) 认证车前子壳。认证涵盖种子来源、种植过程（无合成农药或化肥）、加工设施和流通链。每批货物均随附交易证书 (TC)。纯度 ≥95%，溶胀度 ≥40 ml/g。',
-      'EU Organic certified psyllium husk under EU Regulation 2018/848. Certificate of Inspection (COI) provided per shipment for EU customs and import authority requirements. Lot-level traceability and certificate review before purchase order. Purity ≥95%, swell volume ≥40 ml/g.':
-        '符合欧盟法规 2018/848 的欧盟有机认证车前子壳。每批货物均随附检查证书 (COI)，以满足欧盟海关和进口机构的要求。在下订单前可提供批次级追溯和证书审查。纯度 ≥95%，溶胀度 ≥40 ml/g。',
+      'For US organic buyers, supply is handled only after USDA NOP certificate and lot-scope review. Seed origin, handling chain, transaction certificate availability, purity, and swell volume must be confirmed before quotation.':
+        '美国有机买家应在报价前审核 USDA NOP 证书范围、批次覆盖、种子来源、流通链、交易证书可用性、纯度和溶胀度。',
+      'For EU organic buyers, supply is handled only after EU Organic certificate, COI pathway, and lot-scope review. Lot traceability, certificate coverage, purity, and swell volume must be confirmed before quotation.':
+        '欧盟有机买家应在报价前审核欧盟有机证书、COI 路径、批次范围、追溯、纯度和溶胀度。',
       'Compressed psyllium cattle feed block (Sagar Gola type) combining husk, khakha, molasses, and mineral mix. Designed for direct farm-level feeding without processing. Supports digestive regularity and hydration retention in dairy cattle and buffalo. Metabolisable energy approximately 9–10 MJ/kg DM.':
         '压榨车前子牛饲料块（Sagar Gola 型），结合了外壳、Khakha、糖蜜和矿物质混合料。专为农场直接饲喂设计。支持奶牛和水牛的消化规律和水分保持。代谢能约为 9-10 MJ/kg 干物质。',
       'Loose granule psyllium cattle feed (Sagar Lali type) with khakha as the primary base plus grain mix. Higher crude fibre (30–40%) and protein (4–6%) than Sagar Gola. For cattle, poultry, and ruminant bulk fibre supplementation, or for buyers who blend into a compound feed program.':
@@ -5706,40 +6544,40 @@ export const productI18n: Record<string, {
     },
     faqs: {
       'What certifications cover your NOP organic psyllium?': {
-        q: '哪些认证涵盖了您的 NOP 有机车前子？',
-        a: '通过了美国国家有机计划 (NOP) 的有机认证。该认证涵盖了整个监管链：从种子来源、种植过程、加工设施到流通链。我们在下订单前提供证书副本和交易证书 (TC)。'
+        q: 'NOP 有机车前子应审核哪些认证范围？',
+        a: '买家应在采购订单前审核 USDA NOP 证书范围、法律主体、处理商覆盖、批次覆盖和交易证书 (TC) 可用性。'
       },
       'What document do US organic importers need per shipment?': {
         q: '美国有机进口商每批货物需要什么文件？',
-        a: '由认可认证机构为每批货物颁发的交易证书 (TC)。该证书将您的发票与有机批次直接关联，我们会在标准有机单据包中提供。'
+        a: '通常需要由认证机构签发、覆盖具体批次和数量的交易证书 (TC)。采购前应确认该文件是否适用于目标批次和目的地。'
       },
       'What purity and swell volume does NOP organic psyllium have?': {
         q: 'NOP 有机车前子的纯度和溶胀度是多少？',
-        a: '纯度 ≥95%，溶胀度最低 40 ml/g。每批货物随附包含水分和微生物指标的 COA（分析证书）。'
+        a: '常见目标为纯度 ≥95%、溶胀度最低 40 ml/g。实际数值应按目标批次 COA 审核。'
       },
       'What is the price premium for organic psyllium?': {
         q: '有机车前子的溢价是多少？',
-        a: '通常比常规 95% 等级高 25-40%，具体取决于认证库存和市场行情。请在下单前联系我们确认最新价格。'
+        a: '价格取决于证书范围、批次可用性、目的地文件要求和市场时间。采购前请确认当前批次和报价。'
       },
       'What document do EU importers need for organic psyllium?': {
         q: '欧盟进口商对有机车前子需要什么文件？',
-        a: '符合欧盟法规 2018/848 的检查证书 (COI)。每批货物均通过欧盟 TRACES 系统提供以用于清关。'
+        a: '通常需要符合欧盟法规 2018/848 的检查证书 (COI)。采购前应确认 COI 路径、法律主体、批次覆盖和目的地要求。'
       },
       'Is your EU organic psyllium certified under the 2018/848 regulation?': {
-        q: '您的欧盟有机车前子是否符合 2018/848 法规认证？',
-        a: '是的。欧盟有机批次符合欧盟法规 2018/848。在下单前可提供证书副本和 COI。'
+        q: '欧盟有机车前子应如何审核 2018/848 合规？',
+        a: '买家应在采购订单前审核欧盟有机证书范围、COI 路径、批次覆盖和目标进口国要求。'
       },
       'What is the swell volume of EU organic psyllium?': {
         q: '欧盟有机车前子的溶胀度是多少？',
-        a: '纯度 ≥95% 时最低为 40 ml/g。与 NOP 等级物理规格相同 —— 仅因目的地市场所需认证不同。'
+        a: '常见目标为纯度 ≥95% 时最低 40 ml/g。实际数值应按目标批次 COA 审核。'
       },
       'Can I review the organic certificate before placing an order?': {
         q: '我可以在下订单前审查有机证书吗？',
-        a: '是的。我们会在确认订单前分享当前的有机证书和批次级产地记录，这是我们的标准流程。'
+        a: '采购前应要求审核当前证书、批次覆盖、原产地记录和交易文件路径。'
       },
-      'Is NOP psyllium husk fully organic certified?': {
-        q: 'NOP车前子壳是完全有机认证的吗？',
-        a: '是的。通过了美国国家有机计划 (NOP) 的有机认证。该认证涵盖了整个监管链：有机种植田、专用有机加工设施、包装材料和出口处理。每批次货物都会开具交易证书 (TC) 以核实有机身份。'
+      'What should buyers verify before sourcing NOP psyllium husk?': {
+        q: 'NOP车前子壳采购前应验证什么？',
+        a: '应验证 NOP 证书范围、种植和处理链覆盖、包装范围、目标批次以及交易证书 (TC) 可用性。'
       },
       'What purity is NOP organic psyllium husk?': {
         q: 'NOP有机车前子壳的纯度是多少？',
@@ -5747,19 +6585,19 @@ export const productI18n: Record<string, {
       },
       'Is a Transaction Certificate (TC) provided?': {
         q: '是否提供交易证书 (TC)？',
-        a: '是的。每批货物都提供由认可的认证机构颁发的交易证书 (TC)，将您的发票直接与有机批次关联。'
+        a: '交易证书 (TC) 的适用性应按目标批次、数量、发票和目的地要求在采购前确认。'
       },
       'What regulation governs your EU organic psyllium?': {
         q: '什么法规监管您的欧盟有机车前子？',
-        a: '欧盟法规 2018/848。我们根据经审计的有机协定进行加工和包装，并通过欧盟 TRACES 系统提供检查证书 (COI) 以供海关清关。'
+        a: '欧盟法规 2018/848。采购前应审核证书范围、COI 路径、法律主体和目标批次覆盖。'
       },
       'Do you provide a COI for EU imports?': {
         q: '您是否为欧盟进口提供 COI？',
-        a: '是的。在船舶起航前，通过欧盟 TRACES 系统生成并由出口控制机构批准检查证书 (COI)，确保顺利进口到任何欧盟成员国。'
+        a: 'COI 路径应在采购前按目标批次、出口主体、进口国和 TRACES 要求确认。'
       },
       'What is the lead time for organic psyllium?': {
         q: '有机车前子的交货期是多久？',
-        a: '来自古吉拉特邦 Siddhpur 的交货期为 7 天。有机批次需要出运前审计和交易证书协调，因此最终出运文件的发布需要额外 3-5 天。'
+        a: '交货期取决于批次可用性、证书范围、交易文件路径、包装和目的地要求，需在报价前确认。'
       },
       'What is standard grade psyllium seed purity?': {
         q: '标准级车前子种子的纯度是多少？',
@@ -5839,7 +6677,7 @@ export const productI18n: Record<string, {
       },
       'What documentation comes with 98% psyllium husk?': {
         q: '98%纯度车前子壳随附什么文件？',
-        a: '经 NABL 认可的实验室 COA（溶胀度、水分、灰分、微生物、重金属）、商业发票、装箱单、原产地证明和植物检疫证书。我们可以根据要求提供清真和犹太认证声明。'
+        a: '买家可审核样品 COA 参数，如溶胀度、水分、灰分、微生物和重金属，并根据目的地要求确认商业发票、装箱单、原产地证明和植物检疫文件。需要时可安排第三方 NABL 认可实验室报告。'
       },
       'What swell volume does 99% psyllium husk have?': {
         q: '99%车前子壳的溶胀度是多少？',
@@ -5847,15 +6685,15 @@ export const productI18n: Record<string, {
       },
       'Is your 99% psyllium husk USP, EP, and IP compliant?': {
         q: '你们的 99% 车前子壳符合 USP、EP 和 IP 标准吗？',
-        a: '是的。我们可以根据要求提供符合 USP、EP 或 IP 标准的 COA。参数包括溶胀度、水分、总灰分 (≤3.0%)、酸不溶性灰分 (≤0.4%)、重金属和完整的微生物指标。询价时请说明您的药典版本。'
+        a: '对于按目标参数检测的批次，COA 表述可在结果支持时引用 USP、EP 或 IP。询价时请说明您的药典版本、目的地和所需参数。'
       },
       'What is the minimum order for 99% psyllium husk?': {
         q: '99%纯度车前子壳的最小起订量是多少？',
-        a: '没有最小起订量。提供 10 公斤、25 公斤或 50 公斤的食品级包装袋。大额订单可提供 1000 公斤的吨袋包装。FOB Mundra 交付。交货期 7 天。'
+        a: '商业MOQ和包装取决于规格、袋型、目的地和文件包。请分享规格和目的地，我们会在报价前确认样品或试单路径。'
       },
       'Can I get a sample of 99% psyllium husk with COA before ordering?': {
         q: '下单前我可以获得 99% 车前子壳带 COA 的样品吗？',
-        a: '可以。我们免费发送 100-500 克样品，并附带由经 NABL 认可的实验室出具的完整 COA。请提供您的目标药典、邮寄地址和级别。来自古吉拉特邦 Siddhpur 的样品交货期为 3-5 个工作日。'
+        a: '可以。请提供目标药典、收货地址和规格。我们会在发样前确认样品可用性、COA 审核选项、是否需要第三方 NABL 认可实验室报告以及交期。'
       },
       'What mesh size is 40–60 mesh psyllium powder?': {
         q: '40–60目的车前子粉筛网尺寸是多少？',
@@ -5903,7 +6741,7 @@ export const productI18n: Record<string, {
       },
       'Can I get a COA sample before ordering 98% psyllium powder?': {
         q: '下单前我可以获得 98% 车前子粉带 COA 的样品吗？',
-        a: '可以。我们免费发送 100-500 克样品，并附带标注符合您指定药典的 COA。请提供您的级别、目数、目标标准和邮寄地址。样品交货期为 3-5 个工作日。'
+        a: '可以。适配等级可提供 1 kg 样品包。请提供级别、目数、目标标准和邮寄地址，我们会确认样品可用性、COA 表述选项和交期。'
       },
       'What mesh size is 200 mesh psyllium powder?': {
         q: '200目的车前子粉筛网尺寸是多少？',
@@ -5967,10 +6805,10 @@ export const productI18n: Record<string, {
         '针对美国市场膳食补充剂粉末或胶囊填充寻找 NOP 认证的医药和非处方药品牌。完全符合 95% 纯度药典标准。',
       'US food brands require NOP certification for USDA Organic labelling on cereals, bread mixes, and powder blends. Meets standard food parameters.':
         '美国食品品牌在麦片、面包粉和混合粉上使用 USDA 有机标签时需要 NOP 认证。符合标准食品参数要求。',
-      'Supplement brands launching certified organic fiber products. Single-origin lot documentation and transaction certificate (TC) per shipment.':
-        '推出认证有机纤维产品的膳食补充剂品牌。每批货物均随附单一产地批次文件和交易证书 (TC)。',
-      'Not specified for animal feed. While NOP certified, pricing makes it uneconomical for livestock compound feed.':
-        '未指定用于动物饲料。虽然通过了 NOP 认证，但在价格上对于牲畜配合饲料来说并不经济。',
+      'Supplement brands requiring organic fiber documentation. Single-origin lot and transaction documentation must be reviewed before PO.':
+        '需要有机纤维文件的膳食补充剂品牌。PO 前应审核单一产地批次和交易文件。',
+      'Not specified for animal feed. Organic documentation requirements usually make it uneconomical for livestock compound feed.':
+        '未指定用于动物饲料。有机文件要求通常使其不适合牲畜配合饲料。',
       'European pharma and supplement manufacturers requiring EU organic status and a TRACES COI import certificate. Complies with basic pharmacopoeia purity.':
         '需要欧盟有机身份和 TRACES COI 进口证书的欧洲制药和补剂制造商。符合基本药典纯度标准。',
       'European food brands requiring the EU organic leaf logo. Standard food-grade microbiology and purity ≥95%.':
@@ -6007,8 +6845,8 @@ export const productI18n: Record<string, {
         'قشور السيليوم نقاوة 85% من سيدهبور، غوجارات. حجم الانتفاخ الأدنى 30 مل/جم. تستخدم في أعلاف الحيوانات والأغذية الحساسة للتكلفة حيث لا يشترط مطابقة دستور الأدوية.',
       'Psyllium husk 95% purity, NF-compliant. Swell volume minimum 40 ml/g. Used in dietary fibre supplements, functional cereals, and food fibre enrichment where the pharmacopoeia standard is Food / NF rather than USP or EP. COA annotated to NF on request.':
         'قشور السيليوم نقاوة 95%، متوافقة مع دساتير الأدوية الوطنية (NF). حجم الانتفاخ الأدنى 40 مل/جم. تستخدم في المكملات والأغذية.',
-      'Psyllium husk 98% purity, USP and EP compliant. Swell volume minimum 45 ml/g. For laxative capsule fills, OTC sachet products, and supplement formulations requiring a full USP or EP COA. NABL-accredited lab testing per shipment.':
-        'قشور السيليوم نقاوة 98%، متوافقة مع دستور الأدوية الأمريكي (USP) والأوروبي (EP). حجم الانتفاخ الأدنى 45 مل/جم. لتعبئة الكبسولات المسهلة.',
+      'Psyllium husk 98% purity is typically requested for USP or EP documentation. Swell volume target minimum 45 ml/g. For laxative capsule fills, OTC sachet products, and supplement formulations, COA wording should reference the requested standard only where tested lot results support it.':
+        'قشور السيليوم نقاوة 98% تُطلب عادةً لوثائق USP أو EP. يجب أن تشير صياغة COA إلى المعيار المطلوب فقط عندما تدعم نتائج اختبار الدفعة ذلك.',
       'Psyllium husk 99% purity from Gujarat, India — the pharmaceutical grade. Minimum swell volume 50 ml/g, meeting the Plantago ovata husk monographs in USP, EP, and IP. Used by pharma brands, OTC laxative manufacturers, and supplement companies where a full pharmacopoeia COA is required per lot.':
         'قشور السيليوم نقاوة 99% من غوجارات، الهند - الدرجة الدوائية. حجم الانتفاخ الأدنى 50 مل/جم. meeting monographs in USP, EP, and IP.',
       'Psyllium husk powder 85% purity, 40–60 mesh (particle size 250–425 μm). Visible texture in finished products makes it suitable for gluten-free artisan bread and high-fibre cereal. Below NF and USP swell volume thresholds. Lowest cost per unit in our powder range.':
@@ -6029,10 +6867,10 @@ export const productI18n: Record<string, {
         'مش أنعم (60-100) وألياف خام أعلى (50-60%) لمستحضرات التجميل والعناية الشخصية. رماد ≤8%.',
       'Food-safe heavy metal limits (Lead, Arsenic, Cadmium within food-grade thresholds). 35–45% crude fibre at 40–80 mesh. Used as a natural fibre source and binder in pet food manufacturing where animal safety documentation is required alongside the standard COA.':
         'حدود المعادن الثقيلة آمنة للأغذية. تستخدم كألياف طبيعية ورابط في تصنيع أغذية الحيوانات الأليفة مع شهادات الأمان.',
-      'USDA National Organic Program certified psyllium husk for the US market. Certification covers seed origin, growing practices (no synthetic pesticides or fertilisers), processing facility, and handling chain. Transaction certificate (TC) per shipment links the specific lot to the organic certificate. Purity ≥95%, swell volume ≥40 ml/g.':
-        'قشور السيليوم معتمدة من البرنامج العضوي الوطني الأمريكي (USDA NOP) للسوق الأمريكية. شهادة TC لكل شحنة. نقاوة ≥95%.',
-      'EU Organic certified psyllium husk under EU Regulation 2018/848. Certificate of Inspection (COI) provided per shipment for EU customs and import authority requirements. Lot-level traceability and certificate review before purchase order. Purity ≥95%, swell volume ≥40 ml/g.':
-        'قشور السيليوم معتمدة عضويًا في الاتحاد الأوروبي بموجب لائحة الاتحاد الأوروبي 2018/848. شهادة COI لكل شحنة.',
+      'For US organic buyers, supply is handled only after USDA NOP certificate and lot-scope review. Seed origin, handling chain, transaction certificate availability, purity, and swell volume must be confirmed before quotation.':
+        'للمشترين العضويين في الولايات المتحدة، تتم المراجعة بعد التحقق من نطاق شهادة USDA NOP وتغطية الدفعة وتوافر شهادة المعاملة قبل عرض السعر.',
+      'For EU organic buyers, supply is handled only after EU Organic certificate, COI pathway, and lot-scope review. Lot traceability, certificate coverage, purity, and swell volume must be confirmed before quotation.':
+        'للمشترين العضويين في الاتحاد الأوروبي، يجب مراجعة الشهادة ومسار COI ونطاق الدفعة قبل عرض السعر.',
       'Compressed psyllium cattle feed block (Sagar Gola type) combining husk, khakha, molasses, and mineral mix. Designed for direct farm-level feeding without processing. Supports digestive regularity and hydration retention in dairy cattle and buffalo. Metabolisable energy approximately 9–10 MJ/kg DM.':
         'قالب علف كبس الماشية من السيليوم (نوع ساغار غولا) يجمع القشور والكاكا والدبس والمعادن. للتغذية المباشرة.',
       'Loose granule psyllium cattle feed (Sagar Lali type) with khakha as the primary base plus grain mix. Higher crude fibre (30–40%) and protein (4–6%) than Sagar Gola. For cattle, poultry, and ruminant bulk fibre supplementation, or for buyers who blend into a compound feed program.':
@@ -6040,28 +6878,28 @@ export const productI18n: Record<string, {
     },
     faqs: {
       'What certifications cover your NOP organic psyllium?': {
-        q: 'ما هي الشهادات التي تغطي السيليوم العضوي NOP الخاص بكم؟',
-        a: 'معتمد بموجب البرنامج العضوي الوطني الأمريكي (NOP). تغطي الشهادة مصدر البذور، وممارسات الزراعة، ومنشأة المعالجة، وسلسلة التداول. نقوم بتقديم نسخة الشهادة وشهادة المعاملة (TC) قبل أمر الشراء.'
+        q: 'ما نطاق الشهادة الذي يجب مراجعته لسيليوم NOP العضوي؟',
+        a: 'يجب على المشترين مراجعة نطاق شهادة USDA NOP والكيان القانوني وتغطية المعالج وتغطية الدفعة وتوفر شهادة المعاملة (TC) قبل أمر الشراء.'
       },
       'What document do US organic importers need per shipment?': {
         q: 'ما هي المستندات التي يحتاجها مستوردو المنتجات العضوية في أمريكا لكل شحنة؟',
-        a: 'شهادة معاملة (TC) صادرة عن جهة التصديق لكل شحنة. يربط هذا المستند الشحنة المحددة بالشهادة العضوية، ونقدمها كجزء من حزمة مستندات التصدير القياسية.'
+        a: 'عادة ما يحتاج المستوردون إلى شهادة معاملة (TC) تغطي الدفعة والكمية المحددة. يجب تأكيد توفرها ونطاقها قبل عرض السعر.'
       },
       'What purity and swell volume does NOP organic psyllium have?': {
         q: 'ما هي نقاوة وحجم انتفاخ السيليوم العضوي NOP؟',
-        a: 'نقاوة ≥95%، وحجم انتفاخ ≥40 مل/جم كحد أدنى. يتم توفير شهادة تحليل COA مع الرطوبة والميكروبيولوجيا لكل شحنة.'
+        a: 'الهدف الشائع هو نقاوة ≥95% وحجم انتفاخ ≥40 مل/جم كحد أدنى. يجب مراجعة القيم الفعلية في COA للدفعة المحددة.'
       },
       'What is the price premium for organic psyllium?': {
         q: 'ما هي زيادة السعر (الأوفر) للسيليوم العضوي؟',
-        a: 'عادة ما تكون بين 25-40% أعلى من الدرجة التقليدية 95% اعتمادًا على توافر المخزون المعتمد وتوقيت السوق. اتصل بنا لمعرفة الأسعار الحالية.'
+        a: 'يعتمد السعر على نطاق الشهادة وتوفر الدفعة ومتطلبات الوثائق وسوق الوجهة. يجب تأكيد السعر والدفعة قبل الالتزام بالشراء.'
       },
       'What document do EU importers need for organic psyllium?': {
         q: 'ما هي المستندات التي يحتاجها مستوردو الاتحاد الأوروبي للسيليوم العضوي؟',
-        a: 'شهادة تفتيش (COI) بموجب لائحة الاتحاد الأوروبي 2018/848. يتم إصدارها لكل شحنة وهي مطلوبة من قبل جمارك الاتحاد الأوروبي للاستيراد العضوي.'
+        a: 'عادة ما يلزم مسار شهادة تفتيش (COI) بموجب لائحة الاتحاد الأوروبي 2018/848. يجب مراجعة نطاق الشهادة والدفعة وسوق الوجهة قبل أمر الشراء.'
       },
       'Is your EU organic psyllium certified under the 2018/848 regulation?': {
-        q: 'هل السيليوم العضوي للاتحاد الأوروبي معتمد بموجب لائحة 2018/848؟',
-        a: 'نعم. الدفعات العضوية للاتحاد الأوروبي معتمدة بموجب لائحة الاتحاد الأوروبي 2018/848. يتم توفير نسخة الشهادة و COI قبل أمر الشراء.'
+        q: 'كيف يجب مراجعة توافق السيليوم العضوي مع لائحة 2018/848؟',
+        a: 'يجب على المشترين مراجعة نطاق شهادة EU Organic ومسار COI وتغطية الدفعة ومتطلبات بلد الاستيراد قبل أمر الشراء.'
       },
       'What is the swell volume of EU organic psyllium?': {
         q: 'ما هو حجم انتفاخ السيليوم العضوي للاتحاد الأوروبي؟',
@@ -6083,8 +6921,8 @@ export const productI18n: Record<string, {
         'Psylliumvezels 85% zuiverheid uit Siddhpur, Gujarat. Zwelvolume minimaal 30 ml/g. Gebruikt in diervoeder en kostengevoelige levensmiddelen.',
       'Psyllium husk 95% purity, NF-compliant. Swell volume minimum 40 ml/g. Used in dietary fibre supplements, functional cereals, and food fibre enrichment where the pharmacopoeia standard is Food / NF rather than USP or EP. COA annotated to NF on request.':
         'Psylliumvezels 95% zuiverheid, NF-conform. Zwelvolume minimaal 40 ml/g. Voor voedingsvezelsupplementen en verrijking.',
-      'Psyllium husk 98% purity, USP and EP compliant. Swell volume minimum 45 ml/g. For laxative capsule fills, OTC sachet products, and supplement formulations requiring a full USP or EP COA. NABL-accredited lab testing per shipment.':
-        'Psylliumvezels 98% zuiverheid, USP- en EP-conform. Zwelvolume minimaal 45 ml/g. Voor laxeercapsules en OTC-sachets.',
+      'Psyllium husk 98% purity is typically requested for USP or EP documentation. Swell volume target minimum 45 ml/g. For laxative capsule fills, OTC sachet products, and supplement formulations, COA wording should reference the requested standard only where tested lot results support it.':
+        'Psylliumvezels met 98% zuiverheid worden meestal gevraagd voor USP- of EP-documentatie. COA-tekst mag de gevraagde standaard alleen noemen wanneer lotresultaten dit ondersteunen.',
       'Psyllium husk 99% purity from Gujarat, India — the pharmaceutical grade. Minimum swell volume 50 ml/g, meeting the Plantago ovata husk monographs in USP, EP, and IP. Used by pharma brands, OTC laxative manufacturers, and supplement companies where a full pharmacopoeia COA is required per lot.':
         'Psylliumvezels 99% zuiverheid uit Gujarat, India — de farmaceutische kwaliteit. Minimaal zwelvolume 50 ml/g.',
       'Psyllium husk powder 85% purity, 40–60 mesh (particle size 250–425 μm). Visible texture in finished products makes it suitable for gluten-free artisan bread and high-fibre cereal. Below NF and USP swell volume thresholds. Lowest cost per unit in our powder range.':
@@ -6105,10 +6943,10 @@ export const productI18n: Record<string, {
         'Fijnere mesh (60-100) en hogere ruwe celstof (50-60%) voor cosmetica en persoonlijke verzorging. Totale as ≤8%.',
       'Food-safe heavy metal limits (Lead, Arsenic, Cadmium within food-grade thresholds). 35–45% crude fibre at 40–80 mesh. Used as a natural fibre source and binder in pet food manufacturing where animal safety documentation is required alongside the standard COA.':
         'Voedselveilige limieten voor zware metalen. Natuurlijke vezelbron en bindmiddel voor de productie van diervoeding.',
-      'USDA National Organic Program certified psyllium husk for the US market. Certification covers seed origin, growing practices (no synthetic pesticides or fertilisers), processing facility, and handling chain. Transaction certificate (TC) per shipment links the specific lot to the organic certificate. Purity ≥95%, swell volume ≥40 ml/g.':
-        'USDA National Organic Program gecertificeerde psylliumvezels voor de Amerikaanse markt. TC per zending. Zuiverheid ≥95%.',
-      'EU Organic certified psyllium husk under EU Regulation 2018/848. Certificate of Inspection (COI) provided per shipment for EU customs and import authority requirements. Lot-level traceability and certificate review before purchase order. Purity ≥95%, swell volume ≥40 ml/g.':
-        'EU Biologisch gecertificeerde psylliumvezels onder EU-verordening 2018/848. COI verstrekt per zending.',
+      'For US organic buyers, supply is handled only after USDA NOP certificate and lot-scope review. Seed origin, handling chain, transaction certificate availability, purity, and swell volume must be confirmed before quotation.':
+        'Voor Amerikaanse biologische kopers wordt levering pas besproken na review van USDA NOP-certificaat, lotdekking en transactiedocumentatie.',
+      'For EU organic buyers, supply is handled only after EU Organic certificate, COI pathway, and lot-scope review. Lot traceability, certificate coverage, purity, and swell volume must be confirmed before quotation.':
+        'Voor EU-biologische kopers wordt levering pas besproken na review van EU Organic-certificaat, COI-route en lotdekking.',
       'Compressed psyllium cattle feed block (Sagar Gola type) combining husk, khakha, molasses, and mineral mix. Designed for direct farm-level feeding without processing. Supports digestive regularity and hydration retention in dairy cattle and buffalo. Metabolisable energy approximately 9–10 MJ/kg DM.':
         'Geperst psyllium veevoederblok (type Sagar Gola) met vezels, khakha, melasse en mineralen. Voor directe voeding.',
       'Loose granule psyllium cattle feed (Sagar Lali type) with khakha as the primary base plus grain mix. Higher crude fibre (30–40%) and protein (4–6%) than Sagar Gola. For cattle, poultry, and ruminant bulk fibre supplementation, or for buyers who blend into a compound feed program.':
@@ -6116,36 +6954,36 @@ export const productI18n: Record<string, {
     },
     faqs: {
       'What certifications cover your NOP organic psyllium?': {
-        q: 'Welke certificeringen dekken uw NOP biologische psyllium?',
-        a: 'Gecertificeerd onder het USDA National Organic Program (NOP). De certificering dekt de zaadbron, teeltpraktijken, verwerkingsfaciliteit en distributieketen. We delen het certificaat en de Transaction Certificate (TC) voorafgaand aan de bestelling.'
+        q: 'Welke certificeringsscope moet worden gecontroleerd voor NOP biologische psyllium?',
+        a: 'Kopers moeten vóór PO de USDA NOP-certificaatscope, juridische entiteit, handler-dekking, lotdekking en beschikbaarheid van Transaction Certificate (TC) controleren.'
       },
       'What document do US organic importers need per shipment?': {
         q: 'Welk document hebben Amerikaanse importeurs van biologische producten per zending nodig?',
-        a: 'Een Transaction Certificate (TC) uitgegeven door de certificeerder per zending. Dit document koppelt de specifieke partij aan het biologische certificaat. We leveren dit standaard mee.'
+        a: 'Meestal is een Transaction Certificate (TC) nodig dat het specifieke lot en de hoeveelheid dekt. Beschikbaarheid en scope moeten vóór offerte worden bevestigd.'
       },
       'What purity and swell volume does NOP organic psyllium have?': {
         q: 'Welke zuiverheid en zwelvolume heeft NOP biologische psyllium?',
-        a: 'Minimaal ≥95% zuiverheid, zwelvolume ≥40 ml/g. Analyse-certificaat (COA) met vocht en microbiologie per zending meegeleverd.'
+        a: 'Een veelgebruikte doelwaarde is ≥95% zuiverheid en ≥40 ml/g zwelvolume. Werkelijke waarden moeten op de COA van het doel-lot worden beoordeeld.'
       },
       'What is the price premium for organic psyllium?': {
         q: 'Wat is de meerprijs voor biologische psyllium?',
-        a: 'Meestal 25-40% boven de conventionele 95% kwaliteit, afhankelijk van gecertificeerde voorraden en marktomstandigheden. Neem contact op voor actuele prijzen.'
+        a: 'De premie hangt af van certificaatscope, lotbeschikbaarheid, documenteisen en markttiming. Bevestig lot en prijs vóór aankoopverplichting.'
       },
       'What document do EU importers need for organic psyllium?': {
         q: 'Welk document hebben EU-importeurs nodig voor biologische psyllium?',
-        a: 'Een Certificate of Inspection (COI) onder EU-verordening 2018/848. Dit wordt per zending uitgegeven en is vereist door de EU-douane voor biologische import.'
+        a: 'Meestal is een COI-route onder EU-verordening 2018/848 nodig. Certificaatscope, lotdekking en bestemmingsmarkt moeten vóór PO worden gecontroleerd.'
       },
       'Is your EU organic psyllium certified under the 2018/848 regulation?': {
-        q: 'Is uw EU biologische psyllium gecertificeerd onder verordening 2018/848?',
-        a: 'Ja. Biologische batches voor de EU zijn gecertificeerd onder EU-verordening 2018/848. Kopie van het certificaat en COI worden voorafgaand aan de bestelling gedeeld.'
+        q: 'Hoe moet EU Organic 2018/848 worden gecontroleerd?',
+        a: 'Kopers moeten vóór PO de EU Organic-certificaatscope, COI-route, lotdekking en importlandvereisten controleren.'
       },
       'What is the swell volume of EU organic psyllium?': {
         q: 'Wat is het zwelvolume van EU biologische psyllium?',
-        a: 'Minimaal ≥40 ml/g bij ≥95% zuiverheid. Fysisch identiek aan de NOP-kwaliteit — alleen de certificering verschilt per bestemmingsmarkt.'
+        a: 'Een veelgebruikte doelwaarde is ≥40 ml/g bij ≥95% zuiverheid. Werkelijke waarden moeten op de COA van het doel-lot worden beoordeeld.'
       },
       'Can I review the organic certificate before placing an order?': {
         q: 'Kan ik het biologische certificaat inzien voordat ik een bestelling plaats?',
-        a: 'Ja. Wij delen het actuele biologische certificaat en de herkomstgegevens voorafgaand aan de bestelbevestiging. Dit is standaard voor al onze biologische partijen.'
+        a: 'Vraag vóór PO om controle van het actuele certificaat, lotdekking, herkomstgegevens en transactiedocumentroute.'
       }
     }
   }
@@ -6212,7 +7050,7 @@ export const productLabelI18n: Partial<Record<LanguageCode, Record<string, strin
     'Standard & ultra-fine powders': '标准与超细粉末',
     'Feed by-product': '饲料副产品',
     'Industrial fibre & binder': '工业纤维与粘合剂',
-    'NOP & EU certified organic': 'NOP & 欧盟认证有机',
+    'NOP & EU Organic certificate review': 'NOP 与欧盟有机证书审核',
     'Processed animal feed': '加工动物饲料'
   },
   ar: {
@@ -6221,7 +7059,7 @@ export const productLabelI18n: Partial<Record<LanguageCode, Record<string, strin
     'Standard & ultra-fine powders': 'بودرة قياسية وفائقة النعومة',
     'Feed by-product': 'منتج ثانوي للأعلاف',
     'Industrial fibre & binder': 'ألياف ورابط صناعي',
-    'NOP & EU certified organic': 'عضوي معتمد من NOP والاتحاد الأوروبي',
+    'NOP & EU Organic certificate review': 'مراجعة شهادات NOP والاتحاد الأوروبي العضوية',
     'Processed animal feed': 'علف حيواني مصنع'
   },
   nl: {
@@ -6230,7 +7068,7 @@ export const productLabelI18n: Partial<Record<LanguageCode, Record<string, strin
     'Standard & ultra-fine powders': 'Standaard & ultrafijne poeders',
     'Feed by-product': 'Bijproduct voor diervoeder',
     'Industrial fibre & binder': 'Industriële vezel & bindmiddel',
-    'NOP & EU certified organic': 'NOP & EU gecertificeerd biologisch',
+    'NOP & EU Organic certificate review': 'NOP & EU biologisch certificaatreview',
     'Processed animal feed': 'Verwerkt diervoeder'
   }
 };
@@ -6414,6 +7252,3 @@ export const blogPostTranslations: Record<string, Record<string, any>> = {
   nl: mergePostTrans(nlTrans),
   ru: mergePostTrans(ruTrans),
 };
-
-
-

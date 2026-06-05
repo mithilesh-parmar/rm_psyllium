@@ -1,9 +1,13 @@
 (function () {
+  // Capture synchronously — document.currentScript is null inside any async callback
+  var _s = document.currentScript;
+  var _gaId = _s ? _s.getAttribute('data-ga-id') : '';
+  var _clarityId = _s ? _s.getAttribute('data-clarity-id') : '';
+
   // Master telemetry setup deferred to idle cycles to protect LCP & INP
   const initTelemetry = () => {
-    var currentScript = document.currentScript;
-    var gaId = currentScript ? currentScript.getAttribute('data-ga-id') : '';
-    var clarityId = currentScript ? currentScript.getAttribute('data-clarity-id') : '';
+    var gaId = _gaId;
+    var clarityId = _clarityId;
 
     // --- GA4 Core Configuration ---
     window.dataLayer = window.dataLayer || [];

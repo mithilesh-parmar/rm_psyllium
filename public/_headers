@@ -2,7 +2,7 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
-  Content-Security-Policy: default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' blob: https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms https://r2.leadsy.ai https://*.leadsy.ai; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://www.clarity.ms https://*.clarity.ms https://r2.leadsy.ai https://*.leadsy.ai; frame-src 'self' https://calendly.com https://maps.google.com https://www.google.com; style-src 'self' 'unsafe-inline'; font-src 'self'; worker-src 'self' blob:; form-action 'self'; base-uri 'self'; frame-ancestors 'none'
+  Content-Security-Policy: default-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' blob: https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms https://r2.leadsy.ai https://*.leadsy.ai https://tag.trovo-tag.com; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://www.clarity.ms https://*.clarity.ms https://r2.leadsy.ai https://*.leadsy.ai https://wvbknd.leadsy.ai; frame-src 'self' https://calendly.com https://maps.google.com https://www.google.com https://tag.trovo-tag.com; style-src 'self' 'unsafe-inline'; font-src 'self'; worker-src 'self' blob:; form-action 'self'; base-uri 'self'; frame-ancestors 'none'
 
 /assets/*
   Cache-Control: public, max-age=31536000, immutable

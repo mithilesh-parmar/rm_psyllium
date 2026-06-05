@@ -7,7 +7,7 @@
       "Zuiverheid en zwelvolume zijn de kritieke onderscheidende factoren. Terwijl de USP-monografie een minimaal zwelvolume van 55 mL/g en een zuiverheidsdrempel di 99,0% voorschrijft, accepteert de Europese Farmacopee (EP) een zwelvolume van 40 mL/g bij een zuiverheid van 98,0%. Het inkopen van de verkeerde kwaliteit kan leiden tot mislukte formuleringen, afgekeurde batches of vertragingen bij de douane-import.",
       "Inkoopteams moeten het totale asgehalte en de in zuur onoplosbare as controleren. De USP stelt het maximale totale asgehalte op ≤3,0% en in zuur onoplosbare as op ≤0,4%, terwijl de EP tot ≤4,0% totaal asgehalte en ≤0,6% in zuur onoplosbare as toestaat. Het beheersen van deze parameters vereist ultramoderne zwaartekrachtscheiders en pre-shipment analyses door een NABL-geaccrediteerd laboratorium."
     ],
-    "aiSnapshot": "Voor de inkoop van farmaceutische psyllium moeten QA-teams de USP-, EP- of IP-monografie verifiëren. USP vereist een zwelvolume ≥55 mL/g met as ≤3,0%, terwijl EP ≥40 mL/g met as ≤4,0% voorschrijft. Alle zendingen vereisen partijspecifieke NABL COA's.",
+    "aiSnapshot": "Voor de inkoop van farmaceutische psyllium moeten QA-teams de USP-, EP- of IP-monografie verifiëren. USP vereist een zwelvolume ≥55 mL/g met as ≤3,0%, terwijl EP ≥40 mL/g met as ≤4,0% voorschrijft. Kopers moeten de lot-COA beoordelen en een geaccrediteerd derdelaboratoriumrapport vragen wanneer hun specificatie dit vereist.",
     "specTable": [
       {
         "parameter": "Minimaal Zwelvolume",
@@ -43,6 +43,32 @@
       {
         "q": "Waarom is in zuur onoplosbare as een kritische veiligheidslimiet?",
         "a": "In zuur onoplosbare as duidt op resterend zand, vuil en silica. De USP hanteert een strikte limiet van ≤0,4%. Geavanceerde zwaartekrachtscheiding wordt ingezet om deze lage niveaus te garanderen."
+      },
+      {
+        "q": "Wat moet de koper vóór PO controleren?",
+        "a": "Controleer USP, EP, IP, BP/NF, COA, swelling volume, ash, moisture, microbiology, heavy metals tegenover de doelpartij en bestemmingseisen."
+      },
+      {
+        "q": "Is een monster-COA genoeg voor finale vrijgave?",
+        "a": "Nee. Een monster-COA helpt bij parameterreview. Finale vrijgave moet op het COA of rapport van de verzonden partij gebaseerd zijn."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Wat kopers moeten controleren",
+        "body": "Voor USP/EP/IP wording moeten doelpartij, kopersspecificatie, COA en methode vóór de PO worden gecontroleerd."
+      },
+      {
+        "heading": "Checklist voor PO",
+        "body": "Vraag deze punten op en vergelijk ze: USP, EP, IP, BP/NF, COA, swelling volume, ash, moisture, microbiology, heavy metals. Doe dit vóór prijs, monster of commerciële partij."
+      },
+      {
+        "heading": "Veelgemaakte fout",
+        "body": "Behandel USP/EP/IP wording niet als een algemene leveranciersclaim. Koppel het aan partijresultaten, documenten en bestemmingseisen."
+      },
+      {
+        "heading": "Hoe RM kan ondersteunen",
+        "body": "RM kan monster-COA, specificatie, kwaliteit, mesh, verpakking en bestemmingsdocumenten vóór PO beoordelen."
       }
     ]
   },
@@ -85,11 +111,37 @@
     "faqs": [
       {
         "q": "Wat is een NABL-accreditatie op een COA?",
-        "a": "NABL is de nationale accreditatie-instantie van India voor testlaboratoria, die zorgt voor internationale afstemming via ILAC. Een NABL COA garandeert dat tests en validaties voldoen aan de geldende normen."
+        "a": "NABL is de nationale accreditatie-instantie van India voor testlaboratoria, met internationale erkenning via ILAC. Voor kopers is vooral belangrijk dat het uitgevende laboratorium geaccrediteerd is en dat de COA bij de specifieke partij hoort."
       },
       {
         "q": "Hoe worden zware metalen getest in psyllium?",
         "a": "Zware metalen worden getest met behulp van inductief gekoppeld plasma-massaspectrometrie (ICP-MS), wat een nauwkeurige detectie mogelijk maakt tot in parts-per-billion (ppb) voor Lood, Arseen, Cadmium en Kwik."
+      },
+      {
+        "q": "Wat moet de koper vóór PO controleren?",
+        "a": "Controleer NABL scope, lab name, lot number, sample identity, method, result, unit, limit, signatory tegenover de doelpartij en bestemmingseisen."
+      },
+      {
+        "q": "Is een monster-COA genoeg voor finale vrijgave?",
+        "a": "Nee. Een monster-COA helpt bij parameterreview. Finale vrijgave moet op het COA of rapport van de verzonden partij gebaseerd zijn."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Wat kopers moeten controleren",
+        "body": "Voor NABL wording moeten doelpartij, kopersspecificatie, COA en methode vóór de PO worden gecontroleerd."
+      },
+      {
+        "heading": "Checklist voor PO",
+        "body": "Vraag deze punten op en vergelijk ze: NABL scope, lab name, lot number, sample identity, method, result, unit, limit, signatory. Doe dit vóór prijs, monster of commerciële partij."
+      },
+      {
+        "heading": "Veelgemaakte fout",
+        "body": "Behandel NABL wording niet als een algemene leveranciersclaim. Koppel het aan partijresultaten, documenten en bestemmingseisen."
+      },
+      {
+        "heading": "Hoe RM kan ondersteunen",
+        "body": "RM kan monster-COA, specificatie, kwaliteit, mesh, verpakking en bestemmingsdocumenten vóór PO beoordelen."
       }
     ]
   },
@@ -101,7 +153,7 @@
       "Het kwalificatieproces begins met een documentencontrole. Inkoopteams moeten een compleet nalevingspakket aanvragen voorafgaand aan verzending: een partijspecifiek NABL-geaccrediteerd Certificaat van Analyse, een gecertificeerd Certificaat van Oorsprong, een fytosanitair certificaat van het Ministerie van Landbouw en hygiënelogs van de fabriek die door derden zijn gecontroleerd.",
       "Fabrieksaudits zijn van cruciaal belang. Merken moeten de reinigingslijn voor grondstoffen van de leverancier controleren (met name ontsteners en magnetische scheiders om veldafval te elimineren), evenals controles op de consistentie van het malen en milieucontroles bij het verpakken om vochtinfiltratie en microbiologische groei tijdens opslag te voorkomen."
     ],
-    "aiSnapshot": "Amerikaanse importeurs van psyllium moeten voldoen aan de FDA FSVP. De inkoopchecklist vereist: 1) Partijspecifiek NABL-geaccrediteerd COA, 2) Door het ministerie goedgekeurd fytosanitair certificaat en 3) Fabrieksaudits (magnetische scheiding, ontstenen, vochtcontrole).",
+    "aiSnapshot": "Amerikaanse importeurs van psyllium moeten voldoen aan de FDA FSVP. De inkoopchecklist omvat: 1) COA-parameters en waar vereist een rapport van een derde NABL-geaccrediteerd laboratorium, 2) fytosanitaire certificaatvereisten en 3) fabrieksaudits voor reiniging en vochtcontrole.",
     "specTable": [
       {
         "parameter": "Fytosanitair Certificaat",
@@ -132,6 +184,32 @@
       {
         "q": "Welke fysieke reinigingsmethoden moet een leverancier gebruiken?",
         "a": "Gekwalificeerde fabrikanten moeten gebruikmaken van meertraps ontsteners om vuil/zand te verwijderen, zeefclassificatoren voor de deeltjesgrootte en magnetische roosters met hoge intensiteit om metaalresten te scheiden."
+      },
+      {
+        "q": "Wat moet de koper vóór PO controleren?",
+        "a": "Controleer FSVP file, prior notice data, product specification, COA, origin, packing, broker details tegenover de doelpartij en bestemmingseisen."
+      },
+      {
+        "q": "Is een monster-COA genoeg voor finale vrijgave?",
+        "a": "Nee. Een monster-COA helpt bij parameterreview. Finale vrijgave moet op het COA of rapport van de verzonden partij gebaseerd zijn."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Wat kopers moeten controleren",
+        "body": "Voor FDA/FSVP wording moeten doelpartij, kopersspecificatie, COA en methode vóór de PO worden gecontroleerd."
+      },
+      {
+        "heading": "Checklist voor PO",
+        "body": "Vraag deze punten op en vergelijk ze: FSVP file, prior notice data, product specification, COA, origin, packing, broker details. Doe dit vóór prijs, monster of commerciële partij."
+      },
+      {
+        "heading": "Veelgemaakte fout",
+        "body": "Behandel FDA/FSVP wording niet als een algemene leveranciersclaim. Koppel het aan partijresultaten, documenten en bestemmingseisen."
+      },
+      {
+        "heading": "Hoe RM kan ondersteunen",
+        "body": "RM kan monster-COA, specificatie, kwaliteit, mesh, verpakking en bestemmingsdocumenten vóór PO beoordelen."
       }
     ]
   },
@@ -174,6 +252,32 @@
       {
         "q": "Welke laboratoriummethode wordt gebruikt om zware metalen te testen?",
         "a": "Inductief gekoppeld plasma-massaspectrometrie (ICP-MS) is de wereldwijde referentiemethode en biedt een extreme gevoeligheid tot op deeltjes per miljard (ppb)."
+      },
+      {
+        "q": "Wat moet de koper vóór PO controleren?",
+        "a": "Controleer Pb, As, Cd, Hg, ICP-MS method, ppm unit, serving size, destination-market limit tegenover de doelpartij en bestemmingseisen."
+      },
+      {
+        "q": "Is een monster-COA genoeg voor finale vrijgave?",
+        "a": "Nee. Een monster-COA helpt bij parameterreview. Finale vrijgave moet op het COA of rapport van de verzonden partij gebaseerd zijn."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Wat kopers moeten controleren",
+        "body": "Voor heavy-metal pass/fail wording moeten doelpartij, kopersspecificatie, COA en methode vóór de PO worden gecontroleerd."
+      },
+      {
+        "heading": "Checklist voor PO",
+        "body": "Vraag deze punten op en vergelijk ze: Pb, As, Cd, Hg, ICP-MS method, ppm unit, serving size, destination-market limit. Doe dit vóór prijs, monster of commerciële partij."
+      },
+      {
+        "heading": "Veelgemaakte fout",
+        "body": "Behandel heavy-metal pass/fail wording niet als een algemene leveranciersclaim. Koppel het aan partijresultaten, documenten en bestemmingseisen."
+      },
+      {
+        "heading": "Hoe RM kan ondersteunen",
+        "body": "RM kan monster-COA, specificatie, kwaliteit, mesh, verpakking en bestemmingsdocumenten vóór PO beoordelen."
       }
     ]
   },
@@ -216,6 +320,32 @@
       {
         "q": "Heeft stoomsterilisatie invloed op het zwelvolume van psyllium?",
         "a": "Bij onvoldoende procesbeheersing kunnen hoge hitte en overtollig vocht de husk vooraf geleren. Een nauwkeurige, snelle continue stoomsterilisatie beschermt de integriteit van de slijmstoffen, waardoor een zwelvolume van ≥50 mL/g behouden blijft."
+      },
+      {
+        "q": "Wat moet de koper vóór PO controleren?",
+        "a": "Controleer treatment method, microbiology, moisture, ETO, 2-chloroethanol, swelling volume tegenover de doelpartij en bestemmingseisen."
+      },
+      {
+        "q": "Is een monster-COA genoeg voor finale vrijgave?",
+        "a": "Nee. Een monster-COA helpt bij parameterreview. Finale vrijgave moet op het COA of rapport van de verzonden partij gebaseerd zijn."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Wat kopers moeten controleren",
+        "body": "Voor sterilization wording moeten doelpartij, kopersspecificatie, COA en methode vóór de PO worden gecontroleerd."
+      },
+      {
+        "heading": "Checklist voor PO",
+        "body": "Vraag deze punten op en vergelijk ze: treatment method, microbiology, moisture, ETO, 2-chloroethanol, swelling volume. Doe dit vóór prijs, monster of commerciële partij."
+      },
+      {
+        "heading": "Veelgemaakte fout",
+        "body": "Behandel sterilization wording niet als een algemene leveranciersclaim. Koppel het aan partijresultaten, documenten en bestemmingseisen."
+      },
+      {
+        "heading": "Hoe RM kan ondersteunen",
+        "body": "RM kan monster-COA, specificatie, kwaliteit, mesh, verpakking en bestemmingsdocumenten vóór PO beoordelen."
       }
     ]
   },
@@ -258,6 +388,32 @@
       {
         "q": "Wat is de aanbevolen mesh-grootte voor kant-en-klare drankpoeders?",
         "a": "Voor droge drankmengsels wordt een maaswijdte van 100 mesh of fijner aanbevolen om een snelle, gladde dispersie in koude vloeistoffen te garanderen zonder klonteren of zanderigheid."
+      },
+      {
+        "q": "Wat moet de koper vóór PO controleren?",
+        "a": "Controleer mesh, hydration speed, water addition, mixing time, crumb texture, 1 kg sample trial tegenover de doelpartij en bestemmingseisen."
+      },
+      {
+        "q": "Is een monster-COA genoeg voor finale vrijgave?",
+        "a": "Nee. Een monster-COA helpt bij parameterreview. Finale vrijgave moet op het COA of rapport van de verzonden partij gebaseerd zijn."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Wat kopers moeten controleren",
+        "body": "Voor mesh recommendation moeten doelpartij, kopersspecificatie, COA en methode vóór de PO worden gecontroleerd."
+      },
+      {
+        "heading": "Checklist voor PO",
+        "body": "Vraag deze punten op en vergelijk ze: mesh, hydration speed, water addition, mixing time, crumb texture, 1 kg sample trial. Doe dit vóór prijs, monster of commerciële partij."
+      },
+      {
+        "heading": "Veelgemaakte fout",
+        "body": "Behandel mesh recommendation niet als een algemene leveranciersclaim. Koppel het aan partijresultaten, documenten en bestemmingseisen."
+      },
+      {
+        "heading": "Hoe RM kan ondersteunen",
+        "body": "RM kan monster-COA, specificatie, kwaliteit, mesh, verpakking en bestemmingsdocumenten vóór PO beoordelen."
       }
     ]
   },
@@ -300,6 +456,32 @@
       {
         "q": "Hoe worden pesticidenresiduen in biologische psyllium geverifieerd?",
         "a": "Geaccrediteerde laboratoria maken gebruik van gaschromatografie-massaspectrometrie (GC-MS) en vloeistofchromatografie-massaspectrometrie (LC-MS) om te screenen op meer dan 500 chemische verbindingen."
+      },
+      {
+        "q": "Wat moet de koper vóór PO controleren?",
+        "a": "Controleer certificate scope, handler chain, TC/COI path, pesticide residue report, lot identity tegenover de doelpartij en bestemmingseisen."
+      },
+      {
+        "q": "Is een monster-COA genoeg voor finale vrijgave?",
+        "a": "Nee. Een monster-COA helpt bij parameterreview. Finale vrijgave moet op het COA of rapport van de verzonden partij gebaseerd zijn."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Wat kopers moeten controleren",
+        "body": "Voor organic wording moeten doelpartij, kopersspecificatie, COA en methode vóór de PO worden gecontroleerd."
+      },
+      {
+        "heading": "Checklist voor PO",
+        "body": "Vraag deze punten op en vergelijk ze: certificate scope, handler chain, TC/COI path, pesticide residue report, lot identity. Doe dit vóór prijs, monster of commerciële partij."
+      },
+      {
+        "heading": "Veelgemaakte fout",
+        "body": "Behandel organic wording niet als een algemene leveranciersclaim. Koppel het aan partijresultaten, documenten en bestemmingseisen."
+      },
+      {
+        "heading": "Hoe RM kan ondersteunen",
+        "body": "RM kan monster-COA, specificatie, kwaliteit, mesh, verpakking en bestemmingsdocumenten vóór PO beoordelen."
       }
     ]
   },
@@ -342,6 +524,32 @@
       {
         "q": "Wat is een ELISA-test voor gluten?",
         "a": "Enzyme-Linked Immunosorbent Assay (ELISA) is de gouden standaard testmethode die door NABL-laboratoria wordt gebruikt om sporen van glutenproteïnen te detecteren en te kwantificeren tot in parts-per-billion (ppb)."
+      },
+      {
+        "q": "Wat moet de koper vóór PO controleren?",
+        "a": "Controleer allergen declaration, shared equipment, cleaning records, storage segregation, ELISA testing tegenover de doelpartij en bestemmingseisen."
+      },
+      {
+        "q": "Is een monster-COA genoeg voor finale vrijgave?",
+        "a": "Nee. Een monster-COA helpt bij parameterreview. Finale vrijgave moet op het COA of rapport van de verzonden partij gebaseerd zijn."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Wat kopers moeten controleren",
+        "body": "Voor gluten-free or allergen wording moeten doelpartij, kopersspecificatie, COA en methode vóór de PO worden gecontroleerd."
+      },
+      {
+        "heading": "Checklist voor PO",
+        "body": "Vraag deze punten op en vergelijk ze: allergen declaration, shared equipment, cleaning records, storage segregation, ELISA testing. Doe dit vóór prijs, monster of commerciële partij."
+      },
+      {
+        "heading": "Veelgemaakte fout",
+        "body": "Behandel gluten-free or allergen wording niet als een algemene leveranciersclaim. Koppel het aan partijresultaten, documenten en bestemmingseisen."
+      },
+      {
+        "heading": "Hoe RM kan ondersteunen",
+        "body": "RM kan monster-COA, specificatie, kwaliteit, mesh, verpakking en bestemmingsdocumenten vóór PO beoordelen."
       }
     ]
   },
@@ -384,6 +592,32 @@
       {
         "q": "Hoe wordt het totale gehalte aan voedingsvezels geverifieerd?",
         "a": "Voedingsvezelfracties worden gevalideerd met behulp van standaard enzymatisch-gravimetrische methoden volgens AOAC 991.43 en NABL-laboratoriumprotocollen."
+      },
+      {
+        "q": "Wat moet de koper vóór PO controleren?",
+        "a": "Controleer purity, swelling volume, mesh, moisture, fiber method, texture, finished application tegenover de doelpartij en bestemmingseisen."
+      },
+      {
+        "q": "Is een monster-COA genoeg voor finale vrijgave?",
+        "a": "Nee. Een monster-COA helpt bij parameterreview. Finale vrijgave moet op het COA of rapport van de verzonden partij gebaseerd zijn."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Wat kopers moeten controleren",
+        "body": "Voor fiber-ratio wording moeten doelpartij, kopersspecificatie, COA en methode vóór de PO worden gecontroleerd."
+      },
+      {
+        "heading": "Checklist voor PO",
+        "body": "Vraag deze punten op en vergelijk ze: purity, swelling volume, mesh, moisture, fiber method, texture, finished application. Doe dit vóór prijs, monster of commerciële partij."
+      },
+      {
+        "heading": "Veelgemaakte fout",
+        "body": "Behandel fiber-ratio wording niet als een algemene leveranciersclaim. Koppel het aan partijresultaten, documenten en bestemmingseisen."
+      },
+      {
+        "heading": "Hoe RM kan ondersteunen",
+        "body": "RM kan monster-COA, specificatie, kwaliteit, mesh, verpakking en bestemmingsdocumenten vóór PO beoordelen."
       }
     ]
   },
@@ -426,6 +660,32 @@
       {
         "q": "Welke factoren kunnen het zwelvolume tijdens de verwerking verminderen?",
         "a": "Overmatige hitte die wordt gegenereerd door mechanische wrijving tijdens het malen is de belangrijkste oorzaak van degradatie van de slijmstoffen, wat de noodzaak van temperatuurgecontroleerd malen onderstreept."
+      },
+      {
+        "q": "Wat moet de koper vóór PO controleren?",
+        "a": "Controleer sample form, particle size, method, rest time, water volume, swelling result, COA wording tegenover de doelpartij en bestemmingseisen."
+      },
+      {
+        "q": "Is een monster-COA genoeg voor finale vrijgave?",
+        "a": "Nee. Een monster-COA helpt bij parameterreview. Finale vrijgave moet op het COA of rapport van de verzonden partij gebaseerd zijn."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Wat kopers moeten controleren",
+        "body": "Voor swelling-volume result moeten doelpartij, kopersspecificatie, COA en methode vóór de PO worden gecontroleerd."
+      },
+      {
+        "heading": "Checklist voor PO",
+        "body": "Vraag deze punten op en vergelijk ze: sample form, particle size, method, rest time, water volume, swelling result, COA wording. Doe dit vóór prijs, monster of commerciële partij."
+      },
+      {
+        "heading": "Veelgemaakte fout",
+        "body": "Behandel swelling-volume result niet als een algemene leveranciersclaim. Koppel het aan partijresultaten, documenten en bestemmingseisen."
+      },
+      {
+        "heading": "Hoe RM kan ondersteunen",
+        "body": "RM kan monster-COA, specificatie, kwaliteit, mesh, verpakking en bestemmingsdocumenten vóór PO beoordelen."
       }
     ]
   },
@@ -437,6 +697,65 @@
         "Psylliumschil met 99% zuiverheid vertegenwoordigt de farmaceutische kwaliteitsklasse — het hoogste beschikbare schilgehalte uit Indische verwerkingsfaciliteiten. Bij deze kwaliteit is het schilgehalte (het zaadtegument van Plantago ovata) minimaal 99 gewichtsprocent, met een minimaal zwelvolume van 50 mL/g. Dit zwelvolume is de primaire functionele specificatie voor laxatieve monografieën onder USP, Europese Farmacopee (EF) en Indische Farmacopee (IF).",
         "Voor farmaceutische kopers moet kwaliteit 99% vergezeld gaan van een volledig COA met: zwelvolume, vocht (≤12%), totale as (≤3%), zuuroplosbare as (≤0,4%), zware metalen (Lood ≤2 ppm, Arseen ≤1 ppm) en microbiologie (E. coli afwezig, Salmonella afwezig, TKA ≤10.000 KVE/g). Deze parameters komen direct overeen met de Plantago ovata schil monografieën in USP en EF. Kopers dienen testrapporten van een NABL-geaccrediteerd laboratorium in India aan te vragen.",
         "Inkoop van kwaliteit 99% uit Gujarat vereist bevestiging dat de verwerkingsfaciliteit de maal- en scheidingscapaciteit heeft om deze zuiverheid consistent te bereiken. Het district Unjha in Gujarat is het primaire psylliumverwerkingscentrum in India met meer dan 80% van het wereldaanbod. Wij leveren kwaliteit 99% schil in zakken van 10 kg, 25 kg en 50 kg met volledige documentatie. Deel uw farmacopee-eis en doelmarkt mee — wij verstrekken een voorbeeld-COA ter beoordeling vóór elke inkooporder."
+      ],
+      "aiSnapshot": "Psylliumschil 99% Zuiverheid: Leveranciersgids voor Farmaceutische Kopers sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "Psylliumschil 99% Zuiverheid: Leveranciersgids voor Farmaceutische Kopers verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-export-india-fob-mundra": {
@@ -446,6 +765,65 @@
         "India exporteert psyllium via drie primaire havens: Mundra (Gujarat), Kandla (Gujarat) en JNPT/Nhava Sheva (Maharashtra). Voor psylliumkopers beïnvloedt havenkeuze vrachtkosten, transittijd en containeraanbod. De meeste Gujarat-gebaseerde verwerkers, waaronder RM Psyllium, gebruiken Mundra als primaire haven vanwege de nabijheid (ca. 220 km van onze Siddhpur-faciliteit) en hoge scheepsfrequentie naar Europa, VS Oostkust, Midden-Oosten en Australië.",
         "Haven Mundra (MUND) wordt beheerd door Adani Ports en verwerkt het hoogste containervolume van India. De scheepsfrequentie naar de belangrijkste bestemmingshavens (Rotterdam, Felixstowe, New York, Jeddah, Colombo) is doorgaans 2–4 afvaarten per week. Transittijd naar Rotterdam ca. 20–23 dagen; naar New York ca. 25–28 dagen; naar Jeddah ca. 8–10 dagen.",
         "Bij CIF-orders selecteren wij de haven op basis van uw bestemming en de rederij met het beste tarief bij boeking. Bij FOB-orders nomineert u de expediteur en coördineren wij direct met hem. Exportdocumentatie wordt in onze faciliteit voorbereid en 3–5 dagen vóór belading ingediend. Deel uw bestemmingshaven mee en wij verstrekken een indicatieve vrachtofferte naast de productprijs."
+      ],
+      "aiSnapshot": "Psylliumexport vanuit India: FOB Mundra vs Kandla vs JNPT sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "Psylliumexport vanuit India: FOB Mundra vs Kandla vs JNPT verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-husk-usp-ep-pharmacopoeia": {
@@ -455,6 +833,65 @@
         "Psylliumschil is gemonografeerd in drie belangrijke farmacopees: de United States Pharmacopeia (USP), de Europese Farmacopee (EF) en de Indische Farmacopee (IF). Hoewel alle drie Plantago ovata schil beschrijven, verschillen de specifieke testparameters en acceptatiecriteria op manieren die van belang zijn voor kopers die psyllium importeren voor farmaceutisch gebruik.",
         "De USP monografie voor psylliumschil vereist een minimaal zwelvolume van 40 mL/g, vocht ≤12% en totale as ≤4%. De EF monografie (Ispaghula Husk) specificeert een minimale zwelindex van 40 met specifieke identificatietests inclusief microscopie en chemische reacties. De IF monografie is grotendeels afgestemd op USP met mogelijke kleine verschillen in testmethodologie.",
         "Voor export naar Europa is de EF-term 'Ispaghula Husk' — hetzelfde product. Europese kopers vragen doorgaans een COA aan dat is geannoteerd tegen EF-parameters inclusief zwelindex, vreemd materiaal, microbiologie en pesticidenresidulimeten conform EU-regelgeving. Wij leveren met COA geannoteerd op de door de koper gespecificeerde farmacopee op verzoek."
+      ],
+      "aiSnapshot": "USP vs EF vs IF: Psylliumschil Farmacopee-standaarden Uitgelegd sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "USP vs EF vs IF: Psylliumschil Farmacopee-standaarden Uitgelegd verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-seed-supplier-gujarat-rajasthan": {
@@ -464,6 +901,65 @@
         "Plantago ovata (psyllium) zaden worden voornamelijk verbouwd in Gujarat en Rajasthan, met Mehsana, Banaskantha en Kutch in Gujarat en Barmer, Jalore en Jodhpur in Rajasthan als voornaamste teeltgebieden. De oogst is een rabi-gewas (winter), gezaaid oktober–november en geoogst februari–maart. De jaarlijkse productie in India wordt geschat op 100.000–150.000 MT zaad, waarvan ca. 85% in verwerkte vorm wordt geëxporteerd.",
         "Zaden zijn beschikbaar in twee hoofdkwaliteiten: machinegeschoond (standaard) met zuiverheid doorgaans ≥98%; en sortex-kwaliteit met optisch sorteren dat ≥99% zuiverheid bereikt met vreemd materiaal ≤0,5%. Sortex-kwaliteit heeft een prijspremium van 8–12%, maar wordt geprefereerd door molens die consistente schilrendementen nodig hebben.",
         "Zaadspecificaties te bevestigen vóór aankoop: zuiverheid (98% of 99%), vocht (≤8%), kiemkracht (≥85% voor zaadzaad; niet vereist voor maling) en chargetracering. Wij leveren zaden in zakken van 25 kg, 50 kg en jumbo bags van 1.000 kg. Herkomstdocumentatie, chargetracering en monster voor pre-verzendtest worden bij elke order meegeleverd."
+      ],
+      "aiSnapshot": "Psylliumzaadleverancier uit Gujarat en Rajasthan sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "Psylliumzaadleverancier uit Gujarat en Rajasthan verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "organic-psyllium-nop-eu-certification": {
@@ -472,7 +968,66 @@
       "body": [
         "Biologisch psyllium uit India wordt gecertificeerd onder twee hoofdkaders: het USDA National Organic Program (NOP) voor de Amerikaanse markt en EU Biologisch voor de Europese markt. Indische biologische verwerkers worden gecertificeerd door geaccrediteerde certificeringsinstanties waaronder Control Union, ECOCERT India, Lacon en SGS. Kopers moeten bevestigen dat het certificaat het specifieke product, de chargdatums en de doelmarkt omvat.",
         "NOP-certificering vereist dat de zaadherkomst, teeltpraktijken (geen synthetische pesticiden of meststoffen), verwerkingsfaciliteit en verwerkingsketen allemaal biologisch gecertificeerd zijn. Het transactieattest (TA) dat per zending wordt afgegeven koppelt de specifieke charge aan de biologische certificering. EU-kopers hebben een inspectieattest (IA) nodig conform EU Verordening 2018/848.",
-        "Bij RM Psyllium worden biologische charges op verzoek geleverd op basis van de actuele gecertificeerde voorraadaanvulling. Wij verstrekken de biologische certificaatkopie, chargeherkomstregistraties en TA-documentatie vóór orderbevestiging. Biologisch psyllium heeft een premium van 25–40% boven conventioneel afhankelijk van kwaliteit en certificatiebereik."
+        "Voor biologische inkoop beoordeelt RM Psyllium eerst certificaatscope, charge, bestemmingsmarkt en vereiste documenten. Deel uw eisen zodat we kunnen bevestigen welke documenten vóór offerte kunnen worden beoordeeld."
+      ],
+      "aiSnapshot": "Biologisch Psyllium: NOP vs EU Biologisch Certificering voor Export sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "Biologisch Psyllium: NOP vs EU Biologisch Certificering voor Export verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-husk-gluten-free-bakery": {
@@ -481,7 +1036,66 @@
       "body": [
         "Psylliumschil wordt gebruikt in glutenvrije bakkerij als structuur- en waterbindmiddel — het vervangt deels de glutennetwerkfuncties die brooddeeg in staat stellen gas vast te houden en vorm te behouden tijdens het bakken. Het slijm in psyllium vormt een gel bij hydratatie, die viscositeit en elasticiteit geeft aan glutenvrij deeg van rijstmeel, maïszetmeel, tapioca en vergelijkbare bases.",
         "Voor bakkerijapplicaties wordt zuiverheid van 95% of 98% in zeefmaat 80–100 het meest gespecificeerd. Fijnere zeefmaat (100+) disperseert sneller en produceert een gladder kruimel. Grovere zeefmaat (40–60) kan zichtbaar zijn in het eindproduct. Kwaliteit 85% wordt gebruikt in kostensensiete formuleringen.",
-        "Typische gebruikspercentages in glutenvrije broodformuleringen zijn 1–3% van het totale meelgewicht. Boven 3% kan psyllium een dicht, gumachtig kruimel produceren. Kopers dienen een monster van 100–200 g met COA aan te vragen en laboratoriumtests uit te voeren vóór een bulkorder. Wij kunnen productgegevens over zwelvolume en vocht voor elke kwaliteit verstrekken."
+        "Typische gebruikspercentages in glutenvrije broodformuleringen zijn 1–3% van het totale meelgewicht. Boven 3% kan psyllium een dicht, gumachtig kruimel produceren. Kopers dienen een monster op basis van specificatiebeoordeling aan te vragen en laboratoriumtests uit te voeren vóór een bulkorder. Wij kunnen productgegevens over zwelvolume en vocht voor elke kwaliteit verstrekken."
+      ],
+      "aiSnapshot": "Psylliumschil in Glutenvrije Bakkerij: Kwaliteits- en Zeefmaat Selectie sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "Psylliumschil in Glutenvrije Bakkerij: Kwaliteits- en Zeefmaat Selectie verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-supplement-capsule-filling": {
@@ -491,6 +1105,65 @@
         "Psylliumschil is een van de meest geëncapsuleerde voedingsvezels in gelatine- en vegetarische (HPMC) capsules voor laxatieve en spijsverteringsgezondheidsupplementen. De belangrijkste uitdaging bij capsulvulling is vloeibaarheid — psylliumschil is vezelig en hygroscopisch, wat kan leiden tot klontering en brugvorming in trechters van vulinstallaties. Zeefmaatselectie en vochtcontrole zijn de twee primaire variabelen.",
         "Voor standaard capsulvulapparatuur (doseer- of stampstifttype) is gehele schil in zeefmaat 40–60 de voorkeurspecificatie. Bij deze zeefmaat zijn deeltjes groot genoeg om te stromen zonder brugvorming maar klein genoeg om gelijkmatig in het capsulichaam te pakken. Onder 40 mesh kan de schil niet efficiënt pakken. Boven 60 mesh wordt het poeder hygroskopischer.",
         "Vochtcontrole is kritisch: schil boven 10% vocht klontert in de trechter en veroorzaakt variatie in vulgewicht. Wij testen vocht bij verzending en kunnen op verzoek vochtgecontroleerde verpakking (verzegelde HDPE-liner met droger) verstrekken. Deel capsulgrootte, doelvulgewicht en apparatuurtype mee — wij adviseren de passende kwaliteit, zeefmaat en vochtspecificatie."
+      ],
+      "aiSnapshot": "Psyllium voor Capsulvulling: Zeefmaat, Stroomgedrag en Kwaliteitsgids sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "Psyllium voor Capsulvulling: Zeefmaat, Stroomgedrag en Kwaliteitsgids verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-halal-kosher-documentation": {
@@ -499,7 +1172,66 @@
       "body": [
         "Psylliumschil is een plantaardig product zonder dierlijke inputs bij verwerking en wordt algemeen beschouwd als acceptabel onder zowel halal- als koosjerdieetvereisten. Veel kopers — met name in het Midden-Oosten, Zuidoost-Azië en voor de Amerikaanse koosjer supplementenmarkt — vereisen echter formele certificering van een erkend orgaan.",
         "Voor halal-certificering zijn erkende instanties in India Halal India, Jamiat Ulama-i-Hind Halal Trust en internationale instanties zoals IFANCA. Het certificaat omvat de faciliteit, de specifieke producten en de certificeringsperiode (doorgaans één jaar). Een kopie van het halal-certificaat per zending met charge-niveau endossement is wat de meeste Midden-Oosterse importautoriteiten vereisen.",
-        "Bij RM Psyllium is halal- en koosjerdocumentatie op verzoek beschikbaar. Wij verstrekken een halal-verklaring die bevestigt dat psylliumschil een puur plantaardig product is zonder dierlijke inputs in teelt, verwerking of verpakking — geaccepteerd door de meeste importautoriteiten voor gebruik als voedsel- en supplementingredient. Neem contact op met uw specifieke certificeringsinstantievereiste."
+        "Voor RM Psyllium-charges kunnen kopers een plantaardige-oorsprongsverklaring aanvragen en formele Halal- of Kosher-eisen vóór bestelling beoordelen. Een plantaardige verklaring vervangt geen formeel certificaat wanneer etiket, retailer of importeur dat vereist."
+      ],
+      "aiSnapshot": "Halal en Koosjer Psyllium: Welke Documenten Kopers Nodig Hebben sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "Halal en Koosjer Psyllium: Welke Documenten Kopers Nodig Hebben verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "bulk-psyllium-import-usa-fda": {
@@ -509,6 +1241,65 @@
         "In bulk geïmporteerde psylliumschil naar de Verenigde Staten valt onder de bevoegdheid van de FDA als ingrediënt voor voedingssupplementen of voedselingredient afhankelijk van het beoogde gebruik. De FDA vereist geen voorafgaande goedkeuring voor bulkpsylliuminvoer, maar zendingen zijn onderworpen aan FDA-importscreening en exporterende faciliteiten zijn onderworpen aan FSMA-leveranciersverificatievereisten.",
         "Voor toepassingen als voedingssupplement moet psylliumschil voldoen aan USP-monografiespecificaties. De COA bij elke zending moet bevatten: identificatie (botanisch), zwelvolume, vocht, as, microbiologie (TKA, gist, schimmel, E. coli, Salmonella) en zware metalen. Voor voedseltoepassingen heeft psylliumschil GRAS-status in de VS als bron van oplosbare voedingsvezels.",
         "FDA Voorafgaande Kennisgeving is vereist voor alle voedsel- en supplementenzendingen die de VS binnenkomen, elektronisch ingediend via PNSI vóór aankomst. Amerikaanse importeurs regelen dit doorgaans, maar wij kunnen alle benodigde productdetails verstrekken. Wij verzenden naar VS-havens via Mundra of JNPT met een typische transittijd van 25–30 dagen naar Oostkusthavens."
+      ],
+      "aiSnapshot": "Psylliumimport naar de VS: FDA-, Etikettering- en COA-vereisten sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "Psylliumimport naar de VS: FDA-, Etikettering- en COA-vereisten verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-khakha-animal-feed-specifications": {
@@ -518,6 +1309,65 @@
         "Psyllium khakha poeder is het bijproduct dat overblijft na het malen en scheiden van psylliumschil van het zaad. Het bestaat voornamelijk uit het binnenste zaadtegument en resterend endosperm, en bevat een aanzienlijke hoeveelheid uit slijm afgeleide oplosbare vezels — doorgaans 30–40% ruwe vezels op gewicht. Dit vezelgehalte, gecombineerd met 8–12% ruw eiwit en een laag kostenniveau ten opzichte van gehele schil, maakt het een nuttig voederingredient voor formulatoren van herkauwers- en pluimveevoer.",
         "Voederkwaliteits-khakha wordt primair gespecificeerd op vocht (≤12%), ruwe vezels (30–40%), ruw eiwit (8–12%) en totale as (≤8%). Vreemd materiaal en zandgehalte dienen bevestigd te worden — overmatig zand of silica kan as verhogen en verteerbaarheid verminderen. Deeltjesgrootte beïnvloedt menggedrag: grovere deeltjes (20–40 mesh) zijn standaard voor de meeste voedertoepassingen.",
         "Toepassingen van khakha in diervoeder omvatten: rund- en buffelvoer (spijsverteringsondersteuning, hydratatiebehoud), pluimveevoer als vezelzout, en vis- en aquacultuurvoer als natuurlijk bindmiddel. Wij leveren in zakken van 25 kg, 50 kg en jumbo bags van 1.000 kg. Voederkwaliteitsloten worden geleverd met een basis-analyse-COA (vocht, ruwe vezels, ruw eiwit, as) en paklijst."
+      ],
+      "aiSnapshot": "Psyllium Khakha Poeder voor Diervoeder: Specificaties en Toepassingen sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "Psyllium Khakha Poeder voor Diervoeder: Specificaties en Toepassingen verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "psyllium-husk-gmp-compliant-manufacturer-india": {
@@ -525,8 +1375,67 @@
       "summary": "Wat een GMP-conforme faciliteit betekent voor psylliumverwerking, BP-graadspecificaties en de documentatielijst die farmaceutische kopers moeten opvragen.",
       "body": [
         "Farmaceutische kopers die psylliumschil uit India inkopen hebben meer nodig dan alleen een zuiverheidskwaliteit — zij hebben bevestiging nodig dat de verwerkingsfaciliteit opereert onder gedocumenteerde kwaliteitscontroles conform Good Manufacturing Practice (GMP) standaarden. Voor psyllium betekent GMP-conforme verwerking: gecontroleerde maalomgevingen, gedocumenteerde reinigingsprocedures, plaagdierbeheersregistraties, chargetracering en gekalibreerde apparatuur.",
-        "RM Psyllium exploiteert een GMP-conforme faciliteit in Siddhpur, Gujarat. Onze faciliteit onderhoudt batchproductieregistraties, apparatuurkalibratieregelingen en in-process kwaliteitscontroles voor elke productiecyclus.",
-        "Het standaard documentatiepakket van RM Psyllium omvat: (1) NABL-geaccrediteerd laboratorium-COA geannoteerd conform gespecificeerde USP, EP, BP of IP; (2) Certificaat van Oorsprong afgegeven door de Kamer van Koophandel Gujarat; (3) Fytosanitair certificaat; (4) GMP-conformiteitverklaring van de faciliteit; (5) Paklijst en handelsfactuur."
+        "RM Psyllium exploiteert een verwerkingsfaciliteit in Siddhpur, Gujarat. Farmaceutische kopers kunnen batchregistraties, reiniging, traceerbaarheid, kalibratie en procesdocumentatie beoordelen vóór leveranciersgoedkeuring.",
+        "Kopers kunnen vóór PO een documentatieset beoordelen met: (1) COA-parameters en waar vereist een rapport van een derde NABL-geaccrediteerd laboratorium; (2) vereisten voor Certificaat van Oorsprong; (3) fytosanitaire certificaatvereisten; (4) faciliteits- en hygiënedocumenten waar de koperspecificatie dit vereist; (5) paklijst en handelsfactuur."
+      ],
+      "aiSnapshot": "GMP-conform Psylliumschil Fabrikant India: Faciliteits- en Documentatiestandaarden sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "sections": [
+        {
+          "heading": "Bedeutung fuer den Einkauf",
+          "body": "GMP-conform Psylliumschil Fabrikant India: Faciliteits- en Documentatiestandaarden verbindet die kommerzielle Anfrage mit einer realen Charge. Die Entscheidung sollte auf Spezifikation, COA, Muster und Endanwendung basieren."
+        },
+        {
+          "heading": "Checkliste vor Bestellung",
+          "body": "Pruefen Sie Qualitat, Reinheit, Mesh, Feuchte, Asche, Mikrobiologie, Schwermetalle, Verpackung, Ursprung und Zielmarktanforderungen."
+        },
+        {
+          "heading": "COA lesen",
+          "body": "Vergleichen Sie Chargennummer, Methode, Ergebnis, Einheit und Grenzwert. Ein Muster-COA dient der Vorpruefung; die finale Charge braucht Chargendokumente."
+        },
+        {
+          "heading": "Haeufiger Fehler",
+          "body": "Begriffe wie Bio, FDA, GMP, Halal, Kosher oder Pharmakopoe nicht als Lieferantenversprechen behandeln. Umfang, Charge und Dokument pruefen."
+        },
+        {
+          "heading": "Wie RM hilft",
+          "body": "RM kann Qualitat, Mesh, Muster-COA, Spezifikation, Verpackung, Ursprung, 1-kg-Muster und Zieldokumente vor Bestellung pruefen."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
+        }
       ]
     },
     "plantago-ovata-husk-bulk-exporter-india": {
@@ -581,7 +1490,48 @@
         },
         {
           "heading": "Standaard Exportdocumentatiepakket",
-          "body": "Het standaardpakket omvat: (1) NABL-geaccrediteerd laboratorium-COA met USP/IP-parameters; (2) Certificaat van Oorsprong Kamer van Koophandel Gujarat; (3) Fytosanitair certificaat; (4) GMP-conformiteitverklaring; (5) Microbiologisch analyserapport."
+          "body": "Kopers kunnen vóór PO COA-parameters, waar vereist een rapport van een derde NABL-geaccrediteerd laboratorium, oorsprongsdocumenten, fytosanitaire vereisten, faciliteitsdocumenten en microbiologische analysebehoeften beoordelen."
+        },
+        {
+          "heading": "Beslispunt voor inkoop",
+          "body": "Koppel voor bestelling de specificatie aan de echte partij, COA, 1 kg monster, verpakking en documenten voor de bestemmingsmarkt."
+        }
+      ],
+      "aiSnapshot": "Bulkexporteur Plantago Ovata Schil uit India: Kwaliteiten, Isabgol Naamgeving en Exportvoorwaarden sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
         }
       ]
     },
@@ -590,7 +1540,7 @@
       "summary": "Kwaliteits- en zeefmaatselectie voor supplement- en functionele voedselfabrikanten die in bulk inkopen vanuit Gujarat.",
       "body": [
         "Psylliumschilpoeder verschilt van gehele schil in deeltjesgrootte — de deeltjes zijn gemalen om specifieke zeefmaat- en stroomkenmerken te bereiken die voldoen aan formuleringsbehoeften van supplementen en voedingsmiddelen.",
-        "RM Psyllium produceert psylliumschilpoeder in kwaliteiten 85%, 95% en 98% met meerdere zeefmaatspecificaties, met traceerbare charges en NABL laboratorium-COA voor elke zending."
+        "RM Psyllium produceert psylliumschilpoeder in kwaliteiten 85%, 95% en 98% met meerdere zeefmaatspecificaties, traceerbare charges en COA-review per lot. Rapporten van een geaccrediteerd derdelaboratorium kunnen worden beoordeeld wanneer de koperspecificatie dit vereist."
       ],
       "sections": [
         {
@@ -635,7 +1585,48 @@
         },
         {
           "heading": "MOQ en Verpakkingsopties",
-          "body": "Standaard MOQ: 1 metrische ton per SKU kwaliteit en zeefmaat. Verpakking: PP-zakken van 25 kg met dubbel PE-liner, FIBC bigbags van 500 kg of 1.000 kg. Aangepaste etikettering beschikbaar vanaf 5 MT. Monsters van 100–500 g met volledig COA beschikbaar vóór elke order."
+          "body": "MOQ wordt bevestigd op basis van kwaliteit, zeefmaat, verpakking, bestemming en documentpakket. Verpakking: PP-zakken van 25 kg met dubbel PE-liner, FIBC bigbags van 500 kg of 1.000 kg. Monsteropties, COA-review en levertijd worden vóór elke order bevestigd."
+        },
+        {
+          "heading": "Beslispunt voor inkoop",
+          "body": "Koppel voor bestelling de specificatie aan de echte partij, COA, 1 kg monster, verpakking en documenten voor de bestemmingsmarkt."
+        }
+      ],
+      "aiSnapshot": "Groothandelsleverancier Psylliumschilpoeder India: Gids Kwaliteiten 85%, 95%, 98% sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
         }
       ]
     },
@@ -644,12 +1635,12 @@
       "summary": "Wat supplementmerken en OEM-fabrikanten nodig hebben voor inkoop van gecertificeerd non-GMO psyllium voor privatelabelproducten.",
       "body": [
         "Supplementmerken en contractfabrikanten (CMO/CDMO) die psylliumschil zoeken voor privatelabelproducten hebben leveranciers nodig die volledige ingrediëntendocumentatie, chargetraceerbaarheid en aanpasbare verpakking bieden.",
-        "RM Psyllium levert farmaceutische en voedingskwaliteit psylliumschil aan OEM-fabrikanten met NABL-laboratoriumrapporten, non-GMO-verklaringen en aangepaste verpakkingsopties."
+        "RM Psyllium levert farmaceutische en voedingskwaliteit psylliumschil aan OEM-fabrikanten met lot-COA, non-GMO-verklaringen, aangepaste verpakkingsopties en derdelaboratoriumrapporten wanneer de specificatie dit vereist."
       ],
       "sections": [
         {
           "heading": "Non-GMO Documentatie: Wat Kopers Nodig Hebben",
-          "body": "Plantago ovata is een niet genetisch gemodificeerde soort. Er bestaan geen goedgekeurde GM-variëteiten van deze soort. Beschikbare documentatie: (1) Non-GMO-verklaring op bedrijfsbriefpapier; (2) Botanische identiteit bevestigd door microscopie; (3) NABL laboratorium-COA die afwezigheid van transgene sequenties verifieert."
+          "body": "Plantago ovata is een niet genetisch gemodificeerde soort. Er bestaan geen goedgekeurde GM-variëteiten van deze soort. Beschikbare documentatie kan bestaan uit: (1) non-GMO-verklaring op bedrijfsbriefpapier; (2) botanische identiteit; (3) aanvullende laboratoriumreview wanneer de koperspecificatie dit vereist."
         },
         {
           "heading": "Typisch OEM-Specificatiepakket",
@@ -658,6 +1649,47 @@
         {
           "heading": "Verpakking voor Supplementmerken",
           "body": "Privatelabel verpakkingsopties: kraftzakken met ventiel en ritssluitingzak (250 g, 500 g, 1 kg), HDPE-containers met snap-deksel, standup-zakken met UV-barrière. MOQ voor aangepaste verpakking: 500 kg per SKU. Aangepaste labeldruk beschikbaar vanaf 1 MT."
+        },
+        {
+          "heading": "Beslispunt voor inkoop",
+          "body": "Koppel voor bestelling de specificatie aan de echte partij, COA, 1 kg monster, verpakking en documenten voor de bestemmingsmarkt."
+        }
+      ],
+      "aiSnapshot": "Psyllium Privatelabel Supplement India: Bulk OEM Inkoopvereisten sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
         }
       ]
     },
@@ -666,7 +1698,7 @@
       "summary": "Voedingskwaliteitsspecificaties, wat HACCP-conformiteit in de praktijk betekent en documentatie die voedingsmiddelenfabrikanten nodig hebben.",
       "body": [
         "Voedingsmiddelenfabrikanten die psylliumschil inkopen als functioneel ingrediënt — voor vezelversterking, textuurmodificatie of clean-label toepassingen — hebben een leverancier nodig met voedselveiligheidscontroles die verder gaan dan basislandbouwverwerking.",
-        "RM Psyllium exploiteert een voedselveilige faciliteit in Siddhpur, Gujarat. Onze faciliteit past HACCP-principes toe — gevarenanalyse en kritische controlepunten — in de maal-, scheidings- en verpakkingsprocessen."
+        "RM Psyllium exploiteert een verwerkingsfaciliteit in Siddhpur, Gujarat. Voedingskopers kunnen reiniging, scheiding, verpakking, traceerbaarheid en voedselveiligheidsdocumentatie beoordelen vóór orderbevestiging."
       ],
       "sections": [
         {
@@ -723,7 +1755,48 @@
         },
         {
           "heading": "MOQ en Beschikbare Certificatiedocumenten",
-          "body": "RM Psyllium levert voedingskwaliteit psylliumschil vanaf 1 metrische ton per SKU. Het standaard documentatiepakket omvat NABL-geaccrediteerd laboratorium-COA, HACCP-conformiteitverklaring, fytosanitair certificaat, certificaat van oorsprong en exporteursverklaringsformulier."
+          "body": "MOQ en documentatie hangen af van kwaliteit, verpakking, bestemming en koperspecificatie. Kopers kunnen COA-parameters, waar vereist een rapport van een derde NABL-geaccrediteerd laboratorium, fytosanitaire vereisten, oorsprongsdocumenten en exporteursverklaringen vóór PO beoordelen."
+        },
+        {
+          "heading": "Beslispunt voor inkoop",
+          "body": "Koppel voor bestelling de specificatie aan de echte partij, COA, 1 kg monster, verpakking en documenten voor de bestemmingsmarkt."
+        }
+      ],
+      "aiSnapshot": "Bulkleverancier Voedingskwaliteit Psylliumschil India: HACCP-conforme Faciliteit sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
         }
       ]
     },
@@ -774,6 +1847,47 @@
         {
           "heading": "Export Isabgol uit Gujarat: Wat Voedingsmiddelenfabrikanten Nodig Hebben",
           "body": "Standaardpakket omvat: (1) Codex Alimentarius-afgestemd COA; (2) Fytosanitair certificaat; (3) Certificaat van Oorsprong Kamer van Koophandel Gujarat; (4) Conformiteitsverklaring zware metalen en pesticiden. Transittijd Mundra → Rotterdam: ca. 20–23 dagen."
+        },
+        {
+          "heading": "Beslispunt voor inkoop",
+          "body": "Koppel voor bestelling de specificatie aan de echte partij, COA, 1 kg monster, verpakking en documenten voor de bestemmingsmarkt."
+        }
+      ],
+      "aiSnapshot": "Oplosbare Vezel Psylliumschil voor Bulk Voedselverrijking: Inkoop uit India sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
         }
       ]
     },
@@ -787,7 +1901,7 @@
       "sections": [
         {
           "heading": "Glutenvrije Certificering: Wat Documenten Omvatten",
-          "body": "Het documentatiepakket voor glutenvrije kopers omvat: (1) Toegewijde glutenvrije faciliteitverklaring; (2) ELISA-testresultaat per charge (R5 Mendez methode, drempel < 20 ppm); (3) NABL laboratorium-COA met glutenparameters; (4) Grondstofconformiteitsverklaring van de boerderij."
+          "body": "Het documentatiepakket voor glutenvrije kopers moet per product en lot worden beoordeeld. Het kan bestaan uit lijn-/faciliteitsverklaringen, ELISA-testresultaten wanneer vereist, COA met relevante parameters en grondstofconformiteitsverklaring."
         },
         {
           "heading": "Psyllium als Broodversteviger: Gebruikspercentages",
@@ -830,6 +1944,47 @@
         {
           "heading": "Glutenvrije Meelmengverhoudingen",
           "body": "Voor formulatoren die werken met gemengde glutenvrije meelbasissen (rijst, cassave, sorghum, kikkererwt), fungeert psyllium als primaire structurele agent. Typische verhoudingen: basisbloemm 70–80% + zetmeel (tapioca/aardappel) 10–15% + psyllium 3–5% + overige (erwtenproteïne, xanthaangom) 2–5%."
+        },
+        {
+          "heading": "Beslispunt voor inkoop",
+          "body": "Koppel voor bestelling de specificatie aan de echte partij, COA, 1 kg monster, verpakking en documenten voor de bestemmingsmarkt."
+        }
+      ],
+      "aiSnapshot": "Gecertificeerd Glutenvrij Bulkleverancier Psylliumschil: Wat Bakkerijmerken Nodig Hebben sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
         }
       ]
     },
@@ -851,7 +2006,7 @@
         },
         {
           "heading": "MOQ en Monsterbeleid",
-          "body": "Onze aanpak met nieuwe kopers is eerst het monster. Wij verstrekken monsters van 100–500 g met volledig COA vóór elke inkooporder.",
+          "body": "Onze aanpak met nieuwe kopers begint met spec- en monsterreview. Monsters van 1 kg zijn beschikbaar voor passende kwaliteiten; commerciële lotgrootte, COA-formulering en bestemmingsdocumenten worden vóór de inkooporder bevestigd.",
           "table": {
             "headers": [
               "Product",
@@ -862,30 +2017,71 @@
             "rows": [
               [
                 "Psylliumschil 99%",
-                "500 kg",
-                "100–200 g",
-                "15–20 dagen na bevestiging"
+                "Volgens kwaliteit en documenten",
+                "Na specificatiebeoordeling",
+                "Na PO-beoordeling"
               ],
               [
                 "Psylliumpoeder 95%",
-                "500 kg",
-                "100–200 g",
-                "15–20 dagen na bevestiging"
+                "Volgens kwaliteit en documenten",
+                "Na specificatiebeoordeling",
+                "Na PO-beoordeling"
               ],
               [
                 "Biologische Schil",
-                "500 kg",
-                "100–200 g",
-                "20–25 dagen afhankelijk van voorraad"
+                "Volgens documentbereik",
+                "Na certificaatbeoordeling",
+                "Na voorraad- en documentbeoordeling"
               ],
               [
                 "Khakha Poeder",
-                "1.000 kg",
-                "200–500 g",
-                "10–15 dagen na bevestiging"
+                "Volgens verpakking en bestemming",
+                "Na toepassingsbeoordeling",
+                "Na PO-beoordeling"
               ]
             ]
           }
+        },
+        {
+          "heading": "Beslispunt voor inkoop",
+          "body": "Koppel voor bestelling de specificatie aan de echte partij, COA, 1 kg monster, verpakking en documenten voor de bestemmingsmarkt."
+        }
+      ],
+      "aiSnapshot": "Psylliumschil Fabrikant Siddhpur Gujarat: Directe Fabrieksleverantie sollte nach Charge, Spezifikation und Endanwendung bewertet werden, nicht nach allgemeinen Lieferantenaussagen. Einkaufer sollten Qualitat, Mesh, COA, Verpackung, 1-kg-Muster und Zieldokumente vor der Bestellung pruefen.",
+      "specTable": [
+        {
+          "label": "Hauptpruefung",
+          "range": "Qualitat, Mesh, Reinheit und Endanwendung"
+        },
+        {
+          "label": "Dokument",
+          "range": "Muster-COA, Spezifikation und Zieldokumente"
+        },
+        {
+          "label": "Muster",
+          "range": "1-kg-Muster wenn Qualitat und Zielmarkt passen"
+        },
+        {
+          "label": "Vor PO",
+          "range": "Charge, Verpackung, Tests und Lieferzeit bestaetigen"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Was zuerst pruefen?",
+          "a": "Qualitat, Mesh, Reinheit, COA, Endanwendung, Verpackung, 1-kg-Muster und Zielmarktdokumente."
+        },
+        {
+          "q": "Genehmigt ein Muster-COA die finale Sendung?",
+          "a": "Nein. Es hilft bei der Vorpruefung. Die finale Sendung muss mit COA oder Bericht der versendeten Charge geprueft werden."
+        },
+        {
+          "q": "Wie vermeidet man ueberzogene Aussagen?",
+          "a": "Umfang, Charge, Pruefmethode, Ergebnis und anwendbares Dokument verlangen. Allgemeine Aussagen ohne spezifischen Nachweis nicht akzeptieren."
+        },
+        {
+          "q": "Wann Muster anfordern?",
+          "a": "Vor kommerziellem Volumen, besonders wenn Hydration, Textur, Mesh oder regulatorische Dokumente wichtig sind."
         }
       ]
     }
@@ -897,6 +2093,65 @@
       "Psyllium khakha is het bijproduct van huskmaling — het zaadschilresiduaat dat achterblijft nadat de husk is gescheiden. Het bevat een aanzienlijk deel van het slijm en de voedingsvezels uit het originele zaad, waardoor het een functioneel voederingrediënt is in plaats van enkel afvalmateriaal.",
       "Voor veevoederformuleerders biedt khakha-poeder twee voordelen: vezeldichtheid en kostprijs. In vergelijking met volledige husk is khakha goedkoper, terwijl het toch oplosbare vezels levert die de darmbeweging en waterretentie bij vee ondersteunen.",
       "Bij het bulksourcing van khakha is kennis van de partijoorsprong en vochtspecificatie essentieel. Voederklasse khakha moet een vochtgehalte onder de 12% hebben. Wij leveren in zakken van 25 kg, 50 kg en 1.000 kg jumbo-zakken, inclusief oorsprongsdocumenten en paklijst per zending."
+    ],
+    "aiSnapshot": "psyllium khakha demand moet per charge, specificatie en toepassing worden beoordeeld, niet op brede leveranciersclaims. Kopers moeten feed grade, fiber, moisture, ash, particle size, packing, and destination use vóór bestelling controleren.",
+    "sections": [
+      {
+        "heading": "Wat kopers moeten controleren",
+        "body": "Voor psyllium khakha demand moeten kopers feed grade, fiber, moisture, ash, particle size, packing, and destination use controleren. Het doel is de aanvraag te koppelen aan echte charge, sample, COA en bestemmingsdocumenten."
+      },
+      {
+        "heading": "COA of specificatie lezen",
+        "body": "Controleer parameter, eenheid, methode, resultaat, limiet, charge-identiteit en rapportdatum. Bevestig vereiste methode of formulering vóór sample of bestelling."
+      },
+      {
+        "heading": "Veelgemaakte fout",
+        "body": "Koop niet alleen op grade of certificaatwoord. Vraag wat de geteste charge ondersteunt en welke documenten beoordeeld kunnen worden."
+      },
+      {
+        "heading": "Hoe RM kan helpen",
+        "body": "RM kan grade, mesh, sample-COA, specificatie, verpakking, oorsprong en bestemmingsdocumenten vóór bestelling beoordelen."
+      }
+    ],
+    "specTable": [
+      {
+        "parameter": "Grade / Application",
+        "range": "Buyer-specific",
+        "method": "Specification review"
+      },
+      {
+        "parameter": "Sample Review",
+        "range": "1 kg sample where available",
+        "method": "Pre-PO review"
+      },
+      {
+        "parameter": "COA Parameters",
+        "range": "Lot-specific",
+        "method": "COA / third-party report where required"
+      },
+      {
+        "parameter": "Packing and Documents",
+        "range": "Destination-specific",
+        "method": "Buyer checklist"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Wat moet vóór bestelling worden bevestigd?",
+        "a": "Bevestig feed grade, fiber, moisture, ash, particle size, packing, and destination use, toepassing, sample, verpakking en bestemmingsdocumenten."
+      },
+      {
+        "q": "Is een sample-COA genoeg voor eindgoedkeuring?",
+        "a": "Nee. Het ondersteunt de eerste beoordeling. Eindgoedkeuring gebruikt het COA van de verzonden charge of een derde rapport indien vereist."
+      },
+      {
+        "q": "Kan wording aansluiten op koperspecificatie?",
+        "a": "Alleen wanneer resultaten en documenten van de geteste charge dit ondersteunen."
+      },
+      {
+        "q": "Hoe voorkom je inkoopvertraging?",
+        "a": "Deel grade, mesh, toepassing, land, maandvolume en documentenlijst vóór offerte."
+      }
     ]
   },
   "psyllium-cattle-feed-digestion": {
@@ -938,6 +2193,32 @@
       {
         "q": "Welke kwaliteit psyllium wordt gesourcet voor zanduitspoelingsupplementen voor paarden?",
         "a": "Sourcing-leads kopen doorgaans psyllium husk of khakha-poeder van voederklasse met 95% zuiverheid."
+      },
+      {
+        "q": "Welke documenten moet de leverancier sturen?",
+        "a": "Vraag monster-COA, specificatie, verpakking, oorsprong en relevante bestemmingsdocumenten voor controle voor bestelling."
+      },
+      {
+        "q": "Wat als een certificering vereist is?",
+        "a": "Controleer het echte certificaat, scope, uitgever, geldigheid en product- of partijdekking voor goedkeuring."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Wat kopers moeten controleren",
+        "body": "Voor psyllium for cattle and equine feed moeten kopers feed-use suitability, fiber, moisture, ash, dosage plan, packing, and COA controleren. Het doel is de aanvraag te koppelen aan echte charge, sample, COA en bestemmingsdocumenten."
+      },
+      {
+        "heading": "COA of specificatie lezen",
+        "body": "Controleer parameter, eenheid, methode, resultaat, limiet, charge-identiteit en rapportdatum. Bevestig vereiste methode of formulering vóór sample of bestelling."
+      },
+      {
+        "heading": "Veelgemaakte fout",
+        "body": "Koop niet alleen op grade of certificaatwoord. Vraag wat de geteste charge ondersteunt en welke documenten beoordeeld kunnen worden."
+      },
+      {
+        "heading": "Hoe RM kan helpen",
+        "body": "RM kan grade, mesh, sample-COA, specificatie, verpakking, oorsprong en bestemmingsdocumenten vóór bestelling beoordelen."
       }
     ]
   },
@@ -980,6 +2261,32 @@
       {
         "q": "Welke meshgrootte is ideaal voor bulk psyllium husk-poeder in bakkerijformuleringen?",
         "a": "Een 80-mesh fijn poeder is de wereldwijde industriestandaard voor glutenvrij industrieel bakken."
+      },
+      {
+        "q": "Welke documenten moet de leverancier sturen?",
+        "a": "Vraag monster-COA, specificatie, verpakking, oorsprong en relevante bestemmingsdocumenten voor controle voor bestelling."
+      },
+      {
+        "q": "Wat als een certificering vereist is?",
+        "a": "Controleer het echte certificaat, scope, uitgever, geldigheid en product- of partijdekking voor goedkeuring."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Wat kopers moeten controleren",
+        "body": "Voor whole husk versus husk powder moeten kopers application, mesh, hydration speed, texture, dosage, sample trial, and COA controleren. Het doel is de aanvraag te koppelen aan echte charge, sample, COA en bestemmingsdocumenten."
+      },
+      {
+        "heading": "COA of specificatie lezen",
+        "body": "Controleer parameter, eenheid, methode, resultaat, limiet, charge-identiteit en rapportdatum. Bevestig vereiste methode of formulering vóór sample of bestelling."
+      },
+      {
+        "heading": "Veelgemaakte fout",
+        "body": "Koop niet alleen op grade of certificaatwoord. Vraag wat de geteste charge ondersteunt en welke documenten beoordeeld kunnen worden."
+      },
+      {
+        "heading": "Hoe RM kan helpen",
+        "body": "RM kan grade, mesh, sample-COA, specificatie, verpakking, oorsprong en bestemmingsdocumenten vóór bestelling beoordelen."
       }
     ]
   }

@@ -2,12 +2,13 @@
 const gaId = import.meta.env.PUBLIC_GA4_ID || '';
 const clarityId = import.meta.env.PUBLIC_CLARITY_ID || '';
 ---
-{gaId && <script type="text/partytown" src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}></script>}
+{gaId && <script is:inline src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`} defer></script>}
 {(gaId || clarityId) && (
   <script
-    type="text/partytown"
+    is:inline
     src="/scripts/analytics.js"
     data-ga-id={gaId}
     data-clarity-id={clarityId}
+    defer
   ></script>
 )}

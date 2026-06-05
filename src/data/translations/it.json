@@ -43,6 +43,32 @@
       {
         "q": "Perché le ceneri insolubili in acido rappresentano un limite di sicurezza critico?",
         "a": "Le ceneri insolubili in acido indicano residui di sabbia, terra e silice. L'USP impone un limite rigoroso ≤0,4%. Per garantire questi livelli estremamente bassi si utilizza la separazione a gravità di ultima generazione."
+      },
+      {
+        "q": "Cosa va verificato prima dell’ordine?",
+        "a": "Verificare USP, EP, IP, BP/NF, COA, swelling volume, ash, moisture, microbiology, heavy metals rispetto al lotto target e ai requisiti di destinazione."
+      },
+      {
+        "q": "Il COA campione basta per approvare la spedizione finale?",
+        "a": "No. Il COA campione serve per la revisione dei parametri. L’approvazione finale deve usare il COA o rapporto del lotto spedito."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Cosa deve verificare il buyer",
+        "body": "Per USP/EP/IP wording, verificare lotto target, specifica del buyer, COA e metodo prima dell’ordine."
+      },
+      {
+        "heading": "Checklist prima del PO",
+        "body": "Richiedere e confrontare questi punti: USP, EP, IP, BP/NF, COA, swelling volume, ash, moisture, microbiology, heavy metals. La revisione va fatta prima di prezzo, campione o lotto commerciale."
+      },
+      {
+        "heading": "Errore comune",
+        "body": "Non trattare USP/EP/IP wording come promessa generica del fornitore. Collegarlo a risultati di lotto, documenti e mercato di destinazione."
+      },
+      {
+        "heading": "Come può aiutare RM",
+        "body": "RM può rivedere COA campione, specifica, grado, mesh, imballo e documenti di destinazione prima dell’ordine."
       }
     ]
   },
@@ -85,11 +111,37 @@
     "faqs": [
       {
         "q": "Cos'è l'accreditamento NABL su un COA?",
-        "a": "L'NABL è l'organo di accreditamento nazionale dell'India per i laboratori di prova, che garantisce l'allineamento internazionale tramite ILAC. Un COA NABL garantisce test e validazioni conformi agli standard internazionali."
+        "a": "NABL è l'ente nazionale indiano di accreditamento per i laboratori di prova, con riconoscimento internazionale tramite ILAC. Per l'acquirente, il punto chiave è verificare che il laboratorio emittente sia accreditato e che il COA corrisponda al lotto specifico."
       },
       {
         "q": "Come vengono testati i metalli pesanti nello psillio?",
         "a": "I metalli pesanti vengono testati mediante spettrometria di massa a plasma accoppiato induttivamente (ICP-MS), che assicura una rilevabilità fino a parti per miliardo (ppb) per piombo, arsenico, cadmio e mercurio."
+      },
+      {
+        "q": "Cosa va verificato prima dell’ordine?",
+        "a": "Verificare NABL scope, lab name, lot number, sample identity, method, result, unit, limit, signatory rispetto al lotto target e ai requisiti di destinazione."
+      },
+      {
+        "q": "Il COA campione basta per approvare la spedizione finale?",
+        "a": "No. Il COA campione serve per la revisione dei parametri. L’approvazione finale deve usare il COA o rapporto del lotto spedito."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Cosa deve verificare il buyer",
+        "body": "Per NABL wording, verificare lotto target, specifica del buyer, COA e metodo prima dell’ordine."
+      },
+      {
+        "heading": "Checklist prima del PO",
+        "body": "Richiedere e confrontare questi punti: NABL scope, lab name, lot number, sample identity, method, result, unit, limit, signatory. La revisione va fatta prima di prezzo, campione o lotto commerciale."
+      },
+      {
+        "heading": "Errore comune",
+        "body": "Non trattare NABL wording come promessa generica del fornitore. Collegarlo a risultati di lotto, documenti e mercato di destinazione."
+      },
+      {
+        "heading": "Come può aiutare RM",
+        "body": "RM può rivedere COA campione, specifica, grado, mesh, imballo e documenti di destinazione prima dell’ordine."
       }
     ]
   },
@@ -132,6 +184,32 @@
       {
         "q": "Quali metodi di pulizia fisica dovrebbe utilizzare un fornitore?",
         "a": "I produttori qualificati devono impiegare depietratori multistadio per rimuovere terra e sabbia, classificatori a setaccio per la calibrazione delle particelle e griglie magnetiche ad alta intensità per separare i residui metallici."
+      },
+      {
+        "q": "Cosa va verificato prima dell’ordine?",
+        "a": "Verificare FSVP file, prior notice data, product specification, COA, origin, packing, broker details rispetto al lotto target e ai requisiti di destinazione."
+      },
+      {
+        "q": "Il COA campione basta per approvare la spedizione finale?",
+        "a": "No. Il COA campione serve per la revisione dei parametri. L’approvazione finale deve usare il COA o rapporto del lotto spedito."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Cosa deve verificare il buyer",
+        "body": "Per FDA/FSVP wording, verificare lotto target, specifica del buyer, COA e metodo prima dell’ordine."
+      },
+      {
+        "heading": "Checklist prima del PO",
+        "body": "Richiedere e confrontare questi punti: FSVP file, prior notice data, product specification, COA, origin, packing, broker details. La revisione va fatta prima di prezzo, campione o lotto commerciale."
+      },
+      {
+        "heading": "Errore comune",
+        "body": "Non trattare FDA/FSVP wording come promessa generica del fornitore. Collegarlo a risultati di lotto, documenti e mercato di destinazione."
+      },
+      {
+        "heading": "Come può aiutare RM",
+        "body": "RM può rivedere COA campione, specifica, grado, mesh, imballo e documenti di destinazione prima dell’ordine."
       }
     ]
   },
@@ -174,6 +252,32 @@
       {
         "q": "Quale metodo di laboratorio viene utilizzato per testare i metalli pesanti?",
         "a": "La spettrometria di massa a plasma accoppiato induttivamente (ICP-MS) è il metodo di riferimento globale, offrendo un'estrema sensibilità fino a livelli di parti per miliardo (ppb)."
+      },
+      {
+        "q": "Cosa va verificato prima dell’ordine?",
+        "a": "Verificare Pb, As, Cd, Hg, ICP-MS method, ppm unit, serving size, destination-market limit rispetto al lotto target e ai requisiti di destinazione."
+      },
+      {
+        "q": "Il COA campione basta per approvare la spedizione finale?",
+        "a": "No. Il COA campione serve per la revisione dei parametri. L’approvazione finale deve usare il COA o rapporto del lotto spedito."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Cosa deve verificare il buyer",
+        "body": "Per heavy-metal pass/fail wording, verificare lotto target, specifica del buyer, COA e metodo prima dell’ordine."
+      },
+      {
+        "heading": "Checklist prima del PO",
+        "body": "Richiedere e confrontare questi punti: Pb, As, Cd, Hg, ICP-MS method, ppm unit, serving size, destination-market limit. La revisione va fatta prima di prezzo, campione o lotto commerciale."
+      },
+      {
+        "heading": "Errore comune",
+        "body": "Non trattare heavy-metal pass/fail wording come promessa generica del fornitore. Collegarlo a risultati di lotto, documenti e mercato di destinazione."
+      },
+      {
+        "heading": "Come può aiutare RM",
+        "body": "RM può rivedere COA campione, specifica, grado, mesh, imballo e documenti di destinazione prima dell’ordine."
       }
     ]
   },
@@ -216,6 +320,32 @@
       {
         "q": "La sterilizzazione a vapore influisce sul volume di rigonfiamento dello psillio?",
         "a": "Se non controllati adeguatamente, l'elevato calore e l'umidità eccessiva possono pre-gelificare la cuticola. Una sterilizzazione rapida e precisa a vapore continuo preserva l'integrità delle mucillagini, mantenendo un volume di rigonfiamento ≥50 mL/g."
+      },
+      {
+        "q": "Cosa va verificato prima dell’ordine?",
+        "a": "Verificare treatment method, microbiology, moisture, ETO, 2-chloroethanol, swelling volume rispetto al lotto target e ai requisiti di destinazione."
+      },
+      {
+        "q": "Il COA campione basta per approvare la spedizione finale?",
+        "a": "No. Il COA campione serve per la revisione dei parametri. L’approvazione finale deve usare il COA o rapporto del lotto spedito."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Cosa deve verificare il buyer",
+        "body": "Per sterilization wording, verificare lotto target, specifica del buyer, COA e metodo prima dell’ordine."
+      },
+      {
+        "heading": "Checklist prima del PO",
+        "body": "Richiedere e confrontare questi punti: treatment method, microbiology, moisture, ETO, 2-chloroethanol, swelling volume. La revisione va fatta prima di prezzo, campione o lotto commerciale."
+      },
+      {
+        "heading": "Errore comune",
+        "body": "Non trattare sterilization wording come promessa generica del fornitore. Collegarlo a risultati di lotto, documenti e mercato di destinazione."
+      },
+      {
+        "heading": "Come può aiutare RM",
+        "body": "RM può rivedere COA campione, specifica, grado, mesh, imballo e documenti di destinazione prima dell’ordine."
       }
     ]
   },
@@ -258,6 +388,32 @@
       {
         "q": "Qual è la granulometria mesh raccomandata per i preparati per bevande solubili?",
         "a": "Per le miscele di bevande in polvere, si consiglia una granulometria di 100 mesh o più fine, in modo da garantire una dispersione rapida e omogenea nei liquidi freddi senza grumi o consistenza sabbiosa."
+      },
+      {
+        "q": "Cosa va verificato prima dell’ordine?",
+        "a": "Verificare mesh, hydration speed, water addition, mixing time, crumb texture, 1 kg sample trial rispetto al lotto target e ai requisiti di destinazione."
+      },
+      {
+        "q": "Il COA campione basta per approvare la spedizione finale?",
+        "a": "No. Il COA campione serve per la revisione dei parametri. L’approvazione finale deve usare il COA o rapporto del lotto spedito."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Cosa deve verificare il buyer",
+        "body": "Per mesh recommendation, verificare lotto target, specifica del buyer, COA e metodo prima dell’ordine."
+      },
+      {
+        "heading": "Checklist prima del PO",
+        "body": "Richiedere e confrontare questi punti: mesh, hydration speed, water addition, mixing time, crumb texture, 1 kg sample trial. La revisione va fatta prima di prezzo, campione o lotto commerciale."
+      },
+      {
+        "heading": "Errore comune",
+        "body": "Non trattare mesh recommendation come promessa generica del fornitore. Collegarlo a risultati di lotto, documenti e mercato di destinazione."
+      },
+      {
+        "heading": "Come può aiutare RM",
+        "body": "RM può rivedere COA campione, specifica, grado, mesh, imballo e documenti di destinazione prima dell’ordine."
       }
     ]
   },
@@ -300,6 +456,32 @@
       {
         "q": "Come vengono verificati i residui di pesticidi nello psillio biologico?",
         "a": "I laboratori accreditati utilizzano la gascromatografia-spettrometria di massa (GC-MS) e la cromatografia liquida-spettrometria di massa (LC-MS) per lo screening di oltre 500 composti chimici."
+      },
+      {
+        "q": "Cosa va verificato prima dell’ordine?",
+        "a": "Verificare certificate scope, handler chain, TC/COI path, pesticide residue report, lot identity rispetto al lotto target e ai requisiti di destinazione."
+      },
+      {
+        "q": "Il COA campione basta per approvare la spedizione finale?",
+        "a": "No. Il COA campione serve per la revisione dei parametri. L’approvazione finale deve usare il COA o rapporto del lotto spedito."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Cosa deve verificare il buyer",
+        "body": "Per organic wording, verificare lotto target, specifica del buyer, COA e metodo prima dell’ordine."
+      },
+      {
+        "heading": "Checklist prima del PO",
+        "body": "Richiedere e confrontare questi punti: certificate scope, handler chain, TC/COI path, pesticide residue report, lot identity. La revisione va fatta prima di prezzo, campione o lotto commerciale."
+      },
+      {
+        "heading": "Errore comune",
+        "body": "Non trattare organic wording come promessa generica del fornitore. Collegarlo a risultati di lotto, documenti e mercato di destinazione."
+      },
+      {
+        "heading": "Come può aiutare RM",
+        "body": "RM può rivedere COA campione, specifica, grado, mesh, imballo e documenti di destinazione prima dell’ordine."
       }
     ]
   },
@@ -342,6 +524,32 @@
       {
         "q": "Cos'è un test ELISA per il glutine?",
         "a": "Il saggio immuno-assorbente legato a un enzima (ELISA) è il metodo di prova di riferimento utilizzato dai laboratori NABL per rilevare e quantificare le tracce di proteine del glutine fino a livelli di parti per miliardo (ppb)."
+      },
+      {
+        "q": "Cosa va verificato prima dell’ordine?",
+        "a": "Verificare allergen declaration, shared equipment, cleaning records, storage segregation, ELISA testing rispetto al lotto target e ai requisiti di destinazione."
+      },
+      {
+        "q": "Il COA campione basta per approvare la spedizione finale?",
+        "a": "No. Il COA campione serve per la revisione dei parametri. L’approvazione finale deve usare il COA o rapporto del lotto spedito."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Cosa deve verificare il buyer",
+        "body": "Per gluten-free or allergen wording, verificare lotto target, specifica del buyer, COA e metodo prima dell’ordine."
+      },
+      {
+        "heading": "Checklist prima del PO",
+        "body": "Richiedere e confrontare questi punti: allergen declaration, shared equipment, cleaning records, storage segregation, ELISA testing. La revisione va fatta prima di prezzo, campione o lotto commerciale."
+      },
+      {
+        "heading": "Errore comune",
+        "body": "Non trattare gluten-free or allergen wording come promessa generica del fornitore. Collegarlo a risultati di lotto, documenti e mercato di destinazione."
+      },
+      {
+        "heading": "Come può aiutare RM",
+        "body": "RM può rivedere COA campione, specifica, grado, mesh, imballo e documenti di destinazione prima dell’ordine."
       }
     ]
   },
@@ -384,6 +592,32 @@
       {
         "q": "Come viene verificato il contenuto totale di fibre alimentari?",
         "a": "Le frazioni di fibra alimentare sono convalidate utilizzando metodi enzimatico-gravimetrici standard in conformità con i protocolli AOAC 991.43 e dei laboratori accreditati NABL."
+      },
+      {
+        "q": "Cosa va verificato prima dell’ordine?",
+        "a": "Verificare purity, swelling volume, mesh, moisture, fiber method, texture, finished application rispetto al lotto target e ai requisiti di destinazione."
+      },
+      {
+        "q": "Il COA campione basta per approvare la spedizione finale?",
+        "a": "No. Il COA campione serve per la revisione dei parametri. L’approvazione finale deve usare il COA o rapporto del lotto spedito."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Cosa deve verificare il buyer",
+        "body": "Per fiber-ratio wording, verificare lotto target, specifica del buyer, COA e metodo prima dell’ordine."
+      },
+      {
+        "heading": "Checklist prima del PO",
+        "body": "Richiedere e confrontare questi punti: purity, swelling volume, mesh, moisture, fiber method, texture, finished application. La revisione va fatta prima di prezzo, campione o lotto commerciale."
+      },
+      {
+        "heading": "Errore comune",
+        "body": "Non trattare fiber-ratio wording come promessa generica del fornitore. Collegarlo a risultati di lotto, documenti e mercato di destinazione."
+      },
+      {
+        "heading": "Come può aiutare RM",
+        "body": "RM può rivedere COA campione, specifica, grado, mesh, imballo e documenti di destinazione prima dell’ordine."
       }
     ]
   },
@@ -426,6 +660,32 @@
       {
         "q": "Quali fattori possono degradare il volume di rigonfiamento durante la lavorazione?",
         "a": "L'eccessivo calore generato dall'attrito meccanico durante la macinazione è la causa principale della degradazione della mucillagine, evidenziando la necessità di una macinazione a temperatura controllata."
+      },
+      {
+        "q": "Cosa va verificato prima dell’ordine?",
+        "a": "Verificare sample form, particle size, method, rest time, water volume, swelling result, COA wording rispetto al lotto target e ai requisiti di destinazione."
+      },
+      {
+        "q": "Il COA campione basta per approvare la spedizione finale?",
+        "a": "No. Il COA campione serve per la revisione dei parametri. L’approvazione finale deve usare il COA o rapporto del lotto spedito."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Cosa deve verificare il buyer",
+        "body": "Per swelling-volume result, verificare lotto target, specifica del buyer, COA e metodo prima dell’ordine."
+      },
+      {
+        "heading": "Checklist prima del PO",
+        "body": "Richiedere e confrontare questi punti: sample form, particle size, method, rest time, water volume, swelling result, COA wording. La revisione va fatta prima di prezzo, campione o lotto commerciale."
+      },
+      {
+        "heading": "Errore comune",
+        "body": "Non trattare swelling-volume result come promessa generica del fornitore. Collegarlo a risultati di lotto, documenti e mercato di destinazione."
+      },
+      {
+        "heading": "Come può aiutare RM",
+        "body": "RM può rivedere COA campione, specifica, grado, mesh, imballo e documenti di destinazione prima dell’ordine."
       }
     ]
   },
@@ -437,6 +697,65 @@
         "La buccia di psillio al 99% di purezza rappresenta il grado farmaceutico del prodotto — il più alto contenuto di buccia disponibile negli impianti di lavorazione indiani. A questo grado, il contenuto di buccia (tegumento del seme di Plantago ovata) è almeno del 99% in peso, con un volume di rigonfiamento minimo di 50 mL/g. Questo volume è la specifica funzionale principale per le monografie di lassativi secondo USP, Farmacopea Europea (FE) e Farmacopea Indiana (FI).",
         "Per gli acquirenti farmaceutici, il grado 99% deve essere accompagnato da un COA completo che mostri: volume di rigonfiamento, umidità (≤12%), ceneri totali (≤3%), ceneri insolubili in acido (≤0,4%), metalli pesanti (Piombo ≤2 ppm, Arsenico ≤1 ppm) e microbiologia (E. coli assente, Salmonella assente, CBC ≤10.000 UFC/g). Questi parametri corrispondono direttamente alle monografie di buccia di Plantago ovata in USP e FE. Gli acquirenti dovrebbero richiedere rapporti di test da laboratori accreditati NABL in India.",
         "L'approvvigionamento del grado 99% dal Gujarat richiede di confermare che l'impianto abbia la capacità di macinazione e separazione per raggiungere questa purezza in modo costante. Il distretto di Unjha nel Gujarat è il principale hub di lavorazione dello psillio in India, rappresentando oltre l'80% dell'offerta globale. Forniamo buccia grado 99% in sacchi da 10 kg, 25 kg e 50 kg con documentazione completa. Comunicateci il vostro requisito di farmacopea e il mercato di destinazione — forniremo un COA campione prima di qualsiasi ordine."
+      ],
+      "aiSnapshot": "Buccia di Psillio 99% di Purezza: Guida al Fornitore per Acquirenti Farmaceutici debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "sections": [
+        {
+          "heading": "Que significa para compras",
+          "body": "Buccia di Psillio 99% di Purezza: Guida al Fornitore per Acquirenti Farmaceutici ayuda a compras y QA a conectar la solicitud comercial con un lote real. La decision debe basarse en especificacion, COA, muestra y uso final."
+        },
+        {
+          "heading": "Checklist antes de la orden",
+          "body": "Revise grado, pureza, malla, humedad, cenizas, microbiologia, metales pesados, empaque, origen y requisitos del mercado de destino."
+        },
+        {
+          "heading": "Como leer el COA",
+          "body": "Compare numero de lote, metodo, resultado, unidad y limite. Un COA de muestra sirve para revision inicial; el lote final debe aprobarse con documentos del lote enviado."
+        },
+        {
+          "heading": "Error comun",
+          "body": "No convierta terminos como organico, FDA, GMP, Halal, Kosher o farmacopea en promesas del proveedor. Verifique el alcance, el lote y el documento requerido."
+        },
+        {
+          "heading": "Como puede ayudar RM",
+          "body": "RM puede revisar grado, malla, COA de muestra, especificacion, empaque, origen, muestra de 1 kg y documentos de destino antes de la orden."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
+        }
       ]
     },
     "psyllium-export-india-fob-mundra": {
@@ -446,6 +765,65 @@
         "L'India esporta lo psillio attraverso tre porti principali: Mundra (Gujarat), Kandla (Gujarat) e JNPT/Nhava Sheva (Maharashtra). Per gli acquirenti di psillio, la scelta del porto incide sul costo del trasporto, sul tempo di transito e sulla disponibilità di container. La maggior parte dei trasformatori del Gujarat, inclusa RM Psyllium, utilizza Mundra come porto principale per la sua vicinanza (circa 220 km dal nostro impianto di Siddhpur) e per l'elevata frequenza di navi verso Europa, Costa Est degli USA, Medio Oriente e Australia.",
         "Il Porto di Mundra (MUND) è gestito da Adani Ports e movimenta il maggior volume di container in India. La frequenza delle navi verso i principali porti di destinazione (Rotterdam, Felixstowe, New York, Jeddah, Colombo) è tipicamente di 2–4 partenze settimanali. Tempo di transito verso Rotterdam: circa 20–23 giorni; verso New York: circa 25–28 giorni; verso Jeddah: circa 8–10 giorni.",
         "Per ordini CIF, selezioniamo il porto in base alla destinazione e alla compagnia di navigazione con il miglior tasso al momento della prenotazione. Per ordini FOB, designate lo spedizioniere e coordiniamo direttamente con lui. La documentazione di esportazione è preparata presso il nostro impianto e presentata 3–5 giorni prima dell'imbarco. Comunicateci il porto di destinazione e forniremo un preventivo di trasporto indicativo."
+      ],
+      "aiSnapshot": "Esportazione di Psillio dall'India: FOB Mundra vs Kandla vs JNPT debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "sections": [
+        {
+          "heading": "Que significa para compras",
+          "body": "Esportazione di Psillio dall'India: FOB Mundra vs Kandla vs JNPT ayuda a compras y QA a conectar la solicitud comercial con un lote real. La decision debe basarse en especificacion, COA, muestra y uso final."
+        },
+        {
+          "heading": "Checklist antes de la orden",
+          "body": "Revise grado, pureza, malla, humedad, cenizas, microbiologia, metales pesados, empaque, origen y requisitos del mercado de destino."
+        },
+        {
+          "heading": "Como leer el COA",
+          "body": "Compare numero de lote, metodo, resultado, unidad y limite. Un COA de muestra sirve para revision inicial; el lote final debe aprobarse con documentos del lote enviado."
+        },
+        {
+          "heading": "Error comun",
+          "body": "No convierta terminos como organico, FDA, GMP, Halal, Kosher o farmacopea en promesas del proveedor. Verifique el alcance, el lote y el documento requerido."
+        },
+        {
+          "heading": "Como puede ayudar RM",
+          "body": "RM puede revisar grado, malla, COA de muestra, especificacion, empaque, origen, muestra de 1 kg y documentos de destino antes de la orden."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
+        }
       ]
     },
     "psyllium-husk-usp-ep-pharmacopoeia": {
@@ -455,6 +833,65 @@
         "La buccia di psillio è monografata in tre principali farmacopee: la Farmacopea degli Stati Uniti (USP), la Farmacopea Europea (FE) e la Farmacopea Indiana (FI). Sebbene tutte descrivano la buccia di Plantago ovata, i parametri di test e i criteri di accettazione differiscono in modi rilevanti per gli acquirenti che importano psillio per uso farmaceutico.",
         "La monografia USP richiede un volume di rigonfiamento minimo di 40 mL/g, umidità ≤12% e ceneri totali ≤4%. La monografia FE (Ispaghula Husk) specifica un indice di rigonfiamento minimo di 40 con test di identificazione specifici tra cui microscopia e reazioni chimiche. La monografia FI è ampiamente allineata con l'USP con possibili differenze minori nella metodologia di test.",
         "Per l'esportazione in Europa, il termine della monografia FE è 'Ispaghula Husk' — lo stesso prodotto. Gli acquirenti europei richiedono generalmente un COA annotato secondo i parametri FE inclusi indice di rigonfiamento, materie estranee, microbiologia e limiti di residui di pesticidi secondo le normative UE. Forniamo con COA annotato secondo la farmacopea specificata dall'acquirente su richiesta."
+      ],
+      "aiSnapshot": "USP vs FE vs FI: Standard Farmacopeici per Buccia di Psillio Spiegati debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "sections": [
+        {
+          "heading": "Que significa para compras",
+          "body": "USP vs FE vs FI: Standard Farmacopeici per Buccia di Psillio Spiegati ayuda a compras y QA a conectar la solicitud comercial con un lote real. La decision debe basarse en especificacion, COA, muestra y uso final."
+        },
+        {
+          "heading": "Checklist antes de la orden",
+          "body": "Revise grado, pureza, malla, humedad, cenizas, microbiologia, metales pesados, empaque, origen y requisitos del mercado de destino."
+        },
+        {
+          "heading": "Como leer el COA",
+          "body": "Compare numero de lote, metodo, resultado, unidad y limite. Un COA de muestra sirve para revision inicial; el lote final debe aprobarse con documentos del lote enviado."
+        },
+        {
+          "heading": "Error comun",
+          "body": "No convierta terminos como organico, FDA, GMP, Halal, Kosher o farmacopea en promesas del proveedor. Verifique el alcance, el lote y el documento requerido."
+        },
+        {
+          "heading": "Como puede ayudar RM",
+          "body": "RM puede revisar grado, malla, COA de muestra, especificacion, empaque, origen, muestra de 1 kg y documentos de destino antes de la orden."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
+        }
       ]
     },
     "psyllium-seed-supplier-gujarat-rajasthan": {
@@ -464,6 +901,65 @@
         "I semi di Plantago ovata (psillio) sono coltivati principalmente in Gujarat e Rajasthan. I distretti di Mehsana, Banaskantha e Kutch nel Gujarat e Barmer, Jalore e Jodhpur nel Rajasthan sono le principali aree di coltivazione. Il raccolto è una coltura rabi (invernale), seminata a ottobre–novembre e raccolta a febbraio–marzo. La produzione annua in India è stimata in 100.000–150.000 MT di seme, di cui circa l'85% viene esportato in forma lavorata.",
         "I semi sono disponibili in due gradi principali: puliti meccanicamente (standard) con purezza generalmente ≥98%; e grado sortex con separazione ottica che raggiunge ≥99% di purezza con materie estranee ≤0,5%. Il grado sortex ha un premio di prezzo dell'8–12%, ma è preferito dai mulini che necessitano di una resa costante di buccia.",
         "Specifiche da confermare prima dell'acquisto: purezza (98% o 99%), umidità (≤8%), germinazione (≥85% per semi da semina; non richiesta per la macinazione) e documentazione di tracciabilità dei lotti. Forniamo semi in sacchi da 25 kg, 50 kg e big bag da 1.000 kg. Documentazione di origine, tracciabilità dei lotti e campione per test pre-spedizione sono forniti con ogni ordine."
+      ],
+      "aiSnapshot": "Fornitura di Semi di Psillio dal Gujarat e dal Rajasthan debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "sections": [
+        {
+          "heading": "Que significa para compras",
+          "body": "Fornitura di Semi di Psillio dal Gujarat e dal Rajasthan ayuda a compras y QA a conectar la solicitud comercial con un lote real. La decision debe basarse en especificacion, COA, muestra y uso final."
+        },
+        {
+          "heading": "Checklist antes de la orden",
+          "body": "Revise grado, pureza, malla, humedad, cenizas, microbiologia, metales pesados, empaque, origen y requisitos del mercado de destino."
+        },
+        {
+          "heading": "Como leer el COA",
+          "body": "Compare numero de lote, metodo, resultado, unidad y limite. Un COA de muestra sirve para revision inicial; el lote final debe aprobarse con documentos del lote enviado."
+        },
+        {
+          "heading": "Error comun",
+          "body": "No convierta terminos como organico, FDA, GMP, Halal, Kosher o farmacopea en promesas del proveedor. Verifique el alcance, el lote y el documento requerido."
+        },
+        {
+          "heading": "Como puede ayudar RM",
+          "body": "RM puede revisar grado, malla, COA de muestra, especificacion, empaque, origen, muestra de 1 kg y documentos de destino antes de la orden."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
+        }
       ]
     },
     "organic-psyllium-nop-eu-certification": {
@@ -472,7 +968,66 @@
       "body": [
         "Lo psillio biologico indiano è certificato secondo due principali framework: il Programma Nazionale Biologico (NOP) dell'USDA per il mercato statunitense e il Bio UE per il mercato europeo. I trasformatori biologici indiani sono certificati da organismi accreditati tra cui Control Union, ECOCERT India, Lacon e SGS. Gli acquirenti devono confermare che il certificato copra il prodotto specifico, le date del lotto e il mercato di destinazione.",
         "La certificazione NOP richiede che la fonte dei semi, le pratiche colturali (senza pesticidi o fertilizzanti sintetici), l'impianto di lavorazione e la catena di gestione siano tutti certificati biologici. Il certificato di transazione (CT) emesso per spedizione collega il lotto specifico alla certificazione biologica. Gli acquirenti UE necessitano di un Certificato di Ispezione (CI) ai sensi del Regolamento UE 2018/848.",
-        "In RM Psyllium, i lotti biologici sono forniti su richiesta in base alla disponibilità del magazzino certificato attuale. Forniamo copia del certificato biologico, registri di origine per lotto e documentazione CT prima della conferma dell'ordine. Lo psillio biologico ha un premio del 25–40% rispetto al convenzionale in base al grado e all'ambito della certificazione."
+        "Per acquisti biologici, RM Psyllium verifica prima l'ambito del certificato, il lotto, il mercato di destinazione e i documenti richiesti. Condividete i requisiti e confermeremo quali documenti possono essere rivisti prima della quotazione."
+      ],
+      "aiSnapshot": "Psillio Biologico: Certificazione NOP vs UE Bio per l'Esportazione debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "sections": [
+        {
+          "heading": "Que significa para compras",
+          "body": "Psillio Biologico: Certificazione NOP vs UE Bio per l'Esportazione ayuda a compras y QA a conectar la solicitud comercial con un lote real. La decision debe basarse en especificacion, COA, muestra y uso final."
+        },
+        {
+          "heading": "Checklist antes de la orden",
+          "body": "Revise grado, pureza, malla, humedad, cenizas, microbiologia, metales pesados, empaque, origen y requisitos del mercado de destino."
+        },
+        {
+          "heading": "Como leer el COA",
+          "body": "Compare numero de lote, metodo, resultado, unidad y limite. Un COA de muestra sirve para revision inicial; el lote final debe aprobarse con documentos del lote enviado."
+        },
+        {
+          "heading": "Error comun",
+          "body": "No convierta terminos como organico, FDA, GMP, Halal, Kosher o farmacopea en promesas del proveedor. Verifique el alcance, el lote y el documento requerido."
+        },
+        {
+          "heading": "Como puede ayudar RM",
+          "body": "RM puede revisar grado, malla, COA de muestra, especificacion, empaque, origen, muestra de 1 kg y documentos de destino antes de la orden."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
+        }
       ]
     },
     "psyllium-husk-gluten-free-bakery": {
@@ -481,7 +1036,66 @@
       "body": [
         "La buccia di psillio è usata nella panificazione senza glutine come agente strutturante e legante dell'acqua — sostituisce parzialmente le funzioni della rete di glutine che consente all'impasto di trattenere i gas e mantenere la forma durante la cottura. Il muco dello psillio forma un gel quando idratato, fornendo viscosità ed elasticità agli impasti senza glutine a base di farina di riso, amido di mais, tapioca e basi simili.",
         "Per le applicazioni di panificazione, la purezza del 95% o 98% in granulometria 80–100 mesh è la più comunemente specificata. Una granulometria più fine (100+) si disperde più rapidamente e produce una mollica più liscia. Una granulometria più grossolana (40–60) può essere visibile nel prodotto finale. Il grado 85% è usato in formulazioni sensibili al costo.",
-        "I tassi di utilizzo tipici nelle formulazioni di pane senza glutine sono dell'1–3% del peso totale della farina. Oltre il 3%, lo psillio può produrre una mollica densa e gommosa. Gli acquirenti dovrebbero richiedere un campione di 100–200 g con COA ed effettuare test di laboratorio prima di impegnarsi in un ordine all'ingrosso."
+        "I tassi di utilizzo tipici nelle formulazioni di pane senza glutine sono dell'1–3% del peso totale della farina. Oltre il 3%, lo psillio può produrre una mollica densa e gommosa. Gli acquirenti dovrebbero richiedere un campione valutato in base alla specifica ed effettuare test di laboratorio prima di impegnarsi in un ordine all'ingrosso."
+      ],
+      "aiSnapshot": "Buccia di Psillio nella Panificazione Senza Glutine: Selezione di Grado e Granulometria debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "sections": [
+        {
+          "heading": "Que significa para compras",
+          "body": "Buccia di Psillio nella Panificazione Senza Glutine: Selezione di Grado e Granulometria ayuda a compras y QA a conectar la solicitud comercial con un lote real. La decision debe basarse en especificacion, COA, muestra y uso final."
+        },
+        {
+          "heading": "Checklist antes de la orden",
+          "body": "Revise grado, pureza, malla, humedad, cenizas, microbiologia, metales pesados, empaque, origen y requisitos del mercado de destino."
+        },
+        {
+          "heading": "Como leer el COA",
+          "body": "Compare numero de lote, metodo, resultado, unidad y limite. Un COA de muestra sirve para revision inicial; el lote final debe aprobarse con documentos del lote enviado."
+        },
+        {
+          "heading": "Error comun",
+          "body": "No convierta terminos como organico, FDA, GMP, Halal, Kosher o farmacopea en promesas del proveedor. Verifique el alcance, el lote y el documento requerido."
+        },
+        {
+          "heading": "Como puede ayudar RM",
+          "body": "RM puede revisar grado, malla, COA de muestra, especificacion, empaque, origen, muestra de 1 kg y documentos de destino antes de la orden."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
+        }
       ]
     },
     "psyllium-supplement-capsule-filling": {
@@ -491,6 +1105,65 @@
         "La buccia di psillio è una delle fibre alimentari più frequentemente incapsulate in capsule di gelatina e vegetariane (HPMC) per integratori lassativi e di salute digestiva. La principale sfida nel riempimento delle capsule è la fluidità — la buccia di psillio è fibrosa e igroscopica, e può agglomerarsi e formare ponti nelle tramogge delle attrezzature di riempimento. La selezione del mesh e il controllo dell'umidità sono le due variabili principali.",
         "Per le attrezzature standard di riempimento capsule (tipo dosatore o punzone), la buccia intera in mesh 40–60 è la specifica preferita. A questo mesh, le particelle sono abbastanza grandi da scorrere senza ponti ma abbastanza piccole da compattarsi uniformemente nel corpo della capsula. Sotto 40 mesh la buccia potrebbe non compattarsi efficacemente. Sopra 60 mesh la polvere diventa più igroscopica.",
         "Il controllo dell'umidità è critico: buccia con umidità superiore al 10% si agglomera nella tramoggia e causa variazioni nel peso di riempimento. Testiamo l'umidità alla spedizione e possiamo fornire imballaggi a umidità controllata (liner HDPE sigillato con essiccante) su richiesta. Comunicateci dimensione della capsula, peso di riempimento target e tipo di attrezzatura."
+      ],
+      "aiSnapshot": "Psillio per il Riempimento di Capsule: Guida a Mesh, Flusso e Grado debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "sections": [
+        {
+          "heading": "Que significa para compras",
+          "body": "Psillio per il Riempimento di Capsule: Guida a Mesh, Flusso e Grado ayuda a compras y QA a conectar la solicitud comercial con un lote real. La decision debe basarse en especificacion, COA, muestra y uso final."
+        },
+        {
+          "heading": "Checklist antes de la orden",
+          "body": "Revise grado, pureza, malla, humedad, cenizas, microbiologia, metales pesados, empaque, origen y requisitos del mercado de destino."
+        },
+        {
+          "heading": "Como leer el COA",
+          "body": "Compare numero de lote, metodo, resultado, unidad y limite. Un COA de muestra sirve para revision inicial; el lote final debe aprobarse con documentos del lote enviado."
+        },
+        {
+          "heading": "Error comun",
+          "body": "No convierta terminos como organico, FDA, GMP, Halal, Kosher o farmacopea en promesas del proveedor. Verifique el alcance, el lote y el documento requerido."
+        },
+        {
+          "heading": "Como puede ayudar RM",
+          "body": "RM puede revisar grado, malla, COA de muestra, especificacion, empaque, origen, muestra de 1 kg y documentos de destino antes de la orden."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
+        }
       ]
     },
     "psyllium-halal-kosher-documentation": {
@@ -499,7 +1172,66 @@
       "body": [
         "La buccia di psillio, essendo un prodotto di origine vegetale senza input animali nella lavorazione, è generalmente considerata accettabile sia per i requisiti alimentari Halal che Kosher. Tuttavia, molti acquirenti — in particolare in Medio Oriente, Asia del Sud-Est e per i mercati degli integratori kosher negli USA — richiedono una certificazione formale da un organismo riconosciuto.",
         "Per la certificazione Halal, gli organismi riconosciuti in India includono Halal India, Jamiat Ulama-i-Hind Halal Trust e organismi internazionali come IFANCA. Il certificato copre l'impianto, i prodotti specifici e il periodo di certificazione (tipicamente un anno). Una copia del certificato Halal per spedizione con approvazione a livello di lotto è ciò che la maggior parte delle autorità di importazione del Medio Oriente richiede.",
-        "In RM Psyllium, la documentazione Halal e Kosher è disponibile su richiesta. Forniamo una dichiarazione Halal che conferma che la buccia di psillio è un prodotto vegetale puro senza input di origine animale nella coltivazione, lavorazione o confezionamento. Contattateci con il vostro requisito specifico di organismo di certificazione."
+        "Per i lotti RM Psyllium, gli acquirenti possono richiedere una dichiarazione di origine vegetale e verificare eventuali requisiti Halal o Kosher formali prima dell'ordine. La dichiarazione vegetale non sostituisce una certificazione formale quando etichetta, retailer o importatore la richiedono."
+      ],
+      "aiSnapshot": "Psillio Halal e Kosher: Quali Documenti Servono agli Acquirenti debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "sections": [
+        {
+          "heading": "Que significa para compras",
+          "body": "Psillio Halal e Kosher: Quali Documenti Servono agli Acquirenti ayuda a compras y QA a conectar la solicitud comercial con un lote real. La decision debe basarse en especificacion, COA, muestra y uso final."
+        },
+        {
+          "heading": "Checklist antes de la orden",
+          "body": "Revise grado, pureza, malla, humedad, cenizas, microbiologia, metales pesados, empaque, origen y requisitos del mercado de destino."
+        },
+        {
+          "heading": "Como leer el COA",
+          "body": "Compare numero de lote, metodo, resultado, unidad y limite. Un COA de muestra sirve para revision inicial; el lote final debe aprobarse con documentos del lote enviado."
+        },
+        {
+          "heading": "Error comun",
+          "body": "No convierta terminos como organico, FDA, GMP, Halal, Kosher o farmacopea en promesas del proveedor. Verifique el alcance, el lote y el documento requerido."
+        },
+        {
+          "heading": "Como puede ayudar RM",
+          "body": "RM puede revisar grado, malla, COA de muestra, especificacion, empaque, origen, muestra de 1 kg y documentos de destino antes de la orden."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
+        }
       ]
     },
     "bulk-psyllium-import-usa-fda": {
@@ -509,6 +1241,65 @@
         "La buccia di psillio importata sfusa negli Stati Uniti è sotto la giurisdizione della FDA come ingrediente di integratore alimentare o ingrediente alimentare a seconda dell'uso previsto. La FDA non richiede pre-approvazione per le importazioni di psillio sfuso, ma le spedizioni sono soggette allo screening di importazione FDA e gli impianti esportatori sono soggetti ai requisiti di verifica dei fornitori FSMA.",
         "Per le applicazioni di integratori alimentari, la buccia di psillio deve soddisfare le specifiche della monografia USP. Il COA fornito con ogni spedizione deve includere: identificazione (botanica), volume di rigonfiamento, umidità, ceneri, microbiologia (CBC, lieviti, muffe, E. coli, Salmonella) e metalli pesanti. Per le applicazioni alimentari, la buccia di psillio ha lo status GRAS negli USA come fonte di fibre alimentari solubili.",
         "La Notifica Preventiva alla FDA è richiesta per tutte le spedizioni di alimenti e integratori che entrano negli USA, presentata elettronicamente via PNSI prima dell'arrivo. Gli importatori americani in genere se ne occupano, ma possiamo fornire tutti i dettagli del prodotto necessari. Spediamo verso porti USA via Mundra o JNPT con tempi di transito tipici di 25–30 giorni verso i porti della Costa Est."
+      ],
+      "aiSnapshot": "Importazione di Psillio negli USA: Requisiti FDA, Etichettatura e COA debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "sections": [
+        {
+          "heading": "Que significa para compras",
+          "body": "Importazione di Psillio negli USA: Requisiti FDA, Etichettatura e COA ayuda a compras y QA a conectar la solicitud comercial con un lote real. La decision debe basarse en especificacion, COA, muestra y uso final."
+        },
+        {
+          "heading": "Checklist antes de la orden",
+          "body": "Revise grado, pureza, malla, humedad, cenizas, microbiologia, metales pesados, empaque, origen y requisitos del mercado de destino."
+        },
+        {
+          "heading": "Como leer el COA",
+          "body": "Compare numero de lote, metodo, resultado, unidad y limite. Un COA de muestra sirve para revision inicial; el lote final debe aprobarse con documentos del lote enviado."
+        },
+        {
+          "heading": "Error comun",
+          "body": "No convierta terminos como organico, FDA, GMP, Halal, Kosher o farmacopea en promesas del proveedor. Verifique el alcance, el lote y el documento requerido."
+        },
+        {
+          "heading": "Como puede ayudar RM",
+          "body": "RM puede revisar grado, malla, COA de muestra, especificacion, empaque, origen, muestra de 1 kg y documentos de destino antes de la orden."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
+        }
       ]
     },
     "psyllium-khakha-animal-feed-specifications": {
@@ -518,6 +1309,65 @@
         "La polvere di psillio khakha è il sottoprodotto che rimane dopo la macinazione e separazione della buccia di psillio dal seme. È composta principalmente dal tegumento interno del seme e dall'endosperma residuo, e contiene una quantità significativa di fibre solubili derivate dal muco — tipicamente il 30–40% di fibra grezza in peso. Questo contenuto di fibre, combinato con l'8–12% di proteine grezze e un prezzo basso rispetto alla buccia intera, la rende un ingrediente utile per i formulatori di mangimi per ruminanti e pollame.",
         "Il khakha di qualità mangime è specificato principalmente per umidità (≤12%), fibra grezza (30–40%), proteine grezze (8–12%) e ceneri totali (≤8%). Materie estranee e contenuto di sabbia devono essere confermati. La dimensione delle particelle influisce sul comportamento di miscelazione: le particelle più grossolane (20–40 mesh) sono standard per la maggior parte delle applicazioni.",
         "I casi d'uso del khakha nei mangimi animali includono: mangimi per bovini e bufali (supporto digestivo, ritenzione idrica), mangimi per pollame come fonte di fibre e mangimi per pesci e acquacoltura come legante naturale. Forniamo in sacchi da 25 kg, 50 kg e big bag da 1.000 kg con COA di analisi di base e lista di imballaggio."
+      ],
+      "aiSnapshot": "Polvere di Psillio Khakha per Mangimi Animali: Specifiche e Casi d'Uso debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "sections": [
+        {
+          "heading": "Que significa para compras",
+          "body": "Polvere di Psillio Khakha per Mangimi Animali: Specifiche e Casi d'Uso ayuda a compras y QA a conectar la solicitud comercial con un lote real. La decision debe basarse en especificacion, COA, muestra y uso final."
+        },
+        {
+          "heading": "Checklist antes de la orden",
+          "body": "Revise grado, pureza, malla, humedad, cenizas, microbiologia, metales pesados, empaque, origen y requisitos del mercado de destino."
+        },
+        {
+          "heading": "Como leer el COA",
+          "body": "Compare numero de lote, metodo, resultado, unidad y limite. Un COA de muestra sirve para revision inicial; el lote final debe aprobarse con documentos del lote enviado."
+        },
+        {
+          "heading": "Error comun",
+          "body": "No convierta terminos como organico, FDA, GMP, Halal, Kosher o farmacopea en promesas del proveedor. Verifique el alcance, el lote y el documento requerido."
+        },
+        {
+          "heading": "Como puede ayudar RM",
+          "body": "RM puede revisar grado, malla, COA de muestra, especificacion, empaque, origen, muestra de 1 kg y documentos de destino antes de la orden."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
+        }
       ]
     },
     "psyllium-husk-gmp-compliant-manufacturer-india": {
@@ -525,8 +1375,67 @@
       "summary": "Cosa significa un impianto conforme alle BPF per la lavorazione dello psillio, specifiche del grado BP e lista di documentazione per gli acquirenti farmaceutici.",
       "body": [
         "Gli acquirenti farmaceutici che si riforniscono di buccia di psillio dall'India necessitano di più di un semplice grado di purezza — devono confermare che l'impianto operi sotto controlli qualità documentati conformi alle Buone Pratiche di Fabbricazione (BPF/GMP). Per lo psillio, la lavorazione conforme alle BPF significa: ambienti di macinazione controllati, procedure di pulizia documentate, registri di controllo dei parassiti, tracciabilità dei lotti e attrezzature calibrate.",
-        "RM Psyllium gestisce un impianto conforme alle BPF a Siddhpur, Gujarat. Manteniamo registri di produzione per lotto, registri di calibrazione delle attrezzature e controlli qualità in processo per ogni ciclo di produzione.",
-        "Il pacchetto documentale standard di RM Psyllium include: (1) COA di laboratorio accreditato NABL annotato secondo USP, EP, BP o IP specificato; (2) Certificato di Origine della Camera di Commercio del Gujarat; (3) Certificato Fitosanitario; (4) Dichiarazione di conformità BPF dell'impianto; (5) Lista di imballaggio e fattura commerciale."
+        "RM Psyllium opera a Siddhpur, Gujarat, con pulizia, macinazione, confezionamento e documentazione di lotto controllati. Gli acquirenti possono rivedere i documenti di processo e i controlli qualità disponibili prima dell'ordine.",
+        "Il pacchetto documentale di RM Psyllium può essere revisionato per lotto e include, secondo prodotto e destinazione: (1) COA del lotto, con rapporto di laboratorio terzo accreditato quando richiesto dalla specifica; (2) certificato di origine quando applicabile; (3) certificato fitosanitario quando applicabile; (4) documenti di processo e imballaggio disponibili per revisione acquirente; (5) packing list e fattura commerciale."
+      ],
+      "aiSnapshot": "Produttore di Buccia di Psillio Conforme BPF India: Standard di Impianto e Documentazione debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "sections": [
+        {
+          "heading": "Que significa para compras",
+          "body": "Produttore di Buccia di Psillio Conforme BPF India: Standard di Impianto e Documentazione ayuda a compras y QA a conectar la solicitud comercial con un lote real. La decision debe basarse en especificacion, COA, muestra y uso final."
+        },
+        {
+          "heading": "Checklist antes de la orden",
+          "body": "Revise grado, pureza, malla, humedad, cenizas, microbiologia, metales pesados, empaque, origen y requisitos del mercado de destino."
+        },
+        {
+          "heading": "Como leer el COA",
+          "body": "Compare numero de lote, metodo, resultado, unidad y limite. Un COA de muestra sirve para revision inicial; el lote final debe aprobarse con documentos del lote enviado."
+        },
+        {
+          "heading": "Error comun",
+          "body": "No convierta terminos como organico, FDA, GMP, Halal, Kosher o farmacopea en promesas del proveedor. Verifique el alcance, el lote y el documento requerido."
+        },
+        {
+          "heading": "Como puede ayudar RM",
+          "body": "RM puede revisar grado, malla, COA de muestra, especificacion, empaque, origen, muestra de 1 kg y documentos de destino antes de la orden."
+        }
+      ],
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
+        }
       ]
     },
     "plantago-ovata-husk-bulk-exporter-india": {
@@ -582,6 +1491,47 @@
         {
           "heading": "Pacchetto Standard Documentazione Esportazione",
           "body": "Il pacchetto standard include: (1) COA di laboratorio accreditato NABL con parametri USP/IP; (2) Certificato di Origine della Camera di Commercio del Gujarat; (3) Certificato Fitosanitario; (4) Dichiarazione di conformità BPF; (5) Rapporto di analisi microbiologica."
+        },
+        {
+          "heading": "Punto decisionale per acquisti",
+          "body": "Prima dell ordine, collegare la specifica al lotto reale, COA, campione da 1 kg, imballo e documenti richiesti dal mercato di destinazione."
+        }
+      ],
+      "aiSnapshot": "Esportatore all'Ingrosso di Buccia di Plantago Ovata dall'India: Gradi, Nomenclatura Isabgol e Termini di Esportazione debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
         }
       ]
     },
@@ -590,7 +1540,7 @@
       "summary": "Selezione di grado e granulometria per produttori di integratori e alimenti funzionali che acquistano all'ingrosso dal Gujarat.",
       "body": [
         "La polvere di buccia di psillio differisce dalla buccia intera per la granulometria — le particelle sono state macinate per ottenere caratteristiche specifiche di mesh e scorrevolezza che soddisfano le esigenze di formulazione di integratori e alimenti.",
-        "RM Psyllium produce polvere di buccia di psillio nei gradi 85%, 95% e 98% con multiple specifiche di mesh, con lotti tracciabili e COA di laboratorio NABL per ogni spedizione."
+        "RM Psyllium produce polvere di buccia di psillio nei gradi 85%, 95% e 98% con multiple specifiche di mesh, lotti tracciabili e COA revisionato per lotto. I rapporti di laboratorio terzo accreditato possono essere revisionati quando la specifica dell'acquirente lo richiede."
       ],
       "sections": [
         {
@@ -635,7 +1585,48 @@
         },
         {
           "heading": "MOQ e Opzioni di Imballaggio",
-          "body": "MOQ standard: 1 tonnellata metrica per SKU di grado e mesh. Imballaggio: sacchi PP da 25 kg con liner PE doppio strato, big bag FIBC da 500 kg o 1.000 kg. Etichettatura personalizzata disponibile da 5 TM. Campioni da 100–500 g con COA completo disponibili prima di qualsiasi ordine."
+          "body": "La MOQ viene confermata in base a grado, mesh, imballo, destinazione e pacchetto documentale. Imballaggio: sacchi PP da 25 kg con liner PE doppio strato, big bag FIBC da 500 kg o 1.000 kg. Opzioni campione, revisione COA e tempi sono confermati prima di qualsiasi ordine."
+        },
+        {
+          "heading": "Punto decisionale per acquisti",
+          "body": "Prima dell ordine, collegare la specifica al lotto reale, COA, campione da 1 kg, imballo e documenti richiesti dal mercato di destinazione."
+        }
+      ],
+      "aiSnapshot": "Fornitore All'ingrosso di Polvere di Buccia di Psillio India: Guida ai Gradi 85%, 95%, 98% debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
         }
       ]
     },
@@ -644,7 +1635,7 @@
       "summary": "Cosa necessitano marchi di integratori e produttori OEM per approvvigionarsi di psillio non-OGM certificato per prodotti private label.",
       "body": [
         "I marchi di integratori e i produttori contrattuali (CMO/CDMO) che cercano buccia di psillio per prodotti private label necessitano di fornitori che offrano documentazione completa degli ingredienti, tracciabilità per lotto e imballaggio personalizzabile.",
-        "RM Psyllium fornisce buccia di psillio di grado farmaceutico e alimentare per produttori OEM con rapporti di laboratorio NABL, dichiarazioni non-OGM e opzioni di imballaggio personalizzato."
+        "RM Psyllium fornisce buccia di psillio di grado farmaceutico e alimentare per produttori OEM con COA per lotto, dichiarazioni non-OGM, opzioni di imballaggio personalizzato e rapporti di laboratorio terzo quando la specifica lo richiede."
       ],
       "sections": [
         {
@@ -658,6 +1649,47 @@
         {
           "heading": "Imballaggio per Marchi di Integratori",
           "body": "Opzioni di imballaggio private label: sacchetti kraft con valvola e chiusura zip (250 g, 500 g, 1 kg), contenitori HDPE con coperchio snap, sacchetti stand-up con barriera UV. MOQ per imballaggio personalizzato: 500 kg per SKU. Stampa etichetta personalizzata disponibile da 1 TM."
+        },
+        {
+          "heading": "Punto decisionale per acquisti",
+          "body": "Prima dell ordine, collegare la specifica al lotto reale, COA, campione da 1 kg, imballo e documenti richiesti dal mercato di destinazione."
+        }
+      ],
+      "aiSnapshot": "Integratore Private Label di Psillio India: Requisiti di Approvvigionamento OEM all'Ingrosso debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
         }
       ]
     },
@@ -666,7 +1698,7 @@
       "summary": "Specifiche del grado alimentare, significato pratico della conformità HACCP e documentazione che i produttori alimentari necessitano.",
       "body": [
         "I produttori alimentari che approvvigionano buccia di psillio come ingrediente funzionale necessitano di un fornitore con controlli di sicurezza alimentare che vadano oltre la lavorazione agricola di base.",
-        "RM Psyllium gestisce un impianto food-safe a Siddhpur, Gujarat. Il nostro impianto applica i principi HACCP — analisi dei rischi e punti di controllo critico — nei processi di macinazione, separazione e confezionamento."
+        "RM Psyllium gestisce un impianto di lavorazione a Siddhpur, Gujarat. Gli acquirenti alimentari possono revisionare controlli di pulizia, separazione, confezionamento, tracciabilità e documentazione di sicurezza alimentare prima della conferma dell'ordine."
       ],
       "sections": [
         {
@@ -719,11 +1751,52 @@
         },
         {
           "heading": "Lavorazione Conforme HACCP: Cosa Copre",
-          "body": "La lavorazione conforme HACCP per lo psillio copre tre categorie di rischi: (1) Fisici — rilevazione metalli nel confezionamento finale; separatori gravitazionali per rimuovere pietre e semi estranei; (2) Chimici — nessun trattamento con pesticidi; monitoraggio umidità; (3) Biologici — registri di pulizia e sanificazione di tutte le attrezzature a contatto."
+          "body": "La revisione dei controlli di sicurezza alimentare copre tre categorie: (1) Fisici — rilevazione metalli nel confezionamento finale; separatori gravitazionali per rimuovere pietre e semi estranei; (2) Chimici — dichiarazioni di processo e monitoraggio umidità; (3) Biologici — registri di pulizia e sanificazione delle attrezzature a contatto."
         },
         {
           "heading": "MOQ e Documenti di Certificazione Disponibili",
-          "body": "RM Psyllium fornisce buccia di psillio grado alimentare a partire da 1 tonnellata metrica per SKU. Il pacchetto documentale standard include COA di laboratorio accreditato NABL, dichiarazione di conformità HACCP, certificato fitosanitario, certificato di origine e modulo di dichiarazione dell'esportatore."
+          "body": "RM Psyllium fornisce buccia di psillio grado alimentare a partire da 1 tonnellata metrica per SKU. Il pacchetto documentale viene revisionato per prodotto, lotto e destinazione, e include COA, documenti di origine, certificato fitosanitario quando applicabile e checklist di controlli di sicurezza alimentare per revisione acquirente."
+        },
+        {
+          "heading": "Punto decisionale per acquisti",
+          "body": "Prima dell ordine, collegare la specifica al lotto reale, COA, campione da 1 kg, imballo e documenti richiesti dal mercato di destinazione."
+        }
+      ],
+      "aiSnapshot": "Fornitore Sfuso di Buccia di Psillio Grado Alimentare India: Impianto Conforme HACCP debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
         }
       ]
     },
@@ -774,6 +1847,47 @@
         {
           "heading": "Esportazione di Isabgol dal Gujarat: Cosa Necessitano i Produttori Alimentari",
           "body": "Il pacchetto standard include: (1) COA allineato Codex Alimentarius; (2) Certificato Fitosanitario; (3) Certificato di Origine Camera di Commercio Gujarat; (4) Dichiarazione di conformità metalli pesanti e pesticidi. Tempo di transito Mundra → Genova/La Spezia: circa 22–26 giorni."
+        },
+        {
+          "heading": "Punto decisionale per acquisti",
+          "body": "Prima dell ordine, collegare la specifica al lotto reale, COA, campione da 1 kg, imballo e documenti richiesti dal mercato di destinazione."
+        }
+      ],
+      "aiSnapshot": "Fibra Solubile di Buccia di Psillio per Fortificazione Alimentare Sfusa: Approvvigionamento dall'India debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
         }
       ]
     },
@@ -830,6 +1944,47 @@
         {
           "heading": "Proporzioni di Miscela Farina Senza Glutine",
           "body": "Per i formulatori che lavorano con basi di farina mista senza glutine (riso, manioca, sorgo, ceci), lo psillio agisce come agente strutturante primario. Proporzioni tipiche: farina base 70–80% + amido (tapioca/patata) 10–15% + psillio 3–5% + altri (proteine di pisello, gomma xantana) 2–5%."
+        },
+        {
+          "heading": "Punto decisionale per acquisti",
+          "body": "Prima dell ordine, collegare la specifica al lotto reale, COA, campione da 1 kg, imballo e documenti richiesti dal mercato di destinazione."
+        }
+      ],
+      "aiSnapshot": "Fornitore Sfuso di Buccia di Psillio Certificata Senza Glutine: Cosa Necessitano i Marchi di Panificazione debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
         }
       ]
     },
@@ -851,7 +2006,7 @@
         },
         {
           "heading": "MOQ e Politica dei Campioni",
-          "body": "Il nostro approccio con i nuovi acquirenti è prima il campione. Forniamo campioni da 100–500 g con COA completo prima di qualsiasi ordine di acquisto.",
+          "body": "Il nostro approccio con i nuovi acquirenti è prima il campione. Confermiamo dimensione del campione, opzioni di revisione COA e tempi prima di qualsiasi ordine di acquisto.",
           "table": {
             "headers": [
               "Prodotto",
@@ -862,30 +2017,71 @@
             "rows": [
               [
                 "Buccia di Psillio 99%",
-                "500 kg",
-                "100–200 g",
-                "15–20 giorni dalla conferma"
+                "Secondo grado e documenti",
+                "Dopo revisione specifica",
+                "Dopo revisione PO"
               ],
               [
                 "Polvere di Psillio 95%",
-                "500 kg",
-                "100–200 g",
-                "15–20 giorni dalla conferma"
+                "Secondo grado e documenti",
+                "Dopo revisione specifica",
+                "Dopo revisione PO"
               ],
               [
                 "Buccia Biologica",
-                "500 kg",
-                "100–200 g",
-                "20–25 giorni in base allo stock"
+                "Secondo ambito documentale",
+                "Dopo revisione certificato",
+                "Dopo revisione stock e documenti"
               ],
               [
                 "Polvere Khakha",
-                "1.000 kg",
-                "200–500 g",
-                "10–15 giorni dalla conferma"
+                "Secondo imballo e destinazione",
+                "Dopo revisione uso",
+                "Dopo revisione PO"
               ]
             ]
           }
+        },
+        {
+          "heading": "Punto decisionale per acquisti",
+          "body": "Prima dell ordine, collegare la specifica al lotto reale, COA, campione da 1 kg, imballo e documenti richiesti dal mercato di destinazione."
+        }
+      ],
+      "aiSnapshot": "Produttore di Buccia di Psillio Siddhpur Gujarat: Fornitura Diretta dalla Fabbrica debe revisarse por lote, especificacion y uso final, no por afirmaciones generales del proveedor. El comprador debe confirmar grado, malla, COA, empaque, muestra de 1 kg y documentos de destino antes de emitir la orden.",
+      "specTable": [
+        {
+          "label": "Revision principal",
+          "range": "Grado, malla, pureza y uso final"
+        },
+        {
+          "label": "Documento",
+          "range": "COA de muestra, especificacion y documentos de destino"
+        },
+        {
+          "label": "Muestra",
+          "range": "Muestra de 1 kg cuando el grado y destino coinciden"
+        },
+        {
+          "label": "Antes de PO",
+          "range": "Confirmar lote, empaque, pruebas y plazo"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Que debe revisar primero un comprador?",
+          "a": "Debe revisar grado, malla, pureza, COA, uso final, empaque, muestra de 1 kg y documentos del mercado de destino."
+        },
+        {
+          "q": "El COA de muestra aprueba el envio final?",
+          "a": "No. El COA de muestra ayuda a revisar parametros. El envio final debe revisarse contra el COA o informe del lote enviado."
+        },
+        {
+          "q": "Como evitar afirmaciones exageradas?",
+          "a": "Pida alcance, lote, metodo de prueba, resultado y documento aplicable. No acepte afirmaciones generales sin prueba especifica."
+        },
+        {
+          "q": "Cuando conviene pedir muestra?",
+          "a": "Antes de confirmar volumen comercial, especialmente si la aplicacion depende de hidratacion, textura, malla o documentacion regulatoria."
         }
       ]
     }
@@ -897,6 +2093,65 @@
       "Il khakha di psillio è il sottoprodotto della molitura della buccia — il residuo del tegumento del seme che rimane dopo la separazione della buccia. Contiene una quota significativa di mucillagine e fibra alimentare del seme originale, rendendolo un ingrediente funzionale per i mangimi.",
       "Per i formulatori di mangimi, la polvere di khakha offre due vantaggi: densità di fibre e costo. Rispetto alla buccia intera, il khakha ha un prezzo inferiore pur contribuendo con fibre solubili che supportano la motilità intestinale e la ritenzione idrica nel bestiame.",
       "L'approvvigionamento di khakha alla rinfusa richiede la conoscenza dell'origine del lotto e delle specifiche di umidità. Il khakha di qualità per mangimi deve avere un'umidità inferiore al 12%. Forniamo in sacchi da 25 kg, 50 kg e 1.000 kg (jumbo) con documenti di origine e distinta di imballaggio per spedizione."
+    ],
+    "aiSnapshot": "psyllium khakha demand deve essere valutato per lotto, specifica e applicazione, non per affermazioni ampie del fornitore. Gli acquirenti devono verificare feed grade, fiber, moisture, ash, particle size, packing, and destination use prima dell'ordine.",
+    "sections": [
+      {
+        "heading": "Cosa verificare",
+        "body": "Per psyllium khakha demand, gli acquirenti devono controllare feed grade, fiber, moisture, ash, particle size, packing, and destination use. L’obiettivo è collegare richiesta commerciale, lotto reale, campione, COA e documenti di destinazione."
+      },
+      {
+        "heading": "Come leggere COA o specifica",
+        "body": "Controllare parametro, unità, metodo, risultato, limite, identità lotto e data report. Confermare metodo o wording richiesti prima di campione o ordine."
+      },
+      {
+        "heading": "Errore comune",
+        "body": "Non acquistare solo per grado o parola certificato. Chiedere cosa supporta il lotto testato e quali documenti sono revisionabili."
+      },
+      {
+        "heading": "Come RM supporta",
+        "body": "RM può rivedere grado, mesh, COA campione, specifica, imballo, origine e documenti destinazione prima dell’ordine."
+      }
+    ],
+    "specTable": [
+      {
+        "parameter": "Grade / Application",
+        "range": "Buyer-specific",
+        "method": "Specification review"
+      },
+      {
+        "parameter": "Sample Review",
+        "range": "1 kg sample where available",
+        "method": "Pre-PO review"
+      },
+      {
+        "parameter": "COA Parameters",
+        "range": "Lot-specific",
+        "method": "COA / third-party report where required"
+      },
+      {
+        "parameter": "Packing and Documents",
+        "range": "Destination-specific",
+        "method": "Buyer checklist"
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Cosa confermare prima dell’ordine?",
+        "a": "Confermare feed grade, fiber, moisture, ash, particle size, packing, and destination use, applicazione, campione, imballo e documenti di destinazione."
+      },
+      {
+        "q": "Il COA campione basta per approvare la spedizione?",
+        "a": "No. Serve per revisione iniziale. L’approvazione finale deve usare il COA del lotto spedito o report terzo se richiesto."
+      },
+      {
+        "q": "Il wording può seguire la specifica acquirente?",
+        "a": "Solo quando risultati e documenti del lotto testato lo supportano."
+      },
+      {
+        "q": "Come evitare ritardi?",
+        "a": "Inviare grado, mesh, applicazione, paese, volume mensile e lista documenti prima della quotazione."
+      }
     ]
   },
   "psyllium-cattle-feed-digestion": {
@@ -938,6 +2193,32 @@
       {
         "q": "Quale grado di psillio viene utilizzato per i supplementi di eliminazione della sabbia nei cavalli?",
         "a": "Gli acquirenti di solito acquistano buccia di psillio di qualità per mangimi al 95% di purezza o polvere di khakha."
+      },
+      {
+        "q": "Quali documenti deve inviare il fornitore?",
+        "a": "COA campione, specifica, imballo, origine e documenti di destinazione applicabili devono essere rivisti prima dell ordine."
+      },
+      {
+        "q": "Se serve una certificazione?",
+        "a": "Verificare certificato reale, ambito, ente emittente, validita e copertura prodotto o lotto prima dell approvazione."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Cosa verificare",
+        "body": "Per psyllium for cattle and equine feed, gli acquirenti devono controllare feed-use suitability, fiber, moisture, ash, dosage plan, packing, and COA. L’obiettivo è collegare richiesta commerciale, lotto reale, campione, COA e documenti di destinazione."
+      },
+      {
+        "heading": "Come leggere COA o specifica",
+        "body": "Controllare parametro, unità, metodo, risultato, limite, identità lotto e data report. Confermare metodo o wording richiesti prima di campione o ordine."
+      },
+      {
+        "heading": "Errore comune",
+        "body": "Non acquistare solo per grado o parola certificato. Chiedere cosa supporta il lotto testato e quali documenti sono revisionabili."
+      },
+      {
+        "heading": "Come RM supporta",
+        "body": "RM può rivedere grado, mesh, COA campione, specifica, imballo, origine e documenti destinazione prima dell’ordine."
       }
     ]
   },
@@ -980,6 +2261,32 @@
       {
         "q": "Quale dimensione del mesh è ideale per la polvere di buccia di psillio in panetteria?",
         "a": "Una polvere fine da 80 mesh è lo standard industriale globale per la panificazione industriale senza glutine."
+      },
+      {
+        "q": "Quali documenti deve inviare il fornitore?",
+        "a": "COA campione, specifica, imballo, origine e documenti di destinazione applicabili devono essere rivisti prima dell ordine."
+      },
+      {
+        "q": "Se serve una certificazione?",
+        "a": "Verificare certificato reale, ambito, ente emittente, validita e copertura prodotto o lotto prima dell approvazione."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Cosa verificare",
+        "body": "Per whole husk versus husk powder, gli acquirenti devono controllare application, mesh, hydration speed, texture, dosage, sample trial, and COA. L’obiettivo è collegare richiesta commerciale, lotto reale, campione, COA e documenti di destinazione."
+      },
+      {
+        "heading": "Come leggere COA o specifica",
+        "body": "Controllare parametro, unità, metodo, risultato, limite, identità lotto e data report. Confermare metodo o wording richiesti prima di campione o ordine."
+      },
+      {
+        "heading": "Errore comune",
+        "body": "Non acquistare solo per grado o parola certificato. Chiedere cosa supporta il lotto testato e quali documenti sono revisionabili."
+      },
+      {
+        "heading": "Come RM supporta",
+        "body": "RM può rivedere grado, mesh, COA campione, specifica, imballo, origine e documenti destinazione prima dell’ordine."
       }
     ]
   }

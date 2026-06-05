@@ -13,8 +13,8 @@ RM Psyllium is a direct-from-source manufacturer and exporter of high-purity Psy
     *   Their business partner has **40 years of direct psyllium plant operations management** in Siddhpur's largest mills.
 -   **Unique Value Propositions (UVPs)**:
     1.  *Direct Sourcing*: Processed completely in-house with direct-from-mill pricing (no middleman broker margins).
-    2.  *Lot-Specific QA*: Lot-specific NABL-accredited Certificates of Analysis (COAs) provided digital-first, pre-shipment.
-    3.  *No MOQ Policy*: Democratizing sourcing by serving emerging brands from 500 KG trial batches to full container loads (FCL), alongside free 100g–500g lab samples for R&D.
+    2.  *Lot-Specific QA*: Third-party NABL-accredited lab reports available where requested before dispatch.
+    3.  *Sample-first sourcing Policy*: Supporting emerging brands with 1 kg sample review, COA/spec discussion, and commercial lot planning after grade, destination, and document review.
 
 ---
 
@@ -22,9 +22,9 @@ RM Psyllium is a direct-from-source manufacturer and exporter of high-purity Psy
 
 The content engine targets four primary commercial audiences, addressing their exact pain points:
 1.  **Global Sourcing & Procurement Managers** (Supplement/Food Brands): Tired of failed swelling volume and microbial tests at destination ports. Resonate with: *Purity specifications, USP/EP compliance, and pre-shipment COAs.*
-2.  **Product Formulation Chemists & R&D Labs**: Blocked by massive mill MOQs when trying to procure small trial batches. Resonate with: *Free lab samples, custom mesh sizes (40 to 100 mesh), and rapid dispatch.*
-3.  **Domestic Indian Merchant Exporters (Trading Houses)**: Struggle to guarantee export-grade quality to international buyers when buying through brokers. Resonate with: *White-label OEM contract manufacturing, direct mill audits, and complete regulatory paperwork (APEDA, FSSAI, Spices Board, Active IEC).*
-4.  **Growth-Stage B2B Brands (SMBs)**: Ignored by major mills due to volume restrictions. Resonate with: *The strict "No MOQ" policy and direct mill pricing.*
+2.  **Product Formulation Chemists & R&D Labs**: Blocked by massive mill MOQs when trying to procure validation material. Resonate with: *1 kg sample review, custom mesh sizes (40 to 100 mesh), COA discussion, and realistic dispatch timing.*
+3.  **Domestic Indian Merchant Exporters (Trading Houses)**: Struggle to guarantee export-grade quality to international buyers when buying through brokers. Resonate with: *White-label OEM contract manufacturing, direct mill audits, sample COA review, product specification sheets, origin records, packing details, and destination document checklists.*
+4.  **Growth-Stage B2B Brands (SMBs)**: Ignored by major mills due to volume restrictions. Resonate with: *The sample-first sourcing policy and direct mill pricing.*
 
 ---
 

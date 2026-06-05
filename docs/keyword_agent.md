@@ -69,7 +69,7 @@
       "fob_mundra_port_advantage",
       "moq_500kg_flexible_trials"
     ],
-    "certifications": ["FSSAI", "APEDA", "Spices_Board", "IEC_Active"],
+    "buyer_documents": ["sample_COA", "product_specification", "origin_records", "packing_details", "destination_document_checklist"],
     "capacity_mt_per_year": 2000,
     "lead_time_days": "14-21"
   },
@@ -78,7 +78,7 @@
   "competitors": [
     {"domain": "jyotoverseas.net", "focus": "automation_claims"},
     {"domain": "satnampsyllium.com", "focus": "BRC_organic_certifications"},
-    {"domain": "mantrapsyllium.com", "focus": "cattle_feed_leader"},
+    {"domain": "rmpsyllium.com", "focus": "cattle_feed_leader"},
     {"domain": "gayatripsyllium.com", "focus": "Unjha_location_purity_range"},
     {"domain": "apexherbex.com", "focus": "broad_herbal_portfolio"}
   ],
@@ -271,10 +271,10 @@ what mesh size do EU nutraceutical manufacturers prefer for psyllium
 psyllium husk powder bulk density by mesh size chart
 
 SEED CONTEXT:
-- Products: psyllium husk (85-99% purity), husk powder (mesh 40-200), khakha powder (feed grade), industrial grade, organic certified
+- Products: psyllium husk (85-99% purity), husk powder (mesh 40-200), khakha powder (feed grade), industrial grade, buyer-specified documentation review
 - Buyers: US/EU nutraceutical contract manufacturers, pharma 3PMs, exporter agents, feed mills
 - Differentiators: 40 years manufacturing experience, in-house processing (not trading), custom spec development, pre-shipment COA, FOB Mundra
-- Compliance: FSSAI, APEDA, working toward GMP/ISO 22000 documentation
+- Compliance: buyer document review, sample COA, product specification, origin records, packing details, destination document checklist
 
 CLUSTER FOCUS: {{cluster_name}}
 REGION FOCUS: {{region}}
@@ -654,9 +654,9 @@ technical_specs:
   - particle_size_distribution: ["D10", "D50", "D90"]
 
 compliance:
-  - certifications: ["GMP", "ISO 22000", "HACCP", "BRC", "FSSAI", "APEDA"]
+  - buyer_documents: ["COA", "product specification", "origin records", "packing details", "destination document checklist"]
   - regulatory: ["FDA 21 CFR", "EFSA", "USP-NF", "EP", "IP", "NOP", "EU Organic"]
-  - documentation: ["COA", "MSDS", "Phytosanitary Certificate", "Certificate of Origin", "GMP Audit Report"]
+  - documentation: ["COA", "MSDS", "Phytosanitary Certificate", "Certificate of Origin", "buyer document checklist"]
 
 commercial:
   - terms: ["FOB Mundra", "CIF Hamburg", "LC at sight", "TT 30% advance", "MOQ 500kg"]

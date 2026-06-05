@@ -10,12 +10,6 @@ export interface Props {
 const lang = getLanguage(Astro.props.lang || Astro.params.lang);
 const t = copy[lang];
 const faqItems = localizedFaq[lang];
-
-const certifications = [
-  { name: 'FSSAI', body: t.qualityFssaiDesc, logo: '/assets/certs/fssai.svg' },
-  { name: 'APEDA', body: t.qualityApedaDesc, logo: '/assets/certs/apeda.svg' },
-  { name: 'Spices Board', body: t.qualitySpicesBoardDesc, logo: '/assets/certs/spices-board.svg' },
-];
 ---
 
 <div class="hp4">
@@ -31,7 +25,7 @@ const certifications = [
           <a class="hp4-btn hp4-btn-whatsapp" href="https://wa.me/918949817791" target="_blank" rel="noopener" data-track="hero_whatsapp_click">{t.heroCtaWhatsApp}</a>
         </div>
         <div class="hp4-trust-row">
-          <span class="hp4-trust-highlight">No minimum order</span>
+          <span class="hp4-trust-highlight">COA + export docs</span>
           <span>{t.heroTrustCoa}</span>
         </div>
       </div>
@@ -47,7 +41,7 @@ const certifications = [
           fetchpriority="high"
         />
         <aside class="hp4-overlay-card">
-          <div class="hp4-overlay-row hp4-overlay-row--moq"><strong>No MOQ</strong><span>From 1 KG</span></div>
+          <div class="hp4-overlay-row hp4-overlay-row--moq"><strong>Docs</strong><span>COA · origin · phyto</span></div>
           <div class="hp4-overlay-row"><strong>{t.heroLeadTimeLabel}</strong><span>{t.heroLeadTimeValue}</span></div>
           <div class="hp4-overlay-row"><strong>{t.heroSampleLabel}</strong><span>{t.heroSampleValue}</span></div>
         </aside>
@@ -61,8 +55,8 @@ const certifications = [
     <div class="hp4-stats">
       <div><strong>2,000 <em>MT</em></strong><span>{t.statCapacityLabel}</span></div>
       <div><strong>40+ <em>yrs</em></strong><span>{t.statHistoryLabel}</span></div>
-      <div><strong>7 <em>days</em></strong><span>{t.statLeadLabel}</span></div>
-      <div><strong>1 <em>KG</em></strong><span>{t.statMoqLabel}</span></div>
+      <div><strong>COA</strong><span>{t.statLeadLabel}</span></div>
+      <div><strong>FOB</strong><span>{t.statMoqLabel}</span></div>
     </div>
     </div>
   </section>
@@ -139,33 +133,6 @@ const certifications = [
       </div>
     </div>
   </section>
-
-  {/*
-  <section class="hp4-section hp4-section--cream" id="certifications">
-    <div class="hp4-container">
-      <div class="hp4-section-label"><span>{t.labelCredentials}</span><i></i></div>
-      <h2 class="hp4-section-title" style="margin-bottom: 40px; font-size: clamp(1.8rem, 3vw, 2.6rem);">{t.hpCredTitle}</h2>
-      <div class="hp4-cert-logos">
-        {certifications.map((cert) => (
-          <img
-            class="hp4-cert-logo-img"
-            src={cert.logo}
-            alt={`${cert.name} — ${cert.body}`}
-            width="120"
-            height="64"
-            loading="lazy"
-            decoding="async"
-          />
-        ))}
-        <div class="hp4-iec-badge">
-          <strong>IEC</strong>
-          <span>0124007841</span>
-          <small>{t.hpIecActive}</small>
-        </div>
-      </div>
-    </div>
-  </section>
-  */}
 
   <!-- SECTION 7: FAQ -->
   <section class="hp4-section" id="faq">

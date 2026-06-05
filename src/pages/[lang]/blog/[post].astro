@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import { blogPosts, blogPostTranslations, copy, getLanguage, languages } from '../../../data/site';
+import { blogPosts, blogPostTranslations, copy, getLanguage, languages, products, translateProductName } from '../../../data/site';
 
 export function getStaticPaths() {
   return languages.flatMap((language) =>
@@ -23,10 +23,63 @@ const localizedPost = {
 const formattedDate = new Date(post.date).toLocaleDateString('en-GB', {
   day: 'numeric', month: 'long', year: 'numeric'
 });
+const modifiedDate = localizedPost.updatedAt ?? post.updatedAt ?? post.date;
+const whatsAppText = encodeURIComponent(
+  `Hello RM Psyllium, I am reading "${localizedPost.title}". Please review my grade, mesh, sample, COA, and destination document requirement.`
+);
+const whatsAppUrl = `https://wa.me/918949817791?text=${whatsAppText}`;
 
 const relatedPosts = blogPosts
   .filter((p) => p.slug !== post.slug && p.category === post.category)
   .slice(0, 3);
+
+const referencesHeading: Record<string, string> = {
+  en: 'References buyers may verify',
+  es: 'Referencias que los compradores pueden verificar',
+  fr: 'Références à vérifier par les acheteurs',
+  de: 'Referenzen, die Käufer prüfen können',
+  nl: 'Referenties die kopers kunnen controleren',
+  it: 'Riferimenti che gli acquirenti possono verificare',
+  pt: 'Referências que compradores podem verificar',
+  ru: 'Источники для проверки покупателем',
+  ar: 'مراجع يمكن للمشترين التحقق منها',
+  zh: '买家可核实的参考资料'
+};
+
+const internalLinksHeading: Record<string, string> = {
+  en: 'Buyer review links',
+  es: 'Enlaces para revisión del comprador',
+  fr: 'Liens pour revue acheteur',
+  de: 'Links für Käuferprüfung',
+  nl: 'Links voor koperscontrole',
+  it: 'Link per revisione acquirente',
+  pt: 'Links para revisão do comprador',
+  ru: 'Ссылки для проверки покупателем',
+  ar: 'روابط مراجعة المشتري',
+  zh: '买家审核链接'
+};
+
+const localizeInternalLinkText = (link: { text: string; path: string }) => {
+  if (link.path === '/quality/') return t.navQuality;
+  if (link.path === '/contact/') return t.sampleCoaTitle;
+  if (link.path === '/products/') return t.navProducts;
+
+  const productMatch = link.path.match(/^\/products\/([^/]+)\/$/);
+  if (productMatch) {
+    const linkedProduct = products.find((p) => p.slug === productMatch[1]);
+    return linkedProduct ? translateProductName(linkedProduct.name, lang) : link.text;
+  }
+
+  const blogMatch = link.path.match(/^\/blog\/([^/]+)\/$/);
+  if (blogMatch) {
+    const linkedPost = blogPosts.find((p) => p.slug === blogMatch[1]);
+    return linkedPost
+      ? ((blogPostTranslations[lang]?.[linkedPost.slug] as any)?.title ?? linkedPost.title)
+      : link.text;
+  }
+
+  return link.text;
+};
 
 const blogPostSchema = {
   '@context': 'https://schema.org',
@@ -34,7 +87,7 @@ const blogPostSchema = {
   headline: localizedPost.title,
   description: localizedPost.summary,
   datePublished: post.date,
-  dateModified: post.date,
+  dateModified: modifiedDate,
   inLanguage: lang,
   author: {
     '@type': 'Organization',
@@ -50,6 +103,19 @@ const blogPostSchema = {
   keywords: `psyllium, ${post.category.toLowerCase()}, psyllium supplier India, Siddhpur Gujarat`
 };
 
+const blogFaqSchema = localizedPost.faqs && localizedPost.faqs.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: localizedPost.faqs.map((faqItem: any) => ({
+    '@type': 'Question',
+    name: faqItem.q,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faqItem.a
+    }
+  }))
+} : null;
+
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -59,12 +125,14 @@ const breadcrumbSchema = {
     { '@type': 'ListItem', position: 3, name: post.title, item: `https://rmpsyllium.com/${lang}/blog/${post.slug}/` }
   ]
 };
+
+const schemas = [blogPostSchema, breadcrumbSchema, ...(blogFaqSchema ? [blogFaqSchema] : [])];
 ---
 <BaseLayout
   lang={lang}
   title={`${localizedPost.title} | RM Psyllium`}
   description={localizedPost.summary}
-  structuredData={[blogPostSchema, breadcrumbSchema]}
+  structuredData={schemas}
 >
   <article class="bp-wrap">
     <!-- HEADER -->
@@ -159,11 +227,20 @@ const breadcrumbSchema = {
             </div>
           ))}
 
+          {localizedPost.references && localizedPost.references.length > 0 && (
+            <div class="bp-references">
+              <p class="bp-related-label">{referencesHeading[lang] ?? referencesHeading.en}</p>
+              {localizedPost.references.map((ref: any) => (
+                <a class="bp-reference-link" href={ref.url} target="_blank" rel="noopener">{ref.text}</a>
+              ))}
+            </div>
+          )}
+
           {localizedPost.internalLinks && localizedPost.internalLinks.length > 0 && (
             <div class="bp-internal-links">
-              <p class="bp-related-label">{t.relatedArticles}</p>
+              <p class="bp-related-label">{internalLinksHeading[lang] ?? internalLinksHeading.en}</p>
               {localizedPost.internalLinks.map((link: any) => (
-                <a class="bp-related-link" href={`/${lang}${link.path}`}>{link.text} →</a>
+                <a class="bp-related-link" href={`/${lang}${link.path}`}>{localizeInternalLinkText(link)} →</a>
               ))}
             </div>
           )}
@@ -196,8 +273,8 @@ const breadcrumbSchema = {
             <p class="bp-cta-label">{t.readyToSource}</p>
             <h3>{t.sampleCoaTitle}</h3>
             <p>{t.sampleCoaBody}</p>
-            <a class="bp-btn bp-btn-primary" href={`/${lang}/contact/`}>{t.navContact}</a>
-            <a class="bp-btn bp-btn-wa" href="https://wa.me/918949817791" target="_blank" rel="noopener">{t.heroCtaWhatsApp}</a>
+            <a class="bp-btn bp-btn-primary" href={`/${lang}/contact/`} data-track="blog_sidebar_quote_click">{t.navContact}</a>
+            <a class="bp-btn bp-btn-wa" href={whatsAppUrl} target="_blank" rel="noopener" data-track="blog_sidebar_whatsapp_click">{t.heroCtaWhatsApp}</a>
           </div>
 
           <div class="bp-meta-card">
@@ -395,6 +472,27 @@ const breadcrumbSchema = {
   }
 
   .bp-related-link:hover { color: var(--sage); }
+
+  .bp-references {
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 1px solid var(--rule);
+    display: grid;
+    gap: 10px;
+    max-width: 660px;
+  }
+
+  .bp-reference-link {
+    color: var(--ink);
+    font-family: var(--f);
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    line-height: 1.4;
+  }
+
+  .bp-reference-link:hover { color: var(--sage); }
 
   /* sidebar */
   .bp-sidebar {

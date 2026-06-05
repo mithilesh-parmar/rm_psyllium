@@ -36,7 +36,7 @@ If you are using a 40 mesh coarse husk in a fine capsule compounding line, you w
 
 At RM Psyllium, we do not expect you to choose from a standard catalog. We match our milling process exactly to your formulation.
 
-Need to test the dispersion difference? We ship 100g to 500g lab samples with NABL-accredited COAs directly to your R&D lab in 5 business days.
+Need to test the dispersion difference? We confirm sample options, third-party lab report needs, and dispatch timing after grade and destination review.
 
 👉 Build your technical spec and request a sample today: https://rmpsyllium.com/en/products/psyllium-husk-powder/
 
@@ -65,7 +65,7 @@ Why does this number drop?
 2. Adulteration: Unscrupulous traders blending low-viscosity plant-byproducts (khakha powder) into high-purity lots.
 3. Excessive Heat during Milling: High temperatures during mechanical milling degrade the high-molecular-weight polysaccharides in the husk mucilage, destroying its water-binding properties.
 
-At RM Psyllium, we monitor swelling volume at each stage of the milling process at our Siddhpur crop-belt facility. Every single batch is backed by a lot-specific NABL-accredited COA showing the exact swell volume—verified before the container leaves Mundra port.
+At RM Psyllium, we monitor swelling volume at each stage of the milling process at our Siddhpur crop-belt facility. Every single batch is backed by a third-party NABL-accredited lab report where requested showing the exact swell volume—verified before the container leaves Mundra port.
 
 Do not wait for a quality rejection at your factory gates. Verify the swelling capacity before you sign the PO.
 
@@ -172,26 +172,26 @@ Follow our journey as we prepare our Siddhpur plant for the July 2026 launch.
 
 #### 📝 Post 6: Building the B2B Compliance Audit Trail
 *   **Target Audience**: QA Directors, Regulatory Specialists
-*   **Key Specs Used**: FSSAI, APEDA, Spices Board, IEC registrations
+*   **Key Specs Used**: sample COA, product specification, origin records, packing details, destination document checklist
 
 ---
 
 **Copy & Paste:**
 
-[Pre-Launch Diary: Compliance & Certifications]
+[Pre-Launch Diary: Buyer Documentation]
 
 To a B2B procurement team, a product is only as good as its documentation. 
 
-You can have the most advanced processing machines, but if your export registrations and regulatory certifications are not perfectly aligned, your containers will sit at destination ports costing thousands of dollars in demurrage.
+You can have the most advanced processing machines, but if product specs, lot documents, and destination paperwork are not aligned, your containers can sit at destination ports costing thousands of dollars in demurrage.
 
-As we prepare our Siddhpur plant for operations, we are systematically building our regulatory framework:
+As we prepare our Siddhpur plant for operations, we are building the buyer documentation pack around the documents a QA team reviews before a purchase order:
 
-- FSSAI (Food Safety & Standards Authority of India): Establishing our facility registration with strict hazard control protocols.
-- APEDA (Agricultural & Processed Food Products Export Development Authority): Securing our primary export clearing channels.
-- Spices Board of India: Registering for high-quality export verification.
-- Active IEC (Import Export Code): Ensuring seamless logistics tracking from day one.
+- Sample Certificate of Analysis mapped to the requested grade.
+- Product specification sheet with purity, mesh, moisture, ash, microbiology, and heavy-metal parameters.
+- Origin, lot-coding, packing, and dispatch documentation.
+- Destination-specific document checklist before quotation.
 
-We are not treating documentation as an afterthought. We are building the audit trail alongside the steel machinery. Before we ship a single trial batch in July 2026, our complete compliance package will be ready for review.
+We are not treating documentation as an afterthought. We are building the audit trail alongside the steel machinery so buyers can review what exists today before they commit.
 
 If your current supplier makes you wait weeks for updated certificates, let's talk. We believe in complete transparency.
 
@@ -201,9 +201,9 @@ If your current supplier makes you wait weeks for updated certificates, let's ta
 
 ### Pillar 3: Sourcing De-risked (Lead Gen CTAs)
 
-#### 📝 Post 7: Sourcing Demystified — Why We Have a "No MOQ" Policy
+#### 📝 Post 7: Sourcing Demystified — Why We Have a "Sample-first sourcing" Policy
 *   **Target Audience**: Startups, SMB Brands, Product Developers
-*   **Key Specs Used**: "No MOQ", 1 KG samples to 20 MT containers
+*   **Key Specs Used**: "Sample-first sourcing", sample requests to full-container orders
 
 ---
 
@@ -216,13 +216,13 @@ You contact a major Indian psyllium processor, only to be told:
 
 This forces you to buy repackaged, marked-up ingredients from local distributors. You lose direct-to-source pricing, batch traceability, and control over your technical specifications.
 
-We believe that is wrong. At RM Psyllium, we have a strict "No MOQ" policy:
+We believe that is wrong. At RM Psyllium, we have a sample-first sourcing policy:
 
 - Need 1 KG of high-purity husk for laboratory bench testing? We will ship it with a full COA.
 - Need a 500 KG trial batch to run a pilot test on your encapsulation machinery? We will pack it and arrange shipment.
 - Ready for a full 20 MT container load? We process and export it FOB Mundra.
 
-We support your growth from formulation to full-scale container operations. You get direct-from-mill pricing and lot-level NABL COAs from day one, regardless of your order size.
+We support your growth from formulation to full-scale container operations. You get direct-from-mill pricing and third-party NABL-accredited lab reports where requested from day one, regardless of your order size.
 
 Let's build your custom spec together.
 
@@ -267,7 +267,7 @@ Stop playing broker roulette. Partner with an operator who has 40 years of direc
 
 #### 📝 Post 9: Get a Certified Spec-Sample in 5 Days
 *   **Target Audience**: Formulation Scientists, R&D Chemists, Procurement Specialists
-*   **Key Specs Used**: 100g-500g lab samples with COA shipped in 5 days
+*   **Key Specs Used**: sample options and COA review confirmed after spec review
 
 ---
 
@@ -279,10 +279,10 @@ Don't guess how your raw materials will behave. Get the exact spec you need, ful
 
 At RM Psyllium, we offer an R&D Sample Program designed specifically for formulation chemists and B2B buyers:
 
-- What you get: 100g to 500g of premium psyllium husk or powder.
+- What you get: sample quantity confirmed after grade, mesh, and destination review.
 - The details: Milled exactly to your targeted particle size (40, 60, 80, or 100 mesh) and purity grade (95%, 98%, or 99% USP).
 - The proof: Shipped with a lot-specific Certificate of Analysis (COA) detailing swelling volume, moisture, and total ash.
-- The timeline: Shipped to your global R&D lab within 5 business days.
+- The timeline: dispatch timing confirmed after grade, document, and destination review.
 
 Validate our quality in your own lab before you discuss contract terms or container commitments.
 
@@ -327,7 +327,7 @@ Fewer middleman steps, faster transit times, lower landing costs.
 
 #### 📝 Post 11: The B2B Sourcing Document Checklist
 *   **Target Audience**: Import Compliance Managers, Procurement Officers
-*   **Key Specs Used**: Commercial Invoice, Packing List, NABL COA, Phyto, Fumigation, COO, HS Code 1211.90.32
+*   **Key Specs Used**: Commercial Invoice, Packing List, third-party NABL-accredited lab report, Phyto, Fumigation, COO, HS Code 1211.90.32
 
 ---
 
@@ -437,7 +437,7 @@ Slide 6: [Visual: Checklist of export stamps.]
 Title: 5. Pre-Shipment Compliance Pack
 Text:
 Do not wait for custom clearance to review documentation. Ensure your supplier shares:
-- Lot-specific NABL COA
+- Third-party NABL-accredited lab report where requested
 - Phytosanitary Certificate
 - Attested Fumigation Certificate
 - Certificate of Origin
@@ -446,7 +446,7 @@ Slide 7: [Visual: Clear CTA with founder profile shot.]
 Title: Direct-From-Source Sourcing, De-risked.
 Text:
 RM Psyllium is currently setting up a modern 2,000 MT processing plant in Siddhpur, Gujarat. 
-We provide lot-specific NABL COAs, a strict "No MOQ" policy, and direct mill transparency.
+We can arrange third-party NABL-accredited lab reports where requested and review 1 kg sample packs or commercial lot planning by product, destination, and document needs.
 CTA: Visit rmpsyllium.com to build your custom specification today.
 ```
 
@@ -499,7 +499,7 @@ At RM Psyllium’s new Siddhpur facility, we solve this:
 - Multi-stage air classifiers to completely isolate the husk.
 - Temperature-controlled milling to preserve polysaccharide integrity.
 - Protective 3-ply food-grade packaging with inner liners.
-CTA: Request a certified 100g-500g lab sample to test in your R&D lab: rmpsyllium.com
+CTA: Request a sample review to test in your R&D lab: rmpsyllium.com
 ```
 
 ---
@@ -537,11 +537,11 @@ Partner with RM Psyllium's dedicated facility in Siddhpur:
 - Exact specification matching (mesh size, purity, swelling).
 - Strict quality control before packing.
 
-Slide 5: [Visual: Icons representing FSSAI, APEDA, Spices Board, IEC.]
-Title: Your Complete Export Compliance Pack
+Slide 5: [Visual: Icons representing COA, specification sheet, origin record, packing list.]
+Title: Your Buyer Document Review Pack
 Text:
 We prepare and package all documentation for you:
-- NABL-accredited COA per lot
+- third-party NABL-accredited lab report per lot
 - Ministry-approved Phytosanitary certification
 - Attested Fumigation certificates
 - Registered Certificate of Origin
@@ -556,13 +556,13 @@ CTA: Message us on LinkedIn or WhatsApp (+91 89498 17791) to secure contract cap
 
 ---
 
-### 🎨 Carousel 4: Democratizing Sourcing — The "No MOQ" Advantage
+### 🎨 Carousel 4: Democratizing Sourcing — The "Sample-first sourcing" Advantage
 *   **Target Audience**: SMB Growth Brands, Specialty Formulators, Startup Brands
 *   **Goal**: Capture the market segments ignored by large global mills.
 
 ```
 Slide 1: [Visual: Vibrant, modern green-and-dark aesthetic. Friendly, accessible tone.]
-Title: Sourcing Demystified: The "No MOQ" Advantage
+Title: Sourcing Demystified: The "Sample-first sourcing" Advantage
 Subtitle: Why emerging brands deserve direct-to-source pricing and quality.
 Footer: Presented by RM Psyllium | rmpsyllium.com
 
@@ -579,7 +579,7 @@ Slide 3: [Visual: Step-ladder graphic representing scaling volumes.]
 Title: Our Philosophy: No Minimum Order Quantity
 Text:
 At RM Psyllium, we support growth-stage brands from the lab bench to global distribution:
-- Phase 1: 100g to 500g free lab samples for R&D testing.
+- Phase 1: sample options reviewed for R&D testing.
 - Phase 2: 500 KG flexible trial orders to run pilot batches.
 - Phase 3: Full 20 MT container shipments as you scale.
 
@@ -587,7 +587,7 @@ Slide 4: [Visual: Icons representing price tag, certificate, and custom mesh.]
 Title: What You Get (Even on Small Orders)
 Text:
 We do not compromise on quality for smaller lots:
-- Lot-level NABL COA with every order.
+- Third-party NABL-accredited lab report where requested before dispatch.
 - Direct-from-source pricing (no broker or distributor markups).
 - Custom specification matching (we mill to your required mesh size).
 
@@ -603,6 +603,6 @@ Title: Configure Your Spec in Under 60 Seconds
 Text:
 Ready to break down the MOQ wall? 
 Go to our site, choose your targeted purity, particle size, and trial volume.
-We will respond with direct pricing and sample options within 24 hours.
+We will confirm pricing and sample options after spec review.
 CTA: Visit rmpsyllium.com/en/products/psyllium-husk/ to build your spec.
 ```
