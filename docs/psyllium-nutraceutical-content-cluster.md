@@ -85,21 +85,27 @@ to blogPosts + internalLinks/cta · [ ] built + JSON-LD validated · [ ] transla
 ### Phase 3 — Trend & reach
 - [x] S4 (trend/GLP-1) — drafted · citations · claim-safety · appended · built (translated: pending)
 
-### Phase 4 — i18n (MEANINGFUL localization, not MT) — IN PROGRESS
+### Phase 4 — i18n (MEANINGFUL localization, not MT) — ✅ COMPLETE
 Approach: native, idiomatic, keyword-localized per locale (local search terms, not literal). All 9
-locales, all 5 articles, full standard. Build-validate each locale.
-- [x] de — German (5/5) — leads with **Flohsamenschalen**, built & valid
-- [ ] es — Spanish (0/5) — lead psyllium / cáscara de psyllium + ispágula / Plantago ovata
-- [ ] fr — French (0/5) — psyllium / téguments de psyllium / ispaghul
-- [ ] it — Italian (0/5) — psillio
-- [ ] pt — Portuguese (0/5) — psílio
-- [ ] nl — Dutch (0/5) — psyllium(vezels) / vlozaad
-- [ ] ru — Russian (0/5) — псиллиум / шелуха подорожника
-- [ ] zh — Chinese (0/5) — 车前子壳
-- [ ] ar — Arabic (0/5) — قشور سيلليوم / بذور القطونا
+locales, all 5 articles, full standard. Each build-validated (646 pages) and committed separately.
+- [x] de — German (5/5) — **Flohsamenschalen** (commit 0a3477e)
+- [x] es — Spanish (5/5) — psyllium / cáscara de psyllium + ispágula / zaragatona (commit 1f8c6b3)
+- [x] fr — French (5/5) — psyllium / téguments de psyllium / ispaghul (commit 70a59cf)
+- [x] it — Italian (5/5) — psillio (commit e8be8e0)
+- [x] pt — Portuguese (5/5) — psyllium / casca de psyllium / psílio (commit 84ba0d1)
+- [x] nl — Dutch (5/5) — psyllium / vlozaad (commit 68ac441)
+- [x] ru — Russian (5/5) — псиллиум / шелуха псиллиума (commit ede5616)
+- [x] zh — Chinese (5/5) — 车前子壳 / 洋车前 (commit 4821272)
+- [x] ar — Arabic (5/5) — قشور السيليوم / بذور القطونا / الإسبغول (commit 0b10d1c)
 
-### Phase 5 — indexing
-- [ ] `npm run build:submit` (live IndexNow) + optional GSC submit of the 5 cluster URLs on deploy
+**Final state:** 50 pages (5 articles × 10 locales incl. English), all with localized titles +
+FAQPage/BlogPosting JSON-LD + hreflang. On branch `content/psyllium-nutraceutical-cluster`.
+Recommended (per regulated content): native/regulatory review of claim wording per locale before
+heavy promotion.
+
+### Phase 5 — indexing (remaining)
+- [ ] Merge `content/psyllium-nutraceutical-cluster` → main and deploy
+- [ ] `npm run build:submit` (live IndexNow) + optional GSC submit of the cluster URLs on deploy
 
 ---
 
